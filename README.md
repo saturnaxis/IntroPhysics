@@ -24,6 +24,8 @@ The primary conceptual framework is based on [OpenStax: *University Physics Volu
 - Use the notebooks as a reference when preparing homework and exams.
 - Import notebooks into tools such as [NotebookLM](https://notebooklm.google.com/) or Jupyter to create personalized study guides.
 
+The structure of the notebooks is intentionally designed so students can export worked solutions into AI-assisted tools to generate summaries, practice problems, and study guides.
+
 ### For instructors
 - The material is modular and can be adapted for:
   - traditional lecture courses,
@@ -42,6 +44,8 @@ Common libraries include:
 - `matplotlib`
 
 On exams, students are provided with **lookup tables**, not code. The goal is conceptual understanding first, computation second.
+
+Calculus is introduced only as needed and always in context. When derivatives or integrals appear, the focus is on physical meaning rather than formal proof. Students taking Calculus I concurrently are not expected to have mastered all techniques in advance.
 
 ---
 
