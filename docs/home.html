@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Introductory Physics (PHYS 2425) &#8212; Introductory Physics</title>
+    <title>Welcome to Introductory Physics &#8212; Introductory Physics</title>
   
   
   
@@ -403,7 +403,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Introductory Physics (PHYS 2425)</h1>
+    <h1>Welcome to Introductory Physics</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -413,13 +413,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-this-book">How to Use This Book</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-students">For students</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-instructors">For instructors</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-tools">Computational Tools</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#license">License</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-this-book">How to use this book</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interacting-with-the-content">Interacting with the content</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background-expectations">Background expectations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-living-document">A living document</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-here">Start here</a></li>
 </ul>
             </nav>
         </div>
@@ -431,73 +429,63 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="introductory-physics-phys-2425">
-<h1>Introductory Physics (PHYS 2425)<a class="headerlink" href="#introductory-physics-phys-2425" title="Link to this heading">#</a></h1>
-<p>This repository contains the <strong>JupyterBook lecture notes and computational exercises</strong> for <strong>PHYS 2425: University Physics I</strong> at <a class="reference external" href="https://www.etamu.edu/physics/">East Texas A&amp;M University</a>.</p>
-<p>The book is designed as a <strong>structured, interactive companion</strong> to the course rather than a traditional textbook. It blends:</p>
-<ul class="simple">
-<li><p>Conceptual explanations and worked examples</p></li>
-<li><p>Dimensional analysis and unit reasoning</p></li>
-<li><p>Python-based verification and computation</p></li>
-<li><p>In-class group problems and homework scaffolding</p></li>
-</ul>
-<p>The primary conceptual framework is based on <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/preface">OpenStax: <em>University Physics Volume 1</em></a>, but the presentation, examples, and exercises have been <strong>substantially reorganized and rewritten</strong> to emphasize:</p>
-<ul class="simple">
-<li><p>physical modeling,</p></li>
-<li><p>careful treatment of units and dimensions,</p></li>
-<li><p>and reproducible computational workflows.</p></li>
-</ul>
+  <section class="tex2jax_ignore mathjax_ignore" id="welcome-to-introductory-physics">
+<h1>Welcome to Introductory Physics<a class="headerlink" href="#welcome-to-introductory-physics" title="Link to this heading">#</a></h1>
+<p>This Jupyter Book contains the course notes, worked examples, and computational exercises for <strong>PHYS 2425: University Physics</strong> at East Texas A&amp;M University.</p>
+<p>These notes are designed to help you <strong>learn physics by doing physics</strong>. Instead of reading long explanations and memorizing formulas, you will work through structured problems, explain your reasoning in words, and verify results using simple Python code.</p>
 <hr class="docutils" />
 <section id="how-to-use-this-book">
-<h2>How to Use This Book<a class="headerlink" href="#how-to-use-this-book" title="Link to this heading">#</a></h2>
-<section id="for-students">
-<h3>For students<a class="headerlink" href="#for-students" title="Link to this heading">#</a></h3>
+<h2>How to use this book<a class="headerlink" href="#how-to-use-this-book" title="Link to this heading">#</a></h2>
+<p>Each chapter is organized around <strong>worked examples and exercises</strong>, not just text.</p>
+<p>Most problems follow the same structure:</p>
 <ul class="simple">
-<li><p>Read sections <strong>before or after lecture</strong> to reinforce core ideas.</p></li>
-<li><p>Work through examples line by line; most include <strong>Python verification cells</strong>.</p></li>
-<li><p>Use the notebooks as a reference when preparing homework and exams.</p></li>
-<li><p>Import notebooks into tools such as <a class="reference external" href="https://notebooklm.google.com/">NotebookLM</a> or Jupyter to create personalized study guides.</p></li>
+<li><p><strong>The Problem</strong>: what is being asked</p></li>
+<li><p><strong>The Model</strong>: how we think about the physics</p></li>
+<li><p><strong>The Math</strong>: the solution written step by step in sentences</p></li>
+<li><p><strong>The Conclusion</strong>: what the result means physically</p></li>
+<li><p><strong>The Verification</strong>: a short Python calculation or plot to check the answer</p></li>
 </ul>
-<p>The structure of the notebooks is intentionally designed so students can export worked solutions into AI-assisted tools to generate summaries, practice problems, and study guides.</p>
-</section>
-<section id="for-instructors">
-<h3>For instructors<a class="headerlink" href="#for-instructors" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>The material is modular and can be adapted for:</p>
-<ul>
-<li><p>traditional lecture courses,</p></li>
-<li><p>studio or hybrid formats,</p></li>
-<li><p>or computationally enhanced physics sequences.</p></li>
-</ul>
-</li>
-<li><p>Exercises are written in a consistent <strong>Model → Math → Conclusion → Verification</strong> structure that can be reused or reassigned.</p></li>
-</ul>
-</section>
+<p>This structure is intentional. It mirrors how you are expected to think and write on homework and exams.</p>
 </section>
 <hr class="docutils" />
-<section id="computational-tools">
-<h2>Computational Tools<a class="headerlink" href="#computational-tools" title="Link to this heading">#</a></h2>
-<p>Python is used throughout the book as a <strong>verification and exploration tool</strong>, not as a replacement for analytical reasoning.<br />
-Common libraries include:</p>
+<section id="interacting-with-the-content">
+<h2>Interacting with the content<a class="headerlink" href="#interacting-with-the-content" title="Link to this heading">#</a></h2>
+<p>Many sections are written as Jupyter notebooks. You can:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">numpy</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">scipy.constants</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">matplotlib</span></code></p></li>
+<li><p>Run the code cells</p></li>
+<li><p>Modify parameters and rerun them</p></li>
+<li><p>Use the plots to visualize motion</p></li>
+<li><p>Open the notebooks in <strong>Google Colab</strong> using the rocket icon at the top of the page</p></li>
 </ul>
-<p>On exams, students are provided with <strong>lookup tables</strong>, not code. The goal is conceptual understanding first, computation second.</p>
-<p>Calculus is introduced only as needed and always in context. When derivatives or integrals appear, the focus is on physical meaning rather than formal proof. Students taking Calculus I concurrently are not expected to have mastered all techniques in advance.</p>
+<p>Python is used as a <strong>verification and visualization tool</strong>, not as a replacement for analytical problem solving.</p>
 </section>
 <hr class="docutils" />
-<section id="license">
-<h2>License<a class="headerlink" href="#license" title="Link to this heading">#</a></h2>
-<p>This work is licensed under a <strong>Creative Commons Attribution 4.0 International License (CC BY 4.0)</strong>.</p>
-<p>You are free to:</p>
+<section id="background-expectations">
+<h2>Background expectations<a class="headerlink" href="#background-expectations" title="Link to this heading">#</a></h2>
+<p>You are not expected to be an expert in calculus or programming.</p>
 <ul class="simple">
-<li><p>Share — copy and redistribute the material</p></li>
-<li><p>Adapt — remix, transform, and build upon the material</p></li>
+<li><p>Calculus ideas are introduced only when needed and always in context</p></li>
+<li><p>Python examples are typically short and heavily commented</p></li>
+<li><p>The focus is on understanding the physics, not technical tricks</p></li>
 </ul>
-<p>provided that appropriate credit is given.</p>
-<p><a class="reference external" href="http://creativecommons.org/licenses/by/4.0/"><img alt="CC BY 4.0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></p>
+<p>If you are taking Calculus at the same time, that is completely fine.</p>
+</section>
+<hr class="docutils" />
+<section id="a-living-document">
+<h2>A living document<a class="headerlink" href="#a-living-document" title="Link to this heading">#</a></h2>
+<p>This book is actively evolving. Content may be refined, expanded, or reorganized during the semester based on what helps students learn most effectively.</p>
+<p>If something feels unclear, that is useful feedback.</p>
+</section>
+<hr class="docutils" />
+<section id="start-here">
+<h2>Start here<a class="headerlink" href="#start-here" title="Link to this heading">#</a></h2>
+<p>If this is your first time using the book:</p>
+<ol class="arabic simple">
+<li><p>Read <strong>Who Are These Notes For?</strong></p></li>
+<li><p>Skim the <strong>Course FAQ</strong></p></li>
+<li><p>Open the first chapter and try running the verification code</p></li>
+</ol>
+<p>Physics makes more sense once you see it move.</p>
 </section>
 </section>
 
@@ -547,13 +535,11 @@ Common libraries include:</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-this-book">How to Use This Book</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-students">For students</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-instructors">For instructors</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-tools">Computational Tools</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#license">License</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-this-book">How to use this book</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interacting-with-the-content">Interacting with the content</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background-expectations">Background expectations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-living-document">A living document</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-here">Start here</a></li>
 </ul>
   </nav></div>
 

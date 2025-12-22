@@ -1,66 +1,63 @@
-# Introductory Physics (PHYS 2425)
+# Welcome to Introductory Physics
 
-This repository contains the **JupyterBook lecture notes and computational exercises** for **PHYS 2425: University Physics I** at [East Texas A&M University](https://www.etamu.edu/physics/).
+This Jupyter Book contains the course notes, worked examples, and computational exercises for **PHYS 2425: University Physics** at East Texas A&M University.
 
-The book is designed as a **structured, interactive companion** to the course rather than a traditional textbook. It blends:
-
-- Conceptual explanations and worked examples
-- Dimensional analysis and unit reasoning
-- Python-based verification and computation
-- In-class group problems and homework scaffolding
-
-The primary conceptual framework is based on [OpenStax: *University Physics Volume 1*](https://openstax.org/books/university-physics-volume-1/pages/preface), but the presentation, examples, and exercises have been **substantially reorganized and rewritten** to emphasize:
-- physical modeling,
-- careful treatment of units and dimensions,
-- and reproducible computational workflows.
+These notes are designed to help you **learn physics by doing physics**. Instead of reading long explanations and memorizing formulas, you will work through structured problems, explain your reasoning in words, and verify results using simple Python code.
 
 ---
 
-## How to Use This Book
+## How to use this book
 
-### For students
-- Read sections **before or after lecture** to reinforce core ideas.
-- Work through examples line by line; most include **Python verification cells**.
-- Use the notebooks as a reference when preparing homework and exams.
-- Import notebooks into tools such as [NotebookLM](https://notebooklm.google.com/) or Jupyter to create personalized study guides.
+Each chapter is organized around **worked examples and exercises**, not just text.
 
-The structure of the notebooks is intentionally designed so students can export worked solutions into AI-assisted tools to generate summaries, practice problems, and study guides.
+Most problems follow the same structure:
+- **The Problem**: what is being asked
+- **The Model**: how we think about the physics
+- **The Math**: the solution written step by step in sentences
+- **The Conclusion**: what the result means physically
+- **The Verification**: a short Python calculation or plot to check the answer
 
-### For instructors
-- The material is modular and can be adapted for:
-  - traditional lecture courses,
-  - studio or hybrid formats,
-  - or computationally enhanced physics sequences.
-- Exercises are written in a consistent **Model → Math → Conclusion → Verification** structure that can be reused or reassigned.
+This structure is intentional. It mirrors how you are expected to think and write on homework and exams.
 
 ---
 
-## Computational Tools
+## Interacting with the content
 
-Python is used throughout the book as a **verification and exploration tool**, not as a replacement for analytical reasoning.  
-Common libraries include:
-- `numpy`
-- `scipy.constants`
-- `matplotlib`
+Many sections are written as Jupyter notebooks. You can:
+- Run the code cells
+- Modify parameters and rerun them
+- Use the plots to visualize motion
+- Open the notebooks in **Google Colab** using the rocket icon at the top of the page
 
-On exams, students are provided with **lookup tables**, not code. The goal is conceptual understanding first, computation second.
-
-Calculus is introduced only as needed and always in context. When derivatives or integrals appear, the focus is on physical meaning rather than formal proof. Students taking Calculus I concurrently are not expected to have mastered all techniques in advance.
+Python is used as a **verification and visualization tool**, not as a replacement for analytical problem solving.
 
 ---
 
-## License
+## Background expectations
 
-This work is licensed under a **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.
+You are not expected to be an expert in calculus or programming.
+- Calculus ideas are introduced only when needed and always in context
+- Python examples are typically short and heavily commented
+- The focus is on understanding the physics, not technical tricks
 
-You are free to:
-- Share — copy and redistribute the material
-- Adapt — remix, transform, and build upon the material  
+If you are taking Calculus at the same time, that is completely fine.
 
-provided that appropriate credit is given.
+---
 
-[![CC BY 4.0][cc-by-image]][cc-by]
+## A living document
 
-[cc-by]: http://creativecommons.org/licenses/by/4.0/  
-[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
-[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
+This book is actively evolving. Content may be refined, expanded, or reorganized during the semester based on what helps students learn most effectively.
+
+If something feels unclear, that is useful feedback.
+
+---
+
+## Start here
+
+If this is your first time using the book:
+1. Read **Who Are These Notes For?**
+2. Skim the **Course FAQ**
+3. Open the first chapter and try running the verification code
+
+Physics makes more sense once you see it move.
+
