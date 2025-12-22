@@ -10,6 +10,7 @@ parts:
   - file: Preamble/cite-reuse
   - file: Preamble/computational-writing-primer
   - file: Preamble/figures-primer
+  - file: Preamble/course-faq
 - caption: Measurements, Vectors, Kinematics
   numbered: true
   maxdepth: 3 
