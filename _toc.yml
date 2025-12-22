@@ -1,0 +1,46 @@
+# Table of content
+# Learn more at https://jupyterbook.org/customize/toc.html
+#
+format: jb-book
+root: README
+parts:
+- caption: Preamble
+  chapters:
+  - file: Preamble/who-for
+  - file: Preamble/cite-reuse
+  - file: Preamble/computational-writing-primer
+  - file: Preamble/figures-primer
+- caption: Measurements, Vectors, Kinematics
+  numbered: true
+  maxdepth: 3 
+  chapters:
+  - file: Chapter01/units-and-measurement.ipynb
+  - file: Chapter02/vectors.ipynb
+  - file: Chapter03/motion-along-1D.ipynb
+  - file: Chapter04/motion-in-2D-3D.ipynb
+- caption: Newton's Laws and Energy
+  numbered: true
+  maxdepth: 3 
+  chapters:
+  - file: Chapter05/newtons-laws.ipynb
+  - file: Chapter06/application-of-newtons-laws.ipynb
+  - file: Chapter07/work-kinetic-energy.ipynb
+  - file: Chapter08/potential-energy-conservation.ipynb
+- caption: Momentum, Collisions, Rotation
+  numbered: true
+  maxdepth: 3 
+  chapters:
+  - file: Chapter09/momentum-collisions.ipynb
+  - file: Chapter10/fixed-axis-rotation.ipynb
+  - file: Chapter11/angular-momentum.ipynb
+- caption: Statics, Graviation, Fluids
+  numbered: true
+  maxdepth: 3 
+  chapters:
+  - file: Chapter12/static-equilibrium-elasticity.ipynb
+  - file: Chapter13/gravitation.ipynb
+  - file: Chapter14/fluids.ipynb
+
+
+
+

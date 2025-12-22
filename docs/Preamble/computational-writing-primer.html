@@ -1,0 +1,975 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Computational and Writing Primer &#8212; Introductory Physics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=4c969af8" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=74b92a06" />
+    <link rel="stylesheet" type="text/css" href="../_static/mycss.css?v=3589796e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../_static/tabs.js?v=3ee01567"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Preamble/computational-writing-primer';</script>
+    <link rel="canonical" href="https://saturnaxis.github.io/IntroPhysics/Preamble/computational-writing-primer.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Figures Primer (Matplotlib)" href="figures-primer.html" />
+    <link rel="prev" title="How to Cite and Reuse This Material" href="cite-reuse.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../README.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/IntroPhysics_Icon.png" class="logo__image only-light" alt="Introductory Physics - Home"/>
+    <script>document.write(`<img src="../_static/IntroPhysics_Icon.png" class="logo__image only-dark" alt="Introductory Physics - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../README.html">
+                    Introductory Physics (PHYS 2425)
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Preamble</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="who-for.html">Who Are These Notes For?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cite-reuse.html">How to Cite and Reuse This Material</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Computational and Writing Primer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="figures-primer.html">Figures Primer (Matplotlib)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Measurements, Vectors, Kinematics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Chapter01/units-and-measurement.html">1. Units and Measurement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter02/vectors.html">2. Vectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter03/motion-along-1D.html">3. Motion along 1D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter04/motion-in-2D-3D.html">4. Motion in 2D and 3D</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Newton's Laws and Energy</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Chapter05/newtons-laws.html">5. Newton’s Laws of Motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter06/application-of-newtons-laws.html">6. Application of Newton’s Laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter07/work-kinetic-energy.html">7. Work and Kinetic Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter08/potential-energy-conservation.html">8. Potential Energy and Conservation of Energy</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Momentum, Collisions, Rotation</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Chapter09/momentum-collisions.html">9. Linear Momentum and Collisions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter10/fixed-axis-rotation.html">10. Fixed-axis Rotation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter11/angular-momentum.html">11. Angular Momentum</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Statics, Graviation, Fluids</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Chapter12/static-equilibrium-elasticity.html">12. Static Equilibrium and Elasticity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter13/gravitation.html">13. Gravitation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter14/fluids.html">14. Fluid Mechanics</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/saturnaxis/IntroPhysics" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/saturnaxis/IntroPhysics/issues/new?title=Issue%20on%20page%20%2FPreamble/computational-writing-primer.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/Preamble/computational-writing-primer.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Computational and Writing Primer</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#working-in-google-colab">Working in Google Colab</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-a-jupyter-notebook">What Is a Jupyter Notebook?</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mini-exercise">Mini Exercise</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#opening-the-book-in-google-colab">Opening the Book in Google Colab</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Mini Exercise</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-basics-for-physics">Python Basics for Physics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Mini Exercise</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comments">Comments</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Mini Exercise</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#importing-libraries">Importing Libraries</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Mini Exercise</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lists-and-arrays">Lists and Arrays</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Mini Exercise</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-loops">For Loops</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Mini Exercise</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#functions">Functions</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Mini Exercise</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-in-markdown">Writing in Markdown</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#headings-emphasis-and-lists">Headings, Emphasis, and Lists</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Mini Exercise</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inline-code">Inline Code</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mathematics-with-latex">Mathematics with LaTeX</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inline-mathematics">Inline Mathematics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#displayed-equations">Displayed Equations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aligned-equations">Aligned Equations</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Mini Exercise</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-python-fits-into-problem-solving">How Python Fits into Problem Solving</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-verification">Example Verification</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Mini Exercise</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#common-mistakes-to-avoid">Common Mistakes to Avoid</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-you-are-expected-to-know">What You Are Expected to Know</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#final-advice">Final Advice</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="computational-and-writing-primer">
+<h1>Computational and Writing Primer<a class="headerlink" href="#computational-and-writing-primer" title="Link to this heading">#</a></h1>
+<p>This short primer introduces the tools you will use throughout this course to write, compute, and verify physics problems. It is not a programming course, and you are not expected to become a software developer. Instead, the goal is to give you just enough structure to use computation as a <strong>thinking and verification tool</strong>.</p>
+<p>You should return to this chapter whenever you need a refresher.</p>
+<section id="working-in-google-colab">
+<h2>Working in Google Colab<a class="headerlink" href="#working-in-google-colab" title="Link to this heading">#</a></h2>
+<section id="what-is-a-jupyter-notebook">
+<h3>What Is a Jupyter Notebook?<a class="headerlink" href="#what-is-a-jupyter-notebook" title="Link to this heading">#</a></h3>
+<p>A <strong>Jupyter notebook</strong> is a document that combines explanatory text, mathematical equations, executable code, and output in a single place. In this course, notebooks serve the same role as a lab notebook or worked-solution sheet: they record <em>what you did</em>, <em>why you did it</em>, and <em>how you checked it</em>.</p>
+<p>Notebooks are made of <strong>cells</strong>, which come in two main types:</p>
+<ul class="simple">
+<li><p><strong>Markdown cells</strong>, used for explanations and equations</p></li>
+<li><p><strong>Code cells</strong>, used for calculations and verification</p></li>
+</ul>
+<section id="mini-exercise">
+<h4>Mini Exercise<a class="headerlink" href="#mini-exercise" title="Link to this heading">#</a></h4>
+<p>Create a new notebook cell and change it to a Markdown cell. Write one sentence describing what a Jupyter notebook is used for in this course.</p>
+<div class="dropdown admonition">
+<p class="admonition-title">Solution</p>
+<p>A Jupyter notebook is used to combine written explanations, mathematical equations, and executable code in a single document so that physical reasoning and calculations can be recorded together.</p>
+</div>
+</section>
+</section>
+<section id="opening-the-book-in-google-colab">
+<h3>Opening the Book in Google Colab<a class="headerlink" href="#opening-the-book-in-google-colab" title="Link to this heading">#</a></h3>
+<p>Each chapter of this book can be opened directly in <strong>Google Colab</strong> by clicking the rocket icon at the top of the page and selecting <em>Google Colab</em>. This opens a copy of the notebook in your browser without requiring any local software installation.</p>
+<section id="id1">
+<h4>Mini Exercise<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
+<p>Open any chapter in Google Colab and run one existing code cell.</p>
+<div class="dropdown admonition">
+<p class="admonition-title">Solution</p>
+<p>If the code cell executes without errors and produces output, the notebook is running correctly in the Colab environment.</p>
+</div>
+</section>
+</section>
+</section>
+<section id="python-basics-for-physics">
+<h2>Python Basics for Physics<a class="headerlink" href="#python-basics-for-physics" title="Link to this heading">#</a></h2>
+<section id="variables">
+<h3>Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h3>
+<p>A <strong>variable</strong> stores a value so that it can be reused later. Variables allow us to name physical quantities and keep track of them symbolically.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">distance</span> <span class="o">=</span> <span class="mi">80</span>      <span class="c1"># meters</span>
+<span class="n">time</span> <span class="o">=</span> <span class="mi">4</span>           <span class="c1"># seconds</span>
+<span class="n">speed</span> <span class="o">=</span> <span class="n">distance</span> <span class="o">/</span> <span class="n">time</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">speed</span><span class="p">)</span>
+</pre></div>
+</div>
+<section id="id2">
+<h4>Mini Exercise<a class="headerlink" href="#id2" title="Link to this heading">#</a></h4>
+<p>Define variables for a distance of 120 m and a time of 6 s. Compute and print the speed.</p>
+<div class="dropdown admonition">
+<p class="admonition-title">Solution</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">distance</span> <span class="o">=</span> <span class="mi">120</span>
+<span class="n">time</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="n">speed</span> <span class="o">=</span> <span class="n">distance</span> <span class="o">/</span> <span class="n">time</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">speed</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</section>
+</section>
+<section id="comments">
+<h3>Comments<a class="headerlink" href="#comments" title="Link to this heading">#</a></h3>
+<p>Comments explain <em>why</em> a calculation is being performed. They are ignored by Python but essential for readability.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Convert meters to kilometers</span>
+<span class="n">distance_km</span> <span class="o">=</span> <span class="n">distance</span> <span class="o">/</span> <span class="mi">1000</span>
+</pre></div>
+</div>
+<section id="id3">
+<h4>Mini Exercise<a class="headerlink" href="#id3" title="Link to this heading">#</a></h4>
+<p>Add a comment explaining what a calculation represents physically.</p>
+<div class="dropdown admonition">
+<p class="admonition-title">Solution</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># This calculation determines the average speed of the object</span>
+<span class="n">speed</span> <span class="o">=</span> <span class="n">distance</span> <span class="o">/</span> <span class="n">time</span>
+</pre></div>
+</div>
+</div>
+</section>
+</section>
+<section id="importing-libraries">
+<h3>Importing Libraries<a class="headerlink" href="#importing-libraries" title="Link to this heading">#</a></h3>
+<p>Scientific calculations commonly rely on external libraries. The most frequently used library in this course is <strong>NumPy</strong>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</pre></div>
+</div>
+<p>NumPy provides mathematical constants, array operations, and numerical functions.</p>
+<section id="id4">
+<h4>Mini Exercise<a class="headerlink" href="#id4" title="Link to this heading">#</a></h4>
+<p>Use NumPy to compute the area of a circle with radius 3.5 m.</p>
+<div class="dropdown admonition">
+<p class="admonition-title">Solution</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">r</span> <span class="o">=</span> <span class="mf">3.5</span>
+<span class="n">area</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">r</span><span class="o">**</span><span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">area</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</section>
+</section>
+<section id="lists-and-arrays">
+<h3>Lists and Arrays<a class="headerlink" href="#lists-and-arrays" title="Link to this heading">#</a></h3>
+<p>A <strong>list</strong> stores multiple values, while a <strong>NumPy array</strong> allows mathematical operations to be applied to all values at once.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">measurements</span> <span class="o">=</span> <span class="p">[</span><span class="mf">4.8</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">4.9</span><span class="p">,</span> <span class="mf">5.4</span><span class="p">]</span>
+<span class="n">weights</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">measurements</span><span class="p">)</span>
+</pre></div>
+</div>
+<section id="id5">
+<h4>Mini Exercise<a class="headerlink" href="#id5" title="Link to this heading">#</a></h4>
+<p>Create a list of four measurements, convert it to a NumPy array, and compute the average.</p>
+<div class="dropdown admonition">
+<p class="admonition-title">Solution</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">measurements</span> <span class="o">=</span> <span class="p">[</span><span class="mf">4.8</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">4.9</span><span class="p">,</span> <span class="mf">5.4</span><span class="p">]</span>
+<span class="n">weights</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">measurements</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">weights</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</section>
+</section>
+<section id="for-loops">
+<h3>For Loops<a class="headerlink" href="#for-loops" title="Link to this heading">#</a></h3>
+<p>A <strong>for loop</strong> repeats an action for each item in a collection.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">measurements</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+</pre></div>
+</div>
+<section id="id6">
+<h4>Mini Exercise<a class="headerlink" href="#id6" title="Link to this heading">#</a></h4>
+<p>Write a loop that prints each measurement multiplied by 2.</p>
+<div class="dropdown admonition">
+<p class="admonition-title">Solution</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">measurements</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">value</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</section>
+</section>
+<section id="functions">
+<h3>Functions<a class="headerlink" href="#functions" title="Link to this heading">#</a></h3>
+<p>Functions package calculations so they can be reused and clearly named.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">percent_uncertainty</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">dA</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">dA</span> <span class="o">/</span> <span class="n">A</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>
+</pre></div>
+</div>
+<section id="id7">
+<h4>Mini Exercise<a class="headerlink" href="#id7" title="Link to this heading">#</a></h4>
+<p>Write a function that computes speed given distance and time.</p>
+<div class="dropdown admonition">
+<p class="admonition-title">Solution</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">speed</span><span class="p">(</span><span class="n">distance</span><span class="p">,</span> <span class="n">time</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">distance</span> <span class="o">/</span> <span class="n">time</span>
+</pre></div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="writing-in-markdown">
+<h2>Writing in Markdown<a class="headerlink" href="#writing-in-markdown" title="Link to this heading">#</a></h2>
+<p>Markdown cells are used for <strong>clear scientific writing</strong>, not for computation.</p>
+<section id="headings-emphasis-and-lists">
+<h3>Headings, Emphasis, and Lists<a class="headerlink" href="#headings-emphasis-and-lists" title="Link to this heading">#</a></h3>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="gh"># Section Title</span>
+<span class="gu">## Subsection Title</span>
+
+<span class="ge">*italic text*</span>  
+<span class="gs">**bold text**</span>
+
+<span class="k">-</span><span class="w"> </span>first item
+<span class="k">-</span><span class="w"> </span>second item
+</pre></div>
+</div>
+<section id="id8">
+<h4>Mini Exercise<a class="headerlink" href="#id8" title="Link to this heading">#</a></h4>
+<p>Create a Markdown cell with a heading and a bulleted list describing a problem-solving strategy.</p>
+<div class="dropdown admonition">
+<p class="admonition-title">Solution</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="gu">## Strategy</span>
+<span class="k">-</span><span class="w"> </span>Identify known quantities
+<span class="k">-</span><span class="w"> </span>Choose appropriate equations
+<span class="k">-</span><span class="w"> </span>Solve the math
+<span class="k">-</span><span class="w"> </span>Verify the result
+</pre></div>
+</div>
+</div>
+</section>
+</section>
+<section id="inline-code">
+<h3>Inline Code<a class="headerlink" href="#inline-code" title="Link to this heading">#</a></h3>
+<p>Use backticks to refer to code inside text, such as <code class="docutils literal notranslate"><span class="pre">np.sqrt()</span></code>.</p>
+</section>
+</section>
+<section id="mathematics-with-latex">
+<h2>Mathematics with LaTeX<a class="headerlink" href="#mathematics-with-latex" title="Link to this heading">#</a></h2>
+<p>LaTeX is used to typeset mathematical expressions.</p>
+<section id="inline-mathematics">
+<h3>Inline Mathematics<a class="headerlink" href="#inline-mathematics" title="Link to this heading">#</a></h3>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>The area is $A = \pi r^2$.
+</pre></div>
+</div>
+<p>Rendered: The area is <span class="math notranslate nohighlight">\(A = \pi r^2\)</span>.</p>
+</section>
+<section id="displayed-equations">
+<h3>Displayed Equations<a class="headerlink" href="#displayed-equations" title="Link to this heading">#</a></h3>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>$$ A = \pi r^2 $$
+</pre></div>
+</div>
+<p>Rendered:</p>
+<div class="math notranslate nohighlight">
+\[ A = \pi r^2 \]</div>
+</section>
+<section id="aligned-equations">
+<h3>Aligned Equations<a class="headerlink" href="#aligned-equations" title="Link to this heading">#</a></h3>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>\begin{align*}
+v &amp;= \frac{d}{t} \\
+  &amp;= \frac{80\ \text{m}}{4\ \text{s}} \\
+  &amp;= 20\ \text{m/s}.
+\end{align*}
+</pre></div>
+</div>
+<p>Rendered:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-85577c4e-ab92-4f8e-8f41-256cfa77b940">
+<span class="eqno">(1)<a class="headerlink" href="#equation-85577c4e-ab92-4f8e-8f41-256cfa77b940" title="Permalink to this equation">#</a></span>\[\begin{align}
+v &amp;= \frac{d}{t} \\
+  &amp;= \frac{80\ \text{m}}{4\ \text{s}} \\
+  &amp;= 20\ \text{m/s}.
+\end{align}\]</div>
+<section id="id9">
+<h4>Mini Exercise<a class="headerlink" href="#id9" title="Link to this heading">#</a></h4>
+<p>Write the LaTeX expression for average speed.</p>
+<div class="dropdown admonition">
+<p class="admonition-title">Solution</p>
+<p>The average speed is given by <span class="math notranslate nohighlight">\(\displaystyle v = \frac{d}{t}\)</span>.</p>
+</div>
+</section>
+</section>
+</section>
+<section id="how-python-fits-into-problem-solving">
+<h2>How Python Fits into Problem Solving<a class="headerlink" href="#how-python-fits-into-problem-solving" title="Link to this heading">#</a></h2>
+<p>In this course, Python is used <strong>after</strong> the physics reasoning is complete. It serves as a verification tool, not a substitute for understanding.</p>
+<p>The typical workflow is:</p>
+<ol class="arabic simple">
+<li><p>Build a physical model</p></li>
+<li><p>Solve the math analytically</p></li>
+<li><p>Verify the result using Python</p></li>
+</ol>
+<section id="example-verification">
+<h3>Example Verification<a class="headerlink" href="#example-verification" title="Link to this heading">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">distance</span> <span class="o">=</span> <span class="mi">80</span>    <span class="c1"># meters</span>
+<span class="n">time</span> <span class="o">=</span> <span class="mi">4</span>         <span class="c1"># seconds</span>
+
+<span class="n">speed</span> <span class="o">=</span> <span class="n">distance</span> <span class="o">/</span> <span class="n">time</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Speed = </span><span class="si">{</span><span class="n">speed</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> m/s&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<section id="id10">
+<h4>Mini Exercise<a class="headerlink" href="#id10" title="Link to this heading">#</a></h4>
+<p>Change the distance and time values and observe how the speed changes.</p>
+<div class="dropdown admonition">
+<p class="admonition-title">Solution</p>
+<p>Increasing the distance increases the speed, while increasing the time decreases the speed, consistent with the definition <span class="math notranslate nohighlight">\(v = d/t\)</span>.</p>
+</div>
+</section>
+</section>
+</section>
+<section id="common-mistakes-to-avoid">
+<h2>Common Mistakes to Avoid<a class="headerlink" href="#common-mistakes-to-avoid" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Writing explanations in code cells</p></li>
+<li><p>Using Python without understanding the physics</p></li>
+<li><p>Dropping units during calculations</p></li>
+<li><p>Treating Python as a formula lookup tool</p></li>
+</ul>
+<p>Python should support your reasoning, not replace it.</p>
+</section>
+<section id="what-you-are-expected-to-know">
+<h2>What You Are Expected to Know<a class="headerlink" href="#what-you-are-expected-to-know" title="Link to this heading">#</a></h2>
+<p>By the end of the semester, you should be comfortable with:</p>
+<ul class="simple">
+<li><p>creating and editing Jupyter notebooks,</p></li>
+<li><p>defining variables and functions,</p></li>
+<li><p>importing NumPy,</p></li>
+<li><p>writing Markdown explanations,</p></li>
+<li><p>typesetting equations in LaTeX,</p></li>
+<li><p>using Python to verify results.</p></li>
+</ul>
+</section>
+<section id="final-advice">
+<h2>Final Advice<a class="headerlink" href="#final-advice" title="Link to this heading">#</a></h2>
+<p>A Jupyter notebook is a <strong>record of your thinking</strong>. Someone reading your notebook later should be able to follow your reasoning without additional explanation.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "saturnaxis/IntroPhysics",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Preamble"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="cite-reuse.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">How to Cite and Reuse This Material</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="figures-primer.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Figures Primer (Matplotlib)</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#working-in-google-colab">Working in Google Colab</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-a-jupyter-notebook">What Is a Jupyter Notebook?</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mini-exercise">Mini Exercise</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#opening-the-book-in-google-colab">Opening the Book in Google Colab</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Mini Exercise</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-basics-for-physics">Python Basics for Physics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Mini Exercise</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comments">Comments</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Mini Exercise</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#importing-libraries">Importing Libraries</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Mini Exercise</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lists-and-arrays">Lists and Arrays</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Mini Exercise</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-loops">For Loops</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Mini Exercise</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#functions">Functions</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Mini Exercise</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-in-markdown">Writing in Markdown</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#headings-emphasis-and-lists">Headings, Emphasis, and Lists</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Mini Exercise</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inline-code">Inline Code</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mathematics-with-latex">Mathematics with LaTeX</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inline-mathematics">Inline Mathematics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#displayed-equations">Displayed Equations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aligned-equations">Aligned Equations</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Mini Exercise</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-python-fits-into-problem-solving">How Python Fits into Problem Solving</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-verification">Example Verification</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Mini Exercise</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#common-mistakes-to-avoid">Common Mistakes to Avoid</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-you-are-expected-to-know">What You Are Expected to Know</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#final-advice">Final Advice</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Billy Quarles
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

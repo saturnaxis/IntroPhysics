@@ -1,0 +1,1747 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>1. Units and Measurement &#8212; Introductory Physics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=4c969af8" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=74b92a06" />
+    <link rel="stylesheet" type="text/css" href="../_static/mycss.css?v=3589796e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../_static/tabs.js?v=3ee01567"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Chapter01/units-and-measurement';</script>
+    <link rel="canonical" href="https://saturnaxis.github.io/IntroPhysics/Chapter01/units-and-measurement.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="2. Vectors" href="../Chapter02/vectors.html" />
+    <link rel="prev" title="Figures Primer (Matplotlib)" href="../Preamble/figures-primer.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../README.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/IntroPhysics_Icon.png" class="logo__image only-light" alt="Introductory Physics - Home"/>
+    <script>document.write(`<img src="../_static/IntroPhysics_Icon.png" class="logo__image only-dark" alt="Introductory Physics - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../README.html">
+                    Introductory Physics (PHYS 2425)
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Preamble</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Preamble/who-for.html">Who Are These Notes For?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Preamble/cite-reuse.html">How to Cite and Reuse This Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Preamble/computational-writing-primer.html">Computational and Writing Primer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Preamble/figures-primer.html">Figures Primer (Matplotlib)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Measurements, Vectors, Kinematics</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. Units and Measurement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter02/vectors.html">2. Vectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter03/motion-along-1D.html">3. Motion along 1D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter04/motion-in-2D-3D.html">4. Motion in 2D and 3D</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Newton's Laws and Energy</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Chapter05/newtons-laws.html">5. Newton’s Laws of Motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter06/application-of-newtons-laws.html">6. Application of Newton’s Laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter07/work-kinetic-energy.html">7. Work and Kinetic Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter08/potential-energy-conservation.html">8. Potential Energy and Conservation of Energy</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Momentum, Collisions, Rotation</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Chapter09/momentum-collisions.html">9. Linear Momentum and Collisions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter10/fixed-axis-rotation.html">10. Fixed-axis Rotation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter11/angular-momentum.html">11. Angular Momentum</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Statics, Graviation, Fluids</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Chapter12/static-equilibrium-elasticity.html">12. Static Equilibrium and Elasticity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter13/gravitation.html">13. Gravitation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter14/fluids.html">14. Fluid Mechanics</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/saturnaxis/IntroPhysics/main?urlpath=tree/Chapter01/units-and-measurement.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/saturnaxis/IntroPhysics/blob/main/Chapter01/units-and-measurement.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Colab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Colab logo" src="../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="initThebeSBT()"
+  class="btn btn-sm btn-launch-thebe dropdown-item"
+  title="Launch Thebe"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="btn__text-container">Live Code</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/saturnaxis/IntroPhysics" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/saturnaxis/IntroPhysics/issues/new?title=Issue%20on%20page%20%2FChapter01/units-and-measurement.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/Chapter01/units-and-measurement.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Units and Measurement</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scope-and-scale-of-physics">1.1. Scope and Scale of Physics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-physics">1.1.1. What is physics?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-scope-of-physics">1.1.2. The Scope of Physics</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#in-the-universe">1.1.2.1. In the Universe</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#on-the-earth">1.1.2.2. On the Earth</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-scale-of-physics">1.1.3. The Scale of Physics</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#order-of-magnitude">1.1.3.1. Order of magnitude</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#known-ranges-of-length-mass-and-time">1.1.3.2. Known ranges of length, mass, and time</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#building-models">1.1.4. Building Models</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-a-model">1.1.4.1. <em>What is a model?</em></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#theory-vs-law">1.1.4.2. Theory vs. law</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#units-and-standards">1.2. Units and Standards</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#si-units-base-and-derived-units">1.2.1. SI Units: Base and Derived Units</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#units-of-time-length-and-mass">1.2.2. Units of Time, Length, and Mass</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-second">1.2.2.1. The second</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-meter">1.2.2.2. The meter</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-kilogram">1.2.2.3. The kilogram</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metric-prefixes">1.2.3. Metric Prefixes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-metric-prefixes">1.2.4. <strong>Example Problem</strong>: Metric Prefixes</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unit-conversion">1.3. Unit Conversion</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-converting-iron-s-density">1.3.1. <strong>Example Problem</strong>: Converting iron’s density</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dimensional-analysis">1.4. Dimensional Analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-checking-formulas">1.4.1. <strong>Example Problem</strong> Checking Formulas</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#significant-figures">1.5. Significant Figures</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#accuracy-and-precision">1.5.1. Accuracy and Precision</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uncertainty-and-discrepency">1.5.2. Uncertainty and Discrepency</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#percent-uncertainty">1.5.2.1. Percent uncertainty</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-uncertainty-in-a-bag-of-apples">1.5.2.2. <strong>Example Problem</strong>: Uncertainty in a bag of apples</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#uncertainties-in-calculations">1.5.2.3. Uncertainties in calculations</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#precision-of-measuring-tools">1.5.3. Precision of Measuring Tools</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#zeros">1.5.3.1. Zeros</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#significant-figures-in-calculations">1.5.3.2. Significant figures in calculations</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solving-problems-in-physics">1.6. Solving Problems in Physics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-model-strategy">1.6.1. The Model (Strategy)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-math-solution">1.6.2. The Math (Solution)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-conclusion-significance">1.6.3. The Conclusion (Significance)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-verification-script-in-python">1.6.4. The Verification (Script in Python)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-class-problems">1.7. In-class Problems</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="units-and-measurement">
+<h1><span class="section-number">1. </span>Units and Measurement<a class="headerlink" href="#units-and-measurement" title="Link to this heading">#</a></h1>
+<section id="scope-and-scale-of-physics">
+<h2><span class="section-number">1.1. </span>Scope and Scale of Physics<a class="headerlink" href="#scope-and-scale-of-physics" title="Link to this heading">#</a></h2>
+<section id="what-is-physics">
+<h3><span class="section-number">1.1.1. </span>What is physics?<a class="headerlink" href="#what-is-physics" title="Link to this heading">#</a></h3>
+<p>Physics is a method to better understand all natural phenomena.  Physicists try to understand our physical universe, starting from the very small up to (and including) the entire universe.  The same basic training can be applied in many areas of science and engineering, where there can be significant overlap across disciplines.  <strong>If something changes in time, there’s a disipline dedicated to understanding how and why it changes.</strong></p>
+<p>Physics, which derives from the Greek word for “nature,” is the science concerned with describing the fundamental interactions of energy, matter, space, and time. It seeks to understand the world at its most basic level by using a small number of quantitative laws.</p>
+<p>This approach reveals deep connections between seemingly unrelated topics, such as how the law of conservation of energy applies to both a car battery and a bag of chips. By focusing on these underlying laws, the study of physics provides a <strong>framework for understanding</strong> that goes <em>beyond memorization</em> and helps <em>develop strong analytical and problem-solving skills.</em></p>
+</section>
+<section id="the-scope-of-physics">
+<h3><span class="section-number">1.1.2. </span>The Scope of Physics<a class="headerlink" href="#the-scope-of-physics" title="Link to this heading">#</a></h3>
+<section id="in-the-universe">
+<h4><span class="section-number">1.1.2.1. </span>In the Universe<a class="headerlink" href="#in-the-universe" title="Link to this heading">#</a></h4>
+<p>The universe contains trillions of galaxies, which are megastructures compared to our own Solar System.  <em>How can we comprehend how big they are? Or how they operate?</em></p>
+<figure class="align-default" id="whirlpool-galaxy-fig">
+<img alt="Whirlpool Galaxy (M51)" src="https://cdn.esawebb.org/archives/images/screen/potm2308a.jpg" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.1 </span><span class="caption-text">The <strong>Whirlpool Galaxy (M51)</strong>, observed by the <em>James Webb Space Telescope</em>, showing detailed spiral arms, dust lanes, and regions of active star formation. Astronomical images like this are constructed from measurements of light collected across multiple wavelengths and scales, illustrating how physical quantities and units underpin observational astronomy. Image Credit: NASA / ESA / CSA / STScI.</span><a class="headerlink" href="#whirlpool-galaxy-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The Whirlpool Galaxy (or <a class="reference external" href="https://en.wikipedia.org/wiki/Whirlpool_Galaxy">M51</a>) lies 31 million lightyears away from us.  This is an astoundingly large distance. We can use this as a starting point to raise the question about how we put this into perspective.</p>
+<ul class="simple">
+<li><p><strong>Think of the distances to various places.</strong></p></li>
+</ul>
+<p>The distance across the USA is about <span class="math notranslate nohighlight">\(4500\ {\rm km}\)</span> from east to west.  This seems like a long way, but the distance from the Earth to the Sun (or <strong>astronomical unit</strong>; AU) is about <span class="math notranslate nohighlight">\(149,000,000\ {\rm km}\)</span> or <span class="math notranslate nohighlight">\({\sim}33,000\times\)</span> more distant.  Light is incredibly fast and can travel 1 AU in only <span class="math notranslate nohighlight">\(8.3\ {\rm min}\)</span>.</p>
+<p><em>How far can light travel in a year?</em></p>
+<p>Instead of thinking in kilometers, it is simpler to instead describe this distance in AU, or how many Earth-Sun distances make up this proposed distance.  We have to give this distance a name, thus we call it a <a class="reference external" href="https://en.wikipedia.org/wiki/Light-year">lightyear</a>, or the distance that light travels in a year.  Let’s start with what we know so far (i.e., light travels 1 AU in 8.3 min):</p>
+<div class="amsmath math notranslate nohighlight" id="equation-e3e005ca-80cf-4863-8244-321752135ae2">
+<span class="eqno">(1.1)<a class="headerlink" href="#equation-e3e005ca-80cf-4863-8244-321752135ae2" title="Permalink to this equation">#</a></span>\[\begin{align}
+\frac{1\ {\rm AU}}{8.3\ {\rm min}} &amp;= 0.12\ {\rm AU/min}.
+\end{align}\]</div>
+<p>Therefore, light travels at a speed of about <span class="math notranslate nohighlight">\(0.12\ {\rm AU/min}\)</span>.  Now, we can work our way through if we can somehow translate this speed into a distance.  For this we can use some other knowledge, for example:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-182d7c0b-0a9f-4dd8-8d3c-126d72812a7c">
+<span class="eqno">(1.2)<a class="headerlink" href="#equation-182d7c0b-0a9f-4dd8-8d3c-126d72812a7c" title="Permalink to this equation">#</a></span>\[\begin{align}
+1\ {\rm h} &amp;= 60\ {\rm min}, \\
+1\ {\rm day} &amp;= 24\ {\rm h}, \\
+1\ {\rm yr} &amp;= 365.25\ {\rm days}.
+\end{align}\]</div>
+<p>These are the conversion factors that we need to start unpacking the speed of light and to determine how far it can travel in a year.  We can use a technique called <a class="reference external" href="https://en.wikipedia.org/wiki/Dimensional_analysis"><strong>dimensional analysis</strong></a> to combine these factors to acheive our goal.</p>
+<ul class="simple">
+<li><p>To understand the distance <span class="math notranslate nohighlight">\(d\)</span> in a lightyear, we need to convert its speed <span class="math notranslate nohighlight">\(s\)</span> using different timescales <span class="math notranslate nohighlight">\(t\)</span> that make up a year.</p></li>
+</ul>
+<div class="amsmath math notranslate nohighlight" id="equation-5b402b33-71f0-4e15-a68b-02c08025f75f">
+<span class="eqno">(1.3)<a class="headerlink" href="#equation-5b402b33-71f0-4e15-a68b-02c08025f75f" title="Permalink to this equation">#</a></span>\[\begin{align}
+s &amp;= \frac{d}{t}, \\
+d &amp;= s \times t= st
+\end{align}\]</div>
+<p>Let’s begin with some analytical calculations, which we’ll followup with a verification using <code class="docutils literal notranslate"><span class="pre">python</span></code>.  We just need to use our known speed of light and multiply by different time conversion factors to determin the number of <span class="math notranslate nohighlight">\(\rm AU/yr\)</span>, or</p>
+<div class="amsmath math notranslate nohighlight" id="equation-2dc90778-4ce5-4abf-9706-472c081a3a67">
+<span class="eqno">(1.4)<a class="headerlink" href="#equation-2dc90778-4ce5-4abf-9706-472c081a3a67" title="Permalink to this equation">#</a></span>\[\begin{align}
+s &amp;= \frac{0.12\ {\rm AU}}{\rm min} \times \frac{60\ {\rm min}}{1\ {\rm h}} \times \frac{24\ {\rm h}}{1\ {\rm day}} \times \frac{365.25\ {\rm days}}{1\ {\rm yr}}, \\
+&amp;= 63,000\ \frac{\rm AU}{\rm yr}.
+\end{align}\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can express math terms more easily using <code class="docutils literal notranslate"><span class="pre">math</span> <span class="pre">mode</span></code> in a Markdown (or text) cell of your Jupyter notebook.  The math mode uses <a class="reference external" href="https://pages.uoregon.edu/torrence/391/labs/LaTeX-cheat-sheet.pdf">LaTeX</a> commands that are entered programmatically and rendered once you escape a cell.  For example, the area of a circle is <code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">=</span> <span class="pre">\pi</span> <span class="pre">r^2</span></code> is rendered as <span class="math notranslate nohighlight">\(A = \pi r^2\)</span>.</p>
+<p>You can express multi-line equations using the <code class="docutils literal notranslate"><span class="pre">\begin{align}</span> <span class="pre">\end{align}</span></code> environment, where each line is aligned using the <code class="docutils literal notranslate"><span class="pre">&amp;</span></code> symbol.  Open this page in Google Colab and view the source for more examples.</p>
+</div>
+<p>Here’s an example of the calculation using <code class="docutils literal notranslate"><span class="pre">python</span></code>, where you should note the comments so that it is undestandable by <strong>future-you</strong>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> <span class="c1">#import statement to use numpy functions</span>
+
+<span class="n">s</span> <span class="o">=</span> <span class="mf">0.12</span> <span class="c1">#speed of light in AU/min</span>
+<span class="n">min2hr</span> <span class="o">=</span> <span class="mi">60</span> <span class="c1">#number of minutes in an hour</span>
+<span class="n">hr2day</span> <span class="o">=</span> <span class="mi">24</span> <span class="c1">#number of hours in a day</span>
+<span class="n">day2yr</span> <span class="o">=</span> <span class="mf">365.25</span> <span class="c1">#number of days in a year</span>
+
+<span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="o">*</span><span class="n">min2hr</span><span class="o">*</span><span class="n">hr2day</span><span class="o">*</span><span class="n">day2yr</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The speed of light is </span><span class="si">%4.0f</span><span class="s2"> AU/yr.&quot;</span> <span class="o">%</span><span class="k">s</span>)
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-------&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Note this is not accurately describing our calculation.  We are limited by the precision of s.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-------&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The speed of light is </span><span class="si">%4.0f</span><span class="s2"> AU/yr.&quot;</span> <span class="o">%</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The speed of light is 63115 AU/yr.
+-------
+Note this is not accurately describing our calculation.  We are limited by the precision of s.
+-------
+The speed of light is 63000 AU/yr.
+</pre></div>
+</div>
+</div>
+</div>
+<p>We’ve found that the speed of light is about <span class="math notranslate nohighlight">\(63,000\ {\rm AU/yr}\)</span>.  Now we can determine the distance in a lightyear, which is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+d &amp;= st, \\
+&amp;= \left(\frac{63,000\ {\rm AU}}{1\ {\rm yr}}\right) \times 1\ {\rm yr}, \\
+&amp;= 63,000\ {\rm AU}.
+\end{align*}\]</div>
+<p>We have arrived at our goal, which is <span class="math notranslate nohighlight">\(1\ {\rm ly} = 63000\ {\rm AU}\)</span>.</p>
+<ul class="simple">
+<li><p><strong>Why do we want to know this?</strong></p></li>
+</ul>
+<p>It shows us that a lightyear is really big, or <span class="math notranslate nohighlight">\(63,000\times\)</span> the distance from the Earth to the Sun.  Then, it shows that the distance to M51 is even bigger, meaning that it is 31 million times farther away than something that is only 1 lightyear away.</p>
+<p>Moreover, M51 is composed of billions of stars where these stars interact in a complex way that we can actually understand (to some degree).  For now, we posit that the force holding the galaxies together is the same as the one holding you onto the Earth.</p>
+</section>
+<section id="on-the-earth">
+<h4><span class="section-number">1.1.2.2. </span>On the Earth<a class="headerlink" href="#on-the-earth" title="Link to this heading">#</a></h4>
+<p>Humans have been remarkable at creating new gadgets and tools.  This process is marked by our ability to identify and manipulate certain materials so that we can bend them to our own purposes.  This knowledge stems from physics, where our current technological prowess has produced a way for you to acquire the sum of all knowledge and carry it with you in your pocket.</p>
+<div class="video_wrapper align-center" style="text-align: center">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/fCS8jGc3log" style="border: 0; height: 345px; width: 560px">
+</iframe></div><p>A key innovation to producing your phone is the <a class="reference external" href="https://en.wikipedia.org/wiki/MOSFET">MOSFET</a> transistor and forms the basis of all modern electronics. Physics also underpins complex systems like GPS and continues to drive future technologies like levitating trains and microscopic medical robots. Furthermore, physics explains the function of everyday items, such as how a microwave oven works or why a black car radiator helps remove heat.</p>
+<p>Because physics is a foundational science, its principles are essential across a wide range of professions and scientific fields.</p>
+<ul class="simple">
+<li><p>Professionals such as pilots, engineers, physical therapists, and computer programmers apply physics concepts in their daily work.</p></li>
+<li><p>Physics is also a key element in other disciplines, including chemistry, architecture, and geology.</p></li>
+<li><p>It has critical applications in biology and medicine, explaining phenomena from the properties of cells to the mechanics of the human body, and enabling crucial diagnostic tools like MRIs, radiographs, and ultrasonic imaging.</p></li>
+</ul>
+</section>
+</section>
+<section id="the-scale-of-physics">
+<h3><span class="section-number">1.1.3. </span>The Scale of Physics<a class="headerlink" href="#the-scale-of-physics" title="Link to this heading">#</a></h3>
+<p>The laws of physics operates at all measurable scales of length mass, and time.  To think on such scales, scientists use the concept of “<a class="reference external" href="https://en.wikipedia.org/wiki/Order_of_magnitude">order of magnitude</a>” because it provides an approximation for that scale that guides our thinking or intuition.  The breadth of physics is not limited to the mechanics of the 19th century, but has been the fuel of progress for the last 150 years and is expected to contnue yieiding returns into the future with AI.</p>
+<blockquote class="epigraph">
+<div><p>The next wave [of AI] requires us to understand things like the laws of physics, friction, inertia, and cause and effect.</p>
+<p class="attribution">—Jensen Huang, Nvidia CEO</p>
+</div></blockquote>
+<section id="order-of-magnitude">
+<h4><span class="section-number">1.1.3.1. </span>Order of magnitude<a class="headerlink" href="#order-of-magnitude" title="Link to this heading">#</a></h4>
+<p>The <strong>order of magnitude</strong> desecribes a number to the closest power of <span class="math notranslate nohighlight">\(10\)</span>.  Thus, it refers directly to the scale (or size) of the value.  To find the order of magnitude, we have two options:</p>
+<ol class="arabic">
+<li><p>take the base-<span class="math notranslate nohighlight">\(10\)</span> logarithm of the number, then raise the whole number part to a power of <span class="math notranslate nohighlight">\(10\)</span>.  For example,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\log_{10}{250} &amp;= 2.40 \approx \mathbf{2} \rightarrow 10^\mathbf{2},\\
+\log_{10}{450} &amp;= 2.65 \approx \mathbf{3} \rightarrow 10^\mathbf{3}, \\
+\log_{10}{12345} &amp;= 4.09 \approx \mathbf{4} \rightarrow 10^\mathbf{4}.
+\end{align*}\]</div>
+</li>
+<li><p>write the number in scientific notation and then check to see whether the first factor is greater or less than <span class="math notranslate nohighlight">\(\sqrt{10} \approx 3\)</span>.  The <code class="docutils literal notranslate"><span class="pre">square</span> <span class="pre">root</span></code> can be expressed as a fractional power so that <span class="math notranslate nohighlight">\(\sqrt{10} = 10^{1/2}\)</span> so that we are estimating the halfway point between powers.  For example,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+250 &amp;= 2.5 \times 10^\mathbf{2}; \quad  2.5&lt;3 \rightarrow 10^\mathbf{2},\\
+450 &amp;= 4.5 \approx 10^2; \quad 4.5 &gt; 3 \rightarrow 10^\mathbf{2+1} = 10^{3}, \\
+12345 &amp;= 1.2345 \times 10^\mathbf{4}; \quad 1.2345 &lt; 3 \rightarrow 10^\mathbf{4}.
+\end{align*}\]</div>
+</li>
+</ol>
+<p>The order of magnitude is a <code class="docutils literal notranslate"><span class="pre">ballpark</span></code> estimate for the scale (or size) of its value, where it rounds the numbers consistently to the nearest power of 10 on a logarithmic scale.  This makes doing mental arithmetic easier when dealing with very small or large numbers.</p>
+<p>The diameter of the hydrogen atom is <span class="math notranslate nohighlight">\({\sim}10^{-15}\ {\rm m}\)</span>, whereas the diameter of the Milky Way Galaxy is <span class="math notranslate nohighlight">\({\sim}10^{21}\ {\rm m}\)</span>.  It would take <span class="math notranslate nohighlight">\(10^{21}/10^{-15} = 10^{36}\)</span> hydrogen atoms to strech across our Galaxy.  <em>It’s much easier to do in your head (or on the back of an envelope) if you can ignore the first factor in the more precise number.</em></p>
+</section>
+<section id="known-ranges-of-length-mass-and-time">
+<h4><span class="section-number">1.1.3.2. </span>Known ranges of length, mass, and time<a class="headerlink" href="#known-ranges-of-length-mass-and-time" title="Link to this heading">#</a></h4>
+<p>Figure <a class="reference internal" href="#mks-scales-fig"><span class="std std-numref">1.2</span></a> shows a wide range of examples of known lengths, masses, and times given by their order of magnitude.  Consider the following:</p>
+<ul class="simple">
+<li><p><em>How many protons are there in a bacterium?</em></p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[ 10^{-15}\ {\rm kg}/10^{-27}\ {\rm kg} = 10^{12}\ {\rm protons}.\]</div>
+<ul class="simple">
+<li><p>How many floating-point operations can a super computer do in a day?</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[ 10^{5}\ {\rm s}/10^{-17}\ {s} = 10^{22}\ \text{floating-point operations}. \]</div>
+<div class="note dropdown admonition">
+<p class="admonition-title">Formatting equations and units</p>
+<p>The above calculation uses <code class="docutils literal notranslate"><span class="pre">$$</span> <span class="pre">$$</span></code> as a shorthand environment that centers an equation without numbering it.  It requires a blank line before and after so that it renders properly.</p>
+<ul class="simple">
+<li><p>To add space between the value and unit, use <code class="docutils literal notranslate"><span class="pre">\␣</span></code> (backslash + space).</p></li>
+<li><p>To express the unit, place it in curly braces with <code class="docutils literal notranslate"><span class="pre">\rm␣</span></code>  preceding the unit (e.g. <code class="docutils literal notranslate"><span class="pre">{\rm</span> <span class="pre">kg}</span></code> renders as <span class="math notranslate nohighlight">\({\rm kg}\)</span>), or use the <code class="docutils literal notranslate"><span class="pre">\text{}</span></code> command (e.g. <code class="docutils literal notranslate"><span class="pre">\text{kg}</span></code> renders as <span class="math notranslate nohighlight">\(\text{kg}\)</span>).</p></li>
+<li><p>To express a superscript or subscript, use <code class="docutils literal notranslate"><span class="pre">^{}</span></code> or <code class="docutils literal notranslate"><span class="pre">_{}</span></code>, respectively, e.g. <code class="docutils literal notranslate"><span class="pre">10^{12}</span></code> renders as <span class="math notranslate nohighlight">\(10^{12}\)</span>.</p></li>
+</ul>
+<p>Equations are part of sentences, be sure to use the appropriate punctuation (i.e., <code class="docutils literal notranslate"><span class="pre">,</span></code> or ‘.’) to include them seamlessly.</p>
+</div>
+<figure class="align-default" id="mks-scales-fig">
+<img alt="mks scales" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/f8e04e9e91cc138ac5ae6c75cc336dad1f04d92d" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.2 </span><span class="caption-text">Image Credit: OpenStax.</span><a class="headerlink" href="#mks-scales-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="building-models">
+<h3><span class="section-number">1.1.4. </span>Building Models<a class="headerlink" href="#building-models" title="Link to this heading">#</a></h3>
+<p>The universe is very complicated, where it can be quite daunting to try understanding it fundamentally with every possible interaction included.  As a result, we make human statements of the underlying laws or rules that all natural processes follow.  <em>Such laws are intrinsic to the universe; humans did not create them and cannot change them.</em> We can only discover and understand them.</p>
+<section id="what-is-a-model">
+<h4><span class="section-number">1.1.4.1. </span><em>What is a model?</em><a class="headerlink" href="#what-is-a-model" title="Link to this heading">#</a></h4>
+<p>A <strong>model</strong> is a representation of something that is often too difficult to describe fully.  It is only accurate in describing certain aspects of a physical system.  Consider the follwing joke about <a class="reference external" href="https://en.wikipedia.org/wiki/Spherical_cow"><strong>spherical cows</strong></a>:</p>
+<blockquote class="epigraph">
+<div><p>Milk production at a dairy farm was low, so the farmer wrote to the local university, asking for help from academia. A multidisciplinary team of professors was assembled, headed by a theoretical physicist, and two weeks of intensive on-site investigation took place. The scholars then returned to the university, notebooks crammed with data, where the task of writing the report was left to the team leader. Shortly thereafter the physicist returned to the farm, saying to the farmer, “I have the solution, but it works only in the case of <strong>spherical cows in a vacuum</strong>.</p>
+</div></blockquote>
+<p>The inner workings of a cow or its complex shape are too difficult to describe with simple equations.  So the theoretical physicist makes a simplifying assumption that cow can be <em>modeled</em> as a sphere and air resistance can be neglected (i.e., in a vaccum).</p>
+<p>In the beginning stages of quantum mechanics, the <a class="reference external" href="https://en.wikipedia.org/wiki/Bohr_model"><strong>Bohr model</strong></a> of single-electron atoms provided a “good-enough” mental image to explain some of the observations that we can make (e.g., atomic spectra).</p>
+<div class="tip admonition">
+<p class="admonition-title">Interactive Simulation: Hydrogen Atom Models</p>
+<iframe
+  src="https://phet.colorado.edu/sims/html/models-of-the-hydrogen-atom/latest/models-of-the-hydrogen-atom_all.html"
+  width="100%"
+  height="600px"
+  style="border: none;"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+<p>Use this PHET simulation to explore classical, Bohr, and quantum models of the hydrogen atom. Adjust parameters and observe how predicted electron behavior differs between models.</p>
+<p>However other observations show that the model is “wrong”, but is still useful for some purposes.  Models are useful to help physicists analyze a scenario, perform a calculation, or investigate different situations via a computer simulation.  The results of these calculations and simulations <strong>always</strong> need to be double-checked by observation and/or experimentation.</p>
+</div>
+</section>
+<section id="theory-vs-law">
+<h4><span class="section-number">1.1.4.2. </span>Theory vs. law<a class="headerlink" href="#theory-vs-law" title="Link to this heading">#</a></h4>
+<p>The word <a class="reference external" href="https://en.wikipedia.org/wiki/Theory_(disambiguation)"><em>theory</em></a> can have a different meaning depending on the context, where the layman uses it interchangeably with “hypothesis”.  In particular, a <em>scientific theory</em> is not the same as a hypothesis, where it is instead:</p>
+<ul class="simple">
+<li><p>a <code class="docutils literal notranslate"><span class="pre">testable</span></code> explanation for patterns in nature <strong>supported by evidence</strong> and <strong>verified multiple times by independent researchers</strong>.</p></li>
+</ul>
+<p>Newton’s theory of gravity does not require a model or mental image because it describes objects or events directly available to our senses.  Quantum theory, on the other hand, does require a mental model or picture.</p>
+<p>A theory should describe all aspects of any system that falls within its applicable domain and any experimentally testable implication of a theory should be verified.</p>
+<p>A <strong>law</strong> uses concise language to describe a generalized pattern in nature <em>supported by scientific experiments and repeated experiments</em>.  Often a law is expressed by a mathematical equation.  Laws and theories are similar in that they both are scientific statements that result from a tested hyptothesis and are supproted by scientific evidence.</p>
+<p>The designation of <em>law</em> is usually reserved for a concise and <em>very</em> general statemetn that describes phenomena in nature (e.g., energy is conserved in any process or force is related to mass times acceleration, <span class="math notranslate nohighlight">\(\vec{F}=m\vec{a}\)</span>.)</p>
+<ul class="simple">
+<li><p>A theory is a less concise statement of observed behavior.  For example, the theory of evolution and theory of special relativity cannot be expressed concisely enough to be considered laws.</p></li>
+<li><p>A theory explains an entire group of phenomena, whereas a law describes a single action.</p></li>
+</ul>
+<p>Less broadly applicable statements are usually called principles (e.g., <a class="reference external" href="https://en.wikipedia.org/wiki/Pascal%27s_law">Pascal’s principle</a> is applicable to only fluids), but the distinction between laws and principles often is not carefully made.</p>
+<blockquote class="epigraph">
+<div><p>If it disagrees with experiment, it’s wrong.  In that simple statement is the key to science. It doesn’t make any difference how beautiful your guess is. It doesn’t make any difference how smart you are, who made the guess, or what his name is. If it disagrees with experiment,
+it’s wrong.</p>
+<p class="attribution">—Richard Feynman, Caltech Lectures</p>
+</div></blockquote>
+<div class="video_wrapper align-center" style="text-align: center">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/LIxvQMhttq4" style="border: 0; height: 345px; width: 560px">
+</iframe></div></section>
+</section>
+</section>
+<section id="units-and-standards">
+<h2><span class="section-number">1.2. </span>Units and Standards<a class="headerlink" href="#units-and-standards" title="Link to this heading">#</a></h2>
+<p>A <strong>physical quantity</strong> is defined by specifying how it is measured or how it is calculated from other measurements. For example,</p>
+<ul class="simple">
+<li><p>distance measured using a meter stick, or time measured with a stopwatch,</p></li>
+<li><p>average speed is the total distance traveled divided by the travel time.</p></li>
+</ul>
+<p>Measurements of physical quantities are expressed in terms of standardized units.  The <code class="docutils literal notranslate"><span class="pre">foot</span></code> was part of many local systems of units, but it was not standardized until 1959.  It varied in length from city to city and even from trade to trade.  Therefore, it’s important to have a standardized length (e.g., meter) so that international science or manufacturing can operate smoothly.</p>
+<p>Two major units are used in the world:</p>
+<ol class="arabic simple">
+<li><p><strong>SI units</strong> (for the French Système International d’Unités) or metric system, and</p></li>
+<li><p><strong>English units</strong> (i.e., the imperial system).</p></li>
+</ol>
+<p>The system of units are also referred to by just listing what the use for length-mass-time (e.g., foot-pound-second or meter-kilogram-second).  The metric system is agreed on by scientists and matematicians.  Engineers may use <em>SAE</em> (Society of Automotive Engineers) units that measure tools in fractions of an inch rather than millimeters.</p>
+<section id="si-units-base-and-derived-units">
+<h3><span class="section-number">1.2.1. </span>SI Units: Base and Derived Units<a class="headerlink" href="#si-units-base-and-derived-units" title="Link to this heading">#</a></h3>
+<p>The <strong>base quantities</strong> are measured using a system’s base units.  All other physical quantities are combinations of the base quantities, where each are known as a <strong>derived quantity</strong> with its own <strong>derived unit</strong>.  The derived units can only be as accurate and precise as the base units from which they are derived.</p>
+<p>There are <span class="math notranslate nohighlight">\(7\)</span> base units that makeup the international System of Quantities (ISQ).  <a class="reference internal" href="#base-quantities-table"><span class="std std-numref">Table 1.1</span></a> lists the units corresponding to the ISQ base quantities.</p>
+<div class="pst-scrollable-table-container"><table class="table table-left" id="base-quantities-table">
+<caption><span class="caption-number">Table 1.1 </span><span class="caption-text">ISQ Base Quantities, SI Units, and Common Imperial Equivalents</span><a class="headerlink" href="#base-quantities-table" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>ISQ Base Quantity</strong></p></th>
+<th class="head"><p><strong>SI Base Unit</strong></p></th>
+<th class="head"><p><strong>Common Imperial / U.S. Customary Unit</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Length</p></td>
+<td><p>meter (m)</p></td>
+<td><p>foot (ft)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Mass</p></td>
+<td><p>kilogram (kg)</p></td>
+<td><p>pound-mass (lbm)</p></td>
+</tr>
+<tr class="row-even"><td><p>Time</p></td>
+<td><p>second (s)</p></td>
+<td><p>second (s)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Electric current</p></td>
+<td><p>ampere (A)</p></td>
+<td><p>ampere (A)</p></td>
+</tr>
+<tr class="row-even"><td><p>Thermodynamic temperature</p></td>
+<td><p>kelvin (K)</p></td>
+<td><p>degree Fahrenheit (<span class="math notranslate nohighlight">\(^\circ\)</span>F)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Amount of substance</p></td>
+<td><p>mole (mol)</p></td>
+<td><p>— (no Imperial base unit)</p></td>
+</tr>
+<tr class="row-even"><td><p>Luminous intensity</p></td>
+<td><p>candela (cd)</p></td>
+<td><p>candlepower (cp, historical)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Examples of derived units are expressed as:</p>
+<ul class="simple">
+<li><p>area; <span class="math notranslate nohighlight">\(m^2\)</span>,</p></li>
+<li><p>volume; <span class="math notranslate nohighlight">\(m^3\)</span> or <span class="math notranslate nohighlight">\(cc = cm^3 = mL\)</span> (in fluids)</p></li>
+<li><p>speed; <span class="math notranslate nohighlight">\(m/s\)</span>,</p></li>
+<li><p>density; <span class="math notranslate nohighlight">\(kg/m^3\)</span>,</p></li>
+<li><p>electric charge; <span class="math notranslate nohighlight">\(A\cdot s\)</span>,</p></li>
+<li><p>energy; <span class="math notranslate nohighlight">\(eV\)</span> (electron-Volts).</p></li>
+</ul>
+</section>
+<section id="units-of-time-length-and-mass">
+<h3><span class="section-number">1.2.2. </span>Units of Time, Length, and Mass<a class="headerlink" href="#units-of-time-length-and-mass" title="Link to this heading">#</a></h3>
+<section id="the-second">
+<h4><span class="section-number">1.2.2.1. </span>The second<a class="headerlink" href="#the-second" title="Link to this heading">#</a></h4>
+<p>For many years the <a class="reference external" href="https://en.wikipedia.org/wiki/Second"><strong>second</strong></a> was defined as <span class="math notranslate nohighlight">\(1/86,400\)</span> of a mean solar day.  A new standard was introduced to define the second in terms of a nonvarying physical phenomenon because the lunar and solar tides cause the Earth’s rotation to slow over time.</p>
+<p>Cesium atoms can vibrate in a steady way, allowing them to be easily observeed and counted.  in 1967, the second was redefined as the time required for <span class="math notranslate nohighlight">\(9,192,631,770\)</span> of these vibrations to occur.  This level of precision is needed for global position satellites (GPSs) to give you turn-by-turn directions due to time dilation in relativity.</p>
+</section>
+<section id="the-meter">
+<h4><span class="section-number">1.2.2.2. </span>The meter<a class="headerlink" href="#the-meter" title="Link to this heading">#</a></h4>
+<p>The <a class="reference external" href="https://en.wikipedia.org/wiki/Metre"><strong>meter</strong></a> has changed its definition over time (like the second) to become more precise.</p>
+<ul class="simple">
+<li><p>The meter was first defined in 1791 as <span class="math notranslate nohighlight">\(1/10^7\)</span> of the distance from the equator to the North Pole.</p></li>
+<li><p>The measureement was improved in 1889 by redefining the meter as the distance between 2 engraved lines on a bar of <span class="math notranslate nohighlight">\(\rm Pt\text{-}Ir\)</span> (kept in Paris).</p></li>
+<li><p>In 1960, it was redined again as <span class="math notranslate nohighlight">\(1,650,763.73\)</span> wavelengths of light emitted by <span class="math notranslate nohighlight">\(\rm Kr\)</span> atoms.</p></li>
+<li><p>In 1983, the meter was given its current definition as the distance light travels (in a vacuum) in <span class="math notranslate nohighlight">\(1/2999,792,458\)</span> of a second (or <span class="math notranslate nohighlight">\(1/c\)</span>)</p></li>
+</ul>
+</section>
+<section id="the-kilogram">
+<h4><span class="section-number">1.2.2.3. </span>The kilogram<a class="headerlink" href="#the-kilogram" title="Link to this heading">#</a></h4>
+<p>The <a class="reference external" href="https://en.wikipedia.org/wiki/Kilogram"><strong>kilogram</strong></a> was defined from 1795-2018 as the mass of a platinum-iridium (<span class="math notranslate nohighlight">\(\rm Pt\text{-}Ir\)</span>) cylinder kept in Paris.  However, this cylinder has lost roughly <span class="math notranslate nohighlight">\(50\ {\rm \mu g}\)</span> since it was created.</p>
+<p>In May 2019, the new definition was based on physical constants of the universe (e.g., Planck constant).  The kilogram is now measured using a <a class="reference external" href="https://en.wikipedia.org/wiki/Kibble_balance">Kibble balance</a>, which measures an electrical current produced that is proportional to Planck’s constant.  Using the exact definition of the Plank constant, this means that the exact measurement of the current can define the kilogram.</p>
+<div class="video_wrapper align-center" style="text-align: center">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/c_e1wITe_ig" style="border: 0; height: 345px; width: 560px">
+</iframe></div></section>
+</section>
+<section id="metric-prefixes">
+<h3><span class="section-number">1.2.3. </span>Metric Prefixes<a class="headerlink" href="#metric-prefixes" title="Link to this heading">#</a></h3>
+<p>The “beauty” of the <strong>metric system</strong> is its convenience for categorizing units by factors of <span class="math notranslate nohighlight">\(10\)</span>.  <a class="reference internal" href="#metric-prefixes-table"><span class="std std-numref">Table 1.2</span></a> lists the metric prefixes and symbols used to denote various factors of <span class="math notranslate nohighlight">\(10\)</span> in SI units.  For example,</p>
+<ul class="simple">
+<li><p>a centimeter is <span class="math notranslate nohighlight">\(1/100\)</span> of a meter (<span class="math notranslate nohighlight">\(1\ {\rm cm}=10^{-2}\ {\rm m}\)</span>),</p></li>
+<li><p>a kilometer is <span class="math notranslate nohighlight">\(1000\)</span> meters (<span class="math notranslate nohighlight">\(1\ {\rm km} = 10^3\ {\rm m}\)</span>),</p></li>
+<li><p>a nanosecond is 1/billionth of a second (<span class="math notranslate nohighlight">\(1\ {\rm ns} = 10^{-9}\ {\rm s}\)</span>).</p></li>
+</ul>
+<div class="pst-scrollable-table-container"><table class="table table-left" id="metric-prefixes-table">
+<caption><span class="caption-number">Table 1.2 </span><span class="caption-text">Metric Prefixes for Powers of Ten and Their Symbols</span><a class="headerlink" href="#metric-prefixes-table" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Prefix</strong></p></th>
+<th class="head"><p><strong>Symbol</strong></p></th>
+<th class="head"><p><strong>Meaning</strong></p></th>
+<th class="head"><p><strong>Prefix</strong></p></th>
+<th class="head"><p><strong>Symbol</strong></p></th>
+<th class="head"><p><strong>Meaning</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>yotta-</p></td>
+<td><p>Y</p></td>
+<td><p><span class="math notranslate nohighlight">\(10^{24}\)</span></p></td>
+<td><p>yocto-</p></td>
+<td><p>y</p></td>
+<td><p><span class="math notranslate nohighlight">\(10^{-24}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>zetta-</p></td>
+<td><p>Z</p></td>
+<td><p><span class="math notranslate nohighlight">\(10^{21}\)</span></p></td>
+<td><p>zepto-</p></td>
+<td><p>z</p></td>
+<td><p><span class="math notranslate nohighlight">\(10^{-21}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>exa-</p></td>
+<td><p>E</p></td>
+<td><p><span class="math notranslate nohighlight">\(10^{18}\)</span></p></td>
+<td><p>atto-</p></td>
+<td><p>a</p></td>
+<td><p><span class="math notranslate nohighlight">\(10^{-18}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>peta-</p></td>
+<td><p>P</p></td>
+<td><p><span class="math notranslate nohighlight">\(10^{15}\)</span></p></td>
+<td><p>femto-</p></td>
+<td><p>f</p></td>
+<td><p><span class="math notranslate nohighlight">\(10^{-15}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>tera-</p></td>
+<td><p>T</p></td>
+<td><p><span class="math notranslate nohighlight">\(10^{12}\)</span></p></td>
+<td><p>pico-</p></td>
+<td><p>p</p></td>
+<td><p><span class="math notranslate nohighlight">\(10^{-12}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>giga-</p></td>
+<td><p>G</p></td>
+<td><p><span class="math notranslate nohighlight">\(10^{9}\)</span></p></td>
+<td><p>nano-</p></td>
+<td><p>n</p></td>
+<td><p><span class="math notranslate nohighlight">\(10^{-9}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>mega-</p></td>
+<td><p>M</p></td>
+<td><p><span class="math notranslate nohighlight">\(10^{6}\)</span></p></td>
+<td><p>micro-</p></td>
+<td><p><span class="math notranslate nohighlight">\(\mu\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(10^{-6}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>kilo-</p></td>
+<td><p>k</p></td>
+<td><p><span class="math notranslate nohighlight">\(10^{3}\)</span></p></td>
+<td><p>milli-</p></td>
+<td><p>m</p></td>
+<td><p><span class="math notranslate nohighlight">\(10^{-3}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>hecto-</p></td>
+<td><p>h</p></td>
+<td><p><span class="math notranslate nohighlight">\(10^{2}\)</span></p></td>
+<td><p>centi-</p></td>
+<td><p>c</p></td>
+<td><p><span class="math notranslate nohighlight">\(10^{-2}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>deka-</p></td>
+<td><p>da</p></td>
+<td><p><span class="math notranslate nohighlight">\(10^{1}\)</span></p></td>
+<td><p>deci-</p></td>
+<td><p>d</p></td>
+<td><p><span class="math notranslate nohighlight">\(10^{-1}\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The only rule when using the metric prefixes is that you <strong>cannot</strong> “double them up”.  For example, it is improper to talk about megagigameters, although <span class="math notranslate nohighlight">\(10^6 \times 10^9 = 10^{15}\)</span> (<span class="math notranslate nohighlight">\(1\ {\rm Pm} = 10^{15}\ {\rm m}\)</span>).</p>
+</section>
+<section id="example-problem-metric-prefixes">
+<h3><span class="section-number">1.2.4. </span><strong>Example Problem</strong>: Metric Prefixes<a class="headerlink" href="#example-problem-metric-prefixes" title="Link to this heading">#</a></h3>
+<div class="exercise etamu-exercise admonition" id="Chapter01/units-and-measurement-exercise-0">
+
+<p class="admonition-title"><span class="caption-number">Exercise 1.1 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>Restate the mass <span class="math notranslate nohighlight">\(1.93 \times 10^{13}\ \text{kg}\)</span> using a metric prefix such that the resulting numerical value is bigger than one but less than 1000.</p>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>We treat mass as a scalar physical quantity expressed as a numerical value multiplied by a unit. Metric prefixes encode powers of ten and may not be combined or “stacked.” Therefore, the mass must first be rewritten using explicit powers of ten before introducing a single appropriate prefix.</p>
+<p>Our goal is to select a metric prefix that produces a numerical value between 1 and 1000 while representing the same physical mass.</p>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>The prefix <em>kilo-</em> corresponds to a factor of <span class="math notranslate nohighlight">\(10^{3}\)</span>. Rewriting the mass in grams gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+1.93 \times 10^{13}\ \text{kg}
+&amp;= \frac{1.93 \times 10^{13}\ {\rm kg}}{1} \times \frac{10^{3}\ \text{g}}{1\ {\rm kg}} \\
+&amp;= 1.93 \times 10^{16}\ \text{g}.
+\end{align*}\]</div>
+<p>From <a class="reference internal" href="#metric-prefixes-table"><span class="std std-numref">Table 1.2</span></a>, the power <span class="math notranslate nohighlight">\(10^{16}\)</span> lies between</p>
+<ul class="simple">
+<li><p><em>peta-</em> (<span class="math notranslate nohighlight">\(10^{15}\)</span>), and</p></li>
+<li><p><em>exa-</em> (<span class="math notranslate nohighlight">\(10^{18}\)</span>).</p></li>
+</ul>
+<p>If we factor out <span class="math notranslate nohighlight">\(10^{15}\)</span>, we obtain</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+1.93 \times 10^{16}\ \text{g}
+&amp;= 1.93 \times 10^{1}\ \text{Pg}
+= 19.3\ \text{Pg}.
+\end{align*}\]</div>
+<p>Alternatively, factoring out <span class="math notranslate nohighlight">\(10^{18}\)</span> gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+1.93 \times 10^{16}\ \text{g}
+&amp;= 1.93 \times 10^{-2}\ \text{Eg},
+\end{align*}\]</div>
+<p>which produces a numerical value less than one and therefore does not satisfy the requirement of the problem.</p>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>The mass expressed using a single metric prefix with a numerical value between 1 and 1000 is</p>
+<div class="math notranslate nohighlight">
+\[ \boxed{1.93 \times 10^{13}\ \text{kg} = 19.3\ \text{Pg}}.\]</div>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>We can verify this conversion numerically by explicitly tracking the powers of ten using Python (see below).</p>
+<p>This output confirms that <span class="math notranslate nohighlight">\(1.93 \times 10^{13}\ \text{kg} = 19.3\ \text{Pg}\)</span>, matching the analytical result.
+Comparing powers of ten also shows consistency: (13 + 3 = 1 + 15 = 16).</p>
+<p>For additional physical context, the scale of this mass can be compared to common mass benchmarks shown in Figure {numref}{number}<mks-scales-fig>.</p>
+</section>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Given mass in kilograms</span>
+<span class="n">mass_kg</span> <span class="o">=</span> <span class="mf">1.93e13</span>
+
+<span class="c1"># Convert kilograms to grams</span>
+<span class="n">mass_g</span> <span class="o">=</span> <span class="n">mass_kg</span> <span class="o">*</span> <span class="mf">1e3</span>
+
+<span class="c1"># Convert grams to petagrams (1 Pg = 1e15 g)</span>
+<span class="n">mass_pg</span> <span class="o">=</span> <span class="n">mass_g</span> <span class="o">/</span> <span class="mf">1e15</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Mass in grams: </span><span class="si">{</span><span class="n">mass_g</span><span class="si">:</span><span class="s2">.2e</span><span class="si">}</span><span class="s2"> g&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Mass in petagrams: </span><span class="si">{</span><span class="n">mass_pg</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> Pg&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Mass in grams: 1.93e+16 g
+Mass in petagrams: 19.3 Pg
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="unit-conversion">
+<h2><span class="section-number">1.3. </span>Unit Conversion<a class="headerlink" href="#unit-conversion" title="Link to this heading">#</a></h2>
+<p>It is often necessary to convert from one unit to another (as you’ve already seen).  If you are reading a cookbook, some quantities may be expressed in milliliters and you need to convert them to cups.</p>
+<p>Suppose we want to convert <span class="math notranslate nohighlight">\(80\ {\rm m}\)</span> to kilometers.</p>
+<ol class="arabic simple">
+<li><p>Start with the input value you want to convert as a fraction (i.e., itself over one).</p></li>
+<li><p>Determine the conversion factor necessary.  A <strong>conversion factor</strong> is a ratio that describes how much of one unit is equal to another.</p></li>
+<li><p>Mulitply by the ratio so that unit from the input value cancels (i.e., <span class="math notranslate nohighlight">\(\rm unit/unit = 1\)</span>).</p></li>
+</ol>
+<p>Using thes steps, we have:</p>
+<div class="math notranslate nohighlight">
+\[ \frac{80\ {\rm m}}{1} \times \frac{1\ {\rm km}}{10^3\ {\rm m}} = 0.08\ {\rm km}. \]</div>
+<p>Note that the unwanted <span class="math notranslate nohighlight">\(\rm m\)</span> cancels, leaving only the desired <span class="math notranslate nohighlight">\(\rm km\)</span> unit.</p>
+<div class="dropdown admonition">
+<p class="admonition-title">Using scipy.constants for Units and Conversions</p>
+<p>The Python library <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/constants.html"><strong><code class="docutils literal notranslate"><span class="pre">scipy.constants</span></code></strong></a> provides a standardized collection of physical constants and unit conversion factors expressed in <strong>SI units</strong>. This can be a useful tool for checking calculations and avoiding arithmetic mistakes, especially when working with very large or very small numbers.</p>
+<p>For example, the speed of light is stored internally in meters per second:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">constants</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">constants</span><span class="o">.</span><span class="n">c</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>which returns</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>299792458.0
+</pre></div>
+</div>
+<p>corresponding to</p>
+<div class="math notranslate nohighlight">
+\[ c = 2.99792458 \times 10^{8}\ \text{m/s}. \]</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">constants</span></code> module also includes common metric prefixes and conversion factors:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">constants</span><span class="o">.</span><span class="n">kilo</span><span class="p">)</span>   <span class="c1"># 10^3</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">constants</span><span class="o">.</span><span class="n">milli</span><span class="p">)</span>  <span class="c1"># 10^-3</span>
+</pre></div>
+</div>
+<p>These values can be used to <em>verify</em> unit conversions performed by hand. For example, converting kilograms to grams numerically:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mass_kg</span> <span class="o">=</span> <span class="mf">2.5</span>
+<span class="n">mass_g</span> <span class="o">=</span> <span class="n">mass_kg</span> <span class="o">*</span> <span class="n">constants</span><span class="o">.</span><span class="n">kilo</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mass_g</span><span class="p">)</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<p><strong>Important guidance for this course</strong></p>
+<ul class="simple">
+<li><p>On exams, you will be provided with a <strong>unit lookup table</strong>, not Python code.</p></li>
+<li><p>You are still responsible for knowing <strong>how to convert units correctly</strong> and for keeping track of powers of ten.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">scipy.constants</span></code> should be used as a <strong>verification tool</strong>, not as a substitute for understanding units and dimensional analysis.</p></li>
+</ul>
+<p>A good workflow is:</p>
+<ol class="arabic simple">
+<li><p>Perform the unit conversion analytically.</p></li>
+<li><p>Use Python (and <code class="docutils literal notranslate"><span class="pre">scipy.constants</span></code>) to confirm the numerical result.</p></li>
+</ol>
+<p>This approach reinforces both <strong>physical reasoning</strong> and <strong>computational fluency</strong>, which will be important throughout the course.</p>
+</div>
+<section id="example-problem-converting-iron-s-density">
+<h3><span class="section-number">1.3.1. </span><strong>Example Problem</strong>: Converting iron’s density<a class="headerlink" href="#example-problem-converting-iron-s-density" title="Link to this heading">#</a></h3>
+<div class="exercise etamu-exercise admonition" id="Chapter01/units-and-measurement-exercise-1">
+
+<p class="admonition-title"><span class="caption-number">Exercise 1.2 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>The density of iron is <span class="math notranslate nohighlight">\(7.86\ \text{g/cm}^3\)</span> under standard conditions. Convert this to <span class="math notranslate nohighlight">\(\text{kg/m}^3\)</span>.</p>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>Density is a scalar quantity defined as mass per unit volume. To convert between unit systems, we multiply by conversion factors equal to one, chosen so that unwanted units cancel and desired units remain.</p>
+<p>In this problem, we must:</p>
+<ul class="simple">
+<li><p>convert grams to kilograms, and</p></li>
+<li><p>convert cubic centimeters to cubic meters.</p></li>
+</ul>
+<p>Because volume scales with the cube of length, the length conversion factor must be applied three times.</p>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>The required conversion factors are</p>
+<div class="math notranslate nohighlight">
+\[1\ \text{kg} = 10^{3}\ \text{g}, \qquad 1\ \text{cm} = 10^{-2}\ \text{m}. \]</div>
+<p>Starting from the given density, <span class="math notranslate nohighlight">\(7.86\ \frac{\text{g}}{\text{cm}^3}\)</span>, we apply the conversion factors:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+7.86\ \frac{\text{g}}{\text{cm}^3}
+&amp;= 7.86\ \frac{\text{g}}{\text{cm}^3} \times \left(\frac{1\ \text{kg}}{10^{3}\ \text{g}}\right) \times \left(\frac{1\ \text{cm}}{10^{-2}\ \text{m}}\right)^3 \\
+&amp;= \frac{7.86}{(10^{3})(10^{-6})}\ \frac{\text{kg}}{\text{m}^3} \\
+&amp;= 7.86 \times 10^{3}\ \frac{\text{kg}}{\text{m}^3}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>The density of iron expressed in SI units is</p>
+<div class="math notranslate nohighlight">
+\[ \boxed{7.86\ \text{g/cm}^3 = 7.86 \times 10^{3}\ \text{kg/m}^3}. \]</div>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>We can verify this result numerically by performing the same unit conversions in Python.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Given density in g/cm^3</span>
+<span class="n">rho_g_cm3</span> <span class="o">=</span> <span class="mf">7.86</span>
+
+<span class="c1"># Conversion factors</span>
+<span class="n">g_to_kg</span> <span class="o">=</span> <span class="mf">1e-3</span>        <span class="c1"># kg per g</span>
+<span class="n">cm_to_m</span> <span class="o">=</span> <span class="mf">1e-2</span>        <span class="c1"># m per cm</span>
+
+<span class="c1"># Convert to kg/m^3</span>
+<span class="n">rho_kg_m3</span> <span class="o">=</span> <span class="n">rho_g_cm3</span> <span class="o">*</span> <span class="n">g_to_kg</span> <span class="o">/</span> <span class="p">(</span><span class="n">cm_to_m</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Density = </span><span class="si">{</span><span class="n">rho_kg_m3</span><span class="si">:</span><span class="s2">.2e</span><span class="si">}</span><span class="s2"> kg/m^3&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This calculation gives <span class="math notranslate nohighlight">\(7.86 \times 10^{3}\ \text{kg/m}^3\)</span>, which matches the analytical result.
+Both the numerical value and the final units are consistent with the desired SI expression.</p>
+</section>
+</div>
+</section>
+</section>
+<section id="dimensional-analysis">
+<h2><span class="section-number">1.4. </span>Dimensional Analysis<a class="headerlink" href="#dimensional-analysis" title="Link to this heading">#</a></h2>
+<p>The <strong>dimension</strong> of any physical quantity expresses its dependence on the base quantities as: (1) a product of symbols or (2) powers of symbols representing the base quantities. <a class="reference internal" href="#dimensions-table"><span class="std std-numref">Table 1.3</span></a> lists the base quantities and the symbols used for their dimension.</p>
+<p>Like units, dimensions obey the rules of algebra.  For example,</p>
+<ul class="simple">
+<li><p>area has dimension <span class="math notranslate nohighlight">\(L^2\)</span>,</p></li>
+<li><p>volume has dimesion <span class="math notranslate nohighlight">\(L^3\)</span>,</p></li>
+<li><p>speed has dimension <span class="math notranslate nohighlight">\(L/T\)</span> or <span class="math notranslate nohighlight">\(LT^{-1}\)</span>.</p></li>
+</ul>
+<div class="pst-scrollable-table-container"><table class="table table-left" id="dimensions-table">
+<caption><span class="caption-number">Table 1.3 </span><span class="caption-text">Base Quantities and Their Dimensions</span><a class="headerlink" href="#dimensions-table" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 70.0%" />
+<col style="width: 30.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Base Quantity</strong></p></th>
+<th class="head"><p><strong>Symbol for Dimension</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Length</p></td>
+<td><p><span class="math notranslate nohighlight">\(L\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Mass</p></td>
+<td><p><span class="math notranslate nohighlight">\(M\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Time</p></td>
+<td><p><span class="math notranslate nohighlight">\(T\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Electric current</p></td>
+<td><p><span class="math notranslate nohighlight">\(I\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Thermodynamic temperature</p></td>
+<td><p><span class="math notranslate nohighlight">\(\Theta\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Amount of substance</p></td>
+<td><p><span class="math notranslate nohighlight">\(N\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Luminous intensity</p></td>
+<td><p><span class="math notranslate nohighlight">\(J\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Physicists often use square brackets around the symbol for a physical quantity to represent the dimensions of that quantity.  For example, if <span class="math notranslate nohighlight">\(r\)</span> is the radius of a cyliinder and <span class="math notranslate nohighlight">\(h\)</span> is its height, then we write <span class="math notranslate nohighlight">\([r] = L\)</span> and <span class="math notranslate nohighlight">\([h] = L\)</span> to indicate the dimensions of the radius and height, respectively.</p>
+<p>The importance of dimension “bookkeeping” arises from that mathematical equations must be <strong>dimensionally consistent</strong> when relating physical quantities (i.e., apples-to-apples).  The equation must obey these rules:</p>
+<ul class="simple">
+<li><p>Every term in an expresion must have the same dimensions; “You can’t add apples to oranges”.  The expressions on each side of an equation must have the same dimensions.</p></li>
+<li><p>The arguments of any standard mathematical function (e.g., trigonometric functions like sine or cosine), logarithms, or exponential functions must be <strong>dimensionless</strong> (i.e. all dimensions cancel).  These functions require pure numbers as inputs and give pure numbers as output.</p></li>
+</ul>
+<p>If either of these rules are violated, this should be a <code class="docutils literal notranslate"><span class="pre">red</span> <span class="pre">flag</span></code> and can be used to help identify that there is a mistake in your calculation.</p>
+<section id="example-problem-checking-formulas">
+<h3><span class="section-number">1.4.1. </span><strong>Example Problem</strong> Checking Formulas<a class="headerlink" href="#example-problem-checking-formulas" title="Link to this heading">#</a></h3>
+<div class="exercise etamu-exercise admonition" id="Chapter01/units-and-measurement-exercise-2">
+
+<p class="admonition-title"><span class="caption-number">Exercise 1.3 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>Suppose we need the formula for the area of a circle for some computation. Two expressions may come to mind: <span class="math notranslate nohighlight">\(\pi r^{2}\)</span> and <span class="math notranslate nohighlight">\(2\pi r\)</span>. One expression is the circumference of a circle of radius <span class="math notranslate nohighlight">\(r\)</span> and the other is its area. Which expression gives the area of a circle?</p>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>Area is a physical quantity with dimensions of length squared. Any correct expression for the area of a circle must therefore have overall dimension <span class="math notranslate nohighlight">\(L^{2}\)</span>.</p>
+<p>We treat <span class="math notranslate nohighlight">\(\pi\)</span> and numerical constants as dimensionless, and we treat the radius <span class="math notranslate nohighlight">\(r\)</span> as a quantity with dimension of length.</p>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>The dimension of area is</p>
+<div class="math notranslate nohighlight">
+\[ [A] = L^{2}.\]</div>
+<p>First consider the expression <span class="math notranslate nohighlight">\(\pi r^{2}\)</span>. Its dimension is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+[\pi r^{2}] &amp;= [\pi]\, [r]^{2} \\
+&amp;= 1 \cdot L^{2} \\
+&amp;= L^{2}.
+\end{align*}\]</div>
+<p>Thus, <span class="math notranslate nohighlight">\(\pi r^{2}\)</span> has the correct dimensions to represent an area.</p>
+<p>Now consider the expression <span class="math notranslate nohighlight">\(2\pi r\)</span>. Its dimension is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+[2\pi r] &amp;= [2]\, [\pi]\, [r] \\
+&amp;= 1 \cdot 1 \cdot L \\
+&amp;= L.
+\end{align*}\]</div>
+<p>This expression has the dimension of length, not area.</p>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>Only the expression <span class="math notranslate nohighlight">\(\pi r^{2}\)</span> is dimensionally consistent with representing an area. Therefore, the area of a circle must be given by</p>
+<div class="math notranslate nohighlight">
+\[ \boxed{A = \pi r^{2}}. \]</div>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>Dimensional analysis provides a quick consistency check when recalling or deriving equations. Because area must scale as length squared, any expression proportional to (r) alone can be ruled out immediately.</p>
+<p>While dimensional analysis cannot determine numerical factors or distinguish between expressions that share the same dimensions, it is a powerful tool for identifying the correct <em>form</em> of an equation when memory is uncertain.</p>
+</section>
+</div>
+</section>
+</section>
+<section id="significant-figures">
+<h2><span class="section-number">1.5. </span>Significant Figures<a class="headerlink" href="#significant-figures" title="Link to this heading">#</a></h2>
+<section id="accuracy-and-precision">
+<h3><span class="section-number">1.5.1. </span>Accuracy and Precision<a class="headerlink" href="#accuracy-and-precision" title="Link to this heading">#</a></h3>
+<p>Science is based on measurements, which are characterized by <strong>accuracy</strong> and <strong>precision</strong>.</p>
+<ul class="simple">
+<li><p>Accuracy is how close a measurement is to the <em>accepted reference value.</em></p></li>
+</ul>
+<p>For example, standard letter-sized paper is 8.5 in. wide and 11 in. long.  We then measure the length of the paper <span class="math notranslate nohighlight">\(3\times\)</span> and obtain the following measurements:</p>
+<ul class="simple">
+<li><p>measurement 1: <span class="math notranslate nohighlight">\(11.1\ {\rm in.}\)</span>,</p></li>
+<li><p>measurement 2: <span class="math notranslate nohighlight">\(11.2\ {\rm in.}\)</span>,</p></li>
+<li><p>measurement 3: <span class="math notranslate nohighlight">\(10.9\ {\rm in.}\)</span>.</p></li>
+</ul>
+<p>These measuremetns are quite accurate because they are very close to the reference value of <span class="math notranslate nohighlight">\(l_{\rm ref} = 11.0\ {\rm in.}\)</span> (i.e., the deviation from the reference value is small).  If we had obtained a measurement of <span class="math notranslate nohighlight">\(12\ {\rm in.}\)</span>, our measurment would not be very accurate.</p>
+<ul class="simple">
+<li><p>Precision is how close the agreement is <em>between repeated</em> measurements.  <strong>It does not depend on an accepted reference value</strong>.</p></li>
+</ul>
+<p>The precision of measurements characterizes the <em>spread of the measured values</em>.  The lowest measured value was <span class="math notranslate nohighlight">\(10.9\ {\rm in.}\)</span>, and the highest value was <span class="math notranslate nohighlight">\(11.2\ {\rm in.}\)</span>.  <em>The measured values deviated from each other by <span class="math notranslate nohighlight">\(0.3\ {\rm in.}\)</span>.</em></p>
+<p>These measurements were relatively precise because they did not vary too much in value.  However, if measurement 2 was <span class="math notranslate nohighlight">\(11.9\ {\rm in.}\)</span>, then the measurements would not be veary precise.</p>
+<figure class="align-default" id="precision-fig">
+<img alt="precision examples" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/3c398378eb1e537fb02d5a39084a65550b077d37" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.3 </span><span class="caption-text">Image Credit: OpenStax.</span><a class="headerlink" href="#precision-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="uncertainty-and-discrepency">
+<h3><span class="section-number">1.5.2. </span>Uncertainty and Discrepency<a class="headerlink" href="#uncertainty-and-discrepency" title="Link to this heading">#</a></h3>
+<p>The <strong>uncertainty</strong> in the measurements is related to the precision, where a precise measurement has a lower spread (i.e., more certain).  The <strong>discrepancy</strong> describes how the measurements are related to the accuracy, where an accurate measurment is close to the accepted reference value.</p>
+<p>Recall our example of measuring paper length.  We might average the three measurements:</p>
+<div class="math notranslate nohighlight">
+\[ \bar{l} = (11.1 + 11.2 + 10.9)/3 = 11.1\ {\rm in.}\]</div>
+<p>In this case our discrepancy is <span class="math notranslate nohighlight">\(\bar{l}-l_{\rm ref} = 11.1 - 11.0 = 0.1\ {\rm in.}\)</span>, which provides a quantitative measure of accuracy.</p>
+<p>We might calculate the uncertainty in our measurement by using <em>half of the range</em> of our measured values: <span class="math notranslate nohighlight">\((11.2-10.9)/2 = 0.15\ {\rm in.}\)</span>  Then we would say that the length of the paper is <span class="math notranslate nohighlight">\(11.1\ {\rm in.} \pm 0.15\ {\rm in.}\)</span></p>
+<p>The uncertainty in a measurement <span class="math notranslate nohighlight">\(A\)</span> is often denoted as <span class="math notranslate nohighlight">\(\delta A\)</span>, so the measurement would be recorded as <span class="math notranslate nohighlight">\(A \pm \delta A\)</span>.</p>
+<p>Since the discrepancy (<span class="math notranslate nohighlight">\(0.1\ {\rm in.}\)</span>) is less than the uncertainty (<span class="math notranslate nohighlight">\(0.15\ {\rm in.}\)</span>), we might say the measured value agrees with the accepted reference value within experimental uncertainty.</p>
+<p>Some factors that contribute to uncertainty in a measurement are:</p>
+<ul class="simple">
+<li><p>Limitations of the measuring device,</p></li>
+<li><p>The skill of the person taking the measurement,</p></li>
+<li><p>Irregularities in the object being measured,</p></li>
+<li><p>Environmental factors that affect the outcome.</p></li>
+</ul>
+<p>In our example, the uncertainty could be the smallest division on the ruler is <span class="math notranslate nohighlight">\(1/16\ {\rm in.}\)</span>, the person using ruler has poor eyesight, the ruler is worn down on one end, or one side of the paper is longer than the other.</p>
+<section id="percent-uncertainty">
+<h4><span class="section-number">1.5.2.1. </span>Percent uncertainty<a class="headerlink" href="#percent-uncertainty" title="Link to this heading">#</a></h4>
+<p>Another method of expressing uncertainty is calculating how much the uncertainty deviates from the average value as a percent.  Suppose a  measurement <span class="math notranslate nohighlight">\(A \pm \delta A\)</span>, the <strong>percent uncertainty</strong> is:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-3d673a82-86c8-4861-9458-f5394615fab7">
+<span class="eqno">(1.5)<a class="headerlink" href="#equation-3d673a82-86c8-4861-9458-f5394615fab7" title="Permalink to this equation">#</a></span>\[\begin{align}
+\text{Percent uncertainty} = \frac{\delta A}{A} \times 100\%.
+\end{align}\]</div>
+</section>
+<section id="example-problem-uncertainty-in-a-bag-of-apples">
+<h4><span class="section-number">1.5.2.2. </span><strong>Example Problem</strong>: Uncertainty in a bag of apples<a class="headerlink" href="#example-problem-uncertainty-in-a-bag-of-apples" title="Link to this heading">#</a></h4>
+<div class="exercise etamu-exercise admonition" id="Chapter01/units-and-measurement-exercise-3">
+
+<p class="admonition-title"><span class="caption-number">Exercise 1.4 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>A grocery store sells <span class="math notranslate nohighlight">\(5\)</span>-lb bags of apples. Suppose we purchase four bags during the course of a month and weigh the bags each time. We obtain the following measurements:</p>
+<ul class="simple">
+<li><p>Week 1 weight: 4.8 lb</p></li>
+<li><p>Week 2 weight: 5.3 lb</p></li>
+<li><p>Week 3 weight: 4.9 lb</p></li>
+<li><p>Week 4 weight: 5.4 lb</p></li>
+</ul>
+<p>We then determine the average weight of the <span class="math notranslate nohighlight">\(5\)</span>-lb bag of apples is <span class="math notranslate nohighlight">\(5.1 \pm 0.3\ \text{lb}\)</span> from using half of the range. What is the <strong>percent uncertainty</strong> of the bag’s weight?</p>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>The measured weight of the bag is treated as a single physical quantity <span class="math notranslate nohighlight">\(A\)</span> with an associated uncertainty <span class="math notranslate nohighlight">\(\delta A\)</span>. The percent uncertainty provides a <strong>dimensionless measure</strong> of how large the uncertainty is relative to the measured value itself.</p>
+<p>We model the percent uncertainty using the ratio <span class="math notranslate nohighlight">\(\frac{\delta A}{A},\)</span> which compares the absolute uncertainty to the average value.</p>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>The percent uncertainty is defined as</p>
+<div class="math notranslate nohighlight">
+\[ \text{Percent uncertainty} = \frac{\delta A}{A} \times 100\%.\]</div>
+<p>For this problem, the average weight is <span class="math notranslate nohighlight">\(A = 5.1\ \text{lb},\)</span> and the uncertainty is <span class="math notranslate nohighlight">\(\delta A = 0.3\ \text{lb}.\)</span></p>
+<p>Substituting these values gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\text{Percent uncertainty} &amp;= \frac{0.3\ \text{lb}}{5.1\ \text{lb}} \times 100\%, \\
+&amp;= 5.9\%, \\
+&amp;\approx 6\%.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>The percent uncertainty in the weight of the bag of apples is <span class="math notranslate nohighlight">\(\boxed{6\%}.\)</span></p>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>The percent uncertainty is dimensionless because the units cancel in the ratio <span class="math notranslate nohighlight">\(\delta A / A\)</span>. This makes percent uncertainty a convenient way to compare measurement quality across different quantities and unit systems.</p>
+<p>As a consistency check, a <span class="math notranslate nohighlight">\(6\%\)</span> uncertainty on a <span class="math notranslate nohighlight">\(5.1\)</span>-lb measurement corresponds to an uncertainty of order a few tenths of a pound, which agrees with the stated uncertainty of <span class="math notranslate nohighlight">\(\pm 0.3\ \text{lb}\)</span>.</p>
+</section>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Given values</span>
+<span class="n">A</span> <span class="o">=</span> <span class="mf">5.1</span>      <span class="c1"># average weight in lb</span>
+<span class="n">dA</span> <span class="o">=</span> <span class="mf">0.3</span>     <span class="c1"># uncertainty in lb</span>
+
+<span class="c1"># Percent uncertainty calculation</span>
+<span class="n">percent_uncertainty</span> <span class="o">=</span> <span class="p">(</span><span class="n">dA</span> <span class="o">/</span> <span class="n">A</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Percent uncertainty = </span><span class="si">{</span><span class="n">percent_uncertainty</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Percent uncertainty = 5.9%
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="uncertainties-in-calculations">
+<h4><span class="section-number">1.5.2.3. </span>Uncertainties in calculations<a class="headerlink" href="#uncertainties-in-calculations" title="Link to this heading">#</a></h4>
+<p>Uncertainty exists in anything calculated from measured quantities.  The area of a floor calculated from measurements has an uncertainty because the length and width of the measurements have uncertainties.</p>
+<p><em>How big is the uncertainty if something you calculate by multiplication or division?</em></p>
+<p>If the measurements going into the calculation have small uncertainties (<span class="math notranslate nohighlight">\(\lesssim 5\%\)</span>), then the <strong>method of adding percents</strong> can be used for multiplication or division. This method states:</p>
+<blockquote>
+<div><p>The percent uncertainty in a quantity calculated by multiplication or division is the sum of the percent uncertainties in the items used to make the calculation.</p>
+</div></blockquote>
+<p>Suppose a floor has a length of <span class="math notranslate nohighlight">\(4.00\ {\rm m}\)</span> and a width of <span class="math notranslate nohighlight">\(3.00\ {\rm m}\)</span>, with uncertainties of <span class="math notranslate nohighlight">\(2\%\)</span> and <span class="math notranslate nohighlight">\(1\%\)</span>, respectively.  Then the area of the floor is <span class="math notranslate nohighlight">\(A = \ell \times w = 12.0\ {\rm m^2}\)</span> and has an unceratinty of <span class="math notranslate nohighlight">\(1\% + 2\% = 3\%\)</span>, or <span class="math notranslate nohighlight">\(\delta A = 12.0 \times 0.03 \approx 0.4\ {\rm m^2}\)</span>.</p>
+</section>
+</section>
+<section id="precision-of-measuring-tools">
+<h3><span class="section-number">1.5.3. </span>Precision of Measuring Tools<a class="headerlink" href="#precision-of-measuring-tools" title="Link to this heading">#</a></h3>
+<p>An important factor in measurement precision involves the precision of the measuring tool.  A precise measuring tool is one that can measure values in very small increments.  For example,</p>
+<ul class="simple">
+<li><p>a standard ruler can measure to the nearest millimeter,</p></li>
+<li><p>a caliper can measure length to the nearest <span class="math notranslate nohighlight">\(0.01\ {\rm mm}\)</span>.</p></li>
+</ul>
+<p>Some measuring tools are limited by physical or logical constraints.  If you are measuring the number of people in a group, you <strong>must</strong> measure using whole numbers because a fractional person doesn’t make sense.</p>
+<p>When we express <em>measured values</em>, we can only list as many digits that matches the precision of our measuring tool.  For example, we <strong>cannot</strong> list a measurement of <span class="math notranslate nohighlight">\(36.71\ {\rm cm}\)</span> precisely because our standard ruler is only marked to the nearest <span class="math notranslate nohighlight">\(0.1\ {\rm cm}\)</span>.  Instead, the person measuring would indicate a measurement of <span class="math notranslate nohighlight">\(36.6\ {\rm cm}\)</span> or <span class="math notranslate nohighlight">\(36.7\ {\rm cm}\)</span>, whichever appears closest, and indicate an error of <span class="math notranslate nohighlight">\(0.05\ {\rm cm}\)</span> (e.g., <span class="math notranslate nohighlight">\(36.7\ {\rm cm} \pm 0.05\ {\rm cm}\)</span>). <em>Note: the <span class="math notranslate nohighlight">\(0.05\ {\rm cm}\)</span> comes from the heuristic of denoting error as half of the smallest possible measurement.</em></p>
+<p>Using the method of <strong>significant figures</strong>, the rule is that the last digit reported in a measurement is the first uncertain digit.  To determine the number of significant digits in a value,</p>
+<ul class="simple">
+<li><p>start with the first (leftmost) nonzero measured value, and</p></li>
+<li><p>count the number of digits through the last (rightmost) digit.</p></li>
+</ul>
+<p>For example, <span class="math notranslate nohighlight">\(36.7\ {\rm cm}\)</span> has three significant digits.  Significant digits indicate the precision of the measuring tool used.</p>
+<figure class="align-default" id="sig-figs-examples">
+<img alt="number of sig figs" src="../_images/sig_figs_example.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.4 </span><span class="caption-text">Examples showing how to identify significant figures. The figure was inspired by <a class="reference external" href="https://byjus.com/chemistry/significant-figures/">BYJU’s chemistry</a>.</span><a class="headerlink" href="#sig-figs-examples" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="zeros">
+<h4><span class="section-number">1.5.3.1. </span>Zeros<a class="headerlink" href="#zeros" title="Link to this heading">#</a></h4>
+<p>Special consideration is given to zeros when counting significant figures.  The zeros in <span class="math notranslate nohighlight">\(0.052\ {\rm g}\)</span> (see <a class="reference internal" href="#sig-figs-examples"><span class="std std-numref">Fig. 1.4</span></a>) are not significant because they are placeholders that locate the decimal point.  The zeros in <span class="math notranslate nohighlight">\(10.053\)</span> are significant because they are bounded (on left and right) by nonzero numbers.  The number has five significant figures.</p>
+<p>The zeros in <span class="math notranslate nohighlight">\(1300\)</span> <em>may or may not</em> be significant because you can measure exactly that amount or rounded to the nearest significant figure based on your measuring tool.  To avoid this ambiguity, we should write <span class="math notranslate nohighlight">\(1300\)</span> in scientific notation as</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(1.3 \times 10^3\)</span> (2 sig figs),</p></li>
+<li><p><span class="math notranslate nohighlight">\(1.30 \times 10^3\)</span> (3 sig figs), or</p></li>
+<li><p><span class="math notranslate nohighlight">\(1.300 \times 10^3\)</span> (4 sig figs),</p></li>
+</ul>
+<p>depending on the precision of the measurement. <em>Zeros are significant except when they server only as placeholders.</em></p>
+</section>
+<section id="significant-figures-in-calculations">
+<h4><span class="section-number">1.5.3.2. </span>Significant figures in calculations<a class="headerlink" href="#significant-figures-in-calculations" title="Link to this heading">#</a></h4>
+<p>When combining measurements with different degrees of precision with arithmetic operations (i.e., addition, subtraction, multiplication, division), then the <em>final number of significant digits can be no greater than the least-precise measured value</em>.  There are separate rules for: addition/subtraction and multiplication/division.</p>
+<ol class="arabic">
+<li><p>For addition and subtraction, <em>the answer can contain no more decimal places than the least precise measurement.</em>  For example,</p>
+<div class="math notranslate nohighlight">
+\[ 7.56\ {\rm kg} - 6.052\ {\rm kg} + 13.7\ {\rm kg} = 15.208\ {\rm kg} \approx 15.2\ {\rm kg}, \]</div>
+<p>where the final value is rounded to the tenths place because the least precise value <span class="math notranslate nohighlight">\(13.7\ {\rm kg}\)</span> is measured to the tenths place.</p>
+</li>
+<li><p>For mutlipication and division, <em>the result should have the same number of significant figures as the least precise measurement.</em> For example,</p>
+<div class="math notranslate nohighlight">
+\[ \pi \times (10.2\ {\rm m})^2 = 326.85129\ldots\ {\rm m^2} \approx 327\ {\rm m^2}, \]</div>
+<p>where the final value is rounded to the ones place because <span class="math notranslate nohighlight">\(10.2\ {\rm m}\)</span> has 3 significant figures.</p>
+</li>
+</ol>
+<div class="video_wrapper align-center" style="text-align: center">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/l2yuDvwYq5g" style="border: 0; height: 345px; width: 560px">
+</iframe></div></section>
+</section>
+</section>
+<section id="solving-problems-in-physics">
+<h2><span class="section-number">1.6. </span>Solving Problems in Physics<a class="headerlink" href="#solving-problems-in-physics" title="Link to this heading">#</a></h2>
+<p>Physics problems are not solved by memorizing formulas. They are solved by building a <strong>model</strong>, applying <strong>mathematics consistently</strong>, interpreting the <strong>result</strong>, and checking the work. Throughout this book, worked examples and exercises follow a common structure to reinforce this process.</p>
+<section id="the-model-strategy">
+<h3><span class="section-number">1.6.1. </span>The Model (Strategy)<a class="headerlink" href="#the-model-strategy" title="Link to this heading">#</a></h3>
+<p>The first step in solving any physics problem is to decide <strong>how to represent the physical situation</strong>. This involves identifying the relevant physical quantities, assumptions, and relationships before writing down equations.</p>
+<p>A useful strategy is to ask:</p>
+<ul class="simple">
+<li><p>What physical quantities are involved?</p></li>
+<li><p>What is known and what is unknown?</p></li>
+<li><p>What simplifying assumptions are reasonable?</p></li>
+<li><p>What definitions, principles, or laws apply?</p></li>
+</ul>
+<p>At this stage, we are not “doing math” yet. We are building a <strong>conceptual model</strong> of the problem that can later be translated into equations.</p>
+</section>
+<section id="the-math-solution">
+<h3><span class="section-number">1.6.2. </span>The Math (Solution)<a class="headerlink" href="#the-math-solution" title="Link to this heading">#</a></h3>
+<p>Once a model has been established, the next step is to translate it into mathematics.</p>
+<p>This typically involves:</p>
+<ul class="simple">
+<li><p>writing equations using symbols rather than numbers,</p></li>
+<li><p>applying definitions or relationships consistently,</p></li>
+<li><p>performing algebraic manipulations to isolate the desired quantity,</p></li>
+<li><p>and substituting numerical values only at the final stage.</p></li>
+</ul>
+<p>As an illustrative example, suppose we wish to convert a speed of <span class="math notranslate nohighlight">\(180\ \text{km/h}\)</span> into SI units of meters per second.</p>
+<p>Using the conversion factors</p>
+<div class="math notranslate nohighlight">
+\[ 1\ \text{km} = 10^{3}\ \text{m}, \qquad 1\ \text{h} = 3600\ \text{s},\]</div>
+<p>we write</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+v&amp;= 180\ \frac{\text{km}}{\text{h}} \times \left(\frac{10^{3}\ \text{m}}{1\ \text{km}}\right) \times \left(\frac{1\ \text{h}}{3600\ \text{s}}\right) \\
+&amp;= 50\ \text{m/s}.
+\end{align*}\]</div>
+<p>Keeping units visible throughout the calculation helps prevent mistakes and makes cancellations explicit.</p>
+</section>
+<section id="the-conclusion-significance">
+<h3><span class="section-number">1.6.3. </span>The Conclusion (Significance)<a class="headerlink" href="#the-conclusion-significance" title="Link to this heading">#</a></h3>
+<p>After obtaining a result, it is essential to interpret it.</p>
+<p>A good conclusion addresses questions such as:</p>
+<ul class="simple">
+<li><p>Are the final units correct?</p></li>
+<li><p>Is the numerical value physically reasonable?</p></li>
+<li><p>Does the result make sense given the original problem?</p></li>
+</ul>
+<p>In the example above, a speed of <span class="math notranslate nohighlight">\(50\ \text{m/s}\)</span> corresponds to a fast-moving vehicle, which is consistent with an initial speed of <span class="math notranslate nohighlight">\(180\ \text{km/h}\)</span>. The units and magnitude confirm that the result is reasonable.</p>
+<p>This step is not optional.</p>
+</section>
+<section id="the-verification-script-in-python">
+<h3><span class="section-number">1.6.4. </span>The Verification (Script in Python)<a class="headerlink" href="#the-verification-script-in-python" title="Link to this heading">#</a></h3>
+<p>In this course, Python is often used as a <strong>verification tool</strong> to confirm analytical work. Code should reflect the same logic used in the mathematics, not replace it.</p>
+<p>The following Python script verifies the unit conversion performed above:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Convert 180 km/h to m/s</span>
+
+<span class="n">velocity_kmh</span> <span class="o">=</span> <span class="mf">180.0</span>
+
+<span class="c1"># Conversion factors</span>
+<span class="n">km_to_m</span> <span class="o">=</span> <span class="mf">1e3</span>       <span class="c1"># meters in a kilometer</span>
+<span class="n">h_to_s</span> <span class="o">=</span> <span class="mf">3600.0</span>     <span class="c1"># seconds in an hour</span>
+
+<span class="c1"># Perform conversion</span>
+<span class="n">velocity_ms</span> <span class="o">=</span> <span class="n">velocity_kmh</span> <span class="o">*</span> <span class="n">km_to_m</span> <span class="o">/</span> <span class="n">h_to_s</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Velocity = </span><span class="si">{</span><span class="n">velocity_ms</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> m/s&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Velocity = 50.0 m/s
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="in-class-problems">
+<h2><span class="section-number">1.7. </span>In-class Problems<a class="headerlink" href="#in-class-problems" title="Link to this heading">#</a></h2>
+<div class="admonition-problem-1 admonition">
+<p class="admonition-title">Problem 1</p>
+<p><strong>(a)</strong> Calculate the number of cells in a hummingbird assuming the mass of an average cell is 10 times the mass of a bacterium.  See <a class="reference internal" href="#mks-scales-fig"><span class="std std-numref">Fig. 1.2</span></a>.</p>
+<p><strong>(b)</strong> Making the same assumption, how many cells are there in a human?</p>
+</div>
+<div class="admonition-problem-2 admonition">
+<p class="admonition-title">Problem 2</p>
+<p>The following times are given in seconds. Use metric prefixes to rewrite them so the numerical value is greater than one but less than 1000. For example, <span class="math notranslate nohighlight">\(7.9 \times 10^{-2}\,\text{s}\)</span> could be written as either 7.9 cs or 79 ms.</p>
+<p><strong>(a)</strong> <span class="math notranslate nohighlight">\(9.57 \times 10^{5}\,\text{s}\)</span><br />
+<strong>(b)</strong> <span class="math notranslate nohighlight">\(0.045\,\text{s}\)</span><br />
+<strong>(c)</strong> <span class="math notranslate nohighlight">\(5.5 \times 10^{-7}\,\text{s}\)</span><br />
+<strong>(d)</strong> <span class="math notranslate nohighlight">\(3.16 \times 10^{7}\,\text{s}\)</span></p>
+</div>
+<div class="admonition-problem-3 admonition">
+<p class="admonition-title">Problem 3</p>
+<p>The following masses are written using metric prefixes on the gram. Rewrite them in scientific notation in terms of the SI base unit of mass: the kilogram. For example, 40 Mg would be written as <span class="math notranslate nohighlight">\(4 \times 10^{4}\,\text{kg}\)</span>.</p>
+<p><strong>(a)</strong> 23 mg<br />
+<strong>(b)</strong> 320 Tg<br />
+<strong>(c)</strong> 42 ng<br />
+<strong>(d)</strong> 7 g<br />
+<strong>(e)</strong> 9 Pg</p>
+</div>
+<div class="admonition-problem-4 admonition">
+<p class="admonition-title">Problem 4</p>
+<p>American football is played on a 100-yd-long field, excluding the end zones. How long is the field in meters? (Assume that <span class="math notranslate nohighlight">\(1\,\text{m} = 3.281\,\text{ft}\)</span>.)</p>
+</div>
+<div class="admonition-problem-5 admonition">
+<p class="admonition-title">Problem 5</p>
+<p>Light travels a distance of about <span class="math notranslate nohighlight">\(3 \times 10^{8}\,\text{m/s}\)</span>. A light-minute is the distance light travels in 1 min. If the Sun is <span class="math notranslate nohighlight">\(1.5 \times 10^{11}\,\text{m}\)</span> from Earth, how far away is it in light-minutes?</p>
+</div>
+<div class="admonition-problem-6 admonition">
+<p class="admonition-title">Problem 6</p>
+<p>Suppose your bathroom scale reads your mass as 65 kg with a 3% uncertainty. What is the uncertainty in your mass (in kilograms)?</p>
+</div>
+<div class="admonition-problem-7 admonition">
+<p class="admonition-title">Problem 7</p>
+<p><strong>(a)</strong> If your speedometer has an uncertainty of 2.0 km/h at a speed of 90 km/h, what is the percent uncertainty?</p>
+<p><strong>(b)</strong> If it has the same percent uncertainty when it reads 60 km/h, what is the range of speeds you could be going?</p>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "saturnaxis/IntroPhysics",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Chapter01"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../Preamble/figures-primer.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Figures Primer (Matplotlib)</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../Chapter02/vectors.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>Vectors</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scope-and-scale-of-physics">1.1. Scope and Scale of Physics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-physics">1.1.1. What is physics?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-scope-of-physics">1.1.2. The Scope of Physics</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#in-the-universe">1.1.2.1. In the Universe</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#on-the-earth">1.1.2.2. On the Earth</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-scale-of-physics">1.1.3. The Scale of Physics</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#order-of-magnitude">1.1.3.1. Order of magnitude</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#known-ranges-of-length-mass-and-time">1.1.3.2. Known ranges of length, mass, and time</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#building-models">1.1.4. Building Models</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-a-model">1.1.4.1. <em>What is a model?</em></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#theory-vs-law">1.1.4.2. Theory vs. law</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#units-and-standards">1.2. Units and Standards</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#si-units-base-and-derived-units">1.2.1. SI Units: Base and Derived Units</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#units-of-time-length-and-mass">1.2.2. Units of Time, Length, and Mass</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-second">1.2.2.1. The second</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-meter">1.2.2.2. The meter</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-kilogram">1.2.2.3. The kilogram</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metric-prefixes">1.2.3. Metric Prefixes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-metric-prefixes">1.2.4. <strong>Example Problem</strong>: Metric Prefixes</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unit-conversion">1.3. Unit Conversion</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-converting-iron-s-density">1.3.1. <strong>Example Problem</strong>: Converting iron’s density</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dimensional-analysis">1.4. Dimensional Analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-checking-formulas">1.4.1. <strong>Example Problem</strong> Checking Formulas</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#significant-figures">1.5. Significant Figures</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#accuracy-and-precision">1.5.1. Accuracy and Precision</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uncertainty-and-discrepency">1.5.2. Uncertainty and Discrepency</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#percent-uncertainty">1.5.2.1. Percent uncertainty</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-uncertainty-in-a-bag-of-apples">1.5.2.2. <strong>Example Problem</strong>: Uncertainty in a bag of apples</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#uncertainties-in-calculations">1.5.2.3. Uncertainties in calculations</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#precision-of-measuring-tools">1.5.3. Precision of Measuring Tools</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#zeros">1.5.3.1. Zeros</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#significant-figures-in-calculations">1.5.3.2. Significant figures in calculations</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solving-problems-in-physics">1.6. Solving Problems in Physics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-model-strategy">1.6.1. The Model (Strategy)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-math-solution">1.6.2. The Math (Solution)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-conclusion-significance">1.6.3. The Conclusion (Significance)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-verification-script-in-python">1.6.4. The Verification (Script in Python)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-class-problems">1.7. In-class Problems</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Billy Quarles
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

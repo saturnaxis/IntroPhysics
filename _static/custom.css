@@ -1,0 +1,47 @@
+/* docs/_static/custom.css */
+
+:root{
+  --etamu-blue:#0033A0;
+  --etamu-gold:#F2A900;
+  --etamu-gold-light: rgba(242,169,0,.15);
+}
+
+/* If sphinx_exercise renders as an admonition with extra classes */
+div.admonition.exercise{
+  background-color: var(--etamu-gold-light);
+  border-left: 5px solid var(--etamu-gold);
+}
+div.admonition.exercise > .admonition-title{
+  background-color: var(--etamu-gold);
+  color:#222;
+  font-weight:600;
+}
+
+/* If sphinx_exercise uses a custom wrapper class */
+div.exercise{
+  background-color: var(--etamu-gold-light);
+  border-left: 5px solid var(--etamu-gold);
+}
+div.exercise > .admonition-title,
+div.exercise > p.admonition-title{
+  background-color: var(--etamu-gold);
+  color:#222;
+  font-weight:600;
+}
+
+blockquote {
+  background-color: rgba(255, 255, 255, 0.873); 
+  border-left: 4px solid #0033A0;             /* ETAMU blue */
+  padding: 0.75em 1em;
+  margin: 1em 0;
+  color: #222;
+}
+
+/* Improve figure caption readability */
+figure figcaption {
+  color: #222;
+}
+figure figcaption .caption-number {
+  font-weight: 700;
+}
+
