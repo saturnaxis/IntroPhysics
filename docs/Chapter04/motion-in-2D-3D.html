@@ -58,10 +58,25 @@
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-6TWF14MYK4"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-6TWF14MYK4');
+            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-6TWF14MYK4');
+            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Chapter04/motion-in-2D-3D';</script>
     <link rel="canonical" href="https://saturnaxis.github.io/IntroPhysics/Chapter04/motion-in-2D-3D.html" />
     <link rel="index" title="Index" href="../genindex.html" />
@@ -457,7 +472,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -473,6 +490,54 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#displacement-and-velocity-vectors">4.1. Displacement and Velocity Vectors</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#displacement-vector">4.1.1. Displacement Vector</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-polar-orbiting-satellite">4.1.2. <strong>Example Problem</strong>: Polar Orbiting Satellite</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-brownian-motion">4.1.3. <strong>Example Problem</strong>: Brownian Motion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-vector">4.1.4. Velocity Vector</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-calculating-the-velocity-vector">4.1.5. <strong>Example Problem</strong>: Calculating the Velocity Vector</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-independence-of-perpendicular-motions">4.1.6. The Independence of Perpendicular Motions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acceleration-vector">4.2. Acceleration Vector</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#instantaneous-acceleration">4.2.1. Instantaneous Acceleration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-finding-an-acceleration-vector">4.2.2. <strong>Example Problem</strong>: Finding an Acceleration Vector</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-finding-a-particle-acceleration">4.2.3. <strong>Example Problem</strong>: Finding a Particle Acceleration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#constant-acceleration">4.2.4. Constant Acceleration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-a-skier">4.2.5. <strong>Example Problem</strong>: A Skier</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projectile-motion">4.3. Projectile Motion</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-a-fireworks-projectile-explodes">4.3.1. <strong>Example Problem</strong>: A Fireworks Projectile Explodes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-the-tennis-player">4.3.2. <strong>Example Problem</strong>: The Tennis Player</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#time-of-flight-trajectory-and-range">4.3.3. Time of Flight, Trajectory, and Range</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-comparing-golf-shots">4.3.4. <strong>Example Problem</strong>: Comparing Golf Shots</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uniform-and-nonuniform-circular-motion">4.4. Uniform and Nonuniform Circular Motion</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#centripetal-acceleration">4.4.1. Centripetal Acceleration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-creating-an-acceleration-of-1-g">4.4.2. <strong>Example Problem</strong>: Creating an Acceleration of 1 <span class="math notranslate nohighlight">\(g\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equations-of-motion-for-uniform-circular-motion">4.4.3. Equations of Motion for Uniform Circular Motion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-circular-motion-of-a-proton">4.4.4. <strong>Example Problem</strong>: Circular Motion of a Proton</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nonuniform-circular-motion">4.4.5. Nonuniform Circular Motion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-total-acceleration-during-circular-motion">4.4.6. <strong>Example Problem</strong>: Total Acceleration during Circular Motion</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relative-motion-in-one-and-two-dimensions">4.5. Relative Motion in One and Two Dimensions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reference-frames">4.5.1. Reference Frames</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relative-motion-in-1d">4.5.2. Relative Motion in 1D</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relative-velocity-in-2d">4.5.3. Relative Velocity in 2D</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-motion-of-a-car-relative-to-a-truck">4.5.4. <strong>Example Problem</strong>: Motion of a Car Relative to a Truck</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-flying-a-plane-in-a-wind">4.5.5. <strong>Example Problem</strong>: Flying a Plane in a Wind</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -484,6 +549,282 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="motion-in-2d-and-3d">
 <h1><span class="section-number">4. </span>Motion in 2D and 3D<a class="headerlink" href="#motion-in-2d-and-3d" title="Link to this heading">#</a></h1>
+<section id="displacement-and-velocity-vectors">
+<h2><span class="section-number">4.1. </span>Displacement and Velocity Vectors<a class="headerlink" href="#displacement-and-velocity-vectors" title="Link to this heading">#</a></h2>
+<section id="displacement-vector">
+<h3><span class="section-number">4.1.1. </span>Displacement Vector<a class="headerlink" href="#displacement-vector" title="Link to this heading">#</a></h3>
+<p>To describe motion in 2D and 3D, we must first define a coordinate system, including a convention of axes. <em>Recall that the sign of the acceleration due to gravity was determined by the convention that we chose.</em>  We usually use the Cartesian coordinate system to locate a particle at point <span class="math notranslate nohighlight">\(P(x,y,z)\)</span> in 3 dimensions.  If the particle is moving , the variables <span class="math notranslate nohighlight">\(x,y,z\)</span> are functions of time <span class="math notranslate nohighlight">\(t\)</span>.</p>
+<p>The position vector <span class="math notranslate nohighlight">\(\vec{r}(t)\)</span> locates the point P at time t from the origin, by</p>
+<div class="amsmath math notranslate nohighlight" id="equation-ce863f03-6dac-48c3-95a1-1911f51409b4">
+<span class="eqno">(4.1)<a class="headerlink" href="#equation-ce863f03-6dac-48c3-95a1-1911f51409b4" title="Permalink to this equation">#</a></span>\[\begin{align}
+\vec{r}(t) = x(t)\hat{i} + y(t)\hat{j} + z(t)\hat{k}.
+\end{align}\]</div>
+<figure class="align-default" id="d-position-fig">
+<img alt="Position Vector" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/071341953cf3ad04041c5b06a713ba5ab3548eaf" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.1 </span><span class="caption-text">Image Credit: OpenStax.</span><a class="headerlink" href="#d-position-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p><a class="reference internal" href="#d-position-fig"><span class="std std-numref">Fig. 4.1</span></a> shows the position vector <span class="math notranslate nohighlight">\(\vec{r}(t)\)</span> for a particle located ar a time <span class="math notranslate nohighlight">\(t\)</span>. <em>Note that the orientation of the coordinate syste follows the right-hand rule.</em></p>
+<p>We can now define the 3D displacement vector <span class="math notranslate nohighlight">\(\Delta \vec{r}\)</span> as the difference between the position vector <span class="math notranslate nohighlight">\(\vec{r}(t_2)\)</span> at time <span class="math notranslate nohighlight">\(t_2\)</span> and the initial position vector <span class="math notranslate nohighlight">\(\vec{r}(t_1)\)</span> at time <span class="math notranslate nohighlight">\(t_1\)</span>, or</p>
+<div class="amsmath math notranslate nohighlight" id="equation-337a854a-38e9-4f99-a8f9-4e4bcdc61021">
+<span class="eqno">(4.2)<a class="headerlink" href="#equation-337a854a-38e9-4f99-a8f9-4e4bcdc61021" title="Permalink to this equation">#</a></span>\[\begin{align}
+\Delta \vec{r} = \vec{r}(t_2) - \vec{r}(t_1).
+\end{align}\]</div>
+<p>Three dimensional vector addition is performed in the same way as in 2D, by adding the corresponding components or graphically by using the head-to-tail method.</p>
+<figure class="align-default" id="d-displacement-fig">
+<img alt="Displacement Vector" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/85b4b075e91a332c7c7e45097501e6ec8404dbdf" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.2 </span><span class="caption-text">Image Credit: OpenStax.</span><a class="headerlink" href="#d-displacement-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>See the <code class="docutils literal notranslate"><span class="pre">python</span></code> code below that demonstates how to plot a 3D vector in <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">matplotlib.patches</span> <span class="kn">import</span> <span class="n">FancyArrowPatch</span>
+<span class="kn">from</span> <span class="nn">mpl_toolkits.mplot3d</span> <span class="kn">import</span> <span class="n">proj3d</span>
+
+<span class="c1"># Custom class to draw true 3D arrows (matplotlib does not support these natively)</span>
+<span class="k">class</span> <span class="nc">Arrow3D</span><span class="p">(</span><span class="n">FancyArrowPatch</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">xs</span><span class="p">,</span> <span class="n">ys</span><span class="p">,</span> <span class="n">zs</span><span class="p">,</span> <span class="n">mutation_scale</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">arrowstyle</span><span class="o">=</span><span class="s2">&quot;-|&gt;&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span><span class="n">mutation_scale</span><span class="o">=</span><span class="n">mutation_scale</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="n">lw</span><span class="p">,</span> <span class="n">arrowstyle</span><span class="o">=</span><span class="n">arrowstyle</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_verts3d</span> <span class="o">=</span> <span class="n">xs</span><span class="p">,</span> <span class="n">ys</span><span class="p">,</span> <span class="n">zs</span>
+    <span class="k">def</span> <span class="nf">do_3d_projection</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">renderer</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="n">xs</span><span class="p">,</span> <span class="n">ys</span><span class="p">,</span> <span class="n">zs</span> <span class="o">=</span> <span class="n">proj3d</span><span class="o">.</span><span class="n">proj_transform</span><span class="p">(</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">_verts3d</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">axes</span><span class="o">.</span><span class="n">M</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">set_positions</span><span class="p">((</span><span class="n">xs</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">ys</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="p">(</span><span class="n">xs</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">ys</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">zs</span><span class="p">)</span>
+
+<span class="c1"># Set up the 3D plotting environment</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
+                       <span class="n">subplot_kw</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">projection</span><span class="o">=</span><span class="s2">&quot;3d&quot;</span><span class="p">))</span>
+<span class="c1"># Define the vector components and endpoints</span>
+<span class="n">x0</span><span class="p">,</span> <span class="n">y0</span><span class="p">,</span> <span class="n">z0</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>        <span class="c1"># vector tail</span>
+<span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">w</span>    <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span>        <span class="c1"># vector components</span>
+<span class="n">x1</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="n">z1</span> <span class="o">=</span> <span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">w</span>        <span class="c1"># vector head</span>
+<span class="c1"># Draw the vector and its component projections</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">add_artist</span><span class="p">(</span><span class="n">Arrow3D</span><span class="p">([</span><span class="n">x0</span><span class="p">,</span> <span class="n">x1</span><span class="p">],</span> <span class="p">[</span><span class="n">y0</span><span class="p">,</span> <span class="n">y1</span><span class="p">],</span> <span class="p">[</span><span class="n">z0</span><span class="p">,</span> <span class="n">z1</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">add_artist</span><span class="p">(</span><span class="n">Arrow3D</span><span class="p">([</span><span class="n">x0</span><span class="p">,</span> <span class="n">x1</span><span class="p">],</span> <span class="p">[</span><span class="n">y0</span><span class="p">,</span> <span class="n">y0</span><span class="p">],</span> <span class="p">[</span><span class="n">z0</span><span class="p">,</span> <span class="n">z0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;r&quot;</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">add_artist</span><span class="p">(</span><span class="n">Arrow3D</span><span class="p">([</span><span class="n">x1</span><span class="p">,</span> <span class="n">x1</span><span class="p">],</span> <span class="p">[</span><span class="n">y0</span><span class="p">,</span> <span class="n">y1</span><span class="p">],</span> <span class="p">[</span><span class="n">z0</span><span class="p">,</span> <span class="n">z0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;orange&quot;</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">add_artist</span><span class="p">(</span><span class="n">Arrow3D</span><span class="p">([</span><span class="n">x1</span><span class="p">,</span> <span class="n">x1</span><span class="p">],</span> <span class="p">[</span><span class="n">y1</span><span class="p">,</span> <span class="n">y1</span><span class="p">],</span> <span class="p">[</span><span class="n">z0</span><span class="p">,</span> <span class="n">z1</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;b&quot;</span><span class="p">))</span>
+<span class="c1"># Plot the x-y vector</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">quiver</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span> <span class="n">y0</span><span class="p">,</span> <span class="n">z0</span><span class="p">,</span> <span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">,</span>
+          <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">arrow_length_ratio</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="n">z1</span><span class="p">,</span> <span class="s2">&quot;mo&quot;</span><span class="p">,</span> <span class="n">ms</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>  <span class="c1"># mark the endpoint</span>
+
+<span class="c1"># Formatting</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span> <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span> <span class="n">ax</span><span class="o">.</span><span class="n">set_zlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;X axis&quot;</span><span class="p">);</span> <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Y axis&quot;</span><span class="p">);</span> <span class="n">ax</span><span class="o">.</span><span class="n">set_zlabel</span><span class="p">(</span><span class="s2">&quot;Z axis&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/be2b7cfdcbae7fa67fb3b26492a3eea14aeb4d8605d549e402a868cbcbbfdb4c.png" src="../_images/be2b7cfdcbae7fa67fb3b26492a3eea14aeb4d8605d549e402a868cbcbbfdb4c.png" />
+</div>
+</div>
+</section>
+<section id="example-problem-polar-orbiting-satellite">
+<h3><span class="section-number">4.1.2. </span><strong>Example Problem</strong>: Polar Orbiting Satellite<a class="headerlink" href="#example-problem-polar-orbiting-satellite" title="Link to this heading">#</a></h3>
+<div class="exercise etamu-exercise admonition" id="Chapter04/motion-in-2D-3D-exercise-0">
+
+<p class="admonition-title"><span class="caption-number">Exercise 4.1 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>A satellite is in a circular polar orbit around Earth at an altitude of <span class="math notranslate nohighlight">\(400\ \text{km}\)</span>, meaning it passes directly over the North and South Poles. What are the magnitude and direction of the displacement vector from when the satellite is directly over the North Pole to when it is at latitude <span class="math notranslate nohighlight">\(-45^\circ\)</span>?</p>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>Although the satellite moves along a curved path, the <strong>displacement</strong> depends only on the initial and final positions. We therefore model the motion using position vectors drawn from the center of Earth, which we take to be the origin of a Cartesian coordinate system.</p>
+<p>We choose the <span class="math notranslate nohighlight">\(y\)</span>-axis to point north and the <span class="math notranslate nohighlight">\(x\)</span>-axis to point east. With this choice, the displacement vector is found by subtracting the initial position vector from the final position vector.</p>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>The radius of Earth is <span class="math notranslate nohighlight">\(6370\ \text{km}\)</span>, and the satellite orbits at an altitude of <span class="math notranslate nohighlight">\(400\ \text{km}\)</span>. The radius of the orbit is therefore</p>
+<div class="math notranslate nohighlight">
+\[ r = 6370\ \text{km} + 400\ \text{km} = 6770\ \text{km}. \]</div>
+<p>When the satellite is directly over the North Pole, its position vector points entirely in the <span class="math notranslate nohighlight">\(+y\)</span> direction. The initial position vector is</p>
+<div class="math notranslate nohighlight">
+\[ \vec{r}(t_1) = 6770\,\hat{j}\ \text{km}. \]</div>
+<p>At latitude <span class="math notranslate nohighlight">\(-45^\circ\)</span>, the satellite’s position vector makes an angle of <span class="math notranslate nohighlight">\(-45^\circ\)</span> with the <span class="math notranslate nohighlight">\(+x\)</span>-axis. The final position vector is therefore</p>
+<div class="math notranslate nohighlight">
+\[ \vec{r}(t_2) = 6770(\cos(-45^\circ)\,\hat{i} + \sin(-45^\circ)\,\hat{j})\ \text{km}. \]</div>
+<p>Evaluating the trigonometric functions gives</p>
+<div class="math notranslate nohighlight">
+\[ \vec{r}(t_2) = (4.79\times10^3\,\hat{i} - 4.79\times10^3\,\hat{j})\ \text{km}. \]</div>
+<p>The displacement vector is the difference between the final and initial position vectors,</p>
+<div class="math notranslate nohighlight">
+\[ \Delta\vec{r} = \vec{r}(t_2) - \vec{r}(t_1)
+= (4.79\times10^3\,\hat{i} - 1.16\times10^4\,\hat{j})\ \text{km}. \]</div>
+<p>The magnitude of the displacement is</p>
+<div class="math notranslate nohighlight">
+\[ |\Delta\vec{r}| = \sqrt{(4.79\times10^3)^2 + (1.16\times10^4)^2}
+= 1.25\times10^4\ \text{km}. \]</div>
+<p>The direction of the displacement relative to the <span class="math notranslate nohighlight">\(+x\)</span>-axis is</p>
+<div class="math notranslate nohighlight">
+\[ \theta = \tan^{-1}\!\left(\frac{-1.16\times10^4}{4.79\times10^3}\right) = -67.5^\circ. \]</div>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>The displacement of the satellite from the North Pole to latitude <span class="math notranslate nohighlight">\(-45^\circ\)</span> has a magnitude of</p>
+<div class="math notranslate nohighlight">
+\[ |\Delta\vec{r}| = 1.25\times10^4\ \text{km}, \]</div>
+<p>and points <span class="math notranslate nohighlight">\(67.5^\circ\)</span> south of east. Even though the satellite follows a curved path along its orbit, the displacement represents the straight-line separation between the two positions.</p>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>We can verify the analytical result numerically by computing the position vectors and their difference using Python. The magnitude and direction obtained numerically match the analytical values, confirming the result.</p>
+</section>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Verification of polar orbit displacement problem</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Given values</span>
+<span class="n">R_earth</span> <span class="o">=</span> <span class="mf">6370.0</span>          <span class="c1"># km</span>
+<span class="n">h</span> <span class="o">=</span> <span class="mf">400.0</span>                 <span class="c1"># km</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">R_earth</span> <span class="o">+</span> <span class="n">h</span>           <span class="c1"># km</span>
+<span class="n">lat2</span> <span class="o">=</span> <span class="o">-</span><span class="mf">45.0</span>              <span class="c1"># degrees</span>
+
+<span class="c1"># Position vectors (x is east, y is north)</span>
+<span class="n">r1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">r</span><span class="p">])</span>   <span class="c1"># over North Pole</span>
+<span class="n">r2</span> <span class="o">=</span> <span class="n">r</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">lat2</span><span class="p">)),</span>
+                   <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">lat2</span><span class="p">))])</span>
+<span class="c1"># Displacement vector</span>
+<span class="n">dr</span> <span class="o">=</span> <span class="n">r2</span> <span class="o">-</span> <span class="n">r1</span>
+<span class="c1"># Magnitude and direction (angle from +x axis)</span>
+<span class="n">dr_mag</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">dr</span><span class="p">)</span>
+<span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arctan2</span><span class="p">(</span><span class="n">dr</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">dr</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+
+<span class="c1"># Print results</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Orbit radius r        = </span><span class="si">{</span><span class="n">r</span><span class="si">:</span><span class="s2">.0f</span><span class="si">}</span><span class="s2"> km&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Displacement |dr|     = </span><span class="si">{</span><span class="n">dr_mag</span><span class="si">:</span><span class="s2">.2e</span><span class="si">}</span><span class="s2"> km&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Direction angle theta = </span><span class="si">{</span><span class="n">theta</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> deg&quot;</span><span class="p">)</span>
+
+<span class="c1"># Create a vector plot</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+
+<span class="c1"># Plot axes and vectors</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">,</span><span class="n">zorder</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">,</span><span class="n">zorder</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">quiver</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">r1</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">r1</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+          <span class="n">angles</span><span class="o">=</span><span class="s1">&#39;xy&#39;</span><span class="p">,</span> <span class="n">scale_units</span><span class="o">=</span><span class="s1">&#39;xy&#39;</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;$\vec</span><span class="si">{r}</span><span class="s1">(t_1)$&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">quiver</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">r2</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">r2</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;orange&#39;</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+          <span class="n">angles</span><span class="o">=</span><span class="s1">&#39;xy&#39;</span><span class="p">,</span> <span class="n">scale_units</span><span class="o">=</span><span class="s1">&#39;xy&#39;</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;$\vec</span><span class="si">{r}</span><span class="s1">(t_2)$&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">quiver</span><span class="p">(</span><span class="n">r1</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">r1</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">dr</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">dr</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;m&#39;</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+          <span class="n">angles</span><span class="o">=</span><span class="s1">&#39;xy&#39;</span><span class="p">,</span> <span class="n">scale_units</span><span class="o">=</span><span class="s1">&#39;xy&#39;</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;$\Delta\vec</span><span class="si">{r}</span><span class="s1">$&#39;</span><span class="p">)</span>
+
+<span class="c1"># Formatting</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">,</span> <span class="n">adjustable</span><span class="o">=</span><span class="s1">&#39;box&#39;</span><span class="p">)</span>
+<span class="n">lim</span> <span class="o">=</span> <span class="mf">1.1</span> <span class="o">*</span> <span class="n">r</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="n">lim</span><span class="p">,</span> <span class="n">lim</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="n">lim</span><span class="p">,</span> <span class="n">lim</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;east (km)&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;north (km)&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Orbit radius r        = 6770 km
+Displacement |dr|     = 1.25e+04 km
+Direction angle theta = -67.5 deg
+</pre></div>
+</div>
+<img alt="../_images/fa0a0a2686a16cc133df61d7a00f037e5ebbe690f518d02c163deacc7eaaec7b.png" src="../_images/fa0a0a2686a16cc133df61d7a00f037e5ebbe690f518d02c163deacc7eaaec7b.png" />
+</div>
+</div>
+</section>
+<section id="example-problem-brownian-motion">
+<h3><span class="section-number">4.1.3. </span><strong>Example Problem</strong>: Brownian Motion<a class="headerlink" href="#example-problem-brownian-motion" title="Link to this heading">#</a></h3>
+</section>
+<section id="velocity-vector">
+<h3><span class="section-number">4.1.4. </span>Velocity Vector<a class="headerlink" href="#velocity-vector" title="Link to this heading">#</a></h3>
+</section>
+<section id="example-problem-calculating-the-velocity-vector">
+<h3><span class="section-number">4.1.5. </span><strong>Example Problem</strong>: Calculating the Velocity Vector<a class="headerlink" href="#example-problem-calculating-the-velocity-vector" title="Link to this heading">#</a></h3>
+</section>
+<section id="the-independence-of-perpendicular-motions">
+<h3><span class="section-number">4.1.6. </span>The Independence of Perpendicular Motions<a class="headerlink" href="#the-independence-of-perpendicular-motions" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="acceleration-vector">
+<h2><span class="section-number">4.2. </span>Acceleration Vector<a class="headerlink" href="#acceleration-vector" title="Link to this heading">#</a></h2>
+<section id="instantaneous-acceleration">
+<h3><span class="section-number">4.2.1. </span>Instantaneous Acceleration<a class="headerlink" href="#instantaneous-acceleration" title="Link to this heading">#</a></h3>
+</section>
+<section id="example-problem-finding-an-acceleration-vector">
+<h3><span class="section-number">4.2.2. </span><strong>Example Problem</strong>: Finding an Acceleration Vector<a class="headerlink" href="#example-problem-finding-an-acceleration-vector" title="Link to this heading">#</a></h3>
+</section>
+<section id="example-problem-finding-a-particle-acceleration">
+<h3><span class="section-number">4.2.3. </span><strong>Example Problem</strong>: Finding a Particle Acceleration<a class="headerlink" href="#example-problem-finding-a-particle-acceleration" title="Link to this heading">#</a></h3>
+</section>
+<section id="constant-acceleration">
+<h3><span class="section-number">4.2.4. </span>Constant Acceleration<a class="headerlink" href="#constant-acceleration" title="Link to this heading">#</a></h3>
+</section>
+<section id="example-problem-a-skier">
+<h3><span class="section-number">4.2.5. </span><strong>Example Problem</strong>: A Skier<a class="headerlink" href="#example-problem-a-skier" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="projectile-motion">
+<h2><span class="section-number">4.3. </span>Projectile Motion<a class="headerlink" href="#projectile-motion" title="Link to this heading">#</a></h2>
+<section id="example-problem-a-fireworks-projectile-explodes">
+<h3><span class="section-number">4.3.1. </span><strong>Example Problem</strong>: A Fireworks Projectile Explodes<a class="headerlink" href="#example-problem-a-fireworks-projectile-explodes" title="Link to this heading">#</a></h3>
+</section>
+<section id="example-problem-the-tennis-player">
+<h3><span class="section-number">4.3.2. </span><strong>Example Problem</strong>: The Tennis Player<a class="headerlink" href="#example-problem-the-tennis-player" title="Link to this heading">#</a></h3>
+</section>
+<section id="time-of-flight-trajectory-and-range">
+<h3><span class="section-number">4.3.3. </span>Time of Flight, Trajectory, and Range<a class="headerlink" href="#time-of-flight-trajectory-and-range" title="Link to this heading">#</a></h3>
+</section>
+<section id="example-problem-comparing-golf-shots">
+<h3><span class="section-number">4.3.4. </span><strong>Example Problem</strong>: Comparing Golf Shots<a class="headerlink" href="#example-problem-comparing-golf-shots" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="uniform-and-nonuniform-circular-motion">
+<h2><span class="section-number">4.4. </span>Uniform and Nonuniform Circular Motion<a class="headerlink" href="#uniform-and-nonuniform-circular-motion" title="Link to this heading">#</a></h2>
+<section id="centripetal-acceleration">
+<h3><span class="section-number">4.4.1. </span>Centripetal Acceleration<a class="headerlink" href="#centripetal-acceleration" title="Link to this heading">#</a></h3>
+</section>
+<section id="example-problem-creating-an-acceleration-of-1-g">
+<h3><span class="section-number">4.4.2. </span><strong>Example Problem</strong>: Creating an Acceleration of 1 <span class="math notranslate nohighlight">\(g\)</span><a class="headerlink" href="#example-problem-creating-an-acceleration-of-1-g" title="Link to this heading">#</a></h3>
+</section>
+<section id="equations-of-motion-for-uniform-circular-motion">
+<h3><span class="section-number">4.4.3. </span>Equations of Motion for Uniform Circular Motion<a class="headerlink" href="#equations-of-motion-for-uniform-circular-motion" title="Link to this heading">#</a></h3>
+</section>
+<section id="example-problem-circular-motion-of-a-proton">
+<h3><span class="section-number">4.4.4. </span><strong>Example Problem</strong>: Circular Motion of a Proton<a class="headerlink" href="#example-problem-circular-motion-of-a-proton" title="Link to this heading">#</a></h3>
+</section>
+<section id="nonuniform-circular-motion">
+<h3><span class="section-number">4.4.5. </span>Nonuniform Circular Motion<a class="headerlink" href="#nonuniform-circular-motion" title="Link to this heading">#</a></h3>
+</section>
+<section id="example-problem-total-acceleration-during-circular-motion">
+<h3><span class="section-number">4.4.6. </span><strong>Example Problem</strong>: Total Acceleration during Circular Motion<a class="headerlink" href="#example-problem-total-acceleration-during-circular-motion" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="relative-motion-in-one-and-two-dimensions">
+<h2><span class="section-number">4.5. </span>Relative Motion in One and Two Dimensions<a class="headerlink" href="#relative-motion-in-one-and-two-dimensions" title="Link to this heading">#</a></h2>
+<section id="reference-frames">
+<h3><span class="section-number">4.5.1. </span>Reference Frames<a class="headerlink" href="#reference-frames" title="Link to this heading">#</a></h3>
+</section>
+<section id="relative-motion-in-1d">
+<h3><span class="section-number">4.5.2. </span>Relative Motion in 1D<a class="headerlink" href="#relative-motion-in-1d" title="Link to this heading">#</a></h3>
+</section>
+<section id="relative-velocity-in-2d">
+<h3><span class="section-number">4.5.3. </span>Relative Velocity in 2D<a class="headerlink" href="#relative-velocity-in-2d" title="Link to this heading">#</a></h3>
+</section>
+<section id="example-problem-motion-of-a-car-relative-to-a-truck">
+<h3><span class="section-number">4.5.4. </span><strong>Example Problem</strong>: Motion of a Car Relative to a Truck<a class="headerlink" href="#example-problem-motion-of-a-car-relative-to-a-truck" title="Link to this heading">#</a></h3>
+</section>
+<section id="example-problem-flying-a-plane-in-a-wind">
+<h3><span class="section-number">4.5.5. </span><strong>Example Problem</strong>: Flying a Plane in a Wind<a class="headerlink" href="#example-problem-flying-a-plane-in-a-wind" title="Link to this heading">#</a></h3>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -540,6 +881,61 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#displacement-and-velocity-vectors">4.1. Displacement and Velocity Vectors</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#displacement-vector">4.1.1. Displacement Vector</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-polar-orbiting-satellite">4.1.2. <strong>Example Problem</strong>: Polar Orbiting Satellite</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-brownian-motion">4.1.3. <strong>Example Problem</strong>: Brownian Motion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-vector">4.1.4. Velocity Vector</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-calculating-the-velocity-vector">4.1.5. <strong>Example Problem</strong>: Calculating the Velocity Vector</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-independence-of-perpendicular-motions">4.1.6. The Independence of Perpendicular Motions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acceleration-vector">4.2. Acceleration Vector</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#instantaneous-acceleration">4.2.1. Instantaneous Acceleration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-finding-an-acceleration-vector">4.2.2. <strong>Example Problem</strong>: Finding an Acceleration Vector</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-finding-a-particle-acceleration">4.2.3. <strong>Example Problem</strong>: Finding a Particle Acceleration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#constant-acceleration">4.2.4. Constant Acceleration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-a-skier">4.2.5. <strong>Example Problem</strong>: A Skier</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projectile-motion">4.3. Projectile Motion</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-a-fireworks-projectile-explodes">4.3.1. <strong>Example Problem</strong>: A Fireworks Projectile Explodes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-the-tennis-player">4.3.2. <strong>Example Problem</strong>: The Tennis Player</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#time-of-flight-trajectory-and-range">4.3.3. Time of Flight, Trajectory, and Range</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-comparing-golf-shots">4.3.4. <strong>Example Problem</strong>: Comparing Golf Shots</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uniform-and-nonuniform-circular-motion">4.4. Uniform and Nonuniform Circular Motion</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#centripetal-acceleration">4.4.1. Centripetal Acceleration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-creating-an-acceleration-of-1-g">4.4.2. <strong>Example Problem</strong>: Creating an Acceleration of 1 <span class="math notranslate nohighlight">\(g\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equations-of-motion-for-uniform-circular-motion">4.4.3. Equations of Motion for Uniform Circular Motion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-circular-motion-of-a-proton">4.4.4. <strong>Example Problem</strong>: Circular Motion of a Proton</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nonuniform-circular-motion">4.4.5. Nonuniform Circular Motion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-total-acceleration-during-circular-motion">4.4.6. <strong>Example Problem</strong>: Total Acceleration during Circular Motion</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relative-motion-in-one-and-two-dimensions">4.5. Relative Motion in One and Two Dimensions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reference-frames">4.5.1. Reference Frames</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relative-motion-in-1d">4.5.2. Relative Motion in 1D</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relative-velocity-in-2d">4.5.3. Relative Velocity in 2D</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-motion-of-a-car-relative-to-a-truck">4.5.4. <strong>Example Problem</strong>: Motion of a Car Relative to a Truck</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-flying-a-plane-in-a-wind">4.5.5. <strong>Example Problem</strong>: Flying a Plane in a Wind</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
