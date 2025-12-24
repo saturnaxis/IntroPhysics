@@ -498,10 +498,9 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#displacement-and-velocity-vectors">4.1. Displacement and Velocity Vectors</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#displacement-vector">4.1.1. Displacement Vector</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-polar-orbiting-satellite">4.1.2. <strong>Example Problem</strong>: Polar Orbiting Satellite</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-brownian-motion">4.1.3. <strong>Example Problem</strong>: Brownian Motion</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-vector">4.1.4. Velocity Vector</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-calculating-the-velocity-vector">4.1.5. <strong>Example Problem</strong>: Calculating the Velocity Vector</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-independence-of-perpendicular-motions">4.1.6. The Independence of Perpendicular Motions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-vector">4.1.3. Velocity Vector</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-calculating-the-velocity-vector">4.1.4. <strong>Example Problem</strong>: Calculating the Velocity Vector</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-independence-of-perpendicular-motions">4.1.5. The Independence of Perpendicular Motions</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acceleration-vector">4.2. Acceleration Vector</a><ul class="nav section-nav flex-column">
@@ -555,8 +554,8 @@ document.write(`
 <h3><span class="section-number">4.1.1. </span>Displacement Vector<a class="headerlink" href="#displacement-vector" title="Link to this heading">#</a></h3>
 <p>To describe motion in 2D and 3D, we must first define a coordinate system, including a convention of axes. <em>Recall that the sign of the acceleration due to gravity was determined by the convention that we chose.</em>  We usually use the Cartesian coordinate system to locate a particle at point <span class="math notranslate nohighlight">\(P(x,y,z)\)</span> in 3 dimensions.  If the particle is moving , the variables <span class="math notranslate nohighlight">\(x,y,z\)</span> are functions of time <span class="math notranslate nohighlight">\(t\)</span>.</p>
 <p>The position vector <span class="math notranslate nohighlight">\(\vec{r}(t)\)</span> locates the point P at time t from the origin, by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ce863f03-6dac-48c3-95a1-1911f51409b4">
-<span class="eqno">(4.1)<a class="headerlink" href="#equation-ce863f03-6dac-48c3-95a1-1911f51409b4" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e08bd48d-3a65-477d-b9d1-af927a8bb7ed">
+<span class="eqno">(4.1)<a class="headerlink" href="#equation-e08bd48d-3a65-477d-b9d1-af927a8bb7ed" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{r}(t) = x(t)\hat{i} + y(t)\hat{j} + z(t)\hat{k}.
 \end{align}\]</div>
 <figure class="align-default" id="d-position-fig">
@@ -567,8 +566,8 @@ document.write(`
 </figure>
 <p><a class="reference internal" href="#d-position-fig"><span class="std std-numref">Fig. 4.1</span></a> shows the position vector <span class="math notranslate nohighlight">\(\vec{r}(t)\)</span> for a particle located ar a time <span class="math notranslate nohighlight">\(t\)</span>. <em>Note that the orientation of the coordinate syste follows the right-hand rule.</em></p>
 <p>We can now define the 3D displacement vector <span class="math notranslate nohighlight">\(\Delta \vec{r}\)</span> as the difference between the position vector <span class="math notranslate nohighlight">\(\vec{r}(t_2)\)</span> at time <span class="math notranslate nohighlight">\(t_2\)</span> and the initial position vector <span class="math notranslate nohighlight">\(\vec{r}(t_1)\)</span> at time <span class="math notranslate nohighlight">\(t_1\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-337a854a-38e9-4f99-a8f9-4e4bcdc61021">
-<span class="eqno">(4.2)<a class="headerlink" href="#equation-337a854a-38e9-4f99-a8f9-4e4bcdc61021" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-496d5077-27a0-4f42-924c-8c83b240e061">
+<span class="eqno">(4.2)<a class="headerlink" href="#equation-496d5077-27a0-4f42-924c-8c83b240e061" title="Permalink to this equation">#</a></span>\[\begin{align}
 \Delta \vec{r} = \vec{r}(t_2) - \vec{r}(t_1).
 \end{align}\]</div>
 <p>Three dimensional vector addition is performed in the same way as in 2D, by adding the corresponding components or graphically by using the head-to-tail method.</p>
@@ -740,35 +739,585 @@ Direction angle theta = -67.5 deg
 </div>
 </div>
 </section>
-<section id="example-problem-brownian-motion">
-<h3><span class="section-number">4.1.3. </span><strong>Example Problem</strong>: Brownian Motion<a class="headerlink" href="#example-problem-brownian-motion" title="Link to this heading">#</a></h3>
-</section>
 <section id="velocity-vector">
-<h3><span class="section-number">4.1.4. </span>Velocity Vector<a class="headerlink" href="#velocity-vector" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">4.1.3. </span>Velocity Vector<a class="headerlink" href="#velocity-vector" title="Link to this heading">#</a></h3>
+<p>Previously, we defined the velocity in 1D through the derivative of <span class="math notranslate nohighlight">\(x(t)\)</span>.  To expand it to 2D or 3D, we simply replace <span class="math notranslate nohighlight">\(x(t) \rightarrow \vec{r}(t)\)</span> to get</p>
+<div class="amsmath math notranslate nohighlight" id="equation-56ec795a-562d-4fa1-9fca-084c5a11ea5c">
+<span class="eqno">(4.3)<a class="headerlink" href="#equation-56ec795a-562d-4fa1-9fca-084c5a11ea5c" title="Permalink to this equation">#</a></span>\[\begin{align}
+\vec{\rm v}(t) &amp;= \lim_{\Delta t\rightarrow 0} \frac{\vec{r}(t+\Delta t)-
+\vec{r}(t)}{\Delta t} = \frac{d\vec{r}}{dt}.
+\end{align}\]</div>
+<p>The vectors <span class="math notranslate nohighlight">\(\vec{r}(t)\)</span> and <span class="math notranslate nohighlight">\(\vec{r}(t + \Delta t)\)</span> represent intantaneous states of the displacement vector <span class="math notranslate nohighlight">\(\vec{r}\)</span> at two times.  The path of a particle located by the vector is the resultant (difference) vector <span class="math notranslate nohighlight">\(\Delta \vec{r}\)</span>, which connects from head-to-head (see Fig. <a class="reference internal" href="#d-path-fig"><span class="std std-numref">4.3</span></a>).</p>
+<figure class="align-default" id="d-path-fig">
+<img alt="Path Difference Vector" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/757906ca98f3ecf2f5d3ccd666566aaf2ff3dfcc" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.3 </span><span class="caption-text">Image Credit: OpenStax.</span><a class="headerlink" href="#d-path-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The velocity vector <span class="math notranslate nohighlight">\(\vec{\rm v}\)</span> can also be written in components, where each component is now time-dependent (<span class="math notranslate nohighlight">\(v_x(t),\ v_y(t),\ v_z(t)\)</span>).  Mathematically, the progression from the displacement to the velocity vector is given by</p>
+<div class="amsmath math notranslate nohighlight" id="equation-aa0d32d0-d716-415a-b2c9-18fd031b616c">
+<span class="eqno">(4.4)<a class="headerlink" href="#equation-aa0d32d0-d716-415a-b2c9-18fd031b616c" title="Permalink to this equation">#</a></span>\[\begin{align}
+\vec{r} &amp;= x(t)\hat{i} + y(t)\hat{j} + z(t)\hat{k}, \\
+\vec{\rm v} &amp;= v_x(t)\hat{i} + v_y(t)\hat{j} + v_z(t)\hat{k},
+\end{align}\]</div>
+<p>where</p>
+<div class="amsmath math notranslate nohighlight" id="equation-7847bc98-70bd-496a-9cc5-d56ab0fe396f">
+<span class="eqno">(4.5)<a class="headerlink" href="#equation-7847bc98-70bd-496a-9cc5-d56ab0fe396f" title="Permalink to this equation">#</a></span>\[\begin{align}
+v_x(t) = \frac{dx(t)}{dt}, \quad &amp; v_y(t) = \frac{dy(t)}{dt}, \quad &amp; v_z(t) = \frac{dz(t)}{dt}.
+\end{align}\]</div>
+<p>The average velocity <span class="math notranslate nohighlight">\(\bar{v}\)</span> was described as a vector in the previous chapter, and there is a 2D or 3D equivalent given as</p>
+<div class="amsmath math notranslate nohighlight" id="equation-cba9d152-9a8f-4e23-b55d-2e1a6bc2c0f1">
+<span class="eqno">(4.6)<a class="headerlink" href="#equation-cba9d152-9a8f-4e23-b55d-2e1a6bc2c0f1" title="Permalink to this equation">#</a></span>\[\begin{align}
+\vec{\rm v}_{\rm avg}(t_2,t_1) = \frac{\vec{r}(t_2)-\vec{r}(t_1)}{t_2-t_1}.
+\end{align}\]</div>
+<div class="note admonition">
+<p class="admonition-title">Typesetting the Velocity Vector</p>
+<p>To make distinction between the velocity vector <span class="math notranslate nohighlight">\(\vec{\rm v}\)</span> and its components (<span class="math notranslate nohighlight">\(v_x,\ v_y,\ v_z\)</span>), we use the roman font command <code class="docutils literal notranslate"><span class="pre">\rm</span></code>.  This is a convention just to make things clearer.</p>
+</div>
 </section>
 <section id="example-problem-calculating-the-velocity-vector">
-<h3><span class="section-number">4.1.5. </span><strong>Example Problem</strong>: Calculating the Velocity Vector<a class="headerlink" href="#example-problem-calculating-the-velocity-vector" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">4.1.4. </span><strong>Example Problem</strong>: Calculating the Velocity Vector<a class="headerlink" href="#example-problem-calculating-the-velocity-vector" title="Link to this heading">#</a></h3>
+<div class="exercise etamu-exercise admonition" id="Chapter04/motion-in-2D-3D-exercise-1">
+
+<p class="admonition-title"><span class="caption-number">Exercise 4.2 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>The position function of a paricle is<br />
+<span class="math notranslate nohighlight">\(\vec{r}(t) = (2.0t^2)\,\hat{i} + (2.0 + 3.0t)\,\hat{j} + 5.0\,\hat{k}\ \text{km}.\)</span>  (a) What is the instantaneous velocity vector and speed at <span class="math notranslate nohighlight">\(t = 2.0\ \text{s}\)</span>? (b) What is the average velocity between <span class="math notranslate nohighlight">\(t = 1.0\ \text{s}\)</span> and <span class="math notranslate nohighlight">\(t = 3.0\ \text{s}\)</span>?</p>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>The velocity of a particle is obtained by taking the time derivative of its position vector. The instantaneous velocity is evaluated at a specific time, while the average velocity is defined as the change in position divided by the elapsed time interval.</p>
+<p>We compute both quantities using vector calculus and then compare the results.</p>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>The velocity vector is the time derivative of the position vector,</p>
+<div class="math notranslate nohighlight">
+\[\vec{v}(t) = \frac{d\vec{r}}{dt}.\]</div>
+<p>Taking the derivative of each component gives</p>
+<div class="math notranslate nohighlight">
+\[\vec{v}(t) = (4.0t)\,\hat{i} + 3.0\,\hat{j} + 5.0\,\hat{k}\ \text{km/s}.\]</div>
+<p>Evaluating this expression at <span class="math notranslate nohighlight">\(t = 2.0\ \text{s}\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\vec{v}(2.0) = 8.0\,\hat{i} + 3.0\,\hat{j} + 5.0\,\hat{k}\ \text{km/s}.\]</div>
+<p>The speed is the magnitude of the velocity vector,</p>
+<div class="math notranslate nohighlight">
+\[|\vec{v}(2.0)| = \sqrt{(8.0)^2 + (3.0)^2 + (5.0)^2} = 9.9\ \text{km/s}.\]</div>
+<p>To find the average velocity, we use its definition,</p>
+<div class="math notranslate nohighlight">
+\[\vec{v}_{\text{avg}} = \frac{\vec{r}(t_2) - \vec{r}(t_1)}{t_2 - t_1}.\]</div>
+<p>Evaluating the position vector at <span class="math notranslate nohighlight">\(t_1 = 1.0\ \text{s}\)</span> and <span class="math notranslate nohighlight">\(t_2 = 3.0\ \text{s}\)</span>,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\vec{r}(1.0) &amp;= 2\,\hat{i} + 5\,\hat{j} + 5\,\hat{k}\ \text{km},\\
+\vec{r}(3.0) &amp;= 18\,\hat{i} + 11\,\hat{j} + 5\,\hat{k}\ \text{km}.
+\end{align*}\]</div>
+<p>Substituting into the average velocity expression,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\vec{v}_{\text{avg}} &amp;= \frac{(16\,\hat{i} + 6\,\hat{j} + 10\,\hat{k})\ \text{km}}{2.0\ \text{s}}, \\
+&amp;= 8.0\,\hat{i} + 3.0\,\hat{j} + 5.0\,\hat{k}\ \text{km/s}.
+\end{align*}\]</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Symbolic Differentiation in Python</p>
+<p><a class="reference external" href="https://www.sympy.org/en/index.html">SymPy</a> can differentiate symbols instead of numbers. If you write each component of <span class="math notranslate nohighlight">\(\vec{r}(t)\)</span> as a symbolic expression in <span class="math notranslate nohighlight">\(t\)</span>, then <code class="docutils literal notranslate"><span class="pre">diff(...)</span></code> returns the derivative exactly. After that, you can substitute a specific value like <span class="math notranslate nohighlight">\(t=2.0\)</span> using <code class="docutils literal notranslate"><span class="pre">.subs(t,</span> <span class="pre">2.0)</span></code> and convert to a float with <code class="docutils literal notranslate"><span class="pre">float(...)</span></code>.</p>
+<p>This is especially useful when <span class="math notranslate nohighlight">\(\vec{r}(t)\)</span> is complicated and you want to avoid algebra mistakes.</p>
+</div>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>At <span class="math notranslate nohighlight">\(t = 2.0\ \text{s}\)</span>, the instantaneous velocity of the particle is</p>
+<div class="math notranslate nohighlight">
+\[\vec{v}(2.0) = 8.0\,\hat{i} + 3.0\,\hat{j} + 5.0\,\hat{k}\ \text{km/s},\]</div>
+<p>with a speed of <span class="math notranslate nohighlight">\(9.9\ \text{km/s}\)</span>. The average velocity between <span class="math notranslate nohighlight">\(t = 1.0\ \text{s}\)</span> and <span class="math notranslate nohighlight">\(t = 3.0\ \text{s}\)</span> is equal to the instantaneous velocity at <span class="math notranslate nohighlight">\(t = 2.0\ \text{s}\)</span> because the velocity varies linearly with time.</p>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>We can verify these results numerically by differentiating the position function and evaluating both the instantaneous and average velocities directly using Python.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Verification of velocity vector problem</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Define the position function</span>
+<span class="k">def</span> <span class="nf">r</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">2.0</span><span class="o">*</span><span class="n">t</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="mf">2.0</span> <span class="o">+</span> <span class="mf">3.0</span><span class="o">*</span><span class="n">t</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">])</span>
+
+<span class="c1"># Times</span>
+<span class="n">t1</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">t2</span> <span class="o">=</span> <span class="mf">3.0</span>
+<span class="n">t_eval</span> <span class="o">=</span> <span class="mf">2.0</span>
+
+<span class="c1"># Instantaneous velocity (analytical derivative)</span>
+<span class="n">v_inst</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">4.0</span><span class="o">*</span><span class="n">t_eval</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">])</span>
+<span class="n">speed</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">v_inst</span><span class="p">)</span>
+
+<span class="c1"># Average velocity</span>
+<span class="n">v_avg</span> <span class="o">=</span> <span class="p">(</span><span class="n">r</span><span class="p">(</span><span class="n">t2</span><span class="p">)</span> <span class="o">-</span> <span class="n">r</span><span class="p">(</span><span class="n">t1</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="n">t2</span> <span class="o">-</span> <span class="n">t1</span><span class="p">)</span>
+
+<span class="c1"># Print results</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Instantaneous velocity at t = 2.0 s: </span><span class="si">{</span><span class="n">v_inst</span><span class="si">}</span><span class="s2"> km/s&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Speed at t = 2.0 s: </span><span class="si">{</span><span class="n">speed</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> km/s&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Average velocity from 1.0 s to 3.0 s: </span><span class="si">{</span><span class="n">v_avg</span><span class="si">}</span><span class="s2"> km/s&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Verification of velocity vector problem (with SymPy differentiation)</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">sympy</span> <span class="k">as</span> <span class="nn">sp</span>
+
+<span class="k">def</span> <span class="nf">array_from_sympy</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span> <span class="n">t_val</span><span class="p">):</span>
+    <span class="n">temp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+        <span class="n">temp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">r</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">t_val</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">temp</span>
+
+<span class="c1"># Symbolic variable</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Symbol</span><span class="p">(</span><span class="s1">&#39;t&#39;</span><span class="p">,</span> <span class="n">real</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Symbolic position components (km)</span>
+<span class="n">x_t</span> <span class="o">=</span> <span class="mf">2.0</span><span class="o">*</span><span class="n">t</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">y_t</span> <span class="o">=</span> <span class="mf">2.0</span> <span class="o">+</span> <span class="mf">3.0</span><span class="o">*</span><span class="n">t</span>
+<span class="n">z_t</span> <span class="o">=</span> <span class="mf">5.0</span><span class="o">*</span><span class="n">t</span>
+<span class="n">r_t</span> <span class="o">=</span> <span class="p">[</span><span class="n">x_t</span><span class="p">,</span> <span class="n">y_t</span><span class="p">,</span> <span class="n">z_t</span><span class="p">]</span>
+
+<span class="c1"># Symbolic velocity components (km/s)</span>
+<span class="n">vx_t</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">x_t</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
+<span class="n">vy_t</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">y_t</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
+<span class="n">vz_t</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">z_t</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
+
+<span class="c1"># Evaluate instantaneous velocity at t = 2.0 s</span>
+<span class="n">t_eval</span> <span class="o">=</span> <span class="mf">2.0</span>
+<span class="n">v_inst_sym</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Matrix</span><span class="p">([</span><span class="n">vx_t</span><span class="p">,</span> <span class="n">vy_t</span><span class="p">,</span> <span class="n">vz_t</span><span class="p">])</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">t_eval</span><span class="p">)</span>
+<span class="n">v_inst</span> <span class="o">=</span> <span class="n">array_from_sympy</span><span class="p">([</span><span class="n">vx_t</span><span class="p">,</span> <span class="n">vy_t</span><span class="p">,</span> <span class="n">vz_t</span><span class="p">],</span> <span class="n">t</span><span class="p">,</span> <span class="n">t_eval</span><span class="p">)</span>
+<span class="n">speed</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">v_inst</span><span class="p">)</span>
+
+<span class="c1"># Average velocity from t1 to t2</span>
+<span class="n">t1</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">t2</span> <span class="o">=</span> <span class="mf">3.0</span>
+<span class="n">r1</span> <span class="o">=</span> <span class="n">array_from_sympy</span><span class="p">(</span><span class="n">r_t</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span> <span class="n">t1</span><span class="p">)</span>
+<span class="n">r2</span> <span class="o">=</span> <span class="n">array_from_sympy</span><span class="p">(</span><span class="n">r_t</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span> <span class="n">t2</span><span class="p">)</span>
+<span class="n">v_avg</span> <span class="o">=</span> <span class="p">(</span><span class="n">r2</span> <span class="o">-</span> <span class="n">r1</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">t2</span> <span class="o">-</span> <span class="n">t1</span><span class="p">)</span>
+
+<span class="c1"># Print results (formatted numerical output)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Instantaneous velocity at t = </span><span class="si">{</span><span class="n">t_eval</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> s: </span><span class="si">{</span><span class="n">v_inst</span><span class="si">}</span><span class="s2"> km/s&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Speed at t = </span><span class="si">{</span><span class="n">t_eval</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> s: </span><span class="si">{</span><span class="n">speed</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> km/s&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Average velocity from </span><span class="si">{</span><span class="n">t1</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> s to </span><span class="si">{</span><span class="n">t2</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> s: </span><span class="si">{</span><span class="n">v_avg</span><span class="si">}</span><span class="s2"> km/s&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Instantaneous velocity at t = 2.0 s: [8. 3. 5.] km/s
+Speed at t = 2.0 s: 9.9 km/s
+Average velocity from 1.0 s to 3.0 s: [8. 3. 5.] km/s
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="the-independence-of-perpendicular-motions">
-<h3><span class="section-number">4.1.6. </span>The Independence of Perpendicular Motions<a class="headerlink" href="#the-independence-of-perpendicular-motions" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">4.1.5. </span>The Independence of Perpendicular Motions<a class="headerlink" href="#the-independence-of-perpendicular-motions" title="Link to this heading">#</a></h3>
+<p>When we look at the 3D equations for position and velocity written in unit vector notation, we see the components are separate and unique funcitons of time that <strong>do not</strong> depend on each other.</p>
+<ul class="simple">
+<li><p>Motion along the <span class="math notranslate nohighlight">\(x\)</span> direction has not part of its motion along the <span class="math notranslate nohighlight">\(y\)</span> or <span class="math notranslate nohighlight">\(z\)</span> directions.</p></li>
+</ul>
+<p>Thus the motion of an object in 2D or 3D can be divided (separated) into independent motions along the perpendicular coordinate axes.</p>
+<p>Consider a woman walking from point A to point B in a city with square blocks.  The woman taking the path from A to B may walk east, then north for several blocks to arrive at point B.  How far she walks east is affected only by her motion eastward (<em>Recall the chessboard from Chapter 2</em>).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In kinematics, we can treat the horizontal and vertical components of motion separately.  In many cases, motion in the horizontal direction does not affect the motion in the vertical direction and vice versa.</p>
+</div>
+<p>We can illustrate this with a stroboscope that captures the positions of two balls at fixed time intervals.  One ball is dropped from rest and the other is thrown horizontally from the same height and follows a curved path (<em>parabola</em>).</p>
+<figure class="align-default" id="independent-path-fig">
+<img alt="Independent motion" src="../_images/projectile_components_snapshots.gif" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.4 </span><span class="caption-text">The red ball falls straight down, while the blue ball moves horizontally at constant speed while accelerating vertically. At equal time intervals, both objects have the same vertical position, as indicated by the dashed horizontal lines. The velocity and acceleration vectors illustrate that horizontal motion does not affect vertical motion. The animation was generated using Python, with AI-assisted code development (ChatGPT).</span><a class="headerlink" href="#independent-path-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Careful examination of the blue ball shows it travels the same horizontal distance between flashes.  This is because there is only 1 force (gravity downward) acting on the ball after it is thrown.  This means the horizontal velocity is constant.  <em>Note that in the real world, air resistance would affect the speed of the ball in both directions.</em></p>
 </section>
 </section>
 <section id="acceleration-vector">
 <h2><span class="section-number">4.2. </span>Acceleration Vector<a class="headerlink" href="#acceleration-vector" title="Link to this heading">#</a></h2>
 <section id="instantaneous-acceleration">
 <h3><span class="section-number">4.2.1. </span>Instantaneous Acceleration<a class="headerlink" href="#instantaneous-acceleration" title="Link to this heading">#</a></h3>
+<p>The <strong>acceleration vector</strong> <span class="math notranslate nohighlight">\(\vec{a}(t)\)</span> is the intantaneous acceleration at any point in time along an object’s trajectory.  It can be obtain in a similar way as was the velocity vector.  Taking the derivative of <span class="math notranslate nohighlight">\(\vec{\rm v}(t)\)</span> with respect to time, we find</p>
+<div class="amsmath math notranslate nohighlight" id="equation-2223e3cb-1046-4045-b6c5-19382d27a892">
+<span class="eqno">(4.7)<a class="headerlink" href="#equation-2223e3cb-1046-4045-b6c5-19382d27a892" title="Permalink to this equation">#</a></span>\[\begin{align}
+\vec{a}(t) &amp;= \lim_{\Delta t\to 0}\frac{\vec{\rm v}(t+\Delta t)-\vec{\rm v}(t)}{\Delta t} = \frac{d\vec{\rm v}(t)}{dt}.
+\end{align}\]</div>
+<p>In terms of components we have the following form</p>
+<div class="amsmath math notranslate nohighlight" id="equation-9836f700-d885-459b-aab4-d592844835f5">
+<span class="eqno">(4.8)<a class="headerlink" href="#equation-9836f700-d885-459b-aab4-d592844835f5" title="Permalink to this equation">#</a></span>\[\begin{align}
+\vec{a}(t) &amp;= \frac{dv_x(t)}{dt}\,\hat{i} + \frac{dv_y(t)}{dt}\,\hat{j} + \frac{dv_z(t)}{dt}\,\hat{k},\\
+&amp;= \frac{d^2x(t)}{dt^2}\,\hat{i} + \frac{d^2y(t)}{dt^2}\,\hat{j} + \frac{d^2z(t)}{dt^2}\,\hat{k}.
+\end{align}\]</div>
 </section>
 <section id="example-problem-finding-an-acceleration-vector">
 <h3><span class="section-number">4.2.2. </span><strong>Example Problem</strong>: Finding an Acceleration Vector<a class="headerlink" href="#example-problem-finding-an-acceleration-vector" title="Link to this heading">#</a></h3>
+<div class="exercise etamu-exercise admonition" id="Chapter04/motion-in-2D-3D-exercise-2">
+
+<p class="admonition-title"><span class="caption-number">Exercise 4.3 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>A particle has a velocity of  <span class="math notranslate nohighlight">\(\vec{\rm v}(t) = 5.0t\,\hat{i} + t^2\,\hat{j} - 2.0t^3\,\hat{k}\ \text{km/s}.\)</span>  (a) What is the acceleration function?  (b) What is the acceleration vector at <span class="math notranslate nohighlight">\(t = 2.0\ \text{s}\)</span>? Find its magnitude and direction.</p>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>The acceleration of a particle is defined as the time derivative of its velocity. Because the velocity is given in unit-vector form, the acceleration can be found by differentiating each component of the velocity function with respect to time.</p>
+<p>Once the acceleration function is known, it can be evaluated at a specific time. The magnitude of the acceleration is then found using the Euclidean distance (norm) of the acceleration vector.</p>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>The acceleration function is the derivative of the velocity function,</p>
+<div class="math notranslate nohighlight">
+\[\vec{a}(t) = \frac{d\vec{\rm v}(t)}{dt}.\]</div>
+<p>Taking the derivative component-by-component gives</p>
+<div class="math notranslate nohighlight">
+\[\vec{a}(t) = 5.0\,\hat{i} + 2.0t\,\hat{j} - 6.0t^2\,\hat{k}\ \text{km/s}^2.\]</div>
+<p>Evaluating the acceleration at <span class="math notranslate nohighlight">\(t = 2.0\ \text{s}\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\vec{a}(2.0) = 5.0\,\hat{i} + 4.0\,\hat{j} - 24.0\,\hat{k}\ \text{km/s}^2.\]</div>
+<p>The magnitude of the acceleration is</p>
+<div class="math notranslate nohighlight">
+\[|\vec{a}(2.0)| = \sqrt{(5.0)^2 + (4.0)^2 + (-24.0)^2} = 24.8\ \text{km/s}^2.\]</div>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>The acceleration of the particle is time dependent and is given by</p>
+<div class="math notranslate nohighlight">
+\[\vec{a}(t) = 5.0\,\hat{i} + 2.0t\,\hat{j} - 6.0t^2\,\hat{k}\ \text{km/s}^2.\]</div>
+<p>At <span class="math notranslate nohighlight">\(t = 2.0\ \text{s}\)</span>, the acceleration vector has a magnitude of <span class="math notranslate nohighlight">\(24.8\ \text{km/s}^2\)</span> and points in the direction <span class="math notranslate nohighlight">\(5.0\,\hat{i} + 4.0\,\hat{j} - 24.0\,\hat{k}\)</span>. This example illustrates that acceleration can vary with time when the velocity function is nonlinear.</p>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>In the verification step, the acceleration vector is represented as a NumPy array. This allows us to treat the components of the vector in the same way we would treat a vector written in unit-vector notation. Each element of the array corresponds to one Cartesian component of the acceleration.</p>
+<p>The function <code class="docutils literal notranslate"><span class="pre">np.linalg.norm</span></code> computes the Euclidean norm of the array, which is the magnitude of the vector. For a vector with components <span class="math notranslate nohighlight">\((a_x,\ a_y,\ a_z)\)</span>, this corresponds to the familiar expression</p>
+<div class="math notranslate nohighlight">
+\[|\vec{a}| = \sqrt{a_x^2 +a_y^2 +a_z^2}. \]</div>
+<p>Using arrays in this way provides a direct numerical check of the analytical result and reinforces the connection between vector algebra and computational methods.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Verification of acceleration vector</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="mf">2.0</span>
+
+<span class="c1"># Acceleration components (km/s^2)</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">5.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="o">*</span><span class="n">t</span><span class="p">,</span> <span class="o">-</span><span class="mf">6.0</span><span class="o">*</span><span class="n">t</span><span class="o">**</span><span class="mi">2</span><span class="p">])</span>
+
+<span class="c1"># Magnitude</span>
+<span class="n">a_mag</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;a(2.0 s) = </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2"> km/s^2&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;|a(2.0 s)| = </span><span class="si">{</span><span class="n">a_mag</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> km/s^2&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</div>
 </section>
 <section id="example-problem-finding-a-particle-acceleration">
 <h3><span class="section-number">4.2.3. </span><strong>Example Problem</strong>: Finding a Particle Acceleration<a class="headerlink" href="#example-problem-finding-a-particle-acceleration" title="Link to this heading">#</a></h3>
+<div class="exercise etamu-exercise admonition" id="Chapter04/motion-in-2D-3D-exercise-3">
+
+<p class="admonition-title"><span class="caption-number">Exercise 4.4 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>A particle has a position function  <span class="math notranslate nohighlight">\(\vec{r}(t) = (10t - t^2)\,\hat{i} + 5t\,\hat{j} + 5t\,\hat{k}\ \text{m}.\)</span>  (a) What is the velocity?  (b) What is the acceleration? (c) Describe the motion from <span class="math notranslate nohighlight">\(t = 0\ \text{s}\)</span>.</p>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>Velocity is the first time derivative of the position function, and acceleration is the second time derivative. Because the position is linear in <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span>, the acceleration in those directions is zero. The motion in the <span class="math notranslate nohighlight">\(x\)</span> direction is quadratic in time, which implies a constant acceleration and a possible reversal in direction.</p>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>The velocity is obtained by differentiating the position function,</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{\rm v}(t) = \frac{d\vec{r}(t)}{dt}
+          = (10 - 2t)\,\hat{i} + 5\,\hat{j} + 5\,\hat{k}\ \text{m/s}.
+\]</div>
+<p>The acceleration is the derivative of the velocity,</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{a}(t) = \frac{d\vec{\rm v}(t)}{dt}
+          = -2\,\hat{i}\ \text{m/s}^2.
+\]</div>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>The particle moves with constant velocities in the <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span> directions and a constant acceleration in the negative <span class="math notranslate nohighlight">\(x\)</span> direction. Initially, the particle moves in the positive <span class="math notranslate nohighlight">\(x\)</span> direction, but its velocity in <span class="math notranslate nohighlight">\(x\)</span> decreases linearly and becomes zero at <span class="math notranslate nohighlight">\(t = 5\ \text{s}\)</span>. At this time, the particle reverses direction and accelerates back toward smaller <span class="math notranslate nohighlight">\(x\)</span> values. The particle reaches a maximum <span class="math notranslate nohighlight">\(x\)</span> position of <span class="math notranslate nohighlight">\(25\ \text{m}\)</span> and returns to <span class="math notranslate nohighlight">\(x = 0\)</span> at <span class="math notranslate nohighlight">\(t = 10\ \text{s}\)</span>.</p>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>To visualize the motion, we compute the particle’s position at evenly spaced times and plot the resulting trajectory in three dimensions. The plotted points represent the particle’s position at equal time intervals, allowing us to clearly see the turnaround in the <span class="math notranslate nohighlight">\(x\)</span> direction while motion in <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span> continues steadily.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A visualization using <code class="docutils literal notranslate"><span class="pre">plotly</span></code> is given below so that you can interact with the figure to see different perspectives.  <em>You are not expected to know to generate figures with plotly.</em></p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Verification of particle motion from the position function</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Time array</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span>
+
+<span class="c1"># Position components (m)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">10</span><span class="o">*</span><span class="n">t</span> <span class="o">-</span> <span class="n">t</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">5</span><span class="o">*</span><span class="n">t</span>
+<span class="n">z</span> <span class="o">=</span> <span class="mi">5</span><span class="o">*</span><span class="n">t</span>
+
+<span class="c1"># Create 3D plot</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">120</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="s1">&#39;3d&#39;</span><span class="p">)</span>
+
+<span class="c1"># Plot trajectory points</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;tab:blue&#39;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span>
+
+<span class="c1"># Highlight the turnaround point at t = 5 s</span>
+<span class="n">t_turn</span> <span class="o">=</span> <span class="mf">5.0</span>
+<span class="n">x_turn</span> <span class="o">=</span> <span class="mi">10</span><span class="o">*</span><span class="n">t_turn</span> <span class="o">-</span> <span class="n">t_turn</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">y_turn</span> <span class="o">=</span> <span class="mi">5</span><span class="o">*</span><span class="n">t_turn</span>
+<span class="n">z_turn</span> <span class="o">=</span> <span class="mi">5</span><span class="o">*</span><span class="n">t_turn</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x_turn</span><span class="p">,</span> <span class="n">y_turn</span><span class="p">,</span> <span class="n">z_turn</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;tab:red&#39;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">60</span><span class="p">)</span>
+
+<span class="c1"># Axes labels</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;x (m)&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;y (m)&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_zlabel</span><span class="p">(</span><span class="s2">&quot;z (m)&quot;</span><span class="p">)</span>
+
+<span class="c1"># Set limits for clarity</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_zlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">view_init</span><span class="p">(</span><span class="n">elev</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span> <span class="n">azim</span><span class="o">=</span><span class="mi">135</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span> 
+</pre></div>
+</div>
+</section>
+</div>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span><span class="o">,</span> <span class="nn">plotly.graph_objects</span> <span class="k">as</span> <span class="nn">go</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
+
+<span class="n">t</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">60</span><span class="p">);</span> <span class="n">x</span><span class="o">=</span><span class="mi">10</span><span class="o">*</span><span class="n">t</span><span class="o">-</span><span class="n">t</span><span class="o">**</span><span class="mi">2</span><span class="p">;</span> <span class="n">y</span><span class="o">=</span><span class="mi">5</span><span class="o">*</span><span class="n">t</span><span class="p">;</span> <span class="n">z</span><span class="o">=</span><span class="mi">5</span><span class="o">*</span><span class="n">t</span><span class="p">;</span> <span class="n">L</span><span class="o">=</span><span class="mi">55</span><span class="p">;</span> <span class="n">A</span><span class="o">=</span><span class="mf">0.18</span><span class="o">*</span><span class="n">L</span>
+
+<span class="n">fig</span><span class="o">=</span><span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter3d</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="o">=</span><span class="n">z</span><span class="p">,</span><span class="n">mode</span><span class="o">=</span><span class="s1">&#39;markers&#39;</span><span class="p">,</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span>
+    <span class="n">marker</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="n">t</span><span class="p">,</span><span class="n">colorscale</span><span class="o">=</span><span class="s1">&#39;Viridis&#39;</span><span class="p">,</span><span class="n">opacity</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span><span class="n">showscale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">colorbar</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;time (s)&quot;</span><span class="p">,</span><span class="n">thickness</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span><span class="nb">len</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span><span class="n">x</span><span class="o">=</span><span class="mf">1.03</span><span class="p">,</span><span class="n">tickfont</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">14</span><span class="p">))),</span><span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+
+<span class="k">def</span> <span class="nf">axis_line</span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="n">q</span><span class="p">):</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter3d</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="p">[</span><span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">q</span><span class="p">[</span><span class="mi">0</span><span class="p">]],</span><span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">q</span><span class="p">[</span><span class="mi">1</span><span class="p">]],</span><span class="n">z</span><span class="o">=</span><span class="p">[</span><span class="n">p</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span><span class="n">q</span><span class="p">[</span><span class="mi">2</span><span class="p">]],</span><span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines&#39;</span><span class="p">,</span>
+                                              <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">6</span><span class="p">),</span><span class="n">hoverinfo</span><span class="o">=</span><span class="s1">&#39;skip&#39;</span><span class="p">,</span><span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">))</span>
+<span class="k">def</span> <span class="nf">axis_tip</span><span class="p">(</span><span class="n">px</span><span class="p">,</span><span class="n">py</span><span class="p">,</span><span class="n">pz</span><span class="p">,</span><span class="n">ux</span><span class="p">,</span><span class="n">uy</span><span class="p">,</span><span class="n">uz</span><span class="p">):</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Cone</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="p">[</span><span class="n">px</span><span class="p">],</span><span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="n">py</span><span class="p">],</span><span class="n">z</span><span class="o">=</span><span class="p">[</span><span class="n">pz</span><span class="p">],</span><span class="n">u</span><span class="o">=</span><span class="p">[</span><span class="n">ux</span><span class="p">],</span><span class="n">v</span><span class="o">=</span><span class="p">[</span><span class="n">uy</span><span class="p">],</span><span class="n">w</span><span class="o">=</span><span class="p">[</span><span class="n">uz</span><span class="p">],</span><span class="n">anchor</span><span class="o">=</span><span class="s1">&#39;tip&#39;</span><span class="p">,</span>
+                                                      <span class="n">sizemode</span><span class="o">=</span><span class="s1">&#39;absolute&#39;</span><span class="p">,</span><span class="n">sizeref</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span><span class="n">showscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                                                      <span class="n">colorscale</span><span class="o">=</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;black&#39;</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;black&#39;</span><span class="p">]],</span><span class="n">hoverinfo</span><span class="o">=</span><span class="s1">&#39;skip&#39;</span><span class="p">,</span><span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">))</span>
+<span class="k">def</span> <span class="nf">axis_label</span><span class="p">(</span><span class="n">px</span><span class="p">,</span><span class="n">py</span><span class="p">,</span><span class="n">pz</span><span class="p">,</span><span class="n">txt</span><span class="p">):</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter3d</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="p">[</span><span class="n">px</span><span class="p">],</span><span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="n">py</span><span class="p">],</span><span class="n">z</span><span class="o">=</span><span class="p">[</span><span class="n">pz</span><span class="p">],</span><span class="n">mode</span><span class="o">=</span><span class="s1">&#39;text&#39;</span><span class="p">,</span><span class="n">text</span><span class="o">=</span><span class="p">[</span><span class="n">txt</span><span class="p">],</span>
+                                                        <span class="n">textfont</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">),</span><span class="n">hoverinfo</span><span class="o">=</span><span class="s1">&#39;skip&#39;</span><span class="p">,</span><span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">))</span>
+
+<span class="n">axis_line</span><span class="p">((</span><span class="o">-</span><span class="n">L</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),(</span> <span class="n">L</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">));</span> <span class="n">axis_line</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="n">L</span><span class="p">,</span><span class="mi">0</span><span class="p">),(</span><span class="mi">0</span><span class="p">,</span> <span class="n">L</span><span class="p">,</span><span class="mi">0</span><span class="p">));</span> <span class="n">axis_line</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="n">L</span><span class="p">),(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span> <span class="n">L</span><span class="p">))</span>
+<span class="n">axis_tip</span><span class="p">(</span> <span class="n">L</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span>  <span class="n">A</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span> <span class="n">axis_tip</span><span class="p">(</span><span class="o">-</span><span class="n">L</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="n">A</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span> <span class="n">axis_tip</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">L</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span> <span class="n">axis_tip</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="n">L</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="n">A</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span> <span class="n">axis_tip</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span> <span class="n">L</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span> <span class="n">A</span><span class="p">);</span> <span class="n">axis_tip</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="n">L</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="n">A</span><span class="p">)</span>
+<span class="n">axis_label</span><span class="p">(</span> <span class="mf">1.12</span><span class="o">*</span><span class="n">L</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;x&quot;</span><span class="p">);</span> <span class="n">axis_label</span><span class="p">(</span><span class="o">-</span><span class="mf">1.12</span><span class="o">*</span><span class="n">L</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;-x&quot;</span><span class="p">);</span> <span class="n">axis_label</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">1.12</span><span class="o">*</span><span class="n">L</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;y&quot;</span><span class="p">);</span> <span class="n">axis_label</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mf">1.12</span><span class="o">*</span><span class="n">L</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;-y&quot;</span><span class="p">);</span> <span class="n">axis_label</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span> <span class="mf">1.12</span><span class="o">*</span><span class="n">L</span><span class="p">,</span><span class="s2">&quot;z&quot;</span><span class="p">);</span> <span class="n">axis_label</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mf">1.12</span><span class="o">*</span><span class="n">L</span><span class="p">,</span><span class="s2">&quot;-z&quot;</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">700</span><span class="p">,</span><span class="n">margin</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">l</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">r</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">b</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">t</span><span class="o">=</span><span class="mi">20</span><span class="p">),</span><span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">scene</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">aspectmode</span><span class="o">=</span><span class="s1">&#39;cube&#39;</span><span class="p">,</span>
+        <span class="n">xaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="nb">range</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mf">1.2</span><span class="o">*</span><span class="n">L</span><span class="p">,</span><span class="mf">1.2</span><span class="o">*</span><span class="n">L</span><span class="p">],</span><span class="n">showbackground</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">showticklabels</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">showgrid</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">zeroline</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">),</span>
+        <span class="n">yaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="nb">range</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mf">1.2</span><span class="o">*</span><span class="n">L</span><span class="p">,</span><span class="mf">1.2</span><span class="o">*</span><span class="n">L</span><span class="p">],</span><span class="n">showbackground</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">showticklabels</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">showgrid</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">zeroline</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">),</span>
+        <span class="n">zaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="nb">range</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mf">1.2</span><span class="o">*</span><span class="n">L</span><span class="p">,</span><span class="mf">1.2</span><span class="o">*</span><span class="n">L</span><span class="p">],</span><span class="n">showbackground</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">showticklabels</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">showgrid</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">zeroline</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)))</span>
+
+<span class="n">HTML</span><span class="p">(</span><span class="n">fig</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">full_html</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">include_plotlyjs</span><span class="o">=</span><span class="s2">&quot;cdn&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script src="https://cdn.plot.ly/plotly-2.12.1.min.js"></script>                <div id="e7b51482-9f13-4c24-b739-7fa4566fded5" class="plotly-graph-div" style="height:700px; width:800px;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("e7b51482-9f13-4c24-b739-7fa4566fded5")) {                    Plotly.newPlot(                        "e7b51482-9f13-4c24-b739-7fa4566fded5",                        [{"marker":{"color":[0.0,0.1694915254237288,0.3389830508474576,0.5084745762711864,0.6779661016949152,0.847457627118644,1.0169491525423728,1.1864406779661016,1.3559322033898304,1.5254237288135593,1.694915254237288,1.8644067796610169,2.0338983050847457,2.2033898305084745,2.3728813559322033,2.542372881355932,2.711864406779661,2.8813559322033897,3.0508474576271185,3.2203389830508473,3.389830508474576,3.559322033898305,3.7288135593220337,3.8983050847457625,4.067796610169491,4.23728813559322,4.406779661016949,4.576271186440678,4.745762711864407,4.915254237288135,5.084745762711864,5.254237288135593,5.423728813559322,5.59322033898305,5.762711864406779,5.932203389830509,6.101694915254237,6.271186440677965,6.440677966101695,6.610169491525424,6.779661016949152,6.949152542372881,7.11864406779661,7.288135593220339,7.4576271186440675,7.627118644067796,7.796610169491525,7.966101694915254,8.135593220338983,8.305084745762711,8.47457627118644,8.64406779661017,8.813559322033898,8.983050847457626,9.152542372881356,9.322033898305085,9.491525423728813,9.661016949152541,9.83050847457627,10.0],"colorbar":{"len":0.9,"thickness":18,"tickfont":{"size":14},"title":{"text":"time (s)"},"x":1.03},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"opacity":0.9,"showscale":true,"size":7},"mode":"markers","name":"","showlegend":false,"x":[0.0,1.6661878770468255,3.274920999712726,4.8261993679977016,6.320022981901752,7.756391841424877,9.135305946567078,10.456765297328355,11.720769893708704,12.927319735708128,14.076414823326628,15.168055156564206,16.202240735420855,17.17897155989658,18.098247629991384,18.96006894570526,19.764435507038208,20.511347313990232,21.20080436656133,21.832806664751505,22.407354208560754,22.924446997989087,23.384085033036484,23.786268313702962,24.13099683998851,24.418270611893128,24.648089629416834,24.82045389255961,24.935363401321464,24.992818155702384,24.992818155702388,24.935363401321457,24.82045389255961,24.648089629416837,24.418270611893135,24.130996839988512,23.786268313702955,23.384085033036484,22.92444699798908,22.40735420856076,21.8328066647515,21.200804366561336,20.511347313990242,19.764435507038208,18.96006894570526,18.098247629991377,17.17897155989659,16.20224073542085,15.168055156564208,14.076414823326644,12.927319735708124,11.720769893708706,10.45676529732836,9.135305946567087,7.756391841424872,6.320022981901758,4.826199367997717,3.2749209997127338,1.6661878770468377,0.0],"y":[0.0,0.847457627118644,1.694915254237288,2.542372881355932,3.389830508474576,4.23728813559322,5.084745762711864,5.932203389830509,6.779661016949152,7.627118644067796,8.47457627118644,9.322033898305085,10.169491525423728,11.016949152542372,11.864406779661017,12.711864406779661,13.559322033898304,14.406779661016948,15.254237288135592,16.101694915254235,16.94915254237288,17.796610169491526,18.64406779661017,19.491525423728813,20.338983050847457,21.186440677966097,22.033898305084744,22.88135593220339,23.728813559322035,24.576271186440675,25.423728813559322,26.271186440677965,27.11864406779661,27.966101694915253,28.813559322033896,29.661016949152543,30.508474576271183,31.355932203389827,32.20338983050847,33.05084745762712,33.89830508474576,34.7457627118644,35.59322033898305,36.440677966101696,37.28813559322034,38.135593220338976,38.983050847457626,39.83050847457627,40.67796610169491,41.52542372881356,42.37288135593219,43.22033898305085,44.06779661016949,44.91525423728813,45.76271186440678,46.610169491525426,47.45762711864407,48.305084745762706,49.15254237288135,50.0],"z":[0.0,0.847457627118644,1.694915254237288,2.542372881355932,3.389830508474576,4.23728813559322,5.084745762711864,5.932203389830509,6.779661016949152,7.627118644067796,8.47457627118644,9.322033898305085,10.169491525423728,11.016949152542372,11.864406779661017,12.711864406779661,13.559322033898304,14.406779661016948,15.254237288135592,16.101694915254235,16.94915254237288,17.796610169491526,18.64406779661017,19.491525423728813,20.338983050847457,21.186440677966097,22.033898305084744,22.88135593220339,23.728813559322035,24.576271186440675,25.423728813559322,26.271186440677965,27.11864406779661,27.966101694915253,28.813559322033896,29.661016949152543,30.508474576271183,31.355932203389827,32.20338983050847,33.05084745762712,33.89830508474576,34.7457627118644,35.59322033898305,36.440677966101696,37.28813559322034,38.135593220338976,38.983050847457626,39.83050847457627,40.67796610169491,41.52542372881356,42.37288135593219,43.22033898305085,44.06779661016949,44.91525423728813,45.76271186440678,46.610169491525426,47.45762711864407,48.305084745762706,49.15254237288135,50.0],"type":"scatter3d"},{"hoverinfo":"skip","line":{"color":"black","width":6},"mode":"lines","name":"","showlegend":false,"x":[-55,55],"y":[0,0],"z":[0,0],"type":"scatter3d"},{"hoverinfo":"skip","line":{"color":"black","width":6},"mode":"lines","name":"","showlegend":false,"x":[0,0],"y":[-55,55],"z":[0,0],"type":"scatter3d"},{"hoverinfo":"skip","line":{"color":"black","width":6},"mode":"lines","name":"","showlegend":false,"x":[0,0],"y":[0,0],"z":[-55,55],"type":"scatter3d"},{"anchor":"tip","colorscale":[[0,"black"],[1,"black"]],"hoverinfo":"skip","name":"","showlegend":false,"showscale":false,"sizemode":"absolute","sizeref":6,"u":[9.9],"v":[0],"w":[0],"x":[55],"y":[0],"z":[0],"type":"cone"},{"anchor":"tip","colorscale":[[0,"black"],[1,"black"]],"hoverinfo":"skip","name":"","showlegend":false,"showscale":false,"sizemode":"absolute","sizeref":6,"u":[-9.9],"v":[0],"w":[0],"x":[-55],"y":[0],"z":[0],"type":"cone"},{"anchor":"tip","colorscale":[[0,"black"],[1,"black"]],"hoverinfo":"skip","name":"","showlegend":false,"showscale":false,"sizemode":"absolute","sizeref":6,"u":[0],"v":[9.9],"w":[0],"x":[0],"y":[55],"z":[0],"type":"cone"},{"anchor":"tip","colorscale":[[0,"black"],[1,"black"]],"hoverinfo":"skip","name":"","showlegend":false,"showscale":false,"sizemode":"absolute","sizeref":6,"u":[0],"v":[-9.9],"w":[0],"x":[0],"y":[-55],"z":[0],"type":"cone"},{"anchor":"tip","colorscale":[[0,"black"],[1,"black"]],"hoverinfo":"skip","name":"","showlegend":false,"showscale":false,"sizemode":"absolute","sizeref":6,"u":[0],"v":[0],"w":[9.9],"x":[0],"y":[0],"z":[55],"type":"cone"},{"anchor":"tip","colorscale":[[0,"black"],[1,"black"]],"hoverinfo":"skip","name":"","showlegend":false,"showscale":false,"sizemode":"absolute","sizeref":6,"u":[0],"v":[0],"w":[-9.9],"x":[0],"y":[0],"z":[-55],"type":"cone"},{"hoverinfo":"skip","mode":"text","name":"","showlegend":false,"text":["x"],"textfont":{"color":"black","size":16},"x":[61.60000000000001],"y":[0],"z":[0],"type":"scatter3d"},{"hoverinfo":"skip","mode":"text","name":"","showlegend":false,"text":["-x"],"textfont":{"color":"black","size":16},"x":[-61.60000000000001],"y":[0],"z":[0],"type":"scatter3d"},{"hoverinfo":"skip","mode":"text","name":"","showlegend":false,"text":["y"],"textfont":{"color":"black","size":16},"x":[0],"y":[61.60000000000001],"z":[0],"type":"scatter3d"},{"hoverinfo":"skip","mode":"text","name":"","showlegend":false,"text":["-y"],"textfont":{"color":"black","size":16},"x":[0],"y":[-61.60000000000001],"z":[0],"type":"scatter3d"},{"hoverinfo":"skip","mode":"text","name":"","showlegend":false,"text":["z"],"textfont":{"color":"black","size":16},"x":[0],"y":[0],"z":[61.60000000000001],"type":"scatter3d"},{"hoverinfo":"skip","mode":"text","name":"","showlegend":false,"text":["-z"],"textfont":{"color":"black","size":16},"x":[0],"y":[0],"z":[-61.60000000000001],"type":"scatter3d"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"margin":{"l":0,"r":0,"b":0,"t":20},"scene":{"xaxis":{"range":[-66.0,66.0],"showbackground":false,"showticklabels":false,"showgrid":false,"zeroline":false,"title":{"text":""}},"yaxis":{"range":[-66.0,66.0],"showbackground":false,"showticklabels":false,"showgrid":false,"zeroline":false,"title":{"text":""}},"zaxis":{"range":[-66.0,66.0],"showbackground":false,"showticklabels":false,"showgrid":false,"zeroline":false,"title":{"text":""}},"aspectmode":"cube"},"width":800,"height":700,"showlegend":false},                        {"responsive": true}                    )                };                            </script>        </div></div></div>
+</div>
 </section>
 <section id="constant-acceleration">
 <h3><span class="section-number">4.2.4. </span>Constant Acceleration<a class="headerlink" href="#constant-acceleration" title="Link to this heading">#</a></h3>
+<p>Constant acceleration in 2D or 3D can be treated the samy way as in the previous chapter.  To develop the relvant equations, let’s consider the 2D problem of a particle moving in the <span class="math notranslate nohighlight">\(xy\)</span> plane with constant acceleration.  The acceleration vector <span class="math notranslate nohighlight">\(\vec{a}\)</span> is given aa</p>
+<div class="math notranslate nohighlight">
+\[ \vec{a} = a_x\hat{i} + a_y\hat{j}. \]</div>
+<p>Each of the kinematic equations for 1D motion now has component-forms that define the equation in the <span class="math notranslate nohighlight">\(x\)</span>- and <span class="math notranslate nohighlight">\(y\)</span>-directions.  We can write the equations as</p>
+<div class="amsmath math notranslate nohighlight" id="equation-07a70cd3-d536-4e24-bea2-6e6416ecb0fc">
+<span class="eqno">(4.9)<a class="headerlink" href="#equation-07a70cd3-d536-4e24-bea2-6e6416ecb0fc" title="Permalink to this equation">#</a></span>\[\begin{align}
+x(t) &amp;= x_o + \left(v_x\right)_{\rm avg} t, \quad &amp; v_x(t) &amp;= v_{ox} + a_x t, \\
+x(t) &amp;= x_o + v_{ox}t + \frac{1}{2}a_x t^2, \quad &amp; v_x^2(t) &amp;= v_{ox}^2 + 2a_x(x-x_o).
+\end{align}\]</div>
+<p>and</p>
+<div class="amsmath math notranslate nohighlight" id="equation-8c87825e-192c-47de-8456-f4e06a431375">
+<span class="eqno">(4.10)<a class="headerlink" href="#equation-8c87825e-192c-47de-8456-f4e06a431375" title="Permalink to this equation">#</a></span>\[\begin{align}
+y(t) &amp;= y_o + \left(v_y\right)_{\rm avg} t, \quad &amp; v_y(t) &amp;= v_{oy} + a_y t, \\
+y(t) &amp;= y_o + v_{oy}t + \frac{1}{2}a_y t^2, \quad &amp; v_y^2(t) &amp;= v_{oy}^2 + 2a_y(y-y_o).
+\end{align}\]</div>
+<p>Here the subscript <span class="math notranslate nohighlight">\(o\)</span> refers initial value at <span class="math notranslate nohighlight">\(t=0\)</span>.  The position and velocity vectors in 2D are given as</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\vec{r}(t) &amp;= x(t)\hat{i} + y(t)\hat{j}, \\
+\vec{\rm v}(t) &amp;= v_x(t)\hat{i} + v_y(t)\hat{j}.
+\end{align*}\]</div>
 </section>
 <section id="example-problem-a-skier">
 <h3><span class="section-number">4.2.5. </span><strong>Example Problem</strong>: A Skier<a class="headerlink" href="#example-problem-a-skier" title="Link to this heading">#</a></h3>
+<div class="exercise etamu-exercise admonition" id="Chapter04/motion-in-2D-3D-exercise-4">
+
+<p class="admonition-title"><span class="caption-number">Exercise 4.5 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>Figure <a class="reference internal" href="#skier-fig"><span class="std std-numref">4.5</span></a> shows a skier moving with an acceleration of <span class="math notranslate nohighlight">\(2.1\ \text{m/s}^2\)</span> down a slope of <span class="math notranslate nohighlight">\(15^\circ\)</span> at <span class="math notranslate nohighlight">\(t = 0\)</span>. With the origin of the coordinate system at the front of the lodge, her initial position and velocity are</p>
+<div class="math notranslate nohighlight">
+\[\vec{r}(0) = (75.0\hat{i} - 50.0\hat{j})\ \text{m}\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[\vec{v}(0) = (4.1\hat{i} - 1.1\hat{j})\ \text{m/s}.\]</div>
+<p>(a) What are the <span class="math notranslate nohighlight">\(x\)</span>- and <span class="math notranslate nohighlight">\(y\)</span>-components of the skier’s position and velocity as functions of time? (b) What are her position and velocity at <span class="math notranslate nohighlight">\(t = 10.0\ \text{s}\)</span>?</p>
+</div></blockquote>
+<figure class="align-default" id="skier-fig">
+<img alt="skier problem" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/7f4e56f07c561c08b1c8dd695347df4eacbd36aa" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.5 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#skier-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>We treat the skier’s motion as two-dimensional with <em>constant</em> acceleration. The acceleration has a fixed magnitude of <span class="math notranslate nohighlight">\(2.1\ \text{m/s}^2\)</span> directed <span class="math notranslate nohighlight">\(15^\circ\)</span> below the <span class="math notranslate nohighlight">\(+x\)</span> axis, so we first resolve it into components. Then we apply the constant-acceleration kinematic equations separately in the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> directions.</p>
+<p>The sign of each acceleration component is determined by the chosen coordinate system. The <span class="math notranslate nohighlight">\(x\)</span>-axis is taken to be horizontal and positive in the direction of motion down the slope, so the <span class="math notranslate nohighlight">\(x\)</span>-component of the acceleration is positive. The <span class="math notranslate nohighlight">\(y\)</span>-axis is defined to point vertically upward, while the skier accelerates downward along the slope. Therefore, the vertical component of the acceleration points in the negative <span class="math notranslate nohighlight">\(y\)</span> direction. Therefore, <span class="math notranslate nohighlight">\(a_y\)</span> carries a <em>negative</em> sign when the acceleration vector is resolved into components.</p>
+<div class="note dropdown admonition">
+<p class="admonition-title">Common mistake</p>
+<p>A frequent mistake is to assume the acceleration is negative simply because the skier is moving downhill. The sign of each component does <strong>not</strong> depend on whether the motion is “uphill” or “downhill,” but on how the coordinate axes are defined. In this problem, the <span class="math notranslate nohighlight">\(y\)</span>-axis points upward, so any downward component of acceleration must be negative, regardless of the direction of motion along the slope.</p>
+</div>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>Because the skier accelerates down the slope at <span class="math notranslate nohighlight">\(15^\circ\)</span>, the acceleration components are</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+a_x &amp;= (2.1)\cos(15^\circ) = 2.0\ \text{m/s}^2,\\
+a_y &amp;= -(2.1)\sin(15^\circ)= -0.54\ \text{m/s}^2.
+\end{align*}\]</div>
+<p><strong>(a)</strong> Component functions</p>
+<p>Starting with the components from the initial vectors, the <span class="math notranslate nohighlight">\(x\)</span> motion has <span class="math notranslate nohighlight">\(x_0 = 75.0\ \text{m}\)</span> and <span class="math notranslate nohighlight">\(v_{xo} = 4.1\ \text{m/s}\)</span>, which gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+x(t) &amp;= x_0 + v_{xo}t + \frac{1}{2}a_xt^2 ,\\
+&amp;= 75.0 + 4.1t + \frac{1}{2}(2.0)t^2, \\
+v_x(t) &amp;= v_{xo} + a_xt = 4.1 + (2.0)t.
+\end{align*}\]</div>
+<p>For the <span class="math notranslate nohighlight">\(y\)</span> motion with <span class="math notranslate nohighlight">\(y_0 = -50.0\ \text{m}\)</span> and <span class="math notranslate nohighlight">\(v_{yo} = -1.1\ \text{m/s}\)</span>,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+y(t) &amp;= y_0 + v_{yo}t + \frac{1}{2}a_yt^2,\\
+&amp; = -50.0 - 1.1t + \frac{1}{2}(-0.54)t^2, \\
+v_y(t) &amp;= v_{yo} + a_yt = -1.1 + (-0.54)t.
+\end{align*}\]</div>
+<p><strong>(b) Values at <span class="math notranslate nohighlight">\(t = 10.0\ \text{s}\)</span></strong></p>
+<p>Substituting <span class="math notranslate nohighlight">\(t = 10.0\)</span>, we get:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+x(10.0) = 75.0 + 4.1(10.0) + \frac{1}{2}(2.0)(10.0)^2, = 216.0\ \text{m}, \\
+v_x(10.0) = 4.1 + (2.0)(10.0) = 24.1\ \text{m/s},
+\end{align*}\]</div>
+<p>and</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+y(10.0) &amp;= -50.0 - 1.1(10.0) + \frac{1}{2}(-0.54)(10.0)^2 = -88.0\ \text{m},\\
+v_y(10.0) &amp;= -1.1 + (-0.54)(10.0) = -6.5\ \text{m/s}.
+\end{align*}\]</div>
+<p>So the position and velcoity at <span class="math notranslate nohighlight">\(t=10.0\ {\rm s}\)</span> is,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\vec{r}(10.0) &amp;= (216.0\hat{i} - 88.0\hat{j})\ \text{m}, \\
+\vec{v}(10.0) &amp;= (24.1\hat{i} - 6.5\hat{j})\ \text{m/s}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>The skier’s component equations of motion are</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+x(t) &amp;= 75.0 + 4.1t + \frac{1}{2}(2.0)t^2, \\
+v_x(t) &amp;= 4.1 + 2.0t,$$
+\end{align*}\]</div>
+<p>and</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+y(t) &amp;= -50.0 - 1.1t + \frac{1}{2}(-0.54)t^2, \\
+v_y(t) &amp;= -1.1 - 0.54t.
+\end{align*}\]</div>
+<p>At <span class="math notranslate nohighlight">\(t = 10.0\ \text{s}\)</span>, her position and velocity are</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\vec{r}(10.0) &amp;= (216.0\hat{i} - 88.0\hat{j})\ \text{m}, \\
+\vec{v}(10.0) &amp;= (24.1\hat{i} - 6.5\hat{j})\ \text{m/s}.
+\end{align*}\]</div>
+<p>This example shows that once the acceleration is resolved into components, the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> motions can be solved independently using the same kinematic equations.</p>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>We verify the result numerically by computing the acceleration components, building <span class="math notranslate nohighlight">\(x(t)\)</span> and <span class="math notranslate nohighlight">\(y(t)\)</span> from the kinematic equations, and evaluating the position and velocity at <span class="math notranslate nohighlight">\(t = 10.0\ \text{s}\)</span>. The printed values match the analytical results.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Verification of skier motion on an inclined slope</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Given values</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mf">2.1</span>
+<span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="mf">15.0</span><span class="p">)</span>
+<span class="n">x0</span><span class="p">,</span> <span class="n">y0</span> <span class="o">=</span> <span class="mf">75.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">50.0</span>
+<span class="n">vx0</span><span class="p">,</span> <span class="n">vy0</span> <span class="o">=</span> <span class="mf">4.1</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.1</span>
+<span class="n">t</span> <span class="o">=</span> <span class="mf">10.0</span>
+
+<span class="c1"># Acceleration components</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">a</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span>
+<span class="n">ay</span> <span class="o">=</span> <span class="o">-</span><span class="n">a</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span>
+
+<span class="c1"># Position and velocity at t</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">x0</span> <span class="o">+</span> <span class="n">vx0</span><span class="o">*</span><span class="n">t</span> <span class="o">+</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">ax</span><span class="o">*</span><span class="n">t</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">y0</span> <span class="o">+</span> <span class="n">vy0</span><span class="o">*</span><span class="n">t</span> <span class="o">+</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">ay</span><span class="o">*</span><span class="n">t</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">vx</span> <span class="o">=</span> <span class="n">vx0</span> <span class="o">+</span> <span class="n">ax</span><span class="o">*</span><span class="n">t</span>
+<span class="n">vy</span> <span class="o">=</span> <span class="n">vy0</span> <span class="o">+</span> <span class="n">ay</span><span class="o">*</span><span class="n">t</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;ax = </span><span class="si">{</span><span class="n">ax</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> m/s^2, ay = </span><span class="si">{</span><span class="n">ay</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> m/s^2&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;r(10.0 s) = &lt;</span><span class="si">{</span><span class="n">x</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">y</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">&gt; m&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;v(10.0 s) = &lt;</span><span class="si">{</span><span class="n">vx</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">vy</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">&gt; m/s&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Time array</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>
+
+<span class="c1"># Motion equations</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mf">75.0</span> <span class="o">+</span> <span class="mf">4.1</span><span class="o">*</span><span class="n">t</span> <span class="o">+</span> <span class="mf">0.5</span><span class="o">*</span><span class="mf">2.0</span><span class="o">*</span><span class="n">t</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">y</span> <span class="o">=</span> <span class="o">-</span><span class="mf">50.0</span> <span class="o">-</span> <span class="mf">1.1</span><span class="o">*</span><span class="n">t</span> <span class="o">+</span> <span class="mf">0.5</span><span class="o">*</span><span class="p">(</span><span class="o">-</span><span class="mf">0.54</span><span class="p">)</span><span class="o">*</span><span class="n">t</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="c1"># Plot trajectory</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;k-&#39;</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;trajectory&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">[::</span><span class="mi">40</span><span class="p">],</span> <span class="n">y</span><span class="p">[::</span><span class="mi">40</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">t</span><span class="p">[::</span><span class="mi">40</span><span class="p">],</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;viridis&quot;</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;x (m)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;y (m)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Skier trajectory in the x–y plane&quot;</span><span class="p">)</span>
+<span class="c1">#plt.gca().invert_yaxis()  # optional: downhill visually downward</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;time (s)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/d69c06490f320aee19d4dfd5341c88fab6ee8e9dd66ac0642d5dcaf1226a0ee8.png" src="../_images/d69c06490f320aee19d4dfd5341c88fab6ee8e9dd66ac0642d5dcaf1226a0ee8.png" />
+</div>
+</div>
 </section>
 </section>
 <section id="projectile-motion">
@@ -894,10 +1443,9 @@ Direction angle theta = -67.5 deg
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#displacement-and-velocity-vectors">4.1. Displacement and Velocity Vectors</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#displacement-vector">4.1.1. Displacement Vector</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-polar-orbiting-satellite">4.1.2. <strong>Example Problem</strong>: Polar Orbiting Satellite</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-brownian-motion">4.1.3. <strong>Example Problem</strong>: Brownian Motion</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-vector">4.1.4. Velocity Vector</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-calculating-the-velocity-vector">4.1.5. <strong>Example Problem</strong>: Calculating the Velocity Vector</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-independence-of-perpendicular-motions">4.1.6. The Independence of Perpendicular Motions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-vector">4.1.3. Velocity Vector</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-calculating-the-velocity-vector">4.1.4. <strong>Example Problem</strong>: Calculating the Velocity Vector</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-independence-of-perpendicular-motions">4.1.5. The Independence of Perpendicular Motions</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acceleration-vector">4.2. Acceleration Vector</a><ul class="nav section-nav flex-column">
