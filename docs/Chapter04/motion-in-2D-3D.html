@@ -556,8 +556,8 @@ document.write(`
 <h3><span class="section-number">4.1.1. </span>Displacement Vector<a class="headerlink" href="#displacement-vector" title="Link to this heading">#</a></h3>
 <p>To describe motion in 2D and 3D, we must first define a coordinate system, including a convention of axes. <em>Recall that the sign of the acceleration due to gravity was determined by the convention that we chose.</em>  We usually use the Cartesian coordinate system to locate a particle at point <span class="math notranslate nohighlight">\(P(x,y,z)\)</span> in 3 dimensions.  If the particle is moving , the variables <span class="math notranslate nohighlight">\(x,y,z\)</span> are functions of time <span class="math notranslate nohighlight">\(t\)</span>.</p>
 <p>The position vector <span class="math notranslate nohighlight">\(\vec{r}(t)\)</span> locates the point P at time t from the origin, by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b3298efb-8703-41c2-8620-1ab9d8b30930">
-<span class="eqno">(4.1)<a class="headerlink" href="#equation-b3298efb-8703-41c2-8620-1ab9d8b30930" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-67a27b98-f14e-4285-a280-1ea34be2d677">
+<span class="eqno">(4.1)<a class="headerlink" href="#equation-67a27b98-f14e-4285-a280-1ea34be2d677" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{r}(t) = x(t)\hat{i} + y(t)\hat{j} + z(t)\hat{k}.
 \end{align}\]</div>
 <figure class="align-default" id="d-position-fig">
@@ -568,8 +568,8 @@ document.write(`
 </figure>
 <p><a class="reference internal" href="#d-position-fig"><span class="std std-numref">Fig. 4.1</span></a> shows the position vector <span class="math notranslate nohighlight">\(\vec{r}(t)\)</span> for a particle located ar a time <span class="math notranslate nohighlight">\(t\)</span>. <em>Note that the orientation of the coordinate syste follows the right-hand rule.</em></p>
 <p>We can now define the 3D displacement vector <span class="math notranslate nohighlight">\(\Delta \vec{r}\)</span> as the difference between the position vector <span class="math notranslate nohighlight">\(\vec{r}(t_2)\)</span> at time <span class="math notranslate nohighlight">\(t_2\)</span> and the initial position vector <span class="math notranslate nohighlight">\(\vec{r}(t_1)\)</span> at time <span class="math notranslate nohighlight">\(t_1\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-dd4cdcec-bcb6-4695-92c7-67b2c95f94e7">
-<span class="eqno">(4.2)<a class="headerlink" href="#equation-dd4cdcec-bcb6-4695-92c7-67b2c95f94e7" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-0d96e66c-66e2-4236-9241-4af617cb6a1a">
+<span class="eqno">(4.2)<a class="headerlink" href="#equation-0d96e66c-66e2-4236-9241-4af617cb6a1a" title="Permalink to this equation">#</a></span>\[\begin{align}
 \Delta \vec{r} = \vec{r}(t_2) - \vec{r}(t_1).
 \end{align}\]</div>
 <p>Three dimensional vector addition is performed in the same way as in 2D, by adding the corresponding components or graphically by using the head-to-tail method.</p>
@@ -744,8 +744,8 @@ Direction angle theta = -67.5 deg
 <section id="velocity-vector">
 <h3><span class="section-number">4.1.3. </span>Velocity Vector<a class="headerlink" href="#velocity-vector" title="Link to this heading">#</a></h3>
 <p>Previously, we defined the velocity in 1D through the derivative of <span class="math notranslate nohighlight">\(x(t)\)</span>.  To expand it to 2D or 3D, we simply replace <span class="math notranslate nohighlight">\(x(t) \rightarrow \vec{r}(t)\)</span> to get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-49adfbfc-906b-4dc3-82a8-2f882bdb2611">
-<span class="eqno">(4.3)<a class="headerlink" href="#equation-49adfbfc-906b-4dc3-82a8-2f882bdb2611" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-95228f97-8199-4451-90cc-5443f46e7a11">
+<span class="eqno">(4.3)<a class="headerlink" href="#equation-95228f97-8199-4451-90cc-5443f46e7a11" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{\rm v}(t) &amp;= \lim_{\Delta t\rightarrow 0} \frac{\vec{r}(t+\Delta t)-
 \vec{r}(t)}{\Delta t} = \frac{d\vec{r}}{dt}.
 \end{align}\]</div>
@@ -757,19 +757,19 @@ Direction angle theta = -67.5 deg
 </figcaption>
 </figure>
 <p>The velocity vector <span class="math notranslate nohighlight">\(\vec{\rm v}\)</span> can also be written in components, where each component is now time-dependent (<span class="math notranslate nohighlight">\(v_x(t),\ v_y(t),\ v_z(t)\)</span>).  Mathematically, the progression from the displacement to the velocity vector is given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-42a78c0a-6418-49eb-a1d4-78900c891be3">
-<span class="eqno">(4.4)<a class="headerlink" href="#equation-42a78c0a-6418-49eb-a1d4-78900c891be3" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b6bc779b-be9f-4ef6-9824-56fee99b3778">
+<span class="eqno">(4.4)<a class="headerlink" href="#equation-b6bc779b-be9f-4ef6-9824-56fee99b3778" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{r} &amp;= x(t)\hat{i} + y(t)\hat{j} + z(t)\hat{k}, \\
 \vec{\rm v} &amp;= v_x(t)\hat{i} + v_y(t)\hat{j} + v_z(t)\hat{k},
 \end{align}\]</div>
 <p>where</p>
-<div class="amsmath math notranslate nohighlight" id="equation-27b3d012-5b50-4224-b519-d6a3a0eb6163">
-<span class="eqno">(4.5)<a class="headerlink" href="#equation-27b3d012-5b50-4224-b519-d6a3a0eb6163" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d147c5ad-1f76-491a-8598-a64a0ad245d1">
+<span class="eqno">(4.5)<a class="headerlink" href="#equation-d147c5ad-1f76-491a-8598-a64a0ad245d1" title="Permalink to this equation">#</a></span>\[\begin{align}
 v_x(t) = \frac{dx(t)}{dt}, \quad &amp; v_y(t) = \frac{dy(t)}{dt}, \quad &amp; v_z(t) = \frac{dz(t)}{dt}.
 \end{align}\]</div>
 <p>The average velocity <span class="math notranslate nohighlight">\(\bar{v}\)</span> was described as a vector in the previous chapter, and there is a 2D or 3D equivalent given as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c2bed3a6-fbb3-4381-89bf-db6acdae2bb1">
-<span class="eqno">(4.6)<a class="headerlink" href="#equation-c2bed3a6-fbb3-4381-89bf-db6acdae2bb1" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a0325b0c-af3c-425a-a007-07cb755b50ca">
+<span class="eqno">(4.6)<a class="headerlink" href="#equation-a0325b0c-af3c-425a-a007-07cb755b50ca" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{\rm v}_{\rm avg}(t_2,t_1) = \frac{\vec{r}(t_2)-\vec{r}(t_1)}{t_2-t_1}.
 \end{align}\]</div>
 <div class="note admonition">
@@ -796,19 +796,19 @@ v_x(t) = \frac{dx(t)}{dt}, \quad &amp; v_y(t) = \frac{dy(t)}{dt}, \quad &amp; v_
 <p><strong>The Math</strong></p>
 <p>The velocity vector is the time derivative of the position vector,</p>
 <div class="math notranslate nohighlight">
-\[\vec{v}(t) = \frac{d\vec{r}}{dt}.\]</div>
+\[\vec{\rm v}(t) = \frac{d\vec{r}}{dt}.\]</div>
 <p>Taking the derivative of each component gives</p>
 <div class="math notranslate nohighlight">
-\[\vec{v}(t) = (4.0t)\,\hat{i} + 3.0\,\hat{j} + 5.0\,\hat{k}\ \text{km/s}.\]</div>
+\[\vec{\rm v}(t) = (4.0t)\,\hat{i} + 3.0\,\hat{j} + 5.0\,\hat{k}\ \text{km/s}.\]</div>
 <p>Evaluating this expression at <span class="math notranslate nohighlight">\(t = 2.0\ \text{s}\)</span>,</p>
 <div class="math notranslate nohighlight">
-\[\vec{v}(2.0) = 8.0\,\hat{i} + 3.0\,\hat{j} + 5.0\,\hat{k}\ \text{km/s}.\]</div>
+\[\vec{\rm v}(2.0) = 8.0\,\hat{i} + 3.0\,\hat{j} + 5.0\,\hat{k}\ \text{km/s}.\]</div>
 <p>The speed is the magnitude of the velocity vector,</p>
 <div class="math notranslate nohighlight">
-\[|\vec{v}(2.0)| = \sqrt{(8.0)^2 + (3.0)^2 + (5.0)^2} = 9.9\ \text{km/s}.\]</div>
+\[|\vec{\rm v}(2.0)| = \sqrt{(8.0)^2 + (3.0)^2 + (5.0)^2} = 9.9\ \text{km/s}.\]</div>
 <p>To find the average velocity, we use its definition,</p>
 <div class="math notranslate nohighlight">
-\[\vec{v}_{\text{avg}} = \frac{\vec{r}(t_2) - \vec{r}(t_1)}{t_2 - t_1}.\]</div>
+\[\vec{\rm v}_{\text{avg}} = \frac{\vec{r}(t_2) - \vec{r}(t_1)}{t_2 - t_1}.\]</div>
 <p>Evaluating the position vector at <span class="math notranslate nohighlight">\(t_1 = 1.0\ \text{s}\)</span> and <span class="math notranslate nohighlight">\(t_2 = 3.0\ \text{s}\)</span>,</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -818,7 +818,7 @@ v_x(t) = \frac{dx(t)}{dt}, \quad &amp; v_y(t) = \frac{dy(t)}{dt}, \quad &amp; v_
 <p>Substituting into the average velocity expression,</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-\vec{v}_{\text{avg}} &amp;= \frac{(16\,\hat{i} + 6\,\hat{j} + 10\,\hat{k})\ \text{km}}{2.0\ \text{s}}, \\
+\vec{\rm v}_{\text{avg}} &amp;= \frac{(16\,\hat{i} + 6\,\hat{j} + 10\,\hat{k})\ \text{km}}{2.0\ \text{s}}, \\
 &amp;= 8.0\,\hat{i} + 3.0\,\hat{j} + 5.0\,\hat{k}\ \text{km/s}.
 \end{align*}\]</div>
 <div class="tip dropdown admonition">
@@ -830,7 +830,7 @@ v_x(t) = \frac{dx(t)}{dt}, \quad &amp; v_y(t) = \frac{dy(t)}{dt}, \quad &amp; v_
 <p><strong>The Conclusion</strong></p>
 <p>At <span class="math notranslate nohighlight">\(t = 2.0\ \text{s}\)</span>, the instantaneous velocity of the particle is</p>
 <div class="math notranslate nohighlight">
-\[\vec{v}(2.0) = 8.0\,\hat{i} + 3.0\,\hat{j} + 5.0\,\hat{k}\ \text{km/s},\]</div>
+\[\vec{\rm v}(2.0) = 8.0\,\hat{i} + 3.0\,\hat{j} + 5.0\,\hat{k}\ \text{km/s},\]</div>
 <p>with a speed of <span class="math notranslate nohighlight">\(9.9\ \text{km/s}\)</span>. The average velocity between <span class="math notranslate nohighlight">\(t = 1.0\ \text{s}\)</span> and <span class="math notranslate nohighlight">\(t = 3.0\ \text{s}\)</span> is equal to the instantaneous velocity at <span class="math notranslate nohighlight">\(t = 2.0\ \text{s}\)</span> because the velocity varies linearly with time.</p>
 <hr class="docutils" />
 <p><strong>The Verification</strong></p>
@@ -944,13 +944,13 @@ Average velocity from 1.0 s to 3.0 s: [8. 3. 5.] km/s
 <section id="instantaneous-acceleration">
 <h3><span class="section-number">4.2.1. </span>Instantaneous Acceleration<a class="headerlink" href="#instantaneous-acceleration" title="Link to this heading">#</a></h3>
 <p>The <strong>acceleration vector</strong> <span class="math notranslate nohighlight">\(\vec{a}(t)\)</span> is the intantaneous acceleration at any point in time along an object’s trajectory.  It can be obtain in a similar way as was the velocity vector.  Taking the derivative of <span class="math notranslate nohighlight">\(\vec{\rm v}(t)\)</span> with respect to time, we find</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6e9491c4-dabd-4783-b2c5-2f279f653700">
-<span class="eqno">(4.7)<a class="headerlink" href="#equation-6e9491c4-dabd-4783-b2c5-2f279f653700" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-be56cd0a-05fa-4d21-83cd-8dad896d87ff">
+<span class="eqno">(4.7)<a class="headerlink" href="#equation-be56cd0a-05fa-4d21-83cd-8dad896d87ff" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{a}(t) &amp;= \lim_{\Delta t\to 0}\frac{\vec{\rm v}(t+\Delta t)-\vec{\rm v}(t)}{\Delta t} = \frac{d\vec{\rm v}(t)}{dt}.
 \end{align}\]</div>
 <p>In terms of components we have the following form</p>
-<div class="amsmath math notranslate nohighlight" id="equation-056fe068-2e7b-4a4b-85f5-d9776bd5affe">
-<span class="eqno">(4.8)<a class="headerlink" href="#equation-056fe068-2e7b-4a4b-85f5-d9776bd5affe" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-363ab17d-bf9e-4a5a-a2b6-3af5ad14b5ea">
+<span class="eqno">(4.8)<a class="headerlink" href="#equation-363ab17d-bf9e-4a5a-a2b6-3af5ad14b5ea" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{a}(t) &amp;= \frac{dv_x(t)}{dt}\,\hat{i} + \frac{dv_y(t)}{dt}\,\hat{j} + \frac{dv_z(t)}{dt}\,\hat{k},\\
 &amp;= \frac{d^2x(t)}{dt^2}\,\hat{i} + \frac{d^2y(t)}{dt^2}\,\hat{j} + \frac{d^2z(t)}{dt^2}\,\hat{k}.
 \end{align}\]</div>
@@ -1136,7 +1136,7 @@ Average velocity from 1.0 s to 3.0 s: [8. 3. 5.] km/s
 </details>
 <div class="cell_output docutils container">
 <div class="output text_html"><div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-        <script src="https://cdn.plot.ly/plotly-2.12.1.min.js"></script>                <div id="2287cd73-a5b2-4e63-8c1c-9c0ceabc02a3" class="plotly-graph-div" style="height:700px; width:800px;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("2287cd73-a5b2-4e63-8c1c-9c0ceabc02a3")) {                    Plotly.newPlot(                        "2287cd73-a5b2-4e63-8c1c-9c0ceabc02a3",                        [{"marker":{"color":[0.0,0.1694915254237288,0.3389830508474576,0.5084745762711864,0.6779661016949152,0.847457627118644,1.0169491525423728,1.1864406779661016,1.3559322033898304,1.5254237288135593,1.694915254237288,1.8644067796610169,2.0338983050847457,2.2033898305084745,2.3728813559322033,2.542372881355932,2.711864406779661,2.8813559322033897,3.0508474576271185,3.2203389830508473,3.389830508474576,3.559322033898305,3.7288135593220337,3.8983050847457625,4.067796610169491,4.23728813559322,4.406779661016949,4.576271186440678,4.745762711864407,4.915254237288135,5.084745762711864,5.254237288135593,5.423728813559322,5.59322033898305,5.762711864406779,5.932203389830509,6.101694915254237,6.271186440677965,6.440677966101695,6.610169491525424,6.779661016949152,6.949152542372881,7.11864406779661,7.288135593220339,7.4576271186440675,7.627118644067796,7.796610169491525,7.966101694915254,8.135593220338983,8.305084745762711,8.47457627118644,8.64406779661017,8.813559322033898,8.983050847457626,9.152542372881356,9.322033898305085,9.491525423728813,9.661016949152541,9.83050847457627,10.0],"colorbar":{"len":0.9,"thickness":18,"tickfont":{"size":14},"title":{"text":"time (s)"},"x":1.03},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"opacity":0.9,"showscale":true,"size":7},"mode":"markers","name":"","showlegend":false,"x":[0.0,1.6661878770468255,3.274920999712726,4.8261993679977016,6.320022981901752,7.756391841424877,9.135305946567078,10.456765297328355,11.720769893708704,12.927319735708128,14.076414823326628,15.168055156564206,16.202240735420855,17.17897155989658,18.098247629991384,18.96006894570526,19.764435507038208,20.511347313990232,21.20080436656133,21.832806664751505,22.407354208560754,22.924446997989087,23.384085033036484,23.786268313702962,24.13099683998851,24.418270611893128,24.648089629416834,24.82045389255961,24.935363401321464,24.992818155702384,24.992818155702388,24.935363401321457,24.82045389255961,24.648089629416837,24.418270611893135,24.130996839988512,23.786268313702955,23.384085033036484,22.92444699798908,22.40735420856076,21.8328066647515,21.200804366561336,20.511347313990242,19.764435507038208,18.96006894570526,18.098247629991377,17.17897155989659,16.20224073542085,15.168055156564208,14.076414823326644,12.927319735708124,11.720769893708706,10.45676529732836,9.135305946567087,7.756391841424872,6.320022981901758,4.826199367997717,3.2749209997127338,1.6661878770468377,0.0],"y":[0.0,0.847457627118644,1.694915254237288,2.542372881355932,3.389830508474576,4.23728813559322,5.084745762711864,5.932203389830509,6.779661016949152,7.627118644067796,8.47457627118644,9.322033898305085,10.169491525423728,11.016949152542372,11.864406779661017,12.711864406779661,13.559322033898304,14.406779661016948,15.254237288135592,16.101694915254235,16.94915254237288,17.796610169491526,18.64406779661017,19.491525423728813,20.338983050847457,21.186440677966097,22.033898305084744,22.88135593220339,23.728813559322035,24.576271186440675,25.423728813559322,26.271186440677965,27.11864406779661,27.966101694915253,28.813559322033896,29.661016949152543,30.508474576271183,31.355932203389827,32.20338983050847,33.05084745762712,33.89830508474576,34.7457627118644,35.59322033898305,36.440677966101696,37.28813559322034,38.135593220338976,38.983050847457626,39.83050847457627,40.67796610169491,41.52542372881356,42.37288135593219,43.22033898305085,44.06779661016949,44.91525423728813,45.76271186440678,46.610169491525426,47.45762711864407,48.305084745762706,49.15254237288135,50.0],"z":[0.0,0.847457627118644,1.694915254237288,2.542372881355932,3.389830508474576,4.23728813559322,5.084745762711864,5.932203389830509,6.779661016949152,7.627118644067796,8.47457627118644,9.322033898305085,10.169491525423728,11.016949152542372,11.864406779661017,12.711864406779661,13.559322033898304,14.406779661016948,15.254237288135592,16.101694915254235,16.94915254237288,17.796610169491526,18.64406779661017,19.491525423728813,20.338983050847457,21.186440677966097,22.033898305084744,22.88135593220339,23.728813559322035,24.576271186440675,25.423728813559322,26.271186440677965,27.11864406779661,27.966101694915253,28.813559322033896,29.661016949152543,30.508474576271183,31.355932203389827,32.20338983050847,33.05084745762712,33.89830508474576,34.7457627118644,35.59322033898305,36.440677966101696,37.28813559322034,38.135593220338976,38.983050847457626,39.83050847457627,40.67796610169491,41.52542372881356,42.37288135593219,43.22033898305085,44.06779661016949,44.91525423728813,45.76271186440678,46.610169491525426,47.45762711864407,48.305084745762706,49.15254237288135,50.0],"type":"scatter3d"},{"hoverinfo":"skip","line":{"color":"black","width":6},"mode":"lines","name":"","showlegend":false,"x":[-55,55],"y":[0,0],"z":[0,0],"type":"scatter3d"},{"hoverinfo":"skip","line":{"color":"black","width":6},"mode":"lines","name":"","showlegend":false,"x":[0,0],"y":[-55,55],"z":[0,0],"type":"scatter3d"},{"hoverinfo":"skip","line":{"color":"black","width":6},"mode":"lines","name":"","showlegend":false,"x":[0,0],"y":[0,0],"z":[-55,55],"type":"scatter3d"},{"anchor":"tip","colorscale":[[0,"black"],[1,"black"]],"hoverinfo":"skip","name":"","showlegend":false,"showscale":false,"sizemode":"absolute","sizeref":6,"u":[9.9],"v":[0],"w":[0],"x":[55],"y":[0],"z":[0],"type":"cone"},{"anchor":"tip","colorscale":[[0,"black"],[1,"black"]],"hoverinfo":"skip","name":"","showlegend":false,"showscale":false,"sizemode":"absolute","sizeref":6,"u":[-9.9],"v":[0],"w":[0],"x":[-55],"y":[0],"z":[0],"type":"cone"},{"anchor":"tip","colorscale":[[0,"black"],[1,"black"]],"hoverinfo":"skip","name":"","showlegend":false,"showscale":false,"sizemode":"absolute","sizeref":6,"u":[0],"v":[9.9],"w":[0],"x":[0],"y":[55],"z":[0],"type":"cone"},{"anchor":"tip","colorscale":[[0,"black"],[1,"black"]],"hoverinfo":"skip","name":"","showlegend":false,"showscale":false,"sizemode":"absolute","sizeref":6,"u":[0],"v":[-9.9],"w":[0],"x":[0],"y":[-55],"z":[0],"type":"cone"},{"anchor":"tip","colorscale":[[0,"black"],[1,"black"]],"hoverinfo":"skip","name":"","showlegend":false,"showscale":false,"sizemode":"absolute","sizeref":6,"u":[0],"v":[0],"w":[9.9],"x":[0],"y":[0],"z":[55],"type":"cone"},{"anchor":"tip","colorscale":[[0,"black"],[1,"black"]],"hoverinfo":"skip","name":"","showlegend":false,"showscale":false,"sizemode":"absolute","sizeref":6,"u":[0],"v":[0],"w":[-9.9],"x":[0],"y":[0],"z":[-55],"type":"cone"},{"hoverinfo":"skip","mode":"text","name":"","showlegend":false,"text":["x"],"textfont":{"color":"black","size":16},"x":[61.60000000000001],"y":[0],"z":[0],"type":"scatter3d"},{"hoverinfo":"skip","mode":"text","name":"","showlegend":false,"text":["-x"],"textfont":{"color":"black","size":16},"x":[-61.60000000000001],"y":[0],"z":[0],"type":"scatter3d"},{"hoverinfo":"skip","mode":"text","name":"","showlegend":false,"text":["y"],"textfont":{"color":"black","size":16},"x":[0],"y":[61.60000000000001],"z":[0],"type":"scatter3d"},{"hoverinfo":"skip","mode":"text","name":"","showlegend":false,"text":["-y"],"textfont":{"color":"black","size":16},"x":[0],"y":[-61.60000000000001],"z":[0],"type":"scatter3d"},{"hoverinfo":"skip","mode":"text","name":"","showlegend":false,"text":["z"],"textfont":{"color":"black","size":16},"x":[0],"y":[0],"z":[61.60000000000001],"type":"scatter3d"},{"hoverinfo":"skip","mode":"text","name":"","showlegend":false,"text":["-z"],"textfont":{"color":"black","size":16},"x":[0],"y":[0],"z":[-61.60000000000001],"type":"scatter3d"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"margin":{"l":0,"r":0,"b":0,"t":20},"scene":{"xaxis":{"range":[-66.0,66.0],"showbackground":false,"showticklabels":false,"showgrid":false,"zeroline":false,"title":{"text":""}},"yaxis":{"range":[-66.0,66.0],"showbackground":false,"showticklabels":false,"showgrid":false,"zeroline":false,"title":{"text":""}},"zaxis":{"range":[-66.0,66.0],"showbackground":false,"showticklabels":false,"showgrid":false,"zeroline":false,"title":{"text":""}},"aspectmode":"cube"},"width":800,"height":700,"showlegend":false},                        {"responsive": true}                    )                };                            </script>        </div></div></div>
+        <script src="https://cdn.plot.ly/plotly-2.12.1.min.js"></script>                <div id="787f44ee-7d7d-45c6-9821-719049e173d2" class="plotly-graph-div" style="height:700px; width:800px;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("787f44ee-7d7d-45c6-9821-719049e173d2")) {                    Plotly.newPlot(                        "787f44ee-7d7d-45c6-9821-719049e173d2",                        [{"marker":{"color":[0.0,0.1694915254237288,0.3389830508474576,0.5084745762711864,0.6779661016949152,0.847457627118644,1.0169491525423728,1.1864406779661016,1.3559322033898304,1.5254237288135593,1.694915254237288,1.8644067796610169,2.0338983050847457,2.2033898305084745,2.3728813559322033,2.542372881355932,2.711864406779661,2.8813559322033897,3.0508474576271185,3.2203389830508473,3.389830508474576,3.559322033898305,3.7288135593220337,3.8983050847457625,4.067796610169491,4.23728813559322,4.406779661016949,4.576271186440678,4.745762711864407,4.915254237288135,5.084745762711864,5.254237288135593,5.423728813559322,5.59322033898305,5.762711864406779,5.932203389830509,6.101694915254237,6.271186440677965,6.440677966101695,6.610169491525424,6.779661016949152,6.949152542372881,7.11864406779661,7.288135593220339,7.4576271186440675,7.627118644067796,7.796610169491525,7.966101694915254,8.135593220338983,8.305084745762711,8.47457627118644,8.64406779661017,8.813559322033898,8.983050847457626,9.152542372881356,9.322033898305085,9.491525423728813,9.661016949152541,9.83050847457627,10.0],"colorbar":{"len":0.9,"thickness":18,"tickfont":{"size":14},"title":{"text":"time (s)"},"x":1.03},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"opacity":0.9,"showscale":true,"size":7},"mode":"markers","name":"","showlegend":false,"x":[0.0,1.6661878770468255,3.274920999712726,4.8261993679977016,6.320022981901752,7.756391841424877,9.135305946567078,10.456765297328355,11.720769893708704,12.927319735708128,14.076414823326628,15.168055156564206,16.202240735420855,17.17897155989658,18.098247629991384,18.96006894570526,19.764435507038208,20.511347313990232,21.20080436656133,21.832806664751505,22.407354208560754,22.924446997989087,23.384085033036484,23.786268313702962,24.13099683998851,24.418270611893128,24.648089629416834,24.82045389255961,24.935363401321464,24.992818155702384,24.992818155702388,24.935363401321457,24.82045389255961,24.648089629416837,24.418270611893135,24.130996839988512,23.786268313702955,23.384085033036484,22.92444699798908,22.40735420856076,21.8328066647515,21.200804366561336,20.511347313990242,19.764435507038208,18.96006894570526,18.098247629991377,17.17897155989659,16.20224073542085,15.168055156564208,14.076414823326644,12.927319735708124,11.720769893708706,10.45676529732836,9.135305946567087,7.756391841424872,6.320022981901758,4.826199367997717,3.2749209997127338,1.6661878770468377,0.0],"y":[0.0,0.847457627118644,1.694915254237288,2.542372881355932,3.389830508474576,4.23728813559322,5.084745762711864,5.932203389830509,6.779661016949152,7.627118644067796,8.47457627118644,9.322033898305085,10.169491525423728,11.016949152542372,11.864406779661017,12.711864406779661,13.559322033898304,14.406779661016948,15.254237288135592,16.101694915254235,16.94915254237288,17.796610169491526,18.64406779661017,19.491525423728813,20.338983050847457,21.186440677966097,22.033898305084744,22.88135593220339,23.728813559322035,24.576271186440675,25.423728813559322,26.271186440677965,27.11864406779661,27.966101694915253,28.813559322033896,29.661016949152543,30.508474576271183,31.355932203389827,32.20338983050847,33.05084745762712,33.89830508474576,34.7457627118644,35.59322033898305,36.440677966101696,37.28813559322034,38.135593220338976,38.983050847457626,39.83050847457627,40.67796610169491,41.52542372881356,42.37288135593219,43.22033898305085,44.06779661016949,44.91525423728813,45.76271186440678,46.610169491525426,47.45762711864407,48.305084745762706,49.15254237288135,50.0],"z":[0.0,0.847457627118644,1.694915254237288,2.542372881355932,3.389830508474576,4.23728813559322,5.084745762711864,5.932203389830509,6.779661016949152,7.627118644067796,8.47457627118644,9.322033898305085,10.169491525423728,11.016949152542372,11.864406779661017,12.711864406779661,13.559322033898304,14.406779661016948,15.254237288135592,16.101694915254235,16.94915254237288,17.796610169491526,18.64406779661017,19.491525423728813,20.338983050847457,21.186440677966097,22.033898305084744,22.88135593220339,23.728813559322035,24.576271186440675,25.423728813559322,26.271186440677965,27.11864406779661,27.966101694915253,28.813559322033896,29.661016949152543,30.508474576271183,31.355932203389827,32.20338983050847,33.05084745762712,33.89830508474576,34.7457627118644,35.59322033898305,36.440677966101696,37.28813559322034,38.135593220338976,38.983050847457626,39.83050847457627,40.67796610169491,41.52542372881356,42.37288135593219,43.22033898305085,44.06779661016949,44.91525423728813,45.76271186440678,46.610169491525426,47.45762711864407,48.305084745762706,49.15254237288135,50.0],"type":"scatter3d"},{"hoverinfo":"skip","line":{"color":"black","width":6},"mode":"lines","name":"","showlegend":false,"x":[-55,55],"y":[0,0],"z":[0,0],"type":"scatter3d"},{"hoverinfo":"skip","line":{"color":"black","width":6},"mode":"lines","name":"","showlegend":false,"x":[0,0],"y":[-55,55],"z":[0,0],"type":"scatter3d"},{"hoverinfo":"skip","line":{"color":"black","width":6},"mode":"lines","name":"","showlegend":false,"x":[0,0],"y":[0,0],"z":[-55,55],"type":"scatter3d"},{"anchor":"tip","colorscale":[[0,"black"],[1,"black"]],"hoverinfo":"skip","name":"","showlegend":false,"showscale":false,"sizemode":"absolute","sizeref":6,"u":[9.9],"v":[0],"w":[0],"x":[55],"y":[0],"z":[0],"type":"cone"},{"anchor":"tip","colorscale":[[0,"black"],[1,"black"]],"hoverinfo":"skip","name":"","showlegend":false,"showscale":false,"sizemode":"absolute","sizeref":6,"u":[-9.9],"v":[0],"w":[0],"x":[-55],"y":[0],"z":[0],"type":"cone"},{"anchor":"tip","colorscale":[[0,"black"],[1,"black"]],"hoverinfo":"skip","name":"","showlegend":false,"showscale":false,"sizemode":"absolute","sizeref":6,"u":[0],"v":[9.9],"w":[0],"x":[0],"y":[55],"z":[0],"type":"cone"},{"anchor":"tip","colorscale":[[0,"black"],[1,"black"]],"hoverinfo":"skip","name":"","showlegend":false,"showscale":false,"sizemode":"absolute","sizeref":6,"u":[0],"v":[-9.9],"w":[0],"x":[0],"y":[-55],"z":[0],"type":"cone"},{"anchor":"tip","colorscale":[[0,"black"],[1,"black"]],"hoverinfo":"skip","name":"","showlegend":false,"showscale":false,"sizemode":"absolute","sizeref":6,"u":[0],"v":[0],"w":[9.9],"x":[0],"y":[0],"z":[55],"type":"cone"},{"anchor":"tip","colorscale":[[0,"black"],[1,"black"]],"hoverinfo":"skip","name":"","showlegend":false,"showscale":false,"sizemode":"absolute","sizeref":6,"u":[0],"v":[0],"w":[-9.9],"x":[0],"y":[0],"z":[-55],"type":"cone"},{"hoverinfo":"skip","mode":"text","name":"","showlegend":false,"text":["x"],"textfont":{"color":"black","size":16},"x":[61.60000000000001],"y":[0],"z":[0],"type":"scatter3d"},{"hoverinfo":"skip","mode":"text","name":"","showlegend":false,"text":["-x"],"textfont":{"color":"black","size":16},"x":[-61.60000000000001],"y":[0],"z":[0],"type":"scatter3d"},{"hoverinfo":"skip","mode":"text","name":"","showlegend":false,"text":["y"],"textfont":{"color":"black","size":16},"x":[0],"y":[61.60000000000001],"z":[0],"type":"scatter3d"},{"hoverinfo":"skip","mode":"text","name":"","showlegend":false,"text":["-y"],"textfont":{"color":"black","size":16},"x":[0],"y":[-61.60000000000001],"z":[0],"type":"scatter3d"},{"hoverinfo":"skip","mode":"text","name":"","showlegend":false,"text":["z"],"textfont":{"color":"black","size":16},"x":[0],"y":[0],"z":[61.60000000000001],"type":"scatter3d"},{"hoverinfo":"skip","mode":"text","name":"","showlegend":false,"text":["-z"],"textfont":{"color":"black","size":16},"x":[0],"y":[0],"z":[-61.60000000000001],"type":"scatter3d"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"margin":{"l":0,"r":0,"b":0,"t":20},"scene":{"xaxis":{"range":[-66.0,66.0],"showbackground":false,"showticklabels":false,"showgrid":false,"zeroline":false,"title":{"text":""}},"yaxis":{"range":[-66.0,66.0],"showbackground":false,"showticklabels":false,"showgrid":false,"zeroline":false,"title":{"text":""}},"zaxis":{"range":[-66.0,66.0],"showbackground":false,"showticklabels":false,"showgrid":false,"zeroline":false,"title":{"text":""}},"aspectmode":"cube"},"width":800,"height":700,"showlegend":false},                        {"responsive": true}                    )                };                            </script>        </div></div></div>
 </div>
 </section>
 <section id="constant-acceleration">
@@ -1145,14 +1145,14 @@ Average velocity from 1.0 s to 3.0 s: [8. 3. 5.] km/s
 <div class="math notranslate nohighlight">
 \[ \vec{a} = a_x\hat{i} + a_y\hat{j}. \]</div>
 <p>Each of the kinematic equations for 1D motion now has component-forms that define the equation in the <span class="math notranslate nohighlight">\(x\)</span>- and <span class="math notranslate nohighlight">\(y\)</span>-directions.  We can write the equations as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-057ecaf3-d5d9-4bcf-aa92-a464507bd65a">
-<span class="eqno">(4.9)<a class="headerlink" href="#equation-057ecaf3-d5d9-4bcf-aa92-a464507bd65a" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d6a83631-6256-4ed1-b52e-f195ee26dfeb">
+<span class="eqno">(4.9)<a class="headerlink" href="#equation-d6a83631-6256-4ed1-b52e-f195ee26dfeb" title="Permalink to this equation">#</a></span>\[\begin{align}
 x(t) &amp;= x_o + \left(v_x\right)_{\rm avg} t, \quad &amp; v_x(t) &amp;= v_{ox} + a_x t, \\
 x(t) &amp;= x_o + v_{ox}t + \frac{1}{2}a_x t^2, \quad &amp; v_x^2(t) &amp;= v_{ox}^2 + 2a_x(x-x_o).
 \end{align}\]</div>
 <p>and</p>
-<div class="amsmath math notranslate nohighlight" id="equation-48cbdff7-938a-4704-b992-032dc7d1e956">
-<span class="eqno">(4.10)<a class="headerlink" href="#equation-48cbdff7-938a-4704-b992-032dc7d1e956" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-1d1c2ac1-724f-4437-9167-4c4ee6341882">
+<span class="eqno">(4.10)<a class="headerlink" href="#equation-1d1c2ac1-724f-4437-9167-4c4ee6341882" title="Permalink to this equation">#</a></span>\[\begin{align}
 y(t) &amp;= y_o + \left(v_y\right)_{\rm avg} t, \quad &amp; v_y(t) &amp;= v_{oy} + a_y t, \\
 y(t) &amp;= y_o + v_{oy}t + \frac{1}{2}a_y t^2, \quad &amp; v_y^2(t) &amp;= v_{oy}^2 + 2a_y(y-y_o).
 \end{align}\]</div>
@@ -1176,7 +1176,7 @@ y(t) &amp;= y_o + v_{oy}t + \frac{1}{2}a_y t^2, \quad &amp; v_y^2(t) &amp;= v_{o
 \[\vec{r}(0) = (75.0\hat{i} - 50.0\hat{j})\ \text{m}\]</div>
 <p>and</p>
 <div class="math notranslate nohighlight">
-\[\vec{v}(0) = (4.1\hat{i} - 1.1\hat{j})\ \text{m/s}.\]</div>
+\[\vec{\rm v}(0) = (4.1\hat{i} - 1.1\hat{j})\ \text{m/s}.\]</div>
 <p>(a) What are the <span class="math notranslate nohighlight">\(x\)</span>- and <span class="math notranslate nohighlight">\(y\)</span>-components of the skier’s position and velocity as functions of time? (b) What are her position and velocity at <span class="math notranslate nohighlight">\(t = 10.0\ \text{s}\)</span>?</p>
 </div></blockquote>
 <figure class="align-default" id="skier-fig">
@@ -1233,7 +1233,7 @@ v_y(10.0) &amp;= -1.1 + (-0.54)(10.0) = -6.5\ \text{m/s}.
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \vec{r}(10.0) &amp;= (216.0\hat{i} - 88.0\hat{j})\ \text{m}, \\
-\vec{v}(10.0) &amp;= (24.1\hat{i} - 6.5\hat{j})\ \text{m/s}.
+\vec{\rm v}(10.0) &amp;= (24.1\hat{i} - 6.5\hat{j})\ \text{m/s}.
 \end{align*}\]</div>
 <hr class="docutils" />
 <p><strong>The Conclusion</strong></p>
@@ -1253,7 +1253,7 @@ v_y(t) &amp;= -1.1 - 0.54t.
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \vec{r}(10.0) &amp;= (216.0\hat{i} - 88.0\hat{j})\ \text{m}, \\
-\vec{v}(10.0) &amp;= (24.1\hat{i} - 6.5\hat{j})\ \text{m/s}.
+\vec{\rm v}(10.0) &amp;= (24.1\hat{i} - 6.5\hat{j})\ \text{m/s}.
 \end{align*}\]</div>
 <p>This example shows that once the acceleration is resolved into components, the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> motions can be solved independently using the same kinematic equations.</p>
 <hr class="docutils" />
@@ -1354,8 +1354,8 @@ v_y(t) &amp;= -1.1 - 0.54t.
 <div class="math notranslate nohighlight">
 \[ a_y = -g = -9.81\ {\rm m/s^2} \quad (-32.2\ {\rm ft/s^2}). \]</div>
 <p>Because gravity is vertical, <span class="math notranslate nohighlight">\(a_x = 0\)</span> and <span class="math notranslate nohighlight">\(v_x = v_{ox}\)</span>.  We can then write the kinematic equations for motion in a uniform gravitational field as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-cb103bc2-51f4-429f-8442-3e04e8d2fc27">
-<span class="eqno">(4.11)<a class="headerlink" href="#equation-cb103bc2-51f4-429f-8442-3e04e8d2fc27" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-92ba58ab-7181-4512-89d4-3f9c07df2df1">
+<span class="eqno">(4.11)<a class="headerlink" href="#equation-92ba58ab-7181-4512-89d4-3f9c07df2df1" title="Permalink to this equation">#</a></span>\[\begin{align}
 x &amp;= x_o + v_{ox} t, \quad &amp; y &amp;= y_o + v_{oy} t - \frac{1}{2}gt^2, \\
 v_x &amp;= v_{ox}, \quad &amp; v_y &amp;= v_{oy} - gt,\\
 &amp;  &amp; v_y^2 &amp;= v_{oy}^2 - 2g(y-y_o).
@@ -1525,8 +1525,8 @@ y-y_o &amp;= v_{oy}t - \frac{1}{2}gt^2, \\
 &amp;= \left(v_o\sin{\theta_o}\right)t - \frac{1}{2}gt^2 = 0.
 \end{align*}\]</div>
 <p>We can solve for <span class="math notranslate nohighlight">\(t\)</span> and set it equal to the time of flight <span class="math notranslate nohighlight">\(t=T_{\rm tol}\)</span> to get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b7018ebc-46dd-48c2-b8a4-0b213008786f">
-<span class="eqno">(4.12)<a class="headerlink" href="#equation-b7018ebc-46dd-48c2-b8a4-0b213008786f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-08bf870e-98bc-4212-ab24-b4f3a89d0b0d">
+<span class="eqno">(4.12)<a class="headerlink" href="#equation-08bf870e-98bc-4212-ab24-b4f3a89d0b0d" title="Permalink to this equation">#</a></span>\[\begin{align}
 t\left(v_o\sin{\theta_o} - \frac{gt}{2}\right) &amp;= 0, \\
 v_o\sin{\theta_o} &amp;= \frac{gt}{2}, \\
 T_{\rm tol} &amp;= \frac{2v_o\sin{\theta_o}}{g}.
@@ -1559,8 +1559,8 @@ y &amp;= \frac{v_{oy}}{v_{ox}}x - \frac{g}{2}\left(\frac{x}{v_{ox}}\right)^2, \\
 &amp;= \frac{x\sin{\theta_o}}{\cos{\theta_o}} - \frac{g}{2}\left(\frac{x}{v_o\cos{\theta_o}}\right)^2.
 \end{align*}\]</div>
 <p>Rearranging terms, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-db33ee76-ed91-46ba-8300-76150096fa5e">
-<span class="eqno">(4.13)<a class="headerlink" href="#equation-db33ee76-ed91-46ba-8300-76150096fa5e" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-5e90e9dd-c2c9-42cd-ba43-0895f938b778">
+<span class="eqno">(4.13)<a class="headerlink" href="#equation-5e90e9dd-c2c9-42cd-ba43-0895f938b778" title="Permalink to this equation">#</a></span>\[\begin{align}
 y &amp;= \left(\tan{\theta_o}\right)x - \left[\frac{g}{2\left(v_o\cos{\theta_o}\right)^2} \right]x^2.
 \end{align} \]</div>
 <p>This trajectory equation is an equation of a parabola (<span class="math notranslate nohighlight">\(y = c + bx + ax^2\)</span>) with coefficients</p>
@@ -1583,8 +1583,8 @@ x &amp;= \frac{\sin{\theta_o}}{\cos{\theta_o}} \frac{2\left(v_o \cos{\theta_o}\r
  &amp;= \frac{2v_o^2 \sin{\theta_o}\cos{\theta_o}}{g}.
 \end{align*}\]</div>
 <p>Using the <a class="reference external" href="https://en.wikipedia.org/wiki/List_of_trigonometric_identities#Double-angle_formulae"><strong>trig identity</strong></a> <span class="math notranslate nohighlight">\(\sin{2\theta_o} (= 2\sin{\theta_o}\cos{\theta_o})\)</span> and setting <span class="math notranslate nohighlight">\(x=R\)</span> for range, we find</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f97c0f97-4fb3-4121-b07f-5b97d5b41420">
-<span class="eqno">(4.14)<a class="headerlink" href="#equation-f97c0f97-4fb3-4121-b07f-5b97d5b41420" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-49d52b5d-da10-42ae-a3d2-5b0aa8c0e91d">
+<span class="eqno">(4.14)<a class="headerlink" href="#equation-49d52b5d-da10-42ae-a3d2-5b0aa8c0e91d" title="Permalink to this equation">#</a></span>\[\begin{align}
 R &amp;= \frac{v_o^2\sin{2\theta_o}}{g}.
 \end{align}\]</div>
 <p>The range is directly proportional to the square of the initial speed <span class="math notranslate nohighlight">\(v_o\)</span>, the launch angle through <span class="math notranslate nohighlight">\(\sin{2\theta_o}\)</span>, and inversely proportional to the acceleration due to gravity <span class="math notranslate nohighlight">\(g\)</span>.</p>
@@ -1815,41 +1815,744 @@ y(x) = x\tan(70^\circ) - \frac{9.81}{2\left[(37)\cos(70^\circ)\right]^2}x^2 \app
 </section>
 <section id="uniform-and-nonuniform-circular-motion">
 <h2><span class="section-number">4.3. </span>Uniform and Nonuniform Circular Motion<a class="headerlink" href="#uniform-and-nonuniform-circular-motion" title="Link to this heading">#</a></h2>
+<p>Uniform circular motion describes an object that travels in circle with a constant speed.  For example, any point on a propeller spinning at a constant rate is undergoing uniform circular motion, or a point on the edge of a spinning disk.  Points on these rotating objects are actually accelerationg (i.e., changing direction), although the rotation rate is a constant.</p>
 <section id="centripetal-acceleration">
 <h3><span class="section-number">4.3.1. </span>Centripetal Acceleration<a class="headerlink" href="#centripetal-acceleration" title="Link to this heading">#</a></h3>
+<p>In 1D kinematics, objections with a constant speed have zero acceleration.  However, in 2D and 3D kinematics, a particle can have acceleration if it moves along a curved trajectory (e.g., a circle) with a constant speed.</p>
+<p>In this case, the velocity vector <span class="math notranslate nohighlight">\(\vec{\rm v}\)</span> is changing, or <span class="math notranslate nohighlight">\(d\vec{\rm v}{dt} \neq 0\)</span>.  As a particle moves counterclockwise in time through an interval <span class="math notranslate nohighlight">\(\Delta t\)</span> on a circular path,</p>
+<ul class="simple">
+<li><p>its position vector moves from <span class="math notranslate nohighlight">\(\vec{r}(t)\)</span> to <span class="math notranslate nohighlight">\(\vec{r}(t+\Delta t)\)</span>.</p></li>
+<li><p>its velocity vector has a constant magnitude <span class="math notranslate nohighlight">\(v\)</span> and is tangent to the path as it changes from <span class="math notranslate nohighlight">\(\vec{\rm v}(t)\)</span> to <span class="math notranslate nohighlight">\(\vec{\rm v}(t+\Delta t)\)</span>, only changing its direction.</p></li>
+</ul>
+<p>Since the velocity vector <span class="math notranslate nohighlight">\(\vec{\rm v}(t)\)</span> is perpendicular to the position vector <span class="math notranslate nohighlight">\(\vec{r}(t)\)</span>, the triangles formed by the position vectors along with its difference vector <span class="math notranslate nohighlight">\(\Delta \vec{r}\)</span> and the velocity vector <span class="math notranslate nohighlight">\(\vec{\rm v}\)</span> along with its difference vector <span class="math notranslate nohighlight">\(\Delta \vec{\rm v}\)</span>. Furthermore, the two triangles are isoceles.  From these facts we have</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\Delta r &amp;= r\Delta \theta, \\
+\Delta v &amp;= v\Delta \theta, \\
+\frac{\Delta v}{v} &amp;= \frac{\Delta r}{r}.
+\end{align*}\]</div>
+<p>We can find the magnitude of the acceleration from</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\Delta v &amp;= \frac{v\Delta r}{r},\\
+\lim_{\Delta t \to 0} \frac{\Delta v}{\Delta t} &amp;= \frac{v}{r}\left[\lim_{\Delta t \to 0} \frac{\Delta r}{\Delta t}\right], \\
+&amp;= \left(\frac{v}{r}\right) v = \frac{v^2}{r}.
+\end{align*}\]</div>
+<p>A particle moving in a circle at a constant speed has an acceleration with magnitude</p>
+<div class="amsmath math notranslate nohighlight" id="equation-19541028-8d2f-4d11-8fb6-e45c597bba5c">
+<span class="eqno">(4.15)<a class="headerlink" href="#equation-19541028-8d2f-4d11-8fb6-e45c597bba5c" title="Permalink to this equation">#</a></span>\[\begin{align}
+a_c = \frac{v^2}{r}.
+\end{align}\]</div>
+<p>The direction of the acceleration vector is pointed inwards, toward the center of the circle.  This is a radial acceleration because its along the radial direction, and is also called the <strong>centripetal acceleration</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The word <em>centripetal</em> comes from the Latin words <em>centrum</em> (meaning “center”) and <em>petere</em> (meaning “to seek”), and thus takes the meaning “center seeking.”</p>
+</div>
+<p>Centripetal acceleration can have a wide range of values, depending on the speed and radius of the circular path.  Typical centripetal acceleration values are given in the following table.</p>
+<div class="pst-scrollable-table-container"><table class="table table-left" id="id1">
+<caption><span class="caption-number">Table 4.1 </span><span class="caption-text">Typical Centripetal Accelerations (in units of <span class="math notranslate nohighlight">\(g\)</span>)</span><a class="headerlink" href="#id1" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Object</p></th>
+<th class="head"><p>Centripetal Acceleration</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Moon around the Earth</p></td>
+<td><p><span class="math notranslate nohighlight">\(2.8\times10^{-4}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Earth around the Sun</p></td>
+<td><p><span class="math notranslate nohighlight">\(6.1\times10^{-4}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Satellite in geosynchronous orbit</p></td>
+<td><p><span class="math notranslate nohighlight">\(2.4\times10^{-2}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Outer edge of a CD when playing</p></td>
+<td><p><span class="math notranslate nohighlight">\(0.59\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Jet in a barrel roll</p></td>
+<td><p><span class="math notranslate nohighlight">\(2\)</span>–<span class="math notranslate nohighlight">\(3\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Roller coaster</p></td>
+<td><p><span class="math notranslate nohighlight">\(5\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Electron orbiting a proton (Bohr model)</p></td>
+<td><p><span class="math notranslate nohighlight">\(9.2\times10^{21}\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 <section id="example-problem-creating-an-acceleration-of-1-g">
 <h3><span class="section-number">4.3.2. </span><strong>Example Problem</strong>: Creating an Acceleration of 1 <span class="math notranslate nohighlight">\(g\)</span><a class="headerlink" href="#example-problem-creating-an-acceleration-of-1-g" title="Link to this heading">#</a></h3>
+<div class="exercise etamu-exercise admonition" id="Chapter04/motion-in-2D-3D-exercise-7">
+
+<p class="admonition-title"><span class="caption-number">Exercise 4.8 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>A jet is flying at a speed of <span class="math notranslate nohighlight">\(134.1\ \text{m/s}\)</span> along a straight line and then makes a turn along a circular path that is level with the ground. What does the radius of the circular path have to be to produce a centripetal acceleration of <span class="math notranslate nohighlight">\(1\,g\)</span> on the pilot and jet toward the center of the circular trajectory?</p>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>The jet is modeled as moving at constant speed along a horizontal circular path. Because the speed remains constant, the acceleration of the jet is purely centripetal and always directed toward the center of the circular path. The magnitude of this acceleration depends only on the jet’s speed and the radius of the turn. Changes in altitude and air resistance are neglected.</p>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>For uniform circular motion, the magnitude of the centripetal acceleration is given by</p>
+<div class="math notranslate nohighlight">
+\[
+a_c = \frac{v^2}{r}.
+\]</div>
+<p>In this problem, the centripetal acceleration is specified to be equal to the acceleration due to gravity, so we set</p>
+<div class="math notranslate nohighlight">
+\[
+g = \frac{v^2}{r}.
+\]</div>
+<p>Solving for the radius of the circular path gives</p>
+<div class="math notranslate nohighlight">
+\[
+r = \frac{v^2}{g}.
+\]</div>
+<p>Substituting the given speed and taking <span class="math notranslate nohighlight">\(g = 9.81\ \text{m/s}^2\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[
+r = \frac{(134.1\ \text{m/s})^2}{9.81\ \text{m/s}^2}.
+\]</div>
+<p>Evaluating this expression yields</p>
+<div class="math notranslate nohighlight">
+\[
+r = 1830\ \text{m},
+\]</div>
+<p>which can also be written as</p>
+<div class="math notranslate nohighlight">
+\[
+r = 1.83\ \text{km}.
+\]</div>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>To produce a centripetal acceleration of <span class="math notranslate nohighlight">\(1\,g\)</span> while flying at a speed of <span class="math notranslate nohighlight">\(134.1\ \text{m/s}\)</span>, the jet must follow a circular path with a radius of approximately <span class="math notranslate nohighlight">\(1.83\ \text{km}\)</span>.</p>
+<p>This result highlights an important physical idea: at high speeds, even modest accelerations require very large turning radii. A sustained turn that produces only <span class="math notranslate nohighlight">\(1\,g\)</span> spans several kilometers, comparable to the size of a small city. To increase the centripetal acceleration beyond <span class="math notranslate nohighlight">\(1\,g\)</span>, the jet would need to fly faster, turn more sharply, or both. This constraint explains why high-speed aircraft require large airspace when performing sustained maneuvers.</p>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>We can verify the analytical result by directly computing the radius from the centripetal acceleration formula using Python.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Verification of centripetal acceleration calculation</span>
+<span class="n">v</span> <span class="o">=</span> <span class="mf">134.1</span>      <span class="c1"># m/s</span>
+<span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>       <span class="c1"># m/s^2</span>
+
+<span class="n">r</span> <span class="o">=</span> <span class="n">v</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="n">g</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Turning radius = </span><span class="si">{</span><span class="n">r</span><span class="si">:</span><span class="s2">.0f</span><span class="si">}</span><span class="s2"> m&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Turning radius = </span><span class="si">{</span><span class="n">r</span><span class="o">/</span><span class="mi">1000</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> km&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</div>
 </section>
 <section id="equations-of-motion-for-uniform-circular-motion">
 <h3><span class="section-number">4.3.3. </span>Equations of Motion for Uniform Circular Motion<a class="headerlink" href="#equations-of-motion-for-uniform-circular-motion" title="Link to this heading">#</a></h3>
+<p>A particle undergoing circular motion can be decribe using its position vector <span class="math notranslate nohighlight">\(\vec{r}\)</span>.  As the particle moves on the circle, its position vector sweeps out the angle <span class="math notranslate nohighlight">\(\theta\)</span> (measured relative to the <span class="math notranslate nohighlight">\(+\hat{i}\)</span> direction).  The vector <span class="math notranslate nohighlight">\(\vec{r}(t)\)</span> can be represented in tems of its components by</p>
+<div class="amsmath math notranslate nohighlight" id="equation-a494b0ad-27ce-435c-b463-4ca1c9595fe2">
+<span class="eqno">(4.16)<a class="headerlink" href="#equation-a494b0ad-27ce-435c-b463-4ca1c9595fe2" title="Permalink to this equation">#</a></span>\[\begin{align}
+\vec{r}(t) = A\cos{\omega t}\, \hat{i} + A \sin{\omega t}\, \hat{j},
+\end{align}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\omega\)</span> represents the angular frequency in units of <span class="math notranslate nohighlight">\(\rm rad/s\)</span>.  Like the change in position for 1D motion, the change in angle is represented in a similar way,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\theta &amp;= \theta_o + {\rm v}_{||} t, \\
+&amp;= \theta_o + \omega t.
+\end{align*} \]</div>
+<p>If <span class="math notranslate nohighlight">\(T\)</span> is the time to complete a single revolution (or <em>orbital period</em>), then</p>
+<div class="math notranslate nohighlight">
+\[ \omega = \frac{2\pi}{T}. \]</div>
+<p>Velocity and acceleration can be found by differentiation of the poition function, or</p>
+<div class="amsmath math notranslate nohighlight" id="equation-9b64cd82-fc93-4ee1-84ac-2f800b702e0b">
+<span class="eqno">(4.17)<a class="headerlink" href="#equation-9b64cd82-fc93-4ee1-84ac-2f800b702e0b" title="Permalink to this equation">#</a></span>\[\begin{align}
+\vec{\rm v}(t) &amp;= \frac{d\vec{r}}{dt}, \\
+&amp;= -A\omega\sin{\omega t}\, \hat{i} + A\omega \cos{\omega t}\, \hat{j},\\
+\vec{a}(t) &amp;= \frac{d\vec{\rm v}}{dt}, \\
+&amp;= -A\omega^2\cos{\omega t}\, \hat{i} - A\omega^2 \sin{\omega t}\, \hat{j}.
+\end{align}\]</div>
+<p>From these equations, we see that the magnitude of the velocity is <span class="math notranslate nohighlight">\(A\omega\)</span> and the magnitude of the acceleration is <span class="math notranslate nohighlight">\(A\omega^2\)</span>.  The acceleration can be written simply as <span class="math notranslate nohighlight">\(\vec{a} = -\omega^2\vec{r}\)</span>.</p>
 </section>
 <section id="example-problem-circular-motion-of-a-proton">
 <h3><span class="section-number">4.3.4. </span><strong>Example Problem</strong>: Circular Motion of a Proton<a class="headerlink" href="#example-problem-circular-motion-of-a-proton" title="Link to this heading">#</a></h3>
+<div class="exercise etamu-exercise admonition" id="Chapter04/motion-in-2D-3D-exercise-8">
+
+<p class="admonition-title"><span class="caption-number">Exercise 4.9 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>A proton has speed <span class="math notranslate nohighlight">\(5.0\times10^6\ \text{m/s}\)</span> and is moving in a circle in the <span class="math notranslate nohighlight">\(xy\)</span> plane of radius <span class="math notranslate nohighlight">\(r = 0.175\ \text{m}\)</span>. What is its position in the <span class="math notranslate nohighlight">\(xy\)</span> plane at time <span class="math notranslate nohighlight">\(t = 2.0\times10^{-7}\ \text{s} = 200\ \text{ns}\)</span>? At <span class="math notranslate nohighlight">\(t = 0\)</span>, the position of the proton is <span class="math notranslate nohighlight">\(0.175,\hat{i}\ \text{m}\)</span> and it circles counterclockwise. Sketch the trajectory.</p>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>The proton undergoes uniform circular motion in the <span class="math notranslate nohighlight">\(xy\)</span> plane. Its speed is constant, while the direction of its velocity changes continuously, producing a centripetal acceleration toward the center of the circle.</p>
+<p>For counterclockwise circular motion that begins on the positive <span class="math notranslate nohighlight">\(x\)</span>-axis, the position of the particle can be written as</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{r}(t) = r\cos(\omega t),\hat{i} + r\sin(\omega t),\hat{j}.
+\]</div>
+<p>The angular frequency <span class="math notranslate nohighlight">\(\omega\)</span> is related to the speed and radius through</p>
+<div class="math notranslate nohighlight">
+\[
+\omega = \frac{v}{r}.
+\]</div>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>Using the given speed and radius, the angular frequency is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\omega &amp;= \frac{5.0\times10^6\ \text{m/s}}{0.175\ \text{m}} \
+&amp;= 2.9\times10^7\ \text{rad/s}.
+\end{align*}\]</div>
+<p>The position of the proton at time <span class="math notranslate nohighlight">\(t\)</span> is therefore</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{r}(t) = 0.175\cos(\omega t),\hat{i} + 0.175\sin(\omega t),\hat{j}\ \text{m}.
+\]</div>
+<p>Evaluating this expression at <span class="math notranslate nohighlight">\(t = 2.0\times10^{-7}\ \text{s}\)</span>,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\omega t &amp;= (2.9\times10^7)(2.0\times10^{-7}) \
+&amp;= 5.8\ \text{rad}.
+\end{align*}\]</div>
+<p>Substituting into the position vector gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\vec{r} &amp;= 0.175\cos(5.8),\hat{i} + 0.175\sin(5.8),\hat{j}\ \text{m} \
+&amp;= (0.15,\hat{i} - 0.10,\hat{j})\ \text{m}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>After <span class="math notranslate nohighlight">\(200\ \text{ns}\)</span>, the proton is located at</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{\vec{r} = (0.15,\hat{i} - 0.10,\hat{j})\ \text{m}}.
+\]</div>
+<p>This position lies slightly below the <span class="math notranslate nohighlight">\(x\)</span>-axis and to the right of the origin, consistent with counterclockwise circular motion that has carried the proton through a little less than one full revolution.</p>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>We verify the analytical result numerically by computing the angular frequency, evaluating the position at <span class="math notranslate nohighlight">\(t = 200\ \text{ns}\)</span>, and producing a minimal sketch of the circular trajectory.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Given values</span>
+<span class="n">r</span> <span class="o">=</span> <span class="mf">0.175</span>
+<span class="n">v</span> <span class="o">=</span> <span class="mf">5.0e6</span>
+<span class="n">t</span> <span class="o">=</span> <span class="mf">2.0e-7</span>
+
+<span class="c1"># Angular frequency</span>
+<span class="n">omega</span> <span class="o">=</span> <span class="n">v</span> <span class="o">/</span> <span class="n">r</span>
+
+<span class="c1"># Position at time t</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">r</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">omega</span> <span class="o">*</span> <span class="n">t</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">r</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">omega</span> <span class="o">*</span> <span class="n">t</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;x = </span><span class="si">{</span><span class="n">x</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> m&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;y = </span><span class="si">{</span><span class="n">y</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> m&quot;</span><span class="p">)</span>
+
+<span class="c1"># Minimal trajectory sketch</span>
+<span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">400</span><span class="p">)</span>
+<span class="n">xc</span> <span class="o">=</span> <span class="n">r</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span>
+<span class="n">yc</span> <span class="o">=</span> <span class="n">r</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xc</span><span class="p">,</span> <span class="n">yc</span><span class="p">,</span> <span class="s1">&#39;k--&#39;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Trajectory&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;ro&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Position at 200 ns&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;bo&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Initial position&quot;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;x (m)&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;y (m)&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s2">&quot;best&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+</div>
 </section>
 <section id="nonuniform-circular-motion">
 <h3><span class="section-number">4.3.5. </span>Nonuniform Circular Motion<a class="headerlink" href="#nonuniform-circular-motion" title="Link to this heading">#</a></h3>
+<p>Circular motion does not have to be at a constand speed, where a particle can accelerate in the normal fashion (e.g., speed up or slow down).</p>
+<p>If the particle is changing speed (as well as with direction), then we introduce another acceleration in the direction tangential to the circle (i.e., transverse acceleration).  The centripetal acceleration is the time rate of change of the <em>direction</em> of the velocity vector, where the <strong>tangential acceleration</strong> <span class="math notranslate nohighlight">\(a_T\)</span> is the time rate of change of the <em>magnitude</em> of the velocity vector.  This is given by</p>
+<div class="amsmath math notranslate nohighlight" id="equation-2297e3f8-35ac-4c7c-9ee7-b07e7174da51">
+<span class="eqno">(4.18)<a class="headerlink" href="#equation-2297e3f8-35ac-4c7c-9ee7-b07e7174da51" title="Permalink to this equation">#</a></span>\[\begin{align}
+a_T = \frac{d|\vec{\rm v}|}{dt}.
+\end{align}\]</div>
+<p>The direction of the tangential acceleration is tangent to the circle, where the centripetal acceleration is radially inward toward the center.  Thus the two vectors are components of the total acceleration vector <span class="math notranslate nohighlight">\(\vec{a}\)</span>, or</p>
+<div class="amsmath math notranslate nohighlight" id="equation-312d29d6-9a64-4e03-8fcd-d4e7b86ccb21">
+<span class="eqno">(4.19)<a class="headerlink" href="#equation-312d29d6-9a64-4e03-8fcd-d4e7b86ccb21" title="Permalink to this equation">#</a></span>\[\begin{align}
+\vec{a} = \vec{a}_c + \vec{a}_T.
+\end{align}\]</div>
+<p>Note that the component vectors are perpendicular to each other like how the Cartesian unit vectors are also perpendicular to each other.</p>
 </section>
 <section id="example-problem-total-acceleration-during-circular-motion">
 <h3><span class="section-number">4.3.6. </span><strong>Example Problem</strong>: Total Acceleration during Circular Motion<a class="headerlink" href="#example-problem-total-acceleration-during-circular-motion" title="Link to this heading">#</a></h3>
+<div class="exercise etamu-exercise admonition" id="Chapter04/motion-in-2D-3D-exercise-9">
+
+<p class="admonition-title"><span class="caption-number">Exercise 4.10 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>A particle moves in a circle of radius <span class="math notranslate nohighlight">\(r = 2.0\ \text{m}\)</span>. During the time interval from <span class="math notranslate nohighlight">\(t = 1.5\ \text{s}\)</span> to <span class="math notranslate nohighlight">\(t = 4.0\ \text{s}\)</span> its speed varies with time according to</p>
+<div class="math notranslate nohighlight">
+\[v(t) = c_1 - \dfrac{c_2}{t^2}, \quad c_1 = 4.0\ \text{m/s}, ; c_2 = 6.0\ \text{m}\cdot\text{s}.\]</div>
+<p>What is the total acceleration of the particle at <span class="math notranslate nohighlight">\(t = 2.0\ \text{s}\)</span>?</p>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>The particle undergoes nonuniform circular motion. Its acceleration has two perpendicular components: a centripetal component directed toward the center of the circle and a tangential component along the direction of motion. The centripetal acceleration depends on the instantaneous speed and radius, while the tangential acceleration depends on how the speed changes with time. The total acceleration is the vector sum of these two components.</p>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>We first evaluate the speed at <span class="math notranslate nohighlight">\(t = 2.0\ \text{s}\)</span> using the given function,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+v(2.0) &amp;= 4.0 - \frac{6.0}{(2.0)^2},\
+v(2.0) &amp;= 2.5\ \text{m/s}.
+\end{align*}\]</div>
+<p>The centripetal acceleration at this instant is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+a_c &amp;= \frac{v^2}{r},\
+a_c &amp;= \frac{(2.5\ \text{m/s})^2}{2.0\ \text{m}} = 3.1\ \text{m/s}^2,
+\end{align*}\]</div>
+<p>directed radially inward.</p>
+<p>The tangential acceleration is found from the time derivative of the speed. Differentiating <span class="math notranslate nohighlight">\(v(t) = 4.0 - 6.0 t^{-2}\)</span> gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{dv}{dt} &amp;= \frac{12.0}{t^3}.
+\end{align*}\]</div>
+<p>Evaluating at <span class="math notranslate nohighlight">\(t = 2.0\ \text{s}\)</span>,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+a_T &amp;= \left|\frac{dv}{dt}\right|_{t=2.0} = \frac{12.0}{(2.0)^3} = 1.5\ \text{m/s}^2,
+\end{align*}\]</div>
+<p>directed along the tangent to the circular path.</p>
+<p>Because the centripetal and tangential accelerations are perpendicular, the magnitude of the total acceleration is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+|\vec{a}| &amp;= \sqrt{a_c^2 + a_T^2},\
+|\vec{a}| &amp;= \sqrt{(3.1)^2 + (1.5)^2}\ \text{m/s}^2 = 3.4\ \text{m/s}^2.
+\end{align*}\]</div>
+<p>The direction of the total acceleration relative to the tangential direction is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\theta &amp;= \tan^{-1}!\left(\frac{a_c}{a_T}\right) = \tan^{-1}!\left(\frac{3.1}{1.5}\right) = 64^\circ,
+\end{align*}\]</div>
+<p>measured inward from the tangent toward the center of the circle.</p>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>At <span class="math notranslate nohighlight">\(t = 2.0\ \text{s}\)</span>, the particle has a centripetal acceleration of <span class="math notranslate nohighlight">\(3.1\ \text{m/s}^2\)</span> toward the center and a tangential acceleration of <span class="math notranslate nohighlight">\(1.5\ \text{m/s}^2\)</span> along the direction of motion. The resulting total acceleration has magnitude <span class="math notranslate nohighlight">\(3.4\ \text{m/s}^2\)</span> and points <span class="math notranslate nohighlight">\(64^\circ\)</span> inward from the tangent. This result illustrates how changes in speed and changes in direction combine to determine the acceleration in nonuniform circular motion.</p>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>We verify the result numerically by evaluating the speed, centripetal acceleration, tangential acceleration, and total acceleration directly, and by producing a minimal sketch showing the geometry of the acceleration components.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Verification of nonuniform circular motion</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Given values</span>
+<span class="n">r</span> <span class="o">=</span> <span class="mf">2.0</span>
+<span class="n">c1</span> <span class="o">=</span> <span class="mf">4.0</span>
+<span class="n">c2</span> <span class="o">=</span> <span class="mf">6.0</span>
+<span class="n">t</span> <span class="o">=</span> <span class="mf">2.0</span>
+
+<span class="c1"># Speed and accelerations</span>
+<span class="n">v</span> <span class="o">=</span> <span class="n">c1</span> <span class="o">-</span> <span class="n">c2</span><span class="o">/</span><span class="n">t</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">a_c</span> <span class="o">=</span> <span class="n">v</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="n">r</span>
+<span class="n">a_T</span> <span class="o">=</span> <span class="mf">12.0</span> <span class="o">/</span> <span class="n">t</span><span class="o">**</span><span class="mi">3</span>
+<span class="n">a_tot</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">a_c</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">a_T</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;v(2.0 s) = </span><span class="si">{</span><span class="n">v</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> m/s&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;a_c = </span><span class="si">{</span><span class="n">a_c</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> m/s^2&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;a_T = </span><span class="si">{</span><span class="n">a_T</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> m/s^2&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;|a| = </span><span class="si">{</span><span class="n">a_tot</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> m/s^2&quot;</span><span class="p">)</span>
+
+<span class="c1"># Minimal sketch</span>
+<span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">400</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">r</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">r</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;k-&#39;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Particle location at rightmost point</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="n">r</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;ko&#39;</span><span class="p">)</span>
+
+<span class="c1"># Acceleration vectors</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">arrow</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="n">a_c</span><span class="o">/</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">head_width</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">length_includes_head</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C0&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">arrow</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">a_T</span><span class="o">/</span><span class="mi">5</span><span class="p">,</span> <span class="n">head_width</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">length_includes_head</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C1&#39;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Centripetal (inward) and Tangential (upward) Accelerations&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+</div>
 </section>
 </section>
 <section id="relative-motion-in-one-and-two-dimensions">
 <h2><span class="section-number">4.4. </span>Relative Motion in One and Two Dimensions<a class="headerlink" href="#relative-motion-in-one-and-two-dimensions" title="Link to this heading">#</a></h2>
 <section id="reference-frames">
 <h3><span class="section-number">4.4.1. </span>Reference Frames<a class="headerlink" href="#reference-frames" title="Link to this heading">#</a></h3>
+<p>Motion is measured relative to a reference, where this is often relative to the ground (i.e., the reference).  Suppose that you’re riding a train moving east and pass another train also moving east, then your velocity relative to the other train is different than your velocity relative to the ground.</p>
+<p>The <strong>reference frame</strong> is an explicit statement describing the reference of the relative motoin in one or more dimensions.  We can expand our view of moving on a train to how the Earth spins or moves around the Sun because it is moving too.  When considering the Earth’s motion around the Sun, then the Solar System is the reference frame.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Solar System is a <strong>proper noun</strong> and should be captialized.  There is not more than one “Solar System”, where planets orbiting other stars are called <a class="reference external" href="https://en.wikipedia.org/wiki/Exoplanet"><strong>exoplanets</strong></a>.  Multiple planets orbiting the same star is a multiple-planetary system (or multi).</p>
+<p>The Solar System for an astronomer or planetary scientist carries a specific meaning like how “theory” has a specific meaning in science compared to lay-usage.  This usually means that that a planetary system is similar in one specific way to our Solar System.</p>
+</div>
+<p>Reference frames where applied more widely after Galileo developed his mechanics because he was trying to explain why the Earth could spin and go around the Sun.  The methods outlined in this section are applicable following Galileo and breakdown once the object moves closer to the speed of light.  The slow-moving (relative to lightspeed) regime is also called <strong>Galilean transformations</strong>.  The fast-moving (close to lightspeed) regime is called a <strong>Lorenz transformation</strong> and is used when studying problems in Einstein’s special theory of relativity.</p>
 </section>
 <section id="relative-motion-in-1d">
 <h3><span class="section-number">4.4.2. </span>Relative Motion in 1D<a class="headerlink" href="#relative-motion-in-1d" title="Link to this heading">#</a></h3>
+<p>In 1D, the velocity vectors only have two possible directions (e.g., east/west, left/right, positive/negative).  Take the example of a person sitting in a train that is moving east, where east is the positive direction and Earth is the reference frame.</p>
+<p>Then, we can write down the velocity of the train with respect to the Earth as</p>
+<div class="math notranslate nohighlight">
+\[ \vec{\rm v}_{TE} = 10\ {\rm m/s}\, \hat{i},\]</div>
+<p>where the subscript <span class="math notranslate nohighlight">\(TE\)</span> denotes the <strong>t</strong>rains velocity is measured relative to the <strong>E</strong>arth.</p>
+<p>A person gets up and walks toward the back of the train at <span class="math notranslate nohighlight">\(2\ {\rm m/s}\)</span>.  Since the train is moving east, the person must be moving west towards the back of the train.  We can write the velocity of the person as</p>
+<div class="math notranslate nohighlight">
+\[ \vec{\rm v}_{PT} = -2\ {\rm m/s}\, \hat{i}. \]</div>
+<p>We can add these two vectors together to find the velocity of the person with respect to the Earth (i.e., <span class="math notranslate nohighlight">\(PE\)</span>).  This <strong>relative velocity</strong> is written as</p>
+<div class="amsmath math notranslate nohighlight" id="equation-c34c1486-ceba-4e46-81bf-8609b0a83d88">
+<span class="eqno">(4.20)<a class="headerlink" href="#equation-c34c1486-ceba-4e46-81bf-8609b0a83d88" title="Permalink to this equation">#</a></span>\[\begin{align}
+\vec{\rm v}_{PE} = \vec{\rm v}_PT + \vec{\rm v}_{\rm TE}.
+\end{align}\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The ordering of the subscripts is chosen so the intermediate frame lies in the middle of the vector addition.  As a result, the final vector contains the remaining subscripts.  Figure <a class="reference internal" href="#subscripts-fig"><span class="std std-numref">4.10</span></a> shows this coupling.</p>
+<figure class="align-default" id="subscripts-fig">
+<img alt="subscripts" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/cb1cdc96267581bd74992258a009965321217672" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.10 </span><span class="caption-text">Image Credit: OpenStax.</span><a class="headerlink" href="#subscripts-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<p>Adding the vectors, we find</p>
+<div class="math notranslate nohighlight">
+\[\vec{\rm v}_{PE} = 10\ {\rm m/s}\, \hat{i} - 2\ {\rm m/s}\, \hat{i} = 8\ {\rm m/s}\, \hat{i}. \]</div>
+<p>So the person is moving <span class="math notranslate nohighlight">\(8\ {\rm m/s}\)</span> east with respect to the Earth.</p>
 </section>
 <section id="relative-velocity-in-2d">
 <h3><span class="section-number">4.4.3. </span>Relative Velocity in 2D<a class="headerlink" href="#relative-velocity-in-2d" title="Link to this heading">#</a></h3>
+<p>We can now apply these concepts to 2D considering a particle <span class="math notranslate nohighlight">\(P\)</span> and reference frames <span class="math notranslate nohighlight">\(S\)</span> and <span class="math notranslate nohighlight">\(S^\prime\)</span> (see Fig. <a class="reference internal" href="#fig-vector-2d"><span class="std std-numref">4.11</span></a>).  The position of the origin <span class="math notranslate nohighlight">\(S^\prime\)</span> as measured in <span class="math notranslate nohighlight">\(S\)</span> is <span class="math notranslate nohighlight">\(\vec{r}_{S^\prime S}\)</span>, where the position <span class="math notranslate nohighlight">\(P\)</span> measured in <span class="math notranslate nohighlight">\(S^\prime\)</span> is <span class="math notranslate nohighlight">\(\vec{r}_{PS^\prime}\)</span> and the position of <span class="math notranslate nohighlight">\(P\)</span> as measured in <span class="math notranslate nohighlight">\(S\)</span> is <span class="math notranslate nohighlight">\(\vec{r}_{PS}\)</span>.</p>
+<figure class="align-center" id="fig-vector-2d" style="width: 650px">
+<img alt="../_images/2bd9ed92772fe47511c4a88994bcf919c009f25776e50c4e7862bd15dfbe68dc.png" src="../_images/2bd9ed92772fe47511c4a88994bcf919c009f25776e50c4e7862bd15dfbe68dc.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.11 </span><span class="caption-text">A 2D displacement-vector diagram showing <span class="math notranslate nohighlight">\(\vec{r}_{PS}\)</span>, <span class="math notranslate nohighlight">\(\vec{r}_{PS'}\)</span>, and <span class="math notranslate nohighlight">\(\vec{r}_{S'S}\)</span>.</span><a class="headerlink" href="#fig-vector-2d" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>From Fig. <a class="reference internal" href="#fig-vector-2d"><span class="std std-numref">4.11</span></a> we see that the relative positions and velocities are given by</p>
+<div class="amsmath math notranslate nohighlight" id="equation-7d45af9a-808c-4a9a-a661-e727c9f783f0">
+<span class="eqno">(4.21)<a class="headerlink" href="#equation-7d45af9a-808c-4a9a-a661-e727c9f783f0" title="Permalink to this equation">#</a></span>\[\begin{align}
+\vec{r}_{PS} &amp;= \vec{r}_{PS^\prime} + \vec{r}_{S^\prime S}, \\
+\vec{\rm v}_{PS} &amp;= \vec{\rm v}_{PS^\prime} + \vec{\rm v}_{S^\prime S}.
+\end{align}\]</div>
+<p>We can extend this method of vector addition to any number of reference frames.  For particle <span class="math notranslate nohighlight">\(P\)</span>, its velocity can be computed relative to frames <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span>, and <span class="math notranslate nohighlight">\(C\)</span> as</p>
+<div class="amsmath math notranslate nohighlight" id="equation-4ed99ff1-1020-43f6-befb-3e0f9c2ed33d">
+<span class="eqno">(4.22)<a class="headerlink" href="#equation-4ed99ff1-1020-43f6-befb-3e0f9c2ed33d" title="Permalink to this equation">#</a></span>\[\begin{align}
+\vec{\rm v}_{PC} = \vec{\rm v}_{PA} + \vec{\rm v}_{\rm AB} + \vec{\rm v}_{BC}.
+\end{align}\]</div>
+<p>We can also see how the accelerations are related in two referece frames by differentiating to get</p>
+<div class="amsmath math notranslate nohighlight" id="equation-8c7afa82-a4fc-482a-bea5-4d57009462ba">
+<span class="eqno">(4.23)<a class="headerlink" href="#equation-8c7afa82-a4fc-482a-bea5-4d57009462ba" title="Permalink to this equation">#</a></span>\[\begin{align}
+\vec{a}_{PS} &amp;= \vec{a}_{PS^\prime} + \vec{a}_{S^\prime S}.
+\end{align}\]</div>
+<p>Suppose that the velocity of <span class="math notranslate nohighlight">\(S^\prime\)</span> relative to <span class="math notranslate nohighlight">\(S\)</span> is a constant, then <span class="math notranslate nohighlight">\(\vec{a}_{S^\prime S} = 0\)</span> and</p>
+<div class="amsmath math notranslate nohighlight" id="equation-d8a1cda5-9cd9-4e90-be9a-7c9a5eca9aa8">
+<span class="eqno">(4.24)<a class="headerlink" href="#equation-d8a1cda5-9cd9-4e90-be9a-7c9a5eca9aa8" title="Permalink to this equation">#</a></span>\[\begin{align}
+\vec{a}_{PS} = \vec{a}_{PS^\prime},
+\end{align}\]</div>
+<p>which means that the acceleration of a particle is the same as measured by two observes moving at a constant velocity relative to each other.</p>
+<div class="cell tag_hide-cell docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell content</span>
+<span class="expanded">Hide code cell content</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
+
+<span class="c1"># Define points in 2D</span>
+<span class="n">S</span>  <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">])</span>
+<span class="n">Sp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">])</span>
+<span class="n">P</span>  <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">4.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">])</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">120</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+
+<span class="c1"># Draw vectors</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">arrow</span><span class="p">(</span><span class="n">S</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">S</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">Sp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="n">S</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">Sp</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">S</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+         <span class="n">length_includes_head</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">head_width</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;purple&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">arrow</span><span class="p">(</span><span class="n">Sp</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">Sp</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">P</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="n">Sp</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">P</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">Sp</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+         <span class="n">length_includes_head</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">head_width</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">arrow</span><span class="p">(</span><span class="n">S</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">S</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">P</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="n">S</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">P</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">S</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+         <span class="n">length_includes_head</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">head_width</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+
+<span class="c1"># Mark points</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="o">*</span><span class="n">S</span><span class="p">,</span> <span class="s1">&#39;ko&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="o">*</span><span class="n">Sp</span><span class="p">,</span> <span class="s1">&#39;ko&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="o">*</span><span class="n">P</span><span class="p">,</span> <span class="s1">&#39;ro&#39;</span><span class="p">)</span>
+
+<span class="c1"># --- Draw coordinate axes (x,y) at S and (x&#39;,y&#39;) at S&#39; ---</span>
+<span class="n">axis_len</span> <span class="o">=</span> <span class="mf">1.2</span>
+<span class="n">axis_lw</span> <span class="o">=</span> <span class="mf">1.2</span>
+<span class="n">axis_head</span> <span class="o">=</span> <span class="mi">10</span>  <span class="c1"># arrowhead size (points)</span>
+
+<span class="c1"># Unprimed axes at S</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">S</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">axis_len</span><span class="p">,</span> <span class="n">S</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="n">S</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">S</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span>
+            <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s2">&quot;-|&gt;&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="n">axis_lw</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">mutation_scale</span><span class="o">=</span><span class="n">axis_head</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">S</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">S</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">axis_len</span><span class="p">),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="n">S</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">S</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span>
+            <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s2">&quot;-|&gt;&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="n">axis_lw</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">mutation_scale</span><span class="o">=</span><span class="n">axis_head</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">S</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">axis_len</span> <span class="o">+</span> <span class="mf">0.05</span><span class="p">,</span> <span class="n">S</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="mf">0.05</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;$x$&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">S</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="mf">0.10</span><span class="p">,</span> <span class="n">S</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">axis_len</span> <span class="o">+</span> <span class="mf">0.05</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;$y$&quot;</span><span class="p">)</span>
+
+<span class="c1"># Primed axes at S&#39; (same orientation here; rotate if you want later)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">Sp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">axis_len</span><span class="p">,</span> <span class="n">Sp</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="n">Sp</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">Sp</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span>
+            <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s2">&quot;-|&gt;&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="n">axis_lw</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">mutation_scale</span><span class="o">=</span><span class="n">axis_head</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">Sp</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">Sp</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">axis_len</span><span class="p">),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="n">Sp</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">Sp</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span>
+            <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s2">&quot;-|&gt;&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="n">axis_lw</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">mutation_scale</span><span class="o">=</span><span class="n">axis_head</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">Sp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">axis_len</span> <span class="o">+</span> <span class="mf">0.05</span><span class="p">,</span> <span class="n">Sp</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="mf">0.05</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;$x&#39;$&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">Sp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="mf">0.10</span><span class="p">,</span> <span class="n">Sp</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">axis_len</span> <span class="o">+</span> <span class="mf">0.05</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;$y&#39;$&quot;</span><span class="p">)</span>
+
+
+<span class="c1"># Labels</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">S</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">S</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;$S$&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">Sp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">Sp</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="mf">0.1</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;$S&#39;$&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">P</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">P</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="sa">r</span><span class="s2">&quot;$P$&quot;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.28</span><span class="p">,</span> <span class="mf">1.07</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;$\vec</span><span class="si">{r}</span><span class="s2">_{S&#39;S}$&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;purple&#39;</span><span class="p">,</span><span class="n">rotation</span><span class="o">=</span><span class="mi">70</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.4</span><span class="p">,</span> <span class="mf">2.6</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;$\vec</span><span class="si">{r}</span><span class="s2">_{PS&#39;}$&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.0</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;$\vec</span><span class="si">{r}</span><span class="s2">_</span><span class="si">{PS}</span><span class="s2">$&quot;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s2">&quot;equal&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">4.8</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">3.8</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+
+<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;vector_2D_diagram&quot;</span><span class="p">,</span> <span class="n">fig</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/2bd9ed92772fe47511c4a88994bcf919c009f25776e50c4e7862bd15dfbe68dc.png" src="../_images/2bd9ed92772fe47511c4a88994bcf919c009f25776e50c4e7862bd15dfbe68dc.png" />
+</div>
+</details>
+</div>
 </section>
 <section id="example-problem-motion-of-a-car-relative-to-a-truck">
 <h3><span class="section-number">4.4.4. </span><strong>Example Problem</strong>: Motion of a Car Relative to a Truck<a class="headerlink" href="#example-problem-motion-of-a-car-relative-to-a-truck" title="Link to this heading">#</a></h3>
+<div class="exercise etamu-exercise admonition" id="Chapter04/motion-in-2D-3D-exercise-10">
+
+<p class="admonition-title"><span class="caption-number">Exercise 4.11 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>A truck is traveling south at a speed of <span class="math notranslate nohighlight">\(70\ \text{km/h}\)</span> toward an intersection. A car is traveling east toward the intersection at a speed of <span class="math notranslate nohighlight">\(80\ \text{km/h}\)</span>. What is the velocity of the car relative to the truck?</p>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>We describe the motion using a common inertial reference frame: Earth. Velocities are treated as vectors in a two-dimensional <span class="math notranslate nohighlight">\(x\)</span>–<span class="math notranslate nohighlight">\(y\)</span> coordinate system, with <span class="math notranslate nohighlight">\(\hat{i}\)</span> pointing east and <span class="math notranslate nohighlight">\(\hat{j}\)</span> pointing north. The relative velocity of one object with respect to another is found by vector addition, using Earth as the connecting reference frame.</p>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>The velocity of the car with respect to Earth is purely eastward,</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{\rm v}_{CE} = 80\,\hat{i}\ \text{km/h}.
+\]</div>
+<p>The truck is traveling south, which corresponds to the negative <span class="math notranslate nohighlight">\(y\)</span>-direction,</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{\rm v}_{TE} = -70\,\hat{j}\ \text{km/h}.
+\]</div>
+<p>The velocity of the car relative to the truck is obtained from the relative velocity relation</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\vec{\rm v}_{CT} &amp;= \vec{\rm v}_{CE} + \vec{\rm v}_{ET},\\
+\vec{\rm v}_{ET} &amp;= -\vec{\rm v}_{TE}.
+\end{align*}\]</div>
+<p>Substituting the known vectors gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\vec{\rm v}_{CT} &amp;= 80\,\hat{i} + 70\,\hat{j}\ \text{km/h}.
+\end{align*}\]</div>
+<p>The magnitude of the relative velocity is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+|\vec{\rm v}_{CT}| &amp;= \sqrt{(80)^2 + (70)^2}\ \text{km/h} = 110\ \text{km/h}.
+\end{align*}\]</div>
+<p>The direction, measured north of east, follows from</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\theta &amp;= \tan^{-1}\!\left(\frac{70}{80}\right) = 41^\circ.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>The car moves relative to the truck with a speed of <span class="math notranslate nohighlight">\(110\ \text{km/h}\)</span> at an angle of <span class="math notranslate nohighlight">\(41^\circ\)</span> north of east. This result reflects the fact that, from the truck’s point of view, the car is simultaneously moving eastward and northward. Relative motion problems reduce to careful bookkeeping of vector directions and reference frames.</p>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>We verify the result numerically by constructing the velocity vectors as arrays and computing the magnitude and direction using standard vector operations.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Verification of relative velocity</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Velocity vectors (km/h)</span>
+<span class="n">v_CE</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">80.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">])</span>     <span class="c1"># car relative to Earth</span>
+<span class="n">v_TE</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">70.0</span><span class="p">])</span>    <span class="c1"># truck relative to Earth</span>
+
+<span class="c1"># Relative velocity of car with respect to truck</span>
+<span class="n">v_ET</span> <span class="o">=</span> <span class="o">-</span><span class="n">v_TE</span>
+<span class="n">v_CT</span> <span class="o">=</span> <span class="n">v_CE</span> <span class="o">+</span> <span class="n">v_ET</span>
+
+<span class="n">speed</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">v_CT</span><span class="p">)</span>
+<span class="n">angle</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arctan2</span><span class="p">(</span><span class="n">v_CT</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">v_CT</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;v_CT = </span><span class="si">{</span><span class="n">v_CT</span><span class="si">}</span><span class="s2"> km/h&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;|v_CT| = </span><span class="si">{</span><span class="n">speed</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> km/h&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;direction = </span><span class="si">{</span><span class="n">angle</span><span class="si">:</span><span class="s2">.0f</span><span class="si">}</span><span class="s2"> degrees north of east&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</div>
 </section>
 <section id="example-problem-flying-a-plane-in-a-wind">
 <h3><span class="section-number">4.4.5. </span><strong>Example Problem</strong>: Flying a Plane in a Wind<a class="headerlink" href="#example-problem-flying-a-plane-in-a-wind" title="Link to this heading">#</a></h3>
+<div class="exercise etamu-exercise admonition" id="Chapter04/motion-in-2D-3D-exercise-11">
+
+<p class="admonition-title"><span class="caption-number">Exercise 4.12 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>A pilot must fly a plane due north to reach their destination. The plane can fly at 300 km/h in still air. A wind is blowing out of the northeast at 90 km/h. (a) In what direction must the pilot head the plane to fly due north? (b) What is the speed of the plane relative to the ground?</p>
+</div></blockquote>
+<figure class="align-default" id="plane-wind-fig">
+<img alt="Plane flying in wind" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/2fee2eb14b006202d9aabd326f7e3c3a33a03d75" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.12 </span><span class="caption-text">Image Credit: OpenStax.</span><a class="headerlink" href="#plane-wind-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>We treat each velocity as a vector in the horizontal plane and use relative motion (vector addition). Let <span class="math notranslate nohighlight">\(P\)</span> = plane, <span class="math notranslate nohighlight">\(A\)</span> = air, and <span class="math notranslate nohighlight">\(G\)</span> = ground. The key relationship is</p>
+<div class="math notranslate nohighlight">
+\[\vec{\rm v}_{PG}=\vec{\rm v}_{PA}+\vec{\rm v}_{AG}.\]</div>
+<p>The pilot can control <span class="math notranslate nohighlight">\(\vec{\rm v}_{PA}\)</span> (speed <span class="math notranslate nohighlight">\(300\ \text{km/h}\)</span> and heading), while the wind sets <span class="math notranslate nohighlight">\(\vec{\rm v}_{AG}\)</span> (speed <span class="math notranslate nohighlight">\(90\ \text{km/h}\)</span> directed toward the southwest because it is “out of the northeast”). We choose axes with <span class="math notranslate nohighlight">\(+\hat{i}\)</span> east and <span class="math notranslate nohighlight">\(+\hat{j}\)</span> north.</p>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>The wind “out of the northeast” points <span class="math notranslate nohighlight">\(45^\circ\)</span> south of west, so</p>
+<div class="math notranslate nohighlight">
+\[\vec{\rm v}_{AG}=(-90\cos45^\circ)\hat{i}+(-90\sin45^\circ)\hat{j}.\]</div>
+<p>The plane’s airspeed has fixed magnitude <span class="math notranslate nohighlight">\(|\vec{\rm v}*{PA}|=300\ \text{km/h}\)</span>, but the pilot aims it at an angle <span class="math notranslate nohighlight">\(\theta\)</span> east of north, so</p>
+<div class="math notranslate nohighlight">
+\[\vec{\rm v}_{PA}=(300\sin\theta)\hat{i}+(300\cos\theta)\hat{j}.\]</div>
+<p>To fly due north, the ground-track must have zero east-west component, so the <span class="math notranslate nohighlight">\(x\)</span>-component of <span class="math notranslate nohighlight">\(\vec{\rm v}_{PG}\)</span> must be zero:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+(\vec{\rm v}_{PG})_x &amp;= (\vec{\rm v}_{PA})_x + (\vec{\rm v}_{AG})_x = 0,\\
+300\sin{\theta} - 90\cos45^\circ &amp;= 0.
+\end{align*}\]</div>
+<p>Solving for <span class="math notranslate nohighlight">\(\theta\)</span>,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+300\sin\theta &amp;= 90\cos45^\circ,\\
+\sin\theta &amp;= \frac{90\cos45^\circ}{300},\\
+\theta &amp;= \sin^{-1}\!\left(\frac{90\cos45^\circ}{300}\right)\approx 12^\circ.
+\end{align*}\]</div>
+<p>So the pilot must point the plane about <span class="math notranslate nohighlight">\(12^\circ\)</span> east of north.</p>
+<p>For the ground speed, we use the <span class="math notranslate nohighlight">\(y\)</span>-component of <span class="math notranslate nohighlight">\(\vec{\rm v}_{PG}\)</span>:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+|\vec{\rm v}_{PG}| &amp;= (\vec{\rm v}_{PG})_y = (\vec{\rm v}_{PA})_y + (\vec{\rm v}_{AG})_y,\\
+|\vec{\rm v}_{PG}| &amp;= 300\cos\theta - 90\sin45^\circ \approx 230\ \text{km/h}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>To keep the <em>ground-track</em> due north, the pilot must “crab” into the wind by aiming the nose about <span class="math notranslate nohighlight">\(12^\circ\)</span> east of north. The wind’s southward component reduces the northward progress, giving a ground speed of about <span class="math notranslate nohighlight">\(230\ \text{km/h}\)</span>.</p>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>We verify the heading by checking that the computed ground velocity has (approximately) zero <span class="math notranslate nohighlight">\(x\)</span>-component, and we make a minimal vector sketch.</p>
+</section>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Verification: plane in a wind (vector addition)</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">vPA</span> <span class="o">=</span> <span class="mf">300.0</span>  <span class="c1"># km/h</span>
+<span class="n">vAG</span> <span class="o">=</span> <span class="mf">90.0</span>   <span class="c1"># km/h</span>
+<span class="n">deg</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">180</span>
+
+<span class="c1"># Wind &quot;out of the NE&quot; points toward SW: 45° south of west</span>
+<span class="n">vAG_vec</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="n">vAG</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="mi">45</span><span class="o">*</span><span class="n">deg</span><span class="p">),</span> <span class="o">-</span><span class="n">vAG</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">45</span><span class="o">*</span><span class="n">deg</span><span class="p">)])</span>  <span class="c1"># [x,y]</span>
+
+<span class="c1"># Solve for heading angle theta (east of north) so ground x-component is zero</span>
+<span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arcsin</span><span class="p">((</span><span class="n">vAG</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="mi">45</span><span class="o">*</span><span class="n">deg</span><span class="p">))</span><span class="o">/</span><span class="n">vPA</span><span class="p">)</span>  <span class="c1"># radians</span>
+
+<span class="n">vPA_vec</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">vPA</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="p">),</span> <span class="n">vPA</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">theta</span><span class="p">)])</span>      <span class="c1"># [x,y]</span>
+<span class="n">vPG_vec</span> <span class="o">=</span> <span class="n">vPA_vec</span> <span class="o">+</span> <span class="n">vAG_vec</span>
+<span class="n">speed_ground</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">vPG_vec</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Heading: </span><span class="si">{</span><span class="n">theta</span><span class="o">/</span><span class="n">deg</span><span class="si">:</span><span class="s2">.0f</span><span class="si">}</span><span class="s2">° east of north&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Ground speed: </span><span class="si">{</span><span class="n">speed_ground</span><span class="si">:</span><span class="s2">.0f</span><span class="si">}</span><span class="s2"> km/h&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Ground x-component (should be ~0): </span><span class="si">{</span><span class="n">vPG_vec</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2"> km/h&quot;</span><span class="p">)</span>
+
+<span class="c1"># Minimal sketch using annotate arrows</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">),</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">120</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">draw_vec</span><span class="p">(</span><span class="n">vec</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">text_offset</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)):</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">vec</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">vec</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span>
+        <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span><span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s2">&quot;-&gt;&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+    <span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.55</span><span class="o">*</span><span class="n">vec</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">text_offset</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+        <span class="mf">0.55</span><span class="o">*</span><span class="n">vec</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">text_offset</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">label</span>
+    <span class="p">)</span>
+
+<span class="n">draw_vec</span><span class="p">(</span><span class="n">vAG_vec</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;$\vec</span><span class="si">{v}</span><span class="s2">_</span><span class="si">{AG}</span><span class="s2">$&quot;</span><span class="p">,</span> <span class="n">text_offset</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">15</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">draw_vec</span><span class="p">(</span><span class="n">vPA_vec</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;$\vec</span><span class="si">{v}</span><span class="s2">_</span><span class="si">{PA}</span><span class="s2">$&quot;</span><span class="p">,</span> <span class="n">text_offset</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+<span class="n">draw_vec</span><span class="p">(</span><span class="n">vPG_vec</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;$\vec</span><span class="si">{v}</span><span class="s2">_</span><span class="si">{PG}</span><span class="s2">$&quot;</span><span class="p">,</span> <span class="n">text_offset</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span><span class="p">))</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">([])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_yticklabels</span><span class="p">([])</span>
+<span class="c1"># --- set reasonable plot limits so the renderer doesn&#39;t explode ---</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mi">100</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span>
+
+
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Heading: 12° east of north
+Ground speed: 230 km/h
+Ground x-component (should be ~0): 0.000 km/h
+</pre></div>
+</div>
+<img alt="../_images/6749c37e1baf139cafb6d0dfbe0395ebb29785395a077a9a3e7ea6133a12f0e3.png" src="../_images/6749c37e1baf139cafb6d0dfbe0395ebb29785395a077a9a3e7ea6133a12f0e3.png" />
+</div>
+</div>
 </section>
 </section>
 </section>
