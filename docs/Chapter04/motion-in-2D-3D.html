@@ -537,6 +537,11 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-flying-a-plane-in-a-wind">4.4.5. <strong>Example Problem</strong>: Flying a Plane in a Wind</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-class-problems">4.5. In-class Problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-i">4.5.1. Part I</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-ii">4.5.2. Part II</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -556,8 +561,8 @@ document.write(`
 <h3><span class="section-number">4.1.1. </span>Displacement Vector<a class="headerlink" href="#displacement-vector" title="Link to this heading">#</a></h3>
 <p>To describe motion in 2D and 3D, we must first define a coordinate system, including a convention of axes. <em>Recall that the sign of the acceleration due to gravity was determined by the convention that we chose.</em>  We usually use the Cartesian coordinate system to locate a particle at point <span class="math notranslate nohighlight">\(P(x,y,z)\)</span> in 3 dimensions.  If the particle is moving , the variables <span class="math notranslate nohighlight">\(x,y,z\)</span> are functions of time <span class="math notranslate nohighlight">\(t\)</span>.</p>
 <p>The position vector <span class="math notranslate nohighlight">\(\vec{r}(t)\)</span> locates the point P at time t from the origin, by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-67a27b98-f14e-4285-a280-1ea34be2d677">
-<span class="eqno">(4.1)<a class="headerlink" href="#equation-67a27b98-f14e-4285-a280-1ea34be2d677" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e5e7b172-5681-4fa4-9898-6c308e4fd96a">
+<span class="eqno">(4.1)<a class="headerlink" href="#equation-e5e7b172-5681-4fa4-9898-6c308e4fd96a" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{r}(t) = x(t)\hat{i} + y(t)\hat{j} + z(t)\hat{k}.
 \end{align}\]</div>
 <figure class="align-default" id="d-position-fig">
@@ -568,8 +573,8 @@ document.write(`
 </figure>
 <p><a class="reference internal" href="#d-position-fig"><span class="std std-numref">Fig. 4.1</span></a> shows the position vector <span class="math notranslate nohighlight">\(\vec{r}(t)\)</span> for a particle located ar a time <span class="math notranslate nohighlight">\(t\)</span>. <em>Note that the orientation of the coordinate syste follows the right-hand rule.</em></p>
 <p>We can now define the 3D displacement vector <span class="math notranslate nohighlight">\(\Delta \vec{r}\)</span> as the difference between the position vector <span class="math notranslate nohighlight">\(\vec{r}(t_2)\)</span> at time <span class="math notranslate nohighlight">\(t_2\)</span> and the initial position vector <span class="math notranslate nohighlight">\(\vec{r}(t_1)\)</span> at time <span class="math notranslate nohighlight">\(t_1\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0d96e66c-66e2-4236-9241-4af617cb6a1a">
-<span class="eqno">(4.2)<a class="headerlink" href="#equation-0d96e66c-66e2-4236-9241-4af617cb6a1a" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ea8caefd-4b83-416a-aed3-7dedc8ecfc52">
+<span class="eqno">(4.2)<a class="headerlink" href="#equation-ea8caefd-4b83-416a-aed3-7dedc8ecfc52" title="Permalink to this equation">#</a></span>\[\begin{align}
 \Delta \vec{r} = \vec{r}(t_2) - \vec{r}(t_1).
 \end{align}\]</div>
 <p>Three dimensional vector addition is performed in the same way as in 2D, by adding the corresponding components or graphically by using the head-to-tail method.</p>
@@ -744,8 +749,8 @@ Direction angle theta = -67.5 deg
 <section id="velocity-vector">
 <h3><span class="section-number">4.1.3. </span>Velocity Vector<a class="headerlink" href="#velocity-vector" title="Link to this heading">#</a></h3>
 <p>Previously, we defined the velocity in 1D through the derivative of <span class="math notranslate nohighlight">\(x(t)\)</span>.  To expand it to 2D or 3D, we simply replace <span class="math notranslate nohighlight">\(x(t) \rightarrow \vec{r}(t)\)</span> to get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-95228f97-8199-4451-90cc-5443f46e7a11">
-<span class="eqno">(4.3)<a class="headerlink" href="#equation-95228f97-8199-4451-90cc-5443f46e7a11" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-fb0f60a2-b3e8-47b5-9e01-04b34368bd01">
+<span class="eqno">(4.3)<a class="headerlink" href="#equation-fb0f60a2-b3e8-47b5-9e01-04b34368bd01" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{\rm v}(t) &amp;= \lim_{\Delta t\rightarrow 0} \frac{\vec{r}(t+\Delta t)-
 \vec{r}(t)}{\Delta t} = \frac{d\vec{r}}{dt}.
 \end{align}\]</div>
@@ -757,19 +762,19 @@ Direction angle theta = -67.5 deg
 </figcaption>
 </figure>
 <p>The velocity vector <span class="math notranslate nohighlight">\(\vec{\rm v}\)</span> can also be written in components, where each component is now time-dependent (<span class="math notranslate nohighlight">\(v_x(t),\ v_y(t),\ v_z(t)\)</span>).  Mathematically, the progression from the displacement to the velocity vector is given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b6bc779b-be9f-4ef6-9824-56fee99b3778">
-<span class="eqno">(4.4)<a class="headerlink" href="#equation-b6bc779b-be9f-4ef6-9824-56fee99b3778" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-efdc0754-1a81-47cf-b072-bd1c2436433c">
+<span class="eqno">(4.4)<a class="headerlink" href="#equation-efdc0754-1a81-47cf-b072-bd1c2436433c" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{r} &amp;= x(t)\hat{i} + y(t)\hat{j} + z(t)\hat{k}, \\
 \vec{\rm v} &amp;= v_x(t)\hat{i} + v_y(t)\hat{j} + v_z(t)\hat{k},
 \end{align}\]</div>
 <p>where</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d147c5ad-1f76-491a-8598-a64a0ad245d1">
-<span class="eqno">(4.5)<a class="headerlink" href="#equation-d147c5ad-1f76-491a-8598-a64a0ad245d1" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-17a87b20-8232-4228-9e9e-37b4b242ffb2">
+<span class="eqno">(4.5)<a class="headerlink" href="#equation-17a87b20-8232-4228-9e9e-37b4b242ffb2" title="Permalink to this equation">#</a></span>\[\begin{align}
 v_x(t) = \frac{dx(t)}{dt}, \quad &amp; v_y(t) = \frac{dy(t)}{dt}, \quad &amp; v_z(t) = \frac{dz(t)}{dt}.
 \end{align}\]</div>
 <p>The average velocity <span class="math notranslate nohighlight">\(\bar{v}\)</span> was described as a vector in the previous chapter, and there is a 2D or 3D equivalent given as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a0325b0c-af3c-425a-a007-07cb755b50ca">
-<span class="eqno">(4.6)<a class="headerlink" href="#equation-a0325b0c-af3c-425a-a007-07cb755b50ca" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a9cfd5ae-7edd-4584-88b0-8122ad1cd115">
+<span class="eqno">(4.6)<a class="headerlink" href="#equation-a9cfd5ae-7edd-4584-88b0-8122ad1cd115" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{\rm v}_{\rm avg}(t_2,t_1) = \frac{\vec{r}(t_2)-\vec{r}(t_1)}{t_2-t_1}.
 \end{align}\]</div>
 <div class="note admonition">
@@ -944,13 +949,13 @@ Average velocity from 1.0 s to 3.0 s: [8. 3. 5.] km/s
 <section id="instantaneous-acceleration">
 <h3><span class="section-number">4.2.1. </span>Instantaneous Acceleration<a class="headerlink" href="#instantaneous-acceleration" title="Link to this heading">#</a></h3>
 <p>The <strong>acceleration vector</strong> <span class="math notranslate nohighlight">\(\vec{a}(t)\)</span> is the intantaneous acceleration at any point in time along an object’s trajectory.  It can be obtain in a similar way as was the velocity vector.  Taking the derivative of <span class="math notranslate nohighlight">\(\vec{\rm v}(t)\)</span> with respect to time, we find</p>
-<div class="amsmath math notranslate nohighlight" id="equation-be56cd0a-05fa-4d21-83cd-8dad896d87ff">
-<span class="eqno">(4.7)<a class="headerlink" href="#equation-be56cd0a-05fa-4d21-83cd-8dad896d87ff" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-9fac1baa-b95e-492e-8221-945baad62a5e">
+<span class="eqno">(4.7)<a class="headerlink" href="#equation-9fac1baa-b95e-492e-8221-945baad62a5e" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{a}(t) &amp;= \lim_{\Delta t\to 0}\frac{\vec{\rm v}(t+\Delta t)-\vec{\rm v}(t)}{\Delta t} = \frac{d\vec{\rm v}(t)}{dt}.
 \end{align}\]</div>
 <p>In terms of components we have the following form</p>
-<div class="amsmath math notranslate nohighlight" id="equation-363ab17d-bf9e-4a5a-a2b6-3af5ad14b5ea">
-<span class="eqno">(4.8)<a class="headerlink" href="#equation-363ab17d-bf9e-4a5a-a2b6-3af5ad14b5ea" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a6d76e18-7d20-4cde-94cb-2da83e820491">
+<span class="eqno">(4.8)<a class="headerlink" href="#equation-a6d76e18-7d20-4cde-94cb-2da83e820491" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{a}(t) &amp;= \frac{dv_x(t)}{dt}\,\hat{i} + \frac{dv_y(t)}{dt}\,\hat{j} + \frac{dv_z(t)}{dt}\,\hat{k},\\
 &amp;= \frac{d^2x(t)}{dt^2}\,\hat{i} + \frac{d^2y(t)}{dt^2}\,\hat{j} + \frac{d^2z(t)}{dt^2}\,\hat{k}.
 \end{align}\]</div>
@@ -1136,7 +1141,7 @@ Average velocity from 1.0 s to 3.0 s: [8. 3. 5.] km/s
 </details>
 <div class="cell_output docutils container">
 <div class="output text_html"><div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-        <script src="https://cdn.plot.ly/plotly-2.12.1.min.js"></script>                <div id="787f44ee-7d7d-45c6-9821-719049e173d2" class="plotly-graph-div" style="height:700px; width:800px;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("787f44ee-7d7d-45c6-9821-719049e173d2")) {                    Plotly.newPlot(                        "787f44ee-7d7d-45c6-9821-719049e173d2",                        [{"marker":{"color":[0.0,0.1694915254237288,0.3389830508474576,0.5084745762711864,0.6779661016949152,0.847457627118644,1.0169491525423728,1.1864406779661016,1.3559322033898304,1.5254237288135593,1.694915254237288,1.8644067796610169,2.0338983050847457,2.2033898305084745,2.3728813559322033,2.542372881355932,2.711864406779661,2.8813559322033897,3.0508474576271185,3.2203389830508473,3.389830508474576,3.559322033898305,3.7288135593220337,3.8983050847457625,4.067796610169491,4.23728813559322,4.406779661016949,4.576271186440678,4.745762711864407,4.915254237288135,5.084745762711864,5.254237288135593,5.423728813559322,5.59322033898305,5.762711864406779,5.932203389830509,6.101694915254237,6.271186440677965,6.440677966101695,6.610169491525424,6.779661016949152,6.949152542372881,7.11864406779661,7.288135593220339,7.4576271186440675,7.627118644067796,7.796610169491525,7.966101694915254,8.135593220338983,8.305084745762711,8.47457627118644,8.64406779661017,8.813559322033898,8.983050847457626,9.152542372881356,9.322033898305085,9.491525423728813,9.661016949152541,9.83050847457627,10.0],"colorbar":{"len":0.9,"thickness":18,"tickfont":{"size":14},"title":{"text":"time (s)"},"x":1.03},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"opacity":0.9,"showscale":true,"size":7},"mode":"markers","name":"","showlegend":false,"x":[0.0,1.6661878770468255,3.274920999712726,4.8261993679977016,6.320022981901752,7.756391841424877,9.135305946567078,10.456765297328355,11.720769893708704,12.927319735708128,14.076414823326628,15.168055156564206,16.202240735420855,17.17897155989658,18.098247629991384,18.96006894570526,19.764435507038208,20.511347313990232,21.20080436656133,21.832806664751505,22.407354208560754,22.924446997989087,23.384085033036484,23.786268313702962,24.13099683998851,24.418270611893128,24.648089629416834,24.82045389255961,24.935363401321464,24.992818155702384,24.992818155702388,24.935363401321457,24.82045389255961,24.648089629416837,24.418270611893135,24.130996839988512,23.786268313702955,23.384085033036484,22.92444699798908,22.40735420856076,21.8328066647515,21.200804366561336,20.511347313990242,19.764435507038208,18.96006894570526,18.098247629991377,17.17897155989659,16.20224073542085,15.168055156564208,14.076414823326644,12.927319735708124,11.720769893708706,10.45676529732836,9.135305946567087,7.756391841424872,6.320022981901758,4.826199367997717,3.2749209997127338,1.6661878770468377,0.0],"y":[0.0,0.847457627118644,1.694915254237288,2.542372881355932,3.389830508474576,4.23728813559322,5.084745762711864,5.932203389830509,6.779661016949152,7.627118644067796,8.47457627118644,9.322033898305085,10.169491525423728,11.016949152542372,11.864406779661017,12.711864406779661,13.559322033898304,14.406779661016948,15.254237288135592,16.101694915254235,16.94915254237288,17.796610169491526,18.64406779661017,19.491525423728813,20.338983050847457,21.186440677966097,22.033898305084744,22.88135593220339,23.728813559322035,24.576271186440675,25.423728813559322,26.271186440677965,27.11864406779661,27.966101694915253,28.813559322033896,29.661016949152543,30.508474576271183,31.355932203389827,32.20338983050847,33.05084745762712,33.89830508474576,34.7457627118644,35.59322033898305,36.440677966101696,37.28813559322034,38.135593220338976,38.983050847457626,39.83050847457627,40.67796610169491,41.52542372881356,42.37288135593219,43.22033898305085,44.06779661016949,44.91525423728813,45.76271186440678,46.610169491525426,47.45762711864407,48.305084745762706,49.15254237288135,50.0],"z":[0.0,0.847457627118644,1.694915254237288,2.542372881355932,3.389830508474576,4.23728813559322,5.084745762711864,5.932203389830509,6.779661016949152,7.627118644067796,8.47457627118644,9.322033898305085,10.169491525423728,11.016949152542372,11.864406779661017,12.711864406779661,13.559322033898304,14.406779661016948,15.254237288135592,16.101694915254235,16.94915254237288,17.796610169491526,18.64406779661017,19.491525423728813,20.338983050847457,21.186440677966097,22.033898305084744,22.88135593220339,23.728813559322035,24.576271186440675,25.423728813559322,26.271186440677965,27.11864406779661,27.966101694915253,28.813559322033896,29.661016949152543,30.508474576271183,31.355932203389827,32.20338983050847,33.05084745762712,33.89830508474576,34.7457627118644,35.59322033898305,36.440677966101696,37.28813559322034,38.135593220338976,38.983050847457626,39.83050847457627,40.67796610169491,41.52542372881356,42.37288135593219,43.22033898305085,44.06779661016949,44.91525423728813,45.76271186440678,46.610169491525426,47.45762711864407,48.305084745762706,49.15254237288135,50.0],"type":"scatter3d"},{"hoverinfo":"skip","line":{"color":"black","width":6},"mode":"lines","name":"","showlegend":false,"x":[-55,55],"y":[0,0],"z":[0,0],"type":"scatter3d"},{"hoverinfo":"skip","line":{"color":"black","width":6},"mode":"lines","name":"","showlegend":false,"x":[0,0],"y":[-55,55],"z":[0,0],"type":"scatter3d"},{"hoverinfo":"skip","line":{"color":"black","width":6},"mode":"lines","name":"","showlegend":false,"x":[0,0],"y":[0,0],"z":[-55,55],"type":"scatter3d"},{"anchor":"tip","colorscale":[[0,"black"],[1,"black"]],"hoverinfo":"skip","name":"","showlegend":false,"showscale":false,"sizemode":"absolute","sizeref":6,"u":[9.9],"v":[0],"w":[0],"x":[55],"y":[0],"z":[0],"type":"cone"},{"anchor":"tip","colorscale":[[0,"black"],[1,"black"]],"hoverinfo":"skip","name":"","showlegend":false,"showscale":false,"sizemode":"absolute","sizeref":6,"u":[-9.9],"v":[0],"w":[0],"x":[-55],"y":[0],"z":[0],"type":"cone"},{"anchor":"tip","colorscale":[[0,"black"],[1,"black"]],"hoverinfo":"skip","name":"","showlegend":false,"showscale":false,"sizemode":"absolute","sizeref":6,"u":[0],"v":[9.9],"w":[0],"x":[0],"y":[55],"z":[0],"type":"cone"},{"anchor":"tip","colorscale":[[0,"black"],[1,"black"]],"hoverinfo":"skip","name":"","showlegend":false,"showscale":false,"sizemode":"absolute","sizeref":6,"u":[0],"v":[-9.9],"w":[0],"x":[0],"y":[-55],"z":[0],"type":"cone"},{"anchor":"tip","colorscale":[[0,"black"],[1,"black"]],"hoverinfo":"skip","name":"","showlegend":false,"showscale":false,"sizemode":"absolute","sizeref":6,"u":[0],"v":[0],"w":[9.9],"x":[0],"y":[0],"z":[55],"type":"cone"},{"anchor":"tip","colorscale":[[0,"black"],[1,"black"]],"hoverinfo":"skip","name":"","showlegend":false,"showscale":false,"sizemode":"absolute","sizeref":6,"u":[0],"v":[0],"w":[-9.9],"x":[0],"y":[0],"z":[-55],"type":"cone"},{"hoverinfo":"skip","mode":"text","name":"","showlegend":false,"text":["x"],"textfont":{"color":"black","size":16},"x":[61.60000000000001],"y":[0],"z":[0],"type":"scatter3d"},{"hoverinfo":"skip","mode":"text","name":"","showlegend":false,"text":["-x"],"textfont":{"color":"black","size":16},"x":[-61.60000000000001],"y":[0],"z":[0],"type":"scatter3d"},{"hoverinfo":"skip","mode":"text","name":"","showlegend":false,"text":["y"],"textfont":{"color":"black","size":16},"x":[0],"y":[61.60000000000001],"z":[0],"type":"scatter3d"},{"hoverinfo":"skip","mode":"text","name":"","showlegend":false,"text":["-y"],"textfont":{"color":"black","size":16},"x":[0],"y":[-61.60000000000001],"z":[0],"type":"scatter3d"},{"hoverinfo":"skip","mode":"text","name":"","showlegend":false,"text":["z"],"textfont":{"color":"black","size":16},"x":[0],"y":[0],"z":[61.60000000000001],"type":"scatter3d"},{"hoverinfo":"skip","mode":"text","name":"","showlegend":false,"text":["-z"],"textfont":{"color":"black","size":16},"x":[0],"y":[0],"z":[-61.60000000000001],"type":"scatter3d"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"margin":{"l":0,"r":0,"b":0,"t":20},"scene":{"xaxis":{"range":[-66.0,66.0],"showbackground":false,"showticklabels":false,"showgrid":false,"zeroline":false,"title":{"text":""}},"yaxis":{"range":[-66.0,66.0],"showbackground":false,"showticklabels":false,"showgrid":false,"zeroline":false,"title":{"text":""}},"zaxis":{"range":[-66.0,66.0],"showbackground":false,"showticklabels":false,"showgrid":false,"zeroline":false,"title":{"text":""}},"aspectmode":"cube"},"width":800,"height":700,"showlegend":false},                        {"responsive": true}                    )                };                            </script>        </div></div></div>
+        <script src="https://cdn.plot.ly/plotly-2.12.1.min.js"></script>                <div id="947f6912-f7ce-40a8-bf6a-757097661ff6" class="plotly-graph-div" style="height:700px; width:800px;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("947f6912-f7ce-40a8-bf6a-757097661ff6")) {                    Plotly.newPlot(                        "947f6912-f7ce-40a8-bf6a-757097661ff6",                        [{"marker":{"color":[0.0,0.1694915254237288,0.3389830508474576,0.5084745762711864,0.6779661016949152,0.847457627118644,1.0169491525423728,1.1864406779661016,1.3559322033898304,1.5254237288135593,1.694915254237288,1.8644067796610169,2.0338983050847457,2.2033898305084745,2.3728813559322033,2.542372881355932,2.711864406779661,2.8813559322033897,3.0508474576271185,3.2203389830508473,3.389830508474576,3.559322033898305,3.7288135593220337,3.8983050847457625,4.067796610169491,4.23728813559322,4.406779661016949,4.576271186440678,4.745762711864407,4.915254237288135,5.084745762711864,5.254237288135593,5.423728813559322,5.59322033898305,5.762711864406779,5.932203389830509,6.101694915254237,6.271186440677965,6.440677966101695,6.610169491525424,6.779661016949152,6.949152542372881,7.11864406779661,7.288135593220339,7.4576271186440675,7.627118644067796,7.796610169491525,7.966101694915254,8.135593220338983,8.305084745762711,8.47457627118644,8.64406779661017,8.813559322033898,8.983050847457626,9.152542372881356,9.322033898305085,9.491525423728813,9.661016949152541,9.83050847457627,10.0],"colorbar":{"len":0.9,"thickness":18,"tickfont":{"size":14},"title":{"text":"time (s)"},"x":1.03},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"opacity":0.9,"showscale":true,"size":7},"mode":"markers","name":"","showlegend":false,"x":[0.0,1.6661878770468255,3.274920999712726,4.8261993679977016,6.320022981901752,7.756391841424877,9.135305946567078,10.456765297328355,11.720769893708704,12.927319735708128,14.076414823326628,15.168055156564206,16.202240735420855,17.17897155989658,18.098247629991384,18.96006894570526,19.764435507038208,20.511347313990232,21.20080436656133,21.832806664751505,22.407354208560754,22.924446997989087,23.384085033036484,23.786268313702962,24.13099683998851,24.418270611893128,24.648089629416834,24.82045389255961,24.935363401321464,24.992818155702384,24.992818155702388,24.935363401321457,24.82045389255961,24.648089629416837,24.418270611893135,24.130996839988512,23.786268313702955,23.384085033036484,22.92444699798908,22.40735420856076,21.8328066647515,21.200804366561336,20.511347313990242,19.764435507038208,18.96006894570526,18.098247629991377,17.17897155989659,16.20224073542085,15.168055156564208,14.076414823326644,12.927319735708124,11.720769893708706,10.45676529732836,9.135305946567087,7.756391841424872,6.320022981901758,4.826199367997717,3.2749209997127338,1.6661878770468377,0.0],"y":[0.0,0.847457627118644,1.694915254237288,2.542372881355932,3.389830508474576,4.23728813559322,5.084745762711864,5.932203389830509,6.779661016949152,7.627118644067796,8.47457627118644,9.322033898305085,10.169491525423728,11.016949152542372,11.864406779661017,12.711864406779661,13.559322033898304,14.406779661016948,15.254237288135592,16.101694915254235,16.94915254237288,17.796610169491526,18.64406779661017,19.491525423728813,20.338983050847457,21.186440677966097,22.033898305084744,22.88135593220339,23.728813559322035,24.576271186440675,25.423728813559322,26.271186440677965,27.11864406779661,27.966101694915253,28.813559322033896,29.661016949152543,30.508474576271183,31.355932203389827,32.20338983050847,33.05084745762712,33.89830508474576,34.7457627118644,35.59322033898305,36.440677966101696,37.28813559322034,38.135593220338976,38.983050847457626,39.83050847457627,40.67796610169491,41.52542372881356,42.37288135593219,43.22033898305085,44.06779661016949,44.91525423728813,45.76271186440678,46.610169491525426,47.45762711864407,48.305084745762706,49.15254237288135,50.0],"z":[0.0,0.847457627118644,1.694915254237288,2.542372881355932,3.389830508474576,4.23728813559322,5.084745762711864,5.932203389830509,6.779661016949152,7.627118644067796,8.47457627118644,9.322033898305085,10.169491525423728,11.016949152542372,11.864406779661017,12.711864406779661,13.559322033898304,14.406779661016948,15.254237288135592,16.101694915254235,16.94915254237288,17.796610169491526,18.64406779661017,19.491525423728813,20.338983050847457,21.186440677966097,22.033898305084744,22.88135593220339,23.728813559322035,24.576271186440675,25.423728813559322,26.271186440677965,27.11864406779661,27.966101694915253,28.813559322033896,29.661016949152543,30.508474576271183,31.355932203389827,32.20338983050847,33.05084745762712,33.89830508474576,34.7457627118644,35.59322033898305,36.440677966101696,37.28813559322034,38.135593220338976,38.983050847457626,39.83050847457627,40.67796610169491,41.52542372881356,42.37288135593219,43.22033898305085,44.06779661016949,44.91525423728813,45.76271186440678,46.610169491525426,47.45762711864407,48.305084745762706,49.15254237288135,50.0],"type":"scatter3d"},{"hoverinfo":"skip","line":{"color":"black","width":6},"mode":"lines","name":"","showlegend":false,"x":[-55,55],"y":[0,0],"z":[0,0],"type":"scatter3d"},{"hoverinfo":"skip","line":{"color":"black","width":6},"mode":"lines","name":"","showlegend":false,"x":[0,0],"y":[-55,55],"z":[0,0],"type":"scatter3d"},{"hoverinfo":"skip","line":{"color":"black","width":6},"mode":"lines","name":"","showlegend":false,"x":[0,0],"y":[0,0],"z":[-55,55],"type":"scatter3d"},{"anchor":"tip","colorscale":[[0,"black"],[1,"black"]],"hoverinfo":"skip","name":"","showlegend":false,"showscale":false,"sizemode":"absolute","sizeref":6,"u":[9.9],"v":[0],"w":[0],"x":[55],"y":[0],"z":[0],"type":"cone"},{"anchor":"tip","colorscale":[[0,"black"],[1,"black"]],"hoverinfo":"skip","name":"","showlegend":false,"showscale":false,"sizemode":"absolute","sizeref":6,"u":[-9.9],"v":[0],"w":[0],"x":[-55],"y":[0],"z":[0],"type":"cone"},{"anchor":"tip","colorscale":[[0,"black"],[1,"black"]],"hoverinfo":"skip","name":"","showlegend":false,"showscale":false,"sizemode":"absolute","sizeref":6,"u":[0],"v":[9.9],"w":[0],"x":[0],"y":[55],"z":[0],"type":"cone"},{"anchor":"tip","colorscale":[[0,"black"],[1,"black"]],"hoverinfo":"skip","name":"","showlegend":false,"showscale":false,"sizemode":"absolute","sizeref":6,"u":[0],"v":[-9.9],"w":[0],"x":[0],"y":[-55],"z":[0],"type":"cone"},{"anchor":"tip","colorscale":[[0,"black"],[1,"black"]],"hoverinfo":"skip","name":"","showlegend":false,"showscale":false,"sizemode":"absolute","sizeref":6,"u":[0],"v":[0],"w":[9.9],"x":[0],"y":[0],"z":[55],"type":"cone"},{"anchor":"tip","colorscale":[[0,"black"],[1,"black"]],"hoverinfo":"skip","name":"","showlegend":false,"showscale":false,"sizemode":"absolute","sizeref":6,"u":[0],"v":[0],"w":[-9.9],"x":[0],"y":[0],"z":[-55],"type":"cone"},{"hoverinfo":"skip","mode":"text","name":"","showlegend":false,"text":["x"],"textfont":{"color":"black","size":16},"x":[61.60000000000001],"y":[0],"z":[0],"type":"scatter3d"},{"hoverinfo":"skip","mode":"text","name":"","showlegend":false,"text":["-x"],"textfont":{"color":"black","size":16},"x":[-61.60000000000001],"y":[0],"z":[0],"type":"scatter3d"},{"hoverinfo":"skip","mode":"text","name":"","showlegend":false,"text":["y"],"textfont":{"color":"black","size":16},"x":[0],"y":[61.60000000000001],"z":[0],"type":"scatter3d"},{"hoverinfo":"skip","mode":"text","name":"","showlegend":false,"text":["-y"],"textfont":{"color":"black","size":16},"x":[0],"y":[-61.60000000000001],"z":[0],"type":"scatter3d"},{"hoverinfo":"skip","mode":"text","name":"","showlegend":false,"text":["z"],"textfont":{"color":"black","size":16},"x":[0],"y":[0],"z":[61.60000000000001],"type":"scatter3d"},{"hoverinfo":"skip","mode":"text","name":"","showlegend":false,"text":["-z"],"textfont":{"color":"black","size":16},"x":[0],"y":[0],"z":[-61.60000000000001],"type":"scatter3d"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"margin":{"l":0,"r":0,"b":0,"t":20},"scene":{"xaxis":{"range":[-66.0,66.0],"showbackground":false,"showticklabels":false,"showgrid":false,"zeroline":false,"title":{"text":""}},"yaxis":{"range":[-66.0,66.0],"showbackground":false,"showticklabels":false,"showgrid":false,"zeroline":false,"title":{"text":""}},"zaxis":{"range":[-66.0,66.0],"showbackground":false,"showticklabels":false,"showgrid":false,"zeroline":false,"title":{"text":""}},"aspectmode":"cube"},"width":800,"height":700,"showlegend":false},                        {"responsive": true}                    )                };                            </script>        </div></div></div>
 </div>
 </section>
 <section id="constant-acceleration">
@@ -1145,14 +1150,14 @@ Average velocity from 1.0 s to 3.0 s: [8. 3. 5.] km/s
 <div class="math notranslate nohighlight">
 \[ \vec{a} = a_x\hat{i} + a_y\hat{j}. \]</div>
 <p>Each of the kinematic equations for 1D motion now has component-forms that define the equation in the <span class="math notranslate nohighlight">\(x\)</span>- and <span class="math notranslate nohighlight">\(y\)</span>-directions.  We can write the equations as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d6a83631-6256-4ed1-b52e-f195ee26dfeb">
-<span class="eqno">(4.9)<a class="headerlink" href="#equation-d6a83631-6256-4ed1-b52e-f195ee26dfeb" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-872c46cd-b73d-4d6c-833a-87ae2bffffe8">
+<span class="eqno">(4.9)<a class="headerlink" href="#equation-872c46cd-b73d-4d6c-833a-87ae2bffffe8" title="Permalink to this equation">#</a></span>\[\begin{align}
 x(t) &amp;= x_o + \left(v_x\right)_{\rm avg} t, \quad &amp; v_x(t) &amp;= v_{ox} + a_x t, \\
 x(t) &amp;= x_o + v_{ox}t + \frac{1}{2}a_x t^2, \quad &amp; v_x^2(t) &amp;= v_{ox}^2 + 2a_x(x-x_o).
 \end{align}\]</div>
 <p>and</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1d1c2ac1-724f-4437-9167-4c4ee6341882">
-<span class="eqno">(4.10)<a class="headerlink" href="#equation-1d1c2ac1-724f-4437-9167-4c4ee6341882" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-12a1f565-7210-40ca-97c0-ffda18539397">
+<span class="eqno">(4.10)<a class="headerlink" href="#equation-12a1f565-7210-40ca-97c0-ffda18539397" title="Permalink to this equation">#</a></span>\[\begin{align}
 y(t) &amp;= y_o + \left(v_y\right)_{\rm avg} t, \quad &amp; v_y(t) &amp;= v_{oy} + a_y t, \\
 y(t) &amp;= y_o + v_{oy}t + \frac{1}{2}a_y t^2, \quad &amp; v_y^2(t) &amp;= v_{oy}^2 + 2a_y(y-y_o).
 \end{align}\]</div>
@@ -1202,17 +1207,17 @@ a_x &amp;= (2.1)\cos(15^\circ) = 2.0\ \text{m/s}^2,\\
 a_y &amp;= -(2.1)\sin(15^\circ)= -0.54\ \text{m/s}^2.
 \end{align*}\]</div>
 <p><strong>(a)</strong> Component functions</p>
-<p>Starting with the components from the initial vectors, the <span class="math notranslate nohighlight">\(x\)</span> motion has <span class="math notranslate nohighlight">\(x_0 = 75.0\ \text{m}\)</span> and <span class="math notranslate nohighlight">\(v_{xo} = 4.1\ \text{m/s}\)</span>, which gives</p>
+<p>Starting with the components from the initial vectors, the <span class="math notranslate nohighlight">\(x\)</span> motion has <span class="math notranslate nohighlight">\(x_o = 75.0\ \text{m}\)</span> and <span class="math notranslate nohighlight">\(v_{xo} = 4.1\ \text{m/s}\)</span>, which gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-x(t) &amp;= x_0 + v_{xo}t + \frac{1}{2}a_xt^2 ,\\
+x(t) &amp;= x_o + v_{xo}t + \frac{1}{2}a_xt^2 ,\\
 &amp;= 75.0 + 4.1t + \frac{1}{2}(2.0)t^2, \\
 v_x(t) &amp;= v_{xo} + a_xt = 4.1 + (2.0)t.
 \end{align*}\]</div>
-<p>For the <span class="math notranslate nohighlight">\(y\)</span> motion with <span class="math notranslate nohighlight">\(y_0 = -50.0\ \text{m}\)</span> and <span class="math notranslate nohighlight">\(v_{yo} = -1.1\ \text{m/s}\)</span>,</p>
+<p>For the <span class="math notranslate nohighlight">\(y\)</span> motion with <span class="math notranslate nohighlight">\(y_o = -50.0\ \text{m}\)</span> and <span class="math notranslate nohighlight">\(v_{yo} = -1.1\ \text{m/s}\)</span>,</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-y(t) &amp;= y_0 + v_{yo}t + \frac{1}{2}a_yt^2,\\
+y(t) &amp;= y_o + v_{yo}t + \frac{1}{2}a_yt^2,\\
 &amp; = -50.0 - 1.1t + \frac{1}{2}(-0.54)t^2, \\
 v_y(t) &amp;= v_{yo} + a_yt = -1.1 + (-0.54)t.
 \end{align*}\]</div>
@@ -1354,8 +1359,8 @@ v_y(t) &amp;= -1.1 - 0.54t.
 <div class="math notranslate nohighlight">
 \[ a_y = -g = -9.81\ {\rm m/s^2} \quad (-32.2\ {\rm ft/s^2}). \]</div>
 <p>Because gravity is vertical, <span class="math notranslate nohighlight">\(a_x = 0\)</span> and <span class="math notranslate nohighlight">\(v_x = v_{ox}\)</span>.  We can then write the kinematic equations for motion in a uniform gravitational field as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-92ba58ab-7181-4512-89d4-3f9c07df2df1">
-<span class="eqno">(4.11)<a class="headerlink" href="#equation-92ba58ab-7181-4512-89d4-3f9c07df2df1" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-87a19a06-0c53-46b6-bc1e-f30bb225f911">
+<span class="eqno">(4.11)<a class="headerlink" href="#equation-87a19a06-0c53-46b6-bc1e-f30bb225f911" title="Permalink to this equation">#</a></span>\[\begin{align}
 x &amp;= x_o + v_{ox} t, \quad &amp; y &amp;= y_o + v_{oy} t - \frac{1}{2}gt^2, \\
 v_x &amp;= v_{ox}, \quad &amp; v_y &amp;= v_{oy} - gt,\\
 &amp;  &amp; v_y^2 &amp;= v_{oy}^2 - 2g(y-y_o).
@@ -1429,23 +1434,23 @@ h &amp;= \frac{v_{oy}^2}{2g} = \frac{v_o^2\sin^2{\theta_o}}{2g}.
 <p><strong>The Math</strong></p>
 <p>The initial velocity components are</p>
 <div class="math notranslate nohighlight">
-\[v_{0x} = v_0\cos\theta_0, \qquad v_{0y} = v_0\sin\theta_0,\]</div>
-<p>with <span class="math notranslate nohighlight">\(v_0 = 70.0\ \text{m/s}\)</span> and <span class="math notranslate nohighlight">\(\theta_0 = 75.0^\circ\)</span>. Evaluating,</p>
+\[v_{ox} = v_o\cos\theta_o, \qquad v_{oy} = v_o\sin\theta_o,\]</div>
+<p>with <span class="math notranslate nohighlight">\(v_o = 70.0\ \text{m/s}\)</span> and <span class="math notranslate nohighlight">\(\theta_o = 75.0^\circ\)</span>. Evaluating,</p>
 <div class="math notranslate nohighlight">
-\[v_{0x} = (70.0)\cos 75^\circ = 18.1\ \text{m/s},\]</div>
+\[v_{ox} = (70.0)\cos 75^\circ = 18.1\ \text{m/s},\]</div>
 <div class="math notranslate nohighlight">
-\[v_{0y} = (70.0)\sin 75^\circ = 67.6\ \text{m/s}.\]</div>
+\[v_{oy} = (70.0)\sin 75^\circ = 67.6\ \text{m/s}.\]</div>
 <hr class="docutils" />
 <p><strong>(a) Maximum height</strong></p>
 <p>The vertical velocity at the apex is zero, so we use</p>
 <div class="math notranslate nohighlight">
-\[v_y^2 = v_{0y}^2 - 2g(y - y_0).\]</div>
-<p>Taking <span class="math notranslate nohighlight">\(y_0 = 0\)</span> and <span class="math notranslate nohighlight">\(v_y = 0\)</span> gives</p>
+\[v_y^2 = v_{oy}^2 - 2g(y - y_o).\]</div>
+<p>Taking <span class="math notranslate nohighlight">\(y_o = 0\)</span> and <span class="math notranslate nohighlight">\(v_y = 0\)</span> gives</p>
 <div class="math notranslate nohighlight">
-\[0 = v_{0y}^2 - 2gy,\]</div>
+\[0 = v_{oy}^2 - 2gy,\]</div>
 <p>or</p>
 <div class="math notranslate nohighlight">
-\[y = \frac{v_{0y}^2}{2g}.\]</div>
+\[y = \frac{v_{oy}^2}{2g}.\]</div>
 <p>Substituting values,</p>
 <div class="math notranslate nohighlight">
 \[y = \frac{(67.6\ \text{m/s})^2}{2(9.80\ \text{m/s}^2)} = 233\ \text{m}.\]</div>
@@ -1453,18 +1458,18 @@ h &amp;= \frac{v_{oy}^2}{2g} = \frac{v_o^2\sin^2{\theta_o}}{2g}.
 <p><strong>(b) Time to reach the highest point</strong></p>
 <p>At the apex, <span class="math notranslate nohighlight">\(v_y = 0\)</span>, so from</p>
 <div class="math notranslate nohighlight">
-\[v_y = v_{0y} - gt,\]</div>
+\[v_y = v_{oy} - gt,\]</div>
 <p>we have</p>
 <div class="math notranslate nohighlight">
-\[0 = v_{0y} - gt,\]</div>
+\[0 = v_{oy} - gt,\]</div>
 <p>which gives</p>
 <div class="math notranslate nohighlight">
-\[t = \frac{v_{0y}}{g} = \frac{67.6\ \text{m/s}}{9.80\ \text{m/s}^2} = 6.90\ \text{s}.\]</div>
+\[t = \frac{v_{oy}}{g} = \frac{67.6\ \text{m/s}}{9.80\ \text{m/s}^2} = 6.90\ \text{s}.\]</div>
 <hr class="docutils" />
 <p><strong>(c) Horizontal displacement at the explosion</strong></p>
 <p>The horizontal velocity is constant because <span class="math notranslate nohighlight">\(a_x = 0\)</span>. Thus,</p>
 <div class="math notranslate nohighlight">
-\[x = v_{0x}t.\]</div>
+\[x = v_{ox}t.\]</div>
 <p>Using the time found above,</p>
 <div class="math notranslate nohighlight">
 \[x = (18.1\ \text{m/s})(6.90\ \text{s}) = 125\ \text{m}.\]</div>
@@ -1513,6 +1518,132 @@ h &amp;= \frac{v_{oy}^2}{2g} = \frac{v_o^2\sin^2{\theta_o}}{2g}.
 </section>
 <section id="example-problem-the-tennis-player">
 <h3><span class="section-number">4.2.8. </span><strong>Example Problem</strong>: The Tennis Player<a class="headerlink" href="#example-problem-the-tennis-player" title="Link to this heading">#</a></h3>
+<div class="exercise etamu-exercise admonition" id="Chapter04/motion-in-2D-3D-exercise-6">
+
+<p class="admonition-title"><span class="caption-number">Exercise 4.7 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>A tennis player wins a match at Arthur Ashe Stadium and hits a ball into the stands at <span class="math notranslate nohighlight">\(30\ \text{m/s}\)</span> and at an angle <span class="math notranslate nohighlight">\(45^\circ\)</span> above the horizontal. On its way down, the ball is caught by a spectator <span class="math notranslate nohighlight">\(10\ \text{m}\)</span> above the point where the ball was hit. (a) Calculate the time it takes the tennis ball to reach the spectator. (b) What are the magnitude and direction of the ball’s velocity at impact?</p>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>The tennis ball is modeled as an ideal projectile. Air resistance is neglected, the motion takes place near Earth’s surface, and the only acceleration is due to gravity. The horizontal and vertical motions are independent, with constant horizontal velocity and constant downward acceleration. The time of flight to a given height is determined entirely by the vertical motion, while the velocity at impact is found by recombining the horizontal and vertical components at that time.</p>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>We take upward to be the positive <span class="math notranslate nohighlight">\(y\)</span> direction and choose the launch point as <span class="math notranslate nohighlight">\(y_o = 0\)</span>. The acceleration due to gravity is <span class="math notranslate nohighlight">\(g = 9.81\ \text{m/s}^2\)</span>.</p>
+<p>The initial speed is <span class="math notranslate nohighlight">\(v_o = 30\ \text{m/s}\)</span> at an angle <span class="math notranslate nohighlight">\(\theta_o = 45^\circ\)</span>, so the initial velocity components are</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+v_{ox} &amp;= v_o\cos\theta_o,\\
+v_{oy} &amp;= v_o\sin\theta_o.
+\end{align*}\]</div>
+<p>Substituting the numerical values gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+v_{ox} &amp;= (30)\cos(45^\circ) = 21\ \text{m/s},\\
+v_{oy} &amp;= (30)\sin(45^\circ) = 21\ \text{m/s}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p><strong>(a) Time to reach the spectator</strong></p>
+<p>The vertical position as a function of time is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+y(t) = y_o + v_{oy}t - \frac{1}{2}gt^2.
+\end{align*}\]</div>
+<p>At the spectator’s location, <span class="math notranslate nohighlight">\(y = 10\ \text{m}\)</span>, so</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+10 &amp;= (21)t - \frac{1}{2}(9.81)t^2,\\
+0 &amp;= 4.905t^2 - 21t + 10.
+\end{align*}\]</div>
+<p>Solving this quadratic equation gives two solutions. The smaller time corresponds to the ball passing through <span class="math notranslate nohighlight">\(y=10\ \text{m}\)</span> on the way up, while the larger time corresponds to the ball being caught on the way down. The physically relevant solution is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+t = 3.8\ \text{s}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p><strong>(b) Velocity at impact</strong></p>
+<p>The horizontal velocity remains constant throughout the motion,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+v_x = v_{ox} = 21\ \text{m/s}.
+\end{align*}\]</div>
+<p>The vertical velocity at time <span class="math notranslate nohighlight">\(t\)</span> is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+v_y = v_{oy} - gt.
+\end{align*}\]</div>
+<p>Evaluating this at <span class="math notranslate nohighlight">\(t = 3.8\ \text{s}\)</span>,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+v_y = 21 - (9.81)(3.8) = -16\ \text{m/s}.
+\end{align*}\]</div>
+<p>The magnitude of the velocity at impact is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+v &amp;= \sqrt{v_x^2 + v_y^2},\\
+v &amp;= \sqrt{(21)^2 + (-16)^2} = 27\ \text{m/s}.
+\end{align*}\]</div>
+<p>The direction of the velocity relative to the horizontal is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\theta &amp;= \tan^{-1}\!\left(\frac{|v_y|}{v_x}\right),\\
+&amp;= \tan^{-1}\!\left(\frac{16}{21}\right),\\
+&amp;= 37^\circ,
+\end{align*}\]</div>
+<p>directed below the horizontal.</p>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>The tennis ball reaches the spectator <span class="math notranslate nohighlight">\(3.8\ \text{s}\)</span> after being hit. At impact, the ball’s speed is <span class="math notranslate nohighlight">\(27\ \text{m/s}\)</span> and its velocity is directed <span class="math notranslate nohighlight">\(37^\circ\)</span> below the horizontal. Although the ball was launched upward, the negative vertical component of the velocity at impact reflects the fact that the ball is descending when it is caught. The smaller speed compared to the launch speed is consistent with the ball being caught at a height above the launch point.</p>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>We verify the results by solving the vertical motion numerically, computing the velocity components at the impact time, and producing a minimal sketch of the trajectory.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Given values</span>
+<span class="n">v0</span> <span class="o">=</span> <span class="mf">30.0</span>
+<span class="n">theta</span> <span class="o">=</span> <span class="mf">45.0</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">180</span>
+<span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>
+
+<span class="n">v0x</span> <span class="o">=</span> <span class="n">v0</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span>
+<span class="n">v0y</span> <span class="o">=</span> <span class="n">v0</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span>
+
+<span class="c1"># Solve quadratic for y = 10 m</span>
+<span class="n">coeff</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.5</span><span class="o">*</span><span class="n">g</span><span class="p">,</span> <span class="o">-</span><span class="n">v0y</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">]</span>
+<span class="n">t_roots</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">roots</span><span class="p">(</span><span class="n">coeff</span><span class="p">)</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">t_roots</span><span class="p">)</span>   <span class="c1"># time on the way down</span>
+
+<span class="n">vx</span> <span class="o">=</span> <span class="n">v0x</span>
+<span class="n">vy</span> <span class="o">=</span> <span class="n">v0y</span> <span class="o">-</span> <span class="n">g</span><span class="o">*</span><span class="n">t</span>
+<span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">vx</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">vy</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;time = </span><span class="si">{</span><span class="n">t</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> s&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;vx = </span><span class="si">{</span><span class="n">vx</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> m/s, vy = </span><span class="si">{</span><span class="n">vy</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> m/s&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;speed = </span><span class="si">{</span><span class="n">v</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> m/s&quot;</span><span class="p">)</span>
+
+<span class="c1"># Minimal sketch</span>
+<span class="n">t_plot</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">v0x</span><span class="o">*</span><span class="n">t_plot</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">v0y</span><span class="o">*</span><span class="n">t_plot</span> <span class="o">-</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">t_plot</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">120</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;k&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">y</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;ro&#39;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;x (m)&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;y (m)&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Projectile trajectory to the spectator&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+</div>
 </section>
 <section id="time-of-flight-trajectory-and-range">
 <h3><span class="section-number">4.2.9. </span>Time of Flight, Trajectory, and Range<a class="headerlink" href="#time-of-flight-trajectory-and-range" title="Link to this heading">#</a></h3>
@@ -1525,8 +1656,8 @@ y-y_o &amp;= v_{oy}t - \frac{1}{2}gt^2, \\
 &amp;= \left(v_o\sin{\theta_o}\right)t - \frac{1}{2}gt^2 = 0.
 \end{align*}\]</div>
 <p>We can solve for <span class="math notranslate nohighlight">\(t\)</span> and set it equal to the time of flight <span class="math notranslate nohighlight">\(t=T_{\rm tol}\)</span> to get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-08bf870e-98bc-4212-ab24-b4f3a89d0b0d">
-<span class="eqno">(4.12)<a class="headerlink" href="#equation-08bf870e-98bc-4212-ab24-b4f3a89d0b0d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-07f5cc0a-73f8-4213-9358-ad5a291d257f">
+<span class="eqno">(4.12)<a class="headerlink" href="#equation-07f5cc0a-73f8-4213-9358-ad5a291d257f" title="Permalink to this equation">#</a></span>\[\begin{align}
 t\left(v_o\sin{\theta_o} - \frac{gt}{2}\right) &amp;= 0, \\
 v_o\sin{\theta_o} &amp;= \frac{gt}{2}, \\
 T_{\rm tol} &amp;= \frac{2v_o\sin{\theta_o}}{g}.
@@ -1559,8 +1690,8 @@ y &amp;= \frac{v_{oy}}{v_{ox}}x - \frac{g}{2}\left(\frac{x}{v_{ox}}\right)^2, \\
 &amp;= \frac{x\sin{\theta_o}}{\cos{\theta_o}} - \frac{g}{2}\left(\frac{x}{v_o\cos{\theta_o}}\right)^2.
 \end{align*}\]</div>
 <p>Rearranging terms, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5e90e9dd-c2c9-42cd-ba43-0895f938b778">
-<span class="eqno">(4.13)<a class="headerlink" href="#equation-5e90e9dd-c2c9-42cd-ba43-0895f938b778" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d65566a8-8260-461f-b88d-2108e4b7fe7c">
+<span class="eqno">(4.13)<a class="headerlink" href="#equation-d65566a8-8260-461f-b88d-2108e4b7fe7c" title="Permalink to this equation">#</a></span>\[\begin{align}
 y &amp;= \left(\tan{\theta_o}\right)x - \left[\frac{g}{2\left(v_o\cos{\theta_o}\right)^2} \right]x^2.
 \end{align} \]</div>
 <p>This trajectory equation is an equation of a parabola (<span class="math notranslate nohighlight">\(y = c + bx + ax^2\)</span>) with coefficients</p>
@@ -1583,8 +1714,8 @@ x &amp;= \frac{\sin{\theta_o}}{\cos{\theta_o}} \frac{2\left(v_o \cos{\theta_o}\r
  &amp;= \frac{2v_o^2 \sin{\theta_o}\cos{\theta_o}}{g}.
 \end{align*}\]</div>
 <p>Using the <a class="reference external" href="https://en.wikipedia.org/wiki/List_of_trigonometric_identities#Double-angle_formulae"><strong>trig identity</strong></a> <span class="math notranslate nohighlight">\(\sin{2\theta_o} (= 2\sin{\theta_o}\cos{\theta_o})\)</span> and setting <span class="math notranslate nohighlight">\(x=R\)</span> for range, we find</p>
-<div class="amsmath math notranslate nohighlight" id="equation-49d52b5d-da10-42ae-a3d2-5b0aa8c0e91d">
-<span class="eqno">(4.14)<a class="headerlink" href="#equation-49d52b5d-da10-42ae-a3d2-5b0aa8c0e91d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f4a97163-25b5-4477-bc76-2cc971d68890">
+<span class="eqno">(4.14)<a class="headerlink" href="#equation-f4a97163-25b5-4477-bc76-2cc971d68890" title="Permalink to this equation">#</a></span>\[\begin{align}
 R &amp;= \frac{v_o^2\sin{2\theta_o}}{g}.
 \end{align}\]</div>
 <p>The range is directly proportional to the square of the initial speed <span class="math notranslate nohighlight">\(v_o\)</span>, the launch angle through <span class="math notranslate nohighlight">\(\sin{2\theta_o}\)</span>, and inversely proportional to the acceleration due to gravity <span class="math notranslate nohighlight">\(g\)</span>.</p>
@@ -1708,9 +1839,9 @@ R &amp;= \frac{v_o^2\left(\sin{\theta_o}\cos{\theta_o}\right)}{g}, \\
 </iframe>
 <p>Use this PHET simulation to explore projectile motion in terms of the launch angle and initial velocity. Adjust parameters and observe how predicted projectile range and height differs between models.</p>
 </div>
-<div class="exercise etamu-exercise admonition" id="Chapter04/motion-in-2D-3D-exercise-6">
+<div class="exercise etamu-exercise admonition" id="Chapter04/motion-in-2D-3D-exercise-7">
 
-<p class="admonition-title"><span class="caption-number">Exercise 4.7 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 4.8 </span></p>
 <section id="exercise-content">
 <p><strong>The Problem</strong></p>
 <blockquote>
@@ -1722,36 +1853,36 @@ R &amp;= \frac{v_o^2\left(\sin{\theta_o}\cos{\theta_o}\right)}{g}, \\
 </div></blockquote>
 <hr class="docutils" />
 <p><strong>The Model</strong></p>
-<p>Each golf shot is modeled as ideal projectile motion. The ball is launched and lands at the same height on level ground, air resistance is neglected, and the only acceleration is gravity. Under these assumptions, the horizontal range depends on the launch speed and angle through the factor <span class="math notranslate nohighlight">\(\sin(2\theta_0)\)</span>, and the path of the ball can be written as a quadratic function of <span class="math notranslate nohighlight">\(x\)</span>.</p>
+<p>Each golf shot is modeled as ideal projectile motion. The ball is launched and lands at the same height on level ground, air resistance is neglected, and the only acceleration is gravity. Under these assumptions, the horizontal range depends on the launch speed and angle through the factor <span class="math notranslate nohighlight">\(\sin(2\theta_o)\)</span>, and the path of the ball can be written as a quadratic function of <span class="math notranslate nohighlight">\(x\)</span>.</p>
 <hr class="docutils" />
 <p><strong>The Math</strong></p>
 <p>We use <span class="math notranslate nohighlight">\(g = 9.81\ \text{m/s}^2\)</span> and the measured range <span class="math notranslate nohighlight">\(R = 90\ \text{m}\)</span>, which limits the final numerical results to two significant figures.</p>
 <p>For projectile motion on level ground, the range is</p>
 <div class="math notranslate nohighlight">
 \[
-R = \frac{v_0^2\sin(2\theta_0)}{g}.
+R = \frac{v_o^2\sin(2\theta_o)}{g}.
 \]</div>
 <p>Solving for the launch speed,</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-Rg &amp;= v_0^2\sin(2\theta_0),\\
-v_0^2 &amp;= \frac{Rg}{\sin(2\theta_0)},\\
-v_0 &amp;= \sqrt{\frac{Rg}{\sin(2\theta_0)}}.
+Rg &amp;= v_o^2\sin(2\theta_o),\\
+v_o^2 &amp;= \frac{Rg}{\sin(2\theta_o)},\\
+v_o &amp;= \sqrt{\frac{Rg}{\sin(2\theta_o)}}.
 \end{align*}\]</div>
-<p>For the second hole <strong>(b)</strong> with <span class="math notranslate nohighlight">\(\theta_0 = 30^\circ\)</span>,</p>
+<p>For the second hole <strong>(b)</strong> with <span class="math notranslate nohighlight">\(\theta_o = 30^\circ\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[
-v_0 = \sqrt{\frac{(90)(9.81)}{\sin(60^\circ)}} = 32\ \text{m/s}.
+v_o = \sqrt{\frac{(90)(9.81)}{\sin(60^\circ)}} = 32\ \text{m/s}.
 \]</div>
-<p>For the fourth hole <strong>(d)</strong> with <span class="math notranslate nohighlight">\(\theta_0 = 70^\circ\)</span>,</p>
+<p>For the fourth hole <strong>(d)</strong> with <span class="math notranslate nohighlight">\(\theta_o = 70^\circ\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[
-v_0 = \sqrt{\frac{(90)(9.81)}{\sin(140^\circ)}} = 37\ \text{m/s}.
+v_o = \sqrt{\frac{(90)(9.81)}{\sin(140^\circ)}} = 37\ \text{m/s}.
 \]</div>
 <p>To write the trajectory <strong>(c)</strong>, we use the projectile path equation</p>
 <div class="math notranslate nohighlight">
 \[
-y(x) = x\tan\theta_0 - \frac{g}{2(v_0\cos\theta_0)^2}x^2.
+y(x) = x\tan\theta_o - \frac{g}{2(v_o\cos\theta_o)^2}x^2.
 \]</div>
 <p>For the <span class="math notranslate nohighlight">\(30^\circ\)</span> shot,</p>
 <div class="math notranslate nohighlight">
@@ -1765,7 +1896,7 @@ y(x) = x\tan(70^\circ) - \frac{9.81}{2\left[(37)\cos(70^\circ)\right]^2}x^2 \app
 \]</div>
 <hr class="docutils" />
 <p><strong>The Conclusion</strong></p>
-<p>To carry the ball <span class="math notranslate nohighlight">\(90\ \text{m}\)</span> on level ground, the golfer must launch it at <span class="math notranslate nohighlight">\(32\ \text{m/s}\)</span> for a <span class="math notranslate nohighlight">\(30^\circ\)</span> shot and at <span class="math notranslate nohighlight">\(37\ \text{m/s}\)</span> for a <span class="math notranslate nohighlight">\(70^\circ\)</span> shot. Even though both shots have the same range, the high-angle shot requires a larger launch speed because <span class="math notranslate nohighlight">\(\sin(2\theta_0)\)</span> is smaller at <span class="math notranslate nohighlight">\(70^\circ\)</span> than it is at <span class="math notranslate nohighlight">\(30^\circ\)</span>.</p>
+<p>To carry the ball <span class="math notranslate nohighlight">\(90\ \text{m}\)</span> on level ground, the golfer must launch it at <span class="math notranslate nohighlight">\(32\ \text{m/s}\)</span> for a <span class="math notranslate nohighlight">\(30^\circ\)</span> shot and at <span class="math notranslate nohighlight">\(37\ \text{m/s}\)</span> for a <span class="math notranslate nohighlight">\(70^\circ\)</span> shot. Even though both shots have the same range, the high-angle shot requires a larger launch speed because <span class="math notranslate nohighlight">\(\sin(2\theta_o)\)</span> is smaller at <span class="math notranslate nohighlight">\(70^\circ\)</span> than it is at <span class="math notranslate nohighlight">\(30^\circ\)</span>.</p>
 <hr class="docutils" />
 <p><strong>The Verification</strong></p>
 <p>We verify the results numerically <strong>(d)</strong> by computing the launch speeds from the range equation, generating the two trajectories, and confirming that both satisfy <span class="math notranslate nohighlight">\(y(90\ \text{m}) \approx 0\)</span>.</p>
@@ -1839,8 +1970,8 @@ y(x) = x\tan(70^\circ) - \frac{9.81}{2\left[(37)\cos(70^\circ)\right]^2}x^2 \app
 &amp;= \left(\frac{v}{r}\right) v = \frac{v^2}{r}.
 \end{align*}\]</div>
 <p>A particle moving in a circle at a constant speed has an acceleration with magnitude</p>
-<div class="amsmath math notranslate nohighlight" id="equation-19541028-8d2f-4d11-8fb6-e45c597bba5c">
-<span class="eqno">(4.15)<a class="headerlink" href="#equation-19541028-8d2f-4d11-8fb6-e45c597bba5c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d91e9408-a51c-4439-9cb0-f1801e5010e0">
+<span class="eqno">(4.15)<a class="headerlink" href="#equation-d91e9408-a51c-4439-9cb0-f1801e5010e0" title="Permalink to this equation">#</a></span>\[\begin{align}
 a_c = \frac{v^2}{r}.
 \end{align}\]</div>
 <p>The direction of the acceleration vector is pointed inwards, toward the center of the circle.  This is a radial acceleration because its along the radial direction, and is also called the <strong>centripetal acceleration</strong>.</p>
@@ -1884,9 +2015,9 @@ a_c = \frac{v^2}{r}.
 </section>
 <section id="example-problem-creating-an-acceleration-of-1-g">
 <h3><span class="section-number">4.3.2. </span><strong>Example Problem</strong>: Creating an Acceleration of 1 <span class="math notranslate nohighlight">\(g\)</span><a class="headerlink" href="#example-problem-creating-an-acceleration-of-1-g" title="Link to this heading">#</a></h3>
-<div class="exercise etamu-exercise admonition" id="Chapter04/motion-in-2D-3D-exercise-7">
+<div class="exercise etamu-exercise admonition" id="Chapter04/motion-in-2D-3D-exercise-8">
 
-<p class="admonition-title"><span class="caption-number">Exercise 4.8 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 4.9 </span></p>
 <section id="exercise-content">
 <p><strong>The Problem</strong></p>
 <blockquote>
@@ -1950,8 +2081,8 @@ r = 1.83\ \text{km}.
 <section id="equations-of-motion-for-uniform-circular-motion">
 <h3><span class="section-number">4.3.3. </span>Equations of Motion for Uniform Circular Motion<a class="headerlink" href="#equations-of-motion-for-uniform-circular-motion" title="Link to this heading">#</a></h3>
 <p>A particle undergoing circular motion can be decribe using its position vector <span class="math notranslate nohighlight">\(\vec{r}\)</span>.  As the particle moves on the circle, its position vector sweeps out the angle <span class="math notranslate nohighlight">\(\theta\)</span> (measured relative to the <span class="math notranslate nohighlight">\(+\hat{i}\)</span> direction).  The vector <span class="math notranslate nohighlight">\(\vec{r}(t)\)</span> can be represented in tems of its components by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a494b0ad-27ce-435c-b463-4ca1c9595fe2">
-<span class="eqno">(4.16)<a class="headerlink" href="#equation-a494b0ad-27ce-435c-b463-4ca1c9595fe2" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e7e11494-d7a4-44cf-8cd5-1b9269863de6">
+<span class="eqno">(4.16)<a class="headerlink" href="#equation-e7e11494-d7a4-44cf-8cd5-1b9269863de6" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{r}(t) = A\cos{\omega t}\, \hat{i} + A \sin{\omega t}\, \hat{j},
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\omega\)</span> represents the angular frequency in units of <span class="math notranslate nohighlight">\(\rm rad/s\)</span>.  Like the change in position for 1D motion, the change in angle is represented in a similar way,</p>
@@ -1964,8 +2095,8 @@ r = 1.83\ \text{km}.
 <div class="math notranslate nohighlight">
 \[ \omega = \frac{2\pi}{T}. \]</div>
 <p>Velocity and acceleration can be found by differentiation of the poition function, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9b64cd82-fc93-4ee1-84ac-2f800b702e0b">
-<span class="eqno">(4.17)<a class="headerlink" href="#equation-9b64cd82-fc93-4ee1-84ac-2f800b702e0b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-de7d046b-0b42-4d10-95b1-86995d33ba29">
+<span class="eqno">(4.17)<a class="headerlink" href="#equation-de7d046b-0b42-4d10-95b1-86995d33ba29" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{\rm v}(t) &amp;= \frac{d\vec{r}}{dt}, \\
 &amp;= -A\omega\sin{\omega t}\, \hat{i} + A\omega \cos{\omega t}\, \hat{j},\\
 \vec{a}(t) &amp;= \frac{d\vec{\rm v}}{dt}, \\
@@ -1975,9 +2106,9 @@ r = 1.83\ \text{km}.
 </section>
 <section id="example-problem-circular-motion-of-a-proton">
 <h3><span class="section-number">4.3.4. </span><strong>Example Problem</strong>: Circular Motion of a Proton<a class="headerlink" href="#example-problem-circular-motion-of-a-proton" title="Link to this heading">#</a></h3>
-<div class="exercise etamu-exercise admonition" id="Chapter04/motion-in-2D-3D-exercise-8">
+<div class="exercise etamu-exercise admonition" id="Chapter04/motion-in-2D-3D-exercise-9">
 
-<p class="admonition-title"><span class="caption-number">Exercise 4.9 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 4.10 </span></p>
 <section id="exercise-content">
 <p><strong>The Problem</strong></p>
 <blockquote>
@@ -2078,22 +2209,22 @@ r = 1.83\ \text{km}.
 <h3><span class="section-number">4.3.5. </span>Nonuniform Circular Motion<a class="headerlink" href="#nonuniform-circular-motion" title="Link to this heading">#</a></h3>
 <p>Circular motion does not have to be at a constand speed, where a particle can accelerate in the normal fashion (e.g., speed up or slow down).</p>
 <p>If the particle is changing speed (as well as with direction), then we introduce another acceleration in the direction tangential to the circle (i.e., transverse acceleration).  The centripetal acceleration is the time rate of change of the <em>direction</em> of the velocity vector, where the <strong>tangential acceleration</strong> <span class="math notranslate nohighlight">\(a_T\)</span> is the time rate of change of the <em>magnitude</em> of the velocity vector.  This is given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2297e3f8-35ac-4c7c-9ee7-b07e7174da51">
-<span class="eqno">(4.18)<a class="headerlink" href="#equation-2297e3f8-35ac-4c7c-9ee7-b07e7174da51" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-adf7c93a-88f9-4715-a1d2-1ad16d3ce29a">
+<span class="eqno">(4.18)<a class="headerlink" href="#equation-adf7c93a-88f9-4715-a1d2-1ad16d3ce29a" title="Permalink to this equation">#</a></span>\[\begin{align}
 a_T = \frac{d|\vec{\rm v}|}{dt}.
 \end{align}\]</div>
 <p>The direction of the tangential acceleration is tangent to the circle, where the centripetal acceleration is radially inward toward the center.  Thus the two vectors are components of the total acceleration vector <span class="math notranslate nohighlight">\(\vec{a}\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-312d29d6-9a64-4e03-8fcd-d4e7b86ccb21">
-<span class="eqno">(4.19)<a class="headerlink" href="#equation-312d29d6-9a64-4e03-8fcd-d4e7b86ccb21" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-c30613f0-ec28-4179-910a-f2345447ac0d">
+<span class="eqno">(4.19)<a class="headerlink" href="#equation-c30613f0-ec28-4179-910a-f2345447ac0d" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{a} = \vec{a}_c + \vec{a}_T.
 \end{align}\]</div>
 <p>Note that the component vectors are perpendicular to each other like how the Cartesian unit vectors are also perpendicular to each other.</p>
 </section>
 <section id="example-problem-total-acceleration-during-circular-motion">
 <h3><span class="section-number">4.3.6. </span><strong>Example Problem</strong>: Total Acceleration during Circular Motion<a class="headerlink" href="#example-problem-total-acceleration-during-circular-motion" title="Link to this heading">#</a></h3>
-<div class="exercise etamu-exercise admonition" id="Chapter04/motion-in-2D-3D-exercise-9">
+<div class="exercise etamu-exercise admonition" id="Chapter04/motion-in-2D-3D-exercise-10">
 
-<p class="admonition-title"><span class="caption-number">Exercise 4.10 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 4.11 </span></p>
 <section id="exercise-content">
 <p><strong>The Problem</strong></p>
 <blockquote>
@@ -2140,7 +2271,7 @@ a_T &amp;= \left|\frac{dv}{dt}\right|_{t=2.0} = \frac{12.0}{(2.0)^3} = 1.5\ \tex
 <p>The direction of the total acceleration relative to the tangential direction is</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-\theta &amp;= \tan^{-1}!\left(\frac{a_c}{a_T}\right) = \tan^{-1}!\left(\frac{3.1}{1.5}\right) = 64^\circ,
+\theta &amp;= \tan^{-1}\!\left(\frac{a_c}{a_T}\right) = \tan^{-1}!\left(\frac{3.1}{1.5}\right) = 64^\circ,
 \end{align*}\]</div>
 <p>measured inward from the tangent toward the center of the circle.</p>
 <hr class="docutils" />
@@ -2223,8 +2354,8 @@ a_T &amp;= \left|\frac{dv}{dt}\right|_{t=2.0} = \frac{12.0}{(2.0)^3} = 1.5\ \tex
 <div class="math notranslate nohighlight">
 \[ \vec{\rm v}_{PT} = -2\ {\rm m/s}\, \hat{i}. \]</div>
 <p>We can add these two vectors together to find the velocity of the person with respect to the Earth (i.e., <span class="math notranslate nohighlight">\(PE\)</span>).  This <strong>relative velocity</strong> is written as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c34c1486-ceba-4e46-81bf-8609b0a83d88">
-<span class="eqno">(4.20)<a class="headerlink" href="#equation-c34c1486-ceba-4e46-81bf-8609b0a83d88" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-cd911340-1feb-4563-98ab-c7333e4a45a4">
+<span class="eqno">(4.20)<a class="headerlink" href="#equation-cd911340-1feb-4563-98ab-c7333e4a45a4" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{\rm v}_{PE} = \vec{\rm v}_PT + \vec{\rm v}_{\rm TE}.
 \end{align}\]</div>
 <div class="admonition note">
@@ -2252,24 +2383,24 @@ a_T &amp;= \left|\frac{dv}{dt}\right|_{t=2.0} = \frac{12.0}{(2.0)^3} = 1.5\ \tex
 </figcaption>
 </figure>
 <p>From Fig. <a class="reference internal" href="#fig-vector-2d"><span class="std std-numref">4.11</span></a> we see that the relative positions and velocities are given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7d45af9a-808c-4a9a-a661-e727c9f783f0">
-<span class="eqno">(4.21)<a class="headerlink" href="#equation-7d45af9a-808c-4a9a-a661-e727c9f783f0" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-36ebfe17-e380-41d8-89cb-85f6aacd5188">
+<span class="eqno">(4.21)<a class="headerlink" href="#equation-36ebfe17-e380-41d8-89cb-85f6aacd5188" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{r}_{PS} &amp;= \vec{r}_{PS^\prime} + \vec{r}_{S^\prime S}, \\
 \vec{\rm v}_{PS} &amp;= \vec{\rm v}_{PS^\prime} + \vec{\rm v}_{S^\prime S}.
 \end{align}\]</div>
 <p>We can extend this method of vector addition to any number of reference frames.  For particle <span class="math notranslate nohighlight">\(P\)</span>, its velocity can be computed relative to frames <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span>, and <span class="math notranslate nohighlight">\(C\)</span> as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-4ed99ff1-1020-43f6-befb-3e0f9c2ed33d">
-<span class="eqno">(4.22)<a class="headerlink" href="#equation-4ed99ff1-1020-43f6-befb-3e0f9c2ed33d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-298f7254-b515-4a26-a60e-83cab4493432">
+<span class="eqno">(4.22)<a class="headerlink" href="#equation-298f7254-b515-4a26-a60e-83cab4493432" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{\rm v}_{PC} = \vec{\rm v}_{PA} + \vec{\rm v}_{\rm AB} + \vec{\rm v}_{BC}.
 \end{align}\]</div>
 <p>We can also see how the accelerations are related in two referece frames by differentiating to get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-8c7afa82-a4fc-482a-bea5-4d57009462ba">
-<span class="eqno">(4.23)<a class="headerlink" href="#equation-8c7afa82-a4fc-482a-bea5-4d57009462ba" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-7e1766ef-18c0-4998-bddf-3da02bd10945">
+<span class="eqno">(4.23)<a class="headerlink" href="#equation-7e1766ef-18c0-4998-bddf-3da02bd10945" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{a}_{PS} &amp;= \vec{a}_{PS^\prime} + \vec{a}_{S^\prime S}.
 \end{align}\]</div>
 <p>Suppose that the velocity of <span class="math notranslate nohighlight">\(S^\prime\)</span> relative to <span class="math notranslate nohighlight">\(S\)</span> is a constant, then <span class="math notranslate nohighlight">\(\vec{a}_{S^\prime S} = 0\)</span> and</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d8a1cda5-9cd9-4e90-be9a-7c9a5eca9aa8">
-<span class="eqno">(4.24)<a class="headerlink" href="#equation-d8a1cda5-9cd9-4e90-be9a-7c9a5eca9aa8" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-305a8c82-6205-4814-a827-427a8db0e7df">
+<span class="eqno">(4.24)<a class="headerlink" href="#equation-305a8c82-6205-4814-a827-427a8db0e7df" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{a}_{PS} = \vec{a}_{PS^\prime},
 \end{align}\]</div>
 <p>which means that the acceleration of a particle is the same as measured by two observes moving at a constant velocity relative to each other.</p>
@@ -2357,9 +2488,9 @@ a_T &amp;= \left|\frac{dv}{dt}\right|_{t=2.0} = \frac{12.0}{(2.0)^3} = 1.5\ \tex
 </section>
 <section id="example-problem-motion-of-a-car-relative-to-a-truck">
 <h3><span class="section-number">4.4.4. </span><strong>Example Problem</strong>: Motion of a Car Relative to a Truck<a class="headerlink" href="#example-problem-motion-of-a-car-relative-to-a-truck" title="Link to this heading">#</a></h3>
-<div class="exercise etamu-exercise admonition" id="Chapter04/motion-in-2D-3D-exercise-10">
+<div class="exercise etamu-exercise admonition" id="Chapter04/motion-in-2D-3D-exercise-11">
 
-<p class="admonition-title"><span class="caption-number">Exercise 4.11 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 4.12 </span></p>
 <section id="exercise-content">
 <p><strong>The Problem</strong></p>
 <blockquote>
@@ -2431,9 +2562,9 @@ a_T &amp;= \left|\frac{dv}{dt}\right|_{t=2.0} = \frac{12.0}{(2.0)^3} = 1.5\ \tex
 </section>
 <section id="example-problem-flying-a-plane-in-a-wind">
 <h3><span class="section-number">4.4.5. </span><strong>Example Problem</strong>: Flying a Plane in a Wind<a class="headerlink" href="#example-problem-flying-a-plane-in-a-wind" title="Link to this heading">#</a></h3>
-<div class="exercise etamu-exercise admonition" id="Chapter04/motion-in-2D-3D-exercise-11">
+<div class="exercise etamu-exercise admonition" id="Chapter04/motion-in-2D-3D-exercise-12">
 
-<p class="admonition-title"><span class="caption-number">Exercise 4.12 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 4.13 </span></p>
 <section id="exercise-content">
 <p><strong>The Problem</strong></p>
 <blockquote>
@@ -2512,7 +2643,7 @@ a_T &amp;= \left|\frac{dv}{dt}\right|_{t=2.0} = \frac{12.0}{(2.0)^3} = 1.5\ \tex
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Ground x-component (should be ~0): </span><span class="si">{</span><span class="n">vPG_vec</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2"> km/h&quot;</span><span class="p">)</span>
 
 <span class="c1"># Minimal sketch using annotate arrows</span>
-<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">),</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">120</span><span class="p">)</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">120</span><span class="p">)</span>
 <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
 
@@ -2550,8 +2681,57 @@ Ground speed: 230 km/h
 Ground x-component (should be ~0): 0.000 km/h
 </pre></div>
 </div>
-<img alt="../_images/6749c37e1baf139cafb6d0dfbe0395ebb29785395a077a9a3e7ea6133a12f0e3.png" src="../_images/6749c37e1baf139cafb6d0dfbe0395ebb29785395a077a9a3e7ea6133a12f0e3.png" />
+<img alt="../_images/281c56cf20f55eb7434bc8852118d8c7e8000e24623798d39e7cbb0d946b48fc.png" src="../_images/281c56cf20f55eb7434bc8852118d8c7e8000e24623798d39e7cbb0d946b48fc.png" />
 </div>
+</div>
+</section>
+</section>
+<section id="in-class-problems">
+<h2><span class="section-number">4.5. </span>In-class Problems<a class="headerlink" href="#in-class-problems" title="Link to this heading">#</a></h2>
+<section id="part-i">
+<h3><span class="section-number">4.5.1. </span>Part I<a class="headerlink" href="#part-i" title="Link to this heading">#</a></h3>
+<div class="admonition-problem-1 admonition">
+<p class="admonition-title">Problem 1</p>
+<p>The 18th hole at Pebble Beach Golf Course is a dogleg to the left of length <span class="math notranslate nohighlight">\(496.0\ \text{m}\)</span>. The fairway off the tee is taken to be the <span class="math notranslate nohighlight">\(x\)</span> direction. A golfer hits his tee shot a distance of <span class="math notranslate nohighlight">\(300.0\ \text{m}\)</span>, corresponding to a displacement <span class="math notranslate nohighlight">\(\Delta \vec{r}_1 = 300.0\,\hat{i}\ \text{m},\)</span> and hits his second shot <span class="math notranslate nohighlight">\(189.0\ \text{m}\)</span> with a displacement <span class="math notranslate nohighlight">\(\Delta \vec{r}_2 = 172.0\,\hat{i} + 80.3\,\hat{j}\ \text{m}.\)</span>$ What is the final displacement of the golf ball from where it started?</p>
+</div>
+<div class="admonition-problem-2 admonition">
+<p class="admonition-title">Problem 2</p>
+<p>Clay Matthews, a linebacker for the Green Bay Packers, can reach a speed of <span class="math notranslate nohighlight">\(10.0\ \text{m/s}\)</span>. At the start of a play, Matthews runs downfield at <span class="math notranslate nohighlight">\(45^\circ\)</span> with respect to the <span class="math notranslate nohighlight">\(50\)</span>-yard line and covers <span class="math notranslate nohighlight">\(8.0\ \text{m}\)</span> in <span class="math notranslate nohighlight">\(1.0\ \text{s}\)</span>. He then runs straight down the field at <span class="math notranslate nohighlight">\(90^\circ\)</span> with respect to the <span class="math notranslate nohighlight">\(50\)</span>-yard line for <span class="math notranslate nohighlight">\(12.0\ \text{m}\)</span>, with an elapsed time of <span class="math notranslate nohighlight">\(1.2\ \text{s}\)</span>.</p>
+<p><strong>(a)</strong> What is Matthews’ final displacement from the start of the play?<br />
+<strong>(b)</strong> What is his average velocity?</p>
+</div>
+<div class="admonition-problem-3 admonition">
+<p class="admonition-title">Problem 3</p>
+<p>The position of a particle is given by <span class="math notranslate nohighlight">\(\vec{r}(t) = \left(3.0t^2,\hat{\imath} + 5.0,\hat{\jmath} - 6.0t,\hat{k}\right)\ \text{m}\)</span>.</p>
+<p><strong>(a)</strong> Determine the velocity and acceleration as functions of time.<br />
+<strong>(b)</strong> What are the velocity and acceleration at <span class="math notranslate nohighlight">\(t = 0\)</span>?</p>
+</div>
+</section>
+<section id="part-ii">
+<h3><span class="section-number">4.5.2. </span>Part II<a class="headerlink" href="#part-ii" title="Link to this heading">#</a></h3>
+<div class="admonition-problem-4 admonition">
+<p class="admonition-title">Problem 4</p>
+<p>A projectile is launched at an angle of <span class="math notranslate nohighlight">\(30^\circ\)</span> and lands <span class="math notranslate nohighlight">\(20.0\ \text{s}\)</span> later at the same height as it was launched.</p>
+<p><strong>(a)</strong> What is the initial speed of the projectile?<br />
+<strong>(b)</strong> What is the maximum altitude?<br />
+<strong>(c)</strong> What is the range?<br />
+<strong>(d)</strong> Calculate the displacement from the point of launch to the position on its trajectory at <span class="math notranslate nohighlight">\(15.0\ \text{s}\)</span>.</p>
+</div>
+<div class="admonition-problem-5 admonition">
+<p class="admonition-title">Problem 5</p>
+<p>An astronaut on Mars kicks a soccer ball at an angle of <span class="math notranslate nohighlight">\(45^\circ\)</span> with an initial velocity of <span class="math notranslate nohighlight">\(15.0\ \text{m/s}\)</span>. If the acceleration due to gravity on Mars is <span class="math notranslate nohighlight">\(3.7\ \text{m/s}^2\)</span>,</p>
+<p><strong>(a)</strong> what is the range of the soccer kick on a flat surface?<br />
+<strong>(b)</strong> What would be the range of the same kick on the Moon, where gravity is one-sixth that of Earth?</p>
+</div>
+<div class="admonition-problem-6 admonition">
+<p class="admonition-title">Problem 6</p>
+<p>A fairground ride spins its occupants inside a flying-saucer-shaped container. If the horizontal circular path the riders follow has a radius of <span class="math notranslate nohighlight">\(8.00\ \text{m}\)</span>, at how many revolutions per minute are the riders subjected to a centripetal acceleration equal to that of gravity?</p>
+</div>
+<div class="admonition-problem-7 admonition">
+<p class="admonition-title">Problem 7</p>
+<p>A seagull can fly at a velocity of <span class="math notranslate nohighlight">\(9.00\ \text{m/s}\)</span> in still air.</p>
+<p><strong>(a)</strong> If it takes the bird <span class="math notranslate nohighlight">\(20.0\ \text{min}\)</span> to travel <span class="math notranslate nohighlight">\(6.00\ \text{km}\)</span> straight into an oncoming wind, what is the velocity of the wind?</p>
+<p><strong>(b)</strong> If the bird turns around and flies with the wind, how long will it take the bird to return <span class="math notranslate nohighlight">\(6.00\ \text{km}\)</span>?</p>
 </div>
 </section>
 </section>
@@ -2661,6 +2841,11 @@ Ground x-component (should be ~0): 0.000 km/h
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relative-velocity-in-2d">4.4.3. Relative Velocity in 2D</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-motion-of-a-car-relative-to-a-truck">4.4.4. <strong>Example Problem</strong>: Motion of a Car Relative to a Truck</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-flying-a-plane-in-a-wind">4.4.5. <strong>Example Problem</strong>: Flying a Plane in a Wind</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-class-problems">4.5. In-class Problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-i">4.5.1. Part I</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-ii">4.5.2. Part II</a></li>
 </ul>
 </li>
 </ul>
