@@ -600,13 +600,13 @@ document.write(`
 <p>The distance across the USA is about <span class="math notranslate nohighlight">\(4500\ {\rm km}\)</span> from east to west.  This seems like a long way, but the distance from the Earth to the Sun (or <strong>astronomical unit</strong>; AU) is about <span class="math notranslate nohighlight">\(149,000,000\ {\rm km}\)</span> or <span class="math notranslate nohighlight">\({\sim}33,000\times\)</span> more distant.  Light is incredibly fast and can travel 1 AU in only <span class="math notranslate nohighlight">\(8.3\ {\rm min}\)</span>.</p>
 <p><em>How far can light travel in a year?</em></p>
 <p>Instead of thinking in kilometers, it is simpler to instead describe this distance in AU, or how many Earth-Sun distances make up this proposed distance.  We have to give this distance a name, thus we call it a <a class="reference external" href="https://en.wikipedia.org/wiki/Light-year">lightyear</a>, or the distance that light travels in a year.  Let’s start with what we know so far (i.e., light travels 1 AU in 8.3 min):</p>
-<div class="amsmath math notranslate nohighlight" id="equation-76a4324f-d15b-4f22-9880-8a3e03af423f">
-<span class="eqno">(1.1)<a class="headerlink" href="#equation-76a4324f-d15b-4f22-9880-8a3e03af423f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-4e981de8-b11f-4cd2-a3d4-96346eb93941">
+<span class="eqno">(1.1)<a class="headerlink" href="#equation-4e981de8-b11f-4cd2-a3d4-96346eb93941" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{1\ {\rm AU}}{8.3\ {\rm min}} &amp;= 0.12\ {\rm AU/min}.
 \end{align}\]</div>
 <p>Therefore, light travels at a speed of about <span class="math notranslate nohighlight">\(0.12\ {\rm AU/min}\)</span>.  Now, we can work our way through if we can somehow translate this speed into a distance.  For this we can use some other knowledge, for example:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-dd72baa3-abd8-490f-9c81-75c6d2cd92ab">
-<span class="eqno">(1.2)<a class="headerlink" href="#equation-dd72baa3-abd8-490f-9c81-75c6d2cd92ab" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-7271edee-e0e4-404a-8585-0bd9692a691b">
+<span class="eqno">(1.2)<a class="headerlink" href="#equation-7271edee-e0e4-404a-8585-0bd9692a691b" title="Permalink to this equation">#</a></span>\[\begin{align}
 1\ {\rm h} &amp;= 60\ {\rm min}, \\
 1\ {\rm day} &amp;= 24\ {\rm h}, \\
 1\ {\rm yr} &amp;= 365.25\ {\rm days}.
@@ -615,14 +615,14 @@ document.write(`
 <ul class="simple">
 <li><p>To understand the distance <span class="math notranslate nohighlight">\(d\)</span> in a lightyear, we need to convert its speed <span class="math notranslate nohighlight">\(s\)</span> using different timescales <span class="math notranslate nohighlight">\(t\)</span> that make up a year.</p></li>
 </ul>
-<div class="amsmath math notranslate nohighlight" id="equation-f2b48b57-7a6c-48b0-8bc7-4f596d036ccc">
-<span class="eqno">(1.3)<a class="headerlink" href="#equation-f2b48b57-7a6c-48b0-8bc7-4f596d036ccc" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-6c6862d7-bef8-4cc5-a51f-f738d96800b0">
+<span class="eqno">(1.3)<a class="headerlink" href="#equation-6c6862d7-bef8-4cc5-a51f-f738d96800b0" title="Permalink to this equation">#</a></span>\[\begin{align}
 s &amp;= \frac{d}{t}, \\
 d &amp;= s \times t= st
 \end{align}\]</div>
 <p>Let’s begin with some analytical calculations, which we’ll followup with a verification using <code class="docutils literal notranslate"><span class="pre">python</span></code>.  We just need to use our known speed of light and multiply by different time conversion factors to determin the number of <span class="math notranslate nohighlight">\(\rm AU/yr\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0cd6513e-0041-4031-84eb-c8b452d263ee">
-<span class="eqno">(1.4)<a class="headerlink" href="#equation-0cd6513e-0041-4031-84eb-c8b452d263ee" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d5668370-50ed-4ad0-b341-f8c63052e1d8">
+<span class="eqno">(1.4)<a class="headerlink" href="#equation-d5668370-50ed-4ad0-b341-f8c63052e1d8" title="Permalink to this equation">#</a></span>\[\begin{align}
 s &amp;= \frac{0.12\ {\rm AU}}{\rm min} \times \frac{60\ {\rm min}}{1\ {\rm h}} \times \frac{24\ {\rm h}}{1\ {\rm day}} \times \frac{365.25\ {\rm days}}{1\ {\rm yr}}, \\
 &amp;= 63,000\ \frac{\rm AU}{\rm yr}.
 \end{align}\]</div>
@@ -860,12 +860,12 @@ it’s wrong.</p>
 </div>
 <p>Examples of derived units are expressed as:</p>
 <ul class="simple">
-<li><p>area; <span class="math notranslate nohighlight">\(m^2\)</span>,</p></li>
-<li><p>volume; <span class="math notranslate nohighlight">\(m^3\)</span> or <span class="math notranslate nohighlight">\(cc = cm^3 = mL\)</span> (in fluids)</p></li>
-<li><p>speed; <span class="math notranslate nohighlight">\(m/s\)</span>,</p></li>
-<li><p>density; <span class="math notranslate nohighlight">\(kg/m^3\)</span>,</p></li>
-<li><p>electric charge; <span class="math notranslate nohighlight">\(A\cdot s\)</span>,</p></li>
-<li><p>energy; <span class="math notranslate nohighlight">\(eV\)</span> (electron-Volts).</p></li>
+<li><p>area; <span class="math notranslate nohighlight">\(\rm m^2\)</span>,</p></li>
+<li><p>volume; <span class="math notranslate nohighlight">\(\rm m^3\)</span> or <span class="math notranslate nohighlight">\(\rm cc = cm^3 = mL\)</span> (in fluids)</p></li>
+<li><p>speed; <span class="math notranslate nohighlight">\(\rm m/s\)</span>,</p></li>
+<li><p>density; <span class="math notranslate nohighlight">\(\rm kg/m^3\)</span>,</p></li>
+<li><p>electric charge; <span class="math notranslate nohighlight">\(\rm A\cdot s\)</span>,</p></li>
+<li><p>energy; <span class="math notranslate nohighlight">\(\rm eV\)</span> (electron-Volts).</p></li>
 </ul>
 </section>
 <section id="units-of-time-length-and-mass">
@@ -1329,8 +1329,8 @@ Both the numerical value and the final units are consistent with the desired SI 
 <section id="percent-uncertainty">
 <h4><span class="section-number">1.5.2.1. </span>Percent uncertainty<a class="headerlink" href="#percent-uncertainty" title="Link to this heading">#</a></h4>
 <p>Another method of expressing uncertainty is calculating how much the uncertainty deviates from the average value as a percent.  Suppose a  measurement <span class="math notranslate nohighlight">\(A \pm \delta A\)</span>, the <strong>percent uncertainty</strong> is:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3b51473b-8a46-48f3-becd-ffb8004d8645">
-<span class="eqno">(1.5)<a class="headerlink" href="#equation-3b51473b-8a46-48f3-becd-ffb8004d8645" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a1e0d16b-402b-431b-95b8-b35a7e72b125">
+<span class="eqno">(1.5)<a class="headerlink" href="#equation-a1e0d16b-402b-431b-95b8-b35a7e72b125" title="Permalink to this equation">#</a></span>\[\begin{align}
 \text{Percent uncertainty} = \frac{\delta A}{A} \times 100\%.
 \end{align}\]</div>
 <section id="example-problem-uncertainty-in-a-bag-of-apples">

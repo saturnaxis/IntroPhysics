@@ -662,8 +662,8 @@ document.write(`
 \end{align*}\]</div>
 <p>In Fig. <a class="reference internal" href="#force-vectors-fig"><span class="std std-numref">5.1</span></a>, let’s suppose that ice skater 1 (on the left) pushes horizontally with a force of <span class="math notranslate nohighlight">\(30\ {\rm N}\)</span> to the right (or <span class="math notranslate nohighlight">\(\vec{F}_1 = 30 \hat{i}\ {\rm N}\)</span>).  Similarly, if ice skater 2 (on the bottom) pushes with a force of <span class="math notranslate nohighlight">\(40\ {\rm N}\)</span> in the postive vertial direction, we would write <span class="math notranslate nohighlight">\(\vec{F}_2 = 40\hat{j}\ {\rm N}\)</span>.</p>
 <p>The resultant force causes the third ice skater to accelerate.  The <strong>net external force</strong> <span class="math notranslate nohighlight">\(\vec{F}_{\rm net}\)</span> is found by taking the vector sum of <strong>all external forces</strong> acting on an object or system.  We can then represent the net extrnal force (in general) as:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b136ca7b-a16f-49c9-9847-a6f273c08d36">
-<span class="eqno">(5.1)<a class="headerlink" href="#equation-b136ca7b-a16f-49c9-9847-a6f273c08d36" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-8ebf1463-1ccb-4478-ac74-c6e1d17573c5">
+<span class="eqno">(5.1)<a class="headerlink" href="#equation-8ebf1463-1ccb-4478-ac74-c6e1d17573c5" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{F}_{\rm net} &amp;= \sum \vec{F}_{\rm ext}, \\
 &amp;= \vec{F}_1 + \vec{F}_2 + \cdots + \vec{F}_N, \\
 &amp; = F_{{\rm net},x}\hat{i} + F_{{\rm net},y}\hat{j} + F_{{\rm net},z}\hat{k}, \\
@@ -701,7 +701,7 @@ document.write(`
 <p>Note the expression “constant velocity”, which means that the object maintains a path along a straight line (since neither the magnitude nor direction changes).  Also the verb “remains” tells us that the keeps on moving (or not moving) as part of the status quo.</p>
 <p>Newton’s 1st law sayst that there must be a cause for any change in velocity (i.e., acceleration) to occur.  The cause is a net external force.  An object sliding across a table or floor slows down due to the net force of friction acting on the object.  <strong>If friction disappears, will the object slow down?</strong></p>
 <figure class="align-default" id="hockey-puck-fig">
-<img alt="hocky puck on table" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/a10f74ff3c6e6e34a0dff1d9e25a93a6c3ed1303" />
+<img alt="hockey puck on table" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/a10f74ff3c6e6e34a0dff1d9e25a93a6c3ed1303" />
 <figcaption>
 <p><span class="caption-number">Fig. 5.4 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#hockey-puck-fig" title="Link to this image">#</a></p>
 </figcaption>
@@ -742,23 +742,637 @@ document.write(`
 </section>
 <section id="newton-s-1st-law-and-equilibrium">
 <h3><span class="section-number">5.2.3. </span>Newton’s 1st Law and Equilibrium<a class="headerlink" href="#newton-s-1st-law-and-equilibrium" title="Link to this heading">#</a></h3>
+<p>Newton’s first law tells us about the <em>equilibrium</em> of a system (i.e., <span class="math notranslate nohighlight">\(\vec{F}_{\rm net} = 0\)</span>).  From Fig. <a class="reference internal" href="#force-vectors-fig"><span class="std std-numref">5.1</span></a>, the forces combine to form a net external force: <span class="math notranslate nohighlight">\(\vec{F}_{\rm net} = \vec{F}_1 + \vec{F}_2\)</span>.  To create equilibrium, we require a <em>balancing force</em> that will produce a net force of zero.</p>
+<ul class="simple">
+<li><p>This force must be equal in magnitude, but opposite in direction to <span class="math notranslate nohighlight">\(\vec{F}_{\rm net}\)</span> (i.e., <span class="math notranslate nohighlight">\(\vec{F}_{\rm bal} = -\vec{F}_{\rm net}\)</span>).</p></li>
+</ul>
+<p>For the ice skaters, we found <span class="math notranslate nohighlight">\(\vec{F}_{\rm net} = 30\hat{i} + 40\hat{j}\, {\rm N}\)</span>, where the balancing force is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\vec{F}_{\rm bal} &amp;= -\vec{F}_{\rm net}, \\
+&amp;= -30\hat{i} - 40\hat{j}\, {\rm N}.
+\end{align*}\]</div>
+<p>Newton’s 1st law in vector form is given as</p>
+<div class="amsmath math notranslate nohighlight" id="equation-c7606a26-7c93-4bbf-9eaa-4976884897da">
+<span class="eqno">(5.2)<a class="headerlink" href="#equation-c7606a26-7c93-4bbf-9eaa-4976884897da" title="Permalink to this equation">#</a></span>\[\begin{align}
+\vec{\rm v} = \text{constant, when } \vec{F}_{\rm net} = \vec{0}\ {\rm N}.
+\end{align}\]</div>
+<p>For the net force to equal zero, the velocity vector <span class="math notranslate nohighlight">\(\vec{\rm v}\)</span> of the object is a constant.</p>
+<div class="note dropdown admonition">
+<p class="admonition-title">Derivative of a Constant (Calculus-framing)</p>
+<p>From calculus, we have the <a class="reference external" href="https://openstax.org/books/calculus-volume-1/pages/3-3-differentiation-rules">constant rule</a> which means that for any function <span class="math notranslate nohighlight">\(f(x) = c\)</span> (where <span class="math notranslate nohighlight">\(c\)</span> is a constant), the derivative <span class="math notranslate nohighlight">\(f^\prime(x) = 0\)</span>.</p>
+<p><em>What does this mean for an object moving with constant velocity?</em>  We have loosely defined a force as a push or pull (or causing an object to accelerate).  Recall the definition of acceleration as</p>
+<div class="math notranslate nohighlight">
+\[ \vec{a} = \frac{d\vec{v}(\rm t)}{dt}, \]</div>
+<p>which means the acceleration is the slope of the velocity curve.  If <span class="math notranslate nohighlight">\(\vec{\rm v}(t) = c\)</span>, then the slope is equal to zero.</p>
+<p>If there is no accleration, then there is no force (assuming mass remains constant).</p>
+</div>
+<p>If a car is at rest, the only forces action on the car are: weight and the contact force pushing up on the car (see Fig. <a class="reference internal" href="#car-net-force-fig"><span class="std std-numref">5.5</span></a>).  A nonzero net force is required to change the state of motion of the car.  As a car moves with constant velocity, the friction force propels the car forward and opposes the drag force against it.</p>
+<figure class="align-default" id="car-net-force-fig">
+<img alt="net force on car" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/df9027af005f61f7f579a4107ffb3e976b7af639" />
+<figcaption>
+<p><span class="caption-number">Fig. 5.5 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#car-net-force-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="tip admonition">
+<p class="admonition-title">Interactive Simulation: Hydrogen Atom Models</p>
+<iframe
+  src="https://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_en.html"
+  width="100%"
+  height="600px"
+  style="border: none;"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+<p>Use this PHET simulation to explore how an external foce will affect the speed and direction of an object’s motion. Use free-body diagrams to draw position, velocity, acceleration, and force graphs, and vice versa.</p>
+</div>
 <section id="example-problem-applying-newton-s-1st-law-to-your-car">
 <h4><span class="section-number">5.2.3.1. </span><strong>Example Problem</strong>: Applying Newton’s 1st Law to your car<a class="headerlink" href="#example-problem-applying-newton-s-1st-law-to-your-car" title="Link to this heading">#</a></h4>
+<div class="exercise etamu-exercise admonition" id="Chapter05/newtons-laws-exercise-0">
+
+<p class="admonition-title"><span class="caption-number">Exercise 5.1 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>Newton’s laws can be applied to all physical processes involving force and motion, including something as mundane as driving a car.</p>
+<p>(a) Your car is parked outside your house. Does Newton’s first law apply in this situation? Why or why not?</p>
+<p>(b) Your car moves at constant velocity down the street. Does Newton’s first law apply in this situation? Why or why not?</p>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>In both situations, the car is modeled as a single object moving in an inertial reference frame fixed to the ground. Newton’s first law applies when the vector sum of the external forces acting on the object is zero, which implies zero acceleration.</p>
+<p>In part (a), the car is at rest on level ground. Forces act on the car, but the car does not accelerate.</p>
+<p>In part (b), the car moves at constant velocity on level ground. Forces act on the car, but its velocity does not change in either magnitude or direction.</p>
+<p>In both cases, the question is whether the forces acting on the car balance so that the net force is zero.</p>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>Newton’s first law states that if the net external force on an object is zero, then the object does not accelerate. This can be written as</p>
+<div class="math notranslate nohighlight">
+\[\sum \vec{F} = \vec{0} \quad \Rightarrow \quad \vec{a} = \vec{0}.\]</div>
+<p>An object with zero acceleration is either at rest or moving with constant velocity.</p>
+<p><strong>(a)</strong> Parked car</p>
+<p>Choose a coordinate system with <span class="math notranslate nohighlight">\(+\hat{j}\)</span> pointing upward. Two forces act on the car:</p>
+<ul class="simple">
+<li><p>The weight of the car, which acts downward and is written as <span class="math notranslate nohighlight">\(\overrightarrow{W} = -w\, \hat{j}\)</span></p></li>
+<li><p>The force exerted by the ground on the car, which acts upward and is written as <span class="math notranslate nohighlight">\(\vec{N} = n\, \hat{j}\)</span></p></li>
+</ul>
+<p>The net force on the car is the vector sum of these forces,</p>
+<div class="math notranslate nohighlight">
+\[\sum \vec{F} = \vec{N} + \overrightarrow{W}  = (n - w)\, \hat{j}.\]</div>
+<p>Since the car is at rest and does not accelerate, Newton’s first law requires that the net force be zero. This implies</p>
+<div class="math notranslate nohighlight">
+\[n - w = 0,\]</div>
+<p>so the upward force exerted by the ground balances the downward weight of the car.</p>
+<hr class="docutils" />
+<p><strong>(b)</strong> Car moving at constant velocity</p>
+<p>Choose a coordinate system with <span class="math notranslate nohighlight">\(+\hat{i}\)</span> in the direction of motion and <span class="math notranslate nohighlight">\(+\hat{j}\)</span> upward. Forces act on the car both vertically and horizontally.</p>
+<p>Vertically, the downward weight <span class="math notranslate nohighlight">\(\overrightarrow{W}  = -w\, \hat{j}\)</span> and the upward force from the ground <span class="math notranslate nohighlight">\(\vec{N} = n\, \hat{j}\)</span> must balance because the car <strong>does not</strong> accelerate vertically:</p>
+<div class="math notranslate nohighlight">
+\[ n - w = 0.\]</div>
+<p>Horizontally, a forward force from the road on the tires acts in the <span class="math notranslate nohighlight">\(+\hat{i}\)</span> direction and is written as</p>
+<div class="math notranslate nohighlight">
+\[\vec{F}_{\text{road}} = f\, \hat{i}.\]</div>
+<p>A resistive force due to air drag and rolling resistance acts opposite the motion and is written as</p>
+<div class="math notranslate nohighlight">
+\[\vec{F}_{\text{res}} = -f\, \hat{i}.\]</div>
+<p>Constant velocity implies zero acceleration, so the net horizontal force must be zero:</p>
+<div class="math notranslate nohighlight">
+\[\vec{F}_{\text{road}} + \vec{F}_{\text{res}} = \vec{0}.\]</div>
+<p>With both the vertical and horizontal forces balanced, the total net force on the car is zero.</p>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>(a) Yes. Newton’s first law applies to a parked car because the forces acting on it balance so that the net force is zero. With zero net force, the acceleration is zero and the car remains at rest.</p>
+<p>(b) Yes. Newton’s first law also applies to a car moving at constant velocity. Although forces act on the car, they balance in both the vertical and horizontal directions, producing zero net force. With zero net force, the car does not accelerate and continues moving with constant velocity.</p>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>We verify the qualitative force balance by assigning representative vector magnitudes and directions, summing the force vectors, and showing that the net force is zero in both scenarios. The resulting vector diagrams serve as free-body diagrams for each case.</p>
+</section>
+</div>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">w</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">f</span> <span class="o">=</span> <span class="mf">0.6</span>
+
+<span class="n">W_a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="o">-</span><span class="n">w</span><span class="p">])</span>
+<span class="n">N_a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="o">+</span><span class="n">n</span><span class="p">])</span>
+<span class="n">Fnet_a</span> <span class="o">=</span> <span class="n">W_a</span> <span class="o">+</span> <span class="n">N_a</span>
+
+<span class="n">W_b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="o">-</span><span class="n">w</span><span class="p">])</span>
+<span class="n">N_b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="o">+</span><span class="n">n</span><span class="p">])</span>
+<span class="n">F_road</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">+</span><span class="n">f</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">])</span>
+<span class="n">F_res</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="n">f</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">])</span>
+<span class="n">Fnet_b</span> <span class="o">=</span> <span class="n">W_b</span> <span class="o">+</span> <span class="n">N_b</span> <span class="o">+</span> <span class="n">F_road</span> <span class="o">+</span> <span class="n">F_res</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Scenario (a) net force:&quot;</span><span class="p">,</span> <span class="n">Fnet_a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Scenario (b) net force:&quot;</span><span class="p">,</span> <span class="n">Fnet_b</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">draw_fbd</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">forces</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span> <span class="n">note</span><span class="p">):</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="o">-</span><span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="s2">&quot;bo&quot;</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">F</span><span class="p">,</span> <span class="n">lab</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">forces</span><span class="p">,</span> <span class="n">labels</span><span class="p">):</span>
+        <span class="n">Fx</span><span class="p">,</span> <span class="n">Fy</span> <span class="o">=</span> <span class="n">F</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">F</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">Fx</span><span class="p">,</span> <span class="n">Fy</span><span class="p">),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">),</span>
+                    <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s2">&quot;-&gt;&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+        <span class="c1"># Label placement logic</span>
+        <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">Fx</span><span class="p">)</span> <span class="o">&gt;</span> <span class="nb">abs</span><span class="p">(</span><span class="n">Fy</span><span class="p">):</span>  <span class="c1"># horizontal force</span>
+            <span class="n">xlab</span> <span class="o">=</span> <span class="n">Fx</span> <span class="o">+</span> <span class="mf">0.2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sign</span><span class="p">(</span><span class="n">Fx</span><span class="p">)</span>
+            <span class="n">ylab</span> <span class="o">=</span> <span class="n">Fy</span>
+            <span class="n">ha</span><span class="p">,</span> <span class="n">va</span> <span class="o">=</span> <span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="s2">&quot;center&quot;</span>
+        <span class="k">else</span><span class="p">:</span>                  <span class="c1"># vertical force</span>
+            <span class="n">xlab</span> <span class="o">=</span> <span class="n">Fx</span>
+            <span class="n">ylab</span> <span class="o">=</span> <span class="n">Fy</span> <span class="o">+</span> <span class="mf">0.15</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sign</span><span class="p">(</span><span class="n">Fy</span><span class="p">)</span>
+            <span class="n">ha</span><span class="p">,</span> <span class="n">va</span> <span class="o">=</span> <span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="s2">&quot;center&quot;</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">xlab</span><span class="p">,</span> <span class="n">ylab</span><span class="p">,</span> <span class="n">lab</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">,</span> <span class="n">horizontalalignment</span><span class="o">=</span><span class="n">ha</span><span class="p">,</span><span class="n">verticalalignment</span><span class="o">=</span><span class="n">va</span><span class="p">)</span>
+
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s2">&quot;equal&quot;</span><span class="p">,</span> <span class="n">adjustable</span><span class="o">=</span><span class="s2">&quot;box&quot;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([])</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span>
+    <span class="k">for</span> <span class="n">spine</span> <span class="ow">in</span> <span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+        <span class="n">spine</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.02</span><span class="p">,</span> <span class="mf">0.95</span><span class="p">,</span> <span class="n">note</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transAxes</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">&quot;top&quot;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mf">3.8</span><span class="p">),</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">120</span><span class="p">)</span>
+
+<span class="n">ax1</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">121</span><span class="p">)</span>
+<span class="n">draw_fbd</span><span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="p">[</span><span class="n">N_a</span><span class="p">,</span> <span class="n">W_a</span><span class="p">],[</span><span class="sa">r</span><span class="s2">&quot;$\vec</span><span class="si">{N}</span><span class="s2">$&quot;</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;$\overrightarrow</span><span class="si">{W}</span><span class="s2">$&quot;</span><span class="p">],</span><span class="sa">r</span><span class="s2">&quot;Parked car: $\sum \vec</span><span class="si">{F}</span><span class="s2">=\vec</span><span class="si">{0}</span><span class="s2">$&quot;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span><span class="o">-</span><span class="mf">1.5</span><span class="p">,</span><span class="sa">r</span><span class="s2">&quot;$v = 0\ {\rm km/h}$ &quot;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">,</span> <span class="n">horizontalalignment</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span><span class="n">verticalalignment</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span>
+
+<span class="n">ax2</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">122</span><span class="p">)</span>
+<span class="n">draw_fbd</span><span class="p">(</span><span class="n">ax2</span><span class="p">,</span> <span class="p">[</span><span class="n">N_b</span><span class="p">,</span> <span class="n">W_b</span><span class="p">,</span> <span class="n">F_road</span><span class="p">,</span> <span class="n">F_res</span><span class="p">],[</span><span class="sa">r</span><span class="s2">&quot;$\vec</span><span class="si">{N}</span><span class="s2">$&quot;</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;$\overrightarrow</span><span class="si">{W}</span><span class="s2">$&quot;</span><span class="p">,</span>
+          <span class="sa">r</span><span class="s2">&quot;$\vec</span><span class="si">{F}</span><span class="s2">_{\rm</span><span class="si">{road}</span><span class="s2">}$&quot;</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;$\vec</span><span class="si">{F}</span><span class="s2">_{\rm</span><span class="si">{res}</span><span class="s2">}$&quot;</span><span class="p">],</span><span class="sa">r</span><span class="s2">&quot;Constant velocity: $\sum \vec</span><span class="si">{F}</span><span class="s2">=\vec</span><span class="si">{0}</span><span class="s2">$&quot;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span><span class="o">-</span><span class="mf">1.5</span><span class="p">,</span><span class="sa">r</span><span class="s2">&quot;$v = 50\ {\rm km/h}$ &quot;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">,</span> <span class="n">horizontalalignment</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span><span class="n">verticalalignment</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.5</span><span class="p">),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mf">0.25</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.5</span><span class="p">),</span>
+                    <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s2">&quot;-&gt;&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Scenario (a) net force: [0. 0.]
+Scenario (b) net force: [0. 0.]
+</pre></div>
+</div>
+<img alt="../_images/d9e0e1c1526734edf2db2b71918e068107964a5efb4c50099c25292d4e35bef9.png" src="../_images/d9e0e1c1526734edf2db2b71918e068107964a5efb4c50099c25292d4e35bef9.png" />
+</div>
+</div>
 </section>
 </section>
 </section>
 <section id="newton-s-2nd-law">
 <h2><span class="section-number">5.3. </span>Newton’s 2nd Law<a class="headerlink" href="#newton-s-2nd-law" title="Link to this heading">#</a></h2>
+<p>Newton’s 2nd law gives the cause-and-effect relationship between force and changes in motion.  It is quantitative and used extensively to calculate what happens in situations involving a force.</p>
 <section id="force-and-acceleration">
 <h3><span class="section-number">5.3.1. </span>Force and Acceleration<a class="headerlink" href="#force-and-acceleration" title="Link to this heading">#</a></h3>
+<p><em>What do we mean by a change in motion?</em></p>
+<p>A change in motion is equivalent to a change in velocity (i.e., an acceleration).  Newton’s 1st law says that a net external force <em>causes</em> a change in motoin, and thus, we see that a <em>net external force causes nonzero acceleration</em>.</p>
+<ul class="simple">
+<li><p>An external force is one that is outside the system of interest.  In Fig. <a class="reference internal" href="#car-ext-force-fig"><span class="std std-numref">5.6</span></a>a, the system of interest is teh car plus the person within it.  The two forces exerted by the students outside are external forces.</p></li>
+<li><p>An internal force cats between elements of the system.  Thus the force the person exerts holding onto the steering wheel is an internal force.</p></li>
+</ul>
+<figure class="align-default" id="car-ext-force-fig">
+<img alt="external force on car" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/f46a0117dbe1644ffa4bb198eed333839ddacc67" />
+<figcaption>
+<p><span class="caption-number">Fig. 5.6 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#car-ext-force-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Only external forces affect the motion of a system, according to Newton’s 1st law.  Therefore, we must define the boundaries of the system to separate the internal from external forces.</p>
+<p>In Fig. <a class="reference internal" href="#car-ext-force-fig"><span class="std std-numref">5.6</span></a>a, there are arrows denoting the external forces present:</p>
+<ul class="simple">
+<li><p>The weight <span class="math notranslate nohighlight">\(\vec{w}\)</span> includes the car + person inside.</p></li>
+<li><p>The car is supported by the ground <span class="math notranslate nohighlight">\(\vec{N}\)</span>, which will cancel the weight, since the car is not floating nor sinking.</p></li>
+<li><p>The friction <span class="math notranslate nohighlight">\(f\)</span> resists the motion and must be oriented opposite (to the left).</p></li>
+<li><p>The forces from each student pushing (<span class="math notranslate nohighlight">\(\vec{F}_1\)</span> and <span class="math notranslate nohighlight">\(\vec{F}_2\)</span>) are applied to accelerate the car to the right.</p></li>
+</ul>
+<p>All the forces add togehter to produce the net force <span class="math notranslate nohighlight">\(\vec{F}_{\rm net}\)</span> (see Fig. <a class="reference internal" href="#car-ext-force-fig"><span class="std std-numref">5.6</span></a>b).  The free-body diagram (Fig. <a class="reference internal" href="#car-ext-force-fig"><span class="std std-numref">5.6</span></a>a) shows all of the forces acting on the system, where the dot at the center represents the center-of-mass.  Forces in the same direction are shown collinearly.</p>
+<p>In Fig. <a class="reference internal" href="#car-ext-force-fig"><span class="std std-numref">5.6</span></a>c, a larger net external force produces a larger accleration <span class="math notranslate nohighlight">\(\left(\vec{a}^\prime &gt; \vec{a}\right)\)</span> when the tow truck pulls the car.  The acceleration is proportional to and in the same direction as the <strong>net external force</strong> action on a system.  Mathematically this is written as</p>
+<div class="math notranslate nohighlight">
+\[ \vec{a} \propto \vec{F}_{\rm net}, \]</div>
+<p>where the symbol <span class="math notranslate nohighlight">\(\propto\)</span> (or <code class="docutils literal notranslate"><span class="pre">\propto</span></code>) means “proportional to.”</p>
+<p>Once the system of interest is chosen, indentify the external force and ignore the interal ones.  It is a huge simplification to disregard the numerous internal forces acting between objects within the system.  This simplificaiton helps us solve some complex problems.</p>
+<p>Recall that inertia is the “resistance to motion” and is related to an objects mass.  Therefore it seems reasonable that a more massive object requries more acceleration for it to move.</p>
+<p>In Fig. <a class="reference internal" href="#fbd-force-fig"><span class="std std-numref">5.7</span></a>, the same net external force applied to a basketball produces a much smaller acceleration when it is applied to an SUV.</p>
+<figure class="align-default" id="fbd-force-fig">
+<img alt="free-body diagrams for force" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/44230a76249c989838ed3776b13f50f15a74690c" />
+<figcaption>
+<p><span class="caption-number">Fig. 5.7 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#fbd-force-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Therefore, we can write the proportional relationship between acceleration and mass as</p>
+<div class="math notranslate nohighlight">
+\[ a \propto \frac{1}{m}, \]</div>
+<p>where <span class="math notranslate nohighlight">\(m\)</span> is the mass of the system and <span class="math notranslate nohighlight">\(a\)</span> is the <em>magnitude</em> of the acceleration.  Combining the two proportionalities yields <strong>Newton’s 2nd law.</strong></p>
+<div class="note admonition">
+<p class="admonition-title">Newton’s 2nd Law of Motion</p>
+<p>The acceleration of a system is</p>
+<ul class="simple">
+<li><p>directly proportional to the external force acting on the system,</p></li>
+<li><p>in the same direction as the external force action on the system, and</p></li>
+<li><p>inversely proportional to its mass.</p></li>
+</ul>
+<p>In equation form, Newton’s 2nd law is</p>
+<div class="amsmath math notranslate nohighlight" id="equation-535f016b-e96f-4c31-9c55-0bb91c4d61cd">
+<span class="eqno">(5.3)<a class="headerlink" href="#equation-535f016b-e96f-4c31-9c55-0bb91c4d61cd" title="Permalink to this equation">#</a></span>\[\begin{align}
+\vec{a} &amp;= \frac{\vec{F}_{\rm net}}{m}, \\ \\
+\vec{F}_{\rm net} &amp;= \sum \vec{F} = m\vec{a}.
+\end{align}\]</div>
+<p>Since the mass <span class="math notranslate nohighlight">\(m\)</span> is a scalar, we can see that it scales the vector <span class="math notranslate nohighlight">\(\vec{a}\)</span> to give the net external force <span class="math notranslate nohighlight">\(\vec{F}_{\rm net}\)</span>.  Also we can use the properties of vectors to write the scalar equivalent as</p>
+<div class="amsmath math notranslate nohighlight" id="equation-2ad7845d-1f77-4da7-b63a-2a7b9f7467b1">
+<span class="eqno">(5.4)<a class="headerlink" href="#equation-2ad7845d-1f77-4da7-b63a-2a7b9f7467b1" title="Permalink to this equation">#</a></span>\[\begin{align}
+F_{\rm net} = ma.
+\end{align}\]</div>
+</div>
 <section id="example-problem-pushing-a-lawnmower">
 <h4><span class="section-number">5.3.1.1. </span><strong>Example Problem</strong>: Pushing a Lawnmower<a class="headerlink" href="#example-problem-pushing-a-lawnmower" title="Link to this heading">#</a></h4>
+<div class="exercise etamu-exercise admonition" id="Chapter05/newtons-laws-exercise-1">
+
+<p class="admonition-title"><span class="caption-number">Exercise 5.2 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>Suppose that the net external force (push minus friction) exerted on a lawn mower is <span class="math notranslate nohighlight">\(51\ \text{N}\)</span> (about <span class="math notranslate nohighlight">\(11\ \text{lb}.)\)</span> parallel to the ground (Figure <a class="reference internal" href="#mower-force-fig"><span class="std std-numref">5.8</span></a>). The mass of the mower is <span class="math notranslate nohighlight">\(24\ \text{kg}\)</span>. What is its acceleration?</p>
+</div></blockquote>
+<figure class="align-default" id="mower-force-fig">
+<img alt="net force on mower" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/301730c548a739c3cc3e4830700fe6ef50e7aedd" />
+<figcaption>
+<p><span class="caption-number">Fig. 5.8 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#mower-force-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>Model the lawn mower as a particle moving on level ground. The problem states the net external force is already known and is horizontal, so we do not need to model the individual forces from the push and friction separately. Because the net force is parallel to the ground, the acceleration is also horizontal. We take the mower’s mass to be constant and treat the motion as one-dimensional along the ground.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Figure <a class="reference internal" href="#mower-force-fig"><span class="std std-numref">5.8</span></a> shows only the net force for simplicity.  Several forces act on the lawn mower.</p>
+<p>The weight <span class="math notranslate nohighlight">\(\vec{w}\)</span> pulls down on the mower, toward the center of the Earth, where this produces a contact force on the ground.  The gorund must exert an upward force on the lawn mower, known as the normal force <span class="math notranslate nohighlight">\(\vec{N}\)</span>.  These forces are balanced and do not produce a vertical acceleration. <em>You should include these forces in your free-body diagrams to make sure you haven’t left out any forces.</em></p>
+</div>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>Newton’s second law relates the net force on an object to its acceleration. In vector form,</p>
+<div class="math notranslate nohighlight">
+\[
+\sum \vec{F} = m\,\vec{a}.
+\]</div>
+<p>Choose <span class="math notranslate nohighlight">\(+\hat{i}\)</span> to the right, parallel to the ground. The net force is given as a single horizontal vector,</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{F}_{\text{net}} = (51\ \text{N})\,\hat{i}.
+\]</div>
+<p>Since the motion is along <span class="math notranslate nohighlight">\(\hat{i}\)</span>, write the acceleration as <span class="math notranslate nohighlight">\(\vec{a} = a\,\hat{i}\)</span>. Substitute into Newton’s second law:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{F}_{\text{net}} = m\,\vec{a}
+\quad \Rightarrow \quad
+(51\ \text{N})\,\hat{i} = (24\ \text{kg})\,(a)\,\hat{i}.
+\]</div>
+<p>The unit vectors are the same on both sides, so the magnitudes must satisfy</p>
+<div class="math notranslate nohighlight">
+\[
+51\ \text{N} = (24\ \text{kg})\,a.
+\]</div>
+<p>Solve for <span class="math notranslate nohighlight">\(a\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+a = \frac{51\ \text{N}}{24\ \text{kg}}.
+\]</div>
+<p>Using <span class="math notranslate nohighlight">\(1\ \text{N} = 1\ \text{kg}\cdot \text{m/s}^2\)</span>, the units reduce to <span class="math notranslate nohighlight">\(\text{m/s}^2\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+a = \frac{51\ \text{kg}\cdot \text{m/s}^2}{24\ \text{kg}} = 2.125\ \text{m/s}^2 \approx 2.1\ \text{m/s}^2.
+\]</div>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>The lawn mower’s acceleration is <span class="math notranslate nohighlight">\(2.1\ \text{m/s}^2\)</span> in the same direction as the net force, which is parallel to the ground.</p>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>We verify the result by recomputing <span class="math notranslate nohighlight">\(a = F_{\text{net}}/m\)</span> numerically and by showing that <span class="math notranslate nohighlight">\(ma\)</span> reproduces the given net force.</p>
+</section>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">Fnet</span> <span class="o">=</span> <span class="mf">51.0</span>   <span class="c1"># N</span>
+<span class="n">m</span> <span class="o">=</span> <span class="mf">24.0</span>      <span class="c1"># kg</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">Fnet</span><span class="o">/</span><span class="n">m</span>
+<span class="n">Fcheck</span> <span class="o">=</span> <span class="n">m</span><span class="o">*</span><span class="n">a</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Computed acceleration a =&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="s2">&quot;m/s^2&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Check: m*a =&quot;</span><span class="p">,</span> <span class="n">Fcheck</span><span class="p">,</span> <span class="s2">&quot;N&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">draw_fbd</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">forces</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span> <span class="n">note</span><span class="p">):</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="o">-</span><span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="s2">&quot;bo&quot;</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">F</span><span class="p">,</span> <span class="n">lab</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">forces</span><span class="p">,</span> <span class="n">labels</span><span class="p">):</span>
+        <span class="n">Fx</span><span class="p">,</span> <span class="n">Fy</span> <span class="o">=</span> <span class="n">F</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">F</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">Fx</span><span class="p">,</span> <span class="n">Fy</span><span class="p">),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">),</span>
+            <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s2">&quot;-&gt;&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+        <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">Fx</span><span class="p">)</span> <span class="o">&gt;</span> <span class="nb">abs</span><span class="p">(</span><span class="n">Fy</span><span class="p">):</span>
+            <span class="n">xlab</span> <span class="o">=</span> <span class="n">Fx</span> <span class="o">+</span> <span class="mf">0.2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sign</span><span class="p">(</span><span class="n">Fx</span><span class="p">)</span>
+            <span class="n">ylab</span> <span class="o">=</span> <span class="n">Fy</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">xlab</span> <span class="o">=</span> <span class="n">Fx</span>
+            <span class="n">ylab</span> <span class="o">=</span> <span class="n">Fy</span> <span class="o">+</span> <span class="mf">0.25</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sign</span><span class="p">(</span><span class="n">Fy</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">xlab</span><span class="p">,</span> <span class="n">ylab</span><span class="p">,</span> <span class="n">lab</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">,</span> <span class="n">horizontalalignment</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s2">&quot;equal&quot;</span><span class="p">,</span> <span class="n">adjustable</span><span class="o">=</span><span class="s2">&quot;box&quot;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([])</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span>
+    <span class="k">for</span> <span class="n">spine</span> <span class="ow">in</span> <span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+        <span class="n">spine</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.02</span><span class="p">,</span> <span class="mf">0.95</span><span class="p">,</span> <span class="n">note</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transAxes</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">&quot;top&quot;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">1.2</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">)</span>
+
+<span class="c1"># Free-body diagram for this problem shows only the net force vector.</span>
+<span class="n">Fnet_vec</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.2</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">])</span>  <span class="c1"># scaled for plotting</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">120</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+<span class="n">draw_fbd</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="p">[</span><span class="n">Fnet_vec</span><span class="p">],</span> <span class="p">[</span><span class="sa">r</span><span class="s2">&quot;$\vec</span><span class="si">{F}</span><span class="s2">_{\rm</span><span class="si">{net}</span><span class="s2">}$&quot;</span><span class="p">],</span> <span class="sa">r</span><span class="s2">&quot;Lawn mower: $\sum \vec</span><span class="si">{F}</span><span class="s2">=\vec</span><span class="si">{F}</span><span class="s2">_{\rm</span><span class="si">{net}</span><span class="s2">}$&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Computed acceleration a = 2.125 m/s^2
+Check: m*a = 51.0 N
+</pre></div>
+</div>
+<img alt="../_images/a322d8058bc38b3630b03b1d632759e744b7e1e88c67ace2fe179a36ed03442b.png" src="../_images/a322d8058bc38b3630b03b1d632759e744b7e1e88c67ace2fe179a36ed03442b.png" />
+</div>
+</div>
 </section>
 <section id="example-problem-comparing-forces">
 <h4><span class="section-number">5.3.1.2. </span><strong>Example Problem</strong>: Comparing Forces<a class="headerlink" href="#example-problem-comparing-forces" title="Link to this heading">#</a></h4>
+<div class="exercise etamu-exercise admonition" id="Chapter05/newtons-laws-exercise-2">
+
+<p class="admonition-title"><span class="caption-number">Exercise 5.3 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>(a) The car shown in Figure 5.13 is moving at a constant speed. Which force is bigger, <span class="math notranslate nohighlight">\(\vec{F}_{\text{friction}}\)</span> or <span class="math notranslate nohighlight">\(\vec{F}_{\text{drag}}\)</span>? Explain.</p>
+<p>(b) The same car is now accelerating to the right. Which force is bigger, <span class="math notranslate nohighlight">\(\vec{F}_{\text{friction}}\)</span> or <span class="math notranslate nohighlight">\(\vec{F}_{\text{drag}}\)</span>? Explain.</p>
+</div></blockquote>
+<figure class="align-default" id="car-force-fig">
+<img alt="comparing forces on car" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/4208aa77e974f170b705874223ddfa5927e09929" />
+<figcaption>
+<p><span class="caption-number">Fig. 5.9 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#car-force-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>Model the car as a single object moving along a horizontal road. Only horizontal forces are relevant to the motion described. The force <span class="math notranslate nohighlight">\(\vec{F}_{\text{friction}}\)</span> represents the forward force exerted by the road on the tires, while <span class="math notranslate nohighlight">\(\vec{F}_{\text{drag}}\)</span> represents resistive forces such as air drag that oppose the motion.</p>
+<p>In part (a), the car moves at constant speed, so its acceleration is zero. In part (b), the car accelerates to the right, so its acceleration is nonzero and directed to the right.</p>
+<p>The analysis depends on whether the net horizontal force is zero or nonzero.</p>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>Newton’s first law states that if the net external force on an object is zero, then the object moves with constant velocity. Newton’s second law states that a nonzero net external force produces acceleration. In vector form,</p>
+<div class="math notranslate nohighlight">
+\[
+\sum \vec{F} = \vec{0} \quad \text{(no acceleration)}
+\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[
+\sum \vec{F} \neq \vec{0} \quad \text{(acceleration)}.
+\]</div>
+<p>Choose <span class="math notranslate nohighlight">\(+\hat{i}\)</span> to the right. The horizontal forces on the car are <span class="math notranslate nohighlight">\(\vec{F}_{\text{friction}}\)</span> in the <span class="math notranslate nohighlight">\(+\hat{i}\)</span> direction and <span class="math notranslate nohighlight">\(\vec{F}_{\text{drag}}\)</span> in the <span class="math notranslate nohighlight">\(-\hat{i}\)</span> direction.</p>
+<p><strong>(a)</strong> Constant speed</p>
+<p>Because the car moves at constant speed, its acceleration is zero. Newton’s first law applies, so the net horizontal force must be zero:</p>
+<div class="math notranslate nohighlight">
+\[
+\sum \vec{F} = \vec{F}_{\text{friction}} + \vec{F}_{\text{drag}} = \vec{0}.
+\]</div>
+<p>This requires that the magnitudes of the two forces be equal and their directions opposite.</p>
+<p><strong>(b)</strong> Accelerating to the right</p>
+<p>Because the car accelerates to the right, the net horizontal force must be directed to the right. Newton’s second law applies:</p>
+<div class="math notranslate nohighlight">
+\[ \sum \vec{F} = \vec{F}_{\text{friction}} + \vec{F}_{\text{drag}} \neq \vec{0}. \]</div>
+<p>For the net force to point in the <span class="math notranslate nohighlight">\(+\hat{i}\)</span> direction, the forward friction force must have a greater magnitude than the backward drag force.</p>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>(a) When the car moves at constant speed, the net horizontal force is zero. Therefore, <span class="math notranslate nohighlight">\(\vec{F}_{\text{friction}}\)</span> and <span class="math notranslate nohighlight">\(\vec{F}_{\text{drag}}\)</span> have equal magnitudes and opposite directions.</p>
+<p>(b) When the car accelerates to the right, the net horizontal force points to the right. Therefore, the magnitude of <span class="math notranslate nohighlight">\(\vec{F}_{\text{friction}}\)</span> is greater than the magnitude of <span class="math notranslate nohighlight">\(\vec{F}_{\text{drag}}\)</span>.</p>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>We verify the force relationships qualitatively by constructing simple free-body diagrams for each case and checking whether the horizontal forces balance or produce a net force to the right.</p>
+</section>
+</div>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Representative magnitudes (arbitrary units)</span>
+<span class="n">f_drag</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">f_fric_equal</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">f_fric_larger</span> <span class="o">=</span> <span class="mf">1.5</span>
+
+<span class="n">F_drag</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="n">f_drag</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">])</span>
+<span class="n">F_fric_equal</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">f_fric_equal</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">])</span>
+<span class="n">F_fric_larger</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">f_fric_larger</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">])</span>
+<span class="k">def</span> <span class="nf">draw_fbd</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">forces</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span> <span class="n">note</span><span class="p">):</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="o">-</span><span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="s2">&quot;bo&quot;</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">F</span><span class="p">,</span> <span class="n">lab</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">forces</span><span class="p">,</span> <span class="n">labels</span><span class="p">):</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">F</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">F</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">),</span>
+                    <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s2">&quot;-&gt;&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+        <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">F</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">&gt;</span> <span class="nb">abs</span><span class="p">(</span><span class="n">F</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
+            <span class="n">xlab</span> <span class="o">=</span> <span class="n">F</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="mf">0.2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sign</span><span class="p">(</span><span class="n">F</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+            <span class="n">ylab</span> <span class="o">=</span> <span class="n">F</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">xlab</span> <span class="o">=</span> <span class="n">F</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">ylab</span> <span class="o">=</span> <span class="n">F</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mf">0.25</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sign</span><span class="p">(</span><span class="n">F</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">xlab</span><span class="p">,</span> <span class="n">ylab</span><span class="p">,</span> <span class="n">lab</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">,</span> <span class="n">horizontalalignment</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s2">&quot;equal&quot;</span><span class="p">,</span> <span class="n">adjustable</span><span class="o">=</span><span class="s2">&quot;box&quot;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([]);</span> <span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span>
+    <span class="k">for</span> <span class="n">spine</span> <span class="ow">in</span> <span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+        <span class="n">spine</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.02</span><span class="p">,</span> <span class="mf">0.95</span><span class="p">,</span> <span class="n">note</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transAxes</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">&quot;top&quot;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> 
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mf">3.8</span><span class="p">),</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">120</span><span class="p">)</span>
+
+<span class="n">ax1</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">121</span><span class="p">)</span>
+<span class="n">draw_fbd</span><span class="p">(</span><span class="n">ax1</span><span class="p">,</span>
+         <span class="p">[</span><span class="n">F_fric_equal</span><span class="p">,</span> <span class="n">F_drag</span><span class="p">],</span>
+         <span class="p">[</span><span class="sa">r</span><span class="s2">&quot;$\vec</span><span class="si">{F}</span><span class="s2">_{\rm friction}$&quot;</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;$\vec</span><span class="si">{F}</span><span class="s2">_{\rm drag}$&quot;</span><span class="p">],</span>
+         <span class="sa">r</span><span class="s2">&quot;Constant speed: $\sum \vec</span><span class="si">{F}</span><span class="s2">=\vec</span><span class="si">{0}</span><span class="s2">$&quot;</span><span class="p">)</span>
+
+<span class="n">ax2</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">122</span><span class="p">)</span>
+<span class="n">draw_fbd</span><span class="p">(</span><span class="n">ax2</span><span class="p">,</span>
+         <span class="p">[</span><span class="n">F_fric_larger</span><span class="p">,</span> <span class="n">F_drag</span><span class="p">],</span>
+         <span class="p">[</span><span class="sa">r</span><span class="s2">&quot;$\vec</span><span class="si">{F}</span><span class="s2">_{\rm friction}$&quot;</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;$\vec</span><span class="si">{F}</span><span class="s2">_{\rm drag}$&quot;</span><span class="p">],</span>
+         <span class="sa">r</span><span class="s2">&quot;Accelerating: $\sum \vec</span><span class="si">{F}</span><span class="s2">\neq\vec</span><span class="si">{0}</span><span class="s2">$&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<img alt="../_images/18e086ab1b71bd1703dede3887510ae15508a21f4bd354e9d3b775a2621cb6cf.png" src="../_images/18e086ab1b71bd1703dede3887510ae15508a21f4bd354e9d3b775a2621cb6cf.png" />
+</div>
+</div>
 </section>
 <section id="example-problem-thrust-on-a-sled">
 <h4><span class="section-number">5.3.1.3. </span><strong>Example Problem</strong>: Thrust on a Sled<a class="headerlink" href="#example-problem-thrust-on-a-sled" title="Link to this heading">#</a></h4>
+<div class="exercise etamu-exercise admonition" id="Chapter05/newtons-laws-exercise-3">
+
+<p class="admonition-title"><span class="caption-number">Exercise 5.4 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>Before space flights carrying astronauts, rocket sleds were used to test aircraft, missile equipment, and physiological effects on human subjects at high speeds. They consisted of a platform that was mounted on one or two rails and propelled by several rockets.</p>
+<p>Calculate the magnitude of force exerted by each rocket, called its thrust <span class="math notranslate nohighlight">\(T\)</span>, for the four-rocket propulsion system shown in Figure <a class="reference internal" href="#sled-force-fig"><span class="std std-numref">5.10</span></a>. The sled’s initial acceleration is <span class="math notranslate nohighlight">\(49\ \text{m/s}^2\)</span>, the mass of the system is <span class="math notranslate nohighlight">\(2100\ \text{kg}\)</span>, and the force of friction opposing the motion is <span class="math notranslate nohighlight">\(650\ \text{N}\)</span>.</p>
+</div></blockquote>
+<figure class="align-default" id="sled-force-fig">
+<img alt="cforces on rocket sled" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/af7c2b785de4e2c3ce7256ee0e357cb2c7e32fcd" />
+<figcaption>
+<p><span class="caption-number">Fig. 5.10 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#sled-force-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>The system of interest is the rocket sled together with its rockets and rider. External forces act on this system. Vertically, the normal force from the rails and the weight of the system act, but there is no vertical acceleration, so the vertical forces cancel.</p>
+<p>Horizontally, four identical rockets each exert a thrust of magnitude <span class="math notranslate nohighlight">\(T\)</span> in the forward direction, while friction exerts a force of magnitude <span class="math notranslate nohighlight">\(f\)</span> opposing the motion. The sled accelerates horizontally, so the net horizontal force is nonzero and directed forward.</p>
+<p>The motion is treated as one-dimensional along the horizontal direction.</p>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>Newton’s second law relates the net external force on a system to its acceleration,</p>
+<div class="math notranslate nohighlight">
+\[ \sum \vec{F} = m\,\vec{a}.\]</div>
+<p>Choose <span class="math notranslate nohighlight">\(+\hat{i}\)</span> to the right, in the direction of motion. The horizontal forces on the sled are four thrust forces, each of magnitude <span class="math notranslate nohighlight">\(T\)</span>, acting in the <span class="math notranslate nohighlight">\(+\hat{i}\)</span> direction, and a friction force of magnitude <span class="math notranslate nohighlight">\(f\)</span> acting in the <span class="math notranslate nohighlight">\(-\hat{i}\)</span> direction. The net horizontal force is therefore</p>
+<div class="math notranslate nohighlight">
+\[ \vec{F}_{\text{net}} = (4T - f)\,\hat{i}. \]</div>
+<p>The acceleration is horizontal and can be written as <span class="math notranslate nohighlight">\(\vec{a} = a\,\hat{i}\)</span>. Substituting into Newton’s second law gives</p>
+<div class="math notranslate nohighlight">
+\[(4T - f)\,\hat{i} = ma\,\hat{i}.\]</div>
+<p>Because the unit vectors are the same on both sides, the magnitudes must satisfy</p>
+<div class="math notranslate nohighlight">
+\[4T - f = ma.\]</div>
+<p>Solving for the total thrust <span class="math notranslate nohighlight">\(4T\)</span> yields</p>
+<div class="math notranslate nohighlight">
+\[4T = ma + f.\]</div>
+<p>Substitute the given values:</p>
+<div class="math notranslate nohighlight">
+\[4T = (2100\ \text{kg})(49\ \text{m/s}^2) + 650\ \text{N}.\]</div>
+<p>Evaluating this expression gives</p>
+<div class="math notranslate nohighlight">
+\[4T \approx 1.0 \times 10^{5}\ \text{N}.\]</div>
+<p>The thrust from each individual rocket is one quarter of the total thrust,</p>
+<div class="math notranslate nohighlight">
+\[T = \frac{4T}{4} \approx 2.5 \times 10^{4}\ \text{N}.\]</div>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>Each rocket must provide a thrust of approximately <span class="math notranslate nohighlight">\(2.5 \times 10^{4}\ \text{N}\)</span> in order for the four-rocket sled system to accelerate at <span class="math notranslate nohighlight">\(49\ \text{m/s}^2\)</span> while overcoming the opposing friction force.</p>
+<p>The magnitude of the thrust is extremely large compared to everyday forces, reflecting the extreme accelerations involved in rocket-sled experiments. An acceleration of <span class="math notranslate nohighlight">\(49\ \text{m/s}^2\)</span> corresponds to about <span class="math notranslate nohighlight">\(5g\)</span>, where <span class="math notranslate nohighlight">\(g\)</span> is the acceleration due to gravity. Historical rocket-sled tests reached even larger accelerations, on the order of tens of <span class="math notranslate nohighlight">\(g\)</span>, to study human tolerance to rapid acceleration and deceleration.</p>
+<p>This example illustrates several key ideas of Newton’s second law. First, forces acting in the same direction add, while opposing forces subtract. Second, choosing the correct system is essential: the thrust forces are external to the sled-rocket-rider system, while internal forces between components of the system do not appear. Finally, Newton’s second law provides a direct and quantitative link between force, mass, and acceleration, allowing us to predict the performance of real physical systems.</p>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>We verify the result numerically by recomputing the total thrust required from Newton’s second law and then dividing by four to obtain the thrust of each rocket.</p>
+</section>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Given values (2 significant figures)</span>
+<span class="n">m</span> <span class="o">=</span> <span class="mf">2100.0</span>      <span class="c1"># kg</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mf">49.0</span>        <span class="c1"># m/s^2</span>
+<span class="n">f</span> <span class="o">=</span> <span class="mf">650.0</span>       <span class="c1"># N</span>
+
+<span class="c1"># Calculations</span>
+<span class="n">total_thrust</span> <span class="o">=</span> <span class="n">m</span><span class="o">*</span><span class="n">a</span> <span class="o">+</span> <span class="n">f</span>
+<span class="n">T</span> <span class="o">=</span> <span class="n">total_thrust</span><span class="o">/</span><span class="mi">4</span>
+
+<span class="c1"># Sig-fig–appropriate output</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Total thrust 4T = </span><span class="si">{</span><span class="n">total_thrust</span><span class="si">:</span><span class="s2">.2g</span><span class="si">}</span><span class="s2"> N&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Thrust per rocket T = </span><span class="si">{</span><span class="n">T</span><span class="si">:</span><span class="s2">.2g</span><span class="si">}</span><span class="s2"> N&quot;</span><span class="p">)</span>
+
+<span class="c1"># --- Free-body diagram ---</span>
+<span class="k">def</span> <span class="nf">draw_fbd</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">forces</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span> <span class="n">note</span><span class="p">,</span> <span class="n">chain_label</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;$\vec</span><span class="si">{T}</span><span class="s2">$&quot;</span><span class="p">):</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="o">-</span><span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="s2">&quot;bo&quot;</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
+    <span class="n">x0</span><span class="p">,</span> <span class="n">y0</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span>
+    <span class="n">x_chain</span><span class="p">,</span> <span class="n">y_chain</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span>
+    <span class="k">for</span> <span class="n">F</span><span class="p">,</span> <span class="n">lab</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">forces</span><span class="p">,</span> <span class="n">labels</span><span class="p">):</span>
+        <span class="n">Fx</span><span class="p">,</span> <span class="n">Fy</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">F</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="nb">float</span><span class="p">(</span><span class="n">F</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+        <span class="c1"># Thrusts: draw tip-to-tail (OpenStax style)</span>
+        <span class="k">if</span> <span class="n">lab</span> <span class="o">==</span> <span class="n">chain_label</span><span class="p">:</span>
+            <span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">x_chain</span> <span class="o">+</span> <span class="n">Fx</span><span class="p">,</span> <span class="n">y_chain</span> <span class="o">+</span> <span class="n">Fy</span><span class="p">),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="n">x_chain</span><span class="p">,</span> <span class="n">y_chain</span><span class="p">),</span>
+                        <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s2">&quot;-&gt;&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+            <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">x_chain</span> <span class="o">+</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">Fx</span><span class="p">,</span> <span class="n">y_chain</span> <span class="o">+</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">Fy</span> <span class="o">+</span> <span class="mf">0.18</span><span class="p">,</span> <span class="n">lab</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">,</span>
+                    <span class="n">horizontalalignment</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">)</span>
+            <span class="n">x_chain</span> <span class="o">+=</span> <span class="n">Fx</span>
+            <span class="n">y_chain</span> <span class="o">+=</span> <span class="n">Fy</span>
+            <span class="k">continue</span>
+
+        <span class="c1"># All other forces: draw from the origin dot</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">x0</span> <span class="o">+</span> <span class="n">Fx</span><span class="p">,</span> <span class="n">y0</span> <span class="o">+</span> <span class="n">Fy</span><span class="p">),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span> <span class="n">y0</span><span class="p">),</span>
+                    <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s2">&quot;-&gt;&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+        <span class="c1"># Your label logic (horizontal vs vertical)</span>
+        <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">Fx</span><span class="p">)</span> <span class="o">&gt;</span> <span class="nb">abs</span><span class="p">(</span><span class="n">Fy</span><span class="p">):</span>
+            <span class="n">xlab</span> <span class="o">=</span> <span class="n">x0</span> <span class="o">+</span> <span class="n">Fx</span> <span class="o">+</span> <span class="mf">0.2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sign</span><span class="p">(</span><span class="n">Fx</span><span class="p">)</span>
+            <span class="n">ylab</span> <span class="o">=</span> <span class="n">y0</span> <span class="o">+</span> <span class="n">Fy</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">xlab</span> <span class="o">=</span> <span class="n">x0</span> <span class="o">+</span> <span class="n">Fx</span>
+            <span class="n">ylab</span> <span class="o">=</span> <span class="n">y0</span> <span class="o">+</span> <span class="n">Fy</span> <span class="o">+</span> <span class="mf">0.15</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sign</span><span class="p">(</span><span class="n">Fy</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">xlab</span><span class="p">,</span> <span class="n">ylab</span><span class="p">,</span> <span class="n">lab</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">,</span> <span class="n">horizontalalignment</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span><span class="n">verticalalignment</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">)</span>
+
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s2">&quot;equal&quot;</span><span class="p">,</span> <span class="n">adjustable</span><span class="o">=</span><span class="s2">&quot;box&quot;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([])</span> 
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span>
+    <span class="k">for</span> <span class="n">spine</span> <span class="ow">in</span> <span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="o">.</span><span class="n">values</span><span class="p">():</span> <span class="n">spine</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.02</span><span class="p">,</span> <span class="mf">0.95</span><span class="p">,</span> <span class="n">note</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transAxes</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">&quot;top&quot;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># --- Example usage for the rocket sled FBD ---</span>
+<span class="n">T_plot</span> <span class="o">=</span> <span class="mf">1.2</span>
+<span class="n">f_plot</span> <span class="o">=</span> <span class="mf">0.8</span>
+<span class="n">n_plot</span> <span class="o">=</span> <span class="mf">1.1</span>
+<span class="n">w_plot</span> <span class="o">=</span> <span class="mf">1.1</span>
+
+<span class="n">forces</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="n">f_plot</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">]),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">n_plot</span><span class="p">]),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="o">-</span><span class="n">w_plot</span><span class="p">]),</span>
+          <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">T_plot</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">]),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">T_plot</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">]),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">T_plot</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">]),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">T_plot</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">])]</span>
+
+<span class="n">labels</span> <span class="o">=</span> <span class="p">[</span><span class="sa">r</span><span class="s2">&quot;$\vec</span><span class="si">{f}</span><span class="s2">$&quot;</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;$\vec</span><span class="si">{N}</span><span class="s2">$&quot;</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;$\overrightarrow</span><span class="si">{W}</span><span class="s2">$&quot;</span><span class="p">,</span>
+          <span class="sa">r</span><span class="s2">&quot;$\vec</span><span class="si">{T}</span><span class="s2">$&quot;</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;$\vec</span><span class="si">{T}</span><span class="s2">$&quot;</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;$\vec</span><span class="si">{T}</span><span class="s2">$&quot;</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;$\vec</span><span class="si">{T}</span><span class="s2">$&quot;</span><span class="p">]</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mf">3.8</span><span class="p">),</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">120</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+<span class="n">draw_fbd</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">forces</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;Rocket sled: $\sum \vec</span><span class="si">{F}</span><span class="s2">=m\vec</span><span class="si">{a}</span><span class="s2">$&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total thrust 4T = 1e+05 N
+Thrust per rocket T = 2.6e+04 N
+</pre></div>
+</div>
+<img alt="../_images/d5c2bd841484a7ead30914fa0b297c7abeaae6ff22fc52de3e33a6454f9dd662.png" src="../_images/d5c2bd841484a7ead30914fa0b297c7abeaae6ff22fc52de3e33a6454f9dd662.png" />
+</div>
+</div>
 </section>
 </section>
 <section id="component-form-of-newton-s-2nd-law">
