@@ -75,6 +75,8 @@
                 gtag('config', 'G-6TWF14MYK4');
             </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Chapter05/newtons-laws';</script>
     <link rel="canonical" href="https://saturnaxis.github.io/IntroPhysics/Chapter05/newtons-laws.html" />
     <link rel="index" title="Index" href="../genindex.html" />
@@ -470,7 +472,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -486,6 +490,82 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forces">5.1. Forces</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#working-definition-of-force">5.1.1. Working Definition of Force</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contact-and-field-forces">5.1.2. Contact and Field Forces</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vector-notation-for-force">5.1.3. Vector Notation for Force</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-1st-law">5.2. Newton’s 1st Law</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gravitation-and-inertia">5.2.1. Gravitation and Inertia</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#intertial-reference-frames">5.2.2. Intertial Reference Frames</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-1st-law-and-equilibrium">5.2.3. Newton’s 1st Law and Equilibrium</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-applying-newton-s-1st-law-to-your-car">5.2.3.1. <strong>Example Problem</strong>: Applying Newton’s 1st Law to your car</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-2nd-law">5.3. Newton’s 2nd Law</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#force-and-acceleration">5.3.1. Force and Acceleration</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-pushing-a-lawnmower">5.3.1.1. <strong>Example Problem</strong>: Pushing a Lawnmower</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-comparing-forces">5.3.1.2. <strong>Example Problem</strong>: Comparing Forces</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-thrust-on-a-sled">5.3.1.3. <strong>Example Problem</strong>: Thrust on a Sled</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#component-form-of-newton-s-2nd-law">5.3.2. Component Form of Newton’s 2nd Law</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-force-on-a-soccer-ball">5.3.2.1. <strong>Example Problem</strong>: Force on a Soccer Ball</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-mass-of-a-car">5.3.2.2. <strong>Example Problem</strong>: Mass of a Car</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-several-forces">5.3.2.3. <strong>Example Problem</strong>: Several Forces</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-2nd-law-and-momentum">5.3.3. Newton’s 2nd Law and Momentum</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mass-and-weight">5.4. Mass and Weight</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#units-of-force">5.4.1. Units of Force</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#weight-and-gravitational-force">5.4.2. Weight and Gravitational Force</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-lifting-a-stone">5.4.2.1. <strong>Example Problem</strong>: Lifting a Stone</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-3rd-law">5.5. Newton’s 3rd Law</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-forces-on-a-stationary-object">5.5.1. <strong>Example Problem</strong>: Forces on a Stationary Object</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-force-on-the-cart">5.5.2. <strong>Example Problem</strong>: Force on the Cart</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#common-forces">5.6. Common Forces</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normal-force">5.6.1. Normal Force</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-weight-on-an-incline">5.6.1.1. <strong>Example Problem</strong>: Weight on an incline</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tension">5.6.2. Tension</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-tension-in-a-tightrope">5.6.2.1. <strong>Example Problem</strong>: Tension in a Tightrope</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#friction">5.6.3. Friction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spring-force">5.6.4. Spring Force</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#real-forces-and-interital-frames">5.6.5. Real Forces and Interital Frames</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#drawing-free-body-diagrams">5.7. Drawing Free-body Diagrams</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-two-blocks-on-an-inclined-plane">5.7.1. <strong>Example Problem</strong>: Two Blocks on an Inclined Plane</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-tow-blocks-in-contact">5.7.2. <strong>Example Problem</strong>: Tow Blocks in Contact</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-block-on-the-table">5.7.3. <strong>Example Problem</strong>: Block on the Table</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-class-problems">5.8. In-class Problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-i">5.8.1. Part I</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-ii">5.8.2. Part II</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -497,6 +577,272 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="newton-s-laws-of-motion">
 <h1><span class="section-number">5. </span>Newton’s Laws of Motion<a class="headerlink" href="#newton-s-laws-of-motion" title="Link to this heading">#</a></h1>
+<section id="forces">
+<h2><span class="section-number">5.1. </span>Forces<a class="headerlink" href="#forces" title="Link to this heading">#</a></h2>
+<p>The study of motion is called <a class="reference external" href="https://en.wikipedia.org/wiki/Kinematics"><em>kinematics</em></a>, which describes the way objects move through their velocity and acceleration.</p>
+<p>The study of what <em>causes objects to move</em> is called <a class="reference external" href="https://en.wikipedia.org/wiki/Dynamics_(mechanics)"><strong>dynamics</strong></a>, which describes the motion of objects and systems through forces.  The foundation of dynamics are the laws of motion developed by Isaac Newton, although some of the fundamental principles were developed earlier by Galileo Galilei.</p>
+<p>The development of Newton’s laws marked a transition from Renaissance thinking (i.e., reliance on ancient texts) to Scientific Revolution thinking which developed many of the fundamental pillars of the modern era.  Newton’s description of mechanics is now described as <em>classical mechanics</em> where it applies to most situations until the 20th century. The development of modern physics was prompted by discoveries of subatomic particles which move at speeds comparable to the speed of light.  To describe the motions of these particles, we need <em>quantum mechanics</em>.</p>
+<section id="working-definition-of-force">
+<h3><span class="section-number">5.1.1. </span>Working Definition of Force<a class="headerlink" href="#working-definition-of-force" title="Link to this heading">#</a></h3>
+<p>We need a “working” definition of a force to help build some intuition until we get to the more formal definition given by Newton’s 2nd Law.  An intuitive definition of a force is</p>
+<ul class="simple">
+<li><p>a push or a pull.</p></li>
+</ul>
+<p>A push or a pull has both magnitude (i.e., how hard) and a direction, so it is a vector quantity.  Force can be represented by vectors or expressed as a multiple of a standard force.</p>
+<p>Our everyday experience gives a good idea of how multiple forces add.  If 2 people push in different directions on a third person (see Fig. <a class="reference internal" href="#force-vectors-fig"><span class="std std-numref">5.1</span></a>), we might expect the total force to be in the direction of the resultant vector (or force).  Forces, like vectors, are represented by arrows.</p>
+<figure class="align-default" id="force-vectors-fig">
+<img alt="force as vectors" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/ef522becb2dc30c8800db5a3271e355fd727d0df" />
+<figcaption>
+<p><span class="caption-number">Fig. 5.1 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#force-vectors-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Recall the spherical cow, where the solution was for an idealized and simplified situation.  Physicists use <a class="reference external" href="https://en.wikipedia.org/wiki/Free_body_diagram"><strong>free-body diagrams</strong></a> (or FBDs) to visualize and simplify our analysis of forces.  A FBD is <strong>not</strong> a lifelike drawing, where it is <em>only a sketch</em> to organize your thinking.</p>
+<blockquote class="epigraph">
+<div><p>A free-body diagram is not judged for beauty, symmetry, or originality. It is judged only on whether every force acting on the object is there.</p>
+</div></blockquote>
+<p>The object or system is represented by</p>
+<ul class="simple">
+<li><p>a single isolated point (or free body), and</p></li>
+<li><p>only those forces acting on it (i.e., external forces) are shown.</p></li>
+</ul>
+<div class="tip admonition">
+<p class="admonition-title">Drawing Free-body Diagrams</p>
+<ol class="arabic simple">
+<li><p>Draw the object under consideration.  This should be in 1980s style grapics as a point, circle, triangle, or rectangle.  Place it at the <em>origin</em> of an <span class="math notranslate nohighlight">\(xy\)</span>-coordinate system.</p></li>
+<li><p>Include <strong>all</strong> forces acting on the object and represent the forces as vectors. *Do not include the net force or object’s force on the environment.</p></li>
+<li><p>Resolve all force vectors into <span class="math notranslate nohighlight">\(x\)</span>- and <span class="math notranslate nohighlight">\(y\)</span>-components.</p></li>
+<li><p>Draw a separate free-body diagram for each object in the problem.</p></li>
+</ol>
+</div>
+<figure class="align-default" id="fbd-example-fig">
+<img alt="free-body diagram strategy" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/63ae124bde2f518b3441df314afabc4d1d3d6cfb" />
+<figcaption>
+<p><span class="caption-number">Fig. 5.2 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#fbd-example-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The strategy is illustrated in Fig. <a class="reference internal" href="#fbd-example-fig"><span class="std std-numref">5.2</span></a> with 2 examples.  The video below gives a more in-depth general explanation.</p>
+<div class="video_wrapper align-center" style="text-align: center">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/nDis6HbXxjg" style="border: 0; height: 345px; width: 560px">
+</iframe></div></section>
+<section id="contact-and-field-forces">
+<h3><span class="section-number">5.1.2. </span>Contact and Field Forces<a class="headerlink" href="#contact-and-field-forces" title="Link to this heading">#</a></h3>
+<p>Let’s analyze force more deeply.  Suppose a physics student sits at a table (see Fig. <a class="reference internal" href="#student-force-fig"><span class="std std-numref">5.3</span></a>), working diligently on his homework :wink:.</p>
+<figure class="align-default" id="student-force-fig">
+<img alt="forces on student" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/3f9b177acfaad90a9d421131f9897b34c2c84454" />
+<figcaption>
+<p><span class="caption-number">Fig. 5.3 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#student-force-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p>What external forces act on him? Can we determine the origin of these forces?</p></li>
+</ul>
+<p>Forces are usually grouped into 2 categories: <em>contact</em> and <em>field</em> forces.</p>
+<ul class="simple">
+<li><p>Contact forces are due to direct physical contact between objects.  The student in Fig. <a class="reference internal" href="#student-force-fig"><span class="std std-numref">5.3</span></a> experiences contact forces <span class="math notranslate nohighlight">\(\vec{C}\)</span> (from the chair), <span class="math notranslate nohighlight">\(\vec{F}\)</span> (from the floor), and <span class="math notranslate nohighlight">\(\vec{T}\)</span> (from the table).</p></li>
+<li><p>Field forces act without the necessity of physical contact between objects.  They depend on the presence of a “field” in near the body unders consideration.  Earth’s gravitational field casues the student to feel a gravitational force <span class="math notranslate nohighlight">\(\vec{w}\)</span>, which is his weight.</p></li>
+</ul>
+<div class="video_wrapper align-center" style="text-align: center">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/mIXAN9qBUw" style="border: 0; height: 345px; width: 560px">
+</iframe></div><p>As far as we know, there are only 4 fundamental force fields in nature.  These are gravitational, electromagnetic, strong nuclear, and weak fields.</p>
+<ul class="simple">
+<li><p>The gravitational field is responsible for the weight of a body.</p></li>
+<li><p>The forces of elcectricty and magnetism are responsible for the attraction among atoms in bulk matter.</p></li>
+<li><p>The strong nuclear and forces are effective over a short distance, no larger than an atomic nucleus.</p></li>
+</ul>
+<p>Contact forces are fundamentally electromagnetic.  Atomic charges interact electromagnetically with other atomic charges, which prevents objects from moving through one another (i.e., no clipping).</p>
+</section>
+<section id="vector-notation-for-force">
+<h3><span class="section-number">5.1.3. </span>Vector Notation for Force<a class="headerlink" href="#vector-notation-for-force" title="Link to this heading">#</a></h3>
+<p>The SI unit of force is called the <strong>Newton</strong> (abbreviated <span class="math notranslate nohighlight">\(\rm N\)</span>), which is the force needed to accelerate an object with a mass of <span class="math notranslate nohighlight">\(1\ {\rm kg}\)</span> at a rate of <span class="math notranslate nohighlight">\(1\ {\rm m/s^2}\)</span> (i.e., <span class="math notranslate nohighlight">\(1\ {\rm N} = 1\ {\rm kg \cdot m/s^2}\)</span>).  <em>Note that a small apple has a weight of about <span class="math notranslate nohighlight">\(1\ \rm N\)</span>.</em></p>
+<p>We can describe a force in the form</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*} 
+\vec{F} &amp;= a\hat{i} + b\hat{j}, &amp;\quad \text{(in 2D)} \\
+\vec{F} &amp;= a\hat{i} + b\hat{j} + c\hat{k}. &amp;\quad \text{(in 3D)}
+\end{align*}\]</div>
+<p>In Fig. <a class="reference internal" href="#force-vectors-fig"><span class="std std-numref">5.1</span></a>, let’s suppose that ice skater 1 (on the left) pushes horizontally with a force of <span class="math notranslate nohighlight">\(30\ {\rm N}\)</span> to the right (or <span class="math notranslate nohighlight">\(\vec{F}_1 = 30 \hat{i}\ {\rm N}\)</span>).  Similarly, if ice skater 2 (on the bottom) pushes with a force of <span class="math notranslate nohighlight">\(40\ {\rm N}\)</span> in the postive vertial direction, we would write <span class="math notranslate nohighlight">\(\vec{F}_2 = 40\hat{j}\ {\rm N}\)</span>.</p>
+<p>The resultant force causes the third ice skater to accelerate.  The <strong>net external force</strong> <span class="math notranslate nohighlight">\(\vec{F}_{\rm net}\)</span> is found by taking the vector sum of <strong>all external forces</strong> acting on an object or system.  We can then represent the net extrnal force (in general) as:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-185cf7ed-4c42-41a4-9fd3-8c79fce10871">
+<span class="eqno">(5.1)<a class="headerlink" href="#equation-185cf7ed-4c42-41a4-9fd3-8c79fce10871" title="Permalink to this equation">#</a></span>\[\begin{align}
+\vec{F}_{\rm net} &amp;= \sum \vec{F}_{\rm ext}, \\
+&amp;= \vec{F}_1 + \vec{F}_2 + \cdots + \vec{F}_N, \\
+&amp; = F_{{\rm net},x}\hat{i} + F_{{\rm net},y}\hat{j} + F_{{\rm net},z}\hat{k}, \\
+&amp;= \sum_{i=1}^N F_{ix}\hat{i} + \sum_{i=1}^N F_{iy}\hat{j} + \sum_{i=1}^N F_{iz}\hat{k}.
+\end{align}\]</div>
+<p>In this example, we have <span class="math notranslate nohighlight">\(\vec{F}_{\rm net} = \vec{F}_1 + \vec{F}_2 = 30\hat{i} + 40\hat{j}\ {\rm N}\)</span>.  To find the magnitude of the net (resultant) force <span class="math notranslate nohighlight">\(F_{\rm net}\)</span>, we take sum the squares of the components and take the square root, or</p>
+<div class="math notranslate nohighlight">
+\[ F_{\rm net} = \sqrt{(30\ {\rm N})^2 + (40\ {\rm N})^2} = 50\ {\rm N}, \]</div>
+<p>where the direction is given by</p>
+<div class="math notranslate nohighlight">
+\[ \theta = \tan^{-1}\! \left(\frac{F_{net,y}}{F_{net,x}}\right) = \tan^{-1}\! \left(\frac{40}{30}\right) = 53^\circ \]</div>
+<p>measured from the positive <span class="math notranslate nohighlight">\(x\)</span>-axis, as shown in the free-body diagram in Fig. <a class="reference internal" href="#force-vectors-fig"><span class="std std-numref">5.1</span></a>b.</p>
+<hr class="docutils" />
+<p>Let’s suppose the ice skaters now push the third ice skater with <span class="math notranslate nohighlight">\(\vec{F}_1
+ = 3\hat{i} + 8\hat{j}\ {\rm N}\)</span> and <span class="math notranslate nohighlight">\(\vec{F_2} = 5\hat{i} + 4\hat{j}\ {\rm N}.\)</span></p>
+<ul class="simple">
+<li><p><strong>What is the resultant of these two forces?</strong></p></li>
+</ul>
+<p>We recognize that force is a vector, and therfore, we must add using the rules for vector additon:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\vec{F}_{\rm net} &amp;=  \sum_{i=1}^2 F_{ix}\hat{i} + \sum_{i=1}^2 F_{iy}\hat{j},\\
+&amp;= (3 + 5)\hat{i} + (8 + 4)\hat{j}, \\
+ &amp;= 8\hat{i} + 12\hat{j}\ {\rm N}.
+\end{align*}\]</div>
+</section>
+</section>
+<section id="newton-s-1st-law">
+<h2><span class="section-number">5.2. </span>Newton’s 1st Law<a class="headerlink" href="#newton-s-1st-law" title="Link to this heading">#</a></h2>
+<p>Newton’s 1st law is a restatment of Galileo’s principle of <a class="reference external" href="https://en.wikipedia.org/wiki/Inertia"><strong>inertia</strong></a>, which states that an object in motion tends to slow down unless some effort is made to keep it moving.  <strong>Newton’s 1st law</strong> give a deeper explanation of this observation.</p>
+<div class="note admonition">
+<p class="admonition-title">Newton’s 1st Law of Motion</p>
+<p>A body at rest remains at rest or, if in motion, remains in motion at constant velocity unless acted on a by a net external force.</p>
+</div>
+<p>Note the expression “constant velocity”, which means that the object maintains a path along a straight line (since neither the magnitude nor direction changes).  Also the verb “remains” tells us that the keeps on moving (or not moving) as part of the status quo.</p>
+<p>Newton’s 1st law sayst that there must be a cause for any change in velocity (i.e., acceleration) to occur.  The cause is a net external force.  An object sliding across a table or floor slows down due to the net force of friction acting on the object.  <strong>If friction disappears, will the object slow down?</strong></p>
+<figure class="align-default" id="hockey-puck-fig">
+<img alt="hocky puck on table" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/a10f74ff3c6e6e34a0dff1d9e25a93a6c3ed1303" />
+<figcaption>
+<p><span class="caption-number">Fig. 5.4 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#hockey-puck-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Consider an air hockey table (Fig. <a class="reference internal" href="#hockey-puck-fig"><span class="std std-numref">5.4</span></a>).  When the air is turned off, the puck slides only a short distance before friction slows it to a stop.  However, with the air turned on, it creates a <em>nearly</em> frictionless surface, and the puck glides a long distance without slowing down.  If we know enough about the friction, we can accurately predict how quickly the object slows down.</p>
+<p>Newton’s 1st law is general and can be applied to anything from an object sliding on table, a satellite in orbit, or even blood pumped from the heart.  Experiments have verified that nay change in velocity (speed or direction) must be caused by an external force.</p>
+<p>Aristotle had claimed that objects had a natural state and needed little “angels” to keep the objects moving.  Tt was Galileo who questioned this idea, which led whim to ask the fundamental question: “What is the cause?”  Thinking in terms of <em>cause and effect</em> is fundamentally different from the typical ancient Greek approach.</p>
+<section id="gravitation-and-inertia">
+<h3><span class="section-number">5.2.1. </span>Gravitation and Inertia<a class="headerlink" href="#gravitation-and-inertia" title="Link to this heading">#</a></h3>
+<p>Regardless of the scale of an object, two properties remain valid: gravitation and inertia because they are both connected to mass.</p>
+<ul class="simple">
+<li><p><strong>Mass</strong> is a measure of the amount of matter in something.  It has volume and takes up space.</p></li>
+<li><p><strong>Gravitation</strong> is the attraction of one mass to another.  The magnitude of this attration is your weight, and it is a force.</p></li>
+</ul>
+<p>Mass is related to <strong>inertia</strong>, which is the ability of an object to <em>resist changes in its motion</em>, or to resist acceleration.  Newton’s 1st law is often called the <strong>law of inertia</strong>.</p>
+</section>
+<section id="intertial-reference-frames">
+<h3><span class="section-number">5.2.2. </span>Intertial Reference Frames<a class="headerlink" href="#intertial-reference-frames" title="Link to this heading">#</a></h3>
+<p>Newton’s 1st law can also be state as <em>“Every body remains in its state of uniform motion in a straight line unless it is compelled to change that state by forces acting on it.”</em></p>
+<ul class="simple">
+<li><p>To Newton, “uniform motion in a straight line” meant constant velocity, which includes the special case of zero velocity (or rest).</p></li>
+</ul>
+<p>Therefore the 1st law says that the velocity of an object remains constant if the net force on it is zero, or</p>
+<div class="math notranslate nohighlight">
+\[ \vec{F}_{\rm net} = \sum \vec{F}_{ext} = 0. \]</div>
+<p>Newton’s 1st law is also considered as a statement about reference frames.  It provides a method for identifying a special type of referece frame called the <strong>inertial reference frame</strong>.</p>
+<p>In principle, we can make make the net force on a body zero, if its velocity relative to a given reference frame is constant and then that frame is defined as inertial (recall <a class="reference internal" href="../Chapter04/motion-in-2D-3D.html#relative-2d"><span class="std std-numref">Section 4.4.3</span></a>).  An inertial reference frame is one where Newton’s 1st law is valid.</p>
+<div class="note admonition">
+<p class="admonition-title">Inertial Reference Frame</p>
+<p>A reference frame moving at constant velocity relative to an inertial reference frame is also inertial.  A reference frame acclerating relative to an inertial frame is not inertial.</p>
+</div>
+<ul class="simple">
+<li><p><em>Are inertial frames common in nature?</em></p></li>
+</ul>
+<p>A reference frame at rest to the most distant (or “fixed”) stars is inertial.  All frames moving uniformly with respect to this fixed-star frame are also inertial.  For example, a nonrotating reference frame attached to the Sun is (for all practical purposes) inertial because its velocity relative to the fixed stars does not vary by more than one part in <span class="math notranslate nohighlight">\(10^{10}\)</span>.</p>
+<p>Earth accelerates relative to the fixed stars because it rotates on its axis and <em>revolves</em> around the Sun.  Hence a reference frame attached to its surface is not inertial.  For most problems, such a frame serves as a sufficently accurate <em>approximation</em> to an inertial frame because the acceleration relative to the fixed stars is small (<span class="math notranslate nohighlight">\({\sim}10^{-2}\ {\rm m/s^2}\)</span>).  Thus we consider reference frames fixed to the Earth as inertial.</p>
+<p>No particular inertial frame is more special than any other.  All inertial frames are equivalent.  In analyzing a problem, we choose one particular inertial frame simply based on convenience.</p>
+</section>
+<section id="newton-s-1st-law-and-equilibrium">
+<h3><span class="section-number">5.2.3. </span>Newton’s 1st Law and Equilibrium<a class="headerlink" href="#newton-s-1st-law-and-equilibrium" title="Link to this heading">#</a></h3>
+<section id="example-problem-applying-newton-s-1st-law-to-your-car">
+<h4><span class="section-number">5.2.3.1. </span><strong>Example Problem</strong>: Applying Newton’s 1st Law to your car<a class="headerlink" href="#example-problem-applying-newton-s-1st-law-to-your-car" title="Link to this heading">#</a></h4>
+</section>
+</section>
+</section>
+<section id="newton-s-2nd-law">
+<h2><span class="section-number">5.3. </span>Newton’s 2nd Law<a class="headerlink" href="#newton-s-2nd-law" title="Link to this heading">#</a></h2>
+<section id="force-and-acceleration">
+<h3><span class="section-number">5.3.1. </span>Force and Acceleration<a class="headerlink" href="#force-and-acceleration" title="Link to this heading">#</a></h3>
+<section id="example-problem-pushing-a-lawnmower">
+<h4><span class="section-number">5.3.1.1. </span><strong>Example Problem</strong>: Pushing a Lawnmower<a class="headerlink" href="#example-problem-pushing-a-lawnmower" title="Link to this heading">#</a></h4>
+</section>
+<section id="example-problem-comparing-forces">
+<h4><span class="section-number">5.3.1.2. </span><strong>Example Problem</strong>: Comparing Forces<a class="headerlink" href="#example-problem-comparing-forces" title="Link to this heading">#</a></h4>
+</section>
+<section id="example-problem-thrust-on-a-sled">
+<h4><span class="section-number">5.3.1.3. </span><strong>Example Problem</strong>: Thrust on a Sled<a class="headerlink" href="#example-problem-thrust-on-a-sled" title="Link to this heading">#</a></h4>
+</section>
+</section>
+<section id="component-form-of-newton-s-2nd-law">
+<h3><span class="section-number">5.3.2. </span>Component Form of Newton’s 2nd Law<a class="headerlink" href="#component-form-of-newton-s-2nd-law" title="Link to this heading">#</a></h3>
+<section id="example-problem-force-on-a-soccer-ball">
+<h4><span class="section-number">5.3.2.1. </span><strong>Example Problem</strong>: Force on a Soccer Ball<a class="headerlink" href="#example-problem-force-on-a-soccer-ball" title="Link to this heading">#</a></h4>
+</section>
+<section id="example-problem-mass-of-a-car">
+<h4><span class="section-number">5.3.2.2. </span><strong>Example Problem</strong>: Mass of a Car<a class="headerlink" href="#example-problem-mass-of-a-car" title="Link to this heading">#</a></h4>
+</section>
+<section id="example-problem-several-forces">
+<h4><span class="section-number">5.3.2.3. </span><strong>Example Problem</strong>: Several Forces<a class="headerlink" href="#example-problem-several-forces" title="Link to this heading">#</a></h4>
+</section>
+</section>
+<section id="newton-s-2nd-law-and-momentum">
+<h3><span class="section-number">5.3.3. </span>Newton’s 2nd Law and Momentum<a class="headerlink" href="#newton-s-2nd-law-and-momentum" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="mass-and-weight">
+<h2><span class="section-number">5.4. </span>Mass and Weight<a class="headerlink" href="#mass-and-weight" title="Link to this heading">#</a></h2>
+<section id="units-of-force">
+<h3><span class="section-number">5.4.1. </span>Units of Force<a class="headerlink" href="#units-of-force" title="Link to this heading">#</a></h3>
+</section>
+<section id="weight-and-gravitational-force">
+<h3><span class="section-number">5.4.2. </span>Weight and Gravitational Force<a class="headerlink" href="#weight-and-gravitational-force" title="Link to this heading">#</a></h3>
+<section id="example-problem-lifting-a-stone">
+<h4><span class="section-number">5.4.2.1. </span><strong>Example Problem</strong>: Lifting a Stone<a class="headerlink" href="#example-problem-lifting-a-stone" title="Link to this heading">#</a></h4>
+</section>
+</section>
+</section>
+<section id="newton-s-3rd-law">
+<h2><span class="section-number">5.5. </span>Newton’s 3rd Law<a class="headerlink" href="#newton-s-3rd-law" title="Link to this heading">#</a></h2>
+<section id="example-problem-forces-on-a-stationary-object">
+<h3><span class="section-number">5.5.1. </span><strong>Example Problem</strong>: Forces on a Stationary Object<a class="headerlink" href="#example-problem-forces-on-a-stationary-object" title="Link to this heading">#</a></h3>
+</section>
+<section id="example-problem-force-on-the-cart">
+<h3><span class="section-number">5.5.2. </span><strong>Example Problem</strong>: Force on the Cart<a class="headerlink" href="#example-problem-force-on-the-cart" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="common-forces">
+<h2><span class="section-number">5.6. </span>Common Forces<a class="headerlink" href="#common-forces" title="Link to this heading">#</a></h2>
+<section id="normal-force">
+<h3><span class="section-number">5.6.1. </span>Normal Force<a class="headerlink" href="#normal-force" title="Link to this heading">#</a></h3>
+<section id="example-problem-weight-on-an-incline">
+<h4><span class="section-number">5.6.1.1. </span><strong>Example Problem</strong>: Weight on an incline<a class="headerlink" href="#example-problem-weight-on-an-incline" title="Link to this heading">#</a></h4>
+</section>
+</section>
+<section id="tension">
+<h3><span class="section-number">5.6.2. </span>Tension<a class="headerlink" href="#tension" title="Link to this heading">#</a></h3>
+<section id="example-problem-tension-in-a-tightrope">
+<h4><span class="section-number">5.6.2.1. </span><strong>Example Problem</strong>: Tension in a Tightrope<a class="headerlink" href="#example-problem-tension-in-a-tightrope" title="Link to this heading">#</a></h4>
+</section>
+</section>
+<section id="friction">
+<h3><span class="section-number">5.6.3. </span>Friction<a class="headerlink" href="#friction" title="Link to this heading">#</a></h3>
+</section>
+<section id="spring-force">
+<h3><span class="section-number">5.6.4. </span>Spring Force<a class="headerlink" href="#spring-force" title="Link to this heading">#</a></h3>
+</section>
+<section id="real-forces-and-interital-frames">
+<h3><span class="section-number">5.6.5. </span>Real Forces and Interital Frames<a class="headerlink" href="#real-forces-and-interital-frames" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="drawing-free-body-diagrams">
+<h2><span class="section-number">5.7. </span>Drawing Free-body Diagrams<a class="headerlink" href="#drawing-free-body-diagrams" title="Link to this heading">#</a></h2>
+<section id="example-problem-two-blocks-on-an-inclined-plane">
+<h3><span class="section-number">5.7.1. </span><strong>Example Problem</strong>: Two Blocks on an Inclined Plane<a class="headerlink" href="#example-problem-two-blocks-on-an-inclined-plane" title="Link to this heading">#</a></h3>
+</section>
+<section id="example-problem-tow-blocks-in-contact">
+<h3><span class="section-number">5.7.2. </span><strong>Example Problem</strong>: Tow Blocks in Contact<a class="headerlink" href="#example-problem-tow-blocks-in-contact" title="Link to this heading">#</a></h3>
+</section>
+<section id="example-problem-block-on-the-table">
+<h3><span class="section-number">5.7.3. </span><strong>Example Problem</strong>: Block on the Table<a class="headerlink" href="#example-problem-block-on-the-table" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="in-class-problems">
+<h2><span class="section-number">5.8. </span>In-class Problems<a class="headerlink" href="#in-class-problems" title="Link to this heading">#</a></h2>
+<section id="part-i">
+<h3><span class="section-number">5.8.1. </span>Part I<a class="headerlink" href="#part-i" title="Link to this heading">#</a></h3>
+</section>
+<section id="part-ii">
+<h3><span class="section-number">5.8.2. </span>Part II<a class="headerlink" href="#part-ii" title="Link to this heading">#</a></h3>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -553,6 +899,89 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forces">5.1. Forces</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#working-definition-of-force">5.1.1. Working Definition of Force</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contact-and-field-forces">5.1.2. Contact and Field Forces</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vector-notation-for-force">5.1.3. Vector Notation for Force</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-1st-law">5.2. Newton’s 1st Law</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gravitation-and-inertia">5.2.1. Gravitation and Inertia</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#intertial-reference-frames">5.2.2. Intertial Reference Frames</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-1st-law-and-equilibrium">5.2.3. Newton’s 1st Law and Equilibrium</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-applying-newton-s-1st-law-to-your-car">5.2.3.1. <strong>Example Problem</strong>: Applying Newton’s 1st Law to your car</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-2nd-law">5.3. Newton’s 2nd Law</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#force-and-acceleration">5.3.1. Force and Acceleration</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-pushing-a-lawnmower">5.3.1.1. <strong>Example Problem</strong>: Pushing a Lawnmower</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-comparing-forces">5.3.1.2. <strong>Example Problem</strong>: Comparing Forces</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-thrust-on-a-sled">5.3.1.3. <strong>Example Problem</strong>: Thrust on a Sled</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#component-form-of-newton-s-2nd-law">5.3.2. Component Form of Newton’s 2nd Law</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-force-on-a-soccer-ball">5.3.2.1. <strong>Example Problem</strong>: Force on a Soccer Ball</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-mass-of-a-car">5.3.2.2. <strong>Example Problem</strong>: Mass of a Car</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-several-forces">5.3.2.3. <strong>Example Problem</strong>: Several Forces</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-2nd-law-and-momentum">5.3.3. Newton’s 2nd Law and Momentum</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mass-and-weight">5.4. Mass and Weight</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#units-of-force">5.4.1. Units of Force</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#weight-and-gravitational-force">5.4.2. Weight and Gravitational Force</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-lifting-a-stone">5.4.2.1. <strong>Example Problem</strong>: Lifting a Stone</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-3rd-law">5.5. Newton’s 3rd Law</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-forces-on-a-stationary-object">5.5.1. <strong>Example Problem</strong>: Forces on a Stationary Object</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-force-on-the-cart">5.5.2. <strong>Example Problem</strong>: Force on the Cart</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#common-forces">5.6. Common Forces</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normal-force">5.6.1. Normal Force</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-weight-on-an-incline">5.6.1.1. <strong>Example Problem</strong>: Weight on an incline</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tension">5.6.2. Tension</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-tension-in-a-tightrope">5.6.2.1. <strong>Example Problem</strong>: Tension in a Tightrope</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#friction">5.6.3. Friction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spring-force">5.6.4. Spring Force</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#real-forces-and-interital-frames">5.6.5. Real Forces and Interital Frames</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#drawing-free-body-diagrams">5.7. Drawing Free-body Diagrams</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-two-blocks-on-an-inclined-plane">5.7.1. <strong>Example Problem</strong>: Two Blocks on an Inclined Plane</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-tow-blocks-in-contact">5.7.2. <strong>Example Problem</strong>: Tow Blocks in Contact</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-block-on-the-table">5.7.3. <strong>Example Problem</strong>: Block on the Table</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-class-problems">5.8. In-class Problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-i">5.8.1. Part I</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-ii">5.8.2. Part II</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

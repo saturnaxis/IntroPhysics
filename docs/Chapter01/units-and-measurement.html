@@ -522,8 +522,10 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-kilogram">1.2.2.3. The kilogram</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metric-prefixes">1.2.3. Metric Prefixes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-metric-prefixes">1.2.4. <strong>Example Problem</strong>: Metric Prefixes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metric-prefixes">1.2.3. Metric Prefixes</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-metric-prefixes">1.2.3.1. <strong>Example Problem</strong>: Metric Prefixes</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unit-conversion">1.3. Unit Conversion</a><ul class="nav section-nav flex-column">
@@ -537,9 +539,11 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#significant-figures">1.5. Significant Figures</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#accuracy-and-precision">1.5.1. Accuracy and Precision</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uncertainty-and-discrepency">1.5.2. Uncertainty and Discrepency</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#percent-uncertainty">1.5.2.1. Percent uncertainty</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-uncertainty-in-a-bag-of-apples">1.5.2.2. <strong>Example Problem</strong>: Uncertainty in a bag of apples</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#uncertainties-in-calculations">1.5.2.3. Uncertainties in calculations</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#percent-uncertainty">1.5.2.1. Percent uncertainty</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-uncertainty-in-a-bag-of-apples">1.5.2.1.1. <strong>Example Problem</strong>: Uncertainty in a bag of apples</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#uncertainties-in-calculations">1.5.2.2. Uncertainties in calculations</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#precision-of-measuring-tools">1.5.3. Precision of Measuring Tools</a><ul class="nav section-nav flex-column">
@@ -596,13 +600,13 @@ document.write(`
 <p>The distance across the USA is about <span class="math notranslate nohighlight">\(4500\ {\rm km}\)</span> from east to west.  This seems like a long way, but the distance from the Earth to the Sun (or <strong>astronomical unit</strong>; AU) is about <span class="math notranslate nohighlight">\(149,000,000\ {\rm km}\)</span> or <span class="math notranslate nohighlight">\({\sim}33,000\times\)</span> more distant.  Light is incredibly fast and can travel 1 AU in only <span class="math notranslate nohighlight">\(8.3\ {\rm min}\)</span>.</p>
 <p><em>How far can light travel in a year?</em></p>
 <p>Instead of thinking in kilometers, it is simpler to instead describe this distance in AU, or how many Earth-Sun distances make up this proposed distance.  We have to give this distance a name, thus we call it a <a class="reference external" href="https://en.wikipedia.org/wiki/Light-year">lightyear</a>, or the distance that light travels in a year.  Let’s start with what we know so far (i.e., light travels 1 AU in 8.3 min):</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b7817644-b3dc-46ca-87a8-9b9de4650624">
-<span class="eqno">(1.1)<a class="headerlink" href="#equation-b7817644-b3dc-46ca-87a8-9b9de4650624" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-76a4324f-d15b-4f22-9880-8a3e03af423f">
+<span class="eqno">(1.1)<a class="headerlink" href="#equation-76a4324f-d15b-4f22-9880-8a3e03af423f" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{1\ {\rm AU}}{8.3\ {\rm min}} &amp;= 0.12\ {\rm AU/min}.
 \end{align}\]</div>
 <p>Therefore, light travels at a speed of about <span class="math notranslate nohighlight">\(0.12\ {\rm AU/min}\)</span>.  Now, we can work our way through if we can somehow translate this speed into a distance.  For this we can use some other knowledge, for example:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b8ee6e51-0f6d-44f5-9e37-af0d63daa569">
-<span class="eqno">(1.2)<a class="headerlink" href="#equation-b8ee6e51-0f6d-44f5-9e37-af0d63daa569" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-dd72baa3-abd8-490f-9c81-75c6d2cd92ab">
+<span class="eqno">(1.2)<a class="headerlink" href="#equation-dd72baa3-abd8-490f-9c81-75c6d2cd92ab" title="Permalink to this equation">#</a></span>\[\begin{align}
 1\ {\rm h} &amp;= 60\ {\rm min}, \\
 1\ {\rm day} &amp;= 24\ {\rm h}, \\
 1\ {\rm yr} &amp;= 365.25\ {\rm days}.
@@ -611,14 +615,14 @@ document.write(`
 <ul class="simple">
 <li><p>To understand the distance <span class="math notranslate nohighlight">\(d\)</span> in a lightyear, we need to convert its speed <span class="math notranslate nohighlight">\(s\)</span> using different timescales <span class="math notranslate nohighlight">\(t\)</span> that make up a year.</p></li>
 </ul>
-<div class="amsmath math notranslate nohighlight" id="equation-68c0d28c-4f06-4c7b-8488-fa6adc1ef39c">
-<span class="eqno">(1.3)<a class="headerlink" href="#equation-68c0d28c-4f06-4c7b-8488-fa6adc1ef39c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f2b48b57-7a6c-48b0-8bc7-4f596d036ccc">
+<span class="eqno">(1.3)<a class="headerlink" href="#equation-f2b48b57-7a6c-48b0-8bc7-4f596d036ccc" title="Permalink to this equation">#</a></span>\[\begin{align}
 s &amp;= \frac{d}{t}, \\
 d &amp;= s \times t= st
 \end{align}\]</div>
 <p>Let’s begin with some analytical calculations, which we’ll followup with a verification using <code class="docutils literal notranslate"><span class="pre">python</span></code>.  We just need to use our known speed of light and multiply by different time conversion factors to determin the number of <span class="math notranslate nohighlight">\(\rm AU/yr\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d0003f15-0db6-4358-a437-0bc08a2405e6">
-<span class="eqno">(1.4)<a class="headerlink" href="#equation-d0003f15-0db6-4358-a437-0bc08a2405e6" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-0cd6513e-0041-4031-84eb-c8b452d263ee">
+<span class="eqno">(1.4)<a class="headerlink" href="#equation-0cd6513e-0041-4031-84eb-c8b452d263ee" title="Permalink to this equation">#</a></span>\[\begin{align}
 s &amp;= \frac{0.12\ {\rm AU}}{\rm min} \times \frac{60\ {\rm min}}{1\ {\rm h}} \times \frac{24\ {\rm h}}{1\ {\rm day}} \times \frac{365.25\ {\rm days}}{1\ {\rm yr}}, \\
 &amp;= 63,000\ \frac{\rm AU}{\rm yr}.
 \end{align}\]</div>
@@ -983,9 +987,8 @@ it’s wrong.</p>
 </table>
 </div>
 <p>The only rule when using the metric prefixes is that you <strong>cannot</strong> “double them up”.  For example, it is improper to talk about megagigameters, although <span class="math notranslate nohighlight">\(10^6 \times 10^9 = 10^{15}\)</span> (<span class="math notranslate nohighlight">\(1\ {\rm Pm} = 10^{15}\ {\rm m}\)</span>).</p>
-</section>
 <section id="example-problem-metric-prefixes">
-<h3><span class="section-number">1.2.4. </span><strong>Example Problem</strong>: Metric Prefixes<a class="headerlink" href="#example-problem-metric-prefixes" title="Link to this heading">#</a></h3>
+<h4><span class="section-number">1.2.3.1. </span><strong>Example Problem</strong>: Metric Prefixes<a class="headerlink" href="#example-problem-metric-prefixes" title="Link to this heading">#</a></h4>
 <div class="exercise etamu-exercise admonition" id="Chapter01/units-and-measurement-exercise-0">
 
 <p class="admonition-title"><span class="caption-number">Exercise 1.1 </span></p>
@@ -1062,6 +1065,7 @@ Mass in petagrams: 19.3 Pg
 </div>
 </div>
 </div>
+</section>
 </section>
 </section>
 <section id="unit-conversion">
@@ -1325,13 +1329,12 @@ Both the numerical value and the final units are consistent with the desired SI 
 <section id="percent-uncertainty">
 <h4><span class="section-number">1.5.2.1. </span>Percent uncertainty<a class="headerlink" href="#percent-uncertainty" title="Link to this heading">#</a></h4>
 <p>Another method of expressing uncertainty is calculating how much the uncertainty deviates from the average value as a percent.  Suppose a  measurement <span class="math notranslate nohighlight">\(A \pm \delta A\)</span>, the <strong>percent uncertainty</strong> is:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-068697f8-fe8c-4d24-b752-d3a0e3628543">
-<span class="eqno">(1.5)<a class="headerlink" href="#equation-068697f8-fe8c-4d24-b752-d3a0e3628543" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-3b51473b-8a46-48f3-becd-ffb8004d8645">
+<span class="eqno">(1.5)<a class="headerlink" href="#equation-3b51473b-8a46-48f3-becd-ffb8004d8645" title="Permalink to this equation">#</a></span>\[\begin{align}
 \text{Percent uncertainty} = \frac{\delta A}{A} \times 100\%.
 \end{align}\]</div>
-</section>
 <section id="example-problem-uncertainty-in-a-bag-of-apples">
-<h4><span class="section-number">1.5.2.2. </span><strong>Example Problem</strong>: Uncertainty in a bag of apples<a class="headerlink" href="#example-problem-uncertainty-in-a-bag-of-apples" title="Link to this heading">#</a></h4>
+<h5><span class="section-number">1.5.2.1.1. </span><strong>Example Problem</strong>: Uncertainty in a bag of apples<a class="headerlink" href="#example-problem-uncertainty-in-a-bag-of-apples" title="Link to this heading">#</a></h5>
 <div class="exercise etamu-exercise admonition" id="Chapter01/units-and-measurement-exercise-3">
 
 <p class="admonition-title"><span class="caption-number">Exercise 1.4 </span></p>
@@ -1393,8 +1396,9 @@ Both the numerical value and the final units are consistent with the desired SI 
 </div>
 </div>
 </section>
+</section>
 <section id="uncertainties-in-calculations">
-<h4><span class="section-number">1.5.2.3. </span>Uncertainties in calculations<a class="headerlink" href="#uncertainties-in-calculations" title="Link to this heading">#</a></h4>
+<h4><span class="section-number">1.5.2.2. </span>Uncertainties in calculations<a class="headerlink" href="#uncertainties-in-calculations" title="Link to this heading">#</a></h4>
 <p>Uncertainty exists in anything calculated from measured quantities.  The area of a floor calculated from measurements has an uncertainty because the length and width of the measurements have uncertainties.</p>
 <p><em>How big is the uncertainty if something you calculate by multiplication or division?</em></p>
 <p>If the measurements going into the calculation have small uncertainties (<span class="math notranslate nohighlight">\(\lesssim 5\%\)</span>), then the <strong>method of adding percents</strong> can be used for multiplication or division. This method states:</p>
@@ -1669,8 +1673,10 @@ v&amp;= 180\ \frac{\text{km}}{\text{h}} \times \left(\frac{10^{3}\ \text{m}}{1\ 
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-kilogram">1.2.2.3. The kilogram</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metric-prefixes">1.2.3. Metric Prefixes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-metric-prefixes">1.2.4. <strong>Example Problem</strong>: Metric Prefixes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metric-prefixes">1.2.3. Metric Prefixes</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-metric-prefixes">1.2.3.1. <strong>Example Problem</strong>: Metric Prefixes</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unit-conversion">1.3. Unit Conversion</a><ul class="nav section-nav flex-column">
@@ -1684,9 +1690,11 @@ v&amp;= 180\ \frac{\text{km}}{\text{h}} \times \left(\frac{10^{3}\ \text{m}}{1\ 
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#significant-figures">1.5. Significant Figures</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#accuracy-and-precision">1.5.1. Accuracy and Precision</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uncertainty-and-discrepency">1.5.2. Uncertainty and Discrepency</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#percent-uncertainty">1.5.2.1. Percent uncertainty</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-uncertainty-in-a-bag-of-apples">1.5.2.2. <strong>Example Problem</strong>: Uncertainty in a bag of apples</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#uncertainties-in-calculations">1.5.2.3. Uncertainties in calculations</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#percent-uncertainty">1.5.2.1. Percent uncertainty</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-uncertainty-in-a-bag-of-apples">1.5.2.1.1. <strong>Example Problem</strong>: Uncertainty in a bag of apples</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#uncertainties-in-calculations">1.5.2.2. Uncertainties in calculations</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#precision-of-measuring-tools">1.5.3. Precision of Measuring Tools</a><ul class="nav section-nav flex-column">
