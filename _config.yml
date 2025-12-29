@@ -76,4 +76,5 @@ sphinx:
     - sphinx_exercise
     - sphinx_inline_tabs
     - sphinxcontrib.youtube
+    - sphinx_iframes
 
