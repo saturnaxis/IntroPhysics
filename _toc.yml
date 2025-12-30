@@ -34,7 +34,7 @@ parts:
   - file: Chapter09/momentum-collisions.ipynb
   - file: Chapter10/fixed-axis-rotation.ipynb
   - file: Chapter11/angular-momentum.ipynb
-- caption: Statics, Graviation, Fluids
+- caption: Statics, Gravitation, Fluids
   numbered: true
   maxdepth: 3 
   chapters:
