@@ -30,18 +30,66 @@ div.exercise > p.admonition-title{
 }
 
 blockquote {
-  background-color: rgba(255, 255, 255, 0.873); 
-  border-left: 4px solid #0033A0;             /* ETAMU blue */
+  /* background-color: rgba(255, 255, 255, 0.873);  */
+  border-left: 4px solid #0033A0;
   padding: 0.75em 1em;
   margin: 1em 0;
-  color: #222;
+  /* color: #222; */
+  color: inherit;
 }
 
-/* Improve figure caption readability */
 figure figcaption {
-  color: #222;
+  /* color: #222; */
+  color: inherit;
 }
+
 figure figcaption .caption-number {
   font-weight: 700;
 }
+
+/* -----------------------------
+   Dark-mode compatibility
+   ----------------------------- */
+
+/* Let the browser know we support both */
+:root { color-scheme: light dark; }
+
+/* Default (light mode) stays as you wrote it */
+@media (prefers-color-scheme: dark) {
+  :root{
+    /* darker-tinted gold background so it doesn't glow */
+    --etamu-gold-light: rgba(242,169,0,.18);
+  }
+
+  /* Exercises/admonitions */
+  div.admonition.exercise,
+  div.exercise{
+    background-color: rgba(242,169,0,.10);
+    border-left-color: var(--etamu-gold);
+  }
+
+  /* Title bar: keep gold but make text dark enough / readable */
+  div.admonition.exercise > .admonition-title,
+  div.exercise > .admonition-title,
+  div.exercise > p.admonition-title{
+    background-color: var(--etamu-gold);
+    color: #111;
+  }
+
+  /* Blockquotes: remove “light card” styling and use darker surface */
+  blockquote{
+    background-color: rgba(255,255,255,.06);
+    border-left-color: var(--etamu-blue);
+    color: rgba(255,255,255,.88);
+  }
+
+  /* Figure captions: do NOT force #222 in dark mode */
+  figure figcaption{
+    color: rgba(255,255,255,.80);
+  }
+  figure figcaption .caption-number{
+    color: rgba(255,255,255,.90);
+  }
+}
+
 
