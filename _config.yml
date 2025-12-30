@@ -72,9 +72,11 @@ html:
     utterances              : false
 
 sphinx:
+  local_extensions:
+    responsive_video: "./_ext/"
   extra_extensions:
     - sphinx_exercise
     - sphinx_inline_tabs
     - sphinxcontrib.youtube
     - sphinx_iframes
-
+    - responsive_video
