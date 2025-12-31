@@ -39,13 +39,36 @@ blockquote {
 }
 
 figure figcaption {
-  /* color: #222; */
-  color: inherit;
+  color: var(--pst-color-text-base, inherit);
+  opacity: 1;                 /* avoid low-contrast fade-outs */
+}
+
+/* If the theme sets a data-theme attribute (Sphinx Book / PyData) */
+html[data-theme="light"] figure figcaption {
+  color: #222;
+}
+
+html[data-theme="dark"] figure figcaption {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Fallback for environments without data-theme */
+@media (prefers-color-scheme: dark) {
+  figure figcaption {
+    color: rgba(255, 255, 255, 0.85);
+  }
 }
 
 figure figcaption .caption-number {
   font-weight: 700;
 }
+
+/* Ensure captions inside admonitions stay readable */
+.admonition figure figcaption,
+.bd-content figure figcaption {
+  color: var(--pst-color-text-base, inherit);
+}
+
 
 /* -----------------------------
    Dark-mode compatibility
