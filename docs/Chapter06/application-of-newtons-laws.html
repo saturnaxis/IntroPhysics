@@ -39,7 +39,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/metadata_figure.css?v=2463d4a7" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx_iframe.css?v=96c28b52" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=c2a6260a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=52bae50d" />
     <link rel="stylesheet" type="text/css" href="../_static/mycss.css?v=3589796e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -78,6 +78,8 @@
                 gtag('config', 'G-6TWF14MYK4');
             </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Chapter06/application-of-newtons-laws';</script>
     <link rel="canonical" href="https://saturnaxis.github.io/IntroPhysics/Chapter06/application-of-newtons-laws.html" />
     <link rel="index" title="Index" href="../genindex.html" />
@@ -229,7 +231,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../Chapter10/fixed-axis-rotation.html">10. Fixed-axis Rotation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter11/angular-momentum.html">11. Angular Momentum</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Statics, Graviation, Fluids</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Statics, Gravitation, Fluids</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../Chapter12/static-equilibrium-elasticity.html">12. Static Equilibrium and Elasticity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter13/gravitation.html">13. Gravitation</a></li>
@@ -473,7 +475,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -489,6 +493,38 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solving-newton-s-laws">6.1. Solving Newton’s Laws</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-solving-strategies">6.1.1. Problem-Solving Strategies</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#particle-equilibrium">6.1.2. Particle Equilibrium</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-different-tensions-at-different-angles">6.1.2.1. <strong>Example Problem</strong>: Different Tensions at Different Angles</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#particle-acceleration">6.1.3. Particle Acceleration</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-drag-force-on-a-barge">6.1.3.1. <strong>Example Problem</strong>: Drag Force on a Barge</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-bathroom-scale-in-an-elevator">6.1.3.2. <strong>Example Problem</strong>: Bathroom Scale in an Elevator</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-two-attached-blocks">6.1.3.3. <strong>Example Problem</strong>: Two attached Blocks</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-atwood-machine">6.1.3.4. <strong>Example Problem</strong>: Atwood Machine</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-laws-of-motion-and-kinematics">6.1.4. Newton’s Laws of Motion and Kinematics</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-soccer-player-top-speed">6.1.4.1. <strong>Example Problem</strong>: Soccer Player Top Speed</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-force-on-a-model-helicopter">6.1.4.2. <strong>Example Problem</strong>: Force on a Model Helicopter</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-baggage-tractor">6.1.4.3. <strong>Example Problem</strong>: Baggage Tractor</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-projectile-vertical-motion">6.1.4.4. <strong>Example Problem</strong>: Projectile Vertical Motion</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#friction">6.2. Friction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#centripetal-force">6.3. Centripetal Force</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#drag-force-and-terminal-speed">6.4. Drag Force and Terminal Speed</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -500,6 +536,209 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="application-of-newton-s-laws">
 <h1><span class="section-number">6. </span>Application of Newton’s Laws<a class="headerlink" href="#application-of-newton-s-laws" title="Link to this heading">#</a></h1>
+<section id="solving-newton-s-laws">
+<h2><span class="section-number">6.1. </span>Solving Newton’s Laws<a class="headerlink" href="#solving-newton-s-laws" title="Link to this heading">#</a></h2>
+<section id="problem-solving-strategies">
+<h3><span class="section-number">6.1.1. </span>Problem-Solving Strategies<a class="headerlink" href="#problem-solving-strategies" title="Link to this heading">#</a></h3>
+<div class="note admonition">
+<p class="admonition-title">Applying Newton’s Laws of Motion</p>
+<ol class="arabic simple">
+<li><p>Identify the physical principles involved by listing the givens and the quantities to calculate.</p></li>
+<li><p><strong>DRAW A SKETCH</strong> using arrows to represent forces.</p></li>
+<li><p>Separate the problem into a system of interest.  Each system should have a free-body diagram (FBD) that is essential to solving the problem.</p></li>
+<li><p>Apply Newton’s 2nd law to solve the problem component-wise.  If necessary apply appropriate kinematic equations (by component).</p></li>
+<li><p>Check the solution to see whether is makes sense! Do your result have the right units?</p></li>
+</ol>
+</div>
+<p>Consider the challenge of lifting a grand piano into a second-story apartment.</p>
+<p><strong>Which of Newton’s laws are involved?</strong></p>
+<figure class="align-default" id="piano-fbd-fig">
+<img alt="piano FBD example" src="../_images/piano-fbd-problem.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 6.1 </span><span class="caption-text">(a) A piano is lifted by a crane. The original scene is redrawn in a deliberately simplified form to emphasize the essential geometry. (b) With the simplified sketch, the relevant forces are easily identified: the rope tension <span class="math notranslate nohighlight">\(\vec{T}\)</span>, the force exerted by the piano on the rope <span class="math notranslate nohighlight">\(\vec{F}_T\)</span>, and the weight of the piano <span class="math notranslate nohighlight">\(\vec{w}\)</span>. (c) Defining the piano as the system of interest removes <span class="math notranslate nohighlight">\(\vec{F}_T\)</span>, which acts on the outside world, leaving only <span class="math notranslate nohighlight">\(\vec{T}\)</span> and <span class="math notranslate nohighlight">\(\vec{w}\)</span> in the free-body diagram (FBD). (d) When the piano is stationary, these forces are equal in magnitude and opposite in direction, so <span class="math notranslate nohighlight">\(\vec{T} = -\vec{w}\)</span>. Image Credit: modified from original on <a class="reference external" href="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/a5b71834ef40be2edc1e3529c747e20c3a219604">Openstax</a>.</span><a class="headerlink" href="#piano-fbd-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Figure <a class="reference internal" href="#piano-fbd-fig"><span class="std std-numref">6.1</span></a> shows that we can represent all forces with arrows and simplify the analysis with a more crude representation.</p>
+<p>It is important to make a list of knowns and unknowns so that we can properly identify the system of interest.  <em>Recall that Newton’s 2nd law involves only external forces</em>, so we</p>
+<ul class="simple">
+<li><p>first list all the forces, and</p></li>
+<li><p>then identify which are internal or external.</p></li>
+</ul>
+<p>The identified forces are:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\vec{T}\)</span>: tension in the rope above the piano</p></li>
+<li><p><span class="math notranslate nohighlight">\(\vec{F}_{T}\)</span>: force that the piano exerts on the rope, and</p></li>
+<li><p><span class="math notranslate nohighlight">\(\vec{w}\)</span>: weight of the piano.</p></li>
+</ul>
+<p>All other forces (e.g., nudge of a breeze) are assumed to be negligible.</p>
+<p>Newton’s 3rd law can be used to identify whether forces are exerted between internal components of a system <strong>or</strong> between the system and an external component.</p>
+<ul class="simple">
+<li><p>The <span class="math notranslate nohighlight">\(\vec{T}\)</span> and <span class="math notranslate nohighlight">\(\vec{F}_T\)</span> form a force-pair, where we only include the external component <span class="math notranslate nohighlight">\(\vec{T}\)</span> in our FBD (see Fig. <a class="reference internal" href="#piano-fbd-fig"><span class="std std-numref">6.1</span></a>b).</p></li>
+<li><p>Figure <a class="reference internal" href="#piano-fbd-fig"><span class="std std-numref">6.1</span></a>c shows a FBD, where Newton’s 2nd law is applied in Fig. <a class="reference internal" href="#piano-fbd-fig"><span class="std std-numref">6.1</span></a>d.</p></li>
+</ul>
+<p>Once external forces are clearly identified in FBDs, it should be straightforward to put them into Newton’s 2nd law and form equations that can be solved.</p>
+<ul class="simple">
+<li><p>If the problem is 1D (i.e., forces are parallel), then the forces can be handled algebraically.</p></li>
+<li><p>If the problem is 2D, then it must be broken into components and then, solved as a pair of 1D problems.</p></li>
+<li><p>It is usually convenient to make one axis parallel to the direction of motion, if this is known.</p></li>
+</ul>
+<p>Then you have</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\sum F_x = ma_x,\\
+\sum F_y = ma_y.
+\end{align*}\]</div>
+<p>We must check the solution to tell whether it is reasonable.  For example, it is reasonable to find that friction causes an object to slide down an incline more slowly than when no friction exits.</p>
+<ul class="simple">
+<li><p>In practice, intuition (i.e. knowing what is reasonable at a glance) develops through solving many problems (i.e., experience).</p></li>
+</ul>
+<blockquote class="epigraph">
+<div><p>Ut est rerum omnium magister usus. (“Experience is the teacher of all things.”)</p>
+<p class="attribution">—Julius Caesar</p>
+</div></blockquote>
+<p>Another way to check a solution is to check the units.  If we are solving for force and end up with units of only velocity, then we have made a mistake.</p>
+</section>
+<section id="particle-equilibrium">
+<h3><span class="section-number">6.1.2. </span>Particle Equilibrium<a class="headerlink" href="#particle-equilibrium" title="Link to this heading">#</a></h3>
+<p>A particle in equilibrium is one that obey’s Newton’s 1st law (i.e., the external forces are balanced).  Static equilibrium involves objects at rest, and dynamic equilibrium involves objects in motion <em>without</em> acceleration.</p>
+<section id="example-problem-different-tensions-at-different-angles">
+<h4><span class="section-number">6.1.2.1. </span><strong>Example Problem</strong>: Different Tensions at Different Angles<a class="headerlink" href="#example-problem-different-tensions-at-different-angles" title="Link to this heading">#</a></h4>
+<div class="exercise etamu-exercise admonition" id="Chapter06/application-of-newtons-laws-exercise-0">
+
+<p class="admonition-title"><span class="caption-number">Exercise 6.1 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>Consider the traffic light (mass of <span class="math notranslate nohighlight">\(15.0\ \mathrm{kg}\)</span>) suspended from two wires as shown in Figure <a class="reference internal" href="#tension-problem-fig"><span class="std std-numref">6.2</span></a>.<br />
+Find the tension in each wire, neglecting the masses of the wires.</p>
+</div></blockquote>
+<figure class="align-default" id="tension-problem-fig">
+<img alt="different tension problem" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/e5808e660ad64c3be7985ff3bd220cfe3b484a75" />
+<figcaption>
+<p><span class="caption-number">Fig. 6.2 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#tension-problem-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>The system of interest is the traffic light. The traffic light is treated as a point mass in static equilibrium, suspended by two massless, inextensible wires (similar to the <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter05/newtons-laws.html#example-problem-tension-in-a-tightrope">Tension in a Tightrope</a>). One wire makes an angle of <span class="math notranslate nohighlight">\(30^\circ\)</span> with the horizontal on the left, and the other makes an angle of <span class="math notranslate nohighlight">\(45^\circ\)</span> with the horizontal on the right. The only forces acting on the system are the tensions in the two wires and the gravitational force (weight) acting downward. Air resistance and any motion of the light are neglected, so the acceleration of the system is zero.</p>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>Because the traffic light is stationary, the net external force acting on it is zero. Newton’s 2nd law therefore applies independently along the horizontal and vertical axes.</p>
+<p>Let <span class="math notranslate nohighlight">\(T_1\)</span> be the tension in the wire at <span class="math notranslate nohighlight">\(30^\circ\)</span> and <span class="math notranslate nohighlight">\(T_2\)</span> be the tension in the wire at <span class="math notranslate nohighlight">\(45^\circ\)</span>. The weight of the traffic light is <span class="math notranslate nohighlight">\(\vec{w} = -w\,\hat{j}\)</span> with <span class="math notranslate nohighlight">\(w = mg\)</span>.</p>
+<p>First apply equilibrium along the horizontal (<span class="math notranslate nohighlight">\(x\)</span>) direction. The horizontal components of the two tension forces must cancel:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+F_{\text{net},x} &amp;= T_{1x} + T_{2x} = 0 .
+\end{align*}\]</div>
+<p>Using trigonometric components,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+T_1 \cos 30^\circ &amp;= T_2 \cos 45^\circ .
+\end{align*}\]</div>
+<p>Solving for <span class="math notranslate nohighlight">\(T_2\)</span> in terms of <span class="math notranslate nohighlight">\(T_1\)</span> gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+T_2 &amp;= 1.225\,T_1 .
+\end{align*}\]</div>
+<p>Next apply equilibrium along the vertical (<span class="math notranslate nohighlight">\(y\)</span>) direction. The upward components of the tensions must balance the weight:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+F_{\text{net},y} &amp;= T_{1y} + T_{2y} - w = 0 .
+\end{align*}\]</div>
+<p>Substituting for the vertical components yields</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+T_1 \sin 30^\circ + T_2 \sin 45^\circ &amp;= w .
+\end{align*}\]</div>
+<p>Replacing <span class="math notranslate nohighlight">\(T_2\)</span> using the earlier relation gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+T_1 (0.500) + (1.225\,T_1)(0.707) &amp;= mg .
+\end{align*}\]</div>
+<p>This simplifies to</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+1.366\,T_1 &amp;= (15.0\ \mathrm{kg})(9.80\ \mathrm{m/s^2}) .
+\end{align*}\]</div>
+<p>Solving for <span class="math notranslate nohighlight">\(T_1\)</span> gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+T_1 &amp;= 108\ \mathrm{N} .
+\end{align*}\]</div>
+<p>Finally, substituting back to find <span class="math notranslate nohighlight">\(T_2\)</span>,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+T_2 &amp;= 1.225\,T_1 = 132\ \mathrm{N} .
+\end{align*}\]</div>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>The tension in the wire making a <span class="math notranslate nohighlight">\(30^\circ\)</span> angle with the horizontal is <span class="math notranslate nohighlight">\(T_1 = 108\ \mathrm{N}\)</span>, while the tension in the wire making a <span class="math notranslate nohighlight">\(45^\circ\)</span> angle is <span class="math notranslate nohighlight">\(T_2 = 132\ \mathrm{N}\)</span>. The larger tension occurs in the wire that is more vertical, since it must provide a greater vertical force component to support the weight of the traffic light. These results are consistent with the assumption of static equilibrium and the chosen force model.</p>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>The algebraic solution is verified by numerically recomputing the force components and confirming that the net force along both the horizontal and vertical directions is zero.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">m</span> <span class="o">=</span> <span class="mf">15.0</span>
+<span class="n">g</span> <span class="o">=</span> <span class="mf">9.80</span>
+
+<span class="n">T1</span> <span class="o">=</span> <span class="mf">108.0</span>
+<span class="n">T2</span> <span class="o">=</span> <span class="mf">132.0</span>
+
+<span class="c1"># Components</span>
+<span class="n">T1x</span> <span class="o">=</span> <span class="o">-</span><span class="n">T1</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="mi">30</span><span class="p">))</span>
+<span class="n">T2x</span> <span class="o">=</span>  <span class="n">T2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="mi">45</span><span class="p">))</span>
+<span class="n">T1y</span> <span class="o">=</span>  <span class="n">T1</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="mi">30</span><span class="p">))</span>
+<span class="n">T2y</span> <span class="o">=</span>  <span class="n">T2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="mi">45</span><span class="p">))</span>
+<span class="n">w</span>   <span class="o">=</span>  <span class="n">m</span> <span class="o">*</span> <span class="n">g</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Net horizontal force: </span><span class="si">{</span><span class="p">(</span><span class="n">T1x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">T2x</span><span class="p">)</span><span class="si">:</span><span class="s2">.3g</span><span class="si">}</span><span class="s2"> N&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Net vertical force: </span><span class="si">{</span><span class="p">(</span><span class="n">T1y</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">T2y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">w</span><span class="p">)</span><span class="si">:</span><span class="s2">.3g</span><span class="si">}</span><span class="s2"> N&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</div>
+</section>
+</section>
+<section id="particle-acceleration">
+<h3><span class="section-number">6.1.3. </span>Particle Acceleration<a class="headerlink" href="#particle-acceleration" title="Link to this heading">#</a></h3>
+<section id="example-problem-drag-force-on-a-barge">
+<h4><span class="section-number">6.1.3.1. </span><strong>Example Problem</strong>: Drag Force on a Barge<a class="headerlink" href="#example-problem-drag-force-on-a-barge" title="Link to this heading">#</a></h4>
+</section>
+<section id="example-problem-bathroom-scale-in-an-elevator">
+<h4><span class="section-number">6.1.3.2. </span><strong>Example Problem</strong>: Bathroom Scale in an Elevator<a class="headerlink" href="#example-problem-bathroom-scale-in-an-elevator" title="Link to this heading">#</a></h4>
+</section>
+<section id="example-problem-two-attached-blocks">
+<h4><span class="section-number">6.1.3.3. </span><strong>Example Problem</strong>: Two attached Blocks<a class="headerlink" href="#example-problem-two-attached-blocks" title="Link to this heading">#</a></h4>
+</section>
+<section id="example-problem-atwood-machine">
+<h4><span class="section-number">6.1.3.4. </span><strong>Example Problem</strong>: Atwood Machine<a class="headerlink" href="#example-problem-atwood-machine" title="Link to this heading">#</a></h4>
+</section>
+</section>
+<section id="newton-s-laws-of-motion-and-kinematics">
+<h3><span class="section-number">6.1.4. </span>Newton’s Laws of Motion and Kinematics<a class="headerlink" href="#newton-s-laws-of-motion-and-kinematics" title="Link to this heading">#</a></h3>
+<section id="example-problem-soccer-player-top-speed">
+<h4><span class="section-number">6.1.4.1. </span><strong>Example Problem</strong>: Soccer Player Top Speed<a class="headerlink" href="#example-problem-soccer-player-top-speed" title="Link to this heading">#</a></h4>
+</section>
+<section id="example-problem-force-on-a-model-helicopter">
+<h4><span class="section-number">6.1.4.2. </span><strong>Example Problem</strong>: Force on a Model Helicopter<a class="headerlink" href="#example-problem-force-on-a-model-helicopter" title="Link to this heading">#</a></h4>
+</section>
+<section id="example-problem-baggage-tractor">
+<h4><span class="section-number">6.1.4.3. </span><strong>Example Problem</strong>: Baggage Tractor<a class="headerlink" href="#example-problem-baggage-tractor" title="Link to this heading">#</a></h4>
+</section>
+<section id="example-problem-projectile-vertical-motion">
+<h4><span class="section-number">6.1.4.4. </span><strong>Example Problem</strong>: Projectile Vertical Motion<a class="headerlink" href="#example-problem-projectile-vertical-motion" title="Link to this heading">#</a></h4>
+</section>
+</section>
+</section>
+<section id="friction">
+<h2><span class="section-number">6.2. </span>Friction<a class="headerlink" href="#friction" title="Link to this heading">#</a></h2>
+</section>
+<section id="centripetal-force">
+<h2><span class="section-number">6.3. </span>Centripetal Force<a class="headerlink" href="#centripetal-force" title="Link to this heading">#</a></h2>
+</section>
+<section id="drag-force-and-terminal-speed">
+<h2><span class="section-number">6.4. </span>Drag Force and Terminal Speed<a class="headerlink" href="#drag-force-and-terminal-speed" title="Link to this heading">#</a></h2>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -556,6 +795,45 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solving-newton-s-laws">6.1. Solving Newton’s Laws</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-solving-strategies">6.1.1. Problem-Solving Strategies</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#particle-equilibrium">6.1.2. Particle Equilibrium</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-different-tensions-at-different-angles">6.1.2.1. <strong>Example Problem</strong>: Different Tensions at Different Angles</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#particle-acceleration">6.1.3. Particle Acceleration</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-drag-force-on-a-barge">6.1.3.1. <strong>Example Problem</strong>: Drag Force on a Barge</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-bathroom-scale-in-an-elevator">6.1.3.2. <strong>Example Problem</strong>: Bathroom Scale in an Elevator</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-two-attached-blocks">6.1.3.3. <strong>Example Problem</strong>: Two attached Blocks</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-atwood-machine">6.1.3.4. <strong>Example Problem</strong>: Atwood Machine</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-laws-of-motion-and-kinematics">6.1.4. Newton’s Laws of Motion and Kinematics</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-soccer-player-top-speed">6.1.4.1. <strong>Example Problem</strong>: Soccer Player Top Speed</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-force-on-a-model-helicopter">6.1.4.2. <strong>Example Problem</strong>: Force on a Model Helicopter</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-baggage-tractor">6.1.4.3. <strong>Example Problem</strong>: Baggage Tractor</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-projectile-vertical-motion">6.1.4.4. <strong>Example Problem</strong>: Projectile Vertical Motion</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#friction">6.2. Friction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#centripetal-force">6.3. Centripetal Force</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#drag-force-and-terminal-speed">6.4. Drag Force and Terminal Speed</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
