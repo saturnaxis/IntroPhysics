@@ -537,8 +537,27 @@ document.write(`
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#centripetal-force">6.3. Centripetal Force</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#drag-force-and-terminal-speed">6.4. Drag Force and Terminal Speed</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#centripetal-force">6.3. Centripetal Force</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-friction-for-car-on-a-flat-curve">6.3.1. <strong>Example Problem</strong>: Friction for Car on a Flat Curve</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#banked-curves">6.3.2. Banked Curves</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-ideal-speed-banked-tight-curve">6.3.2.1. <strong>Example Problem</strong>: Ideal Speed Banked Tight Curve</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inertial-forces-and-noninertial-frames-the-coriolis-force">6.3.3. Inertial Forces and Noninertial Frames: The Coriolis Force</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#drag-force-and-terminal-speed">6.4. Drag Force and Terminal Speed</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#drag-forces">6.4.1. Drag Forces</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#terminal-velocity">6.4.2. Terminal Velocity</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-terminal-velocity-of-a-skydiver">6.4.2.1. <strong>Example Problem</strong>: Terminal Velocity of a Skydiver</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-calculus-of-velocity-dependent-frictional-forces">6.4.3. The Calculus of Velocity-Dependent Frictional Forces</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-resistive-force-on-a-motorboat">6.4.3.1. <strong>Example Problem</strong>: Resistive Force on a Motorboat</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -1817,15 +1836,16 @@ percent difference = 4.88e-06 %
 <div class="note admonition">
 <p class="admonition-title">Magnitude of Static and Kinetic Friction</p>
 <p>The magnitude of static friction <span class="math notranslate nohighlight">\(f_s\)</span> is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5c8091da-71bd-472b-a0ab-dafbae415c3a">
-<span class="eqno">(6.1)<a class="headerlink" href="#equation-5c8091da-71bd-472b-a0ab-dafbae415c3a" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-94d3fa55-bdad-4c6d-a8d0-783fb68a925a">
+<span class="eqno">(6.1)<a class="headerlink" href="#equation-94d3fa55-bdad-4c6d-a8d0-783fb68a925a" title="Permalink to this equation">#</a></span>\[\begin{align}
 f_s \leq \mu_s N,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\mu_s\)</span> (or <code class="docutils literal notranslate"><span class="pre">\mu_s</span></code>) is the coefficient of static friction and <span class="math notranslate nohighlight">\(N\)</span> is the magnitude fo the normal force.  Static friction is a responsive force that increases to be equal and opposite to whatever force is exerted.  Once the applied force exceeds <span class="math notranslate nohighlight">\(f_s(\text{max})\)</span>, the object moves, and</p>
-<p>$$ f_s(\text{max}) = \mu_s N.</p>
+<div class="math notranslate nohighlight">
+\[ f_s(\text{max}) = \mu_s N.\]</div>
 <p>The magnitude of kinetic friction <span class="math notranslate nohighlight">\(f_k\)</span> is given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-96c425f5-1503-46d7-892d-551db00df2fc">
-<span class="eqno">(6.2)<a class="headerlink" href="#equation-96c425f5-1503-46d7-892d-551db00df2fc" title="Permalink to this equation">#</a></span>\[\begin{align} 
+<div class="amsmath math notranslate nohighlight" id="equation-5aa6a518-f073-4052-af44-4260528d143e">
+<span class="eqno">(6.2)<a class="headerlink" href="#equation-5aa6a518-f073-4052-af44-4260528d143e" title="Permalink to this equation">#</a></span>\[\begin{align} 
 f_k = \mu_k N,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\mu_k\)</span> (or <code class="docutils literal notranslate"><span class="pre">\mu_k</span></code>) is the coefficient of kinetic friction.  Figure <a class="reference internal" href="#friction-fig"><span class="std std-numref">6.10</span></a> illustrates the transition from static friction (stationary in Fig. <a class="reference internal" href="#friction-fig"><span class="std std-numref">6.10</span></a>a) to kinetic friction (moving in Fig. <a class="reference internal" href="#friction-fig"><span class="std std-numref">6.10</span></a>b).</p>
@@ -1936,7 +1956,7 @@ f_k = \mu_k N,
 </figure>
 <hr class="docutils" />
 <p><strong>The Model</strong></p>
-<p>We model the crate as a particle on a horizontal floor. Choose axes so <span class="math notranslate nohighlight">\(+\hat{i}\)</span> is to the right and <span class="math notranslate nohighlight">\(+\hat{j}\)</span> is upward. The forces on the crate are the applied force <span class="math notranslate nohighlight">\(\vec{P}\)</span> (horizontal), the friction force <span class="math notranslate nohighlight">\(\vec{f}\)</span> (horizontal and opposite the impending or actual motion), the normal force <span class="math notranslate nohighlight">\(\vec{N}\)</span> from the floor (upward), and the weight <span class="math notranslate nohighlight">\(\vec{W}\)</span> (downward). The floor is level so <span class="math notranslate nohighlight">\(a_y=0\)</span> and <span class="math notranslate nohighlight">\(N=W\)</span>. Static friction adjusts in magnitude up to <span class="math notranslate nohighlight">\(f_{s\,\max}=\mu_s N\)</span>. If the applied force exceeds <span class="math notranslate nohighlight">\(f_{s\,\max}\)</span>, the crate slides and kinetic friction acts with magnitude <span class="math notranslate nohighlight">\(f_k=\mu_k N\)</span>.</p>
+<p>We model the crate as a particle on a horizontal floor. Choose axes so <span class="math notranslate nohighlight">\(+\hat{i}\)</span> is to the right and <span class="math notranslate nohighlight">\(+\hat{j}\)</span> is upward. The forces on the crate are the applied force <span class="math notranslate nohighlight">\(\vec{P}\)</span> (horizontal), the friction force <span class="math notranslate nohighlight">\(\vec{f}\)</span> (horizontal and opposite the impending or actual motion), the normal force <span class="math notranslate nohighlight">\(\vec{N}\)</span> from the floor (upward), and the weight <span class="math notranslate nohighlight">\(\vec{W}\)</span> (downward). The floor is level so <span class="math notranslate nohighlight">\(a_y=0\)</span> and <span class="math notranslate nohighlight">\(N=W\)</span>. Static friction adjusts in magnitude up to <span class="math notranslate nohighlight">\(f_{s,\max}=\mu_s N\)</span>. If the applied force exceeds <span class="math notranslate nohighlight">\(f_{s,\max}\)</span>, the crate slides and kinetic friction acts with magnitude <span class="math notranslate nohighlight">\(f_k=\mu_k N\)</span>.</p>
 <hr class="docutils" />
 <p><strong>The Math</strong></p>
 <p>We apply Newton’s 2nd law to the crate. Let <span class="math notranslate nohighlight">\(\vec{P}=P,\hat{i}\)</span> and <span class="math notranslate nohighlight">\(\vec{f}=-f,\hat{i}\)</span> because friction opposes the direction of <span class="math notranslate nohighlight">\(\vec{P}\)</span>. The weight is <span class="math notranslate nohighlight">\(\vec{W}=-W,\hat{j}\)</span> with <span class="math notranslate nohighlight">\(W=mg\)</span>.</p>
@@ -1954,16 +1974,16 @@ N - W &amp;= 0
 <p>From the vertical equation, <span class="math notranslate nohighlight">\(N=W=mg\)</span>, so the maximum static friction is</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-f_{s\,\max} &amp;= \mu_s N, \\
+f_{s,\max} &amp;= \mu_s N, \\
 &amp;= \mu_s m g.
 \end{align*}\]</div>
 <p>We evaluate the shared quantities once:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 N &amp;= mg = (20.0\,\mathrm{kg})(9.81\,\mathrm{m/s^2}) = 196\,\mathrm{N} \\
-f_{s\,\max} &amp;= \mu_s N = (0.70)(196\,\mathrm{N}) = 140\,\mathrm{N}
+f_{s,\max} &amp;= \mu_s N = (0.70)(196\,\mathrm{N}) = 140\,\mathrm{N}
 \end{align*}\]</div>
-<p>If <span class="math notranslate nohighlight">\(P \le f_{s,\max}\)</span>, the crate remains at rest so <span class="math notranslate nohighlight">\(a_x=0\)</span> and <span class="math notranslate nohighlight">\(P-f=0\)</span>, which gives <span class="math notranslate nohighlight">\(f_s=P\)</span>. If <span class="math notranslate nohighlight">\(P&gt;f_{s\,\max}\)</span>, the crate slides and <span class="math notranslate nohighlight">\(f=f_k=\mu_k N\)</span>.</p>
+<p>If <span class="math notranslate nohighlight">\(P \le f_{s,\max}\)</span>, the crate remains at rest so <span class="math notranslate nohighlight">\(a_x=0\)</span> and <span class="math notranslate nohighlight">\(P-f=0\)</span>, which gives <span class="math notranslate nohighlight">\(f_s=P\)</span>. If <span class="math notranslate nohighlight">\(P&gt;f_{s,\max}\)</span>, the crate slides and <span class="math notranslate nohighlight">\(f=f_k=\mu_k N\)</span>.</p>
 <p><strong>(a)</strong> First, we evaluate <span class="math notranslate nohighlight">\(\vec{P}=20\,\mathrm{N}\,\hat{i}\)</span>. Since <span class="math notranslate nohighlight">\(20\,\mathrm{N} &lt; 140\,\mathrm{N}\)</span>, the crate remains at rest and</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -1989,10 +2009,10 @@ f_k &amp;= \mu_k N = (0.60)(196\,\mathrm{N}) = 117\ {\rm N} \approx 120\,\mathrm
 \[ a_x = \frac{P-f_k}{m} = \frac{180\ {\rm N}-117\ {\rm N}}{20\ {\rm kg}} = 3.15\ {\rm m/s^2} \approx 3.2\ {\rm m/s^2}. \]</div>
 <hr class="docutils" />
 <p><strong>The Conclusion</strong></p>
-<p>The maximum static friction is <span class="math notranslate nohighlight">\(f_{s\,\max}=140\,\mathrm{N}\)</span>, so for (a)–(c) the crate can remain at rest and the friction magnitude equals the applied force: <span class="math notranslate nohighlight">\(f=20\,\mathrm{N}\)</span>, <span class="math notranslate nohighlight">\(30\,\mathrm{N}\)</span>, and <span class="math notranslate nohighlight">\(120\,\mathrm{N}\)</span>. In (d), the applied force exceeds <span class="math notranslate nohighlight">\(f_{s\,\max}\)</span> so the crate slides and the friction magnitude is the kinetic value <span class="math notranslate nohighlight">\(f=120\,\mathrm{N}\)</span>. In every case the friction force points opposite <span class="math notranslate nohighlight">\(\vec{P}\)</span>, so <span class="math notranslate nohighlight">\(\vec{f}=-f\,\hat{i}\)</span>.</p>
+<p>The maximum static friction is <span class="math notranslate nohighlight">\(f_{s,\max}=140\,\mathrm{N}\)</span>, so for (a)–(c) the crate can remain at rest and the friction magnitude equals the applied force: <span class="math notranslate nohighlight">\(f=20\,\mathrm{N}\)</span>, <span class="math notranslate nohighlight">\(30\,\mathrm{N}\)</span>, and <span class="math notranslate nohighlight">\(120\,\mathrm{N}\)</span>. In (d), the applied force exceeds <span class="math notranslate nohighlight">\(f_{s,\max}\)</span> so the crate slides and the friction magnitude is the kinetic value <span class="math notranslate nohighlight">\(f=120\,\mathrm{N}\)</span>. In every case the friction force points opposite <span class="math notranslate nohighlight">\(\vec{P}\)</span>, so <span class="math notranslate nohighlight">\(\vec{f}=-f\,\hat{i}\)</span>.</p>
 <hr class="docutils" />
 <p><strong>The Verification</strong></p>
-<p>We recompute <span class="math notranslate nohighlight">\(N\)</span>, <span class="math notranslate nohighlight">\(f_{s\,\max}\)</span>, and <span class="math notranslate nohighlight">\(f_k\)</span> using <span class="math notranslate nohighlight">\(g=9.81,\mathrm{m/s^2}\)</span>, then apply the static-versus-kinetic decision rule for each given value of <span class="math notranslate nohighlight">\(P\)</span>.</p>
+<p>We recompute <span class="math notranslate nohighlight">\(N\)</span>, <span class="math notranslate nohighlight">\(f_{s,\max}\)</span>, and <span class="math notranslate nohighlight">\(f_k\)</span> using <span class="math notranslate nohighlight">\(g=9.81,\mathrm{m/s^2}\)</span>, then apply the static-versus-kinetic decision rule for each given value of <span class="math notranslate nohighlight">\(P\)</span>.</p>
 </section>
 </div>
 <div class="cell docutils container">
@@ -2454,9 +2474,410 @@ a_x &amp;= 9.81\bigl(\sin 13^\circ - 0.20 \cos 13^\circ\bigr) \\
 </section>
 <section id="centripetal-force">
 <h2><span class="section-number">6.3. </span>Centripetal Force<a class="headerlink" href="#centripetal-force" title="Link to this heading">#</a></h2>
+<p>Recall that an object undergoing circular motion must be accelerating because the direction of the object’s velocity is changing.  This centripetal acceleration is given by:</p>
+<div class="math notranslate nohighlight">
+\[ \vec{a}_c = \frac{v^2}{r}\ \hat{r}, \]</div>
+<p>where the magnitude of <span class="math notranslate nohighlight">\(\vec{\rm v}\)</span> is <span class="math notranslate nohighlight">\(v\)</span> (or its speed) and <span class="math notranslate nohighlight">\(r\)</span> is the radius of the curve.  The velocity <span class="math notranslate nohighlight">\(\vec{\rm v}\)</span> is directed along a tangent line to the curve at any instant, which is represented by the unit vector <span class="math notranslate nohighlight">\(\hat{\theta}\)</span> and is perpendicular to the radial unit vector <span class="math notranslate nohighlight">\(\hat{r}\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The velocity can be represented as <span class="math notranslate nohighlight">\(\vec{\rm v} = v\, \hat{\theta}\)</span>, where <span class="math notranslate nohighlight">\(v^2\)</span> is determined through the dot product or</p>
+<div class="math notranslate nohighlight">
+\[ \vec{\rm v} \cdot \vec{\rm v} = v\,\hat{\theta}\ \cdot v\, \hat{\theta} = v^2\]</div>
+</div>
+<p>If we also know the angular speed <span class="math notranslate nohighlight">\(\omega\)</span> (measured in <span class="math notranslate nohighlight">\(\text{rad/s}\)</span>), then we can write the magnitude of the centripetal acceleration <span class="math notranslate nohighlight">\(a_c\)</span> in two ways:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+a_c &amp;= \frac{v^2}{r},\\
+&amp;= r\omega^2,
+\end{align*}\]</div>
+<p>where this also referred to as a radial acceleration.</p>
+<p>An acceleration must be produced by a force, where any force (or combination of forces) can cause a centripetal acceleration.  For example,</p>
+<ul class="simple">
+<li><p>the rope on a tether ball,</p></li>
+<li><p>Earth’s gravity on the Moon,</p></li>
+<li><p>friction between roller skates and the rink floor,</p></li>
+<li><p>a banked roadway’s force on a car, and</p></li>
+<li><p>forces on the tube of a spinning centrifuge.</p></li>
+</ul>
+<p>Any net force causing uniform circular motion is called a <strong>centripetal force</strong>.  The direction of the centripetal force is radial, meaning it is directed in the <span class="math notranslate nohighlight">\(\hat{r}\)</span> that is aligned with the circle’s radius.  The word <code class="docutils literal notranslate"><span class="pre">centripetal</span></code> means ‘center-seeking’, so the direction is toward the <em>center of curvature</em>.</p>
+<p>According to Newton’s 2nd law, the net force is mass times acceleration or <span class="math notranslate nohighlight">\(F_{\rm net} = m a\)</span>.  For uniform circular motion, the acceleration is the centripetal acceleration and the magnitude of the centripetal force is</p>
+<div class="math notranslate nohighlight">
+\[ F_c = m a_c.\]</div>
+<p>Because we had 2 expressions for the centripetal acceleration, we therefore have two expressions for the centripetal force:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-9c8d4270-8ebe-49b2-b5a7-c60f581a9403">
+<span class="eqno">(6.3)<a class="headerlink" href="#equation-9c8d4270-8ebe-49b2-b5a7-c60f581a9403" title="Permalink to this equation">#</a></span>\[\begin{align}
+F_c &amp;= \frac{mv^2}{r}, \\
+&amp;= mr\omega^2.
+\end{align}\]</div>
+<p>When solving problems, you may use whichever expression is more convenient (i.e., whichever has the proper balance of knowns vs. unknowns).  Moreover, you may need to rearrange the equation to fit the given problem.  Suppose that you know the <strong>mass</strong>, <strong>speed</strong>, and <strong>centripetal force</strong> needed to keep an object fixed to the ground, then you could solve the first expression for <span class="math notranslate nohighlight">\(r\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[ r = \frac{mv^2}{F_c}, \]</div>
+<p>to determine the radius required to keep the system in balance.  This implies that for a large centripetal force <span class="math notranslate nohighlight">\(F_c\)</span> requires a small <span class="math notranslate nohighlight">\(r\)</span> for an object with a given mass and speed (see Fig. {numref}`{number}<centripetal-force-fig>).</p>
+<figure class="align-default" id="centripetal-force-fig">
+<img alt="centripetal force diagram" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/846c3f4a23fd04111701ef062e897b8b12c7b498" />
+<figcaption>
+<p><span class="caption-number">Fig. 6.18 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#centripetal-force-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="example-problem-friction-for-car-on-a-flat-curve">
+<h3><span class="section-number">6.3.1. </span><strong>Example Problem</strong>: Friction for Car on a Flat Curve<a class="headerlink" href="#example-problem-friction-for-car-on-a-flat-curve" title="Link to this heading">#</a></h3>
+<div class="exercise etamu-exercise admonition" id="Chapter06/application-of-newtons-laws-exercise-14">
+
+<p class="admonition-title"><span class="caption-number">Exercise 6.15 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p><strong>What Coefficient of Friction Do Cars Need on a Flat Curve?</strong>
+<strong>(a)</strong> Calculate the centripetal force exerted on a <span class="math notranslate nohighlight">\(900\ \text{kg}\)</span> car that negotiates a <span class="math notranslate nohighlight">\(500\ \text{m}\)</span> radius curve at <span class="math notranslate nohighlight">\(25\ \mathrm{m/s}\)</span>.
+<strong>(b)</strong> Assuming an unbanked curve, find the minimum static coefficient of friction between the tires and the road, static friction being the reason that keeps the car from slipping (Figure <a class="reference internal" href="#friction-flat-curve-prob"><span class="std std-numref">6.19</span></a>).</p>
+</div></blockquote>
+<figure class="align-default" id="friction-flat-curve-prob">
+<img alt="centripetal force example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/3b9073156ddf0f5f8e6fe674990b44228050b7cc" />
+<figcaption>
+<p><span class="caption-number">Fig. 6.19 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#friction-flat-curve-prob" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>We model the car as a particle moving in a horizontal circle of radius <span class="math notranslate nohighlight">\(r\)</span>. The road is level (unbanked), so the vertical forces are the normal force <span class="math notranslate nohighlight">\(\vec{N}\)</span> upward and the weight <span class="math notranslate nohighlight">\(\vec{W}\)</span> downward, where they balance. The only horizontal force is static friction <span class="math notranslate nohighlight">\(\vec{f}_s\)</span>, which points toward the center of the circular path and provides the required centripetal acceleration. We assume <em>rolling without slipping</em>, neglect air resistance and, neglect any drivetrain details. We use <span class="math notranslate nohighlight">\(g = 9.81\ \mathrm{m/s^2}\)</span>.</p>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>The car’s inward (radial) acceleration has magnitude <span class="math notranslate nohighlight">\(a_c = v^2/r\)</span>, so the required centripetal force is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+F_c &amp;= ma_c \\
+&amp;= m\frac{v^2}{r}.
+\end{align*}\]</div>
+<p>For a level road, the vertical forces balance so the normal force magnitude is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+N = mg.
+\end{align*}\]</div>
+<p>Static friction can adjust up to a maximum magnitude <span class="math notranslate nohighlight">\(f_{s,\max}=\mu_s N\)</span>. To avoid slipping on an unbanked curve, static friction must be <em>at least</em> the required centripetal force:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+F_c &amp;\le f_{s,\max} = \mu_s N \\
+m\frac{v^2}{r} &amp;\le \mu_s (mg).
+\end{align*}\]</div>
+<p>Canceling <span class="math notranslate nohighlight">\(m\)</span> and solving for the minimum coefficient gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\mu_s \ge \frac{v^2}{rg}.
+\end{align*}\]</div>
+<p><strong>(a)</strong> The car moves at speed <span class="math notranslate nohighlight">\(v\)</span> around a curve of radius <span class="math notranslate nohighlight">\(r\)</span>, so the required centripetal force is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+F_c &amp;= m\frac{v^2}{r} \\
+&amp;= (900\ \mathrm{kg})\frac{(25\ \mathrm{m/s})^2}{500\ \mathrm{m}} \
+&amp;= 1.1\times 10^3\ \mathrm{N}.
+\end{align*}\]</div>
+<p><strong>(b)</strong> The curve is unbanked, so static friction must supply the centripetal force. The minimum static coefficient is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\mu_{s,\min} &amp;= \frac{v^2}{rg} \\
+&amp;= \frac{(25\ \mathrm{m/s})^2}{(500\ \mathrm{m})(9.81\ \mathrm{m/s^2})} \
+&amp;= 0.13.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>For a <span class="math notranslate nohighlight">\(900\ \mathrm{kg}\)</span> car traveling at <span class="math notranslate nohighlight">\(25\ \mathrm{m/s}\)</span> around a level curve of radius <span class="math notranslate nohighlight">\(500\ \mathrm{m}\)</span>, the required inward (centripetal) force is <span class="math notranslate nohighlight">\(F_c = 1100\ \mathrm{N}\)</span>. On an unbanked road, that inward force must come from static friction, so the road-tire system must provide at least <span class="math notranslate nohighlight">\(\mu_s = 0.13\)</span> to prevent slipping. This result follows from the level-road assumption that <span class="math notranslate nohighlight">\(N=mg\)</span> and from requiring that static friction be able to match the needed centripetal force.</p>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>We verify the arithmetic for <span class="math notranslate nohighlight">\(F_c\)</span> and <span class="math notranslate nohighlight">\(\mu_{s,\min}\)</span> using direct numerical evaluation.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">m</span> <span class="o">=</span> <span class="mf">900.0</span>            <span class="c1"># kg</span>
+<span class="n">r</span> <span class="o">=</span> <span class="mf">500.0</span>            <span class="c1"># m</span>
+<span class="n">v</span> <span class="o">=</span> <span class="mf">25.00</span>            <span class="c1"># m/s</span>
+<span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>             <span class="c1"># m/s^2</span>
+
+<span class="n">Fc</span> <span class="o">=</span> <span class="n">m</span> <span class="o">*</span> <span class="n">v</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="n">r</span>
+<span class="n">mu_min</span> <span class="o">=</span> <span class="n">v</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="p">(</span><span class="n">r</span> <span class="o">*</span> <span class="n">g</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;F_c = </span><span class="si">{</span><span class="n">Fc</span><span class="si">:</span><span class="s2">.2g</span><span class="si">}</span><span class="s2"> N&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;mu_s,min = </span><span class="si">{</span><span class="n">mu_min</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</div>
+</section>
+<section id="banked-curves">
+<h3><span class="section-number">6.3.2. </span>Banked Curves<a class="headerlink" href="#banked-curves" title="Link to this heading">#</a></h3>
+<p>For <strong>banked curves</strong>, the slope of the road helps you make the curve (see Fig. <a class="reference internal" href="#banked-curves-fig"><span class="std std-numref">6.20</span></a>); that’s why they have them in Nascar.  The greater the angle <span class="math notranslate nohighlight">\(\theta\)</span> (relative to flat ground), the faster you can take the curve.  In an <em>ideally banked curve</em>, the angle <span class="math notranslate nohighlight">\(\theta\)</span> the angle <span class="math notranslate nohighlight">\(\theta\)</span> allows you to traverse the curve at a certain speed without the aid of friction between the tires and the road.</p>
+<figure class="align-default" id="banked-curves-fig">
+<img alt="centripetal force diagram" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/f7769b424493e80dc210f1f4b10d8cfa6f11767d" />
+<figcaption>
+<p><span class="caption-number">Fig. 6.20 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#banked-curves-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>For <strong>ideal banking</strong>, the net external force equals the horizontal centripetal force in the absence of friction (i.e., <span class="math notranslate nohighlight">\(F_{\rm net} = ma_{c,x}\)</span>).  The components of the normal force <span class="math notranslate nohighlight">\(\vec{N}\)</span> in the horizontal and vertical directions must equal the centripetal force and the weight of the car, respectively.</p>
+<p>Figure <a class="reference internal" href="#banked-curves-fig"><span class="std std-numref">6.20</span></a> shows a free-body diagram for a car on a frictionless banked curve.  <em>However, you should recognize that the setup is very similar to the sliding block on an inclined plane.</em> If the angle <span class="math notranslate nohighlight">\(\theta\)</span> is ideal for the speed and radius, then the net external force equals the necessary centripetal force.</p>
+<p>The only two external forces acting on the car are: (1) its weight <span class="math notranslate nohighlight">\(\vec{w}\)</span> and (2) the normal force <span class="math notranslate nohighlight">\(\vec{N}\)</span> of the road.  These two forces must add to give a net external force that is horizontal toward the center of curvature (to be centripetal) and has magnitude <span class="math notranslate nohighlight">\(mv^2/r\)</span>.  Only the normal force has a horizontal component (recall this from <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter05/newtons-laws.html#common-forces">Common Forces</a>), so we have</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+F_x = N\sin{\theta} - \frac{mv^2}{r} &amp;= 0, \\
+ N\sin{\theta} &amp;= \frac{mv^2}{r}.
+\end{align*}\]</div>
+<p>Because the car does not leave the surface of the road (i.e., no flying cars–yet), the net vertical force must be zero.  The only vertical forces are the vertical component of the normal force and the car’s weight.  Thus, we have</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+F_y = N\cos{\theta} - mg &amp;= 0, \\
+ N\cos{\theta} &amp;= mg.
+\end{align*}\]</div>
+<p>We can combine these two equations to eliminate the normal force <span class="math notranslate nohighlight">\(N\)</span> and get an expression for <span class="math notranslate nohighlight">\(\theta\)</span>.  We have</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{mv^2}{r\sin{\theta}} &amp;= \frac{mg}{\cos{\theta}}, \\
+\tan{\theta} &amp;= \frac{v^2}{rg}.
+\end{align*}\]</div>
+<p>Taking the inverse tangent gives</p>
+<div class="amsmath math notranslate nohighlight" id="equation-743d61be-55e6-476a-93ca-ca117a044482">
+<span class="eqno">(6.4)<a class="headerlink" href="#equation-743d61be-55e6-476a-93ca-ca117a044482" title="Permalink to this equation">#</a></span>\[\begin{align}
+\theta = \tan^{-1}\left(\frac{v^2}{rg}\right).
+\end{align}\]</div>
+<p>This expression shows that a large <span class="math notranslate nohighlight">\(\theta\)</span> is obtained if either <span class="math notranslate nohighlight">\(v\)</span> is larger or <span class="math notranslate nohighlight">\(r\)</span> is small<span class="math notranslate nohighlight">\(.  *Roads must be steeply banked for high speeds and sharp curves.*  Friction allows you to take the curve at greater or lower speed than if the curve were frictionless.  *Note that \)</span>\theta$ does not depend on the mass of the vehicle*.</p>
+<p>Airplanes also make turns by banking, where the lift force acts at right angles to the wing.  When the airplane banks, there is greater lift than required for level flight.  The vertical component of the lift balances the airplanes weight (like the Normal force), and the horizontal component accelerates the plane.</p>
+<section id="example-problem-ideal-speed-banked-tight-curve">
+<h4><span class="section-number">6.3.2.1. </span><strong>Example Problem</strong>: Ideal Speed Banked Tight Curve<a class="headerlink" href="#example-problem-ideal-speed-banked-tight-curve" title="Link to this heading">#</a></h4>
+<div class="exercise etamu-exercise admonition" id="Chapter06/application-of-newtons-laws-exercise-15">
+
+<p class="admonition-title"><span class="caption-number">Exercise 6.16 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>Curves on some test tracks and race courses, such as <a class="reference external" href="https://en.wikipedia.org/wiki/Daytona_International_Speedway">Daytona International Speedway</a>, are very steeply banked. This banking allows the curves to be taken at high speed even without tire friction. Calculate the speed at which a <span class="math notranslate nohighlight">\(100\ \mathrm{m}\)</span> radius curve banked at <span class="math notranslate nohighlight">\(31^\circ\)</span> should be driven if the road is frictionless.</p>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>The car is modeled as a particle moving in uniform circular motion on a rigid, frictionless, banked surface. The road is inclined at a fixed angle <span class="math notranslate nohighlight">\(\theta\)</span> relative to the horizontal, and the car follows a circular path of radius <span class="math notranslate nohighlight">\(r\)</span>. The only forces acting on the car are its weight <span class="math notranslate nohighlight">\(\vec{W}\)</span> and the normal force <span class="math notranslate nohighlight">\(\vec{N}\)</span> from the road. Air resistance and tire friction are neglected. The vertical and horizontal axes are chosen so that vertical is aligned with gravity and horizontal points toward the center of the circular path (i.e., a banked curve, see Fig. <a class="reference internal" href="#banked-curves-fig"><span class="std std-numref">6.20</span></a>). We use <span class="math notranslate nohighlight">\(g = 9.81\ \mathrm{m/s^2}\)</span>.</p>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>For uniform circular motion, the car requires a centripetal acceleration of magnitude <span class="math notranslate nohighlight">\(a_c = v^2/r\)</span> directed horizontally toward the center of the curve.</p>
+<p>The forces acting on the car are its weight <span class="math notranslate nohighlight">\(\vec{W}\)</span> downward and the normal force <span class="math notranslate nohighlight">\(\vec{N}\)</span> perpendicular to the road surface. Resolving the normal force into horizontal and vertical components gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+N\cos\theta &amp;= mg, \\
+N\sin\theta &amp;= m\frac{v^2}{r}.
+\end{align*}\]</div>
+<p>We divide the horizontal equation by the vertical equation to eliminate <span class="math notranslate nohighlight">\(N\)</span> and <span class="math notranslate nohighlight">\(m\)</span>,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\tan\theta = \frac{v^2}{rg}.
+\end{align*}\]</div>
+<p>Then, we solve for the speed <span class="math notranslate nohighlight">\(v\)</span>, which yields</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+v = \sqrt{rg\tan{\theta}}.
+\end{align*}\]</div>
+<p>Substituting the given values,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+v &amp;= \sqrt{(100\ \mathrm{m})(9.81\ \mathrm{m/s^2})\tan(31^\circ)} \
+&amp;= \sqrt{(100)(9.81)(0.601)} \
+&amp;= 24.3\ \mathrm{m/s}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>For a frictionless road banked at <span class="math notranslate nohighlight">\(31^\circ\)</span> with a curve radius of <span class="math notranslate nohighlight">\(100\ \mathrm{m}\)</span>, the ideal speed at which a car can travel without slipping up or down the bank is <span class="math notranslate nohighlight">\(24.3\ \mathrm{m/s}\)</span> (or <span class="math notranslate nohighlight">\(54.4\ \text{mph}\)</span>). At this speed, the horizontal component of the normal force provides exactly the required centripetal force while the vertical component balances the car’s weight.</p>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>The result is verified by directly evaluating the expression <span class="math notranslate nohighlight">\(v=\sqrt{rg\tan\theta}\)</span> numerically using the given parameters.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">r</span> <span class="o">=</span> <span class="mi">100</span>          <span class="c1"># m</span>
+<span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>         <span class="c1"># m/s^2</span>
+<span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="mi">31</span><span class="p">)</span>
+
+<span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">r</span> <span class="o">*</span> <span class="n">g</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">theta</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Ideal speed = </span><span class="si">{</span><span class="n">v</span><span class="si">:</span><span class="s2">.3g</span><span class="si">}</span><span class="s2"> m/s&quot;</span><span class="p">)</span>
+
+<span class="n">mi2meter</span> <span class="o">=</span> <span class="mf">1609.34</span> <span class="c1">#meters in 1 mile</span>
+<span class="n">hr2sec</span> <span class="o">=</span> <span class="mi">3600</span> <span class="c1">#seconds in an hour</span>
+<span class="n">v</span> <span class="o">*=</span><span class="n">hr2sec</span><span class="o">/</span><span class="n">mi2meter</span> 
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Ideal speed = </span><span class="si">{</span><span class="n">v</span><span class="si">:</span><span class="s2">.3g</span><span class="si">}</span><span class="s2"> mph&quot;</span><span class="p">)</span>
+
+</pre></div>
+</div>
+</section>
+</div>
+</section>
+</section>
+<section id="inertial-forces-and-noninertial-frames-the-coriolis-force">
+<h3><span class="section-number">6.3.3. </span>Inertial Forces and Noninertial Frames: The Coriolis Force<a class="headerlink" href="#inertial-forces-and-noninertial-frames-the-coriolis-force" title="Link to this heading">#</a></h3>
+<p>Consider the following:</p>
+<ul class="simple">
+<li><p>taking off in a jet airplane,</p></li>
+<li><p>turning a corner in a car,</p></li>
+<li><p>riding a merry-go-round, and</p></li>
+<li><p>the circular motion of a tropical cyclone.</p></li>
+</ul>
+<p><em>What do they all have in common?</em></p>
+<ul class="simple">
+<li><p>Each exhibits fictitious (non-inertial) forces that merely seem to arise from motion because the observer’s frame of reference is accelerating or rotating.</p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>When taking off in a jet, it feels as if you are being pushed back into the seat as the airplane accelerates.  A physicist would say that you tend to remain stationary while the seat pushes you forward on you.</p></li>
+<li><p>When you make a tight curve in your car to the right, you feel as if you’re thrown (or forced) to the left.  However, you are actually going in a straight line (i.e., Newton’s 1st law), but the car moves to the right.</p></li>
+</ol>
+<p>We can reconcile these points of view by examining the frames of reference.  Passengers instinctively use the car as the frame of reference, whereas physicists would use the Earth instead.  The Earth is nearly an inertial frame fo reference, where all forces have an identifiable physical origin.  Newton’s laws behave just as expected.</p>
+<figure class="align-default" id="car-reference-frame-fig">
+<img alt="inertial force car diagram" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/bd5165634c14f5515e734d7e8f4a28721235f60b" />
+<figcaption>
+<p><span class="caption-number">Fig. 6.21 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#car-reference-frame-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The car is a <strong>noninertial frame of reference</strong> because it is accelerated to the side, where the force to the left sensed by the passengers is an <strong>inertial force</strong> having no physical origin. <em>It is purely due to the inertia of the passenger (i.e., moving in a straight line) rather than some physical cause (e.g., tension, friction, or gravitation).</em></p>
+<hr class="docutils" />
+<p>Consider a rapidly rotating merry-go-round, where you take the merry-go-round as your frame of reference because you rotate together.  When rotating in that noninertial frame of reference, you feel an inertial force that tends to throw you off.  <em>This is often referred to as a centrifugal force because your moving outward.</em></p>
+<figure class="align-default" id="carousel-frame-fig">
+<img alt="rotating carousel diagram" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/4190ed77684e5636bfd0f4b571b3b4d1ffe7b8cc" />
+<figcaption>
+<p><span class="caption-number">Fig. 6.22 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#carousel-frame-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The centrifugal force does not actually exist, where you must hang on tightly to counteract your inertia (i.e., tendency to move in a straight line).  You must hang on to make yourself go in a circle because Newton’s 1st law would have you go off in a straight line.  The force you exert acts toward the center of the circle.</p>
+<p>This inertial effect is put to good use in centrifuges.  A centrifuge spins a sample very rapidly, where the inertial force throws particles outward and hastens their sedimentation.  The greater the angular speed <span class="math notranslate nohighlight">\(\omega\)</span>, the greater the centrifugal force.  What really happens is the inertia of the particles carries them along a line tangent to the circle while the test tube is forced in a circular path by a centripetal force.</p>
+<figure class="align-default" id="centrifuge-inertial-fig">
+<img alt="rotating centrifuge diagram" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/a960e08538ea4b8ce4446a18b16aaa4ae6d96251" />
+<figcaption>
+<p><span class="caption-number">Fig. 6.23 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#centrifuge-inertial-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<p>Consider what happens if something moves in a rotating frame of reference.</p>
+<ul class="simple">
+<li><p><em>What if you slide a ball directly away from the center of the merry-go-round?</em></p></li>
+</ul>
+<p>The ball follows a straight path relative to Earth and a path curved to the right on the merry-go-round’s surface.  A person standing next to the merry-go-round sees the ball moving straight and the merry-go-round rotating underneath it.  The apparent curve to the right is caused by an inertial force called the <strong>Coriolis force</strong>.</p>
+<div class="tip admonition">
+<p class="admonition-title"><a class="reference external" href="https://www.youtube.com/&#64;AtlasPro1"><strong>Atlas Pro</strong></a></p>
+<div class="video-wrapper" style="max-width:560px; margin-left: auto; margin-right: auto;">
+  <div class="video-container" style="aspect-ratio:16/9; position:relative; width:100%;">
+    <iframe src="https://www.youtube.com/embed/HIyBpi7B-dE" allowfullscreen style="width:100%; height:100%; position:absolute; left:0; top:0; border:0;" loading="lazy"></iframe>
+  </div>
+  <div class="video-caption" style="margin-top:0.5em; text-align:left; color:#666;">This video explains the Coriolis effect and how it impacts the movements of clouds (and storms) in our atmosphere.</div>
+</div></div>
+</section>
 </section>
 <section id="drag-force-and-terminal-speed">
 <h2><span class="section-number">6.4. </span>Drag Force and Terminal Speed<a class="headerlink" href="#drag-force-and-terminal-speed" title="Link to this heading">#</a></h2>
+<p>You feel the drag force when you move your hand through water or during a strong wind (i.e., outside the car window).</p>
+<ul class="simple">
+<li><p>The faster you move your hand, the harder it is to move.</p></li>
+<li><p>You feel a smaller drag force when you tilt your hand so only the side goes through the air (i.e., decreased your surface area in the direction of motion).</p></li>
+</ul>
+<section id="drag-forces">
+<h3><span class="section-number">6.4.1. </span>Drag Forces<a class="headerlink" href="#drag-forces" title="Link to this heading">#</a></h3>
+<p>The <strong>drag force</strong> always opposes the motion of an object (like friction).  Unlike simple friction, the drag force is proportional to <em>some function</em> of the velocity of the object in that fluid.  Which function to choose is complicated and depends on several factors:</p>
+<ol class="arabic simple">
+<li><p>shape of the object (its aerodynamics),</p></li>
+<li><p>size,</p></li>
+<li><p>velocity, and</p></li>
+<li><p>the fluid it is in.</p></li>
+</ol>
+<p>For most large objects (e.g., cyclists, cars, baseballs) not moving too slowly, the magnitude of the drag force <span class="math notranslate nohighlight">\(F_{\rm D}\)</span> is proportional to the <em>square of the speed</em> of the object (i.e., <span class="math notranslate nohighlight">\(F_{\rm D}\propto v^2\)</span>).  The full relationship becomes</p>
+<div class="math notranslate nohighlight" id="equation-drag-force-eq">
+<span class="eqno">(6.5)<a class="headerlink" href="#equation-drag-force-eq" title="Link to this equation">#</a></span>\[F_{\rm D} = \frac{1}{2} C\rho Av^2,\]</div>
+<p>where <span class="math notranslate nohighlight">\(C\)</span> is the <a class="reference external" href="https://en.wikipedia.org/wiki/Drag_coefficient"><strong>drag coefficient</strong></a>, <span class="math notranslate nohighlight">\(A\)</span> is the cross-sectional area (i.e., side facing the fluid), and <span class="math notranslate nohighlight">\(\rho\)</span> is the density of the fluid.  <em>Recall that density is mass per unit volume (<span class="math notranslate nohighlight">\(\rho = m/{\rm V}\)</span>).</em></p>
+<ul class="simple">
+<li><p>The more generalized form is <span class="math notranslate nohighlight">\(F_{\rm D} = bv^n\)</span>, where the constant <span class="math notranslate nohighlight">\(b = 0.5C \rho A\)</span> bundles all the constants together.</p></li>
+<li><p>The exponent <span class="math notranslate nohighlight">\(n=2\)</span> comes from our assumption about moving at high speed.  If the object is moving a low speed then <span class="math notranslate nohighlight">\(n=1\)</span>.</p></li>
+</ul>
+<p>Athletes (as well as car designers) seek to reduce the drag force to lower their race times.  Aerodynamic shaping of an automobile can reduce the drag force, and thus increase a car’s gas mileage.  The value of the drag coefficient is determined empirically either by using a wind tunnel or through a complex numerical simulation on a supercomputer.</p>
+<p>The drag coefficient can depend on velocity, but we assume that it is constant here.  Table <numref><code class="docutils literal notranslate"><span class="pre">&lt;number}&lt;drag-coefficient-table&gt;</span></code> lists some typical drag coefficients for a variety of objects, while Figure <numref><code class="docutils literal notranslate"><span class="pre">&lt;number}&lt;drag-shape-fig&gt;</span></code>provides values by the geometric shape.  <em>The drag coefficient is a dimensionless quantity.</em></p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+Typical Values of Drag Coefficient <span class="math notranslate nohighlight">\(C\)</span></label><div class="sd-tab-content docutils">
+<div class="pst-scrollable-table-container"><table class="table" id="drag-coefficient-table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Object</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(C\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Airfoil</p></td>
+<td><p>0.05</p></td>
+</tr>
+<tr class="row-odd"><td><p>Toyota Camry</p></td>
+<td><p>0.28</p></td>
+</tr>
+<tr class="row-even"><td><p>Ford Focus</p></td>
+<td><p>0.32</p></td>
+</tr>
+<tr class="row-odd"><td><p>Honda Civic</p></td>
+<td><p>0.36</p></td>
+</tr>
+<tr class="row-even"><td><p>Ferrari Testarossa</p></td>
+<td><p>0.37</p></td>
+</tr>
+<tr class="row-odd"><td><p>Dodge Ram Pickup</p></td>
+<td><p>0.43</p></td>
+</tr>
+<tr class="row-even"><td><p>Sphere</p></td>
+<td><p>0.45</p></td>
+</tr>
+<tr class="row-odd"><td><p>Hummer H2 SUV</p></td>
+<td><p>0.64</p></td>
+</tr>
+<tr class="row-even"><td><p>Skydiver (feet first)</p></td>
+<td><p>0.70</p></td>
+</tr>
+<tr class="row-odd"><td><p>Bicycle</p></td>
+<td><p>0.90</p></td>
+</tr>
+<tr class="row-even"><td><p>Skydiver (horizontal)</p></td>
+<td><p>1.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>Circular flat plate</p></td>
+<td><p>1.12</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+Drag Coefficients by Geometric Shape</label><div class="sd-tab-content docutils">
+<figure class="align-default" id="drag-shape-fig">
+<img alt="rotating centrifuge diagram" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/14ilf1l.svg/500px-14ilf1l.svg.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 6.24 </span><span class="caption-text">Image Credit: <a class="reference external" href="https://en.wikipedia.org/wiki/Drag_coefficient">Wikipedia:drag_coefficient</a></span><a class="headerlink" href="#drag-shape-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+<p>At highway speeds, over <span class="math notranslate nohighlight">\(50\%\)</span> of the power of the car is used to overcome air drag.  For average conditions (e.g., altitude and temperature), the mos fuel-efficient cruising speed is about <span class="math notranslate nohighlight">\(45\)</span>-<span class="math notranslate nohighlight">\(50\ {\rm mph}\)</span> (or about <span class="math notranslate nohighlight">\(70\)</span>-<span class="math notranslate nohighlight">\(80\ {\rm km/h}\)</span>).</p>
+<p>Substantial research is undertaken to minimize drag in racing sports as well as specific sporting instruments.  For example, the dimples on golf balls are being redesigned as well as the clothes athletes wear.  Most elite swimmers and cyclists shave their body hair to reduce drag and can slice milliseconds of a race time, which can be the difference between a gold or silver medal.</p>
+</section>
+<section id="terminal-velocity">
+<h3><span class="section-number">6.4.2. </span>Terminal Velocity<a class="headerlink" href="#terminal-velocity" title="Link to this heading">#</a></h3>
+<p>Consider a skydiver falling under the influence of gravity.  The 2 forces acting on him are the force of gravity F_g and the drag force F_{\rm D} (ignoring the small buoyant force caused by displacing the air).  The downward force of gravity remains roughly constant (i.e., the altitude above Earth’s surface is much less than Earth’s radius) and does not depend on his velocity.</p>
+<p>However, the magnitude of the drag force increases with velocity squared (assuming his descent is sufficiently fast) until it equals the gravitational force, thus producing a <em>net force of zero</em> and stops accelerating.  At this point the person’s velocity remains constant and he has reached his <strong>terminal velocity</strong> <span class="math notranslate nohighlight">\(v_{\rm T}\)</span>.</p>
+<p>At the terminal velocity,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+F_{\rm net} = F_{\rm D} - F_g &amp;= ma = 0, \\
+F_{\rm D} &amp;= F_g = mg.
+\end{align*}\]</div>
+<p>Using Equation <a class="reference internal" href="#equation-drag-force-eq">(6.5)</a>, we solve for <span class="math notranslate nohighlight">\(v_{\rm T}\)</span></p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{1}{2} C\rho A v_{\rm T}^2 &amp;= mg, \\
+v_{\rm T}^2 &amp;= \frac{2mg}{\rho CA}, \\[6pt]
+v_{\rm T} &amp;= \sqrt{\frac{2mg}{\rho CA}}
+\end{align*}\]</div>
+<p>Assume the density of air is <span class="math notranslate nohighlight">\(\rho = 1.21\ {\rm kg/m^3}\)</span>, and a skydiver with a mass of <span class="math notranslate nohighlight">\(75\ {\rm kg}\)</span> whose cross-sectional area is <span class="math notranslate nohighlight">\(A=0.18\ {\rm m^2}\)</span>.  He has a drag coefficient <span class="math notranslate nohighlight">\(C = 0.70\)</span>, which means we can calculate his terminal velocity <span class="math notranslate nohighlight">\(v_{\rm T}\)</span> as,</p>
+<section id="example-problem-terminal-velocity-of-a-skydiver">
+<h4><span class="section-number">6.4.2.1. </span><strong>Example Problem</strong>: Terminal Velocity of a Skydiver<a class="headerlink" href="#example-problem-terminal-velocity-of-a-skydiver" title="Link to this heading">#</a></h4>
+</section>
+</section>
+<section id="the-calculus-of-velocity-dependent-frictional-forces">
+<h3><span class="section-number">6.4.3. </span>The Calculus of Velocity-Dependent Frictional Forces<a class="headerlink" href="#the-calculus-of-velocity-dependent-frictional-forces" title="Link to this heading">#</a></h3>
+<section id="example-problem-resistive-force-on-a-motorboat">
+<h4><span class="section-number">6.4.3.1. </span><strong>Example Problem</strong>: Resistive Force on a Motorboat<a class="headerlink" href="#example-problem-resistive-force-on-a-motorboat" title="Link to this heading">#</a></h4>
+</section>
+</section>
 </section>
 </section>
 
@@ -2563,8 +2984,27 @@ a_x &amp;= 9.81\bigl(\sin 13^\circ - 0.20 \cos 13^\circ\bigr) \\
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#centripetal-force">6.3. Centripetal Force</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#drag-force-and-terminal-speed">6.4. Drag Force and Terminal Speed</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#centripetal-force">6.3. Centripetal Force</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-friction-for-car-on-a-flat-curve">6.3.1. <strong>Example Problem</strong>: Friction for Car on a Flat Curve</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#banked-curves">6.3.2. Banked Curves</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-ideal-speed-banked-tight-curve">6.3.2.1. <strong>Example Problem</strong>: Ideal Speed Banked Tight Curve</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inertial-forces-and-noninertial-frames-the-coriolis-force">6.3.3. Inertial Forces and Noninertial Frames: The Coriolis Force</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#drag-force-and-terminal-speed">6.4. Drag Force and Terminal Speed</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#drag-forces">6.4.1. Drag Forces</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#terminal-velocity">6.4.2. Terminal Velocity</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-terminal-velocity-of-a-skydiver">6.4.2.1. <strong>Example Problem</strong>: Terminal Velocity of a Skydiver</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-calculus-of-velocity-dependent-frictional-forces">6.4.3. The Calculus of Velocity-Dependent Frictional Forces</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-resistive-force-on-a-motorboat">6.4.3.1. <strong>Example Problem</strong>: Resistive Force on a Motorboat</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
