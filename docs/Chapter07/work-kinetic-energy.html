@@ -39,7 +39,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/metadata_figure.css?v=2463d4a7" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx_iframe.css?v=96c28b52" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=c2a6260a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=52bae50d" />
     <link rel="stylesheet" type="text/css" href="../_static/mycss.css?v=3589796e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -78,6 +78,8 @@
                 gtag('config', 'G-6TWF14MYK4');
             </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Chapter07/work-kinetic-energy';</script>
     <link rel="canonical" href="https://saturnaxis.github.io/IntroPhysics/Chapter07/work-kinetic-energy.html" />
     <link rel="index" title="Index" href="../genindex.html" />
@@ -229,7 +231,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../Chapter10/fixed-axis-rotation.html">10. Fixed-axis Rotation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter11/angular-momentum.html">11. Angular Momentum</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Statics, Graviation, Fluids</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Statics, Gravitation, Fluids</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../Chapter12/static-equilibrium-elasticity.html">12. Static Equilibrium and Elasticity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter13/gravitation.html">13. Gravitation</a></li>
@@ -473,7 +475,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -489,6 +493,43 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#work">7.1. Work</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#work-done-by-constant-forces-and-contact-forces">7.1.1. Work Done by Constant Forces and Contact Forces</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-work-to-push-a-lawn-mower">7.1.1.1. <strong>Example Problem</strong>: Work to Push a Lawn Mower</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-moving-a-couch">7.1.1.2. <strong>Example Problem</strong>: Moving a Couch</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-shelving-a-book">7.1.1.3. <strong>Example Problem</strong>: Shelving a Book</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#work-done-by-forces-that-vary">7.1.2. Work Done by Forces that Vary</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-work-done-by-a-variable-force">7.1.2.1. <strong>Example Problem</strong>: Work Done by a Variable Force</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-work-done-by-a-spring-force">7.1.2.2. <strong>Example Problem</strong>: Work Done by a Spring Force</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kinetic-energy">7.2. Kinetic Energy</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-kinetic-energy-of-an-object">7.2.1. <strong>Example Problem</strong>: Kinetic Energy of an Object</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-kinetic-energy-relative-to-different-frames">7.2.2. <strong>Example Problem</strong>: Kinetic Energy Relative to Different Frames</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-special-names-for-kinetic-energy">7.2.3. <strong>Example Problem</strong>: Special Names for Kinetic Energy</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#work-energy-theorem">7.3. Work-Energy Theorem</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-loop-the-loop">7.3.1. <strong>Example Problem</strong>: Loop-the-Loop</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-determining-a-stopping-force">7.3.2. <strong>Example Problem</strong>: Determining a Stopping Force</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#power">7.4. Power</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-pull-up-power">7.4.1. <strong>Example Problem</strong>: Pull-Up Power</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-power-driving-uphill">7.4.2. <strong>Example Problem</strong>: Power Driving Uphill</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -500,6 +541,368 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="work-and-kinetic-energy">
 <h1><span class="section-number">7. </span>Work and Kinetic Energy<a class="headerlink" href="#work-and-kinetic-energy" title="Link to this heading">#</a></h1>
+<section id="work">
+<h2><span class="section-number">7.1. </span>Work<a class="headerlink" href="#work" title="Link to this heading">#</a></h2>
+<p>In physics, <strong>work</strong> isn’t just about what makes you tired or fatigued.  It has a special definition, which is when energy is transferred to an object due the work done on it.  Work is done when a <em>force</em> acts on something that undergoes a <em>displacement</em> from one position to another.</p>
+<p>Forces can vary as a function of position, and displacements can be along various paths between two points.  We define the increment of work <span class="math notranslate nohighlight">\(dW\)</span> done by a force <span class="math notranslate nohighlight">\(\vec{F}\)</span> acting through an infinitesimal displacement <span class="math notranslate nohighlight">\(d\vec{r}\)</span> as the dot product of these two vectors:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-1bbbd11e-5a18-4956-b241-31a792055ff3">
+<span class="eqno">(7.1)<a class="headerlink" href="#equation-1bbbd11e-5a18-4956-b241-31a792055ff3" title="Permalink to this equation">#</a></span>\[\begin{align}
+dW &amp;= \vec{F}\cdot d\vec{r}, \\
+&amp;= |\vec{F}||d\vec{r}|\cos{\theta},\\
+&amp;= (F)(\Delta r)\cos{\theta}.
+\end{align}\]</div>
+<p>We can find the total work done by adding up the contributions for infinitesimal displacements (along a path between two positions).</p>
+<div class="note admonition">
+<p class="admonition-title">Work Done by a Force</p>
+<p>The work done by a force is the integral of the force with respect to the displacement along the path of the displacement:</p>
+<div class="math notranslate nohighlight" id="equation-work-eqn">
+<span class="eqno">(7.2)<a class="headerlink" href="#equation-work-eqn" title="Link to this equation">#</a></span>\[W_{AB} = \int_A^B \vec{F} \cdot d\vec{r}.\]</div>
+<p>The path  or <a class="reference external" href="https://en.wikipedia.org/wiki/Line_integral">line integral</a> adds up contribution along a path.  Often the path is parameterized by time so there are time dependent functions <span class="math notranslate nohighlight">\(x(t)\)</span> and <span class="math notranslate nohighlight">\(y(t)\)</span> that are separable.  In short, we add up all the components of the force that are parallel to direction of the path (as shown in
+Fig. <a class="reference internal" href="#path-integral-fig"><span class="std std-numref">7.1</span></a>)</p>
+</div>
+<figure class="align-default" id="path-integral-fig">
+<img alt="path integral diagram" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/9c9995964199c3f5b08b06511f31e39dab3fbe0d" />
+<figcaption>
+<p><span class="caption-number">Fig. 7.1 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#path-integral-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Although, we expressed the dot product using the product of magnitudes and the cosine of the angle between them.  If it is convenient, one could use the form of the dot product that includes the vector components.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Recall that the vector components of force are portions of a force along a given direction.  The components can be positive, negative, or zero, depending on whether the force is directed along the path or perpendicular to it.  The maximum work is done either parallel (<span class="math notranslate nohighlight">\(\cos{0}=1\)</span>) or antiparallel (<span class="math notranslate nohighlight">\(\cos{\pi} = -1\)</span>), while <em>zero</em> work is done when the force is perpendicular to the displacement (<span class="math notranslate nohighlight">\(\cos{\theta}=0\)</span>).</p>
+</div>
+<p>The units of work are force multiplied by units of length, which in the SI system is <span class="math notranslate nohighlight">\(\rm N\cdot m\)</span>.  This combination is called a <strong>joule</strong> and is abbreviated as <span class="math notranslate nohighlight">\(\rm J\)</span>.  In the English system (used in the US), the unit of work is the foot-pound (<span class="math notranslate nohighlight">\(\rm ft\cdot lb\)</span>) because the unit of force is the pound (<span class="math notranslate nohighlight">\(\rm lb\)</span>) and the displacement is the foot (<span class="math notranslate nohighlight">\(\rm ft\)</span>).</p>
+<section id="work-done-by-constant-forces-and-contact-forces">
+<h3><span class="section-number">7.1.1. </span>Work Done by Constant Forces and Contact Forces<a class="headerlink" href="#work-done-by-constant-forces-and-contact-forces" title="Link to this heading">#</a></h3>
+<p>The simplest work to evaluate is that done by a constant magnitude force in a non-varying (single) direction.  In this case, the work is only determined by the distance traveled.</p>
+<p>Work is an integral.  Consider a rectangle of height <span class="math notranslate nohighlight">\(h\)</span> and a length <span class="math notranslate nohighlight">\(\ell\)</span>.  If the length is divided in to many (<span class="math notranslate nohighlight">\(n\)</span>) small chunks of length <span class="math notranslate nohighlight">\(\Delta \ell_n\)</span>.  You can visualize that the area of the rectangle can be calculated by summing up all smaller areas, i.e., <span class="math notranslate nohighlight">\(A = \sum_n h\times \Delta \ell_n = h\times \ell.\)</span></p>
+<figure class="align-default" id="work-example-fig">
+<img alt="work example diagram" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/d1b00aaf6c6d16ff44d85125a3f1dc457d4dc351" />
+<figcaption>
+<p><span class="caption-number">Fig. 7.2 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#work-example-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Figure <a class="reference internal" href="#work-example-fig"><span class="std std-numref">7.2</span></a> shows two people exerting a constant force.</p>
+<ul class="simple">
+<li><p>In Fig. <a class="reference internal" href="#work-example-fig"><span class="std std-numref">7.2</span></a>a, the man exerts a constant force <span class="math notranslate nohighlight">\(\vec{F}\)</span> along the handle of a lawn mower, where the horizontal displacement is <span class="math notranslate nohighlight">\(\vec{d}\)</span>.  Thus, the work down on the lawnmower is <span class="math notranslate nohighlight">\(W = \vec{F}\cdot \vec{d} = Fd\cos{\theta}\)</span>, where <span class="math notranslate nohighlight">\(\theta\)</span> is the angle relative to the horizontal.</p></li>
+<li><p>In Figs. <a class="reference internal" href="#work-example-fig"><span class="std std-numref">7.2</span></a>b and <a class="reference internal" href="#work-example-fig"><span class="std std-numref">7.2</span></a>c shows a woman holding a briefcase.  The woman must exert an upward force to balance the weight of the briefcase.  In both cases the work done is zero because either in (b) displacement is zero or in (c) the force is <em>perpendicular</em> to the displacement.</p></li>
+</ul>
+<p>When you mow the grass, other forces act on the lawn mower (i.e., contact force of the ground and gravitational force).  For an object moving on a surface, the displacement <span class="math notranslate nohighlight">\(d\vec{r}\)</span> is <em>tangent</em> (or parallel) to the surface.  The normal force <span class="math notranslate nohighlight">\(\vec{N}\)</span> is perpendicular (or normal) to the surface (i.e., <span class="math notranslate nohighlight">\(\theta = 90^\circ\)</span>).  As a result, we have</p>
+<div class="math notranslate nohighlight">
+\[ dW_N = \vec{N}\cdot d\vec{r} = N(dr)\cos{90^\circ} = 0. \]</div>
+<p>The normal force never does work under these circumstances.  The part of the contact force on the object that is parallel to the surface is friction <span class="math notranslate nohighlight">\(\vec{f}.\)</span>  For an object sliding along the surface, the kinetic friction <span class="math notranslate nohighlight">\(\vec{f}_k\)</span> is opposite to <span class="math notranslate nohighlight">\(d\vec{r}\)</span> so the work done by kinetic friction is <em>negative</em>.  We can write this as an integral by</p>
+<div class="amsmath math notranslate nohighlight" id="equation-7d6148d4-af5e-4199-b09e-7787cc602657">
+<span class="eqno">(7.3)<a class="headerlink" href="#equation-7d6148d4-af5e-4199-b09e-7787cc602657" title="Permalink to this equation">#</a></span>\[\begin{align} W_{\rm fr} = \int_A^B \vec{f}_k \cdot d\vec{r} = -f_k \int_A^B |dr| = -f_k|\ell_{AB}|,
+\end{align}\]</div>
+<p>where <span class="math notranslate nohighlight">\(|\ell_{AB}|\)</span> is the path length on the surface.</p>
+<p>The force of static friction does no work (in the reference frame) because in the case of <em>static</em> friction, there is never any displacement.</p>
+<p>As an <em>external force</em>, static friction can do work.  Static friction can perform</p>
+<ul class="simple">
+<li><p>positive work to prevent someone from sliding off a sled when the <em>sled is moving</em>.</p></li>
+<li><p>negative work (via air resistance) to balance the positive work (via road on the drive wheels) for a car <em>moving down a flat highway</em>.</p></li>
+</ul>
+<p><strong>You need to analyze each particular case to determine the work done by the forces, whether positive, negative, or zero.</strong></p>
+<p>The gravitational force (or weight) of the lawn mower has a constant magnitude <span class="math notranslate nohighlight">\(mg\)</span> and direction, vertically down.  The work done by gravity on the mower is the dot product of its weight and its displacement.  It is convenient to express the <span class="math notranslate nohighlight">\(x\)</span>-axis along the horizontal and the <span class="math notranslate nohighlight">\(y\)</span>-axis vertically up.  Then the gravitational force is <span class="math notranslate nohighlight">\(-mg\hat{j}\)</span>, so the work done  by gravity <span class="math notranslate nohighlight">\(W_g\)</span> over any path <span class="math notranslate nohighlight">\(A\)</span> to <span class="math notranslate nohighlight">\(B\)</span> is</p>
+<div class="amsmath math notranslate nohighlight" id="equation-553ae154-7e15-4d89-88ae-0a7be78b1b34">
+<span class="eqno">(7.4)<a class="headerlink" href="#equation-553ae154-7e15-4d89-88ae-0a7be78b1b34" title="Permalink to this equation">#</a></span>\[\begin{align}
+W_{g,AB} = -mg\hat{j} \cdot \left(\vec{r}_B -\vec{r}_A\right) = -mg(y_B-y_A).
+\end{align}\]</div>
+<p>The work done on an object by gravity depends only on the object’s weight (<span class="math notranslate nohighlight">\(mg\)</span>) and the difference in height <span class="math notranslate nohighlight">\(h = y_B - y_A\)</span> the object is displaced.</p>
+<ul class="simple">
+<li><p>Gravity does <em>negative</em> work that moves upward (i.e., <span class="math notranslate nohighlight">\(y_B &gt; y_A\)</span>), which means you must do <em>positive</em> work (against gravity) to lift an object upward.</p></li>
+<li><p>Alternatively, gravity does positive work on an object that moves downward (<span class="math notranslate nohighlight">\(y_B&lt; y_A\)</span>), which means that you do negative work against gravity to control the descent of the object so it doesn’t drop to the ground.</p></li>
+</ul>
+<section id="example-problem-work-to-push-a-lawn-mower">
+<h4><span class="section-number">7.1.1.1. </span><strong>Example Problem</strong>: Work to Push a Lawn Mower<a class="headerlink" href="#example-problem-work-to-push-a-lawn-mower" title="Link to this heading">#</a></h4>
+</section>
+<section id="example-problem-moving-a-couch">
+<h4><span class="section-number">7.1.1.2. </span><strong>Example Problem</strong>: Moving a Couch<a class="headerlink" href="#example-problem-moving-a-couch" title="Link to this heading">#</a></h4>
+</section>
+<section id="example-problem-shelving-a-book">
+<h4><span class="section-number">7.1.1.3. </span><strong>Example Problem</strong>: Shelving a Book<a class="headerlink" href="#example-problem-shelving-a-book" title="Link to this heading">#</a></h4>
+</section>
+</section>
+<section id="work-done-by-forces-that-vary">
+<h3><span class="section-number">7.1.2. </span>Work Done by Forces that Vary<a class="headerlink" href="#work-done-by-forces-that-vary" title="Link to this heading">#</a></h3>
+<p>Forces may vary in magnitude and direction at different points in space.  Additionally the paths between two points can be curved rather than straight.  The infinitesimal work done by a variable force can be expressed in terms of the force components and the displacement along the path,</p>
+<div class="math notranslate nohighlight">
+\[ dW = \vec{F}\cdot \vec{r} = F_x dx + F_y dy + F_z dz. \]</div>
+<p>Here the force is assumed to be a function of the position, for example,</p>
+<div class="math notranslate nohighlight">
+\[\vec{F}(x,y,z) = F_x \hat{i} + F_y\hat{j} + F_z\hat{k}\]</div>
+<p>and the displacements depend on the equations on the path, or</p>
+<div class="math notranslate nohighlight">
+\[ \vec{r} = dx \hat{i} + dy\hat{j} + dz\hat{k}. \]</div>
+<p>Equation {eq}`work_eqn’ defines the total work as a line integral, which sums the infinitesimal amounts of work along the path.  The physical concept of work is straightforward: (1) you calculate the work for tiny displacements and (2) add them up.</p>
+<p>One very important and widely applicable variable force is the describe by Hooke’s law (i.e., spring force),</p>
+<div class="math notranslate nohighlight">
+\[\vec{F}=-k\Delta \vec{x},\]</div>
+<p>where <span class="math notranslate nohighlight">\(k\)</span> is the spring constant, and <span class="math notranslate nohighlight">\(\Delta\vec{x} = \vec{x}-\vec{x}_{\rm eq}\)</span> is the displacement from the spring’s unstretched (equilibrium) position.  Forces between molecules (or any system undergoing displacements from a stable equilibrium) behave approximately like a spring force.</p>
+<figure class="align-default" id="spring-example-fig">
+<img alt="spring example diagram" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/dcb6cde0c044d333e0337e1c1652c912686b683f" />
+<figcaption>
+<p><span class="caption-number">Fig. 7.3 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#spring-example-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>To calculate the work done by a spring force, we can choose the <span class="math notranslate nohighlight">\(x\)</span>-axis along the length of the spring (see Fig. <a class="reference internal" href="#spring-example-fig"><span class="std std-numref">7.3</span></a>).</p>
+<ul class="simple">
+<li><p>As the length increases, the end position of the spring moves to the right (<span class="math notranslate nohighlight">\(\hat{i}\)</span>) direction, where the equilibrium point <span class="math notranslate nohighlight">\(x_{\rm eq} = 0\)</span>.</p></li>
+<li><p>Conversely as the length decreases (i.e., spring compresses), the end position of the spring moves to the left (<span class="math notranslate nohighlight">\(-\hat{i}\)</span>).</p></li>
+</ul>
+<p>With this choice of coordinates, the spring force has only an <span class="math notranslate nohighlight">\(x\)</span>-component, <span class="math notranslate nohighlight">\(F_x = -kx\)</span>, and the work done when <span class="math notranslate nohighlight">\(x\)</span> changes from <span class="math notranslate nohighlight">\(x_A\)</span> to <span class="math notranslate nohighlight">\(x_B\)</span> is</p>
+<div class="note admonition">
+<p class="admonition-title">Work Done by a Spring Force</p>
+<div class="math notranslate nohighlight" id="equation-work-spring-eqn">
+<span class="eqno">(7.5)<a class="headerlink" href="#equation-work-spring-eqn" title="Link to this equation">#</a></span>\[\begin{split}W_{\text{sp},\ AB} &amp;= \int_A^B F_xdx = -k\int_A^B xdx, \\
+&amp;= -\frac{k}{2}x^2 \biggr\vert_A^B = -\frac{k}{2}\left(x_B^2 - x_A^2\right).\end{split}\]</div>
+<p>The work done by the spring <span class="math notranslate nohighlight">\(W_{AB}\)</span> depends only on the starting and ending points, <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>.  It is independent of the <em>actual</em> path between them, as long as it starts at <span class="math notranslate nohighlight">\(A\)</span> and ends at <span class="math notranslate nohighlight">\(B\)</span>.  The actual path could involve going back and forth before ending.</p>
+</div>
+<p>For the 1D case involving the work done by a spring force, you can readily see the correspondence between the work done by a force and the area under the curve of the force versus its displacement.  In general, a 1D integral is the limit of the sum of infinitesimals (<span class="math notranslate nohighlight">\(f(x)dx\)</span>) represented by rectangles (strips) as shown in Figure <a class="reference internal" href="#area-curve-fig"><span class="std std-numref">7.4</span></a>.</p>
+<figure class="align-default" id="area-curve-fig">
+<img alt="area curve diagram" src="http://hyperphysics.phy-astr.gsu.edu/hbase/imgmth/iarea8.gif" />
+<figcaption>
+<p><span class="caption-number">Fig. 7.4 </span><span class="caption-text">The area under any continuous curve can be approximated by drawing a number of rectangles.  The integral is the limit for an infinite number of rectangles.  Figure Credit: <a class="reference external" href="http://hyperphysics.phy-astr.gsu.edu/hbase/integ.html#c4">Hyperphysics</a></span><a class="headerlink" href="#area-curve-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Since <span class="math notranslate nohighlight">\(F=-kx\)</span> represents a straight line with slope <span class="math notranslate nohighlight">\(-k\)</span>, the area under the curve can be calculated by two triangles, where one area is positive (above the <span class="math notranslate nohighlight">\(x\)</span>-axis) and the other is negative (below the <span class="math notranslate nohighlight">\(x\)</span>-axis).  The magnitude of one of these “areas” is just one-half the triangle’s base times the triangle’s height (e.g., <span class="math notranslate nohighlight">\(A = bh/2\)</span>) along the force axis.  See the code below and the figure it produces.  You verify the areas using simple geometry (i.e., areas of triangles and trapezoids).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">fs</span> <span class="o">=</span> <span class="s1">&#39;large&#39;</span>
+
+<span class="n">k</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1">#spring constant in N/m</span>
+<span class="n">x_rng</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mf">3.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">)</span> <span class="c1">#range of positions</span>
+
+<span class="k">def</span> <span class="nf">spring_force</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">k</span><span class="p">):</span>
+    <span class="k">return</span> <span class="o">-</span><span class="n">k</span><span class="o">*</span><span class="n">x</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span><span class="n">dpi</span><span class="o">=</span><span class="mi">120</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">)</span>
+
+<span class="c1">#Plot force line</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_rng</span><span class="p">,</span><span class="n">spring_force</span><span class="p">(</span><span class="n">x_rng</span><span class="p">,</span><span class="n">k</span><span class="p">),</span><span class="s1">&#39;k--&#39;</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">x_left</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mf">1.5</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">)</span>
+<span class="c1">#fill red area</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">x_left</span><span class="p">,</span><span class="n">spring_force</span><span class="p">(</span><span class="n">x_left</span><span class="p">,</span><span class="n">k</span><span class="p">),</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.25</span><span class="p">)</span>
+<span class="c1">#fill cyan/blue area</span>
+<span class="n">x_right1</span><span class="p">,</span><span class="n">x_right2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mf">1.6</span><span class="p">,</span><span class="mf">0.1</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">1.5</span><span class="p">,</span><span class="mf">3.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">x_right1</span><span class="p">,</span><span class="n">spring_force</span><span class="p">(</span><span class="n">x_right1</span><span class="p">,</span><span class="n">k</span><span class="p">),</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.45</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">x_right2</span><span class="p">,</span><span class="n">spring_force</span><span class="p">(</span><span class="n">x_right2</span><span class="p">,</span><span class="n">k</span><span class="p">),</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;darkblue&#39;</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.25</span><span class="p">)</span>
+<span class="c1">#annotate x-limits</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">1.5</span><span class="p">,</span><span class="o">-</span><span class="mf">0.35</span><span class="p">,</span><span class="s1">&#39;$-x_A$&#39;</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="n">horizontalalignment</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="n">fs</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.5</span><span class="p">,</span><span class="mf">0.15</span><span class="p">,</span><span class="s1">&#39;$x_A$&#39;</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="n">horizontalalignment</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="n">fs</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mf">0.15</span><span class="p">,</span><span class="s1">&#39;$x_B$&#39;</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;darkblue&#39;</span><span class="p">,</span><span class="n">horizontalalignment</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="n">fs</span><span class="p">)</span>
+
+<span class="c1"># ---- annotations ----</span>
+<span class="c1"># f(x) = -kx label with curved arrow</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$F(x)=-kx$&#39;</span><span class="p">,</span><span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">),</span><span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mf">0.4</span><span class="p">,</span> <span class="mf">1.8</span><span class="p">),</span> 
+            <span class="n">fontsize</span><span class="o">=</span><span class="n">fs</span><span class="p">,</span><span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s1">&#39;-&gt;&#39;</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span><span class="n">connectionstyle</span><span class="o">=</span><span class="s1">&#39;arc3,rad=-0.25&#39;</span><span class="p">))</span>
+<span class="c1"># Positive area annotation (left, red)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;Positive</span><span class="se">\n</span><span class="s1">area&#39;</span><span class="p">,</span><span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">),</span><span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mf">2.4</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">),</span>
+            <span class="n">fontsize</span><span class="o">=</span><span class="n">fs</span><span class="p">,</span><span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span><span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s1">&#39;-&gt;&#39;</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span><span class="n">connectionstyle</span><span class="o">=</span><span class="s1">&#39;arc3,rad=0.3&#39;</span><span class="p">))</span>
+<span class="c1"># Negative areas annotation (right, blue)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;Negative</span><span class="se">\n</span><span class="s1">areas&#39;</span><span class="p">,</span><span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="mf">1.2</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.9</span><span class="p">),</span><span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.5</span><span class="p">),</span>
+            <span class="n">fontsize</span><span class="o">=</span><span class="n">fs</span><span class="p">,</span><span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span><span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s1">&#39;-&gt;&#39;</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span><span class="n">connectionstyle</span><span class="o">=</span><span class="s1">&#39;arc3,rad=-0.3&#39;</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="mf">2.2</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.9</span><span class="p">),</span><span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mf">1.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.5</span><span class="p">),</span>
+            <span class="n">fontsize</span><span class="o">=</span><span class="n">fs</span><span class="p">,</span><span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span><span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s1">&#39;-&gt;&#39;</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span><span class="n">connectionstyle</span><span class="o">=</span><span class="s1">&#39;arc3,rad=0.3&#39;</span><span class="p">))</span>
+
+<span class="c1"># ---- spine-centered axes ----</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;left&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_position</span><span class="p">(</span><span class="s1">&#39;zero&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;bottom&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_position</span><span class="p">(</span><span class="s1">&#39;zero&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;right&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="s1">&#39;none&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;top&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="s1">&#39;none&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">set_ticks_position</span><span class="p">(</span><span class="s1">&#39;bottom&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_ticks_position</span><span class="p">(</span><span class="s1">&#39;left&#39;</span><span class="p">)</span>
+
+<span class="c1">#set plot limits</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mf">3.5</span><span class="p">,</span><span class="mf">3.5</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">3.5</span><span class="p">,</span><span class="mf">3.5</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/8c672366651034eecb952db46432f585c60a5284c227017d33933637a916abe5.png" src="../_images/8c672366651034eecb952db46432f585c60a5284c227017d33933637a916abe5.png" />
+</div>
+</div>
+<section id="example-problem-work-done-by-a-variable-force">
+<h4><span class="section-number">7.1.2.1. </span><strong>Example Problem</strong>: Work Done by a Variable Force<a class="headerlink" href="#example-problem-work-done-by-a-variable-force" title="Link to this heading">#</a></h4>
+</section>
+<section id="example-problem-work-done-by-a-spring-force">
+<h4><span class="section-number">7.1.2.2. </span><strong>Example Problem</strong>: Work Done by a Spring Force<a class="headerlink" href="#example-problem-work-done-by-a-spring-force" title="Link to this heading">#</a></h4>
+</section>
+</section>
+</section>
+<section id="kinetic-energy">
+<h2><span class="section-number">7.2. </span>Kinetic Energy<a class="headerlink" href="#kinetic-energy" title="Link to this heading">#</a></h2>
+<p>It’s plausible to suppose that a larger velocity of a body will have a greater effect on other bodies.  This does not depend on the <em>direction</em> of the velocity only its magnitude (i.e., speed).  The larger effect can be translated into a larger potential to do work once the fast moving body strikes a slower one.</p>
+<p>An example is through billiards (or pool), when the fast moving (white) cue ball strikes the blue-colored 2 ball.  The faster the cue, the more the 2 ball is displaced.  The cue ball must have some “energy” that is transferred to the 2 ball.  The cue must have some “energy of motion” as its traveling across the table.  During the 18th century (i.e., 1700s), the “energy of motion” was renamed to <strong>kinetic energy</strong>.</p>
+<div class="tip admonition">
+<p class="admonition-title"><a class="reference external" href="https://www.youtube.com/&#64;physicsdemos"><strong>Physics Demos</strong></a></p>
+<div class="video-wrapper" style="max-width:560px; margin-left: auto; margin-right: auto;">
+  <div class="video-container" style="aspect-ratio:16/9; position:relative; width:100%;">
+    <iframe src="https://www.youtube.com/embed/yFXUzf0ZC7c" allowfullscreen style="width:100%; height:100%; position:absolute; left:0; top:0; border:0;" loading="lazy"></iframe>
+  </div>
+  <div class="video-caption" style="margin-top:0.5em; text-align:left; color:#666;">This video shows some of the basics of collisions between billiard balls.  Notably that you can ignore all other forces during the collision itself.</div>
+</div></div>
+<p>The kinetic energy has two definitions: (1) classical and (2) relativistic.  The relativistic definition only pertains to objects moving near the speed of light, which we are not.  We’ll stick with the classical definition.</p>
+<div class="note admonition">
+<p class="admonition-title">Kinetic Energy</p>
+<p>The kinetic energy <span class="math notranslate nohighlight">\(K\)</span> of a particle is one-half the product of the particle’s mass <span class="math notranslate nohighlight">\(m\)</span> and the square of its speed <span class="math notranslate nohighlight">\(v\)</span>.  We extend this definition to any system of particles by adding up the kinetic energies of all the constituent particles to get</p>
+<div class="amsmath math notranslate nohighlight" id="equation-1dc65610-8c48-4aac-848a-3a48c57f8667">
+<span class="eqno">(7.6)<a class="headerlink" href="#equation-1dc65610-8c48-4aac-848a-3a48c57f8667" title="Permalink to this equation">#</a></span>\[\begin{align}
+K_i &amp;= \frac{1}{2}m_iv_i^2,\quad &amp;({\rm single\ particle}\ i) \\[6pt]
+K &amp;= \sum_{i=1}^N \frac{1}{2}m_iv_i^2.\quad &amp;({\rm system\ of\ particles})
+\end{align}\]</div>
+<p>Recall from <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter05/newtons-laws.html#newton-s-2nd-law-and-momentum">Newton’s 2nd Law and Momentum</a>, we represented Newton’s 2nd law in a different form using the momentum <span class="math notranslate nohighlight">\(\vec{p} = m\vec{v}\)</span>.  We can do the same here using the magnitude <span class="math notranslate nohighlight">\(p = \sqrt{\vec{p}\cdot \vec{p}}= mv\)</span>, where the kinetic energy becomes</p>
+<div class="math notranslate nohighlight">
+\[ K = \frac{1}{2}m\left(\frac{p}{m}\right)^2 = \frac{p^2}{2m}, \]</div>
+<p>which is sometimes more convenient to use.</p>
+</div>
+<p>The units of kinetic energy are the mass times the speed squared, or <span class="math notranslate nohighlight">\(\rm kg\cdot m^2/s^2\)</span>.  Recalling that the units for work are <span class="math notranslate nohighlight">\(\rm N\cdot m = kg\cdot m/s^2\cdot m = kg\cdot m^2/s^2\)</span>, which are joules (<span class="math notranslate nohighlight">\(\rm J\)</span>).  Work and kinetic energy have the same units because they are different forms of the same (more general) physical property.</p>
+<p>Because velocity is a relative quantity, then the kinetic energy must depend on your frame of reference.  A frame of reference is chosen to simplify your calculations and subsequent analysis.</p>
+<ul class="simple">
+<li><p>One frame of reference is external to the system (i.e., where the observations are made).</p></li>
+<li><p>Another frame lies attached to (or moves with) the system as an internal frame.</p></li>
+</ul>
+<p>The equations for relative motion provide a link to calculating the kinetic energy of an object with respect to different frames of reference.  For example,</p>
+<div class="math notranslate nohighlight">
+\[ K = \frac{1}{2}m(v_A \pm v_B)^2 \]</div>
+<p>represents the kinetic energy of an object with speed <span class="math notranslate nohighlight">\(v_A\)</span> that is moving relative to another object <span class="math notranslate nohighlight">\(v_B\)</span>.  Depending on the relative direction of motion, we can determine whether there is a <span class="math notranslate nohighlight">\(+\)</span> or <span class="math notranslate nohighlight">\(-\)</span>.</p>
+<section id="example-problem-kinetic-energy-of-an-object">
+<h3><span class="section-number">7.2.1. </span><strong>Example Problem</strong>: Kinetic Energy of an Object<a class="headerlink" href="#example-problem-kinetic-energy-of-an-object" title="Link to this heading">#</a></h3>
+</section>
+<section id="example-problem-kinetic-energy-relative-to-different-frames">
+<h3><span class="section-number">7.2.2. </span><strong>Example Problem</strong>: Kinetic Energy Relative to Different Frames<a class="headerlink" href="#example-problem-kinetic-energy-relative-to-different-frames" title="Link to this heading">#</a></h3>
+</section>
+<section id="example-problem-special-names-for-kinetic-energy">
+<h3><span class="section-number">7.2.3. </span><strong>Example Problem</strong>: Special Names for Kinetic Energy<a class="headerlink" href="#example-problem-special-names-for-kinetic-energy" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="work-energy-theorem">
+<h2><span class="section-number">7.3. </span>Work-Energy Theorem<a class="headerlink" href="#work-energy-theorem" title="Link to this heading">#</a></h2>
+<p>According to Newton’s 2nd law, the net force (all forces acting on a particle) determines the rate of change in the momentum of the particle or its motion.  Therefore, we should consider the work done by all the forces acting on a particle, or the <strong>net work</strong>, to see what effect it has on the particle’s motion.</p>
+<p>Consider the net work done on a particle that moves over an infinitesimal displacement, or</p>
+<div class="math notranslate nohighlight">
+\[ dW_{\rm net} = \vec{F}_{\rm net}\cdot d\vec{r}. \]</div>
+<p>Newton’s 2nd law tells us that we can transform the net force <span class="math notranslate nohighlight">\(F_{\rm net}\)</span> using the acceleration <span class="math notranslate nohighlight">\(d\vec{\rm v}{dt}\)</span>, so</p>
+<div class="math notranslate nohighlight">
+\[ dW_{\rm net} = m\left(\frac{d\vec{\rm v}}{dt}\right) \cdot d\vec{r}. \]</div>
+<p>Using the definition of velocity, <span class="math notranslate nohighlight">\(d\vec{r} = \vec{\rm v}dt\)</span>, we have:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+dW_{\rm net} &amp;= m\left(\frac{d\vec{\rm v}}{dt}\right) \cdot \vec{\rm v}dt, \\
+&amp;= m\vec{\rm v}\cdot \left(\frac{d\vec{\rm v}}{dt}\right)dt, \\
+&amp;=m\vec{\rm v}\cdot d\vec{\rm v},
+\end{align*}\]</div>
+<p>where also used the commutative property of the dot product.</p>
+<p>We can represent the dot product in terms of Cartesian coordinates and then include the result in the integral between two points <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> on the particle’s trajectory.  This gives us the work done on the particle as:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-6e1771a2-1273-43fc-93c6-3ef1e196f7a1">
+<span class="eqno">(7.7)<a class="headerlink" href="#equation-6e1771a2-1273-43fc-93c6-3ef1e196f7a1" title="Permalink to this equation">#</a></span>\[\begin{align}
+W_{\text{net},AB} &amp;= \int_A^B m v_x\,dv_x + mv_y\,dv_y + mv_z\,dv_z, \\
+&amp;= \frac{1}{2}m \left(v_x^2 + v_y^2 + v_z^2\right)\biggr\vert_A^B, \\
+&amp;= \frac{1}{2}mv^2 \biggr\vert_A^B = K_B - K_A.
+\end{align}\]</div>
+<p>We used the relation for <span class="math notranslate nohighlight">\(v^2 = v_x^2 + v_y^2 + v_z^2\)</span> to reduce the expression and the definition of a particle’s kinetic energy <span class="math notranslate nohighlight">\(K\)</span>.  The result is called the <a class="reference external" href="https://en.wikipedia.org/wiki/Work_(physics)#Work%E2%80%93energy_principle"><strong>work-energy theorem</strong></a>.</p>
+<div class="note admonition">
+<p class="admonition-title">Work-Energy Theorem</p>
+<p>The net work on a particle equals the change in the particle’s kinetic energy:</p>
+<div class="math notranslate nohighlight" id="equation-work-energy-eqn">
+<span class="eqno">(7.8)<a class="headerlink" href="#equation-work-energy-eqn" title="Link to this equation">#</a></span>\[\begin{split}W_{\rm net} &amp;= K_f - K_i, \\
+&amp;= \frac{1}{2}m\left(v_f^2 - v_i^2\right).\end{split}\]</div>
+</div>
+<p>According to this theorem, when an object</p>
+<ul class="simple">
+<li><p>slows down (<span class="math notranslate nohighlight">\(v_f&lt;v_i\)</span>), its final kinetic energy is less than the initial and the net work done on it is <em>negative</em>.</p></li>
+<li><p>speeds up (<span class="math notranslate nohighlight">\(v_f&gt;v_i\)</span>), its final kinetic energy is greater than the initial and the net work on it is <em>positive</em>.</p></li>
+</ul>
+<p>When calculating the net work, you must include <strong>all</strong> the forces acting on an object.  If you leave out any forces or include extra forces not acting on the object, you will get a wrong result.</p>
+<p>The importance of the work-energy theorem is that it makes some calculations much simpler to accomplish compared to solving them with Newton’s 2nd law.  For example, we obtained the acceleration of a block on a frictionless incline as <span class="math notranslate nohighlight">\(a = g\sin{\theta}\)</span> using Newton’s second law in Chapter 5 (<a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter05/newtons-laws.html#example-problem-weight-on-an-incline"><strong>Example Problem</strong>: Weight on an incline</a>). If we also use the kinematic equation for acceleration</p>
+<div class="math notranslate nohighlight">
+\[v_f^2 = v_i^2 +2a(s_f -s_i),\]</div>
+<p>then we could find that</p>
+<div class="math notranslate nohighlight">
+\[v_f^2 = v_i^2 + 2g(s_f - s_i)\sin{\theta},\]</div>
+<p>where <span class="math notranslate nohighlight">\(s_f\)</span> and <span class="math notranslate nohighlight">\(s_i\)</span> are the initial and final positions on the incline, respectively.</p>
+<p>We can also get this result from the work-energy theorem in Equation <a class="reference internal" href="#equation-work-energy-eqn">(7.8)</a>. Since only two forces are acting on the object (gravity and the normal force; normal force doesn’t do work), the net work is just the work done by gravity.  The work <span class="math notranslate nohighlight">\(dW\)</span> is the dot product of gravity (<span class="math notranslate nohighlight">\(\vec{F}_g = -mg\hat{j}\)</span>) and the displacement (<span class="math notranslate nohighlight">\(\vec{r} = dx\hat{i} + dy\hat{j}\)</span>).  Applying the work-energy theorem, we have</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+dW_{\rm net} &amp;= \int_{y_i}^{y_f} \vec{F}_g \cdot d\vec{r} = \int_{y_i}^{y_f} -mg dy \\
+&amp; = -mg\int_{y_i}^{y_f} dy = -mgy \biggr\vert_{y_i}^{y_f}  \\
+&amp;= \boxed{-mg\left(y_f - y_i\right).}
+\end{align*}\]</div>
+<p>We have found the left-hand side of the work-energy theorem, where we now set it equal to the change in kinetic energy:</p>
+<div class="math notranslate nohighlight">
+\[ -mg\left(y_f - y_i\right) = \frac{1}{2}m\left(v_f^2 - v_i^2\right). \]</div>
+<p>In <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter05/newtons-laws.html#example-problem-weight-on-an-incline"><strong>Example Problem</strong>: Weight on an incline</a> the change in height (<span class="math notranslate nohighlight">\(y_f-y_i\)</span>) forms the short side of a right triangle with the same angle <span class="math notranslate nohighlight">\(\theta\)</span> from the incline.  The hypotenuse of the triangle is (<span class="math notranslate nohighlight">\(s_f-s_i\)</span>) along the incline.  Therefore, we can show that the short side of the triangle is <span class="math notranslate nohighlight">\((y_f - y_i) = -(s_f-s_i)\sin{\theta}\)</span> using our <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/_images/2929ec27f42b954c9391c8a652a6a707419d73752e00c8ed9e2cbe2abe5ef8b7.png">trigonometric identity</a> for <span class="math notranslate nohighlight">\(\sin{\theta}\)</span>.  <em>Note: <span class="math notranslate nohighlight">\(s\)</span> is defined to increase down the incline (to the left in the figure), which introduces the minus sign.</em> We can then obtain</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+mg\left(s_f-s_i\right)\sin{\theta} &amp;= \frac{1}{2}m\left(v_f^2 - v_i^2\right), \\
+v_f^2 &amp;= v_i^2 + 2g\left(s_f-s_i\right)\sin{\theta}.\ \checkmark
+\end{align*}\]</div>
+<p><em>What is gained by using the work-energy theorem?</em></p>
+<p>For a frictionless <em>plane</em>, not much.  Newton’s 2nd law is easy to solve only for this particular case, whereas the work-energy theorem gives the final speed for any shaped frictionless surface.  For an arbitrary curved surface, the normal is not constant, where it may be difficult or impossible to solve analytically using Newton’s 2nd law.</p>
+<p>For motion along a surface, the normal force never does any work because it’s perpendicular to the displacement.  A calculation using the work-energy theorem avoids this difficulty and applies to more general solutions.</p>
+<div class="admonition-problem-solving-strategy admonition">
+<p class="admonition-title">Problem Solving Strategy</p>
+<p>Work-Energy Theorem</p>
+<ol class="arabic simple">
+<li><p>Draw a free-body diagram for each force on the object.</p></li>
+<li><p>Determine whether or not each force <em>does work</em> over the displacement in the diagram.  Be sure to keep any <span class="math notranslate nohighlight">\(+\)</span> or <span class="math notranslate nohighlight">\(-\)</span> in the work done.</p></li>
+<li><p>Add up the total amounts of work done by each force.</p></li>
+<li><p>Set this total work <span class="math notranslate nohighlight">\(W\)</span> equal to the change in kinetic energy <span class="math notranslate nohighlight">\(\Delta K\)</span> and solve for any unknown parameter.</p></li>
+<li><p><strong>Check your answers.</strong></p>
+<ul class="simple">
+<li><p>If the object is traveling at a constant speed or zero acceleration, the total work should be zero and match the change in kinetic energy.</p></li>
+<li><p>If the total work is positive, the object must have sped up or increased its kinetic energy.</p></li>
+<li><p>If the total work is negative, the object must have slowed down or decreased its kinetic energy.</p></li>
+</ul>
+</li>
+</ol>
+</div>
+<section id="example-problem-loop-the-loop">
+<h3><span class="section-number">7.3.1. </span><strong>Example Problem</strong>: Loop-the-Loop<a class="headerlink" href="#example-problem-loop-the-loop" title="Link to this heading">#</a></h3>
+</section>
+<section id="example-problem-determining-a-stopping-force">
+<h3><span class="section-number">7.3.2. </span><strong>Example Problem</strong>: Determining a Stopping Force<a class="headerlink" href="#example-problem-determining-a-stopping-force" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="power">
+<h2><span class="section-number">7.4. </span>Power<a class="headerlink" href="#power" title="Link to this heading">#</a></h2>
+<p>Thus far, we have not included how work or energy can change over time.  We express the relation between work done and the time interval in doing it by introducing the concept of <strong>power</strong>.  Since work can vary as a function of time, we first define <strong>average power</strong> as the work done <span class="math notranslate nohighlight">\(\Delta W\)</span> during a time interval <span class="math notranslate nohighlight">\(\Delta t\)</span>, or</p>
+<div class="amsmath math notranslate nohighlight" id="equation-f62c3d86-11bf-4f1e-9183-25078e470c29">
+<span class="eqno">(7.9)<a class="headerlink" href="#equation-f62c3d86-11bf-4f1e-9183-25078e470c29" title="Permalink to this equation">#</a></span>\[\begin{align}
+P_{\rm ave} = \frac{\Delta W}{\Delta t}.
+\end{align}\]</div>
+<p>We define the <strong>instantaneous power</strong> as the work done <span class="math notranslate nohighlight">\(dW\)</span> over an infinitesimal time <span class="math notranslate nohighlight">\(dt\)</span>.</p>
+<div class="admonition-power admonition">
+<p class="admonition-title">Power</p>
+<p>Power is defined as the rate of doing work, or the limit of the average power for time intervals approaching zero,</p>
+<div class="amsmath math notranslate nohighlight" id="equation-9ff33fb1-d558-4c41-97b4-913755bda234">
+<span class="eqno">(7.10)<a class="headerlink" href="#equation-9ff33fb1-d558-4c41-97b4-913755bda234" title="Permalink to this equation">#</a></span>\[\begin{align}
+P = \frac{dW}{dt}.
+\end{align}\]</div>
+</div>
+<p>If the power is constant over a time interval, the average power for that interval equals the instantaneous power, and the work done by the agent supplying the power is determined as <span class="math notranslate nohighlight">\(W = P\Delta t\)</span>.  If the power during the interval varies with time, then the work is the time integral of the power,</p>
+<div class="math notranslate nohighlight">
+\[ W = \int P dt. \]</div>
+<p>The work-energy theorem relates how work can be transformed into kinetic energy.  We can also define power as the rate of transfer of energy.  Work and energy are measured in units of joules (<span class="math notranslate nohighlight">\(\rm J\)</span>), so power is measured in units of joules per second (<span class="math notranslate nohighlight">\(\rm J/s\)</span>), which has been given the SI name Watts (<span class="math notranslate nohighlight">\(1\ {\rm J/s} = 1\ {\rm W}\)</span>).  Another common unit for expressing power capability of everyday devices is horsepower: <span class="math notranslate nohighlight">\(1\ {\rm hp} = 746\ {\rm W}\)</span>.</p>
+<p>The power involved in moving a body can also be expressed in terms of the forces acting on it.  If a force <span class="math notranslate nohighlight">\(\vec{F}\)</span> acts on a body that is displaced by <span class="math notranslate nohighlight">\(d\vec{r}\)</span> in a time <span class="math notranslate nohighlight">\(dt\)</span>, the power expended by the force is</p>
+<div class="amsmath math notranslate nohighlight" id="equation-06d27efe-2830-43bd-9882-d992fa717595">
+<span class="eqno">(7.11)<a class="headerlink" href="#equation-06d27efe-2830-43bd-9882-d992fa717595" title="Permalink to this equation">#</a></span>\[\begin{align}
+P &amp;= \frac{dW}{dt} = \frac{\vec{F}\cdot d\vec{r}}{dt}, \\
+&amp;=\vec{F}\cdot \left( \frac{d\vec{r}}{dt}\right) = \vec{F} \cdot \vec{\rm v},
+\end{align}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\vec{\rm v}\)</span> is the velocity of the body.</p>
+<section id="example-problem-pull-up-power">
+<h3><span class="section-number">7.4.1. </span><strong>Example Problem</strong>: Pull-Up Power<a class="headerlink" href="#example-problem-pull-up-power" title="Link to this heading">#</a></h3>
+</section>
+<section id="example-problem-power-driving-uphill">
+<h3><span class="section-number">7.4.2. </span><strong>Example Problem</strong>: Power Driving Uphill<a class="headerlink" href="#example-problem-power-driving-uphill" title="Link to this heading">#</a></h3>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -556,6 +959,50 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#work">7.1. Work</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#work-done-by-constant-forces-and-contact-forces">7.1.1. Work Done by Constant Forces and Contact Forces</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-work-to-push-a-lawn-mower">7.1.1.1. <strong>Example Problem</strong>: Work to Push a Lawn Mower</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-moving-a-couch">7.1.1.2. <strong>Example Problem</strong>: Moving a Couch</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-shelving-a-book">7.1.1.3. <strong>Example Problem</strong>: Shelving a Book</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#work-done-by-forces-that-vary">7.1.2. Work Done by Forces that Vary</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-work-done-by-a-variable-force">7.1.2.1. <strong>Example Problem</strong>: Work Done by a Variable Force</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-work-done-by-a-spring-force">7.1.2.2. <strong>Example Problem</strong>: Work Done by a Spring Force</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kinetic-energy">7.2. Kinetic Energy</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-kinetic-energy-of-an-object">7.2.1. <strong>Example Problem</strong>: Kinetic Energy of an Object</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-kinetic-energy-relative-to-different-frames">7.2.2. <strong>Example Problem</strong>: Kinetic Energy Relative to Different Frames</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-special-names-for-kinetic-energy">7.2.3. <strong>Example Problem</strong>: Special Names for Kinetic Energy</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#work-energy-theorem">7.3. Work-Energy Theorem</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-loop-the-loop">7.3.1. <strong>Example Problem</strong>: Loop-the-Loop</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-determining-a-stopping-force">7.3.2. <strong>Example Problem</strong>: Determining a Stopping Force</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#power">7.4. Power</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-pull-up-power">7.4.1. <strong>Example Problem</strong>: Pull-Up Power</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-power-driving-uphill">7.4.2. <strong>Example Problem</strong>: Power Driving Uphill</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
