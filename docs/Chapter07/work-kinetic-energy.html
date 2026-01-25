@@ -501,8 +501,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#work">7.1. Work</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#work-done-by-constant-forces-and-contact-forces">7.1.1. Work Done by Constant Forces and Contact Forces</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-work-to-push-a-lawn-mower">7.1.1.1. <strong>Example Problem</strong>: Work to Push a Lawn Mower</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-moving-a-couch">7.1.1.2. <strong>Example Problem</strong>: Moving a Couch</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-shelving-a-book">7.1.1.3. <strong>Example Problem</strong>: Shelving a Book</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-shelving-a-book">7.1.1.2. <strong>Example Problem</strong>: Shelving a Book</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#work-done-by-forces-that-vary">7.1.2. Work Done by Forces that Vary</a><ul class="nav section-nav flex-column">
@@ -545,8 +544,8 @@ document.write(`
 <h2><span class="section-number">7.1. </span>Work<a class="headerlink" href="#work" title="Link to this heading">#</a></h2>
 <p>In physics, <strong>work</strong> isn’t just about what makes you tired or fatigued.  It has a special definition, which is when energy is transferred to an object due the work done on it.  Work is done when a <em>force</em> acts on something that undergoes a <em>displacement</em> from one position to another.</p>
 <p>Forces can vary as a function of position, and displacements can be along various paths between two points.  We define the increment of work <span class="math notranslate nohighlight">\(dW\)</span> done by a force <span class="math notranslate nohighlight">\(\vec{F}\)</span> acting through an infinitesimal displacement <span class="math notranslate nohighlight">\(d\vec{r}\)</span> as the dot product of these two vectors:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c88452cf-daef-4c6b-9b13-0f963e54ba52">
-<span class="eqno">(7.1)<a class="headerlink" href="#equation-c88452cf-daef-4c6b-9b13-0f963e54ba52" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f04c30ec-3d16-46ca-9ce4-926c5ba6b329">
+<span class="eqno">(7.1)<a class="headerlink" href="#equation-f04c30ec-3d16-46ca-9ce4-926c5ba6b329" title="Permalink to this equation">#</a></span>\[\begin{align}
 dW &amp;= \vec{F}\cdot d\vec{r}, \\
 &amp;= |\vec{F}||d\vec{r}|\cos{\theta},\\
 &amp;= (F)(\Delta r)\cos{\theta}.
@@ -591,8 +590,8 @@ Fig. <a class="reference internal" href="#path-integral-fig"><span class="std st
 <div class="math notranslate nohighlight">
 \[ dW_N = \vec{N}\cdot d\vec{r} = N(dr)\cos{90^\circ} = 0. \]</div>
 <p>The normal force never does work under these circumstances.  The part of the contact force on the object that is parallel to the surface is friction <span class="math notranslate nohighlight">\(\vec{f}.\)</span>  For an object sliding along the surface, the kinetic friction <span class="math notranslate nohighlight">\(\vec{f}_k\)</span> is opposite to <span class="math notranslate nohighlight">\(d\vec{r}\)</span> so the work done by kinetic friction is <em>negative</em>.  We can write this as an integral by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ffb66c7c-3a78-4d39-8cae-f8755d4755e8">
-<span class="eqno">(7.3)<a class="headerlink" href="#equation-ffb66c7c-3a78-4d39-8cae-f8755d4755e8" title="Permalink to this equation">#</a></span>\[\begin{align} W_{\rm fr} = \int_A^B \vec{f}_k \cdot d\vec{r} = -f_k \int_A^B |dr| = -f_k|\ell_{AB}|,
+<div class="amsmath math notranslate nohighlight" id="equation-9aa5fd38-ef49-4f65-b3b1-e539c898b019">
+<span class="eqno">(7.3)<a class="headerlink" href="#equation-9aa5fd38-ef49-4f65-b3b1-e539c898b019" title="Permalink to this equation">#</a></span>\[\begin{align} W_{\rm fr} = \int_A^B \vec{f}_k \cdot d\vec{r} = -f_k \int_A^B |dr| = -f_k|\ell_{AB}|,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(|\ell_{AB}|\)</span> is the path length on the surface.</p>
 <p>The force of static friction does no work (in the reference frame) because in the case of <em>static</em> friction, there is never any displacement.</p>
@@ -603,8 +602,8 @@ Fig. <a class="reference internal" href="#path-integral-fig"><span class="std st
 </ul>
 <p><strong>You need to analyze each particular case to determine the work done by the forces, whether positive, negative, or zero.</strong></p>
 <p>The gravitational force (or weight) of the lawn mower has a constant magnitude <span class="math notranslate nohighlight">\(mg\)</span> and direction, vertically down.  The work done by gravity on the mower is the dot product of its weight and its displacement.  It is convenient to express the <span class="math notranslate nohighlight">\(x\)</span>-axis along the horizontal and the <span class="math notranslate nohighlight">\(y\)</span>-axis vertically up.  Then the gravitational force is <span class="math notranslate nohighlight">\(-mg\hat{j}\)</span>, so the work done  by gravity <span class="math notranslate nohighlight">\(W_g\)</span> over any path <span class="math notranslate nohighlight">\(A\)</span> to <span class="math notranslate nohighlight">\(B\)</span> is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0b5fd9cb-84c7-4ee1-8db2-80e69aa9eae9">
-<span class="eqno">(7.4)<a class="headerlink" href="#equation-0b5fd9cb-84c7-4ee1-8db2-80e69aa9eae9" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-678f4bf9-7a6a-4112-866f-a64ac99ba79c">
+<span class="eqno">(7.4)<a class="headerlink" href="#equation-678f4bf9-7a6a-4112-866f-a64ac99ba79c" title="Permalink to this equation">#</a></span>\[\begin{align}
 W_{g,AB} = -mg\hat{j} \cdot \left(\vec{r}_B -\vec{r}_A\right) = -mg(y_B-y_A).
 \end{align}\]</div>
 <p>The work done on an object by gravity depends only on the object’s weight (<span class="math notranslate nohighlight">\(mg\)</span>) and the difference in height <span class="math notranslate nohighlight">\(h = y_B - y_A\)</span> the object is displaced.</p>
@@ -614,12 +613,177 @@ W_{g,AB} = -mg\hat{j} \cdot \left(\vec{r}_B -\vec{r}_A\right) = -mg(y_B-y_A).
 </ul>
 <section id="example-problem-work-to-push-a-lawn-mower">
 <h4><span class="section-number">7.1.1.1. </span><strong>Example Problem</strong>: Work to Push a Lawn Mower<a class="headerlink" href="#example-problem-work-to-push-a-lawn-mower" title="Link to this heading">#</a></h4>
+<div class="exercise etamu-exercise admonition" id="Chapter07/work-kinetic-energy-exercise-0">
+
+<p class="admonition-title"><span class="caption-number">Exercise 7.1 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>How much work is done on the lawn mower by the person in Figure <a class="reference internal" href="#work-example-fig"><span class="std std-numref">7.2</span></a> (a) if he exerts a constant force of <span class="math notranslate nohighlight">\(75\ \mathrm{N}\)</span> at an angle <span class="math notranslate nohighlight">\(35^\circ\)</span> below the horizontal and pushes the mower <span class="math notranslate nohighlight">\(25\ \mathrm{m}\)</span> on level ground?</p>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>The lawn mower moves on level ground, so its displacement is purely horizontal.  The applied force has a constant magnitude and direction, making a fixed angle <span class="math notranslate nohighlight">\(\theta\)</span> with the displacement.  Only the component of the applied force parallel to the displacement contributes to the work done on the mower.  Because both the force and displacement are constant, the definition of work for a constant force applies.</p>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>The work done by a constant force is defined as the dot product of the force and the displacement,</p>
+<div class="math notranslate nohighlight">
+\[ W = F d \cos\theta. \]</div>
+<p>Here, <span class="math notranslate nohighlight">\(F\)</span> is the magnitude of the applied force, <span class="math notranslate nohighlight">\(d\)</span> is the magnitude of the displacement, and <span class="math notranslate nohighlight">\(\theta\)</span> is the angle between them.</p>
+<p>Substituting the given values, we find</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*} 
+W &amp;= (75\ \mathrm{N})(25\ \mathrm{m})\cos(35^\circ),\\
+&amp;= 1.54\times10^3\ \mathrm{J}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>The work done on the lawn mower by the applied force is <span class="math notranslate nohighlight">\(\boxed{W = 1500\ \mathrm{J}}.\)</span>  The result is reported with appropriate significant figures based on the given quantities.</p>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>We verify the analytic result by computing the work numerically using Python.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">F</span> <span class="o">=</span> <span class="mf">75.0</span>       <span class="c1"># N</span>
+<span class="n">d</span> <span class="o">=</span> <span class="mf">25.0</span>       <span class="c1"># m</span>
+<span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="mf">35.0</span><span class="p">)</span>
+
+<span class="n">W</span> <span class="o">=</span> <span class="n">F</span> <span class="o">*</span> <span class="n">d</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The work done on the lawn mower is </span><span class="si">%d</span><span class="s2"> N.&quot;</span> <span class="o">%</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">W</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">))</span> <span class="c1">#The -2 forces it to round to the hundreds place.</span>
+</pre></div>
+</div>
 </section>
-<section id="example-problem-moving-a-couch">
-<h4><span class="section-number">7.1.1.2. </span><strong>Example Problem</strong>: Moving a Couch<a class="headerlink" href="#example-problem-moving-a-couch" title="Link to this heading">#</a></h4>
+</div>
+<div class="exercise etamu-exercise admonition" id="Chapter07/work-kinetic-energy-exercise-1">
+
+<p class="admonition-title"><span class="caption-number">Exercise 7.2 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>You decide to move your couch to a new position on your horizontal living room floor. The normal force on the couch is <span class="math notranslate nohighlight">\(1\ \mathrm{kN}\)</span> and the coefficient of friction is <span class="math notranslate nohighlight">\(0.6\)</span>.  (a) You first push the couch <span class="math notranslate nohighlight">\(3\ \mathrm{m}\)</span> parallel to a wall and then <span class="math notranslate nohighlight">\(1\ \mathrm{m}\)</span> perpendicular to the wall (<span class="math notranslate nohighlight">\(A\)</span> to <span class="math notranslate nohighlight">\(B\)</span> in Figure <a class="reference internal" href="#couch-example-fig"><span class="std std-numref">7.3</span></a>). How much work is done by the frictional force?  (b) You don’t like the new position, so you move the couch straight back to its original position (<span class="math notranslate nohighlight">\(B\)</span> to <span class="math notranslate nohighlight">\(A\)</span> in Figure <a class="reference internal" href="#couch-example-fig"><span class="std std-numref">7.3</span></a>). What was the total work done <em>against</em> friction moving the couch away from its original position and back again?</p>
+</div></blockquote>
+<figure class="align-default" id="couch-example-fig">
+<img alt="couch work diagram" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/4efbd01e2e9f9f3992fef13f69a8810c220e5a07" />
+<figcaption>
+<p><span class="caption-number">Fig. 7.3 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#couch-example-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>The couch moves on a horizontal surface, so the normal force is constant.  The kinetic friction force has constant magnitude and always opposes the direction of motion.  The magnitude of the kinetic friction force is given by <span class="math notranslate nohighlight">\(f_k = \mu_k N\)</span>.  The work done by friction is negative because the friction force is opposite the displacement.  Path length, not displacement, determines the work done by friction.</p>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>The magnitude of the kinetic friction force is</p>
+<div class="math notranslate nohighlight">
+\[ f_k = \mu_k N. \]</div>
+<p>Substituting the given values,</p>
+<div class="math notranslate nohighlight">
+\[ f_k = (0.6)(1.0\times10^3\ \mathrm{N}) = 600\ \mathrm{N}.\]</div>
+<hr class="docutils" />
+<p><strong>(a)</strong>  The total path length from <span class="math notranslate nohighlight">\(A\)</span> to <span class="math notranslate nohighlight">\(B\)</span> is the sum of the two straight segments,</p>
+<div class="math notranslate nohighlight">
+\[ d_{AB} = 3\ \mathrm{m} + 1\ \mathrm{m} = 4\ \mathrm{m}.\]</div>
+<p>The work done by friction is therefore</p>
+<div class="math notranslate nohighlight">
+\[ W_{\mathrm{fr},AB} = - f_k d_{AB}. \]</div>
+<p>Substituting values,</p>
+<div class="math notranslate nohighlight">
+\[W_{\mathrm{fr},AB} = -(600\ \mathrm{N})(4\ \mathrm{m}) = -2400\ \mathrm{J}.\]</div>
+<hr class="docutils" />
+<p><strong>(b)</strong> The return path from <span class="math notranslate nohighlight">\(B\)</span> to <span class="math notranslate nohighlight">\(A\)</span> is the hypotenuse of a right triangle with legs <span class="math notranslate nohighlight">\(3\ \mathrm{m}\)</span> and <span class="math notranslate nohighlight">\(1\ \mathrm{m}\)</span>, so its length is</p>
+<div class="math notranslate nohighlight">
+\[ d_{BA} = \sqrt{(3\ \mathrm{m})^2 + (1\ \mathrm{m})^2} = \sqrt{10}\ \mathrm{m}.\]</div>
+<p>The total path length for the round trip is</p>
+<div class="math notranslate nohighlight">
+\[ d_{\text{total}} = 3\ \mathrm{m} + 1\ \mathrm{m} + \sqrt{10}\ \mathrm{m}. \]</div>
+<p>The total work done <em>against</em> friction is the negative of the work done by friction,</p>
+<div class="math notranslate nohighlight">
+\[ W_{\text{against}} = f_k d_{\text{total}}. \]</div>
+<p>Substituting values,</p>
+<div class="math notranslate nohighlight">
+\[ W_{\text{against}} = (600\ \mathrm{N})(3 + 1 + \sqrt{10})\ \mathrm{m}. \]</div>
+<p>Evaluating this expression gives</p>
+<div class="math notranslate nohighlight">
+\[ W_{\text{against}} = 4300\ \mathrm{J}. \]</div>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>The work done by friction in moving the couch from <span class="math notranslate nohighlight">\(A\)</span> to <span class="math notranslate nohighlight">\(B\)</span> is <span class="math notranslate nohighlight">\(\boxed{W_{\mathrm{fr}} = -2400\ \mathrm{J}}.\)</span> The total work done <em>against</em> friction in moving the couch away from its original position and back again is <span class="math notranslate nohighlight">\(\boxed{W_{\text{against}} = 4300\ \mathrm{J}}.\)</span></p>
+<p>This result shows that friction is a nonconservative force, since the total work depends on the path taken even when the initial and final positions are the same.</p>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>We verify the total work done against friction by computing the friction force and total path length numerically.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">mu</span> <span class="o">=</span> <span class="mf">0.6</span>
+<span class="n">N</span> <span class="o">=</span> <span class="mf">1.0e3</span>  <span class="c1"># N</span>
+
+<span class="n">fk</span> <span class="o">=</span> <span class="n">mu</span> <span class="o">*</span> <span class="n">N</span>
+<span class="n">d_total</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="n">W_against</span> <span class="o">=</span> <span class="n">fk</span> <span class="o">*</span> <span class="n">d_total</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The total work done against friction is </span><span class="si">%.1e</span><span class="s2"> J.&quot;</span> <span class="o">%</span> <span class="n">W_against</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</div>
 </section>
 <section id="example-problem-shelving-a-book">
-<h4><span class="section-number">7.1.1.3. </span><strong>Example Problem</strong>: Shelving a Book<a class="headerlink" href="#example-problem-shelving-a-book" title="Link to this heading">#</a></h4>
+<h4><span class="section-number">7.1.1.2. </span><strong>Example Problem</strong>: Shelving a Book<a class="headerlink" href="#example-problem-shelving-a-book" title="Link to this heading">#</a></h4>
+<div class="exercise etamu-exercise admonition" id="Chapter07/work-kinetic-energy-exercise-2">
+
+<p class="admonition-title"><span class="caption-number">Exercise 7.3 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>You lift an oversized library book, weighing <span class="math notranslate nohighlight">\(20\ \mathrm{N}\)</span>, <span class="math notranslate nohighlight">\(1\ \mathrm{m}\)</span> vertically down from a shelf, and carry it <span class="math notranslate nohighlight">\(3\ \mathrm{m}\)</span> horizontally to a table (Figure <a class="reference internal" href="#bookshelf-example-fig"><span class="std std-numref">7.4</span></a>).  (a) How much work does gravity do on the book?  (b) When you’re finished, you move the book in a straight line back to its original place on the shelf. What was the total work done <em>against gravity</em>, moving the book away from its original position on the shelf and back again?</p>
+</div></blockquote>
+<figure class="align-default" id="bookshelf-example-fig">
+<img alt="shelving work diagram" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/d1b00aaf6c6d16ff44d85125a3f1dc457d4dc351" />
+<figcaption>
+<p><span class="caption-number">Fig. 7.4 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#bookshelf-example-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>The book moves in a vertical plane under the influence of gravity.  Gravity acts with constant magnitude and direction throughout the motion.  The work done by gravity depends only on the change in vertical position, not on the path taken.  Horizontal motion contributes no work by gravity because the force of gravity is vertical.</p>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>The work done by gravity for vertical motion is given by</p>
+<div class="math notranslate nohighlight">
+\[ W_g = -W (y_f - y_i), \]</div>
+<p>where <span class="math notranslate nohighlight">\(W\)</span> is the weight of the book and <span class="math notranslate nohighlight">\(y\)</span> is the vertical position measured upward.</p>
+<hr class="docutils" />
+<p><strong>(a)</strong> The book is moved downward by <span class="math notranslate nohighlight">\(1\ \mathrm{m}\)</span>, so</p>
+<div class="math notranslate nohighlight">
+\[y_f - y_i = -1\ \mathrm{m}.\]</div>
+<p>Substituting into the work expression, we find</p>
+<div class="math notranslate nohighlight">
+\[ W_g = -(20\ \mathrm{N})(-1\ \mathrm{m}) = 20\ \mathrm{J}.\]</div>
+<hr class="docutils" />
+<p><strong>(b)</strong> The book begins and ends at the same vertical position on the shelf, so the net change in height is</p>
+<div class="math notranslate nohighlight">
+\[ y_f - y_i = 0. \]</div>
+<p>Therefore, the total work done by gravity over the closed path is <span class="math notranslate nohighlight">\(W_g = 0.\)</span></p>
+<p>Because work done <em>against</em> gravity is the negative of the work done by gravity, the total work done against gravity is also zero.</p>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>The work done by gravity while the book is moved from the shelf to the table is <span class="math notranslate nohighlight">\(\boxed{W_g = 20\ \mathrm{J}}.\)</span> The total work done <em>against gravity</em> in moving the book away from the shelf and back again is <span class="math notranslate nohighlight">\(\boxed{0\ \mathrm{J}}.\)</span></p>
+<p>This result demonstrates that gravity is a conservative force, since the total work over any closed path is zero.</p>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>We verify the result by computing the work done by gravity using the change in vertical position.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">W</span> <span class="o">=</span> <span class="mf">20.0</span>   <span class="c1"># N (weight of the book)</span>
+<span class="n">dy</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.0</span>  <span class="c1"># m (downward displacement)</span>
+
+<span class="n">Wg</span> <span class="o">=</span> <span class="o">-</span><span class="n">W</span> <span class="o">*</span> <span class="n">dy</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The work done by gravity during the downward motion is </span><span class="si">%d</span><span class="s2"> J.&quot;</span> <span class="o">%</span> <span class="n">Wg</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The total work done against gravity over the closed path is 0 J.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</div>
 </section>
 </section>
 <section id="work-done-by-forces-that-vary">
@@ -641,10 +805,10 @@ W_{g,AB} = -mg\hat{j} \cdot \left(\vec{r}_B -\vec{r}_A\right) = -mg(y_B-y_A).
 <figure class="align-default" id="spring-example-fig">
 <img alt="spring example diagram" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/dcb6cde0c044d333e0337e1c1652c912686b683f" />
 <figcaption>
-<p><span class="caption-number">Fig. 7.3 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#spring-example-fig" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 7.5 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#spring-example-fig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>To calculate the work done by a spring force, we can choose the <span class="math notranslate nohighlight">\(x\)</span>-axis along the length of the spring (see Fig. <a class="reference internal" href="#spring-example-fig"><span class="std std-numref">7.3</span></a>).</p>
+<p>To calculate the work done by a spring force, we can choose the <span class="math notranslate nohighlight">\(x\)</span>-axis along the length of the spring (see Fig. <a class="reference internal" href="#spring-example-fig"><span class="std std-numref">7.5</span></a>).</p>
 <ul class="simple">
 <li><p>As the length increases, the end position of the spring moves to the right (<span class="math notranslate nohighlight">\(\hat{i}\)</span>) direction, where the equilibrium point <span class="math notranslate nohighlight">\(x_{\rm eq} = 0\)</span>.</p></li>
 <li><p>Conversely as the length decreases (i.e., spring compresses), the end position of the spring moves to the left (<span class="math notranslate nohighlight">\(-\hat{i}\)</span>).</p></li>
@@ -657,11 +821,11 @@ W_{g,AB} = -mg\hat{j} \cdot \left(\vec{r}_B -\vec{r}_A\right) = -mg(y_B-y_A).
 &amp;= -\frac{k}{2}x^2 \biggr\vert_A^B = -\frac{k}{2}\left(x_B^2 - x_A^2\right).\end{split}\]</div>
 <p>The work done by the spring <span class="math notranslate nohighlight">\(W_{AB}\)</span> depends only on the starting and ending points, <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>.  It is independent of the <em>actual</em> path between them, as long as it starts at <span class="math notranslate nohighlight">\(A\)</span> and ends at <span class="math notranslate nohighlight">\(B\)</span>.  The actual path could involve going back and forth before ending.</p>
 </div>
-<p>For the 1D case involving the work done by a spring force, you can readily see the correspondence between the work done by a force and the area under the curve of the force versus its displacement.  In general, a 1D integral is the limit of the sum of infinitesimals (<span class="math notranslate nohighlight">\(f(x)dx\)</span>) represented by rectangles (strips) as shown in Figure <a class="reference internal" href="#area-curve-fig"><span class="std std-numref">7.4</span></a>.</p>
+<p>For the 1D case involving the work done by a spring force, you can readily see the correspondence between the work done by a force and the area under the curve of the force versus its displacement.  In general, a 1D integral is the limit of the sum of infinitesimals (<span class="math notranslate nohighlight">\(f(x)dx\)</span>) represented by rectangles (strips) as shown in Figure <a class="reference internal" href="#area-curve-fig"><span class="std std-numref">7.6</span></a>.</p>
 <figure class="align-default" id="area-curve-fig">
 <img alt="area curve diagram" src="../_images/iarea8.gif" />
 <figcaption>
-<p><span class="caption-number">Fig. 7.4 </span><span class="caption-text">The area under any continuous curve can be approximated by drawing a number of rectangles.  The integral is the limit for an infinite number of rectangles.  Figure Credit: <a class="reference external" href="http://hyperphysics.phy-astr.gsu.edu/hbase/integ.html#c4">Hyperphysics</a></span><a class="headerlink" href="#area-curve-fig" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 7.6 </span><span class="caption-text">The area under any continuous curve can be approximated by drawing a number of rectangles.  The integral is the limit for an infinite number of rectangles.  Figure Credit: <a class="reference external" href="http://hyperphysics.phy-astr.gsu.edu/hbase/integ.html#c4">Hyperphysics</a></span><a class="headerlink" href="#area-curve-fig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Since <span class="math notranslate nohighlight">\(F=-kx\)</span> represents a straight line with slope <span class="math notranslate nohighlight">\(-k\)</span>, the area under the curve can be calculated by two triangles, where one area is positive (above the <span class="math notranslate nohighlight">\(x\)</span>-axis) and the other is negative (below the <span class="math notranslate nohighlight">\(x\)</span>-axis).  The magnitude of one of these “areas” is just one-half the triangle’s base times the triangle’s height (e.g., <span class="math notranslate nohighlight">\(A = bh/2\)</span>) along the force axis.  See the code below and the figure it produces.  You verify the areas using simple geometry (i.e., areas of triangles and trapezoids).</p>
@@ -729,9 +893,196 @@ W_{g,AB} = -mg\hat{j} \cdot \left(\vec{r}_B -\vec{r}_A\right) = -mg(y_B-y_A).
 </div>
 <section id="example-problem-work-done-by-a-variable-force">
 <h4><span class="section-number">7.1.2.1. </span><strong>Example Problem</strong>: Work Done by a Variable Force<a class="headerlink" href="#example-problem-work-done-by-a-variable-force" title="Link to this heading">#</a></h4>
+<div class="exercise etamu-exercise admonition" id="Chapter07/work-kinetic-energy-exercise-3">
+
+<p class="admonition-title"><span class="caption-number">Exercise 7.4 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>An object moves along a parabolic path <span class="math notranslate nohighlight">\(y = (0.5\ \mathrm{m^{-1}})x^2\)</span> from the origin <span class="math notranslate nohighlight">\(A = (0,0)\)</span> to the point <span class="math notranslate nohighlight">\(B = (2\ \mathrm{m}, 2\ \mathrm{m})\)</span> under the action of a force  <span class="math notranslate nohighlight">\(\vec{F} = (5\ \mathrm{N/m})y\,\hat{i} + (10\ \mathrm{N/m})x\,\hat{j}\)</span> (Figure <a class="reference internal" href="#varying-force-example-fig"><span class="std std-numref">7.7</span></a>).  Calculate the work done.</p>
+</div></blockquote>
+<figure class="align-default" id="varying-force-example-fig">
+<img alt="varying force example diagram" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/e330761eaf99e098ea1121dfdc06f631fba37934" />
+<figcaption>
+<p><span class="caption-number">Fig. 7.7 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#varying-force-example-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>The object moves in the <span class="math notranslate nohighlight">\(x\)</span>–<span class="math notranslate nohighlight">\(y\)</span> plane along a specified curved path.  The force varies with position and has both <span class="math notranslate nohighlight">\(x\)</span>- and <span class="math notranslate nohighlight">\(y\)</span>-components.  The work done by a variable force is calculated using a line integral of <span class="math notranslate nohighlight">\(\vec{F} \cdot d\vec{r}\)</span> along the path.  The path is described parametrically using <span class="math notranslate nohighlight">\(x\)</span> as the independent variable.</p>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>The infinitesimal work done by a force is</p>
+<div class="math notranslate nohighlight">
+\[dW = \vec F \cdot d\vec r = F_x\,dx + F_y\,dy.\]</div>
+<p>The equation of the path gives</p>
+<div class="math notranslate nohighlight">
+\[y = (0.5\ \mathrm{m^{-1}})x^2.\]</div>
+<p>Differentiating with respect to <span class="math notranslate nohighlight">\(x\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[dy = (1.0\ \mathrm{m^{-1}})x\,dx.\]</div>
+<p>Substituting the force components and the path relations into the expression for <span class="math notranslate nohighlight">\(dW\)</span> gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+dW &amp;= (5\ \mathrm{N/m})y\,dx + (10\ \mathrm{N/m})x\,dy \\
+&amp;= (5\ \mathrm{N/m})(0.5\ \mathrm{m^{-1}})x^2\,dx + (10\ \mathrm{N/m})x(1.0\ \mathrm{m^{-1}})x\,dx \\
+&amp;= (12.5\ \mathrm{N/m^2})x^2\,dx.
+\end{align*}\]</div>
+<p>The total work is obtained by integrating from <span class="math notranslate nohighlight">\(x=0\)</span> to <span class="math notranslate nohighlight">\(x=2\ \mathrm{m}\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[W = \int_0^{2\ \mathrm{m}} (12.5\ \mathrm{N/m^2})x^2\,dx.\]</div>
+<p>Evaluating the integral, we find</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+W &amp;= (12.5\ \mathrm{N/m^2})\left[\frac{x^3}{3}\right]_0^{2}
+&amp;= (12.5)\left(\frac{8}{3}\right)\ \mathrm{J}
+&amp;= 33.3\ \mathrm{J}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>The work done by the force as the object moves along the parabolic path is <span class="math notranslate nohighlight">\(\boxed{W = 33\ \mathrm{J}}.\)</span>  The result is reported with appropriate significant figures based on the given quantities.</p>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>We verify the analytic result by approximating the integral as a sum of many small trapezoids of width <span class="math notranslate nohighlight">\(\Delta x\)</span>.  We then compare this manual trapezoid sum to <code class="docutils literal notranslate"><span class="pre">np.trapz</span></code> using the same <span class="math notranslate nohighlight">\(\Delta x\)</span>, and confirm the results agree within a small tolerance.</p>
+</section>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># -----------------------</span>
+<span class="c1"># Integrand setup</span>
+<span class="c1"># -----------------------</span>
+<span class="k">def</span> <span class="nf">integrand</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="mf">12.5</span> <span class="o">*</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">2.0</span>
+
+<span class="c1"># Choose a small step size for the numerical check</span>
+<span class="n">dx</span> <span class="o">=</span> <span class="mf">0.01</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">+</span> <span class="n">dx</span><span class="p">,</span> <span class="n">dx</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">integrand</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="c1"># -----------------------</span>
+<span class="c1"># Manual trapezoid sum (sum of discrete trapezoids)</span>
+<span class="c1"># -----------------------</span>
+<span class="n">W_manual</span> <span class="o">=</span> <span class="mf">0.0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="n">W_manual</span> <span class="o">+=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="p">(</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">y</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">])</span> <span class="o">*</span> <span class="n">dx</span>
+
+<span class="c1"># -----------------------</span>
+<span class="c1"># Compare to NumPy trapezoid method (should match)</span>
+<span class="c1"># -----------------------</span>
+<span class="n">W_trapz</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">trapz</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+
+<span class="n">diff</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">W_manual</span> <span class="o">-</span> <span class="n">W_trapz</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Using Δx = </span><span class="si">%.2f</span><span class="s2"> m:&quot;</span> <span class="o">%</span> <span class="n">dx</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Manual trapezoid sum gives W = </span><span class="si">%.3f</span><span class="s2"> J.&quot;</span> <span class="o">%</span> <span class="n">W_manual</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;np.trapz gives W = </span><span class="si">%.3f</span><span class="s2"> J.&quot;</span> <span class="o">%</span> <span class="n">W_trapz</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The absolute difference is </span><span class="si">%.6f</span><span class="s2"> J.&quot;</span> <span class="o">%</span> <span class="n">diff</span><span class="p">)</span>
+
+<span class="c1"># A simple tolerance that scales with dx (tight enough for this smooth function)</span>
+<span class="n">tol</span> <span class="o">=</span> <span class="mf">1e-6</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The two methods agree within the tolerance of </span><span class="si">%.1e</span><span class="s2"> J: </span><span class="si">%s</span><span class="s2">.&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">tol</span><span class="p">,</span> <span class="n">diff</span> <span class="o">&lt;</span> <span class="n">tol</span><span class="p">))</span>
+
+<span class="c1"># -----------------------</span>
+<span class="c1"># Graphical illustration: show trapezoids (use a coarser dx for clarity)</span>
+<span class="c1"># -----------------------</span>
+<span class="n">dx_plot</span> <span class="o">=</span> <span class="mf">0.25</span>
+<span class="n">xp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">+</span> <span class="n">dx_plot</span><span class="p">,</span> <span class="n">dx_plot</span><span class="p">)</span>
+<span class="n">yp</span> <span class="o">=</span> <span class="n">integrand</span><span class="p">(</span><span class="n">xp</span><span class="p">)</span>
+
+<span class="c1"># Plot the smooth curve on a fine grid for context</span>
+<span class="n">xfine</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">)</span>
+<span class="n">yfine</span> <span class="o">=</span> <span class="n">integrand</span><span class="p">(</span><span class="n">xfine</span><span class="p">)</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">120</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xfine</span><span class="p">,</span> <span class="n">yfine</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># Draw trapezoids under the curve using the coarse grid</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">xp</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="n">x0</span><span class="p">,</span> <span class="n">x1</span> <span class="o">=</span> <span class="n">xp</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">xp</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>
+    <span class="n">y0</span><span class="p">,</span> <span class="n">y1</span> <span class="o">=</span> <span class="n">yp</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">yp</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">fill</span><span class="p">([</span><span class="n">x0</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">x1</span><span class="p">,</span> <span class="n">x1</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">y0</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.25</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;x (m)&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;integrand (${</span><span class="se">\\</span><span class="s2">rm J/m}$)&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Using Δx = 0.01 m:
+Manual trapezoid sum gives W = 33.334 J.
+np.trapz gives W = 33.334 J.
+The absolute difference is 0.000000 J.
+The two methods agree within the tolerance of 1.0e-06 J: True.
+</pre></div>
+</div>
+<img alt="../_images/4116e67fe5b8141753be754e3fac85891f41ea7323afc30cd1fe2a32e5519b4d.png" src="../_images/4116e67fe5b8141753be754e3fac85891f41ea7323afc30cd1fe2a32e5519b4d.png" />
+</div>
+</div>
 </section>
 <section id="example-problem-work-done-by-a-spring-force">
 <h4><span class="section-number">7.1.2.2. </span><strong>Example Problem</strong>: Work Done by a Spring Force<a class="headerlink" href="#example-problem-work-done-by-a-spring-force" title="Link to this heading">#</a></h4>
+<div class="exercise etamu-exercise admonition" id="Chapter07/work-kinetic-energy-exercise-4">
+
+<p class="admonition-title"><span class="caption-number">Exercise 7.5 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>A perfectly elastic spring requires <span class="math notranslate nohighlight">\(0.54\ \mathrm{J}\)</span> of work to stretch <span class="math notranslate nohighlight">\(6\ \mathrm{cm}\)</span> from its equilibrium position, as in Figure <a class="reference internal" href="#spring-example-fig"><span class="std std-numref">7.5</span></a>(b).  (a) What is its spring constant <span class="math notranslate nohighlight">\(k\)</span>?  (b) How much work is required to stretch it an additional <span class="math notranslate nohighlight">\(6\ \mathrm{cm}\)</span>?</p>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>The spring obeys Hooke’s law, so the force exerted by the spring is proportional to the displacement from equilibrium.  The work <em>required</em> to stretch the spring is the work done <em>against</em> the spring force.  Because the spring force is conservative, the work depends only on the initial and final displacements, not on the path taken.  The displacement <span class="math notranslate nohighlight">\(x\)</span> is measured from the equilibrium position.</p>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>The work required to stretch a spring from position <span class="math notranslate nohighlight">\(x_A\)</span> to <span class="math notranslate nohighlight">\(x_B\)</span> is</p>
+<div class="math notranslate nohighlight">
+\[ W = \frac{1}{2}k(x_B^2 - x_A^2). \]</div>
+<hr class="docutils" />
+<p><strong>(a)</strong>  For the initial stretch, the spring moves from equilibrium to <span class="math notranslate nohighlight">\(x_B = 6\ \mathrm{cm}\)</span>, so <span class="math notranslate nohighlight">\(x_A = 0\)</span>.</p>
+<p>Substituting the given values and solving for the spring constant gives,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+0.54\ \mathrm{J} &amp;= \frac{1}{2}k(6\ \mathrm{cm})^2.
+k &amp;= 3\ \mathrm{N/cm}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p><strong>(b)</strong> For the additional stretch, the spring moves from <span class="math notranslate nohighlight">\(x_A = 6\ \mathrm{cm}\)</span> to <span class="math notranslate nohighlight">\(x_B = 12\ \mathrm{cm}\)</span>.</p>
+<p>Using the value of <span class="math notranslate nohighlight">\(k\)</span> found in part (a),</p>
+<div class="math notranslate nohighlight">
+\[ W = \frac{1}{2}(3\ \mathrm{N/cm})\big[(12\ \mathrm{cm})^2 - (6\ \mathrm{cm})^2\big]= 1.62\ \mathrm{J}.\]</div>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>The spring constant is <span class="math notranslate nohighlight">\(\boxed{k = 3\ \mathrm{N/cm}}.\)</span> The work required to stretch the spring an additional <span class="math notranslate nohighlight">\(6\ \mathrm{cm}\)</span> is <span class="math notranslate nohighlight">\(\boxed{W = 1.6\ \mathrm{J}}.\)</span>  This result reflects the quadratic dependence of spring work on displacement from equilibrium.</p>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>We verify the results by directly evaluating the spring-work expression using Python.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Given values</span>
+<span class="n">W1</span> <span class="o">=</span> <span class="mf">0.54</span>      <span class="c1"># J</span>
+<span class="n">x1</span> <span class="o">=</span> <span class="mf">6.0</span>       <span class="c1"># cm</span>
+
+<span class="c1"># Part (a): solve for k</span>
+<span class="n">k</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">W1</span> <span class="o">/</span> <span class="p">(</span><span class="n">x1</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># Part (b): compute additional work from 6 cm to 12 cm</span>
+<span class="n">x2</span> <span class="o">=</span> <span class="mf">12.0</span>      <span class="c1"># cm</span>
+<span class="n">W2</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">k</span> <span class="o">*</span> <span class="p">(</span><span class="n">x2</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">x1</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The spring constant is </span><span class="si">%.1f</span><span class="s2"> N/cm.&quot;</span> <span class="o">%</span> <span class="n">k</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The work required to stretch the spring from 6 cm to 12 cm is </span><span class="si">%.1f</span><span class="s2"> J.&quot;</span> <span class="o">%</span> <span class="n">W2</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</div>
 </section>
 </section>
 </section>
@@ -751,8 +1102,8 @@ W_{g,AB} = -mg\hat{j} \cdot \left(\vec{r}_B -\vec{r}_A\right) = -mg(y_B-y_A).
 <div class="note admonition">
 <p class="admonition-title">Kinetic Energy</p>
 <p>The kinetic energy <span class="math notranslate nohighlight">\(K\)</span> of a particle is one-half the product of the particle’s mass <span class="math notranslate nohighlight">\(m\)</span> and the square of its speed <span class="math notranslate nohighlight">\(v\)</span>.  We extend this definition to any system of particles by adding up the kinetic energies of all the constituent particles to get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f0d18c5f-c733-41a0-b093-46a89358ef36">
-<span class="eqno">(7.6)<a class="headerlink" href="#equation-f0d18c5f-c733-41a0-b093-46a89358ef36" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a69e79f3-8eef-4f1b-b544-7a20b44bd197">
+<span class="eqno">(7.6)<a class="headerlink" href="#equation-a69e79f3-8eef-4f1b-b544-7a20b44bd197" title="Permalink to this equation">#</a></span>\[\begin{align}
 K_i &amp;= \frac{1}{2}m_iv_i^2,\quad &amp;({\rm single\ particle}\ i) \\[6pt]
 K &amp;= \sum_{i=1}^N \frac{1}{2}m_iv_i^2.\quad &amp;({\rm system\ of\ particles})
 \end{align}\]</div>
@@ -799,8 +1150,8 @@ dW_{\rm net} &amp;= m\left(\frac{d\vec{\rm v}}{dt}\right) \cdot \vec{\rm v}dt, \
 \end{align*}\]</div>
 <p>where also used the commutative property of the dot product.</p>
 <p>We can represent the dot product in terms of Cartesian coordinates and then include the result in the integral between two points <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> on the particle’s trajectory.  This gives us the work done on the particle as:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-67af959b-15e7-47c6-9f99-90ec7aca565d">
-<span class="eqno">(7.7)<a class="headerlink" href="#equation-67af959b-15e7-47c6-9f99-90ec7aca565d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d6212307-e75f-42ed-ac99-ca45043c5b16">
+<span class="eqno">(7.7)<a class="headerlink" href="#equation-d6212307-e75f-42ed-ac99-ca45043c5b16" title="Permalink to this equation">#</a></span>\[\begin{align}
 W_{\text{net},AB} &amp;= \int_A^B m v_x\,dv_x + mv_y\,dv_y + mv_z\,dv_z, \\
 &amp;= \frac{1}{2}m \left(v_x^2 + v_y^2 + v_z^2\right)\biggr\vert_A^B, \\
 &amp;= \frac{1}{2}mv^2 \biggr\vert_A^B = K_B - K_A.
@@ -872,16 +1223,16 @@ v_f^2 &amp;= v_i^2 + 2g\left(s_f-s_i\right)\sin{\theta}.\ \checkmark
 <section id="power">
 <h2><span class="section-number">7.4. </span>Power<a class="headerlink" href="#power" title="Link to this heading">#</a></h2>
 <p>Thus far, we have not included how work or energy can change over time.  We express the relation between work done and the time interval in doing it by introducing the concept of <strong>power</strong>.  Since work can vary as a function of time, we first define <strong>average power</strong> as the work done <span class="math notranslate nohighlight">\(\Delta W\)</span> during a time interval <span class="math notranslate nohighlight">\(\Delta t\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-fb6d1f54-e104-4e2a-91e7-4dc3bb56473f">
-<span class="eqno">(7.9)<a class="headerlink" href="#equation-fb6d1f54-e104-4e2a-91e7-4dc3bb56473f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-2217d6bb-9e7f-4b0a-9bdb-79b9da5638c4">
+<span class="eqno">(7.9)<a class="headerlink" href="#equation-2217d6bb-9e7f-4b0a-9bdb-79b9da5638c4" title="Permalink to this equation">#</a></span>\[\begin{align}
 P_{\rm ave} = \frac{\Delta W}{\Delta t}.
 \end{align}\]</div>
 <p>We define the <strong>instantaneous power</strong> as the work done <span class="math notranslate nohighlight">\(dW\)</span> over an infinitesimal time <span class="math notranslate nohighlight">\(dt\)</span>.</p>
 <div class="admonition-power admonition">
 <p class="admonition-title">Power</p>
 <p>Power is defined as the rate of doing work, or the limit of the average power for time intervals approaching zero,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1b8a00a4-5418-4128-b702-99f046bec135">
-<span class="eqno">(7.10)<a class="headerlink" href="#equation-1b8a00a4-5418-4128-b702-99f046bec135" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-3b210b26-5f74-4b07-99bb-3527aa717f8d">
+<span class="eqno">(7.10)<a class="headerlink" href="#equation-3b210b26-5f74-4b07-99bb-3527aa717f8d" title="Permalink to this equation">#</a></span>\[\begin{align}
 P = \frac{dW}{dt}.
 \end{align}\]</div>
 </div>
@@ -890,8 +1241,8 @@ P = \frac{dW}{dt}.
 \[ W = \int P dt. \]</div>
 <p>The work-energy theorem relates how work can be transformed into kinetic energy.  We can also define power as the rate of transfer of energy.  Work and energy are measured in units of joules (<span class="math notranslate nohighlight">\(\rm J\)</span>), so power is measured in units of joules per second (<span class="math notranslate nohighlight">\(\rm J/s\)</span>), which has been given the SI name Watts (<span class="math notranslate nohighlight">\(1\ {\rm J/s} = 1\ {\rm W}\)</span>).  Another common unit for expressing power capability of everyday devices is horsepower: <span class="math notranslate nohighlight">\(1\ {\rm hp} = 746\ {\rm W}\)</span>.</p>
 <p>The power involved in moving a body can also be expressed in terms of the forces acting on it.  If a force <span class="math notranslate nohighlight">\(\vec{F}\)</span> acts on a body that is displaced by <span class="math notranslate nohighlight">\(d\vec{r}\)</span> in a time <span class="math notranslate nohighlight">\(dt\)</span>, the power expended by the force is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-55b184a7-5516-42ee-bc41-cdf8dafd422f">
-<span class="eqno">(7.11)<a class="headerlink" href="#equation-55b184a7-5516-42ee-bc41-cdf8dafd422f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-6b92dd57-cfb1-4f59-be82-e5c9f584727d">
+<span class="eqno">(7.11)<a class="headerlink" href="#equation-6b92dd57-cfb1-4f59-be82-e5c9f584727d" title="Permalink to this equation">#</a></span>\[\begin{align}
 P &amp;= \frac{dW}{dt} = \frac{\vec{F}\cdot d\vec{r}}{dt}, \\
 &amp;=\vec{F}\cdot \left( \frac{d\vec{r}}{dt}\right) = \vec{F} \cdot \vec{\rm v},
 \end{align}\]</div>
@@ -972,8 +1323,7 @@ P &amp;= \frac{dW}{dt} = \frac{\vec{F}\cdot d\vec{r}}{dt}, \\
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#work">7.1. Work</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#work-done-by-constant-forces-and-contact-forces">7.1.1. Work Done by Constant Forces and Contact Forces</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-work-to-push-a-lawn-mower">7.1.1.1. <strong>Example Problem</strong>: Work to Push a Lawn Mower</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-moving-a-couch">7.1.1.2. <strong>Example Problem</strong>: Moving a Couch</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-shelving-a-book">7.1.1.3. <strong>Example Problem</strong>: Shelving a Book</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-shelving-a-book">7.1.1.2. <strong>Example Problem</strong>: Shelving a Book</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#work-done-by-forces-that-vary">7.1.2. Work Done by Forces that Vary</a><ul class="nav section-nav flex-column">
