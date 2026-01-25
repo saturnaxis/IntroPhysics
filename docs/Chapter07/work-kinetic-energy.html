@@ -515,7 +515,6 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kinetic-energy">7.2. Kinetic Energy</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-kinetic-energy-of-an-object">7.2.1. <strong>Example Problem</strong>: Kinetic Energy of an Object</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-kinetic-energy-relative-to-different-frames">7.2.2. <strong>Example Problem</strong>: Kinetic Energy Relative to Different Frames</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-special-names-for-kinetic-energy">7.2.3. <strong>Example Problem</strong>: Special Names for Kinetic Energy</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#work-energy-theorem">7.3. Work-Energy Theorem</a><ul class="nav section-nav flex-column">
@@ -526,6 +525,11 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#power">7.4. Power</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-pull-up-power">7.4.1. <strong>Example Problem</strong>: Pull-Up Power</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-power-driving-uphill">7.4.2. <strong>Example Problem</strong>: Power Driving Uphill</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-class-problems">7.5. In-class Problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-i">7.5.1. Part I</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-ii">7.5.2. Part II</a></li>
 </ul>
 </li>
 </ul>
@@ -545,8 +549,8 @@ document.write(`
 <h2><span class="section-number">7.1. </span>Work<a class="headerlink" href="#work" title="Link to this heading">#</a></h2>
 <p>In physics, <strong>work</strong> isn’t just about what makes you tired or fatigued.  It has a special definition, which is when energy is transferred to an object due the work done on it.  Work is done when a <em>force</em> acts on something that undergoes a <em>displacement</em> from one position to another.</p>
 <p>Forces can vary as a function of position, and displacements can be along various paths between two points.  We define the increment of work <span class="math notranslate nohighlight">\(dW\)</span> done by a force <span class="math notranslate nohighlight">\(\vec{F}\)</span> acting through an infinitesimal displacement <span class="math notranslate nohighlight">\(d\vec{r}\)</span> as the dot product of these two vectors:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b1c3c90e-02c2-4e96-a9ac-b98fd08b4785">
-<span class="eqno">(7.1)<a class="headerlink" href="#equation-b1c3c90e-02c2-4e96-a9ac-b98fd08b4785" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-61fef390-efae-4fa2-a2fd-75005cd40889">
+<span class="eqno">(7.1)<a class="headerlink" href="#equation-61fef390-efae-4fa2-a2fd-75005cd40889" title="Permalink to this equation">#</a></span>\[\begin{align}
 dW &amp;= \vec{F}\cdot d\vec{r}, \\
 &amp;= |\vec{F}||d\vec{r}|\cos{\theta},\\
 &amp;= (F)(\Delta r)\cos{\theta}.
@@ -591,8 +595,8 @@ Fig. <a class="reference internal" href="#path-integral-fig"><span class="std st
 <div class="math notranslate nohighlight">
 \[ dW_N = \vec{N}\cdot d\vec{r} = N(dr)\cos{90^\circ} = 0. \]</div>
 <p>The normal force never does work under these circumstances.  The part of the contact force on the object that is parallel to the surface is friction <span class="math notranslate nohighlight">\(\vec{f}.\)</span>  For an object sliding along the surface, the kinetic friction <span class="math notranslate nohighlight">\(\vec{f}_k\)</span> is opposite to <span class="math notranslate nohighlight">\(d\vec{r}\)</span> so the work done by kinetic friction is <em>negative</em>.  We can write this as an integral by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-709cc901-dae2-440a-b73c-47e448b6cd98">
-<span class="eqno">(7.3)<a class="headerlink" href="#equation-709cc901-dae2-440a-b73c-47e448b6cd98" title="Permalink to this equation">#</a></span>\[\begin{align} W_{\rm fr} = \int_A^B \vec{f}_k \cdot d\vec{r} = -f_k \int_A^B |dr| = -f_k|\ell_{AB}|,
+<div class="amsmath math notranslate nohighlight" id="equation-91816900-ff78-4b92-896d-3b7eea4c28a5">
+<span class="eqno">(7.3)<a class="headerlink" href="#equation-91816900-ff78-4b92-896d-3b7eea4c28a5" title="Permalink to this equation">#</a></span>\[\begin{align} W_{\rm fr} = \int_A^B \vec{f}_k \cdot d\vec{r} = -f_k \int_A^B |dr| = -f_k|\ell_{AB}|,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(|\ell_{AB}|\)</span> is the path length on the surface.</p>
 <p>The force of static friction does no work (in the reference frame) because in the case of <em>static</em> friction, there is never any displacement.</p>
@@ -603,8 +607,8 @@ Fig. <a class="reference internal" href="#path-integral-fig"><span class="std st
 </ul>
 <p><strong>You need to analyze each particular case to determine the work done by the forces, whether positive, negative, or zero.</strong></p>
 <p>The gravitational force (or weight) of the lawn mower has a constant magnitude <span class="math notranslate nohighlight">\(mg\)</span> and direction, vertically down.  The work done by gravity on the mower is the dot product of its weight and its displacement.  It is convenient to express the <span class="math notranslate nohighlight">\(x\)</span>-axis along the horizontal and the <span class="math notranslate nohighlight">\(y\)</span>-axis vertically up.  Then the gravitational force is <span class="math notranslate nohighlight">\(-mg\hat{j}\)</span>, so the work done  by gravity <span class="math notranslate nohighlight">\(W_g\)</span> over any path <span class="math notranslate nohighlight">\(A\)</span> to <span class="math notranslate nohighlight">\(B\)</span> is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1810b35f-9085-4d6a-b406-30b42d1d06e7">
-<span class="eqno">(7.4)<a class="headerlink" href="#equation-1810b35f-9085-4d6a-b406-30b42d1d06e7" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e4a220e3-2aad-4e10-bad1-443f0df214fc">
+<span class="eqno">(7.4)<a class="headerlink" href="#equation-e4a220e3-2aad-4e10-bad1-443f0df214fc" title="Permalink to this equation">#</a></span>\[\begin{align}
 W_{g,AB} = -mg\hat{j} \cdot \left(\vec{r}_B -\vec{r}_A\right) = -mg(y_B-y_A).
 \end{align}\]</div>
 <p>The work done on an object by gravity depends only on the object’s weight (<span class="math notranslate nohighlight">\(mg\)</span>) and the difference in height <span class="math notranslate nohighlight">\(h = y_B - y_A\)</span> the object is displaced.</p>
@@ -1106,8 +1110,8 @@ k &amp;= 3\ \mathrm{N/cm}.
 <div class="note admonition">
 <p class="admonition-title">Kinetic Energy</p>
 <p>The kinetic energy <span class="math notranslate nohighlight">\(K\)</span> of a particle is one-half the product of the particle’s mass <span class="math notranslate nohighlight">\(m\)</span> and the square of its speed <span class="math notranslate nohighlight">\(v\)</span>.  We extend this definition to any system of particles by adding up the kinetic energies of all the constituent particles to get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-cb61c0da-e412-4286-a9dc-6788b25dd133">
-<span class="eqno">(7.6)<a class="headerlink" href="#equation-cb61c0da-e412-4286-a9dc-6788b25dd133" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-fe3651d0-4d75-46d8-bea6-0557304e5025">
+<span class="eqno">(7.6)<a class="headerlink" href="#equation-fe3651d0-4d75-46d8-bea6-0557304e5025" title="Permalink to this equation">#</a></span>\[\begin{align}
 K_i &amp;= \frac{1}{2}m_iv_i^2,\quad &amp;({\rm single\ particle}\ i) \\[6pt]
 K &amp;= \sum_{i=1}^N \frac{1}{2}m_iv_i^2.\quad &amp;({\rm system\ of\ particles})
 \end{align}\]</div>
@@ -1128,12 +1132,151 @@ K &amp;= \sum_{i=1}^N \frac{1}{2}m_iv_i^2.\quad &amp;({\rm system\ of\ particles
 <p>represents the kinetic energy of an object with speed <span class="math notranslate nohighlight">\(v_A\)</span> that is moving relative to another object <span class="math notranslate nohighlight">\(v_B\)</span>.  Depending on the relative direction of motion, we can determine whether there is a <span class="math notranslate nohighlight">\(+\)</span> or <span class="math notranslate nohighlight">\(-\)</span>.</p>
 <section id="example-problem-kinetic-energy-of-an-object">
 <h3><span class="section-number">7.2.1. </span><strong>Example Problem</strong>: Kinetic Energy of an Object<a class="headerlink" href="#example-problem-kinetic-energy-of-an-object" title="Link to this heading">#</a></h3>
+<div class="exercise etamu-exercise admonition" id="Chapter07/work-kinetic-energy-exercise-5">
+
+<p class="admonition-title"><span class="caption-number">Exercise 7.6 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>(a) What is the kinetic energy of an <span class="math notranslate nohighlight">\(80\ \mathrm{kg}\)</span> athlete, running at <span class="math notranslate nohighlight">\(10\ \mathrm{m/s}\)</span>?</p>
+<p>(b) The Chicxulub crater in Yucatán, one of the largest existing impact craters on Earth, is thought to have been created by an asteroid traveling at <span class="math notranslate nohighlight">\(22\ \mathrm{km/s}\)</span> and releasing <span class="math notranslate nohighlight">\(4.2\times10^{23}\ \mathrm{J}\)</span> of kinetic energy upon impact. What was its mass?</p>
+<p>(c) In nuclear reactors, thermal neutrons, traveling at about <span class="math notranslate nohighlight">\(2.2\ \mathrm{km/s}\)</span>, play an important role. What is the kinetic energy of such a particle?</p>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>Each object is treated as a point mass moving at a nonrelativistic speed, so the classical expression for kinetic energy applies. The kinetic energy depends only on the mass and speed of the object and is independent of direction. All quantities are expressed in SI units, so speeds given in kilometers per second must be converted to meters per second before substitution.</p>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>The kinetic energy of an object of mass <span class="math notranslate nohighlight">\(m\)</span> moving at speed <span class="math notranslate nohighlight">\(v\)</span> is defined as</p>
+<div class="math notranslate nohighlight">
+\[
+K = \frac{1}{2} m v^2.
+\]</div>
+<p><strong>(a)</strong> The athlete has mass <span class="math notranslate nohighlight">\(m = 80\ \mathrm{kg}\)</span> and speed <span class="math notranslate nohighlight">\(v = 10\ \mathrm{m/s}\)</span>. We substitute these values into the kinetic energy expression, which gives the value of the athlete’s kinetic energy.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+K &amp;= \frac{1}{2}(80\ \mathrm{kg})(10\ \mathrm{m/s})^2 \\
+  &amp;= 4000\ \mathrm{J}.
+\end{align*}\]</div>
+<p><strong>(b)</strong> The asteroid releases kinetic energy <span class="math notranslate nohighlight">\(K = 4.2\times10^{23}\ \mathrm{J}\)</span> and travels at <span class="math notranslate nohighlight">\(v = 22\ \mathrm{km/s} = 2.2\times10^{4}\ \mathrm{m/s}\)</span>. We solve the kinetic energy expression for the mass and substitute the given values, which yields the mass of the impactor by</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+m &amp;= \frac{2K}{v^2} \\
+  &amp;= \frac{2(4.2\times10^{23}\ \mathrm{J})}{(2.2\times10^{4}\ \mathrm{m/s})^2} \\
+  &amp;= 1.7\times10^{15}\ \mathrm{kg}.
+\end{align*}\]</div>
+<p><strong>(c)</strong> A thermal neutron has mass <span class="math notranslate nohighlight">\(m = 1.68\times10^{-27}\ \mathrm{kg}\)</span> and speed <span class="math notranslate nohighlight">\(v = 2.2\ \mathrm{km/s} = 2200\ \mathrm{m/s}\)</span>. We substitute these values into the kinetic energy expression, which gives the kinetic energy of the neutron as</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+K &amp;= \frac{1}{2}(1.68\times10^{-27}\ \mathrm{kg})(2200\ \mathrm{m/s})^2 \\
+  &amp;= 4.1\times10^{-21}\ \mathrm{J}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>Using the definition of kinetic energy, we determined that the athlete running at everyday speeds has a kinetic energy of <span class="math notranslate nohighlight">\(4000\ \mathrm{J}\)</span>, while the Chicxulub asteroid carries an enormous kinetic energy of <span class="math notranslate nohighlight">\(4.2\times10^{23}\ \mathrm{J}\)</span>, despite both systems being described by the same equation. In contrast, the thermal neutron was found to have a kinetic energy of <span class="math notranslate nohighlight">\(4.1\times10^{-21}\ \mathrm{J}\)</span>, reflecting the effect of its extremely small mass even at relatively high speeds. Together, these results reinforce the quadratic dependence of kinetic energy on speed and show how the same physical principle spans an extraordinary range of physical scales, from human motion to planetary impacts and nuclear processes.</p>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>We verify the results by organizing the data into lists and using a single index-based loop. This shows how the same physical relationship can be applied systematically without repeating code.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># -----------------------</span>
+<span class="c1"># Store problem data</span>
+<span class="c1"># -----------------------</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;athlete&quot;</span><span class="p">,</span> <span class="s2">&quot;Chicxulub asteroid&quot;</span><span class="p">,</span> <span class="s2">&quot;thermal neutron&quot;</span><span class="p">]</span>
+<span class="n">masses</span> <span class="o">=</span> <span class="p">[</span><span class="mf">80.0</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mf">1.68e-27</span><span class="p">]</span> <span class="c1"># Masses (kg); use None if mass is unknown</span>
+<span class="n">speeds</span> <span class="o">=</span> <span class="p">[</span><span class="mf">10.0</span><span class="p">,</span> <span class="mf">2.2e4</span><span class="p">,</span> <span class="mf">2200.0</span><span class="p">]</span> <span class="c1"># Speeds (m/s)</span>
+<span class="n">energies</span> <span class="o">=</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="mf">4.2e23</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span> <span class="c1"># Kinetic energies (J); use None if energy is unknown</span>
+
+<span class="c1"># -----------------------</span>
+<span class="c1"># Loop using an index</span>
+<span class="c1"># -----------------------</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">labels</span><span class="p">)):</span>
+    <span class="n">label</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">v</span><span class="p">,</span><span class="n">K</span> <span class="o">=</span> <span class="n">labels</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">masses</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">speeds</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">energies</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">m</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span> <span class="c1"># If the mass is known, compute kinetic energy</span>
+        <span class="n">K_calc</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">m</span> <span class="o">*</span> <span class="n">v</span><span class="o">**</span><span class="mi">2</span>
+        <span class="k">if</span> <span class="n">label</span> <span class="o">==</span> <span class="s2">&quot;athlete&quot;</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The kinetic energy of the athlete is </span><span class="si">%d</span><span class="s2"> J.&quot;</span> <span class="o">%</span> <span class="n">K_calc</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The kinetic energy of the </span><span class="si">%s</span><span class="s2"> is </span><span class="si">%.1e</span><span class="s2"> J.&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">label</span><span class="p">,</span><span class="n">K_calc</span><span class="p">))</span>
+    <span class="k">else</span><span class="p">:</span> <span class="c1"># If the kinetic energy is known, compute mass</span>
+        <span class="n">m_calc</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">K</span> <span class="o">/</span> <span class="n">v</span><span class="o">**</span><span class="mi">2</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The mass of the Chicxulub asteroid is </span><span class="si">%.2e</span><span class="s2"> kg.&quot;</span> <span class="o">%</span> <span class="n">m_calc</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</div>
 </section>
 <section id="example-problem-kinetic-energy-relative-to-different-frames">
 <h3><span class="section-number">7.2.2. </span><strong>Example Problem</strong>: Kinetic Energy Relative to Different Frames<a class="headerlink" href="#example-problem-kinetic-energy-relative-to-different-frames" title="Link to this heading">#</a></h3>
+<div class="exercise etamu-exercise admonition" id="Chapter07/work-kinetic-energy-exercise-6">
+
+<p class="admonition-title"><span class="caption-number">Exercise 7.7 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>A <span class="math notranslate nohighlight">\(75\ \mathrm{kg}\)</span> person walks down the central aisle of a subway car at a speed of <span class="math notranslate nohighlight">\(1.5\ \mathrm{m/s}\)</span> relative to the car, whereas the train is moving at <span class="math notranslate nohighlight">\(15\ \mathrm{m/s}\)</span> relative to the tracks.</p>
+<p>(a) What is the person’s kinetic energy relative to the car?</p>
+<p>(b) What is the person’s kinetic energy relative to the tracks?</p>
+<p>(c) What is the person’s kinetic energy relative to a frame moving with the person?</p>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>The person is treated as a point mass moving at nonrelativistic speeds, so the classical expression for kinetic energy applies. Motion is confined to a single horizontal line, allowing velocities to be treated as signed scalars along one dimension. Different frames of reference measure different speeds for the same object, but each frame is inertial, and kinetic energy is computed using the speed measured in that frame.</p>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>The kinetic energy of an object of mass <span class="math notranslate nohighlight">\(m\)</span> moving at speed <span class="math notranslate nohighlight">\(v\)</span> is defined as</p>
+<div class="math notranslate nohighlight">
+\[ K = \frac{1}{2} m v^2. \]</div>
+<p><strong>(a)</strong> Relative to the subway car, the person moves at a speed of <span class="math notranslate nohighlight">\(v = 1.5\ \mathrm{m/s}\)</span>. We substitute this speed and the given mass into the kinetic energy expression, which yields the kinetic energy measured in the car’s frame.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+K &amp;= \frac{1}{2}(75\ \mathrm{kg})(1.5\ \mathrm{m/s})^2 \\
+  &amp;= 84.4\ \mathrm{J}.
+\end{align*}\]</div>
+<p><strong>(b)</strong> Relative to the tracks, the person’s speed depends on the direction of walking. Because velocities add along the same line, the speed relative to the tracks is given by
+<span class="math notranslate nohighlight">\(v = 15\ \mathrm{m/s} \pm 1.5\ \mathrm{m/s}\)</span>. We evaluate the kinetic energy for each possible speed to determine the values measured in the track frame.</p>
+<p>For walking toward the front of the car,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+K &amp;= \frac{1}{2}(75\ \mathrm{kg})(16.5\ \mathrm{m/s})^2 \\
+  &amp;= 1.02\times10^{4}\ \mathrm{J}.
+\end{align*}\]</div>
+<p>For walking toward the back of the car,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+K &amp;= \frac{1}{2}(75\ \mathrm{kg})(13.5\ \mathrm{m/s})^2 \\
+  &amp;= 6830\ \mathrm{J}.
+\end{align*}\]</div>
+<p><strong>(c)</strong> In a frame moving with the person, the person’s speed is zero. Because kinetic energy depends on the square of the speed, a speed of zero implies zero kinetic energy in that frame. <span class="math notranslate nohighlight">\(K = 0.\)</span></p>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>Relative to the subway car, the person has a modest kinetic energy of <span class="math notranslate nohighlight">\(84.4\ \mathrm{J}\)</span>, reflecting the low walking speed inside the car. Relative to the tracks, the kinetic energy is much larger and depends on whether the person walks with or against the train’s motion, ranging from <span class="math notranslate nohighlight">\(6830\ \mathrm{J}\)</span> to <span class="math notranslate nohighlight">\(1.02\times10^{4}\ \mathrm{J}\)</span>. In the person’s own rest frame, the kinetic energy is zero. These results show that kinetic energy is not an intrinsic property of an object alone but depends on the observer’s frame of reference, reinforcing the earlier discussion that speed, and therefore kinetic energy, is frame-dependent even in classical mechanics.</p>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>We verify the results by computing the kinetic energies in different frames using lists and an index-based loop.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># -----------------------</span>
+<span class="c1"># Store problem data</span>
+<span class="c1"># -----------------------</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;car frame&quot;</span><span class="p">,</span> <span class="s2">&quot;track frame (forward)&quot;</span><span class="p">,</span> <span class="s2">&quot;track frame (backward)&quot;</span><span class="p">,</span> <span class="s2">&quot;person frame&quot;</span><span class="p">]</span>
+<span class="n">masses</span> <span class="o">=</span> <span class="p">[</span><span class="mf">75.0</span><span class="p">,</span> <span class="mf">75.0</span><span class="p">,</span> <span class="mf">75.0</span><span class="p">,</span> <span class="mf">75.0</span><span class="p">]</span>   <span class="c1"># kg</span>
+<span class="n">speeds</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">16.5</span><span class="p">,</span> <span class="mf">13.5</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">]</span>      <span class="c1"># m/s</span>
+
+<span class="c1"># -----------------------</span>
+<span class="c1"># Loop using an index</span>
+<span class="c1"># -----------------------</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">labels</span><span class="p">)):</span>
+    <span class="n">label</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">labels</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">masses</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">speeds</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="n">K</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">m</span> <span class="o">*</span> <span class="n">v</span><span class="o">**</span><span class="mi">2</span>
+    <span class="k">if</span> <span class="n">K</span> <span class="o">&gt;=</span> <span class="mf">1e4</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The kinetic energy in the </span><span class="si">%s</span><span class="s2"> is </span><span class="si">%.2e</span><span class="s2"> J.&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">K</span><span class="p">))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The kinetic energy in the </span><span class="si">%s</span><span class="s2"> is </span><span class="si">%.1f</span><span class="s2"> J.&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">K</span><span class="p">))</span>
+</pre></div>
+</div>
 </section>
-<section id="example-problem-special-names-for-kinetic-energy">
-<h3><span class="section-number">7.2.3. </span><strong>Example Problem</strong>: Special Names for Kinetic Energy<a class="headerlink" href="#example-problem-special-names-for-kinetic-energy" title="Link to this heading">#</a></h3>
+</div>
 </section>
 </section>
 <section id="work-energy-theorem">
@@ -1154,8 +1297,8 @@ dW_{\rm net} &amp;= m\left(\frac{d\vec{\rm v}}{dt}\right) \cdot \vec{\rm v}dt, \
 \end{align*}\]</div>
 <p>where also used the commutative property of the dot product.</p>
 <p>We can represent the dot product in terms of Cartesian coordinates and then include the result in the integral between two points <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> on the particle’s trajectory.  This gives us the work done on the particle as:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-16de565e-c702-44de-ba97-b01466f5dd16">
-<span class="eqno">(7.7)<a class="headerlink" href="#equation-16de565e-c702-44de-ba97-b01466f5dd16" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-65bd0aba-8773-44f8-9c3c-154e8578af13">
+<span class="eqno">(7.7)<a class="headerlink" href="#equation-65bd0aba-8773-44f8-9c3c-154e8578af13" title="Permalink to this equation">#</a></span>\[\begin{align}
 W_{\text{net},AB} &amp;= \int_A^B m v_x\,dv_x + mv_y\,dv_y + mv_z\,dv_z, \\
 &amp;= \frac{1}{2}m \left(v_x^2 + v_y^2 + v_z^2\right)\biggr\vert_A^B, \\
 &amp;= \frac{1}{2}mv^2 \biggr\vert_A^B = K_B - K_A.
@@ -1219,24 +1362,154 @@ v_f^2 &amp;= v_i^2 + 2g\left(s_f-s_i\right)\sin{\theta}.\ \checkmark
 </div>
 <section id="example-problem-loop-the-loop">
 <h3><span class="section-number">7.3.1. </span><strong>Example Problem</strong>: Loop-the-Loop<a class="headerlink" href="#example-problem-loop-the-loop" title="Link to this heading">#</a></h3>
+<div class="exercise etamu-exercise admonition" id="Chapter07/work-kinetic-energy-exercise-7">
+
+<p class="admonition-title"><span class="caption-number">Exercise 7.8 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>The frictionless track for a toy car includes a loop-the-loop of radius <span class="math notranslate nohighlight">\(R\)</span>. How high, measured from the bottom of the loop, must the car be placed to start from rest on the approaching section of track and go all the way around the loop?</p>
+</div></blockquote>
+<figure class="align-default" id="loop-example-fig">
+<img alt="loop energy example diagram" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/dcb2b0cea236164d538bcd6ee31d24940e7029e5" />
+<figcaption>
+<p><span class="caption-number">Fig. 7.8 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#loop-example-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>The car is treated as a point mass moving on a frictionless track, so mechanical energy is conserved. Motion occurs in a vertical plane under the influence of gravity and the normal force from the track. The normal force constrains the motion but does no work, so gravity is the only force that changes the car’s mechanical energy. The car starts from rest at height <span class="math notranslate nohighlight">\(y_1\)</span> and must maintain contact with the track at the top of the loop, which imposes a centripetal acceleration requirement.</p>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>The car starts from rest, so its initial kinetic energy is zero. Because gravity is the only force that does work, the work–energy theorem relates the change in gravitational potential energy to the kinetic energy at the top of the loop.</p>
+<p>For motion from height <span class="math notranslate nohighlight">\(y_1\)</span> to the top of the loop at height <span class="math notranslate nohighlight">\(y_2 = 2R\)</span>, the work–energy theorem gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+-mg(y_2 - y_1) &amp;= \frac{1}{2} m v_2^2 .
+\end{align*}\]</div>
+<p>At the top of the loop, the car moves in a circle of radius <span class="math notranslate nohighlight">\(R\)</span>, so it requires a centripetal acceleration directed downward. The forces acting on the car at this point are gravity and the normal force, both directed toward the center of the loop. Applying Newton’s second law in the radial direction gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{m v_2^2}{R} &amp;= N + mg .
+\end{align*}\]</div>
+<p>To maintain contact with the track, the normal force must be positive, so the limiting case occurs when <span class="math notranslate nohighlight">\(N = 0\)</span>. This condition determines the minimum speed required at the top of the loop. Solving for <span class="math notranslate nohighlight">\(v_2^2\)</span> yields</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+v_2^2 &amp;= gR .
+\end{align*}\]</div>
+<p>We substitute this result into the work–energy equation and solve for the required starting height by</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+-mg(2R - y_1) &amp;= \frac{1}{2} m g R \\
+2R - y_1 &amp;= -\frac{R}{2} \\
+y_1 &amp;= \frac{5R}{2}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>We find that the car must start from a minimum height of <span class="math notranslate nohighlight">\(y_1 = \tfrac{5R}{2}\)</span> above the bottom of the loop in order to complete the loop without losing contact with the track. This height ensures that the car has just enough speed at the top of the loop to provide the required centripetal acceleration when the normal force is reduced to zero. The result demonstrates how the work–energy theorem can be combined with a force condition at a critical point to determine motion without solving differential equations, reinforcing the earlier idea that energy methods often provide the most efficient path to a solution.</p>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>We verify the result symbolically by checking that the required speed at the top of the loop corresponds to zero normal force and that the work–energy relation yields the same starting height.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Choose an arbitrary radius</span>
+<span class="n">R</span> <span class="o">=</span> <span class="mf">1.0</span>       <span class="c1"># m</span>
+<span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>      <span class="c1"># m/s^2</span>
+
+<span class="c1"># Speed at the top from centripetal condition</span>
+<span class="n">v2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">g</span> <span class="o">*</span> <span class="n">R</span><span class="p">)</span>
+
+<span class="c1"># Starting height from work-energy</span>
+<span class="n">y1</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">R</span> <span class="o">+</span> <span class="n">v2</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The minimum starting height is </span><span class="si">%.2f</span><span class="s2"> R.&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">y1</span> <span class="o">/</span> <span class="n">R</span><span class="p">))</span>
+</pre></div>
+</div>
+</section>
+</div>
 </section>
 <section id="example-problem-determining-a-stopping-force">
 <h3><span class="section-number">7.3.2. </span><strong>Example Problem</strong>: Determining a Stopping Force<a class="headerlink" href="#example-problem-determining-a-stopping-force" title="Link to this heading">#</a></h3>
+<div class="exercise etamu-exercise admonition" id="Chapter07/work-kinetic-energy-exercise-8">
+
+<p class="admonition-title"><span class="caption-number">Exercise 7.9 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>A bullet has a mass of <span class="math notranslate nohighlight">\(40\)</span> grains <span class="math notranslate nohighlight">\((2.6\ \mathrm{g})\)</span> and a muzzle velocity of <span class="math notranslate nohighlight">\(1100\ \mathrm{ft/s}\)</span> <span class="math notranslate nohighlight">\((335\ \mathrm{m/s})\)</span>. It can penetrate eight <span class="math notranslate nohighlight">\(1\)</span>-inch pine boards, each with thickness <span class="math notranslate nohighlight">\(0.75\)</span> inches. What is the average stopping force exerted by the wood?</p>
+</div></blockquote>
+<figure class="align-default" id="stopping-energy-example-fig">
+<img alt="stopping energy example diagram" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/a7ea6a10a46bbab8708ede6cd5ec56ffcd23e0eb" />
+<figcaption>
+<p><span class="caption-number">Fig. 7.9 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#stopping-energy-example-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>The bullet is treated as a point mass moving in a straight line through the boards. The interaction with the wood is modeled as a constant average stopping force acting opposite the direction of motion over the total penetration distance. Gravity and air resistance are neglected because their contributions to the work over the short stopping distance are negligible. The bullet is assumed to come to rest after penetrating the boards, so all of its initial kinetic energy is removed by the work done by the stopping force.</p>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>Because the bullet comes to rest, the change in kinetic energy is equal in magnitude to the initial kinetic energy. The work–energy theorem relates this change in kinetic energy to the work done by the average stopping force.</p>
+<p>The total stopping distance is the combined thickness of the boards. Each board has thickness <span class="math notranslate nohighlight">\(0.75\ \mathrm{in}\)</span>, so the total penetration distance is</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta s = 8(0.75\ \mathrm{in}) = 6\ \mathrm{in} = 0.152\ \mathrm{m}.
+\]</div>
+<p>The work done by the stopping force is negative because the force opposes the motion, so the work–energy theorem gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+W_{\text{net}} &amp;= -F_{\text{ave}}\,\Delta s \\
+               &amp;= -K_{\text{initial}}.
+\end{align*}\]</div>
+<p>Solving this expression for the magnitude of the average stopping force yields</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+F_{\text{ave}} &amp;= \frac{K_{\text{initial}}}{\Delta s} \\
+               &amp;= \frac{\tfrac{1}{2} m v^2}{\Delta s}.
+\end{align*}\]</div>
+<p>We substitute the given mass, speed, and stopping distance and evaluate.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+F_{\text{ave}} &amp;= \frac{\tfrac{1}{2}(2.6\times10^{-3}\ \mathrm{kg})(335\ \mathrm{m/s})^2}{0.152\ \mathrm{m}} \\
+               &amp;= 960\ \mathrm{N}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>We find that the average stopping force exerted by the wood on the bullet is <span class="math notranslate nohighlight">\(960\ \mathrm{N}\)</span>. This force represents the constant force that would remove the bullet’s entire initial kinetic energy over the total penetration distance of the boards. The result illustrates how a relatively modest penetration distance can correspond to a large stopping force when an object begins with a high speed, reinforcing the earlier discussion that work–energy methods provide a direct way to relate forces, distances, and changes in kinetic energy without solving equations of motion.</p>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>We verify the result by recomputing the bullet’s initial kinetic energy and dividing by the stopping distance to obtain the average stopping force.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Given values</span>
+<span class="n">m</span> <span class="o">=</span> <span class="mf">2.6e-3</span>        <span class="c1"># kg</span>
+<span class="n">v</span> <span class="o">=</span> <span class="mf">335.0</span>         <span class="c1"># m/s</span>
+<span class="n">s</span> <span class="o">=</span> <span class="mf">0.152</span>         <span class="c1"># m</span>
+
+<span class="c1"># Kinetic energy and average stopping force</span>
+<span class="n">K</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">m</span> <span class="o">*</span> <span class="n">v</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">F_ave</span> <span class="o">=</span> <span class="n">K</span> <span class="o">/</span> <span class="n">s</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The average stopping force exerted by the wood is </span><span class="si">%.0f</span><span class="s2"> N.&quot;</span> <span class="o">%</span> <span class="n">F_ave</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</div>
 </section>
 </section>
 <section id="power">
 <h2><span class="section-number">7.4. </span>Power<a class="headerlink" href="#power" title="Link to this heading">#</a></h2>
 <p>Thus far, we have not included how work or energy can change over time.  We express the relation between work done and the time interval in doing it by introducing the concept of <strong>power</strong>.  Since work can vary as a function of time, we first define <strong>average power</strong> as the work done <span class="math notranslate nohighlight">\(\Delta W\)</span> during a time interval <span class="math notranslate nohighlight">\(\Delta t\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3cbf9808-9563-4637-a7ec-3ed08bd8fc59">
-<span class="eqno">(7.9)<a class="headerlink" href="#equation-3cbf9808-9563-4637-a7ec-3ed08bd8fc59" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-1ac3d82e-6fcc-4816-b185-b2c2943ce46f">
+<span class="eqno">(7.9)<a class="headerlink" href="#equation-1ac3d82e-6fcc-4816-b185-b2c2943ce46f" title="Permalink to this equation">#</a></span>\[\begin{align}
 P_{\rm ave} = \frac{\Delta W}{\Delta t}.
 \end{align}\]</div>
 <p>We define the <strong>instantaneous power</strong> as the work done <span class="math notranslate nohighlight">\(dW\)</span> over an infinitesimal time <span class="math notranslate nohighlight">\(dt\)</span>.</p>
 <div class="admonition-power admonition">
 <p class="admonition-title">Power</p>
 <p>Power is defined as the rate of doing work, or the limit of the average power for time intervals approaching zero,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2e03822a-9893-4f52-94e7-9ae20f40dd85">
-<span class="eqno">(7.10)<a class="headerlink" href="#equation-2e03822a-9893-4f52-94e7-9ae20f40dd85" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-cf1a000f-da60-4ead-916e-8ec990662d0e">
+<span class="eqno">(7.10)<a class="headerlink" href="#equation-cf1a000f-da60-4ead-916e-8ec990662d0e" title="Permalink to this equation">#</a></span>\[\begin{align}
 P = \frac{dW}{dt}.
 \end{align}\]</div>
 </div>
@@ -1245,17 +1518,142 @@ P = \frac{dW}{dt}.
 \[ W = \int P dt. \]</div>
 <p>The work-energy theorem relates how work can be transformed into kinetic energy.  We can also define power as the rate of transfer of energy.  Work and energy are measured in units of joules (<span class="math notranslate nohighlight">\(\rm J\)</span>), so power is measured in units of joules per second (<span class="math notranslate nohighlight">\(\rm J/s\)</span>), which has been given the SI name Watts (<span class="math notranslate nohighlight">\(1\ {\rm J/s} = 1\ {\rm W}\)</span>).  Another common unit for expressing power capability of everyday devices is horsepower: <span class="math notranslate nohighlight">\(1\ {\rm hp} = 746\ {\rm W}\)</span>.</p>
 <p>The power involved in moving a body can also be expressed in terms of the forces acting on it.  If a force <span class="math notranslate nohighlight">\(\vec{F}\)</span> acts on a body that is displaced by <span class="math notranslate nohighlight">\(d\vec{r}\)</span> in a time <span class="math notranslate nohighlight">\(dt\)</span>, the power expended by the force is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-603f4b36-f0a4-4083-992c-b90fbf8d338c">
-<span class="eqno">(7.11)<a class="headerlink" href="#equation-603f4b36-f0a4-4083-992c-b90fbf8d338c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-5d41511a-d067-463a-8d8b-0fcf07132bc5">
+<span class="eqno">(7.11)<a class="headerlink" href="#equation-5d41511a-d067-463a-8d8b-0fcf07132bc5" title="Permalink to this equation">#</a></span>\[\begin{align}
 P &amp;= \frac{dW}{dt} = \frac{\vec{F}\cdot d\vec{r}}{dt}, \\
 &amp;=\vec{F}\cdot \left( \frac{d\vec{r}}{dt}\right) = \vec{F} \cdot \vec{\rm v},
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\vec{\rm v}\)</span> is the velocity of the body.</p>
 <section id="example-problem-pull-up-power">
 <h3><span class="section-number">7.4.1. </span><strong>Example Problem</strong>: Pull-Up Power<a class="headerlink" href="#example-problem-pull-up-power" title="Link to this heading">#</a></h3>
+<div class="exercise etamu-exercise admonition" id="Chapter07/work-kinetic-energy-exercise-9">
+
+<p class="admonition-title"><span class="caption-number">Exercise 7.10 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>An <span class="math notranslate nohighlight">\(80\ \mathrm{kg}\)</span> army trainee does pull-ups on a horizontal bar. It takes the trainee <span class="math notranslate nohighlight">\(0.8\ \mathrm{s}\)</span> to raise the body from a lower position to where his chin is above the bar. How much power do the trainee’s muscles supply moving the body from the lower position to where his chin is above the bar?  (<em>Hint: Make reasonable estimates for any quantities needed.</em>)</p>
+</div></blockquote>
+<figure class="align-default" id="pullup-example-fig">
+<img alt="pullup power example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/2dcbc105cd12f78774de235daa6a2bd1e16af44e" />
+<figcaption>
+<p><span class="caption-number">Fig. 7.10 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#pullup-example-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>The trainee is treated as a point mass moving vertically upward against gravity. The motion is assumed to occur at roughly constant speed, so changes in kinetic energy are neglected and the muscles primarily do work against gravity. The vertical displacement is estimated as <span class="math notranslate nohighlight">\(\Delta y = 0.60\ \mathrm{m}\)</span>, corresponding to a typical pull-up height. The arms are assumed to make up <span class="math notranslate nohighlight">\(10\%\)</span> of the trainee’s mass and are not lifted through the full distance, so only <span class="math notranslate nohighlight">\(90\%\)</span> of the body mass is treated as being raised.</p>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>When an object is lifted vertically at constant speed, the work done against gravity over a vertical displacement <span class="math notranslate nohighlight">\(\Delta y\)</span> is given by</p>
+<div class="math notranslate nohighlight">
+\[
+W = mg\Delta y.
+\]</div>
+<p>Power is defined as the rate at which work is done, so the average power supplied by the muscles is</p>
+<div class="math notranslate nohighlight">
+\[
+P = \frac{W}{t}.
+\]</div>
+<p>We substitute the effective mass, gravitational acceleration, vertical displacement, and time and evaluate.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+P &amp;= \frac{(0.9)(80\ \mathrm{kg})(9.81\ \mathrm{m/s^2})(0.60\ \mathrm{m})}{0.8\ \mathrm{s}} \\
+  &amp;= 529\ \mathrm{W}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>We find that the trainee’s muscles supply an average power of <span class="math notranslate nohighlight">\(530\ \mathrm{W}\)</span> while performing the pull-up. This power represents the rate at which chemical energy in the muscles is converted into gravitational potential energy of the body. The result connects directly to earlier discussions of work done against gravity and illustrates how even brief everyday motions can require substantial power output, comparable to a significant fraction of a horsepower.</p>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>We verify the result by directly computing the work done against gravity and dividing by the time interval.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Given values</span>
+<span class="n">m</span> <span class="o">=</span> <span class="mf">0.9</span> <span class="o">*</span> <span class="mf">80.0</span>        <span class="c1"># kg (effective lifted mass)</span>
+<span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>              <span class="c1"># m/s^2</span>
+<span class="n">dy</span> <span class="o">=</span> <span class="mf">0.60</span>             <span class="c1"># m</span>
+<span class="n">t</span> <span class="o">=</span> <span class="mf">0.8</span>               <span class="c1"># s</span>
+
+<span class="c1"># Work and power</span>
+<span class="n">W</span> <span class="o">=</span> <span class="n">m</span> <span class="o">*</span> <span class="n">g</span> <span class="o">*</span> <span class="n">dy</span>
+<span class="n">P</span> <span class="o">=</span> <span class="n">W</span> <span class="o">/</span> <span class="n">t</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The average power supplied during the pull-up is </span><span class="si">%.0f</span><span class="s2"> W.&quot;</span> <span class="o">%</span> <span class="n">P</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</div>
 </section>
 <section id="example-problem-power-driving-uphill">
 <h3><span class="section-number">7.4.2. </span><strong>Example Problem</strong>: Power Driving Uphill<a class="headerlink" href="#example-problem-power-driving-uphill" title="Link to this heading">#</a></h3>
+<div class="exercise etamu-exercise admonition" id="Chapter07/work-kinetic-energy-exercise-10">
+
+<p class="admonition-title"><span class="caption-number">Exercise 7.11 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>How much power must an automobile engine expend to move a <span class="math notranslate nohighlight">\(1200\ \mathrm{kg}\)</span> car up a <span class="math notranslate nohighlight">\(15\%\)</span> grade at <span class="math notranslate nohighlight">\(90\ \mathrm{km/h}\)</span>? Assume that <span class="math notranslate nohighlight">\(25\%\)</span> of this power is dissipated overcoming air resistance and friction.</p>
+</div></blockquote>
+<figure class="align-default" id="auto-power-example">
+<img alt="car power example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/e273eb5712e39b8779c5ff9f1115df10dd8ada56" />
+<figcaption>
+<p><span class="caption-number">Fig. 7.11 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#auto-power-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>The car is treated as a point mass moving up an inclined plane at constant speed. Because the speed is constant, the car’s kinetic energy does not change, so the net work done on the car is zero. The engine’s power output is therefore balanced by the power expended against gravity and dissipative forces. The dissipative forces are modeled as a fixed fraction of the total power, with <span class="math notranslate nohighlight">\(75\%\)</span> of the engine’s power used to work against gravity and the remaining <span class="math notranslate nohighlight">\(25\%\)</span> lost to air resistance and friction.</p>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>At constant speed, the rate at which the engine does work against gravity equals the gravitational force component along the incline multiplied by the speed. The power required to lift the car at speed <span class="math notranslate nohighlight">\(v\)</span> up an incline of angle <span class="math notranslate nohighlight">\(\theta\)</span> is</p>
+<div class="math notranslate nohighlight">
+\[
+P_{\text{grav}} = mgv\sin\theta.
+\]</div>
+<p>A <span class="math notranslate nohighlight">\(15\%\)</span> grade means that the tangent of the incline angle is <span class="math notranslate nohighlight">\(\tan\theta = 0.15\)</span>, so the angle is determined geometrically. Because only <span class="math notranslate nohighlight">\(75\%\)</span> of the engine’s power is used to overcome gravity, the total engine power <span class="math notranslate nohighlight">\(P\)</span> satisfies</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+0.75\,P &amp;= mgv\sin(\tan^{-1}0.15).
+\end{align*}\]</div>
+<p>We convert the speed to SI units and substitute the given values to evaluate the required power.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+P &amp;= \frac{(1200\ \mathrm{kg})(9.81\ \mathrm{m/s^2})(25\ \mathrm{m/s})\sin(\tan^{-1}0.15)}{0.75} \\
+  &amp;= 5.8\times10^{4}\ \mathrm{W}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>We find that the engine must supply approximately <span class="math notranslate nohighlight">\(5.8\times10^{4}\ \mathrm{W}\)</span> of power to drive the car up the incline at constant speed. This power accounts not only for lifting the car against gravity but also for energy dissipated by air resistance and friction. The result connects directly to earlier discussions of work, power, and constant-speed motion, illustrating how engine power requirements depend on both gravitational forces and real-world energy losses in everyday driving situations.</p>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>We verify the result by computing the gravitational power requirement and dividing by the fraction of power available to overcome gravity.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Given values</span>
+<span class="n">m</span> <span class="o">=</span> <span class="mf">1200.0</span>          <span class="c1"># kg</span>
+<span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>            <span class="c1"># m/s^2</span>
+<span class="n">v</span> <span class="o">=</span> <span class="mf">25.0</span>            <span class="c1"># m/s (90 km/h)</span>
+<span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arctan</span><span class="p">(</span><span class="mf">0.15</span><span class="p">)</span>
+<span class="n">fraction</span> <span class="o">=</span> <span class="mf">0.75</span>     <span class="c1"># fraction of power used against gravity</span>
+
+<span class="c1"># Power calculation</span>
+<span class="n">P</span> <span class="o">=</span> <span class="n">m</span> <span class="o">*</span> <span class="n">g</span> <span class="o">*</span> <span class="n">v</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span> <span class="o">/</span> <span class="n">fraction</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The required engine power is </span><span class="si">%.2e</span><span class="s2"> W.&quot;</span> <span class="o">%</span> <span class="n">P</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</div>
+</section>
+</section>
+<section id="in-class-problems">
+<h2><span class="section-number">7.5. </span>In-class Problems<a class="headerlink" href="#in-class-problems" title="Link to this heading">#</a></h2>
+<section id="part-i">
+<h3><span class="section-number">7.5.1. </span>Part I<a class="headerlink" href="#part-i" title="Link to this heading">#</a></h3>
+</section>
+<section id="part-ii">
+<h3><span class="section-number">7.5.2. </span>Part II<a class="headerlink" href="#part-ii" title="Link to this heading">#</a></h3>
 </section>
 </section>
 </section>
@@ -1341,7 +1739,6 @@ P &amp;= \frac{dW}{dt} = \frac{\vec{F}\cdot d\vec{r}}{dt}, \\
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kinetic-energy">7.2. Kinetic Energy</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-kinetic-energy-of-an-object">7.2.1. <strong>Example Problem</strong>: Kinetic Energy of an Object</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-kinetic-energy-relative-to-different-frames">7.2.2. <strong>Example Problem</strong>: Kinetic Energy Relative to Different Frames</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-special-names-for-kinetic-energy">7.2.3. <strong>Example Problem</strong>: Special Names for Kinetic Energy</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#work-energy-theorem">7.3. Work-Energy Theorem</a><ul class="nav section-nav flex-column">
@@ -1352,6 +1749,11 @@ P &amp;= \frac{dW}{dt} = \frac{\vec{F}\cdot d\vec{r}}{dt}, \\
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#power">7.4. Power</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-pull-up-power">7.4.1. <strong>Example Problem</strong>: Pull-Up Power</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-power-driving-uphill">7.4.2. <strong>Example Problem</strong>: Power Driving Uphill</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-class-problems">7.5. In-class Problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-i">7.5.1. Part I</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-ii">7.5.2. Part II</a></li>
 </ul>
 </li>
 </ul>
