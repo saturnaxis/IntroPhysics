@@ -532,6 +532,11 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-ii">7.5.2. Part II</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homework">7.6. Homework</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conceptual-problems">7.6.1. Conceptual Problems</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numerical-problems">7.6.2. Numerical Problems</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -549,8 +554,8 @@ document.write(`
 <h2><span class="section-number">7.1. </span>Work<a class="headerlink" href="#work" title="Link to this heading">#</a></h2>
 <p>In physics, <strong>work</strong> isn’t just about what makes you tired or fatigued.  It has a special definition, which is when energy is transferred to an object due the work done on it.  Work is done when a <em>force</em> acts on something that undergoes a <em>displacement</em> from one position to another.</p>
 <p>Forces can vary as a function of position, and displacements can be along various paths between two points.  We define the increment of work <span class="math notranslate nohighlight">\(dW\)</span> done by a force <span class="math notranslate nohighlight">\(\vec{F}\)</span> acting through an infinitesimal displacement <span class="math notranslate nohighlight">\(d\vec{r}\)</span> as the dot product of these two vectors:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-61fef390-efae-4fa2-a2fd-75005cd40889">
-<span class="eqno">(7.1)<a class="headerlink" href="#equation-61fef390-efae-4fa2-a2fd-75005cd40889" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-82fb7b4a-a672-48d0-a9cd-92ccf2f73ee3">
+<span class="eqno">(7.1)<a class="headerlink" href="#equation-82fb7b4a-a672-48d0-a9cd-92ccf2f73ee3" title="Permalink to this equation">#</a></span>\[\begin{align}
 dW &amp;= \vec{F}\cdot d\vec{r}, \\
 &amp;= |\vec{F}||d\vec{r}|\cos{\theta},\\
 &amp;= (F)(\Delta r)\cos{\theta}.
@@ -595,8 +600,8 @@ Fig. <a class="reference internal" href="#path-integral-fig"><span class="std st
 <div class="math notranslate nohighlight">
 \[ dW_N = \vec{N}\cdot d\vec{r} = N(dr)\cos{90^\circ} = 0. \]</div>
 <p>The normal force never does work under these circumstances.  The part of the contact force on the object that is parallel to the surface is friction <span class="math notranslate nohighlight">\(\vec{f}.\)</span>  For an object sliding along the surface, the kinetic friction <span class="math notranslate nohighlight">\(\vec{f}_k\)</span> is opposite to <span class="math notranslate nohighlight">\(d\vec{r}\)</span> so the work done by kinetic friction is <em>negative</em>.  We can write this as an integral by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-91816900-ff78-4b92-896d-3b7eea4c28a5">
-<span class="eqno">(7.3)<a class="headerlink" href="#equation-91816900-ff78-4b92-896d-3b7eea4c28a5" title="Permalink to this equation">#</a></span>\[\begin{align} W_{\rm fr} = \int_A^B \vec{f}_k \cdot d\vec{r} = -f_k \int_A^B |dr| = -f_k|\ell_{AB}|,
+<div class="amsmath math notranslate nohighlight" id="equation-e483da87-97b2-40e6-9840-75e2bed3b934">
+<span class="eqno">(7.3)<a class="headerlink" href="#equation-e483da87-97b2-40e6-9840-75e2bed3b934" title="Permalink to this equation">#</a></span>\[\begin{align} W_{\rm fr} = \int_A^B \vec{f}_k \cdot d\vec{r} = -f_k \int_A^B |dr| = -f_k|\ell_{AB}|,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(|\ell_{AB}|\)</span> is the path length on the surface.</p>
 <p>The force of static friction does no work (in the reference frame) because in the case of <em>static</em> friction, there is never any displacement.</p>
@@ -607,8 +612,8 @@ Fig. <a class="reference internal" href="#path-integral-fig"><span class="std st
 </ul>
 <p><strong>You need to analyze each particular case to determine the work done by the forces, whether positive, negative, or zero.</strong></p>
 <p>The gravitational force (or weight) of the lawn mower has a constant magnitude <span class="math notranslate nohighlight">\(mg\)</span> and direction, vertically down.  The work done by gravity on the mower is the dot product of its weight and its displacement.  It is convenient to express the <span class="math notranslate nohighlight">\(x\)</span>-axis along the horizontal and the <span class="math notranslate nohighlight">\(y\)</span>-axis vertically up.  Then the gravitational force is <span class="math notranslate nohighlight">\(-mg\hat{j}\)</span>, so the work done  by gravity <span class="math notranslate nohighlight">\(W_g\)</span> over any path <span class="math notranslate nohighlight">\(A\)</span> to <span class="math notranslate nohighlight">\(B\)</span> is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e4a220e3-2aad-4e10-bad1-443f0df214fc">
-<span class="eqno">(7.4)<a class="headerlink" href="#equation-e4a220e3-2aad-4e10-bad1-443f0df214fc" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-6c2564ed-910c-4ca5-8966-5b268f16eee0">
+<span class="eqno">(7.4)<a class="headerlink" href="#equation-6c2564ed-910c-4ca5-8966-5b268f16eee0" title="Permalink to this equation">#</a></span>\[\begin{align}
 W_{g,AB} = -mg\hat{j} \cdot \left(\vec{r}_B -\vec{r}_A\right) = -mg(y_B-y_A).
 \end{align}\]</div>
 <p>The work done on an object by gravity depends only on the object’s weight (<span class="math notranslate nohighlight">\(mg\)</span>) and the difference in height <span class="math notranslate nohighlight">\(h = y_B - y_A\)</span> the object is displaced.</p>
@@ -1110,8 +1115,8 @@ k &amp;= 3\ \mathrm{N/cm}.
 <div class="note admonition">
 <p class="admonition-title">Kinetic Energy</p>
 <p>The kinetic energy <span class="math notranslate nohighlight">\(K\)</span> of a particle is one-half the product of the particle’s mass <span class="math notranslate nohighlight">\(m\)</span> and the square of its speed <span class="math notranslate nohighlight">\(v\)</span>.  We extend this definition to any system of particles by adding up the kinetic energies of all the constituent particles to get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-fe3651d0-4d75-46d8-bea6-0557304e5025">
-<span class="eqno">(7.6)<a class="headerlink" href="#equation-fe3651d0-4d75-46d8-bea6-0557304e5025" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-5fdb144b-7f30-44e8-95a8-d0cb5a8527cc">
+<span class="eqno">(7.6)<a class="headerlink" href="#equation-5fdb144b-7f30-44e8-95a8-d0cb5a8527cc" title="Permalink to this equation">#</a></span>\[\begin{align}
 K_i &amp;= \frac{1}{2}m_iv_i^2,\quad &amp;({\rm single\ particle}\ i) \\[6pt]
 K &amp;= \sum_{i=1}^N \frac{1}{2}m_iv_i^2.\quad &amp;({\rm system\ of\ particles})
 \end{align}\]</div>
@@ -1297,8 +1302,8 @@ dW_{\rm net} &amp;= m\left(\frac{d\vec{\rm v}}{dt}\right) \cdot \vec{\rm v}dt, \
 \end{align*}\]</div>
 <p>where also used the commutative property of the dot product.</p>
 <p>We can represent the dot product in terms of Cartesian coordinates and then include the result in the integral between two points <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> on the particle’s trajectory.  This gives us the work done on the particle as:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-65bd0aba-8773-44f8-9c3c-154e8578af13">
-<span class="eqno">(7.7)<a class="headerlink" href="#equation-65bd0aba-8773-44f8-9c3c-154e8578af13" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-0423d41d-be9e-42bd-b15b-89c4a12e58b2">
+<span class="eqno">(7.7)<a class="headerlink" href="#equation-0423d41d-be9e-42bd-b15b-89c4a12e58b2" title="Permalink to this equation">#</a></span>\[\begin{align}
 W_{\text{net},AB} &amp;= \int_A^B m v_x\,dv_x + mv_y\,dv_y + mv_z\,dv_z, \\
 &amp;= \frac{1}{2}m \left(v_x^2 + v_y^2 + v_z^2\right)\biggr\vert_A^B, \\
 &amp;= \frac{1}{2}mv^2 \biggr\vert_A^B = K_B - K_A.
@@ -1500,16 +1505,16 @@ F_{\text{ave}} &amp;= \frac{\tfrac{1}{2}(2.6\times10^{-3}\ \mathrm{kg})(335\ \ma
 <section id="power">
 <h2><span class="section-number">7.4. </span>Power<a class="headerlink" href="#power" title="Link to this heading">#</a></h2>
 <p>Thus far, we have not included how work or energy can change over time.  We express the relation between work done and the time interval in doing it by introducing the concept of <strong>power</strong>.  Since work can vary as a function of time, we first define <strong>average power</strong> as the work done <span class="math notranslate nohighlight">\(\Delta W\)</span> during a time interval <span class="math notranslate nohighlight">\(\Delta t\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1ac3d82e-6fcc-4816-b185-b2c2943ce46f">
-<span class="eqno">(7.9)<a class="headerlink" href="#equation-1ac3d82e-6fcc-4816-b185-b2c2943ce46f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-69991c95-decc-4a05-b754-97c6c1f1bdb1">
+<span class="eqno">(7.9)<a class="headerlink" href="#equation-69991c95-decc-4a05-b754-97c6c1f1bdb1" title="Permalink to this equation">#</a></span>\[\begin{align}
 P_{\rm ave} = \frac{\Delta W}{\Delta t}.
 \end{align}\]</div>
 <p>We define the <strong>instantaneous power</strong> as the work done <span class="math notranslate nohighlight">\(dW\)</span> over an infinitesimal time <span class="math notranslate nohighlight">\(dt\)</span>.</p>
 <div class="admonition-power admonition">
 <p class="admonition-title">Power</p>
 <p>Power is defined as the rate of doing work, or the limit of the average power for time intervals approaching zero,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-cf1a000f-da60-4ead-916e-8ec990662d0e">
-<span class="eqno">(7.10)<a class="headerlink" href="#equation-cf1a000f-da60-4ead-916e-8ec990662d0e" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-48e8f936-f9a7-457c-baad-4455350dedf7">
+<span class="eqno">(7.10)<a class="headerlink" href="#equation-48e8f936-f9a7-457c-baad-4455350dedf7" title="Permalink to this equation">#</a></span>\[\begin{align}
 P = \frac{dW}{dt}.
 \end{align}\]</div>
 </div>
@@ -1518,8 +1523,8 @@ P = \frac{dW}{dt}.
 \[ W = \int P dt. \]</div>
 <p>The work-energy theorem relates how work can be transformed into kinetic energy.  We can also define power as the rate of transfer of energy.  Work and energy are measured in units of joules (<span class="math notranslate nohighlight">\(\rm J\)</span>), so power is measured in units of joules per second (<span class="math notranslate nohighlight">\(\rm J/s\)</span>), which has been given the SI name Watts (<span class="math notranslate nohighlight">\(1\ {\rm J/s} = 1\ {\rm W}\)</span>).  Another common unit for expressing power capability of everyday devices is horsepower: <span class="math notranslate nohighlight">\(1\ {\rm hp} = 746\ {\rm W}\)</span>.</p>
 <p>The power involved in moving a body can also be expressed in terms of the forces acting on it.  If a force <span class="math notranslate nohighlight">\(\vec{F}\)</span> acts on a body that is displaced by <span class="math notranslate nohighlight">\(d\vec{r}\)</span> in a time <span class="math notranslate nohighlight">\(dt\)</span>, the power expended by the force is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5d41511a-d067-463a-8d8b-0fcf07132bc5">
-<span class="eqno">(7.11)<a class="headerlink" href="#equation-5d41511a-d067-463a-8d8b-0fcf07132bc5" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-9c3da70d-da7b-4004-a2c8-81c7cd7080f6">
+<span class="eqno">(7.11)<a class="headerlink" href="#equation-9c3da70d-da7b-4004-a2c8-81c7cd7080f6" title="Permalink to this equation">#</a></span>\[\begin{align}
 P &amp;= \frac{dW}{dt} = \frac{\vec{F}\cdot d\vec{r}}{dt}, \\
 &amp;=\vec{F}\cdot \left( \frac{d\vec{r}}{dt}\right) = \vec{F} \cdot \vec{\rm v},
 \end{align}\]</div>
@@ -1651,9 +1656,99 @@ P &amp;= \frac{(1200\ \mathrm{kg})(9.81\ \mathrm{m/s^2})(25\ \mathrm{m/s})\sin(\
 <h2><span class="section-number">7.5. </span>In-class Problems<a class="headerlink" href="#in-class-problems" title="Link to this heading">#</a></h2>
 <section id="part-i">
 <h3><span class="section-number">7.5.1. </span>Part I<a class="headerlink" href="#part-i" title="Link to this heading">#</a></h3>
+<div class="admonition-problem-1 admonition">
+<p class="admonition-title">Problem 1</p>
+<p>A <span class="math notranslate nohighlight">\(75\ \mathrm{kg}\)</span> person climbs stairs, gaining <span class="math notranslate nohighlight">\(2.50\ \mathrm{m}\)</span> in height. Find the work done to accomplish this task.</p>
+</div>
+<div class="admonition-problem-2 admonition">
+<p class="admonition-title">Problem 2</p>
+<p>A toy cart is pulled a distance of <span class="math notranslate nohighlight">\(6.0\ \mathrm{m}\)</span> in a straight line across the floor. The force pulling the cart has a magnitude of <span class="math notranslate nohighlight">\(20\ \mathrm{N}\)</span> and is directed at <span class="math notranslate nohighlight">\(37^\circ\)</span> above the horizontal. What is the work done by this force?</p>
+</div>
+<div class="admonition-problem-3 admonition">
+<p class="admonition-title">Problem 3</p>
+<p>Calculate the kinetic energies of<br />
+(a) a <span class="math notranslate nohighlight">\(2000\ \mathrm{kg}\)</span> automobile moving at <span class="math notranslate nohighlight">\(100\ \mathrm{km/h}\)</span>;<br />
+(b) an <span class="math notranslate nohighlight">\(80\ \mathrm{kg}\)</span> runner sprinting at <span class="math notranslate nohighlight">\(10\ \mathrm{m/s}\)</span>; and<br />
+(c) a <span class="math notranslate nohighlight">\(9.1 \times 10^{-31}\ \mathrm{kg}\)</span> electron moving at <span class="math notranslate nohighlight">\(2.0 \times 10^{7}\ \mathrm{m/s}\)</span>.</p>
+</div>
+<div class="admonition-problem-4 admonition">
+<p class="admonition-title">Problem 4</p>
+<p>An <span class="math notranslate nohighlight">\(8.0\ \mathrm{g}\)</span> bullet has a speed of <span class="math notranslate nohighlight">\(800\ \mathrm{m/s}\)</span>.<br />
+(a) What is its kinetic energy?<br />
+(b) What is its kinetic energy if the speed is halved?</p>
+</div>
 </section>
 <section id="part-ii">
 <h3><span class="section-number">7.5.2. </span>Part II<a class="headerlink" href="#part-ii" title="Link to this heading">#</a></h3>
+<div class="admonition-problem-5 admonition">
+<p class="admonition-title">Problem 5</p>
+<p>(a) Calculate the force needed to bring a <span class="math notranslate nohighlight">\(950\)</span>-kg car to rest from a speed of <span class="math notranslate nohighlight">\(90\ \mathrm{km/h}\)</span> in a distance of <span class="math notranslate nohighlight">\(120\ \mathrm{m}\)</span> (a fairly typical distance for a non-panic stop).<br />
+(b) Suppose instead the car hits a concrete abutment at full speed and is brought to a stop in <span class="math notranslate nohighlight">\(2.0\ \mathrm{m}\)</span>. Calculate the force exerted on the car and compare it with the force found in part (a).</p>
+</div>
+<div class="admonition-problem-6 admonition">
+<p class="admonition-title">Problem 6</p>
+<p>A <span class="math notranslate nohighlight">\(5.0\)</span>-kg box has an acceleration of <span class="math notranslate nohighlight">\(2.0\ \mathrm{m/s^2}\)</span> when it is pulled by a horizontal force across a surface with <span class="math notranslate nohighlight">\(\mu_K = 0.50\)</span>. Find the work done over a distance of <span class="math notranslate nohighlight">\(10\ \mathrm{cm}\)</span> by</p>
+<p>(a) the horizontal force,<br />
+(b) the frictional force, and<br />
+(c) the net force.<br />
+(d) What is the change in kinetic energy of the box?</p>
+</div>
+<div class="admonition-problem-7 admonition">
+<p class="admonition-title">Problem 7</p>
+<p>(a) How long will it take an <span class="math notranslate nohighlight">\(850\)</span>-kg car with a useful power output of <span class="math notranslate nohighlight">\(40\ \mathrm{hp}\)</span> (<span class="math notranslate nohighlight">\(1\ \mathrm{hp} = 746\ \mathrm{W}\)</span>) to reach a speed of <span class="math notranslate nohighlight">\(15.0\ \mathrm{m/s}\)</span>, neglecting friction?<br />
+(b) How long will this acceleration take if the car also climbs a <span class="math notranslate nohighlight">\(3.0\)</span>-m high hill in the process?</p>
+</div>
+<div class="admonition-problem-8 admonition">
+<p class="admonition-title">Problem 8</p>
+<p>An electron in a television tube is accelerated uniformly from rest to a speed of <span class="math notranslate nohighlight">\(8.4 \times 10^{7}\ \mathrm{m/s}\)</span> over a distance of <span class="math notranslate nohighlight">\(2.5\ \mathrm{cm}\)</span>. What is the power delivered to the electron at the instant that its displacement is <span class="math notranslate nohighlight">\(1.0\ \mathrm{cm}\)</span>?</p>
+</div>
+</section>
+</section>
+<section id="homework">
+<h2><span class="section-number">7.6. </span>Homework<a class="headerlink" href="#homework" title="Link to this heading">#</a></h2>
+<section id="conceptual-problems">
+<h3><span class="section-number">7.6.1. </span>Conceptual Problems<a class="headerlink" href="#conceptual-problems" title="Link to this heading">#</a></h3>
+<div class="admonition-problem-1 admonition">
+<p class="admonition-title">Problem 1</p>
+<p>One particle has mass <span class="math notranslate nohighlight">\(m\)</span> and a second particle has mass <span class="math notranslate nohighlight">\(2m\)</span>. The second particle is moving with speed <span class="math notranslate nohighlight">\(v\)</span> and the first with speed <span class="math notranslate nohighlight">\(2v\)</span>. How do their kinetic energies compare?</p>
+</div>
+<div class="admonition-problem-2 admonition">
+<p class="admonition-title">Problem 2</p>
+<p>Two marbles of masses <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(2m\)</span> are dropped from a height <span class="math notranslate nohighlight">\(h\)</span>. Compare their kinetic energies when they reach the ground.</p>
+</div>
+</section>
+<section id="numerical-problems">
+<h3><span class="section-number">7.6.2. </span>Numerical Problems<a class="headerlink" href="#numerical-problems" title="Link to this heading">#</a></h3>
+<div class="admonition-problem-3 admonition">
+<p class="admonition-title">Problem 3</p>
+<p>Calculate the work done by an <span class="math notranslate nohighlight">\(85\ \mathrm{kg}\)</span> man who pushes a crate <span class="math notranslate nohighlight">\(4.0\ \mathrm{m}\)</span> up along a ramp that makes an angle of <span class="math notranslate nohighlight">\(20^\circ\)</span> with the horizontal. He exerts a force of <span class="math notranslate nohighlight">\(500\ \mathrm{N}\)</span> on the crate parallel to the ramp and moves at a constant speed. Be certain to include the work he does on the crate and on his body to get up the ramp.</p>
+<figure class="align-default" id="work-ramp-prob">
+<img alt="ramp work problem" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/1e9a66bdf1cbf3aab3473202b4d1de67dc83ab8b" />
+<figcaption>
+<p><span class="caption-number">Fig. 7.12 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#work-ramp-prob" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="admonition-problem-4 admonition">
+<p class="admonition-title">Problem 4</p>
+<p>Compare the kinetic energy of a <span class="math notranslate nohighlight">\(20{,}000\ \mathrm{kg}\)</span> truck moving at <span class="math notranslate nohighlight">\(110\ \mathrm{km/h}\)</span> with that of an <span class="math notranslate nohighlight">\(80\ \mathrm{kg}\)</span> astronaut in orbit moving at <span class="math notranslate nohighlight">\(27{,}500\ \mathrm{km/h}\)</span>.</p>
+</div>
+<div class="admonition-problem-5 admonition">
+<p class="admonition-title">Problem 5</p>
+<p>A small block of mass <span class="math notranslate nohighlight">\(200\ \mathrm{g}\)</span> starts at rest at <span class="math notranslate nohighlight">\(A\)</span>, slides to <span class="math notranslate nohighlight">\(B\)</span> where its speed is <span class="math notranslate nohighlight">\(v_B = 8.0\ \mathrm{m/s}\)</span>, then slides along the horizontal surface a distance <span class="math notranslate nohighlight">\(10\ \mathrm{m}\)</span> before coming to rest at <span class="math notranslate nohighlight">\(C\)</span>.</p>
+<p>(a) What is the work of friction along the curved surface?<br />
+(b) What is the coefficient of kinetic friction along the horizontal surface?</p>
+<figure class="align-default" id="work-track-prob">
+<img alt="track work problem" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/c0fd526aab89ed88cd65ea2274ae75d2a48f2438" />
+<figcaption>
+<p><span class="caption-number">Fig. 7.13 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#work-track-prob" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="admonition-problem-6 admonition">
+<p class="admonition-title">Problem 6</p>
+<p>A <span class="math notranslate nohighlight">\(500\ \mathrm{kg}\)</span> dragster accelerates from rest to a final speed of <span class="math notranslate nohighlight">\(110\ \mathrm{m/s}\)</span> in <span class="math notranslate nohighlight">\(400\ \mathrm{m}\)</span> (about a quarter of a mile) and encounters an average frictional force of <span class="math notranslate nohighlight">\(1200\ \mathrm{N}\)</span>. What is its average power output in watts and horsepower if this takes <span class="math notranslate nohighlight">\(7.3\ \mathrm{s}\)</span>?</p>
+</div>
 </section>
 </section>
 </section>
@@ -1754,6 +1849,11 @@ P &amp;= \frac{(1200\ \mathrm{kg})(9.81\ \mathrm{m/s^2})(25\ \mathrm{m/s})\sin(\
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-class-problems">7.5. In-class Problems</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-i">7.5.1. Part I</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-ii">7.5.2. Part II</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homework">7.6. Homework</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conceptual-problems">7.6.1. Conceptual Problems</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numerical-problems">7.6.2. Numerical Problems</a></li>
 </ul>
 </li>
 </ul>
