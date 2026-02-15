@@ -39,7 +39,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/metadata_figure.css?v=2463d4a7" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx_iframe.css?v=96c28b52" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=c2a6260a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=52bae50d" />
     <link rel="stylesheet" type="text/css" href="../_static/mycss.css?v=3589796e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -229,7 +229,7 @@
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">10. Fixed-axis Rotation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter11/angular-momentum.html">11. Angular Momentum</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Statics, Graviation, Fluids</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Statics, Gravitation, Fluids</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../Chapter12/static-equilibrium-elasticity.html">12. Static Equilibrium and Elasticity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter13/gravitation.html">13. Gravitation</a></li>
@@ -473,7 +473,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -489,6 +491,31 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rotational-variables">10.1. Rotational Variables</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rotational-kinematics">10.2. Rotational Kinematics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relating-angular-and-translational-quantities">10.3. Relating Angular and Translational Quantities</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moment-of-inertia-and-rotational-kinetic-energy">10.4. Moment of Inertia and Rotational Kinetic Energy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculating-moments-of-inertia">10.5. Calculating Moments of Inertia</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#torque">10.6. Torque</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-2nd-law-for-rotation">10.7. Newton’s 2nd Law for Rotation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#work-and-power-for-rotation">10.8. Work and Power for Rotation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-class-problems">10.9. In-class Problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-i">10.9.1. Part I</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-ii">10.9.2. Part II</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homework">10.10. Homework</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conceptual-problems">10.10.1. Conceptual Problems</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantitative-problems">10.10.2. Quantitative Problems</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -500,6 +527,48 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="fixed-axis-rotation">
 <h1><span class="section-number">10. </span>Fixed-axis Rotation<a class="headerlink" href="#fixed-axis-rotation" title="Link to this heading">#</a></h1>
+<section id="rotational-variables">
+<h2><span class="section-number">10.1. </span>Rotational Variables<a class="headerlink" href="#rotational-variables" title="Link to this heading">#</a></h2>
+</section>
+<section id="rotational-kinematics">
+<h2><span class="section-number">10.2. </span>Rotational Kinematics<a class="headerlink" href="#rotational-kinematics" title="Link to this heading">#</a></h2>
+</section>
+<section id="relating-angular-and-translational-quantities">
+<h2><span class="section-number">10.3. </span>Relating Angular and Translational Quantities<a class="headerlink" href="#relating-angular-and-translational-quantities" title="Link to this heading">#</a></h2>
+</section>
+<section id="moment-of-inertia-and-rotational-kinetic-energy">
+<h2><span class="section-number">10.4. </span>Moment of Inertia and Rotational Kinetic Energy<a class="headerlink" href="#moment-of-inertia-and-rotational-kinetic-energy" title="Link to this heading">#</a></h2>
+</section>
+<section id="calculating-moments-of-inertia">
+<h2><span class="section-number">10.5. </span>Calculating Moments of Inertia<a class="headerlink" href="#calculating-moments-of-inertia" title="Link to this heading">#</a></h2>
+</section>
+<section id="torque">
+<h2><span class="section-number">10.6. </span>Torque<a class="headerlink" href="#torque" title="Link to this heading">#</a></h2>
+</section>
+<section id="newton-s-2nd-law-for-rotation">
+<h2><span class="section-number">10.7. </span>Newton’s 2nd Law for Rotation<a class="headerlink" href="#newton-s-2nd-law-for-rotation" title="Link to this heading">#</a></h2>
+</section>
+<section id="work-and-power-for-rotation">
+<h2><span class="section-number">10.8. </span>Work and Power for Rotation<a class="headerlink" href="#work-and-power-for-rotation" title="Link to this heading">#</a></h2>
+</section>
+<section id="in-class-problems">
+<h2><span class="section-number">10.9. </span>In-class Problems<a class="headerlink" href="#in-class-problems" title="Link to this heading">#</a></h2>
+<section id="part-i">
+<h3><span class="section-number">10.9.1. </span>Part I<a class="headerlink" href="#part-i" title="Link to this heading">#</a></h3>
+</section>
+<section id="part-ii">
+<h3><span class="section-number">10.9.2. </span>Part II<a class="headerlink" href="#part-ii" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="homework">
+<h2><span class="section-number">10.10. </span>Homework<a class="headerlink" href="#homework" title="Link to this heading">#</a></h2>
+<section id="conceptual-problems">
+<h3><span class="section-number">10.10.1. </span>Conceptual Problems<a class="headerlink" href="#conceptual-problems" title="Link to this heading">#</a></h3>
+</section>
+<section id="quantitative-problems">
+<h3><span class="section-number">10.10.2. </span>Quantitative Problems<a class="headerlink" href="#quantitative-problems" title="Link to this heading">#</a></h3>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -556,6 +625,38 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rotational-variables">10.1. Rotational Variables</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rotational-kinematics">10.2. Rotational Kinematics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relating-angular-and-translational-quantities">10.3. Relating Angular and Translational Quantities</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moment-of-inertia-and-rotational-kinetic-energy">10.4. Moment of Inertia and Rotational Kinetic Energy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculating-moments-of-inertia">10.5. Calculating Moments of Inertia</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#torque">10.6. Torque</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-2nd-law-for-rotation">10.7. Newton’s 2nd Law for Rotation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#work-and-power-for-rotation">10.8. Work and Power for Rotation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-class-problems">10.9. In-class Problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-i">10.9.1. Part I</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-ii">10.9.2. Part II</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homework">10.10. Homework</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conceptual-problems">10.10.1. Conceptual Problems</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantitative-problems">10.10.2. Quantitative Problems</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

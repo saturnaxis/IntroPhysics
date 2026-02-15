@@ -39,7 +39,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/metadata_figure.css?v=2463d4a7" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx_iframe.css?v=96c28b52" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=c2a6260a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=52bae50d" />
     <link rel="stylesheet" type="text/css" href="../_static/mycss.css?v=3589796e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -229,7 +229,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../Chapter10/fixed-axis-rotation.html">10. Fixed-axis Rotation</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">11. Angular Momentum</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Statics, Graviation, Fluids</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Statics, Gravitation, Fluids</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../Chapter12/static-equilibrium-elasticity.html">12. Static Equilibrium and Elasticity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter13/gravitation.html">13. Gravitation</a></li>
@@ -473,7 +473,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -489,6 +491,27 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rolling-motion">11.1. Rolling Motion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">11.2. Angular Momentum</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-angular-momentum">11.3. Conservation of Angular Momentum</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#precession-of-a-gyroscope">11.4. Precession of a Gyroscope</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-class-problems">11.5. In-class Problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-i">11.5.1. Part I</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-ii">11.5.2. Part II</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homework">11.6. Homework</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conceptual-problems">11.6.1. Conceptual Problems</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantitative-problems">11.6.2. Quantitative Problems</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -500,6 +523,36 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="angular-momentum">
 <h1><span class="section-number">11. </span>Angular Momentum<a class="headerlink" href="#angular-momentum" title="Link to this heading">#</a></h1>
+<section id="rolling-motion">
+<h2><span class="section-number">11.1. </span>Rolling Motion<a class="headerlink" href="#rolling-motion" title="Link to this heading">#</a></h2>
+</section>
+<section id="id1">
+<h2><span class="section-number">11.2. </span>Angular Momentum<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+</section>
+<section id="conservation-of-angular-momentum">
+<h2><span class="section-number">11.3. </span>Conservation of Angular Momentum<a class="headerlink" href="#conservation-of-angular-momentum" title="Link to this heading">#</a></h2>
+</section>
+<section id="precession-of-a-gyroscope">
+<h2><span class="section-number">11.4. </span>Precession of a Gyroscope<a class="headerlink" href="#precession-of-a-gyroscope" title="Link to this heading">#</a></h2>
+</section>
+<section id="in-class-problems">
+<h2><span class="section-number">11.5. </span>In-class Problems<a class="headerlink" href="#in-class-problems" title="Link to this heading">#</a></h2>
+<section id="part-i">
+<h3><span class="section-number">11.5.1. </span>Part I<a class="headerlink" href="#part-i" title="Link to this heading">#</a></h3>
+</section>
+<section id="part-ii">
+<h3><span class="section-number">11.5.2. </span>Part II<a class="headerlink" href="#part-ii" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="homework">
+<h2><span class="section-number">11.6. </span>Homework<a class="headerlink" href="#homework" title="Link to this heading">#</a></h2>
+<section id="conceptual-problems">
+<h3><span class="section-number">11.6.1. </span>Conceptual Problems<a class="headerlink" href="#conceptual-problems" title="Link to this heading">#</a></h3>
+</section>
+<section id="quantitative-problems">
+<h3><span class="section-number">11.6.2. </span>Quantitative Problems<a class="headerlink" href="#quantitative-problems" title="Link to this heading">#</a></h3>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -556,6 +609,34 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rolling-motion">11.1. Rolling Motion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">11.2. Angular Momentum</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-angular-momentum">11.3. Conservation of Angular Momentum</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#precession-of-a-gyroscope">11.4. Precession of a Gyroscope</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-class-problems">11.5. In-class Problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-i">11.5.1. Part I</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-ii">11.5.2. Part II</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homework">11.6. Homework</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conceptual-problems">11.6.1. Conceptual Problems</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantitative-problems">11.6.2. Quantitative Problems</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

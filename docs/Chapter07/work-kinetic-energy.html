@@ -554,8 +554,8 @@ document.write(`
 <h2><span class="section-number">7.1. </span>Work<a class="headerlink" href="#work" title="Link to this heading">#</a></h2>
 <p>In physics, <strong>work</strong> isn’t just about what makes you tired or fatigued.  It has a special definition, which is when energy is transferred to an object due the work done on it.  Work is done when a <em>force</em> acts on something that undergoes a <em>displacement</em> from one position to another.</p>
 <p>Forces can vary as a function of position, and displacements can be along various paths between two points.  We define the increment of work <span class="math notranslate nohighlight">\(dW\)</span> done by a force <span class="math notranslate nohighlight">\(\vec{F}\)</span> acting through an infinitesimal displacement <span class="math notranslate nohighlight">\(d\vec{r}\)</span> as the dot product of these two vectors:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-82fb7b4a-a672-48d0-a9cd-92ccf2f73ee3">
-<span class="eqno">(7.1)<a class="headerlink" href="#equation-82fb7b4a-a672-48d0-a9cd-92ccf2f73ee3" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-5a6902e3-ef53-4de1-9e90-e0573c9f76a6">
+<span class="eqno">(7.1)<a class="headerlink" href="#equation-5a6902e3-ef53-4de1-9e90-e0573c9f76a6" title="Permalink to this equation">#</a></span>\[\begin{align}
 dW &amp;= \vec{F}\cdot d\vec{r}, \\
 &amp;= |\vec{F}||d\vec{r}|\cos{\theta},\\
 &amp;= (F)(\Delta r)\cos{\theta}.
@@ -600,8 +600,8 @@ Fig. <a class="reference internal" href="#path-integral-fig"><span class="std st
 <div class="math notranslate nohighlight">
 \[ dW_N = \vec{N}\cdot d\vec{r} = N(dr)\cos{90^\circ} = 0. \]</div>
 <p>The normal force never does work under these circumstances.  The part of the contact force on the object that is parallel to the surface is friction <span class="math notranslate nohighlight">\(\vec{f}.\)</span>  For an object sliding along the surface, the kinetic friction <span class="math notranslate nohighlight">\(\vec{f}_k\)</span> is opposite to <span class="math notranslate nohighlight">\(d\vec{r}\)</span> so the work done by kinetic friction is <em>negative</em>.  We can write this as an integral by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e483da87-97b2-40e6-9840-75e2bed3b934">
-<span class="eqno">(7.3)<a class="headerlink" href="#equation-e483da87-97b2-40e6-9840-75e2bed3b934" title="Permalink to this equation">#</a></span>\[\begin{align} W_{\rm fr} = \int_A^B \vec{f}_k \cdot d\vec{r} = -f_k \int_A^B |dr| = -f_k|\ell_{AB}|,
+<div class="amsmath math notranslate nohighlight" id="equation-5638c729-65b1-4035-b58f-63135db6002d">
+<span class="eqno">(7.3)<a class="headerlink" href="#equation-5638c729-65b1-4035-b58f-63135db6002d" title="Permalink to this equation">#</a></span>\[\begin{align} W_{\rm fr} = \int_A^B \vec{f}_k \cdot d\vec{r} = -f_k \int_A^B |dr| = -f_k|\ell_{AB}|,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(|\ell_{AB}|\)</span> is the path length on the surface.</p>
 <p>The force of static friction does no work (in the reference frame) because in the case of <em>static</em> friction, there is never any displacement.</p>
@@ -612,8 +612,8 @@ Fig. <a class="reference internal" href="#path-integral-fig"><span class="std st
 </ul>
 <p><strong>You need to analyze each particular case to determine the work done by the forces, whether positive, negative, or zero.</strong></p>
 <p>The gravitational force (or weight) of the lawn mower has a constant magnitude <span class="math notranslate nohighlight">\(mg\)</span> and direction, vertically down.  The work done by gravity on the mower is the dot product of its weight and its displacement.  It is convenient to express the <span class="math notranslate nohighlight">\(x\)</span>-axis along the horizontal and the <span class="math notranslate nohighlight">\(y\)</span>-axis vertically up.  Then the gravitational force is <span class="math notranslate nohighlight">\(-mg\hat{j}\)</span>, so the work done  by gravity <span class="math notranslate nohighlight">\(W_g\)</span> over any path <span class="math notranslate nohighlight">\(A\)</span> to <span class="math notranslate nohighlight">\(B\)</span> is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6c2564ed-910c-4ca5-8966-5b268f16eee0">
-<span class="eqno">(7.4)<a class="headerlink" href="#equation-6c2564ed-910c-4ca5-8966-5b268f16eee0" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-aa150483-a47e-4e08-99e1-8f9c4fd38514">
+<span class="eqno">(7.4)<a class="headerlink" href="#equation-aa150483-a47e-4e08-99e1-8f9c4fd38514" title="Permalink to this equation">#</a></span>\[\begin{align}
 W_{g,AB} = -mg\hat{j} \cdot \left(\vec{r}_B -\vec{r}_A\right) = -mg(y_B-y_A).
 \end{align}\]</div>
 <p>The work done on an object by gravity depends only on the object’s weight (<span class="math notranslate nohighlight">\(mg\)</span>) and the difference in height <span class="math notranslate nohighlight">\(h = y_B - y_A\)</span> the object is displaced.</p>
@@ -1115,8 +1115,8 @@ k &amp;= 3\ \mathrm{N/cm}.
 <div class="note admonition">
 <p class="admonition-title">Kinetic Energy</p>
 <p>The kinetic energy <span class="math notranslate nohighlight">\(K\)</span> of a particle is one-half the product of the particle’s mass <span class="math notranslate nohighlight">\(m\)</span> and the square of its speed <span class="math notranslate nohighlight">\(v\)</span>.  We extend this definition to any system of particles by adding up the kinetic energies of all the constituent particles to get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5fdb144b-7f30-44e8-95a8-d0cb5a8527cc">
-<span class="eqno">(7.6)<a class="headerlink" href="#equation-5fdb144b-7f30-44e8-95a8-d0cb5a8527cc" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-7a5f98e0-95d0-4ee9-b0ea-7d97e12d8bbb">
+<span class="eqno">(7.6)<a class="headerlink" href="#equation-7a5f98e0-95d0-4ee9-b0ea-7d97e12d8bbb" title="Permalink to this equation">#</a></span>\[\begin{align}
 K_i &amp;= \frac{1}{2}m_iv_i^2,\quad &amp;({\rm single\ particle}\ i) \\[6pt]
 K &amp;= \sum_{i=1}^N \frac{1}{2}m_iv_i^2.\quad &amp;({\rm system\ of\ particles})
 \end{align}\]</div>
@@ -1302,8 +1302,8 @@ dW_{\rm net} &amp;= m\left(\frac{d\vec{\rm v}}{dt}\right) \cdot \vec{\rm v}dt, \
 \end{align*}\]</div>
 <p>where also used the commutative property of the dot product.</p>
 <p>We can represent the dot product in terms of Cartesian coordinates and then include the result in the integral between two points <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> on the particle’s trajectory.  This gives us the work done on the particle as:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0423d41d-be9e-42bd-b15b-89c4a12e58b2">
-<span class="eqno">(7.7)<a class="headerlink" href="#equation-0423d41d-be9e-42bd-b15b-89c4a12e58b2" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-82297aec-bc5e-46ff-8b03-05d4bf91a968">
+<span class="eqno">(7.7)<a class="headerlink" href="#equation-82297aec-bc5e-46ff-8b03-05d4bf91a968" title="Permalink to this equation">#</a></span>\[\begin{align}
 W_{\text{net},AB} &amp;= \int_A^B m v_x\,dv_x + mv_y\,dv_y + mv_z\,dv_z, \\
 &amp;= \frac{1}{2}m \left(v_x^2 + v_y^2 + v_z^2\right)\biggr\vert_A^B, \\
 &amp;= \frac{1}{2}mv^2 \biggr\vert_A^B = K_B - K_A.
@@ -1505,16 +1505,16 @@ F_{\text{ave}} &amp;= \frac{\tfrac{1}{2}(2.6\times10^{-3}\ \mathrm{kg})(335\ \ma
 <section id="power">
 <h2><span class="section-number">7.4. </span>Power<a class="headerlink" href="#power" title="Link to this heading">#</a></h2>
 <p>Thus far, we have not included how work or energy can change over time.  We express the relation between work done and the time interval in doing it by introducing the concept of <strong>power</strong>.  Since work can vary as a function of time, we first define <strong>average power</strong> as the work done <span class="math notranslate nohighlight">\(\Delta W\)</span> during a time interval <span class="math notranslate nohighlight">\(\Delta t\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-69991c95-decc-4a05-b754-97c6c1f1bdb1">
-<span class="eqno">(7.9)<a class="headerlink" href="#equation-69991c95-decc-4a05-b754-97c6c1f1bdb1" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-5a49c531-9007-4fd1-b242-a7cfbbd041e8">
+<span class="eqno">(7.9)<a class="headerlink" href="#equation-5a49c531-9007-4fd1-b242-a7cfbbd041e8" title="Permalink to this equation">#</a></span>\[\begin{align}
 P_{\rm ave} = \frac{\Delta W}{\Delta t}.
 \end{align}\]</div>
 <p>We define the <strong>instantaneous power</strong> as the work done <span class="math notranslate nohighlight">\(dW\)</span> over an infinitesimal time <span class="math notranslate nohighlight">\(dt\)</span>.</p>
 <div class="admonition-power admonition">
 <p class="admonition-title">Power</p>
 <p>Power is defined as the rate of doing work, or the limit of the average power for time intervals approaching zero,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-48e8f936-f9a7-457c-baad-4455350dedf7">
-<span class="eqno">(7.10)<a class="headerlink" href="#equation-48e8f936-f9a7-457c-baad-4455350dedf7" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f6b82427-3607-48df-b0e4-9a7200901e71">
+<span class="eqno">(7.10)<a class="headerlink" href="#equation-f6b82427-3607-48df-b0e4-9a7200901e71" title="Permalink to this equation">#</a></span>\[\begin{align}
 P = \frac{dW}{dt}.
 \end{align}\]</div>
 </div>
@@ -1523,8 +1523,8 @@ P = \frac{dW}{dt}.
 \[ W = \int P dt. \]</div>
 <p>The work-energy theorem relates how work can be transformed into kinetic energy.  We can also define power as the rate of transfer of energy.  Work and energy are measured in units of joules (<span class="math notranslate nohighlight">\(\rm J\)</span>), so power is measured in units of joules per second (<span class="math notranslate nohighlight">\(\rm J/s\)</span>), which has been given the SI name Watts (<span class="math notranslate nohighlight">\(1\ {\rm J/s} = 1\ {\rm W}\)</span>).  Another common unit for expressing power capability of everyday devices is horsepower: <span class="math notranslate nohighlight">\(1\ {\rm hp} = 746\ {\rm W}\)</span>.</p>
 <p>The power involved in moving a body can also be expressed in terms of the forces acting on it.  If a force <span class="math notranslate nohighlight">\(\vec{F}\)</span> acts on a body that is displaced by <span class="math notranslate nohighlight">\(d\vec{r}\)</span> in a time <span class="math notranslate nohighlight">\(dt\)</span>, the power expended by the force is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9c3da70d-da7b-4004-a2c8-81c7cd7080f6">
-<span class="eqno">(7.11)<a class="headerlink" href="#equation-9c3da70d-da7b-4004-a2c8-81c7cd7080f6" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ced3c2e8-83a2-4085-9508-c8fdce496cba">
+<span class="eqno">(7.11)<a class="headerlink" href="#equation-ced3c2e8-83a2-4085-9508-c8fdce496cba" title="Permalink to this equation">#</a></span>\[\begin{align}
 P &amp;= \frac{dW}{dt} = \frac{\vec{F}\cdot d\vec{r}}{dt}, \\
 &amp;=\vec{F}\cdot \left( \frac{d\vec{r}}{dt}\right) = \vec{F} \cdot \vec{\rm v},
 \end{align}\]</div>
