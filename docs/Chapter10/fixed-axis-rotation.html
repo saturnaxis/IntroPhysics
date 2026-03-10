@@ -817,42 +817,42 @@ input[type=range].anim-slider {
 </style>
 
 <div class="animation">
-  <img id="_anim_img153a8dcf400f44cf83b1c28c25f39024">
+  <img id="_anim_imga96990c77023469997366265a449c4e1">
   <div class="anim-controls">
-    <input id="_anim_slider153a8dcf400f44cf83b1c28c25f39024" type="range" class="anim-slider"
+    <input id="_anim_slidera96990c77023469997366265a449c4e1" type="range" class="anim-slider"
            name="points" min="0" max="1" step="1" value="0"
-           oninput="anim153a8dcf400f44cf83b1c28c25f39024.set_frame(parseInt(this.value));">
+           oninput="anima96990c77023469997366265a449c4e1.set_frame(parseInt(this.value));">
     <div class="anim-buttons">
-      <button title="Decrease speed" aria-label="Decrease speed" onclick="anim153a8dcf400f44cf83b1c28c25f39024.slower()">
+      <button title="Decrease speed" aria-label="Decrease speed" onclick="anima96990c77023469997366265a449c4e1.slower()">
           <i class="fa fa-minus"></i></button>
-      <button title="First frame" aria-label="First frame" onclick="anim153a8dcf400f44cf83b1c28c25f39024.first_frame()">
+      <button title="First frame" aria-label="First frame" onclick="anima96990c77023469997366265a449c4e1.first_frame()">
         <i class="fa fa-fast-backward"></i></button>
-      <button title="Previous frame" aria-label="Previous frame" onclick="anim153a8dcf400f44cf83b1c28c25f39024.previous_frame()">
+      <button title="Previous frame" aria-label="Previous frame" onclick="anima96990c77023469997366265a449c4e1.previous_frame()">
           <i class="fa fa-step-backward"></i></button>
-      <button title="Play backwards" aria-label="Play backwards" onclick="anim153a8dcf400f44cf83b1c28c25f39024.reverse_animation()">
+      <button title="Play backwards" aria-label="Play backwards" onclick="anima96990c77023469997366265a449c4e1.reverse_animation()">
           <i class="fa fa-play fa-flip-horizontal"></i></button>
-      <button title="Pause" aria-label="Pause" onclick="anim153a8dcf400f44cf83b1c28c25f39024.pause_animation()">
+      <button title="Pause" aria-label="Pause" onclick="anima96990c77023469997366265a449c4e1.pause_animation()">
           <i class="fa fa-pause"></i></button>
-      <button title="Play" aria-label="Play" onclick="anim153a8dcf400f44cf83b1c28c25f39024.play_animation()">
+      <button title="Play" aria-label="Play" onclick="anima96990c77023469997366265a449c4e1.play_animation()">
           <i class="fa fa-play"></i></button>
-      <button title="Next frame" aria-label="Next frame" onclick="anim153a8dcf400f44cf83b1c28c25f39024.next_frame()">
+      <button title="Next frame" aria-label="Next frame" onclick="anima96990c77023469997366265a449c4e1.next_frame()">
           <i class="fa fa-step-forward"></i></button>
-      <button title="Last frame" aria-label="Last frame" onclick="anim153a8dcf400f44cf83b1c28c25f39024.last_frame()">
+      <button title="Last frame" aria-label="Last frame" onclick="anima96990c77023469997366265a449c4e1.last_frame()">
           <i class="fa fa-fast-forward"></i></button>
-      <button title="Increase speed" aria-label="Increase speed" onclick="anim153a8dcf400f44cf83b1c28c25f39024.faster()">
+      <button title="Increase speed" aria-label="Increase speed" onclick="anima96990c77023469997366265a449c4e1.faster()">
           <i class="fa fa-plus"></i></button>
     </div>
-    <form title="Repetition mode" aria-label="Repetition mode" action="#n" name="_anim_loop_select153a8dcf400f44cf83b1c28c25f39024"
+    <form title="Repetition mode" aria-label="Repetition mode" action="#n" name="_anim_loop_selecta96990c77023469997366265a449c4e1"
           class="anim-state">
-      <input type="radio" name="state" value="once" id="_anim_radio1_153a8dcf400f44cf83b1c28c25f39024"
+      <input type="radio" name="state" value="once" id="_anim_radio1_a96990c77023469997366265a449c4e1"
              >
-      <label for="_anim_radio1_153a8dcf400f44cf83b1c28c25f39024">Once</label>
-      <input type="radio" name="state" value="loop" id="_anim_radio2_153a8dcf400f44cf83b1c28c25f39024"
+      <label for="_anim_radio1_a96990c77023469997366265a449c4e1">Once</label>
+      <input type="radio" name="state" value="loop" id="_anim_radio2_a96990c77023469997366265a449c4e1"
              checked>
-      <label for="_anim_radio2_153a8dcf400f44cf83b1c28c25f39024">Loop</label>
-      <input type="radio" name="state" value="reflect" id="_anim_radio3_153a8dcf400f44cf83b1c28c25f39024"
+      <label for="_anim_radio2_a96990c77023469997366265a449c4e1">Loop</label>
+      <input type="radio" name="state" value="reflect" id="_anim_radio3_a96990c77023469997366265a449c4e1"
              >
-      <label for="_anim_radio3_153a8dcf400f44cf83b1c28c25f39024">Reflect</label>
+      <label for="_anim_radio3_a96990c77023469997366265a449c4e1">Reflect</label>
     </form>
   </div>
 </div>
@@ -862,9 +862,9 @@ input[type=range].anim-slider {
   /* Instantiate the Animation class. */
   /* The IDs given should match those used in the template above. */
   (function() {
-    var img_id = "_anim_img153a8dcf400f44cf83b1c28c25f39024";
-    var slider_id = "_anim_slider153a8dcf400f44cf83b1c28c25f39024";
-    var loop_select_id = "_anim_loop_select153a8dcf400f44cf83b1c28c25f39024";
+    var img_id = "_anim_imga96990c77023469997366265a449c4e1";
+    var slider_id = "_anim_slidera96990c77023469997366265a449c4e1";
+    var loop_select_id = "_anim_loop_selecta96990c77023469997366265a449c4e1";
     var frames = new Array(240);
     
   frames[0] = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYCAYAAAC+ZpjcAAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90\
@@ -88716,7 +88716,7 @@ jIAFAADgMgIWAACAywhYAAAALvv/AZMl9NmPBqp7AAAAAElFTkSuQmCC\
     /* set a timeout to make sure all the above elements are created before
        the object is initialized. */
     setTimeout(function() {
-        anim153a8dcf400f44cf83b1c28c25f39024 = new Animation(frames, img_id, slider_id, 29.0,
+        anima96990c77023469997366265a449c4e1 = new Animation(frames, img_id, slider_id, 29.0,
                                  loop_select_id);
     }, 0);
   })()
@@ -88829,8 +88829,8 @@ jIAFAADgMgIWAACAywhYAAAALvv/AZMl9NmPBqp7AAAAAElFTkSuQmCC\
 <p>In Figures <a class="reference internal" href="#particle-circle-fig"><span class="std std-numref">10.1</span></a> and <a class="reference internal" href="#fig-circle-animation"><span class="std std-numref">10.2</span></a>, we show a particle moving in a circle.  The coordinate system is fixed and serves as a frame of reference to define the particle’s position.  Its position vector <span class="math notranslate nohighlight">\(\vec{r}\)</span> sweeps out the angle <span class="math notranslate nohighlight">\(\theta\)</span> in a counterclockwise direction.</p>
 <p>The angular position <span class="math notranslate nohighlight">\(\theta\)</span> describes how far the position vector has rotated in the <span class="math notranslate nohighlight">\(x\)</span>-<span class="math notranslate nohighlight">\(y\)</span> plane.  As the particle moves in its circular path, it also traces an arc length <span class="math notranslate nohighlight">\(s\)</span>.  The particle may complete more than one revolution around the circle.  This means that the angle <span class="math notranslate nohighlight">\(\theta\)</span> may be greater than <span class="math notranslate nohighlight">\(2\pi\)</span>, and the arc length <span class="math notranslate nohighlight">\(s\)</span> can be greater than the circumference, <span class="math notranslate nohighlight">\(2\pi r\)</span>.</p>
 <p>The angle is related to the radius of the circle and the arc length by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b33e0e23-7698-4f16-aa44-37c517ec555c">
-<span class="eqno">(10.1)<a class="headerlink" href="#equation-b33e0e23-7698-4f16-aa44-37c517ec555c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-220e197e-3c16-4b95-a17c-201a5d21c7e4">
+<span class="eqno">(10.1)<a class="headerlink" href="#equation-220e197e-3c16-4b95-a17c-201a5d21c7e4" title="Permalink to this equation">#</a></span>\[\begin{align}
 \theta &amp;= \frac{s}{r}, \\
 s &amp;= r\theta.
 \end{align}\]</div>
@@ -88841,8 +88841,8 @@ s &amp;= r\theta.
 </div>
 <p>As the particle moves along its circular path, its angular position changes and it undergoes an angular displacement over <span class="math notranslate nohighlight">\(\Delta \theta\)</span>.</p>
 <p>We can assign a vector <span class="math notranslate nohighlight">\(\vec{\theta}\)</span>, which represents a vector <code class="docutils literal notranslate"><span class="pre">out-of-the-page</span></code> in Fig. <a class="reference internal" href="#particle-circle-fig"><span class="std std-numref">10.1</span></a>.  The angular position vector <span class="math notranslate nohighlight">\(\vec{r}\)</span> and the arc length <span class="math notranslate nohighlight">\(\vec{s}\)</span> both lie in the plane of the page.  These three vectors are related to each other by a cross-product, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ab10e972-1e92-4c7a-8de4-8f682461e319">
-<span class="eqno">(10.2)<a class="headerlink" href="#equation-ab10e972-1e92-4c7a-8de4-8f682461e319" title="Permalink to this equation">#</a></span>\[\begin{align} 
+<div class="amsmath math notranslate nohighlight" id="equation-74ebc8f2-1572-4321-83ba-192113ddd5c6">
+<span class="eqno">(10.2)<a class="headerlink" href="#equation-74ebc8f2-1572-4321-83ba-192113ddd5c6" title="Permalink to this equation">#</a></span>\[\begin{align} 
 \vec{s} = \vec{\theta} \times \vec{r}.
 \end{align}\]</div>
 <figure class="align-default" id="theta-cross-fig">
@@ -88852,8 +88852,8 @@ s &amp;= r\theta.
 </figcaption>
 </figure>
 <p>The magnitude of the <strong>angular velocity</strong> <span class="math notranslate nohighlight">\(\omega\)</span> is the time rate of change of the angle <span class="math notranslate nohighlight">\(\theta\)</span> as the particle moves in its circular path.  The <em>instantaneous angular velocity</em> is defined using the limit definition when <span class="math notranslate nohighlight">\(\Delta t\rightarrow 0\)</span> in the average velocity, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7d76b518-956a-4b5b-be22-75640d69b22d">
-<span class="eqno">(10.3)<a class="headerlink" href="#equation-7d76b518-956a-4b5b-be22-75640d69b22d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-9da8c349-3ca8-44a2-8dde-01f0e68cef47">
+<span class="eqno">(10.3)<a class="headerlink" href="#equation-9da8c349-3ca8-44a2-8dde-01f0e68cef47" title="Permalink to this equation">#</a></span>\[\begin{align}
 \omega_{\rm ave} &amp;= \frac{\Delta \theta}{\Delta t}, \\[6pt]
 \omega &amp;= \lim_{\Delta t \rightarrow 0}\frac{\Delta \theta}{\Delta t} = \frac{d\theta}{dt}.
 \end{align}\]</div>
@@ -88871,8 +88871,8 @@ s&amp;=r\theta,\\
 &amp;= \frac{dr}{dt}\theta + r\frac{d\theta}{dt}.
 \end{align*}\]</div>
 <p>Since <span class="math notranslate nohighlight">\(r\)</span> represents the radius and is a constant, the factor <span class="math notranslate nohighlight">\(\frac{dr}{dt} = 0\)</span>.  By substitution of the instantaneous angular velocity <span class="math notranslate nohighlight">\(\omega\)</span>, we arrive at</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f5e30df2-234d-4e17-a0b4-99f09749a82c">
-<span class="eqno">(10.4)<a class="headerlink" href="#equation-f5e30df2-234d-4e17-a0b4-99f09749a82c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-9eeddd03-edee-4847-a3c8-0ab7b2bdbe26">
+<span class="eqno">(10.4)<a class="headerlink" href="#equation-9eeddd03-edee-4847-a3c8-0ab7b2bdbe26" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{ds}{dt} &amp;= r\frac{d\theta}{dt},\\[6pt]
 v_t &amp;= r\omega.
 \end{align}\]</div>
@@ -89033,8 +89033,8 @@ v_2 &amp;= \left(\frac{r_2}{r_1}\right)v_1.
 <p>The magnitude of the angular velocity is given by <span class="math notranslate nohighlight">\(\omega = d\theta/dt\)</span>, which is a scalar.  The vector <span class="math notranslate nohighlight">\(\vec{\omega}\)</span> is has a magnitude <span class="math notranslate nohighlight">\(\omega\)</span> and points along the axis of rotation.  The direction of rotation (“-” clockwise or “+” counterclockwise) gives the directional information and can be determined via the right-hand rule.</p>
 </div>
 <p>One can state a cross product relation to the vector of the tangential velocity <span class="math notranslate nohighlight">\(v_t\)</span>, which is given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-78d64378-c78b-453a-bb1c-c71d04fe9930">
-<span class="eqno">(10.5)<a class="headerlink" href="#equation-78d64378-c78b-453a-bb1c-c71d04fe9930" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-1bdbb80c-8fd5-4b1e-8271-638064329f3d">
+<span class="eqno">(10.5)<a class="headerlink" href="#equation-1bdbb80c-8fd5-4b1e-8271-638064329f3d" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{\rm v} = \vec{\omega} \times \vec{r}.
 \end{align}\]</div>
 <p>The tangential velocity is the cross product of the angular velocity and the position vector.  In Figure <a class="reference internal" href="#tangent-vel-vector-fig"><span class="std std-numref">10.5</span></a>a, we see that the angular velocity is in the <span class="math notranslate nohighlight">\(+z\)</span>-direction, and the rotation in the rotation in the <span class="math notranslate nohighlight">\(xy\)</span>-plane is counterclockwise.  In Figure <a class="reference internal" href="#tangent-vel-vector-fig"><span class="std std-numref">10.5</span></a>b, th angular velocity is in the <span class="math notranslate nohighlight">\(-z\)</span>-direction, giving a clockwise rotation in the <span class="math notranslate nohighlight">\(xy\)</span>-plane.</p>
@@ -89128,8 +89128,8 @@ v_t &amp;= (0.10\ {\rm m})(45\ {\rm rad/s}) \\
 <h3><span class="section-number">10.2.1. </span>Angular Acceleration<a class="headerlink" href="#angular-acceleration" title="Link to this heading">#</a></h3>
 <p>Although uniform circular motion can be used in many situations, not all motion is uniform.  For example, an ice skater can increase her angular speed, by pulling in her arms.  As a result, we need to define an <strong>angular acceleration</strong> for describing situations where <span class="math notranslate nohighlight">\(\omega\)</span> changes.</p>
 <p>The faster the change in <span class="math notranslate nohighlight">\(\omega\)</span>, the greater the acceleration. We define the <strong>instantaneous angular acceleration</strong> <span class="math notranslate nohighlight">\(\alpha\)</span> as the derivative of angular velocity with respect to time:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6ce886fe-83ba-4ec7-9b43-606fcad06ff9">
-<span class="eqno">(10.6)<a class="headerlink" href="#equation-6ce886fe-83ba-4ec7-9b43-606fcad06ff9" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-3c79a036-eac5-4e97-8655-d4cfd38d09d4">
+<span class="eqno">(10.6)<a class="headerlink" href="#equation-3c79a036-eac5-4e97-8655-d4cfd38d09d4" title="Permalink to this equation">#</a></span>\[\begin{align}
 \alpha &amp;= \lim_{\Delta t \rightarrow 0} \frac{\Delta w}{\Delta t},\\ 
 &amp;= \frac{d\omega}{dt} = \frac{d^2\theta}{dt^2}.
 \end{align}\]</div>
@@ -89146,8 +89146,8 @@ v_t &amp;= (0.10\ {\rm m})(45\ {\rm rad/s}) \\
 </figcaption>
 </figure>
 <p>TWe can express the tangential acceleration vector as a cross product of the angular acceleration and the position vector.  This expression can be found using the <a class="reference external" href="https://en.wikipedia.org/wiki/Cross_product#Differentiation">properties of cross products</a>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-bb130f30-15f0-4e9e-98ed-f4360e02229d">
-<span class="eqno">(10.7)<a class="headerlink" href="#equation-bb130f30-15f0-4e9e-98ed-f4360e02229d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-fd7d465f-546a-4b82-b101-dfa8d338e9a0">
+<span class="eqno">(10.7)<a class="headerlink" href="#equation-fd7d465f-546a-4b82-b101-dfa8d338e9a0" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{a} &amp;= \frac{d\vec{\rm v}}{dt}, \\
 &amp;= \frac{d}{dt}\left(\vec{\omega} \times \vec{r}\right), \\
 &amp;= \frac{d\vec{\omega}}{dt}\times \vec{r} + \vec{\omega}\times \frac{d\vec{r}}{dt}, \\
@@ -89170,8 +89170,8 @@ v_t &amp;= (0.10\ {\rm m})(45\ {\rm rad/s}) \\
 </figcaption>
 </figure>
 <p>We can relate the tangential acceleration of a point on a rotating body at a distance from the axis of rotation in a similar way that we related the tangential speed to the angular velocity.  We find the tangential acceleration by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e9c7b652-afd5-4532-9940-98c1f07e11ed">
-<span class="eqno">(10.8)<a class="headerlink" href="#equation-e9c7b652-afd5-4532-9940-98c1f07e11ed" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d388ff25-e4b6-427e-a835-98f634aeec24">
+<span class="eqno">(10.8)<a class="headerlink" href="#equation-d388ff25-e4b6-427e-a835-98f634aeec24" title="Permalink to this equation">#</a></span>\[\begin{align}
 v_t &amp;= r\omega, \\
 a_t &amp;= \frac{d(r\omega)}{dt},\\
 &amp;= \frac{dr}{dt}\omega + r\frac{d\omega}{dt}, \\
@@ -89384,16 +89384,16 @@ a_t &amp;= \frac{d(r\omega)}{dt},\\
 <h3><span class="section-number">10.3.1. </span>Kinematics of Rotational Motion<a class="headerlink" href="#kinematics-of-rotational-motion" title="Link to this heading">#</a></h3>
 <p>Using our intuition, we can see how the rotational quantities <span class="math notranslate nohighlight">\(\theta,\ \omega,\ \alpha,\)</span> and <span class="math notranslate nohighlight">\(t\)</span> are related to one another.  We can build a set of rotational kinematic equations under a constant angular acceleration.</p>
 <p>If the angular acceleration <span class="math notranslate nohighlight">\(\alpha\)</span> is a constant, then the average angular velocity must be a linear function with respect to time.  The (arithmetic) average angular angular velocity <span class="math notranslate nohighlight">\(\bar{\omega}\)</span> can be represented by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6674461f-5715-459c-9600-f55d774059bc">
-<span class="eqno">(10.9)<a class="headerlink" href="#equation-6674461f-5715-459c-9600-f55d774059bc" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-702054d7-c81f-401a-bc1f-0f93a2f550cf">
+<span class="eqno">(10.9)<a class="headerlink" href="#equation-702054d7-c81f-401a-bc1f-0f93a2f550cf" title="Permalink to this equation">#</a></span>\[\begin{align}
 \bar{\omega} = \frac{\omega_o + \omega_f}{2}.
 \end{align}\]</div>
 <p>The time-average angular velocity is given by</p>
 <div class="math notranslate nohighlight">
 \[ \bar{\omega} = \frac{\Delta \theta}{\Delta t}, \]</div>
 <p>where we can solve for <span class="math notranslate nohighlight">\(\theta\)</span> to get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e8697060-f8df-4d19-bfb5-272faa8f4517">
-<span class="eqno">(10.10)<a class="headerlink" href="#equation-e8697060-f8df-4d19-bfb5-272faa8f4517" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f3ecd5c6-bb44-40db-800d-511d79ac362e">
+<span class="eqno">(10.10)<a class="headerlink" href="#equation-f3ecd5c6-bb44-40db-800d-511d79ac362e" title="Permalink to this equation">#</a></span>\[\begin{align}
 \theta_f = \theta_o + \bar{\omega}t,
 \end{align}\]</div>
 <p>after having set <span class="math notranslate nohighlight">\(t_o = 0\)</span>.  If we know the average angular velocity <span class="math notranslate nohighlight">\(\bar{\omega}\)</span> of the system, then we can find the angular displacement over a given time interval.</p>
@@ -89407,8 +89407,8 @@ a_t &amp;= \frac{d(r\omega)}{dt},\\
 <div class="math notranslate nohighlight">
 \[ \alpha t = \omega_f - \omega_o, \]</div>
 <p>which we can rearrange to obtain</p>
-<div class="amsmath math notranslate nohighlight" id="equation-87fa4a1a-ccb4-4399-82f0-4d7408915a69">
-<span class="eqno">(10.11)<a class="headerlink" href="#equation-87fa4a1a-ccb4-4399-82f0-4d7408915a69" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-2c16e553-2f11-438c-8f67-9c0f50000f50">
+<span class="eqno">(10.11)<a class="headerlink" href="#equation-2c16e553-2f11-438c-8f67-9c0f50000f50" title="Permalink to this equation">#</a></span>\[\begin{align}
 \omega_f = \omega_o + \alpha t,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\omega_o\)</span> is the initial angular velocity.  Notice how similar this equation appears compared to the linear kinematic equation with velocity: <span class="math notranslate nohighlight">\(v_f = v_o + at\)</span>.</p>
@@ -89419,8 +89419,8 @@ a_t &amp;= \frac{d(r\omega)}{dt},\\
 \omega t + \frac{1}{2}\alpha t^2 &amp;= \theta_f - \theta_o,
 \end{align*} \]</div>
 <p>where we have set <span class="math notranslate nohighlight">\(t_o = 0.\)</span>  We can rearrange to obtain</p>
-<div class="amsmath math notranslate nohighlight" id="equation-fbc64c0f-6c4f-40e1-93ac-53eac57c46d1">
-<span class="eqno">(10.12)<a class="headerlink" href="#equation-fbc64c0f-6c4f-40e1-93ac-53eac57c46d1" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-25d1add7-8d67-4d6a-879e-0e3cb8f1d635">
+<span class="eqno">(10.12)<a class="headerlink" href="#equation-25d1add7-8d67-4d6a-879e-0e3cb8f1d635" title="Permalink to this equation">#</a></span>\[\begin{align}
 \theta = \theta_o + \omega_o t + \frac{1}{2}\alpha t^2,
 \end{align}\]</div>
 <p>which is a rotational counterpart to the position function of time in linear kinematics.</p>
@@ -89433,8 +89433,8 @@ a_t &amp;= \frac{d(r\omega)}{dt},\\
 \theta - \theta_o &amp;= \frac{\omega^2-\omega^2}{2\alpha},
 \end{align*}\]</div>
 <p>or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-788560b5-c10e-41a6-bbeb-3957a71b7b9e">
-<span class="eqno">(10.13)<a class="headerlink" href="#equation-788560b5-c10e-41a6-bbeb-3957a71b7b9e" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-6300a3a0-fb56-4bbb-8a12-da757d65dcfb">
+<span class="eqno">(10.13)<a class="headerlink" href="#equation-6300a3a0-fb56-4bbb-8a12-da757d65dcfb" title="Permalink to this equation">#</a></span>\[\begin{align}
 \omega^2 = \omega^2 + 2\alpha (\Delta \theta).
 \end{align}\]</div>
 <div class="pst-scrollable-table-container"><table class="table" id="id2">
@@ -89726,8 +89726,8 @@ t &amp;= \frac{0-220\ {\rm rad/s}}{-300\ {\rm rad/s^2}} \\
 <p>The linear variable of position has physical units of meters, whereas the angular position variable has <em>dimensionless</em> units of radians.  This can be seen from the definition of <span class="math notranslate nohighlight">\(\theta = \frac{s}{r}\)</span>.</p>
 <p>-The linear velocity has units of <span class="math notranslate nohighlight">\(\rm m/s\)</span>, while its counter part (the angular velocity) has units of <span class="math notranslate nohighlight">\(\rm rad/s\)</span>.  In the case of circular motion, the linear tangential speed <span class="math notranslate nohighlight">\(v_t\)</span> of a particle at a radius <span class="math notranslate nohighlight">\(r\)</span> from the axis of rotation is related by the angular velocity, or <span class="math notranslate nohighlight">\(v_t = r\omega\)</span>.</p>
 <p>The centripetal acceleration vector points inward towards the axis of rotation.  From the derivation for the magnitude of the centripetal acceleration, we found</p>
-<div class="amsmath math notranslate nohighlight" id="equation-528906a9-90ec-4f42-8b36-25c0a1aa7e45">
-<span class="eqno">(10.14)<a class="headerlink" href="#equation-528906a9-90ec-4f42-8b36-25c0a1aa7e45" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a42a7201-2b18-4343-8749-345311fd5fa3">
+<span class="eqno">(10.14)<a class="headerlink" href="#equation-a42a7201-2b18-4343-8749-345311fd5fa3" title="Permalink to this equation">#</a></span>\[\begin{align}
 a_c = \frac{v_t^2}{r},
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(r\)</span> is the radius of the circle.  In uniform circular motion, when the angular velocity is constant and the angular acceleration is zero, we have a linear acceleration (i.e., the centripetal acceleration).</p>
@@ -89740,8 +89740,8 @@ a_c = \frac{v_t^2}{r},
 </figure>
 <p>Figure <a class="reference internal" href="#rotation-accel-fig"><span class="std std-numref">10.8</span></a> shows the centripetal tangential accelerations for uniform and nonuniform circular motion.  The centripetal acceleration comes from changes in the <em>direction</em> of tangential velocity, whereas the tangential acceleration is from any change in magnitude of the tangential velocity.  <em>Recall that vectors have a magnitude and direction.</em></p>
 <p>The tangential <span class="math notranslate nohighlight">\(\vec{a}_t\)</span> and centripetal <span class="math notranslate nohighlight">\(\vec{a}_c\)</span> acceleration vectors are always perpendicular to each other.  The <strong>total linear acceleration</strong> describes a point on a rotating rigid body (or a particle executing circular motion) at a radius <span class="math notranslate nohighlight">\(r\)</span> from a fixed axis.  It can be written as the vector sum of the centripetal and tangential accelerations,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-739c927e-c8ae-4cac-9f32-e7a35ceb1282">
-<span class="eqno">(10.15)<a class="headerlink" href="#equation-739c927e-c8ae-4cac-9f32-e7a35ceb1282" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-4ee1f9e2-ea79-4b3b-8c48-ef8088f0f128">
+<span class="eqno">(10.15)<a class="headerlink" href="#equation-4ee1f9e2-ea79-4b3b-8c48-ef8088f0f128" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{a} &amp;= \vec{a}_c + \vec{a}_t.
 \end{align}\]</div>
 <p>In the case of nonuniform circular motion, the total linear acceleration vector points at an angle between the centripetal and tangential acceleration vectors (see Fig. <a class="reference internal" href="#nonuniform-accel-fig"><span class="std std-numref">10.9</span></a>).</p>
@@ -90033,8 +90033,8 @@ a_c &amp;= \frac{(7.0)^2}{0.20}, \\
 <div class="math notranslate nohighlight">
 \[ K = \frac{1}{2} \sum_j m_j v_j^2 = \frac{1}{2}\sum_j m_j(r_j\omega_j)^2. \]</div>
 <p>Since <span class="math notranslate nohighlight">\(\omega_j = \omega\)</span> ro all masses, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6d18e6be-297e-4bbc-a095-36840abcff4a">
-<span class="eqno">(10.16)<a class="headerlink" href="#equation-6d18e6be-297e-4bbc-a095-36840abcff4a" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-2c4f8cd0-e53d-42ed-a2c4-0277bc11104d">
+<span class="eqno">(10.16)<a class="headerlink" href="#equation-2c4f8cd0-e53d-42ed-a2c4-0277bc11104d" title="Permalink to this equation">#</a></span>\[\begin{align}
 K = \frac{1}{2} \left(\sum_j m_jr_j^2 \right) \omega^2.
 \end{align}\]</div>
 <p>This rotational kinetic energy has units of Joules, just like its translational counterpart.</p>
@@ -90048,8 +90048,8 @@ K_t &amp;= \frac{1}{2} M v^2, \\
 K_r &amp;= \frac{1}{2} \left(\sum_j m_jr_j^2 \right) \omega^2.
 \end{align*}\]</div>
 <p>The quantity <span class="math notranslate nohighlight">\(\displaystyle \sum_j m_j r_j^2\)</span> is the counterpart for mass in the equation for the rotational kinetic energy.  This quantity is called the <strong>moment of inertia</strong> <span class="math notranslate nohighlight">\(I\)</span> (with units of <span class="math notranslate nohighlight">\(\rm kg\cdot m^2\)</span>):</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5e6e630d-f96e-4b4f-ba60-b30094fbdd7a">
-<span class="eqno">(10.17)<a class="headerlink" href="#equation-5e6e630d-f96e-4b4f-ba60-b30094fbdd7a" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-df6f2516-144b-4993-b5ca-e99410b016cf">
+<span class="eqno">(10.17)<a class="headerlink" href="#equation-df6f2516-144b-4993-b5ca-e99410b016cf" title="Permalink to this equation">#</a></span>\[\begin{align}
 I &amp;= \sum_j m_j r_j^2.
 \end{align}\]</div>
 <p>The moment of inertia of a single point particle about a fixed axis is simply <span class="math notranslate nohighlight">\(mr^2\)</span>, where <span class="math notranslate nohighlight">\(r\)</span> is the distance from the particle to the axis of rotation.</p>
@@ -90059,8 +90059,8 @@ I &amp;= \sum_j m_j r_j^2.
 <li><p>Rigid bodies and systems of particles with more mass concentrated a greater distance from the axis of rotation have greater moments of inertia.</p></li>
 </ul>
 <p>We can see that a hollow cylinder has more rotational inertia than a solid cylinder of the same mass when rotating about a central axis.  The expression for the rotational kinetic energy can be written in terms of the physical property of the medium <span class="math notranslate nohighlight">\(I\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-176e7289-4707-4373-a950-1af5ba009b79">
-<span class="eqno">(10.18)<a class="headerlink" href="#equation-176e7289-4707-4373-a950-1af5ba009b79" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f773634a-7fe9-4b91-b152-7adecd8ca599">
+<span class="eqno">(10.18)<a class="headerlink" href="#equation-f773634a-7fe9-4b91-b152-7adecd8ca599" title="Permalink to this equation">#</a></span>\[\begin{align}
 K = \frac{1}{2}I\omega^2.
 \end{align}\]</div>
 <p>The kinetic energy of a rotating rigid body is directly proportional to the moment of inertia <strong>and</strong> the square of the angular velocity.  This is exploited in flywheel energy-storage devices, which can store large amounts of rotational kinetic energy.</p>
@@ -90472,8 +90472,8 @@ I_e &amp;= \sum_j m_j r_j^2, \\
 </figcaption>
 </figure>
 <p>Then we can write the moment of inertia by evaluating an integral over infinitesimal masses rather than using a discrete sum over finite masses;</p>
-<div class="amsmath math notranslate nohighlight" id="equation-283c9118-a377-4464-bc88-be4391e7b60e">
-<span class="eqno">(10.19)<a class="headerlink" href="#equation-283c9118-a377-4464-bc88-be4391e7b60e" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a5cc1e05-caa5-4c2a-8394-17fa2d80a588">
+<span class="eqno">(10.19)<a class="headerlink" href="#equation-a5cc1e05-caa5-4c2a-8394-17fa2d80a588" title="Permalink to this equation">#</a></span>\[\begin{align}
 I &amp;= \sum_j m_jr_j^2 \quad \Rightarrow \quad I = \int r^2 dm.
 \end{align}\]</div>
 <p>In this form, we can generalize the calculation for moment of inertia to complex shapes.</p>
@@ -90542,8 +90542,8 @@ I &amp;= \int_{0}^{L} x^2\lambda\; dx = \frac{\lambda}{3}x^3 \bigg\vert_{0}^{L},
 <div class="note admonition">
 <p class="admonition-title">Parallel-axis Theorem</p>
 <p>Let <span class="math notranslate nohighlight">\(m\)</span> be the mass of an object, while <span class="math notranslate nohighlight">\(d\)</span> is the distance from an axis through the object’s center-of-mass to a new axis.  Then we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0f4f25da-f33c-427b-a24a-3c7a4fe75a12">
-<span class="eqno">(10.20)<a class="headerlink" href="#equation-0f4f25da-f33c-427b-a24a-3c7a4fe75a12" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d6be3c5d-a1e2-4632-85b3-ebaf1f39e39a">
+<span class="eqno">(10.20)<a class="headerlink" href="#equation-d6be3c5d-a1e2-4632-85b3-ebaf1f39e39a" title="Permalink to this equation">#</a></span>\[\begin{align}
 I_\parallel = I_{\rm CoM} + md^2,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(I_\parallel\)</span> is the moment of inertia for the parallel axis and <span class="math notranslate nohighlight">\(I_{\rm CoM}\)</span> is the moment of inertia through the center-of-mass.</p>
@@ -90599,8 +90599,8 @@ I &amp;= \int_0^R r^2\sigma\, dA = \int_0^R r^2\sigma (2\pi r)dr, \\
 </figcaption>
 </figure>
 <p>However, if we use the definition for the moment of inertia as a summation, we can reason that a compound object’s moment of inertia can be determined as the sum of each part of the object:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-46cae2e9-b8b0-48f4-811d-d0e61696a9d6">
-<span class="eqno">(10.21)<a class="headerlink" href="#equation-46cae2e9-b8b0-48f4-811d-d0e61696a9d6" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-99a22ebe-dbaf-4350-a0f3-c130f9ed96f8">
+<span class="eqno">(10.21)<a class="headerlink" href="#equation-99a22ebe-dbaf-4350-a0f3-c130f9ed96f8" title="Permalink to this equation">#</a></span>\[\begin{align}
 I_{\rm tot} = \sum_j I_j.
 \end{align}\]</div>
 <div class="admonition note">
@@ -90912,8 +90912,8 @@ mg\frac{L}{2}(1-\cos\theta) &amp;= \frac{1}{2}\left(\frac{1}{3}mL^2\right)\omega
 <div class="note admonition">
 <p class="admonition-title">Torque</p>
 <p>When a force <span class="math notranslate nohighlight">\(\vec{F}\)</span> is applied to a point <span class="math notranslate nohighlight">\(P\)</span> whose position is <span class="math notranslate nohighlight">\(\vec{r}\)</span> relative to the pivot point <span class="math notranslate nohighlight">\(O\)</span>, the torque <span class="math notranslate nohighlight">\(\vec{\tau}\)</span> is given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e035583e-6b5c-449c-a5c8-1e3cfcd0805a">
-<span class="eqno">(10.22)<a class="headerlink" href="#equation-e035583e-6b5c-449c-a5c8-1e3cfcd0805a" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-605cb4c8-c418-4dbc-8993-00fb52b51cb2">
+<span class="eqno">(10.22)<a class="headerlink" href="#equation-605cb4c8-c418-4dbc-8993-00fb52b51cb2" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{\tau} = \vec{r} \times \vec{F}.
 \end{align}\]</div>
 </div>
@@ -90933,8 +90933,8 @@ mg\frac{L}{2}(1-\cos\theta) &amp;= \frac{1}{2}\left(\frac{1}{3}mL^2\right)\omega
 <li><p>The greater the lever arm, the greater the magnitude of the torque.</p></li>
 </ul>
 <p>In terms of the lever arm, the magnitude of the torque is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5a99c9bf-82f2-4db7-9107-39b75304abd5">
-<span class="eqno">(10.23)<a class="headerlink" href="#equation-5a99c9bf-82f2-4db7-9107-39b75304abd5" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-85c53c43-5e96-40f0-8140-805fb2e456df">
+<span class="eqno">(10.23)<a class="headerlink" href="#equation-85c53c43-5e96-40f0-8140-805fb2e456df" title="Permalink to this equation">#</a></span>\[\begin{align}
 |\vec{\tau}| = r_\perp F. 
 \end{align}\]</div>
 <p>The cross product tells us the sign of the torque.</p>
@@ -90954,8 +90954,8 @@ mg\frac{L}{2}(1-\cos\theta) &amp;= \frac{1}{2}\left(\frac{1}{3}mL^2\right)\omega
 <li><p>If the angle is <span class="math notranslate nohighlight">\(90^\circ\)</span>, then the torque is at a maximum.</p></li>
 </ul>
 <p>Any number of torques can be calculated about a given axis, where the individual torques add to produce a net torque about the axis.  When the appropriate sign is applied to the magnitudes of individual torques about a specified axis, the net torque about the axis is the sum of the individual torques, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a2821e2b-5b0c-4c45-9700-bafa398b05d7">
-<span class="eqno">(10.24)<a class="headerlink" href="#equation-a2821e2b-5b0c-4c45-9700-bafa398b05d7" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-c6de9add-0007-4917-a080-aad564ba41a5">
+<span class="eqno">(10.24)<a class="headerlink" href="#equation-c6de9add-0007-4917-a080-aad564ba41a5" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{\tau}_{\rm net} = \sum_j \vec{\tau}_j.
 \end{align}\]</div>
 <div class="note admonition">
@@ -91178,8 +91178,8 @@ rF &amp;= mr^2\alpha,\\
 <div class="note admonition">
 <p class="admonition-title">Newton’s 2nd Law for Rotation</p>
 <p>If more than one torque acts on a rigid body about a fixed axis, then the sum of the torques equals the moment of inertia times the angular acceleration:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9cc792df-e6fd-40c0-8a69-f541180eeecb">
-<span class="eqno">(10.25)<a class="headerlink" href="#equation-9cc792df-e6fd-40c0-8a69-f541180eeecb" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-58d87803-6bc0-44cf-a319-61a8dfa4b81d">
+<span class="eqno">(10.25)<a class="headerlink" href="#equation-58d87803-6bc0-44cf-a319-61a8dfa4b81d" title="Permalink to this equation">#</a></span>\[\begin{align}
 \tau_{\rm net} = \sum_j \tau_j = I\alpha.
 \end{align}\]</div>
 </div>
@@ -91258,8 +91258,8 @@ d\vec{s} &amp;= d\vec{\theta} \times \vec{r}.
 \[ \vec{a} \cdot (\vec{b} \times \vec{c}) = \vec{b} \cdot (\vec{c}\times \vec{a}).
 \]</div>
 <p>We want to get the right-side into a form so that we can substitute <span class="math notranslate nohighlight">\(\vec{\tau}_j\)</span>, which is why the identity is necessary here.  We arrive at the expression for the <strong>rotational work</strong> done on a rigid body:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6f25b1d1-81ce-4010-8050-3543d827fc24">
-<span class="eqno">(10.26)<a class="headerlink" href="#equation-6f25b1d1-81ce-4010-8050-3543d827fc24" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-775bd039-e22d-4c31-8ad5-de60f6113730">
+<span class="eqno">(10.26)<a class="headerlink" href="#equation-775bd039-e22d-4c31-8ad5-de60f6113730" title="Permalink to this equation">#</a></span>\[\begin{align}
 W &amp;= \int \sum_j \vec{\tau}_j\cdot d\vec{\theta}, \\
   &amp;= \int \vec{\tau}_{\rm net} \cdot d\vec{\theta}.
 \end{align}\]</div>
@@ -91274,8 +91274,8 @@ dW = \left(\sum_j \tau_j\right)d\theta,
 <div class="note admonition">
 <p class="admonition-title">Work-Energy Theorem for Rotation</p>
 <p>The work-energy theorem for a rigid body rotating about a fixed axis is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6d06b03a-aec3-40fb-8c27-0586c853c5c9">
-<span class="eqno">(10.27)<a class="headerlink" href="#equation-6d06b03a-aec3-40fb-8c27-0586c853c5c9" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-331a8a40-3932-46cc-91f6-0108d50c0c1b">
+<span class="eqno">(10.27)<a class="headerlink" href="#equation-331a8a40-3932-46cc-91f6-0108d50c0c1b" title="Permalink to this equation">#</a></span>\[\begin{align}
 W_{AB} &amp; = K_B - K_A, \\
 &amp;= \frac{1}{2}I_B\omega_B^2 - \frac{1}{2}I_A\omega_A^2,
 \end{align}\]</div>
@@ -91311,8 +91311,8 @@ W_{AB} &amp; = K_B - K_A, \\
 <div class="math notranslate nohighlight">
 \[ P = \frac{dW}{dt} = \frac{d}{dt}(\tau \theta) = \tau\frac{d\theta}{dt}, \]</div>
 <p>or simply</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6bdf7f9d-2c5c-4e70-9464-57ae8d25824b">
-<span class="eqno">(10.29)<a class="headerlink" href="#equation-6bdf7f9d-2c5c-4e70-9464-57ae8d25824b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-c0c4ed0d-fcfa-4537-912b-9a168b150b04">
+<span class="eqno">(10.29)<a class="headerlink" href="#equation-c0c4ed0d-fcfa-4537-912b-9a168b150b04" title="Permalink to this equation">#</a></span>\[\begin{align}
 P = \tau \omega.
 \end{align}\]</div>
 </section>
