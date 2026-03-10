@@ -39,7 +39,8 @@
     <link rel="stylesheet" type="text/css" href="../_static/metadata_figure.css?v=2463d4a7" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx_iframe.css?v=96c28b52" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=52bae50d" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.plyr.io/3.8.4/plyr.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=0a613744" />
     <link rel="stylesheet" type="text/css" href="../_static/mycss.css?v=3589796e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -78,7 +79,11 @@
                 gtag('config', 'G-6TWF14MYK4');
             </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Chapter11/angular-momentum';</script>
+    <script src="https://cdn.plyr.io/3.8.4/plyr.polyfilled.js"></script>
+    <script src="../_static/init-plyr.js?v=bf401924"></script>
     <link rel="canonical" href="https://saturnaxis.github.io/IntroPhysics/Chapter11/angular-momentum.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -496,10 +501,46 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rolling-motion">11.1. Rolling Motion</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">11.2. Angular Momentum</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-angular-momentum">11.3. Conservation of Angular Momentum</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#precession-of-a-gyroscope">11.4. Precession of a Gyroscope</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rolling-motion">11.1. Rolling Motion</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rolling-motion-without-slipping">11.1.1. Rolling Motion without Slipping</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-rolling-down-an-inclined-plane">11.1.1.1. <strong>Example Problem</strong>: Rolling Down an Inclined Plane</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rolling-motion-with-slipping">11.1.2. Rolling Motion with Slipping</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-rolling-down-an-inclined-plane-with-slipping">11.1.2.1. <strong>Example Problem</strong>: Rolling Down an Inclined Plane <em>with Slipping</em></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-mechanical-energy-in-rolling-motion">11.1.3. Conservation of Mechanical Energy in Rolling Motion</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-curiosity-rover">11.1.3.1. <strong>Example Problem</strong>: Curiosity Rover</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">11.2. Angular Momentum</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#angular-momentum-of-a-single-particle">11.2.1. Angular Momentum of a Single Particle</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-angular-momentum-and-torque-on-a-meteor">11.2.1.1. <strong>Example Problem</strong>: Angular Momentum and Torque on a Meteor</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#angular-momentum-of-a-system-of-particles">11.2.2. Angular Momentum of a System of Particles</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-angular-momentum-of-3-particles">11.2.2.1. <strong>Example Problem</strong>: Angular Momentum of 3 Particles</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#angular-momentum-of-a-rigid-body">11.2.3. Angular Momentum of a Rigid Body</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-angular-momentum-of-a-robot-arm">11.2.3.1. <strong>Example Problem</strong>: Angular Momentum of a Robot Arm</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-angular-momentum">11.3. Conservation of Angular Momentum</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-coupled-flywheels">11.3.1. <strong>Example Problem</strong>: Coupled Flywheels</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-dismount-from-a-high-bar">11.3.2. <strong>Example Problem</strong>: Dismount from a High Bar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-conservation-of-angular-momentum-of-a-collision">11.3.3. <strong>Example Problem</strong>: Conservation of Angular Momentum of a Collision</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#precession-of-a-gyroscope">11.4. Precession of a Gyroscope</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-period-of-precession">11.4.1. <strong>Example Problem</strong>: Period of Precession</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-class-problems">11.5. In-class Problems</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-i">11.5.1. Part I</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-ii">11.5.2. Part II</a></li>
@@ -523,17 +564,384 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="angular-momentum">
 <h1><span class="section-number">11. </span>Angular Momentum<a class="headerlink" href="#angular-momentum" title="Link to this heading">#</a></h1>
+<p>Mar 09, 2026 | 2695 words | 13 min read</p>
 <section id="rolling-motion">
 <h2><span class="section-number">11.1. </span>Rolling Motion<a class="headerlink" href="#rolling-motion" title="Link to this heading">#</a></h2>
+<p>Rolling motion is a combination of rotational and translational motion.  It is seen through wheels moving on a car, on a plane, or on a robotic explorer on another planet.  Understanding the forces and torques involved in <strong>rolling motion</strong> is a crucial factor in many different types of situations.</p>
+<section id="rolling-motion-without-slipping">
+<h3><span class="section-number">11.1.1. </span>Rolling Motion without Slipping<a class="headerlink" href="#rolling-motion-without-slipping" title="Link to this heading">#</a></h3>
+<p>Consider teh interaction of a car’s tires and the surface of the road.  If the driver</p>
+<ul class="simple">
+<li><p>suddenly depresses the accelerator to the floor, then the tires spin without the car moving forward.  There must be kinetic friction between the wheels and the surface of the road.</p></li>
+<li><p>slowly depresses the accelerator, then the car moves forward because the tires roll <em>without slipping</em>.  The bottom of the wheel is at rest (with respect to the ground) which means that there must be static friction between the tires and the road surface.</p></li>
+</ul>
+<figure class="align-default" id="bicycle-rolling-example">
+<img alt="bicycle rolling example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/c8fae851235d71d82aa3effd2060b662289d4490" />
+<figcaption>
+<p><span class="caption-number">Fig. 11.1 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#bicycle-rolling-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Figure <a class="reference internal" href="#bicycle-rolling-example"><span class="std std-numref">11.1</span></a> shows a bicycle in motion while the rider stays upright.  The tires have contact with the road surface and the bottoms of the tires deform slightly (while not slipping) and are at rest with respect to the road surface for a measurable amount of time, even though the tires are rolling.  There must be static friction between the tire and the road surface.</p>
+<p><em>What type of surface has the maximum amount of slipping?</em></p>
+<p>In the case of Scooby-Doo, all surfaces have the potential for maximal slipping (see Fig. <a class="reference internal" href="#scooby-doo-slipping"><span class="std std-numref">11.2</span></a>).  In real life, it is a frictionless, perfectly horizontal surface.</p>
+<figure class="align-default" id="scooby-doo-slipping">
+<img alt="https://media1.tenor.com/m/NbJD5xVfVPUAAAAC/scooby-doo-scooby.gif" src="https://media1.tenor.com/m/NbJD5xVfVPUAAAAC/scooby-doo-scooby.gif" />
+<figcaption>
+<p><span class="caption-number">Fig. 11.2 </span><span class="caption-text">Image Credit: <a class="reference external" href="https://tenor.com/search/scooby-doo-running-away-gifs">tenor.com</a></span><a class="headerlink" href="#scooby-doo-slipping" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>To analyze rolling without slipping, we relate the linear variables of velocity and acceleration (of the center-of-mass) of the wheel in terms of the angular variables that describe the wheel’s motion (see Fig. <a class="reference internal" href="#forces-on-wheel"><span class="std std-numref">11.3</span></a>).</p>
+<figure class="align-default" id="forces-on-wheel">
+<img alt="forces on rolling wheel" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/3c86e4a4d109c5e45891d81ffa69459d42d5735c" />
+<figcaption>
+<p><span class="caption-number">Fig. 11.3 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#forces-on-wheel" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Figure <a class="reference internal" href="#forces-on-wheel"><span class="std std-numref">11.3</span></a>a shows the force vectors involved that prevent the wheel from slipping.  The wheel is in contact with the surface at point <span class="math notranslate nohighlight">\(P\)</span>, which remains at rest relative to the surface in Fig. <a class="reference internal" href="#forces-on-wheel"><span class="std std-numref">11.3</span></a>b.  Relative to the center-of-mass, point <span class="math notranslate nohighlight">\(P\)</span> has a velocity <span class="math notranslate nohighlight">\(-R\omega\hat{i}\)</span>, where <span class="math notranslate nohighlight">\(R\)</span> is the radius of the wheel and <span class="math notranslate nohighlight">\(\omega\)</span> is the wheel’s angular velocity about its axis.</p>
+<p>Since the wheel is rolling, the total velocity of <span class="math notranslate nohighlight">\(P\)</span> is given by</p>
+<div class="math notranslate nohighlight">
+\[ \vec{\rm v}_P = -R\omega\hat{i} + v_{\rm CoM}\hat{i}, \]</div>
+<p>which includes both the center-of-mass velocity for the wheel and the relative velocity of point <span class="math notranslate nohighlight">\(P\)</span> relative to the center-of-mass.  If the wheel is rolling <em>without slipping</em>, then <span class="math notranslate nohighlight">\(|\vec{\rm v}_P| = v_P = 0\)</span> (i.e., the velocity of <span class="math notranslate nohighlight">\(P\)</span> relative to the surface is zero), and we have</p>
+<div class="amsmath math notranslate nohighlight" id="equation-a896fb7f-2f2a-4738-8f73-4b9b28af1183">
+<span class="eqno">(11.1)<a class="headerlink" href="#equation-a896fb7f-2f2a-4738-8f73-4b9b28af1183" title="Permalink to this equation">#</a></span>\[\begin{align}
+0 &amp;= -R\omega + v_{\rm CoM}, \\
+v_{\rm CoM} &amp;= R\omega.
+\end{align}\]</div>
+<p>The velocity of the wheel’s center of mass is its radius times the angular velocity about its axis.  Now we have a correspondence of the linear variable (<span class="math notranslate nohighlight">\(v_{\rm CoM}\)</span>) to the angular variable (<span class="math notranslate nohighlight">\(R\omega\)</span>).</p>
+<p>If we take a time-derivative to find the rate of change for the center-of-mass velocity <span class="math notranslate nohighlight">\(a_{\rm CoM}\)</span>, we have</p>
+<div class="amsmath math notranslate nohighlight" id="equation-026cbf64-54b3-4779-a13c-c308711c5d0c">
+<span class="eqno">(11.2)<a class="headerlink" href="#equation-026cbf64-54b3-4779-a13c-c308711c5d0c" title="Permalink to this equation">#</a></span>\[\begin{align}
+a_{\rm CoM} &amp;= \frac{d}{dt}v_{\rm CoM} = \frac{dR}{dt}\omega + R\frac{d\omega}{dt}, \\
+&amp;= R\frac{d\omega}{dt} = R\alpha.
+\end{align}\]</div>
+<p>Since <span class="math notranslate nohighlight">\(R\)</span> is a constant, then <span class="math notranslate nohighlight">\(\frac{dR}{dt} = 0\)</span>.</p>
+<figure class="align-default" id="arclength-wheel">
+<img alt="distance traveled by wheel CoM" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/dbe6699af551c871539e43d20ef156aa78f6ce4f" />
+<figcaption>
+<p><span class="caption-number">Fig. 11.4 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#arclength-wheel" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>We can also find the distance the wheel travels in terms of the angular variables.  In Figure <a class="reference internal" href="#arclength-wheel"><span class="std std-numref">11.4</span></a>, the wheel rolls from point <span class="math notranslate nohighlight">\(A\)</span> to point <span class="math notranslate nohighlight">\(B\)</span>, but its outer surface maps onto the ground by exactly the distance traveled <span class="math notranslate nohighlight">\(d_{\rm CoM}\)</span>.  The outer surface that maps onto the ground is the arclength <span class="math notranslate nohighlight">\(R\theta\)</span>, or</p>
+<div class="amsmath math notranslate nohighlight" id="equation-6f15af41-7130-44cd-9715-76dc6da4a564">
+<span class="eqno">(11.3)<a class="headerlink" href="#equation-6f15af41-7130-44cd-9715-76dc6da4a564" title="Permalink to this equation">#</a></span>\[\begin{align}
+d_{\rm CoM} = R\theta.
+\end{align}\]</div>
+<section id="example-problem-rolling-down-an-inclined-plane">
+<h4><span class="section-number">11.1.1.1. </span><strong>Example Problem</strong>: Rolling Down an Inclined Plane<a class="headerlink" href="#example-problem-rolling-down-an-inclined-plane" title="Link to this heading">#</a></h4>
+</section>
+</section>
+<section id="rolling-motion-with-slipping">
+<h3><span class="section-number">11.1.2. </span>Rolling Motion with Slipping<a class="headerlink" href="#rolling-motion-with-slipping" title="Link to this heading">#</a></h3>
+<p>In the case of rolling motion <em>with slipping</em>, we must use the coefficient of kinetic friction.  In this case, <span class="math notranslate nohighlight">\(\vec{\rm v}_P\)</span> is not at rest and therefore, <span class="math notranslate nohighlight">\(v_{\rm CoM}-R\omega \neq 0\)</span>.  As a result, <span class="math notranslate nohighlight">\(v_{\rm CoM} \neq R\omega\)</span> and <span class="math notranslate nohighlight">\(a_{\rm CoM} \neq R\alpha\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The previous relations applied only because there was a mapping from the rotational motion to the translational motion.  In the case of slipping, there is no translational motion to map onto.</p>
+</div>
+<figure class="align-default" id="rolling-slipping-example">
+<img alt="wheel rolling and slipping" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/2fa8fc32149cf8962886551a2c3f6927b663ee26" />
+<figcaption>
+<p><span class="caption-number">Fig. 11.5 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#rolling-slipping-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="example-problem-rolling-down-an-inclined-plane-with-slipping">
+<h4><span class="section-number">11.1.2.1. </span><strong>Example Problem</strong>: Rolling Down an Inclined Plane <em>with Slipping</em><a class="headerlink" href="#example-problem-rolling-down-an-inclined-plane-with-slipping" title="Link to this heading">#</a></h4>
+</section>
+</section>
+<section id="conservation-of-mechanical-energy-in-rolling-motion">
+<h3><span class="section-number">11.1.3. </span>Conservation of Mechanical Energy in Rolling Motion<a class="headerlink" href="#conservation-of-mechanical-energy-in-rolling-motion" title="Link to this heading">#</a></h3>
+<p>Any rolling object carries rotational kinetic energy, translational kinetic energy, and potential energy as the system requires.  If we include the gravitational potential energy, the total mechanical energy of an object rolling is</p>
+<div class="math notranslate nohighlight">
+\[ E_{tot} = \frac{1}{2} mv_{\rm CoM}^2 + \frac{1}{2}I_{\rm CoM}\omega^2 + mgh. \]</div>
+<p>In the absence of any nonconservative forces, the total energy of a rolling object <em>without slipping</em> is conserved and is constant throughout the motion.  In contrast, the energy is not conserved when there is a rolling object that is slipping which produces heat as a result of kinetic friction, and a rolling object encountering air resistance.</p>
+<p><em>Why does a rolling object without slipping conserve energy when the static frictional force is nonconservative?</em></p>
+<p>From Fig. <a class="reference internal" href="#forces-on-wheel"><span class="std std-numref">11.3</span></a>, point <span class="math notranslate nohighlight">\(P\)</span> is in contact with the surface at rest with respect to the surface.  Therefore, its infinitesimal displacement <span class="math notranslate nohighlight">\(d\vec{r}\)</span> with respect to the surface is zero, and the incremental work done by the static friction is zero.</p>
+<section id="example-problem-curiosity-rover">
+<h4><span class="section-number">11.1.3.1. </span><strong>Example Problem</strong>: Curiosity Rover<a class="headerlink" href="#example-problem-curiosity-rover" title="Link to this heading">#</a></h4>
+</section>
+</section>
 </section>
 <section id="id1">
 <h2><span class="section-number">11.2. </span>Angular Momentum<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<p>There are many questions that we can ask about why objects spin or how they can change their spin, such as</p>
+<ul class="simple">
+<li><p>Why does the Earth keep spinning?</p></li>
+<li><p>What started it spinning to begin with?</p></li>
+<li><p>Why doesn’t the Earth’s gravity cause the Moon to crash towards the Earth?</p></li>
+<li><p>How does an ice skater manage to spin faster simply by pulling her arms in?
+Why does she not have to exert a torque to spin faster?</p></li>
+</ul>
+<p>Questions like these are answered by <em>angular momentum</em>, which is the rotational analog to linear momentum.</p>
+<section id="angular-momentum-of-a-single-particle">
+<h3><span class="section-number">11.2.1. </span>Angular Momentum of a Single Particle<a class="headerlink" href="#angular-momentum-of-a-single-particle" title="Link to this heading">#</a></h3>
+<p>Figure <a class="reference internal" href="#particle-ang-momentum-example"><span class="std std-numref">11.6</span></a> illustrates how we can define the coordinate system for a particle moving in the <span class="math notranslate nohighlight">\(xy\)</span>-planet with a linear momentum <span class="math notranslate nohighlight">\(\vec{p}\)</span>.  The particle is located within the <span class="math notranslate nohighlight">\(xy\)</span>-plane using the vector <span class="math notranslate nohighlight">\(\vec{r}\)</span> relative to the origin.</p>
+<figure class="align-default" id="particle-ang-momentum-example">
+<img alt="angular momentum coordinates" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/539865005b3ae242a2c04dc146583e138be8be9b" />
+<figcaption>
+<p><span class="caption-number">Fig. 11.6 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#particle-ang-momentum-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="note admonition">
+<p class="admonition-title">Angular Momentum of a Particle</p>
+<p>The <strong>angular momentum</strong> <span class="math notranslate nohighlight">\(\vec{L}\)</span> of a particle is defined as the cross-product of <span class="math notranslate nohighlight">\(\vec{r}\)</span> and <span class="math notranslate nohighlight">\(\vec{p}\)</span>, or</p>
+<div class="amsmath math notranslate nohighlight" id="equation-44775f68-f5c2-4fac-a28e-8d8a0ed77184">
+<span class="eqno">(11.4)<a class="headerlink" href="#equation-44775f68-f5c2-4fac-a28e-8d8a0ed77184" title="Permalink to this equation">#</a></span>\[\begin{align}
+\vec{L} = \vec{r} \times \vec{p}.
+\end{align}\]</div>
+<p>Recall the property of a cross product produces a vector that is perpendicular to the plane containing the two vectors.  Also the positive vector points upward relative to the plane and counterclockwise denotes a positive direction so that we can use the <em>right-hand rule</em>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>For a cross product, the order matters.  The cross-product of <span class="math notranslate nohighlight">\(\vec{p}\)</span> and <span class="math notranslate nohighlight">\(\vec{r}\)</span> produces a vector that points downward (negative <span class="math notranslate nohighlight">\(z\)</span>-direction), or</p>
+<div class="math notranslate nohighlight">
+\[ \vec{p} \times \vec{r} = -\vec{L}. \]</div>
+</div>
+<p>Even if the particle is not rotating about the origin, we can still define the angular momentum in terms of the position vector and the linear momentum.</p>
+</div>
+<p>The magnitude of the angular momentum is found from the definition of the cross product, or</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+L &amp;= rp\sin{\theta}, \\
+&amp;= mvr\sin{\theta},
+\end{align*}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\theta\)</span> is the angle between <span class="math notranslate nohighlight">\(\vec{r}\)</span> and <span class="math notranslate nohighlight">\(\vec{p}\)</span>.  The units of angular momentum are <span class="math notranslate nohighlight">\(\rm kg\cdot m^2\)</span>.</p>
+<p>As with the definition of torque, we define a lever arm <span class="math notranslate nohighlight">\(r_\perp\)</span> that is the perpendicular distance from the momentum vector <span class="math notranslate nohighlight">\(\vec{p}\)</span> to the origin (<span class="math notranslate nohighlight">\(r_\perp = r\sin{\theta}\)</span>).  With this definition, the magnitude of the angular momentum becomes</p>
+<div class="math notranslate nohighlight">
+\[ L = mvr\sin{\theta} = mvr_\perp. \]</div>
+<p>If the direction of <span class="math notranslate nohighlight">\(\vec{p}\)</span> passes through the origin, then <span class="math notranslate nohighlight">\(\sin{\theta} = 0\)</span> (i.e., <span class="math notranslate nohighlight">\(\vec{r} and \)</span>\vec{p}$ are parallel or antiparallel) and the angular momentum is zero because the lever arm is zero.</p>
+<ul class="simple">
+<li><p>The magnitude of the angular momentum depends on the choice of origin.</p></li>
+</ul>
+<p>If we take the time-derivative of the angular momentum, we arrive at the net torque on the particle:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{d\vec{L}}{dt} &amp;= \frac{d\vec{r}}{dt} \times \vec{p} + \vec{r} \times \frac{d\vec{p}}{dt}, \\
+&amp;= \vec{v} \times m\vec{v} + \vec{r} \times \sum_j \vec{F}_j, \\
+&amp;= \sum_j \left(\vec{r} \times  \vec{F}_j \right) = \sum_j \vec{\tau}_j.
+\end{align*}\]</div>
+<p>We used the vector property that <span class="math notranslate nohighlight">\(\vec{a} \times \vec{a} = 0\)</span>, and the alternative form of Newton’s 2nd law.  Therefore, we can write the definition of the net torque as:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-3d391e9c-dd2d-4199-9fa0-73ad5bb1c711">
+<span class="eqno">(11.5)<a class="headerlink" href="#equation-3d391e9c-dd2d-4199-9fa0-73ad5bb1c711" title="Permalink to this equation">#</a></span>\[\begin{align}
+\vec{\tau}_{\rm net} = \sum_j \vec{\tau}_j = \frac{d\vec{L}}{dt}.
+\end{align}\]</div>
+<div class="note admonition">
+<p class="admonition-title">Problem-Solving Strategy</p>
+<p><strong>Angular Momentum of a Particle</strong></p>
+<ol class="arabic simple">
+<li><p>Define the coordinate system for the angular momentum.</p></li>
+<li><p>Write down the radius and linear momentum vector of the particle in unit vector notation.</p></li>
+<li><p>Take the cross product <span class="math notranslate nohighlight">\(\vec{L} = \vec{r} \times \vec{p}\)</span> and use the right-hand rule to establish the direction of the angular momentum vector.</p></li>
+<li><p>See if there is any time dependence in the expression of the angular momentum vector.</p></li>
+</ol>
+<ul class="simple">
+<li><p>Use <span class="math notranslate nohighlight">\(\frac{d\vec{L}}{dt} = \displaystyle \sum_j \vec{\tau}_j\)</span> calculate the net torque from the time-varying angular momentum.</p></li>
+<li><p>If there is not time dependence, then <span class="math notranslate nohighlight">\(\tau_{\rm net} = 0\)</span>.</p></li>
+</ul>
+</div>
+<section id="example-problem-angular-momentum-and-torque-on-a-meteor">
+<h4><span class="section-number">11.2.1.1. </span><strong>Example Problem</strong>: Angular Momentum and Torque on a Meteor<a class="headerlink" href="#example-problem-angular-momentum-and-torque-on-a-meteor" title="Link to this heading">#</a></h4>
+</section>
+</section>
+<section id="angular-momentum-of-a-system-of-particles">
+<h3><span class="section-number">11.2.2. </span>Angular Momentum of a System of Particles<a class="headerlink" href="#angular-momentum-of-a-system-of-particles" title="Link to this heading">#</a></h3>
+<p>The angular momentum of a system of particles is important for many scientific disciplines, especially for those considering a spinning disk composed of individual particles (e.g., astronomy).</p>
+<p>Consider a spiral galaxy, where the individual stars can be treated as point particles and each particle has its own angular momentum.  The vector sum of the individual angular momenta give the total angular momentum of the galaxy.</p>
+<p>If we have a system of <span class="math notranslate nohighlight">\(N\)</span> particles, then each particle will have its own position vector <span class="math notranslate nohighlight">\(\vec{r}_j\)</span> and momentum <span class="math notranslate nohighlight">\(\vec{p}_j\)</span> relative to the origin.  The total angular momentum of the system of particles is the vector sum of the individual angular momenta, or</p>
+<div class="amsmath math notranslate nohighlight" id="equation-e32b1d11-2a91-4036-9343-ae769e41ae30">
+<span class="eqno">(11.6)<a class="headerlink" href="#equation-e32b1d11-2a91-4036-9343-ae769e41ae30" title="Permalink to this equation">#</a></span>\[\begin{align}
+\vec{L}_{tot} = \sum_j \vec{L}_j = \vec{L}_1 + \vec{L}_2 + \cdots + \vec{L}_N.
+\end{align}\]</div>
+<p>If particle <span class="math notranslate nohighlight">\(j\)</span> is subject to a net torque <span class="math notranslate nohighlight">\(\vec{\tau}_j\)</span> about the origin, then we can find the net torque due to the system of particles by differentiating with respect to time, or</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{d\vec{L}_{tot}}{dt} &amp;= \displaystyle \sum_j \frac{d\vec{L}_j}{dt}, \\
+&amp; = \sum_j \vec{\tau}_j = \vec{\tau}_{\rm net}.
+\end{align*}\]</div>
+<p><em>The rate of change of the total angular momentum of a system is equal to the net external torque acting on the system when both quantities are measured with respect to a given origin.</em>  Mathematically, this is given as</p>
+<div class="math notranslate nohighlight" id="ang-momentum-torque">
+<span id="equation-ang-momentum-torque"></span><span class="eqno">(11.7)<a class="headerlink" href="#ang-momentum-torque" title="Link to this equation">#</a></span>\[\frac{\vec{L}}{dt} = \sum_j \vec{\tau}_j = \vec{\tau}_{\rm net}.\]</div>
+<section id="example-problem-angular-momentum-of-3-particles">
+<h4><span class="section-number">11.2.2.1. </span><strong>Example Problem</strong>: Angular Momentum of 3 Particles<a class="headerlink" href="#example-problem-angular-momentum-of-3-particles" title="Link to this heading">#</a></h4>
+</section>
+</section>
+<section id="angular-momentum-of-a-rigid-body">
+<h3><span class="section-number">11.2.3. </span>Angular Momentum of a Rigid Body<a class="headerlink" href="#angular-momentum-of-a-rigid-body" title="Link to this heading">#</a></h3>
+<p>Celestial objects (e.g., planets) have angular momentum due to their spin and orbits around stars.  In engineering, anything that rotates about an axis carries angular momentum (e.g., flywheels, propellers, and rotating parts in engines).</p>
+<p>To develop the angular momentum of a rigid body, we model a rigid body as composed of many small mass segments <span class="math notranslate nohighlight">\(\Delta m_i\)</span>.  In Figure <a class="reference internal" href="#rigid-ang-momentum-example"><span class="std std-numref">11.7</span></a>, a rigid body is constrained to rotate about the <span class="math notranslate nohighlight">\(z\)</span>-axis with an angular velocity <span class="math notranslate nohighlight">\(\omega\)</span>, where all the mass segments that make up the rigid body undergo circular motion with the same angular velocity.</p>
+<figure class="align-default" id="rigid-ang-momentum-example">
+<img alt="rigid body angular momentum example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/3ddf5b2f629cba6d9c736e44f91a85592ff2d98c" />
+<figcaption>
+<p><span class="caption-number">Fig. 11.7 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#rigid-ang-momentum-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Figure <a class="reference internal" href="#rigid-ang-momentum-example"><span class="std std-numref">11.7</span></a>a shows a mass segment <span class="math notranslate nohighlight">\(\Delta m_i\)</span> with a position vector <span class="math notranslate nohighlight">\(\vec{r}_i\)</span> from teh origin, and a radius <span class="math notranslate nohighlight">\(R_i\)</span> to the <span class="math notranslate nohighlight">\(z\)</span>-axis.  The magnitude of its tangential velocity is <span class="math notranslate nohighlight">\(v_i = R_i\omega\)</span> because it is undergoing circular motion.  Since <span class="math notranslate nohighlight">\(\vec{\rm v}_i\)</span> is perpendicular to <span class="math notranslate nohighlight">\(\vec{r}_i\)</span>, the magnitude of the angular momentum of this mass segment is</p>
+<div class="math notranslate nohighlight">
+\[ L_i = \Delta m_iv_i r_i \sin{90^\circ} = \Delta m_iv_i r_i. \]</div>
+<p>The angular momentum vector <span class="math notranslate nohighlight">\(\vec{L}_i\)</span> points in a direction perpendicular to the <span class="math notranslate nohighlight">\(rv\)</span>-planet towards the <span class="math notranslate nohighlight">\(z\)</span>-axis, which we can find using the right-hand rule.</p>
+<p>The sum of the angular momenta of all the mass segments contains components <em>both along and perpendicular</em> to the axis of rotation.  However, due to cylindrical symmetry, every mass segment has a perpendicular component of the angular momentum that will be cancelled by an identical mass segment that is on the opposite side of the body.</p>
+<p>The component along the axis of rotation <span class="math notranslate nohighlight">\(\left(\vec{L}_i\right)_z\)</span> is the only component that gives a nonzero value when summed over all the mass segments.  This component is give by</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\left(\vec{L}_i\right)_z &amp;= L_i\sin{\theta_i} = \Delta m_iv_i r_i \sin{\theta_i}, \\
+&amp;= \Delta m_iv_i R_i.
+\end{align*}\]</div>
+<p>The net angular momentum of the rigid body along the axis of rotation is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+L &amp;= \sum_i \left(\vec{L}_i\right)_z = \Delta m_iv_i R_i, \\
+&amp;= \sum_i \Delta m_i(R_i\omega) R_i, \\
+&amp;= \omega\sum_i \Delta m_i R_i^2.
+\end{align*}\]</div>
+<p>The summation <span class="math notranslate nohighlight">\(\displaystyle \sum_i \Delta m_i R_i^2\)</span> is simply the moment of inertia <span class="math notranslate nohighlight">\(I\)</span> of the rigid body about the axis of rotation.  The magnitude of the angular momentum along the axis of the rotation of a rigid body that rotates with an angular velocity <span class="math notranslate nohighlight">\(\omega\)</span> is</p>
+<div class="amsmath math notranslate nohighlight" id="equation-6fd7cef0-be58-4dcb-b74d-dc434a5c4c34">
+<span class="eqno">(11.8)<a class="headerlink" href="#equation-6fd7cef0-be58-4dcb-b74d-dc434a5c4c34" title="Permalink to this equation">#</a></span>\[\begin{align}
+L = I\omega.
+\end{align}\]</div>
+<p>The direction of the angular momentum vector is direction along the axis of rotation given by the right hand rule.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Recall that the magnitude of the linear momentum is <span class="math notranslate nohighlight">\(p = mv.\)</span>  The form of the equation has a source of inertia times a velocity.  The form of the equation for a rigid rotator is <span class="math notranslate nohighlight">\(L = I\omega\)</span>, which also has a source of inertia times a velocity.</p>
+</div>
+<section id="example-problem-angular-momentum-of-a-robot-arm">
+<h4><span class="section-number">11.2.3.1. </span><strong>Example Problem</strong>: Angular Momentum of a Robot Arm<a class="headerlink" href="#example-problem-angular-momentum-of-a-robot-arm" title="Link to this heading">#</a></h4>
+</section>
+</section>
 </section>
 <section id="conservation-of-angular-momentum">
 <h2><span class="section-number">11.3. </span>Conservation of Angular Momentum<a class="headerlink" href="#conservation-of-angular-momentum" title="Link to this heading">#</a></h2>
+<p>Suppose there is not net external torque on the system, <span class="math notranslate nohighlight">\(\vec{\tau}_{\rm net} = 0.\)</span>  In this case, Equation <a class="reference internal" href="#equation-ang-momentum-torque">()</a> becomes the <strong>law of conservation of angular momentum</strong>.</p>
+<div class="note admonition">
+<p class="admonition-title">Law of Conservation of Angular Momentum</p>
+<p>The angular momentum of a system of particles around a point in fixed inertial frame is conserved if there is not net external torque around that point:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-e58ff10f-6b8d-4df0-9604-392b970cbff9">
+<span class="eqno">(11.9)<a class="headerlink" href="#equation-e58ff10f-6b8d-4df0-9604-392b970cbff9" title="Permalink to this equation">#</a></span>\[\begin{align}
+\frac{d\vec{L}}{dt} = 0,
+\end{align}\]</div>
+<p>or</p>
+<div class="amsmath math notranslate nohighlight" id="equation-0b31f7c6-b08d-4ebf-8801-5c83dbb78cdc">
+<span class="eqno">(11.10)<a class="headerlink" href="#equation-0b31f7c6-b08d-4ebf-8801-5c83dbb78cdc" title="Permalink to this equation">#</a></span>\[\begin{align}
+\vec{L} = \vec{L}_1 + \vec{L}_2 + \cdots + \vec{L}_N = \text{constant}.
+\end{align}\]</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The <em>total</em> angular momentum <span class="math notranslate nohighlight">\(\vec{L}\)</span> is conserved.  Any of the individual angular momenta can change as long as their sum remains constant.  This is analogous to linear momentum being conserved when the external force on a system is zero.</p>
+</div>
+</div>
+<p>Figure <a class="reference internal" href="#figure-skater-example"><span class="std std-numref">11.8</span></a> shows an ice skater executing a spin.  The net torque on her is very close to zero because there is relatively little friction between her skates and the ice.  The friction is exerted very close to the pivot point.  Since <span class="math notranslate nohighlight">\(|\vec{F}|\)</span> and <span class="math notranslate nohighlight">\(|\vec{r}|\)</span> are both small, this means that <span class="math notranslate nohighlight">\(|\vec{\tau}|\)</span> is negligible.  Consequently, she can spin for quite some time.</p>
+<figure class="align-default" id="figure-skater-example">
+<img alt="figure skater example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/f6343406c922626518c9241c6f79ea3df73c5f9e" />
+<figcaption>
+<p><span class="caption-number">Fig. 11.8 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#figure-skater-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The ice skater can increase her rate of spin by pulling her arms and legs in.  *<em>Why does this increase her spin rate?</em></p>
+<p>Her angular momentum is constant, where we represent the angular momentum <span class="math notranslate nohighlight">\(L\)</span> and <span class="math notranslate nohighlight">\(L^\prime\)</span>, before and after she has pulled her arms in, respectively.  We can model her as a rigid body and find</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+L &amp;= L^\prime, \\
+I\omega &amp;= I^\prime \omega^\prime.
+\end{align*}\]</div>
+<p>Because <span class="math notranslate nohighlight">\(I^\prime\)</span> corresponds to her smaller radius (i.e., smaller moment of inertia), the angular velocity <span class="math notranslate nohighlight">\(\omega^\prime\)</span> must increase to keep the angular momentum constant.</p>
+<p>Since here moment of inertia changes, <em>does that also change her rotational kinetic energy?</em></p>
+<p>Let’s represent her initial rotational kinetic energy as <span class="math notranslate nohighlight">\(K_{rot} = \frac{1}{2}I\omega^2\)</span>, and her final rotational kinetic energy <span class="math notranslate nohighlight">\(K_{rot}^\prime = \frac{1}{2}I^\prime \left(\omega^\prime\right)^2\)</span>.  Then we can compare her final to initial kinetic energy through the ratio,</p>
+<div class="math notranslate nohighlight">
+\[ \frac{K^\prime_{rot}}{K_{rot}} = \frac{I^\prime(\omega^\prime)^2}{I\omega^2} = \frac{I^\prime}{I}\left(\frac{ \omega^\prime}{\omega}\right)^2.\]</div>
+<p>Since <span class="math notranslate nohighlight">\(I^\prime \omega^\prime = I\omega\)</span>, we can substitute <span class="math notranslate nohighlight">\(\omega^\prime = \frac{I}{I^\prime}\omega\)</span> and find:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{K^\prime_{rot}}{K_{rot}} &amp;= \frac{I^\prime}{I}\left(\frac{ I\omega}{I^\prime\omega}\right)^2 = \frac{I}{I^\prime}, \\
+K^\prime_{rot} &amp;= \left(\frac{I}{I^\prime}\right) K_{rot}.
+\end{align*}\]</div>
+<p>Because her moment of inertia has decreased (<span class="math notranslate nohighlight">\(I^\prime &lt; I\)</span>), her final rotational kinetic energy has increased.  The source of this additional kinetic energy is the work required to pull her arms inward.  This work causes an increase in the rotational kinetic energy, while her angular momentum remains constant.</p>
+<p>Since she is in a frictionless environment, no energy escapes the system.  Thus, she can return to her original angular velocity by extending here arms to their original positions.</p>
+<p>The Solar System is another example of how conservation of angular momentum works in our universe.  Our Solar System was born from a huge cloud of gas and dust that initially had rotational energy.  As the gas cloud contracted under gravity, the rotation rate increased as a result of conservation of angular momentum (see Fig. <a class="reference internal" href="#solar-system-example"><span class="std std-numref">11.9</span></a>).</p>
+<figure class="align-default" id="solar-system-example">
+<img alt="Solar System example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/806b9b2e4e4680a537c223b789be8f2e18f9e6f3" />
+<figcaption>
+<p><span class="caption-number">Fig. 11.9 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#solar-system-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="example-problem-coupled-flywheels">
+<h3><span class="section-number">11.3.1. </span><strong>Example Problem</strong>: Coupled Flywheels<a class="headerlink" href="#example-problem-coupled-flywheels" title="Link to this heading">#</a></h3>
+</section>
+<section id="example-problem-dismount-from-a-high-bar">
+<h3><span class="section-number">11.3.2. </span><strong>Example Problem</strong>: Dismount from a High Bar<a class="headerlink" href="#example-problem-dismount-from-a-high-bar" title="Link to this heading">#</a></h3>
+</section>
+<section id="example-problem-conservation-of-angular-momentum-of-a-collision">
+<h3><span class="section-number">11.3.3. </span><strong>Example Problem</strong>: Conservation of Angular Momentum of a Collision<a class="headerlink" href="#example-problem-conservation-of-angular-momentum-of-a-collision" title="Link to this heading">#</a></h3>
+</section>
 </section>
 <section id="precession-of-a-gyroscope">
 <h2><span class="section-number">11.4. </span>Precession of a Gyroscope<a class="headerlink" href="#precession-of-a-gyroscope" title="Link to this heading">#</a></h2>
+<p>A gyroscope is defined as a spinning disk in which the axis of rotation is free to assume any orientation.  When spinning the orientation of the spin is unaffected by the orientation of the body that encloses it.  The body or vehicle enclosing the gyroscope can be moved from place to place and the orientation of the spin axis will remain the same.  This makes gyroscopes very useful in navigation, especially where magnetic compasses can’t be used.</p>
+<figure class="align-default" id="gyroscope-example">
+<img alt="gyroscope example" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Gyroscope_operation.gif" />
+<figcaption>
+<p><span class="caption-number">Fig. 11.10 </span><span class="caption-text">Image Credit: Wikipedia:<a class="reference external" href="https://en.wikipedia.org/wiki/Gyroscope">gyroscope</a>.</span><a class="headerlink" href="#gyroscope-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The <strong>precession</strong> of a gyroscope can be illustrated with an example of a toy top.  If the top is placed on a flat surface near the ground at an angle and is <em>not spinning</em>, it will fall over.  The force of gravity produces a torque on its center-of-mass (see Fig. <a class="reference internal" href="#toy-top-example"><span class="std std-numref">11.11</span></a>a).</p>
+<figure class="align-default" id="toy-top-example">
+<img alt="top precession example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/c0f9372229183425cd17d18947c8a85325df1fba" />
+<figcaption>
+<p><span class="caption-number">Fig. 11.11 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#toy-top-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>However if the top is spinning on its axis, it precesses about the vertical instead of toppling over due to this torque (see Fig. <a class="reference internal" href="#toy-top-example"><span class="std std-numref">11.11</span></a>b).  This is due to the torque on the center-of-mass, which provides the change in angular momentum.</p>
+<p>Figure <a class="reference internal" href="#force-top-example"><span class="std std-numref">11.12</span></a> shows the forces acting on a spinning top.  The torque <span class="math notranslate nohighlight">\(\vec{\tau}\)</span> produced is perpendicular to the angular momentum vector <span class="math notranslate nohighlight">\(\vec{L}\)</span>.  This changes the direction of the angular momentum vector according to <span class="math notranslate nohighlight">\(d\vec{L} = \vec{\tau} dt\)</span>, but not its magnitude.  As a result, the op <em>precesses</em> around a vertical axis, since the torque is always horizontal and perpendicular to <span class="math notranslate nohighlight">\(\vec{L}\)</span>.</p>
+<figure class="align-default" id="force-top-example">
+<img alt="forces precession example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/dba26d6468d240cab0a9b5c2c39140b47dfa7848" />
+<figcaption>
+<p><span class="caption-number">Fig. 11.12 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#force-top-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>If the top is <em>not spinning</em>, it acquires angular momentum in the direction of the torque.  It rotates around a horizontal axis and falls over just as we expect.</p>
+<p>You can experience this phenomenon first hand by holding a spinning bicycle wheel and trying to rotate it about an axis perpendicular to the spin axis.  If the woman in Fig. <a class="reference internal" href="#bicycle-wheel-example"><span class="std std-numref">11.13</span></a> applies forces perpendicular to the spin axis in an attempt to rotate the wheel, the wheel axis starts to change direction to her left due to the applied torque.</p>
+<figure class="align-default" id="bicycle-wheel-example">
+<img alt="bicycle wheel example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/d6e2d56f4a443df836f69063456c96e55bf2eca3" />
+<figcaption>
+<p><span class="caption-number">Fig. 11.13 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#bicycle-wheel-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The spinning of the bicycle wheel when you’re riding acts as a gyroscope and keeps you from falling over.</p>
+<div class="tip admonition">
+<p class="admonition-title"><a class="reference external" href="https://www.youtube.com/&#64;veritasium"><strong>Veritasium</strong></a></p>
+<div class="video-wrapper" style="max-width:560px; margin-left: auto; margin-right: auto;">
+  <div class="video-container" style="aspect-ratio:16/9; position:relative; width:100%;">
+    <iframe src="https://www.youtube.com/embed/ty9QSiVC2g0" allowfullscreen style="width:100%; height:100%; position:absolute; left:0; top:0; border:0;" loading="lazy"></iframe>
+  </div>
+  <div class="video-caption" style="margin-top:0.5em; text-align:left; color:#666;">This video explains how the torque influences a spinning bicycle wheel and provides a demonstration.</div>
+</div></div>
+<p>We can calculate the precession rate of the top in Fig. <a class="reference internal" href="#force-top-example"><span class="std std-numref">11.12</span></a>, where we see that the magnitude of the torque is</p>
+<div class="math notranslate nohighlight">
+\[ \tau = Mgr\sin{\theta},\]</div>
+<p>which we can rewrite as</p>
+<div class="math notranslate nohighlight">
+\[ dL = Mgr\sin{\theta} dt. \]</div>
+<p>The angle the top precesses through in time <span class="math notranslate nohighlight">\(dt\)</span> is given by</p>
+<div class="math notranslate nohighlight">
+\[ d\phi = \frac{dL}{L\sin{\theta}} = \frac{Mgr\sin{\theta}}{L\sin{\theta}} = Mg\left(\frac{r}{L}\right) dt. \]</div>
+<p>The precession angular velocity is <span class="math notranslate nohighlight">\(\omega_P = \frac{d\phi}{dt}\)</span>, where we see that</p>
+<div class="amsmath math notranslate nohighlight" id="equation-fd89fd61-24cd-47c9-8914-78b14cbbf8ff">
+<span class="eqno">(11.11)<a class="headerlink" href="#equation-fd89fd61-24cd-47c9-8914-78b14cbbf8ff" title="Permalink to this equation">#</a></span>\[\begin{align}
+\omega_p &amp;= Mg\left(\frac{r}{L}\right),
+&amp;= \frac{Mgr}{I\omega},
+\end{align}\]</div>
+<p>since <span class="math notranslate nohighlight">\(L = I\omega\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We assumed that <span class="math notranslate nohighlight">\(\omega_P \ll \omega\)</span>, which means that the precession angular velocity is much less than the angular velocity of the gyroscope disk.  The precession angular velocity adds a small component to the angular momentum along the <span class="math notranslate nohighlight">\(z\)</span>-axis.  This is seen in a slight bob up and down as the gyroscope precesses, which is referred to as <a class="reference external" href="https://en.wikipedia.org/wiki/Nutation">nutation</a>.</p>
+</div>
+<p>Earth acts like a gigantic gyroscope.  Its angular momentum is along its axis and currently points at Polaris, the North Star. But Earth is slowly precessing (every <span class="math notranslate nohighlight">\({\sim}\)</span>26,000 years) due to the torque of the Sun and the Moon on its nonspherical shape.</p>
+<div class="tip admonition">
+<p class="admonition-title"><a class="reference external" href="https://www.youtube.com/&#64;AUastronomy"><strong>UNL Astronomy</strong></a></p>
+<div class="video-wrapper" style="max-width:560px; margin-left: auto; margin-right: auto;">
+  <div class="video-container" style="aspect-ratio:16/9; position:relative; width:100%;">
+    <iframe src="https://www.youtube.com/embed/0qHjtp4cdCA" allowfullscreen style="width:100%; height:100%; position:absolute; left:0; top:0; border:0;" loading="lazy"></iframe>
+  </div>
+  <div class="video-caption" style="margin-top:0.5em; text-align:left; color:#666;">This video explains explains how Earth acts like a gyroscope and demonstrates its axial precession.</div>
+</div></div>
+<section id="example-problem-period-of-precession">
+<h3><span class="section-number">11.4.1. </span><strong>Example Problem</strong>: Period of Precession<a class="headerlink" href="#example-problem-period-of-precession" title="Link to this heading">#</a></h3>
+</section>
 </section>
 <section id="in-class-problems">
 <h2><span class="section-number">11.5. </span>In-class Problems<a class="headerlink" href="#in-class-problems" title="Link to this heading">#</a></h2>
@@ -619,10 +1027,46 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rolling-motion">11.1. Rolling Motion</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">11.2. Angular Momentum</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-angular-momentum">11.3. Conservation of Angular Momentum</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#precession-of-a-gyroscope">11.4. Precession of a Gyroscope</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rolling-motion">11.1. Rolling Motion</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rolling-motion-without-slipping">11.1.1. Rolling Motion without Slipping</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-rolling-down-an-inclined-plane">11.1.1.1. <strong>Example Problem</strong>: Rolling Down an Inclined Plane</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rolling-motion-with-slipping">11.1.2. Rolling Motion with Slipping</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-rolling-down-an-inclined-plane-with-slipping">11.1.2.1. <strong>Example Problem</strong>: Rolling Down an Inclined Plane <em>with Slipping</em></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-mechanical-energy-in-rolling-motion">11.1.3. Conservation of Mechanical Energy in Rolling Motion</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-curiosity-rover">11.1.3.1. <strong>Example Problem</strong>: Curiosity Rover</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">11.2. Angular Momentum</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#angular-momentum-of-a-single-particle">11.2.1. Angular Momentum of a Single Particle</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-angular-momentum-and-torque-on-a-meteor">11.2.1.1. <strong>Example Problem</strong>: Angular Momentum and Torque on a Meteor</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#angular-momentum-of-a-system-of-particles">11.2.2. Angular Momentum of a System of Particles</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-angular-momentum-of-3-particles">11.2.2.1. <strong>Example Problem</strong>: Angular Momentum of 3 Particles</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#angular-momentum-of-a-rigid-body">11.2.3. Angular Momentum of a Rigid Body</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-angular-momentum-of-a-robot-arm">11.2.3.1. <strong>Example Problem</strong>: Angular Momentum of a Robot Arm</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-angular-momentum">11.3. Conservation of Angular Momentum</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-coupled-flywheels">11.3.1. <strong>Example Problem</strong>: Coupled Flywheels</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-dismount-from-a-high-bar">11.3.2. <strong>Example Problem</strong>: Dismount from a High Bar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-conservation-of-angular-momentum-of-a-collision">11.3.3. <strong>Example Problem</strong>: Conservation of Angular Momentum of a Collision</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#precession-of-a-gyroscope">11.4. Precession of a Gyroscope</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-period-of-precession">11.4.1. <strong>Example Problem</strong>: Period of Precession</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-class-problems">11.5. In-class Problems</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-i">11.5.1. Part I</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-ii">11.5.2. Part II</a></li>
@@ -657,7 +1101,7 @@ By Billy Quarles
 
   <p class="copyright">
     
-      © Copyright 2025.
+      © Copyright 2026.
       <br/>
     
   </p>

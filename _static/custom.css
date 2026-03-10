@@ -12,6 +12,17 @@
   color-scheme: light dark;
 }
 
+/* ETAMU Audio Player Theme */
+:root {
+    /* Main Accent: ETAMU Gold */
+    --plyr-color-main: #F2A900;
+
+    /* Player Background: ETAMU Blue */
+    --plyr-audio-controls-background: #0033A0;
+
+    /* Text and Icons: White for high contrast against the blue */
+    --plyr-audio-control-color: #FFFFFF;
+}
 /* -----------------------------
    etamu-exercise styling
    ----------------------------- */
