@@ -581,7 +581,10 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-rotational-work-a-pulley">10.8.1.2. <strong>Example Problem</strong>: Rotational Work: A Pulley</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#power-for-rotational-motion">10.8.2. Power for Rotational Motion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#power-for-rotational-motion">10.8.2. Power for Rotational Motion</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-torque-on-a-boat-propeller">10.8.2.1. <strong>Example Problem</strong>: Torque on a Boat Propeller</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rotational-and-translational-relationships-summarized">10.9. Rotational and Translational Relationships Summarized</a></li>
@@ -608,7 +611,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="fixed-axis-rotation">
 <h1><span class="section-number">10. </span>Fixed-axis Rotation<a class="headerlink" href="#fixed-axis-rotation" title="Link to this heading">#</a></h1>
-<p>Mar 14, 2026 | 11598 words | 58 min read</p>
+<p>Mar 14, 2026 | 13551 words | 68 min read</p>
 <section id="rotational-variables">
 <h2><span class="section-number">10.1. </span>Rotational Variables<a class="headerlink" href="#rotational-variables" title="Link to this heading">#</a></h2>
 <section id="angular-velocity">
@@ -814,42 +817,42 @@ input[type=range].anim-slider {
 </style>
 
 <div class="animation">
-  <img id="_anim_imgfc8bca0feefe4c04b0cb22f8dabd55e5">
+  <img id="_anim_imgeff1fce13eaf4d3096dd215ba62124e9">
   <div class="anim-controls">
-    <input id="_anim_sliderfc8bca0feefe4c04b0cb22f8dabd55e5" type="range" class="anim-slider"
+    <input id="_anim_slidereff1fce13eaf4d3096dd215ba62124e9" type="range" class="anim-slider"
            name="points" min="0" max="1" step="1" value="0"
-           oninput="animfc8bca0feefe4c04b0cb22f8dabd55e5.set_frame(parseInt(this.value));">
+           oninput="animeff1fce13eaf4d3096dd215ba62124e9.set_frame(parseInt(this.value));">
     <div class="anim-buttons">
-      <button title="Decrease speed" aria-label="Decrease speed" onclick="animfc8bca0feefe4c04b0cb22f8dabd55e5.slower()">
+      <button title="Decrease speed" aria-label="Decrease speed" onclick="animeff1fce13eaf4d3096dd215ba62124e9.slower()">
           <i class="fa fa-minus"></i></button>
-      <button title="First frame" aria-label="First frame" onclick="animfc8bca0feefe4c04b0cb22f8dabd55e5.first_frame()">
+      <button title="First frame" aria-label="First frame" onclick="animeff1fce13eaf4d3096dd215ba62124e9.first_frame()">
         <i class="fa fa-fast-backward"></i></button>
-      <button title="Previous frame" aria-label="Previous frame" onclick="animfc8bca0feefe4c04b0cb22f8dabd55e5.previous_frame()">
+      <button title="Previous frame" aria-label="Previous frame" onclick="animeff1fce13eaf4d3096dd215ba62124e9.previous_frame()">
           <i class="fa fa-step-backward"></i></button>
-      <button title="Play backwards" aria-label="Play backwards" onclick="animfc8bca0feefe4c04b0cb22f8dabd55e5.reverse_animation()">
+      <button title="Play backwards" aria-label="Play backwards" onclick="animeff1fce13eaf4d3096dd215ba62124e9.reverse_animation()">
           <i class="fa fa-play fa-flip-horizontal"></i></button>
-      <button title="Pause" aria-label="Pause" onclick="animfc8bca0feefe4c04b0cb22f8dabd55e5.pause_animation()">
+      <button title="Pause" aria-label="Pause" onclick="animeff1fce13eaf4d3096dd215ba62124e9.pause_animation()">
           <i class="fa fa-pause"></i></button>
-      <button title="Play" aria-label="Play" onclick="animfc8bca0feefe4c04b0cb22f8dabd55e5.play_animation()">
+      <button title="Play" aria-label="Play" onclick="animeff1fce13eaf4d3096dd215ba62124e9.play_animation()">
           <i class="fa fa-play"></i></button>
-      <button title="Next frame" aria-label="Next frame" onclick="animfc8bca0feefe4c04b0cb22f8dabd55e5.next_frame()">
+      <button title="Next frame" aria-label="Next frame" onclick="animeff1fce13eaf4d3096dd215ba62124e9.next_frame()">
           <i class="fa fa-step-forward"></i></button>
-      <button title="Last frame" aria-label="Last frame" onclick="animfc8bca0feefe4c04b0cb22f8dabd55e5.last_frame()">
+      <button title="Last frame" aria-label="Last frame" onclick="animeff1fce13eaf4d3096dd215ba62124e9.last_frame()">
           <i class="fa fa-fast-forward"></i></button>
-      <button title="Increase speed" aria-label="Increase speed" onclick="animfc8bca0feefe4c04b0cb22f8dabd55e5.faster()">
+      <button title="Increase speed" aria-label="Increase speed" onclick="animeff1fce13eaf4d3096dd215ba62124e9.faster()">
           <i class="fa fa-plus"></i></button>
     </div>
-    <form title="Repetition mode" aria-label="Repetition mode" action="#n" name="_anim_loop_selectfc8bca0feefe4c04b0cb22f8dabd55e5"
+    <form title="Repetition mode" aria-label="Repetition mode" action="#n" name="_anim_loop_selecteff1fce13eaf4d3096dd215ba62124e9"
           class="anim-state">
-      <input type="radio" name="state" value="once" id="_anim_radio1_fc8bca0feefe4c04b0cb22f8dabd55e5"
+      <input type="radio" name="state" value="once" id="_anim_radio1_eff1fce13eaf4d3096dd215ba62124e9"
              >
-      <label for="_anim_radio1_fc8bca0feefe4c04b0cb22f8dabd55e5">Once</label>
-      <input type="radio" name="state" value="loop" id="_anim_radio2_fc8bca0feefe4c04b0cb22f8dabd55e5"
+      <label for="_anim_radio1_eff1fce13eaf4d3096dd215ba62124e9">Once</label>
+      <input type="radio" name="state" value="loop" id="_anim_radio2_eff1fce13eaf4d3096dd215ba62124e9"
              checked>
-      <label for="_anim_radio2_fc8bca0feefe4c04b0cb22f8dabd55e5">Loop</label>
-      <input type="radio" name="state" value="reflect" id="_anim_radio3_fc8bca0feefe4c04b0cb22f8dabd55e5"
+      <label for="_anim_radio2_eff1fce13eaf4d3096dd215ba62124e9">Loop</label>
+      <input type="radio" name="state" value="reflect" id="_anim_radio3_eff1fce13eaf4d3096dd215ba62124e9"
              >
-      <label for="_anim_radio3_fc8bca0feefe4c04b0cb22f8dabd55e5">Reflect</label>
+      <label for="_anim_radio3_eff1fce13eaf4d3096dd215ba62124e9">Reflect</label>
     </form>
   </div>
 </div>
@@ -859,9 +862,9 @@ input[type=range].anim-slider {
   /* Instantiate the Animation class. */
   /* The IDs given should match those used in the template above. */
   (function() {
-    var img_id = "_anim_imgfc8bca0feefe4c04b0cb22f8dabd55e5";
-    var slider_id = "_anim_sliderfc8bca0feefe4c04b0cb22f8dabd55e5";
-    var loop_select_id = "_anim_loop_selectfc8bca0feefe4c04b0cb22f8dabd55e5";
+    var img_id = "_anim_imgeff1fce13eaf4d3096dd215ba62124e9";
+    var slider_id = "_anim_slidereff1fce13eaf4d3096dd215ba62124e9";
+    var loop_select_id = "_anim_loop_selecteff1fce13eaf4d3096dd215ba62124e9";
     var frames = new Array(240);
     
   frames[0] = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYCAYAAAC+ZpjcAAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90\
@@ -88713,7 +88716,7 @@ jIAFAADgMgIWAACAywhYAAAALvv/AZMl9NmPBqp7AAAAAElFTkSuQmCC\
     /* set a timeout to make sure all the above elements are created before
        the object is initialized. */
     setTimeout(function() {
-        animfc8bca0feefe4c04b0cb22f8dabd55e5 = new Animation(frames, img_id, slider_id, 29.0,
+        animeff1fce13eaf4d3096dd215ba62124e9 = new Animation(frames, img_id, slider_id, 29.0,
                                  loop_select_id);
     }, 0);
   })()
@@ -88826,8 +88829,8 @@ jIAFAADgMgIWAACAywhYAAAALvv/AZMl9NmPBqp7AAAAAElFTkSuQmCC\
 <p>In Figures <a class="reference internal" href="#particle-circle-fig"><span class="std std-numref">10.1</span></a> and <a class="reference internal" href="#fig-circle-animation"><span class="std std-numref">10.2</span></a>, we show a particle moving in a circle.  The coordinate system is fixed and serves as a frame of reference to define the particle’s position.  Its position vector <span class="math notranslate nohighlight">\(\vec{r}\)</span> sweeps out the angle <span class="math notranslate nohighlight">\(\theta\)</span> in a counterclockwise direction.</p>
 <p>The angular position <span class="math notranslate nohighlight">\(\theta\)</span> describes how far the position vector has rotated in the <span class="math notranslate nohighlight">\(x\)</span>-<span class="math notranslate nohighlight">\(y\)</span> plane.  As the particle moves in its circular path, it also traces an arc length <span class="math notranslate nohighlight">\(s\)</span>.  The particle may complete more than one revolution around the circle.  This means that the angle <span class="math notranslate nohighlight">\(\theta\)</span> may be greater than <span class="math notranslate nohighlight">\(2\pi\)</span>, and the arc length <span class="math notranslate nohighlight">\(s\)</span> can be greater than the circumference, <span class="math notranslate nohighlight">\(2\pi r\)</span>.</p>
 <p>The angle is related to the radius of the circle and the arc length by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9411fc77-7568-425b-a7b1-1a950a513fe5">
-<span class="eqno">(10.1)<a class="headerlink" href="#equation-9411fc77-7568-425b-a7b1-1a950a513fe5" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e3b95498-f480-4647-9541-4271552e6519">
+<span class="eqno">(10.1)<a class="headerlink" href="#equation-e3b95498-f480-4647-9541-4271552e6519" title="Permalink to this equation">#</a></span>\[\begin{align}
 \theta &amp;= \frac{s}{r}, \\
 s &amp;= r\theta.
 \end{align}\]</div>
@@ -88838,8 +88841,8 @@ s &amp;= r\theta.
 </div>
 <p>As the particle moves along its circular path, its angular position changes and it undergoes an angular displacement over <span class="math notranslate nohighlight">\(\Delta \theta\)</span>.</p>
 <p>We can assign a vector <span class="math notranslate nohighlight">\(\vec{\theta}\)</span>, which represents a vector <code class="docutils literal notranslate"><span class="pre">out-of-the-page</span></code> in Fig. <a class="reference internal" href="#particle-circle-fig"><span class="std std-numref">10.1</span></a>.  The angular position vector <span class="math notranslate nohighlight">\(\vec{r}\)</span> and the arc length <span class="math notranslate nohighlight">\(\vec{s}\)</span> both lie in the plane of the page.  These three vectors are related to each other by a cross-product, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0400f275-cd46-4415-83b6-43f1d9fffd72">
-<span class="eqno">(10.2)<a class="headerlink" href="#equation-0400f275-cd46-4415-83b6-43f1d9fffd72" title="Permalink to this equation">#</a></span>\[\begin{align} 
+<div class="amsmath math notranslate nohighlight" id="equation-509b3a11-913a-48f9-8773-586614aa32c7">
+<span class="eqno">(10.2)<a class="headerlink" href="#equation-509b3a11-913a-48f9-8773-586614aa32c7" title="Permalink to this equation">#</a></span>\[\begin{align} 
 \vec{s} = \vec{\theta} \times \vec{r}.
 \end{align}\]</div>
 <figure class="align-default" id="theta-cross-fig">
@@ -88849,8 +88852,8 @@ s &amp;= r\theta.
 </figcaption>
 </figure>
 <p>The magnitude of the <strong>angular velocity</strong> <span class="math notranslate nohighlight">\(\omega\)</span> is the time rate of change of the angle <span class="math notranslate nohighlight">\(\theta\)</span> as the particle moves in its circular path.  The <em>instantaneous angular velocity</em> is defined using the limit definition when <span class="math notranslate nohighlight">\(\Delta t\rightarrow 0\)</span> in the average velocity, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b7f46d42-88cc-40e7-9fe4-01eb8692e9f4">
-<span class="eqno">(10.3)<a class="headerlink" href="#equation-b7f46d42-88cc-40e7-9fe4-01eb8692e9f4" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-03a2f1cb-e1a6-4dc5-98ab-b2edfebcd3a3">
+<span class="eqno">(10.3)<a class="headerlink" href="#equation-03a2f1cb-e1a6-4dc5-98ab-b2edfebcd3a3" title="Permalink to this equation">#</a></span>\[\begin{align}
 \omega_{\rm ave} &amp;= \frac{\Delta \theta}{\Delta t}, \\[6pt]
 \omega &amp;= \lim_{\Delta t \rightarrow 0}\frac{\Delta \theta}{\Delta t} = \frac{d\theta}{dt}.
 \end{align}\]</div>
@@ -88868,8 +88871,8 @@ s&amp;=r\theta,\\
 &amp;= \frac{dr}{dt}\theta + r\frac{d\theta}{dt}.
 \end{align*}\]</div>
 <p>Since <span class="math notranslate nohighlight">\(r\)</span> represents the radius and is a constant, the factor <span class="math notranslate nohighlight">\(\frac{dr}{dt} = 0\)</span>.  By substitution of the instantaneous angular velocity <span class="math notranslate nohighlight">\(\omega\)</span>, we arrive at</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6feca8aa-1f65-447f-9e66-8e8e5772a637">
-<span class="eqno">(10.4)<a class="headerlink" href="#equation-6feca8aa-1f65-447f-9e66-8e8e5772a637" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a06a810f-d0b7-4998-b9dc-c292b145b12c">
+<span class="eqno">(10.4)<a class="headerlink" href="#equation-a06a810f-d0b7-4998-b9dc-c292b145b12c" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{ds}{dt} &amp;= r\frac{d\theta}{dt},\\[6pt]
 v_t &amp;= r\omega.
 \end{align}\]</div>
@@ -89030,8 +89033,8 @@ v_2 &amp;= \left(\frac{r_2}{r_1}\right)v_1.
 <p>The magnitude of the angular velocity is given by <span class="math notranslate nohighlight">\(\omega = d\theta/dt\)</span>, which is a scalar.  The vector <span class="math notranslate nohighlight">\(\vec{\omega}\)</span> is has a magnitude <span class="math notranslate nohighlight">\(\omega\)</span> and points along the axis of rotation.  The direction of rotation (“-” clockwise or “+” counterclockwise) gives the directional information and can be determined via the right-hand rule.</p>
 </div>
 <p>One can state a cross product relation to the vector of the tangential velocity <span class="math notranslate nohighlight">\(v_t\)</span>, which is given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-fa73fccd-dd22-492e-a333-3ce4fc262835">
-<span class="eqno">(10.5)<a class="headerlink" href="#equation-fa73fccd-dd22-492e-a333-3ce4fc262835" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f5d2bbeb-e6bb-4838-949e-a0a0e096bde7">
+<span class="eqno">(10.5)<a class="headerlink" href="#equation-f5d2bbeb-e6bb-4838-949e-a0a0e096bde7" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{\rm v} = \vec{\omega} \times \vec{r}.
 \end{align}\]</div>
 <p>The tangential velocity is the cross product of the angular velocity and the position vector.  In Figure <a class="reference internal" href="#tangent-vel-vector-fig"><span class="std std-numref">10.5</span></a>a, we see that the angular velocity is in the <span class="math notranslate nohighlight">\(+z\)</span>-direction, and the rotation in the rotation in the <span class="math notranslate nohighlight">\(xy\)</span>-plane is counterclockwise.  In Figure <a class="reference internal" href="#tangent-vel-vector-fig"><span class="std std-numref">10.5</span></a>b, th angular velocity is in the <span class="math notranslate nohighlight">\(-z\)</span>-direction, giving a clockwise rotation in the <span class="math notranslate nohighlight">\(xy\)</span>-plane.</p>
@@ -89124,8 +89127,8 @@ v_t &amp;= (0.10\ {\rm m})(45\ {\rm rad/s}) \\
 <h3><span class="section-number">10.1.2. </span>Angular Acceleration<a class="headerlink" href="#angular-acceleration" title="Link to this heading">#</a></h3>
 <p>Although uniform circular motion can be used in many situations, not all motion is uniform.  For example, an ice skater can increase her angular speed, by pulling in her arms.  As a result, we need to define an <strong>angular acceleration</strong> for describing situations where <span class="math notranslate nohighlight">\(\omega\)</span> changes.</p>
 <p>The faster the change in <span class="math notranslate nohighlight">\(\omega\)</span>, the greater the acceleration. We define the <strong>instantaneous angular acceleration</strong> <span class="math notranslate nohighlight">\(\alpha\)</span> as the derivative of angular velocity with respect to time:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-86d3d79c-e906-4636-8f58-2358d692c1f9">
-<span class="eqno">(10.6)<a class="headerlink" href="#equation-86d3d79c-e906-4636-8f58-2358d692c1f9" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-9c516b04-bd31-47c2-9947-b006e4dd5da6">
+<span class="eqno">(10.6)<a class="headerlink" href="#equation-9c516b04-bd31-47c2-9947-b006e4dd5da6" title="Permalink to this equation">#</a></span>\[\begin{align}
 \alpha &amp;= \lim_{\Delta t \rightarrow 0} \frac{\Delta w}{\Delta t},\\ 
 &amp;= \frac{d\omega}{dt} = \frac{d^2\theta}{dt^2}.
 \end{align}\]</div>
@@ -89142,8 +89145,8 @@ v_t &amp;= (0.10\ {\rm m})(45\ {\rm rad/s}) \\
 </figcaption>
 </figure>
 <p>TWe can express the tangential acceleration vector as a cross product of the angular acceleration and the position vector.  This expression can be found using the <a class="reference external" href="https://en.wikipedia.org/wiki/Cross_product#Differentiation">properties of cross products</a>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-8b1531d8-3e45-4746-b4f3-b49be585c65d">
-<span class="eqno">(10.7)<a class="headerlink" href="#equation-8b1531d8-3e45-4746-b4f3-b49be585c65d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-8ff1fb5c-49a5-4188-9d11-6ea78e01b079">
+<span class="eqno">(10.7)<a class="headerlink" href="#equation-8ff1fb5c-49a5-4188-9d11-6ea78e01b079" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{a} &amp;= \frac{d\vec{\rm v}}{dt}, \\
 &amp;= \frac{d}{dt}\left(\vec{\omega} \times \vec{r}\right), \\
 &amp;= \frac{d\vec{\omega}}{dt}\times \vec{r} + \vec{\omega}\times \frac{d\vec{r}}{dt}, \\
@@ -89166,8 +89169,8 @@ v_t &amp;= (0.10\ {\rm m})(45\ {\rm rad/s}) \\
 </figcaption>
 </figure>
 <p>We can relate the tangential acceleration of a point on a rotating body at a distance from the axis of rotation in a similar way that we related the tangential speed to the angular velocity.  We find the tangential acceleration by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5d3d9287-19e4-496c-b8eb-8df8562a7222">
-<span class="eqno">(10.8)<a class="headerlink" href="#equation-5d3d9287-19e4-496c-b8eb-8df8562a7222" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b77ea483-7a10-4bac-8f63-bcb413c09ead">
+<span class="eqno">(10.8)<a class="headerlink" href="#equation-b77ea483-7a10-4bac-8f63-bcb413c09ead" title="Permalink to this equation">#</a></span>\[\begin{align}
 v_t &amp;= r\omega, \\
 a_t &amp;= \frac{d(r\omega)}{dt},\\
 &amp;= \frac{dr}{dt}\omega + r\frac{d\omega}{dt}, \\
@@ -89380,16 +89383,16 @@ a_t &amp;= \frac{d(r\omega)}{dt},\\
 <h3><span class="section-number">10.2.1. </span>Kinematics of Rotational Motion<a class="headerlink" href="#kinematics-of-rotational-motion" title="Link to this heading">#</a></h3>
 <p>Using our intuition, we can see how the rotational quantities <span class="math notranslate nohighlight">\(\theta,\ \omega,\ \alpha,\)</span> and <span class="math notranslate nohighlight">\(t\)</span> are related to one another.  We can build a set of rotational kinematic equations under a constant angular acceleration.</p>
 <p>If the angular acceleration <span class="math notranslate nohighlight">\(\alpha\)</span> is a constant, then the average angular velocity must be a linear function with respect to time.  The (arithmetic) average angular angular velocity <span class="math notranslate nohighlight">\(\bar{\omega}\)</span> can be represented by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3d11c6d9-e0ec-48e5-9cbf-2db0282339ff">
-<span class="eqno">(10.9)<a class="headerlink" href="#equation-3d11c6d9-e0ec-48e5-9cbf-2db0282339ff" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-07a8b208-b250-439b-a8fd-b36db4f8358c">
+<span class="eqno">(10.9)<a class="headerlink" href="#equation-07a8b208-b250-439b-a8fd-b36db4f8358c" title="Permalink to this equation">#</a></span>\[\begin{align}
 \bar{\omega} = \frac{\omega_o + \omega_f}{2}.
 \end{align}\]</div>
 <p>The time-average angular velocity is given by</p>
 <div class="math notranslate nohighlight">
 \[ \bar{\omega} = \frac{\Delta \theta}{\Delta t}, \]</div>
 <p>where we can solve for <span class="math notranslate nohighlight">\(\theta\)</span> to get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-bd55d78c-55b6-4b76-8d79-ac6a96071757">
-<span class="eqno">(10.10)<a class="headerlink" href="#equation-bd55d78c-55b6-4b76-8d79-ac6a96071757" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e4a9c4aa-c30b-404f-8bf6-bedad2fbf921">
+<span class="eqno">(10.10)<a class="headerlink" href="#equation-e4a9c4aa-c30b-404f-8bf6-bedad2fbf921" title="Permalink to this equation">#</a></span>\[\begin{align}
 \theta_f = \theta_o + \bar{\omega}t,
 \end{align}\]</div>
 <p>after having set <span class="math notranslate nohighlight">\(t_o = 0\)</span>.  If we know the average angular velocity <span class="math notranslate nohighlight">\(\bar{\omega}\)</span> of the system, then we can find the angular displacement over a given time interval.</p>
@@ -89403,8 +89406,8 @@ a_t &amp;= \frac{d(r\omega)}{dt},\\
 <div class="math notranslate nohighlight">
 \[ \alpha t = \omega_f - \omega_o, \]</div>
 <p>which we can rearrange to obtain</p>
-<div class="amsmath math notranslate nohighlight" id="equation-89acc0a9-44b7-45b3-9bd4-85c1b2749f9f">
-<span class="eqno">(10.11)<a class="headerlink" href="#equation-89acc0a9-44b7-45b3-9bd4-85c1b2749f9f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-7f970f0b-054a-48a9-b077-97a04b3c68c7">
+<span class="eqno">(10.11)<a class="headerlink" href="#equation-7f970f0b-054a-48a9-b077-97a04b3c68c7" title="Permalink to this equation">#</a></span>\[\begin{align}
 \omega_f = \omega_o + \alpha t,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\omega_o\)</span> is the initial angular velocity.  Notice how similar this equation appears compared to the linear kinematic equation with velocity: <span class="math notranslate nohighlight">\(v_f = v_o + at\)</span>.</p>
@@ -89415,8 +89418,8 @@ a_t &amp;= \frac{d(r\omega)}{dt},\\
 \omega t + \frac{1}{2}\alpha t^2 &amp;= \theta_f - \theta_o,
 \end{align*} \]</div>
 <p>where we have set <span class="math notranslate nohighlight">\(t_o = 0.\)</span>  We can rearrange to obtain</p>
-<div class="amsmath math notranslate nohighlight" id="equation-98673603-c9bf-406e-b120-bf629e659b17">
-<span class="eqno">(10.12)<a class="headerlink" href="#equation-98673603-c9bf-406e-b120-bf629e659b17" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-7349142d-78e1-4d1a-a436-9973d835deb2">
+<span class="eqno">(10.12)<a class="headerlink" href="#equation-7349142d-78e1-4d1a-a436-9973d835deb2" title="Permalink to this equation">#</a></span>\[\begin{align}
 \theta = \theta_o + \omega_o t + \frac{1}{2}\alpha t^2,
 \end{align}\]</div>
 <p>which is a rotational counterpart to the position function of time in linear kinematics.</p>
@@ -89429,8 +89432,8 @@ a_t &amp;= \frac{d(r\omega)}{dt},\\
 \theta - \theta_o &amp;= \frac{\omega^2-\omega^2}{2\alpha},
 \end{align*}\]</div>
 <p>or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-64c16f0b-7453-4957-9078-b21a545159e5">
-<span class="eqno">(10.13)<a class="headerlink" href="#equation-64c16f0b-7453-4957-9078-b21a545159e5" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-abc2ecad-d140-47f0-851c-f9f4b01b48e6">
+<span class="eqno">(10.13)<a class="headerlink" href="#equation-abc2ecad-d140-47f0-851c-f9f4b01b48e6" title="Permalink to this equation">#</a></span>\[\begin{align}
 \omega^2 = \omega^2 + 2\alpha (\Delta \theta).
 \end{align}\]</div>
 <div class="pst-scrollable-table-container"><table class="table" id="id2">
@@ -89722,8 +89725,8 @@ t &amp;= \frac{0-220\ {\rm rad/s}}{-300\ {\rm rad/s^2}} \\
 <p>The linear variable of position has physical units of meters, whereas the angular position variable has <em>dimensionless</em> units of radians.  This can be seen from the definition of <span class="math notranslate nohighlight">\(\theta = \frac{s}{r}\)</span>.</p>
 <p>-The linear velocity has units of <span class="math notranslate nohighlight">\(\rm m/s\)</span>, while its counter part (the angular velocity) has units of <span class="math notranslate nohighlight">\(\rm rad/s\)</span>.  In the case of circular motion, the linear tangential speed <span class="math notranslate nohighlight">\(v_t\)</span> of a particle at a radius <span class="math notranslate nohighlight">\(r\)</span> from the axis of rotation is related by the angular velocity, or <span class="math notranslate nohighlight">\(v_t = r\omega\)</span>.</p>
 <p>The centripetal acceleration vector points inward towards the axis of rotation.  From the derivation for the magnitude of the centripetal acceleration, we found</p>
-<div class="amsmath math notranslate nohighlight" id="equation-96713ada-8b66-4225-b588-0c70f6ebadbb">
-<span class="eqno">(10.14)<a class="headerlink" href="#equation-96713ada-8b66-4225-b588-0c70f6ebadbb" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d4e77a3b-a5e4-457e-bb05-6db5c0798d26">
+<span class="eqno">(10.14)<a class="headerlink" href="#equation-d4e77a3b-a5e4-457e-bb05-6db5c0798d26" title="Permalink to this equation">#</a></span>\[\begin{align}
 a_c = \frac{v_t^2}{r},
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(r\)</span> is the radius of the circle.  In uniform circular motion, when the angular velocity is constant and the angular acceleration is zero, we have a linear acceleration (i.e., the centripetal acceleration).</p>
@@ -89736,8 +89739,8 @@ a_c = \frac{v_t^2}{r},
 </figure>
 <p>Figure <a class="reference internal" href="#rotation-accel-fig"><span class="std std-numref">10.8</span></a> shows the centripetal tangential accelerations for uniform and nonuniform circular motion.  The centripetal acceleration comes from changes in the <em>direction</em> of tangential velocity, whereas the tangential acceleration is from any change in magnitude of the tangential velocity.  <em>Recall that vectors have a magnitude and direction.</em></p>
 <p>The tangential <span class="math notranslate nohighlight">\(\vec{a}_t\)</span> and centripetal <span class="math notranslate nohighlight">\(\vec{a}_c\)</span> acceleration vectors are always perpendicular to each other.  The <strong>total linear acceleration</strong> describes a point on a rotating rigid body (or a particle executing circular motion) at a radius <span class="math notranslate nohighlight">\(r\)</span> from a fixed axis.  It can be written as the vector sum of the centripetal and tangential accelerations,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-851da03d-8b8a-4dee-8800-a5fb1ebec7f0">
-<span class="eqno">(10.15)<a class="headerlink" href="#equation-851da03d-8b8a-4dee-8800-a5fb1ebec7f0" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-718d77a5-23ee-475a-a77b-2c9e2ba5281d">
+<span class="eqno">(10.15)<a class="headerlink" href="#equation-718d77a5-23ee-475a-a77b-2c9e2ba5281d" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{a} &amp;= \vec{a}_c + \vec{a}_t.
 \end{align}\]</div>
 <p>In the case of nonuniform circular motion, the total linear acceleration vector points at an angle between the centripetal and tangential acceleration vectors (see Fig. <a class="reference internal" href="#nonuniform-accel-fig"><span class="std std-numref">10.9</span></a>).</p>
@@ -90029,8 +90032,8 @@ a_c &amp;= \frac{(7.0)^2}{0.20}, \\
 <div class="math notranslate nohighlight">
 \[ K = \frac{1}{2} \sum_j m_j v_j^2 = \frac{1}{2}\sum_j m_j(r_j\omega_j)^2. \]</div>
 <p>Since <span class="math notranslate nohighlight">\(\omega_j = \omega\)</span> ro all masses, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-70dfa04d-db28-4a0b-a28b-b8f119227a94">
-<span class="eqno">(10.16)<a class="headerlink" href="#equation-70dfa04d-db28-4a0b-a28b-b8f119227a94" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-1f7c56e0-a7d6-4720-9913-69b2cbad01ce">
+<span class="eqno">(10.16)<a class="headerlink" href="#equation-1f7c56e0-a7d6-4720-9913-69b2cbad01ce" title="Permalink to this equation">#</a></span>\[\begin{align}
 K = \frac{1}{2} \left(\sum_j m_jr_j^2 \right) \omega^2.
 \end{align}\]</div>
 <p>This rotational kinetic energy has units of Joules, just like its translational counterpart.</p>
@@ -90044,8 +90047,8 @@ K_t &amp;= \frac{1}{2} M v^2, \\
 K_r &amp;= \frac{1}{2} \left(\sum_j m_jr_j^2 \right) \omega^2.
 \end{align*}\]</div>
 <p>The quantity <span class="math notranslate nohighlight">\(\displaystyle \sum_j m_j r_j^2\)</span> is the counterpart for mass in the equation for the rotational kinetic energy.  This quantity is called the <strong>moment of inertia</strong> <span class="math notranslate nohighlight">\(I\)</span> (with units of <span class="math notranslate nohighlight">\(\rm kg\cdot m^2\)</span>):</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c24a745c-deea-435b-82d1-37b87acd60b4">
-<span class="eqno">(10.17)<a class="headerlink" href="#equation-c24a745c-deea-435b-82d1-37b87acd60b4" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f58f1619-59c1-4e44-b1d6-e41f1e7234d5">
+<span class="eqno">(10.17)<a class="headerlink" href="#equation-f58f1619-59c1-4e44-b1d6-e41f1e7234d5" title="Permalink to this equation">#</a></span>\[\begin{align}
 I &amp;= \sum_j m_j r_j^2.
 \end{align}\]</div>
 <p>The moment of inertia of a single point particle about a fixed axis is simply <span class="math notranslate nohighlight">\(mr^2\)</span>, where <span class="math notranslate nohighlight">\(r\)</span> is the distance from the particle to the axis of rotation.</p>
@@ -90055,8 +90058,8 @@ I &amp;= \sum_j m_j r_j^2.
 <li><p>Rigid bodies and systems of particles with more mass concentrated a greater distance from the axis of rotation have greater moments of inertia.</p></li>
 </ul>
 <p>We can see that a hollow cylinder has more rotational inertia than a solid cylinder of the same mass when rotating about a central axis.  The expression for the rotational kinetic energy can be written in terms of the physical property of the medium <span class="math notranslate nohighlight">\(I\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c5ee9b9f-7f9a-466a-997a-c1aeaff506ae">
-<span class="eqno">(10.18)<a class="headerlink" href="#equation-c5ee9b9f-7f9a-466a-997a-c1aeaff506ae" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-325a2c73-8def-4c14-9e0c-8d0f979f2666">
+<span class="eqno">(10.18)<a class="headerlink" href="#equation-325a2c73-8def-4c14-9e0c-8d0f979f2666" title="Permalink to this equation">#</a></span>\[\begin{align}
 K = \frac{1}{2}I\omega^2.
 \end{align}\]</div>
 <p>The kinetic energy of a rotating rigid body is directly proportional to the moment of inertia <strong>and</strong> the square of the angular velocity.  This is exploited in flywheel energy-storage devices, which can store large amounts of rotational kinetic energy.</p>
@@ -90468,8 +90471,8 @@ I_e &amp;= \sum_j m_j r_j^2, \\
 </figcaption>
 </figure>
 <p>Then we can write the moment of inertia by evaluating an integral over infinitesimal masses rather than using a discrete sum over finite masses;</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2910a093-d907-4220-b4a5-41fd31c0cdcb">
-<span class="eqno">(10.19)<a class="headerlink" href="#equation-2910a093-d907-4220-b4a5-41fd31c0cdcb" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-9ea68102-ac16-4c97-8509-e98a52880fba">
+<span class="eqno">(10.19)<a class="headerlink" href="#equation-9ea68102-ac16-4c97-8509-e98a52880fba" title="Permalink to this equation">#</a></span>\[\begin{align}
 I &amp;= \sum_j m_jr_j^2 \quad \Rightarrow \quad I = \int r^2 dm.
 \end{align}\]</div>
 <p>In this form, we can generalize the calculation for moment of inertia to complex shapes.</p>
@@ -90538,8 +90541,8 @@ I &amp;= \int_{0}^{L} x^2\lambda\; dx = \frac{\lambda}{3}x^3 \bigg\vert_{0}^{L},
 <div class="note admonition">
 <p class="admonition-title">Parallel-axis Theorem</p>
 <p>Let <span class="math notranslate nohighlight">\(m\)</span> be the mass of an object, while <span class="math notranslate nohighlight">\(d\)</span> is the distance from an axis through the object’s center-of-mass to a new axis.  Then we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c58bdbf4-cf69-4a10-9e3d-508478f1def2">
-<span class="eqno">(10.20)<a class="headerlink" href="#equation-c58bdbf4-cf69-4a10-9e3d-508478f1def2" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ce22c7d7-cabf-4e8d-bd15-032a51346739">
+<span class="eqno">(10.20)<a class="headerlink" href="#equation-ce22c7d7-cabf-4e8d-bd15-032a51346739" title="Permalink to this equation">#</a></span>\[\begin{align}
 I_\parallel = I_{\rm CoM} + md^2,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(I_\parallel\)</span> is the moment of inertia for the parallel axis and <span class="math notranslate nohighlight">\(I_{\rm CoM}\)</span> is the moment of inertia through the center-of-mass.</p>
@@ -90595,8 +90598,8 @@ I &amp;= \int_0^R r^2\sigma\, dA = \int_0^R r^2\sigma (2\pi r)dr, \\
 </figcaption>
 </figure>
 <p>However, if we use the definition for the moment of inertia as a summation, we can reason that a compound object’s moment of inertia can be determined as the sum of each part of the object:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d3ac22dc-6145-4c9f-aac6-1cfb670b87e6">
-<span class="eqno">(10.21)<a class="headerlink" href="#equation-d3ac22dc-6145-4c9f-aac6-1cfb670b87e6" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-76660a9c-9459-481d-97f0-4a459693fb01">
+<span class="eqno">(10.21)<a class="headerlink" href="#equation-76660a9c-9459-481d-97f0-4a459693fb01" title="Permalink to this equation">#</a></span>\[\begin{align}
 I_{\rm tot} = \sum_j I_j.
 \end{align}\]</div>
 <div class="admonition note">
@@ -90908,8 +90911,8 @@ mg\frac{L}{2}(1-\cos\theta) &amp;= \frac{1}{2}\left(\frac{1}{3}mL^2\right)\omega
 <div class="note admonition">
 <p class="admonition-title">Torque</p>
 <p>When a force <span class="math notranslate nohighlight">\(\vec{F}\)</span> is applied to a point <span class="math notranslate nohighlight">\(P\)</span> whose position is <span class="math notranslate nohighlight">\(\vec{r}\)</span> relative to the pivot point <span class="math notranslate nohighlight">\(O\)</span>, the torque <span class="math notranslate nohighlight">\(\vec{\tau}\)</span> is given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-899675cf-1dcc-4bc2-a215-c76dbb2cd0fa">
-<span class="eqno">(10.22)<a class="headerlink" href="#equation-899675cf-1dcc-4bc2-a215-c76dbb2cd0fa" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ec977670-2d4f-4a03-af04-5ce0d089168a">
+<span class="eqno">(10.22)<a class="headerlink" href="#equation-ec977670-2d4f-4a03-af04-5ce0d089168a" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{\tau} = \vec{r} \times \vec{F}.
 \end{align}\]</div>
 </div>
@@ -90929,8 +90932,8 @@ mg\frac{L}{2}(1-\cos\theta) &amp;= \frac{1}{2}\left(\frac{1}{3}mL^2\right)\omega
 <li><p>The greater the lever arm, the greater the magnitude of the torque.</p></li>
 </ul>
 <p>In terms of the lever arm, the magnitude of the torque is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-53222fbf-14ad-4203-93ea-0061543a8cbd">
-<span class="eqno">(10.23)<a class="headerlink" href="#equation-53222fbf-14ad-4203-93ea-0061543a8cbd" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-c2f0fa44-95bd-440e-8e26-eb5e5b7ce772">
+<span class="eqno">(10.23)<a class="headerlink" href="#equation-c2f0fa44-95bd-440e-8e26-eb5e5b7ce772" title="Permalink to this equation">#</a></span>\[\begin{align}
 |\vec{\tau}| = r_\perp F. 
 \end{align}\]</div>
 <p>The cross product tells us the sign of the torque.</p>
@@ -90950,8 +90953,8 @@ mg\frac{L}{2}(1-\cos\theta) &amp;= \frac{1}{2}\left(\frac{1}{3}mL^2\right)\omega
 <li><p>If the angle is <span class="math notranslate nohighlight">\(90^\circ\)</span>, then the torque is at a maximum.</p></li>
 </ul>
 <p>Any number of torques can be calculated about a given axis, where the individual torques add to produce a net torque about the axis.  When the appropriate sign is applied to the magnitudes of individual torques about a specified axis, the net torque about the axis is the sum of the individual torques, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-567e7855-4478-40e0-ac99-cdb5b518fc9a">
-<span class="eqno">(10.24)<a class="headerlink" href="#equation-567e7855-4478-40e0-ac99-cdb5b518fc9a" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-5bb25e0d-7fa1-48a8-a15d-a128810caef2">
+<span class="eqno">(10.24)<a class="headerlink" href="#equation-5bb25e0d-7fa1-48a8-a15d-a128810caef2" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{\tau}_{\rm net} = \sum_j \vec{\tau}_j.
 \end{align}\]</div>
 <div class="note admonition">
@@ -91174,8 +91177,8 @@ rF &amp;= mr^2\alpha,\\
 <div class="note admonition">
 <p class="admonition-title">Newton’s 2nd Law for Rotation</p>
 <p>If more than one torque acts on a rigid body about a fixed axis, then the sum of the torques equals the moment of inertia times the angular acceleration:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-480b1951-49e1-4329-b6fa-59c6999bceeb">
-<span class="eqno">(10.25)<a class="headerlink" href="#equation-480b1951-49e1-4329-b6fa-59c6999bceeb" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-511f2715-f6f1-4e90-977d-ef53f0936a6b">
+<span class="eqno">(10.25)<a class="headerlink" href="#equation-511f2715-f6f1-4e90-977d-ef53f0936a6b" title="Permalink to this equation">#</a></span>\[\begin{align}
 \tau_{\rm net} = \sum_j \tau_j = I\alpha.
 \end{align}\]</div>
 </div>
@@ -91223,6 +91226,112 @@ rF &amp;= mr^2\alpha,\\
 </div>
 <section id="example-problem-effect-of-mass-distribution-on-a-merry-go-round">
 <h4><span class="section-number">10.7.3.1. </span><strong>Example Problem</strong>: Effect of Mass Distribution on a Merry-Go-Round<a class="headerlink" href="#example-problem-effect-of-mass-distribution-on-a-merry-go-round" title="Link to this heading">#</a></h4>
+<div class="exercise etamu-exercise admonition" id="Chapter10/fixed-axis-rotation-exercise-15">
+
+<p class="admonition-title"><span class="caption-number">Exercise 10.16 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>Consider the father pushing a playground merry-go-round in Figure <a class="reference internal" href="#mass-distribution-example"><span class="std std-numref">10.26</span></a>. He exerts a force of <span class="math notranslate nohighlight">\(250\ {\rm N}\)</span> at the edge of the <span class="math notranslate nohighlight">\(50\ {\rm kg}\)</span> merry-go-round, which has a <span class="math notranslate nohighlight">\(1.50\ {\rm m}\)</span> radius. Calculate the angular acceleration produced</p>
+<p>(a) when no one is on the merry-go-round and<br />
+(b) when an <span class="math notranslate nohighlight">\(18\ {\rm kg}\)</span> child sits <span class="math notranslate nohighlight">\(1.25\ {\rm m}\)</span> away from the center.</p>
+<p>Consider the merry-go-round itself to be a uniform disk with negligible friction.</p>
+</div></blockquote>
+<figure class="align-default" id="mass-distribution-example">
+<img alt="Mass Distribution example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/9f29f0d8703bb9a99e947d756868bfea03a64e85" />
+<figcaption>
+<p><span class="caption-number">Fig. 10.26 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#mass-distribution-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>The merry-go-round rotates about a fixed central axis. The applied force is perpendicular to the radius, so it produces the maximum possible torque for the given force and radius. Because friction is negligible, the applied torque is the net torque on the system.</p>
+<p>The angular acceleration follows from Newton’s 2nd law for rotation, <span class="math notranslate nohighlight">\(\tau = I\alpha\)</span>. The torque is the same in both parts, but the moment of inertia changes when the child is added. The merry-go-round is modeled as a uniform disk, and the child is modeled as a point mass located at a fixed distance from the axis.</p>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>The applied force is perpendicular to the radius, so the torque magnitude is <span class="math notranslate nohighlight">\(\tau = rF.\)</span>  Using the given radius and force gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\tau &amp;= (1.50\ {\rm m})(250\ {\rm N}) \\
+&amp;= 375\ {\rm N\cdot m}.
+\end{align*}\]</div>
+<p><strong>(a)</strong> The merry-go-round is modeled as a uniform disk, so its moment of inertia is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+I &amp;= \frac{1}{2}MR^2,\\
+&amp;= \frac{1}{2}(50\ {\rm kg})(1.50\ {\rm m})^2 \\
+&amp;= 56.25\ {\rm kg\cdot m^2}.
+\end{align*}\]</div>
+<p>The angular acceleration follows from <span class="math notranslate nohighlight">\(\tau = I\alpha\)</span>, so</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\alpha = \frac{\tau}{I}.
+\end{align*}\]</div>
+<p>Using the torque and moment of inertia gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\alpha &amp;= \frac{375\ {\rm N\cdot m}}{56.25\ {\rm kg\cdot m^2}} \\
+&amp;= 6.67\ {\rm rad/s^2}.
+\end{align*}\]</div>
+<p><strong>(b)</strong> The child is modeled as a point mass, so the child’s moment of inertia is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+I_c = mr^2.
+\end{align*}\]</div>
+<p>Using the child’s mass and distance from the axis gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+I_c &amp;= (18\ {\rm kg})(1.25\ {\rm m})^2 \\
+&amp;= 28.13\ {\rm kg\cdot m^2}.
+\end{align*}\]</div>
+<p>The total moment of inertia of the system is the sum of the merry-go-round and child contributions:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+I_{\rm total} &amp;= 56.25\ {\rm kg\cdot m^2} + 28.13\ {\rm kg\cdot m^2} \\
+&amp;= 84.38\ {\rm kg\cdot m^2}.
+\end{align*}\]</div>
+<p>The angular acceleration is again determined from <span class="math notranslate nohighlight">\(\tau = I\alpha\)</span>:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\alpha = \frac{\tau}{I_{\rm total}}.
+\end{align*}\]</div>
+<p>Using the same torque and the larger moment of inertia gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\alpha &amp;= \frac{375\ {\rm N\cdot m}}{84.38\ {\rm kg\cdot m^2}} \\
+&amp;= 4.44\ {\rm rad/s^2}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>When the merry-go-round is empty, the angular acceleration is <span class="math notranslate nohighlight">\(6.67\ {\rm rad/s^2}\)</span>. When the <span class="math notranslate nohighlight">\(18\ {\rm kg}\)</span> child sits <span class="math notranslate nohighlight">\(1.25\ {\rm m}\)</span> from the center, the angular acceleration decreases to <span class="math notranslate nohighlight">\(4.4\ {\rm rad/s^2}\)</span>.</p>
+<p>This result shows that increasing the mass farther from the axis increases the moment of inertia and reduces the angular acceleration produced by the same torque. The change in mass distribution matters just as much as the total mass when rotational motion is involved.</p>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>The Python code verifies the analytical solution by computing the applied torque from the given force and radius, then evaluating the angular acceleration from the rotational form of Newton’s second law. The script first treats the merry-go-round as an isolated uniform disk and then adds the child’s point-mass contribution to the moment of inertia for the second case.</p>
+<p>Because the computation uses the same torque relation and the same moment-of-inertia models as the analytical derivation, the numerical results reproduce the two angular accelerations found above. This agreement confirms that the effect of mass distribution on the rotational response has been modeled consistently.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">F</span> <span class="o">=</span> <span class="mi">250</span> <span class="c1"># Applied force (N)</span>
+<span class="n">R</span> <span class="o">=</span> <span class="mf">1.50</span> <span class="c1"># Merry-go-round radius (m)</span>
+<span class="n">M</span> <span class="o">=</span> <span class="mi">50</span> <span class="c1"># Merry-go-round mass (kg)</span>
+<span class="n">m_c</span> <span class="o">=</span> <span class="mi">18</span> <span class="c1"># Child mass (kg)</span>
+<span class="n">r_c</span> <span class="o">=</span> <span class="mf">1.25</span> <span class="c1"># Child distance from center (m)</span>
+
+<span class="n">tau</span> <span class="o">=</span> <span class="n">R</span> <span class="o">*</span> <span class="n">F</span> <span class="c1"># Applied torque (N·m)</span>
+
+<span class="n">I_disk</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">M</span> <span class="o">*</span> <span class="n">R</span><span class="o">**</span><span class="mi">2</span> <span class="c1"># (a) Moment of inertia of empty merry-go-round (kg·m^2)</span>
+<span class="n">alpha_a</span> <span class="o">=</span> <span class="n">tau</span> <span class="o">/</span> <span class="n">I_disk</span> <span class="c1"># (a) Angular acceleration when empty (rad/s^2)</span>
+
+<span class="n">I_child</span> <span class="o">=</span> <span class="n">m_c</span> <span class="o">*</span> <span class="n">r_c</span><span class="o">**</span><span class="mi">2</span> <span class="c1"># (b) Moment of inertia of child (kg·m^2)</span>
+<span class="n">I_total</span> <span class="o">=</span> <span class="n">I_disk</span> <span class="o">+</span> <span class="n">I_child</span> <span class="c1"># (b) Total moment of inertia with child (kg·m^2)</span>
+<span class="n">alpha_b</span> <span class="o">=</span> <span class="n">tau</span> <span class="o">/</span> <span class="n">I_total</span> <span class="c1"># (b) Angular acceleration with child (rad/s^2)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;(a) The angular acceleration of the empty merry-go-round is </span><span class="si">{</span><span class="n">alpha_a</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> rad/s^2.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;(b) The angular acceleration with the child on the merry-go-round is </span><span class="si">{</span><span class="n">alpha_b</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> rad/s^2.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</div>
 </section>
 </section>
 </section>
@@ -91234,10 +91343,10 @@ rF &amp;= mr^2\alpha,\\
 <figure class="align-default" id="torque-work-example">
 <img alt="rotational work example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/c525300ffeca7a2c0131ea2834d5014b7a02cd42" />
 <figcaption>
-<p><span class="caption-number">Fig. 10.26 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#torque-work-example" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 10.27 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#torque-work-example" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Figure <a class="reference internal" href="#torque-work-example"><span class="std std-numref">10.26</span></a> shows a rigid body that has rotate through an angle <span class="math notranslate nohighlight">\(d\theta\)</span> from <span class="math notranslate nohighlight">\(A\)</span> to <span class="math notranslate nohighlight">\(B\)</span> under the influence of a force <span class="math notranslate nohighlight">\(\vec{F}\)</span>.  The external force <span class="math notranslate nohighlight">\(\vec{F}\)</span> is applied to point <span class="math notranslate nohighlight">\(P\)</span>, whose position is <span class="math notranslate nohighlight">\(\vec{r}\)</span> relative to the point <span class="math notranslate nohighlight">\(O\)</span>, and the rigid body is constrained to rotate about a fixed axis.  The rotational axis is fixed, so the vector <span class="math notranslate nohighlight">\(\vec{r}\)</span> moves in a circle of radius <span class="math notranslate nohighlight">\(r\)</span> and the vector <span class="math notranslate nohighlight">\(d\vec{s}\)</span> is perpendicular to <span class="math notranslate nohighlight">\(\vec{r}\)</span>.</p>
+<p>Figure <a class="reference internal" href="#torque-work-example"><span class="std std-numref">10.27</span></a> shows a rigid body that has rotate through an angle <span class="math notranslate nohighlight">\(d\theta\)</span> from <span class="math notranslate nohighlight">\(A\)</span> to <span class="math notranslate nohighlight">\(B\)</span> under the influence of a force <span class="math notranslate nohighlight">\(\vec{F}\)</span>.  The external force <span class="math notranslate nohighlight">\(\vec{F}\)</span> is applied to point <span class="math notranslate nohighlight">\(P\)</span>, whose position is <span class="math notranslate nohighlight">\(\vec{r}\)</span> relative to the point <span class="math notranslate nohighlight">\(O\)</span>, and the rigid body is constrained to rotate about a fixed axis.  The rotational axis is fixed, so the vector <span class="math notranslate nohighlight">\(\vec{r}\)</span> moves in a circle of radius <span class="math notranslate nohighlight">\(r\)</span> and the vector <span class="math notranslate nohighlight">\(d\vec{s}\)</span> is perpendicular to <span class="math notranslate nohighlight">\(\vec{r}\)</span>.</p>
 <p>An infinitesimal arclength <span class="math notranslate nohighlight">\(d\vec{s}\)</span> sweeps out an infinitesimal angle <span class="math notranslate nohighlight">\(d\theta\)</span> so that</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -91254,8 +91363,8 @@ d\vec{s} &amp;= d\vec{\theta} \times \vec{r}.
 \[ \vec{a} \cdot (\vec{b} \times \vec{c}) = \vec{b} \cdot (\vec{c}\times \vec{a}).
 \]</div>
 <p>We want to get the right-side into a form so that we can substitute <span class="math notranslate nohighlight">\(\vec{\tau}_j\)</span>, which is why the identity is necessary here.  We arrive at the expression for the <strong>rotational work</strong> done on a rigid body:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a33819c9-b6a8-44c6-a2c4-e967418bff73">
-<span class="eqno">(10.26)<a class="headerlink" href="#equation-a33819c9-b6a8-44c6-a2c4-e967418bff73" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-805b709b-3de7-4000-9905-6cab5b30f2ad">
+<span class="eqno">(10.26)<a class="headerlink" href="#equation-805b709b-3de7-4000-9905-6cab5b30f2ad" title="Permalink to this equation">#</a></span>\[\begin{align}
 W &amp;= \int \sum_j \vec{\tau}_j\cdot d\vec{\theta}, \\
   &amp;= \int \vec{\tau}_{\rm net} \cdot d\vec{\theta}.
 \end{align}\]</div>
@@ -91270,8 +91379,8 @@ dW = \left(\sum_j \tau_j\right)d\theta,
 <div class="note admonition">
 <p class="admonition-title">Work-Energy Theorem for Rotation</p>
 <p>The work-energy theorem for a rigid body rotating about a fixed axis is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-85fa9714-196f-40ae-837e-30f77868c20d">
-<span class="eqno">(10.27)<a class="headerlink" href="#equation-85fa9714-196f-40ae-837e-30f77868c20d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a562c8cf-efc0-4981-ba0d-34f8f41935c0">
+<span class="eqno">(10.27)<a class="headerlink" href="#equation-a562c8cf-efc0-4981-ba0d-34f8f41935c0" title="Permalink to this equation">#</a></span>\[\begin{align}
 W_{AB} &amp; = K_B - K_A, \\
 &amp;= \frac{1}{2}I_B\omega_B^2 - \frac{1}{2}I_A\omega_A^2,
 \end{align}\]</div>
@@ -91290,9 +91399,155 @@ W_{AB} &amp; = K_B - K_A, \\
 </div>
 <section id="example-problem-rotational-work-and-energy">
 <h4><span class="section-number">10.8.1.1. </span><strong>Example Problem</strong>: Rotational Work and Energy<a class="headerlink" href="#example-problem-rotational-work-and-energy" title="Link to this heading">#</a></h4>
+<div class="exercise etamu-exercise admonition" id="Chapter10/fixed-axis-rotation-exercise-16">
+
+<p class="admonition-title"><span class="caption-number">Exercise 10.17 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>A <span class="math notranslate nohighlight">\(12\ {\rm N\cdot m}\)</span> torque is applied to a flywheel that rotates about a fixed axis and has a moment of inertia of <span class="math notranslate nohighlight">\(30\ {\rm kg\cdot m^2}\)</span>. If the flywheel is initially at rest, what is its angular velocity after it has turned through eight revolutions?</p>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>The flywheel rotates about a fixed axis under a constant applied torque. Because the torque is constant and the problem asks for the angular speed after a specified angular displacement, the work–energy theorem for rotational motion provides the most direct method.</p>
+<p>The rotational work done by the torque is converted into rotational kinetic energy. Since the flywheel starts from rest, the initial rotational kinetic energy is zero. The angular displacement must be expressed in radians before applying the work–energy relation.</p>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>The flywheel turns through eight revolutions, so the angular displacement is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\Delta \theta &amp;= 8\ {\rm rev}\left(\frac{2\pi\ {\rm rad}}{1\ {\rm rev}}\right) \\
+&amp;= 16\pi\ {\rm rad}.
+\end{align*}\]</div>
+<p>The rotational work done by a constant torque is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+W &amp;= \tau \Delta\theta, \\
+ &amp;= (12.0\ {\rm N\cdot m})(16\pi\ {\rm rad}) \\
+&amp;= 603\ {\rm J}.
+\end{align*}\]</div>
+<p>The rotational work–energy theorem states that the work done on the flywheel equals the change in its rotational kinetic energy:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+W = \frac{1}{2}I\omega_f^2 - \frac{1}{2}I\omega_i^2.
+\end{align*}\]</div>
+<p>The flywheel is initially at rest, so <span class="math notranslate nohighlight">\(\omega_i = 0\)</span>. The energy equation therefore becomes</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+W = \frac{1}{2}I\omega_f^2.
+\end{align*}\]</div>
+<p>Solving this expression for the final angular velocity gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\omega_f = \sqrt{\frac{2W}{I}}.
+\end{align*}\]</div>
+<p>Using the calculated work and the given moment of inertia gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\omega_f &amp;= \sqrt{\frac{2(603\ {\rm J})}{30\ {\rm kg\cdot m^2}}} \\
+&amp;= 6.3\ {\rm rad/s}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>The angular velocity of the flywheel after eight revolutions is <span class="math notranslate nohighlight">\(6.3\ {\rm rad/s}\)</span>.  This result shows that the work–energy theorem provides a direct connection between the applied torque and the resulting rotational motion. Instead of solving for angular acceleration and then using rotational kinematics, the work–energy approach moves directly from torque and angular displacement to angular speed.</p>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>The Python code verifies the analytical solution by first converting the angular displacement from revolutions to radians, then computing the rotational work done by the constant torque. The script uses the rotational work–energy theorem to solve for the final angular velocity from the work and the flywheel’s moment of inertia.</p>
+<p>Because the computation implements the same work–energy model used in the analytical derivation, the numerical result reproduces the calculated angular velocity. This agreement confirms that the angular displacement conversion and the energy relation were applied consistently.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">tau</span> <span class="o">=</span> <span class="mi">12</span> <span class="c1"># Applied torque (N·m)</span>
+<span class="n">I</span> <span class="o">=</span> <span class="mi">30</span> <span class="c1"># Moment of inertia (kg·m^2)</span>
+<span class="n">theta</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">*</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="c1"># Angular displacement after eight revolutions (rad)</span>
+
+<span class="n">W</span> <span class="o">=</span> <span class="n">tau</span> <span class="o">*</span> <span class="n">theta</span> <span class="c1"># Rotational work done by the torque (J)</span>
+<span class="n">omega_f</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">W</span> <span class="o">/</span> <span class="n">I</span><span class="p">)</span> <span class="c1"># Final angular velocity from the work-energy theorem (rad/s)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The final angular velocity of the flywheel is </span><span class="si">{</span><span class="n">omega_f</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> rad/s.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</div>
 </section>
 <section id="example-problem-rotational-work-a-pulley">
 <h4><span class="section-number">10.8.1.2. </span><strong>Example Problem</strong>: Rotational Work: A Pulley<a class="headerlink" href="#example-problem-rotational-work-a-pulley" title="Link to this heading">#</a></h4>
+<div class="exercise etamu-exercise admonition" id="Chapter10/fixed-axis-rotation-exercise-17">
+
+<p class="admonition-title"><span class="caption-number">Exercise 10.18 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>A string wrapped around the pulley in Figure <a class="reference internal" href="#string-pulley-example"><span class="std std-numref">10.28</span></a> is pulled with a constant downward force <span class="math notranslate nohighlight">\(\vec{F}\)</span> of magnitude <span class="math notranslate nohighlight">\(50\ {\rm N}\)</span>. The radius <span class="math notranslate nohighlight">\(R\)</span> and moment of inertia <span class="math notranslate nohighlight">\(I\)</span> of the pulley are <span class="math notranslate nohighlight">\(0.10\ {\rm m}\)</span> and <span class="math notranslate nohighlight">\(2.5\times10^{-3}\ {\rm kg\cdot m^2}\)</span>, respectively. If the string does not slip, what is the angular velocity of the pulley after <span class="math notranslate nohighlight">\(1.0\ {\rm m}\)</span> of string has unwound? Assume the pulley starts from rest.</p>
+</div></blockquote>
+<figure class="align-default" id="string-pulley-example">
+<img alt="rotational work example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/283ea3ef4679bd9f1efa4b7f90ea458981fd5419" />
+<figcaption>
+<p><span class="caption-number">Fig. 10.28 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#string-pulley-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>The pulley rotates about a fixed axis under the action of a constant force applied at its rim. Because the string does not slip, the linear distance the string moves is related directly to the angular displacement of the pulley. The applied force produces a constant torque, and the work done by that torque is converted into rotational kinetic energy.</p>
+<p>The force exerted by the axle and the weight of the pulley act through the rotation axis, so they do not produce torque about that axis. The work–energy theorem for rotational motion therefore provides the most direct way to determine the angular velocity after the string unwinds through the given distance.</p>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>The torque produced by the applied force has magnitude <span class="math notranslate nohighlight">\(\tau = RF.\)</span>  Because the string does not slip, the distance <span class="math notranslate nohighlight">\(d\)</span> moved by the string and the angular displacement <span class="math notranslate nohighlight">\(\theta\)</span> of the pulley satisfy <span class="math notranslate nohighlight">\(
+d = R\theta. \)</span></p>
+<p>The rotational work done by the applied torque is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+W &amp;= \tau\theta, \\
+W &amp;= (RF)\left(\frac{d}{R}\right) \\
+&amp;= Fd.
+\end{align*}\]</div>
+<p>Using the given force and displacement gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+W &amp;= (50\ {\rm N})(1.0\ {\rm m}) \\
+&amp;= 50\ {\rm J}.
+\end{align*}\]</div>
+<p>The rotational work–energy theorem states that the work done on the pulley equals the change in its rotational kinetic energy:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+W = \frac{1}{2}I\omega_f^2 - \frac{1}{2}I\omega_i^2.
+\end{align*}\]</div>
+<p>The pulley starts from rest, so <span class="math notranslate nohighlight">\(\omega_i = 0\)</span>. The energy equation therefore becomes</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+W = \frac{1}{2}I\omega_f^2.
+\end{align*}\]</div>
+<p>Solving this expression for the final angular velocity gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\omega_f = \sqrt{\frac{2W}{I}}.
+\end{align*}\]</div>
+<p>Using the calculated work and the given moment of inertia gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\omega_f &amp;= \sqrt{\frac{2(50\ {\rm J})}{2.5\times 10^{-3}\ {\rm kg\cdot m^2}}} \\
+&amp;= 200\ {\rm rad/s}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>The angular velocity of the pulley after <span class="math notranslate nohighlight">\(1.0\ {\rm m}\)</span> of string has unwound is <span class="math notranslate nohighlight">\(200\ {\rm rad/s}\)</span>.  This result shows that even a modest linear displacement of the string can produce a very large angular speed when the pulley has a small moment of inertia. The work done by the applied force is transferred efficiently into rotational kinetic energy.</p>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>The Python code verifies the analytical solution by evaluating the same work–energy relationships used in the derivation. The script computes the work done by the applied force over the unwound distance and then uses the rotational work–energy theorem to determine the final angular velocity from the pulley’s moment of inertia.</p>
+<p>Because the computation implements the same physical model used in the analytical solution, the numerical result reproduces the calculated angular velocity. This agreement confirms that the work calculation and the rotational energy relation were applied consistently.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">F</span> <span class="o">=</span> <span class="mi">50</span> <span class="c1"># Applied force (N)</span>
+<span class="n">d</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="c1"># Distance unwound by the string (m)</span>
+<span class="n">I</span> <span class="o">=</span> <span class="mf">2.5e-3</span> <span class="c1"># Pulley moment of inertia (kg·m^2)</span>
+
+<span class="n">W</span> <span class="o">=</span> <span class="n">F</span> <span class="o">*</span> <span class="n">d</span> <span class="c1"># Work done by the applied force (J)</span>
+<span class="n">omega_f</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">W</span> <span class="o">/</span> <span class="n">I</span><span class="p">)</span> <span class="c1"># Final angular velocity from the work-energy theorem (rad/s)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The final angular velocity of the pulley is </span><span class="si">{</span><span class="n">omega_f</span><span class="si">:</span><span class="s2">.1e</span><span class="si">}</span><span class="s2"> rad/s.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</div>
 </section>
 </section>
 <section id="power-for-rotational-motion">
@@ -91307,10 +91562,72 @@ W_{AB} &amp; = K_B - K_A, \\
 <div class="math notranslate nohighlight">
 \[ P = \frac{dW}{dt} = \frac{d}{dt}(\tau \theta) = \tau\frac{d\theta}{dt}, \]</div>
 <p>or simply</p>
-<div class="amsmath math notranslate nohighlight" id="equation-390c54e0-b642-4563-91a8-c7291fb0f3d1">
-<span class="eqno">(10.29)<a class="headerlink" href="#equation-390c54e0-b642-4563-91a8-c7291fb0f3d1" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-09eb9fb1-e1d7-4b7a-9285-b9f5271f838c">
+<span class="eqno">(10.29)<a class="headerlink" href="#equation-09eb9fb1-e1d7-4b7a-9285-b9f5271f838c" title="Permalink to this equation">#</a></span>\[\begin{align}
 P = \tau \omega.
 \end{align}\]</div>
+<section id="example-problem-torque-on-a-boat-propeller">
+<h4><span class="section-number">10.8.2.1. </span><strong>Example Problem</strong>: Torque on a Boat Propeller<a class="headerlink" href="#example-problem-torque-on-a-boat-propeller" title="Link to this heading">#</a></h4>
+<div class="exercise etamu-exercise admonition" id="Chapter10/fixed-axis-rotation-exercise-18">
+
+<p class="admonition-title"><span class="caption-number">Exercise 10.19 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>A boat engine operating at <span class="math notranslate nohighlight">\(9.0\times10^4\ {\rm W}\)</span> is running at <span class="math notranslate nohighlight">\(300\ {\rm rev/min}\)</span>. What is the torque on the propeller shaft?</p>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>The Model</strong></p>
+<p>The rotating shaft delivers mechanical power to the propeller. In rotational motion, power is related to torque and angular velocity through the relation <span class="math notranslate nohighlight">\(P=\tau\omega\)</span>.</p>
+<p>The engine’s rotation rate is given in revolutions per minute, so it must first be converted to angular velocity in radians per second. Once the angular velocity is known, the torque follows directly from the power relation.</p>
+<hr class="docutils" />
+<p><strong>The Math</strong></p>
+<p>The rotation rate is given as <span class="math notranslate nohighlight">\(300\ {\rm rev/min}\)</span>. Converting this to radians per second gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\omega &amp;= 300\ {\rm rev/min}
+\left(\frac{2\pi\ {\rm rad}}{1\ {\rm rev}}\right)
+\left(\frac{1\ {\rm min}}{60\ {\rm s}}\right) \\
+&amp;= 31.4\ {\rm rad/s}.
+\end{align*}\]</div>
+<p>The relationship between power, torque, and angular velocity is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+P = \tau \omega.
+\end{align*}\]</div>
+<p>Solving for the torque gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\tau = \frac{P}{\omega}.
+\end{align*}\]</div>
+<p>Substituting the given power and calculated angular velocity gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\tau &amp;= \frac{9.0\times10^4\ {\rm W}}{31.4\ {\rm rad/s}} \\
+&amp;= 2900\ {\rm N\cdot m}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p><strong>The Conclusion</strong></p>
+<p>The torque delivered to the propeller shaft is <span class="math notranslate nohighlight">\(2900\ {\rm N\cdot m}\)</span>.  This result shows that a large torque is required to deliver substantial power at relatively modest rotation rates. In many mechanical systems, the same power can be produced with either high torque at low angular speed or lower torque at higher angular speed.</p>
+<hr class="docutils" />
+<p><strong>The Verification</strong></p>
+<p>The Python code verifies the analytical solution by converting the rotation rate from revolutions per minute to radians per second and then computing the torque from the relation <span class="math notranslate nohighlight">\(P=\tau\omega\)</span>. The script performs the same unit conversion and algebraic calculation used in the analytical derivation.</p>
+<p>Because the computation follows the same physical model and unit conversions used in the derivation, the numerical result reproduces the calculated torque on the propeller shaft.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">P</span> <span class="o">=</span> <span class="mf">9.0e4</span> <span class="c1"># Engine power output (W)</span>
+<span class="n">rpm</span> <span class="o">=</span> <span class="mi">300</span> <span class="c1"># Rotation rate (rev/min)</span>
+
+<span class="n">omega</span> <span class="o">=</span> <span class="n">rpm</span> <span class="o">*</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">60</span> <span class="c1"># Angular velocity (rad/s)</span>
+<span class="n">tau</span> <span class="o">=</span> <span class="n">P</span> <span class="o">/</span> <span class="n">omega</span> <span class="c1"># Torque on the propeller shaft (N·m)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The angular velocity of the shaft is </span><span class="si">{</span><span class="n">omega</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> rad/s.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The torque on the propeller shaft is </span><span class="si">{</span><span class="n">tau</span><span class="si">:</span><span class="s2">.2e</span><span class="si">}</span><span class="s2"> N·m.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</div>
+</section>
 </section>
 </section>
 <section id="rotational-and-translational-relationships-summarized">
@@ -91356,18 +91673,103 @@ P = \tau \omega.
 <h2><span class="section-number">10.10. </span>In-class Problems<a class="headerlink" href="#in-class-problems" title="Link to this heading">#</a></h2>
 <section id="part-i">
 <h3><span class="section-number">10.10.1. </span>Part I<a class="headerlink" href="#part-i" title="Link to this heading">#</a></h3>
+<div class="admonition-problem-1 admonition">
+<p class="admonition-title">Problem 1</p>
+<p>A particle moves <span class="math notranslate nohighlight">\(3.0\ \text{m}\)</span> along a circle of radius <span class="math notranslate nohighlight">\(1.5\ \text{m}\)</span>. (a) Through what angle does it rotate? (b) If the particle makes this trip in <span class="math notranslate nohighlight">\(1.0\ \text{s}\)</span> at a constant speed, what is its angular velocity? (c) What is its acceleration?</p>
+</div>
+<div class="admonition-problem-2 admonition">
+<p class="admonition-title">Problem 2</p>
+<p>A vertical wheel with a diameter of <span class="math notranslate nohighlight">\(50\ \text{cm}\)</span> starts from rest and rotates with a constant angular acceleration of <span class="math notranslate nohighlight">\(5.0\ \text{rad/s}^2\)</span> around a fixed axis through its center counterclockwise. (a) Where is the point that is initially at the bottom of the wheel at <span class="math notranslate nohighlight">\(t = 10\ \text{s}\)</span>? (b) What is the point’s linear acceleration at this instant?</p>
+</div>
+<div class="admonition-problem-3 admonition">
+<p class="admonition-title">Problem 3</p>
+<p>A child with mass <span class="math notranslate nohighlight">\(40\ \text{kg}\)</span> sits on the edge of a merry-go-round at a distance of <span class="math notranslate nohighlight">\(3.0\ \text{m}\)</span> from its axis of rotation. The merry-go-round accelerates from rest up to <span class="math notranslate nohighlight">\(0.4\ \text{rev/s}\)</span> in <span class="math notranslate nohighlight">\(10\ \text{s}\)</span>. If the coefficient of static friction between the child and the surface of the merry-go-round is <span class="math notranslate nohighlight">\(0.6\)</span>, does the child fall off before <span class="math notranslate nohighlight">\(5\ \text{s}\)</span>?</p>
+</div>
+<div class="admonition-problem-4 admonition">
+<p class="admonition-title">Problem 4</p>
+<p>A diver goes into a somersault during a dive by tucking her limbs. If her rotational kinetic energy is <span class="math notranslate nohighlight">\(100\ \text{J}\)</span> and her moment of inertia in the tuck is <span class="math notranslate nohighlight">\(9.0\ \text{kg}\cdot\text{m}^2\)</span>, what is her rotational rate during the somersault?</p>
+</div>
 </section>
 <section id="part-ii">
 <h3><span class="section-number">10.10.2. </span>Part II<a class="headerlink" href="#part-ii" title="Link to this heading">#</a></h3>
+<div class="admonition-problem-5 admonition">
+<p class="admonition-title">Problem 5</p>
+<p>Using the parallel axis theorem, what is the moment of inertia of the rod of mass <span class="math notranslate nohighlight">\(m\)</span> about the axis shown below?</p>
+<figure class="align-default" id="moi-rod-problem">
+<img alt="moment of intertia rod" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/8239704d77e5d33fefb4348956c5d626bdb5a197" />
+<figcaption>
+<p><span class="caption-number">Fig. 10.29 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#moi-rod-problem" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="admonition-problem-6 admonition">
+<p class="admonition-title">Problem 6</p>
+<p>A horizontal beam of length <span class="math notranslate nohighlight">\(3\ \text{m}\)</span> and mass <span class="math notranslate nohighlight">\(2.0\ \text{kg}\)</span> has a mass of <span class="math notranslate nohighlight">\(1.0\ \text{kg}\)</span> and width <span class="math notranslate nohighlight">\(0.2\ \text{m}\)</span> sitting at the end of the beam (see the following figure). What is the torque of the system about the support at the wall?</p>
+<figure class="align-default" id="beam-wall-problem">
+<img alt="torque to hold beam on wall" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/e3d53bff8b165c531227da4e8d02107d84006698" />
+<figcaption>
+<p><span class="caption-number">Fig. 10.30 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#beam-wall-problem" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="admonition-problem-7 admonition">
+<p class="admonition-title">Problem 7</p>
+<p>A constant torque is applied to a rigid body whose moment of inertia is <span class="math notranslate nohighlight">\(4.0\ \text{kg}\cdot\text{m}^2\)</span> around the axis of rotation. If the wheel starts from rest and attains an angular velocity of <span class="math notranslate nohighlight">\(20.0\ \text{rad/s}\)</span> in <span class="math notranslate nohighlight">\(10.0\ \text{s}\)</span>, what is the applied torque?</p>
+</div>
+<div class="admonition-problem-8 admonition">
+<p class="admonition-title">Problem 8</p>
+<p>A propeller is accelerated from rest to an angular velocity of <span class="math notranslate nohighlight">\(1000\ \text{rev/min}\)</span> over a period of <span class="math notranslate nohighlight">\(6.0\ \text{s}\)</span> by a constant torque of <span class="math notranslate nohighlight">\(2.0\times10^3\ \text{N}\cdot\text{m}\)</span>. (a) What is the moment of inertia of the propeller? (b) What power is being provided to the propeller <span class="math notranslate nohighlight">\(3.0\ \text{s}\)</span> after it starts rotating?</p>
+</div>
 </section>
 </section>
 <section id="homework">
 <h2><span class="section-number">10.11. </span>Homework<a class="headerlink" href="#homework" title="Link to this heading">#</a></h2>
 <section id="conceptual-problems">
 <h3><span class="section-number">10.11.1. </span>Conceptual Problems<a class="headerlink" href="#conceptual-problems" title="Link to this heading">#</a></h3>
+<div class="admonition-problem-1 admonition">
+<p class="admonition-title">Problem 1</p>
+<p>What if another planet the same size as Earth were put into orbit around the Sun along with Earth? Would the moment of inertia of the system increase, decrease, or stay the same?</p>
+</div>
+<div class="admonition-problem-2 admonition">
+<p class="admonition-title">Problem 2</p>
+<p>Why is the moment of inertia of a hoop that has a mass <span class="math notranslate nohighlight">\(M\)</span> and a radius <span class="math notranslate nohighlight">\(R\)</span> greater than the moment of inertia of a disk that has the same mass and radius?</p>
+</div>
 </section>
 <section id="quantitative-problems">
 <h3><span class="section-number">10.11.2. </span>Quantitative Problems<a class="headerlink" href="#quantitative-problems" title="Link to this heading">#</a></h3>
+<div class="admonition-problem-3 admonition">
+<p class="admonition-title">Problem 3</p>
+<p>What is  (a) the angular speed and  (b) the linear speed of a point on Earth’s surface at latitude <span class="math notranslate nohighlight">\(30^\circ\ {\rm N}\)</span>? Take the radius of Earth to be <span class="math notranslate nohighlight">\(6309\ {\rm km}\)</span>. (c) At what latitude would your linear speed be <span class="math notranslate nohighlight">\(10\ {\rm m/s}\)</span>?</p>
+</div>
+<div class="admonition-problem-4 admonition">
+<p class="admonition-title">Problem 4</p>
+<p>During a <span class="math notranslate nohighlight">\(6.0\ {\rm s}\)</span> time interval, a flywheel with a constant angular acceleration turns through <span class="math notranslate nohighlight">\(500\ {\rm rad}\)</span> and reaches an angular velocity of <span class="math notranslate nohighlight">\(100\ {\rm rad/s}\)</span>. (a) What is the angular velocity at the beginning of the <span class="math notranslate nohighlight">\(6.0\ {\rm s}\)</span>? (b) What is the angular acceleration of the flywheel?</p>
+</div>
+<div class="admonition-problem-5 admonition">
+<p class="admonition-title">Problem 5</p>
+<p>A pendulum consists of a rod of mass <span class="math notranslate nohighlight">\(2\ {\rm kg}\)</span> and length <span class="math notranslate nohighlight">\(1\ {\rm m}\)</span> with a solid sphere at one end with mass <span class="math notranslate nohighlight">\(0.3\ {\rm kg}\)</span> and radius <span class="math notranslate nohighlight">\(20\ {\rm cm}\)</span> (see Figure <a class="reference internal" href="#pendulum-velocity-problem"><span class="std std-numref">10.31</span></a>).  If the pendulum is released from rest at an angle of <span class="math notranslate nohighlight">\(30^\circ\)</span>, what is the angular velocity at the lowest point?</p>
+<figure class="align-default" id="pendulum-velocity-problem">
+<img alt="pendulum angular velocity problem" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/2e518898e89535146de85817bbf0067e4d3b2d66" />
+<figcaption>
+<p><span class="caption-number">Fig. 10.31 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#pendulum-velocity-problem" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="admonition-problem-6 admonition">
+<p class="admonition-title">Problem 6</p>
+<p>Calculate the torque about the <span class="math notranslate nohighlight">\(z\)</span>-axis that is out of the page at the origin in the Figure <a class="reference internal" href="#torque-point-problem"><span class="std std-numref">10.32</span></a>, given that  <span class="math notranslate nohighlight">\(F_1 = 3\ {\rm N},\ F_2 = 2\ {\rm N},\ F_3 = 3\ {\rm N},\ \text{and } F_4 = 1.8\ {\rm N}\)</span>.</p>
+<figure class="align-default" id="torque-point-problem">
+<img alt="torque problem" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/c1c0f79ed0ff5625cf56b263f8187818a947a1d0" />
+<figcaption>
+<p><span class="caption-number">Fig. 10.32 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#torque-point-problem" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+```{admonition} Problem 7
+A clay cylinder of radius $20\ {\rm cm}$ on a potter’s wheel spins at a constant rate of $10\ {\rm rev/s}$. The potter applies a force of $10\ {\rm N}$ to the clay with his hands where the coefficient of friction is $0.1$ between his hands and the clay.  What is the power that the potter has to deliver to the wheel to keep it rotating at this constant rate?
+</pre></div>
+</div>
 </section>
 </section>
 </section>
@@ -91516,7 +91918,10 @@ P = \tau \omega.
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-rotational-work-a-pulley">10.8.1.2. <strong>Example Problem</strong>: Rotational Work: A Pulley</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#power-for-rotational-motion">10.8.2. Power for Rotational Motion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#power-for-rotational-motion">10.8.2. Power for Rotational Motion</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-torque-on-a-boat-propeller">10.8.2.1. <strong>Example Problem</strong>: Torque on a Boat Propeller</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rotational-and-translational-relationships-summarized">10.9. Rotational and Translational Relationships Summarized</a></li>
