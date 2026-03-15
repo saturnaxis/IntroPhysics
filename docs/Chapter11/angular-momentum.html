@@ -564,7 +564,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="angular-momentum">
 <h1><span class="section-number">11. </span>Angular Momentum<a class="headerlink" href="#angular-momentum" title="Link to this heading">#</a></h1>
-<p>Mar 15, 2026 | 9541 words | 48 min read</p>
+<p>Mar 15, 2026 | 9535 words | 48 min read</p>
 <section id="rolling-motion">
 <h2><span class="section-number">11.1. </span>Rolling Motion<a class="headerlink" href="#rolling-motion" title="Link to this heading">#</a></h2>
 <p>Rolling motion is a combination of rotational and translational motion.  It is seen through wheels moving on a car, on a plane, or on a robotic explorer on another planet.  Understanding the forces and torques involved in <strong>rolling motion</strong> is a crucial factor in many different types of situations.</p>
@@ -602,15 +602,15 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[ \vec{\rm v}_P = -R\omega\hat{i} + v_{\rm CoM}\hat{i}, \]</div>
 <p>which includes both the center-of-mass velocity for the wheel and the relative velocity of point <span class="math notranslate nohighlight">\(P\)</span> relative to the center-of-mass.  If the wheel is rolling <em>without slipping</em>, then <span class="math notranslate nohighlight">\(|\vec{\rm v}_P| = v_P = 0\)</span> (i.e., the velocity of <span class="math notranslate nohighlight">\(P\)</span> relative to the surface is zero), and we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-eb07683d-38d7-4473-9db8-37a8ff27c1fb">
-<span class="eqno">(11.1)<a class="headerlink" href="#equation-eb07683d-38d7-4473-9db8-37a8ff27c1fb" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-31042e70-d306-4833-861c-9677eb4cf760">
+<span class="eqno">(11.1)<a class="headerlink" href="#equation-31042e70-d306-4833-861c-9677eb4cf760" title="Permalink to this equation">#</a></span>\[\begin{align}
 0 &amp;= -R\omega + v_{\rm CoM}, \\
 v_{\rm CoM} &amp;= R\omega.
 \end{align}\]</div>
 <p>The velocity of the wheel’s center of mass is its radius times the angular velocity about its axis.  Now we have a correspondence of the linear variable (<span class="math notranslate nohighlight">\(v_{\rm CoM}\)</span>) to the angular variable (<span class="math notranslate nohighlight">\(R\omega\)</span>).</p>
 <p>If we take a time-derivative to find the rate of change for the center-of-mass velocity <span class="math notranslate nohighlight">\(a_{\rm CoM}\)</span>, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-aebc99d2-4519-4531-a32a-a688cab1e5a7">
-<span class="eqno">(11.2)<a class="headerlink" href="#equation-aebc99d2-4519-4531-a32a-a688cab1e5a7" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a5066b1d-0348-4726-b45a-1a17dc942c6b">
+<span class="eqno">(11.2)<a class="headerlink" href="#equation-a5066b1d-0348-4726-b45a-1a17dc942c6b" title="Permalink to this equation">#</a></span>\[\begin{align}
 a_{\rm CoM} &amp;= \frac{d}{dt}v_{\rm CoM} = \frac{dR}{dt}\omega + R\frac{d\omega}{dt}, \\
 &amp;= R\frac{d\omega}{dt} = R\alpha.
 \end{align}\]</div>
@@ -622,8 +622,8 @@ a_{\rm CoM} &amp;= \frac{d}{dt}v_{\rm CoM} = \frac{dR}{dt}\omega + R\frac{d\omeg
 </figcaption>
 </figure>
 <p>We can also find the distance the wheel travels in terms of the angular variables.  In Figure <a class="reference internal" href="#arclength-wheel"><span class="std std-numref">11.4</span></a>, the wheel rolls from point <span class="math notranslate nohighlight">\(A\)</span> to point <span class="math notranslate nohighlight">\(B\)</span>, but its outer surface maps onto the ground by exactly the distance traveled <span class="math notranslate nohighlight">\(d_{\rm CoM}\)</span>.  The outer surface that maps onto the ground is the arclength <span class="math notranslate nohighlight">\(R\theta\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3a9abe06-f81b-46ef-a113-e40a289e5e4f">
-<span class="eqno">(11.3)<a class="headerlink" href="#equation-3a9abe06-f81b-46ef-a113-e40a289e5e4f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-53cc1919-a0a3-47bc-ac43-79936b6cf756">
+<span class="eqno">(11.3)<a class="headerlink" href="#equation-53cc1919-a0a3-47bc-ac43-79936b6cf756" title="Permalink to this equation">#</a></span>\[\begin{align}
 d_{\rm CoM} = R\theta.
 \end{align}\]</div>
 <section id="example-problem-rolling-down-an-inclined-plane">
@@ -1018,8 +1018,8 @@ Why does she not have to exert a torque to spin faster?</p></li>
 <div class="note admonition">
 <p class="admonition-title">Angular Momentum of a Particle</p>
 <p>The <strong>angular momentum</strong> <span class="math notranslate nohighlight">\(\vec{L}\)</span> of a particle is defined as the cross-product of <span class="math notranslate nohighlight">\(\vec{r}\)</span> and <span class="math notranslate nohighlight">\(\vec{p}\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ca082e20-525b-4a08-96a9-94640c49e87a">
-<span class="eqno">(11.4)<a class="headerlink" href="#equation-ca082e20-525b-4a08-96a9-94640c49e87a" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d84fab85-d9fc-4e39-8239-a4d3ac771325">
+<span class="eqno">(11.4)<a class="headerlink" href="#equation-d84fab85-d9fc-4e39-8239-a4d3ac771325" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{L} = \vec{r} \times \vec{p}.
 \end{align}\]</div>
 <p>Recall the property of a cross product produces a vector that is perpendicular to the plane containing the two vectors.  Also the positive vector points upward relative to the plane and counterclockwise denotes a positive direction so that we can use the <em>right-hand rule</em>.</p>
@@ -1053,8 +1053,8 @@ L &amp;= rp\sin{\theta}, \\
 &amp;= \sum_j \left(\vec{r} \times  \vec{F}_j \right) = \sum_j \vec{\tau}_j.
 \end{align*}\]</div>
 <p>We used the vector property that <span class="math notranslate nohighlight">\(\vec{a} \times \vec{a} = 0\)</span>, and the alternative form of Newton’s 2nd law.  Therefore, we can write the definition of the net torque as:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2a3d62d8-6bed-41e2-8657-348a5cfd5ed5">
-<span class="eqno">(11.5)<a class="headerlink" href="#equation-2a3d62d8-6bed-41e2-8657-348a5cfd5ed5" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-faf5fd4a-ef9d-4b08-967d-e43a12429a95">
+<span class="eqno">(11.5)<a class="headerlink" href="#equation-faf5fd4a-ef9d-4b08-967d-e43a12429a95" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{\tau}_{\rm net} = \sum_j \vec{\tau}_j = \frac{d\vec{L}}{dt}.
 \end{align}\]</div>
 <div class="note admonition">
@@ -1079,7 +1079,7 @@ L &amp;= rp\sin{\theta}, \\
 <section id="exercise-content">
 <p><strong>The Problem</strong></p>
 <blockquote>
-<div><p>A meteor enters Earth’s atmosphere (see Fig. {\numref}<code class="docutils literal notranslate"><span class="pre">{number}&lt;meteor-problem&gt;</span></code>) and is observed by someone on the ground before it burns up in the atmosphere. The vector <span class="math notranslate nohighlight">\(\vec{r} = 25\ {\rm km}\,\hat{i} + 25\ {\rm km}\,\hat{j}\)</span> gives the position of the meteor with respect to the observer. At the instant the observer sees the meteor, it has linear momentum <span class="math notranslate nohighlight">\(\vec{p} = 15\ {\rm kg}(-2.0\ {\rm km/s}\,\hat{j})\)</span>, and it is accelerating at a constant <span class="math notranslate nohighlight">\(2.0\ {\rm m/s^2}(-\hat{j})\)</span> along its path, which for our purposes can be taken as a straight line.</p>
+<div><p>A meteor enters Earth’s atmosphere (see Fig. <a class="reference internal" href="#meteor-problem"><span class="std std-numref">11.9</span></a>) and is observed by someone on the ground before it burns up in the atmosphere. The vector <span class="math notranslate nohighlight">\(\vec{r} = 25\ {\rm km}\,\hat{i} + 25\ {\rm km}\,\hat{j}\)</span> gives the position of the meteor with respect to the observer. At the instant the observer sees the meteor, it has linear momentum <span class="math notranslate nohighlight">\(\vec{p} = 15\ {\rm kg}(-2.0\ {\rm km/s}\,\hat{j})\)</span>, and it is accelerating at a constant <span class="math notranslate nohighlight">\(2.0\ {\rm m/s^2}(-\hat{j})\)</span> along its path, which for our purposes can be taken as a straight line.</p>
 <p>(a) What is the angular momentum of the meteor about the origin, which is at the location of the observer?<br />
 (b) What is the torque on the meteor about the origin?</p>
 </div></blockquote>
@@ -1199,8 +1199,8 @@ L &amp;= rp\sin{\theta}, \\
 <p>The angular momentum of a system of particles is important for many scientific disciplines, especially for those considering a spinning disk composed of individual particles (e.g., astronomy).</p>
 <p>Consider a spiral galaxy, where the individual stars can be treated as point particles and each particle has its own angular momentum.  The vector sum of the individual angular momenta give the total angular momentum of the galaxy.</p>
 <p>If we have a system of <span class="math notranslate nohighlight">\(N\)</span> particles, then each particle will have its own position vector <span class="math notranslate nohighlight">\(\vec{r}_j\)</span> and momentum <span class="math notranslate nohighlight">\(\vec{p}_j\)</span> relative to the origin.  The total angular momentum of the system of particles is the vector sum of the individual angular momenta, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-65e540bb-28f5-4c96-b74a-13489a34f74a">
-<span class="eqno">(11.6)<a class="headerlink" href="#equation-65e540bb-28f5-4c96-b74a-13489a34f74a" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-4b3dc963-f26d-40b8-9f73-d8328eb9904d">
+<span class="eqno">(11.6)<a class="headerlink" href="#equation-4b3dc963-f26d-40b8-9f73-d8328eb9904d" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{L}_{tot} = \sum_j \vec{L}_j = \vec{L}_1 + \vec{L}_2 + \cdots + \vec{L}_N.
 \end{align}\]</div>
 <p>If particle <span class="math notranslate nohighlight">\(j\)</span> is subject to a net torque <span class="math notranslate nohighlight">\(\vec{\tau}_j\)</span> about the origin, then we can find the net torque due to the system of particles by differentiating with respect to time, or</p>
@@ -1220,7 +1220,7 @@ L &amp;= rp\sin{\theta}, \\
 <section id="exercise-content">
 <p><strong>The Problem</strong></p>
 <blockquote>
-<div><p>Referring to Figure {\numref}<code class="docutils literal notranslate"><span class="pre">{number}&lt;three-particles-angular-momentum&gt;</span></code>, (a) determine the total angular momentum due to the three particles about the origin.  (b) What is the rate of change of the angular momentum?</p>
+<div><p>Referring to Figure <a class="reference internal" href="#three-particles-angular-momentum"><span class="std std-numref">11.10</span></a>, (a) determine the total angular momentum due to the three particles about the origin.  (b) What is the rate of change of the angular momentum?</p>
 </div></blockquote>
 <figure class="align-default" id="three-particles-angular-momentum">
 <img alt="angular momentum of three particles" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/4a21d9f7b69a56931969b2b745e729bae53dd519" />
@@ -1427,8 +1427,8 @@ L &amp;= \sum_i \left(\vec{L}_i\right)_z = \Delta m_iv_i R_i, \\
 &amp;= \omega\sum_i \Delta m_i R_i^2.
 \end{align*}\]</div>
 <p>The summation <span class="math notranslate nohighlight">\(\displaystyle \sum_i \Delta m_i R_i^2\)</span> is simply the moment of inertia <span class="math notranslate nohighlight">\(I\)</span> of the rigid body about the axis of rotation.  The magnitude of the angular momentum along the axis of the rotation of a rigid body that rotates with an angular velocity <span class="math notranslate nohighlight">\(\omega\)</span> is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d830e8a8-ed38-43b9-af6b-5c45217388db">
-<span class="eqno">(11.8)<a class="headerlink" href="#equation-d830e8a8-ed38-43b9-af6b-5c45217388db" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f6198ee0-0905-4011-8dc8-24b200102c5d">
+<span class="eqno">(11.8)<a class="headerlink" href="#equation-f6198ee0-0905-4011-8dc8-24b200102c5d" title="Permalink to this equation">#</a></span>\[\begin{align}
 L = I\omega.
 \end{align}\]</div>
 <p>The direction of the angular momentum vector is direction along the axis of rotation given by the right hand rule.</p>
@@ -1444,7 +1444,7 @@ L = I\omega.
 <section id="exercise-content">
 <p><strong>The Problem</strong></p>
 <blockquote>
-<div><p>A robot arm on a Mars rover like <em>Curiosity</em> shown in Figure {\numref}<code class="docutils literal notranslate"><span class="pre">{number}&lt;robot-arm-problem&gt;</span></code> is <span class="math notranslate nohighlight">\(1.0\ {\rm m}\)</span> long and has forceps at the free end to pick up rocks. The mass of the arm is <span class="math notranslate nohighlight">\(2.0\ {\rm kg}\)</span> and the mass of the forceps is <span class="math notranslate nohighlight">\(1.0\ {\rm kg}\)</span>. See Figure 11.13. The robot arm and forceps move from rest to <span class="math notranslate nohighlight">\(\omega = 0.1\pi\ {\rm rad/s}\)</span> in <span class="math notranslate nohighlight">\(0.1\ {\rm s}\)</span>. It rotates down and picks up a Mars rock that has mass <span class="math notranslate nohighlight">\(1.5\ {\rm kg}\)</span>. The axis of rotation is the point where the robot arm connects to the rover.</p>
+<div><p>A robot arm on a Mars rover like <em>Curiosity</em> shown in Figure <a class="reference internal" href="#robot-arm-problem"><span class="std std-numref">11.12</span></a> is <span class="math notranslate nohighlight">\(1.0\ {\rm m}\)</span> long and has forceps at the free end to pick up rocks. The mass of the arm is <span class="math notranslate nohighlight">\(2.0\ {\rm kg}\)</span> and the mass of the forceps is <span class="math notranslate nohighlight">\(1.0\ {\rm kg}\)</span>. See Figure 11.13. The robot arm and forceps move from rest to <span class="math notranslate nohighlight">\(\omega = 0.1\pi\ {\rm rad/s}\)</span> in <span class="math notranslate nohighlight">\(0.1\ {\rm s}\)</span>. It rotates down and picks up a Mars rock that has mass <span class="math notranslate nohighlight">\(1.5\ {\rm kg}\)</span>. The axis of rotation is the point where the robot arm connects to the rover.</p>
 <p>(a) What is the angular momentum of the robot arm by itself about the axis of rotation after <span class="math notranslate nohighlight">\(0.1\ {\rm s}\)</span> when the arm has stopped accelerating?<br />
 (b) What is the angular momentum of the robot arm when it has the Mars rock in its forceps and is rotating upwards?<br />
 (c) When the arm does not have a rock in the forceps, what is the torque about the point where the arm connects to the rover when it is accelerating from rest to its final angular velocity?</p>
@@ -1603,13 +1603,13 @@ L &amp;= I_{\rm tot}\omega \\
 <div class="note admonition">
 <p class="admonition-title">Law of Conservation of Angular Momentum</p>
 <p>The angular momentum of a system of particles around a point in fixed inertial frame is conserved if there is not net external torque around that point:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7ddd2a41-2dee-4a44-ae48-fc4b805de5e0">
-<span class="eqno">(11.9)<a class="headerlink" href="#equation-7ddd2a41-2dee-4a44-ae48-fc4b805de5e0" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-10b50788-ccfe-4651-8c83-075c2a5b7181">
+<span class="eqno">(11.9)<a class="headerlink" href="#equation-10b50788-ccfe-4651-8c83-075c2a5b7181" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{d\vec{L}}{dt} = 0,
 \end{align}\]</div>
 <p>or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-25e1dc33-5167-4b27-ae80-0ad97c3248d2">
-<span class="eqno">(11.10)<a class="headerlink" href="#equation-25e1dc33-5167-4b27-ae80-0ad97c3248d2" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e253a91f-4194-4348-acd0-c312a1d2f8d2">
+<span class="eqno">(11.10)<a class="headerlink" href="#equation-e253a91f-4194-4348-acd0-c312a1d2f8d2" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{L} = \vec{L}_1 + \vec{L}_2 + \cdots + \vec{L}_N = \text{constant}.
 \end{align}\]</div>
 <div class="admonition warning">
@@ -1659,7 +1659,7 @@ K^\prime_{rot} &amp;= \left(\frac{I}{I^\prime}\right) K_{rot}.
 <section id="exercise-content">
 <p><strong>The Problem</strong></p>
 <blockquote>
-<div><p>A flywheel rotates without friction at an angular velocity <span class="math notranslate nohighlight">\(\omega_o = 600\ {\rm rev/min}\)</span> on a frictionless, vertical shaft of negligible rotational inertia. A second flywheel, which is at rest and has a moment of inertia three times that of the rotating flywheel, is dropped onto it (see Fig. {\numref}<code class="docutils literal notranslate"><span class="pre">{number}&lt;coupled-flywheels-problem&gt;</span></code>). Because friction exists between the surfaces, the flywheels very quickly reach the same rotational velocity, after which they spin together.</p>
+<div><p>A flywheel rotates without friction at an angular velocity <span class="math notranslate nohighlight">\(\omega_o = 600\ {\rm rev/min}\)</span> on a frictionless, vertical shaft of negligible rotational inertia. A second flywheel, which is at rest and has a moment of inertia three times that of the rotating flywheel, is dropped onto it (see Fig. <a class="reference internal" href="#coupled-flywheels-problem"><span class="std std-numref">11.15</span></a>). Because friction exists between the surfaces, the flywheels very quickly reach the same rotational velocity, after which they spin together.</p>
 <p>(a) Use the law of conservation of angular momentum to determine the angular velocity <span class="math notranslate nohighlight">\(\omega\)</span> of the combination.<br />
 (b) What fraction of the initial kinetic energy is lost in the coupling of the flywheels?</p>
 </div></blockquote>
@@ -1676,17 +1676,17 @@ K^\prime_{rot} &amp;= \left(\frac{I}{I^\prime}\right) K_{rot}.
 <p>The strategy is to write the initial and final angular momenta about the common axis, solve for the shared final angular velocity, and then use that result to compare the final rotational kinetic energy with the initial rotational kinetic energy. The difference between those two energies determines the fraction of energy lost during the coupling.</p>
 <hr class="docutils" />
 <p><strong>The Math</strong></p>
-<p>Because no external torque acts on the two-flywheel system about the common axis, the total angular momentum is conserved during the coupling. The initial angular momentum is due only to the rotating flywheel, while the second flywheel is initially at rest. If the first flywheel has moment of inertia <span class="math notranslate nohighlight">\(I_0\)</span>, then the second flywheel has moment of inertia <span class="math notranslate nohighlight">\(3I_0\)</span>.</p>
+<p>Because no external torque acts on the two-flywheel system about the common axis, the total angular momentum is conserved during the coupling. The initial angular momentum is due only to the rotating flywheel, while the second flywheel is initially at rest. If the first flywheel has moment of inertia <span class="math notranslate nohighlight">\(I_o\)</span>, then the second flywheel has moment of inertia <span class="math notranslate nohighlight">\(3I_o\)</span>.</p>
 <p><strong>(a)</strong> Conservation of angular momentum requires that the initial angular momentum equal the final angular momentum. This gives</p>
 <div class="math notranslate nohighlight">
-\[ I_0\omega_o = (I_0 + 3I_0)\omega. \]</div>
+\[ I_o\omega_o = (I_o + 3I_o)\omega. \]</div>
 <p>The total final moment of inertia is therefore</p>
 <div class="math notranslate nohighlight">
-\[ I_{\rm f} = 4I_0. \]</div>
+\[ I_{\rm f} = 4I_o. \]</div>
 <p>We solve the angular-momentum equation for the common final angular velocity, which gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-\omega &amp;= \frac{I_0\omega_o}{4I_0} \\
+\omega &amp;= \frac{I_o\omega_o}{4I_o} \\
 &amp;= \frac{1}{4}\omega_o.
 \end{align*}\]</div>
 <p>Substituting <span class="math notranslate nohighlight">\(\omega_o = 600\ {\rm rev/min}\)</span> gives</p>
@@ -1704,18 +1704,18 @@ K^\prime_{rot} &amp;= \left(\frac{I}{I^\prime}\right) K_{rot}.
 \end{align*}\]</div>
 <p><strong>(b)</strong> The initial rotational kinetic energy is due only to the rotating flywheel. This gives</p>
 <div class="math notranslate nohighlight">
-\[ K_i = \frac{1}{2}I_0\omega_o^2. \]</div>
-<p>After the two flywheels couple, they rotate together with total moment of inertia <span class="math notranslate nohighlight">\(4I_0\)</span> and angular velocity <span class="math notranslate nohighlight">\(\omega = \omega_o/4\)</span>. The final rotational kinetic energy is therefore</p>
+\[ K_i = \frac{1}{2}I_o\omega_o^2. \]</div>
+<p>After the two flywheels couple, they rotate together with total moment of inertia <span class="math notranslate nohighlight">\(4I_o\)</span> and angular velocity <span class="math notranslate nohighlight">\(\omega = \omega_o/4\)</span>. The final rotational kinetic energy is therefore</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-K_f &amp;= \frac{1}{2}(4I_0)\left(\frac{\omega_o}{4}\right)^2 \\
-&amp;= \frac{1}{2}(4I_0)\frac{\omega_o^2}{16} \\
-&amp;= \frac{1}{8}I_0\omega_o^2.
+K_f &amp;= \frac{1}{2}(4I_o)\left(\frac{\omega_o}{4}\right)^2 \\
+&amp;= \frac{1}{2}(4I_o)\frac{\omega_o^2}{16} \\
+&amp;= \frac{1}{8}I_o\omega_o^2.
 \end{align*}\]</div>
 <p>We now compare the final and initial kinetic energies to determine the fraction that remains after coupling. This ratio is</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-\frac{K_f}{K_i} &amp;= \frac{\frac{1}{8}I_0\omega_o^2}{\frac{1}{2}I_0\omega_o^2} \\
+\frac{K_f}{K_i} &amp;= \frac{\frac{1}{8}I_o\omega_o^2}{\frac{1}{2}I_o\omega_o^2} \\
 &amp;= \frac{1}{4}.
 \end{align*}\]</div>
 <p>Thus, the final kinetic energy is one-fourth of the initial kinetic energy. The fraction of the initial kinetic energy lost is therefore</p>
@@ -1727,10 +1727,7 @@ K_f &amp;= \frac{1}{2}(4I_0)\left(\frac{\omega_o}{4}\right)^2 \\
 <div class="math notranslate nohighlight">
 \[ \omega = 150\ {\rm rev/min} = 15.7\ {\rm rad/s}. \]</div>
 <p>This decrease in angular speed occurs because the total rotational inertia increases by a factor of <span class="math notranslate nohighlight">\(4\)</span> while angular momentum remains constant.</p>
-<p>The fraction of the initial kinetic energy lost during the coupling is</p>
-<div class="math notranslate nohighlight">
-\[ \frac{3}{4}. \]</div>
-<p>This result shows that although angular momentum is conserved, rotational kinetic energy is not conserved during the coupling because friction converts some of the mechanical energy into thermal energy.</p>
+<p>The fraction of the initial kinetic energy lost during the coupling is <span class="math notranslate nohighlight">\( \frac{3}{4}. \)</span>  This result shows that although angular momentum is conserved, rotational kinetic energy is not conserved during the coupling because friction converts some of the mechanical energy into thermal energy.</p>
 <hr class="docutils" />
 <p><strong>The Verification</strong></p>
 <p>The analytical solution first applies conservation of angular momentum to determine the final common angular velocity and then uses that result to compare the final and initial rotational kinetic energies. The computation below implements those same two steps directly.</p>
@@ -1786,7 +1783,7 @@ K_f &amp;= \frac{1}{2}(4I_0)\left(\frac{\omega_o}{4}\right)^2 \\
 <section id="exercise-content">
 <p><strong>The Problem</strong></p>
 <blockquote>
-<div><p>An <span class="math notranslate nohighlight">\(80.0\ {\rm kg}\)</span> gymnast dismounts from a high bar. He starts the dismount at full extension, then tucks to complete a number of revolutions before landing. His moment of inertia when fully extended can be approximated as a rod of length <span class="math notranslate nohighlight">\(1.8\ {\rm m}\)</span> and when in the tuck a rod of half that length. If his rotation rate at full extension is <span class="math notranslate nohighlight">\(1.0\ {\rm rev/s}\)</span> and he enters the tuck when his center of mass is at <span class="math notranslate nohighlight">\(3.0\ {\rm m}\)</span> height moving horizontally to the floor, how many revolutions can he execute if he comes out of the tuck at <span class="math notranslate nohighlight">\(1.8\ {\rm m}\)</span> height? See Fig. {\numref}<code class="docutils literal notranslate"><span class="pre">{number}&lt;high-bar-dismount-problem&gt;</span></code>.</p>
+<div><p>An <span class="math notranslate nohighlight">\(80.0\ {\rm kg}\)</span> gymnast dismounts from a high bar. He starts the dismount at full extension, then tucks to complete a number of revolutions before landing. His moment of inertia when fully extended can be approximated as a rod of length <span class="math notranslate nohighlight">\(1.8\ {\rm m}\)</span> and when in the tuck a rod of half that length. If his rotation rate at full extension is <span class="math notranslate nohighlight">\(1.0\ {\rm rev/s}\)</span> and he enters the tuck when his center of mass is at <span class="math notranslate nohighlight">\(3.0\ {\rm m}\)</span> height moving horizontally to the floor, how many revolutions can he execute if he comes out of the tuck at <span class="math notranslate nohighlight">\(1.8\ {\rm m}\)</span> height? See Fig. <a class="reference internal" href="#high-bar-dismount-problem"><span class="std std-numref">11.16</span></a>.</p>
 </div></blockquote>
 <figure class="align-default" id="high-bar-dismount-problem">
 <img alt="dismount from a high bar" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/757b60297e82d2b2c43e957c2ba5278d7e3cec80" />
@@ -1807,7 +1804,7 @@ K_f &amp;= \frac{1}{2}(4I_0)\left(\frac{\omega_o}{4}\right)^2 \\
 <p>At full extension, the gymnast is modeled as a rod of length <span class="math notranslate nohighlight">\(L_0 = 1.8\ {\rm m}\)</span>. Substituting the given mass and length gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-I_0 &amp;= \frac{1}{12}mL_0^2 \\
+I_o &amp;= \frac{1}{12}mL_0^2 \\
 &amp;= \frac{1}{12}(80.0\ {\rm kg})(1.8\ {\rm m})^2 \\
 &amp;= 21.6\ {\rm kg\cdot m^2}.
 \end{align*}\]</div>
@@ -1820,10 +1817,10 @@ I_f &amp;= \frac{1}{12}mL_f^2 \\
 \end{align*}\]</div>
 <p>Because the external torque is negligible while the gymnast changes shape in midair, angular momentum is conserved. The initial and final angular momenta are therefore equal, which gives</p>
 <div class="math notranslate nohighlight">
-\[ I_f\omega_f = I_0\omega_o. \]</div>
+\[ I_f\omega_f = I_o\omega_o. \]</div>
 <p>We solve this expression for the angular speed in the tuck, which gives</p>
 <div class="math notranslate nohighlight">
-\[ \omega_f = \frac{I_0}{I_f}\omega_o. \]</div>
+\[ \omega_f = \frac{I_o}{I_f}\omega_o. \]</div>
 <p>Substituting the values of the moments of inertia and the initial rotation rate <span class="math notranslate nohighlight">\(\omega_o = 1.0\ {\rm rev/s}\)</span> gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -1919,7 +1916,7 @@ N &amp;= \omega_f t \\
 <section id="exercise-content">
 <p><strong>The Problem</strong></p>
 <blockquote>
-<div><p>A bullet of mass <span class="math notranslate nohighlight">\(m = 2.0\ {\rm g}\)</span> is moving horizontally with a speed of <span class="math notranslate nohighlight">\(500.0\ {\rm m/s}\)</span>. The bullet strikes and becomes embedded in the edge of a solid disk of mass <span class="math notranslate nohighlight">\(M = 3.2\ {\rm kg}\)</span> and radius <span class="math notranslate nohighlight">\(R = 0.5\ {\rm m}\)</span>. The cylinder is free to rotate around its axis and is initially at rest (Fig. {\numref}<code class="docutils literal notranslate"><span class="pre">{number}&lt;bullet-disk-collision-problem&gt;</span></code>). What is the angular velocity of the disk immediately after the bullet is embedded?</p>
+<div><p>A bullet of mass <span class="math notranslate nohighlight">\(m = 2.0\ {\rm g}\)</span> is moving horizontally with a speed of <span class="math notranslate nohighlight">\(500.0\ {\rm m/s}\)</span>. The bullet strikes and becomes embedded in the edge of a solid disk of mass <span class="math notranslate nohighlight">\(M = 3.2\ {\rm kg}\)</span> and radius <span class="math notranslate nohighlight">\(R = 0.5\ {\rm m}\)</span>. The cylinder is free to rotate around its axis and is initially at rest (Fig. <a class="reference internal" href="#bullet-disk-collision-problem"><span class="std std-numref">11.17</span></a>). What is the angular velocity of the disk immediately after the bullet is embedded?</p>
 </div></blockquote>
 <figure class="align-default" id="bullet-disk-collision-problem">
 <img alt="conservation of angular momentum of a collision" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/b6a1ef1e37a0bafc67e967b2ab3030627f2f7e83" />
@@ -2082,9 +2079,9 @@ I_f &amp;= I_{\rm bullet} + I_{\rm disk} \\
 <div class="math notranslate nohighlight">
 \[ d\phi = \frac{dL}{L\sin{\theta}} = \frac{Mgr\sin{\theta}}{L\sin{\theta}} = Mg\left(\frac{r}{L}\right) dt. \]</div>
 <p>The precession angular velocity is <span class="math notranslate nohighlight">\(\omega_P = \frac{d\phi}{dt}\)</span>, where we see that</p>
-<div class="amsmath math notranslate nohighlight" id="equation-020a9b86-8137-41f8-807f-6f21be48d8cd">
-<span class="eqno">(11.11)<a class="headerlink" href="#equation-020a9b86-8137-41f8-807f-6f21be48d8cd" title="Permalink to this equation">#</a></span>\[\begin{align}
-\omega_p &amp;= Mg\left(\frac{r}{L}\right),
+<div class="amsmath math notranslate nohighlight" id="equation-50862e58-3f4d-4c6d-a023-cfe716a4ff19">
+<span class="eqno">(11.11)<a class="headerlink" href="#equation-50862e58-3f4d-4c6d-a023-cfe716a4ff19" title="Permalink to this equation">#</a></span>\[\begin{align}
+\omega_p &amp;= Mg\left(\frac{r}{L}\right), \\
 &amp;= \frac{Mgr}{I\omega},
 \end{align}\]</div>
 <p>since <span class="math notranslate nohighlight">\(L = I\omega\)</span>.</p>
