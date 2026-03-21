@@ -79,6 +79,8 @@
                 gtag('config', 'G-6TWF14MYK4');
             </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Chapter13/gravitation';</script>
     <script src="https://cdn.plyr.io/3.8.4/plyr.polyfilled.js"></script>
     <script src="../_static/init-plyr.js?v=bf401924"></script>
@@ -476,7 +478,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -492,6 +496,68 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-law-of-universal-gravitation">13.1. Newton’s Law of Universal Gravitation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-history-of-gravitation">13.1.1. The History of Gravitation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-law-of-universal-gravitation-defined">13.1.2. Newton’s Law of Universal Gravitation (Defined)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-cavendish-experiment-measuring-g">13.1.3. The Cavendish Experiment (measuring <span class="math notranslate nohighlight">\(G\)</span>)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gravitation-near-earth-s-surface">13.2. Gravitation Near Earth’s Surface</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#weight">13.2.1. Weight</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-gravitational-field">13.2.2. The Gravitational Field</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#results-away-from-the-equator">13.2.3. Results Away from the Equator</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gravitational-potential-energy-and-total-energy">13.3. Gravitational Potential Energy and Total Energy</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gravitational-potential-energy-beyond-earth">13.3.1. Gravitational Potential Energy beyond Earth</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-energy">13.3.2. Conservation of Energy</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#satellite-orbits-and-energy">13.4. Satellite Orbits and Energy</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#circular-orbits">13.4.1. Circular Orbits</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-in-circular-orbits">13.4.2. Energy in Circular Orbits</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kepler-s-laws-of-planetary-motion">13.5. Kepler’s Laws of Planetary Motion</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kepler-s-1st-law">13.5.1. Kepler’s 1st Law</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#orbital-transfers">13.5.2. Orbital Transfers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kepler-s-2nd-law">13.5.3. Kepler’s 2nd Law</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kepler-s-3rd-law">13.5.4. Kepler’s 3rd Law</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tidal-forces">13.6. Tidal Forces</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lunar-tides">13.6.1. Lunar Tides</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-tides">13.6.2. Other Tides</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#einstein-s-theory-of-gravity">13.7. Einstein’s Theory of Gravity</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#revolution-in-perspective">13.7.1. Revolution in Perspective</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-principle-of-equivalence">13.7.2. The Principle of Equivalence</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-geometric-theory-of-gravity">13.7.3. A Geometric Theory of Gravity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#black-holes">13.7.4. Black Holes</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-event-horizon">13.7.4.1. The Event Horizon</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#observational-evidence-of-black-holes">13.7.4.2. Observational evidence of Black Holes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-class-problems">13.8. In-Class Problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-i">13.8.1. Part I</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-ii">13.8.2. Part II</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homework-problems">13.9. Homework Problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conceptual-problems">13.9.1. Conceptual Problems</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantitative-problems">13.9.2. Quantitative Problems</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -503,6 +569,115 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="gravitation">
 <h1><span class="section-number">13. </span>Gravitation<a class="headerlink" href="#gravitation" title="Link to this heading">#</a></h1>
+<section id="newton-s-law-of-universal-gravitation">
+<h2><span class="section-number">13.1. </span>Newton’s Law of Universal Gravitation<a class="headerlink" href="#newton-s-law-of-universal-gravitation" title="Link to this heading">#</a></h2>
+<p>The earliest philosophers wondered why objects naturally tend to fall toward the ground.  <a class="reference external" href="https://en.wikipedia.org/wiki/Aristotle">Aristotle</a> believed that the natural state of some objects to seek the Earth, while others (e.g., fire) would float away and seek Heaven instead.  Almost a millennium  later, <a class="reference external" href="https://en.wikipedia.org/wiki/Brahmagupta">Brahmagupta</a> described an attractive force that caused all objects to fall toward the center of a spherical Earth.</p>
+<p>The motions of the Sun, Moon, and the planets were studied for thousands of years before an accurate model was developed.  About 2000 years ago, <a class="reference external" href="https://en.wikipedia.org/wiki/Ptolemy">Ptolemy</a> used the method of epicycles, which proved to be an accurate method given the technological sophistication of making the measurements.  Although several scholars may have developed ideas about an inward seeking force or the motions of astronomical bodies, there is little evidence that anyone had synthesized these ideas together into a single framework until the 17th century (i.e., 1600-1700 AD).</p>
+<p>The idea of heliocentrism (e.g., the Sun is at the center of the Solar System) was introduced (at least) by the 3rd century BC by Aristarchus of Samos.  For many years, scholars paid little attention to the idea because the could not reconcile a moving Earth with the absence of an observable <a class="reference external" href="https://en.wikipedia.org/wiki/parallax">parallax</a>.  Therefore, Ptolemy’s geocentric model held sway until the 16th century, when <a class="reference external" href="https://en.wikipedia.org/wiki/Nicolaus_Copernicus">Nicolaus Copernicus</a> proposed a mathematical model of a heliocentric system and estimated the distances for each of the planets to the Sun, albeit on assumed circular orbits.  Copernicus’ ideas were initially supported by religious figures at the time, but eventually (about a century later) ran in contrast to the Catholic church’s teachings.</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Tycho_Brahe">Tycho Brahe</a> attempted to develop a hybrid geocentric-heliocentric model but did not finish before his untimely death.  Prior to his demise, he employed <a class="reference external" href="https://en.wikipedia.org/wiki/Johannes_Kepler">Johannes Kepler</a> as a research assistant.  Brahe assigned Kepler the so-called ‘Mars problem’ as an attempt to stall Kepler from overshadowing him.  However, Kepler would develop his laws of planetary motion that largely corrected the Copernican model use ellipses instead of circles for the orbits.</p>
+<section id="the-history-of-gravitation">
+<h3><span class="section-number">13.1.1. </span>The History of Gravitation<a class="headerlink" href="#the-history-of-gravitation" title="Link to this heading">#</a></h3>
+</section>
+<section id="newton-s-law-of-universal-gravitation-defined">
+<h3><span class="section-number">13.1.2. </span>Newton’s Law of Universal Gravitation (Defined)<a class="headerlink" href="#newton-s-law-of-universal-gravitation-defined" title="Link to this heading">#</a></h3>
+</section>
+<section id="the-cavendish-experiment-measuring-g">
+<h3><span class="section-number">13.1.3. </span>The Cavendish Experiment (measuring <span class="math notranslate nohighlight">\(G\)</span>)<a class="headerlink" href="#the-cavendish-experiment-measuring-g" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="gravitation-near-earth-s-surface">
+<h2><span class="section-number">13.2. </span>Gravitation Near Earth’s Surface<a class="headerlink" href="#gravitation-near-earth-s-surface" title="Link to this heading">#</a></h2>
+<section id="weight">
+<h3><span class="section-number">13.2.1. </span>Weight<a class="headerlink" href="#weight" title="Link to this heading">#</a></h3>
+</section>
+<section id="the-gravitational-field">
+<h3><span class="section-number">13.2.2. </span>The Gravitational Field<a class="headerlink" href="#the-gravitational-field" title="Link to this heading">#</a></h3>
+</section>
+<section id="results-away-from-the-equator">
+<h3><span class="section-number">13.2.3. </span>Results Away from the Equator<a class="headerlink" href="#results-away-from-the-equator" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="gravitational-potential-energy-and-total-energy">
+<h2><span class="section-number">13.3. </span>Gravitational Potential Energy and Total Energy<a class="headerlink" href="#gravitational-potential-energy-and-total-energy" title="Link to this heading">#</a></h2>
+<section id="gravitational-potential-energy-beyond-earth">
+<h3><span class="section-number">13.3.1. </span>Gravitational Potential Energy beyond Earth<a class="headerlink" href="#gravitational-potential-energy-beyond-earth" title="Link to this heading">#</a></h3>
+</section>
+<section id="conservation-of-energy">
+<h3><span class="section-number">13.3.2. </span>Conservation of Energy<a class="headerlink" href="#conservation-of-energy" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="satellite-orbits-and-energy">
+<h2><span class="section-number">13.4. </span>Satellite Orbits and Energy<a class="headerlink" href="#satellite-orbits-and-energy" title="Link to this heading">#</a></h2>
+<section id="circular-orbits">
+<h3><span class="section-number">13.4.1. </span>Circular Orbits<a class="headerlink" href="#circular-orbits" title="Link to this heading">#</a></h3>
+</section>
+<section id="energy-in-circular-orbits">
+<h3><span class="section-number">13.4.2. </span>Energy in Circular Orbits<a class="headerlink" href="#energy-in-circular-orbits" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="kepler-s-laws-of-planetary-motion">
+<h2><span class="section-number">13.5. </span>Kepler’s Laws of Planetary Motion<a class="headerlink" href="#kepler-s-laws-of-planetary-motion" title="Link to this heading">#</a></h2>
+<section id="kepler-s-1st-law">
+<h3><span class="section-number">13.5.1. </span>Kepler’s 1st Law<a class="headerlink" href="#kepler-s-1st-law" title="Link to this heading">#</a></h3>
+</section>
+<section id="orbital-transfers">
+<h3><span class="section-number">13.5.2. </span>Orbital Transfers<a class="headerlink" href="#orbital-transfers" title="Link to this heading">#</a></h3>
+</section>
+<section id="kepler-s-2nd-law">
+<h3><span class="section-number">13.5.3. </span>Kepler’s 2nd Law<a class="headerlink" href="#kepler-s-2nd-law" title="Link to this heading">#</a></h3>
+</section>
+<section id="kepler-s-3rd-law">
+<h3><span class="section-number">13.5.4. </span>Kepler’s 3rd Law<a class="headerlink" href="#kepler-s-3rd-law" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="tidal-forces">
+<h2><span class="section-number">13.6. </span>Tidal Forces<a class="headerlink" href="#tidal-forces" title="Link to this heading">#</a></h2>
+<section id="lunar-tides">
+<h3><span class="section-number">13.6.1. </span>Lunar Tides<a class="headerlink" href="#lunar-tides" title="Link to this heading">#</a></h3>
+</section>
+<section id="other-tides">
+<h3><span class="section-number">13.6.2. </span>Other Tides<a class="headerlink" href="#other-tides" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="einstein-s-theory-of-gravity">
+<h2><span class="section-number">13.7. </span>Einstein’s Theory of Gravity<a class="headerlink" href="#einstein-s-theory-of-gravity" title="Link to this heading">#</a></h2>
+<section id="revolution-in-perspective">
+<h3><span class="section-number">13.7.1. </span>Revolution in Perspective<a class="headerlink" href="#revolution-in-perspective" title="Link to this heading">#</a></h3>
+</section>
+<section id="the-principle-of-equivalence">
+<h3><span class="section-number">13.7.2. </span>The Principle of Equivalence<a class="headerlink" href="#the-principle-of-equivalence" title="Link to this heading">#</a></h3>
+</section>
+<section id="a-geometric-theory-of-gravity">
+<h3><span class="section-number">13.7.3. </span>A Geometric Theory of Gravity<a class="headerlink" href="#a-geometric-theory-of-gravity" title="Link to this heading">#</a></h3>
+</section>
+<section id="black-holes">
+<h3><span class="section-number">13.7.4. </span>Black Holes<a class="headerlink" href="#black-holes" title="Link to this heading">#</a></h3>
+<section id="the-event-horizon">
+<h4><span class="section-number">13.7.4.1. </span>The Event Horizon<a class="headerlink" href="#the-event-horizon" title="Link to this heading">#</a></h4>
+</section>
+<section id="observational-evidence-of-black-holes">
+<h4><span class="section-number">13.7.4.2. </span>Observational evidence of Black Holes<a class="headerlink" href="#observational-evidence-of-black-holes" title="Link to this heading">#</a></h4>
+</section>
+</section>
+</section>
+<section id="in-class-problems">
+<h2><span class="section-number">13.8. </span>In-Class Problems<a class="headerlink" href="#in-class-problems" title="Link to this heading">#</a></h2>
+<section id="part-i">
+<h3><span class="section-number">13.8.1. </span>Part I<a class="headerlink" href="#part-i" title="Link to this heading">#</a></h3>
+</section>
+<section id="part-ii">
+<h3><span class="section-number">13.8.2. </span>Part II<a class="headerlink" href="#part-ii" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="homework-problems">
+<h2><span class="section-number">13.9. </span>Homework Problems<a class="headerlink" href="#homework-problems" title="Link to this heading">#</a></h2>
+<section id="conceptual-problems">
+<h3><span class="section-number">13.9.1. </span>Conceptual Problems<a class="headerlink" href="#conceptual-problems" title="Link to this heading">#</a></h3>
+</section>
+<section id="quantitative-problems">
+<h3><span class="section-number">13.9.2. </span>Quantitative Problems<a class="headerlink" href="#quantitative-problems" title="Link to this heading">#</a></h3>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -559,6 +734,75 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-law-of-universal-gravitation">13.1. Newton’s Law of Universal Gravitation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-history-of-gravitation">13.1.1. The History of Gravitation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-law-of-universal-gravitation-defined">13.1.2. Newton’s Law of Universal Gravitation (Defined)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-cavendish-experiment-measuring-g">13.1.3. The Cavendish Experiment (measuring <span class="math notranslate nohighlight">\(G\)</span>)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gravitation-near-earth-s-surface">13.2. Gravitation Near Earth’s Surface</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#weight">13.2.1. Weight</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-gravitational-field">13.2.2. The Gravitational Field</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#results-away-from-the-equator">13.2.3. Results Away from the Equator</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gravitational-potential-energy-and-total-energy">13.3. Gravitational Potential Energy and Total Energy</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gravitational-potential-energy-beyond-earth">13.3.1. Gravitational Potential Energy beyond Earth</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-energy">13.3.2. Conservation of Energy</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#satellite-orbits-and-energy">13.4. Satellite Orbits and Energy</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#circular-orbits">13.4.1. Circular Orbits</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-in-circular-orbits">13.4.2. Energy in Circular Orbits</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kepler-s-laws-of-planetary-motion">13.5. Kepler’s Laws of Planetary Motion</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kepler-s-1st-law">13.5.1. Kepler’s 1st Law</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#orbital-transfers">13.5.2. Orbital Transfers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kepler-s-2nd-law">13.5.3. Kepler’s 2nd Law</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kepler-s-3rd-law">13.5.4. Kepler’s 3rd Law</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tidal-forces">13.6. Tidal Forces</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lunar-tides">13.6.1. Lunar Tides</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-tides">13.6.2. Other Tides</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#einstein-s-theory-of-gravity">13.7. Einstein’s Theory of Gravity</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#revolution-in-perspective">13.7.1. Revolution in Perspective</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-principle-of-equivalence">13.7.2. The Principle of Equivalence</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-geometric-theory-of-gravity">13.7.3. A Geometric Theory of Gravity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#black-holes">13.7.4. Black Holes</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-event-horizon">13.7.4.1. The Event Horizon</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#observational-evidence-of-black-holes">13.7.4.2. Observational evidence of Black Holes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-class-problems">13.8. In-Class Problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-i">13.8.1. Part I</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-ii">13.8.2. Part II</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homework-problems">13.9. Homework Problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conceptual-problems">13.9.1. Conceptual Problems</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantitative-problems">13.9.2. Quantitative Problems</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
