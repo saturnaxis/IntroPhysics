@@ -85,6 +85,7 @@
     <script src="https://cdn.plyr.io/3.8.4/plyr.polyfilled.js"></script>
     <script src="../_static/init-plyr.js?v=bf401924"></script>
     <link rel="canonical" href="https://saturnaxis.github.io/IntroPhysics/Chapter13/gravitation.html" />
+    <link rel="icon" href="../_static/IntroPhysics_Icon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="14. Fluid Mechanics" href="../Chapter14/fluids.html" />
@@ -505,12 +506,22 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-history-of-gravitation">13.1.1. The History of Gravitation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-law-of-universal-gravitation-defined">13.1.2. Newton’s Law of Universal Gravitation (Defined)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-cavendish-experiment-measuring-g">13.1.3. The Cavendish Experiment (measuring <span class="math notranslate nohighlight">\(G\)</span>)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-collision-in-orbit">13.1.4. <strong>Example Problem</strong>: Collision in Orbit</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-attraction-between-galaxies">13.1.5. <strong>Example Problem</strong>: Attraction between Galaxies</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gravitation-near-earth-s-surface">13.2. Gravitation Near Earth’s Surface</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#weight">13.2.1. Weight</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#weight">13.2.1. Weight</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-mass-of-the-earth">13.2.1.1. <strong>Example Problem</strong>: Mass of the Earth</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-gravitational-field">13.2.2. The Gravitational Field</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#results-away-from-the-equator">13.2.3. Results Away from the Equator</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#apparent-weight-accounting-for-earth-s-rotation">13.2.3. Apparent Weight: Accounting for Earth’s Rotation</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-zero-apparent-weight">13.2.3.1. <strong>Example Problem</strong>: Zero Apparent Weight</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#results-away-from-the-equator">13.2.4. Results Away from the Equator</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gravity-away-from-the-surface">13.2.5. Gravity Away from the Surface</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gravitational-potential-energy-and-total-energy">13.3. Gravitational Potential Energy and Total Energy</a><ul class="nav section-nav flex-column">
@@ -571,30 +582,263 @@ document.write(`
 <h1><span class="section-number">13. </span>Gravitation<a class="headerlink" href="#gravitation" title="Link to this heading">#</a></h1>
 <section id="newton-s-law-of-universal-gravitation">
 <h2><span class="section-number">13.1. </span>Newton’s Law of Universal Gravitation<a class="headerlink" href="#newton-s-law-of-universal-gravitation" title="Link to this heading">#</a></h2>
+<section id="the-history-of-gravitation">
+<h3><span class="section-number">13.1.1. </span>The History of Gravitation<a class="headerlink" href="#the-history-of-gravitation" title="Link to this heading">#</a></h3>
 <p>The earliest philosophers wondered why objects naturally tend to fall toward the ground.  <a class="reference external" href="https://en.wikipedia.org/wiki/Aristotle">Aristotle</a> believed that the natural state of some objects to seek the Earth, while others (e.g., fire) would float away and seek Heaven instead.  Almost a millennium  later, <a class="reference external" href="https://en.wikipedia.org/wiki/Brahmagupta">Brahmagupta</a> described an attractive force that caused all objects to fall toward the center of a spherical Earth.</p>
 <p>The motions of the Sun, Moon, and the planets were studied for thousands of years before an accurate model was developed.  About 2000 years ago, <a class="reference external" href="https://en.wikipedia.org/wiki/Ptolemy">Ptolemy</a> used the method of epicycles, which proved to be an accurate method given the technological sophistication of making the measurements.  Although several scholars may have developed ideas about an inward seeking force or the motions of astronomical bodies, there is little evidence that anyone had synthesized these ideas together into a single framework until the 17th century (i.e., 1600-1700 AD).</p>
 <p>The idea of heliocentrism (e.g., the Sun is at the center of the Solar System) was introduced (at least) by the 3rd century BC by Aristarchus of Samos.  For many years, scholars paid little attention to the idea because the could not reconcile a moving Earth with the absence of an observable <a class="reference external" href="https://en.wikipedia.org/wiki/parallax">parallax</a>.  Therefore, Ptolemy’s geocentric model held sway until the 16th century, when <a class="reference external" href="https://en.wikipedia.org/wiki/Nicolaus_Copernicus">Nicolaus Copernicus</a> proposed a mathematical model of a heliocentric system and estimated the distances for each of the planets to the Sun, albeit on assumed circular orbits.  Copernicus’ ideas were initially supported by religious figures at the time, but eventually (about a century later) ran in contrast to the Catholic church’s teachings.</p>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Tycho_Brahe">Tycho Brahe</a> attempted to develop a hybrid geocentric-heliocentric model but did not finish before his untimely death.  Prior to his demise, he employed <a class="reference external" href="https://en.wikipedia.org/wiki/Johannes_Kepler">Johannes Kepler</a> as a research assistant.  Brahe assigned Kepler the so-called ‘Mars problem’ as an attempt to stall Kepler from overshadowing him.  However, Kepler would develop his laws of planetary motion that largely corrected the Copernican model use ellipses instead of circles for the orbits.</p>
-<section id="the-history-of-gravitation">
-<h3><span class="section-number">13.1.1. </span>The History of Gravitation<a class="headerlink" href="#the-history-of-gravitation" title="Link to this heading">#</a></h3>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Tycho_Brahe">Tycho Brahe</a> attempted to develop a hybrid geocentric-heliocentric model but did not finish before his death.  Prior to his demise, he employed <a class="reference external" href="https://en.wikipedia.org/wiki/Johannes_Kepler">Johannes Kepler</a> as a research assistant.  Brahe assigned Kepler the so-called ‘Mars problem’ as an attempt to stall Kepler from overshadowing him.  However, Kepler would develop his laws of planetary motion (in 1609 (1st and 2nd) and 1619 (3rd)) that largely corrected the Copernican model use ellipses instead of circles for the orbits.  At the same time (~1610) <a class="reference external" href="https://en.wikipedia.org/wiki/Galileo_Galilei">Galileo</a> was using his ‘telescope’ to observe the heavens and discovering that Jupiter hosted 4 moons of its own.  Western European natural scientists could develop a model that predicted the location of the planets with higher accuracy, however they had no mathematical description to explain why the planets moved around the Sun.</p>
+<p>It was <a class="reference external" href="https://en.wikipedia.org/wiki/Isaac_Newton">Isaac Newton</a> who connected the acceleration of objects near Earth’s surface with the centripetal acceleration of the planets around the Sun (i.e., gravity).  To accomplish this feat, Newton had to largely invent new domains of study, which included calculus and by its application mechanics.  He also made ground-breaking discoveries in his day for the field of optics and thermodynamics.  He developed a numerical algorithm that is efficient in solving some problems (e.g., root-finding or solving transcendental equations) that is still used today in modern-computing, <a class="reference external" href="https://en.wikipedia.org/wiki/Newton%27s_method">Newton-Raphson method</a>.</p>
 </section>
 <section id="newton-s-law-of-universal-gravitation-defined">
 <h3><span class="section-number">13.1.2. </span>Newton’s Law of Universal Gravitation (Defined)<a class="headerlink" href="#newton-s-law-of-universal-gravitation-defined" title="Link to this heading">#</a></h3>
+<p>Newton noted that objects at Earth’s surface (at a distance <span class="math notranslate nohighlight">\(R_\oplus\)</span> from Earth’s center) have an acceleration of <span class="math notranslate nohighlight">\(g\)</span>.  However, at a distance of <span class="math notranslate nohighlight">\(60\ R_\oplus\)</span>, the Moon has a centripetal acceleration about <span class="math notranslate nohighlight">\((60)^2\)</span> times smaller than <span class="math notranslate nohighlight">\(g\)</span>.  He explained this by postulating that a force exists between any two objects, whose magnitude is given by the product of the two masses divided by the square of the distance between them.</p>
+<p>There exists a category of phenomena in nature that are explained by so-called ‘inverse-square law’, or a decrease in magnitude that increases with the inverse-square of the distance.  We now know that this is a function of geometry and how the surface of a sphere increases with distance, which dilutes the strength of a source that has spherical symmetry.  The surface area of a sphere is <span class="math notranslate nohighlight">\(4\pi r^2\)</span>, so we see that if there is a source with a strength <span class="math notranslate nohighlight">\(S\)</span>, then it scales as <span class="math notranslate nohighlight">\(S/r^2\)</span> (i.e., an inverse-square law).</p>
+<div class="note admonition">
+<p class="admonition-title">Newton’s Law of Gravitation</p>
+<p>Newton’s law of gravitation can be expressed as a vector by</p>
+<div class="amsmath math notranslate nohighlight" id="equation-9e2f1d78-4dcb-4f59-b984-824e98f671af">
+<span class="eqno">(13.1)<a class="headerlink" href="#equation-9e2f1d78-4dcb-4f59-b984-824e98f671af" title="Permalink to this equation">#</a></span>\[\begin{align}
+\vec{F}_{12} = \frac{Gm_1m_2}{r^2}\hat{r}_{12},
+\end{align}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\vec{F}_{12} is the force between object 1 exerted by object 2 and \)</span>\hat{r}_{12} is the <em>radial</em> unit vector that points from object 1 toward object 2.</p>
+</div>
+<figure class="align-default" id="gravity-vector-example">
+<img alt="Gravity force as a vector" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/632d3d8fd205334c778d4d172024e31cbdcb17c0" />
+<figcaption>
+<p><span class="caption-number">Fig. 13.1 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#gravity-vector-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Figure <a class="reference internal" href="#gravity-vector-example"><span class="std std-numref">13.1</span></a> shows how <span class="math notranslate nohighlight">\(\vec{F}_{12}\)</span> describes as an attractive force pulling object 1 toward object 2.  However, there is an equal but opposite force <span class="math notranslate nohighlight">\(vec{F}_{21}\)</span> directed from object 2 toward object 1, <span class="math notranslate nohighlight">\(\vec{F}_{12} = -\vec{F}_{21}\)</span>.</p>
+<p>These equal but opposite forces reflect Newton’s 3rd law.  Newton’s law of gravitation (as expressed) applies to any spherically symmetric object, where <span class="math notranslate nohighlight">\(r\)</span> is the distance each object’s center-of-mass.  This also implicitly assumes that the individual radii of the masses (<span class="math notranslate nohighlight">\(R\)</span>) is much smaller than the distance between the objects (<span class="math notranslate nohighlight">\(R\ll r\)</span>).  In many cases, Newton’s formulation still works for nonsymmetrical objects due to <span class="math notranslate nohighlight">\(R\ll r\)</span>.</p>
 </section>
 <section id="the-cavendish-experiment-measuring-g">
 <h3><span class="section-number">13.1.3. </span>The Cavendish Experiment (measuring <span class="math notranslate nohighlight">\(G\)</span>)<a class="headerlink" href="#the-cavendish-experiment-measuring-g" title="Link to this heading">#</a></h3>
+<p>A century after Newton published his law of universal gravitation, <a class="reference external" href="https://en.wikipedia.org/wiki/Henry_Cavendish">Henry Cavendish</a> determined the proportionality constant <span class="math notranslate nohighlight">\(G\)</span> by performing a very difficult experiment using a device with two masses connected by a rod that is itself suspended by a wire (see Figure <a class="reference internal" href="#cavendish-apparatus"><span class="std std-numref">13.2</span></a>).  The wire also had a mirror that redirected the light from a fixed source.  The masses on the rod were placed near two stationary masses, where the torque from the gravitation force between the spheres would twist the wire and change the angle of reflection for the light hitting the mirror.  Therefore, the reflected light would change position on the fixed scale.</p>
+<figure class="align-default" id="cavendish-apparatus">
+<img alt="Cavendish apparatus example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/4cdf59fde008dc8b6cff7a0b5f39a9ab14103d14" />
+<figcaption>
+<p><span class="caption-number">Fig. 13.2 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#cavendish-apparatus" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The constant <span class="math notranslate nohighlight">\(G\)</span> is called the <strong>universal gravitational constant</strong> and Cavendish determined it as <span class="math notranslate nohighlight">\(G = 6.67 \times 10^{-11}\ {\rm N\cdot m^2/kg^2}\)</span>.  The word ‘universal’ indicates that scientists think that this constant applies to masses of any composition and that it is the same throughout the Universe.  The value of <span class="math notranslate nohighlight">\(G\)</span> (in SI units) is an incredibly small number, which shows that the force of gravity is very weak.  For example, two <span class="math notranslate nohighlight">\(1\ {\rm kg}\)</span> masses locates a meter apart exert a force of <span class="math notranslate nohighlight">\(7 \times 10^{-11}\ {\rm N}\)</span> on each other.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The value of <span class="math notranslate nohighlight">\(G\)</span> given here depends on the units used (i.e., SI units).  However, if you choose to work in a different (sometimes more convenient) set of units, then you could determine <span class="math notranslate nohighlight">\(G\)</span> to a easy magnitude to remember.  In orbital mechanics, researchers will often use a magnitude of <span class="math notranslate nohighlight">\(G\)</span> so that it equals <span class="math notranslate nohighlight">\(1\)</span> or <span class="math notranslate nohighlight">\(4\pi^2\)</span>, but you must reconcile the units appropriately.</p>
+</div>
+<p>Although gravity is the weakest force compared to the other three fundamental forces of nature, its attractive force holds us to the Earth, causes the planets to orbit the Sun, and the Sun to orbit our Galaxy.  It goes even further to bind galaxies into clusters and is the force that determines the fate of the Universe.</p>
+<div class="note admonition">
+<p class="admonition-title">Problem-Solving Strategy</p>
+<p><strong>Newton’s Law of Gravitation</strong></p>
+<p>To determine the motion caused by the gravitational force:</p>
+<ol class="arabic simple">
+<li><p>Identify the two masses.</p></li>
+<li><p>Draw a free-body diagram, sketch the force acting on each mass, and indicate the distance between their respective center-of-mass.</p></li>
+<li><p>Apply Newton’s 2nd law of motion to each mass to determine how it will move.</p></li>
+</ol>
+</div>
+</section>
+<section id="example-problem-collision-in-orbit">
+<h3><span class="section-number">13.1.4. </span><strong>Example Problem</strong>: Collision in Orbit<a class="headerlink" href="#example-problem-collision-in-orbit" title="Link to this heading">#</a></h3>
+</section>
+<section id="example-problem-attraction-between-galaxies">
+<h3><span class="section-number">13.1.5. </span><strong>Example Problem</strong>: Attraction between Galaxies<a class="headerlink" href="#example-problem-attraction-between-galaxies" title="Link to this heading">#</a></h3>
 </section>
 </section>
 <section id="gravitation-near-earth-s-surface">
 <h2><span class="section-number">13.2. </span>Gravitation Near Earth’s Surface<a class="headerlink" href="#gravitation-near-earth-s-surface" title="Link to this heading">#</a></h2>
 <section id="weight">
 <h3><span class="section-number">13.2.1. </span>Weight<a class="headerlink" href="#weight" title="Link to this heading">#</a></h3>
+<p>Recall that the acceleration of a free-falling object near Earth’s surface is approximately <span class="math notranslate nohighlight">\(9.81\ {\rm m/s^2}\)</span>.  The force causing this acceleration is called the weight of the object, where we previously found that it has a value <span class="math notranslate nohighlight">\(w=mg\)</span> from Newton’s 2nd law.  The weight is present regardless of whether the object is in free fall or not.</p>
+<p>We now know the weight is caused by the gravitational force between the object of mass <span class="math notranslate nohighlight">\(m\)</span> and the Earth of mass <span class="math notranslate nohighlight">\(M_\oplus\)</span>.  If we equate the measured weight with the expected gravitational force, we can arrive at a scalar equation because both forces act in the same radial direction <span class="math notranslate nohighlight">\(\hat{r}\)</span>.  The scalar equation is given as</p>
+<div class="amsmath math notranslate nohighlight" id="equation-b3be6dc2-cd72-4275-9753-cfe0e988e35c">
+<span class="eqno">(13.2)<a class="headerlink" href="#equation-b3be6dc2-cd72-4275-9753-cfe0e988e35c" title="Permalink to this equation">#</a></span>\[\begin{align}
+mg &amp;= \frac{GM_\oplus m}{(R_\oplus + h)^2}, \\[6pt]
+&amp;= \frac{GM_\oplus m}{r^2},
+\end{align}\]</div>
+<p>where <span class="math notranslate nohighlight">\(r = R_\oplus + h\)</span> is the distance between the Earth and the object in terms of their respective center-of-mass.  Using the second equation, we can see that the mass <span class="math notranslate nohighlight">\(m\)</span> is on both sides and can cancel, leaving</p>
+<div class="math notranslate nohighlight" id="equation-grav-accel">
+<span class="eqno">(13.3)<a class="headerlink" href="#equation-grav-accel" title="Link to this equation">#</a></span>\[g = \frac{GM_\oplus}{r^2}.\]</div>
+<p>The standard <a class="reference external" href="https://en.wikipedia.org/wiki/Earth_radius">mean radius of the Earth</a> is <span class="math notranslate nohighlight">\(6371\ {\rm km}\)</span>.  For objects within a few kilometers of Earth’s surface, we can take <span class="math notranslate nohighlight">\(r = R_\oplus + h \approx R_\oplus\)</span> because <span class="math notranslate nohighlight">\(h\ll R_\oplus\)</span>.  From <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter09/momentum-collisions.html#example-problem-center-of-mass-of-the-earth-moon-system">Exercise 9.14</a>, we can see that the center-of-mass (see Fig. <a class="reference internal" href="#earth-com-example"><span class="std std-numref">13.3</span></a>) of a low mass (compared to the Earth itself) object with the Earth would essentially still be at the Earth’s center.  As a result, we can ignore the fact that the Earth accelerates toward the falling object.</p>
+<figure class="align-default" id="earth-com-example">
+<img alt="Earth center of mass example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/477c798ef3354d4f193f7323b157dd85c747e81c" />
+<figcaption>
+<p><span class="caption-number">Fig. 13.3 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#earth-com-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="example-problem-mass-of-the-earth">
+<h4><span class="section-number">13.2.1.1. </span><strong>Example Problem</strong>: Mass of the Earth<a class="headerlink" href="#example-problem-mass-of-the-earth" title="Link to this heading">#</a></h4>
+</section>
 </section>
 <section id="the-gravitational-field">
 <h3><span class="section-number">13.2.2. </span>The Gravitational Field<a class="headerlink" href="#the-gravitational-field" title="Link to this heading">#</a></h3>
+<p>Equation <a class="reference internal" href="#equation-grav-accel">(13.3)</a> is a scalar equation, but we could have retained the vector form for the force of gravity and written the acceleration in vector form (in general) as</p>
+<div class="math notranslate nohighlight">
+\[ \vec{g} = \frac{GM}{r^2}\hat{r}. \]</div>
+<p>We identify the vector field represented by <span class="math notranslate nohighlight">\(\vec{g}\)</span> as the <strong>gravitational field</strong> caused by mass <span class="math notranslate nohighlight">\(M\)</span>.  Figure <a class="reference internal" href="#fig-grav-field"><span class="std std-numref">13.4</span></a> illustrates the gravitational field around the Earth showing the lines are directed radially inward, symmetrically about the Earth, and color-coded relative to <span class="math notranslate nohighlight">\(g_{\rm surf} = 9.81\ {\rm m/s^2}\)</span>.</p>
+<figure class="align-default" id="fig-grav-field" style="width: 70%">
+<img alt="../_images/9f5c73f08cbd3eda24b54dc77dae702ef26684c4a93b926332c954fc43abe6d3.png" src="../_images/9f5c73f08cbd3eda24b54dc77dae702ef26684c4a93b926332c954fc43abe6d3.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 13.4 </span><span class="caption-text">Gravitational field around Earth shown in units of <span class="math notranslate nohighlight">\(R_\oplus\)</span> and <span class="math notranslate nohighlight">\(g_{\rm surf}\)</span>.</span><a class="headerlink" href="#fig-grav-field" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="cell tag_hide-cell docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell content</span>
+<span class="expanded">Hide code cell content</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">matplotlib.colors</span> <span class="kn">import</span> <span class="n">Normalize</span>
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">rcParams</span>
+<span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
+
+<span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">})</span>
+
+<span class="n">G</span> <span class="o">=</span> <span class="mi">4</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">M</span> <span class="o">=</span> <span class="mf">3.003e-6</span> <span class="c1">#mass of Earth (in M_sun)</span>
+<span class="n">R_earth</span> <span class="o">=</span> <span class="mf">4.26e-5</span> <span class="c1">#Radius of Earth (in AU)</span>
+
+<span class="n">fs</span> <span class="o">=</span> <span class="s1">&#39;large&#39;</span>
+<span class="n">lim</span> <span class="o">=</span> <span class="mf">2.3</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">20</span>
+
+<span class="n">r_vals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">geomspace</span><span class="p">(</span><span class="mf">1.15</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">14</span><span class="p">)</span>
+<span class="n">theta_vals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mf">0.16</span><span class="p">)</span>
+
+<span class="n">pts</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">r_vals</span><span class="p">:</span>
+    <span class="n">ntheta</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="mi">40</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">r</span><span class="p">)))</span>
+    <span class="n">thetas</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mf">0.15</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">th</span> <span class="ow">in</span> <span class="n">thetas</span><span class="p">:</span>
+        <span class="n">pts</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">r</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">th</span><span class="p">),</span> <span class="n">r</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">th</span><span class="p">)))</span>
+
+<span class="n">pts</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">pts</span><span class="p">)</span>
+<span class="n">Xr</span><span class="p">,</span> <span class="n">Yr</span> <span class="o">=</span> <span class="n">pts</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pts</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span>
+
+<span class="n">X</span> <span class="o">=</span> <span class="n">Xr</span> <span class="o">*</span> <span class="n">R_earth</span>
+<span class="n">Y</span> <span class="o">=</span> <span class="n">Yr</span> <span class="o">*</span> <span class="n">R_earth</span>
+<span class="n">R</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">X</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">Y</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">Rr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">Xr</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">Yr</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">mask</span> <span class="o">=</span> <span class="n">Rr</span> <span class="o">&gt;=</span> <span class="mi">1</span>
+
+<span class="n">gx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="n">gy</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">Y</span><span class="p">)</span>
+<span class="n">np</span><span class="o">.</span><span class="n">divide</span><span class="p">(</span><span class="o">-</span><span class="n">G</span><span class="o">*</span><span class="n">M</span><span class="o">*</span><span class="n">X</span><span class="p">,</span> <span class="n">R</span><span class="o">**</span><span class="mi">3</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">gx</span><span class="p">,</span> <span class="n">where</span><span class="o">=</span><span class="n">mask</span><span class="p">)</span>
+<span class="n">np</span><span class="o">.</span><span class="n">divide</span><span class="p">(</span><span class="o">-</span><span class="n">G</span><span class="o">*</span><span class="n">M</span><span class="o">*</span><span class="n">Y</span><span class="p">,</span> <span class="n">R</span><span class="o">**</span><span class="mi">3</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">gy</span><span class="p">,</span> <span class="n">where</span><span class="o">=</span><span class="n">mask</span><span class="p">)</span>
+
+<span class="n">g0</span> <span class="o">=</span> <span class="n">G</span><span class="o">*</span><span class="n">M</span> <span class="o">/</span> <span class="n">R_earth</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">gx</span> <span class="o">/=</span> <span class="n">g0</span>
+<span class="n">gy</span> <span class="o">/=</span> <span class="n">g0</span>
+<span class="n">gmag</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">gx</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">gy</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">ux</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">gx</span><span class="p">)</span>
+<span class="n">uy</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">gy</span><span class="p">)</span>
+<span class="n">np</span><span class="o">.</span><span class="n">divide</span><span class="p">(</span><span class="n">gx</span><span class="p">,</span> <span class="n">gmag</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">ux</span><span class="p">,</span> <span class="n">where</span><span class="o">=</span><span class="n">mask</span><span class="p">)</span>
+<span class="n">np</span><span class="o">.</span><span class="n">divide</span><span class="p">(</span><span class="n">gy</span><span class="p">,</span> <span class="n">gmag</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">uy</span><span class="p">,</span> <span class="n">where</span><span class="o">=</span><span class="n">mask</span><span class="p">)</span>
+
+<span class="n">ux</span><span class="p">[</span><span class="o">~</span><span class="n">mask</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+<span class="n">uy</span><span class="p">[</span><span class="o">~</span><span class="n">mask</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+<span class="n">gmag</span><span class="p">[</span><span class="o">~</span><span class="n">mask</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">7</span><span class="p">),</span><span class="n">dpi</span><span class="o">=</span><span class="mi">120</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span><span class="n">ls</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span><span class="n">zorder</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">norm</span> <span class="o">=</span> <span class="n">Normalize</span><span class="p">(</span><span class="n">vmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">q</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">quiver</span><span class="p">(</span><span class="n">Xr</span><span class="p">,</span> <span class="n">Yr</span><span class="p">,</span> <span class="n">ux</span><span class="p">,</span> <span class="n">uy</span><span class="p">,</span> <span class="n">gmag</span><span class="p">,</span> <span class="n">pivot</span><span class="o">=</span><span class="s1">&#39;mid&#39;</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;gnuplot_r&#39;</span><span class="p">,</span><span class="n">norm</span><span class="o">=</span><span class="n">norm</span><span class="p">)</span>
+
+
+<span class="n">cbar</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">fraction</span><span class="o">=</span><span class="mf">0.055</span><span class="p">,</span> <span class="n">pad</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">shrink</span><span class="o">=</span><span class="mf">0.9</span><span class="p">)</span>
+<span class="n">cbar</span><span class="o">.</span><span class="n">set_label</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$|\vec</span><span class="si">{g}</span><span class="s1">|\ (g_{\rm surf})$&#39;</span><span class="p">)</span>
+<span class="n">cbar</span><span class="o">.</span><span class="n">ax</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">,</span> <span class="n">which</span><span class="o">=</span><span class="s1">&#39;major&#39;</span><span class="p">,</span> <span class="n">labelsize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">earth</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">Circle</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span><span class="n">zorder</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">earth</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="n">lim</span><span class="p">,</span> <span class="n">lim</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="n">lim</span><span class="p">,</span> <span class="n">lim</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;X ($R_\oplus$)&#39;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="n">fs</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;Y ($R_\oplus$)&#39;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="n">fs</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mf">2.5</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mf">0.5</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mf">2.5</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mf">0.5</span><span class="p">))</span>
+<span class="c1">#ax.minorticks_on()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">,</span> <span class="n">which</span><span class="o">=</span><span class="s1">&#39;minor&#39;</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">,</span> <span class="n">which</span><span class="o">=</span><span class="s1">&#39;major&#39;</span><span class="p">,</span> <span class="n">labelsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">2</span><span class="p">);</span>
+<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;grav_field_2d&quot;</span><span class="p">,</span> <span class="n">fig</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="kc">False</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/9f5c73f08cbd3eda24b54dc77dae702ef26684c4a93b926332c954fc43abe6d3.png" src="../_images/9f5c73f08cbd3eda24b54dc77dae702ef26684c4a93b926332c954fc43abe6d3.png" />
+</div>
+</details>
+</div>
+<p>The direction of <span class="math notranslate nohighlight">\(\vec{g}\)</span> is parallel to the field lines at any point, where the strength of <span class="math notranslate nohighlight">\(\vec{g}\)</span> at any point is inversely proportional to the line spacing.  In other words, <em>the magnitude of the field in any region is proportional to the number of lines that pass through a unit surface area</em>, effectively a density of lines.</p>
+<p>Since the lines are equally spaced in angle <span class="math notranslate nohighlight">\(\theta\)</span>, the number of lines per unit surface area at a distance <span class="math notranslate nohighlight">\(r\)</span> from the Earth is the total number of lines divided by the surface area of a sphere of radius <span class="math notranslate nohighlight">\(r\)</span>, which is proportional to <span class="math notranslate nohighlight">\(r^2\)</span>.  Hence, you expect nearby lines to increase in spacing between the lines and along a single radial line.</p>
+<p>In the field picture, we say that a mass <span class="math notranslate nohighlight">\(m\)</span> interacts with the gravitational field of mass <span class="math notranslate nohighlight">\(M\)</span>.</p>
+</section>
+<section id="apparent-weight-accounting-for-earth-s-rotation">
+<h3><span class="section-number">13.2.3. </span>Apparent Weight: Accounting for Earth’s Rotation<a class="headerlink" href="#apparent-weight-accounting-for-earth-s-rotation" title="Link to this heading">#</a></h3>
+<p>Objects moving at constant speed in a circle have a centripetal acceleration directed toward the center of that circle.  This means that there must be a net force directed toward the center of that circle. Since all objects on the surface of the Earth move through a circle every 24 hours, there must be a net centripetal force on each object.</p>
+<p>Let’s first consider an object of mass <span class="math notranslate nohighlight">\(m\)</span> located at the equator, suspended from a scale (see Fig. <a class="reference internal" href="#gravity-centripetal-example"><span class="std std-numref">13.5</span></a>).  The scale exerts an upward force <span class="math notranslate nohighlight">\(\vec{F}_{\rm SE}\)</span> away from the Earth’s center.  This is the reading on the scale, and is the <strong>apparent weight</strong> of the object.  The weight <span class="math notranslate nohighlight">\(mg\)</span> points toward the Earth’s center.  If Earth were not rotating, the acceleration would be zero, and the net force would be zero (i.e., <span class="math notranslate nohighlight">\(F_s = mg\)</span>).</p>
+<figure class="align-default" id="gravity-centripetal-example">
+<img alt="Weight accounting for Earth's rotation" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/d6b661f9647a7791d26c5da545c69afbfa2dca97" />
+<figcaption>
+<p><span class="caption-number">Fig. 13.5 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#gravity-centripetal-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>With rotation, the sum of these forces must provide the centripetal acceleration <span class="math notranslate nohighlight">\(a_c\)</span>.  Using Newton’s 2nd law, we have</p>
+<div class="amsmath math notranslate nohighlight" id="equation-c88bcd20-0de0-4719-9a84-5025f494879d">
+<span class="eqno">(13.4)<a class="headerlink" href="#equation-c88bcd20-0de0-4719-9a84-5025f494879d" title="Permalink to this equation">#</a></span>\[\begin{align} 
+\sum F &amp;= F_{\rm SE} - mg = ma_c, \\
+&amp;=-\frac{mv^2}{r}.
+\end{align}\]</div>
+<p>The centripetal acceleration <span class="math notranslate nohighlight">\(a_c = -\frac{v^2}{r}\)</span> points in the same direction as the weight; hence, it is negative.  The tangential speed <span class="math notranslate nohighlight">\(v\)</span> is the speed at the equator and <span class="math notranslate nohighlight">\(r = R_\oplus\)</span>.</p>
+<p>We can calculate the speed simply by noting that objects on the equator travel the circumference of Earth in 24 hours.  Recall that the tangential speed is related to the angular speed <span class="math notranslate nohighlight">\(\omega\)</span> by <span class="math notranslate nohighlight">\(v = r\omega\)</span>, and <span class="math notranslate nohighlight">\(a_c = -r\omega^2\)</span>.  Therefore, we can write the force in terms of the angular speed by</p>
+<div class="math notranslate nohighlight">
+\[ F_{\rm SE} = m\left(g - R_\oplus \omega^2\right). \]</div>
+<p>The angular speed of Earth everywhere is</p>
+<div class="math notranslate nohighlight">
+\[ \omega = \frac{2\pi\ {\rm rad}}{24\ {\rm hr}\times 3600\ {\rm s/hr}} = 7.27\ \times 10^{-5}\ {\rm rad/s}. \]</div>
+<p>Substituting <span class="math notranslate nohighlight">\(R_\oplus = 6371\ {\rm km}\)</span> and <span class="math notranslate nohighlight">\(\omega = 7.27 \times 10^{-5}\ {\rm rad/s}\)</span> into the formula for the centripetal acceleration results in <span class="math notranslate nohighlight">\(a_c = 0.0337\ {\rm m/s^2}\)</span>.  This is only <span class="math notranslate nohighlight">\(0.34\%\)</span> of the surface gravity, so it is clearly a small correction.</p>
+<p>Consider a more rapidly spinning Earth (e.g., <span class="math notranslate nohighlight">\(12\ {\rm hr}\)</span>), then this correction increases only to <span class="math notranslate nohighlight">\(1.36\%\)</span>.  For this correction to be large, the Earth needs to be larger and rapidly rotating.  The surface gravity of Saturn is <span class="math notranslate nohighlight">\({\sim}9.8\ {\rm m/s^2}\)</span> at the edge of its atmosphere and rotating in about <span class="math notranslate nohighlight">\(10.5\ {\rm hr}\)</span>.  The centripetal acceleration would be <span class="math notranslate nohighlight">\({\sim}50\times\)</span> larger, which contributes to its slightly squashed appearance.</p>
+<section id="example-problem-zero-apparent-weight">
+<h4><span class="section-number">13.2.3.1. </span><strong>Example Problem</strong>: Zero Apparent Weight<a class="headerlink" href="#example-problem-zero-apparent-weight" title="Link to this heading">#</a></h4>
+</section>
 </section>
 <section id="results-away-from-the-equator">
-<h3><span class="section-number">13.2.3. </span>Results Away from the Equator<a class="headerlink" href="#results-away-from-the-equator" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">13.2.4. </span>Results Away from the Equator<a class="headerlink" href="#results-away-from-the-equator" title="Link to this heading">#</a></h3>
+<p>At the pole, <span class="math notranslate nohighlight">\(a_c \rightarrow 0\)</span> and <span class="math notranslate nohighlight">\(F_{\rm SN} = F_{\rm SS} = mg\)</span> (see Fig. <a class="reference internal" href="#gravity-centripetal-example"><span class="std std-numref">13.5</span></a>), just as is the case without rotation. At any other latitude <span class="math notranslate nohighlight">\(\lambda\)</span>, the situation is more complicated.</p>
+<p>The centripetal acceleration is directed toward point <span class="math notranslate nohighlight">\(P\)</span> in Fig. <a class="reference internal" href="#gravity-centripetal-example"><span class="std std-numref">13.5</span></a>, which is the <span class="math notranslate nohighlight">\(z\)</span> distance from the center and the radius becomes <span class="math notranslate nohighlight">\(r = R_\oplus \cos{\lambda}\)</span>.  The vector sum of the weight and <span class="math notranslate nohighlight">\(\vec{F}_s\)</span> must point toward point <span class="math notranslate nohighlight">\(P\)</span>, hence <span class="math notranslate nohighlight">\(\vec{F}_s\)</span> no longer points away from the center of Earth.</p>
+<p>A plumb bob will always point along this deviated direction.  All buildings are built aligned along this deviated direction, not along a radius through the center of Earth.  For the tallest buildings, this represents a deviation of a few feet at the top.</p>
+<p>The Earth is not a perfect sphere, where it has a bulge at the equator due to its rotation.  The radius of the Earth is about <span class="math notranslate nohighlight">\(30\ {\rm km}\)</span> greater at the equator compared to the poles. There is a difference in your weight due to the rotation depending on your latitude, although this difference is small.</p>
+</section>
+<section id="gravity-away-from-the-surface">
+<h3><span class="section-number">13.2.5. </span>Gravity Away from the Surface<a class="headerlink" href="#gravity-away-from-the-surface" title="Link to this heading">#</a></h3>
+<p>The law of gravitation applies to spherically symmetric objects, but it also valid for symmetrical mass distributions and only valid for values <span class="math notranslate nohighlight">\(r\geq R_\oplus\)</span>.</p>
+<p>For <span class="math notranslate nohighlight">\(r&lt;R_\oplus\)</span>, our formulation of gravity is not valid nor is our acceleration due to gravity <span class="math notranslate nohighlight">\(g\)</span>.  However, we can determine <span class="math notranslate nohighlight">\(g\)</span> using a principle that comes from Gauss’ law.  A consequence of Gauss’ law, applied to gravitation, is that only the mass within <span class="math notranslate nohighlight">\(r\)</span> contributes to the gravitational force.  Also the mass interior to <span class="math notranslate nohighlight">\(r\)</span> can be considered to be located at the center.  The gravitational effect of the mass outside <span class="math notranslate nohighlight">\(r\)</span> has zero net effect.</p>
+<p>Two special cases occur:</p>
+<p>The first considers a spherical planet with constant density, the mass within <span class="math notranslate nohighlight">\(r\)</span> is found by the product of the density and the volume within <span class="math notranslate nohighlight">\(r\)</span>.  The mass can be considered located at the center.  We can replace the mass <span class="math notranslate nohighlight">\(M_\oplus\)</span> with the mass within <span class="math notranslate nohighlight">\(r\)</span>, or <span class="math notranslate nohighlight">\(M_r\)</span>.  Then, we have</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+M_r &amp;= \rho\left(\frac{4}{3}\pi r^3 \right),\\
+g &amp;= \frac{GM_r}{r^2} = \frac{4}{3}G\rho\pi r.
+\end{align*}\]</div>
+<p>The value of <span class="math notranslate nohighlight">\(g\)</span> (and hence your weight) decreases linearly as you descend down a hole into the center of the Earth.  At the center you are weightless, as teh mass of the planet pulls equally in all directions.</p>
+<p>Actually Earth’s density is not constant, not is Earth solid throughout.  Figure <a class="reference internal" href="#gravity-inside-earth"><span class="std std-numref">13.6</span></a> shows the profile of <span class="math notranslate nohighlight">\(g\)</span> if Earth had constant density, as well as the more likely profile based upon density determined from seismic data.</p>
+<figure class="align-default" id="gravity-inside-earth">
+<img alt="gravity inside Earth" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/2a2cdd002f5f22425a1203706f3e956ed8f66b01" />
+<figcaption>
+<p><span class="caption-number">Fig. 13.6 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#gravity-inside-earth" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The second interesting case concerns living on a spherical shell planet.  This scenario has been proposed in many science fiction stories.  Ignoring significant engineering issues, the shell could be constructed with a desired radius and total mass to mimic Earth’s surface gravity <span class="math notranslate nohighlight">\(g\)</span>.</p>
 </section>
 </section>
 <section id="gravitational-potential-energy-and-total-energy">
@@ -748,12 +992,22 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-history-of-gravitation">13.1.1. The History of Gravitation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-law-of-universal-gravitation-defined">13.1.2. Newton’s Law of Universal Gravitation (Defined)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-cavendish-experiment-measuring-g">13.1.3. The Cavendish Experiment (measuring <span class="math notranslate nohighlight">\(G\)</span>)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-collision-in-orbit">13.1.4. <strong>Example Problem</strong>: Collision in Orbit</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-attraction-between-galaxies">13.1.5. <strong>Example Problem</strong>: Attraction between Galaxies</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gravitation-near-earth-s-surface">13.2. Gravitation Near Earth’s Surface</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#weight">13.2.1. Weight</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#weight">13.2.1. Weight</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-mass-of-the-earth">13.2.1.1. <strong>Example Problem</strong>: Mass of the Earth</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-gravitational-field">13.2.2. The Gravitational Field</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#results-away-from-the-equator">13.2.3. Results Away from the Equator</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#apparent-weight-accounting-for-earth-s-rotation">13.2.3. Apparent Weight: Accounting for Earth’s Rotation</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-zero-apparent-weight">13.2.3.1. <strong>Example Problem</strong>: Zero Apparent Weight</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#results-away-from-the-equator">13.2.4. Results Away from the Equator</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gravity-away-from-the-surface">13.2.5. Gravity Away from the Surface</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gravitational-potential-energy-and-total-energy">13.3. Gravitational Potential Energy and Total Energy</a><ul class="nav section-nav flex-column">
