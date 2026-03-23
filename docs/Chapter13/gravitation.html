@@ -525,8 +525,17 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gravitational-potential-energy-and-total-energy">13.3. Gravitational Potential Energy and Total Energy</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gravitational-potential-energy-beyond-earth">13.3.1. Gravitational Potential Energy beyond Earth</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-energy">13.3.2. Conservation of Energy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gravitational-potential-energy-beyond-earth">13.3.1. Gravitational Potential Energy beyond Earth</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-lifting-a-payload">13.3.1.1. <strong>Example Problem</strong>: Lifting a Payload</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-energy">13.3.2. Conservation of Energy</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#escape-velocity">13.3.2.1. Escape velocity</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-escape-from-earth">13.3.2.2. <strong>Example Problem</strong>: Escape from Earth</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-and-gravitationally-bound-objects">13.3.2.3. Energy and gravitationally bound objects</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-how-far-can-an-object-escape">13.3.2.4. <strong>Example Problem</strong>: How Far Can an Object Escape?</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#satellite-orbits-and-energy">13.4. Satellite Orbits and Energy</a><ul class="nav section-nav flex-column">
@@ -597,11 +606,11 @@ document.write(`
 <div class="note admonition">
 <p class="admonition-title">Newton’s Law of Gravitation</p>
 <p>Newton’s law of gravitation can be expressed as a vector by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9e2f1d78-4dcb-4f59-b984-824e98f671af">
-<span class="eqno">(13.1)<a class="headerlink" href="#equation-9e2f1d78-4dcb-4f59-b984-824e98f671af" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a1ef0a00-1644-4e94-951b-1fb0ebe2245e">
+<span class="eqno">(13.1)<a class="headerlink" href="#equation-a1ef0a00-1644-4e94-951b-1fb0ebe2245e" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{F}_{12} = \frac{Gm_1m_2}{r^2}\hat{r}_{12},
 \end{align}\]</div>
-<p>where <span class="math notranslate nohighlight">\(\vec{F}_{12} is the force between object 1 exerted by object 2 and \)</span>\hat{r}_{12} is the <em>radial</em> unit vector that points from object 1 toward object 2.</p>
+<p>where <span class="math notranslate nohighlight">\(\vec{F}_{12}\)</span> is the force between object 1 exerted by object 2 and <span class="math notranslate nohighlight">\(\hat{r}_{12}\)</span> is the <em>radial</em> unit vector that points from object 1 toward object 2.</p>
 </div>
 <figure class="align-default" id="gravity-vector-example">
 <img alt="Gravity force as a vector" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/632d3d8fd205334c778d4d172024e31cbdcb17c0" />
@@ -651,8 +660,8 @@ document.write(`
 <h3><span class="section-number">13.2.1. </span>Weight<a class="headerlink" href="#weight" title="Link to this heading">#</a></h3>
 <p>Recall that the acceleration of a free-falling object near Earth’s surface is approximately <span class="math notranslate nohighlight">\(9.81\ {\rm m/s^2}\)</span>.  The force causing this acceleration is called the weight of the object, where we previously found that it has a value <span class="math notranslate nohighlight">\(w=mg\)</span> from Newton’s 2nd law.  The weight is present regardless of whether the object is in free fall or not.</p>
 <p>We now know the weight is caused by the gravitational force between the object of mass <span class="math notranslate nohighlight">\(m\)</span> and the Earth of mass <span class="math notranslate nohighlight">\(M_\oplus\)</span>.  If we equate the measured weight with the expected gravitational force, we can arrive at a scalar equation because both forces act in the same radial direction <span class="math notranslate nohighlight">\(\hat{r}\)</span>.  The scalar equation is given as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b3be6dc2-cd72-4275-9753-cfe0e988e35c">
-<span class="eqno">(13.2)<a class="headerlink" href="#equation-b3be6dc2-cd72-4275-9753-cfe0e988e35c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f200b85e-94cd-450b-be31-0df2eee44146">
+<span class="eqno">(13.2)<a class="headerlink" href="#equation-f200b85e-94cd-450b-be31-0df2eee44146" title="Permalink to this equation">#</a></span>\[\begin{align}
 mg &amp;= \frac{GM_\oplus m}{(R_\oplus + h)^2}, \\[6pt]
 &amp;= \frac{GM_\oplus m}{r^2},
 \end{align}\]</div>
@@ -677,7 +686,7 @@ mg &amp;= \frac{GM_\oplus m}{(R_\oplus + h)^2}, \\[6pt]
 \[ \vec{g} = \frac{GM}{r^2}\hat{r}. \]</div>
 <p>We identify the vector field represented by <span class="math notranslate nohighlight">\(\vec{g}\)</span> as the <strong>gravitational field</strong> caused by mass <span class="math notranslate nohighlight">\(M\)</span>.  Figure <a class="reference internal" href="#fig-grav-field"><span class="std std-numref">13.4</span></a> illustrates the gravitational field around the Earth showing the lines are directed radially inward, symmetrically about the Earth, and color-coded relative to <span class="math notranslate nohighlight">\(g_{\rm surf} = 9.81\ {\rm m/s^2}\)</span>.</p>
 <figure class="align-default" id="fig-grav-field" style="width: 70%">
-<img alt="../_images/9f5c73f08cbd3eda24b54dc77dae702ef26684c4a93b926332c954fc43abe6d3.png" src="../_images/9f5c73f08cbd3eda24b54dc77dae702ef26684c4a93b926332c954fc43abe6d3.png" />
+<img alt="../_images/8abbbbb90fa5575051166bd63b9c39404906f3cbac2e9cf46d9fdda0dd15a878.png" src="../_images/8abbbbb90fa5575051166bd63b9c39404906f3cbac2e9cf46d9fdda0dd15a878.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 13.4 </span><span class="caption-text">Gravitational field around Earth shown in units of <span class="math notranslate nohighlight">\(R_\oplus\)</span> and <span class="math notranslate nohighlight">\(g_{\rm surf}\)</span>.</span><a class="headerlink" href="#fig-grav-field" title="Link to this image">#</a></p>
 </figcaption>
@@ -693,7 +702,12 @@ mg &amp;= \frac{GM_\oplus m}{(R_\oplus + h)^2}, \\[6pt]
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">from</span> <span class="nn">matplotlib.colors</span> <span class="kn">import</span> <span class="n">Normalize</span>
 <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">rcParams</span>
+<span class="kn">from</span> <span class="nn">matplotlib.patches</span> <span class="kn">import</span> <span class="n">Circle</span>
 <span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
+
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="n">BytesIO</span>
 
 <span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">})</span>
 
@@ -756,8 +770,23 @@ mg &amp;= \frac{GM_\oplus m}{(R_\oplus + h)^2}, \\[6pt]
 <span class="n">cbar</span><span class="o">.</span><span class="n">set_label</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$|\vec</span><span class="si">{g}</span><span class="s1">|\ (g_{\rm surf})$&#39;</span><span class="p">)</span>
 <span class="n">cbar</span><span class="o">.</span><span class="n">ax</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">,</span> <span class="n">which</span><span class="o">=</span><span class="s1">&#39;major&#39;</span><span class="p">,</span> <span class="n">labelsize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 
-<span class="n">earth</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">Circle</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span><span class="n">zorder</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">earth</span><span class="p">)</span>
+<span class="c1">#Clip Earth image from Wikipedia to a circle</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s2">&quot;Earth_Western_Hemisphere.jpg&quot;</span><span class="p">)</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+<span class="c1"># Create alpha channel: make near-black pixels transparent</span>
+<span class="n">threshold</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">mask</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">img</span> <span class="o">&lt;</span> <span class="n">threshold</span><span class="p">,</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">rgba</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dstack</span><span class="p">((</span><span class="n">img</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">[:</span><span class="mi">2</span><span class="p">])</span> <span class="o">*</span> <span class="mi">255</span><span class="p">))</span>
+<span class="n">rgba</span><span class="p">[</span><span class="n">mask</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># set alpha=0 where black</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">rgba</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
+<span class="c1"># draw image so it fills the square from x=-1..1 and y=-1..1</span>
+<span class="n">im</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">extent</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mf">1.15</span><span class="p">,</span> <span class="mf">1.15</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.15</span><span class="p">,</span> <span class="mf">1.15</span><span class="p">],</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="c1"># clip the image to a circle of radius 1 centered at (0, 0)</span>
+<span class="n">clip</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">1</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transData</span><span class="p">)</span>
+<span class="n">im</span><span class="o">.</span><span class="n">set_clip_path</span><span class="p">(</span><span class="n">clip</span><span class="p">)</span>
+<span class="c1"># optional: add a visible circular edge</span>
+<span class="c1"># edge = Circle((0, 0), 1, facecolor=&#39;none&#39;, edgecolor=&#39;black&#39;, linewidth=1.5, zorder=6)</span>
+<span class="c1"># ax.add_patch(edge)</span>
 
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="n">lim</span><span class="p">,</span> <span class="n">lim</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="n">lim</span><span class="p">,</span> <span class="n">lim</span><span class="p">)</span>
@@ -775,7 +804,7 @@ mg &amp;= \frac{GM_\oplus m}{(R_\oplus + h)^2}, \\[6pt]
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/9f5c73f08cbd3eda24b54dc77dae702ef26684c4a93b926332c954fc43abe6d3.png" src="../_images/9f5c73f08cbd3eda24b54dc77dae702ef26684c4a93b926332c954fc43abe6d3.png" />
+<img alt="../_images/8abbbbb90fa5575051166bd63b9c39404906f3cbac2e9cf46d9fdda0dd15a878.png" src="../_images/8abbbbb90fa5575051166bd63b9c39404906f3cbac2e9cf46d9fdda0dd15a878.png" />
 </div>
 </details>
 </div>
@@ -794,8 +823,8 @@ mg &amp;= \frac{GM_\oplus m}{(R_\oplus + h)^2}, \\[6pt]
 </figcaption>
 </figure>
 <p>With rotation, the sum of these forces must provide the centripetal acceleration <span class="math notranslate nohighlight">\(a_c\)</span>.  Using Newton’s 2nd law, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c88bcd20-0de0-4719-9a84-5025f494879d">
-<span class="eqno">(13.4)<a class="headerlink" href="#equation-c88bcd20-0de0-4719-9a84-5025f494879d" title="Permalink to this equation">#</a></span>\[\begin{align} 
+<div class="amsmath math notranslate nohighlight" id="equation-c2aa23c9-c9e2-468c-b259-5d7cedafe27e">
+<span class="eqno">(13.4)<a class="headerlink" href="#equation-c2aa23c9-c9e2-468c-b259-5d7cedafe27e" title="Permalink to this equation">#</a></span>\[\begin{align} 
 \sum F &amp;= F_{\rm SE} - mg = ma_c, \\
 &amp;=-\frac{mv^2}{r}.
 \end{align}\]</div>
@@ -845,9 +874,61 @@ g &amp;= \frac{GM_r}{r^2} = \frac{4}{3}G\rho\pi r.
 <h2><span class="section-number">13.3. </span>Gravitational Potential Energy and Total Energy<a class="headerlink" href="#gravitational-potential-energy-and-total-energy" title="Link to this heading">#</a></h2>
 <section id="gravitational-potential-energy-beyond-earth">
 <h3><span class="section-number">13.3.1. </span>Gravitational Potential Energy beyond Earth<a class="headerlink" href="#gravitational-potential-energy-beyond-earth" title="Link to this heading">#</a></h3>
+<p>The usefulness of work and potential energy is the ease with which we can solve many problems using conservation of energy.  Potential energy is particularly useful for forces that change with position, as the gravitational force varies over large distances.</p>
+<p>We showed (in <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter08/potential-energy-conservation.html">Chapter 8</a>) that the change in gravitational potential energy near Earth’s surface is <span class="math notranslate nohighlight">\(\Delta U = mgh\)</span>.  This works ver well if <span class="math notranslate nohighlight">\(g\)</span> does not change significantly over <span class="math notranslate nohighlight">\(h\)</span> (or, <span class="math notranslate nohighlight">\(h\ll R_\oplus\)</span>).</p>
+<p>Recall that the work <span class="math notranslate nohighlight">\(W\)</span> is the integral of the dot product between force and distance.  It is the product of a force along a displacement with that displacement.  We define <span class="math notranslate nohighlight">\(\Delta U\)</span> as the <em>negative</em> of the work done by the force that we associate with the potential energy.  For clarity we derive an expression for moving a mass <span class="math notranslate nohighlight">\(m\)</span> from a distance <span class="math notranslate nohighlight">\(r_1\)</span> to a distance <span class="math notranslate nohighlight">\(r_2\)</span>.</p>
+<figure class="align-default" id="earth-gravity-potential">
+<img alt="gravitational potential energy" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/6ffbf9c2692e50a59a890ab51a8e4c80c1e1bdc3" />
+<figcaption>
+<p><span class="caption-number">Fig. 13.7 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#earth-gravity-potential" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>In Fig. <a class="reference internal" href="#earth-gravity-potential"><span class="std std-numref">13.7</span></a>, we take <span class="math notranslate nohighlight">\(m\)</span> from a distance <span class="math notranslate nohighlight">\(r_1\)</span> to a distance <span class="math notranslate nohighlight">\(r_2\)</span>, where both radii are measured relative to Earth’s center.  Gravity is a conservative force, so we can take any path we wish and the result for the calculation of the work is the same.  Therefore,</p>
+<ol class="arabic simple">
+<li><p>we first move <em>radially</em> outward from <span class="math notranslate nohighlight">\(r_1\)</span> to <span class="math notranslate nohighlight">\(r_2\)</span>, and then,</p></li>
+<li><p>move along an arc until we reach the final position.</p></li>
+</ol>
+<p>During the radial portion (move 1), <span class="math notranslate nohighlight">\(\vec{F}\)</span> is opposite to the direction owe travel along <span class="math notranslate nohighlight">\(d\vec{r}\)</span>, so</p>
+<div class="math notranslate nohighlight">
+\[ E = K_1 + U_1 = K_2 + U_2. \]</div>
+<p>Along the arc, <span class="math notranslate nohighlight">\(\vec{F}\)</span> is perpendicular to <span class="math notranslate nohighlight">\(d\vec{r}\)</span>, so <span class="math notranslate nohighlight">\(\vec{F}\cdot d\vec{r} = 0\)</span>.  No work is done as we move along the arc.  Using the expression for the gravitational force and noting the values for <span class="math notranslate nohighlight">\(\vec{F}\cdot d\vec{r}\)</span> along the two paths we have</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\Delta U &amp;= - \int_{r_1}^{r_2} \vec{F}\cdot d\vec{r} = GM_\oplus m \int_{r_1}^{r_2} \frac{dr}{r^2}, \\
+&amp;=  -GM_\oplus m\left(\frac{1}{r}\right)\bigg\vert_{r_1}^{r_2} = -GM_\oplus m\left(\frac{1}{r_2}-\frac{1}{r_1}\right), \\
+&amp;= GM_\oplus m\left(\frac{1}{r_1}-\frac{1}{r_2}\right).
+\end{align*}\]</div>
+<p>Since <span class="math notranslate nohighlight">\(\Delta U = U_2 - U_1\)</span>, we can adopt a simple expression for the potential energy function <span class="math notranslate nohighlight">\(U(r)\)</span>:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-9c42b697-8388-431c-8511-89d9bdef183b">
+<span class="eqno">(13.5)<a class="headerlink" href="#equation-9c42b697-8388-431c-8511-89d9bdef183b" title="Permalink to this equation">#</a></span>\[\begin{align}
+U(r) = -\frac{GM_\oplus m}{r}.
+\end{align}\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There are two import details with this definition.</p>
+<ol class="arabic simple">
+<li><p>Consider when <span class="math notranslate nohighlight">\(U\rightarrow 0\)</span> as <span class="math notranslate nohighlight">\(r\rightarrow \infty\)</span>.  The potential energy is zero when the masses are infinitely far apart.  Only the difference in <span class="math notranslate nohighlight">\(U\)</span> is important, so the choice of <span class="math notranslate nohighlight">\(U= 0\)</span> for <span class="math notranslate nohighlight">\(r=\infty\)</span> is merely one of convenience.</p></li>
+<li><p>Note that <span class="math notranslate nohighlight">\(U\)</span> becomes increasingly more negative as the masses get closer.  AS the two masses are separated positive work must be done <em>against</em> the force of gravity, and hence <span class="math notranslate nohighlight">\(U\)</span> increases (becomes less negative).  All masses naturally fall together under the influence of gravity, falling from a higher to a lower potential energy.</p></li>
+</ol>
+</div>
+<section id="example-problem-lifting-a-payload">
+<h4><span class="section-number">13.3.1.1. </span><strong>Example Problem</strong>: Lifting a Payload<a class="headerlink" href="#example-problem-lifting-a-payload" title="Link to this heading">#</a></h4>
+</section>
 </section>
 <section id="conservation-of-energy">
 <h3><span class="section-number">13.3.2. </span>Conservation of Energy<a class="headerlink" href="#conservation-of-energy" title="Link to this heading">#</a></h3>
+<section id="escape-velocity">
+<h4><span class="section-number">13.3.2.1. </span>Escape velocity<a class="headerlink" href="#escape-velocity" title="Link to this heading">#</a></h4>
+</section>
+<section id="example-problem-escape-from-earth">
+<h4><span class="section-number">13.3.2.2. </span><strong>Example Problem</strong>: Escape from Earth<a class="headerlink" href="#example-problem-escape-from-earth" title="Link to this heading">#</a></h4>
+</section>
+<section id="energy-and-gravitationally-bound-objects">
+<h4><span class="section-number">13.3.2.3. </span>Energy and gravitationally bound objects<a class="headerlink" href="#energy-and-gravitationally-bound-objects" title="Link to this heading">#</a></h4>
+</section>
+<section id="example-problem-how-far-can-an-object-escape">
+<h4><span class="section-number">13.3.2.4. </span><strong>Example Problem</strong>: How Far Can an Object Escape?<a class="headerlink" href="#example-problem-how-far-can-an-object-escape" title="Link to this heading">#</a></h4>
+</section>
 </section>
 </section>
 <section id="satellite-orbits-and-energy">
@@ -1011,8 +1092,17 @@ g &amp;= \frac{GM_r}{r^2} = \frac{4}{3}G\rho\pi r.
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gravitational-potential-energy-and-total-energy">13.3. Gravitational Potential Energy and Total Energy</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gravitational-potential-energy-beyond-earth">13.3.1. Gravitational Potential Energy beyond Earth</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-energy">13.3.2. Conservation of Energy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gravitational-potential-energy-beyond-earth">13.3.1. Gravitational Potential Energy beyond Earth</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-lifting-a-payload">13.3.1.1. <strong>Example Problem</strong>: Lifting a Payload</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-energy">13.3.2. Conservation of Energy</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#escape-velocity">13.3.2.1. Escape velocity</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-escape-from-earth">13.3.2.2. <strong>Example Problem</strong>: Escape from Earth</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-and-gravitationally-bound-objects">13.3.2.3. Energy and gravitationally bound objects</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-how-far-can-an-object-escape">13.3.2.4. <strong>Example Problem</strong>: How Far Can an Object Escape?</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#satellite-orbits-and-energy">13.4. Satellite Orbits and Energy</a><ul class="nav section-nav flex-column">
