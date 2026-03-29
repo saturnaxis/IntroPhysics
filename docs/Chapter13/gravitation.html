@@ -531,16 +531,24 @@ document.write(`
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-energy">13.3.2. Conservation of Energy</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#escape-velocity">13.3.2.1. Escape velocity</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-escape-from-earth">13.3.2.2. <strong>Example Problem</strong>: Escape from Earth</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-and-gravitationally-bound-objects">13.3.2.3. Energy and gravitationally bound objects</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-and-gravitationally-bound-objects">13.3.2.2. Energy and gravitationally bound objects</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-escape-from-earth">13.3.2.3. <strong>Example Problem</strong>: Escape from Earth</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-how-far-can-an-object-escape">13.3.2.4. <strong>Example Problem</strong>: How Far Can an Object Escape?</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#satellite-orbits-and-energy">13.4. Satellite Orbits and Energy</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#circular-orbits">13.4.1. Circular Orbits</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-in-circular-orbits">13.4.2. Energy in Circular Orbits</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#circular-orbits">13.4.1. Circular Orbits</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-the-international-space-station">13.4.1.1. <strong>Example Problem</strong>: The International Space Station</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-determining-the-mass-of-earth-using-the-moon">13.4.1.2. <strong>Example Problem</strong>: Determining the Mass of Earth (using the Moon)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-galactic-speed-and-period">13.4.1.3. <strong>Example Problem</strong>: Galactic Speed and Period</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-in-circular-orbits">13.4.2. Energy in Circular Orbits</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-energy-required-to-orbit">13.4.2.1. <strong>Example Problem</strong>: Energy Required to Orbit</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kepler-s-laws-of-planetary-motion">13.5. Kepler’s Laws of Planetary Motion</a><ul class="nav section-nav flex-column">
@@ -606,8 +614,8 @@ document.write(`
 <div class="note admonition">
 <p class="admonition-title">Newton’s Law of Gravitation</p>
 <p>Newton’s law of gravitation can be expressed as a vector by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d8057088-cb04-4bb2-ad86-e96346729623">
-<span class="eqno">(13.1)<a class="headerlink" href="#equation-d8057088-cb04-4bb2-ad86-e96346729623" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f1e48291-a3c5-45a7-99a8-85766f5f63ba">
+<span class="eqno">(13.1)<a class="headerlink" href="#equation-f1e48291-a3c5-45a7-99a8-85766f5f63ba" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{F}_{12} = \frac{Gm_1m_2}{r^2}\hat{r}_{12},
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\vec{F}_{12}\)</span> is the force between object 1 exerted by object 2 and <span class="math notranslate nohighlight">\(\hat{r}_{12}\)</span> is the <em>radial</em> unit vector that points from object 1 toward object 2.</p>
@@ -660,8 +668,8 @@ document.write(`
 <h3><span class="section-number">13.2.1. </span>Weight<a class="headerlink" href="#weight" title="Link to this heading">#</a></h3>
 <p>Recall that the acceleration of a free-falling object near Earth’s surface is approximately <span class="math notranslate nohighlight">\(9.81\ {\rm m/s^2}\)</span>.  The force causing this acceleration is called the weight of the object, where we previously found that it has a value <span class="math notranslate nohighlight">\(w=mg\)</span> from Newton’s 2nd law.  The weight is present regardless of whether the object is in free fall or not.</p>
 <p>We now know the weight is caused by the gravitational force between the object of mass <span class="math notranslate nohighlight">\(m\)</span> and the Earth of mass <span class="math notranslate nohighlight">\(M_\oplus\)</span>.  If we equate the measured weight with the expected gravitational force, we can arrive at a scalar equation because both forces act in the same radial direction <span class="math notranslate nohighlight">\(\hat{r}\)</span>.  The scalar equation is given as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-18881e6c-cb0d-4cc5-889c-4fba353b97b7">
-<span class="eqno">(13.2)<a class="headerlink" href="#equation-18881e6c-cb0d-4cc5-889c-4fba353b97b7" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-08501761-3f4b-4d35-a066-a19a7eb75b82">
+<span class="eqno">(13.2)<a class="headerlink" href="#equation-08501761-3f4b-4d35-a066-a19a7eb75b82" title="Permalink to this equation">#</a></span>\[\begin{align}
 mg &amp;= \frac{GM_\oplus m}{(R_\oplus + h)^2}, \\[6pt]
 &amp;= \frac{GM_\oplus m}{r^2},
 \end{align}\]</div>
@@ -823,8 +831,8 @@ mg &amp;= \frac{GM_\oplus m}{(R_\oplus + h)^2}, \\[6pt]
 </figcaption>
 </figure>
 <p>With rotation, the sum of these forces must provide the centripetal acceleration <span class="math notranslate nohighlight">\(a_c\)</span>.  Using Newton’s 2nd law, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7ec9d766-36ea-405d-8a82-20c8dd43f258">
-<span class="eqno">(13.4)<a class="headerlink" href="#equation-7ec9d766-36ea-405d-8a82-20c8dd43f258" title="Permalink to this equation">#</a></span>\[\begin{align} 
+<div class="amsmath math notranslate nohighlight" id="equation-9c87da7f-955b-44c7-a4c6-344b8b82cb60">
+<span class="eqno">(13.4)<a class="headerlink" href="#equation-9c87da7f-955b-44c7-a4c6-344b8b82cb60" title="Permalink to this equation">#</a></span>\[\begin{align} 
 \sum F &amp;= F_{\rm SE} - mg = ma_c, \\
 &amp;=-\frac{mv^2}{r}.
 \end{align}\]</div>
@@ -899,8 +907,8 @@ g &amp;= \frac{GM_r}{r^2} = \frac{4}{3}G\rho\pi r.
 &amp;= GM_\oplus m\left(\frac{1}{r_1}-\frac{1}{r_2}\right).
 \end{align*}\]</div>
 <p>Since <span class="math notranslate nohighlight">\(\Delta U = U_2 - U_1\)</span>, we can adopt a simple expression for the potential energy function <span class="math notranslate nohighlight">\(U(r)\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-608e48fd-abc2-4dca-a124-87dc3cf37f73">
-<span class="eqno">(13.5)<a class="headerlink" href="#equation-608e48fd-abc2-4dca-a124-87dc3cf37f73" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-515fb7af-7151-478f-85cf-9b19a4cf5d16">
+<span class="eqno">(13.5)<a class="headerlink" href="#equation-515fb7af-7151-478f-85cf-9b19a4cf5d16" title="Permalink to this equation">#</a></span>\[\begin{align}
 U(r) = -\frac{GM_\oplus m}{r}.
 \end{align}\]</div>
 <div class="admonition note">
@@ -917,14 +925,110 @@ U(r) = -\frac{GM_\oplus m}{r}.
 </section>
 <section id="conservation-of-energy">
 <h3><span class="section-number">13.3.2. </span>Conservation of Energy<a class="headerlink" href="#conservation-of-energy" title="Link to this heading">#</a></h3>
+<p>In <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter08/potential-energy-conservation.html">Chapter 8</a>, we described how to apply conservation of energy for systems with conservative forces.  We solved some problems involving gravity using the conservation of energy, where similar principles and strategies can be applied here.  The only change is use the more general expression for the gravitational potential energy function <span class="math notranslate nohighlight">\(U(r)\)</span>, or</p>
+<div class="amsmath math notranslate nohighlight" id="equation-0f352fea-6f41-4255-8406-f60efb4558c2">
+<span class="eqno">(13.6)<a class="headerlink" href="#equation-0f352fea-6f41-4255-8406-f60efb4558c2" title="Permalink to this equation">#</a></span>\[\begin{align}
+K_i + U_i &amp;= K_f + U_f, \\
+\frac{1}{2}m_1(v_1^2)^i - \frac{Gm_2m_1}{r_{12}^i} &amp;= \frac{1}{2}m_1(v_1^2)^f - \frac{Gm_2m_1}{r_{12}^f},\\
+(v_1^2)^i - \frac{2Gm_2}{r_{12}^i} &amp;= (v_1^2)^f - \frac{2Gm_2}{r_{12}^f}, \\
+(v_1^2)^i - (v_1^2)^f &amp;=  \frac{2Gm_2}{r_{12}^i}- \frac{2Gm_2}{r_{12}^f}. 
+\end{align}\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We use <span class="math notranslate nohighlight">\(m_2\)</span> instead of <span class="math notranslate nohighlight">\(M_\oplus\)</span> and <span class="math notranslate nohighlight">\(m_1\)</span> rather than <span class="math notranslate nohighlight">\(m\)</span> to generalize beyond Earth-based problems.  However, we still assume that <span class="math notranslate nohighlight">\( m_1 \ll m_2\)</span>.  When this is not true, we can use the conservation laws of energy and momentum to relate the velocities <span class="math notranslate nohighlight">\(v_1\)</span> and <span class="math notranslate nohighlight">\(v_2\)</span> to each other.</p>
+</div>
 <section id="escape-velocity">
 <h4><span class="section-number">13.3.2.1. </span>Escape velocity<a class="headerlink" href="#escape-velocity" title="Link to this heading">#</a></h4>
-</section>
-<section id="example-problem-escape-from-earth">
-<h4><span class="section-number">13.3.2.2. </span><strong>Example Problem</strong>: Escape from Earth<a class="headerlink" href="#example-problem-escape-from-earth" title="Link to this heading">#</a></h4>
+<p>The <em>minimum</em> initial velocity of an object where it can escape the surface of a large body (i.e., the Earth) is called the <strong>escape velocity</strong>.  We assume that no energy is lost to an atmosphere, so this just the ideal case.</p>
+<p>Consider an object with a positive launch velocity directed away from the Earth.  With the <em>minimum</em> velocity needed for escape, the object would come to rest once it is infinitely far away (i.e., where the force of gravity becomes negligible or the gravitational potential <span class="math notranslate nohighlight">\(U(r)\)</span> goes to zero).  Since <span class="math notranslate nohighlight">\(\displaystyle \lim_{r\rightarrow \infty} U_g(r) = 0\)</span>, this means that the total energy is also zero.</p>
+<p>Thus, we find the escape velocity from the surface of an astronomical body of mass <span class="math notranslate nohighlight">\(m_2\)</span> and radius <span class="math notranslate nohighlight">\(R\)</span> by setting the total energy equal to zero.  At the surface of the body, the object is located at <span class="math notranslate nohighlight">\(r_{12}^i = R\)</span> and it has an escape velocity <span class="math notranslate nohighlight">\(v_1^i = v_{\rm esc}\)</span>.  It reaches <span class="math notranslate nohighlight">\(r_{12}^f = \infty\)</span> with a velocity <span class="math notranslate nohighlight">\(v_1^f = 0\)</span>.  Substituting into our conservation of energy equation, we have</p>
+<div class="amsmath math notranslate nohighlight" id="equation-e30ae853-337f-49b1-b1ef-b830868fbd28">
+<span class="eqno">(13.7)<a class="headerlink" href="#equation-e30ae853-337f-49b1-b1ef-b830868fbd28" title="Permalink to this equation">#</a></span>\[\begin{align}
+K_i + U_i &amp;= K_f + U_f, \\
+v_{\rm esc}^2 - 0 &amp;=  \frac{2Gm_2}{R}- \frac{2Gm_2}{\infty}, \\
+v_{\rm esc} &amp;= \sqrt{\frac{2Gm_2}{R}}.
+\end{align}\]</div>
+<p>The escape velocity is the same for all objects, as long as <span class="math notranslate nohighlight">\(m_2 \gg m_1\)</span>.  In the special case of similar mass objects (i.e., <span class="math notranslate nohighlight">\(m_1 \sim m_2\)</span>), then we have</p>
+<div class="math notranslate nohighlight" id="equation-escape-velocity">
+<span class="eqno">(13.8)<a class="headerlink" href="#equation-escape-velocity" title="Link to this equation">#</a></span>\[v_{\rm esc} &amp;= \sqrt{\frac{2G(m_2+m_1)}{R}},\]</div>
+<p>and both objects are escaping from an effective total mass that lies at the center-of-mass.  In both cases, we are not restricted to the surface of a planet, where <span class="math notranslate nohighlight">\(R\)</span> can be any starting point beyond the surface of the bodies.</p>
 </section>
 <section id="energy-and-gravitationally-bound-objects">
-<h4><span class="section-number">13.3.2.3. </span>Energy and gravitationally bound objects<a class="headerlink" href="#energy-and-gravitationally-bound-objects" title="Link to this heading">#</a></h4>
+<h4><span class="section-number">13.3.2.2. </span>Energy and gravitationally bound objects<a class="headerlink" href="#energy-and-gravitationally-bound-objects" title="Link to this heading">#</a></h4>
+<p>Escape velocity can be defined as the initial velocity of an object that can escape surface of a body (e.g., a moon or planet).  More generally, it is the speed at <em>any</em> position such that the <em>total</em> energy is zero.  If the total energy is zero or greater the object escapes.  If the total energy is negative the object cannot escape.</p>
+<p>The figure below shows the gravitational potential (in black) and the energy levels give a mass moving at some fraction <span class="math notranslate nohighlight">\(f\)</span> of the escape speed <span class="math notranslate nohighlight">\(v_{\rm esc}\)</span>. It illustrates that a rocket must supply some energy to escape the gravitational potential well of the Earth.  It also shows that objects that can exist largely beyond Earth’s atmosphere (e.g., the International Space Station; ISS) and still be caught in Earth’s gravity. We say such objects are <strong>gravitationally bound</strong> to the Earth.</p>
+<p><em>Only when the specific energy is positive can an object escape Earth’s gravitational pull.</em>  If the total energy is positive, then kinetic energy remains at <span class="math notranslate nohighlight">\(r=\infty\)</span> and the mass <span class="math notranslate nohighlight">\(m\)</span> does not return (i.e. fall back to the Earth).  Then we say that <span class="math notranslate nohighlight">\(m\)</span> is <em>not gravitationally bound</em> to the Earth.</p>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">G</span>
+
+<span class="k">def</span> <span class="nf">energy</span><span class="p">(</span><span class="n">v</span><span class="p">,</span><span class="n">U_g</span><span class="p">):</span>
+    <span class="c1">#total specific energy given a potential energy U_g, and </span>
+    <span class="c1">#velocity in m/s</span>
+    <span class="k">return</span> <span class="n">U_g</span> <span class="o">+</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="n">r_in</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">0.001</span><span class="p">)</span> <span class="c1">#distance relative to Earth&#39;s center (in R_E)</span>
+<span class="n">r_out</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mf">0.001</span><span class="p">)</span> <span class="c1">#distance relative to the Earth&#39;s surface (in R_E)</span>
+<span class="n">M_E</span> <span class="o">=</span> <span class="mf">5.97e24</span> <span class="c1">#Earth mass (in kg)</span>
+<span class="n">R_E</span> <span class="o">=</span> <span class="mf">6371e3</span> <span class="c1">#Earth radius (in m)</span>
+
+<span class="n">Ug_in</span> <span class="o">=</span> <span class="o">-</span><span class="n">G</span><span class="o">*</span><span class="n">M_E</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">R_E</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="n">R_E</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="p">(</span><span class="n">r_in</span><span class="o">*</span><span class="n">R_E</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="c1"># r&lt;R_E</span>
+<span class="n">Ug_out</span> <span class="o">=</span> <span class="o">-</span><span class="n">G</span><span class="o">*</span><span class="n">M_E</span><span class="o">/</span><span class="p">(</span><span class="n">R_E</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">r_out</span><span class="p">))</span> <span class="c1">#r&gt;R_E</span>
+<span class="n">U_g</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">((</span><span class="n">Ug_in</span><span class="p">,</span><span class="n">Ug_out</span><span class="p">))</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">((</span><span class="n">r_in</span><span class="p">,</span><span class="n">r_out</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
+
+<span class="n">fs</span> <span class="o">=</span> <span class="s1">&#39;large&#39;</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span><span class="n">dpi</span><span class="o">=</span><span class="mi">120</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+
+<span class="n">Ug_surf</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">Ug_out</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">U_g</span><span class="o">/</span><span class="n">Ug_surf</span><span class="p">,</span><span class="s1">&#39;k-&#39;</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">v_esc</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">G</span><span class="o">*</span><span class="n">M_E</span><span class="o">/</span><span class="n">R_E</span><span class="p">)</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;axes.prop_cycle&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">by_key</span><span class="p">()[</span><span class="s1">&#39;color&#39;</span><span class="p">]</span>
+<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="p">[</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="mf">0.999</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">]:</span>
+    <span class="n">E_f</span> <span class="o">=</span> <span class="n">energy</span><span class="p">(</span><span class="n">f</span><span class="o">*</span><span class="n">v_esc</span><span class="p">,</span><span class="n">Ug_out</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">/</span><span class="n">Ug_surf</span>
+    <span class="n">r_U</span> <span class="o">=</span> <span class="mf">10.</span>
+    <span class="k">if</span> <span class="n">f</span><span class="o">&lt;</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">r_U</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="n">f</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">E_f</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">r_U</span><span class="o">/</span><span class="mf">10.</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">ls</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">label</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;</span><span class="si">%3.3g</span><span class="s2">$\,v_{\rm esc}$&quot;</span> <span class="o">%</span> <span class="n">f</span><span class="p">)</span>
+    <span class="n">i</span> <span class="o">+=</span><span class="mi">1</span>
+
+<span class="n">h_ISS</span> <span class="o">=</span> <span class="mf">408e3</span>
+<span class="n">r_ISS</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">h_ISS</span><span class="o">/</span><span class="n">R_E</span>
+<span class="n">U_ISS_norm</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="n">G</span><span class="o">*</span><span class="n">M_E</span><span class="o">/</span><span class="p">(</span><span class="n">R_E</span><span class="o">*</span><span class="n">r_ISS</span><span class="p">))</span><span class="o">/</span><span class="n">Ug_surf</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">r_ISS</span><span class="p">,</span> <span class="n">U_ISS_norm</span><span class="p">,</span> <span class="s1">&#39;ko&#39;</span><span class="p">,</span> <span class="n">ms</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="sa">rf</span><span class="s1">&#39;ISS orbit ($h \approx </span><span class="si">{</span><span class="n">h_ISS</span><span class="o">/</span><span class="mf">1e3</span><span class="si">:</span><span class="s1">.0f</span><span class="si">}</span><span class="s1">\,\mathrm</span><span class="se">{{</span><span class="s1">km</span><span class="se">}}</span><span class="s1">$)&#39;</span><span class="p">,</span>
+            <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">r_ISS</span><span class="p">,</span> <span class="n">U_ISS_norm</span><span class="p">),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mf">1.8</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.75</span><span class="p">),</span>
+            <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s1">&#39;-&gt;&#39;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">1.5</span><span class="p">),</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;best&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">minorticks_on</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">1.6</span><span class="p">,</span><span class="mf">0.25</span><span class="p">);</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;Distance from Earth&#39;s Center (in $R_\oplus$)&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">fs</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;Normalized Specific Energy $\frac</span><span class="si">{E}</span><span class="s2">{|U_g|}$&quot;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="n">fs</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<img alt="../_images/88cf470325f1d49f03bbab9f03fa66569b8765894bd4859712a8292917acdd1c.png" src="../_images/88cf470325f1d49f03bbab9f03fa66569b8765894bd4859712a8292917acdd1c.png" />
+</div>
+</div>
+<p>This result applies for any velocity because energy is a scalar quantity, meaning that the velocity need not point directly away from the Earth. It is possible to have a gravitationally bound system where the masses maintain an orbit about each other while falling together (in orbit) around a much larger mass.</p>
+</section>
+<section id="example-problem-escape-from-earth">
+<h4><span class="section-number">13.3.2.3. </span><strong>Example Problem</strong>: Escape from Earth<a class="headerlink" href="#example-problem-escape-from-earth" title="Link to this heading">#</a></h4>
 </section>
 <section id="example-problem-how-far-can-an-object-escape">
 <h4><span class="section-number">13.3.2.4. </span><strong>Example Problem</strong>: How Far Can an Object Escape?<a class="headerlink" href="#example-problem-how-far-can-an-object-escape" title="Link to this heading">#</a></h4>
@@ -935,9 +1039,201 @@ U(r) = -\frac{GM_\oplus m}{r}.
 <h2><span class="section-number">13.4. </span>Satellite Orbits and Energy<a class="headerlink" href="#satellite-orbits-and-energy" title="Link to this heading">#</a></h2>
 <section id="circular-orbits">
 <h3><span class="section-number">13.4.1. </span>Circular Orbits<a class="headerlink" href="#circular-orbits" title="Link to this heading">#</a></h3>
+<p>Nicolaus Copernicus suggested that the planets orbit the Sun in circles, where determined the radii of these circles using the synodic and sidereal periods (see my <a class="reference external" href="https://saturnaxis.github.io/IntroAstro/Tutorials/motion-astronomical-bodies.html#orbital-periods">Introductory Astronomy Notes</a>).  Kepler was forced to abandon the assumption of circular orbits, where he showed that using elliptical orbits fit the data much better.  Most of the planets in the Solar System have nearly circular orbits, where the Earth’s orbital eccentricity is <span class="math notranslate nohighlight">\({\sim}0.0167\)</span>.  In contrast, the orbit of Mars and Mercury have an eccentricity of <span class="math notranslate nohighlight">\({\sim}0.1\)</span> and <span class="math notranslate nohighlight">\({\sim}0.2\)</span>, respectively.</p>
+<p>Determining the <strong>orbital speed</strong> and <strong>orbital period</strong> of a satellite can be more easily determined by first assuming that they have circular orbits.  Consider a satellite of mass <span class="math notranslate nohighlight">\(m\)</span> in a circular orbit about Earth at a distance <span class="math notranslate nohighlight">\(r\)</span> from the center of Earth (see Figure <a class="reference internal" href="#satellite-orbit"><span class="std std-numref">13.8</span></a>).  It has a centripetal acceleration directed toward Earth’s center and gravity is the only force.  Newton’s 2nd law can be used, which gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+F_g &amp;= F_c, \\[6pt]
+\frac{GM_\oplus m}{r^2} &amp;= \frac{mv_{\rm orbit}^2}{r}.
+\end{align*}\]</div>
+<figure class="align-default" id="satellite-orbit">
+<img alt="satellite orbiting Earth" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/301922cf87eea7d10a0da283cf9b7432461bcdfc" />
+<figcaption>
+<p><span class="caption-number">Fig. 13.8 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#satellite-orbit" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>WE can solve for the speed of the orbit <span class="math notranslate nohighlight">\(v_{\rm orbit}\)</span> (note that <span class="math notranslate nohighlight">\(m\)</span> cancels) to get</p>
+<div class="amsmath math notranslate nohighlight" id="equation-cb2069c0-41dd-4b35-ad12-e22f95008d0e">
+<span class="eqno">(13.9)<a class="headerlink" href="#equation-cb2069c0-41dd-4b35-ad12-e22f95008d0e" title="Permalink to this equation">#</a></span>\[\begin{align}
+v_{\rm orbit} = \sqrt{GM_\oplus}{r}.
+\end{align}\]</div>
+<p>The value of <span class="math notranslate nohighlight">\(g\)</span>, the escape velocity, and the orbital velocity depend only on the distance from the center of the planet, and <em>not</em> upon the mass of the object.  Let’s compare the escape velocity (see Eqn. <a class="reference internal" href="#equation-escape-velocity">(13.8)</a>) to the orbital velocity through the ratio, assuming that <span class="math notranslate nohighlight">\(m_1 = M_\oplus\)</span> and <span class="math notranslate nohighlight">\(m_2 = m\)</span>.  Then, we have</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{v_{\rm esc}}{v_{\rm orbit}} &amp;= \sqrt{\frac{2G(M_\oplus + m)}{r}} \times \sqrt{\frac{r}{GM_\oplus}} = \sqrt{\frac{2(M_\oplus + m)}{M_\oplus}}, \\
+&amp;= \sqrt{2 + \frac{2m}{M_\oplus}} \approx \sqrt{2}.
+\end{align*}\]</div>
+<p>In our case the mass of the satellite <span class="math notranslate nohighlight">\(m\)</span> is much less than the mass of the Earth <span class="math notranslate nohighlight">\(M_\oplus\)</span>, which justifies our approximation.  It also shows that the escape velocity is <span class="math notranslate nohighlight">\(\sqrt{2}\)</span> times greater (about <span class="math notranslate nohighlight">\(40\%\)</span>) than the orbital velocity.</p>
+<p>To find the period of a circular orbit, we simply use the definition of average velocity, or</p>
+<div class="math notranslate nohighlight">
+\[ v_{\rm orbit} = \frac{\Delta s}{\Delta t}, \]</div>
+<p>where <span class="math notranslate nohighlight">\(\Delta s\)</span> is the distance traveled along the circumference of the circle and <span class="math notranslate nohighlight">\(\Delta t\)</span> is the time it takes to traverse that distance.  In physics and astronomy, it is common to use the letter <span class="math notranslate nohighlight">\(T\)</span> for this time interval, partly because we’ve used <span class="math notranslate nohighlight">\(p\)</span> for momentum already and will use <span class="math notranslate nohighlight">\(P\)</span> for pressure later.</p>
+<p>For the satellite to complete one orbit in a time <span class="math notranslate nohighlight">\(T\)</span>, <span class="math notranslate nohighlight">\(\delta s\)</span> must be the circumference of the circle or <span class="math notranslate nohighlight">\(2\pi r\)</span>.  Now we can substitute this into our equation for orbital speed and solve for <span class="math notranslate nohighlight">\(T\)</span>.  Therefore we have</p>
+<div class="amsmath math notranslate nohighlight" id="equation-ff88eaa7-e8fe-4cc6-8243-8ebd194e0c65">
+<span class="eqno">(13.10)<a class="headerlink" href="#equation-ff88eaa7-e8fe-4cc6-8243-8ebd194e0c65" title="Permalink to this equation">#</a></span>\[\begin{align}
+\frac{2\pi r}{T} &amp;= \sqrt{\frac{GM_\oplus}{r}} \quad \text{invert both sides} \Rightarrow
+\frac{T}{2\pi r} &amp;= \sqrt{\frac{r}{GM_\oplus}}, \\
+T &amp;= 2\pi\sqrt{\frac{r^3}{GM_\oplus}}, \\
+T^2 &amp;= \frac{4\pi^2}{GM_\oplus}r^3.
+\end{align}\]</div>
+<p>The orbital period squared (the final expression) represent’s Kepler’s 3rd law and it confirms Copernicus’ observation that the period of a planet increases with distance from the Sun.  This equation can be generalized by replacing <span class="math notranslate nohighlight">\(M_\oplus\)</span> with the mass of any central body (e.g., the Sun, a black hole, or any large mass).</p>
+<p>To achieve a circular orbit, Newton described in his <em>Principia</em> a thought experiment, where a cannon was set on top of a tall tower and fired the cannonball.  In <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter04/motion-in-2D-3D.html#projectile-motion">Chapter 4</a>, we say this as projectile motion.  However, his though was to increase the initial velocity <span class="math notranslate nohighlight">\(v_o\)</span> incrementally and orient the cannon to fire horizontally.</p>
+<p>As you increase the speed of the cannonball, you would notice that our expectation of a parabolic trajectory begins to break.  The cannon goes farther and farther, until it curves around the Earth.  At this point, it achieves the necessary speed to be in a circular orbit.</p>
+<p>The figure below demonstrates this by placing a cannon at <span class="math notranslate nohighlight">\({\sim}955\ {\rm km}\)</span> above Earth’s surface and firing a cannon at various speeds.  <em>This is a thought experiment, so complete realism is not required.</em>  Once the cannon is fired at <span class="math notranslate nohighlight">\({\sim}7.4\ {\rm km/s}\)</span> (i..e., the circular velocity for the given height), then the cannonball can be in a circular orbit (in red).  If you keep going, then the orbit is more elliptical.  Until you reach the escape speed and the trajectory no longer bends back towards the Earth (i.e., it becomes unbound).</p>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">solve_ivp</span>
+<span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">G</span>
+
+<span class="c1"># ============================================================</span>
+<span class="c1"># Earth + cannon with inverse-square gravity (no constant g)</span>
+<span class="c1"># ============================================================</span>
+<span class="c1"># -------------------------</span>
+<span class="c1"># Constants</span>
+<span class="c1"># -------------------------</span>
+<span class="n">M_E</span> <span class="o">=</span> <span class="mf">5.972e24</span> <span class="c1">#Earth mass (in kg)</span>
+<span class="n">R_E</span> <span class="o">=</span> <span class="mf">6371e3</span> <span class="c1">#Earth radius (in m)</span>
+<span class="n">mu</span> <span class="o">=</span> <span class="n">G</span> <span class="o">*</span> <span class="n">M_E</span>
+<span class="c1"># -------------------------</span>
+<span class="c1"># Launch setup</span>
+<span class="c1"># -------------------------</span>
+<span class="n">h</span> <span class="o">=</span> <span class="mf">0.15</span><span class="o">*</span><span class="n">R_E</span>                       <span class="c1"># cannon height (m)</span>
+<span class="n">r0_mag</span> <span class="o">=</span> <span class="n">R_E</span> <span class="o">+</span> <span class="n">h</span>
+<span class="c1"># Start at (x, y)</span>
+<span class="n">r0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">r0_mag</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">])</span>
+<span class="c1"># Local directions</span>
+<span class="n">radial_hat</span> <span class="o">=</span> <span class="n">r0</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">r0</span><span class="p">)</span>
+<span class="n">tangent_hat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="n">radial_hat</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">radial_hat</span><span class="p">[</span><span class="mi">0</span><span class="p">]])</span>
+<span class="c1"># Launch angle (0 = horizontal)</span>
+<span class="n">angle_deg</span> <span class="o">=</span> <span class="mf">0.0</span>
+<span class="n">angle</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="n">angle_deg</span><span class="p">)</span>
+<span class="n">direction</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span><span class="o">*</span><span class="n">tangent_hat</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span><span class="o">*</span><span class="n">radial_hat</span>
+<span class="c1"># -------------------------</span>
+<span class="c1"># Speeds to test</span>
+<span class="c1"># -------------------------</span>
+<span class="n">v_circ</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">mu</span> <span class="o">/</span> <span class="n">r0_mag</span><span class="p">)</span>
+<span class="n">v_esc</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">mu</span> <span class="o">/</span> <span class="n">r0_mag</span><span class="p">)</span>
+<span class="n">speeds</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">3000</span><span class="p">,</span> <span class="mi">5000</span><span class="p">,</span> <span class="n">v_circ</span><span class="p">,</span><span class="mf">1.05</span><span class="o">*</span><span class="n">v_circ</span><span class="p">]</span>
+<span class="c1"># -------------------------</span>
+<span class="c1"># ODE system</span>
+<span class="c1"># -------------------------</span>
+<span class="k">def</span> <span class="nf">deriv</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="n">x</span><span class="p">,</span> <span class="n">y_pos</span><span class="p">,</span> <span class="n">vx</span><span class="p">,</span> <span class="n">vy</span> <span class="o">=</span> <span class="n">y</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">y_pos</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">ax</span> <span class="o">=</span> <span class="o">-</span><span class="n">mu</span> <span class="o">*</span> <span class="n">x</span> <span class="o">/</span> <span class="n">r</span><span class="o">**</span><span class="mi">3</span>
+    <span class="n">ay</span> <span class="o">=</span> <span class="o">-</span><span class="n">mu</span> <span class="o">*</span> <span class="n">y_pos</span> <span class="o">/</span> <span class="n">r</span><span class="o">**</span><span class="mi">3</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">vx</span><span class="p">,</span> <span class="n">vy</span><span class="p">,</span> <span class="n">ax</span><span class="p">,</span> <span class="n">ay</span><span class="p">]</span>
+<span class="c1"># Stop when hitting Earth</span>
+<span class="k">def</span> <span class="nf">hit_earth</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="n">x</span><span class="p">,</span> <span class="n">y_pos</span> <span class="o">=</span> <span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">y</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">y_pos</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="n">R_E</span>
+<span class="n">hit_earth</span><span class="o">.</span><span class="n">terminal</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">hit_earth</span><span class="o">.</span><span class="n">direction</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+<span class="c1"># -------------------------</span>
+<span class="c1"># Plot</span>
+<span class="c1"># -------------------------</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">7</span><span class="p">),</span><span class="n">dpi</span><span class="o">=</span><span class="mi">120</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span><span class="n">zorder</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="c1">#Clip Earth image from Wikipedia to a circle</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s2">&quot;Earth_Western_Hemisphere.jpg&quot;</span><span class="p">)</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+<span class="c1"># Create alpha channel: make near-black pixels transparent</span>
+<span class="n">threshold</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">mask</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">img</span> <span class="o">&lt;</span> <span class="n">threshold</span><span class="p">,</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">rgba</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dstack</span><span class="p">((</span><span class="n">img</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">[:</span><span class="mi">2</span><span class="p">])</span> <span class="o">*</span> <span class="mi">255</span><span class="p">))</span>
+<span class="n">rgba</span><span class="p">[</span><span class="n">mask</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># set alpha=0 where black</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">rgba</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
+<span class="c1"># draw image so it fills the square from x=-1..1 and y=-1..1</span>
+<span class="n">im</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">extent</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mf">1.15</span><span class="p">,</span> <span class="mf">1.15</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.15</span><span class="p">,</span> <span class="mf">1.15</span><span class="p">],</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="c1"># clip the image to a circle of radius 1 centered at (0, 0)</span>
+<span class="n">clip</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">1</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transData</span><span class="p">)</span>
+<span class="n">im</span><span class="o">.</span><span class="n">set_clip_path</span><span class="p">(</span><span class="n">clip</span><span class="p">)</span>
+
+<span class="c1"># Cannon location</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">r0</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="n">R_E</span><span class="p">,</span> <span class="n">r0</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="n">R_E</span><span class="p">,</span> <span class="s1">&#39;ko&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Cannon&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="n">r0_mag</span><span class="o">/</span><span class="n">R_E</span><span class="p">],</span><span class="s1">&#39;k-&#39;</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="c1"># -------------------------</span>
+<span class="c1"># Simulate trajectories</span>
+<span class="c1"># -------------------------</span>
+<span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">speeds</span><span class="p">:</span>
+    <span class="n">v0</span> <span class="o">=</span> <span class="n">v</span> <span class="o">*</span> <span class="n">direction</span>
+    <span class="n">y_init</span> <span class="o">=</span> <span class="p">[</span><span class="n">r0</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">r0</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">v0</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">v0</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span>
+    <span class="n">sol</span> <span class="o">=</span> <span class="n">solve_ivp</span><span class="p">(</span><span class="n">deriv</span><span class="p">,</span><span class="n">t_span</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">12000</span><span class="p">),</span><span class="n">y0</span><span class="o">=</span><span class="n">y_init</span><span class="p">,</span><span class="n">max_step</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span><span class="n">events</span><span class="o">=</span><span class="n">hit_earth</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">sol</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="n">R_E</span><span class="p">,</span> <span class="n">sol</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="n">R_E</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">v</span><span class="o">/</span><span class="mi">1000</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> km/s&quot;</span><span class="p">)</span>
+<span class="c1"># -------------------------</span>
+<span class="c1"># Formatting</span>
+<span class="c1"># -------------------------</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mf">1.2</span><span class="o">*</span><span class="n">r0_mag</span><span class="o">/</span><span class="n">R_E</span><span class="p">,</span> <span class="mf">1.2</span><span class="o">*</span><span class="n">r0_mag</span><span class="o">/</span><span class="n">R_E</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">1.25</span><span class="o">*</span><span class="n">r0_mag</span><span class="o">/</span><span class="n">R_E</span><span class="p">,</span> <span class="mf">1.25</span><span class="o">*</span><span class="n">r0_mag</span><span class="o">/</span><span class="n">R_E</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;x ($R_\oplus$)&quot;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="s1">&#39;x-large&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;y ($R_\oplus$)&quot;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="s1">&#39;x-large&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;upper center&#39;</span><span class="p">,</span><span class="n">ncols</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="s1">&#39;small&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<img alt="../_images/6ad8b582495c364a3442c819f41cfc62e9c9531e1dfc8012d045797a3c0e1fb0.png" src="../_images/6ad8b582495c364a3442c819f41cfc62e9c9531e1dfc8012d045797a3c0e1fb0.png" />
+</div>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Interactive Simulation: Gravity and Orbits</p>
+<iframe
+  src="https://phet.colorado.edu/sims/html/gravity-and-orbits/latest/gravity-and-orbits_en.html"
+  width="100%"
+  height="600px"
+  style="border: none;"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+<p>Use this PhET simulation to explore how gravity controls the motion of our Solar System.  You can also experiment so that you can identify the variable that affect the strength of gravity.</p>
+</div>
+<section id="example-problem-the-international-space-station">
+<h4><span class="section-number">13.4.1.1. </span><strong>Example Problem</strong>: The International Space Station<a class="headerlink" href="#example-problem-the-international-space-station" title="Link to this heading">#</a></h4>
+</section>
+<section id="example-problem-determining-the-mass-of-earth-using-the-moon">
+<h4><span class="section-number">13.4.1.2. </span><strong>Example Problem</strong>: Determining the Mass of Earth (using the Moon)<a class="headerlink" href="#example-problem-determining-the-mass-of-earth-using-the-moon" title="Link to this heading">#</a></h4>
+</section>
+<section id="example-problem-galactic-speed-and-period">
+<h4><span class="section-number">13.4.1.3. </span><strong>Example Problem</strong>: Galactic Speed and Period<a class="headerlink" href="#example-problem-galactic-speed-and-period" title="Link to this heading">#</a></h4>
+</section>
 </section>
 <section id="energy-in-circular-orbits">
 <h3><span class="section-number">13.4.2. </span>Energy in Circular Orbits<a class="headerlink" href="#energy-in-circular-orbits" title="Link to this heading">#</a></h3>
+<p>In <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter13/gravitation.html#energy-and-gravitationally-bound-objects">Section 13.3</a>, we argued that objects are gravitationally bound if their total energy is negative.  Let’s examine the total energy for a circular orbit instead of only a velocity directly away from the planet.  We can start by applying Newton’s 2nd law, or</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+F_g &amp;= F_c,\\
+\frac{GM_\oplus m}{r^2} &amp; = \frac{mv^2}{r}, \\
+\frac{GM_\oplus m}{r} &amp;= mv^2.
+\end{align*}\]</div>
+<p>We stopped here because we now have something that looks almost like kinetic energy on the right-side.  If we multiply both sides by $\frac{1}{2}, we find</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+K &amp;= \frac{1}{2}mv^2 = \frac{GM_\oplus m}{2r}.
+\end{align*}\]</div>
+<p>The total energy is the sum of the kinetic and potential energies, so our final result is</p>
+<div class="amsmath math notranslate nohighlight" id="equation-a4b2d609-c1a1-4331-8933-d6000a7b9c4f">
+<span class="eqno">(13.11)<a class="headerlink" href="#equation-a4b2d609-c1a1-4331-8933-d6000a7b9c4f" title="Permalink to this equation">#</a></span>\[\begin{align}
+E &amp;= K + U, \\
+&amp;= \frac{GM_\oplus m}{2r} - \frac{GM_\oplus m}{r} = -\frac{GM_\oplus m}{2r}.
+\end{align}\]</div>
+<p>We can see that the total energy is negative, with the same magnitude as <em>half</em> the kinetic energy.  For circular orbits, the magnitude of the kinetic energy is exactly <em>one-half</em> the magnitude of the potential energy.</p>
+<section id="example-problem-energy-required-to-orbit">
+<h4><span class="section-number">13.4.2.1. </span><strong>Example Problem</strong>: Energy Required to Orbit<a class="headerlink" href="#example-problem-energy-required-to-orbit" title="Link to this heading">#</a></h4>
+</section>
 </section>
 </section>
 <section id="kepler-s-laws-of-planetary-motion">
@@ -1098,16 +1394,24 @@ U(r) = -\frac{GM_\oplus m}{r}.
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-energy">13.3.2. Conservation of Energy</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#escape-velocity">13.3.2.1. Escape velocity</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-escape-from-earth">13.3.2.2. <strong>Example Problem</strong>: Escape from Earth</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-and-gravitationally-bound-objects">13.3.2.3. Energy and gravitationally bound objects</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-and-gravitationally-bound-objects">13.3.2.2. Energy and gravitationally bound objects</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-escape-from-earth">13.3.2.3. <strong>Example Problem</strong>: Escape from Earth</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-how-far-can-an-object-escape">13.3.2.4. <strong>Example Problem</strong>: How Far Can an Object Escape?</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#satellite-orbits-and-energy">13.4. Satellite Orbits and Energy</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#circular-orbits">13.4.1. Circular Orbits</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-in-circular-orbits">13.4.2. Energy in Circular Orbits</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#circular-orbits">13.4.1. Circular Orbits</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-the-international-space-station">13.4.1.1. <strong>Example Problem</strong>: The International Space Station</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-determining-the-mass-of-earth-using-the-moon">13.4.1.2. <strong>Example Problem</strong>: Determining the Mass of Earth (using the Moon)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-galactic-speed-and-period">13.4.1.3. <strong>Example Problem</strong>: Galactic Speed and Period</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-in-circular-orbits">13.4.2. Energy in Circular Orbits</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-energy-required-to-orbit">13.4.2.1. <strong>Example Problem</strong>: Energy Required to Orbit</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kepler-s-laws-of-planetary-motion">13.5. Kepler’s Laws of Planetary Motion</a><ul class="nav section-nav flex-column">
