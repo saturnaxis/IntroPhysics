@@ -51,6 +51,38 @@ div.exercise > p.admonition-title{
 }
 
 /* -----------------------------
+   etamu-dropdown styling
+   ----------------------------- */
+
+/* Container */
+.sd-card.etamu-dropdown {
+  background-color: var(--etamu-gold-light);
+  border-left: 5px solid var(--etamu-gold);
+  border-radius: 8px;
+  margin: 1rem 0;
+  overflow: hidden;
+}
+
+/* Header */
+.sd-card.etamu-dropdown > .sd-card-header {
+  background-color: var(--etamu-gold);
+  color: #222;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+}
+
+/* Body */
+.sd-card.etamu-dropdown > .sd-card-body {
+  background-color: var(--etamu-gold-light);
+  padding: 1rem 1.25rem;
+  border-top: 1px solid rgba(0, 51, 160, 0.12);
+}
+
+/* Optional: hover */
+.sd-card.etamu-dropdown > .sd-card-header:hover {
+  background-color: #f5b82e;
+}
+/* -----------------------------
    Blockquotes
    ----------------------------- */
 blockquote{
