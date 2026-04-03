@@ -40,7 +40,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/sphinx_iframe.css?v=96c28b52" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="https://cdn.plyr.io/3.8.4/plyr.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=0a613744" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=b9e54c64" />
     <link rel="stylesheet" type="text/css" href="../_static/mycss.css?v=3589796e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -531,6 +531,16 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elasticity-and-plasticity">12.4. Elasticity and Plasticity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-class-problems">12.5. In-Class Problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-i">12.5.1. Part I</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-ii">12.5.2. Part II</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homework">12.6. Homework</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conceptual-problems">12.6.1. Conceptual Problems</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantitative-problems">12.6.2. Quantitative Problems</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -549,8 +559,8 @@ document.write(`
 <p>A rigid body is in <strong>equilibrium</strong> when both its <em>linear</em> and <em>angular</em> acceleration are zero relative to an inertial frame of reference.  This means that a body in equilibrium can be moving, where its <em>linear</em> and <em>angular</em> velocities are constant.</p>
 <p>A rigid body is in <strong>static equilibrium</strong> when it’s at rest <em>in our selected frame of reference.</em>  The state of rest and uniform motion is artificial, where an object may be at rest in our selected frame of reference but can appear to move with constant velocity in another frame with an observer moving at constant velocity.  The laws of physics are identical for all inertial reference frames, so there is not distinction between static equilibrium and equilibrium in an inertial frame of reference.</p>
 <p>According to Newton’s 2nd law, the linear acceleration of a rigid body is caused by a net force acting on it, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-170638d0-3269-4a4e-b795-df369738e9c2">
-<span class="eqno">(12.1)<a class="headerlink" href="#equation-170638d0-3269-4a4e-b795-df369738e9c2" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-bdc37ba7-4887-437b-b75f-f52d8dd56d01">
+<span class="eqno">(12.1)<a class="headerlink" href="#equation-bdc37ba7-4887-437b-b75f-f52d8dd56d01" title="Permalink to this equation">#</a></span>\[\begin{align}
 \sum_j \vec{F}_k = m\vec{a}_{\rm CoM}.
 \end{align}\]</div>
 <p>The sum is of all <em>external forces</em> acting on the body, where <span class="math notranslate nohighlight">\(m\)</span> is its mass and <span class="math notranslate nohighlight">\(\vec{a}_{\rm CoM}\)</span> is the linear acceleration of its center of mass.</p>
@@ -560,29 +570,29 @@ document.write(`
 <div class="math notranslate nohighlight" id="zero-net-force">
 <span id="equation-zero-net-force"></span><span class="eqno">(12.2)<a class="headerlink" href="#zero-net-force" title="Link to this equation">#</a></span>\[\sum_j \vec{F}_j = \vec{0}.\]</div>
 <p>This vector equilibrium condition is equivalent to the following three scalar equations for the components of the net force:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-90885e1e-637f-47b2-b08f-4a42db0145eb">
-<span class="eqno">(12.3)<a class="headerlink" href="#equation-90885e1e-637f-47b2-b08f-4a42db0145eb" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-c24b4faf-14c8-4f59-91ab-19d63913d16f">
+<span class="eqno">(12.3)<a class="headerlink" href="#equation-c24b4faf-14c8-4f59-91ab-19d63913d16f" title="Permalink to this equation">#</a></span>\[\begin{align}
 \sum_j F_{jx} &amp;= 0, \\
 \sum_j F_{jy} &amp;= 0, \\
 \sum_j F_{jz} &amp;= 0.
 \end{align}\]</div>
 </div>
 <p>We can state that the rotational acceleration <span class="math notranslate nohighlight">\(\vec{\alpha}\)</span> of a rigid body about a fixed axis is caused by the net torque acting on the body, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-afdd24c4-6331-4366-8b00-c830d19da3b0">
-<span class="eqno">(12.4)<a class="headerlink" href="#equation-afdd24c4-6331-4366-8b00-c830d19da3b0" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a08a7bb5-1e36-4727-8d10-9ba442141c10">
+<span class="eqno">(12.4)<a class="headerlink" href="#equation-a08a7bb5-1e36-4727-8d10-9ba442141c10" title="Permalink to this equation">#</a></span>\[\begin{align}
 \sum_j \vec{\tau}_j = I\vec{\alpha}.
 \end{align}\]</div>
 <p>The net torque depends on the moment of inertia <span class="math notranslate nohighlight">\(I\)</span> about this axis and the summation over <em>all</em> torques <span class="math notranslate nohighlight">\(\vec{\tau}_j\)</span> of external forces.</p>
 <div class="note admonition">
 <p class="admonition-title">Second Equilibrium Condition</p>
 <p>The second equilibrium for the static equilibrium of a rigid body expresses <em>rotational</em> equilibrium:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7ca259fa-0c7e-4831-973a-baa8e5ce9d25">
-<span class="eqno">(12.5)<a class="headerlink" href="#equation-7ca259fa-0c7e-4831-973a-baa8e5ce9d25" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-eb6f1c9f-e673-4ab4-90b5-b9ce83e0ff9f">
+<span class="eqno">(12.5)<a class="headerlink" href="#equation-eb6f1c9f-e673-4ab4-90b5-b9ce83e0ff9f" title="Permalink to this equation">#</a></span>\[\begin{align}
 \sum_j \vec{\tau}_j = \vec{0}.
 \end{align}\]</div>
 <p>This equation for equilibrium is generally valid for rotational equilibrium about any axis of rotation (fixed or otherwise).  This vector equation is equivalent to three scalar equations for the vector components of the net torque:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ce0e89c7-08c1-47d8-8212-41e20f24b86b">
-<span class="eqno">(12.6)<a class="headerlink" href="#equation-ce0e89c7-08c1-47d8-8212-41e20f24b86b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ddc15568-aa53-4553-bfcf-9e599df911f9">
+<span class="eqno">(12.6)<a class="headerlink" href="#equation-ddc15568-aa53-4553-bfcf-9e599df911f9" title="Permalink to this equation">#</a></span>\[\begin{align}
 \sum_j \vec{\tau}_{jx} = 0, \\
 \sum_j \vec{\tau}_{jy} = 0, \\
 \sum_j \vec{\tau}_{jz} = 0.
@@ -608,15 +618,15 @@ document.write(`
 <p>In the most general case, equilibrium conditions are expressed by six scalar equations (i.e., 3 components for forces, and 3 components for torques).  For planar equilibrium problems with rotation about a fixed axis, whe can reduce the number of equations to three.</p>
 <p>The standard procedure is to choose frame of reference, where the <span class="math notranslate nohighlight">\(z\)</span>-axis aligns with the axis of rotation.  Then the net torque has only a <span class="math notranslate nohighlight">\(z\)</span> component, where all forces that have non-zero torques lie in the <span class="math notranslate nohighlight">\(xy\)</span>-plane.  As a result, the contributions to the net torque only come from the <span class="math notranslate nohighlight">\(F_{jx}\)</span> and <span class="math notranslate nohighlight">\(F_{jy}\)</span> of external forces.</p>
 <p>For planar problems with the axis of rotation perpendicular to the <span class="math notranslate nohighlight">\(xy\)</span>-plane, we have the following three equilibrium conditions for forces and torques:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-71d71c0e-026b-47b4-8b41-b8dda14542b2">
-<span class="eqno">(12.7)<a class="headerlink" href="#equation-71d71c0e-026b-47b4-8b41-b8dda14542b2" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-3aed13b1-0606-4204-b886-dbfd2ac7c207">
+<span class="eqno">(12.7)<a class="headerlink" href="#equation-3aed13b1-0606-4204-b886-dbfd2ac7c207" title="Permalink to this equation">#</a></span>\[\begin{align}
 F_{1x} + F_{2x} + \cdots + F_{Nx} &amp;= 0, \\
 F_{1y} + F_{2y} + \cdots + F_{Ny} &amp;= 0, \\
 \tau_1 + \tau_2 + \cdots + \tau_N &amp;= 0,
 \end{align}\]</div>
 <p>where the summation is over all <span class="math notranslate nohighlight">\(N\)</span> external forces acting on the body and over their torques.  Note, we dropped the <span class="math notranslate nohighlight">\(z\)</span> subscript for the torques because all the forces were in the <span class="math notranslate nohighlight">\(xy\)</span>-plane and the other torques (<span class="math notranslate nohighlight">\(\tau_{jx}\)</span> and <span class="math notranslate nohighlight">\(\tau_{jy}\)</span>) are zero in the cross product.  Thus, the <span class="math notranslate nohighlight">\(z\)</span>-component of each torque <span class="math notranslate nohighlight">\(\vec{\tau}_j\)</span> from the force <span class="math notranslate nohighlight">\(\vec{F}_j\)</span> is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-de3f976a-9ac9-49dd-9cd0-f66d0e87f643">
-<span class="eqno">(12.8)<a class="headerlink" href="#equation-de3f976a-9ac9-49dd-9cd0-f66d0e87f643" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-07ee33ef-a656-4021-a5a3-85fc65140344">
+<span class="eqno">(12.8)<a class="headerlink" href="#equation-07ee33ef-a656-4021-a5a3-85fc65140344" title="Permalink to this equation">#</a></span>\[\begin{align}
 \tau_j &amp;= r_jF_j\sin{\theta},
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(r_j\)</span> is the lever arm of the force and <span class="math notranslate nohighlight">\(F_j\)</span> is the magnitude of the force.  The angle <span class="math notranslate nohighlight">\(\theta\)</span> is the angle between vectors <span class="math notranslate nohighlight">\(\vec{r}_j\)</span> and <span class="math notranslate nohighlight">\(\vec{F}_j\)</span>, measured starting from <span class="math notranslate nohighlight">\(\vec{r}_j\)</span> in the counterclockwise (positive) direction using the right-hand rule.</p>
@@ -719,8 +729,8 @@ In many equilibrium situations, one of the forces acting on the body is its own 
 </div>
 <p>An object or medium under stress becomes deformed, where we quantify the deformation using <strong>strain</strong>.  Strain is a fractional change in either length (under tensile stress), volume (under bulk stress), or geometry (under shear stress).  Strain is a dimensionless number that is proportional to the strain.</p>
 <p>The greater the stress, the greater the strain.  This relationship need not be linear.  Only when the stress is sufficiently low is the deformation in direct proportion to the stress value.  The proportionality constant is called the <strong>elastic modulus</strong>.  In the linear limit of low stress, the general relation between stress and strain is given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-957361fc-6bad-49a6-a77c-ed084a131b96">
-<span class="eqno">(12.9)<a class="headerlink" href="#equation-957361fc-6bad-49a6-a77c-ed084a131b96" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-100a2d79-65b5-4e6c-a03a-b10343ffbcac">
+<span class="eqno">(12.9)<a class="headerlink" href="#equation-100a2d79-65b5-4e6c-a03a-b10343ffbcac" title="Permalink to this equation">#</a></span>\[\begin{align}
 \text{stress} = (\text{elastic modulus}) \times \text{strain}.
 \end{align}\]</div>
 <p>Since the strain is dimensionless, this means that the elastic modulus must have the same units as the stress.  When an object’s elastic modulus is large, the effect of stress is small.  Also, a small elastic modulus means that stress produces large strain and a noticeable deformation.  For example, the stress on a rubber band produces a larger strain (deformation) than the same stress on a steel band of the same dimensions because the elastic modulus for rubber is about <span class="math notranslate nohighlight">\(100\times\)</span> smaller than the elastic modulus for steel.</p>
@@ -745,19 +755,19 @@ In many equilibrium situations, one of the forces acting on the body is its own 
 <li><p>Compressive stress and strain occur when the forces are <em>contracting</em> the objection causing its shortening <span class="math notranslate nohighlight">\((\Delta L &lt;0)\)</span>.</p></li>
 </ul>
 <p>In either of these situations, we define stress as the ratio of the deforming force <span class="math notranslate nohighlight">\(F_\perp\)</span> to the cross-sectional area <span class="math notranslate nohighlight">\(A\)</span> of the object.  The deforming force acts perpendicularly to the cross-section of the object.  Forces that act parallel to the cross-section do not change the length of the object.  The definition of the tensile stress is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b9d511c9-dd8a-4d60-beaf-23c83b888f54">
-<span class="eqno">(12.10)<a class="headerlink" href="#equation-b9d511c9-dd8a-4d60-beaf-23c83b888f54" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-bc986334-4eb4-4c67-bc9a-1d46561faa5e">
+<span class="eqno">(12.10)<a class="headerlink" href="#equation-bc986334-4eb4-4c67-bc9a-1d46561faa5e" title="Permalink to this equation">#</a></span>\[\begin{align}
 \text{tensile stress} &amp;= \frac{F_\perp}{A}.
 \end{align}\]</div>
 <p>Tensile strain is the measure of the deformation of an object under tensile stress and is defined as the fractional change of the object’s length under the stress, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-49e793ea-4cc1-4893-8a4c-f89b418ad841">
-<span class="eqno">(12.11)<a class="headerlink" href="#equation-49e793ea-4cc1-4893-8a4c-f89b418ad841" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-8fa04e2e-c850-444a-aa12-bf3fa6887ec2">
+<span class="eqno">(12.11)<a class="headerlink" href="#equation-8fa04e2e-c850-444a-aa12-bf3fa6887ec2" title="Permalink to this equation">#</a></span>\[\begin{align}
 \text{tensile strain} &amp;= \frac{\Delta L}{L_o}.
 \end{align}\]</div>
 <p>Compressive stress and strain are defined by the same formulae, where we take the absolute values on the right-hand side.</p>
 <p>Young’s modulus is the elastic modulus when deformation is caused by either tensile  or compressive stress.  The expression for the Young’s modulus is the ratio of the tensile stress to the strain, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-592446eb-ce3a-4ce9-b49c-0e1e2ab67fea">
-<span class="eqno">(12.12)<a class="headerlink" href="#equation-592446eb-ce3a-4ce9-b49c-0e1e2ab67fea" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-9ca2b732-ab7f-4ab9-9c63-b7e429b95343">
+<span class="eqno">(12.12)<a class="headerlink" href="#equation-9ca2b732-ab7f-4ab9-9c63-b7e429b95343" title="Permalink to this equation">#</a></span>\[\begin{align}
 Y &amp;= \frac{\text{tensile stress}}{\text{tensile strain}}= \left(\frac{F_\perp}{A}\right)\left(\frac{L_o}{\Delta L}\right).
 \end{align}\]</div>
 <p>Objects can often experience both compressive and tensile stress simultaneously (see Fig. <a class="reference internal" href="#tensile-compression-fig"><span class="std std-numref">12.4</span></a>).  For example, a long shelf loaded with heavy book sags between the end supports under the weight of the books.  The top surface of the shelf is in compressive stress, while the bottom surface is in tensile stress.  Similarly, long and heavy beams sag under their own weight, where such bending strains can be almost eliminated with the use of I-beams.</p>
@@ -784,32 +794,32 @@ Y &amp;= \frac{\text{tensile stress}}{\text{tensile strain}}= \left(\frac{F_\per
 </figcaption>
 </figure>
 <p>These forces decrease the volume of the submerged object by an amount <span class="math notranslate nohighlight">\(\Delta V\)</span>.  This kind of deformation is called a <em>bulk strain</em> and is described by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-4ca6d11a-48d9-4a0a-bc79-af6703f36f24">
-<span class="eqno">(12.13)<a class="headerlink" href="#equation-4ca6d11a-48d9-4a0a-bc79-af6703f36f24" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-c43783ea-3cb2-4108-82a0-73ef0c184345">
+<span class="eqno">(12.13)<a class="headerlink" href="#equation-c43783ea-3cb2-4108-82a0-73ef0c184345" title="Permalink to this equation">#</a></span>\[\begin{align}
 \text{bulk strain} &amp;= \frac{\Delta V}{V_o}.
 \end{align}\]</div>
 <p>The bulk strain results from the bulk stress, which is a perpendicular force <span class="math notranslate nohighlight">\(F_\perp\)</span> that presses on the unit surface area <span class="math notranslate nohighlight">\(A\)</span>.  This pressure <span class="math notranslate nohighlight">\(p\)</span> is defined as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7787c967-da63-4137-b190-4ee76112e65d">
-<span class="eqno">(12.14)<a class="headerlink" href="#equation-7787c967-da63-4137-b190-4ee76112e65d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-7060a5a3-ac56-4f24-aa99-b8bd93dd1e5e">
+<span class="eqno">(12.14)<a class="headerlink" href="#equation-7060a5a3-ac56-4f24-aa99-b8bd93dd1e5e" title="Permalink to this equation">#</a></span>\[\begin{align}
 p \equiv \frac{F_\perp}{A}.
 \end{align}\]</div>
 <p>Pressure is a <em>scalar</em> quantity and does not have any particular direction, where it acts equally in all possible directions.  When you submerge your hand in water, you sense the same amount of pressure action the the top, bottom, and side surfaces as you do on the surface of skin between your fingers.  The increase in pressure <span class="math notranslate nohighlight">\(\Delta p\)</span> that you feel is relative to the <strong>normal pressure</strong> <span class="math notranslate nohighlight">\(p_o\)</span> of <span class="math notranslate nohighlight">\(1\ {\rm atm}\)</span> you feel from the atmosphere.  The bulk stress is the change in pressure <span class="math notranslate nohighlight">\(\Delta p\)</span> relative to the normal level <span class="math notranslate nohighlight">\(p_o\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-00122c05-dfe6-4b1f-98ec-ed7138d11c93">
-<span class="eqno">(12.15)<a class="headerlink" href="#equation-00122c05-dfe6-4b1f-98ec-ed7138d11c93" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-6a5e10cb-83e5-46a2-aa97-ac03ca4dba98">
+<span class="eqno">(12.15)<a class="headerlink" href="#equation-6a5e10cb-83e5-46a2-aa97-ac03ca4dba98" title="Permalink to this equation">#</a></span>\[\begin{align}
 B &amp;= \frac{\text{bulk stress}}{\text{bulk strain}}, \\[6pt]
 &amp;= -\frac{\Delta p}{\Delta V/V_o} = -\frac{\Delta p}{\Delta V}V_o.
 \end{align}\]</div>
 <p>When the bulk stress increases, the bulk strain increases in response.  The minus sign appears to ensure that <span class="math notranslate nohighlight">\(B\)</span> is a positive quantity.  An increase in <span class="math notranslate nohighlight">\(\Delta p\)</span> always causes a decrease <span class="math notranslate nohighlight">\(\Delta V\)</span> in volume so that <span class="math notranslate nohighlight">\(\frac{\Delta p}{\Delta V} &lt;0\)</span>.</p>
 <p>The reciprocal of the bulk modulus is called <a class="reference external" href="https://en.wikipedia.org/wiki/Compressibility"><strong>compressibility</strong></a>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-89d40277-7664-470c-9b79-8c414e8f869c">
-<span class="eqno">(12.16)<a class="headerlink" href="#equation-89d40277-7664-470c-9b79-8c414e8f869c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-64e55dc7-a440-4b39-8c21-d7b8f03a017c">
+<span class="eqno">(12.16)<a class="headerlink" href="#equation-64e55dc7-a440-4b39-8c21-d7b8f03a017c" title="Permalink to this equation">#</a></span>\[\begin{align}
 k &amp;= \frac{1}{B} &amp;= -\frac{\Delta V}{\Delta p}\frac{1}{V_o}.
 \end{align}\]</div>
 <p>The term ‘compressibility’ is used in relation to fluids (i.e., gases and liquids).  Compressibility describes the change in the volume of a fluid per unit increase in pressure.  Fluids that are easy to compress are characterized by a large compressibility.  For example, the compressibility water and acetone are</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-k_{text{water}} = 4.64 \times 10^{-5}\ {\rm atm^{-1}}, \\
-k_{text{acetone}} = 1.45 \times 10^{-4}\ {\rm atm^{-1}},
+k_{\text{water}} = 4.64 \times 10^{-5}\ {\rm atm^{-1}}, \\
+k_{\text{acetone}} = 1.45 \times 10^{-4}\ {\rm atm^{-1}},
 \end{align*}\]</div>
 <p>which means that under normal pressure (<span class="math notranslate nohighlight">\(1\ {\rm atm}\)</span>) the relative decrease in volume for acetone is approximately <span class="math notranslate nohighlight">\(3\times\)</span> larger than for water.</p>
 <section id="example-problem-hydraulic-press">
@@ -827,18 +837,18 @@ k_{text{acetone}} = 1.45 \times 10^{-4}\ {\rm atm^{-1}},
 </figcaption>
 </figure>
 <p>Shear deformation is characterized by a gradual shift <span class="math notranslate nohighlight">\(\Delta x\)</span> of layers in the direction tangent to the acting forces.  This gradation in <span class="math notranslate nohighlight">\(\Delta x\)</span> occurs in the transverse direction along some distance <span class="math notranslate nohighlight">\(L_o\)</span>.  Shear strain is defined by the ratio of the largest displacement <span class="math notranslate nohighlight">\(\Delta x\)</span> to the transverse distance <span class="math notranslate nohighlight">\(L_o\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-169da2d9-ba44-4a7b-aa6d-209edd769fb1">
-<span class="eqno">(12.17)<a class="headerlink" href="#equation-169da2d9-ba44-4a7b-aa6d-209edd769fb1" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-1a09cd18-2510-4e4d-9e8c-6bdc4af2a86e">
+<span class="eqno">(12.17)<a class="headerlink" href="#equation-1a09cd18-2510-4e4d-9e8c-6bdc4af2a86e" title="Permalink to this equation">#</a></span>\[\begin{align}
 \text{shear strain} = \frac{\Delta x}{L_o}.
 \end{align}\]</div>
 <p>Shear stress is due to forces that act <em>parallel</em> to the surface, where we use <span class="math notranslate nohighlight">\(F_\parallel\)</span> (or <code class="docutils literal notranslate"><span class="pre">$F_\parallel$</span></code>) for such forces.  The magnitude <span class="math notranslate nohighlight">\(F_\parallel\)</span> per unit surface area <span class="math notranslate nohighlight">\(A\)</span> where the shearing force is applied is the measure of shear stress, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-16999d39-aa38-40cf-88da-247e74e53218">
-<span class="eqno">(12.18)<a class="headerlink" href="#equation-16999d39-aa38-40cf-88da-247e74e53218" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-78b65be8-81cc-4e82-8f26-8c41ad2ab07c">
+<span class="eqno">(12.18)<a class="headerlink" href="#equation-78b65be8-81cc-4e82-8f26-8c41ad2ab07c" title="Permalink to this equation">#</a></span>\[\begin{align}
 \text{shear stress} &amp;= \frac{F_\parallel}{A}.
 \end{align}\]</div>
 <p>The <strong>shear modulus</strong> is the proportionality constant and is defined by the ratio of stress to strain.  The shear modulus is commonly denoted by <span class="math notranslate nohighlight">\(S\)</span> and defined as:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-af9006f0-871f-4210-bfac-a3c5fdde7174">
-<span class="eqno">(12.19)<a class="headerlink" href="#equation-af9006f0-871f-4210-bfac-a3c5fdde7174" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-9de61cbd-65c7-4ea2-a892-8e8211f11726">
+<span class="eqno">(12.19)<a class="headerlink" href="#equation-9de61cbd-65c7-4ea2-a892-8e8211f11726" title="Permalink to this equation">#</a></span>\[\begin{align}
 S &amp;= \frac{\text{shear stress}}{\text{shear strain}}, \\[6pt]
 &amp;= \frac{F_\parallel /A}{\Delta x/L_o} = \left(\frac{F_\parallel}{A}\right)\left(\frac{L_o}{\Delta x} \right).
 \end{align}\]</div>
@@ -849,6 +859,144 @@ S &amp;= \frac{\text{shear stress}}{\text{shear strain}}, \\[6pt]
 </section>
 <section id="elasticity-and-plasticity">
 <h2><span class="section-number">12.4. </span>Elasticity and Plasticity<a class="headerlink" href="#elasticity-and-plasticity" title="Link to this heading">#</a></h2>
+<p>The proportionality constant between stress and strain is the <em>elastic modulus</em>.  This leads to a few questions:</p>
+<ul class="simple">
+<li><p>Why is that?</p></li>
+<li><p>What does it mean for an object to be elastic?</p></li>
+<li><p>How do we describe the object’s behavior?</p></li>
+</ul>
+<p>Elasticity is the tendency of solid objects (and materials) to return to their original shape after the external forces (i.e., load) causing deformation are removed.  An object is <strong>elastic</strong> whin it comes back to its original size and shape when the load is no longer present.  For example, the elasticity of polymers and rubbers is caused by stretching polymer chains under an applied force.  In contrast, the elasticity of metals is caused by the deformation (resizing and reshaping) of the lattices under the action of externally applied forces.</p>
+<p>The two parameters that determine the elasticity of a material are its (1) <em>elastic modulus</em> and (2) <em>elastic limit</em>.</p>
+<ul class="simple">
+<li><p>A high elastic modulus is typical for materials that are hard to deform, or materials that require a high load to achieve a significant strain.  For example a steel band.</p></li>
+<li><p>A low elastic modulus is typical for materials that are easy to deform under a load (e.g., a rubber band).</p></li>
+</ul>
+<p>If the stress under a load becomes too high, then when the load is removed, the material no longer comes back to its original shape and size, but relaxes to a different shape and size (e.g., a deformed Slinky) and the material becomes permanently deformed.  The <strong>elastic limit</strong> is the stress value beyond which the material no longer behaves elastically but becomes permanently deformed.</p>
+<p>Our perception of an elastic material depends on both its elastic limit and elastic modulus.  For example, all rubbers are characterized by a low elastic modulus and a high elastic limit.  As a result, they are easy to stretch and the stretch is noticeable.</p>
+<p>When the load increases from zero, the resulting stress is in direct proportion to strain, but only when stress does not exceed some limiting value.  For stress values near this linear limit, we describe the elastic behavior in an analogous way as a spring using Hooke’s law.</p>
+<ul class="simple">
+<li><p>According to Hooke’s law, the stretch value of a spring under an applied force is directly proportional to the magnitude of the force.</p></li>
+<li><p>Conversely, the response force from the spring to an applied stretch is directly proportional to the stretch.</p></li>
+</ul>
+<p>The deformation of a material under a load is directly proportional to the load, and the resulting stress is directly proportional to the strain.  The linearity limit (or the <strong>proportionality limit</strong>) is the largest stress value beyond which stress is no longer proportional to strain.  Beyond the linearity limit, the relation between stress and strain is on longer linear.  When stress becomes larger than the linearity limit but still within the elasticity limit, the behavior is still elastic.  But the relation between stress and strains becomes nonlinear.</p>
+<p>For stresses beyond the elastic limit, a material exhibits <strong>plastic behavior</strong>.  This means the material deforms irreversibly and does not return to its original shape and size (even when the load is removed).  When stress is gradually increased beyond the elastic limit, the material undergoes plastic deformation.</p>
+<ul class="simple">
+<li><p>Rubber-like materials show an increase in stress with the increasing strain, which means they become more difficult to stretch and eventually reach a fracture point where they break.</p></li>
+<li><p>Ductile materials (e.g., metals) show a gradual decrease in stress  with increasing strain, which means they become easier to deform as stress-strain values approach the breaking point.  For example, bending a paper clip is initially difficult until you’ve bent it enough times.</p></li>
+</ul>
+<figure class="align-default" id="stress-strain-fig">
+<img alt="stress-strain plot" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/72355b91989dd764dfc65b3eadf275ea5e37b6fc" />
+<figcaption>
+<p><span class="caption-number">Fig. 12.7 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#stress-strain-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>We can graph the stress-strain relationship (see Figure <a class="reference internal" href="#stress-strain-fig"><span class="std std-numref">12.7</span></a>), where each material has its own characteristic stress-strain curve.</p>
+<ul class="simple">
+<li><p>Strain is a fractional elongation.  When the load is gradually increased, the linear behavior (e.g., red line) ends at the linearity limit (point <span class="math notranslate nohighlight">\(H\)</span>).</p></li>
+<li><p>For further load increases beyond point <span class="math notranslate nohighlight">\(H\)</span>, the stress-strain relation is nonlinear but still elastic (i.e., from point <span class="math notranslate nohighlight">\(H\)</span> to <span class="math notranslate nohighlight">\(E\)</span>).  Ever larger loads take the stress to the elasticity limit <span class="math notranslate nohighlight">\(E\)</span>.</p></li>
+<li><p>Beyond the elasticity limit, it enters plastic deformation and when the load is removed, the material relaxes to a new shape and size along the green line.  The material becomes permanently deformed and does not return to its initial shape and size when stress is zero.</p></li>
+<li><p>A material can plastically deform until the stress reaches the fracture (or breaking) point.  Beyond this point, we no longer have one sample of material, so the diagram ends.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The linear, elastic, and plasticity limits denote a range of values rather than a single sharp point.</p>
+</div>
+<p>The value of stress at the fracture point is called breaking stress (or <strong>ultimate stress</strong>).  Materials with similar elastic properties (e.g., metals) may have very different breaking stresses.  For example, the ultimate stress for aluminum is <span class="math notranslate nohighlight">\(2.2\times 10^8\ {\rm Pa}\)</span> and for steel, it may be as high as <span class="math notranslate nohighlight">\(20\times 10^8\ {\rm Pa}\)</span> (depending on the kind of steel).</p>
+</section>
+<section id="in-class-problems">
+<h2><span class="section-number">12.5. </span>In-Class Problems<a class="headerlink" href="#in-class-problems" title="Link to this heading">#</a></h2>
+<section id="part-i">
+<h3><span class="section-number">12.5.1. </span>Part I<a class="headerlink" href="#part-i" title="Link to this heading">#</a></h3>
+<div class="admonition-problem-1 admonition">
+<p class="admonition-title">Problem 1</p>
+<p>Find the magnitude of the tension in each supporting cable shown below. In each case, the weight of the suspended body is <span class="math notranslate nohighlight">\(100.0\ \text{N}\)</span> and the masses of the cables are negligible.</p>
+<center>
+<img src="OpenStax_Problem_12_26.png" alt="tension weight problem"  style="max-width:70%; height:auto;">
+<p>Image Credit: Openstax.</p>
+</center>
+</div>
+<div class="admonition-problem-2 admonition">
+<p class="admonition-title">Problem 2</p>
+<p>A uniform plank rests on a level surface as shown below. The plank has a mass of <span class="math notranslate nohighlight">\(30\ \text{kg}\)</span> and is <span class="math notranslate nohighlight">\(6.0\ \text{m}\)</span> long. How much mass can be placed at its right end before it tips? <em>Hint: When the board is about to tip over, it makes contact with the surface only along the edge that becomes a momentary axis of rotation.</em></p>
+<center>
+<img src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/e863e15ec7f92e2d72181b59f27161a9be093b2f" alt="uniform plank problem"  style="max-width:70%; height:auto;">
+<p>Image Credit: Openstax.</p>
+</center>
+</div>
+<div class="admonition-problem-3 admonition">
+<p class="admonition-title">Problem 3</p>
+<p>A uniform horizontal strut weighs <span class="math notranslate nohighlight">\(400.0\ \text{N}\)</span>. One end of the strut is attached to a hinged support at the wall, and the other end of the strut is attached to a sign that weighs <span class="math notranslate nohighlight">\(200.0\ \text{N}\)</span>. The strut is also supported by a cable attached between the end of the strut and the wall. Assuming that the entire weight of the sign is attached at the very end of the strut, find the tension in the cable and the force at the hinge of the strut.</p>
+<center>
+<img src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/50af9d3eee50c7955c68ba28641126712c78ecab" alt="sign strut problem"  style="max-width:70%; height:auto;">
+<p>Image Credit: Openstax.</p>
+</center>
+</div>
+</section>
+<section id="part-ii">
+<h3><span class="section-number">12.5.2. </span>Part II<a class="headerlink" href="#part-ii" title="Link to this heading">#</a></h3>
+<div class="admonition-problem-4 admonition">
+<p class="admonition-title">Problem 4</p>
+<p>TV broadcast antennas are the tallest artificial structures on Earth. In 1987, a <span class="math notranslate nohighlight">\(72.0\ \text{kg}\)</span> physicist placed himself and <span class="math notranslate nohighlight">\(400\ \text{kg}\)</span> of equipment at the top of a <span class="math notranslate nohighlight">\(610\ \text{m}\)</span>-high antenna to perform gravity experiments. By how much was the antenna compressed, if we consider it to be equivalent to a steel cylinder <span class="math notranslate nohighlight">\(0.150\ \text{m}\)</span> in radius?</p>
+</div>
+<div class="admonition-problem-5 admonition">
+<p class="admonition-title">Problem 5</p>
+<p>By how much does a <span class="math notranslate nohighlight">\(65.0\ \text{kg}\)</span> mountain climber stretch her <span class="math notranslate nohighlight">\(0.800\ \text{cm}\)</span> diameter nylon rope when she hangs <span class="math notranslate nohighlight">\(35.0\ \text{m}\)</span> below a rock outcropping? (For nylon, <span class="math notranslate nohighlight">\(Y = 1.35 \times 10^9\ \text{Pa}\)</span>.)</p>
+</div>
+<div class="admonition-problem-6 admonition">
+<p class="admonition-title">Problem 6</p>
+<p>When water freezes, its volume increases by <span class="math notranslate nohighlight">\(9.05\%\)</span>. What force per unit area is water capable of exerting on a container when it freezes?</p>
+</div>
+<div class="admonition-problem-7 admonition">
+<p class="admonition-title">Problem 7</p>
+<p>An aluminum <span class="math notranslate nohighlight">\((\rho = 2.7\ \text{g/cm}^3)\)</span> wire is suspended from the ceiling and hangs vertically. How long must the wire be before the stress at its upper end reaches the proportionality limit, which is <span class="math notranslate nohighlight">\(8.0 \times 10^7\ \text{N/m}^2\)</span>?</p>
+</div>
+</section>
+</section>
+<section id="homework">
+<h2><span class="section-number">12.6. </span>Homework<a class="headerlink" href="#homework" title="Link to this heading">#</a></h2>
+<section id="conceptual-problems">
+<h3><span class="section-number">12.6.1. </span>Conceptual Problems<a class="headerlink" href="#conceptual-problems" title="Link to this heading">#</a></h3>
+<div class="admonition-problem-1 admonition">
+<p class="admonition-title">Problem 1</p>
+<p>Mechanics sometimes put a length of pipe over the handle of a wrench when trying to remove a very tight bolt. How does this help?</p>
+</div>
+<div class="admonition-problem-2 admonition">
+<p class="admonition-title">Problem 2</p>
+<p>A painter climbs a ladder. Is the ladder more likely to slip when the painter is near the bottom or near the top? Explain your reasoning using concepts of torque and equilibrium.</p>
+</div>
+</section>
+<section id="quantitative-problems">
+<h3><span class="section-number">12.6.2. </span>Quantitative Problems<a class="headerlink" href="#quantitative-problems" title="Link to this heading">#</a></h3>
+<div class="admonition-problem-3 admonition">
+<p class="admonition-title">Problem 3</p>
+<p>The uniform seesaw is balanced at its center of mass, as seen below. The smaller boy on the right has a mass of <span class="math notranslate nohighlight">\(40.0\ \text{kg}\)</span>. What is the mass of his friend?</p>
+<center>
+<img src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/e6ce535ab914dbf20d0ff18faee4008ef4fe2290" alt="uniform plank problem"  style="max-width:70%; height:auto;">
+<p>Image Credit: Openstax.</p>
+</center>
+</div>
+<div class="admonition-problem-4 admonition">
+<p class="admonition-title">Problem 4</p>
+<p>The forearm shown below is positioned at an angle <span class="math notranslate nohighlight">\(\theta\)</span> with respect to the upper arm, and a <span class="math notranslate nohighlight">\(5.0\ \text{kg}\)</span> mass is held in the hand. The total mass of the forearm and hand is <span class="math notranslate nohighlight">\(3.0\ \text{kg}\)</span>, and their center of mass is <span class="math notranslate nohighlight">\(15.0\ \text{cm}\)</span> from the elbow.</p>
+<p>(a) What is the magnitude of the force that the biceps muscle exerts on the forearm for <span class="math notranslate nohighlight">\(\theta = 60^\circ\)</span>?<br />
+(b) What is the magnitude of the force on the elbow joint for the same angle?<br />
+(c) How do these forces depend on the angle <span class="math notranslate nohighlight">\(\theta\)</span>?</p>
+<center>
+<img src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/04ded5d22b3963a07d466282d1f25f632b4d56a3" alt="uniform plank problem"  style="max-width:70%; height:auto;">
+<p>Image Credit: Openstax.</p>
+</center>
+</div>
+<div class="admonition-problem-5 admonition">
+<p class="admonition-title">Problem 5</p>
+<p>As an oil well is drilled, each new section of drill pipe supports its own weight and the weight of the pipe and the drill bit beneath it. Calculate the stretch in a new <span class="math notranslate nohighlight">\(6.00\ \text{m}\)</span>-long steel pipe that supports a <span class="math notranslate nohighlight">\(100\ \text{kg}\)</span> drill bit and a <span class="math notranslate nohighlight">\(3.00\ \text{km}\)</span> length of pipe with a linear mass density of <span class="math notranslate nohighlight">\(20.0\ \text{kg/m}\)</span>. Treat the pipe as a solid cylinder with a <span class="math notranslate nohighlight">\(5.00\ \text{cm}\)</span> diameter.</p>
+</div>
+<div class="admonition-problem-6 admonition">
+<p class="admonition-title">Problem 6</p>
+<p>A uniform rope of cross-sectional area <span class="math notranslate nohighlight">\(0.50\ \text{cm}^2\)</span> breaks when the tensile stress in it reaches <span class="math notranslate nohighlight">\(6.00 \times 10^6\ \text{N/m}^2\)</span>.</p>
+<p>(a) What is the maximum load that can be lifted slowly at a constant speed by the rope?<br />
+(b) What is the maximum load that can be lifted by the rope with an acceleration of <span class="math notranslate nohighlight">\(4.00\ \text{m/s}^2\)</span>?</p>
+</div>
+</section>
 </section>
 </section>
 
@@ -945,6 +1093,16 @@ S &amp;= \frac{\text{shear stress}}{\text{shear strain}}, \\[6pt]
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elasticity-and-plasticity">12.4. Elasticity and Plasticity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-class-problems">12.5. In-Class Problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-i">12.5.1. Part I</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-ii">12.5.2. Part II</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homework">12.6. Homework</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conceptual-problems">12.6.1. Conceptual Problems</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantitative-problems">12.6.2. Quantitative Problems</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
