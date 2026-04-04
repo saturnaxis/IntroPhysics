@@ -40,7 +40,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/sphinx_iframe.css?v=96c28b52" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="https://cdn.plyr.io/3.8.4/plyr.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=0a613744" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=b9e54c64" />
     <link rel="stylesheet" type="text/css" href="../_static/mycss.css?v=3589796e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -565,7 +565,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="angular-momentum">
 <h1><span class="section-number">11. </span>Angular Momentum<a class="headerlink" href="#angular-momentum" title="Link to this heading">#</a></h1>
-<p>Mar 30, 2026 | 9534 words | 48 min read</p>
+<p>Apr 04, 2026 | 9534 words | 48 min read</p>
 <section id="rolling-motion">
 <h2><span class="section-number">11.1. </span>Rolling Motion<a class="headerlink" href="#rolling-motion" title="Link to this heading">#</a></h2>
 <p>Rolling motion is a combination of rotational and translational motion.  It is seen through wheels moving on a car, on a plane, or on a robotic explorer on another planet.  Understanding the forces and torques involved in <strong>rolling motion</strong> is a crucial factor in many different types of situations.</p>
@@ -603,15 +603,15 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[ \vec{\rm v}_P = -R\omega\hat{i} + v_{\rm CoM}\hat{i}, \]</div>
 <p>which includes both the center-of-mass velocity for the wheel and the relative velocity of point <span class="math notranslate nohighlight">\(P\)</span> relative to the center-of-mass.  If the wheel is rolling <em>without slipping</em>, then <span class="math notranslate nohighlight">\(|\vec{\rm v}_P| = v_P = 0\)</span> (i.e., the velocity of <span class="math notranslate nohighlight">\(P\)</span> relative to the surface is zero), and we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1f3c270a-e89c-45bc-8552-6f5ae0dc3500">
-<span class="eqno">(11.1)<a class="headerlink" href="#equation-1f3c270a-e89c-45bc-8552-6f5ae0dc3500" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-307eecf5-2289-4481-97c7-5b40ae66d35f">
+<span class="eqno">(11.1)<a class="headerlink" href="#equation-307eecf5-2289-4481-97c7-5b40ae66d35f" title="Permalink to this equation">#</a></span>\[\begin{align}
 0 &amp;= -R\omega + v_{\rm CoM}, \\
 v_{\rm CoM} &amp;= R\omega.
 \end{align}\]</div>
 <p>The velocity of the wheel’s center of mass is its radius times the angular velocity about its axis.  Now we have a correspondence of the linear variable (<span class="math notranslate nohighlight">\(v_{\rm CoM}\)</span>) to the angular variable (<span class="math notranslate nohighlight">\(R\omega\)</span>).</p>
 <p>If we take a time-derivative to find the rate of change for the center-of-mass velocity <span class="math notranslate nohighlight">\(a_{\rm CoM}\)</span>, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-765c7fa0-7c91-4801-9117-fc0053b4f388">
-<span class="eqno">(11.2)<a class="headerlink" href="#equation-765c7fa0-7c91-4801-9117-fc0053b4f388" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b570e525-f345-46cb-ac21-9ee4977eef21">
+<span class="eqno">(11.2)<a class="headerlink" href="#equation-b570e525-f345-46cb-ac21-9ee4977eef21" title="Permalink to this equation">#</a></span>\[\begin{align}
 a_{\rm CoM} &amp;= \frac{d}{dt}v_{\rm CoM} = \frac{dR}{dt}\omega + R\frac{d\omega}{dt}, \\
 &amp;= R\frac{d\omega}{dt} = R\alpha.
 \end{align}\]</div>
@@ -623,8 +623,8 @@ a_{\rm CoM} &amp;= \frac{d}{dt}v_{\rm CoM} = \frac{dR}{dt}\omega + R\frac{d\omeg
 </figcaption>
 </figure>
 <p>We can also find the distance the wheel travels in terms of the angular variables.  In Figure <a class="reference internal" href="#arclength-wheel"><span class="std std-numref">11.4</span></a>, the wheel rolls from point <span class="math notranslate nohighlight">\(A\)</span> to point <span class="math notranslate nohighlight">\(B\)</span>, but its outer surface maps onto the ground by exactly the distance traveled <span class="math notranslate nohighlight">\(d_{\rm CoM}\)</span>.  The outer surface that maps onto the ground is the arclength <span class="math notranslate nohighlight">\(R\theta\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3d8bf1cc-9ef5-478b-b7ff-bcff100b3a13">
-<span class="eqno">(11.3)<a class="headerlink" href="#equation-3d8bf1cc-9ef5-478b-b7ff-bcff100b3a13" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-3917a156-23fc-493d-a95f-d05cbd64432f">
+<span class="eqno">(11.3)<a class="headerlink" href="#equation-3917a156-23fc-493d-a95f-d05cbd64432f" title="Permalink to this equation">#</a></span>\[\begin{align}
 d_{\rm CoM} = R\theta.
 \end{align}\]</div>
 <section id="example-problem-rolling-down-an-inclined-plane">
@@ -1019,8 +1019,8 @@ Why does she not have to exert a torque to spin faster?</p></li>
 <div class="note admonition">
 <p class="admonition-title">Angular Momentum of a Particle</p>
 <p>The <strong>angular momentum</strong> <span class="math notranslate nohighlight">\(\vec{L}\)</span> of a particle is defined as the cross-product of <span class="math notranslate nohighlight">\(\vec{r}\)</span> and <span class="math notranslate nohighlight">\(\vec{p}\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9f473269-9328-44af-bd0e-c71273ec62e6">
-<span class="eqno">(11.4)<a class="headerlink" href="#equation-9f473269-9328-44af-bd0e-c71273ec62e6" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-fbf7c1dd-7bd9-4161-99ca-4c43707bab0f">
+<span class="eqno">(11.4)<a class="headerlink" href="#equation-fbf7c1dd-7bd9-4161-99ca-4c43707bab0f" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{L} = \vec{r} \times \vec{p}.
 \end{align}\]</div>
 <p>Recall the property of a cross product produces a vector that is perpendicular to the plane containing the two vectors.  Also the positive vector points upward relative to the plane and counterclockwise denotes a positive direction so that we can use the <em>right-hand rule</em>.</p>
@@ -1054,8 +1054,8 @@ L &amp;= rp\sin{\theta}, \\
 &amp;= \sum_j \left(\vec{r} \times  \vec{F}_j \right) = \sum_j \vec{\tau}_j.
 \end{align*}\]</div>
 <p>We used the vector property that <span class="math notranslate nohighlight">\(\vec{a} \times \vec{a} = 0\)</span>, and the alternative form of Newton’s 2nd law.  Therefore, we can write the definition of the net torque as:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-961296d6-d3a8-44fc-86c2-a47bca302c12">
-<span class="eqno">(11.5)<a class="headerlink" href="#equation-961296d6-d3a8-44fc-86c2-a47bca302c12" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ae8ee1fa-0729-4644-a9cb-e3052920aa0e">
+<span class="eqno">(11.5)<a class="headerlink" href="#equation-ae8ee1fa-0729-4644-a9cb-e3052920aa0e" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{\tau}_{\rm net} = \sum_j \vec{\tau}_j = \frac{d\vec{L}}{dt}.
 \end{align}\]</div>
 <div class="note admonition">
@@ -1200,8 +1200,8 @@ L &amp;= rp\sin{\theta}, \\
 <p>The angular momentum of a system of particles is important for many scientific disciplines, especially for those considering a spinning disk composed of individual particles (e.g., astronomy).</p>
 <p>Consider a spiral galaxy, where the individual stars can be treated as point particles and each particle has its own angular momentum.  The vector sum of the individual angular momenta give the total angular momentum of the galaxy.</p>
 <p>If we have a system of <span class="math notranslate nohighlight">\(N\)</span> particles, then each particle will have its own position vector <span class="math notranslate nohighlight">\(\vec{r}_j\)</span> and momentum <span class="math notranslate nohighlight">\(\vec{p}_j\)</span> relative to the origin.  The total angular momentum of the system of particles is the vector sum of the individual angular momenta, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-11950210-cc8b-439f-bd39-061c676978b7">
-<span class="eqno">(11.6)<a class="headerlink" href="#equation-11950210-cc8b-439f-bd39-061c676978b7" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-4070703c-182c-4003-a3b7-fc278b1f4f44">
+<span class="eqno">(11.6)<a class="headerlink" href="#equation-4070703c-182c-4003-a3b7-fc278b1f4f44" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{L}_{tot} = \sum_j \vec{L}_j = \vec{L}_1 + \vec{L}_2 + \cdots + \vec{L}_N.
 \end{align}\]</div>
 <p>If particle <span class="math notranslate nohighlight">\(j\)</span> is subject to a net torque <span class="math notranslate nohighlight">\(\vec{\tau}_j\)</span> about the origin, then we can find the net torque due to the system of particles by differentiating with respect to time, or</p>
@@ -1211,8 +1211,8 @@ L &amp;= rp\sin{\theta}, \\
 &amp; = \sum_j \vec{\tau}_j = \vec{\tau}_{\rm net}.
 \end{align*}\]</div>
 <p><em>The rate of change of the total angular momentum of a system is equal to the net external torque acting on the system when both quantities are measured with respect to a given origin.</em>  Mathematically, this is given as</p>
-<div class="math notranslate nohighlight" id="ang-momentum-torque">
-<span id="equation-ang-momentum-torque"></span><span class="eqno">(11.7)<a class="headerlink" href="#ang-momentum-torque" title="Link to this equation">#</a></span>\[\frac{d\vec{L}}{dt} = \sum_j \vec{\tau}_j = \vec{\tau}_{\rm net}.\]</div>
+<div class="math notranslate nohighlight" id="equation-ang-momentum-torque">
+<span class="eqno">(11.7)<a class="headerlink" href="#equation-ang-momentum-torque" title="Link to this equation">#</a></span>\[\frac{d\vec{L}}{dt} = \sum_j \vec{\tau}_j = \vec{\tau}_{\rm net}.\]</div>
 <section id="example-problem-angular-momentum-of-3-particles">
 <h4><span class="section-number">11.2.2.1. </span><strong>Example Problem</strong>: Angular Momentum of 3 Particles<a class="headerlink" href="#example-problem-angular-momentum-of-3-particles" title="Link to this heading">#</a></h4>
 <div class="exercise etamu-exercise admonition" id="Chapter11/angular-momentum-exercise-4">
@@ -1428,8 +1428,8 @@ L &amp;= \sum_i \left(\vec{L}_i\right)_z = \Delta m_iv_i R_i, \\
 &amp;= \omega\sum_i \Delta m_i R_i^2.
 \end{align*}\]</div>
 <p>The summation <span class="math notranslate nohighlight">\(\displaystyle \sum_i \Delta m_i R_i^2\)</span> is simply the moment of inertia <span class="math notranslate nohighlight">\(I\)</span> of the rigid body about the axis of rotation.  The magnitude of the angular momentum along the axis of the rotation of a rigid body that rotates with an angular velocity <span class="math notranslate nohighlight">\(\omega\)</span> is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-98fc6267-85ce-4787-9815-d16af5abffb5">
-<span class="eqno">(11.8)<a class="headerlink" href="#equation-98fc6267-85ce-4787-9815-d16af5abffb5" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b6025621-be8f-42bc-a2be-9390b995a90b">
+<span class="eqno">(11.8)<a class="headerlink" href="#equation-b6025621-be8f-42bc-a2be-9390b995a90b" title="Permalink to this equation">#</a></span>\[\begin{align}
 L = I\omega.
 \end{align}\]</div>
 <p>The direction of the angular momentum vector is direction along the axis of rotation given by the right hand rule.</p>
@@ -1600,17 +1600,17 @@ L &amp;= I_{\rm tot}\omega \\
 </section>
 <section id="conservation-of-angular-momentum">
 <h2><span class="section-number">11.3. </span>Conservation of Angular Momentum<a class="headerlink" href="#conservation-of-angular-momentum" title="Link to this heading">#</a></h2>
-<p>Suppose there is not net external torque on the system, <span class="math notranslate nohighlight">\(\vec{\tau}_{\rm net} = 0.\)</span>  In this case, Equation <a class="reference internal" href="#equation-ang-momentum-torque">()</a> becomes the <strong>law of conservation of angular momentum</strong>.</p>
+<p>Suppose there is not net external torque on the system, <span class="math notranslate nohighlight">\(\vec{\tau}_{\rm net} = 0.\)</span>  In this case, Equation <a class="reference internal" href="#equation-ang-momentum-torque">(11.7)</a> becomes the <strong>law of conservation of angular momentum</strong>.</p>
 <div class="note admonition">
 <p class="admonition-title">Law of Conservation of Angular Momentum</p>
 <p>The angular momentum of a system of particles around a point in fixed inertial frame is conserved if there is not net external torque around that point:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a26e89b8-354f-482b-864b-5ffc691217f8">
-<span class="eqno">(11.9)<a class="headerlink" href="#equation-a26e89b8-354f-482b-864b-5ffc691217f8" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-145dec04-55b4-46a2-b591-b0af99527ad9">
+<span class="eqno">(11.9)<a class="headerlink" href="#equation-145dec04-55b4-46a2-b591-b0af99527ad9" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{d\vec{L}}{dt} = 0,
 \end{align}\]</div>
 <p>or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-485139d5-8a01-4bff-b4db-f6c0e1cba52b">
-<span class="eqno">(11.10)<a class="headerlink" href="#equation-485139d5-8a01-4bff-b4db-f6c0e1cba52b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-7533aea7-1acc-4463-8ad3-50b3d8505179">
+<span class="eqno">(11.10)<a class="headerlink" href="#equation-7533aea7-1acc-4463-8ad3-50b3d8505179" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{L} = \vec{L}_1 + \vec{L}_2 + \cdots + \vec{L}_N = \text{constant}.
 \end{align}\]</div>
 <div class="admonition warning">
@@ -2080,8 +2080,8 @@ I_f &amp;= I_{\rm bullet} + I_{\rm disk} \\
 <div class="math notranslate nohighlight">
 \[ d\phi = \frac{dL}{L\sin{\theta}} = \frac{Mgr\sin{\theta}}{L\sin{\theta}} = Mg\left(\frac{r}{L}\right) dt. \]</div>
 <p>The precession angular velocity is <span class="math notranslate nohighlight">\(\omega_P = \frac{d\phi}{dt}\)</span>, where we see that</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0272527b-e7f8-453a-b456-1da186c3fea8">
-<span class="eqno">(11.11)<a class="headerlink" href="#equation-0272527b-e7f8-453a-b456-1da186c3fea8" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-c50b3342-2b02-4751-8a4f-ffbc4ed5d22e">
+<span class="eqno">(11.11)<a class="headerlink" href="#equation-c50b3342-2b02-4751-8a4f-ffbc4ed5d22e" title="Permalink to this equation">#</a></span>\[\begin{align}
 \omega_p &amp;= Mg\left(\frac{r}{L}\right), \\
 &amp;= \frac{Mgr}{I\omega},
 \end{align}\]</div>
