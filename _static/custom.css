@@ -51,36 +51,146 @@ div.exercise > p.admonition-title{
 }
 
 /* -----------------------------
+   ETAMU list-table styling
+   ----------------------------- */
+
+.etamu-table {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.etamu-table table {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.etamu-table table th:first-child,
+.etamu-table table td:first-child {
+  text-align: left !important;
+}
+
+.etamu-table table th:nth-child(n+2),
+.etamu-table table td:nth-child(n+2) {
+  text-align: right !important;
+  min-width: 170px;
+}
+
+.etamu-table table th {
+  vertical-align: bottom;
+}
+
+
+/* Default figure size */
+.bd-content figure {
+    max-width: 650px;
+    margin: auto;
+}
+
+/* -----------------------------
    etamu-dropdown styling
    ----------------------------- */
 
-/* Container */
-.sd-card.etamu-dropdown {
-  background-color: var(--etamu-gold-light);
-  border-left: 5px solid var(--etamu-gold);
-  border-radius: 8px;
-  margin: 1rem 0;
-  overflow: hidden;
+/* Outer dropdown wrapper */
+details.sd-dropdown.etamu-dropdown {
+  background-color: var(--etamu-gold-light) !important;
+  border-left: 6px solid var(--etamu-gold) !important;
+  border-radius: 10px !important;
+  margin: 1rem 0 !important;
+  overflow: hidden !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border-top: none !important;
+  border-right: none !important;
+  border-bottom: none !important;
 }
 
-/* Header */
-.sd-card.etamu-dropdown > .sd-card-header {
-  background-color: var(--etamu-gold);
-  color: #222;
-  font-weight: 600;
-  padding: 0.75rem 1rem;
+/* Header row */
+details.sd-dropdown.etamu-dropdown > summary.sd-summary-title {
+  background-color: var(--etamu-blue) !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  padding: 0.75rem 1rem !important;
+  font-size: 1rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  cursor: pointer !important;
+  list-style: none !important;
+  border: none !important;
+}
+
+/* Remove default marker */
+details.sd-dropdown.etamu-dropdown > summary.sd-summary-title::-webkit-details-marker {
+  display: none;
+}
+
+/* Hover */
+details.sd-dropdown.etamu-dropdown > summary.sd-summary-title:hover {
+  background-color: #002a80 !important;
 }
 
 /* Body */
-.sd-card.etamu-dropdown > .sd-card-body {
-  background-color: var(--etamu-gold-light);
-  padding: 1rem 1.25rem;
-  border-top: 1px solid rgba(0, 51, 160, 0.12);
+details.sd-dropdown.etamu-dropdown > div.sd-summary-content,
+details.sd-dropdown.etamu-dropdown > .sd-card-body,
+details.sd-dropdown.etamu-dropdown > .etamu-dropdown-body {
+  background-color: #ffffff !important;
+  padding: 1rem 1.25rem !important;
+  line-height: 1.6;
+  border-top: 1px solid rgba(0, 51, 160, 0.12) !important;
 }
 
-/* Optional: hover */
-.sd-card.etamu-dropdown > .sd-card-header:hover {
-  background-color: #f5b82e;
+/* Icon/text inside summary */
+details.sd-dropdown.etamu-dropdown > summary.sd-summary-title .sd-summary-text,
+details.sd-dropdown.etamu-dropdown > summary.sd-summary-title .sd-summary-state-marker {
+  color: #ffffff !important;
+}
+
+/* Smooth expand animation */
+details.sd-dropdown.etamu-dropdown[open] > div.sd-summary-content,
+details.sd-dropdown.etamu-dropdown[open] > .sd-card-body,
+details.sd-dropdown.etamu-dropdown[open] > .etamu-dropdown-body {
+  animation: etamuDropdownFade 0.2s ease-in-out;
+}
+
+@keyframes etamuDropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  details.sd-dropdown.etamu-dropdown {
+    background-color: rgba(242,169,0,0.10) !important;
+  }
+
+  details.sd-dropdown.etamu-dropdown > summary.sd-summary-title {
+    background-color: #001f66 !important;
+    color: #ffffff !important;
+  }
+
+  details.sd-dropdown.etamu-dropdown > summary.sd-summary-title:hover {
+    background-color: #002a80 !important;
+  }
+
+  details.sd-dropdown.etamu-dropdown > div.sd-summary-content,
+  details.sd-dropdown.etamu-dropdown > .sd-card-body,
+  details.sd-dropdown.etamu-dropdown > .etamu-dropdown-body {
+    background-color: #1e1e1e !important;
+    color: rgba(255,255,255,0.90) !important;
+    border-top: 1px solid rgba(255,255,255,0.08) !important;
+  }
+
+  details.sd-dropdown.etamu-dropdown > summary.sd-summary-title .sd-summary-text,
+  details.sd-dropdown.etamu-dropdown > summary.sd-summary-title .sd-summary-state-marker {
+    color: #ffffff !important;
+  }
 }
 /* -----------------------------
    Blockquotes
@@ -211,3 +321,5 @@ html[data-theme="dark"] figure figcaption p{
   opacity: 0.85;
   color: var(--pst-color-text-base, #666);
 }
+
+

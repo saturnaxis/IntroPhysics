@@ -40,7 +40,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/sphinx_iframe.css?v=96c28b52" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="https://cdn.plyr.io/3.8.4/plyr.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=b9e54c64" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=180fcd40" />
     <link rel="stylesheet" type="text/css" href="../_static/mycss.css?v=3589796e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -559,8 +559,8 @@ document.write(`
 <p>A rigid body is in <strong>equilibrium</strong> when both its <em>linear</em> and <em>angular</em> acceleration are zero relative to an inertial frame of reference.  This means that a body in equilibrium can be moving, where its <em>linear</em> and <em>angular</em> velocities are constant.</p>
 <p>A rigid body is in <strong>static equilibrium</strong> when it’s at rest <em>in our selected frame of reference.</em>  The state of rest and uniform motion is artificial, where an object may be at rest in our selected frame of reference but can appear to move with constant velocity in another frame with an observer moving at constant velocity.  The laws of physics are identical for all inertial reference frames, so there is not distinction between static equilibrium and equilibrium in an inertial frame of reference.</p>
 <p>According to Newton’s 2nd law, the linear acceleration of a rigid body is caused by a net force acting on it, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c4adb63d-3241-493b-9007-f8b448841cc1">
-<span class="eqno">(12.1)<a class="headerlink" href="#equation-c4adb63d-3241-493b-9007-f8b448841cc1" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-003a56ac-7b15-4b77-a96d-29532cbea493">
+<span class="eqno">(12.1)<a class="headerlink" href="#equation-003a56ac-7b15-4b77-a96d-29532cbea493" title="Permalink to this equation">#</a></span>\[\begin{align}
 \sum_j \vec{F}_k = m\vec{a}_{\rm CoM}.
 \end{align}\]</div>
 <p>The sum is of all <em>external forces</em> acting on the body, where <span class="math notranslate nohighlight">\(m\)</span> is its mass and <span class="math notranslate nohighlight">\(\vec{a}_{\rm CoM}\)</span> is the linear acceleration of its center of mass.</p>
@@ -570,29 +570,29 @@ document.write(`
 <div class="math notranslate nohighlight" id="zero-net-force">
 <span id="equation-zero-net-force"></span><span class="eqno">(12.2)<a class="headerlink" href="#zero-net-force" title="Link to this equation">#</a></span>\[\sum_j \vec{F}_j = \vec{0}.\]</div>
 <p>This vector equilibrium condition is equivalent to the following three scalar equations for the components of the net force:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e7c1f75a-74e4-4d29-af27-bbbfec24a629">
-<span class="eqno">(12.3)<a class="headerlink" href="#equation-e7c1f75a-74e4-4d29-af27-bbbfec24a629" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-1784d6ce-39f2-4079-afc6-66dcd9a734b2">
+<span class="eqno">(12.3)<a class="headerlink" href="#equation-1784d6ce-39f2-4079-afc6-66dcd9a734b2" title="Permalink to this equation">#</a></span>\[\begin{align}
 \sum_j F_{jx} &amp;= 0, \\
 \sum_j F_{jy} &amp;= 0, \\
 \sum_j F_{jz} &amp;= 0.
 \end{align}\]</div>
 </div>
 <p>We can state that the rotational acceleration <span class="math notranslate nohighlight">\(\vec{\alpha}\)</span> of a rigid body about a fixed axis is caused by the net torque acting on the body, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-603a7ce9-a7f3-4ec7-9e70-55b907001881">
-<span class="eqno">(12.4)<a class="headerlink" href="#equation-603a7ce9-a7f3-4ec7-9e70-55b907001881" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-18ab3118-3dd2-401e-8cb5-966dbbcf672a">
+<span class="eqno">(12.4)<a class="headerlink" href="#equation-18ab3118-3dd2-401e-8cb5-966dbbcf672a" title="Permalink to this equation">#</a></span>\[\begin{align}
 \sum_j \vec{\tau}_j = I\vec{\alpha}.
 \end{align}\]</div>
 <p>The net torque depends on the moment of inertia <span class="math notranslate nohighlight">\(I\)</span> about this axis and the summation over <em>all</em> torques <span class="math notranslate nohighlight">\(\vec{\tau}_j\)</span> of external forces.</p>
 <div class="note admonition">
 <p class="admonition-title">Second Equilibrium Condition</p>
 <p>The second equilibrium for the static equilibrium of a rigid body expresses <em>rotational</em> equilibrium:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-afb2ab7a-8837-4699-94a6-54d2edcbca7c">
-<span class="eqno">(12.5)<a class="headerlink" href="#equation-afb2ab7a-8837-4699-94a6-54d2edcbca7c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-2b9aa0a3-0528-4d4a-8276-280ddc3af097">
+<span class="eqno">(12.5)<a class="headerlink" href="#equation-2b9aa0a3-0528-4d4a-8276-280ddc3af097" title="Permalink to this equation">#</a></span>\[\begin{align}
 \sum_j \vec{\tau}_j = \vec{0}.
 \end{align}\]</div>
 <p>This equation for equilibrium is generally valid for rotational equilibrium about any axis of rotation (fixed or otherwise).  This vector equation is equivalent to three scalar equations for the vector components of the net torque:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e5d07f9e-86d1-4195-a71d-d0605b82d767">
-<span class="eqno">(12.6)<a class="headerlink" href="#equation-e5d07f9e-86d1-4195-a71d-d0605b82d767" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a1a39eb6-d288-4bda-9cca-1e02904711b3">
+<span class="eqno">(12.6)<a class="headerlink" href="#equation-a1a39eb6-d288-4bda-9cca-1e02904711b3" title="Permalink to this equation">#</a></span>\[\begin{align}
 \sum_j \vec{\tau}_{jx} = 0, \\
 \sum_j \vec{\tau}_{jy} = 0, \\
 \sum_j \vec{\tau}_{jz} = 0.
@@ -618,15 +618,15 @@ document.write(`
 <p>In the most general case, equilibrium conditions are expressed by six scalar equations (i.e., 3 components for forces, and 3 components for torques).  For planar equilibrium problems with rotation about a fixed axis, whe can reduce the number of equations to three.</p>
 <p>The standard procedure is to choose frame of reference, where the <span class="math notranslate nohighlight">\(z\)</span>-axis aligns with the axis of rotation.  Then the net torque has only a <span class="math notranslate nohighlight">\(z\)</span> component, where all forces that have non-zero torques lie in the <span class="math notranslate nohighlight">\(xy\)</span>-plane.  As a result, the contributions to the net torque only come from the <span class="math notranslate nohighlight">\(F_{jx}\)</span> and <span class="math notranslate nohighlight">\(F_{jy}\)</span> of external forces.</p>
 <p>For planar problems with the axis of rotation perpendicular to the <span class="math notranslate nohighlight">\(xy\)</span>-plane, we have the following three equilibrium conditions for forces and torques:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d0aa3fc0-8a9a-421e-973d-a6675aa6bb65">
-<span class="eqno">(12.7)<a class="headerlink" href="#equation-d0aa3fc0-8a9a-421e-973d-a6675aa6bb65" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-fe114f7b-36ef-4b26-a71d-a3ec2834d33d">
+<span class="eqno">(12.7)<a class="headerlink" href="#equation-fe114f7b-36ef-4b26-a71d-a3ec2834d33d" title="Permalink to this equation">#</a></span>\[\begin{align}
 F_{1x} + F_{2x} + \cdots + F_{Nx} &amp;= 0, \\
 F_{1y} + F_{2y} + \cdots + F_{Ny} &amp;= 0, \\
 \tau_1 + \tau_2 + \cdots + \tau_N &amp;= 0,
 \end{align}\]</div>
 <p>where the summation is over all <span class="math notranslate nohighlight">\(N\)</span> external forces acting on the body and over their torques.  Note, we dropped the <span class="math notranslate nohighlight">\(z\)</span> subscript for the torques because all the forces were in the <span class="math notranslate nohighlight">\(xy\)</span>-plane and the other torques (<span class="math notranslate nohighlight">\(\tau_{jx}\)</span> and <span class="math notranslate nohighlight">\(\tau_{jy}\)</span>) are zero in the cross product.  Thus, the <span class="math notranslate nohighlight">\(z\)</span>-component of each torque <span class="math notranslate nohighlight">\(\vec{\tau}_j\)</span> from the force <span class="math notranslate nohighlight">\(\vec{F}_j\)</span> is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5404043f-fc87-406d-9d19-4787e32c54b9">
-<span class="eqno">(12.8)<a class="headerlink" href="#equation-5404043f-fc87-406d-9d19-4787e32c54b9" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-3c443f3f-5a9e-4191-bad7-94ce828526a9">
+<span class="eqno">(12.8)<a class="headerlink" href="#equation-3c443f3f-5a9e-4191-bad7-94ce828526a9" title="Permalink to this equation">#</a></span>\[\begin{align}
 \tau_j &amp;= r_jF_j\sin{\theta},
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(r_j\)</span> is the lever arm of the force and <span class="math notranslate nohighlight">\(F_j\)</span> is the magnitude of the force.  The angle <span class="math notranslate nohighlight">\(\theta\)</span> is the angle between vectors <span class="math notranslate nohighlight">\(\vec{r}_j\)</span> and <span class="math notranslate nohighlight">\(\vec{F}_j\)</span>, measured starting from <span class="math notranslate nohighlight">\(\vec{r}_j\)</span> in the counterclockwise (positive) direction using the right-hand rule.</p>
@@ -655,9 +655,185 @@ In many equilibrium situations, one of the forces acting on the body is its own 
 </div>
 <section id="example-problem-center-of-gravity">
 <h3><span class="section-number">12.1.1. </span><strong>Example Problem</strong>: Center of Gravity<a class="headerlink" href="#example-problem-center-of-gravity" title="Link to this heading">#</a></h3>
+<div class="exercise etamu-exercise admonition" id="Chapter12/static-equilibrium-elasticity-exercise-0">
+
+<p class="admonition-title"><span class="caption-number">Exercise 12.1 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>A passenger car with a <span class="math notranslate nohighlight">\(2.5\ {\rm m}\)</span> wheelbase has <span class="math notranslate nohighlight">\(52\%\)</span> of its weight on the front wheels on level ground (see Figure <a class="reference internal" href="#center-gravity-car"><span class="std std-numref">12.3</span></a>). Where is the center of mass of this car located with respect to the rear axle?</p>
+</div></blockquote>
+<figure class="align-default" id="center-gravity-car">
+<img alt="center of gravity of a car" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/524723bddd13dd13645b8603b738961c7cd0a3bb" />
+<figcaption>
+<p><span class="caption-number">Fig. 12.3 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#center-gravity-car" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The car is modeled as a rigid body in static equilibrium supported by two contact forces at the front and rear axles. The entire weight <span class="math notranslate nohighlight">\(w\)</span> of the car acts at its center-of-mass (<span class="math notranslate nohighlight">\(\rm CoM\)</span>), which lies somewhere between the two axles. The normal reaction forces at the front and rear axles support <span class="math notranslate nohighlight">\(52\%\)</span> and <span class="math notranslate nohighlight">\(48\%\)</span> of the total weight, respectively.</p>
+<p class="sd-card-text">We choose a coordinate system along the horizontal axis of the car, with the rear axle as the origin. The front axle is located at a distance <span class="math notranslate nohighlight">\(d = 2.5\ {\rm m}\)</span> from the rear axle. The CM is located at an unknown distance <span class="math notranslate nohighlight">\(x\)</span> from the rear axle.</p>
+<p class="sd-card-text">The forces acting on the car are the upward normal forces at the front and rear axles and the downward gravitational force at the CM. Because the system is in static equilibrium, both the net force and the net torque on the car must be zero.</p>
+<figure class="align-default" id="center-gravity-car-fbd">
+<img alt="center of gravity of a car FBD" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/e5e3190f38516976db6ba6fe31939bcbf2264421" />
+<figcaption>
+<p><span class="caption-number">Fig. 12.4 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#center-gravity-car-fbd" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">The forces acting on the car are the normal force at the front axle, the normal force at the rear axle, and the weight of the car acting at the center of mass. The condition for vertical force equilibrium requires that the sum of the vertical forces is zero.</p>
+<p class="sd-card-text">Thus, the vertical force balance is given by</p>
+<div class="math notranslate nohighlight">
+\[ F_F + F_R - w = 0. \]</div>
+<p class="sd-card-text">The problem states that the front axle supports <span class="math notranslate nohighlight">\(52\%\)</span> of the weight and the rear axle supports <span class="math notranslate nohighlight">\(48\%\)</span> of the weight. Therefore, the forces are given by <span class="math notranslate nohighlight">\(F_F = 0.52w\)</span> and <span class="math notranslate nohighlight">\(F_R = 0.48w\)</span>. Substituting these values into the force balance confirms that the system is in equilibrium.</p>
+<p class="sd-card-text">To determine the location of the center of mass, we apply the condition for rotational equilibrium. We take torques about the rear axle so that the torque due to the rear force is zero because its lever arm is zero.</p>
+<p class="sd-card-text">The torque due to the front axle force produces a counterclockwise rotation, and the torque due to the weight produces a clockwise rotation. Setting the net torque equal to zero gives</p>
+<div class="math notranslate nohighlight">
+\[ \tau_F - \tau_w = 0. \]</div>
+<p class="sd-card-text">The magnitude of each torque is given by the product of the force and its perpendicular lever arm. The front force acts at a distance <span class="math notranslate nohighlight">\(d\)</span> from the rear axle, and the weight acts at a distance <span class="math notranslate nohighlight">\(x\)</span> from the rear axle. Thus, the torque balance becomes</p>
+<div class="math notranslate nohighlight">
+\[ F_F d - w x = 0. \]</div>
+<p class="sd-card-text">Substituting <span class="math notranslate nohighlight">\(F_F = 0.52w\)</span> into this expression gives</p>
+<div class="math notranslate nohighlight">
+\[ 0.52w\,d - w\,x = 0. \]</div>
+<p class="sd-card-text">We now solve this expression for the unknown position <span class="math notranslate nohighlight">\(x\)</span> of the center of mass. Dividing both sides of the equation by <span class="math notranslate nohighlight">\(w\)</span> gives</p>
+<div class="math notranslate nohighlight">
+\[ 0.52d - x = 0. \]</div>
+<p class="sd-card-text">Solving for <span class="math notranslate nohighlight">\(x\)</span> yields <span class="math notranslate nohighlight">\(x = 0.52d.\)</span>  Substituting <span class="math notranslate nohighlight">\(d = 2.5\ {\rm m}\)</span> into this expression gives</p>
+<div class="math notranslate nohighlight">
+\[ x = 0.52(2.5\ {\rm m}) = 1.3\ {\rm m}. \]</div>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The center of mass of the car is located <span class="math notranslate nohighlight">\(1.3\ {\rm m}\)</span> from the rear axle. This means that the center of mass lies slightly closer to the front axle than the midpoint of the wheelbase, which is consistent with the greater fraction of the weight supported by the front wheels.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The verification computes the torque balance numerically using the given force distribution and wheelbase. The calculated value of <span class="math notranslate nohighlight">\(x\)</span> satisfies the torque equilibrium condition, confirming that the analytical solution is correct.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Given values</span>
+<span class="n">d</span> <span class="o">=</span> <span class="mf">2.5</span>  <span class="c1"># wheelbase (m)</span>
+<span class="n">w</span> <span class="o">=</span> <span class="mf">1.0</span>  <span class="c1"># normalized weight</span>
+<span class="n">F_F</span> <span class="o">=</span> <span class="mf">0.52</span> <span class="o">*</span> <span class="n">w</span>
+
+<span class="c1"># Solve for x from torque balance</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">F_F</span> <span class="o">*</span> <span class="n">d</span> <span class="o">/</span> <span class="n">w</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The center of mass is located </span><span class="si">{</span><span class="n">x</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> m from the rear axle.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details></section>
+</div>
 </section>
 <section id="example-problem-a-breaking-tension">
 <h3><span class="section-number">12.1.2. </span><strong>Example Problem</strong>: A Breaking Tension<a class="headerlink" href="#example-problem-a-breaking-tension" title="Link to this heading">#</a></h3>
+<div class="exercise etamu-exercise admonition" id="Chapter12/static-equilibrium-elasticity-exercise-1">
+
+<p class="admonition-title"><span class="caption-number">Exercise 12.2 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>A small pan of mass <span class="math notranslate nohighlight">\(42.0\ {\rm g}\)</span> is supported by two strings, as shown in Figure <a class="reference internal" href="#mass-tension-problem"><span class="std std-numref">12.5</span></a>. The maximum tension that the string can support is <span class="math notranslate nohighlight">\(2.80\ {\rm N}\)</span>. Mass is added gradually to the pan until one of the strings snaps. Which string is it? How much mass must be added for this to occur?</p>
+</div></blockquote>
+<figure class="align-default" id="mass-tension-problem">
+<img alt="find tension with mass and two supports" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/ed43b90a1eb58a94fb82ed28baf28ab47741c0f1" />
+<figcaption>
+<p><span class="caption-number">Fig. 12.5 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#mass-tension-problem" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The knot where the two upper strings and the vertical string meet can be treated as a particle in static equilibrium. The forces acting on this knot are the tension <span class="math notranslate nohighlight">\(T_1\)</span> in the shorter <span class="math notranslate nohighlight">\(5.0\ {\rm cm}\)</span> string, the tension <span class="math notranslate nohighlight">\(T_2\)</span> in the longer <span class="math notranslate nohighlight">\(10.0\ {\rm cm}\)</span> string, and the downward force due to the weight of the pan plus the added mass. If the pan has mass <span class="math notranslate nohighlight">\(M = 42.0\ {\rm g} = 0.0420\ {\rm kg}\)</span> and the added mass is <span class="math notranslate nohighlight">\(m\)</span>, then the total downward force is <span class="math notranslate nohighlight">\((M+m)g\)</span>.</p>
+<p class="sd-card-text">We choose the <span class="math notranslate nohighlight">\(x\)</span>-axis horizontally to the right and the <span class="math notranslate nohighlight">\(y\)</span>-axis vertically upward. The two strings and the ceiling form a right triangle in which the string lengths are <span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(2a\)</span>, where <span class="math notranslate nohighlight">\(a = 5.0\ {\rm cm}\)</span>. The horizontal separation of the ceiling attachment points is therefore <span class="math notranslate nohighlight">\(\sqrt{a^2 + (2a)^2} = a\sqrt{5}\)</span>. From this geometry, the direction angles of the strings satisfy</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\cos\alpha_1 &amp;= \frac{1}{\sqrt{5}}, \qquad &amp;\sin\alpha_1 = \frac{2}{\sqrt{5}}, \\
+\cos\alpha_2 &amp;= \frac{2}{\sqrt{5}}, \qquad &amp;\sin\alpha_2 = \frac{1}{\sqrt{5}}.
+\end{align*}\]</div>
+<p class="sd-card-text">Because the system is in static equilibrium, the net force on the knot must be zero in both the <span class="math notranslate nohighlight">\(x\)</span>- and <span class="math notranslate nohighlight">\(y\)</span>-directions.</p>
+<figure class="align-default" id="mass-tension-fbd">
+<img alt="find tension with mass and two supports FBD" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/6dde00338206a466f75cad3cab621ada140bc9d4" />
+<figcaption>
+<p><span class="caption-number">Fig. 12.6 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#mass-tension-fbd" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">The forces acting on the knot are the two string tensions and the downward weight of the pan plus the added mass. Resolving the tensions into rectangular components allows us to apply the equilibrium condition separately in the horizontal and vertical directions.</p>
+<p class="sd-card-text">The conditions for equilibrium in each direction are</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+ -T_{1x} + T_{2x} &amp;= 0. \\
+T_{1y} + T_{2y} - (M+m)g &amp;= 0.
+\end{align*}\]</div>
+<p class="sd-card-text">From the geometry of the strings, the components of the tensions are</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+T_{1x} &amp;= T_1\cos\alpha_1 = \frac{1}{\sqrt{5}}T_1, \qquad &amp;T_{1y} = T_1\sin\alpha_1 = \frac{2}{\sqrt{5}}T_1, \\
+T_{2x} &amp;= T_2\cos\alpha_2 = \frac{2}{\sqrt{5}}T_2, \qquad &amp;T_{2y} = T_2\sin\alpha_2 = \frac{1}{\sqrt{5}}T_2.
+\end{align*}\]</div>
+<p class="sd-card-text">Substituting these expressions into the equilibrium equation in the <span class="math notranslate nohighlight">\(x\)</span>-direction gives</p>
+<div class="math notranslate nohighlight">
+\[ -\frac{1}{\sqrt{5}}T_1 + \frac{2}{\sqrt{5}}T_2 = 0. \]</div>
+<p class="sd-card-text">We multiply this equation by <span class="math notranslate nohighlight">\(\sqrt{5}\)</span> to simplify it, which gives</p>
+<div class="math notranslate nohighlight">
+\[ -T_1 + 2T_2 = 0.\]</div>
+<p class="sd-card-text">Solving for <span class="math notranslate nohighlight">\(T_1\)</span> gives <span class="math notranslate nohighlight">\(T_1 = 2T_2.\)</span></p>
+<p class="sd-card-text">This result shows that the tension in the shorter string is always twice the tension in the longer string. Therefore, the shorter <span class="math notranslate nohighlight">\(5.0\ {\rm cm}\)</span> string will reach the maximum tension first and will snap first.  We now substitute <span class="math notranslate nohighlight">\(T_2 = T_1/2\)</span> into the equilibrium equation in the <span class="math notranslate nohighlight">\(y\)</span>-direction to determine the mass required to make <span class="math notranslate nohighlight">\(T_1\)</span> reach its maximum value. The vertical equilibrium equation becomes</p>
+<div class="math notranslate nohighlight">
+\[ \frac{2}{\sqrt{5}}T_1 + \frac{1}{\sqrt{5}}\left(\frac{T_1}{2}\right) - (M+m)g = 0.\]</div>
+<p class="sd-card-text">Combining the terms involving <span class="math notranslate nohighlight">\(T_1\)</span> gives</p>
+<div class="math notranslate nohighlight">
+\[ \frac{2.5}{\sqrt{5}}T_1 = (M+m)g.\]</div>
+<p class="sd-card-text">The string breaks when the tension in the shorter string reaches the critical value <span class="math notranslate nohighlight">\(T_1 = 2.80\ {\rm N}\)</span>. Solving this expression for the added mass <span class="math notranslate nohighlight">\(m\)</span> gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+m &amp;= \frac{2.5}{\sqrt{5}\,g}T_1 - M \\
+  &amp;= \frac{2.5(2.80\ {\rm N})}{\sqrt{5}(9.81\ {\rm m/s^2})} - 0.0420\ {\rm kg} \\
+  &amp;= 0.277\ {\rm kg}.
+\end{align*}\]</div>
+<p class="sd-card-text">Expressed in grams, this added mass is <span class="math notranslate nohighlight">\(m = 277\ {\rm g}.\)</span></p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The shorter <span class="math notranslate nohighlight">\(5.0\ {\rm cm}\)</span> string snaps first because its tension is always twice the tension in the longer string. The mass that must be added to the pan to make this occur is <span class="math notranslate nohighlight">\(0.277\ {\rm kg}\)</span>.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The verification computes the string-angle factors from the given geometry, uses horizontal equilibrium to relate the two tensions, and then uses vertical equilibrium to solve for the added mass when the shorter string reaches its maximum tension. This reproduces the analytical result and confirms that the shorter string breaks first.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Given quantities</span>
+<span class="n">M</span> <span class="o">=</span> <span class="mf">0.0420</span>  <span class="c1"># Mass of the pan (kg)</span>
+<span class="n">T1_max</span> <span class="o">=</span> <span class="mf">2.80</span>  <span class="c1"># Maximum tension in the shorter string (N)</span>
+<span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>  <span class="c1"># Gravitational acceleration (m/s^2)</span>
+
+<span class="c1"># Geometry factors from the right triangle</span>
+<span class="n">cos_alpha1</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">sin_alpha1</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">cos_alpha2</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">sin_alpha2</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="c1"># Use horizontal equilibrium to find the tension in the longer string</span>
+<span class="n">T2</span> <span class="o">=</span> <span class="n">T1_max</span> <span class="o">/</span> <span class="mi">2</span>
+
+<span class="c1"># Use vertical equilibrium to find the total supported mass</span>
+<span class="n">total_mass</span> <span class="o">=</span> <span class="p">(</span><span class="n">T1_max</span> <span class="o">*</span> <span class="n">sin_alpha1</span> <span class="o">+</span> <span class="n">T2</span> <span class="o">*</span> <span class="n">sin_alpha2</span><span class="p">)</span> <span class="o">/</span> <span class="n">g</span>
+
+<span class="c1"># Subtract the pan mass to find the added mass</span>
+<span class="n">m_added</span> <span class="o">=</span> <span class="n">total_mass</span> <span class="o">-</span> <span class="n">M</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The tension in the shorter string is </span><span class="si">{</span><span class="n">T1_max</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> N when it reaches its limit.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The tension in the longer string is </span><span class="si">{</span><span class="n">T2</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> N at that same instant.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The added mass required to break the shorter string is </span><span class="si">{</span><span class="n">m_added</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2"> kg, or </span><span class="si">{</span><span class="n">m_added</span><span class="o">*</span><span class="mi">1000</span><span class="si">:</span><span class="s2">.0f</span><span class="si">}</span><span class="s2"> g.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details></section>
+</div>
 </section>
 </section>
 <section id="examples-of-static-equilibrium">
@@ -691,15 +867,398 @@ In many equilibrium situations, one of the forces acting on the body is its own 
 <p>In translational dynamics, a body is represented as its center-of-mass <span class="math notranslate nohighlight">\(\rm CoM\)</span>, where all forces on the body are attached and no torques appear.  This does not hold true in rotational dynamics, where an extended rigid body cannot be represented by one point alone.  The torques acting on the body depend on both the acting force and its lever arm.  The FBD for an extended rigid body helps us to identify the external torques.</p>
 <section id="example-problem-torque-balance">
 <h3><span class="section-number">12.2.1. </span><strong>Example Problem</strong>: Torque Balance<a class="headerlink" href="#example-problem-torque-balance" title="Link to this heading">#</a></h3>
+<div class="exercise etamu-exercise admonition" id="Chapter12/static-equilibrium-elasticity-exercise-2">
+
+<p class="admonition-title"><span class="caption-number">Exercise 12.3 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>Three masses are attached to a uniform meter stick, as shown in Figure <a class="reference internal" href="#torque-balance-prob"><span class="std std-numref">12.7</span></a>. The mass of the meter stick is <span class="math notranslate nohighlight">\(150\ {\rm g}\)</span> and the masses to the left of the fulcrum are <span class="math notranslate nohighlight">\(m_1 = 50\ {\rm g}\)</span> and <span class="math notranslate nohighlight">\(m_2 = 75\ {\rm g}\)</span>. Find the mass <span class="math notranslate nohighlight">\(m_3\)</span> that balances the system when it is attached at the right end of the stick, and the normal reaction force at the fulcrum when the system is balanced.</p>
+</div></blockquote>
+<figure class="align-default" id="torque-balance-prob">
+<img alt="torque balance problem" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/e7dd75370ab3e4dfcbcdaeec29b160081e0b16b7" />
+<figcaption>
+<p><span class="caption-number">Fig. 12.7 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#torque-balance-prob" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The meter stick is modeled as a rigid body in static equilibrium about the fulcrum at point <span class="math notranslate nohighlight">\(S\)</span>. The forces acting on the stick are the downward weights of the three attached masses, the downward weight of the uniform meter stick acting at its center of mass, and the upward normal reaction force <span class="math notranslate nohighlight">\(F_S\)</span> at the fulcrum.</p>
+<p class="sd-card-text">We choose the <span class="math notranslate nohighlight">\(x\)</span>-axis along the stick, the <span class="math notranslate nohighlight">\(y\)</span>-axis vertically upward, and the axis of rotation perpendicular to the page through the fulcrum. Because the stick is uniform, its center of mass is at the <span class="math notranslate nohighlight">\(50\ {\rm cm}\)</span> mark. From Figure <a class="reference internal" href="#torque-balance-prob"><span class="std std-numref">12.7</span></a>, the fulcrum is at the <span class="math notranslate nohighlight">\(70\ {\rm cm}\)</span> mark, so the lever arms measured from the fulcrum are <span class="math notranslate nohighlight">\(70\ {\rm cm}\)</span> for <span class="math notranslate nohighlight">\(m_1\)</span>, <span class="math notranslate nohighlight">\(40\ {\rm cm}\)</span> for <span class="math notranslate nohighlight">\(m_2\)</span>, <span class="math notranslate nohighlight">\(20\ {\rm cm}\)</span> for the stick’s weight, and <span class="math notranslate nohighlight">\(30\ {\rm cm}\)</span> for <span class="math notranslate nohighlight">\(m_3\)</span>.</p>
+<p class="sd-card-text">The system is balanced, so both the net torque about the fulcrum and the net vertical force on the stick must be zero.</p>
+<figure class="align-default" id="torque-balance-fbd">
+<img alt="torque balance fbd" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/9ae989692471e5d447103a35de593179afcd62b2" />
+<figcaption>
+<p><span class="caption-number">Fig. 12.8 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#torque-balance-fbd" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">The forces acting on the stick are the weights <span class="math notranslate nohighlight">\(m_1g\)</span>, <span class="math notranslate nohighlight">\(m_2g\)</span>, <span class="math notranslate nohighlight">\(mg\)</span>, and <span class="math notranslate nohighlight">\(m_3g\)</span>, together with the upward normal reaction force <span class="math notranslate nohighlight">\(F_S\)</span> at the fulcrum. We first apply the condition for rotational equilibrium about the fulcrum so that the torque due to <span class="math notranslate nohighlight">\(F_S\)</span> is zero because its lever arm is zero.</p>
+<p class="sd-card-text">The masses to the left of the fulcrum produce counterclockwise torques, and the mass <span class="math notranslate nohighlight">\(m_3\)</span> to the right of the fulcrum produces a clockwise torque. Therefore, the torque balance is</p>
+<div class="math notranslate nohighlight">
+\[ r_1 m_1 g + r_2 m_2 g + r m g - r_3 m_3 g = 0.\]</div>
+<p class="sd-card-text">The lever arms are <span class="math notranslate nohighlight">\(r_1 = 70\ {\rm cm}\)</span>, <span class="math notranslate nohighlight">\(r_2 = 40\ {\rm cm}\)</span>, <span class="math notranslate nohighlight">\(r = 20\ {\rm cm}\)</span>, and <span class="math notranslate nohighlight">\(r_3 = 30\ {\rm cm}\)</span>. Substituting these values into the torque equation gives</p>
+<div class="math notranslate nohighlight">
+\[ (70.0\ {\rm cm})m_1 g + (40.0\ {\rm cm})m_2 g + (20.0\ {\rm cm})m g - (30.0\ {\rm cm})m_3 g = 0.\]</div>
+<p class="sd-card-text">We divide this equation by <span class="math notranslate nohighlight">\(g\)</span> to eliminate the common factor of gravitational acceleration, which gives</p>
+<div class="math notranslate nohighlight">
+\[ r_3 m_3 = r_1 m_1 + r_2 m_2 + r m. \]</div>
+<p class="sd-card-text">We now solve this expression for the unknown mass <span class="math notranslate nohighlight">\(m_3\)</span>, which gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+m_3 &amp;= \frac{r_1}{r_3}m_1 + \frac{r_2}{r_3}m_2 + \frac{r}{r_3}m \\
+    &amp;= \frac{70}{30}(50\ {\rm g}) + \frac{40}{30}(75\ {\rm g}) + \frac{20}{30}(150\ {\rm g}) \\
+    &amp;= 316.7\ {\rm g}.
+\end{align*}\]</div>
+<p class="sd-card-text">The condition for vertical force equilibrium requires that the sum of the vertical forces is zero. Taking upward as positive, the vertical force balance is</p>
+<div class="math notranslate nohighlight">
+\[ F_S - m_1 g - m_2 g - m g - m_3 g = 0. \]</div>
+<p class="sd-card-text">We solve this expression for the normal reaction force, which gives</p>
+<div class="math notranslate nohighlight">
+\[ F_S = (m_1 + m_2 + m + m_3)g. \]</div>
+<p class="sd-card-text">Substituting <span class="math notranslate nohighlight">\(m_1 = 0.05\ {\rm kg}\)</span>, <span class="math notranslate nohighlight">\(m_2 = 0.075\ {\rm kg}\)</span>, <span class="math notranslate nohighlight">\(m = 0.15\ {\rm kg}\)</span>, <span class="math notranslate nohighlight">\(m_3 = 0.3167\ {\rm kg}\)</span>, and <span class="math notranslate nohighlight">\(g = 9.81\ {\rm m/s^2}\)</span> into this expression gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+F_S &amp;= (0.05 + 0.075 + 0.15 + 0.3167)\ {\rm kg}\,(9.81\ {\rm m/s^2}) \\
+    &amp;= 5.8\ {\rm N}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The mass required at the right end of the stick to balance the system is <span class="math notranslate nohighlight">\(m_3 = 317\ {\rm g}\)</span>. The normal reaction force at the fulcrum is <span class="math notranslate nohighlight">\(F_S = 5.8\ {\rm N}\)</span>. This result shows that the torque balance depends only on the mass distribution and lever arms, while the support force depends on the total weight of the balanced system.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The verification reproduces the torque balance about the fulcrum to compute the unknown mass <span class="math notranslate nohighlight">\(m_3\)</span>, and then applies vertical force equilibrium to compute the support force <span class="math notranslate nohighlight">\(F_S\)</span>. This confirms the analytical result and shows that the balanced mass is determined independently of the value of <span class="math notranslate nohighlight">\(g\)</span>, while the support force is not.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Given masses (kg)</span>
+<span class="n">m1</span> <span class="o">=</span> <span class="mf">0.05</span>  <span class="c1"># Mass on the left end</span>
+<span class="n">m2</span> <span class="o">=</span> <span class="mf">0.075</span> <span class="c1"># Second mass on the left</span>
+<span class="n">m_stick</span> <span class="o">=</span> <span class="mf">0.15</span>  <span class="c1"># Mass of the uniform meter stick</span>
+
+<span class="c1"># Lever arms measured from the fulcrum (m)</span>
+<span class="n">r1</span> <span class="o">=</span> <span class="mf">0.7</span>  <span class="c1"># Lever arm of m1</span>
+<span class="n">r2</span> <span class="o">=</span> <span class="mf">0.4</span>  <span class="c1"># Lever arm of m2</span>
+<span class="n">r_stick</span> <span class="o">=</span> <span class="mf">0.2</span>  <span class="c1"># Lever arm of the stick&#39;s center of mass</span>
+<span class="n">r3</span> <span class="o">=</span> <span class="mf">0.3</span>  <span class="c1"># Lever arm of m3</span>
+
+<span class="c1"># Gravitational acceleration (m/s^2)</span>
+<span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>
+
+<span class="c1"># Use torque balance about the fulcrum to find the balancing mass</span>
+<span class="n">m3</span> <span class="o">=</span> <span class="p">(</span><span class="n">r1</span> <span class="o">*</span> <span class="n">m1</span> <span class="o">+</span> <span class="n">r2</span> <span class="o">*</span> <span class="n">m2</span> <span class="o">+</span> <span class="n">r_stick</span> <span class="o">*</span> <span class="n">m_stick</span><span class="p">)</span> <span class="o">/</span> <span class="n">r3</span>
+
+<span class="c1"># Use vertical force equilibrium to find the support force at the fulcrum</span>
+<span class="n">F_S</span> <span class="o">=</span> <span class="p">(</span><span class="n">m1</span> <span class="o">+</span> <span class="n">m2</span> <span class="o">+</span> <span class="n">m_stick</span> <span class="o">+</span> <span class="n">m3</span><span class="p">)</span> <span class="o">*</span> <span class="n">g</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The mass required to balance the meter stick is </span><span class="si">{</span><span class="n">m3</span><span class="o">*</span><span class="mi">1000</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> g.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The normal reaction force at the fulcrum is </span><span class="si">{</span><span class="n">F_S</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> N.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details></section>
+</div>
 </section>
 <section id="example-problem-forces-in-the-forearm">
 <h3><span class="section-number">12.2.2. </span><strong>Example Problem</strong>: Forces in the Forearm<a class="headerlink" href="#example-problem-forces-in-the-forearm" title="Link to this heading">#</a></h3>
+<div class="exercise etamu-exercise admonition" id="Chapter12/static-equilibrium-elasticity-exercise-3">
+
+<p class="admonition-title"><span class="caption-number">Exercise 12.4 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>A weightlifter is holding a <span class="math notranslate nohighlight">\(50.0\ {\rm lb}\)</span> weight (equivalent to <span class="math notranslate nohighlight">\(222.4\ {\rm N}\)</span>) with his forearm, as shown in Figure <a class="reference internal" href="#forces-forearm-prob"><span class="std std-numref">12.9</span></a>. His forearm is positioned at <span class="math notranslate nohighlight">\(\beta = 60^\circ\)</span> with respect to his upper arm. The forearm is supported by a contraction of the biceps muscle, which causes a torque around the elbow. Assuming that the tension in the biceps acts along the vertical direction given by gravity, what tension must the muscle exert to hold the forearm at the position shown? What is the force on the elbow joint? Assume that the forearm’s weight is negligible. Give your final answers in SI units.</p>
+</div></blockquote>
+<figure class="align-default" id="forces-forearm-prob">
+<img alt="forces in the forearm problem" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/826e9487f97da7ca0d9663b1128146fe11b6edc0" />
+<figcaption>
+<p><span class="caption-number">Fig. 12.9 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#forces-forearm-prob" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The forearm is modeled as a rigid body in static equilibrium about the elbow joint. The forces acting on the forearm are the downward force of the weight in the hand, the upward tension exerted by the biceps muscle, and the force exerted by the elbow joint. The forearm’s own weight is neglected, as stated in the problem.</p>
+<p class="sd-card-text">We choose the elbow as the pivot point so that the torque due to the elbow force is zero. The forearm makes an angle <span class="math notranslate nohighlight">\(\beta = 60^\circ\)</span> with the vertical. The tension in the biceps and the weight both act vertically, so each makes the same angle <span class="math notranslate nohighlight">\(\beta\)</span> with the forearm. The lever arm of the biceps tension is <span class="math notranslate nohighlight">\(r_T = 1.5\ {\rm in}\)</span>, and the lever arm of the weight is <span class="math notranslate nohighlight">\(r_w = 13.0\ {\rm in}\)</span>. Because these distances appear only as a ratio in the torque equation, they do not need to be converted into SI units until the final force calculation.</p>
+<p class="sd-card-text">The system is in static equilibrium, so the net torque about the elbow and the net vertical force on the forearm must both be zero.</p>
+<figure class="align-default" id="forces-forearm-fbd">
+<img alt="forces in the forearm fbd" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/2a7adc57f90d4cf37d2650874fa9371676812ebd" />
+<figcaption>
+<p><span class="caption-number">Fig. 12.10 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#forces-forearm-fbd" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">The forces acting on the forearm are the elbow force <span class="math notranslate nohighlight">\(F\)</span>, the biceps tension <span class="math notranslate nohighlight">\(T\)</span>, and the weight <span class="math notranslate nohighlight">\(w\)</span> of the object in the hand. Because the biceps tension and the weight both act vertically, and because the elbow force must balance their combined effect, all three forces are vertical. Therefore, the force balance may be written directly along the vertical direction.</p>
+<p class="sd-card-text">The condition for rotational equilibrium about the elbow requires that the counterclockwise torque due to the biceps tension balance the clockwise torque due to the weight. Thus, the torque balance is</p>
+<div class="math notranslate nohighlight">
+\[ r_T T\sin\beta - r_w w\sin\beta = 0. \]</div>
+<p class="sd-card-text">Because both terms contain the factor <span class="math notranslate nohighlight">\(\sin\beta\)</span>, this factor cancels, and the torque equation becomes</p>
+<div class="math notranslate nohighlight">
+\[ r_T T - r_w w = 0. \]</div>
+<p class="sd-card-text">We solve this expression for the biceps tension, which gives</p>
+<div class="math notranslate nohighlight">
+\[ T = \frac{r_w}{r_T}w. \]</div>
+<p class="sd-card-text">Substituting <span class="math notranslate nohighlight">\(r_w = 13.0\ {\rm in}\)</span>, <span class="math notranslate nohighlight">\(r_T = 1.5\ {\rm in}\)</span>, and <span class="math notranslate nohighlight">\(w = 50.0\ {\rm lb}\)</span> into this expression gives</p>
+<div class="math notranslate nohighlight">
+\[ T = \frac{13.0}{1.5}(50.0\ {\rm lb}) = 433.3\ {\rm lb}. \]</div>
+<p class="sd-card-text">The condition for force equilibrium requires that the net vertical force on the forearm be zero. Taking upward as positive, the force balance is</p>
+<div class="math notranslate nohighlight">
+\[ -F + T - w = 0. \]</div>
+<p class="sd-card-text">We solve this expression for the elbow force, which gives</p>
+<div class="math notranslate nohighlight">
+\[ F = T - w. \]</div>
+<p class="sd-card-text">Substituting the known values into this expression gives</p>
+<div class="math notranslate nohighlight">
+\[ F = 433.3\ {\rm lb} - 50.0\ {\rm lb} = 383.3\ {\rm lb}. \]</div>
+<p class="sd-card-text">The grouped final calculations in English units are</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+T &amp;= \frac{r_w}{r_T}w
+   = \frac{13.0}{1.5}(50.0\ {\rm lb})
+   = 433.3\ {\rm lb}, \\
+F &amp;= T - w
+   = 433.3\ {\rm lb} - 50.0\ {\rm lb}
+   = 383.3\ {\rm lb}.
+\end{align*}\]</div>
+<p class="sd-card-text">We now convert these forces into SI units using <span class="math notranslate nohighlight">\(1\ {\rm lb} = 4.448\ {\rm N}\)</span>. The final values are</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+T &amp;= 433.3\ {\rm lb}(4.448\ {\rm N/lb})
+   = 1.93 \times 10^3\ {\rm N}, \\
+F &amp;= 383.3\ {\rm lb}(4.448\ {\rm N/lb})
+   = 1.71 \times 10^3\ {\rm N}.
+\end{align*}\]</div>
+<p class="sd-card-text">The biceps tension acts upward, while the elbow joint force acts downward on the forearm.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The biceps muscle must exert an upward tension of <span class="math notranslate nohighlight">\(1.93 \times 10^3\ {\rm N}\)</span> to hold the forearm in equilibrium. The force exerted by the elbow joint on the forearm has magnitude <span class="math notranslate nohighlight">\(1.71 \times 10^3\ {\rm N}\)</span> and acts downward. This large muscle force shows that even a moderate weight in the hand can require a much larger internal force because the biceps acts with a very short lever arm.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The verification uses the torque balance about the elbow to compute the biceps tension from the ratio of lever arms, and then uses force balance to compute the elbow force. The resulting values reproduce the analytical solution and confirm that the elbow force must act downward on the forearm.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Given quantities</span>
+<span class="n">w_lb</span> <span class="o">=</span> <span class="mf">50.0</span>  <span class="c1"># Weight held in the hand (lb)</span>
+<span class="n">lb_to_N</span> <span class="o">=</span> <span class="mf">4.448</span>  <span class="c1"># Conversion factor from pounds to newtons</span>
+<span class="n">r_T</span> <span class="o">=</span> <span class="mf">1.5</span>  <span class="c1"># Lever arm of the biceps tension (in)</span>
+<span class="n">r_w</span> <span class="o">=</span> <span class="mf">13.0</span>  <span class="c1"># Lever arm of the weight (in)</span>
+
+<span class="c1"># Use torque balance about the elbow to find the biceps tension</span>
+<span class="n">T_lb</span> <span class="o">=</span> <span class="p">(</span><span class="n">r_w</span> <span class="o">/</span> <span class="n">r_T</span><span class="p">)</span> <span class="o">*</span> <span class="n">w_lb</span>
+
+<span class="c1"># Use vertical force balance to find the elbow force magnitude</span>
+<span class="n">F_lb</span> <span class="o">=</span> <span class="n">T_lb</span> <span class="o">-</span> <span class="n">w_lb</span>
+
+<span class="c1"># Convert the forces to SI units</span>
+<span class="n">T_N</span> <span class="o">=</span> <span class="n">T_lb</span> <span class="o">*</span> <span class="n">lb_to_N</span>
+<span class="n">F_N</span> <span class="o">=</span> <span class="n">F_lb</span> <span class="o">*</span> <span class="n">lb_to_N</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The biceps tension is </span><span class="si">{</span><span class="n">T_N</span><span class="si">:</span><span class="s2">.0f</span><span class="si">}</span><span class="s2"> N upward.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The force on the elbow joint is </span><span class="si">{</span><span class="n">F_N</span><span class="si">:</span><span class="s2">.0f</span><span class="si">}</span><span class="s2"> N downward.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details></section>
+</div>
 </section>
 <section id="example-problem-ladder-resting-against-a-wall">
 <h3><span class="section-number">12.2.3. </span><strong>Example Problem</strong>: Ladder Resting Against a Wall<a class="headerlink" href="#example-problem-ladder-resting-against-a-wall" title="Link to this heading">#</a></h3>
+<div class="exercise etamu-exercise admonition" id="Chapter12/static-equilibrium-elasticity-exercise-4">
+
+<p class="admonition-title"><span class="caption-number">Exercise 12.5 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>A uniform ladder is <span class="math notranslate nohighlight">\(L = 5.0\ {\rm m}\)</span> long and weighs <span class="math notranslate nohighlight">\(400.0\ {\rm N}\)</span>. The ladder rests against a slippery vertical wall, as shown in Figure <a class="reference internal" href="#ladder-resting-prob"><span class="std std-numref">12.11</span></a>. The minimum inclination angle between the ladder and the rough floor below which the ladder slips is <span class="math notranslate nohighlight">\(\beta = 53^\circ\)</span>. Find the reaction forces from the floor and from the wall on the ladder and the coefficient of static friction <span class="math notranslate nohighlight">\(\mu_s\)</span> at the interface of the ladder with the floor that prevents the ladder from slipping.</p>
+</div></blockquote>
+<figure class="align-default" id="ladder-resting-prob">
+<img alt="ladder resting problem" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/4681461b25167ec8cccea39d20187760d5714ee4" />
+<figcaption>
+<p><span class="caption-number">Fig. 12.11 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#ladder-resting-prob" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The ladder is modeled as a rigid body in static equilibrium. Because the wall is slippery, the wall exerts only a horizontal normal reaction force on the ladder. At the floor, the ladder experiences an upward normal force and a horizontal static friction force. The ladder’s weight acts downward at its center of mass, which is located at the midpoint of the ladder because the ladder is uniform.</p>
+<p class="sd-card-text">We choose the coordinate system so that the <span class="math notranslate nohighlight">\(x\)</span>-axis is horizontal and the <span class="math notranslate nohighlight">\(y\)</span>-axis is vertical. We select the contact point with the floor as the pivot. With this choice, both the normal force from the floor and the friction force from the floor produce zero torque because their lever arms are zero. The only torques about the pivot come from the ladder’s weight and the normal reaction force from the wall.</p>
+<p class="sd-card-text">The system is at the threshold of slipping when <span class="math notranslate nohighlight">\(\beta = 53^\circ\)</span>, so the static friction force has reached its maximum value. That allows us to determine the coefficient of static friction from the ratio of the friction force to the normal force at the floor.</p>
+<figure class="align-default" id="ladder-resting-fbd">
+<img alt="ladder resting fbd" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/e2fb8b5d71798401a65fca4f234e93d33620270e" />
+<figcaption>
+<p><span class="caption-number">Fig. 12.12 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#ladder-resting-fbd" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">The forces acting on the ladder are the friction force <span class="math notranslate nohighlight">\(f\)</span> at the floor, the normal force <span class="math notranslate nohighlight">\(N\)</span> from the floor, the weight <span class="math notranslate nohighlight">\(w\)</span> of the ladder, and the horizontal normal reaction force <span class="math notranslate nohighlight">\(F\)</span> from the wall. The condition for translational equilibrium requires that the net force on the ladder vanish in both the horizontal and vertical directions.</p>
+<p class="sd-card-text">The force balance is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+f - F &amp;= 0,\\
+N - w = 0.
+\end{align*}\]</div>
+<p class="sd-card-text">The condition for rotational equilibrium about the contact point with the floor requires that the net torque about that point be zero. The wall force produces a counterclockwise torque, and the weight produces a clockwise torque. The lever arm of the wall force is <span class="math notranslate nohighlight">\(L\)</span>, and the lever arm of the weight is <span class="math notranslate nohighlight">\(L/2\)</span>.</p>
+<p class="sd-card-text">Thus, the torque balance about the floor contact point is</p>
+<div class="math notranslate nohighlight">
+\[ r_F F\sin\theta_F + r_w w\sin\theta_w = 0. \]</div>
+<p class="sd-card-text">For the wall force, the angle between the lever arm and the force is <span class="math notranslate nohighlight">\(\theta_F = 180^\circ - \beta\)</span>, so <span class="math notranslate nohighlight">\(\sin\theta_F = \sin\beta\)</span>. For the weight, the angle between the lever arm and the force is <span class="math notranslate nohighlight">\(\theta_w = 270^\circ - \beta\)</span>, so <span class="math notranslate nohighlight">\(\sin\theta_w = -\cos\beta\)</span>. Substituting these into the torque equation gives</p>
+<div class="math notranslate nohighlight">
+\[ LF\sin\beta - \frac{L}{2}w\cos\beta = 0. \]</div>
+<p class="sd-card-text">We solve this expression for the wall force, which gives</p>
+<div class="math notranslate nohighlight">
+\[ F = \frac{w}{2}\cot\beta.\]</div>
+<p class="sd-card-text">Substituting <span class="math notranslate nohighlight">\(w = 400.0\ {\rm N}\)</span> and <span class="math notranslate nohighlight">\(\beta = 53^\circ\)</span> into this expression gives</p>
+<div class="math notranslate nohighlight">
+\[ F = \frac{400.0\ {\rm N}}{2}\cot 53^\circ = 150.7\ {\rm N}. \]</div>
+<p class="sd-card-text">The horizontal force balance requires <span class="math notranslate nohighlight">\(f = F\)</span>, so the friction force at the floor is <span class="math notranslate nohighlight">\(f = 150.7\ {\rm N}.\)</span>  The vertical force balance requires <span class="math notranslate nohighlight">\(N = w\)</span>, so the normal force from the floor is <span class="math notranslate nohighlight">\(N = 400.0\ {\rm N}.\)</span>  The coefficient of static friction at the threshold of slipping is the ratio of the friction force to the normal force. Therefore,</p>
+<div class="math notranslate nohighlight">
+\[ \mu_s = \frac{f}{N} = \frac{150.7}{400.0} = 0.377. \]</div>
+<p class="sd-card-text">The reaction force from the floor is the vector sum of the floor’s normal force and the floor’s friction force. Writing this vector in unit-vector form gives</p>
+<div class="math notranslate nohighlight">
+\[ \vec{F}_{\rm floor} = (-150.7\,\hat{i} + 400.0\,\hat{j})\ {\rm N}. \]</div>
+<p class="sd-card-text">Its magnitude is <span class="math notranslate nohighlight">\(F_{\rm floor} = \sqrt{f^2 + N^2} = \sqrt{(150.7)^2 + (400.0)^2}\ {\rm N} = 427.4\ {\rm N}. \)</span></p>
+<p class="sd-card-text">Its direction above the floor is <span class="math notranslate nohighlight">\( \phi = \tan^{-1}\left(\frac{N}{f}\right) = \tan^{-1}\left(\frac{400.0}{150.7}\right) = 69.3^\circ. \)</span></p>
+<p class="sd-card-text">Because the wall is frictionless, the reaction force from the wall is purely horizontal and has magnitude <span class="math notranslate nohighlight">\(F_{\rm wall} = 150.7\ {\rm N}.\)</span></p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The wall exerts a horizontal reaction force of <span class="math notranslate nohighlight">\(150.7\ {\rm N}\)</span> on the ladder. The floor exerts a normal force of <span class="math notranslate nohighlight">\(400.0\ {\rm N}\)</span> upward and a friction force of <span class="math notranslate nohighlight">\(150.7\ {\rm N}\)</span> toward the wall, so the total reaction force from the floor has magnitude <span class="math notranslate nohighlight">\(427.4\ {\rm N}\)</span> and points <span class="math notranslate nohighlight">\(69.3^\circ\)</span> above the floor. The coefficient of static friction required to prevent slipping at the limiting angle is <span class="math notranslate nohighlight">\(\mu_s = 0.377\)</span>.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The verification uses torque balance about the floor contact point to compute the wall force, then uses horizontal and vertical force balance to compute the floor friction and floor normal force. The resulting values reproduce the analytical solution and confirm the required coefficient of static friction at the threshold of slipping.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Given quantities</span>
+<span class="n">w</span> <span class="o">=</span> <span class="mf">400.0</span>  <span class="c1"># Weight of the ladder (N)</span>
+<span class="n">beta_deg</span> <span class="o">=</span> <span class="mf">53.0</span>  <span class="c1"># Inclination angle (degrees)</span>
+<span class="n">beta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="n">beta_deg</span><span class="p">)</span>
+
+<span class="c1"># Use torque balance about the floor contact point to find the wall force</span>
+<span class="n">F_wall</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">w</span> <span class="o">*</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">beta</span><span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">beta</span><span class="p">))</span>
+
+<span class="c1"># Use force balance to find the floor friction and floor normal force</span>
+<span class="n">f_floor</span> <span class="o">=</span> <span class="n">F_wall</span>
+<span class="n">N_floor</span> <span class="o">=</span> <span class="n">w</span>
+
+<span class="c1"># Compute the coefficient of static friction</span>
+<span class="n">mu_s</span> <span class="o">=</span> <span class="n">f_floor</span> <span class="o">/</span> <span class="n">N_floor</span>
+
+<span class="c1"># Compute the total reaction force from the floor</span>
+<span class="n">F_floor_mag</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">f_floor</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">N_floor</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">phi_deg</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arctan2</span><span class="p">(</span><span class="n">N_floor</span><span class="p">,</span> <span class="n">f_floor</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The reaction force from the wall is </span><span class="si">{</span><span class="n">F_wall</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> N.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The floor exerts a friction force of </span><span class="si">{</span><span class="n">f_floor</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> N toward the wall.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The floor exerts a normal force of </span><span class="si">{</span><span class="n">N_floor</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> N upward.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The coefficient of static friction is </span><span class="si">{</span><span class="n">mu_s</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The magnitude of the total reaction force from the floor is </span><span class="si">{</span><span class="n">F_floor_mag</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> N.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The direction of the floor reaction force is </span><span class="si">{</span><span class="n">phi_deg</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> degrees above the floor.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details></section>
+</div>
 </section>
 <section id="example-problem-forces-on-door-hinges">
 <h3><span class="section-number">12.2.4. </span><strong>Example Problem</strong>: Forces on Door Hinges<a class="headerlink" href="#example-problem-forces-on-door-hinges" title="Link to this heading">#</a></h3>
+<div class="exercise etamu-exercise admonition" id="Chapter12/static-equilibrium-elasticity-exercise-5">
+
+<p class="admonition-title"><span class="caption-number">Exercise 12.6 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>A swinging door that weighs <span class="math notranslate nohighlight">\(w = 400\ {\rm N}\)</span> is supported by hinges <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> so that the door can swing about a vertical axis passing through the hinges. The door has a width of <span class="math notranslate nohighlight">\(b = 1.00\ {\rm m}\)</span>, and the door slab has a uniform mass density. The hinges are placed symmetrically at the door’s edge in such a way that the door’s weight is evenly distributed between them. The hinges are separated by distance <span class="math notranslate nohighlight">\(a = 2.00\ {\rm m}\)</span>. Find the forces on the hinges when the door rests half-open.</p>
+</div></blockquote>
+<figure class="align-default" id="door-hinge-prob">
+<img alt="force on door hinges" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/e65ba7c499bb70ab67dfc81c7a6f24c0d2bae2d3" />
+<figcaption>
+<p><span class="caption-number">Fig. 12.13 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#door-hinge-prob" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The door is treated as a rigid body in static equilibrium. The forces acting on the door are the hinge forces at <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, together with the weight <span class="math notranslate nohighlight">\(w\)</span> acting downward at the center of mass. Because the door has uniform mass density, its center of mass is at its geometric center.</p>
+<p class="sd-card-text">We resolve each hinge force into horizontal and vertical components and adopt a coordinate system with <span class="math notranslate nohighlight">\(x\)</span> horizontal and <span class="math notranslate nohighlight">\(y\)</span> vertical. The problem states that the weight is evenly distributed between the hinges, so the vertical components satisfy <span class="math notranslate nohighlight">\(A_y = B_y\)</span>. We choose the upper hinge <span class="math notranslate nohighlight">\(A\)</span> as the pivot so that its torque contribution is zero.</p>
+<figure class="align-default" id="door-hinge-fbd">
+<img alt="force on door hinges fbd" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/1ab66d3a39ef30bccab674da283cdce831635b56" />
+<figcaption>
+<p><span class="caption-number">Fig. 12.14 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#door-hinge-fbd" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">We apply the equilibrium conditions for forces in both directions simultaneously:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\sum F_x &amp;= -A_x + B_x = 0, \\
+\sum F_y &amp;= A_y + B_y - w = 0.
+\end{align*}\]</div>
+<p class="sd-card-text">From the first equation, <span class="math notranslate nohighlight">\(A_x = B_x\)</span>. From the second equation together with <span class="math notranslate nohighlight">\(A_y = B_y\)</span>, we obtain</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+2A_y &amp;= w \\
+A_y &amp;= B_y = \frac{w}{2} = 200\ {\rm N}.
+\end{align*}\]</div>
+<p class="sd-card-text">Next, we apply the torque equilibrium condition about hinge <span class="math notranslate nohighlight">\(A\)</span>. Only the weight and the horizontal component <span class="math notranslate nohighlight">\(B_x\)</span> contribute:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\sum \tau_A &amp;= -w\frac{b}{2} + a B_x = 0.
+\end{align*}\]</div>
+<p class="sd-card-text">Solving for <span class="math notranslate nohighlight">\(B_x\)</span> gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+B_x &amp;= \frac{w b}{2a} = \frac{(400)(1.00)}{2(2.00)} = 100\ {\rm N}.
+\end{align*}\]</div>
+<p class="sd-card-text">Thus, <span class="math notranslate nohighlight">\(A_x = B_x = 100\ {\rm N}\)</span>.  The forces exerted by the hinges on the door are therefore</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\vec{F}_{A\,{\rm on\ door}} &amp;= -100\,\hat{i} + 200\,\hat{j}\ {\rm N}, \\
+\vec{F}_{B\,{\rm on\ door}} &amp;= +100\,\hat{i} + 200\,\hat{j}\ {\rm N}.
+\end{align*}\]</div>
+<p class="sd-card-text">By Newton’s third law, the forces on the hinges are</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\vec{F}_{{\rm door\ on}\ A} &amp;= +100\,\hat{i} - 200\,\hat{j}\ {\rm N}, \\
+\vec{F}_{{\rm door\ on}\ B} &amp;= -100\,\hat{i} - 200\,\hat{j}\ {\rm N}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">Each hinge supports half the weight of the door, <span class="math notranslate nohighlight">\(200\ {\rm N}\)</span> downward, while the horizontal components of <span class="math notranslate nohighlight">\(100\ {\rm N}\)</span> form a couple that balances the torque produced by the door’s center of mass being offset from the hinge axis.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The code verifies the vertical forces from force balance and equal load sharing, then computes the horizontal force using torque balance about the upper hinge.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
+
+<span class="c1"># Given quantities</span>
+<span class="n">w</span> <span class="o">=</span> <span class="mf">400.0</span>  <span class="c1"># Weight of the door (N)</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mf">1.00</span>   <span class="c1"># Width of the door (m)</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mf">2.00</span>   <span class="c1"># Separation between hinges (m)</span>
+
+<span class="c1"># Vertical force balance with equal distribution</span>
+<span class="n">A_y</span> <span class="o">=</span> <span class="n">w</span> <span class="o">/</span> <span class="mi">2</span>
+<span class="n">B_y</span> <span class="o">=</span> <span class="n">w</span> <span class="o">/</span> <span class="mi">2</span>
+
+<span class="c1"># Torque balance about upper hinge</span>
+<span class="n">B_x</span> <span class="o">=</span> <span class="n">w</span> <span class="o">*</span> <span class="n">b</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">a</span><span class="p">)</span>
+<span class="n">A_x</span> <span class="o">=</span> <span class="n">B_x</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Each hinge supports </span><span class="si">{</span><span class="n">A_y</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> N vertically.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The horizontal hinge forces have magnitude </span><span class="si">{</span><span class="n">A_x</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> N.&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Force of door on upper hinge: (</span><span class="si">{</span><span class="n">A_x</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> i - </span><span class="si">{</span><span class="n">A_y</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> j) N.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Force of door on lower hinge: (-</span><span class="si">{</span><span class="n">B_x</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> i - </span><span class="si">{</span><span class="n">B_y</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> j) N.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details></section>
+</div>
 </section>
 </section>
 <section id="stress-strain-and-elastic-modulus">
@@ -729,8 +1288,8 @@ In many equilibrium situations, one of the forces acting on the body is its own 
 </div>
 <p>An object or medium under stress becomes deformed, where we quantify the deformation using <strong>strain</strong>.  Strain is a fractional change in either length (under tensile stress), volume (under bulk stress), or geometry (under shear stress).  Strain is a dimensionless number that is proportional to the strain.</p>
 <p>The greater the stress, the greater the strain.  This relationship need not be linear.  Only when the stress is sufficiently low is the deformation in direct proportion to the stress value.  The proportionality constant is called the <strong>elastic modulus</strong>.  In the linear limit of low stress, the general relation between stress and strain is given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ec9df986-62e8-4603-b766-8f17c29bc3bb">
-<span class="eqno">(12.9)<a class="headerlink" href="#equation-ec9df986-62e8-4603-b766-8f17c29bc3bb" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-7ba75803-20ed-4d2a-9f60-faad77df5ab2">
+<span class="eqno">(12.9)<a class="headerlink" href="#equation-7ba75803-20ed-4d2a-9f60-faad77df5ab2" title="Permalink to this equation">#</a></span>\[\begin{align}
 \text{stress} = (\text{elastic modulus}) \times \text{strain}.
 \end{align}\]</div>
 <p>Since the strain is dimensionless, this means that the elastic modulus must have the same units as the stress.  When an object’s elastic modulus is large, the effect of stress is small.  Also, a small elastic modulus means that stress produces large strain and a noticeable deformation.  For example, the stress on a rubber band produces a larger strain (deformation) than the same stress on a steel band of the same dimensions because the elastic modulus for rubber is about <span class="math notranslate nohighlight">\(100\times\)</span> smaller than the elastic modulus for steel.</p>
@@ -740,13 +1299,146 @@ In many equilibrium situations, one of the forces acting on the body is its own 
 <li><p><em>shear stress</em>: the elastic modulus is called the <strong>shear modulus</strong>.</p></li>
 </ul>
 <p>The relation between stress and strain is an observed (or empirical) relation that is measured in a laboratory.  Elastic moduli for various materials are measured under various physical conditions (e.g., varying temperature) and collected in engineering data tables for reference.</p>
+<div class="pst-scrollable-table-container"><table class="etamu-table table" id="table-elastic-moduli">
+<caption><span class="caption-number">Table 12.1 </span><span class="caption-text">Approximate Elastic Moduli for Selected Materials</span><a class="headerlink" href="#table-elastic-moduli" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Material</p></th>
+<th class="head"><p>Young’s modulus (<span class="math notranslate nohighlight">\(\times 10^{10}\ {\rm Pa}\)</span>)</p></th>
+<th class="head"><p>Bulk modulus (<span class="math notranslate nohighlight">\(\times 10^{10}\ {\rm Pa}\)</span>)</p></th>
+<th class="head"><p>Shear modulus (<span class="math notranslate nohighlight">\(\times 10^{10}\ {\rm Pa}\)</span>)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Aluminum</p></td>
+<td><p>7.0</p></td>
+<td><p>7.5</p></td>
+<td><p>2.5</p></td>
+</tr>
+<tr class="row-odd"><td><p>Bone (tension)</p></td>
+<td><p>1.6</p></td>
+<td><p>0.8</p></td>
+<td><p>8.0</p></td>
+</tr>
+<tr class="row-even"><td><p>Bone (compression)</p></td>
+<td><p>0.9</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Brass</p></td>
+<td><p>9.0</p></td>
+<td><p>6.0</p></td>
+<td><p>3.5</p></td>
+</tr>
+<tr class="row-even"><td><p>Brick</p></td>
+<td><p>1.5</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Concrete</p></td>
+<td><p>2.0</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Copper</p></td>
+<td><p>11.0</p></td>
+<td><p>14.0</p></td>
+<td><p>4.4</p></td>
+</tr>
+<tr class="row-odd"><td><p>Crown glass</p></td>
+<td><p>6.0</p></td>
+<td><p>5.0</p></td>
+<td><p>2.5</p></td>
+</tr>
+<tr class="row-even"><td><p>Granite</p></td>
+<td><p>4.5</p></td>
+<td><p>4.5</p></td>
+<td><p>2.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>Hair (human)</p></td>
+<td><p>1.0</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Hardwood</p></td>
+<td><p>1.5</p></td>
+<td></td>
+<td><p>1.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>Iron</p></td>
+<td><p>21.0</p></td>
+<td><p>16.0</p></td>
+<td><p>7.7</p></td>
+</tr>
+<tr class="row-even"><td><p>Lead</p></td>
+<td><p>1.6</p></td>
+<td><p>4.1</p></td>
+<td><p>0.6</p></td>
+</tr>
+<tr class="row-odd"><td><p>Marble</p></td>
+<td><p>6.0</p></td>
+<td><p>7.0</p></td>
+<td><p>2.0</p></td>
+</tr>
+<tr class="row-even"><td><p>Nickel</p></td>
+<td><p>21.0</p></td>
+<td><p>17.0</p></td>
+<td><p>7.8</p></td>
+</tr>
+<tr class="row-odd"><td><p>Polystyrene</p></td>
+<td><p>3.0</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Silk</p></td>
+<td><p>6.0</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Spider thread</p></td>
+<td><p>3.0</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Steel</p></td>
+<td><p>20.0</p></td>
+<td><p>16.0</p></td>
+<td><p>7.5</p></td>
+</tr>
+<tr class="row-odd"><td><p>Acetone</p></td>
+<td></td>
+<td><p>0.07</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Ethanol</p></td>
+<td></td>
+<td><p>0.09</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Glycerin</p></td>
+<td></td>
+<td><p>0.45</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Mercury</p></td>
+<td></td>
+<td><p>2.5</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Water</p></td>
+<td></td>
+<td><p>0.22</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
 <section id="tensile-or-compressive-stress-strain-and-young-s-modulus">
 <h3><span class="section-number">12.3.1. </span>Tensile or Compressive Stress, Strain, and Young’s Modulus<a class="headerlink" href="#tensile-or-compressive-stress-strain-and-young-s-modulus" title="Link to this heading">#</a></h3>
-<p>Tension or compression occurs when two <em>antiparallel</em> forces of equal magnitude act on an object along only one of its dimensions and the object does not move.  Consider a rod segment that is either stretched or squeezed by a pair of forces acting along its length and perpendicular to its cross-section (see Fig. <a class="reference internal" href="#rod-compression-fig"><span class="std std-numref">12.3</span></a>).</p>
+<p>Tension or compression occurs when two <em>antiparallel</em> forces of equal magnitude act on an object along only one of its dimensions and the object does not move.  Consider a rod segment that is either stretched or squeezed by a pair of forces acting along its length and perpendicular to its cross-section (see Fig. <a class="reference internal" href="#rod-compression-fig"><span class="std std-numref">12.15</span></a>).</p>
 <figure class="align-default" id="rod-compression-fig">
 <img alt="rod compression example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/d0a3f05e8d0def89dbb676a8c7ffd9f710e9a700" />
 <figcaption>
-<p><span class="caption-number">Fig. 12.3 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#rod-compression-fig" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 12.15 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#rod-compression-fig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The rod changes its length under the action of the forces, where this change in length <span class="math notranslate nohighlight">\(\Delta L = L- L_o\)</span> may be either elongation <span class="math notranslate nohighlight">\((L&gt;L_o)\)</span> or contraction <span class="math notranslate nohighlight">\((L&lt;L_o)\)</span>.</p>
@@ -755,33 +1447,184 @@ In many equilibrium situations, one of the forces acting on the body is its own 
 <li><p>Compressive stress and strain occur when the forces are <em>contracting</em> the objection causing its shortening <span class="math notranslate nohighlight">\((\Delta L &lt;0)\)</span>.</p></li>
 </ul>
 <p>In either of these situations, we define stress as the ratio of the deforming force <span class="math notranslate nohighlight">\(F_\perp\)</span> to the cross-sectional area <span class="math notranslate nohighlight">\(A\)</span> of the object.  The deforming force acts perpendicularly to the cross-section of the object.  Forces that act parallel to the cross-section do not change the length of the object.  The definition of the tensile stress is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a5e0080a-ce61-4a69-a6e4-918311c87bb3">
-<span class="eqno">(12.10)<a class="headerlink" href="#equation-a5e0080a-ce61-4a69-a6e4-918311c87bb3" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f687d3ed-8089-4b00-af0c-3d7ae87c5abf">
+<span class="eqno">(12.10)<a class="headerlink" href="#equation-f687d3ed-8089-4b00-af0c-3d7ae87c5abf" title="Permalink to this equation">#</a></span>\[\begin{align}
 \text{tensile stress} &amp;= \frac{F_\perp}{A}.
 \end{align}\]</div>
 <p>Tensile strain is the measure of the deformation of an object under tensile stress and is defined as the fractional change of the object’s length under the stress, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0ae9381c-c934-4a58-b398-1c9f82e121e1">
-<span class="eqno">(12.11)<a class="headerlink" href="#equation-0ae9381c-c934-4a58-b398-1c9f82e121e1" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b12d93b2-1ea9-4506-b402-6365090f0865">
+<span class="eqno">(12.11)<a class="headerlink" href="#equation-b12d93b2-1ea9-4506-b402-6365090f0865" title="Permalink to this equation">#</a></span>\[\begin{align}
 \text{tensile strain} &amp;= \frac{\Delta L}{L_o}.
 \end{align}\]</div>
 <p>Compressive stress and strain are defined by the same formulae, where we take the absolute values on the right-hand side.</p>
 <p>Young’s modulus is the elastic modulus when deformation is caused by either tensile  or compressive stress.  The expression for the Young’s modulus is the ratio of the tensile stress to the strain, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a2c58229-b61b-4c17-92f4-9e58521fec27">
-<span class="eqno">(12.12)<a class="headerlink" href="#equation-a2c58229-b61b-4c17-92f4-9e58521fec27" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-42d7281d-2578-4ff0-8161-ba3dc496cf1d">
+<span class="eqno">(12.12)<a class="headerlink" href="#equation-42d7281d-2578-4ff0-8161-ba3dc496cf1d" title="Permalink to this equation">#</a></span>\[\begin{align}
 Y &amp;= \frac{\text{tensile stress}}{\text{tensile strain}}= \left(\frac{F_\perp}{A}\right)\left(\frac{L_o}{\Delta L}\right).
 \end{align}\]</div>
-<p>Objects can often experience both compressive and tensile stress simultaneously (see Fig. <a class="reference internal" href="#tensile-compression-fig"><span class="std std-numref">12.4</span></a>).  For example, a long shelf loaded with heavy book sags between the end supports under the weight of the books.  The top surface of the shelf is in compressive stress, while the bottom surface is in tensile stress.  Similarly, long and heavy beams sag under their own weight, where such bending strains can be almost eliminated with the use of I-beams.</p>
-<figure class="align-default" id="tensile-compression-fig">
+<p>Objects can often experience both compressive and tensile stress simultaneously (see Fig. <a class="reference internal" href="#tensile-compression-fig"><span class="std std-numref">12.16</span></a>).  For example, a long shelf loaded with heavy book sags between the end supports under the weight of the books.  The top surface of the shelf is in compressive stress, while the bottom surface is in tensile stress.  Similarly, long and heavy beams sag under their own weight, where such bending strains can be almost eliminated with the use of I-beams.</p>
+<figure class="align-default" id="tensile-compression-fig" style="width: 800px">
 <img alt="tensile and compressive stress example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/02fb047058ffe5ee6d07f35d3bdd345604639147" />
 <figcaption>
-<p><span class="caption-number">Fig. 12.4 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#tensile-compression-fig" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 12.16 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#tensile-compression-fig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <section id="example-problem-compressive-stress-in-a-pillar">
 <h4><span class="section-number">12.3.1.1. </span><strong>Example Problem</strong>: Compressive Stress in a Pillar<a class="headerlink" href="#example-problem-compressive-stress-in-a-pillar" title="Link to this heading">#</a></h4>
+<div class="exercise etamu-exercise admonition" id="Chapter12/static-equilibrium-elasticity-exercise-6">
+
+<p class="admonition-title"><span class="caption-number">Exercise 12.7 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>A sculpture weighing <span class="math notranslate nohighlight">\(10{,}000\ {\rm N}\)</span> rests on a horizontal surface at the top of a <span class="math notranslate nohighlight">\(6.0\ {\rm m}\)</span>-tall vertical pillar (Figure <a class="reference internal" href="#pillar-stress-prob"><span class="std std-numref">12.17</span></a>). The pillar’s cross-sectional area is <span class="math notranslate nohighlight">\(0.20\ {\rm m}^2\)</span> and it is made of granite with a mass density of <span class="math notranslate nohighlight">\(2700\ {\rm kg/m}^3\)</span>. Find the compressive stress at the cross-section located <span class="math notranslate nohighlight">\(3.0\ {\rm m}\)</span> below the top of the pillar and the value of the compressive strain of the top <span class="math notranslate nohighlight">\(3.0\ {\rm m}\)</span> segment of the pillar.</p>
+</div></blockquote>
+<figure class="align-default" id="pillar-stress-prob" style="width: 450px">
+<img alt="force on door hinges" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Nelson%27s_Column%2C_Trafalgar_Sqaure%2C_London_MOD_45152990.jpg/960px-Nelson%27s_Column%2C_Trafalgar_Sqaure%2C_London_MOD_45152990.jpg?_=20130627174716" />
+<figcaption>
+<p><span class="caption-number">Fig. 12.17 </span><span class="caption-text">Nelson’s Column in Trafalgar Square, London. Image Credit: <a class="reference external" href="https://commons.wikimedia.org/wiki/File:Nelson%27s_Column,_Trafalgar_Sqaure,_London_MOD_45152990.jpg">Wikipedia</a>.</span><a class="headerlink" href="#pillar-stress-prob" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">We model the pillar as a uniform vertical column with constant cross-sectional area. The compressive stress at a given cross-section is determined by the normal force acting across that section divided by the area. The normal force at <span class="math notranslate nohighlight">\(3.0\ {\rm m}\)</span> below the top is the total weight supported above that point, which includes both the sculpture and the upper <span class="math notranslate nohighlight">\(3.0\ {\rm m}\)</span> segment of the pillar. The compressive strain is then obtained from Hooke’s law for linear elastic materials, <span class="math notranslate nohighlight">\(\text{strain} = \text{stress}/Y\)</span>, where <span class="math notranslate nohighlight">\(Y\)</span> is Young’s modulus for granite.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">We begin by determining the volume of the top segment of the pillar using <span class="math notranslate nohighlight">\(V = Ah\)</span>, which gives <span class="math notranslate nohighlight">\(V = (0.20)(3.0) = 0.60\ {\rm m}^3\)</span>. Using the density <span class="math notranslate nohighlight">\(\rho = 2700\ {\rm kg/m}^3\)</span>, the mass of this segment is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+m = \rho V = (2700)(0.60) = 1.62 \times 10^3\ {\rm kg}.
+\end{align*}\]</div>
+<p class="sd-card-text">The weight of the pillar segment is then</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+w_p = mg = (1.62 \times 10^3)(9.81) = 1.59 \times 10^4\ {\rm N}.
+\end{align*}\]</div>
+<p class="sd-card-text">The normal force at the cross-section includes both the pillar segment and the sculpture:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+F_\perp = w_p + w_s = 1.59 \times 10^4 + 1.00 \times 10^4 = 2.59 \times 10^4\ {\rm N}.
+\end{align*}\]</div>
+<p class="sd-card-text">The compressive stress is therefore</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\text{stress} = \frac{F_\perp}{A} = \frac{2.59 \times 10^4}{0.20} = 1.30 \times 10^5\ {\rm Pa}.
+\end{align*}\]</div>
+<p class="sd-card-text">Using Young’s modulus for granite, <span class="math notranslate nohighlight">\(Y = 4.5 \times 10^{10}\ {\rm Pa}\)</span>, the compressive strain is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\text{strain} = \frac{\text{stress}}{Y} = \frac{1.30 \times 10^5}{4.5 \times 10^{10}} = 2.89 \times 10^{-6}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The compressive stress at <span class="math notranslate nohighlight">\(3.0\ {\rm m}\)</span> below the top of the pillar is <span class="math notranslate nohighlight">\(1.30 \times 10^5\ {\rm Pa}\)</span>, and the compressive strain of the top segment is <span class="math notranslate nohighlight">\(2.89 \times 10^{-6}\)</span>.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="mf">0.20</span>
+<span class="n">h</span> <span class="o">=</span> <span class="mf">3.0</span>
+<span class="n">rho</span> <span class="o">=</span> <span class="mi">2700</span>
+<span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>
+<span class="n">w_s</span> <span class="o">=</span> <span class="mf">1.0e4</span>
+<span class="n">Y</span> <span class="o">=</span> <span class="mf">4.5e10</span>
+
+<span class="n">V</span> <span class="o">=</span> <span class="n">A</span> <span class="o">*</span> <span class="n">h</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">rho</span> <span class="o">*</span> <span class="n">V</span>
+<span class="n">w_p</span> <span class="o">=</span> <span class="n">m</span> <span class="o">*</span> <span class="n">g</span>
+<span class="n">F</span> <span class="o">=</span> <span class="n">w_p</span> <span class="o">+</span> <span class="n">w_s</span>
+<span class="n">stress</span> <span class="o">=</span> <span class="n">F</span> <span class="o">/</span> <span class="n">A</span>
+<span class="n">strain</span> <span class="o">=</span> <span class="n">stress</span> <span class="o">/</span> <span class="n">Y</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The compressive stress is </span><span class="si">{</span><span class="n">stress</span><span class="si">:</span><span class="s2">.2e</span><span class="si">}</span><span class="s2"> Pa.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The compressive strain is </span><span class="si">{</span><span class="n">strain</span><span class="si">:</span><span class="s2">.2e</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details></section>
+</div>
 </section>
 <section id="example-problem-stretching-a-rod">
 <h4><span class="section-number">12.3.1.2. </span><strong>Example Problem</strong>: Stretching a Rod<a class="headerlink" href="#example-problem-stretching-a-rod" title="Link to this heading">#</a></h4>
+<div class="exercise etamu-exercise admonition" id="Chapter12/static-equilibrium-elasticity-exercise-7">
+
+<p class="admonition-title"><span class="caption-number">Exercise 12.8 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>A <span class="math notranslate nohighlight">\(2.0\ {\rm m}\)</span>-long steel rod has a cross-sectional area of <span class="math notranslate nohighlight">\(0.30\ {\rm cm}^2\)</span>. The rod is a part of a vertical support that holds a heavy <span class="math notranslate nohighlight">\(550\ {\rm kg}\)</span> platform that hangs attached to the rod’s lower end. Ignoring the weight of the rod, what is the tensile stress in the rod and the elongation of the rod under the stress?</p>
+</div></blockquote>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The rod is modeled as a uniform elastic member under tension. Because the weight of the rod is neglected, the tensile force is simply the weight of the attached platform. The tensile stress is the applied force divided by the cross-sectional area, and the elongation follows from the definition of Young’s modulus, <span class="math notranslate nohighlight">\(Y = \dfrac{\text{stress}}{\text{strain}}\)</span>.</p>
+<p class="sd-card-text">The cross-sectional area is given in <span class="math notranslate nohighlight">\({\rm cm}^2\)</span>, so it must be converted to <span class="math notranslate nohighlight">\({\rm m}^2\)</span> before substitution into the stress formula. The elongation is then found from the strain relation <span class="math notranslate nohighlight">\(\dfrac{\Delta L}{L_0} = \dfrac{\text{stress}}{Y}\)</span> using Young’s modulus for steel.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">The tensile force in the rod is the weight of the platform. Therefore,</p>
+<div class="math notranslate nohighlight">
+\[ F = mg = (550\ {\rm kg})(9.81\ {\rm m/s^2}) = 5395.5\ {\rm N}. \]</div>
+<p class="sd-card-text">The cross-sectional area must be written in SI units. Since <span class="math notranslate nohighlight">\(1\ {\rm cm}^2 = 10^{-4}\ {\rm m}^2\)</span>, the given area becomes</p>
+<div class="math notranslate nohighlight">
+\[ A = 0.30\ {\rm cm}^2 = 3.0 \times 10^{-5}\ {\rm m}^2.\]</div>
+<p class="sd-card-text">The tensile stress is the applied force divided by the area, so</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\text{stress} &amp;= \frac{F}{A}
+= \frac{5395.5\ {\rm N}}{3.0 \times 10^{-5}\ {\rm m}^2}
+= 1.80 \times 10^8\ {\rm Pa}.
+\end{align*}\]</div>
+<p class="sd-card-text">From Table 12.1, Young’s modulus for steel is <span class="math notranslate nohighlight">\(Y = 2.0 \times 10^{11}\ {\rm Pa}\)</span>. The strain is therefore</p>
+<div class="math notranslate nohighlight">
+\[ 
+\text{strain} = \frac{\text{stress}}{Y}
+= \frac{1.80 \times 10^8}{2.0 \times 10^{11}}
+= 9.0 \times 10^{-4}.
+\]</div>
+<p class="sd-card-text">The elongation is related to the strain by <span class="math notranslate nohighlight">\(\Delta L = (\text{strain})L_0\)</span>, so</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\Delta L &amp;= (9.0 \times 10^{-4})(2.0\ {\rm m})
+= 1.8 \times 10^{-3}\ {\rm m}.
+\end{align*}\]</div>
+<p class="sd-card-text">Because this value is between <span class="math notranslate nohighlight">\(0.01\)</span> and <span class="math notranslate nohighlight">\(10^4\)</span> when expressed in millimeters, we convert it to a more readable unit:</p>
+<div class="math notranslate nohighlight">
+\[ \Delta L = 1.8\ {\rm mm}.\]</div>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The tensile stress in the steel rod is <span class="math notranslate nohighlight">\(1.80 \times 10^8\ {\rm Pa}\)</span>, and the corresponding elongation is <span class="math notranslate nohighlight">\(1.8\ {\rm mm}\)</span>. Although the platform is quite massive, the resulting extension is small because steel has a very large Young’s modulus.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The verification computes the tensile force from the platform’s weight, then uses the definitions of stress and Young’s modulus to reproduce the stress and elongation. This confirms the analytical result and shows that the rod stretches only a small amount under the applied load.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Given quantities</span>
+<span class="n">m</span> <span class="o">=</span> <span class="mf">550.0</span>  <span class="c1"># Mass of the platform (kg)</span>
+<span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>  <span class="c1"># Gravitational acceleration (m/s^2)</span>
+<span class="n">A</span> <span class="o">=</span> <span class="mf">0.30e-4</span>  <span class="c1"># Cross-sectional area (m^2)</span>
+<span class="n">L0</span> <span class="o">=</span> <span class="mf">2.0</span>  <span class="c1"># Original length of the rod (m)</span>
+<span class="n">Y</span> <span class="o">=</span> <span class="mf">2.0e11</span>  <span class="c1"># Young&#39;s modulus for steel (Pa)</span>
+
+<span class="c1"># Compute the tensile force from the weight of the platform</span>
+<span class="n">F</span> <span class="o">=</span> <span class="n">m</span> <span class="o">*</span> <span class="n">g</span>
+
+<span class="c1"># Compute the tensile stress in the rod</span>
+<span class="n">stress</span> <span class="o">=</span> <span class="n">F</span> <span class="o">/</span> <span class="n">A</span>
+
+<span class="c1"># Compute the strain and elongation</span>
+<span class="n">strain</span> <span class="o">=</span> <span class="n">stress</span> <span class="o">/</span> <span class="n">Y</span>
+<span class="n">delta_L</span> <span class="o">=</span> <span class="n">strain</span> <span class="o">*</span> <span class="n">L0</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The tensile stress in the rod is </span><span class="si">{</span><span class="n">stress</span><span class="si">:</span><span class="s2">.2e</span><span class="si">}</span><span class="s2"> Pa.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The elongation of the rod is </span><span class="si">{</span><span class="n">delta_L</span><span class="o">*</span><span class="mi">1000</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> mm.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details></section>
+</div>
 </section>
 </section>
 <section id="bulk-stress-strain-and-modulus">
@@ -790,29 +1633,29 @@ Y &amp;= \frac{\text{tensile stress}}{\text{tensile strain}}= \left(\frac{F_\per
 <figure class="align-default" id="bulk-stress-fig">
 <img alt="bulk stress example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/7b22dbec3968ee5634e45030764870d4c47f4810" />
 <figcaption>
-<p><span class="caption-number">Fig. 12.5 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#bulk-stress-fig" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 12.18 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#bulk-stress-fig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>These forces decrease the volume of the submerged object by an amount <span class="math notranslate nohighlight">\(\Delta V\)</span>.  This kind of deformation is called a <em>bulk strain</em> and is described by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e79607b5-064c-42d4-bd86-5ae576f4fa7e">
-<span class="eqno">(12.13)<a class="headerlink" href="#equation-e79607b5-064c-42d4-bd86-5ae576f4fa7e" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-2b40edbb-26f4-4970-b120-d582eb6d00d3">
+<span class="eqno">(12.13)<a class="headerlink" href="#equation-2b40edbb-26f4-4970-b120-d582eb6d00d3" title="Permalink to this equation">#</a></span>\[\begin{align}
 \text{bulk strain} &amp;= \frac{\Delta V}{V_o}.
 \end{align}\]</div>
 <p>The bulk strain results from the bulk stress, which is a perpendicular force <span class="math notranslate nohighlight">\(F_\perp\)</span> that presses on the unit surface area <span class="math notranslate nohighlight">\(A\)</span>.  This pressure <span class="math notranslate nohighlight">\(p\)</span> is defined as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b7b2e727-f05b-4a66-890f-36195b2b813a">
-<span class="eqno">(12.14)<a class="headerlink" href="#equation-b7b2e727-f05b-4a66-890f-36195b2b813a" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-c58cdcc7-c9ba-4ff1-8ce7-85d3280bb09e">
+<span class="eqno">(12.14)<a class="headerlink" href="#equation-c58cdcc7-c9ba-4ff1-8ce7-85d3280bb09e" title="Permalink to this equation">#</a></span>\[\begin{align}
 p \equiv \frac{F_\perp}{A}.
 \end{align}\]</div>
 <p>Pressure is a <em>scalar</em> quantity and does not have any particular direction, where it acts equally in all possible directions.  When you submerge your hand in water, you sense the same amount of pressure action the the top, bottom, and side surfaces as you do on the surface of skin between your fingers.  The increase in pressure <span class="math notranslate nohighlight">\(\Delta p\)</span> that you feel is relative to the <strong>normal pressure</strong> <span class="math notranslate nohighlight">\(p_o\)</span> of <span class="math notranslate nohighlight">\(1\ {\rm atm}\)</span> you feel from the atmosphere.  The bulk stress is the change in pressure <span class="math notranslate nohighlight">\(\Delta p\)</span> relative to the normal level <span class="math notranslate nohighlight">\(p_o\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d3055380-3457-4c6d-9448-4382d6f5500f">
-<span class="eqno">(12.15)<a class="headerlink" href="#equation-d3055380-3457-4c6d-9448-4382d6f5500f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-bf780048-cdbf-4212-b56a-6920a733e8b6">
+<span class="eqno">(12.15)<a class="headerlink" href="#equation-bf780048-cdbf-4212-b56a-6920a733e8b6" title="Permalink to this equation">#</a></span>\[\begin{align}
 B &amp;= \frac{\text{bulk stress}}{\text{bulk strain}}, \\[6pt]
 &amp;= -\frac{\Delta p}{\Delta V/V_o} = -\frac{\Delta p}{\Delta V}V_o.
 \end{align}\]</div>
 <p>When the bulk stress increases, the bulk strain increases in response.  The minus sign appears to ensure that <span class="math notranslate nohighlight">\(B\)</span> is a positive quantity.  An increase in <span class="math notranslate nohighlight">\(\Delta p\)</span> always causes a decrease <span class="math notranslate nohighlight">\(\Delta V\)</span> in volume so that <span class="math notranslate nohighlight">\(\frac{\Delta p}{\Delta V} &lt;0\)</span>.</p>
 <p>The reciprocal of the bulk modulus is called <a class="reference external" href="https://en.wikipedia.org/wiki/Compressibility"><strong>compressibility</strong></a>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e325845a-4238-414c-9798-85f676055839">
-<span class="eqno">(12.16)<a class="headerlink" href="#equation-e325845a-4238-414c-9798-85f676055839" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-20275104-a7ba-4c8a-957f-504579c7c1e1">
+<span class="eqno">(12.16)<a class="headerlink" href="#equation-20275104-a7ba-4c8a-957f-504579c7c1e1" title="Permalink to this equation">#</a></span>\[\begin{align}
 k &amp;= \frac{1}{B} &amp;= -\frac{\Delta V}{\Delta p}\frac{1}{V_o}.
 \end{align}\]</div>
 <p>The term ‘compressibility’ is used in relation to fluids (i.e., gases and liquids).  Compressibility describes the change in the volume of a fluid per unit increase in pressure.  Fluids that are easy to compress are characterized by a large compressibility.  For example, the compressibility water and acetone are</p>
@@ -824,36 +1667,199 @@ k_{\text{acetone}} = 1.45 \times 10^{-4}\ {\rm atm^{-1}},
 <p>which means that under normal pressure (<span class="math notranslate nohighlight">\(1\ {\rm atm}\)</span>) the relative decrease in volume for acetone is approximately <span class="math notranslate nohighlight">\(3\times\)</span> larger than for water.</p>
 <section id="example-problem-hydraulic-press">
 <h4><span class="section-number">12.3.2.1. </span><strong>Example Problem</strong>: Hydraulic Press<a class="headerlink" href="#example-problem-hydraulic-press" title="Link to this heading">#</a></h4>
+<div class="exercise etamu-exercise admonition" id="Chapter12/static-equilibrium-elasticity-exercise-8">
+
+<p class="admonition-title"><span class="caption-number">Exercise 12.9 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>In a hydraulic press (Figure <a class="reference internal" href="#hydraulic-press-fig"><span class="std std-numref">12.19</span></a>), a <span class="math notranslate nohighlight">\(250\ {\rm L}\)</span> volume of oil is subjected to a <span class="math notranslate nohighlight">\(2300\ {\rm psi}\)</span> pressure increase. If the compressibility of oil is <span class="math notranslate nohighlight">\(2.0 \times 10^{-5}/{\rm atm}\)</span>, find the bulk strain and the absolute decrease in the volume of oil when the press is operating.</p>
+</div></blockquote>
+<figure class="align-default" id="hydraulic-press-fig">
+<img alt="hydraulic press example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/047c589873a390578a751814d8899402d9aea0f2" />
+<figcaption>
+<p><span class="caption-number">Fig. 12.19 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#hydraulic-press-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The oil is modeled as a compressible fluid undergoing a uniform pressure increase. The relevant material property is the compressibility <span class="math notranslate nohighlight">\(k\)</span>, which relates the fractional volume change to the pressure increase through the relation for bulk deformation. Because the problem asks for the absolute decrease in volume, we first determine the bulk strain <span class="math notranslate nohighlight">\(\Delta V/V_0\)</span> and then multiply by the initial volume.</p>
+<p class="sd-card-text">The compressibility is given in <span class="math notranslate nohighlight">\({\rm atm}^{-1}\)</span>, so the pressure increase must be converted from psi to atm before substitution. Since the oil is being compressed, the actual change in volume is negative, but the problem asks for the absolute decrease, so we report the magnitude of the volume change.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">The bulk strain is related to the compressibility and the pressure increase by</p>
+<div class="math notranslate nohighlight">
+\[ \frac{\Delta V}{V_0} = k\,\Delta p. \]</div>
+<p class="sd-card-text">We first convert the pressure increase from psi to atm:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\Delta p = 2300\ {\rm psi}\left(\frac{1\ {\rm atm}}{14.7\ {\rm psi}}\right) = 156\ {\rm atm}.
+\end{align*}\]</div>
+<p class="sd-card-text">Substituting <span class="math notranslate nohighlight">\(k = 2.0 \times 10^{-5}/{\rm atm}\)</span> and <span class="math notranslate nohighlight">\(\Delta p = 156\ {\rm atm}\)</span> into the bulk-strain expression gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{\Delta V}{V_0} &amp;= \left(2.0 \times 10^{-5}/{\rm atm}\right)(156\ {\rm atm}) \\
+&amp;= 3.1 \times 10^{-3}.
+\end{align*}\]</div>
+<p class="sd-card-text">This is the magnitude of the bulk strain. The absolute decrease in volume is then</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+|\Delta V| &amp;= \left(\frac{\Delta V}{V_0}\right)V_0 \\
+&amp;= \left(3.1 \times 10^{-3}\right)(250\ {\rm L}) \\
+&amp;= 0.78\ {\rm L}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The bulk strain of the oil is <span class="math notranslate nohighlight">\(3.1 \times 10^{-3}\)</span>, and the absolute decrease in the oil’s volume is <span class="math notranslate nohighlight">\(0.78\ {\rm L}\)</span>. This result shows that even under a large pressure increase, the oil undergoes only a small fractional compression.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The verification converts the applied pressure from psi to atm, computes the bulk strain from the compressibility, and then computes the corresponding volume decrease from the initial volume. This reproduces the analytical result and confirms the small but nonzero compression of the oil.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Given quantities</span>
+<span class="n">V0</span> <span class="o">=</span> <span class="mf">250.0</span>  <span class="c1"># Initial volume of oil (L)</span>
+<span class="n">dp_psi</span> <span class="o">=</span> <span class="mf">2300.0</span>  <span class="c1"># Pressure increase (psi)</span>
+<span class="n">psi_per_atm</span> <span class="o">=</span> <span class="mf">14.7</span>  <span class="c1"># Conversion from atm to psi</span>
+<span class="n">k</span> <span class="o">=</span> <span class="mf">2.0e-5</span>  <span class="c1"># Compressibility of oil (1/atm)</span>
+
+<span class="c1"># Convert the pressure increase to atmospheres</span>
+<span class="n">dp_atm</span> <span class="o">=</span> <span class="n">dp_psi</span> <span class="o">/</span> <span class="n">psi_per_atm</span>
+
+<span class="c1"># Compute the bulk strain</span>
+<span class="n">bulk_strain</span> <span class="o">=</span> <span class="n">k</span> <span class="o">*</span> <span class="n">dp_atm</span>
+
+<span class="c1"># Compute the absolute decrease in volume</span>
+<span class="n">delta_V</span> <span class="o">=</span> <span class="n">bulk_strain</span> <span class="o">*</span> <span class="n">V0</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The bulk strain is </span><span class="si">{</span><span class="n">bulk_strain</span><span class="si">:</span><span class="s2">.2e</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The absolute decrease in volume is </span><span class="si">{</span><span class="n">delta_V</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> L.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details></section>
+</div>
 </section>
 </section>
 <section id="shear-stress-strain-and-modulus">
 <h3><span class="section-number">12.3.3. </span>Shear Stress, Strain, and Modulus<a class="headerlink" href="#shear-stress-strain-and-modulus" title="Link to this heading">#</a></h3>
 <p>The concepts of shear stress and strain concern only <em>solid</em> objects or materials.  Buildings and tectonic planets are examples that may be subjected to shear stresses.  In general, these concepts do not apply to fluids.</p>
-<p>Shear deformation occurs when two antiparallel forces of equal magnitude are applied tangentially to opposite surfaces of a solid object.  This does not cause deformation in the transverse direction to the line of force (see Fig. <a class="reference internal" href="#shear-stress-fig"><span class="std std-numref">12.6</span></a>).</p>
+<p>Shear deformation occurs when two antiparallel forces of equal magnitude are applied tangentially to opposite surfaces of a solid object.  This does not cause deformation in the transverse direction to the line of force (see Fig. <a class="reference internal" href="#shear-stress-fig"><span class="std std-numref">12.20</span></a>).</p>
 <figure class="align-default" id="shear-stress-fig">
 <img alt="shear stress example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/e6760d57a47714f12671a5bd2d500f9a5b28c9f7" />
 <figcaption>
-<p><span class="caption-number">Fig. 12.6 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#shear-stress-fig" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 12.20 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#shear-stress-fig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Shear deformation is characterized by a gradual shift <span class="math notranslate nohighlight">\(\Delta x\)</span> of layers in the direction tangent to the acting forces.  This gradation in <span class="math notranslate nohighlight">\(\Delta x\)</span> occurs in the transverse direction along some distance <span class="math notranslate nohighlight">\(L_o\)</span>.  Shear strain is defined by the ratio of the largest displacement <span class="math notranslate nohighlight">\(\Delta x\)</span> to the transverse distance <span class="math notranslate nohighlight">\(L_o\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f96392af-9be5-4470-b71a-7a32f31b4318">
-<span class="eqno">(12.17)<a class="headerlink" href="#equation-f96392af-9be5-4470-b71a-7a32f31b4318" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-2ecfc3bb-1a75-49f5-add0-1c134af604b8">
+<span class="eqno">(12.17)<a class="headerlink" href="#equation-2ecfc3bb-1a75-49f5-add0-1c134af604b8" title="Permalink to this equation">#</a></span>\[\begin{align}
 \text{shear strain} = \frac{\Delta x}{L_o}.
 \end{align}\]</div>
 <p>Shear stress is due to forces that act <em>parallel</em> to the surface, where we use <span class="math notranslate nohighlight">\(F_\parallel\)</span> (or <code class="docutils literal notranslate"><span class="pre">$F_\parallel$</span></code>) for such forces.  The magnitude <span class="math notranslate nohighlight">\(F_\parallel\)</span> per unit surface area <span class="math notranslate nohighlight">\(A\)</span> where the shearing force is applied is the measure of shear stress, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-84ff3378-028e-45c2-bf48-24e0fd8c1012">
-<span class="eqno">(12.18)<a class="headerlink" href="#equation-84ff3378-028e-45c2-bf48-24e0fd8c1012" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-86198549-0740-4284-9776-3b38a127719e">
+<span class="eqno">(12.18)<a class="headerlink" href="#equation-86198549-0740-4284-9776-3b38a127719e" title="Permalink to this equation">#</a></span>\[\begin{align}
 \text{shear stress} &amp;= \frac{F_\parallel}{A}.
 \end{align}\]</div>
 <p>The <strong>shear modulus</strong> is the proportionality constant and is defined by the ratio of stress to strain.  The shear modulus is commonly denoted by <span class="math notranslate nohighlight">\(S\)</span> and defined as:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5497e75f-70a0-4cd2-b649-681aa7b9cc23">
-<span class="eqno">(12.19)<a class="headerlink" href="#equation-5497e75f-70a0-4cd2-b649-681aa7b9cc23" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-3e9a0da1-8043-45c6-8688-2aa6173da58d">
+<span class="eqno">(12.19)<a class="headerlink" href="#equation-3e9a0da1-8043-45c6-8688-2aa6173da58d" title="Permalink to this equation">#</a></span>\[\begin{align}
 S &amp;= \frac{\text{shear stress}}{\text{shear strain}}, \\[6pt]
 &amp;= \frac{F_\parallel /A}{\Delta x/L_o} = \left(\frac{F_\parallel}{A}\right)\left(\frac{L_o}{\Delta x} \right).
 \end{align}\]</div>
 <section id="example-problem-an-old-bookshelf">
 <h4><span class="section-number">12.3.3.1. </span><strong>Example Problem</strong>: An Old Bookshelf<a class="headerlink" href="#example-problem-an-old-bookshelf" title="Link to this heading">#</a></h4>
+<div class="exercise etamu-exercise admonition" id="Chapter12/static-equilibrium-elasticity-exercise-9">
+
+<p class="admonition-title"><span class="caption-number">Exercise 12.10 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>A cleaning person tries to move a heavy, old bookcase on a carpeted floor by pushing tangentially on the surface of the very top shelf. However, the only noticeable effect of this effort is similar to that seen in Figure <a class="reference internal" href="#shear-stress-fig"><span class="std std-numref">12.20</span></a>, and it disappears when the person stops pushing. The bookcase is <span class="math notranslate nohighlight">\(180\ {\rm cm}\)</span> tall and <span class="math notranslate nohighlight">\(90.0\ {\rm cm}\)</span> wide with four <span class="math notranslate nohighlight">\(30.0\ {\rm cm}\)</span>-deep shelves, all partially loaded with books. The total weight of the bookcase and books is <span class="math notranslate nohighlight">\(600\ {\rm N}\)</span>. If the person gives the top shelf a <span class="math notranslate nohighlight">\(50.0\ {\rm N}\)</span> push that displaces the top shelf horizontally by <span class="math notranslate nohighlight">\(15.0\ {\rm cm}\)</span> relative to the motionless bottom shelf, find the shear modulus of the bookcase.</p>
+</div></blockquote>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The bookcase is modeled as a deformable solid undergoing shear. The applied tangential force produces a shear stress over the side face of the bookcase, and the horizontal displacement of the top relative to the bottom produces a shear strain. The shear modulus is the ratio of the shear stress to the shear strain.</p>
+<p class="sd-card-text">The relevant dimensions are the height of the bookcase, which sets the original length <span class="math notranslate nohighlight">\(L_0\)</span> over which the shear displacement occurs, and the area of the face parallel to the applied force. Because the push is applied tangentially to the top shelf, the resisting area is the rectangular side face with dimensions <span class="math notranslate nohighlight">\(30.0\ {\rm cm}\)</span> by <span class="math notranslate nohighlight">\(90.0\ {\rm cm}\)</span>.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">The shear modulus is given by the ratio of shear stress to shear strain:</p>
+<div class="math notranslate nohighlight">
+\[ S = \frac{F_{\parallel}/A}{\Delta x/L_0}.\]</div>
+<p class="sd-card-text">The area of the sheared face is <span class="math notranslate nohighlight">\(A = (30.0\ {\rm cm})(90.0\ {\rm cm}) = 2700\ {\rm cm}^2.\)</span></p>
+<p class="sd-card-text">The shear strain is determined from the horizontal displacement of the top relative to the bottom:</p>
+<div class="math notranslate nohighlight">
+\[ \frac{\Delta x}{L_0} = \frac{15.0\ {\rm cm}}{180\ {\rm cm}} = \frac{1}{12} = 0.0833.\]</div>
+<p class="sd-card-text">The shear stress is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{F_{\parallel}}{A}
+&amp;= \frac{50.0\ {\rm N}}{2700\ {\rm cm}^2}
+= \frac{1}{54}\ {\rm N/cm}^2.
+\end{align*}\]</div>
+<p class="sd-card-text">Using these results in the definition of shear modulus gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+S &amp;= \frac{F_{\parallel}}{A}\frac{L_0}{\Delta x} \\
+  &amp;= \left(\frac{50.0\ {\rm N}}{2700\ {\rm cm}^2}\right)\left(\frac{180\ {\rm cm}}{15.0\ {\rm cm}}\right) \\
+  &amp;= \frac{2}{9}\ {\rm N/cm}^2.
+\end{align*}\]</div>
+<p class="sd-card-text">To express this in SI units, we use <span class="math notranslate nohighlight">\(1\ {\rm N/cm}^2 = 10^4\ {\rm N/m}^2\)</span>. Therefore,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+S &amp;= \frac{2}{9}\times 10^4\ {\rm N/m}^2 \\
+  &amp;= 2.22 \times 10^3\ {\rm N/m}^2.
+\end{align*}\]</div>
+<p class="sd-card-text">For reference, the individual shear stress and shear strain are</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{F_{\parallel}}{A}
+&amp;= \frac{50.0\ {\rm N}}{2700\ {\rm cm}^2}
+= 185.2\ {\rm Pa}, \\
+\frac{\Delta x}{L_0}
+&amp;= \frac{15.0\ {\rm cm}}{180\ {\rm cm}}
+= 0.0833.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The shear modulus of the bookcase is <span class="math notranslate nohighlight">\(2.22 \times 10^3\ {\rm N/m}^2\)</span>. This value is quite small compared with ordinary structural solids, which is consistent with the visibly noticeable but reversible deformation of the old bookcase under a modest sideways push.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The verification computes the sheared area, the shear stress, and the shear strain directly from the given geometry and force, then forms their ratio to obtain the shear modulus. This reproduces the analytical result and confirms the very small rigidity of the bookcase.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Given quantities</span>
+<span class="n">F_parallel</span> <span class="o">=</span> <span class="mf">50.0</span>  <span class="c1"># Tangential force (N)</span>
+<span class="n">dx_cm</span> <span class="o">=</span> <span class="mf">15.0</span>  <span class="c1"># Horizontal displacement (cm)</span>
+<span class="n">L0_cm</span> <span class="o">=</span> <span class="mf">180.0</span>  <span class="c1"># Height of the bookcase (cm)</span>
+<span class="n">depth_cm</span> <span class="o">=</span> <span class="mf">30.0</span>  <span class="c1"># Shelf depth (cm)</span>
+<span class="n">width_cm</span> <span class="o">=</span> <span class="mf">90.0</span>  <span class="c1"># Bookcase width (cm)</span>
+
+<span class="c1"># Compute the sheared area in cm^2 and convert to m^2</span>
+<span class="n">A_cm2</span> <span class="o">=</span> <span class="n">depth_cm</span> <span class="o">*</span> <span class="n">width_cm</span>
+<span class="n">A_m2</span> <span class="o">=</span> <span class="n">A_cm2</span> <span class="o">*</span> <span class="mf">1e-4</span>
+
+<span class="c1"># Compute the shear stress</span>
+<span class="n">shear_stress</span> <span class="o">=</span> <span class="n">F_parallel</span> <span class="o">/</span> <span class="n">A_m2</span>
+
+<span class="c1"># Compute the shear strain</span>
+<span class="n">shear_strain</span> <span class="o">=</span> <span class="n">dx_cm</span> <span class="o">/</span> <span class="n">L0_cm</span>
+
+<span class="c1"># Compute the shear modulus</span>
+<span class="n">S</span> <span class="o">=</span> <span class="n">shear_stress</span> <span class="o">/</span> <span class="n">shear_strain</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The sheared area is </span><span class="si">{</span><span class="n">A_cm2</span><span class="si">:</span><span class="s2">.0f</span><span class="si">}</span><span class="s2"> cm^2.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The shear stress is </span><span class="si">{</span><span class="n">shear_stress</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> Pa.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The shear strain is </span><span class="si">{</span><span class="n">shear_strain</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The shear modulus of the bookcase is </span><span class="si">{</span><span class="n">S</span><span class="si">:</span><span class="s2">.2e</span><span class="si">}</span><span class="s2"> N/m^2.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details></section>
+</div>
 </section>
 </section>
 </section>
@@ -887,10 +1893,10 @@ S &amp;= \frac{\text{shear stress}}{\text{shear strain}}, \\[6pt]
 <figure class="align-default" id="stress-strain-fig">
 <img alt="stress-strain plot" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/72355b91989dd764dfc65b3eadf275ea5e37b6fc" />
 <figcaption>
-<p><span class="caption-number">Fig. 12.7 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#stress-strain-fig" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 12.21 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#stress-strain-fig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>We can graph the stress-strain relationship (see Figure <a class="reference internal" href="#stress-strain-fig"><span class="std std-numref">12.7</span></a>), where each material has its own characteristic stress-strain curve.</p>
+<p>We can graph the stress-strain relationship (see Figure <a class="reference internal" href="#stress-strain-fig"><span class="std std-numref">12.21</span></a>), where each material has its own characteristic stress-strain curve.</p>
 <ul class="simple">
 <li><p>Strain is a fractional elongation.  When the load is gradually increased, the linear behavior (e.g., red line) ends at the linearity limit (point <span class="math notranslate nohighlight">\(H\)</span>).</p></li>
 <li><p>For further load increases beyond point <span class="math notranslate nohighlight">\(H\)</span>, the stress-strain relation is nonlinear but still elastic (i.e., from point <span class="math notranslate nohighlight">\(H\)</span> to <span class="math notranslate nohighlight">\(E\)</span>).  Ever larger loads take the stress to the elasticity limit <span class="math notranslate nohighlight">\(E\)</span>.</p></li>
