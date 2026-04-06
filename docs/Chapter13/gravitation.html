@@ -40,7 +40,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/sphinx_iframe.css?v=96c28b52" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="https://cdn.plyr.io/3.8.4/plyr.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=b9e54c64" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=180fcd40" />
     <link rel="stylesheet" type="text/css" href="../_static/mycss.css?v=3589796e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -512,7 +512,8 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gravitation-near-earth-s-surface">13.2. Gravitation Near Earth’s Surface</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#weight">13.2.1. Weight</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-mass-of-the-earth">13.2.1.1. <strong>Example Problem</strong>: Mass of the Earth</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-mass-of-the-earth-and-moon">13.2.1.1. <strong>Example Problem</strong>: Mass of the Earth and Moon</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-gravity-above-earth-s-surface">13.2.1.2. <strong>Example Problem</strong>: Gravity above Earth’s surface</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-gravitational-field">13.2.2. The Gravitational Field</a></li>
@@ -599,7 +600,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="gravitation">
 <h1><span class="section-number">13. </span>Gravitation<a class="headerlink" href="#gravitation" title="Link to this heading">#</a></h1>
-<p>Apr 04, 2026 | 8645 words | 43 min read</p>
+<p>Apr 06, 2026 | 9981 words | 50 min read</p>
 <section id="newton-s-law-of-universal-gravitation">
 <h2><span class="section-number">13.1. </span>Newton’s Law of Universal Gravitation<a class="headerlink" href="#newton-s-law-of-universal-gravitation" title="Link to this heading">#</a></h2>
 <section id="the-history-of-gravitation">
@@ -617,8 +618,8 @@ document.write(`
 <div class="note admonition">
 <p class="admonition-title">Newton’s Law of Gravitation</p>
 <p>Newton’s law of gravitation can be expressed as a vector by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3fb45dc0-a414-43aa-8ed4-1ba9ed8f405e">
-<span class="eqno">(13.1)<a class="headerlink" href="#equation-3fb45dc0-a414-43aa-8ed4-1ba9ed8f405e" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-2aae7441-e7eb-4543-91b1-0fb6d92a18c2">
+<span class="eqno">(13.1)<a class="headerlink" href="#equation-2aae7441-e7eb-4543-91b1-0fb6d92a18c2" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{F}_{12} = \frac{Gm_1m_2}{r^2}\hat{r}_{12},
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\vec{F}_{12}\)</span> is the force between object 1 exerted by object 2 and <span class="math notranslate nohighlight">\(\hat{r}_{12}\)</span> is the <em>radial</em> unit vector that points from object 1 toward object 2.</p>
@@ -660,9 +661,199 @@ document.write(`
 </section>
 <section id="example-problem-collision-in-orbit">
 <h3><span class="section-number">13.1.4. </span><strong>Example Problem</strong>: Collision in Orbit<a class="headerlink" href="#example-problem-collision-in-orbit" title="Link to this heading">#</a></h3>
+<div class="exercise etamu-exercise admonition" id="Chapter13/gravitation-exercise-0">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.1 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>Consider two nearly spherical Soyuz payload vehicles, in orbit about Earth, each with mass <span class="math notranslate nohighlight">\(9000\ {\rm kg}\)</span> and diameter <span class="math notranslate nohighlight">\(4.0\ {\rm m}\)</span>. They are initially at rest relative to each other, <span class="math notranslate nohighlight">\(10.0\ {\rm m}\)</span> from center to center. (Both orbit Earth at the same speed and interact nearly the same as if they were isolated in deep space.) Determine the gravitational force between them and their initial acceleration toward each other (parallel to their orbital motion). Estimate how long it takes for them to drift together, and how fast they are moving upon impact.</p>
+</div></blockquote>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The two payload vehicles are modeled as isolated spherical masses interacting only through their mutual gravitational attraction. Because the center-to-center distance is larger than their size, each vehicle may be treated as if its mass were concentrated at its center. The motion occurs along the line connecting the centers, and the vehicles are initially at rest relative to one another. Since the two masses are equal, the interaction is symmetric, so each vehicle moves the same distance before contact. The gravitational force and acceleration increase as the separation decreases, so the time and impact speed are estimated by replacing the varying acceleration with the average of its initial and final values.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">The magnitude of the gravitational force between two masses separated by a distance <span class="math notranslate nohighlight">\(r\)</span> is given by Newton’s law of gravitation,</p>
+<div class="math notranslate nohighlight">
+\[ F = G \frac{m_1 m_2}{r^2}. \]</div>
+<p class="sd-card-text">Because the two payload vehicles have equal mass, we set <span class="math notranslate nohighlight">\(m_1 = m_2 = m\)</span>, so the force becomes</p>
+<div class="math notranslate nohighlight">
+\[ F = G \frac{m^2}{r^2}. \]</div>
+<p class="sd-card-text">The acceleration of either vehicle is then found from Newton’s 2nd law. Since each vehicle experiences the same force and has the same mass, the acceleration of either one is</p>
+<div class="math notranslate nohighlight">
+\[ a = \frac{F}{m} = \frac{Gm}{r^2} \]</div>
+<p class="sd-card-text">This expression gives the initial acceleration when the separation is <span class="math notranslate nohighlight">\(r_i = 10.0\ {\rm m}\)</span> and the final acceleration just before contact when the separation is <span class="math notranslate nohighlight">\(r_f = 4.0\ {\rm m}\)</span>.  The initial gravitational force is found by substituting <span class="math notranslate nohighlight">\(m = 9000\ {\rm kg}\)</span> and <span class="math notranslate nohighlight">\(r_i = 10.0\ {\rm m}\)</span>:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+F_i &amp;= G \frac{m^2}{r_i^2}, \\
+    &amp;= \left(6.67\times10^{-11}\ {\rm N\cdot m^2/kg^2}\right)\frac{(9000\ {\rm kg})^2}{(10.0\ {\rm m})^2}
+    &amp;= 5.40\times10^{-5}\ {\rm N}.
+\end{align*}\]</div>
+<p class="sd-card-text">The initial acceleration of either vehicle is therefore</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+a_i &amp;= \frac{F_i}{m}, \\
+    &amp;= \frac{5.40\times10^{-5}\ {\rm N}}{9000\ {\rm kg}}
+    &amp;= 6.00\times10^{-9}\ {\rm m/s^2}.
+\end{align*}\]</div>
+<p class="sd-card-text">The final acceleration can be found using a ratio of the separations:</p>
+<div class="math notranslate nohighlight">
+\[ \frac{a_f}{a_i} = \left(\frac{r_i}{r_f}\right)^2. \]</div>
+<p class="sd-card-text">Solving for the final acceleration gives</p>
+<div class="math notranslate nohighlight">
+\[ a_f = a_i \left(\frac{r_i}{r_f}\right)^2. \]</div>
+<p class="sd-card-text">Substituting the numerical values gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+a_f &amp;= (6.00\times10^{-9}\ {\rm m/s^2})\left(\frac{10.0\ {\rm m}}{4.0\ {\rm m}}\right)^2 \\
+    &amp;= 3.75\times10^{-8}\ {\rm m/s^2}.
+\end{align*}\]</div>
+<p class="sd-card-text">To estimate the motion, we use the average of the initial and final accelerations: <span class="math notranslate nohighlight">\( a_{\rm avg} = \frac{a_i + a_f}{2}.\)</span> Substituting the two values gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+a_{\rm avg} &amp;= \frac{6.00\times10^{-9}\ {\rm m/s^2} + 3.75\times10^{-8}\ {\rm m/s^2}}{2}, \\
+&amp;= 2.17\times10^{-8}\ {\rm m/s^2}.
+\end{align*}\]</div>
+<p class="sd-card-text">Each vehicle moves half of the total closing distance. Since the center-to-center distance changes from <span class="math notranslate nohighlight">\(10.0\ {\rm m}\)</span> to <span class="math notranslate nohighlight">\(4.0\ {\rm m}\)</span>, each vehicle moves</p>
+<div class="math notranslate nohighlight">
+\[ \Delta x = \frac{10.0\ {\rm m} - 4.0\ {\rm m}}{2} = 3.0\ {\rm m}. \]</div>
+<p class="sd-card-text">Starting from rest, the impact speed of either vehicle is estimated from the constant-acceleration relation</p>
+<div class="math notranslate nohighlight">
+\[ v^2 = v_0^2 + 2a_{\rm avg}\Delta x. \]</div>
+<p class="sd-card-text">Because <span class="math notranslate nohighlight">\(v_0 = 0\)</span>, this becomes <span class="math notranslate nohighlight">\(v = \sqrt{2a_{\rm avg}\Delta x}\)</span>  and then,</p>
+<div class="math notranslate nohighlight">
+\[ v = \sqrt{2(2.17\times10^{-8}\ {\rm m/s^2})(3.0\ {\rm m})} = 3.61\times10^{-4}\ {\rm m/s}. \]</div>
+<p class="sd-card-text">The collision time is then estimated from <span class="math notranslate nohighlight">\(v = v_0 + a_{\rm avg} t.\)</span> Because <span class="math notranslate nohighlight">\(v_0 = 0\)</span>, the time is <span class="math notranslate nohighlight">\(t = \frac{v}{a_{\rm avg}},\)</span> which gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+t &amp;= \frac{3.61\times10^{-4}\ {\rm m/s}}{2.17\times10^{-8}\ {\rm m/s^2}}, \\
+  &amp;= 1.66\times10^{4}\ {\rm s}  \approx 4.61\ {\rm h}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The gravitational force between the two payload vehicles is <span class="math notranslate nohighlight">\(5.40\times10^{-5}\ {\rm N}\)</span>, and the initial acceleration of each vehicle is <span class="math notranslate nohighlight">\(6.00\times10^{-9}\ {\rm m/s^2}\)</span>. Using the average of the initial and final accelerations to estimate the motion, each vehicle reaches an impact speed of <span class="math notranslate nohighlight">\(3.61\times10^{-4}\ {\rm m/s}\)</span> after about <span class="math notranslate nohighlight">\(1.66\times10^{4}\ {\rm s}\)</span>, or <span class="math notranslate nohighlight">\(4.61\ {\rm h}\)</span>. This result shows that even for large spacecraft, mutual gravitational attraction is extremely weak at such separations.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The verification reproduces the same sequence of calculations used in the analytical solution. It computes the initial force, the initial and final accelerations, the average acceleration used in the estimate, and then applies the constant-acceleration kinematic relations to confirm the estimated impact speed and collision time.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Define the gravitational constant and spacecraft properties</span>
+<span class="n">G</span> <span class="o">=</span> <span class="mf">6.67e-11</span>          <span class="c1"># Gravitational constant in N·m^2/kg^2</span>
+<span class="n">m</span> <span class="o">=</span> <span class="mf">9000.0</span>            <span class="c1"># Mass of each payload vehicle in kg</span>
+<span class="n">r_i</span> <span class="o">=</span> <span class="mf">10.0</span>            <span class="c1"># Initial center-to-center distance in m</span>
+<span class="n">r_f</span> <span class="o">=</span> <span class="mf">4.0</span>             <span class="c1"># Final center-to-center distance at contact in m</span>
+
+<span class="c1"># Compute the initial gravitational force</span>
+<span class="n">F_i</span> <span class="o">=</span> <span class="n">G</span> <span class="o">*</span> <span class="n">m</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="n">r_i</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="c1"># Compute the initial and final accelerations of either vehicle</span>
+<span class="n">a_i</span> <span class="o">=</span> <span class="n">G</span> <span class="o">*</span> <span class="n">m</span> <span class="o">/</span> <span class="n">r_i</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">a_f</span> <span class="o">=</span> <span class="n">G</span> <span class="o">*</span> <span class="n">m</span> <span class="o">/</span> <span class="n">r_f</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="c1"># Compute the average acceleration used for the estimate</span>
+<span class="n">a_avg</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="p">(</span><span class="n">a_i</span> <span class="o">+</span> <span class="n">a_f</span><span class="p">)</span>
+
+<span class="c1"># Compute the distance traveled by either vehicle before contact</span>
+<span class="n">dx</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="p">(</span><span class="n">r_i</span> <span class="o">-</span> <span class="n">r_f</span><span class="p">)</span>
+
+<span class="c1"># Compute the estimated impact speed and collision time</span>
+<span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mf">2.0</span> <span class="o">*</span> <span class="n">a_avg</span> <span class="o">*</span> <span class="n">dx</span><span class="p">)</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">v</span> <span class="o">/</span> <span class="n">a_avg</span>
+
+<span class="c1"># Convert the time to hours for interpretation</span>
+<span class="n">t_hours</span> <span class="o">=</span> <span class="n">t</span> <span class="o">/</span> <span class="mf">3600.0</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The initial gravitational force between the payload vehicles is </span><span class="si">{</span><span class="n">F_i</span><span class="si">:</span><span class="s2">.3e</span><span class="si">}</span><span class="s2"> N.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The initial acceleration of either payload vehicle is </span><span class="si">{</span><span class="n">a_i</span><span class="si">:</span><span class="s2">.3e</span><span class="si">}</span><span class="s2"> m/s^2.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The estimated impact speed of either payload vehicle is </span><span class="si">{</span><span class="n">v</span><span class="si">:</span><span class="s2">.3e</span><span class="si">}</span><span class="s2"> m/s.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The estimated time until contact is </span><span class="si">{</span><span class="n">t</span><span class="si">:</span><span class="s2">.3e</span><span class="si">}</span><span class="s2"> s, which is </span><span class="si">{</span><span class="n">t_hours</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> h.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details></section>
+</div>
 </section>
 <section id="example-problem-attraction-between-galaxies">
 <h3><span class="section-number">13.1.5. </span><strong>Example Problem</strong>: Attraction between Galaxies<a class="headerlink" href="#example-problem-attraction-between-galaxies" title="Link to this heading">#</a></h3>
+<div class="exercise etamu-exercise admonition" id="Chapter13/gravitation-exercise-1">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.2 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>Find the acceleration of our galaxy, the Milky Way, due to the nearest comparably sized galaxy, the Andromeda galaxy. The approximate mass of each galaxy is <span class="math notranslate nohighlight">\(800\times10^9\)</span> solar masses (a solar mass is the mass of our Sun), and they are separated by <span class="math notranslate nohighlight">\(2.5\)</span> million light-years. (Note that the mass of Andromeda is not so well known but is believed to be slightly larger than our galaxy.) Each galaxy has a diameter of roughly <span class="math notranslate nohighlight">\(100{,}000\)</span> light-years (<span class="math notranslate nohighlight">\(1\)</span> light-year <span class="math notranslate nohighlight">\(= 9.5\times10^{15}\ {\rm m}\)</span>).</p>
+</div></blockquote>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The Milky Way and the Andromeda galaxy are modeled as two isolated masses interacting through Newtonian gravitation. Because each galaxy has a diameter much smaller than the separation between them, each may be approximated as a point mass located at its center. The gravitational attraction of Andromeda produces the acceleration of the Milky Way. The analysis assumes both galaxies have the same mass, given in solar masses, and the acceleration is found from Newton’s law of gravitation together with Newton’s second law.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">Because the two galaxies are taken to have equal mass, we set <span class="math notranslate nohighlight">\(m_1 = m_2 = m\)</span>. The magnitude of the gravitational force between two masses separated by a distance <span class="math notranslate nohighlight">\(r\)</span> is given by Newton’s law of gravitation,</p>
+<div class="math notranslate nohighlight">
+\[ F = G \frac{m^2}{r^2}. \]</div>
+<p class="sd-card-text">The acceleration of the Milky Way then follows from Newton’s 2nd law, where we can substitute the expression for the gravitational force to get</p>
+<div class="math notranslate nohighlight">
+\[
+a = \frac{Gm}{r^2}.
+\]</div>
+<p class="sd-card-text">The galaxy mass is given in solar masses, so we first express the mass of one galaxy in kilograms. Using <span class="math notranslate nohighlight">\(M_\odot\)</span> for one solar mass, the galaxy mass is <span class="math notranslate nohighlight">\(m = 800\times10^9\,M_\odot.\)</span>  Using <span class="math notranslate nohighlight">\(M_\odot = 2.0\times10^{30}\ {\rm kg}\)</span> gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+m &amp;= 800\times10^9 \left(2.0\times10^{30}\ {\rm kg}\right) \\
+  &amp;= 1.6\times10^{42}\ {\rm kg}.
+\end{align*}\]</div>
+<p class="sd-card-text">The separation is given in light-years, so we convert it to meters. The distance between the galaxies is <span class="math notranslate nohighlight">\(2.5\times10^6\ {\rm ly}\)</span>.  Using <span class="math notranslate nohighlight">\(1\ {\rm ly} = 9.5\times10^{15}\ {\rm m}\)</span> gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+r &amp;= \left(2.5\times10^6\ {\rm ly}\right)\left(9.5\times10^{15}\ {\rm m/ly}\right) \\
+  &amp;= 2.375\times10^{22}\ {\rm m}.
+\end{align*}\]</div>
+<p class="sd-card-text">Now we substitute the galaxy mass and separation into the expression for the acceleration:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+a &amp;= \frac{Gm}{r^2} \\
+  &amp;= \frac{\left(6.67\times10^{-11}\ {\rm N\cdot m^2/kg^2}\right)\left(1.6\times10^{42}\ {\rm kg}\right)}
+          {\left(2.375\times10^{22}\ {\rm m}\right)^2} \\
+  &amp;= 1.89\times10^{-13}\ {\rm m/s^2}.
+\end{align*}\]</div>
+<p class="sd-card-text">With two significant figures, the acceleration is</p>
+<div class="math notranslate nohighlight">
+\[
+a = 1.9\times10^{-13}\ {\rm m/s^2}.
+\]</div>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The acceleration of the Milky Way due to the gravitational attraction of the Andromeda galaxy is <span class="math notranslate nohighlight">\(1.9\times10^{-13}\ {\rm m/s^2}\)</span>. Although this acceleration is extremely small, it acts over enormous timescales, so the gravitational interaction between the two galaxies is still astrophysically significant.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The verification computes the galaxy mass in kilograms, converts the separation from light-years to meters, and then applies the same gravitational acceleration formula used in the analytical solution. This confirms that the numerical result is consistent with the model and unit conversions.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Define constants</span>
+<span class="n">G</span> <span class="o">=</span> <span class="mf">6.67e-11</span>              <span class="c1"># Gravitational constant in N·m^2/kg^2</span>
+<span class="n">M_sun</span> <span class="o">=</span> <span class="mf">2.0e30</span>            <span class="c1"># Solar mass in kg</span>
+<span class="n">ly</span> <span class="o">=</span> <span class="mf">9.5e15</span>               <span class="c1"># One light-year in m</span>
+
+<span class="c1"># Define galaxy properties</span>
+<span class="n">m</span> <span class="o">=</span> <span class="mf">800e9</span> <span class="o">*</span> <span class="n">M_sun</span>         <span class="c1"># Mass of one galaxy in kg</span>
+<span class="n">r</span> <span class="o">=</span> <span class="mf">2.5e6</span> <span class="o">*</span> <span class="n">ly</span>            <span class="c1"># Separation between galaxies in m</span>
+
+<span class="c1"># Compute the acceleration of the Milky Way due to Andromeda</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">G</span> <span class="o">*</span> <span class="n">m</span> <span class="o">/</span> <span class="n">r</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The mass of one galaxy is </span><span class="si">{</span><span class="n">m</span><span class="si">:</span><span class="s2">.2e</span><span class="si">}</span><span class="s2"> kg.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The separation between the galaxies is </span><span class="si">{</span><span class="n">r</span><span class="si">:</span><span class="s2">.3e</span><span class="si">}</span><span class="s2"> m.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The acceleration of the Milky Way due to Andromeda is </span><span class="si">{</span><span class="n">a</span><span class="si">:</span><span class="s2">.2e</span><span class="si">}</span><span class="s2"> m/s^2.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details></section>
+</div>
 </section>
 </section>
 <section id="gravitation-near-earth-s-surface">
@@ -671,8 +862,8 @@ document.write(`
 <h3><span class="section-number">13.2.1. </span>Weight<a class="headerlink" href="#weight" title="Link to this heading">#</a></h3>
 <p>Recall that the acceleration of a free-falling object near Earth’s surface is approximately <span class="math notranslate nohighlight">\(9.81\ {\rm m/s^2}\)</span>.  The force causing this acceleration is called the weight of the object, where we previously found that it has a value <span class="math notranslate nohighlight">\(w=mg\)</span> from Newton’s 2nd law.  The weight is present regardless of whether the object is in free fall or not.</p>
 <p>We now know the weight is caused by the gravitational force between the object of mass <span class="math notranslate nohighlight">\(m\)</span> and the Earth of mass <span class="math notranslate nohighlight">\(M_\oplus\)</span>.  If we equate the measured weight with the expected gravitational force, we can arrive at a scalar equation because both forces act in the same radial direction <span class="math notranslate nohighlight">\(\hat{r}\)</span>.  The scalar equation is given as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-4c6ad4b2-9de3-447c-b04e-c03ee063da19">
-<span class="eqno">(13.2)<a class="headerlink" href="#equation-4c6ad4b2-9de3-447c-b04e-c03ee063da19" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-9e02958e-903c-474e-9af3-2816594544b1">
+<span class="eqno">(13.2)<a class="headerlink" href="#equation-9e02958e-903c-474e-9af3-2816594544b1" title="Permalink to this equation">#</a></span>\[\begin{align}
 mg &amp;= \frac{GM_\oplus m}{(R_\oplus + h)^2}, \\[6pt]
 &amp;= \frac{GM_\oplus m}{r^2},
 \end{align}\]</div>
@@ -686,8 +877,140 @@ mg &amp;= \frac{GM_\oplus m}{(R_\oplus + h)^2}, \\[6pt]
 <p><span class="caption-number">Fig. 13.3 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#earth-com-example" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<section id="example-problem-mass-of-the-earth">
-<h4><span class="section-number">13.2.1.1. </span><strong>Example Problem</strong>: Mass of the Earth<a class="headerlink" href="#example-problem-mass-of-the-earth" title="Link to this heading">#</a></h4>
+<section id="example-problem-mass-of-the-earth-and-moon">
+<h4><span class="section-number">13.2.1.1. </span><strong>Example Problem</strong>: Mass of the Earth and Moon<a class="headerlink" href="#example-problem-mass-of-the-earth-and-moon" title="Link to this heading">#</a></h4>
+<div class="exercise etamu-exercise admonition" id="Chapter13/gravitation-exercise-2">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.3 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>Have you ever wondered how we know the mass of Earth? We certainly can’t place it on a scale. The values of <span class="math notranslate nohighlight">\(g\)</span> and the radius of Earth were measured with reasonable accuracy centuries ago.</p>
+<p><strong>(a)</strong> Use the standard values of <span class="math notranslate nohighlight">\(g\)</span>, <span class="math notranslate nohighlight">\(R_E\)</span>, and <span class="math notranslate nohighlight">\(G\)</span> to find the mass of Earth, <span class="math notranslate nohighlight">\(M_\oplus\)</span>.</p>
+<p><strong>(b)</strong> Estimate the value of <span class="math notranslate nohighlight">\(g\)</span> on the Moon. The radius of the Moon relative to Earth was known since antiquity, and historical estimates of the Moon’s mass relative to Earth were available long before modern measurements. Using the estimate <span class="math notranslate nohighlight">\(M_M = M_\oplus/75\)</span> (Laplace), and <span class="math notranslate nohighlight">\(R_M = 1.7\times10^6\ {\rm m}\)</span>, determine <span class="math notranslate nohighlight">\(g\)</span> on the Moon.</p>
+</div></blockquote>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The Earth and Moon are modeled as spherically symmetric masses, so their gravitational fields are equivalent to point masses located at their centers. The surface gravitational acceleration follows from Newton’s law of gravitation combined with Newton’s second law. For the Earth, the mass is determined directly from measured values of <span class="math notranslate nohighlight">\(g\)</span> and radius. For the Moon, a ratio-based approach is used, combining the known scaling of gravitational acceleration with radius and a historical estimate of the Moon’s mass relative to Earth.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text"><strong>(a)</strong> The gravitational acceleration at the surface of a spherical body is given by</p>
+<div class="math notranslate nohighlight">
+\[ g = \frac{GM}{R^2}. \]</div>
+<p class="sd-card-text">Solving for the mass gives</p>
+<div class="math notranslate nohighlight">
+\[ M = \frac{gR^2}{G}. \]</div>
+<p class="sd-card-text">Substituting the standard values gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+M_\oplus &amp;= \frac{(9.81\ {\rm m/s^2})(6.37\times10^6\ {\rm m})^2}
+           {6.67\times10^{-11}\ {\rm N\cdot m^2/kg^2}} \\
+    &amp;= 5.96\times10^{24}\ {\rm kg}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>(b)</strong> The surface gravitational acceleration scales as <span class="math notranslate nohighlight">\(g \propto \frac{M}{R^2}.\)</span></p>
+<p class="sd-card-text">Taking the ratio of the Moon to Earth gives</p>
+<div class="math notranslate nohighlight">
+\[ \frac{g_M}{g_E} = \frac{M_M}{M_\oplus} \left(\frac{R_E}{R_M}\right)^2. \]</div>
+<p class="sd-card-text">Using the historical estimate <span class="math notranslate nohighlight">\(M_M = M_\oplus/75\)</span> gives</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{g_M}{g_E} = \frac{1}{75} \left(\frac{R_E}{R_M}\right)^2.
+\]</div>
+<p class="sd-card-text">Substituting the numerical values gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+g_M &amp;= (9.81\ {\rm m/s^2})
+       \frac{1}{75}
+       \left(\frac{6.37\times10^6\ {\rm m}}{1.7\times10^6\ {\rm m}}\right)^2 \\
+    &amp;= 1.8\ {\rm m/s^2}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The mass of Earth is <span class="math notranslate nohighlight">\(5.96\times10^{24}\ {\rm kg}\)</span>. Using a historical estimate of the Moon’s mass relative to Earth, the gravitational acceleration at the Moon’s surface is approximately <span class="math notranslate nohighlight">\(1.8\ {\rm m/s^2}\)</span>, which is close to the modern value.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The verification reproduces the Earth mass using measured values of <span class="math notranslate nohighlight">\(g\)</span>, <span class="math notranslate nohighlight">\(R_E\)</span>, and <span class="math notranslate nohighlight">\(G\)</span>, and then computes the Moon’s surface gravity using the ratio expression derived above. This confirms consistency with the analytical solution.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Constants</span>
+<span class="n">G</span> <span class="o">=</span> <span class="mf">6.67e-11</span>
+<span class="n">g_E</span> <span class="o">=</span> <span class="mf">9.81</span>
+<span class="n">R_E</span> <span class="o">=</span> <span class="mf">6.37e6</span>
+<span class="n">R_M</span> <span class="o">=</span> <span class="mf">1.7e6</span>
+
+<span class="c1"># Earth mass</span>
+<span class="n">M_E</span> <span class="o">=</span> <span class="n">g_E</span> <span class="o">*</span> <span class="n">R_E</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="n">G</span>
+
+<span class="c1"># Moon gravity using ratio</span>
+<span class="n">g_M</span> <span class="o">=</span> <span class="n">g_E</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">75</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">R_E</span> <span class="o">/</span> <span class="n">R_M</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The mass of Earth is </span><span class="si">{</span><span class="n">M_E</span><span class="si">:</span><span class="s2">.3e</span><span class="si">}</span><span class="s2"> kg.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The estimated gravitational acceleration on the Moon is </span><span class="si">{</span><span class="n">g_M</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> m/s^2.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details></section>
+</div>
+</section>
+<section id="example-problem-gravity-above-earth-s-surface">
+<h4><span class="section-number">13.2.1.2. </span><strong>Example Problem</strong>: Gravity above Earth’s surface<a class="headerlink" href="#example-problem-gravity-above-earth-s-surface" title="Link to this heading">#</a></h4>
+<div class="exercise etamu-exercise admonition" id="Chapter13/gravitation-exercise-3">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.4 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>What is the value of <span class="math notranslate nohighlight">\(g\)</span> on the International Space Station, which is <span class="math notranslate nohighlight">\(400\ {\rm km}\)</span> above Earth’s surface in orbit?</p>
+</div></blockquote>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The gravitational field of Earth is modeled as that of a spherically symmetric mass, so the acceleration due to gravity depends only on the distance from Earth’s center. The value of <span class="math notranslate nohighlight">\(g\)</span> decreases with increasing distance according to Newton’s law of gravitation. Rather than recomputing from constants, the result is obtained by scaling from the known surface value using a ratio of radii.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">The gravitational acceleration at a distance <span class="math notranslate nohighlight">\(r\)</span> from Earth’s center is given by</p>
+<div class="math notranslate nohighlight">
+\[ g = \frac{GM_\oplus}{r^2}. \]</div>
+<p class="sd-card-text">Taking the ratio with the surface value <span class="math notranslate nohighlight">\(g_E = \frac{GM_\oplus}{R_\oplus^2}\)</span> gives</p>
+<div class="math notranslate nohighlight">
+\[ \frac{g}{g_E} = \left(\frac{R_\oplus}{r}\right)^2. \]</div>
+<p class="sd-card-text">The orbital radius is <span class="math notranslate nohighlight">\( r = R_\oplus + h.\)</span>  Substituting into the ratio gives</p>
+<div class="math notranslate nohighlight">
+\[ g = g_E \left(\frac{R_\oplus}{R_E\oplus + h}\right)^2. \]</div>
+<p class="sd-card-text">Substituting the numerical values gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+g &amp;= (9.81\ {\rm m/s^2})
+\left(\frac{6.37\times10^6\ {\rm m}}
+           {6.37\times10^6\ {\rm m} + 400\times10^3\ {\rm m}}\right)^2 \\
+  &amp;= 8.7\ {\rm m/s^2}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The gravitational acceleration <span class="math notranslate nohighlight">\(400\ {\rm km}\)</span> above Earth’s surface is <span class="math notranslate nohighlight">\(8.7\ {\rm m/s^2}\)</span>, which is about <span class="math notranslate nohighlight">\(89\%\)</span> of its surface value. This shows that gravity remains strong in low Earth orbit.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The verification evaluates the ratio expression using the given altitude and Earth’s radius. This confirms that the gravitational acceleration at orbital altitude remains close to the surface value.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Given values</span>
+<span class="n">g_E</span> <span class="o">=</span> <span class="mf">9.81</span>          <span class="c1"># m/s^2</span>
+<span class="n">R_E</span> <span class="o">=</span> <span class="mf">6.37e6</span>        <span class="c1"># m</span>
+<span class="n">h</span> <span class="o">=</span> <span class="mf">400e3</span>           <span class="c1"># m</span>
+
+<span class="c1"># Compute g at altitude</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">g_E</span> <span class="o">*</span> <span class="p">(</span><span class="n">R_E</span> <span class="o">/</span> <span class="p">(</span><span class="n">R_E</span> <span class="o">+</span> <span class="n">h</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The gravitational acceleration at 400 km altitude is </span><span class="si">{</span><span class="n">g</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> m/s^2.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details></section>
+</div>
 </section>
 </section>
 <section id="the-gravitational-field">
@@ -834,8 +1157,8 @@ mg &amp;= \frac{GM_\oplus m}{(R_\oplus + h)^2}, \\[6pt]
 </figcaption>
 </figure>
 <p>With rotation, the sum of these forces must provide the centripetal acceleration <span class="math notranslate nohighlight">\(a_c\)</span>.  Using Newton’s 2nd law, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-07782903-51a5-4737-ba10-02fea044e983">
-<span class="eqno">(13.4)<a class="headerlink" href="#equation-07782903-51a5-4737-ba10-02fea044e983" title="Permalink to this equation">#</a></span>\[\begin{align} 
+<div class="amsmath math notranslate nohighlight" id="equation-9b3fe753-f346-42df-af5e-361664c28ffa">
+<span class="eqno">(13.4)<a class="headerlink" href="#equation-9b3fe753-f346-42df-af5e-361664c28ffa" title="Permalink to this equation">#</a></span>\[\begin{align} 
 \sum F &amp;= F_{\rm SE} - mg = ma_c, \\
 &amp;=-\frac{mv^2}{r}.
 \end{align}\]</div>
@@ -910,8 +1233,8 @@ g &amp;= \frac{GM_r}{r^2} = \frac{4}{3}G\rho\pi r.
 &amp;= GM_\oplus m\left(\frac{1}{r_1}-\frac{1}{r_2}\right).
 \end{align*}\]</div>
 <p>Since <span class="math notranslate nohighlight">\(\Delta U = U_2 - U_1\)</span>, we can adopt a simple expression for the potential energy function <span class="math notranslate nohighlight">\(U(r)\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-23963a95-85e4-4737-9f6a-6a4d1ea09eb9">
-<span class="eqno">(13.5)<a class="headerlink" href="#equation-23963a95-85e4-4737-9f6a-6a4d1ea09eb9" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-38466ecc-bfca-40a9-82ea-18b53730cecd">
+<span class="eqno">(13.5)<a class="headerlink" href="#equation-38466ecc-bfca-40a9-82ea-18b53730cecd" title="Permalink to this equation">#</a></span>\[\begin{align}
 U(r) = -\frac{GM_\oplus m}{r}.
 \end{align}\]</div>
 <div class="admonition note">
@@ -929,8 +1252,8 @@ U(r) = -\frac{GM_\oplus m}{r}.
 <section id="conservation-of-energy">
 <h3><span class="section-number">13.3.2. </span>Conservation of Energy<a class="headerlink" href="#conservation-of-energy" title="Link to this heading">#</a></h3>
 <p>In <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter08/potential-energy-conservation.html">Chapter 8</a>, we described how to apply conservation of energy for systems with conservative forces.  We solved some problems involving gravity using the conservation of energy, where similar principles and strategies can be applied here.  The only change is use the more general expression for the gravitational potential energy function <span class="math notranslate nohighlight">\(U(r)\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-15434441-af8a-4072-91ad-37901c14f88c">
-<span class="eqno">(13.6)<a class="headerlink" href="#equation-15434441-af8a-4072-91ad-37901c14f88c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-52755541-e204-4e60-b803-b053620a90b6">
+<span class="eqno">(13.6)<a class="headerlink" href="#equation-52755541-e204-4e60-b803-b053620a90b6" title="Permalink to this equation">#</a></span>\[\begin{align}
 K_i + U_i &amp;= K_f + U_f, \\
 \frac{1}{2}m_1(v_1^2)^i - \frac{Gm_2m_1}{r_{12}^i} &amp;= \frac{1}{2}m_1(v_1^2)^f - \frac{Gm_2m_1}{r_{12}^f},\\
 (v_1^2)^i - \frac{2Gm_2}{r_{12}^i} &amp;= (v_1^2)^f - \frac{2Gm_2}{r_{12}^f}, \\
@@ -945,8 +1268,8 @@ K_i + U_i &amp;= K_f + U_f, \\
 <p>The <em>minimum</em> initial velocity of an object where it can escape the surface of a large body (i.e., the Earth) is called the <strong>escape velocity</strong>.  We assume that no energy is lost to an atmosphere, so this just the ideal case.</p>
 <p>Consider an object with a positive launch velocity directed away from the Earth.  With the <em>minimum</em> velocity needed for escape, the object would come to rest once it is infinitely far away (i.e., where the force of gravity becomes negligible or the gravitational potential <span class="math notranslate nohighlight">\(U(r)\)</span> goes to zero).  Since <span class="math notranslate nohighlight">\(\displaystyle \lim_{r\rightarrow \infty} U_g(r) = 0\)</span>, this means that the total energy is also zero.</p>
 <p>Thus, we find the escape velocity from the surface of an astronomical body of mass <span class="math notranslate nohighlight">\(m_2\)</span> and radius <span class="math notranslate nohighlight">\(R\)</span> by setting the total energy equal to zero.  At the surface of the body, the object is located at <span class="math notranslate nohighlight">\(r_{12}^i = R\)</span> and it has an escape velocity <span class="math notranslate nohighlight">\(v_1^i = v_{\rm esc}\)</span>.  It reaches <span class="math notranslate nohighlight">\(r_{12}^f = \infty\)</span> with a velocity <span class="math notranslate nohighlight">\(v_1^f = 0\)</span>.  Substituting into our conservation of energy equation, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-bf25bde5-d233-4fd0-80d5-20ab541d09e4">
-<span class="eqno">(13.7)<a class="headerlink" href="#equation-bf25bde5-d233-4fd0-80d5-20ab541d09e4" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-0893037b-aa40-4e18-aa01-e73270402912">
+<span class="eqno">(13.7)<a class="headerlink" href="#equation-0893037b-aa40-4e18-aa01-e73270402912" title="Permalink to this equation">#</a></span>\[\begin{align}
 K_i + U_i &amp;= K_f + U_f, \\
 v_{\rm esc}^2 - 0 &amp;=  \frac{2Gm_2}{R}- \frac{2Gm_2}{\infty}, \\
 v_{\rm esc} &amp;= \sqrt{\frac{2Gm_2}{R}}.
@@ -1056,8 +1379,8 @@ F_g &amp;= F_c, \\[6pt]
 </figcaption>
 </figure>
 <p>WE can solve for the speed of the orbit <span class="math notranslate nohighlight">\(v_{\rm orbit}\)</span> (note that <span class="math notranslate nohighlight">\(m\)</span> cancels) to get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-8b8b276b-b850-474f-a5b9-3190a9acd24b">
-<span class="eqno">(13.9)<a class="headerlink" href="#equation-8b8b276b-b850-474f-a5b9-3190a9acd24b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-4ff477cd-cf3f-412e-94a0-694b1b511584">
+<span class="eqno">(13.9)<a class="headerlink" href="#equation-4ff477cd-cf3f-412e-94a0-694b1b511584" title="Permalink to this equation">#</a></span>\[\begin{align}
 v_{\rm orbit} = \sqrt{\frac{GM_\oplus}{r}}.
 \end{align}\]</div>
 <p>The value of <span class="math notranslate nohighlight">\(g\)</span>, the escape velocity, and the orbital velocity depend only on the distance from the center of the planet, and <em>not</em> upon the mass of the object.  Let’s compare the escape velocity (see Eqn. <a class="reference internal" href="#equation-escape-velocity">(13.8)</a>) to the orbital velocity through the ratio, assuming that <span class="math notranslate nohighlight">\(m_1 = M_\oplus\)</span> and <span class="math notranslate nohighlight">\(m_2 = m\)</span>.  Then, we have</p>
@@ -1072,8 +1395,8 @@ v_{\rm orbit} = \sqrt{\frac{GM_\oplus}{r}}.
 \[ v_{\rm orbit} = \frac{\Delta s}{\Delta t}, \]</div>
 <p>where <span class="math notranslate nohighlight">\(\Delta s\)</span> is the distance traveled along the circumference of the circle and <span class="math notranslate nohighlight">\(\Delta t\)</span> is the time it takes to traverse that distance.  In physics and astronomy, it is common to use the letter <span class="math notranslate nohighlight">\(T\)</span> for this time interval, partly because we’ve used <span class="math notranslate nohighlight">\(p\)</span> for momentum already and will use <span class="math notranslate nohighlight">\(P\)</span> for pressure later.</p>
 <p>For the satellite to complete one orbit in a time <span class="math notranslate nohighlight">\(T\)</span>, <span class="math notranslate nohighlight">\(\delta s\)</span> must be the circumference of the circle or <span class="math notranslate nohighlight">\(2\pi r\)</span>.  Now we can substitute this into our equation for orbital speed and solve for <span class="math notranslate nohighlight">\(T\)</span>.  Therefore we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f48a6ed0-f97f-4d9b-af36-7947120a5f4d">
-<span class="eqno">(13.10)<a class="headerlink" href="#equation-f48a6ed0-f97f-4d9b-af36-7947120a5f4d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b0cb7859-7db6-43f8-926f-d77d8c021ccc">
+<span class="eqno">(13.10)<a class="headerlink" href="#equation-b0cb7859-7db6-43f8-926f-d77d8c021ccc" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{2\pi r}{T} &amp;= \sqrt{\frac{GM_\oplus}{r}} \quad \text{invert both sides} \Rightarrow
 \frac{T}{2\pi r} &amp;= \sqrt{\frac{r}{GM_\oplus}}, \\
 T &amp;= 2\pi\sqrt{\frac{r^3}{GM_\oplus}}, \\
@@ -1228,8 +1551,8 @@ F_g &amp;= F_c,\\
 K &amp;= \frac{1}{2}mv^2 = \frac{GM_\oplus m}{2r}.
 \end{align*}\]</div>
 <p>The total energy is the sum of the kinetic and potential energies, so our final result is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-fd014dca-f317-4f69-901f-550896a9aa9c">
-<span class="eqno">(13.11)<a class="headerlink" href="#equation-fd014dca-f317-4f69-901f-550896a9aa9c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-5f2f80ce-6b3d-4689-84a5-20a84c518ea5">
+<span class="eqno">(13.11)<a class="headerlink" href="#equation-5f2f80ce-6b3d-4689-84a5-20a84c518ea5" title="Permalink to this equation">#</a></span>\[\begin{align}
 E &amp;= K + U, \\
 &amp;= \frac{GM_\oplus m}{2r} - \frac{GM_\oplus m}{r} = -\frac{GM_\oplus m}{2r}.
 \end{align}\]</div>
@@ -1433,8 +1756,8 @@ y &amp;= k + b\sin{\theta},
 </ul>
 <p>For the Moon’s orbit around the Earth (Geo), the points are called perigee and apogee, respectively.</p>
 <p>An ellipse has a specific form that can describe more generally described as a conic section.  There are four conic sections, all given by the equation</p>
-<div class="amsmath math notranslate nohighlight" id="equation-85212862-2371-48b1-babc-84fbedb32bde">
-<span class="eqno">(13.12)<a class="headerlink" href="#equation-85212862-2371-48b1-babc-84fbedb32bde" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-c42a074a-f62d-4fe4-b4fd-0a658e48dd2b">
+<span class="eqno">(13.12)<a class="headerlink" href="#equation-c42a074a-f62d-4fe4-b4fd-0a658e48dd2b" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{\ell}{r} = 1 + e\cos{\theta},
 \end{align}\]</div>
 <p>where the <span class="math notranslate nohighlight">\(r\)</span> is the distance from the foci to the point on the ellipse, <span class="math notranslate nohighlight">\(\ell\)</span> is the <a class="reference external" href="https://en.wikipedia.org/wiki/Ellipse#semi-latus%25rectum">semi-latus rectum</a>, and <span class="math notranslate nohighlight">\(\theta\)</span> is the angle relative to the reference direction.  The constant <span class="math notranslate nohighlight">\(e\)</span> is the eccentricity, which helps us determine which of the four conic sections represents the path of a satellite.</p>
@@ -1562,8 +1885,8 @@ v_t &amp;= \sqrt{\frac{GM_\odot}{a_t}\left(\frac{1+e_t}{1-e_t}\right)} - \sqrt{\
 <section id="kepler-s-3rd-law">
 <h3><span class="section-number">13.5.4. </span>Kepler’s 3rd Law<a class="headerlink" href="#kepler-s-3rd-law" title="Link to this heading">#</a></h3>
 <p><strong>Kepler’s third law</strong> states that the square of the period is proportional to the cube of the semimajor axis of the orbit (i.e., <span class="math notranslate nohighlight">\(T^2 \propto a^3\)</span>).  We already derived Newton’s version of Kepler’s 3rd law (see Section <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter13/gravitation.html#circular-orbits">13.4.1</a>).  Kepler’s 3rd law is the same equation with <span class="math notranslate nohighlight">\(r\rightarrow a\)</span>, where we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6aac7e21-d2dc-4376-82c7-86b22394c6f6">
-<span class="eqno">(13.13)<a class="headerlink" href="#equation-6aac7e21-d2dc-4376-82c7-86b22394c6f6" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a73d0b9b-f888-46dc-84e3-c7b8efc6bcb6">
+<span class="eqno">(13.13)<a class="headerlink" href="#equation-a73d0b9b-f888-46dc-84e3-c7b8efc6bcb6" title="Permalink to this equation">#</a></span>\[\begin{align}
 T^2 = \frac{4\pi^2}{GM}a^3.
 \end{align}\]</div>
 </section>
@@ -1719,14 +2042,14 @@ T^2 = \frac{4\pi^2}{GM}a^3.
 <p>The idea fo a massive body from which light cannot escape dates back to the late 18th century.  Independently, John Michell and Pierre-Simon Laplace used Newton’s law fo gravitation to sho that light leaving the surface of a star with enough mass could not escape.  Their work was based on the fact that the speed of light had been measured by <a class="reference external" href="https://en.wikipedia.org/wiki/Ole_R%C3%B8mer">Ole Rømer</a> in 1676.  Rømer realized that the difference in measured orbital period for Jupiter’s moon arose from the relative position of Earth and Jupiter at different times.  This meant that light didn’t travel instantaneously, where he could estimate the speed of light from the timing differences.</p>
 <p>Michell and Laplace realized that light had a finite speed, which meant that there could be a star massive enough so that the escape speed form its surface was larger than the speed of light.  Hence, light always would fall back to the star.  Oddly, observers far enough away from the very largest stars would not be able to see them, yet they could see a smaller star from the same distance.</p>
 <p>Recall in <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter13/gravitation.html#escape-velocity">Section 13.3.2.1 Escape velocity</a>, we found that the escape speed is depends on the total mass, where in many cases the mass of the escaping object is negligible.  In the case of a photon, its massless, and our approximation holds.  Substituting <span class="math notranslate nohighlight">\(c\)</span> (the speed of light) for the escape velocity, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ec0cbcfd-5404-4c6b-b631-1165dceffb64">
-<span class="eqno">(13.14)<a class="headerlink" href="#equation-ec0cbcfd-5404-4c6b-b631-1165dceffb64" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-1100b9dc-fb39-4023-be83-dd45e5e7c543">
+<span class="eqno">(13.14)<a class="headerlink" href="#equation-1100b9dc-fb39-4023-be83-dd45e5e7c543" title="Permalink to this equation">#</a></span>\[\begin{align}
 v_{\rm esc} = c = \frac{2GM}{R}.
 \end{align}\]</div>
 <p>We only need values for the object’s radius <span class="math notranslate nohighlight">\(R\)</span> and mass <span class="math notranslate nohighlight">\(M\)</span>, such that the escape velocity equals <span class="math notranslate nohighlight">\(c\)</span> and the light cannot escape.  Michell posited that if a star had the density of our Sun and a radius that extended just beyond Mars, then light would not be able to escape from its surface.  He also conjectured that we would still be able to detect such a star from the gravitational effect it would have on the objects around it.</p>
 <p>In Schwarzschild’s solution to the tensor equation from GR, he found a critical radius (now called the <strong>Schwarzschild radius</strong> <span class="math notranslate nohighlight">\(R_S\)</span>).  For any mass <span class="math notranslate nohighlight">\(M\)</span> with a radius less than the Schwarzschild radius, then the mass will collapse to a singularity, and anything that passes inside that radius cannot escape.  Once inside <span class="math notranslate nohighlight">\(R_S\)</span>, the arrow of time takes all things to the singularity.  The Schwarzschild radius is given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-30b3aba4-5c77-46c1-8632-6d7dcc39cf32">
-<span class="eqno">(13.15)<a class="headerlink" href="#equation-30b3aba4-5c77-46c1-8632-6d7dcc39cf32" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-bd025a52-3eb7-4069-b78b-08a8c6ab1735">
+<span class="eqno">(13.15)<a class="headerlink" href="#equation-bd025a52-3eb7-4069-b78b-08a8c6ab1735" title="Permalink to this equation">#</a></span>\[\begin{align}
 R_S = \frac{2GM}{c^2}.
 \end{align}\]</div>
 <p>If you look at our escape velocity equation with <span class="math notranslate nohighlight">\(v_{rm esc} = c\)</span>, you will notice that it gives precisely this result.  However this is a fortuitous accident caused by several incorrect assumptions.  The kinetic energy of light is <span class="math notranslate nohighlight">\(E_{\rm ph} = p^2c^2\)</span> because it is massless.</p>
@@ -1901,7 +2224,8 @@ R_S = \frac{2GM}{c^2}.
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gravitation-near-earth-s-surface">13.2. Gravitation Near Earth’s Surface</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#weight">13.2.1. Weight</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-mass-of-the-earth">13.2.1.1. <strong>Example Problem</strong>: Mass of the Earth</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-mass-of-the-earth-and-moon">13.2.1.1. <strong>Example Problem</strong>: Mass of the Earth and Moon</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-gravity-above-earth-s-surface">13.2.1.2. <strong>Example Problem</strong>: Gravity above Earth’s surface</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-gravitational-field">13.2.2. The Gravitational Field</a></li>
