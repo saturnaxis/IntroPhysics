@@ -563,7 +563,10 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tidal-forces">13.6. Tidal Forces</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lunar-tides">13.6.1. Lunar Tides</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-effect-of-the-sun-on-tides">13.6.2. The Effect of the Sun on Tides</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-magnitude-of-the-tides">13.6.3. The Magnitude of the Tides</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-magnitude-of-the-tides">13.6.3. The Magnitude of the Tides</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-comparing-tidal-forces">13.6.3.1. <strong>Example Problem</strong>: Comparing Tidal Forces</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-tides">13.6.4. Other Tides</a></li>
 </ul>
 </li>
@@ -572,7 +575,8 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-principle-of-equivalence">13.7.2. The Principle of Equivalence</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-geometric-theory-of-gravity">13.7.3. A Geometric Theory of Gravity</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#black-holes">13.7.4. Black Holes</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-event-horizon">13.7.4.1. The Event Horizon</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-calculating-the-schwarzschild-radius">13.7.4.1. <strong>Example Problem</strong>: Calculating the Schwarzschild Radius</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-event-horizon">13.7.4.2. The Event Horizon</a></li>
 </ul>
 </li>
 </ul>
@@ -600,7 +604,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="gravitation">
 <h1><span class="section-number">13. </span>Gravitation<a class="headerlink" href="#gravitation" title="Link to this heading">#</a></h1>
-<p>Apr 06, 2026 | 9981 words | 50 min read</p>
+<p>Apr 07, 2026 | 12490 words | 62 min read</p>
 <section id="newton-s-law-of-universal-gravitation">
 <h2><span class="section-number">13.1. </span>Newton’s Law of Universal Gravitation<a class="headerlink" href="#newton-s-law-of-universal-gravitation" title="Link to this heading">#</a></h2>
 <section id="the-history-of-gravitation">
@@ -618,8 +622,8 @@ document.write(`
 <div class="note admonition">
 <p class="admonition-title">Newton’s Law of Gravitation</p>
 <p>Newton’s law of gravitation can be expressed as a vector by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2aae7441-e7eb-4543-91b1-0fb6d92a18c2">
-<span class="eqno">(13.1)<a class="headerlink" href="#equation-2aae7441-e7eb-4543-91b1-0fb6d92a18c2" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-c873120b-81bd-44ef-8228-42d26477b633">
+<span class="eqno">(13.1)<a class="headerlink" href="#equation-c873120b-81bd-44ef-8228-42d26477b633" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{F}_{12} = \frac{Gm_1m_2}{r^2}\hat{r}_{12},
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\vec{F}_{12}\)</span> is the force between object 1 exerted by object 2 and <span class="math notranslate nohighlight">\(\hat{r}_{12}\)</span> is the <em>radial</em> unit vector that points from object 1 toward object 2.</p>
@@ -688,15 +692,13 @@ document.write(`
 <p class="sd-card-text">This expression gives the initial acceleration when the separation is <span class="math notranslate nohighlight">\(r_i = 10.0\ {\rm m}\)</span> and the final acceleration just before contact when the separation is <span class="math notranslate nohighlight">\(r_f = 4.0\ {\rm m}\)</span>.  The initial gravitational force is found by substituting <span class="math notranslate nohighlight">\(m = 9000\ {\rm kg}\)</span> and <span class="math notranslate nohighlight">\(r_i = 10.0\ {\rm m}\)</span>:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-F_i &amp;= G \frac{m^2}{r_i^2}, \\
-    &amp;= \left(6.67\times10^{-11}\ {\rm N\cdot m^2/kg^2}\right)\frac{(9000\ {\rm kg})^2}{(10.0\ {\rm m})^2}
+F_i &amp;= G \frac{m^2}{r_i^2} = \left(6.67\times10^{-11}\ {\rm N\cdot m^2/kg^2}\right)\frac{(9000\ {\rm kg})^2}{(10.0\ {\rm m})^2}, \\
     &amp;= 5.40\times10^{-5}\ {\rm N}.
 \end{align*}\]</div>
 <p class="sd-card-text">The initial acceleration of either vehicle is therefore</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-a_i &amp;= \frac{F_i}{m}, \\
-    &amp;= \frac{5.40\times10^{-5}\ {\rm N}}{9000\ {\rm kg}}
+a_i &amp;= \frac{F_i}{m} = \frac{5.40\times10^{-5}\ {\rm N}}{9000\ {\rm kg}}, \\
     &amp;= 6.00\times10^{-9}\ {\rm m/s^2}.
 \end{align*}\]</div>
 <p class="sd-card-text">The final acceleration can be found using a ratio of the separations:</p>
@@ -862,8 +864,8 @@ a = 1.9\times10^{-13}\ {\rm m/s^2}.
 <h3><span class="section-number">13.2.1. </span>Weight<a class="headerlink" href="#weight" title="Link to this heading">#</a></h3>
 <p>Recall that the acceleration of a free-falling object near Earth’s surface is approximately <span class="math notranslate nohighlight">\(9.81\ {\rm m/s^2}\)</span>.  The force causing this acceleration is called the weight of the object, where we previously found that it has a value <span class="math notranslate nohighlight">\(w=mg\)</span> from Newton’s 2nd law.  The weight is present regardless of whether the object is in free fall or not.</p>
 <p>We now know the weight is caused by the gravitational force between the object of mass <span class="math notranslate nohighlight">\(m\)</span> and the Earth of mass <span class="math notranslate nohighlight">\(M_\oplus\)</span>.  If we equate the measured weight with the expected gravitational force, we can arrive at a scalar equation because both forces act in the same radial direction <span class="math notranslate nohighlight">\(\hat{r}\)</span>.  The scalar equation is given as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9e02958e-903c-474e-9af3-2816594544b1">
-<span class="eqno">(13.2)<a class="headerlink" href="#equation-9e02958e-903c-474e-9af3-2816594544b1" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-97e0e3a3-20fd-4d28-b1ec-ca991819a8cd">
+<span class="eqno">(13.2)<a class="headerlink" href="#equation-97e0e3a3-20fd-4d28-b1ec-ca991819a8cd" title="Permalink to this equation">#</a></span>\[\begin{align}
 mg &amp;= \frac{GM_\oplus m}{(R_\oplus + h)^2}, \\[6pt]
 &amp;= \frac{GM_\oplus m}{r^2},
 \end{align}\]</div>
@@ -905,26 +907,18 @@ mg &amp;= \frac{GM_\oplus m}{(R_\oplus + h)^2}, \\[6pt]
 <p class="sd-card-text">Substituting the standard values gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-M_\oplus &amp;= \frac{(9.81\ {\rm m/s^2})(6.37\times10^6\ {\rm m})^2}
-           {6.67\times10^{-11}\ {\rm N\cdot m^2/kg^2}} \\
+M_\oplus &amp;= \frac{(9.81\ {\rm m/s^2})(6.37\times10^6\ {\rm m})^2}{6.67\times10^{-11}\ {\rm N\cdot m^2/kg^2}} \\
     &amp;= 5.96\times10^{24}\ {\rm kg}.
 \end{align*}\]</div>
 <hr class="docutils" />
 <p class="sd-card-text"><strong>(b)</strong> The surface gravitational acceleration scales as <span class="math notranslate nohighlight">\(g \propto \frac{M}{R^2}.\)</span></p>
 <p class="sd-card-text">Taking the ratio of the Moon to Earth gives</p>
 <div class="math notranslate nohighlight">
-\[ \frac{g_M}{g_E} = \frac{M_M}{M_\oplus} \left(\frac{R_E}{R_M}\right)^2. \]</div>
+\[ \frac{g_M}{g} = \frac{M_M}{M_\oplus} \left(\frac{R_\oplus}{R_M}\right)^2. \]</div>
 <p class="sd-card-text">Using the historical estimate <span class="math notranslate nohighlight">\(M_M = M_\oplus/75\)</span> gives</p>
-<div class="math notranslate nohighlight">
-\[
-\frac{g_M}{g_E} = \frac{1}{75} \left(\frac{R_E}{R_M}\right)^2.
-\]</div>
-<p class="sd-card-text">Substituting the numerical values gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-g_M &amp;= (9.81\ {\rm m/s^2})
-       \frac{1}{75}
-       \left(\frac{6.37\times10^6\ {\rm m}}{1.7\times10^6\ {\rm m}}\right)^2 \\
+g_M &amp;= (9.81\ {\rm m/s^2})\left(\frac{1}{75}\right)\left(\frac{6.37\times10^6\ {\rm m}}{1.7\times10^6\ {\rm m}}\right)^2 \\
     &amp;= 1.8\ {\rm m/s^2}.
 \end{align*}\]</div>
 <hr class="docutils" />
@@ -963,7 +957,7 @@ g_M &amp;= (9.81\ {\rm m/s^2})
 <section id="exercise-content">
 <p><strong>The Problem</strong></p>
 <blockquote>
-<div><p>What is the value of <span class="math notranslate nohighlight">\(g\)</span> on the International Space Station, which is <span class="math notranslate nohighlight">\(400\ {\rm km}\)</span> above Earth’s surface in orbit?</p>
+<div><p>What is the value of <span class="math notranslate nohighlight">\(g_{\rm ISS}\)</span> on the International Space Station, which is <span class="math notranslate nohighlight">\(400\ {\rm km}\)</span> above Earth’s surface in orbit?</p>
 </div></blockquote>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
 <summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
@@ -975,18 +969,16 @@ g_M &amp;= (9.81\ {\rm m/s^2})
 <p class="sd-card-text">The gravitational acceleration at a distance <span class="math notranslate nohighlight">\(r\)</span> from Earth’s center is given by</p>
 <div class="math notranslate nohighlight">
 \[ g = \frac{GM_\oplus}{r^2}. \]</div>
-<p class="sd-card-text">Taking the ratio with the surface value <span class="math notranslate nohighlight">\(g_E = \frac{GM_\oplus}{R_\oplus^2}\)</span> gives</p>
+<p class="sd-card-text">Taking the ratio with the surface value <span class="math notranslate nohighlight">\(g = \frac{GM_\oplus}{R_\oplus^2}\)</span> gives</p>
 <div class="math notranslate nohighlight">
-\[ \frac{g}{g_E} = \left(\frac{R_\oplus}{r}\right)^2. \]</div>
+\[ \frac{g_{\rm ISS}}{g} = \left(\frac{R_\oplus}{r}\right)^2. \]</div>
 <p class="sd-card-text">The orbital radius is <span class="math notranslate nohighlight">\( r = R_\oplus + h.\)</span>  Substituting into the ratio gives</p>
 <div class="math notranslate nohighlight">
-\[ g = g_E \left(\frac{R_\oplus}{R_E\oplus + h}\right)^2. \]</div>
+\[ g_{\rm ISS} = g \left(\frac{R_\oplus}{R_E\oplus + h}\right)^2. \]</div>
 <p class="sd-card-text">Substituting the numerical values gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-g &amp;= (9.81\ {\rm m/s^2})
-\left(\frac{6.37\times10^6\ {\rm m}}
-           {6.37\times10^6\ {\rm m} + 400\times10^3\ {\rm m}}\right)^2 \\
+g &amp;= (9.81\ {\rm m/s^2})\left(\frac{6.37\times10^3\ {\rm km}}{6.37\times10^3\ {\rm km} + 400\ {\rm km}}\right)^2 \\
   &amp;= 8.7\ {\rm m/s^2}.
 \end{align*}\]</div>
 <hr class="docutils" />
@@ -998,12 +990,12 @@ g &amp;= (9.81\ {\rm m/s^2})
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
 <span class="c1"># Given values</span>
-<span class="n">g_E</span> <span class="o">=</span> <span class="mf">9.81</span>          <span class="c1"># m/s^2</span>
-<span class="n">R_E</span> <span class="o">=</span> <span class="mf">6.37e6</span>        <span class="c1"># m</span>
-<span class="n">h</span> <span class="o">=</span> <span class="mf">400e3</span>           <span class="c1"># m</span>
+<span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>          <span class="c1"># m/s^2</span>
+<span class="n">R_E</span> <span class="o">=</span> <span class="mf">6.37e3</span>        <span class="c1"># km</span>
+<span class="n">h</span> <span class="o">=</span> <span class="mi">400</span>           <span class="c1"># km</span>
 
 <span class="c1"># Compute g at altitude</span>
-<span class="n">g</span> <span class="o">=</span> <span class="n">g_E</span> <span class="o">*</span> <span class="p">(</span><span class="n">R_E</span> <span class="o">/</span> <span class="p">(</span><span class="n">R_E</span> <span class="o">+</span> <span class="n">h</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">g_ISS</span> <span class="o">=</span> <span class="n">g</span> <span class="o">*</span> <span class="p">(</span><span class="n">R_E</span> <span class="o">/</span> <span class="p">(</span><span class="n">R_E</span> <span class="o">+</span> <span class="n">h</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The gravitational acceleration at 400 km altitude is </span><span class="si">{</span><span class="n">g</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> m/s^2.&quot;</span><span class="p">)</span>
 </pre></div>
@@ -1157,8 +1149,8 @@ g &amp;= (9.81\ {\rm m/s^2})
 </figcaption>
 </figure>
 <p>With rotation, the sum of these forces must provide the centripetal acceleration <span class="math notranslate nohighlight">\(a_c\)</span>.  Using Newton’s 2nd law, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9b3fe753-f346-42df-af5e-361664c28ffa">
-<span class="eqno">(13.4)<a class="headerlink" href="#equation-9b3fe753-f346-42df-af5e-361664c28ffa" title="Permalink to this equation">#</a></span>\[\begin{align} 
+<div class="amsmath math notranslate nohighlight" id="equation-ce8d41c4-ebcf-4be4-8ecc-9831a27159d1">
+<span class="eqno">(13.4)<a class="headerlink" href="#equation-ce8d41c4-ebcf-4be4-8ecc-9831a27159d1" title="Permalink to this equation">#</a></span>\[\begin{align} 
 \sum F &amp;= F_{\rm SE} - mg = ma_c, \\
 &amp;=-\frac{mv^2}{r}.
 \end{align}\]</div>
@@ -1173,6 +1165,73 @@ g &amp;= (9.81\ {\rm m/s^2})
 <p>Consider a more rapidly spinning Earth (e.g., <span class="math notranslate nohighlight">\(12\ {\rm hr}\)</span>), then this correction increases only to <span class="math notranslate nohighlight">\(1.36\%\)</span>.  For this correction to be large, the Earth needs to be larger and rapidly rotating.  The surface gravity of Saturn is <span class="math notranslate nohighlight">\({\sim}9.8\ {\rm m/s^2}\)</span> at the edge of its atmosphere and rotating in about <span class="math notranslate nohighlight">\(10.5\ {\rm hr}\)</span>.  The centripetal acceleration would be <span class="math notranslate nohighlight">\({\sim}50\times\)</span> larger, which contributes to its slightly squashed appearance.</p>
 <section id="example-problem-zero-apparent-weight">
 <h4><span class="section-number">13.2.3.1. </span><strong>Example Problem</strong>: Zero Apparent Weight<a class="headerlink" href="#example-problem-zero-apparent-weight" title="Link to this heading">#</a></h4>
+<div class="exercise etamu-exercise admonition" id="Chapter13/gravitation-exercise-4">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.5 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>How fast would Earth need to spin for a person at the equator to have zero apparent weight? How long would the length of the day be?</p>
+</div></blockquote>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">At the equator, a person moves in circular motion due to Earth’s rotation. The apparent weight is the normal force, which becomes zero when gravity alone provides the required centripetal acceleration. At this condition, the gravitational acceleration equals the centripetal acceleration at Earth’s surface. The speed and rotation period follow from circular motion relations.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">The condition for zero apparent weight is that gravity supplies the centripetal acceleration, <span class="math notranslate nohighlight">\(g = a_c.\)</span>  For circular motion, the centripetal acceleration is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*} 
+a_c &amp;= \frac{v^2}{R_\oplus}, \\
+g &amp;= \frac{v^2}{R_\oplus}.
+\end{align*}\]</div>
+<p class="sd-card-text">Solving for the required speed gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*} 
+v &amp;= \sqrt{g R_\oplus}, \\
+v &amp;= \sqrt{(9.81\ {\rm m/s^2})(6.37\times10^6\ {\rm m})}, \\
+  &amp;= 7910\ {\rm m/s}.
+\end{align*}\]</div>
+<p class="sd-card-text">The rotation period follows from the relation between speed and circumference,</p>
+<div class="math notranslate nohighlight">
+\[ v = \frac{2\pi R_\oplus}{T}.\]</div>
+<p class="sd-card-text">Solving for the period gives</p>
+<div class="math notranslate nohighlight">
+\[ T = \frac{2\pi R_E}{v}.\]</div>
+<p class="sd-card-text">Substituting the numerical values gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+T &amp;= \frac{2\pi(6.37\times10^6\ {\rm m})}{7910\ {\rm m/s}} \\
+  &amp;= 5060\ {\rm s}
+     \approx 84.3\ {\rm min}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The required equatorial speed is <span class="math notranslate nohighlight">\(7910\ {\rm m/s}\)</span>, and the corresponding rotation period is <span class="math notranslate nohighlight">\(5060\ {\rm s}\)</span>, or about <span class="math notranslate nohighlight">\(84.3\)</span> minutes. At this rotation rate, objects at the equator would be in continuous free fall and experience zero apparent weight.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The verification computes the required speed from the condition <span class="math notranslate nohighlight">\(g = v^2/R_\oplus\)</span> and then determines the rotation period from the circumference of Earth. This confirms the analytical results.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Given values</span>
+<span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>          <span class="c1"># m/s^2</span>
+<span class="n">R_E</span> <span class="o">=</span> <span class="mf">6.37e6</span>      <span class="c1"># m</span>
+
+<span class="c1"># Compute required speed</span>
+<span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">g</span> <span class="o">*</span> <span class="n">R_E</span><span class="p">)</span>
+
+<span class="c1"># Compute rotation period</span>
+<span class="n">T</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">R_E</span> <span class="o">/</span> <span class="n">v</span>
+<span class="n">T_min</span> <span class="o">=</span> <span class="n">T</span> <span class="o">/</span> <span class="mi">60</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The required equatorial speed is </span><span class="si">{</span><span class="n">v</span><span class="si">:</span><span class="s2">.2e</span><span class="si">}</span><span class="s2"> m/s.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The rotation period is </span><span class="si">{</span><span class="n">T</span><span class="si">:</span><span class="s2">.2e</span><span class="si">}</span><span class="s2"> s, which is </span><span class="si">{</span><span class="n">T_min</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> minutes.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details></section>
+</div>
 </section>
 </section>
 <section id="results-away-from-the-equator">
@@ -1233,8 +1292,8 @@ g &amp;= \frac{GM_r}{r^2} = \frac{4}{3}G\rho\pi r.
 &amp;= GM_\oplus m\left(\frac{1}{r_1}-\frac{1}{r_2}\right).
 \end{align*}\]</div>
 <p>Since <span class="math notranslate nohighlight">\(\Delta U = U_2 - U_1\)</span>, we can adopt a simple expression for the potential energy function <span class="math notranslate nohighlight">\(U(r)\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-38466ecc-bfca-40a9-82ea-18b53730cecd">
-<span class="eqno">(13.5)<a class="headerlink" href="#equation-38466ecc-bfca-40a9-82ea-18b53730cecd" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-3ce56775-58d8-42d7-907f-63794d2919f2">
+<span class="eqno">(13.5)<a class="headerlink" href="#equation-3ce56775-58d8-42d7-907f-63794d2919f2" title="Permalink to this equation">#</a></span>\[\begin{align}
 U(r) = -\frac{GM_\oplus m}{r}.
 \end{align}\]</div>
 <div class="admonition note">
@@ -1247,13 +1306,79 @@ U(r) = -\frac{GM_\oplus m}{r}.
 </div>
 <section id="example-problem-lifting-a-payload">
 <h4><span class="section-number">13.3.1.1. </span><strong>Example Problem</strong>: Lifting a Payload<a class="headerlink" href="#example-problem-lifting-a-payload" title="Link to this heading">#</a></h4>
+<div class="exercise etamu-exercise admonition" id="Chapter13/gravitation-exercise-5">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.6 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>How much energy is required to lift the <span class="math notranslate nohighlight">\(9000\ {\rm kg}\)</span> Soyuz vehicle from Earth’s surface to the height of the ISS, <span class="math notranslate nohighlight">\(400\ {\rm km}\)</span> above the surface?</p>
+</div></blockquote>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The payload is lifted from Earth’s surface to a higher altitude in Earth’s gravitational field. The work required equals the change in gravitational potential energy. Because gravity varies with distance, the exact expression for gravitational potential energy of a point mass is used rather than a constant-<span class="math notranslate nohighlight">\(g\)</span> approximation.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">The gravitational potential energy of a mass <span class="math notranslate nohighlight">\(m\)</span> at a distance <span class="math notranslate nohighlight">\(r\)</span> from Earth’s center is</p>
+<div class="math notranslate nohighlight">
+\[
+U = -\frac{GM_\oplus m}{r}.
+\]</div>
+<p class="sd-card-text">The change in potential energy between Earth’s surface and orbital altitude is</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta U = U_f - U_i = -\frac{GM_\oplus m}{R_\oplus + h} - \left(-\frac{GM_\oplus m}{R_\oplus}\right).
+\]</div>
+<p class="sd-card-text">This simplifies to</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta U = GM_\oplus m \left(\frac{1}{R_\oplus} - \frac{1}{R_\oplus + h}\right).
+\]</div>
+<p class="sd-card-text">Substituting the numerical values gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\Delta U &amp;= \left(6.67\times10^{-11}\ {\rm N\cdot m^2/kg^2}\right)
+            \left(5.96\times10^{24}\ {\rm kg}\right)
+            (9000\ {\rm kg}) \\
+         &amp;\quad \times \left(\frac{1}{6.37\times10^6\ {\rm m}} - \frac{1}{6.37\times10^6\ {\rm m} + 400\times10^3\ {\rm m}}\right) \\
+         &amp;= 3.32\times10^{10}\ {\rm J}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The energy required to lift the Soyuz vehicle to an altitude of <span class="math notranslate nohighlight">\(400\ {\rm km}\)</span> is <span class="math notranslate nohighlight">\(3.32\times10^{10}\ {\rm J}\)</span>. This positive value reflects the increase in gravitational potential energy.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The verification computes the change in gravitational potential energy using the same expression derived above. This confirms the magnitude of the energy required to lift the payload.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Define constants</span>
+<span class="n">G</span> <span class="o">=</span> <span class="mf">6.67e-11</span>          <span class="c1"># Gravitational constant in N·m^2/kg^2</span>
+<span class="n">M_E</span> <span class="o">=</span> <span class="mf">5.96e24</span>         <span class="c1"># Mass of Earth in kg</span>
+<span class="n">m</span> <span class="o">=</span> <span class="mf">9000.0</span>            <span class="c1"># Mass of the payload in kg</span>
+<span class="n">R_E</span> <span class="o">=</span> <span class="mf">6.37e6</span>          <span class="c1"># Radius of Earth in m</span>
+<span class="n">h</span> <span class="o">=</span> <span class="mf">400e3</span>             <span class="c1"># Altitude above Earth&#39;s surface in m</span>
+
+<span class="c1"># Compute the change in gravitational potential energy</span>
+<span class="n">dU</span> <span class="o">=</span> <span class="n">G</span> <span class="o">*</span> <span class="n">M_E</span> <span class="o">*</span> <span class="n">m</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">/</span> <span class="n">R_E</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">/</span> <span class="p">(</span><span class="n">R_E</span> <span class="o">+</span> <span class="n">h</span><span class="p">))</span>
+
+<span class="c1"># Compute change in potential energy</span>
+<span class="n">dU</span> <span class="o">=</span> <span class="n">G</span> <span class="o">*</span> <span class="n">M_E</span> <span class="o">*</span> <span class="n">m</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">R_E</span> <span class="o">-</span> <span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="n">R_E</span> <span class="o">+</span> <span class="n">h</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The energy required to lift the payload is </span><span class="si">{</span><span class="n">dU</span><span class="si">:</span><span class="s2">.3e</span><span class="si">}</span><span class="s2"> J.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details></section>
+</div>
 </section>
 </section>
 <section id="conservation-of-energy">
 <h3><span class="section-number">13.3.2. </span>Conservation of Energy<a class="headerlink" href="#conservation-of-energy" title="Link to this heading">#</a></h3>
 <p>In <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter08/potential-energy-conservation.html">Chapter 8</a>, we described how to apply conservation of energy for systems with conservative forces.  We solved some problems involving gravity using the conservation of energy, where similar principles and strategies can be applied here.  The only change is use the more general expression for the gravitational potential energy function <span class="math notranslate nohighlight">\(U(r)\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-52755541-e204-4e60-b803-b053620a90b6">
-<span class="eqno">(13.6)<a class="headerlink" href="#equation-52755541-e204-4e60-b803-b053620a90b6" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-97a62461-3eb9-4fd5-9541-edd504174114">
+<span class="eqno">(13.6)<a class="headerlink" href="#equation-97a62461-3eb9-4fd5-9541-edd504174114" title="Permalink to this equation">#</a></span>\[\begin{align}
 K_i + U_i &amp;= K_f + U_f, \\
 \frac{1}{2}m_1(v_1^2)^i - \frac{Gm_2m_1}{r_{12}^i} &amp;= \frac{1}{2}m_1(v_1^2)^f - \frac{Gm_2m_1}{r_{12}^f},\\
 (v_1^2)^i - \frac{2Gm_2}{r_{12}^i} &amp;= (v_1^2)^f - \frac{2Gm_2}{r_{12}^f}, \\
@@ -1268,8 +1393,8 @@ K_i + U_i &amp;= K_f + U_f, \\
 <p>The <em>minimum</em> initial velocity of an object where it can escape the surface of a large body (i.e., the Earth) is called the <strong>escape velocity</strong>.  We assume that no energy is lost to an atmosphere, so this just the ideal case.</p>
 <p>Consider an object with a positive launch velocity directed away from the Earth.  With the <em>minimum</em> velocity needed for escape, the object would come to rest once it is infinitely far away (i.e., where the force of gravity becomes negligible or the gravitational potential <span class="math notranslate nohighlight">\(U(r)\)</span> goes to zero).  Since <span class="math notranslate nohighlight">\(\displaystyle \lim_{r\rightarrow \infty} U_g(r) = 0\)</span>, this means that the total energy is also zero.</p>
 <p>Thus, we find the escape velocity from the surface of an astronomical body of mass <span class="math notranslate nohighlight">\(m_2\)</span> and radius <span class="math notranslate nohighlight">\(R\)</span> by setting the total energy equal to zero.  At the surface of the body, the object is located at <span class="math notranslate nohighlight">\(r_{12}^i = R\)</span> and it has an escape velocity <span class="math notranslate nohighlight">\(v_1^i = v_{\rm esc}\)</span>.  It reaches <span class="math notranslate nohighlight">\(r_{12}^f = \infty\)</span> with a velocity <span class="math notranslate nohighlight">\(v_1^f = 0\)</span>.  Substituting into our conservation of energy equation, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0893037b-aa40-4e18-aa01-e73270402912">
-<span class="eqno">(13.7)<a class="headerlink" href="#equation-0893037b-aa40-4e18-aa01-e73270402912" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-3d31843d-daa3-46a8-b17b-adb6747e4c6e">
+<span class="eqno">(13.7)<a class="headerlink" href="#equation-3d31843d-daa3-46a8-b17b-adb6747e4c6e" title="Permalink to this equation">#</a></span>\[\begin{align}
 K_i + U_i &amp;= K_f + U_f, \\
 v_{\rm esc}^2 - 0 &amp;=  \frac{2Gm_2}{R}- \frac{2Gm_2}{\infty}, \\
 v_{\rm esc} &amp;= \sqrt{\frac{2Gm_2}{R}}.
@@ -1355,9 +1480,157 @@ v_{\rm esc} &amp;= \sqrt{\frac{2Gm_2}{R}}.
 </section>
 <section id="example-problem-escape-from-earth">
 <h4><span class="section-number">13.3.2.3. </span><strong>Example Problem</strong>: Escape from Earth<a class="headerlink" href="#example-problem-escape-from-earth" title="Link to this heading">#</a></h4>
+<div class="exercise etamu-exercise admonition" id="Chapter13/gravitation-exercise-6">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.7 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>What is the escape speed from the surface of Earth? Assume there is no energy loss from air resistance. Compare this to the escape speed from the Sun, starting from Earth’s orbit.</p>
+</div></blockquote>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">Escape speed is the minimum speed required for an object to reach an infinite distance with zero remaining kinetic energy. For any gravitating body, the escape speed is <span class="math notranslate nohighlight">\(\sqrt{2}\)</span> times the circular speed at the same radius. The escape speed from Earth’s surface is therefore found from the known circular speed near Earth, and the escape speed from the Sun at Earth’s orbit is obtained by comparing circular speeds through a ratio of masses and radii.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">The escape speed and circular speed at the same radius are related by</p>
+<div class="math notranslate nohighlight">
+\[ v_{\rm esc} = \sqrt{2}\,v_c. \]</div>
+<p class="sd-card-text">For Earth, the circular speed at the surface is approximately <span class="math notranslate nohighlight">\(7.90\ {\rm km/s}\)</span>, so the escape speed from Earth’s surface is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+v_{{\rm esc},\oplus} &amp;= \sqrt{2}\,v_{c,\oplus} \\
+&amp;= \sqrt{2}\,(7.90\ {\rm km/s}) \\
+&amp;= 11.2\ {\rm km/s}.
+\end{align*}\]</div>
+<p class="sd-card-text">To compare this with the escape speed from the Sun at Earth’s orbit, we first compare the corresponding circular speeds. Since circular speed scales as</p>
+<div class="math notranslate nohighlight">
+\[ v_c = \sqrt{\frac{GM}{R}}, \]</div>
+<p class="sd-card-text">the ratio of the Sun’s circular speed at Earth’s orbit to Earth’s circular speed at Earth’s surface is</p>
+<div class="math notranslate nohighlight">
+\[ \frac{v_{c,\odot}}{v_{c,\oplus}} = \sqrt{\left(\frac{M_\odot}{M_\oplus}\right)\left(\frac{R_\oplus}{R_{{\rm E}\odot}}\right)}, \]</div>
+<p class="sd-card-text">where <span class="math notranslate nohighlight">\(R_{{\rm E}\odot}\)</span> is Earth’s orbital radius about the Sun. Substituting the numerical values gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{v_{c,\odot}}{v_{c,\oplus}} &amp;= \sqrt{\left(\frac{1.99\times10^{30}\ {\rm kg}}{5.96\times10^{24}\ {\rm kg}}\right)\left(\frac{6.37\times10^6\ {\rm m}}{1.50\times10^{11}\ {\rm m}}\right)} \\
+&amp;= 3.76.
+\end{align*}\]</div>
+<p class="sd-card-text">Thus the Sun’s circular speed at Earth’s orbit is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+v_{c,\odot} &amp;= (3.76)(7.90\ {\rm km/s}) \\
+&amp;= 29.7\ {\rm km/s}.
+\end{align*}\]</div>
+<p class="sd-card-text">The escape speed from the Sun at Earth’s orbit is then</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+v_{{\rm esc},\odot} &amp;= \sqrt{2}\,v_{c,\odot} \\
+&amp;= \sqrt{2}\,(29.7\ {\rm km/s}) \\
+&amp;= 42.0\ {\rm km/s}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The escape speed from Earth’s surface is <span class="math notranslate nohighlight">\(11.2\ {\rm km/s}\)</span>, while the escape speed from the Sun starting from Earth’s orbit is <span class="math notranslate nohighlight">\(42.0\ {\rm km/s}\)</span>. Thus, the solar escape speed at Earth’s orbit is about <span class="math notranslate nohighlight">\(3.8\)</span> times larger than the escape speed from Earth’s surface.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The verification uses the relation between escape speed and circular speed together with the ratio of circular speeds. It first computes the Earth escape speed from the known circular speed at Earth’s surface, then uses the mass-radius ratio to obtain the Sun’s circular and escape speeds at Earth’s orbit.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Define constants</span>
+<span class="n">v_c_E</span> <span class="o">=</span> <span class="mf">7.90e3</span>          <span class="c1"># Circular speed at Earth&#39;s surface in m/s</span>
+<span class="n">M_sun</span> <span class="o">=</span> <span class="mf">1.99e30</span>         <span class="c1"># Mass of the Sun in kg</span>
+<span class="n">M_E</span> <span class="o">=</span> <span class="mf">5.96e24</span>           <span class="c1"># Mass of Earth in kg</span>
+<span class="n">R_E</span> <span class="o">=</span> <span class="mf">6.37e6</span>            <span class="c1"># Radius of Earth in m</span>
+<span class="n">R_ES</span> <span class="o">=</span> <span class="mf">1.50e11</span>          <span class="c1"># Earth-Sun distance in m</span>
+
+<span class="c1"># Compute the escape speed from Earth&#39;s surface</span>
+<span class="n">v_esc_E</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="n">v_c_E</span>
+
+<span class="c1"># Compute the ratio of circular speeds</span>
+<span class="n">ratio</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="n">M_sun</span> <span class="o">/</span> <span class="n">M_E</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">R_E</span> <span class="o">/</span> <span class="n">R_ES</span><span class="p">))</span>
+
+<span class="c1"># Compute the Sun&#39;s circular and escape speeds at Earth&#39;s orbit</span>
+<span class="n">v_c_sun</span> <span class="o">=</span> <span class="n">ratio</span> <span class="o">*</span> <span class="n">v_c_E</span>
+<span class="n">v_esc_sun</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="n">v_c_sun</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The escape speed from Earth&#39;s surface is </span><span class="si">{</span><span class="n">v_esc_E</span><span class="o">/</span><span class="mi">1000</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> km/s.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The circular speed around the Sun at Earth&#39;s orbit is </span><span class="si">{</span><span class="n">v_c_sun</span><span class="o">/</span><span class="mi">1000</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> km/s.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The escape speed from the Sun at Earth&#39;s orbit is </span><span class="si">{</span><span class="n">v_esc_sun</span><span class="o">/</span><span class="mi">1000</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> km/s.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details></section>
+</div>
 </section>
 <section id="example-problem-how-far-can-an-object-escape">
 <h4><span class="section-number">13.3.2.4. </span><strong>Example Problem</strong>: How Far Can an Object Escape?<a class="headerlink" href="#example-problem-how-far-can-an-object-escape" title="Link to this heading">#</a></h4>
+<div class="exercise etamu-exercise admonition" id="Chapter13/gravitation-exercise-7">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.8 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>Let’s consider the preceding example again, where we calculated the escape speed from Earth and the Sun, starting from Earth’s orbit. We noted that Earth already has an orbital speed of <span class="math notranslate nohighlight">\(30\ {\rm km/s}\)</span>. As we see in the next section, that is the tangential speed needed to stay in circular orbit. If an object had this speed at the distance of Earth’s orbit, but was headed directly away from the Sun, how far would it travel before coming to rest? Ignore the gravitational effects of any other bodies.</p>
+</div></blockquote>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The object moves in the Sun’s gravitational field and is treated as a point mass. It begins at Earth’s orbital distance with the circular orbital speed for that radius, but its velocity is directed radially outward rather than tangentially. As the object moves away from the Sun, its kinetic energy decreases while its gravitational potential energy increases. The maximum distance occurs when the speed becomes zero, so conservation of mechanical energy determines the turning point.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">The total mechanical energy is conserved, so <span class="math notranslate nohighlight">\(K_i + U_i = K_f + U_f.\)</span>  Using the gravitational potential energy <span class="math notranslate nohighlight">\(U = -GM_\odot m/r\)</span>, this becomes</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{1}{2}mv_i^2 - \frac{GM_\odot m}{r_i} = \frac{1}{2}mv_f^2 - \frac{GM_\odot m}{r_f}.
+\]</div>
+<p class="sd-card-text">At the maximum distance, the object momentarily comes to rest, so <span class="math notranslate nohighlight">\(v_f = 0\)</span>. Because the initial speed is the circular speed at <span class="math notranslate nohighlight">\(r_i\)</span>, we use</p>
+<div class="math notranslate nohighlight">
+\[ v_i^2 = \frac{GM_\odot}{r_i}. \]</div>
+<p class="sd-card-text">Substituting these two facts into the energy equation gives</p>
+<div class="math notranslate nohighlight">
+\[ \frac{1}{2}m\frac{GM_\odot}{r_i} - \frac{GM_\odot m}{r_i} = -\frac{GM_\odot m}{r_f}. \]</div>
+<p class="sd-card-text">Factoring out <span class="math notranslate nohighlight">\(GM_\odot m\)</span> gives</p>
+<div class="math notranslate nohighlight">
+\[ \left(\frac{1}{2r_i} - \frac{1}{r_i}\right) = -\frac{1}{r_f}. \]</div>
+<p class="sd-card-text">This simplifies to</p>
+<div class="math notranslate nohighlight">
+\[ -\frac{1}{2r_i} = -\frac{1}{r_f}, \]</div>
+<p class="sd-card-text">so the maximum distance is <span class="math notranslate nohighlight">\(r_f = 2r_i.\)</span></p>
+<p class="sd-card-text">Using <span class="math notranslate nohighlight">\(r_i = 1.50\times10^{11}\ {\rm m}\)</span> gives</p>
+<div class="math notranslate nohighlight">
+\[
+r_f = 2(1.50\times10^{11}\ {\rm m}) = 3.0\times10^{11}\ {\rm m}.
+\]</div>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The object travels to a maximum distance of <span class="math notranslate nohighlight">\(3.0\times 10^{11}\ {\rm m}\)</span> before coming to rest. This is exactly twice Earth’s orbital distance from the Sun, which carries the object beyond Mars’s orbit but not as far as the main asteroid belt.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The verification uses the circular-speed relation and conservation of energy to compute the turning-point distance numerically. This confirms that an object launched radially outward with the circular speed at Earth’s orbit reaches exactly twice its initial distance before stopping.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Define constants</span>
+<span class="n">G</span> <span class="o">=</span> <span class="mf">6.67e-11</span>          <span class="c1"># Gravitational constant in N·m^2/kg^2</span>
+<span class="n">M_sun</span> <span class="o">=</span> <span class="mf">1.99e30</span>       <span class="c1"># Mass of the Sun in kg</span>
+<span class="n">r_i</span> <span class="o">=</span> <span class="mf">1.50e11</span>         <span class="c1"># Initial distance from the Sun in m</span>
+
+<span class="c1"># Compute the circular speed at the initial radius</span>
+<span class="n">v_i</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">G</span> <span class="o">*</span> <span class="n">M_sun</span> <span class="o">/</span> <span class="n">r_i</span><span class="p">)</span>    <span class="c1"># Initial circular speed in m/s</span>
+
+<span class="c1"># Compute the turning-point distance from energy conservation</span>
+<span class="n">r_f</span> <span class="o">=</span> <span class="mf">2.0</span> <span class="o">*</span> <span class="n">r_i</span>                   <span class="c1"># Maximum distance from the Sun in m</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The initial circular speed is </span><span class="si">{</span><span class="n">v_i</span><span class="o">/</span><span class="mi">1000</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> km/s.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The maximum distance from the Sun is </span><span class="si">{</span><span class="n">r_f</span><span class="si">:</span><span class="s2">.2e</span><span class="si">}</span><span class="s2"> m.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;This is </span><span class="si">{</span><span class="n">r_f</span><span class="o">/</span><span class="n">r_i</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> times the initial orbital distance.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details></section>
+</div>
 </section>
 </section>
 </section>
@@ -1379,8 +1652,8 @@ F_g &amp;= F_c, \\[6pt]
 </figcaption>
 </figure>
 <p>WE can solve for the speed of the orbit <span class="math notranslate nohighlight">\(v_{\rm orbit}\)</span> (note that <span class="math notranslate nohighlight">\(m\)</span> cancels) to get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-4ff477cd-cf3f-412e-94a0-694b1b511584">
-<span class="eqno">(13.9)<a class="headerlink" href="#equation-4ff477cd-cf3f-412e-94a0-694b1b511584" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a6c08233-3d32-46b1-b7a4-ddb16c5d4839">
+<span class="eqno">(13.9)<a class="headerlink" href="#equation-a6c08233-3d32-46b1-b7a4-ddb16c5d4839" title="Permalink to this equation">#</a></span>\[\begin{align}
 v_{\rm orbit} = \sqrt{\frac{GM_\oplus}{r}}.
 \end{align}\]</div>
 <p>The value of <span class="math notranslate nohighlight">\(g\)</span>, the escape velocity, and the orbital velocity depend only on the distance from the center of the planet, and <em>not</em> upon the mass of the object.  Let’s compare the escape velocity (see Eqn. <a class="reference internal" href="#equation-escape-velocity">(13.8)</a>) to the orbital velocity through the ratio, assuming that <span class="math notranslate nohighlight">\(m_1 = M_\oplus\)</span> and <span class="math notranslate nohighlight">\(m_2 = m\)</span>.  Then, we have</p>
@@ -1395,8 +1668,8 @@ v_{\rm orbit} = \sqrt{\frac{GM_\oplus}{r}}.
 \[ v_{\rm orbit} = \frac{\Delta s}{\Delta t}, \]</div>
 <p>where <span class="math notranslate nohighlight">\(\Delta s\)</span> is the distance traveled along the circumference of the circle and <span class="math notranslate nohighlight">\(\Delta t\)</span> is the time it takes to traverse that distance.  In physics and astronomy, it is common to use the letter <span class="math notranslate nohighlight">\(T\)</span> for this time interval, partly because we’ve used <span class="math notranslate nohighlight">\(p\)</span> for momentum already and will use <span class="math notranslate nohighlight">\(P\)</span> for pressure later.</p>
 <p>For the satellite to complete one orbit in a time <span class="math notranslate nohighlight">\(T\)</span>, <span class="math notranslate nohighlight">\(\delta s\)</span> must be the circumference of the circle or <span class="math notranslate nohighlight">\(2\pi r\)</span>.  Now we can substitute this into our equation for orbital speed and solve for <span class="math notranslate nohighlight">\(T\)</span>.  Therefore we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b0cb7859-7db6-43f8-926f-d77d8c021ccc">
-<span class="eqno">(13.10)<a class="headerlink" href="#equation-b0cb7859-7db6-43f8-926f-d77d8c021ccc" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-fdc44b99-7abf-4d51-a86c-d0541b8acc6c">
+<span class="eqno">(13.10)<a class="headerlink" href="#equation-fdc44b99-7abf-4d51-a86c-d0541b8acc6c" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{2\pi r}{T} &amp;= \sqrt{\frac{GM_\oplus}{r}} \quad \text{invert both sides} \Rightarrow
 \frac{T}{2\pi r} &amp;= \sqrt{\frac{r}{GM_\oplus}}, \\
 T &amp;= 2\pi\sqrt{\frac{r^3}{GM_\oplus}}, \\
@@ -1465,7 +1738,7 @@ T^2 &amp;= \frac{4\pi^2}{GM_\oplus}r^3.
 <span class="c1"># -------------------------</span>
 <span class="c1"># Plot</span>
 <span class="c1"># -------------------------</span>
-<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">7</span><span class="p">),</span><span class="n">dpi</span><span class="o">=</span><span class="mi">120</span><span class="p">)</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span><span class="n">dpi</span><span class="o">=</span><span class="mi">120</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span><span class="n">zorder</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 
 <span class="c1">#Clip Earth image from Wikipedia to a circle</span>
@@ -1511,7 +1784,7 @@ T^2 &amp;= \frac{4\pi^2}{GM_\oplus}r^3.
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="../_images/6ad8b582495c364a3442c819f41cfc62e9c9531e1dfc8012d045797a3c0e1fb0.png" src="../_images/6ad8b582495c364a3442c819f41cfc62e9c9531e1dfc8012d045797a3c0e1fb0.png" />
+<img alt="../_images/66fb80b3c47bca877d9f71aebfc9af9dccd5a42d153c47da8c90cff84a16b601.png" src="../_images/66fb80b3c47bca877d9f71aebfc9af9dccd5a42d153c47da8c90cff84a16b601.png" />
 </div>
 </div>
 <div class="tip admonition">
@@ -1528,12 +1801,230 @@ T^2 &amp;= \frac{4\pi^2}{GM_\oplus}r^3.
 </div>
 <section id="example-problem-the-international-space-station">
 <h4><span class="section-number">13.4.1.1. </span><strong>Example Problem</strong>: The International Space Station<a class="headerlink" href="#example-problem-the-international-space-station" title="Link to this heading">#</a></h4>
+<div class="exercise etamu-exercise admonition" id="Chapter13/gravitation-exercise-8">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.9 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>Determine the orbital speed and period for the International Space Station (ISS).</p>
+</div></blockquote>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The ISS is modeled as a small object in circular orbit about Earth. Its orbital radius is the sum of Earth’s radius and its altitude. The orbital speed follows from the balance between gravity and centripetal acceleration, and the period follows from the relation between speed and circumference.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">For a circular orbit of radius <span class="math notranslate nohighlight">\(r\)</span>, the orbital speed is</p>
+<div class="math notranslate nohighlight">
+\[ v_{\rm orbit} = \sqrt{\frac{GM_\oplus}{r}}, \]</div>
+<p class="sd-card-text">and the orbital period is</p>
+<div class="math notranslate nohighlight">
+\[ T = \frac{2\pi r}{v_{\rm orbit}}. \]</div>
+<p class="sd-card-text">The orbital radius of the ISS is <span class="math notranslate nohighlight">\(r = R_\oplus + h = 6370\ {\rm km} + 400\ {\rm km} = 6770\ {\rm km}.\)</span>  Substituting into the orbital-speed expression (with <span class="math notranslate nohighlight">\(r\)</span> in meters internally) gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+v_{\rm orbit}
+&amp;= \sqrt{\frac{(6.67\times10^{-11}\ {\rm N\cdot m^2/kg^2})(5.96\times10^{24}\ {\rm kg})}
+{6.77\times10^6\ {\rm m}}} \\
+&amp;= 7.67\times10^3\ {\rm m/s} = 7.67\ {\rm km/s}.
+\end{align*}\]</div>
+<p class="sd-card-text">Using this speed, the orbital period is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+T &amp;= \frac{2\pi(6770\ {\rm km})}{7.67\ {\rm km/s}} \\
+  &amp;= 5.55\times10^3\ {\rm s} \\
+  &amp;= 92.5\ {\rm min}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The orbital speed of the ISS is <span class="math notranslate nohighlight">\(7.67\ {\rm km/s}\)</span>, and its orbital period is <span class="math notranslate nohighlight">\(92.5\ {\rm min}\)</span>. These values are characteristic of low Earth orbit.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The verification computes the orbital radius from Earth’s radius and the ISS altitude, evaluates the orbital speed, and then determines the period using the circumference of the orbit. This confirms the analytical results.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Define constants</span>
+<span class="n">G</span> <span class="o">=</span> <span class="mf">6.67e-11</span>          <span class="c1"># Gravitational constant in N·m^2/kg^2</span>
+<span class="n">M_E</span> <span class="o">=</span> <span class="mf">5.96e24</span>         <span class="c1"># Mass of Earth in kg</span>
+<span class="n">R_E</span> <span class="o">=</span> <span class="mf">6370.0</span>          <span class="c1"># Radius of Earth in km</span>
+<span class="n">h</span> <span class="o">=</span> <span class="mf">400.0</span>             <span class="c1"># Altitude of the ISS in km</span>
+
+<span class="c1"># Convert radius to meters for calculation</span>
+<span class="n">r</span> <span class="o">=</span> <span class="p">(</span><span class="n">R_E</span> <span class="o">+</span> <span class="n">h</span><span class="p">)</span> <span class="o">*</span> <span class="mf">1e3</span>   <span class="c1"># Orbital radius in m</span>
+
+<span class="c1"># Compute orbital speed</span>
+<span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">G</span> <span class="o">*</span> <span class="n">M_E</span> <span class="o">/</span> <span class="n">r</span><span class="p">)</span>   <span class="c1"># Speed in m/s</span>
+
+<span class="c1"># Compute orbital period</span>
+<span class="n">T</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="p">(</span><span class="n">R_E</span> <span class="o">+</span> <span class="n">h</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">v</span> <span class="o">/</span> <span class="mi">1000</span><span class="p">)</span>   <span class="c1"># Use km and km/s for clarity</span>
+<span class="n">T_min</span> <span class="o">=</span> <span class="n">T</span> <span class="o">/</span> <span class="mi">60</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The orbital speed is </span><span class="si">{</span><span class="n">v</span><span class="o">/</span><span class="mi">1000</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> km/s.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The orbital period is </span><span class="si">{</span><span class="n">T</span><span class="si">:</span><span class="s2">.2e</span><span class="si">}</span><span class="s2"> s, which is </span><span class="si">{</span><span class="n">T_min</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> min.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details></section>
+</div>
 </section>
 <section id="example-problem-determining-the-mass-of-earth-using-the-moon">
 <h4><span class="section-number">13.4.1.2. </span><strong>Example Problem</strong>: Determining the Mass of Earth (using the Moon)<a class="headerlink" href="#example-problem-determining-the-mass-of-earth-using-the-moon" title="Link to this heading">#</a></h4>
+<div class="exercise etamu-exercise admonition" id="Chapter13/gravitation-exercise-9">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.10 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>Determine the mass of Earth from the orbit of the Moon.</p>
+</div></blockquote>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The Moon is modeled as a small object in nearly circular orbit about Earth. Its orbital motion is governed by Newtonian gravitation, so the orbital period and orbital radius determine Earth’s mass. The direct solution uses the circular-orbit period formula. A ratio-based interpretation is also possible because the Moon’s orbital distance is much larger than Earth’s radius, and that distance relative to Earth’s radius was known long before modern measurements in SI units.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">For a circular orbit of radius <span class="math notranslate nohighlight">\(r\)</span> about Earth, the orbital period is</p>
+<div class="math notranslate nohighlight">
+\[ T = 2\pi \sqrt{\frac{r^3}{GM_\oplus}}. \]</div>
+<p class="sd-card-text">Solving for Earth’s mass gives</p>
+<div class="math notranslate nohighlight">
+\[ M_\oplus = \frac{4\pi^2 r^3}{G T^2}. \]</div>
+<p class="sd-card-text">Using the Moon’s orbital radius <span class="math notranslate nohighlight">\(r = 384{,}000\ {\rm km}\)</span> and period <span class="math notranslate nohighlight">\(T = 27.3\ {\rm d}\)</span>, we convert only where necessary:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+r &amp;= 384{,}000\ {\rm km} = 3.84\times10^8\ {\rm m}, \\
+T &amp;= 27.3\ {\rm d}\left(\frac{24\ {\rm h}}{1\ {\rm d}}\right)\left(\frac{3600\ {\rm s}}{1\ {\rm h}}\right)
+   = 2.36\times10^6\ {\rm s}.
+\end{align*}\]</div>
+<p class="sd-card-text">Substituting these values gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+M_\oplus &amp;= \frac{4\pi^2 r^3}{G T^2} \\
+&amp;= \frac{4\pi^2\left(3.84\times10^8\ {\rm m}\right)^3} {\left(6.67\times10^{-11}\ {\rm N\cdot m^2/kg^2}\right)\left(2.36\times10^6\ {\rm s}\right)^2} \\
+&amp;= 6.01\times10^{24}\ {\rm kg}.
+\end{align*}\]</div>
+<p class="sd-card-text">A useful ratio-based form uses the historical fact that the Moon’s orbital radius is about <span class="math notranslate nohighlight">\(60\)</span> Earth radii (from accurate eclipse measurements). Since Earth’s radius was already known from ancient measurements, we write <span class="math notranslate nohighlight">\(r_M \approx 60R_\oplus.\)</span>  Using <span class="math notranslate nohighlight">\(R_\oplus = 6.37\times10^6\ {\rm m}\)</span> gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+r_M &amp;= 60(6.37\times10^6\ {\rm m}) \\
+    &amp;= 3.82\times10^8\ {\rm m}.
+\end{align*}\]</div>
+<p class="sd-card-text">Substituting this value into the orbital-mass relation gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+M_\oplus &amp;= \frac{4\pi^2 r_M^3}{G T^2} \\
+&amp;= \frac{4\pi^2\left(3.82\times10^8\ {\rm m}\right)^3}
+{\left(6.67\times10^{-11}\ {\rm N\cdot m^2/kg^2}\right)\left(2.36\times10^6\ {\rm s}\right)^2} \\
+&amp;= 5.92\times10^{24}\ {\rm kg}.
+\end{align*}\]</div>
+<p class="sd-card-text">This ratio-based result is close to the direct value because the historical estimate <span class="math notranslate nohighlight">\(r_M \approx 60R_\oplus\)</span> is already very good.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The direct calculation using the Moon’s mean orbital radius and period gives Earth’s mass as <span class="math notranslate nohighlight">\(6.01\times10^{24}\ {\rm kg}\)</span>. Using the historical ratio <span class="math notranslate nohighlight">\(r_M \approx 60R_\oplus\)</span> together with the known value of Earth’s radius gives <span class="math notranslate nohighlight">\(5.92\times10^{24}\ {\rm kg}\)</span>. Both values are close to the accepted value, showing that Earth’s mass can be determined from lunar orbital motion once distances and time scales are known.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The verification computes Earth’s mass directly from the Moon’s orbital radius and period, then repeats the calculation using the ratio method with <span class="math notranslate nohighlight">\(r \approx 60R_\oplus\)</span>. This confirms that both approaches produce nearly the same value.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Define constants</span>
+<span class="n">G</span> <span class="o">=</span> <span class="mf">6.67e-11</span>          <span class="c1"># Gravitational constant in N·m^2/kg^2</span>
+<span class="n">R_E</span> <span class="o">=</span> <span class="mf">6.37e6</span>          <span class="c1"># Radius of Earth in m</span>
+<span class="n">r_moon</span> <span class="o">=</span> <span class="mf">3.84e8</span>       <span class="c1"># Mean orbital radius of the Moon in m</span>
+<span class="n">T</span> <span class="o">=</span> <span class="mf">27.3</span> <span class="o">*</span> <span class="mi">24</span> <span class="o">*</span> <span class="mi">3600</span>  <span class="c1"># Orbital period of the Moon in s</span>
+<span class="n">alpha</span> <span class="o">=</span> <span class="mf">60.0</span>          <span class="c1"># Moon&#39;s orbital radius in Earth radii</span>
+
+<span class="c1"># Compute Earth&#39;s mass using the direct orbital radius</span>
+<span class="n">M_direct</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">r_moon</span><span class="o">**</span><span class="mi">3</span> <span class="o">/</span> <span class="p">(</span><span class="n">G</span> <span class="o">*</span> <span class="n">T</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># Compute the Moon&#39;s orbital radius using the ratio r ≈ 60 R_E</span>
+<span class="n">r_ratio</span> <span class="o">=</span> <span class="n">alpha</span> <span class="o">*</span> <span class="n">R_E</span>  <span class="c1"># Orbital radius from ratio in m</span>
+
+<span class="c1"># Compute Earth&#39;s mass using the ratio-based radius</span>
+<span class="n">M_ratio</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">r_ratio</span><span class="o">**</span><span class="mi">3</span> <span class="o">/</span> <span class="p">(</span><span class="n">G</span> <span class="o">*</span> <span class="n">T</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The direct calculation gives Earth&#39;s mass as </span><span class="si">{</span><span class="n">M_direct</span><span class="si">:</span><span class="s2">.3e</span><span class="si">}</span><span class="s2"> kg.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The ratio-based orbital radius is </span><span class="si">{</span><span class="n">r_ratio</span><span class="si">:</span><span class="s2">.3e</span><span class="si">}</span><span class="s2"> m.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The ratio method gives Earth&#39;s mass as </span><span class="si">{</span><span class="n">M_ratio</span><span class="si">:</span><span class="s2">.3e</span><span class="si">}</span><span class="s2"> kg.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details></section>
+</div>
 </section>
 <section id="example-problem-galactic-speed-and-period">
 <h4><span class="section-number">13.4.1.3. </span><strong>Example Problem</strong>: Galactic Speed and Period<a class="headerlink" href="#example-problem-galactic-speed-and-period" title="Link to this heading">#</a></h4>
+<div class="exercise etamu-exercise admonition" id="Chapter13/gravitation-exercise-10">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.11 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>Assume that the Milky Way and Andromeda galaxies are in a circular orbit about each other. What would be the velocity of each and how long would their orbital period be? Assume the mass of each is <span class="math notranslate nohighlight">\(8\times10^{11}\)</span> solar masses and their centers are separated by <span class="math notranslate nohighlight">\(2.5\)</span> million light-years.</p>
+</div></blockquote>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The two galaxies are modeled as equal masses in circular orbit about their common center of mass. For equal masses, the center of mass lies midway between them, so each galaxy orbits with radius <span class="math notranslate nohighlight">\(r_{\rm orbit} = r/2\)</span>, where <span class="math notranslate nohighlight">\(r\)</span> is the separation. The orbital speed follows from the balance between gravitational force and centripetal acceleration, and the period follows from circular motion.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">The gravitational force provides the centripetal force,</p>
+<div class="math notranslate nohighlight">
+\[ \frac{GM^2}{r^2} = \frac{Mv^2}{r/2}. \]</div>
+<p class="sd-card-text">Simplifying this expression in terms of <span class="math notranslate nohighlight">\(v^2\)</span> gives</p>
+<div class="math notranslate nohighlight">
+\[ \frac{GM}{r^2} = \frac{2v^2}{r}, \qquad \text{so} \qquad v^2 = \frac{GM}{2r}. \]</div>
+<p class="sd-card-text">Thus, the orbital speed is <span class="math notranslate nohighlight">\( v = \sqrt{\frac{GM}{2r}}.\)</span></p>
+<p class="sd-card-text">Substituting <span class="math notranslate nohighlight">\(M = 8\times10^{11}(2.0\times10^{30}\ {\rm kg}) = 1.6\times10^{42}\ {\rm kg}\)</span> and<br />
+<span class="math notranslate nohighlight">\(r = 2.5\times10^6(9.5\times10^{15}\ {\rm m}) = 2.38\times10^{22}\ {\rm m}\)</span> gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+v &amp;= \sqrt{\frac{(6.67\times10^{-11}\ {\rm N\cdot m^2/kg^2})(1.6\times10^{42}\ {\rm kg})}
+{2(2.38\times10^{22}\ {\rm m})}} \\
+&amp;= 4.7\times10^4\ {\rm m/s} \\
+&amp;= 47\ {\rm km/s}.
+\end{align*}\]</div>
+<p class="sd-card-text">The orbital period follows from</p>
+<div class="math notranslate nohighlight">
+\[ T = \frac{2\pi r_{\rm orbit}}{v} = \frac{2\pi(r/2)}{v} = \frac{\pi r}{v}. \]</div>
+<p class="sd-card-text">Substituting the numerical values gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+T &amp;= \frac{\pi(2.38\times10^{22}\ {\rm m})}{4.7\times10^4\ {\rm m/s}} \\
+&amp;= 1.6\times10^{18}\ {\rm s} \\
+&amp;\approx 5.1\times10^{10}\ {\rm yr}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">Each galaxy moves at a speed of <span class="math notranslate nohighlight">\(47\ {\rm km/s}\)</span> and the orbital period is approximately <span class="math notranslate nohighlight">\(5\times10^{10}\)</span> years. This timescale is much longer than the current age of the universe.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The verification computes the galaxy mass, converts the separation into meters, and evaluates the orbital speed using the derived expression. It then computes the orbital period using the orbital radius and speed. This confirms the analytical results.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Define constants</span>
+<span class="n">G</span> <span class="o">=</span> <span class="mf">6.67e-11</span>              <span class="c1"># Gravitational constant in N·m^2/kg^2</span>
+<span class="n">M_sun</span> <span class="o">=</span> <span class="mf">2.0e30</span>            <span class="c1"># Solar mass in kg</span>
+<span class="n">M</span> <span class="o">=</span> <span class="mf">8e11</span> <span class="o">*</span> <span class="n">M_sun</span>          <span class="c1"># Mass of each galaxy in kg</span>
+<span class="n">r</span> <span class="o">=</span> <span class="mf">2.5e6</span> <span class="o">*</span> <span class="mf">9.5e15</span>        <span class="c1"># Separation between galaxies in m</span>
+
+<span class="c1"># Compute orbital speed</span>
+<span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">G</span> <span class="o">*</span> <span class="n">M</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">r</span><span class="p">))</span>   <span class="c1"># Orbital speed in m/s</span>
+
+<span class="c1"># Compute orbital period</span>
+<span class="n">T</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">r</span> <span class="o">/</span> <span class="n">v</span>              <span class="c1"># Period in s</span>
+<span class="n">T_yr</span> <span class="o">=</span> <span class="n">T</span> <span class="o">/</span> <span class="p">(</span><span class="mf">365.25</span> <span class="o">*</span> <span class="mi">24</span> <span class="o">*</span> <span class="mi">3600</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The orbital speed of each galaxy is </span><span class="si">{</span><span class="n">v</span><span class="o">/</span><span class="mi">1000</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> km/s.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The orbital period is </span><span class="si">{</span><span class="n">T</span><span class="si">:</span><span class="s2">.2e</span><span class="si">}</span><span class="s2"> s, which is </span><span class="si">{</span><span class="n">T_yr</span><span class="si">:</span><span class="s2">.2e</span><span class="si">}</span><span class="s2"> years.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details></section>
+</div>
 </section>
 </section>
 <section id="energy-in-circular-orbits">
@@ -1551,14 +2042,83 @@ F_g &amp;= F_c,\\
 K &amp;= \frac{1}{2}mv^2 = \frac{GM_\oplus m}{2r}.
 \end{align*}\]</div>
 <p>The total energy is the sum of the kinetic and potential energies, so our final result is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5f2f80ce-6b3d-4689-84a5-20a84c518ea5">
-<span class="eqno">(13.11)<a class="headerlink" href="#equation-5f2f80ce-6b3d-4689-84a5-20a84c518ea5" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-cc077101-fbdb-4469-8072-e82470d7ad6f">
+<span class="eqno">(13.11)<a class="headerlink" href="#equation-cc077101-fbdb-4469-8072-e82470d7ad6f" title="Permalink to this equation">#</a></span>\[\begin{align}
 E &amp;= K + U, \\
 &amp;= \frac{GM_\oplus m}{2r} - \frac{GM_\oplus m}{r} = -\frac{GM_\oplus m}{2r}.
 \end{align}\]</div>
 <p>We can see that the total energy is negative, with the same magnitude as <em>half</em> the kinetic energy.  For circular orbits, the magnitude of the kinetic energy is exactly <em>one-half</em> the magnitude of the potential energy.</p>
 <section id="example-problem-energy-required-to-orbit">
 <h4><span class="section-number">13.4.2.1. </span><strong>Example Problem</strong>: Energy Required to Orbit<a class="headerlink" href="#example-problem-energy-required-to-orbit" title="Link to this heading">#</a></h4>
+<div class="exercise etamu-exercise admonition" id="Chapter13/gravitation-exercise-11">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.12 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>In Example 13.8, we calculated the energy required to simply lift the <span class="math notranslate nohighlight">\(9000\ {\rm kg}\)</span> Soyuz vehicle from Earth’s surface to the height of the ISS, <span class="math notranslate nohighlight">\(400\ {\rm km}\)</span> above the surface. What total energy change is required to take it from Earth’s surface and place it into orbit at that altitude? How much of that total energy is kinetic energy?</p>
+</div></blockquote>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The total energy required is the change in mechanical energy between Earth’s surface and a circular orbit at altitude <span class="math notranslate nohighlight">\(h\)</span>. At the surface, the payload starts from rest, so its energy is purely gravitational potential energy. In orbit, the total energy is the sum of kinetic and potential energy, which for a circular orbit has the form <span class="math notranslate nohighlight">\(E = -GM_\oplus m/(2r)\)</span>. The kinetic energy can then be found directly from the orbital speed or from its relation to the total energy.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">At Earth’s surface, the total energy is <span class="math notranslate nohighlight">\(E_{\rm surface} = -\frac{GM_\oplus m}{R_\oplus}.\)</span>  For a circular orbit at radius <span class="math notranslate nohighlight">\(r = R_\oplus + h\)</span>, the total energy is <span class="math notranslate nohighlight">\( E_{\rm orbit} = -\frac{GM_\oplus m}{2r}.\)</span></p>
+<p class="sd-card-text">The required energy input is the change in total energy,</p>
+<p class="sd-card-text">$<span class="math notranslate nohighlight">\( \Delta E = E_{\rm orbit} - E_{\rm surface} = -\frac{GM_\oplus m}{2r} + \frac{GM_\oplus m}{R_\oplus}.\)</span></p>
+<p class="sd-card-text">Substituting the numerical values gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\Delta E
+&amp;= \left(6.67\times10^{-11}\ {\rm N\cdot m^2/kg^2}\right)
+   (5.96\times10^{24}\ {\rm kg})(9000\ {\rm kg}) \\
+&amp;\quad \times \left(\frac{1}{6.37\times10^6\ {\rm m}} - \frac{1}{2(6.77\times10^6\ {\rm m})}\right) \\
+&amp;= 2.98\times10^{11}\ {\rm J}.
+\end{align*}\]</div>
+<p class="sd-card-text">The kinetic energy in orbit follows from <span class="math notranslate nohighlight">\(K_{\rm orbit} = \frac{GM_\oplus m}{2r}.\)</span></p>
+<p class="sd-card-text">Substituting gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+K_{\rm orbit}
+&amp;= \frac{(6.67\times10^{-11})(5.96\times10^{24})(9000)}
+{2(6.77\times10^6)} \\
+&amp;= 2.65\times10^{11}\ {\rm J}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The total energy required to place the Soyuz in orbit is <span class="math notranslate nohighlight">\(2.98\times10^{11}\ {\rm J}\)</span>, of which <span class="math notranslate nohighlight">\(2.65\times10^{11}\ {\rm J}\)</span> is kinetic energy. Thus, most of the required energy goes into the spacecraft’s orbital motion rather than simply lifting it against gravity.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The verification computes the total energy at Earth’s surface and in orbit using the standard expressions for gravitational potential and circular-orbit energy. The difference gives the required energy input, and the orbital kinetic energy is computed independently from the orbital-speed relation.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Define constants</span>
+<span class="n">G</span> <span class="o">=</span> <span class="mf">6.67e-11</span>          <span class="c1"># Gravitational constant in N·m^2/kg^2</span>
+<span class="n">M_E</span> <span class="o">=</span> <span class="mf">5.96e24</span>         <span class="c1"># Mass of Earth in kg</span>
+<span class="n">m</span> <span class="o">=</span> <span class="mf">9000.0</span>            <span class="c1"># Mass of the payload in kg</span>
+<span class="n">R_E</span> <span class="o">=</span> <span class="mf">6.37e6</span>          <span class="c1"># Radius of Earth in m</span>
+<span class="n">h</span> <span class="o">=</span> <span class="mf">400e3</span>             <span class="c1"># Altitude above Earth&#39;s surface in m</span>
+
+<span class="c1"># Compute orbital radius</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">R_E</span> <span class="o">+</span> <span class="n">h</span>           <span class="c1"># Orbital radius in m</span>
+
+<span class="c1"># Compute total energy at surface and in orbit</span>
+<span class="n">E_surface</span> <span class="o">=</span> <span class="o">-</span><span class="n">G</span> <span class="o">*</span> <span class="n">M_E</span> <span class="o">*</span> <span class="n">m</span> <span class="o">/</span> <span class="n">R_E</span>
+<span class="n">E_orbit</span> <span class="o">=</span> <span class="o">-</span><span class="n">G</span> <span class="o">*</span> <span class="n">M_E</span> <span class="o">*</span> <span class="n">m</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">r</span><span class="p">)</span>
+
+<span class="c1"># Compute required energy and orbital kinetic energy</span>
+<span class="n">delta_E</span> <span class="o">=</span> <span class="n">E_orbit</span> <span class="o">-</span> <span class="n">E_surface</span>
+<span class="n">K_orbit</span> <span class="o">=</span> <span class="n">G</span> <span class="o">*</span> <span class="n">M_E</span> <span class="o">*</span> <span class="n">m</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">r</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The total energy required is </span><span class="si">{</span><span class="n">delta_E</span><span class="si">:</span><span class="s2">.3e</span><span class="si">}</span><span class="s2"> J.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The kinetic energy in orbit is </span><span class="si">{</span><span class="n">K_orbit</span><span class="si">:</span><span class="s2">.3e</span><span class="si">}</span><span class="s2"> J.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details></section>
+</div>
 </section>
 </section>
 </section>
@@ -1756,8 +2316,8 @@ y &amp;= k + b\sin{\theta},
 </ul>
 <p>For the Moon’s orbit around the Earth (Geo), the points are called perigee and apogee, respectively.</p>
 <p>An ellipse has a specific form that can describe more generally described as a conic section.  There are four conic sections, all given by the equation</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c42a074a-f62d-4fe4-b4fd-0a658e48dd2b">
-<span class="eqno">(13.12)<a class="headerlink" href="#equation-c42a074a-f62d-4fe4-b4fd-0a658e48dd2b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-dd4ddd17-d082-4d85-bd8f-506d34037add">
+<span class="eqno">(13.12)<a class="headerlink" href="#equation-dd4ddd17-d082-4d85-bd8f-506d34037add" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{\ell}{r} = 1 + e\cos{\theta},
 \end{align}\]</div>
 <p>where the <span class="math notranslate nohighlight">\(r\)</span> is the distance from the foci to the point on the ellipse, <span class="math notranslate nohighlight">\(\ell\)</span> is the <a class="reference external" href="https://en.wikipedia.org/wiki/Ellipse#semi-latus%25rectum">semi-latus rectum</a>, and <span class="math notranslate nohighlight">\(\theta\)</span> is the angle relative to the reference direction.  The constant <span class="math notranslate nohighlight">\(e\)</span> is the eccentricity, which helps us determine which of the four conic sections represents the path of a satellite.</p>
@@ -1885,13 +2445,77 @@ v_t &amp;= \sqrt{\frac{GM_\odot}{a_t}\left(\frac{1+e_t}{1-e_t}\right)} - \sqrt{\
 <section id="kepler-s-3rd-law">
 <h3><span class="section-number">13.5.4. </span>Kepler’s 3rd Law<a class="headerlink" href="#kepler-s-3rd-law" title="Link to this heading">#</a></h3>
 <p><strong>Kepler’s third law</strong> states that the square of the period is proportional to the cube of the semimajor axis of the orbit (i.e., <span class="math notranslate nohighlight">\(T^2 \propto a^3\)</span>).  We already derived Newton’s version of Kepler’s 3rd law (see Section <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter13/gravitation.html#circular-orbits">13.4.1</a>).  Kepler’s 3rd law is the same equation with <span class="math notranslate nohighlight">\(r\rightarrow a\)</span>, where we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a73d0b9b-f888-46dc-84e3-c7b8efc6bcb6">
-<span class="eqno">(13.13)<a class="headerlink" href="#equation-a73d0b9b-f888-46dc-84e3-c7b8efc6bcb6" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a428b0e6-e491-4e6d-b770-f5c77f33c88e">
+<span class="eqno">(13.13)<a class="headerlink" href="#equation-a428b0e6-e491-4e6d-b770-f5c77f33c88e" title="Permalink to this equation">#</a></span>\[\begin{align}
 T^2 = \frac{4\pi^2}{GM}a^3.
 \end{align}\]</div>
 </section>
 <section id="example-problem-orbit-of-halley-s-comet">
 <h3><span class="section-number">13.5.5. </span><strong>Example Problem</strong>: Orbit of Halley’s Comet<a class="headerlink" href="#example-problem-orbit-of-halley-s-comet" title="Link to this heading">#</a></h3>
+<div class="exercise etamu-exercise admonition" id="Chapter13/gravitation-exercise-12">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.13 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>Determine the semimajor axis of the orbit of Halley’s comet, given that it arrives at perihelion every <span class="math notranslate nohighlight">\(75.3\)</span> years. If the perihelion is <span class="math notranslate nohighlight">\(0.586\ {\rm AU}\)</span>, what is the aphelion?</p>
+</div></blockquote>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The comet orbits the Sun, so we apply Kepler’s third law. If we measure distance in astronomical units (AU), time in years, and mass in solar masses, then the gravitational constant is absorbed into the units such that <span class="math notranslate nohighlight">\(GM_\odot = 4\pi^2\)</span>. In these units, Kepler’s third law simplifies to <span class="math notranslate nohighlight">\(T^2 = a^3\)</span>. The semimajor axis is then used with the geometry of an ellipse to determine the aphelion.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">In AU–yr–solar-mass units, Newton’s form of Kepler’s third law,</p>
+<div class="math notranslate nohighlight">
+\[ T^2 = \frac{4\pi^2}{GM_\odot}a^3, \]</div>
+<p class="sd-card-text">reduces to</p>
+<div class="math notranslate nohighlight">
+\[ T^2 = a^3, \]</div>
+<p class="sd-card-text">because <span class="math notranslate nohighlight">\(GM_\odot = 4\pi^2\)</span> in these units.  Solving for the semimajor axis gives <span class="math notranslate nohighlight">\(a = T^{2/3}.\)</span> Substituting <span class="math notranslate nohighlight">\(T = 75.3\ {\rm yr}\)</span> gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+a &amp;= (75.3)^{2/3} \\
+  &amp;= 17.8\ {\rm AU}.
+\end{align*}\]</div>
+<p class="sd-card-text">For an elliptical orbit, the semimajor axis satisfies</p>
+<div class="math notranslate nohighlight">
+\[ a = \frac{r_{\rm peri} + r_{\rm ap}}{2}, \]</div>
+<p class="sd-card-text">so the aphelion distance is</p>
+<div class="math notranslate nohighlight">
+\[ r_{\rm ap} = 2a - r_{\rm peri}. \]</div>
+<p class="sd-card-text">Substituting <span class="math notranslate nohighlight">\(a = 17.8\ {\rm AU}\)</span> and <span class="math notranslate nohighlight">\(r_{\rm peri} = 0.586\ {\rm AU}\)</span> gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+r_{\rm ap} &amp;= 2(17.8) - 0.586 \\
+           &amp;= 35.0\ {\rm AU}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The semimajor axis of Halley’s comet is <span class="math notranslate nohighlight">\(17.8\ {\rm AU}\)</span>, and its aphelion distance is <span class="math notranslate nohighlight">\(35.0\ {\rm AU}\)</span>.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The verification uses Kepler’s third law in AU–yr units to compute the semimajor axis and then applies the ellipse relation to find the aphelion distance.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Given values</span>
+<span class="n">T</span> <span class="o">=</span> <span class="mf">75.3</span>              <span class="c1"># Orbital period in years</span>
+<span class="n">r_peri</span> <span class="o">=</span> <span class="mf">0.586</span>        <span class="c1"># Perihelion distance in AU</span>
+
+<span class="c1"># Compute semimajor axis using Kepler&#39;s 3rd law (AU–yr units)</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">T</span><span class="o">**</span><span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="c1"># Compute aphelion distance</span>
+<span class="n">r_ap</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">a</span> <span class="o">-</span> <span class="n">r_peri</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The semimajor axis is </span><span class="si">{</span><span class="n">a</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> AU.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The aphelion distance is </span><span class="si">{</span><span class="n">r_ap</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> AU.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details></section>
+</div>
 </section>
 </section>
 <section id="tidal-forces">
@@ -1964,6 +2588,78 @@ T^2 = \frac{4\pi^2}{GM}a^3.
   </div>
   <div class="video-caption" style="margin-top:0.5em; text-align:left; color:#666;">This video shows the tides rising an falling in teh Bay of Fundy as a time lapse.  It also shows how life in the Bay reacts to the changes in the tide.</div>
 </div></div>
+<section id="example-problem-comparing-tidal-forces">
+<h4><span class="section-number">13.6.3.1. </span><strong>Example Problem</strong>: Comparing Tidal Forces<a class="headerlink" href="#example-problem-comparing-tidal-forces" title="Link to this heading">#</a></h4>
+<div class="exercise etamu-exercise admonition" id="Chapter13/gravitation-exercise-13">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.14 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>Compare the Moon’s gravitational force on a <span class="math notranslate nohighlight">\(1.0\ {\rm kg}\)</span> mass located on the near side and another on the far side of Earth. Repeat this for the Sun and then compare the results to confirm that the Moon’s tidal forces are about twice that of the Sun.</p>
+</div></blockquote>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The tidal force is defined as the difference between the gravitational force on the near side and the far side of Earth. For a body of mass <span class="math notranslate nohighlight">\(M\)</span> at distance <span class="math notranslate nohighlight">\(d\)</span>, the near and far distances are <span class="math notranslate nohighlight">\(d - R_\oplus\)</span> and <span class="math notranslate nohighlight">\(d + R_\oplus\)</span>, respectively. Rather than computing these two forces separately and subtracting them, we approximate the difference using the fact that <span class="math notranslate nohighlight">\(R_\oplus \ll d\)</span>. This leads to a simplified expression showing that tidal forces scale as <span class="math notranslate nohighlight">\(M/d^3\)</span>.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">The gravitational force on a mass <span class="math notranslate nohighlight">\(m\)</span> at distance <span class="math notranslate nohighlight">\(r\)</span> is <span class="math notranslate nohighlight">\(F = \frac{GMm}{r^2}.\)</span> Thus, the tidal force is the difference</p>
+<div class="math notranslate nohighlight">
+\[ F_{\rm tidal} = \frac{GMm}{(d - R_\oplus)^2} - \frac{GMm}{(d + R_\oplus)^2}.\]</div>
+<p class="sd-card-text">Because <span class="math notranslate nohighlight">\(R_\oplus \ll d\)</span>, we expand this expression to first order in <span class="math notranslate nohighlight">\(R_\oplus/d\)</span>, which gives</p>
+<div class="math notranslate nohighlight">
+\[ F_{\rm tidal} \approx 2\frac{GMmR_\oplus}{d^3}. \]</div>
+<p class="sd-card-text">This shows that tidal forces scale as</p>
+<div class="math notranslate nohighlight">
+\[ F_{\rm tidal} \propto \frac{M}{d^3}. \]</div>
+<p class="sd-card-text">To compare the Moon and Sun, we take the ratio</p>
+<div class="math notranslate nohighlight">
+\[ \frac{F_{\rm tidal,\,Moon}}{F_{\rm tidal,\,Sun}} = \left(\frac{M_{\rm Moon}}{M_\odot}\right) \left(\frac{d_{\rm ES}}{d_{\rm EM}}\right)^3.\]</div>
+<p class="sd-card-text">Using <span class="math notranslate nohighlight">\(M_{\rm Moon} = 0.0123\,M_\oplus\)</span> and <span class="math notranslate nohighlight">\(1\,M_\odot = 333{,}000\,M_\oplus\)</span>, we convert the Moon’s mass to solar masses:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+M_{\rm Moon} &amp;= 0.0123\,M_\oplus
+   \left(\frac{1\,M_\odot}{333{,}000\,M_\oplus}\right) \\
+&amp;= 3.69\times10^{-8}\,M_\odot.
+\end{align*}\]</div>
+<p class="sd-card-text">Using <span class="math notranslate nohighlight">\(d_{\rm EM} = 0.00257\ {\rm AU}\)</span> and <span class="math notranslate nohighlight">\(d_{\rm ES} = 1\ {\rm AU}\)</span>, we obtain</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{F_{\rm tidal,\,Moon}}{F_{\rm tidal,\,Sun}} &amp;= \left(3.69\times10^{-8}\right) \left(\frac{1}{0.00257}\right)^3 \\
+&amp;= 2.18.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The difference between the gravitational forces on the near and far sides of Earth due to the Moon is about <span class="math notranslate nohighlight">\(2.18\)</span> times larger than that due to the Sun. Thus, although the Sun exerts a much stronger overall gravitational force, the Moon produces the stronger tides because it is much closer to Earth.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The verification computes the tidal-force ratio using the proportionality <span class="math notranslate nohighlight">\(F_{\rm tidal} \propto M/d^3\)</span>. This confirms that the Moon’s tidal effect is a little more than twice that of the Sun.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Define mass ratios</span>
+<span class="n">M_moon_E</span> <span class="o">=</span> <span class="mf">0.0123</span>          <span class="c1"># Mass of the Moon in Earth masses</span>
+<span class="n">M_sun_E</span> <span class="o">=</span> <span class="mf">333000.0</span>         <span class="c1"># Mass of the Sun in Earth masses</span>
+
+<span class="c1"># Define distances</span>
+<span class="n">d_EM</span> <span class="o">=</span> <span class="mf">0.00257</span>             <span class="c1"># Earth-Moon distance in AU</span>
+<span class="n">d_ES</span> <span class="o">=</span> <span class="mf">1.0</span>                 <span class="c1"># Earth-Sun distance in AU</span>
+
+<span class="c1"># Convert Moon&#39;s mass into solar masses</span>
+<span class="n">M_moon_solar</span> <span class="o">=</span> <span class="n">M_moon_E</span> <span class="o">/</span> <span class="n">M_sun_E</span>
+
+<span class="c1"># Compute tidal-force ratio</span>
+<span class="n">tide_ratio</span> <span class="o">=</span> <span class="n">M_moon_solar</span> <span class="o">*</span> <span class="p">(</span><span class="n">d_ES</span> <span class="o">/</span> <span class="n">d_EM</span><span class="p">)</span><span class="o">**</span><span class="mi">3</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The ratio of the Moon&#39;s tidal force to the Sun&#39;s tidal force is </span><span class="si">{</span><span class="n">tide_ratio</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This shows the Moon produces about twice the tidal effect of the Sun.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details></section>
+</div>
+</section>
 </section>
 <section id="other-tides">
 <h3><span class="section-number">13.6.4. </span>Other Tides<a class="headerlink" href="#other-tides" title="Link to this heading">#</a></h3>
@@ -2042,19 +2738,105 @@ T^2 = \frac{4\pi^2}{GM}a^3.
 <p>The idea fo a massive body from which light cannot escape dates back to the late 18th century.  Independently, John Michell and Pierre-Simon Laplace used Newton’s law fo gravitation to sho that light leaving the surface of a star with enough mass could not escape.  Their work was based on the fact that the speed of light had been measured by <a class="reference external" href="https://en.wikipedia.org/wiki/Ole_R%C3%B8mer">Ole Rømer</a> in 1676.  Rømer realized that the difference in measured orbital period for Jupiter’s moon arose from the relative position of Earth and Jupiter at different times.  This meant that light didn’t travel instantaneously, where he could estimate the speed of light from the timing differences.</p>
 <p>Michell and Laplace realized that light had a finite speed, which meant that there could be a star massive enough so that the escape speed form its surface was larger than the speed of light.  Hence, light always would fall back to the star.  Oddly, observers far enough away from the very largest stars would not be able to see them, yet they could see a smaller star from the same distance.</p>
 <p>Recall in <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter13/gravitation.html#escape-velocity">Section 13.3.2.1 Escape velocity</a>, we found that the escape speed is depends on the total mass, where in many cases the mass of the escaping object is negligible.  In the case of a photon, its massless, and our approximation holds.  Substituting <span class="math notranslate nohighlight">\(c\)</span> (the speed of light) for the escape velocity, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1100b9dc-fb39-4023-be83-dd45e5e7c543">
-<span class="eqno">(13.14)<a class="headerlink" href="#equation-1100b9dc-fb39-4023-be83-dd45e5e7c543" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-dadeffe9-8dfe-4989-822a-ab5e104c366f">
+<span class="eqno">(13.14)<a class="headerlink" href="#equation-dadeffe9-8dfe-4989-822a-ab5e104c366f" title="Permalink to this equation">#</a></span>\[\begin{align}
 v_{\rm esc} = c = \frac{2GM}{R}.
 \end{align}\]</div>
 <p>We only need values for the object’s radius <span class="math notranslate nohighlight">\(R\)</span> and mass <span class="math notranslate nohighlight">\(M\)</span>, such that the escape velocity equals <span class="math notranslate nohighlight">\(c\)</span> and the light cannot escape.  Michell posited that if a star had the density of our Sun and a radius that extended just beyond Mars, then light would not be able to escape from its surface.  He also conjectured that we would still be able to detect such a star from the gravitational effect it would have on the objects around it.</p>
 <p>In Schwarzschild’s solution to the tensor equation from GR, he found a critical radius (now called the <strong>Schwarzschild radius</strong> <span class="math notranslate nohighlight">\(R_S\)</span>).  For any mass <span class="math notranslate nohighlight">\(M\)</span> with a radius less than the Schwarzschild radius, then the mass will collapse to a singularity, and anything that passes inside that radius cannot escape.  Once inside <span class="math notranslate nohighlight">\(R_S\)</span>, the arrow of time takes all things to the singularity.  The Schwarzschild radius is given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-bd025a52-3eb7-4069-b78b-08a8c6ab1735">
-<span class="eqno">(13.15)<a class="headerlink" href="#equation-bd025a52-3eb7-4069-b78b-08a8c6ab1735" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-eeed5bc7-aa20-4e66-ac10-87fabc5a8872">
+<span class="eqno">(13.15)<a class="headerlink" href="#equation-eeed5bc7-aa20-4e66-ac10-87fabc5a8872" title="Permalink to this equation">#</a></span>\[\begin{align}
 R_S = \frac{2GM}{c^2}.
 \end{align}\]</div>
 <p>If you look at our escape velocity equation with <span class="math notranslate nohighlight">\(v_{rm esc} = c\)</span>, you will notice that it gives precisely this result.  However this is a fortuitous accident caused by several incorrect assumptions.  The kinetic energy of light is <span class="math notranslate nohighlight">\(E_{\rm ph} = p^2c^2\)</span> because it is massless.</p>
+<section id="example-problem-calculating-the-schwarzschild-radius">
+<h4><span class="section-number">13.7.4.1. </span><strong>Example Problem</strong>: Calculating the Schwarzschild Radius<a class="headerlink" href="#example-problem-calculating-the-schwarzschild-radius" title="Link to this heading">#</a></h4>
+<div class="exercise etamu-exercise admonition" id="Chapter13/gravitation-exercise-14">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.15 </span></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>Calculate the Schwarzschild radius for both the Sun and Earth. Compare the density of the nucleus of an atom to the density required to compress Earth’s mass uniformly to its Schwarzschild radius. The density of a nucleus is about <span class="math notranslate nohighlight">\(2.3\times10^{17}\ {\rm kg/m^3}\)</span>.</p>
+</div></blockquote>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The Schwarzschild radius gives the radius at which a mass must be compressed for a black hole to form. It depends only on the mass of the object. After finding the Schwarzschild radii of the Sun and Earth, Earth’s required average density is found by placing its mass uniformly inside a sphere of radius equal to its Schwarzschild radius. That density is then compared with the density of an atomic nucleus.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">The Schwarzschild radius of a mass <span class="math notranslate nohighlight">\(M\)</span> is <span class="math notranslate nohighlight">\(R_S = \frac{2GM}{c^2}.\)</span>  Substituting the mass of the Sun gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+R_{S,\odot} &amp;= \frac{2GM_\odot}{c^2} \\
+&amp;= \frac{2\left(6.67\times10^{-11}\ {\rm N\cdot m^2/kg^2}\right)\left(1.99\times10^{30}\ {\rm kg}\right)}
+{\left(3.0\times10^8\ {\rm m/s}\right)^2} \\
+&amp;= 2.95\times10^3\ {\rm m}.
+\end{align*}\]</div>
+<p class="sd-card-text">Substituting the mass of Earth gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+R_{S,\oplus} &amp;= \frac{2GM_\oplus}{c^2} \\
+&amp;= \frac{2\left(6.67\times10^{-11}\ {\rm N\cdot m^2/kg^2}\right)\left(5.97\times10^{24}\ {\rm kg}\right)}
+{\left(3.0\times10^8\ {\rm m/s}\right)^2} \\
+&amp;= 8.85\times10^{-3}\ {\rm m}.
+\end{align*}\]</div>
+<p class="sd-card-text">If Earth’s mass were compressed uniformly into a sphere of radius <span class="math notranslate nohighlight">\(R_{S,\oplus}\)</span>, its average density would be</p>
+<div class="math notranslate nohighlight">
+\[ \rho = \frac{M_\oplus}{V} = \frac{M_\oplus}{\frac{4}{3}\pi R_{S,\oplus}^3}.\]</div>
+<p class="sd-card-text">Substituting the numerical values gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\rho &amp;= \frac{5.97\times10^{24}\ {\rm kg}}
+{\frac{4}{3}\pi\left(8.85\times10^{-3}\ {\rm m}\right)^3} \\
+&amp;= 2.06\times10^{30}\ {\rm kg/m^3}.
+\end{align*}\]</div>
+<p class="sd-card-text">To compare this with nuclear density, we form the ratio</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{\rho}{\rho_{\rm nucleus}} &amp;= \frac{2.06\times10^{30}\ {\rm kg/m^3}}
+{2.3\times10^{17}\ {\rm kg/m^3}} \\
+&amp;= 9.0\times10^{12}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The Schwarzschild radius of the Sun is <span class="math notranslate nohighlight">\(2.95\times10^3\ {\rm m}\)</span>, and the Schwarzschild radius of Earth is <span class="math notranslate nohighlight">\(8.85\times10^{-3}\ {\rm m}\)</span>. If Earth were compressed uniformly to its Schwarzschild radius, its average density would be <span class="math notranslate nohighlight">\(2.06\times10^{30}\ {\rm kg/m^3}\)</span>, which is about <span class="math notranslate nohighlight">\(9.0\times10^{12}\)</span> times the density of an atomic nucleus.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The verification computes the Schwarzschild radii of the Sun and Earth from the standard formula, then uses Earth’s Schwarzschild radius to compute the corresponding average density. Finally, it compares that density with the density of an atomic nucleus.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Define constants</span>
+<span class="n">G</span> <span class="o">=</span> <span class="mf">6.67e-11</span>               <span class="c1"># Gravitational constant in N·m^2/kg^2</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mf">3.0e8</span>                  <span class="c1"># Speed of light in m/s</span>
+<span class="n">M_sun</span> <span class="o">=</span> <span class="mf">1.99e30</span>            <span class="c1"># Mass of the Sun in kg</span>
+<span class="n">M_E</span> <span class="o">=</span> <span class="mf">5.97e24</span>              <span class="c1"># Mass of Earth in kg</span>
+<span class="n">rho_nucleus</span> <span class="o">=</span> <span class="mf">2.3e17</span>       <span class="c1"># Density of an atomic nucleus in kg/m^3</span>
+
+<span class="c1"># Compute Schwarzschild radii</span>
+<span class="n">R_sun</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">G</span> <span class="o">*</span> <span class="n">M_sun</span> <span class="o">/</span> <span class="n">c</span><span class="o">**</span><span class="mi">2</span>   <span class="c1"># Schwarzschild radius of the Sun in m</span>
+<span class="n">R_E</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">G</span> <span class="o">*</span> <span class="n">M_E</span> <span class="o">/</span> <span class="n">c</span><span class="o">**</span><span class="mi">2</span>       <span class="c1"># Schwarzschild radius of Earth in m</span>
+
+<span class="c1"># Compute the density required to compress Earth to its Schwarzschild radius</span>
+<span class="n">V_E</span> <span class="o">=</span> <span class="p">(</span><span class="mi">4</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">R_E</span><span class="o">**</span><span class="mi">3</span>   <span class="c1"># Volume of a sphere with Earth&#39;s Schwarzschild radius in m^3</span>
+<span class="n">rho_E</span> <span class="o">=</span> <span class="n">M_E</span> <span class="o">/</span> <span class="n">V_E</span>              <span class="c1"># Required average density in kg/m^3</span>
+
+<span class="c1"># Compute the ratio to nuclear density</span>
+<span class="n">density_ratio</span> <span class="o">=</span> <span class="n">rho_E</span> <span class="o">/</span> <span class="n">rho_nucleus</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The Schwarzschild radius of the Sun is </span><span class="si">{</span><span class="n">R_sun</span><span class="si">:</span><span class="s2">.3e</span><span class="si">}</span><span class="s2"> m.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The Schwarzschild radius of Earth is </span><span class="si">{</span><span class="n">R_E</span><span class="si">:</span><span class="s2">.3e</span><span class="si">}</span><span class="s2"> m.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The required average density for Earth is </span><span class="si">{</span><span class="n">rho_E</span><span class="si">:</span><span class="s2">.3e</span><span class="si">}</span><span class="s2"> kg/m^3.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;This density is </span><span class="si">{</span><span class="n">density_ratio</span><span class="si">:</span><span class="s2">.3e</span><span class="si">}</span><span class="s2"> times the density of an atomic nucleus.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details></section>
+</div>
+</section>
 <section id="the-event-horizon">
-<h4><span class="section-number">13.7.4.1. </span>The Event Horizon<a class="headerlink" href="#the-event-horizon" title="Link to this heading">#</a></h4>
+<h4><span class="section-number">13.7.4.2. </span>The Event Horizon<a class="headerlink" href="#the-event-horizon" title="Link to this heading">#</a></h4>
 <p>The Schwarzschild radius is called the event horizon of a black hole.  Figure <a class="reference internal" href="#space-distortion-fig"><span class="std std-numref">13.16</span></a> illustrates the effect that mass has on space and time near massive objects (e.g., black holes).  The distortion caused by our Sun is quite small, and the diagram is exaggerated for clarity.  Consider the case of a neutron star, its spacetime distortion is quite high, but the neutron star’s radius is still larger than its Schwarzschild radius.  Therefore, objects could still escape its surface.</p>
 <figure class="align-default" id="space-distortion-fig">
 <img alt="diagram showing the spacetime distortions of several objects" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/9de9b2fade771f6afb05f3ece787c03ec8576ab6" />
@@ -2275,7 +3057,10 @@ R_S = \frac{2GM}{c^2}.
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tidal-forces">13.6. Tidal Forces</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lunar-tides">13.6.1. Lunar Tides</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-effect-of-the-sun-on-tides">13.6.2. The Effect of the Sun on Tides</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-magnitude-of-the-tides">13.6.3. The Magnitude of the Tides</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-magnitude-of-the-tides">13.6.3. The Magnitude of the Tides</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-comparing-tidal-forces">13.6.3.1. <strong>Example Problem</strong>: Comparing Tidal Forces</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-tides">13.6.4. Other Tides</a></li>
 </ul>
 </li>
@@ -2284,7 +3069,8 @@ R_S = \frac{2GM}{c^2}.
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-principle-of-equivalence">13.7.2. The Principle of Equivalence</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-geometric-theory-of-gravity">13.7.3. A Geometric Theory of Gravity</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#black-holes">13.7.4. Black Holes</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-event-horizon">13.7.4.1. The Event Horizon</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-calculating-the-schwarzschild-radius">13.7.4.1. <strong>Example Problem</strong>: Calculating the Schwarzschild Radius</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-event-horizon">13.7.4.2. The Event Horizon</a></li>
 </ul>
 </li>
 </ul>
