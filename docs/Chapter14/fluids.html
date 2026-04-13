@@ -40,7 +40,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/sphinx_iframe.css?v=96c28b52" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="https://cdn.plyr.io/3.8.4/plyr.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=0a613744" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=180fcd40" />
     <link rel="stylesheet" type="text/css" href="../_static/mycss.css?v=3589796e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -79,6 +79,8 @@
                 gtag('config', 'G-6TWF14MYK4');
             </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Chapter14/fluids';</script>
     <script src="https://cdn.plyr.io/3.8.4/plyr.polyfilled.js"></script>
     <script src="../_static/init-plyr.js?v=bf401924"></script>
@@ -476,7 +478,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -492,6 +496,93 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fluids-density-and-pressure">14.1. Fluids, Density, and Pressure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristics-of-solids-and-fluids">14.1.1. Characteristics of Solids and Fluids</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#density">14.1.2. Density</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pressure">14.1.3. Pressure</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#variation-of-pressure-with-depth-in-a-fluid-of-constant-density">14.1.3.1. Variation of pressure with depth in a fluid of <em>constant</em> density</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-force-on-a-dam">14.1.3.2. <strong>Example Problem</strong>: Force on a Dam</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pressure-in-a-static-fluid-in-a-uniform-gravitational-field">14.1.3.3. Pressure in a <em>static</em> fluid in a uniform gravitational field</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pressure-in-a-fluid-with-a-constant-density">14.1.3.4. Pressure in a fluid with a constant density</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#variation-of-atmospheric-pressure-with-height">14.1.3.5. Variation of atmospheric pressure with height</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#direction-of-pressure-in-a-fluid">14.1.3.6. Direction of pressure in a fluid</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measuring-pressure">14.2. Measuring Pressure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gauge-vs-absolute-pressure">14.2.1. Gauge vs. Absolute Pressure</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">14.2.2. Measuring Pressure</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#manometers">14.2.2.1. Manometers</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#barometers">14.2.2.2. Barometers</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#units-of-pressure">14.2.2.3. Units of pressure</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-fluid-heights-in-an-open-u-tube">14.2.2.4. <strong>Example Problem</strong>: Fluid Heights in an Open U-Tube</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pascal-s-principle-and-hydraulics">14.3. Pascal’s Principle and Hydraulics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pascal-s-principle">14.3.1. Pascal’s Principle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#applications-of-pascal-s-principle-and-hydraulic-systems">14.3.2. Applications of Pascal’s Principle and Hydraulic Systems</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-calculating-force-on-wheel-cylinders">14.3.3. <strong>Example Problem</strong>: Calculating Force on Wheel Cylinders</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#archimedes-principle-and-buoyancy">14.4. Archimedes’ Principle and Buoyancy</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#archimedes-principle">14.4.1. Archimedes’ Principle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#density-and-archimedes-principle">14.4.2. Density and Archimedes’ Principle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#measuring-density">14.4.3. Measuring Density</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-calculating-average-density">14.4.4. <strong>Example Problem</strong>: Calculating Average Density</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fluid-dynamics">14.5. Fluid Dynamics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristics-of-flow">14.5.1. Characteristics of Flow</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flow-rate-and-its-relation-to-velocity">14.5.2. Flow Rate and its Relation to Velocity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mass-conservation">14.5.3. Mass Conservation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-calculating-fluid-speed-through-a-nozzle">14.5.4. <strong>Example Problem</strong>: Calculating Fluid Speed through a Nozzle</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bernoulli-s-equation">14.6. Bernoulli’s Equation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-conservation-and-bernoulli-s-equation">14.6.1. Energy Conservation and Bernoulli’s Equation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analyzing-bernoulli-s-equation">14.6.2. Analyzing Bernoulli’s Equation</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#bernoulli-s-equation-for-static-fluids">14.6.2.1. Bernoulli’s equation for <em>static</em> fluids</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#bernoulli-s-principle">14.6.2.2. Bernoulli’s principle</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-calculating-pressure">14.6.2.3. <strong>Example Problem</strong>: Calculating Pressure</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#applications-of-bernoulli-s-principle">14.6.3. Applications of Bernoulli’s Principle</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#entrainment">14.6.3.1. Entrainment</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-measurement">14.6.3.2. Velocity measurement</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-a-fire-hose-nozzle">14.6.3.3. <strong>Example Problem</strong>: A Fire Hose Nozzle</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#viscosity-and-turbulence">14.7. Viscosity and Turbulence</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#viscosity-and-laminar-flow">14.7.1. Viscosity and Laminar Flow</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#laminar-flow-confined-to-tubes-poiseuille-s-law">14.7.2. Laminar Flow Confined to Tubes: Poiseuille’s Law</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flow-and-resistance-as-causes-of-pressure-drops">14.7.3. Flow and Resistance as Causes of Pressure Drops</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#measuring-turbulence">14.7.4. Measuring Turbulence</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-air-conditioning-systems">14.7.5. <strong>Example Problem</strong>: Air Conditioning Systems</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-turbulent-or-laminar-flow">14.7.6. <strong>Example Problem</strong>: Turbulent or Laminar Flow</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-class-problems">14.8. In-Class Problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-i">14.8.1. Part I</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-ii">14.8.2. Part II</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homework">14.9. Homework</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conceptual-questions">14.9.1. Conceptual Questions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantitative-questions">14.9.2. Quantitative Questions</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -503,6 +594,717 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="fluid-mechanics">
 <h1><span class="section-number">14. </span>Fluid Mechanics<a class="headerlink" href="#fluid-mechanics" title="Link to this heading">#</a></h1>
+<p>Apr 12, 2026 | 4000 words | 20 min read</p>
+<section id="fluids-density-and-pressure">
+<h2><span class="section-number">14.1. </span>Fluids, Density, and Pressure<a class="headerlink" href="#fluids-density-and-pressure" title="Link to this heading">#</a></h2>
+<section id="characteristics-of-solids-and-fluids">
+<h3><span class="section-number">14.1.1. </span>Characteristics of Solids and Fluids<a class="headerlink" href="#characteristics-of-solids-and-fluids" title="Link to this heading">#</a></h3>
+<p><strong>Solids</strong> are rigid, have specific shapes, and occupy definite volumes.  The atoms (or molecules) in a solid are in close proximity to each other, where there is a significant force between the molecules.  Solids will take a form that is determined by the forces between the molecules.  True solids are compressible, where it usually takes a large force to change the shape of a solid.</p>
+<ul class="simple">
+<li><p>The force between the molecules can allow them to organize into a lattice.</p></li>
+<li><p>The structure of the 3D lattice is represented as molecules connected by rigid bonds (modeled as stiff springs), which allow *limited freedom of movement. *</p></li>
+<li><p>Even a large force produces only small displacements in the atoms (or molecules) of the lattice, and the solid maintains its shape.  Solids also resist shearing forces (see <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter12/static-equilibrium-elasticity.html#stress-strain-and-elastic-modulus">Section 12.3</a>).</p></li>
+</ul>
+<p>Liquids and gases are both described as <strong>fluids</strong> of varying viscosity because they yield to shearing forces, whereas solids resist them.  Like solids, the molecules in a liquid are bonded to neighboring molecules, but there are fewer (and weaker) bonds.</p>
+<ul class="simple">
+<li><p>The molecules in a liquid are not locked in place and <em>can move with respect to each other.</em></p></li>
+<li><p>The distance between molecules is similar to the distances in a solid.  Liquids have definite volumes, but the shape of a liquid can change depending on the shape of its container.</p></li>
+<li><p>Gases are <strong>not</strong> bonded to neighboring atoms and <em>can have large separations</em> between molecules.</p></li>
+<li><p>Gases have neither specific shapes nor definite volumes, where their molecules move to fill the container.</p></li>
+</ul>
+<p>Liquids deform easily when stressed and do <strong>not</strong> spring back to their original shape once a force is removed.  This occurs because the atoms (or molecules) are free to slide about and change neighbors.  Liquids flow with the molecules held together by looser mutual attraction.  When a liquid is placed in a container, it remains in the container (given the appropriate temperature and atmospheric pressure).  Because the atoms are closely packed liquids resist compression, where an extremely large force is necessary to change the volume of a liquid.</p>
+<p>Atoms in gases are separated by large distances and the forces between atoms in a gas are very weak, except when the atoms collide with one another.  This makes gases relatively easy to compress and allows them to flow like a fluid.  When placed in an open container, gases will escape.</p>
+<p>Given the right conditions gases and fluids behave in similar ways, where it is common to drop the distinction and consider them both as fluids.  There exists another phase of matter called a <strong>plasma</strong>, which exists at high temperatures, which is characterized by being composed of ions rather than neutral atoms.  Plasma has different properties, which requires a detailed description of electrical charges and forces.</p>
+</section>
+<section id="density">
+<h3><span class="section-number">14.1.2. </span>Density<a class="headerlink" href="#density" title="Link to this heading">#</a></h3>
+<p>Suppose a block of brass and a block of wood have exactly the same mass.  If both blocks are dropped in a tank of water, <em>why does the wood float</em> and the brass sink?  This occurs because the brass has a greater density than water.</p>
+<p><strong>Density</strong> is an important characteristic of substances because it is crucial in determining whether an object sinks or floats in a fluid.</p>
+<div class="note admonition">
+<p class="admonition-title">Density</p>
+<p>The average density of a substance or object is defined as its mass per unit volume,</p>
+<div class="amsmath math notranslate nohighlight" id="equation-7eff4108-87c0-4697-8aca-41c035efbaba">
+<span class="eqno">(14.1)<a class="headerlink" href="#equation-7eff4108-87c0-4697-8aca-41c035efbaba" title="Permalink to this equation">#</a></span>\[\begin{align} 
+\rho = \frac{m}{V},
+\end{align}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\rho\)</span> (<code class="docutils literal notranslate"><span class="pre">\rho</span></code>) is the symbol for density, <span class="math notranslate nohighlight">\(m\)</span> is the mass, and <span class="math notranslate nohighlight">\(V\)</span> is the volume.</p>
+</div>
+<p>The SI unit for density is <span class="math notranslate nohighlight">\(\rm kg/m^3\)</span>, where <a class="reference internal" href="#densities-common-substances"><span class="std std-numref">Table 14.1</span></a>.  Many materials are more easily measured using lower masses and/or volume which makes the <span class="math notranslate nohighlight">\(\rm cgs\)</span> units system useful.  The <span class="math notranslate nohighlight">\(\rm cgs\)</span> density is the gram per cubic centimeter or per milliliter <span class="math notranslate nohighlight">\(\rm mL\)</span>, where</p>
+<div class="math notranslate nohighlight">
+\[ 1\ {\rm g/cm^3} = 1\ {\rm g/mL} = 1000\ {\rm kg/m^3}.\]</div>
+<p>The metric system was originally devised so that water would have a density of <span class="math notranslate nohighlight">\(1\ {\rm g/cm^3}\)</span>, thus the basic mass unit (the kilogram) was first devised to be the mass of <span class="math notranslate nohighlight">\(1\ {\rm L} = 1000\ {\rm mL}\)</span> volume of water.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="densities-common-substances">
+<caption><span class="caption-number">Table 14.1 </span><span class="caption-text">Densities of Some Common Substances</span><a class="headerlink" href="#densities-common-substances" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 19.0%" />
+<col style="width: 14.3%" />
+<col style="width: 19.0%" />
+<col style="width: 14.3%" />
+<col style="width: 19.0%" />
+<col style="width: 14.3%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Solids <br> (<span class="math notranslate nohighlight">\(0^\circ{\rm C}\)</span>)</p></th>
+<th class="head"></th>
+<th class="head"><p>Liquids <br> (<span class="math notranslate nohighlight">\(0^\circ{\rm C}\)</span>)</p></th>
+<th class="head"></th>
+<th class="head"><p>Gases <br> (<span class="math notranslate nohighlight">\(0^\circ{\rm C}\)</span>, <span class="math notranslate nohighlight">\(101.3\ {\rm kPa}\)</span>)</p></th>
+<th class="head"></th>
+</tr>
+<tr class="row-even"><th class="head"><p>Substance</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\rho\ ({\rm kg/m^3})\)</span></p></th>
+<th class="head"><p>Substance</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\rho\ ({\rm kg/m^3})\)</span></p></th>
+<th class="head"><p>Substance</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\rho\ ({\rm kg/m^3})\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>Aluminum</p></td>
+<td><p><span class="math notranslate nohighlight">\(2700\)</span></p></td>
+<td><p>Benzene</p></td>
+<td><p><span class="math notranslate nohighlight">\(879\)</span></p></td>
+<td><p>Air</p></td>
+<td><p><span class="math notranslate nohighlight">\(1.29\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Bone</p></td>
+<td><p><span class="math notranslate nohighlight">\(1900\)</span></p></td>
+<td><p>Blood</p></td>
+<td><p><span class="math notranslate nohighlight">\(1050\)</span></p></td>
+<td><p>Carbon dioxide</p></td>
+<td><p><span class="math notranslate nohighlight">\(1.98\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Brass</p></td>
+<td><p><span class="math notranslate nohighlight">\(8440\)</span></p></td>
+<td><p>Ethyl alcohol</p></td>
+<td><p><span class="math notranslate nohighlight">\(806\)</span></p></td>
+<td><p>Carbon monoxide</p></td>
+<td><p><span class="math notranslate nohighlight">\(1.25\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Concrete</p></td>
+<td><p><span class="math notranslate nohighlight">\(2400\)</span></p></td>
+<td><p>Gasoline</p></td>
+<td><p><span class="math notranslate nohighlight">\(680\)</span></p></td>
+<td><p>Helium</p></td>
+<td><p><span class="math notranslate nohighlight">\(0.18\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Copper</p></td>
+<td><p><span class="math notranslate nohighlight">\(892\)</span></p></td>
+<td><p>Glycerin</p></td>
+<td><p><span class="math notranslate nohighlight">\(1260\)</span></p></td>
+<td><p>Hydrogen</p></td>
+<td><p><span class="math notranslate nohighlight">\(0.09\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Cork</p></td>
+<td><p><span class="math notranslate nohighlight">\(240\)</span></p></td>
+<td><p>Mercury</p></td>
+<td><p><span class="math notranslate nohighlight">\(13{,}600\)</span></p></td>
+<td><p>Methane</p></td>
+<td><p><span class="math notranslate nohighlight">\(0.72\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Earth’s crust</p></td>
+<td><p><span class="math notranslate nohighlight">\(3300\)</span></p></td>
+<td><p>Olive oil</p></td>
+<td><p><span class="math notranslate nohighlight">\(920\)</span></p></td>
+<td><p>Nitrogen</p></td>
+<td><p><span class="math notranslate nohighlight">\(1.25\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Glass</p></td>
+<td><p><span class="math notranslate nohighlight">\(2600\)</span></p></td>
+<td></td>
+<td></td>
+<td><p>Nitrous oxide</p></td>
+<td><p><span class="math notranslate nohighlight">\(1.98\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Gold</p></td>
+<td><p><span class="math notranslate nohighlight">\(19{,}300\)</span></p></td>
+<td></td>
+<td></td>
+<td><p>Oxygen</p></td>
+<td><p><span class="math notranslate nohighlight">\(1.43\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Granite</p></td>
+<td><p><span class="math notranslate nohighlight">\(2700\)</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Iron</p></td>
+<td><p><span class="math notranslate nohighlight">\(7860\)</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Lead</p></td>
+<td><p><span class="math notranslate nohighlight">\(11{,}300\)</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Oak</p></td>
+<td><p><span class="math notranslate nohighlight">\(710\)</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Pine</p></td>
+<td><p><span class="math notranslate nohighlight">\(373\)</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Platinum</p></td>
+<td><p><span class="math notranslate nohighlight">\(21{,}400\)</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Polystyrene</p></td>
+<td><p><span class="math notranslate nohighlight">\(100\)</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Tungsten</p></td>
+<td><p><span class="math notranslate nohighlight">\(19{,}300\)</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Uranium</p></td>
+<td><p><span class="math notranslate nohighlight">\(18{,}700\)</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The density of an object may help its composition.  The density of gold is <span class="math notranslate nohighlight">\({\sim}2.5\times\)</span> the density of iron, which itself is about <span class="math notranslate nohighlight">\({\sim}2.5\times\)</span> the density of aluminum.  The densities of liquids and solids are roughly comparable, which is consistent with the expectation (and measurement) of the close proximity of their atoms.  The densities of solids and liquids are given for the standard temperature of <span class="math notranslate nohighlight">\(0^\circ{\rm C}\)</span>, where they can vary depending on the temperature.</p>
+<p>The densities of gases are much less than those of liquids and solids because the atoms in gases are separated by large amounts of empty space.  The gases (in <a class="reference internal" href="#densities-common-substances"><span class="std std-numref">Table 14.1</span></a>) are displayed for a standard temperature of <span class="math notranslate nohighlight">\(0^\circ{\rm C}\)</span> and pressure of <span class="math notranslate nohighlight">\(101.3\ {\rm kPa}\)</span>, where there is a strong dependence on the temperature and pressure.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="densities-of-water">
+<caption><span class="caption-number">Table 14.2 </span><span class="caption-text">Densities of Water</span><a class="headerlink" href="#densities-of-water" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 41.2%" />
+<col style="width: 23.5%" />
+<col style="width: 35.3%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Substance</p></th>
+<th class="head"><p>Temperature</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\rho\ ({\rm kg/m^3})\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Ice</p></td>
+<td><p><span class="math notranslate nohighlight">\(0^\circ{\rm C}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(917\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Water</p></td>
+<td><p><span class="math notranslate nohighlight">\(0^\circ{\rm C}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(999.8\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Water</p></td>
+<td><p><span class="math notranslate nohighlight">\(4^\circ{\rm C}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1000\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Water</p></td>
+<td><p><span class="math notranslate nohighlight">\(20^\circ{\rm C}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(998.2\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Water</p></td>
+<td><p><span class="math notranslate nohighlight">\(100^\circ{\rm C}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(958.4\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Steam</p></td>
+<td><p><span class="math notranslate nohighlight">\(100^\circ{\rm C},\ 101.3\ {\rm kPa}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(167.0\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Sea water</p></td>
+<td><p><span class="math notranslate nohighlight">\(0^\circ{\rm C}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1030\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><a class="reference internal" href="#densities-of-water"><span class="std std-numref">Table 14.2</span></a> shows the density of water in various phases in temperature.  As the temperature decreases, the density of water increases and reaches a maximum at <span class="math notranslate nohighlight">\(4.0^\circ{\rm C}\)</span>.  It then decreases as the temperature falls below <span class="math notranslate nohighlight">\(4.0^\circ{\rm C}\)</span>, where this behavior explains why ice forms at the <em>top</em> of body of water (i.e., ponds and lakes freeze from the top-down).</p>
+<p>A <strong>homogenous</strong> substance is described by a uniform density throughout its volume (e.g., a solid iron bar).  The density of any sample of a homogenous substance is the same as the average density.  In contrast, a <strong>heterogeneous</strong> substance does not have a constant density throughout the substance (e.g., a chunk of Swiss cheese with solids and voids).  The density at a specific location within a heterogeneous material is called <em>local density</em>, and is given as a function of location, <span class="math notranslate nohighlight">\(\rho = \rho(x,\,y,\,z)\)</span>, as shown in Figure <a class="reference internal" href="#density-volume-fig"><span class="std std-numref">14.1</span></a>.</p>
+<figure class="align-default" id="density-volume-fig">
+<img alt="diagram showing density throughout a mixture" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/5379e17b7814e480c56347941b75020d84b8396c" />
+<figcaption>
+<p><span class="caption-number">Fig. 14.1 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#density-volume-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Local density can be obtained by taking the limit where the size of the volume approaches zero,</p>
+<div class="amsmath math notranslate nohighlight" id="equation-23ca7bcc-4c5a-456d-88b5-67ec75067053">
+<span class="eqno">(14.2)<a class="headerlink" href="#equation-23ca7bcc-4c5a-456d-88b5-67ec75067053" title="Permalink to this equation">#</a></span>\[\begin{align}
+\rho = \lim_{\Delta V \rightarrow 0} \frac{\Delta m}{\Delta V},
+\end{align}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\rho\)</span> is the density, <span class="math notranslate nohighlight">\(m\)</span> is the mass, and <span class="math notranslate nohighlight">\(V\)</span> is the volume.</p>
+<p>Since gases are free to expand and contract, the densities of the gases vary considerably with temperature.  The densities of liquids are often treated as constant (i.e., equal to the average density).</p>
+<p>Density is a dimensional property, where it often convenient to normalize the density to make it dimensionless and is then called the <strong>specific gravity</strong>.  Specific gravity is defined as the ratio of the density relative to water at <span class="math notranslate nohighlight">\(4.0^\circ{\rm C}\)</span> and one atmosphere of pressure (i.e., <span class="math notranslate nohighlight">\(101.3\ {\rm kPa}\)</span>), which is <span class="math notranslate nohighlight">\(1000\ {\rm kg/m^3}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[ \text{Specific gravity} = \frac{\text{Density of material}}{\text{Density of water}} =\frac{\text{Density of material}}{1000\ {\rm kg/m^3}}. \]</div>
+<p>Specific gravity provides a ready comparison among materials without have to worry about the unit of density.  For instance the density of aluminum is <span class="math notranslate nohighlight">\(2700\ {\rm kg/m^3}\)</span>, but its specific gravity is <span class="math notranslate nohighlight">\(2.7\)</span>.  Specific gravity is particularly useful quantity with regard to buoyancy.</p>
+</section>
+<section id="pressure">
+<h3><span class="section-number">14.1.3. </span>Pressure<a class="headerlink" href="#pressure" title="Link to this heading">#</a></h3>
+<p>You are likely familiar with the different kinds of pressure, whether it is your blood pressure or in relation to the weather.  But we provide a formal definition of pressure in terms of a force.</p>
+<div class="note admonition">
+<p class="admonition-title">Pressure</p>
+<p><strong>{Pressure}</strong> (<span class="math notranslate nohighlight">\(P\)</span>) is defined as the <em>normal</em> force <span class="math notranslate nohighlight">\(F_\perp\)</span> per unit area <span class="math notranslate nohighlight">\(A\)</span> over which the force is applied, or</p>
+<div class="amsmath math notranslate nohighlight" id="equation-8ccc673b-5b8f-4885-81af-3ffb847bf0b6">
+<span class="eqno">(14.3)<a class="headerlink" href="#equation-8ccc673b-5b8f-4885-81af-3ffb847bf0b6" title="Permalink to this equation">#</a></span>\[\begin{align}
+P = \frac{F_\perp}{A}.
+\end{align}\]</div>
+<p>To define the pressure at a specific point, the pressure is defined as the force <span class="math notranslate nohighlight">\(dF\)</span> exerted by a fluid over an infinitesimal element of area <span class="math notranslate nohighlight">\(dA\)</span> containing the point, resulting in <span class="math notranslate nohighlight">\(p = \frac{dF}{dA}.\)</span></p>
+</div>
+<p>A given force can have a significantly different effect depending on the area over which the force is exerted.  For example, a given force <span class="math notranslate nohighlight">\(F\)</span> applied to over an area of <span class="math notranslate nohighlight">\(1\ {\rm mm^2}\)</span> is <span class="math notranslate nohighlight">\(100\times\)</span> as great as the same force applied to an area of $1\ {\rm cm^2}.  That is why a sharp needle is able to poke through the skin with a small force, but the same force does not allow your finger to poke through the skin (see Figure <a class="reference internal" href="#pressure-skin-fig"><span class="std std-numref">14.2</span></a>).</p>
+<figure class="align-default" id="pressure-skin-fig">
+<img alt="diagram showing pressure felt on skin by needle vs finger" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/f61c7b37e2188f52e763f90e969cd7a8c921b9d4" />
+<figcaption>
+<p><span class="caption-number">Fig. 14.2 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#pressure-skin-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Although force is a vector, <em>pressure is a scalar</em>.  Pressure represents the normal component of the force per unit area.  In general it is defined as</p>
+<div class="math notranslate nohighlight">
+\[ P = \frac{d\vec{F}}{dA}\cdot \vec{n}, \]</div>
+<p>where <span class="math notranslate nohighlight">\(\hat{n}\)</span> is the unit vector normal to the surface.  This dot product extracts the component of force perpendicular to the surface, which is why the pressure is a scalar quantity.  The SI unit for pressure is the <em>pascal</em> (<span class="math notranslate nohighlight">\(\rm Pa\)</span>), which was named after <a class="reference external" href="https://en.wikipedia.org/wiki/Blaise_Pascal">Blaise Pascal</a>, where</p>
+<div class="math notranslate nohighlight">
+\[ 1\ {\rm Pa} = 1\ {\rm N/m^2}. \]</div>
+<section id="variation-of-pressure-with-depth-in-a-fluid-of-constant-density">
+<h4><span class="section-number">14.1.3.1. </span>Variation of pressure with depth in a fluid of <em>constant</em> density<a class="headerlink" href="#variation-of-pressure-with-depth-in-a-fluid-of-constant-density" title="Link to this heading">#</a></h4>
+<p>Pressure is defined for all states of matter, but it is particularly important for fluids.  An important characteristic of fluids is that there is no <em>significant resistance</em> to the parallel component of force applied parallel to the surface of a fluid.  The molecules of the fluid simply flow to accommodate the horizontal force. A force applied perpendicular to the surface <em>compresses</em> or expands the fluid.  If you try to compress a fluid, you find that a reaction force develops at each point inside fluid in the outward direction, which balances the force applied on the molecules at the boundary.</p>
+<p>Consider a fluid of constant density (see Figure <a class="reference internal" href="#pressure-fluid-fig"><span class="std std-numref">14.3</span></a>).  The pressure at the bottom of the container is due to the pressure of the atmosphere <span class="math notranslate nohighlight">\(P_o\)</span> plus the pressure due to the weight of fluid divided by the area.  The weight of the fluid at a given height depends on the mass of enclosed fluid times the acceleration due to gravity.</p>
+<figure class="align-default" id="pressure-fluid-fig">
+<img alt="fluid pressure in a container" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/7d5fb9a856cb5ad9a127815ba824c757170e348a" />
+<figcaption>
+<p><span class="caption-number">Fig. 14.3 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#pressure-fluid-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Since the density is constant, the weight of the mass enclosed can be calculated using the density:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\rho &amp;= \frac{m}{V} \quad \Rightarrow \quad m = \rho V, \\
+w &amp;= mg = \rho V g, \\
+&amp;= \rho Ahg,
+\end{align*}\]</div>
+<p>where we have used the volume of a cylinder with the area <span class="math notranslate nohighlight">\(A\)</span> at the bottom of the container and <span class="math notranslate nohighlight">\(h\)</span> is the height of the cylinder.  The pressure at the bottom of the container is related to the atmospheric pressure <span class="math notranslate nohighlight">\(P_o\)</span> by</p>
+<div class="math notranslate nohighlight" id="equation-constant-pressure-eqn">
+<span class="eqno">(14.4)<a class="headerlink" href="#equation-constant-pressure-eqn" title="Link to this equation">#</a></span>\[\begin{split}P &amp;= P_o + \frac{w}{A}, \\
+&amp;= P_o + \frac{\rho Ah g}{A}, \\
+&amp;= P_o + \rho hg.\end{split}\]</div>
+<p><em>Note</em>: this equation is only good for pressure at a depth for a fluid of constant density.</p>
+</section>
+<section id="example-problem-force-on-a-dam">
+<h4><span class="section-number">14.1.3.2. </span><strong>Example Problem</strong>: Force on a Dam<a class="headerlink" href="#example-problem-force-on-a-dam" title="Link to this heading">#</a></h4>
+</section>
+<section id="pressure-in-a-static-fluid-in-a-uniform-gravitational-field">
+<h4><span class="section-number">14.1.3.3. </span>Pressure in a <em>static</em> fluid in a uniform gravitational field<a class="headerlink" href="#pressure-in-a-static-fluid-in-a-uniform-gravitational-field" title="Link to this heading">#</a></h4>
+<p>A <em>static</em> fluid is not in motion and at any point within the fluid, the pressure on all sides must be equal.  Otherwise the fluid at that point would accelerate due to a net force.</p>
+<p>The pressure at any point depends only on the depth at that point.  Pressure in a fluid near Earth varies with depth due to the weight of fluid above a particular level.  Previously, we assumed that the density is constant and the average density is a a good approximation of the density of any given sample of the material.  This is a reasonable approximation for liquids like water, where large forces are required to compress or change the volume.</p>
+<ul class="simple">
+<li><p>In a swimming pool, the density is approximately constant, where the water at the bottom is compressed very little by the weight of the water on top.</p></li>
+<li><p>Traveling upward in the atmosphere, you notice that the density of the air begins to change significantly just a short distance above Earth’s surface.</p></li>
+</ul>
+<p>Let’s start with the assumption that the density of the fluid <em>is not</em> constant.  This allows us to derive a formula for the variation of pressure with depth in a tank containing a fluid of density <span class="math notranslate nohighlight">\(\rho\)</span> on Earth’s surface.  At deeper levels, a fluid sample is subjected to more force than a fluid sample nearer to the surface due to the weight of the fluid above it.  Therefore, the pressure calculated a given depth is different than the pressure calculated using a constant density (i.e., we cannot use Eqn. <a class="reference internal" href="#equation-constant-pressure-eqn">(14.4)</a>).</p>
+<figure class="align-default" id="force-mass-element-fig">
+<img alt="forces on a mass element inside a fluid" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/653b70abb80d6f59faa20c643073598dd8671352" />
+<figcaption>
+<p><span class="caption-number">Fig. 14.4 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#force-mass-element-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Imagine a thin element of fluid at a depth <span class="math notranslate nohighlight">\(h\)</span> (see Figure <a class="reference internal" href="#force-mass-element-fig"><span class="std std-numref">14.4</span></a>).  The element has a cross-sectional area <span class="math notranslate nohighlight">\(A\)</span> and a thickness <span class="math notranslate nohighlight">\(\Delta y\)</span>.  The forces acting on the element are due the pressure <span class="math notranslate nohighlight">\(P(y)\)</span> above and <span class="math notranslate nohighlight">\(P(y+\Delta y)\)</span> below it.</p>
+<p>Since the element of fluid between <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(y+\Delta y\)</span> is not accelerating , the forces are balanced.  There are 3 forces acting on the mass element from the:</p>
+<ol class="arabic simple">
+<li><p>pressure downward from the top: -<span class="math notranslate nohighlight">\(P(y)A\)</span>,</p></li>
+<li><p>pressure upward from the bottom<span class="math notranslate nohighlight">\(: \)</span>P(y+\Delta y)A$,</p></li>
+<li><p>weight of the fluid element downward: <span class="math notranslate nohighlight">\(-(\Delta m)g\)</span>.</p></li>
+</ol>
+<p>We used a Cartesian coordinate system with the <span class="math notranslate nohighlight">\(y\)</span>-axis pointed in the <span class="math notranslate nohighlight">\(+\hat{j}\)</span> direction to assign the direction for each force.  We find the following equation via Newton’s 2nd law:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-5ce47903-2114-483a-90df-2e7eb0d51231">
+<span class="eqno">(14.5)<a class="headerlink" href="#equation-5ce47903-2114-483a-90df-2e7eb0d51231" title="Permalink to this equation">#</a></span>\[\begin{align}
+P(y+\Delta y)A - P(y)A - g\Delta m = 0,
+\end{align}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\Delta y &lt; 0\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the fluid element had a non-zero <span class="math notranslate nohighlight">\(y\)</span>-component of acceleration the right-hand side would not be zero.  Instead it would be the mass times the <span class="math notranslate nohighlight">\(y\)</span>-acceleration from Newton’s 2nd law.</p>
+</div>
+<p>The mass element can be written in terms of the density of the fluid and the volume of the fluid element:</p>
+<div class="math notranslate nohighlight">
+\[ \Delta m = -\rho A\Delta y. \]</div>
+<p>Since <span class="math notranslate nohighlight">\(\Delta y &lt; 0\)</span>, this means that <span class="math notranslate nohighlight">\(\Delta m &gt;0\)</span>.  Substituting this expression into our previous equation, we find</p>
+<div class="amsmath math notranslate nohighlight" id="equation-7a5294c0-4f98-47da-a244-d453c75235fc">
+<span class="eqno">(14.6)<a class="headerlink" href="#equation-7a5294c0-4f98-47da-a244-d453c75235fc" title="Permalink to this equation">#</a></span>\[\begin{align}
+P(y+\Delta y)A - P(y)A + g\rho A\Delta y &amp;= 0, \\
+\frac{P(y+\Delta y) - P(y)}{\Delta y} &amp;=  -\rho g.
+\end{align}\]</div>
+<p>We find the variation of pressure with depth (or pressure gradient) in a fluid by taking the limit of an infinitesimally thin element <span class="math notranslate nohighlight">\(\Delta y \rightarrow 0\)</span>, or</p>
+<div class="math notranslate nohighlight" id="equation-pressure-grad-eqn">
+<span class="eqno">(14.7)<a class="headerlink" href="#equation-pressure-grad-eqn" title="Link to this equation">#</a></span>\[\frac{dp}{dy} = -\rho g.\]</div>
+<p>This equation tells us that the pressure’s rate of change with depth is proportional to the density of the fluid.  The solution of this equation depends upon the whether the density is constant or changes with depth (i.e., a function <span class="math notranslate nohighlight">\(\rho(y)\)</span>).</p>
+<p>If the range of the depth begin analyzed is small enough, we can assume the density is constant.  But if the range of depth is too large so that the density varies appreciably (e.g., the atmosphere), we need to take the change in density with depth into account.  In that case, we cannot use the approximation of a constant density.</p>
+</section>
+<section id="pressure-in-a-fluid-with-a-constant-density">
+<h4><span class="section-number">14.1.3.4. </span>Pressure in a fluid with a constant density<a class="headerlink" href="#pressure-in-a-fluid-with-a-constant-density" title="Link to this heading">#</a></h4>
+<p>To solve the differential form of pressure (Eqn. <a class="reference internal" href="#equation-pressure-grad-eqn">(14.7)</a>), we need to integrate and then, we find a formula for the pressure <span class="math notranslate nohighlight">\(P\)</span> at a depth <span class="math notranslate nohighlight">\(h\)</span> from the surface.  Let’s consider a tank of liquid (e.g., water; see Fig. <a class="reference internal" href="#tank-pressure-fig"><span class="std std-numref">14.5</span></a>), where the surface is subject to the atmospheric pressure <span class="math notranslate nohighlight">\(P_o\)</span>.</p>
+<figure class="align-default" id="tank-pressure-fig">
+<img alt="tank of water" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/07f14c75ae558a0c81d7a1c89ac657714d72a0d3" />
+<figcaption>
+<p><span class="caption-number">Fig. 14.5 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#tank-pressure-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>At <span class="math notranslate nohighlight">\(y=0\)</span>, the pressure is simply the atmospheric pressure <span class="math notranslate nohighlight">\(P_o\)</span> and there is a pressure at a depth <span class="math notranslate nohighlight">\(h\)</span> equal to <span class="math notranslate nohighlight">\(-y\)</span>.  Setting this up as an integral, we have</p>
+<div class="amsmath math notranslate nohighlight" id="equation-c58520e6-89b8-4fc9-a776-e5e4cd393af9">
+<span class="eqno">(14.8)<a class="headerlink" href="#equation-c58520e6-89b8-4fc9-a776-e5e4cd393af9" title="Permalink to this equation">#</a></span>\[\begin{align}
+\int_{P_o}^P dP &amp;= - \int_0^{-h}\rho gdy, \\
+P-P_o &amp;= -\rho g\left(-h - 0\right) = \rho gh, \\
+P &amp;= P_o + \rho gh.
+\end{align}\]</div>
+<p>Thus, pressure at a depth of fluid near Earth’s surface is equal to the atmospheric pressure added to the pressure at the given depth <span class="math notranslate nohighlight">\(h\)</span>, which is given by <span class="math notranslate nohighlight">\(\rho gh\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The pressure in a fluid depends only on the depth from the surface and not on the shape of the container.  The liquid stays at the same level in every part of a container regardless of the shape, as shown in Figure <a class="reference internal" href="#free-pressure-container-fig"><span class="std std-numref">14.6</span></a>.</p>
+<figure class="align-default" id="free-pressure-container-fig">
+<img alt="free flow between parts of a container" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/d052dd394fdc46bf5a3fbecb3a0a502b0d12e19d" />
+<figcaption>
+<p><span class="caption-number">Fig. 14.6 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#free-pressure-container-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="variation-of-atmospheric-pressure-with-height">
+<h4><span class="section-number">14.1.3.5. </span>Variation of atmospheric pressure with height<a class="headerlink" href="#variation-of-atmospheric-pressure-with-height" title="Link to this heading">#</a></h4>
+<p>The change in atmospheric pressure with height is conceptually similar to that of an increasing depth.  However, we must include assumptions based on the kinetic theory of gases.  Let’s first make two key assumptions:</p>
+<ol class="arabic simple">
+<li><p>the air temperature is approximately constant, and</p></li>
+<li><p>the <a class="reference external" href="https://en.wikipedia.org/wiki/Ideal_gas_law">ideal gas law</a> approximately describes the atmosphere.</p></li>
+</ol>
+<p>These assumptions are accurate (at least locally) for a parcel of gas at a given height <span class="math notranslate nohighlight">\(h\)</span>.  Since we are using the ideal gas law, we must also define some other parameters, such as:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(P(y)\)</span> is the atmospheric pressure at height <span class="math notranslate nohighlight">\(y\)</span> above Earth’s surface.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\rho(y)\)</span> is the density of air at a height <span class="math notranslate nohighlight">\(y\)</span>.</p></li>
+<li><p>The temperature is measured using the Kelvin scale (<span class="math notranslate nohighlight">\(K\)</span>).</p></li>
+</ul>
+<p>The mass <span class="math notranslate nohighlight">\(m\)</span> of a molecule of air is related to the temperature and pressure through the ideal gas law, or</p>
+<div class="amsmath math notranslate nohighlight" id="equation-eae6d181-04cb-4154-844b-6fec7c4de594">
+<span class="eqno">(14.9)<a class="headerlink" href="#equation-eae6d181-04cb-4154-844b-6fec7c4de594" title="Permalink to this equation">#</a></span>\[\begin{align}
+PV &amp;= Nk_{\rm B}T, \quad &amp;(\text{divide both sides by }V)\\
+P &amp;= \left(\frac{N}{V}\right) k_{\rm B}T, \quad &amp;\left(\text{multiply right-side by }\frac{m}{m}\right)\\
+&amp;= \rho \frac{k_{\rm B}T}{m}.
+\end{align}\]</div>
+<p>In the ideal gas law, <span class="math notranslate nohighlight">\(N\)</span> is the number of molecules and <span class="math notranslate nohighlight">\(k_{\rm B}\)</span> is Boltzmann’s constant (<span class="math notranslate nohighlight">\(k_{\rm B} = 1.38\times 10^{-23}\ {\rm J/K}\)</span>).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You may have encountered another version of the ideal gas law from your chemistry classes in this form: <span class="math notranslate nohighlight">\(PV = nRT\)</span>, where <span class="math notranslate nohighlight">\(n\)</span> is the number of moles and <span class="math notranslate nohighlight">\(R\)</span> is the <a class="reference external" href="https://en.wikipedia.org/wiki/Gas_constant">ideal gas constant</a> (<span class="math notranslate nohighlight">\(R = 8.314\ {\rm J/K/mol}\)</span>).  These are two different ways to write the same formula because of the relationship between <span class="math notranslate nohighlight">\(R\)</span> and <span class="math notranslate nohighlight">\(k_{\rm B}\)</span>, or</p>
+<div class="math notranslate nohighlight">
+\[ R = N_{\rm A} k_{\rm B}, \]</div>
+<p>where <span class="math notranslate nohighlight">\(N_{\rm A}\)</span> is Avogadro’s number.</p>
+</div>
+<p>Our formula relates the pressure <span class="math notranslate nohighlight">\(P\)</span> to the density <span class="math notranslate nohighlight">\(\rho\)</span>.  Thus, if pressure varies with height, so does the the density.  By solving the ideal gas law relation in terms of the density <span class="math notranslate nohighlight">\(\rho\)</span> and substituting into Eqn. <a class="reference internal" href="#equation-pressure-grad-eqn">(14.7)</a> we have</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\rho &amp;= P\frac{m}{k_{\rm B}T}, \\[6pt]
+\frac{dP}{dy} &amp;= -\rho g, \\
+&amp;= -P\left(\frac{mg}{k_{\rm B}T}\right).
+\end{align*}\]</div>
+<p>We can replace the constants inside the parentheses with a single symbol <span class="math notranslate nohighlight">\(\alpha\)</span> to make the equation simpler (so that we can integrate it):</p>
+<div class="math notranslate nohighlight">
+\[ \frac{dP}{dy} = -\alpha P. \]</div>
+<p>To solve this differential equation, we use the method of <a class="reference external" href="https://en.wikipedia.org/wiki/Separation_of_variables">separation of variables</a>, which means that we collect like variables to each side of the equation.  Then we have</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{dP}{P} &amp;= -\alpha dy, \\
+\int_{P_o}^{P(y)} \frac{dP}{P} &amp;= \int_{0}^y -\alpha dy.
+\end{align*}\]</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">First-order Separable Differentiable Equation</p>
+<p>The indefinite integral of <span class="math notranslate nohighlight">\(dx/x\)</span> is introduces the natural log function <span class="math notranslate nohighlight">\(\ln{x}\)</span>, or</p>
+<div class="math notranslate nohighlight">
+\[ \int \frac{dx}{x} = \ln{x} + C. \]</div>
+<p>We can also write this in terms of the exponential function <span class="math notranslate nohighlight">\(e^x\)</span>, or</p>
+<div class="math notranslate nohighlight">
+\[ e^{\int \frac{dx}{x} } = e^{\ln{x} + C}. \]</div>
+<p>Using our known properties of exponents/<a class="reference external" href="https://en.wikipedia.org/wiki/Logarithm">logarithms</a> (e.g., <span class="math notranslate nohighlight">\(e^{A}e^{B} = e^{A+B}\)</span> and <span class="math notranslate nohighlight">\(e^{\ln{x}} = x\)</span>), we can convert our formula to</p>
+<div class="math notranslate nohighlight">
+\[ x = Ce^{\int \frac{dx}{x} }. \]</div>
+<p><a class="reference external" href="https://www.youtube.com/&#64;TheOrganicChemistryTutor"><strong>The Organic Chemistry Tutor</strong></a></p>
+<div class="video-wrapper" style="max-width:560px; margin-left: auto; margin-right: auto;">
+  <div class="video-container" style="aspect-ratio:16/9; position:relative; width:100%;">
+    <iframe src="https://www.youtube.com/embed/C7nuJcJriWM?start=421" allowfullscreen style="width:100%; height:100%; position:absolute; left:0; top:0; border:0;" loading="lazy"></iframe>
+  </div>
+  <div class="video-caption" style="margin-top:0.5em; text-align:left; color:#666;">This video shows how to solve first order differential equations using separation of variables.</div>
+</div></div>
+<p>Evaluating the integral at the applicable limits gives us</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\ln{P}\bigg\vert_{P_o}^{P(y)} &amp;= -\alpha\left(y\right)\bigg\vert_0^y, \\
+\ln{P} - \ln{P_o} &amp;= -\alpha y + \alpha (0), \\
+\ln{\left(\frac{P}{P_o}\right)} &amp;= -\alpha y.
+\end{align*}\]</div>
+<p>Using our known properties of exponential functions (e.g., <span class="math notranslate nohighlight">\(x = e^{\ln{x}}\)</span>), we have the solution</p>
+<div class="math notranslate nohighlight">
+\[ P(y) = P_o e^{-\alpha y}. \]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Some authors use the <span class="math notranslate nohighlight">\(\exp\)</span> function so that it is clear what is within the exponential due to the limitations of typesetting with superscripts and subscripts.  Thus, our solution can also be written as</p>
+<div class="math notranslate nohighlight">
+\[ P(y) = P_o \exp{\left(-\alpha y\right)}. \]</div>
+</div>
+<p>Our expression shows us that the atmospheric pressure drops <em>exponentially</em> with height since we measure the height from the ground-up.  The pressure drops by a factor of <span class="math notranslate nohighlight">\(1/e\)</span> when the height is <span class="math notranslate nohighlight">\(1/\alpha\)</span>.  Thus, we interpret <span class="math notranslate nohighlight">\(\alpha\)</span> physically as a length scale that characterizes how pressure varies with height.  As a result, it is often called the <em>pressure scale height</em>.</p>
+<p>Air is composed of <span class="math notranslate nohighlight">\({\sim} 78\%\)</span> nitrogen <span class="math notranslate nohighlight">\(\rm N_2\)</span> and <span class="math notranslate nohighlight">\(21\%\)</span> oxygen <span class="math notranslate nohighlight">\(\rm O_2\)</span>.  We can approximate <span class="math notranslate nohighlight">\(\alpha\)</span> by using the mass of a nitrogen molecule  as a proxy for an air molecule.  At a temperature of <span class="math notranslate nohighlight">\(300\ {\rm K}\)</span> (or <span class="math notranslate nohighlight">\(27^\circ{\rm C}\)</span>), we find</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+m_{\rm N_2} = 2(14.006)(1.66 \times 10^{-27}\ {\rm kg}) = 4.65 \times 10^{-26}\ {\rm kg}, \\[6pt]
+\alpha = \frac{m_{\rm N_2}g}{k_{\rm B}T} = \frac{(4.65\times 10^{-26}\ {\rm kg})(9.81\ {\rm m/s^2})}{(1.38\times 10^{-23}\ {\rm J/K})(300\ {\rm K})} = \frac{1}{9080\ {\rm m}}.
+\end{align*}\]</div>
+<p>For every <span class="math notranslate nohighlight">\(9080\ {\rm m}\)</span>, the air pressure drops by a factor of <span class="math notranslate nohighlight">\(1/e\)</span>, or approximately one-third of its value.  This gives us only a rough estimate of the true change in pressure with height.  Our assumptions of a constant temperature and a constant <span class="math notranslate nohighlight">\(g\)</span> over such a distance (i.e., nearly the entire troposphere) is not accurate in reality.</p>
+</section>
+<section id="direction-of-pressure-in-a-fluid">
+<h4><span class="section-number">14.1.3.6. </span>Direction of pressure in a fluid<a class="headerlink" href="#direction-of-pressure-in-a-fluid" title="Link to this heading">#</a></h4>
+<p>Fluid pressure has no direction (i.e., it is a scalar quantity), whereas the forces due to pressure have well-defined directions: They are always exerted perpendicular to any surface.  The reason is that fluids cannot withstand (or exert) shearing forces.</p>
+<p>In a static fluid enclosed in a tank, the force exerted on the walls of the tank is exerted perpendicular to the inside surface.  Likewise, pressure is exerted to the surfaces of any object within a fluid.  Figure <a class="reference internal" href="#pressure-object-fig"><span class="std std-numref">14.7</span></a> illustrates the pressure exerted by air on the walls of a tire and by water on the body of a swimmer.</p>
+<figure class="align-default" id="pressure-object-fig">
+<img alt="pressure exerted perpendicular to a surface" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/e482a00e699ae7dfe2d8fe76fa1e5d9c8c18871a" />
+<figcaption>
+<p><span class="caption-number">Fig. 14.7 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#pressure-object-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+</section>
+<section id="measuring-pressure">
+<h2><span class="section-number">14.2. </span>Measuring Pressure<a class="headerlink" href="#measuring-pressure" title="Link to this heading">#</a></h2>
+<section id="gauge-vs-absolute-pressure">
+<h3><span class="section-number">14.2.1. </span>Gauge vs. Absolute Pressure<a class="headerlink" href="#gauge-vs-absolute-pressure" title="Link to this heading">#</a></h3>
+<p>Suppose the pressure gauge on full scuba tank reads <span class="math notranslate nohighlight">\(3000\ {\rm psi}\)</span>, which is approximately <span class="math notranslate nohighlight">\(207\ {\rm atm}\)</span>.  When the valve is opened, air begins to escape because the pressure inside the tank is grater than the atmospheric pressure outside the tank.  Air continues to escape form teh tank until the pressure inside the tank equals the pressure of the atmosphere outside the tank.  At this point, the pressure gauge on the tank reads, zero even though the pressure inside the tank is actually <span class="math notranslate nohighlight">\(1\ {\rm atm}\)</span> (i.e., the same air pressure outside the tank).</p>
+<p>Most pressure gauges are calibrated to read zero at atmospheric pressure. Pressure reading from such gauges are called <strong>gauge pressure</strong>, which is the pressure relative to the atmospheric pressure.  When the pressure inside the tank is greater than atmospheric pressure, the gauge reports a positive value.</p>
+<p>Some gauges are designed to measure <em>negative</em> pressure.   For example, many physics experiments must take place in a vacuum chamber where nearly all the air is pumped out.  the pressure inside the vacuum chamber is less than atmospheric pressure, so te pressure on the gauge reads a negative value.</p>
+<p>Unlike gauge pressure, <strong>absolute pressure</strong> accounts for atmospheric pressure, which in effect adds to the pressure in any fluid not enclosed in a rigid container.</p>
+<div class="note admonition">
+<p class="admonition-title">Absolute Pressure</p>
+<p>The absolute pressure, or total pressure, is the sum of gauge pressure and atmospheric pressure:</p>
+<div class="math notranslate nohighlight">
+\[ P_{\rm abs} = P_{\rm g} + P_{\rm atm}, \]</div>
+<p>where <span class="math notranslate nohighlight">\(P_{\rm abs}\)</span> is the absolute pressure, <span class="math notranslate nohighlight">\(P_{\rm g}\)</span> is the gauge pressure, and <span class="math notranslate nohighlight">\(P_{\rm atm}\)</span> is the atmospheric pressure.</p>
+</div>
+<p>For example, if a tire gauge reads <span class="math notranslate nohighlight">\(34\ {\rm psi}\)</span>, then the absolute pressure include the atmospheric pressure (<span class="math notranslate nohighlight">\(14.7\ {\rm psi}\)</span>), or <span class="math notranslate nohighlight">\(34\ {\rm psi} + 14.7\ {\rm psi} = 48.7\ {\rm psi}\)</span>.</p>
+<p>In most cases, the absolute pressure in fluids cannot be negative.  Fluids push rather than pull, so the smallest absolute pressure in a fluid is zero.  Thus, the smallest possible gauge pressure is <span class="math notranslate nohighlight">\(P_{\rm g} = -P_{\rm atm}\)</span>, which makes <span class="math notranslate nohighlight">\(P_{\rm abs} = 0\)</span>.  There is no theoretical limit for how large a gauge pressure can be.</p>
+</section>
+<section id="id1">
+<h3><span class="section-number">14.2.2. </span>Measuring Pressure<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>A host of devices are used for measuring pressure, ranging from tire pressure gauges to blood pressure monitors.  Any property that changes with pressure in a known way can be used to construct a pressure gauge.  Some of the most common types include</p>
+<ul class="simple">
+<li><p>strain gauges, which use the change in the shape of a material with pressure,</p></li>
+<li><p>capacitance pressure gauges, which use the change in electric capacitance due to shape change with pressure,</p></li>
+<li><p>piezoelectric pressure gauges, which generate a voltage difference across a piezoelectric material under a pressure difference between two sides, and
+ion gauges, which measure pressure by ionizing molecules in highly evacuated chambers.</p></li>
+</ul>
+<p>Different pressure gauges are useful in different pressure ranges and physical situations. Some examples are shown in Figure <a class="reference internal" href="#pressure-gauge-examples-fig"><span class="std std-numref">14.8</span></a>.</p>
+<figure class="align-default" id="pressure-gauge-examples-fig">
+<img alt="examples of objects used to measure pressure" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/238db010483a859b4e2a74fe6e74734a087e613d" />
+<figcaption>
+<p><span class="caption-number">Fig. 14.8 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#pressure-gauge-examples-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="manometers">
+<h4><span class="section-number">14.2.2.1. </span>Manometers<a class="headerlink" href="#manometers" title="Link to this heading">#</a></h4>
+<p>One of the most important classes of pressure gauges applies the property that pressure due to the weight of a fluid of constant density is given by <span class="math notranslate nohighlight">\(P = \rho gh\)</span>.  The U-shaped tube shown in Figure <a class="reference internal" href="#pressure-manometer-fig"><span class="std std-numref">14.9</span></a> is an example of a <em>manometer</em>.  In Fig. <a class="reference internal" href="#pressure-manometer-fig"><span class="std std-numref">14.9</span></a>a, both sides of the tube are open to the atmosphere, which allows atmospheric pressure to push down on each side equally so that its effects cancel.</p>
+<figure class="align-default" id="pressure-manometer-fig">
+<img alt="examples of a manometer" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/b0891fd72b6ce4bf4c929d67307466e6ecaa8aee" />
+<figcaption>
+<p><span class="caption-number">Fig. 14.9 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#pressure-manometer-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>A manometer with only one side open to the atmosphere is an ideal device for measuring <em>gauge</em> pressures.  The gauge pressure is <span class="math notranslate nohighlight">\(P_{\rm gauge} = \rho gh\)</span> and is found by measuring <span class="math notranslate nohighlight">\(h\)</span>.  For example, suppose one side of the U-tube is connected to some source of pressure <span class="math notranslate nohighlight">\(P_{\rm abs}\)</span> (e.g., the ballon in Fig. <a class="reference internal" href="#pressure-manometer-fig"><span class="std std-numref">14.9</span></a>b or the vacuum-packed peanut jar in Fig. <a class="reference internal" href="#pressure-manometer-fig"><span class="std std-numref">14.9</span></a>c).</p>
+<p>Pressure is transmitted undiminished to the manometer, and the fluid levels are no longer equal.  In Fig. <a class="reference internal" href="#pressure-manometer-fig"><span class="std std-numref">14.9</span></a>b, <span class="math notranslate nohighlight">\(P_{\rm abs}&gt;P_{\rm atm}\)</span> and in Fig. <a class="reference internal" href="#pressure-manometer-fig"><span class="std std-numref">14.9</span></a>c, <span class="math notranslate nohighlight">\(P_{\rm abs}&lt; P_{\rm atm}\)</span>.  In both cases, <span class="math notranslate nohighlight">\(P_{\rm abs}\)</span> differs from the atmospheric pressure by an amount <span class="math notranslate nohighlight">\(\rho gh\)</span>, where <span class="math notranslate nohighlight">\(\rho\)</span> is the density of the fluid in the manometer.</p>
+<p>In Fig. <a class="reference internal" href="#pressure-manometer-fig"><span class="std std-numref">14.9</span></a>b, <span class="math notranslate nohighlight">\(P_{\rm abs}\)</span> can support a column of fluid of height <span class="math notranslate nohighlight">\(h\)</span>, so it must exert a pressure <span class="math notranslate nohighlight">\(\rho gh\)</span> greater than atmospheric pressure.  In Fig. <a class="reference internal" href="#pressure-manometer-fig"><span class="std std-numref">14.9</span></a>c, the <em>atmospheric</em> pressure can support a column of fluid of height <span class="math notranslate nohighlight">\(h\)</span>, so the absolute pressure is less than atmospheric pressure by an amount <span class="math notranslate nohighlight">\(\rho gh\)</span></p>
+</section>
+<section id="barometers">
+<h4><span class="section-number">14.2.2.2. </span>Barometers<a class="headerlink" href="#barometers" title="Link to this heading">#</a></h4>
+<p>A <em>barometer</em> is a device that typically uses a single column of mercury to measure atmospheric pressure, which is in contrast to the U-shaped tube of a manometer.  The barometer (invented by <a class="reference external" href="https://en.wikipedia.org/wiki/Evangelista_Torricelli">Evangelista Torricelli</a>) is constructed from a glass tube closed at one end and filled with mercury.  The tube is then inverted and placed in a pool of mercury.  A barometer measures atmospheric pressure (rather than gauge pressure) because there is a nearly pure vacuum above the mercury in the tube.  The height of the mercury is such that <span class="math notranslate nohighlight">\(P_{\rm atm} = \rho gh\)</span> and the height changes when the atmospheric pressure varies.</p>
+<figure class="align-default" id="pressure-barometer-fig" style="width: 400px">
+<img alt="example of a barometer" src="../_images/barometer_diagram_from_gemini.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 14.10 </span><span class="caption-text">Image Credit: Generated using Gemini.</span><a class="headerlink" href="#pressure-barometer-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Weather forecasters closely monitor changes in atmospheric pressure because it signals a change in the weather.  The barometer can also be used as an altimeter, since the average atmospheric pressure varies with altitude.  Mercury barometers and manometer are common enough so that millimeter heights of mercury (<span class="math notranslate nohighlight">\(\rm mm\ Hg\)</span>) are quoted for atmospheric and blood pressures.</p>
+</section>
+<section id="units-of-pressure">
+<h4><span class="section-number">14.2.2.3. </span>Units of pressure<a class="headerlink" href="#units-of-pressure" title="Link to this heading">#</a></h4>
+<p>The SI unit for pressure is the pascal (<span class="math notranslate nohighlight">\(\rm Pa\)</span>), where <span class="math notranslate nohighlight">\(1\ {\rm Pa} = 1\ {\rm N/m^2}\)</span>.  In addition to the pascal, there are many other units for pressure in common use (see <a class="reference internal" href="#pressure-units"><span class="std std-numref">Table 14.3</span></a>).  Im meteorology, atmospheric pressure is often describe in the units of millibars (<span class="math notranslate nohighlight">\(\rm mbar\)</span>), where</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*} 
+1\ {\rm bar} &amp;= 10^5\ {\rm Pa}, \\
+1000\ {\rm mbar} &amp;=  10^5\ {\rm Pa}.
+\end{align*}\]</div>
+<p>The millibar is convenient for meteorologists because the average atmospheric pressure at sea level on Earth is <span class="math notranslate nohighlight">\(1.013 \times 10^5\ {\rm Pa} = 1013\ {\rm mbar} = 1\ {\rm atm}\)</span>.  Using the equations derived when considering pressure at a depth of fluid, pressure can also be measured as millimeters (or inches) of mercury.</p>
+<p>The pressure at the bottom of a <span class="math notranslate nohighlight">\(760{-}{\rm mm}\)</span> column of mercury at <span class="math notranslate nohighlight">\(0^\circ\)</span> in barometer is equal to the atmospheric pressure.  Thus, <span class="math notranslate nohighlight">\(760\ {\rm mm\ Hg}\)</span> is also used in place of one atmosphere of pressure.</p>
+<p>In vacuum physics labs, scientists often use another unit called <span class="math notranslate nohighlight">\(\rm torr\)</span> (named after Torricelli), where <span class="math notranslate nohighlight">\(1\ {\rm torr} = 1\ {\rm mm\ Hg}\)</span>.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="pressure-units">
+<caption><span class="caption-number">Table 14.3 </span><span class="caption-text">Common Units of Pressure (Referenced to Pascals)</span><a class="headerlink" href="#pressure-units" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 40.0%" />
+<col style="width: 60.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Unit</p></th>
+<th class="head"><p>Equivalent in Pascals</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Pascal (Pa)</p></td>
+<td><p><span class="math notranslate nohighlight">\(1\ {\rm Pa} = 1\ {\rm N/m^2}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>pound per square inch (psi)</p></td>
+<td><p><span class="math notranslate nohighlight">\(1\ {\rm psi} = 6895\ {\rm Pa}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>atmosphere (atm)</p></td>
+<td><p><span class="math notranslate nohighlight">\(1\ {\rm atm} = 1.013\times10^{5}\ {\rm Pa}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>bar</p></td>
+<td><p><span class="math notranslate nohighlight">\(1\ {\rm bar} = 10^{5}\ {\rm Pa}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>torr (mm Hg)</p></td>
+<td><p><span class="math notranslate nohighlight">\(1\ {\rm torr} = 133.3\ {\rm Pa}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>inches of mercury (in Hg)</p></td>
+<td><p><span class="math notranslate nohighlight">\(1\ {\rm in\ Hg} = 3386\ {\rm Pa}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>millibar (mbar)</p></td>
+<td><p><span class="math notranslate nohighlight">\(1\ {\rm mbar} = 100\ {\rm Pa}\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="example-problem-fluid-heights-in-an-open-u-tube">
+<h4><span class="section-number">14.2.2.4. </span><strong>Example Problem</strong>: Fluid Heights in an Open U-Tube<a class="headerlink" href="#example-problem-fluid-heights-in-an-open-u-tube" title="Link to this heading">#</a></h4>
+</section>
+</section>
+</section>
+<section id="pascal-s-principle-and-hydraulics">
+<h2><span class="section-number">14.3. </span>Pascal’s Principle and Hydraulics<a class="headerlink" href="#pascal-s-principle-and-hydraulics" title="Link to this heading">#</a></h2>
+<section id="pascal-s-principle">
+<h3><span class="section-number">14.3.1. </span>Pascal’s Principle<a class="headerlink" href="#pascal-s-principle" title="Link to this heading">#</a></h3>
+</section>
+<section id="applications-of-pascal-s-principle-and-hydraulic-systems">
+<h3><span class="section-number">14.3.2. </span>Applications of Pascal’s Principle and Hydraulic Systems<a class="headerlink" href="#applications-of-pascal-s-principle-and-hydraulic-systems" title="Link to this heading">#</a></h3>
+</section>
+<section id="example-problem-calculating-force-on-wheel-cylinders">
+<h3><span class="section-number">14.3.3. </span><strong>Example Problem</strong>: Calculating Force on Wheel Cylinders<a class="headerlink" href="#example-problem-calculating-force-on-wheel-cylinders" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="archimedes-principle-and-buoyancy">
+<h2><span class="section-number">14.4. </span>Archimedes’ Principle and Buoyancy<a class="headerlink" href="#archimedes-principle-and-buoyancy" title="Link to this heading">#</a></h2>
+<section id="archimedes-principle">
+<h3><span class="section-number">14.4.1. </span>Archimedes’ Principle<a class="headerlink" href="#archimedes-principle" title="Link to this heading">#</a></h3>
+</section>
+<section id="density-and-archimedes-principle">
+<h3><span class="section-number">14.4.2. </span>Density and Archimedes’ Principle<a class="headerlink" href="#density-and-archimedes-principle" title="Link to this heading">#</a></h3>
+</section>
+<section id="measuring-density">
+<h3><span class="section-number">14.4.3. </span>Measuring Density<a class="headerlink" href="#measuring-density" title="Link to this heading">#</a></h3>
+</section>
+<section id="example-problem-calculating-average-density">
+<h3><span class="section-number">14.4.4. </span><strong>Example Problem</strong>: Calculating Average Density<a class="headerlink" href="#example-problem-calculating-average-density" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="fluid-dynamics">
+<h2><span class="section-number">14.5. </span>Fluid Dynamics<a class="headerlink" href="#fluid-dynamics" title="Link to this heading">#</a></h2>
+<section id="characteristics-of-flow">
+<h3><span class="section-number">14.5.1. </span>Characteristics of Flow<a class="headerlink" href="#characteristics-of-flow" title="Link to this heading">#</a></h3>
+</section>
+<section id="flow-rate-and-its-relation-to-velocity">
+<h3><span class="section-number">14.5.2. </span>Flow Rate and its Relation to Velocity<a class="headerlink" href="#flow-rate-and-its-relation-to-velocity" title="Link to this heading">#</a></h3>
+</section>
+<section id="mass-conservation">
+<h3><span class="section-number">14.5.3. </span>Mass Conservation<a class="headerlink" href="#mass-conservation" title="Link to this heading">#</a></h3>
+</section>
+<section id="example-problem-calculating-fluid-speed-through-a-nozzle">
+<h3><span class="section-number">14.5.4. </span><strong>Example Problem</strong>: Calculating Fluid Speed through a Nozzle<a class="headerlink" href="#example-problem-calculating-fluid-speed-through-a-nozzle" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="bernoulli-s-equation">
+<h2><span class="section-number">14.6. </span>Bernoulli’s Equation<a class="headerlink" href="#bernoulli-s-equation" title="Link to this heading">#</a></h2>
+<section id="energy-conservation-and-bernoulli-s-equation">
+<h3><span class="section-number">14.6.1. </span>Energy Conservation and Bernoulli’s Equation<a class="headerlink" href="#energy-conservation-and-bernoulli-s-equation" title="Link to this heading">#</a></h3>
+</section>
+<section id="analyzing-bernoulli-s-equation">
+<h3><span class="section-number">14.6.2. </span>Analyzing Bernoulli’s Equation<a class="headerlink" href="#analyzing-bernoulli-s-equation" title="Link to this heading">#</a></h3>
+<section id="bernoulli-s-equation-for-static-fluids">
+<h4><span class="section-number">14.6.2.1. </span>Bernoulli’s equation for <em>static</em> fluids<a class="headerlink" href="#bernoulli-s-equation-for-static-fluids" title="Link to this heading">#</a></h4>
+</section>
+<section id="bernoulli-s-principle">
+<h4><span class="section-number">14.6.2.2. </span>Bernoulli’s principle<a class="headerlink" href="#bernoulli-s-principle" title="Link to this heading">#</a></h4>
+</section>
+<section id="example-problem-calculating-pressure">
+<h4><span class="section-number">14.6.2.3. </span><strong>Example Problem</strong>: Calculating Pressure<a class="headerlink" href="#example-problem-calculating-pressure" title="Link to this heading">#</a></h4>
+</section>
+</section>
+<section id="applications-of-bernoulli-s-principle">
+<h3><span class="section-number">14.6.3. </span>Applications of Bernoulli’s Principle<a class="headerlink" href="#applications-of-bernoulli-s-principle" title="Link to this heading">#</a></h3>
+<section id="entrainment">
+<h4><span class="section-number">14.6.3.1. </span>Entrainment<a class="headerlink" href="#entrainment" title="Link to this heading">#</a></h4>
+</section>
+<section id="velocity-measurement">
+<h4><span class="section-number">14.6.3.2. </span>Velocity measurement<a class="headerlink" href="#velocity-measurement" title="Link to this heading">#</a></h4>
+</section>
+<section id="example-problem-a-fire-hose-nozzle">
+<h4><span class="section-number">14.6.3.3. </span><strong>Example Problem</strong>: A Fire Hose Nozzle<a class="headerlink" href="#example-problem-a-fire-hose-nozzle" title="Link to this heading">#</a></h4>
+</section>
+</section>
+</section>
+<section id="viscosity-and-turbulence">
+<h2><span class="section-number">14.7. </span>Viscosity and Turbulence<a class="headerlink" href="#viscosity-and-turbulence" title="Link to this heading">#</a></h2>
+<section id="viscosity-and-laminar-flow">
+<h3><span class="section-number">14.7.1. </span>Viscosity and Laminar Flow<a class="headerlink" href="#viscosity-and-laminar-flow" title="Link to this heading">#</a></h3>
+</section>
+<section id="laminar-flow-confined-to-tubes-poiseuille-s-law">
+<h3><span class="section-number">14.7.2. </span>Laminar Flow Confined to Tubes: Poiseuille’s Law<a class="headerlink" href="#laminar-flow-confined-to-tubes-poiseuille-s-law" title="Link to this heading">#</a></h3>
+</section>
+<section id="flow-and-resistance-as-causes-of-pressure-drops">
+<h3><span class="section-number">14.7.3. </span>Flow and Resistance as Causes of Pressure Drops<a class="headerlink" href="#flow-and-resistance-as-causes-of-pressure-drops" title="Link to this heading">#</a></h3>
+</section>
+<section id="measuring-turbulence">
+<h3><span class="section-number">14.7.4. </span>Measuring Turbulence<a class="headerlink" href="#measuring-turbulence" title="Link to this heading">#</a></h3>
+</section>
+<section id="example-problem-air-conditioning-systems">
+<h3><span class="section-number">14.7.5. </span><strong>Example Problem</strong>: Air Conditioning Systems<a class="headerlink" href="#example-problem-air-conditioning-systems" title="Link to this heading">#</a></h3>
+</section>
+<section id="example-problem-turbulent-or-laminar-flow">
+<h3><span class="section-number">14.7.6. </span><strong>Example Problem</strong>: Turbulent or Laminar Flow<a class="headerlink" href="#example-problem-turbulent-or-laminar-flow" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="in-class-problems">
+<h2><span class="section-number">14.8. </span>In-Class Problems<a class="headerlink" href="#in-class-problems" title="Link to this heading">#</a></h2>
+<section id="part-i">
+<h3><span class="section-number">14.8.1. </span>Part I<a class="headerlink" href="#part-i" title="Link to this heading">#</a></h3>
+</section>
+<section id="part-ii">
+<h3><span class="section-number">14.8.2. </span>Part II<a class="headerlink" href="#part-ii" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="homework">
+<h2><span class="section-number">14.9. </span>Homework<a class="headerlink" href="#homework" title="Link to this heading">#</a></h2>
+<section id="conceptual-questions">
+<h3><span class="section-number">14.9.1. </span>Conceptual Questions<a class="headerlink" href="#conceptual-questions" title="Link to this heading">#</a></h3>
+</section>
+<section id="quantitative-questions">
+<h3><span class="section-number">14.9.2. </span>Quantitative Questions<a class="headerlink" href="#quantitative-questions" title="Link to this heading">#</a></h3>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -550,6 +1352,100 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fluids-density-and-pressure">14.1. Fluids, Density, and Pressure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristics-of-solids-and-fluids">14.1.1. Characteristics of Solids and Fluids</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#density">14.1.2. Density</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pressure">14.1.3. Pressure</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#variation-of-pressure-with-depth-in-a-fluid-of-constant-density">14.1.3.1. Variation of pressure with depth in a fluid of <em>constant</em> density</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-force-on-a-dam">14.1.3.2. <strong>Example Problem</strong>: Force on a Dam</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pressure-in-a-static-fluid-in-a-uniform-gravitational-field">14.1.3.3. Pressure in a <em>static</em> fluid in a uniform gravitational field</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pressure-in-a-fluid-with-a-constant-density">14.1.3.4. Pressure in a fluid with a constant density</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#variation-of-atmospheric-pressure-with-height">14.1.3.5. Variation of atmospheric pressure with height</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#direction-of-pressure-in-a-fluid">14.1.3.6. Direction of pressure in a fluid</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measuring-pressure">14.2. Measuring Pressure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gauge-vs-absolute-pressure">14.2.1. Gauge vs. Absolute Pressure</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">14.2.2. Measuring Pressure</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#manometers">14.2.2.1. Manometers</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#barometers">14.2.2.2. Barometers</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#units-of-pressure">14.2.2.3. Units of pressure</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-fluid-heights-in-an-open-u-tube">14.2.2.4. <strong>Example Problem</strong>: Fluid Heights in an Open U-Tube</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pascal-s-principle-and-hydraulics">14.3. Pascal’s Principle and Hydraulics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pascal-s-principle">14.3.1. Pascal’s Principle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#applications-of-pascal-s-principle-and-hydraulic-systems">14.3.2. Applications of Pascal’s Principle and Hydraulic Systems</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-calculating-force-on-wheel-cylinders">14.3.3. <strong>Example Problem</strong>: Calculating Force on Wheel Cylinders</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#archimedes-principle-and-buoyancy">14.4. Archimedes’ Principle and Buoyancy</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#archimedes-principle">14.4.1. Archimedes’ Principle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#density-and-archimedes-principle">14.4.2. Density and Archimedes’ Principle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#measuring-density">14.4.3. Measuring Density</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-calculating-average-density">14.4.4. <strong>Example Problem</strong>: Calculating Average Density</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fluid-dynamics">14.5. Fluid Dynamics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristics-of-flow">14.5.1. Characteristics of Flow</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flow-rate-and-its-relation-to-velocity">14.5.2. Flow Rate and its Relation to Velocity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mass-conservation">14.5.3. Mass Conservation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-calculating-fluid-speed-through-a-nozzle">14.5.4. <strong>Example Problem</strong>: Calculating Fluid Speed through a Nozzle</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bernoulli-s-equation">14.6. Bernoulli’s Equation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-conservation-and-bernoulli-s-equation">14.6.1. Energy Conservation and Bernoulli’s Equation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analyzing-bernoulli-s-equation">14.6.2. Analyzing Bernoulli’s Equation</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#bernoulli-s-equation-for-static-fluids">14.6.2.1. Bernoulli’s equation for <em>static</em> fluids</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#bernoulli-s-principle">14.6.2.2. Bernoulli’s principle</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-calculating-pressure">14.6.2.3. <strong>Example Problem</strong>: Calculating Pressure</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#applications-of-bernoulli-s-principle">14.6.3. Applications of Bernoulli’s Principle</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#entrainment">14.6.3.1. Entrainment</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-measurement">14.6.3.2. Velocity measurement</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-a-fire-hose-nozzle">14.6.3.3. <strong>Example Problem</strong>: A Fire Hose Nozzle</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#viscosity-and-turbulence">14.7. Viscosity and Turbulence</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#viscosity-and-laminar-flow">14.7.1. Viscosity and Laminar Flow</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#laminar-flow-confined-to-tubes-poiseuille-s-law">14.7.2. Laminar Flow Confined to Tubes: Poiseuille’s Law</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flow-and-resistance-as-causes-of-pressure-drops">14.7.3. Flow and Resistance as Causes of Pressure Drops</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#measuring-turbulence">14.7.4. Measuring Turbulence</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-air-conditioning-systems">14.7.5. <strong>Example Problem</strong>: Air Conditioning Systems</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-turbulent-or-laminar-flow">14.7.6. <strong>Example Problem</strong>: Turbulent or Laminar Flow</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-class-problems">14.8. In-Class Problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-i">14.8.1. Part I</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-ii">14.8.2. Part II</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homework">14.9. Homework</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conceptual-questions">14.9.1. Conceptual Questions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantitative-questions">14.9.2. Quantitative Questions</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
