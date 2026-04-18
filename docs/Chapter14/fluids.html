@@ -574,6 +574,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-class-problems">14.8. In-Class Problems</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-i">14.8.1. Part I</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-ii">14.8.2. Part II</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-iii">14.8.3. Part III</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homework">14.9. Homework</a><ul class="nav section-nav flex-column">
@@ -594,7 +595,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="fluid-mechanics">
 <h1><span class="section-number">14. </span>Fluid Mechanics<a class="headerlink" href="#fluid-mechanics" title="Link to this heading">#</a></h1>
-<p>Apr 17, 2026 | 7719 words | 39 min read</p>
+<p>Apr 18, 2026 | 9760 words | 49 min read</p>
 <section id="fluids-density-and-pressure">
 <h2><span class="section-number">14.1. </span>Fluids, Density, and Pressure<a class="headerlink" href="#fluids-density-and-pressure" title="Link to this heading">#</a></h2>
 <section id="characteristics-of-solids-and-fluids">
@@ -623,8 +624,8 @@ document.write(`
 <div class="note admonition">
 <p class="admonition-title">Density</p>
 <p>The average density of a substance or object is defined as its mass per unit volume,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6cc7c576-452f-43c9-9c46-2e2f17ac03d7">
-<span class="eqno">(14.1)<a class="headerlink" href="#equation-6cc7c576-452f-43c9-9c46-2e2f17ac03d7" title="Permalink to this equation">#</a></span>\[\begin{align} 
+<div class="amsmath math notranslate nohighlight" id="equation-906005c3-228a-4e66-ba47-66832b152a23">
+<span class="eqno">(14.1)<a class="headerlink" href="#equation-906005c3-228a-4e66-ba47-66832b152a23" title="Permalink to this equation">#</a></span>\[\begin{align} 
 \rho = \frac{m}{V},
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\rho\)</span> (<code class="docutils literal notranslate"><span class="pre">\rho</span></code>) is the symbol for density, <span class="math notranslate nohighlight">\(m\)</span> is the mass, and <span class="math notranslate nohighlight">\(V\)</span> is the volume.</p>
@@ -845,8 +846,8 @@ document.write(`
 </figcaption>
 </figure>
 <p>Local density can be obtained by taking the limit where the size of the volume approaches zero,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-72242d12-4e17-4322-90ec-d387f2edcbf8">
-<span class="eqno">(14.2)<a class="headerlink" href="#equation-72242d12-4e17-4322-90ec-d387f2edcbf8" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-13c1e68c-507a-43b5-b053-a3f907aabe8c">
+<span class="eqno">(14.2)<a class="headerlink" href="#equation-13c1e68c-507a-43b5-b053-a3f907aabe8c" title="Permalink to this equation">#</a></span>\[\begin{align}
 \rho = \lim_{\Delta V \rightarrow 0} \frac{\Delta m}{\Delta V},
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\rho\)</span> is the density, <span class="math notranslate nohighlight">\(m\)</span> is the mass, and <span class="math notranslate nohighlight">\(V\)</span> is the volume.</p>
@@ -862,8 +863,8 @@ document.write(`
 <div class="note admonition">
 <p class="admonition-title">Pressure</p>
 <p><strong>{Pressure}</strong> (<span class="math notranslate nohighlight">\(P\)</span>) is defined as the <em>normal</em> force <span class="math notranslate nohighlight">\(F_\perp\)</span> per unit area <span class="math notranslate nohighlight">\(A\)</span> over which the force is applied, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-abe1c612-d46d-4fed-ba64-5ae03e5c5bc4">
-<span class="eqno">(14.3)<a class="headerlink" href="#equation-abe1c612-d46d-4fed-ba64-5ae03e5c5bc4" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-311b499a-3130-4a11-aada-bb9de25ac865">
+<span class="eqno">(14.3)<a class="headerlink" href="#equation-311b499a-3130-4a11-aada-bb9de25ac865" title="Permalink to this equation">#</a></span>\[\begin{align}
 P = \frac{F_\perp}{A}.
 \end{align}\]</div>
 <p>To define the pressure at a specific point, the pressure is defined as the force <span class="math notranslate nohighlight">\(dF\)</span> exerted by a fluid over an infinitesimal element of area <span class="math notranslate nohighlight">\(dA\)</span> containing the point, resulting in <span class="math notranslate nohighlight">\(p = \frac{dF}{dA}.\)</span></p>
@@ -931,8 +932,8 @@ w &amp;= mg = \rho V g, \\
 <li><p>weight of the fluid element downward: <span class="math notranslate nohighlight">\(-(\Delta m)g\)</span>.</p></li>
 </ol>
 <p>We used a Cartesian coordinate system with the <span class="math notranslate nohighlight">\(y\)</span>-axis pointed in the <span class="math notranslate nohighlight">\(+\hat{j}\)</span> direction to assign the direction for each force.  We find the following equation via Newton’s 2nd law:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-62c44b5f-32d2-4d18-b0ac-29e212265dc5">
-<span class="eqno">(14.5)<a class="headerlink" href="#equation-62c44b5f-32d2-4d18-b0ac-29e212265dc5" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-538c4806-09ab-4d5e-9588-5d36e7194ace">
+<span class="eqno">(14.5)<a class="headerlink" href="#equation-538c4806-09ab-4d5e-9588-5d36e7194ace" title="Permalink to this equation">#</a></span>\[\begin{align}
 P(y+\Delta y)A - P(y)A - g\Delta m = 0,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\Delta y &lt; 0\)</span>.</p>
@@ -944,8 +945,8 @@ P(y+\Delta y)A - P(y)A - g\Delta m = 0,
 <div class="math notranslate nohighlight">
 \[ \Delta m = -\rho A\Delta y. \]</div>
 <p>Since <span class="math notranslate nohighlight">\(\Delta y &lt; 0\)</span>, this means that <span class="math notranslate nohighlight">\(\Delta m &gt;0\)</span>.  Substituting this expression into our previous equation, we find</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ab82b80d-5d0d-41cf-9e60-6de4ffd3af22">
-<span class="eqno">(14.6)<a class="headerlink" href="#equation-ab82b80d-5d0d-41cf-9e60-6de4ffd3af22" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-8958d440-ea71-49d1-aa54-89bd034b2907">
+<span class="eqno">(14.6)<a class="headerlink" href="#equation-8958d440-ea71-49d1-aa54-89bd034b2907" title="Permalink to this equation">#</a></span>\[\begin{align}
 P(y+\Delta y)A - P(y)A + g\rho A\Delta y &amp;= 0, \\
 \frac{P(y+\Delta y) - P(y)}{\Delta y} &amp;=  -\rho g.
 \end{align}\]</div>
@@ -965,8 +966,8 @@ P(y+\Delta y)A - P(y)A + g\rho A\Delta y &amp;= 0, \\
 </figcaption>
 </figure>
 <p>At <span class="math notranslate nohighlight">\(y=0\)</span>, the pressure is simply the atmospheric pressure <span class="math notranslate nohighlight">\(P_o\)</span> and there is a pressure at a depth <span class="math notranslate nohighlight">\(h\)</span> equal to <span class="math notranslate nohighlight">\(-y\)</span>.  Setting this up as an integral, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7706ca63-26d7-462a-af25-3bfd29f7c90c">
-<span class="eqno">(14.8)<a class="headerlink" href="#equation-7706ca63-26d7-462a-af25-3bfd29f7c90c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ce25511a-0f49-49b5-9ad6-8d4484f4bb58">
+<span class="eqno">(14.8)<a class="headerlink" href="#equation-ce25511a-0f49-49b5-9ad6-8d4484f4bb58" title="Permalink to this equation">#</a></span>\[\begin{align}
 \int_{P_o}^P dP &amp;= - \int_0^{-h}\rho gdy, \\
 P-P_o &amp;= -\rho g\left(-h - 0\right) = \rho gh, \\
 P &amp;= P_o + \rho gh.
@@ -997,8 +998,8 @@ P &amp;= P_o + \rho gh.
 <li><p>The temperature is measured using the Kelvin scale (<span class="math notranslate nohighlight">\(K\)</span>).</p></li>
 </ul>
 <p>The mass <span class="math notranslate nohighlight">\(m\)</span> of a molecule of air is related to the temperature and pressure through the ideal gas law, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2ad60fdb-12c7-46e4-bf3f-e89a2fc6259e">
-<span class="eqno">(14.9)<a class="headerlink" href="#equation-2ad60fdb-12c7-46e4-bf3f-e89a2fc6259e" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-35cc043b-16f1-4f79-976a-89b696467005">
+<span class="eqno">(14.9)<a class="headerlink" href="#equation-35cc043b-16f1-4f79-976a-89b696467005" title="Permalink to this equation">#</a></span>\[\begin{align}
 PV &amp;= Nk_{\rm B}T, \quad &amp;(\text{divide both sides by }V)\\
 P &amp;= \left(\frac{N}{V}\right) k_{\rm B}T, \quad &amp;\left(\text{multiply right-side by }\frac{m}{m}\right)\\
 &amp;= \rho \frac{k_{\rm B}T}{m}.
@@ -1087,7 +1088,7 @@ m_{\rm N_2} &amp;= 2(14.006)(1.66 \times 10^{-27}\ {\rm kg}) = 4.65 \times 10^{-
 <h2><span class="section-number">14.2. </span>Measuring Pressure<a class="headerlink" href="#measuring-pressure" title="Link to this heading">#</a></h2>
 <section id="gauge-vs-absolute-pressure">
 <h3><span class="section-number">14.2.1. </span>Gauge vs. Absolute Pressure<a class="headerlink" href="#gauge-vs-absolute-pressure" title="Link to this heading">#</a></h3>
-<p>Suppose the pressure gauge on full scuba tank reads <span class="math notranslate nohighlight">\(3000\ {\rm psi}\)</span>, which is approximately <span class="math notranslate nohighlight">\(207\ {\rm atm}\)</span>.  When the valve is opened, air begins to escape because the pressure inside the tank is grater than the atmospheric pressure outside the tank.  Air continues to escape form teh tank until the pressure inside the tank equals the pressure of the atmosphere outside the tank.  At this point, the pressure gauge on the tank reads, zero even though the pressure inside the tank is actually <span class="math notranslate nohighlight">\(1\ {\rm atm}\)</span> (i.e., the same air pressure outside the tank).</p>
+<p>Suppose the pressure gauge on full scuba tank reads <span class="math notranslate nohighlight">\(3000\ {\rm psi}\)</span>, which is approximately <span class="math notranslate nohighlight">\(207\ {\rm atm}\)</span>.  When the valve is opened, air begins to escape because the pressure inside the tank is grater than the atmospheric pressure outside the tank.  Air continues to escape from the tank until the pressure inside the tank equals the pressure of the atmosphere outside the tank.  At this point, the pressure gauge on the tank reads, zero even though the pressure inside the tank is actually <span class="math notranslate nohighlight">\(1\ {\rm atm}\)</span> (i.e., the same air pressure outside the tank).</p>
 <p>Most pressure gauges are calibrated to read zero at atmospheric pressure. Pressure reading from such gauges are called <strong>gauge pressure</strong>, which is the pressure relative to the atmospheric pressure.  When the pressure inside the tank is greater than atmospheric pressure, the gauge reports a positive value.</p>
 <p>Some gauges are designed to measure <em>negative</em> pressure.   For example, many physics experiments must take place in a vacuum chamber where nearly all the air is pumped out.  the pressure inside the vacuum chamber is less than atmospheric pressure, so te pressure on the gauge reads a negative value.</p>
 <p>Unlike gauge pressure, <strong>absolute pressure</strong> accounts for atmospheric pressure, which in effect adds to the pressure in any fluid not enclosed in a rigid container.</p>
@@ -1244,8 +1245,8 @@ ion gauges, which measure pressure by ionizing molecules in highly evacuated cha
 <div class="math notranslate nohighlight">
 \[ P_1 = \frac{F_1}{A_1}. \]</div>
 <p>According to Pascal’s principle, the pressure is transmitted undiminished throughout the fluid and to all walls of the container.  Thus, a pressure <span class="math notranslate nohighlight">\(P_2\)</span> is felt at the other piston that is equal to <span class="math notranslate nohighlight">\(P_1\)</span> (i.e., <span class="math notranslate nohighlight">\(P_1=P_2\)</span>).  However, <span class="math notranslate nohighlight">\(P_2 = F_2/A_2\)</span>, for this to be so, we find that</p>
-<div class="amsmath math notranslate nohighlight" id="equation-12c8fa6c-a6eb-4c2c-a3fd-03af1a1a49bd">
-<span class="eqno">(14.10)<a class="headerlink" href="#equation-12c8fa6c-a6eb-4c2c-a3fd-03af1a1a49bd" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-c07a7f90-51f0-45d7-abaf-24f444b424f9">
+<span class="eqno">(14.10)<a class="headerlink" href="#equation-c07a7f90-51f0-45d7-abaf-24f444b424f9" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{F_1}{A_1} &amp;= \frac{F_2}{A_2}.
 \end{align}\]</div>
 <p>This equation relates the ratios of force to area in any hydraulic system, provided that the pistons are at the same vertical height and that friction in the system is negligible.</p>
@@ -1403,8 +1404,8 @@ ion gauges, which measure pressure by ionizing molecules in highly evacuated cha
 <section id="flow-rate-and-its-relation-to-velocity">
 <h3><span class="section-number">14.5.2. </span>Flow Rate and its Relation to Velocity<a class="headerlink" href="#flow-rate-and-its-relation-to-velocity" title="Link to this heading">#</a></h3>
 <p>The volume of fluid passing by a given location through an area during a period of time is called the <strong>flow rate</strong> <span class="math notranslate nohighlight">\(Q\)</span>, or volume flow rate. This is written as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-04fe2666-c622-45b7-bd25-f920553ba28c">
-<span class="eqno">(14.11)<a class="headerlink" href="#equation-04fe2666-c622-45b7-bd25-f920553ba28c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-0b600db5-7f4c-472a-89c8-25a180ac869a">
+<span class="eqno">(14.11)<a class="headerlink" href="#equation-0b600db5-7f4c-472a-89c8-25a180ac869a" title="Permalink to this equation">#</a></span>\[\begin{align}
 Q = \frac{dV}{dt},
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(V\)</span> is the volume and <span class="math notranslate nohighlight">\(t\)</span> is the elapsed time.</p>
@@ -1431,8 +1432,8 @@ Q = \frac{dV}{dt},
 </figure>
 <p>Figure <a class="reference internal" href="#narrow-tube-flow-fig"><span class="std std-numref">14.22</span></a> shows an incompressible fluid flowing along a pipe of decreasing radius.  Because the fluid is incompressible, the same amount of fluid must flow past any point in the tube in a given time to ensure continuity of flow.  The flow is continuous because there are no sources (or sinks) to add (or remove) mass.  The mass flowing into the pipe must equal the mass flowing out of the pipe.</p>
 <p>In this case, the cross-sectional area of the pipe decreases and the velocity must necessarily increase.  This logic can be extended to say that the flow rate must be the same at all points along the pipe.  In particular for two arbitrary points <span class="math notranslate nohighlight">\(1\)</span> and <span class="math notranslate nohighlight">\(2\)</span>, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-437ee577-650b-4076-b1fc-069446b1b534">
-<span class="eqno">(14.12)<a class="headerlink" href="#equation-437ee577-650b-4076-b1fc-069446b1b534" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-eda6e845-36b6-49ef-a04e-f60c5a6d39d7">
+<span class="eqno">(14.12)<a class="headerlink" href="#equation-eda6e845-36b6-49ef-a04e-f60c5a6d39d7" title="Permalink to this equation">#</a></span>\[\begin{align}
 Q_1 &amp;= Q_2, \\
 A_1v_1 &amp;= A_2v_2.
 \end{align}\]</div>
@@ -1449,8 +1450,8 @@ A_1v_1 &amp;= A_2v_2.
 \[ \frac{dm}{dt} = \frac{d}{dt}\left(\rho Ax\right) = \rho A\frac{dx}{dt} = \rho Av, \]</div>
 <p>where <span class="math notranslate nohighlight">\(\rho\)</span> is the density, <span class="math notranslate nohighlight">\(A\)</span> is the cross-sectional area, and <span class="math notranslate nohighlight">\(v\)</span> is the speed (i.e., magnitude of velocity).  The mass flow rate can be used to solve problems using equation of continuity.  Consider the pipe (in Fig. <a class="reference internal" href="#narrow-tube-flow-fig"><span class="std std-numref">14.22</span></a>), where the inlet has a cross-sectional area <span class="math notranslate nohighlight">\(A_1\)</span> and the outlet constricts with an cross sectional area <span class="math notranslate nohighlight">\(A_2\)</span>.  From continuity, the total mass entering the pipe must be equal to the mass of fluid exiting the pipe.</p>
 <p>We can find a relationship between the velocity and the cross-sectional area by setting the inlet mass flow rate equal to the outlet mass flow rate:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-309261ee-561f-4eee-a264-80955b2efa16">
-<span class="eqno">(14.13)<a class="headerlink" href="#equation-309261ee-561f-4eee-a264-80955b2efa16" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-8f26739a-3651-47f0-99fc-fd5651793856">
+<span class="eqno">(14.13)<a class="headerlink" href="#equation-8f26739a-3651-47f0-99fc-fd5651793856" title="Permalink to this equation">#</a></span>\[\begin{align}
 \rho_1 A_1 v_1 &amp;= \rho_2 A_2 v_2.
 \end{align}\]</div>
 <p>This is also known as the general form of the <a class="reference external" href="https://en.wikipedia.org/wiki/Continuity_equation">continuity equation</a>.  If the density of the fluid remains constant through the constriction (i.e., the fluid is incompressible), then the density cancels from the continuity equation,</p>
@@ -1514,8 +1515,8 @@ P_1 - P_2 &amp;= \frac{1}{2}\rho\left(v_2^2 -v_1^2\right) + \rho g(h_2-h_1).
 <div class="note admonition">
 <p class="admonition-title">Bernoulli’s Equation</p>
 <p>For an ideal fluid moving steadily, the pressure and energy density is conserved along a flow line.  The conservation relation is given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6f3df5d6-b901-4736-8359-4d981b76fe8a">
-<span class="eqno">(14.14)<a class="headerlink" href="#equation-6f3df5d6-b901-4736-8359-4d981b76fe8a" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b22607a7-516c-4cf1-b50c-a07e35cfc57d">
+<span class="eqno">(14.14)<a class="headerlink" href="#equation-b22607a7-516c-4cf1-b50c-a07e35cfc57d" title="Permalink to this equation">#</a></span>\[\begin{align}
 P + \frac{1}{2}\rho v^2 + \rho gh = \text{constant},
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(P\)</span> is the pressure, <span class="math notranslate nohighlight">\(\rho\)</span> is the mass density, <span class="math notranslate nohighlight">\(v\)</span> is the speed of the fluid, and <span class="math notranslate nohighlight">\(h\)</span> is the height.</p>
@@ -1524,11 +1525,26 @@ P + \frac{1}{2}\rho v^2 + \rho gh = \text{constant},
 </section>
 <section id="analyzing-bernoulli-s-equation">
 <h3><span class="section-number">14.6.2. </span>Analyzing Bernoulli’s Equation<a class="headerlink" href="#analyzing-bernoulli-s-equation" title="Link to this heading">#</a></h3>
+<p>If we follow a small volume of fluid along its path, the sum of pressure and energy density remains the same even though various individual quantities may change.  Bernoulli’s equation is just a convenient statement of the conservation of energy for an <em>incompressible</em> fluid in the absence of friction.</p>
 <section id="bernoulli-s-equation-for-static-fluids">
 <h4><span class="section-number">14.6.2.1. </span>Bernoulli’s equation for <em>static</em> fluids<a class="headerlink" href="#bernoulli-s-equation-for-static-fluids" title="Link to this heading">#</a></h4>
+<p>Consider the simple solution where the fluid is static (i.e., <span class="math notranslate nohighlight">\(v_1 = v_2 = 0\)</span>).  Bernoulli’s equation in that case is</p>
+<div class="math notranslate nohighlight">
+\[ P_1 + \rho gh_1 = P_2 + \rho gh_2. \]</div>
+<p>We can simplify the equation by measuring the relative height <span class="math notranslate nohighlight">\(h\)</span> as the difference between <span class="math notranslate nohighlight">\(h_2\)</span> and <span class="math notranslate nohighlight">\(h_1\)</span>, or <span class="math notranslate nohighlight">\(h = h_2 - h_1\)</span>.  In this case, we get</p>
+<div class="math notranslate nohighlight">
+\[ P_2 = P_1 + \rho gh. \]</div>
+<p>This equation tells us tha the pressure increases with depth for static fluids.  As we go from point <span class="math notranslate nohighlight">\(1\)</span> to point <span class="math notranslate nohighlight">\(2\)</span> in the fluid, the depth increases by <span class="math notranslate nohighlight">\(h\)</span> and the difference in pressure is equal to <span class="math notranslate nohighlight">\(\rho gh\)</span>.  Thus, Bernoulli’s equation confirms the fact that pressure change due to the weight of a fluid is <span class="math notranslate nohighlight">\(\rho gh\)</span>.</p>
 </section>
 <section id="bernoulli-s-principle">
 <h4><span class="section-number">14.6.2.2. </span>Bernoulli’s principle<a class="headerlink" href="#bernoulli-s-principle" title="Link to this heading">#</a></h4>
+<p>Suppose a fluid is <em>moving</em> but its depth is constant (i.e, <span class="math notranslate nohighlight">\(h_1 = h_2\)</span>).  Under this condition, Bernoulli’s equation becomes</p>
+<div class="math notranslate nohighlight">
+\[ P_1 + \frac{1}{2}\rho v_1^2 = P_2 + \frac{1}{2}\rho v_2^2. \]</div>
+<p>Situations in which fluid flows at a constant depth are so common that this equation is often called <strong>Bernoulli’s principle</strong>, which is simply Bernoulli’s equation for a constant depth.  Bernoulli’s principle reinforces that pressure drops as the speed increases in a moving fluid:  If <span class="math notranslate nohighlight">\(v_2&gt;v_1\)</span> in the equation, then <span class="math notranslate nohighlight">\(P_2\)</span> must be less than <span class="math notranslate nohighlight">\(P_1\)</span> for the equality to hold.  It is more easily seen by</p>
+<div class="math notranslate nohighlight">
+\[ P_1 - P_2 = \frac{1}{2}\rho (v_2^2 - v_1^2), \]</div>
+<p>because <span class="math notranslate nohighlight">\(v^2&gt;0\)</span> and <span class="math notranslate nohighlight">\(P_1 &gt; P_2\)</span> must be true for the left-side to be positive.</p>
 </section>
 <section id="example-problem-calculating-pressure">
 <h4><span class="section-number">14.6.2.3. </span><strong>Example Problem</strong>: Calculating Pressure<a class="headerlink" href="#example-problem-calculating-pressure" title="Link to this heading">#</a></h4>
@@ -1538,9 +1554,37 @@ P + \frac{1}{2}\rho v^2 + \rho gh = \text{constant},
 <h3><span class="section-number">14.6.3. </span>Applications of Bernoulli’s Principle<a class="headerlink" href="#applications-of-bernoulli-s-principle" title="Link to this heading">#</a></h3>
 <section id="entrainment">
 <h4><span class="section-number">14.6.3.1. </span>Entrainment<a class="headerlink" href="#entrainment" title="Link to this heading">#</a></h4>
+<p>People have long put the Bernoulli principle to work by using the reduced pressure in high-velocity fluids to move things around.  With a higher pressure on the outside, the high-velocity fluid forces other fluids into the stream.  This process is called <a class="reference external" href="https://www.youtube.com/watch?v=EeAk3W27Kfo"><em>entrainment</em></a>.  Entrainment devices (see Figure <a class="reference internal" href="#entrainment-devices-fig"><span class="std std-numref">14.25</span></a>) have been in use as pumps to raise water to small heights, as needed for draining swamps, field, or other low-lying areas.</p>
+<figure class="align-default" id="entrainment-devices-fig">
+<img alt="examples of entrainment devices" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/1ba2a97926142e00d774c630bf57526073d2f634" />
+<figcaption>
+<p><span class="caption-number">Fig. 14.25 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#entrainment-devices-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 </section>
 <section id="velocity-measurement">
 <h4><span class="section-number">14.6.3.2. </span>Velocity measurement<a class="headerlink" href="#velocity-measurement" title="Link to this heading">#</a></h4>
+<p>The fluid velocity can be measured with devices making use of Bernoulli’s principle (see Figure <a class="reference internal" href="#velocity-devices-fig"><span class="std std-numref">14.26</span></a>).  The manometer (in Fig. <a class="reference internal" href="#velocity-devices-fig"><span class="std std-numref">14.26</span></a>a) is connected to two tube that are small enough to not appreciably disturb the flow.  The tube facing the oncoming fluid creates a dead spot having zero velocity (<span class="math notranslate nohighlight">\(v_1=0\)</span>) in front of it, while fluid passing the other tube has a velocity <span class="math notranslate nohighlight">\(v_2\)</span>.</p>
+<figure class="align-default" id="velocity-devices-fig">
+<img alt="measurement of fluid speed using a Prandtl (pitot) tube" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/0df6619a653545e1cf95ea4b5db9735ff9ca174e" />
+<figcaption>
+<p><span class="caption-number">Fig. 14.26 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#velocity-devices-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>This means that Bernoulli’s principle can be simplified by</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+P_1 + \frac{1}{2}\rho v_1^2 &amp;= P_2 + \frac{1}{2}\rho v_2^2, \\
+P_1 &amp;= P_2 + \frac{1}{2}\rho v_2^2, \\
+P_2 &amp;= P_1 - \frac{1}{2}\rho v_2^2.
+\end{align*}\]</div>
+<p>Thus, the pressure <span class="math notranslate nohighlight">\(P_2\)</span> over the second opening is reduced by <span class="math notranslate nohighlight">\(\frac{1}{2}\rho v_2^2\)</span>, so the fluid in the manometer rises by <span class="math notranslate nohighlight">\(h\)</span> on the side connected to the second opening, where</p>
+<div class="math notranslate nohighlight">
+\[ h \propto \frac{1}{2}\rho v_2^2. \]</div>
+<p>Solving for <span class="math notranslate nohighlight">\(v_2\)</span>, we see that</p>
+<div class="math notranslate nohighlight">
+\[ v_2 \propto \sqrt{h}. \]</div>
+<p>Fig. <a class="reference internal" href="#velocity-devices-fig"><span class="std std-numref">14.26</span></a>b shows a version of this device that is in common use for measuring various fluid velocities, where such devices are frequently used as air-speed indicators in aircraft.</p>
 </section>
 <section id="example-problem-a-fire-hose-nozzle">
 <h4><span class="section-number">14.6.3.3. </span><strong>Example Problem</strong>: A Fire Hose Nozzle<a class="headerlink" href="#example-problem-a-fire-hose-nozzle" title="Link to this heading">#</a></h4>
@@ -1549,17 +1593,266 @@ P + \frac{1}{2}\rho v^2 + \rho gh = \text{constant},
 </section>
 <section id="viscosity-and-turbulence">
 <h2><span class="section-number">14.7. </span>Viscosity and Turbulence<a class="headerlink" href="#viscosity-and-turbulence" title="Link to this heading">#</a></h2>
+<p>Recall (from <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter06/application-of-newtons-laws.html#friction">Chapter 6</a>) that an object sliding across the floor with an initial velocity and no applied force will come to rest due to the frictional force.  Friction depends on the types of materials in contact and is proportional to the normal force.</p>
+<p>At low speeds, the drag is proportional to the velocity, whereas at high speeds, drag is proportional to the velocity squared.  There are also forces of friction that act on fluids in motion.  For example, a fluid flowing through a pipe is subject to resistance between the fluid and the walls.  Friction also occurs between the different layers of fluid.  The resistive forces (with the pipe walls and the layers of the fluid) affect the way the fluid flows through the pipe.</p>
 <section id="viscosity-and-laminar-flow">
 <h3><span class="section-number">14.7.1. </span>Viscosity and Laminar Flow<a class="headerlink" href="#viscosity-and-laminar-flow" title="Link to this heading">#</a></h3>
+<p>When you pour yourself a glass of juice, the liquid flows freely and quickly.  But if you pour syrups or honey, the liquid flows and sticks to the container.  The difference is fluid friction, both within the fluid itself and between the fluid and its surroundings.  We call this property of fluids <em>viscosity</em>.  Water has a very low viscosity, while honey (or molasses) has a much higher viscosity.</p>
+<p>The precise definition of viscosity is based on laminar (i.e., nonturbulent) flow.  Figure <a class="reference internal" href="#laminar-turbulent-fig"><span class="std std-numref">14.27</span></a> shows schematically how laminar and turbulent flow differ.  When flow is laminary, <em>layers</em> flow without mixing.  On the other hand, turbulent flow has the layers mixing and significant velocities occur in directions other than the overall direction of flow.</p>
+<figure class="align-default" id="laminar-turbulent-fig">
+<img alt="laminar vs turbulent flow" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/3ca554f2750942908ec411c5f0769e9c89d50fb8" />
+<figcaption>
+<p><span class="caption-number">Fig. 14.27 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#laminar-turbulent-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p><strong>Turbulence</strong> is a fluid flow in which layers mix together via eddies and swirls.  It has two main causes:</p>
+<ol class="arabic simple">
+<li><p>Any obstruction or sharp corner (e.g., a faucet) creates turbulent by imparting velocities perpendicular to the flow.</p></li>
+<li><p>The drag between adjacent layers of fluid and between the fluid and its surroundings can form swirls and eddies when the speed is great enough.</p></li>
+</ol>
+<p>Figure <a class="reference internal" href="#viscosity-measure-fig"><span class="std std-numref">14.28</span></a> shows how viscosity is measured for a fluid, where the to be measured is placed between two plates.  The bottom plate is held fixed, while the top plate is moved to the right and drags the fluid with it.  The layer (or laminar) of fluid in contact with either plate does not move relative to the plate, so the layer moves at a speed <span class="math notranslate nohighlight">\(v\)</span> while the bottom layer remains at rest.  Each successive layer from the top down</p>
+<ul class="simple">
+<li><p>exerts a force on the one below it,</p></li>
+<li><p>tries to drag the next layer along, and</p></li>
+<li><p>produce variation in speed from <span class="math notranslate nohighlight">\(v\)</span> to <span class="math notranslate nohighlight">\(0\)</span>.</p></li>
+</ul>
+<figure class="align-default" id="viscosity-measure-fig" style="width: 500px">
+<img alt="measurement of viscosity" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/68914b30783b6950085cbbd7778becc71b67827d" />
+<figcaption>
+<p><span class="caption-number">Fig. 14.28 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#viscosity-measure-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>In this approximation, the flow is laminar where the layers don’t mix.  The motion in Figure <a class="reference internal" href="#viscosity-measure-fig"><span class="std std-numref">14.28</span></a> is like a continuous shearing motion.  Fluids have zero shear strength, but the rate at which they are sheared is related to the same geometrical factors <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(L\)</span> as is the shear deformation for solids.  The fluid is initially at rest in Figure <a class="reference internal" href="#viscosity-measure-fig"><span class="std std-numref">14.28</span></a>.</p>
+<p>The layer of fluid in contact with the moving plate is accelerated and starts to move du to the internal friction between the moving plate and the fluid.  The next layer is in contact with the moving layer and it accelerates because there is internal friction between the two layers.  There is also internal friction between the stationary plate and the lowest layer of fluid, next to the station plate.</p>
+<p>A force <span class="math notranslate nohighlight">\(F\)</span> is required to keep the top plate in Fig. <a class="reference internal" href="#viscosity-measure-fig"><span class="std std-numref">14.28</span></a> moving at a constant velocity <span class="math notranslate nohighlight">\(v\)</span>, and experiments show that this force <span class="math notranslate nohighlight">\(F\)</span> depends on four factors.  The force <span class="math notranslate nohighlight">\(F\)</span> is</p>
+<ol class="arabic simple">
+<li><p>directly proportional to <span class="math notranslate nohighlight">\(v\)</span> (at least for laminar flows).  A more complicated relation is needed for turbulent flows.</p></li>
+<li><p>proportional to the area <span class="math notranslate nohighlight">\(A\)</span> of the plate.  This seems reasonable because <span class="math notranslate nohighlight">\(A\)</span> is directly proportional to the amount of fluid being moved.</p></li>
+<li><p>inversely proportional to the distance between the planets <span class="math notranslate nohighlight">\(L\)</span>.  This is reasonable because <span class="math notranslate nohighlight">\(L\)</span> is like a lever arm, where the greater the lever arm, the less the force that is needed.</p></li>
+<li><p>directly proportional to the <em>coefficient of viscosity</em> <span class="math notranslate nohighlight">\(\eta\)</span>.  The greater the viscosity, the greater the force required.</p></li>
+</ol>
+<p>These dependencies are combined into the equation</p>
+<div class="math notranslate nohighlight">
+\[ F = \eta \frac{vA}{L}. \]</div>
+<p>The is equation gives us a working definition of fluid viscosity <span class="math notranslate nohighlight">\(\eta.  Solving for \)</span>\eta$ gives</p>
+<div class="amsmath math notranslate nohighlight" id="equation-c368c048-e4eb-4c41-92f8-77cd3dce80ce">
+<span class="eqno">(14.15)<a class="headerlink" href="#equation-c368c048-e4eb-4c41-92f8-77cd3dce80ce" title="Permalink to this equation">#</a></span>\[\begin{align}
+\eta = \frac{FL}{vA}.
+\end{align}\]</div>
+<p>The SI unit of viscosity is <span class="math notranslate nohighlight">\(\rm N\cdot/\left[(m/s) m^2\right] = \left( N/m^2\right)\ s\)</span> or <span class="math notranslate nohighlight">\(\rm Pa\cdot s\)</span>. Table <a class="reference internal" href="#viscosity-coefficients"><span class="std std-numref">14.4</span></a> lists the coefficients of viscosity for various fluids.  Viscosity varies from one fluid to another by several orders of magnitude.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="viscosity-coefficients">
+<caption><span class="caption-number">Table 14.4 </span><span class="caption-text">Coefficients of Viscosity of Various Fluids</span><a class="headerlink" href="#viscosity-coefficients" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 40.0%" />
+<col style="width: 20.0%" />
+<col style="width: 40.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Fluid</p></th>
+<th class="head"><p>Temperature (<span class="math notranslate nohighlight">\(^\circ{\rm C}\)</span>)</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\eta\ (10^{-3}\ {\rm Pa\cdot s})\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Air</p></td>
+<td><p>0</p></td>
+<td><p>0.0171</p></td>
+</tr>
+<tr class="row-odd"><td><p>Air</p></td>
+<td><p>20</p></td>
+<td><p>0.0181</p></td>
+</tr>
+<tr class="row-even"><td><p>Air</p></td>
+<td><p>40</p></td>
+<td><p>0.0190</p></td>
+</tr>
+<tr class="row-odd"><td><p>Air</p></td>
+<td><p>100</p></td>
+<td><p>0.0218</p></td>
+</tr>
+<tr class="row-even"><td><p>Ammonia</p></td>
+<td><p>20</p></td>
+<td><p>0.00974</p></td>
+</tr>
+<tr class="row-odd"><td><p>Carbon dioxide</p></td>
+<td><p>20</p></td>
+<td><p>0.0147</p></td>
+</tr>
+<tr class="row-even"><td><p>Helium</p></td>
+<td><p>20</p></td>
+<td><p>0.0196</p></td>
+</tr>
+<tr class="row-odd"><td><p>Hydrogen</p></td>
+<td><p>0</p></td>
+<td><p>0.0090</p></td>
+</tr>
+<tr class="row-even"><td><p>Mercury</p></td>
+<td><p>20</p></td>
+<td><p>0.0450</p></td>
+</tr>
+<tr class="row-odd"><td><p>Oxygen</p></td>
+<td><p>20</p></td>
+<td><p>0.0203</p></td>
+</tr>
+<tr class="row-even"><td><p>Steam</p></td>
+<td><p>100</p></td>
+<td><p>0.0130</p></td>
+</tr>
+<tr class="row-odd"><td><p>Liquid water</p></td>
+<td><p>0</p></td>
+<td><p>1.792</p></td>
+</tr>
+<tr class="row-even"><td><p>Liquid water</p></td>
+<td><p>20</p></td>
+<td><p>1.002</p></td>
+</tr>
+<tr class="row-odd"><td><p>Liquid water</p></td>
+<td><p>37</p></td>
+<td><p>0.6947</p></td>
+</tr>
+<tr class="row-even"><td><p>Liquid water</p></td>
+<td><p>40</p></td>
+<td><p>0.653</p></td>
+</tr>
+<tr class="row-odd"><td><p>Liquid water</p></td>
+<td><p>100</p></td>
+<td><p>0.282</p></td>
+</tr>
+<tr class="row-even"><td><p>Whole blood</p></td>
+<td><p>20</p></td>
+<td><p>3.015</p></td>
+</tr>
+<tr class="row-odd"><td><p>Whole blood</p></td>
+<td><p>37</p></td>
+<td><p>2.084</p></td>
+</tr>
+<tr class="row-even"><td><p>Blood plasma</p></td>
+<td><p>20</p></td>
+<td><p>1.810</p></td>
+</tr>
+<tr class="row-odd"><td><p>Blood plasma</p></td>
+<td><p>37</p></td>
+<td><p>1.257</p></td>
+</tr>
+<tr class="row-even"><td><p>Ethyl alcohol</p></td>
+<td><p>20</p></td>
+<td><p>1.20</p></td>
+</tr>
+<tr class="row-odd"><td><p>Methanol</p></td>
+<td><p>20</p></td>
+<td><p>0.584</p></td>
+</tr>
+<tr class="row-even"><td><p>Oil (heavy machine)</p></td>
+<td><p>20</p></td>
+<td><p>660</p></td>
+</tr>
+<tr class="row-odd"><td><p>Oil (motor, SAE 10)</p></td>
+<td><p>30</p></td>
+<td><p>200</p></td>
+</tr>
+<tr class="row-even"><td><p>Oil (olive)</p></td>
+<td><p>20</p></td>
+<td><p>138</p></td>
+</tr>
+<tr class="row-odd"><td><p>Glycerin</p></td>
+<td><p>20</p></td>
+<td><p>1500</p></td>
+</tr>
+<tr class="row-even"><td><p>Honey</p></td>
+<td><p>20</p></td>
+<td><p>2000–10000</p></td>
+</tr>
+<tr class="row-odd"><td><p>Maple syrup</p></td>
+<td><p>20</p></td>
+<td><p>2000–3000</p></td>
+</tr>
+<tr class="row-even"><td><p>Milk</p></td>
+<td><p>20</p></td>
+<td><p>3.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>Oil (corn)</p></td>
+<td><p>20</p></td>
+<td><p>65</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 <section id="laminar-flow-confined-to-tubes-poiseuille-s-law">
 <h3><span class="section-number">14.7.2. </span>Laminar Flow Confined to Tubes: Poiseuille’s Law<a class="headerlink" href="#laminar-flow-confined-to-tubes-poiseuille-s-law" title="Link to this heading">#</a></h3>
+<p><em>What causes flow?</em></p>
+<p>It is a pressure difference. There is a very simple relationship between horizontal flow and pressure.  Flow rate <span class="math notranslate nohighlight">\(Q\)</span> is in the direction from high to low pressure.  The greater the pressure differential between two points, the greater the flow rate.  This relationship can be stated as</p>
+<div class="math notranslate nohighlight" id="equation-flow-rate-eqn">
+<span class="eqno">(14.16)<a class="headerlink" href="#equation-flow-rate-eqn" title="Link to this equation">#</a></span>\[Q = \frac{P_2 - P_1}{R},\]</div>
+<p>where <span class="math notranslate nohighlight">\(P_1\)</span> and <span class="math notranslate nohighlight">\(P_2\)</span> are the pressures a the two points and <span class="math notranslate nohighlight">\(R\)</span> is the resistance to flow.  The resistance <span class="math notranslate nohighlight">\(R\)</span> includes everything, except pressure, that affects flow rate.  For example <span class="math notranslate nohighlight">\(R\)</span> is greater for a long tube than for a short one.  The greater the viscosity of a fluid, the greater the value of <span class="math notranslate nohighlight">\(R\)</span>.  Turbulence greatly increases <span class="math notranslate nohighlight">\(R\)</span>, whereas increasing the diameter of a tube decreases <span class="math notranslate nohighlight">\(R\)</span>.</p>
+<p>If viscosity is zero, the fluid is frictionless and the resistance to flow is also zero.  Comparing frictionless flow in a tube to viscous flow (see Fig. <a class="reference internal" href="#fluid-flow-examples"><span class="std std-numref">14.29</span></a>), we see that for a viscous fluid, speed is greatest at midstream because of drag at the boundaries.  We can see the effect of viscosity in a Bunsen burner flame, even though viscosity of natural gas is small.</p>
+<figure class="align-default" id="fluid-flow-examples">
+<img alt="Examples of fluid flow" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/20d39e7f2a3bf8ef3f9c0fe64c3def622d7b6ee2" />
+<figcaption>
+<p><span class="caption-number">Fig. 14.29 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#fluid-flow-examples" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The resistance <span class="math notranslate nohighlight">\(R\)</span> to laminar flow of an incompressible fluid with viscosity <span class="math notranslate nohighlight">\(\eta\)</span> through a horizontal tube of uniform radius <span class="math notranslate nohighlight">\(r\)</span> and length <span class="math notranslate nohighlight">\(l\)</span> is given by</p>
+<div class="amsmath math notranslate nohighlight" id="equation-0b493a44-62b3-4faf-b73e-ef3042700a08">
+<span class="eqno">(14.17)<a class="headerlink" href="#equation-0b493a44-62b3-4faf-b73e-ef3042700a08" title="Permalink to this equation">#</a></span>\[\begin{align}
+R = \frac{8\eta l}{\pi r^4}.
+\end{align}\]</div>
+<p>This equation is called <a class="reference external" href="https://en.wikipedia.org/wiki/Hagen%E2%80%93Poiseuille_equation"><strong>Poiseuille’s law for resistance</strong></a>, named after J. L Poiseuille who derived it in an attempt to understand the flow of blood through the body.</p>
+<p>In the expression for <span class="math notranslate nohighlight">\(R\)</span>, we see that resistance is directly proportional to both the fluid viscosity <span class="math notranslate nohighlight">\(\eta\)</span> and the length <span class="math notranslate nohighlight">\(l\)</span> of a tube.  Both of these directly affect the amount of friction encountered, where the greater the resistance, the smaller the flow.  The radius <span class="math notranslate nohighlight">\(r\)</span> of a tube also affects the resistance, which makes sense because a larger radius allows for a greater flow (all other factors remaining the same).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In Poiseuille’s law, <span class="math notranslate nohighlight">\(r\)</span> is raised to the <strong>fourth</strong> power.  This exponent means that any change in the radius of a tube has a very large effect on resistance.  For example, doubling the radius of a tube decreases resistance by a factor of <span class="math notranslate nohighlight">\(2^4 = 16\)</span>.</p>
+</div>
+<p>Taking the flow rate <span class="math notranslate nohighlight">\(Q\)</span> and the resistance <span class="math notranslate nohighlight">\(R\)</span> together, we find the following expression for the flow rate:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-b1b17e48-13fc-485b-9c7d-1e37455f10fb">
+<span class="eqno">(14.18)<a class="headerlink" href="#equation-b1b17e48-13fc-485b-9c7d-1e37455f10fb" title="Permalink to this equation">#</a></span>\[\begin{align}
+Q = \frac{(P_2 - P_1)\pi r^4}{8\eta l}.
+\end{align}\]</div>
+<p>Figure <a class="reference internal" href="#poiseuille-law-fig"><span class="std std-numref">14.30</span></a> illustrates Poiseuille’s law for a tube of length $l.  Notice that the flow rate is highest at the center of the tube.</p>
+<figure class="align-default" id="poiseuille-law-fig">
+<img alt="Poiseuille's law diagram" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/9f7c1666768bcf0316fd91d04d946b89a1d6b131" />
+<figcaption>
+<p><span class="caption-number">Fig. 14.30 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#poiseuille-law-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 </section>
 <section id="flow-and-resistance-as-causes-of-pressure-drops">
 <h3><span class="section-number">14.7.3. </span>Flow and Resistance as Causes of Pressure Drops<a class="headerlink" href="#flow-and-resistance-as-causes-of-pressure-drops" title="Link to this heading">#</a></h3>
+<p>Water Pressure in homes is sometimes lower than normal during times of heavy use (e.g., hot summer days).  The drop in pressure occurs in the water main before it reaches individual homes (see Figure <a class="reference internal" href="#water-main-fig"><span class="std std-numref">14.31</span></a>).</p>
+<figure class="align-default" id="water-main-fig">
+<img alt="Distribution of water from the water main" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/1fdfa6cf138838596e1422dade8785377ce291bc" />
+<figcaption>
+<p><span class="caption-number">Fig. 14.31 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#water-main-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>We can understand why the pressure <span class="math notranslate nohighlight">\(P_1\)</span> to the home drops during times of heavy use by rearranging Eqn. <a class="reference internal" href="#equation-flow-rate-eqn">(14.16)</a>:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+Q &amp;= \frac{P_2 - {P_1}}{R}, \\
+P_2 - P_1 = RQ.
+\end{align*}\]</div>
+<p>In this case, <span class="math notranslate nohighlight">\(P_2\)</span> is the pressure at the water works and <span class="math notranslate nohighlight">\(R\)</span> is the resistance of the water main.  During times of heavy use, the flow rate <span class="math notranslate nohighlight">\(Q\)</span> is large.  This means that <span class="math notranslate nohighlight">\(P_2-P_1\)</span> must also be large (i.e., <span class="math notranslate nohighlight">\(P_2 \gg P_1\)</span>).  Therefore, <span class="math notranslate nohighlight">\(P_1\)</span> must decrease assuming that <span class="math notranslate nohighlight">\(P_2\)</span> stays the same.  It is correct to think of flow and resistance as causing the pressure to drop from <span class="math notranslate nohighlight">\(P_2\)</span> to <span class="math notranslate nohighlight">\(P_1\)</span>.  <em>The equation <span class="math notranslate nohighlight">\(P_2-P_1 = RQ\)</span> is valid for both laminar and turbulent flows.</em></p>
+<p>We can also ues this relation to analyze pressure drops occurring in more complex systems in which the tube radius is not the same everywhere.  Resistance is much greater in narrow places (e.g. an obstructed coronary artery).  For a given flow rate <span class="math notranslate nohighlight">\(Q\)</span>, the pressure drop is greatest where the tube is most narrow.  This is how water faucets control flow.</p>
+<p>Additionally, <span class="math notranslate nohighlight">\(R\)</span> is greatly increased by turbulence, and a constriction that creates turbulence greatly reduces the pressure downstream.  Plaque in an artery reduces pressure and hence flow, both by its resistance and by the turbulence it creates.</p>
 </section>
 <section id="measuring-turbulence">
 <h3><span class="section-number">14.7.4. </span>Measuring Turbulence<a class="headerlink" href="#measuring-turbulence" title="Link to this heading">#</a></h3>
+<p>An indicator called the <a class="reference external" href="https://en.wikipedia.org/wiki/Reynolds_number"><strong>Reynolds number</strong></a> <span class="math notranslate nohighlight">\(N_R\)</span> can reveal whether flow is laminar or turbulent.  For flow in a tube of uniform diameter, the Reynolds number is defined as</p>
+<div class="amsmath math notranslate nohighlight" id="equation-1e1abbc7-c019-4d0e-af3e-2ecc3c110013">
+<span class="eqno">(14.19)<a class="headerlink" href="#equation-1e1abbc7-c019-4d0e-af3e-2ecc3c110013" title="Permalink to this equation">#</a></span>\[\begin{align}
+N_R = \frac{2}{\eta} \rho v r, \quad \text{(flow in tube)}
+\end{align}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\rho\)</span> is the fluid density, <span class="math notranslate nohighlight">\(v\)</span> its speed, <span class="math notranslate nohighlight">\(\eta\)</span> its viscosity, and <span class="math notranslate nohighlight">\(r\)</span> the tube radius.  The Reynolds number is a <em>dimensionless</em> quantity. Experiments have revealed that <span class="math notranslate nohighlight">\(N_R\)</span> is related to the onset of turbulence.</p>
+<ul class="simple">
+<li><p>For <span class="math notranslate nohighlight">\(N_R\)</span> below about <span class="math notranslate nohighlight">\(2000\)</span>, the flow is laminar.</p></li>
+<li><p>For <span class="math notranslate nohighlight">\(N_R\)</span> above $3000#, the flow is turbulent.</p></li>
+</ul>
+<p>For <span class="math notranslate nohighlight">\(2000 &lt; N_R &lt; 3000\)</span>, the flow is unstable.  It can be laminar, but small obstructions and surface roughness can make it turbulent.  It may also oscillate randomly between being laminar and turbulent.  In fact, the flow of a fluid with a Reynolds number between $2000-3000# is a good example of chaotic behavior.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>A system is defined to be chaotic when its behavior is so sensitive to the choice of the initial state, it is extremely difficult to predict precisely any future state.</p>
+</div>
+<p>It is difficult (but not impossible) to predict whether the flow is turbulent or not when a fluid’s Reynold’s number falls in this range due to extremely sensitive dependence on factors like roughness and obstructions on the nature of the flow.  A tiny variation in one factor has an exaggerated (or nonlinear) effect on the flow.</p>
 </section>
 <section id="example-problem-air-conditioning-systems">
 <h3><span class="section-number">14.7.5. </span><strong>Example Problem</strong>: Air Conditioning Systems<a class="headerlink" href="#example-problem-air-conditioning-systems" title="Link to this heading">#</a></h3>
@@ -1584,18 +1877,17 @@ P + \frac{1}{2}\rho v^2 + \rho gh = \text{constant},
 <p class="admonition-title">Problem 3</p>
 <p>The greatest ocean depths on Earth are found in the Marianas Trench near the Philippines. Calculate the pressure due to the ocean at the bottom of this trench, given its depth is <span class="math notranslate nohighlight">\(11.0\ {\rm km}\)</span> and assuming the density of seawater is constant all the way down.</p>
 </div>
-<div class="admonition-problem-4 admonition">
-<p class="admonition-title">Problem 4</p>
-<p>What fraction of ice is submerged when it floats in freshwater, given the density of water at <span class="math notranslate nohighlight">\(0^\circ{\rm C}\)</span> is very close to <span class="math notranslate nohighlight">\(1000\ {\rm kg/m^3}\)</span>?</p>
-</div>
 </section>
 <section id="part-ii">
 <h3><span class="section-number">14.8.2. </span>Part II<a class="headerlink" href="#part-ii" title="Link to this heading">#</a></h3>
+<div class="admonition-problem-4 admonition">
+<p class="admonition-title">Problem 4</p>
+<p>A host pours the remnants of several bottles of wine into a jug after a party. The host then inserts a cork with a <span class="math notranslate nohighlight">\(2.00\ {\rm cm}\)</span> diameter into the bottle, placing it in direct contact with the wine. The host is amazed when the host pounds the cork into place and the bottom of the jug (with a <span class="math notranslate nohighlight">\(14.0\ {\rm cm}\)</span> diameter) breaks away.</p>
+<p>Calculate the extra force exerted against the bottom if the cork is pounded with a <span class="math notranslate nohighlight">\(120\ {\rm N}\)</span> force.</p>
+</div>
 <div class="admonition-problem-5 admonition">
 <p class="admonition-title">Problem 5</p>
-<p>Water is moving at a velocity of <span class="math notranslate nohighlight">\(2.00\ {\rm m/s}\)</span> through a hose with an internal diameter of <span class="math notranslate nohighlight">\(1.60\ {\rm cm}\)</span>.</p>
-<p>(a) What is the flow rate in liters per second?<br />
-(b) The fluid velocity in this hose’s nozzle is <span class="math notranslate nohighlight">\(15.0\ {\rm m/s}\)</span>. What is the nozzle’s inside diameter?</p>
+<p>What fraction of ice is submerged when it floats in freshwater, given the density of water at <span class="math notranslate nohighlight">\(0^\circ{\rm C}\)</span> is very close to <span class="math notranslate nohighlight">\(1000\ {\rm kg/m^3}\)</span>?</p>
 </div>
 <div class="admonition-problem-6 admonition">
 <p class="admonition-title">Problem 6</p>
@@ -1603,15 +1895,24 @@ P + \frac{1}{2}\rho v^2 + \rho gh = \text{constant},
 <p>(a) What is the average speed of the river in the gorge?<br />
 (b) What is the average speed of the water in the river downstream of the falls when it widens to <span class="math notranslate nohighlight">\(60\ {\rm m}\)</span> and its depth increases to an average of <span class="math notranslate nohighlight">\(40\ {\rm m}\)</span>?</p>
 </div>
+</section>
+<section id="part-iii">
+<h3><span class="section-number">14.8.3. </span>Part III<a class="headerlink" href="#part-iii" title="Link to this heading">#</a></h3>
 <div class="admonition-problem-7 admonition">
 <p class="admonition-title">Problem 7</p>
+<p>Water is moving at a velocity of <span class="math notranslate nohighlight">\(2.00\ {\rm m/s}\)</span> through a hose with an internal diameter of <span class="math notranslate nohighlight">\(1.60\ {\rm cm}\)</span>.</p>
+<p>(a) What is the flow rate in liters per second?<br />
+(b) The fluid velocity in this hose’s nozzle is <span class="math notranslate nohighlight">\(15.0\ {\rm m/s}\)</span>. What is the nozzle’s inside diameter?</p>
+</div>
+<div class="admonition-problem-8 admonition">
+<p class="admonition-title">Problem 8</p>
 <p>A sump pump (used to drain water from the basement of houses built below the water table) is draining a flooded basement at the rate of <span class="math notranslate nohighlight">\(0.750\ {\rm L/s}\)</span>, with an output pressure of <span class="math notranslate nohighlight">\(3.00\times10^{5}\ {\rm N/m^2}\)</span>.</p>
 <p>(a) The water enters a hose with a <span class="math notranslate nohighlight">\(3.00\ {\rm cm}\)</span> inside diameter and rises <span class="math notranslate nohighlight">\(2.50\ {\rm m}\)</span> above the pump. What is its pressure at this point?<br />
 (b) The hose goes over the foundation wall, losing <span class="math notranslate nohighlight">\(0.500\ {\rm m}\)</span> in height, and widens to <span class="math notranslate nohighlight">\(4.00\ {\rm cm}\)</span> in diameter. What is the pressure now? You may neglect frictional losses in both parts of the problem.</p>
 </div>
-<div class="admonition-problem-8 admonition">
-<p class="admonition-title">Problem 8</p>
-<p>A skydiver will reach a terminal velocity when the air drag equals their weight. For a skydiver with a large body, turbulence is a factor at high speeds. The drag force is then approximately proportional to the square of the velocity. Taking the drag force to be <span class="math notranslate nohighlight">\(F_D = \frac{1}{2}\rho A v^2\)</span>, and setting this equal to the skydiver’s weight, find the terminal speed for a person falling “spread eagle.”</p>
+<div class="admonition-problem-9 admonition">
+<p class="admonition-title">Problem 9</p>
+<p>Calculate the Reynolds numbers for the flow of water through (a) a nozzle with a radius of <span class="math notranslate nohighlight">\(0.250\ {\rm cm}\)</span> and (b) a garden hose with a radius of <span class="math notranslate nohighlight">\(0.900\ {\rm cm}\)</span>, when the nozzle is attached to the hose. The flow rate through hose and nozzle is <span class="math notranslate nohighlight">\(0.500\ {\rm L/s}\)</span>. Can the flow in either possibly be laminar?</p>
 </div>
 </section>
 </section>
@@ -1788,6 +2089,7 @@ P + \frac{1}{2}\rho v^2 + \rho gh = \text{constant},
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-class-problems">14.8. In-Class Problems</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-i">14.8.1. Part I</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-ii">14.8.2. Part II</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-iii">14.8.3. Part III</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homework">14.9. Homework</a><ul class="nav section-nav flex-column">

@@ -41,6 +41,7 @@ parts:
   - file: Chapter12/static-equilibrium-elasticity.ipynb
   - file: Chapter13/gravitation.ipynb
   - file: Chapter14/fluids.ipynb
+  - file: Martian/movie-review.ipynb
 
 
 
