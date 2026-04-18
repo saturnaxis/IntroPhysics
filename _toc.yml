@@ -41,7 +41,17 @@ parts:
   - file: Chapter12/static-equilibrium-elasticity.ipynb
   - file: Chapter13/gravitation.ipynb
   - file: Chapter14/fluids.ipynb
-  - file: Martian/movie-review.ipynb
+- caption: Movie Review
+  numbered: false
+  maxdepth: 3 
+  chapters:
+  - file: Movie_review/martian.ipynb
+  - file: Movie_review/apollo13.ipynb
+  - file: Movie_review/october_sky.ipynb
+  - file: Movie_review/speed.ipynb
+  - file: Movie_review/ford_ferrari.ipynb
+  - file: Movie_review/italian_job.ipynb
+  - file: Movie_review/right_stuff.ipynb
 
 
 
