@@ -1,0 +1,186 @@
+Fluid Mechanics.
+
+Fluids, Density, and Pressure.
+
+Characteristics of Solids and Fluids.
+
+**Solids** are rigid, have specific shapes, and occupy definite volumes. The atoms (or molecules) in a solid are in close proximity to each other, where there is a significant force between the molecules. Solids will take a form that is determined by the forces between the molecules. True solids are compressible, where it usually takes a large force to change the shape of a solid.
+
+Bullet point. The force between the molecules can allow them to organize into a lattice. 
+
+Bullet point. The structure of the 3D lattice is represented as molecules connected by rigid bonds (modeled as stiff springs), which allow *limited freedom of movement.* 
+
+Bullet point. Even a large force produces only small displacements in the atoms (or molecules) of the lattice, and the solid maintains its shape. Solids also resist shearing forces (see Section 12.3).
+
+Liquids and gases are both described as **fluids** of varying viscosity because they yield to shearing forces, whereas solids resist them. Like solids, the molecules in a liquid are bonded to neighboring molecules, but there are fewer (and weaker) bonds. 
+
+Bullet point. The molecules in a liquid are not locked in place and *can move with respect to each other.*
+
+Bullet point. The distance between molecules is similar to the distances in a solid. Liquids have definite volumes, but the shape of a liquid can change depending on the shape of its container.
+
+Bullet point. Gases are **not** bonded to neighboring atoms and *can have large separations* between molecules.
+
+Bullet point. Gases have neither specific shapes nor definite volumes, where their molecules move to fill the container.
+
+Liquids deform easily when stressed and do **not** spring back to their original shape once a force is removed. This occurs because the atoms (or molecules) are free to slide about and change neighbors. Liquids flow with the molecules held together by looser mutual attraction. When a liquid is placed in a container, it remains in the container (given the appropriate temperature and atmospheric pressure). Because the atoms are closely packed liquids resist compression, where an extremely large force is necessary to change the volume of a liquid.
+
+Atoms in gases are separated by large distances and the forces between atoms in a gas are very weak, except when the atoms collide with one another. This makes gases relatively easy to compress and allows them to flow like a fluid. When placed in an open container, gases will escape.
+
+Given the right conditions gases and fluids behave in similar ways, where it is common to drop the distinction and consider them both as fluids. There exists another phase of matter called a **plasma**, which exists at high temperatures, which is characterized by being composed of ions rather than neutral atoms. Plasma has different properties, which requires a detailed description of electrical charges and forces.
+
+Density.
+
+Suppose a block of brass and a block of wood have exactly the same mass. If both blocks are dropped in a tank of water, *why does the wood float* and the brass sink? This occurs because the brass has a greater density than water.
+
+**Density** is an important characteristic of substances because it is crucial in determining whether an object sinks or floats in a fluid.
+
+Density.
+
+ 
+
+The average density of a substance or object is defined as its mass per unit volume,
+
+ 
+ rho equals m over V,
+ 
+
+where rho (` rho `) is the symbol for density, m is the mass, and V is the volume.
+ 
+
+The SI unit for density is kilograms per cubic meter, where. Many materials are more easily measured using lower masses and/or volume which makes the cgs units system useful. The cgs density is the gram per cubic centimeter or per milliliter milliliters, where
+
+ 1 gram per cubic centimeter equals 1 gram per milliliter equals 1000 kilograms per cubic meter. 
+
+The metric system was originally devised so that water would have a density of 1 gram per cubic centimeter, thus the basic mass unit (the kilogram) was first devised to be the mass of 1 liters equals 1000 milliliters volume of water.
+
+Table. Densities of some common substances. This table compares representative densities for solids, liquids, and gases.
+
+The density of an object may help its composition. The density of gold is { approximately }2.5 times the density of iron, which itself is about { approximately }2.5 times the density of aluminum. The densities of liquids and solids are roughly comparable, which is consistent with the expectation (and measurement) of the close proximity of their atoms. The densities of solids and liquids are given for the standard temperature of 0 degrees C, where they can vary depending on the temperature.
+
+The densities of gases are much less than those of liquids and solids because the atoms in gases are separated by large amounts of empty space. The gases (in ) are displayed for a standard temperature of 0 degrees C and pressure of 101.3 kilopascals, where there is a strong dependence on the temperature and pressure.
+
+Table. Densities of water. This table shows that water reaches its maximum density near four degrees Celsius.
+
+ Table 14.2 shows the density of water at several temperatures and phases. As the temperature decreases, the density of water increases and reaches a maximum at 4.0 degrees C. It then decreases as the temperature falls below 4.0 degrees C, where this behavior explains why ice forms at the *top* of body of water (i.e., ponds and lakes freeze from the top-down).
+
+A **homogenous** substance is described by a uniform density throughout its volume (e.g., a solid iron bar). The density of any sample of a homogenous substance is the same as the average density. In contrast, a **heterogeneous** substance does not have a constant density throughout the substance (e.g., a chunk of Swiss cheese with solids and voids). The density at a specific location within a heterogeneous material is called *local density*, and is given as a function of location, rho equals rho (x, y, z), as shown in Figure.
+
+Figure referenced in the course notes.
+
+Local density can be obtained by taking the limit where the size of the volume approaches zero,
+
+ 
+ rho equals the limit of sub change in V arrow 0 change in m over change in V,
+ 
+
+where rho is the density, m is the mass, and V is the volume.
+
+Since gases are free to expand and contract, the densities of the gases vary considerably with temperature. The densities of liquids are often treated as constant (i.e., equal to the average density).
+
+Density is a dimensional property, where it often convenient to normalize the density to make it dimensionless and is then called the **specific gravity**. Specific gravity is defined as the ratio of the density relative to water at 4.0 degrees C and one atmosphere of pressure (i.e., 101.3 kilopascals ), which is 1000 kilograms per cubic meter:
+
+ Specific gravity equals Density of material over Density of water equals Density of material over 1000 kilograms per cubic meter. 
+
+Specific gravity provides a ready comparison among materials without have to worry about the unit of density. For instance the density of aluminum is 2700 kilograms per cubic meter, but its specific gravity is 2.7. Specific gravity is particularly useful quantity with regard to buoyancy.
+
+Pressure.
+
+You are likely familiar with the different kinds of pressure, whether it is your blood pressure or in relation to the weather. But we provide a formal definition of pressure in terms of a force.
+
+Pressure.
+
+ 
+
+**{Pressure}** ( P ) is defined as the *normal* force perpendicular force per unit area A over which the force is applied, or
+
+ 
+P equals perpendicular force over A.
+ 
+
+To define the pressure at a specific point, the pressure is defined as the force dF exerted by a fluid over an infinitesimal element of area dA containing the point, resulting in p equals dF over dA. 
+ 
+
+A given force can have a significantly different effect depending on the area over which the force is exerted. For example, a given force F applied to over an area of 1 square millimeters is 100 times as great as the same force applied to an area of 1 square centimeters. That is why a sharp needle is able to poke through the skin with a small force, but the same force does not allow your finger to poke through the skin (see Figure ).
+
+Figure referenced in the course notes.
+
+Although force is a vector, *pressure is a scalar*. Pressure represents the normal component of the force per unit area. In general it is defined as
+
+ P equals d vector F over dA dot vector n, 
+
+where n hat is the unit vector normal to the surface. This dot product extracts the component of force perpendicular to the surface, which is why the pressure is a scalar quantity. The SI unit for pressure is the *pascal* ( pascals ), which was named after Blaise Pascal, where
+
+ 1 pascals equals 1 newtons per square meter. 
+
+Variation of pressure with depth in a fluid of *constant* density.
+
+Pressure is defined for all states of matter, but it is particularly important for fluids. An important characteristic of fluids is that there is no *significant resistance* to the parallel component of force applied parallel to the surface of a fluid. The molecules of the fluid simply flow to accommodate the horizontal force. A force applied perpendicular to the surface *compresses* or expands the fluid. If you try to compress a fluid, you find that a reaction force develops at each point inside fluid in the outward direction, which balances the force applied on the molecules at the boundary.
+
+Consider a fluid of constant density (see Figure ). The pressure at the bottom of the container is due to the pressure of the atmosphere P naught plus the pressure due to the weight of fluid divided by the area. The weight of the fluid at a given height depends on the mass of enclosed fluid times the acceleration due to gravity.
+
+Figure referenced in the course notes.
+
+Since the density is constant, the weight of the mass enclosed can be calculated using the density:
+
+ 
+ rho equals m over V therefore m equals rho V, 
+w equals mg equals rho V g, 
+ equals rho Ahg,
+ 
+
+where we have used the volume of a cylinder with the area A at the bottom of the container and h is the height of the cylinder. The pressure at the bottom of the container is related to the atmospheric pressure P naught by
+
+ 
+ 
+
+P equals P naught + w over A, 
+ equals P naught + rho Ah g over A, 
+ equals P naught + rho hg.
+ 
+
+*Note*: this equation is only good for pressure at a depth for a fluid of constant density.
+
+**Example Problem**: Force on a Dam.
+
+The Problem.
+Consider the pressure and force acting on a dam retaining a reservoir of water. Suppose the dam is 500 meters wide and the water is 80.0 meters deep at the dam.
+(a) What is the average pressure on the dam due to the water? 
+(b) Calculate the force exerted against the dam.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+
+The Model.
+
+We model the water as a fluid of constant density rho equals 1000 kilograms per cubic meter. The pressure in a fluid increases linearly with depth according to P equals rho g h. The average pressure on the vertical face of the dam is equal to the pressure evaluated at the average depth. The force exerted by the water is the pressure acting over the area of the dam, F equals PA.
+
+---
+
+The Math.
+
+The pressure varies linearly from zero at the surface to a maximum at the bottom, so the average pressure is given by evaluating P equals rho g h at the average depth h equals H over 2, where H equals 80.0 meters. Thus,
+
+ 
+P equals rho g ( H over 2 ) 
+ equals (1000 kilograms per cubic meter )(9.81 meters per second squared )(40.0 meters ) 
+ equals 3.92 times ten to the 5 pascals.
+ 
+
+The area of the dam face is the width times the depth, so A equals (500 meters )(80.0 meters ). The force is then
+
+ 
+F equals P A 
+ equals (3.92 times ten to the 5 pascals )(4.00 times ten to the 4 square meters ) 
+ equals 1.57 times ten to the 10 newtons.
+ 
+
+---
+
+The Conclusion.
+
+The average pressure on the dam is 3.92 times ten to the 5 pascals, and the total force exerted by the water is 1.57 times ten to the 10 newtons $.
+
+---

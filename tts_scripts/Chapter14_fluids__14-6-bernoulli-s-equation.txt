@@ -1,0 +1,219 @@
+Bernoulli's Equation.
+
+When a fluid flows into a narrower channel, its speed increases which means that its kinetic energy increases as well. The increased kinetic energy come from the net work don on the fluid to push it into the channel. If the fluid changes vertical position, work is also done on the fluid by the gravitational force.
+
+A pressure difference occurs when the channel narrows, where this difference results in a net force on the fluid because the P times A equals F, and this net force does work. Recall the work-energy theorem,
+
+ W_ net equals change in K equals K - K sub o equals 1 over 2 mv squared - 1 over 2 meters v sub o to the power of 2. 
+
+The net work done increases the fluid's kinetic energy. As a result, the pressure drops in a rapidly moving fluid whether or not the fluid is confined to a tube.
+
+For example, shower curtains have a disagreeable habit of bulging into the shower stall when the shower is on. The high-velocity stream of water and air creates a region of lower pressure inside the shower, whereas the pressure on the other side remains the same (at the standard atmospheric pressure). This pressure difference results in a net force, pushing the curtain inward.
+
+Similarly, when a car passes a semi on the highway, the two vehicles pull toward each other. The reason is the same: The high velocity of the air between the car and the truck creates a region of lower pressure between the vehicles, and they are pushed together by greater pressure on the outside (see Figure ). THis effect was observed as back as the mid-1800s, when it was found that trains passing in opposite directions tipped precariously toward one another.
+
+Figure referenced in the course notes.
+
+Energy Conservation and Bernoulli's Equation.
+
+The application of the principle of conservation of energy to frictionless laminar flow leads to a very useful relation between pressure and a fluid's flow speed. This relation is called **Bernoulli's equation**, named after Daniel Bernoulli who published his studies in his book *Hydrodynamica*.
+
+Consider an incompressible fluid flowing through a pipe that has a varying diameter and height (see Figure ). We identify two locations along the pipe using the subscripts 1 and 2 on the respective physical parameters: cross-sectional area, velocity, height, and pressure. We assume that the density at the two points is the same, where the shaded volumes must be equal since the fluid is incompressible.
+
+Figure referenced in the course notes.
+
+We also assume that there are no viscous forces in the fluid, so the energy of any part of the fluid will be conserved. To derive Bernoulli's equation, we first calculate the work that was done on the fluid:
+
+ 
+dW equals F sub 1 d x sub 1 - F sub 2 d x sub 2, 
+ equals P sub 1 A sub 1 d x sub 1 - P sub 2 A sub 2 d x sub 2, 
+ equals P sub 1 dV - P sub 2 dV equals ( P sub 1 - P sub 2 )dV.
+ 
+
+The work done was due to the conservative force of gravity and the change in the kinetic energy of the fluid. The change in the kinetic energy of the fluid is equal to
+
+ change in K equals 1 over 2 meters sub 2v _2 squared - 1 over 2 meters sub 1 v sub 1 to the power of 2 equals rho over 2 dV ( v sub 2 to the power of 2 - v sub 1 to the power of 2 ), 
+
+where we have used the relation m equals rho dV. The change in potential energy is
+
+ change in U equals mg h sub 2 - mg h sub 1 equals rho dV g( h sub 2 - h sub 1 ). 
+
+The energy equation then becomes
+
+ 
+dW equals change in K + change in U, 
+( P sub 1 - P sub 2 )dV equals rho over 2 dV ( v sub 2 to the power of 2 - v sub 1 to the power of 2 ) + rho dV g( h sub 2 - h sub 1 ), 
+ P sub 1 - P sub 2 equals 1 over 2 rho ( v sub 2 to the power of 2 - v sub 1 to the power of 2 ) + rho g( h sub 2 - h sub 1 ).
+ 
+
+Rearranging the equation gives Bernoulli's equation:
+
+ P sub 1 + 1 over 2 rho v sub 1 to the power of 2 + rho g h sub 1 equals P sub 2 + 1 over 2 rho v sub 2 to the power of 2 + rho g h sub 2. 
+
+This relation states that the mechanical energy of any part of the fluid changes as a result of the work done by the fluid external to that part, du to varying the pressure along the way. Since the two points were chosen arbitrarily, we can write Bernoulli's equation more generally as a conservation principle along the flow.
+
+Bernoulli's Equation.
+
+ 
+
+For an ideal fluid moving steadily, the pressure and energy density is conserved along a flow line. The conservation relation is given by
+
+ 
+P + 1 over 2 rho v squared + rho gh equals constant,
+ 
+
+where P is the pressure, rho is the mass density, v is the speed of the fluid, and h is the height.
+
+In a dynamic situation, the pressures at the same height in different parts of the fluid may be different if they have different speeds of flow.
+
+ 
+
+Analyzing Bernoulli's Equation.
+
+If we follow a small volume of fluid along its path, the sum of pressure and energy density remains the same even though various individual quantities may change. Bernoulli's equation is just a convenient statement of the conservation of energy for an *incompressible* fluid in the absence of friction. 
+
+Bernoulli's equation for *static* fluids.
+
+Consider the simple solution where the fluid is static (i.e., v sub 1 equals v sub 2 equals 0 ). Bernoulli's equation in that case is
+
+ P sub 1 + rho g h sub 1 equals P sub 2 + rho g h sub 2. 
+
+We can simplify the equation by measuring the relative height h as the difference between h sub 2 and h sub 1, or h equals h sub 2 - h sub 1. In this case, we get
+
+ P sub 2 equals P sub 1 + rho gh. 
+
+This equation tells us tha the pressure increases with depth for static fluids. As we go from point 1 to point 2 in the fluid, the depth increases by h and the difference in pressure is equal to rho gh. Thus, Bernoulli's equation confirms the fact that pressure change due to the weight of a fluid is rho gh. 
+
+Bernoulli's principle.
+
+Suppose a fluid is *moving* but its depth is constant (i.e, h sub 1 equals h sub 2 ). Under this condition, Bernoulli's equation becomes
+
+ P sub 1 + 1 over 2 rho v sub 1 to the power of 2 equals P sub 2 + 1 over 2 rho v sub 2 to the power of 2. 
+
+Situations in which fluid flows at a constant depth are so common that this equation is often called **Bernoulli's principle**, which is simply Bernoulli's equation for a constant depth. Bernoulli's principle reinforces that pressure drops as the speed increases in a moving fluid: If v sub 2 > v sub 1 in the equation, then P sub 2 must be less than P sub 1 for the equality to hold. It is more easily seen by
+
+ P sub 1 - P sub 2 equals 1 over 2 rho ( v sub 2 to the power of 2 - v sub 1 to the power of 2 ), 
+
+because v squared>0 and P sub 1 > P sub 2 must be true for the left-side to be positive.
+
+**Example Problem**: Calculating Pressure.
+
+The Problem.
+In Example 14.5, we found that the speed of water in a hose increased from 1.96 meters per second to 25.5 meters per second going from the hose to the nozzle. Calculate the pressure in the hose, given that the absolute pressure in the nozzle is 1.01 times ten to the 5 newtons per square meter (atmospheric, as it must be) and assuming level, frictionless flow.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+We model the fluid as incompressible and flowing steadily, so Bernoulli’s principle applies along a streamline. Because the flow is level, there is no change in gravitational potential energy. The pressure and kinetic energy of the fluid therefore trade off as the speed changes between the hose and the nozzle. The pressure at the nozzle is atmospheric because the fluid is exposed to the air.
+
+---
+
+The Math.
+
+We begin with Bernoulli’s principle, which relates the pressure and speed of the fluid at two points along the same streamline. Because the flow is level, the gravitational terms cancel, leaving a relationship between pressure and kinetic energy.
+
+ 
+ P sub 1 + 1 over 2 rho v sub 1 to the power of 2 equals P sub 2 + 1 over 2 rho v sub 2 to the power of 2.
+ 
+
+To determine the pressure in the hose, we solve this equation for P sub 1 by isolating it on one side. Subtracting the kinetic energy term at point 1 and adding the kinetic energy term at point 2 gives
+
+ 
+ P sub 1 equals P sub 2 + 1 over 2 rho v sub 2 to the power of 2 - 1 over 2 rho v sub 1 to the power of 2.
+ 
+
+Factoring out the common coefficient simplifies the expression to
+
+ 
+ P sub 1 equals P sub 2 + 1 over 2 rho ( v sub 2 to the power of 2 - v sub 1 to the power of 2 ).
+ 
+
+The known values are P sub 2 equals 1.01 times ten to the 5 newtons per square meter, rho equals 1000 kilograms per cubic meter, v sub 1 equals 1.96 meters per second, and v sub 2 equals 25.5 meters per second. Substituting these values gives
+
+ 
+ P sub 1 equals 1.01 times ten to the 5 newtons per square meter + 1 over 2 (1000 kilograms per cubic meter ) [(25.5 meters per second ) squared - (1.96 meters per second ) squared ] 
+ equals 1.01 times ten to the 5 newtons per square meter + 500 (650.25 - 3.84 ) 
+ equals 1.01 times ten to the 5 newtons per square meter + 3.23 times ten to the 5 newtons per square meter 
+ equals 4.24 times ten to the 5 newtons per square meter.
+ 
+---
+
+The Conclusion.
+
+The pressure in the hose is P sub 1 equals 4.24 times ten to the 5 newtons per square meter. This pressure is greater than atmospheric pressure because the fluid is moving more slowly in the hose than in the nozzle. As the fluid accelerates into the narrower nozzle, kinetic energy increases, which requires a decrease in pressure according to Bernoulli’s principle. This result is consistent with the expectation that higher-speed flow corresponds to lower pressure.
+
+---
+
+ **The Problem**
+Fire hoses used in major structural fires have an inside diameter of 6.40 cm. Suppose such a hose carries a flow of 40.0 liters per second, starting at a gauge pressure of 1.62 times ten to the 6 newtons per square meter. The hose rises up 10.0 meters along a ladder to a nozzle having an inside diameter of 3.00 cm. What is the pressure in the nozzle?
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+We model the water as an incompressible fluid in steady, frictionless flow, so Bernoulli’s principle applies along a streamline. The hose and nozzle are treated as circular pipes, so the fluid speeds can be found from the volume flow rate and the cross-sectional areas. Because the nozzle is higher than the hose, the pressure at the nozzle is reduced both by the gain in gravitational potential energy and by the increase in kinetic energy as the flow enters the narrower opening. The given initial pressure is a gauge pressure, so the final result will also be a gauge pressure.
+
+---
+
+The Math.
+
+To determine the nozzle pressure, we first need the fluid speeds in the hose and in the nozzle. For steady incompressible flow, the volume flow rate is the same at every cross section, so the speed is found from the flow-rate relation Q equals Av. Solving for the speed gives v equals Q/A.
+
+The hose has diameter 6.40 cm, so its radius is r sub 1 equals 3.20 cm equals 3.20 times ten to the minus 2 meters. The nozzle has diameter 3.00 cm, so its radius is r sub 2 equals 1.50 cm equals 1.50 times ten to the minus 2 meters. The flow rate is Q equals 40.0 liters per second equals 4.00 times ten to the minus 2 cubic meters/s. Using A equals pi r squared, the speed in the hose is
+
+ 
+ v sub 1 equals Q over A sub 1 
+ equals Q over pi r sub 1 to the power of 2 
+ equals 4.00 times ten to the minus 2 cubic meters/s over pi (3.20 times ten to the minus 2 meters ) squared 
+ equals 12.4 meters per second.
+ 
+
+Using the same method, the speed in the nozzle is
+
+ 
+ v sub 2 equals Q over A sub 2 
+ equals Q over pi r sub 2 to the power of 2 
+ equals 4.00 times ten to the minus 2 cubic meters/s over pi (1.50 times ten to the minus 2 meters ) squared 
+ equals 56.6 meters per second.
+ 
+
+Now that the speeds are known, we apply Bernoulli’s principle between the hose at ground level and the nozzle at the top of the ladder. For steady, incompressible, frictionless flow along a streamline, Bernoulli’s equation is
+
+ 
+ P sub 1 + 1 over 2 rho v sub 1 to the power of 2 + rho g h sub 1 equals P sub 2 + 1 over 2 rho v sub 2 to the power of 2 + rho g h sub 2.
+ 
+
+To determine the pressure in the nozzle, we solve this equation for P sub 2. Taking the hose level as the reference height gives h sub 1 equals 0 and h sub 2 equals 10.0 meters. Moving the kinetic-energy and gravitational terms to the other side gives
+
+ 
+ P sub 2 equals P sub 1 + 1 over 2 rho ( v sub 1 to the power of 2 - v sub 2 to the power of 2 ) - rho g h sub 2.
+ equals 1.62 times ten to the 6 newtons per square meter 
+
+Bullet point. 1 over 2 (1000 kilograms per cubic meter ) [(12.4 meters per second ) squared - (56.6 meters per second ) squared ]
+
+Bullet point. (1000 kilograms per cubic meter )(9.81 meters per second squared )(10.0 meters ) 
+ equals -2.96 times ten to the 3 newtons per square meter.
+ 
+
+---
+
+The Conclusion.
+
+The pressure in the nozzle is -2960 newtons per square meter, which is equivalent to -2.96 kilopascals gauge pressure. This result is very close to zero compared with atmospheric pressure, which is consistent with the fact that the water is about to emerge into the open air. The large drop in pressure occurs because the water both rises to a higher elevation and speeds up substantially as it enters the narrower nozzle.
+
+---

@@ -1,0 +1,290 @@
+Viscosity and Turbulence.
+
+Recall (from Chapter 6) that an object sliding across the floor with an initial velocity and no applied force will come to rest due to the frictional force. Friction depends on the types of materials in contact and is proportional to the normal force. 
+
+At low speeds, the drag is proportional to the velocity, whereas at high speeds, drag is proportional to the velocity squared. There are also forces of friction that act on fluids in motion. For example, a fluid flowing through a pipe is subject to resistance between the fluid and the walls. Friction also occurs between the different layers of fluid. The resistive forces (with the pipe walls and the layers of the fluid) affect the way the fluid flows through the pipe.
+
+Viscosity and Laminar Flow.
+
+When you pour yourself a glass of juice, the liquid flows freely and quickly. But if you pour syrups or honey, the liquid flows and sticks to the container. The difference is fluid friction, both within the fluid itself and between the fluid and its surroundings. We call this property of fluids *viscosity*. Water has a very low viscosity, while honey (or molasses) has a much higher viscosity.
+
+The precise definition of viscosity is based on laminar (i.e., nonturbulent) flow. Figure shows schematically how laminar and turbulent flow differ. When flow is laminary, *layers* flow without mixing. On the other hand, turbulent flow has the layers mixing and significant velocities occur in directions other than the overall direction of flow.
+
+Figure referenced in the course notes.
+
+**Turbulence** is a fluid flow in which layers mix together via eddies and swirls. It has two main causes:
+
+Item 1. Any obstruction or sharp corner (e.g., a faucet) creates turbulent by imparting velocities perpendicular to the flow.
+
+Item 2. The drag between adjacent layers of fluid and between the fluid and its surroundings can form swirls and eddies when the speed is great enough. 
+
+Figure shows how viscosity is measured for a fluid, where the to be measured is placed between two plates. The bottom plate is held fixed, while the top plate is moved to the right and drags the fluid with it. The layer (or laminar) of fluid in contact with either plate does not move relative to the plate, so the layer moves at a speed v while the bottom layer remains at rest. Each successive layer from the top down 
+
+Bullet point. exerts a force on the one below it,
+
+Bullet point. tries to drag the next layer along, and
+
+Bullet point. produce variation in speed from v to 0.
+
+Figure referenced in the course notes.
+
+In this approximation, the flow is laminar where the layers don't mix. The motion in Figure is like a continuous shearing motion. Fluids have zero shear strength, but the rate at which they are sheared is related to the same geometrical factors A and L as is the shear deformation for solids. The fluid is initially at rest in Figure.
+
+The layer of fluid in contact with the moving plate is accelerated and starts to move du to the internal friction between the moving plate and the fluid. The next layer is in contact with the moving layer and it accelerates because there is internal friction between the two layers. There is also internal friction between the stationary plate and the lowest layer of fluid, next to the station plate.
+
+A force F is required to keep the top plate in Fig. moving at a constant velocity v, and experiments show that this force F depends on four factors. The force F is
+
+Item 1. directly proportional to v (at least for laminar flows). A more complicated relation is needed for turbulent flows.
+
+Item 2. proportional to the area A of the plate. This seems reasonable because A is directly proportional to the amount of fluid being moved.
+
+Item 3. inversely proportional to the distance between the planets L. This is reasonable because L is like a lever arm, where the greater the lever arm, the less the force that is needed.
+
+Item 4. directly proportional to the *coefficient of viscosity* eta. The greater the viscosity, the greater the force required.
+
+These dependencies are combined into the equation
+
+ F equals eta vA over L. 
+
+The is equation gives us a working definition of fluid viscosity eta. Solving for eta gives
+
+ 
+ eta equals FL over vA.
+ 
+
+The SI unit of viscosity is N dot / [(meters per second) square meters ] equals ( newtons per square meter ) s or pascals dot s. Table lists the coefficients of viscosity for various fluids. Viscosity varies from one fluid to another by several orders of magnitude.
+
+Table. Coefficients of viscosity of various fluids. This table compares how viscosity varies across gases, liquids, oils, and syrups.
+
+Laminar Flow Confined to Tubes: Poiseuille's Law.
+
+*What causes flow?*
+
+It is a pressure difference. There is a very simple relationship between horizontal flow and pressure. Flow rate Q is in the direction from high to low pressure. The greater the pressure differential between two points, the greater the flow rate. This relationship can be stated as
+
+ 
+ 
+
+Q equals P sub 2 - P sub 1 over R,
+ 
+
+where P sub 1 and P sub 2 are the pressures a the two points and R is the resistance to flow. The resistance R includes everything, except pressure, that affects flow rate. For example R is greater for a long tube than for a short one. The greater the viscosity of a fluid, the greater the value of R. Turbulence greatly increases R, whereas increasing the diameter of a tube decreases R.
+
+If viscosity is zero, the fluid is frictionless and the resistance to flow is also zero. Comparing frictionless flow in a tube to viscous flow (see the figure), we see that for a viscous fluid, speed is greatest at midstream because of drag at the boundaries. We can see the effect of viscosity in a Bunsen burner flame, even though viscosity of natural gas is small.
+
+Figure referenced in the course notes.
+
+The resistance R to laminar flow of an incompressible fluid with viscosity eta through a horizontal tube of uniform radius r and length l is given by
+
+ 
+R equals 8 eta l over pi r to the power of 4.
+ 
+
+This equation is called **Poiseuille's law for resistance**, named after J. L Poiseuille who derived it in an attempt to understand the flow of blood through the body.
+
+In the expression for R, we see that resistance is directly proportional to both the fluid viscosity eta and the length l of a tube. Both of these directly affect the amount of friction encountered, where the greater the resistance, the smaller the flow. The radius r of a tube also affects the resistance, which makes sense because a larger radius allows for a greater flow (all other factors remaining the same). 
+
+Note.
+
+In Poiseuille's law, r is raised to the **fourth** power. This exponent means that any change in the radius of a tube has a very large effect on resistance. For example, doubling the radius of a tube decreases resistance by a factor of 2 to the power of 4 equals 16.
+ 
+
+Taking the flow rate Q and the resistance R together, we find the following expression for the flow rate:
+
+ 
+Q equals ( P sub 2 - P sub 1 ) pi r to the power of 4 over 8 eta l.
+ 
+
+Figure illustrates Poiseuille's law for a tube of length l. Notice that the flow rate is highest at the center of the tube.
+
+Figure referenced in the course notes.
+
+Flow and Resistance as Causes of Pressure Drops.
+
+Water Pressure in homes is sometimes lower than normal during times of heavy use (e.g., hot summer days). The drop in pressure occurs in the water main before it reaches individual homes (see Figure ). 
+
+Figure referenced in the course notes.
+
+We can understand why the pressure P sub 1 to the home drops during times of heavy use by rearranging Eqn.:
+
+ 
+Q equals fraction { P sub 2 - { P sub 1 }}{R}, 
+ P sub 2 - P sub 1 equals RQ.
+ 
+
+In this case, P sub 2 is the pressure at the water works and R is the resistance of the water main. During times of heavy use, the flow rate Q is large. This means that P sub 2 - P sub 1 must also be large (i.e., P sub 2 gg P sub 1 ). Therefore, P sub 1 must decrease assuming that P sub 2 stays the same. It is correct to think of flow and resistance as causing the pressure to drop from P sub 2 to P sub 1. *The equation P sub 2 - P sub 1 equals RQ is valid for both laminar and turbulent flows.*
+
+We can also ues this relation to analyze pressure drops occurring in more complex systems in which the tube radius is not the same everywhere Resistance is much greater in narrow places (e.g. an obstructed coronary artery). For a given flow rate Q, the pressure drop is greatest where the tube is most narrow. This is how water faucets control flow.
+
+Additionally, R is greatly increased by turbulence, and a constriction that creates turbulence greatly reduces the pressure downstream. Plaque in an artery reduces pressure and hence flow, both by its resistance and by the turbulence it creates.
+
+Measuring Turbulence.
+
+An indicator called the **Reynolds number** N sub R can reveal whether flow is laminar or turbulent. For flow in a tube of uniform diameter, the Reynolds number is defined as 
+
+ 
+ N sub R equals 2 over eta rho v r, (flow in tube) 
+ 
+
+where rho is the fluid density, v its speed, eta its viscosity, and r the tube radius. The Reynolds number is a *dimensionless* quantity. Experiments have revealed that N sub R is related to the onset of turbulence. 
+
+Bullet point. For N sub R below about 2000, the flow is laminar.
+
+Bullet point. For N sub R above 3000, the flow is turbulent.
+
+For 2000 < N sub R < 3000, the flow is unstable. It can be laminar, but small obstructions and surface roughness can make it turbulent. It may also oscillate randomly between being laminar and turbulent. In fact, the flow of a fluid with a Reynolds number between 2000-3000# is a good example of chaotic behavior.
+
+Tip.
+
+A system is defined to be chaotic when its behavior is so sensitive to the choice of the initial state, it is extremely difficult to predict precisely any future state.
+ 
+
+It is difficult (but not impossible) to predict whether the flow is turbulent or not when a fluid's Reynold's number falls in this range due to extremely sensitive dependence on factors like roughness and obstructions on the nature of the flow. A tiny variation in one factor has an exaggerated (or nonlinear) effect on the flow.
+
+**Example Problem**: Air Conditioning Systems.
+
+The Problem.
+An air conditioning system is being designed to supply air at a gauge pressure of 0.054 pascals at a temperature of 20 degrees C. The air is sent through an insulated, round conduit with a diameter of 18.00 cm. The conduit is 20 meters long and is open to a room at atmospheric pressure 101.30 kilopascals. The room has a length of 12 meters, a width of 6 meters, and a height of 3 meters. (a) What is the volume flow rate through the pipe, assuming laminar flow? (b) Estimate the length of time to completely replace the air in the room. (c) The builders decide to save money by using a conduit with a diameter of 9.00 cm. What is the new flow rate?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+We model the air as a fluid undergoing steady laminar flow through a round conduit, so Poiseuille’s law applies. The conduit is treated as cylindrical with constant radius along its length, and the pressure difference driving the flow is the given gauge pressure relative to the room. Because the room is open to the atmosphere, the outlet pressure is atmospheric, so the gauge pressure directly gives the pressure difference across the conduit. To estimate the air-replacement time, we treat the volume flow rate as constant and divide the room volume by that flow rate. In part (c), the conduit length, pressure difference, and viscosity remain unchanged, so the new flow rate depends only on the smaller radius through the r to the power of 4 dependence of Poiseuille flow.
+
+---
+
+The Math.
+
+**(a)** For steady laminar flow through a cylindrical conduit, Poiseuille’s law gives the volume flow rate in terms of the pressure difference, viscosity, conduit length, and conduit radius. The system requires the volume flow rate, given by
+
+ 
+Q equals change in P pi r to the power of 4 over 8 eta l.
+ 
+
+The pressure difference is the given gauge pressure, so change in P equals 0.054 pascals. From Table 14.4, the viscosity of air at 20 degrees C is eta equals 0.0181 times ten to the minus 3 pascals dot s equals 1.81 times ten to the minus 5 pascals dot s. The conduit diameter is 18.00 cm, so the radius is r equals 9.00 cm equals 0.0900 meters, and the conduit length is l equals 20 meters. Substituting these values gives
+
+ 
+Q equals (0.054 pascals ) pi (0.0900 meters ) to the power of 4 over 8(1.81 times ten to the minus 5 pascals dot s )(20 meters ) 
+ equals 3.84 times ten to the minus 3 cubic meters/s.
+ 
+
+**(b)** To estimate the time required to replace the air in the room, we first determine the room volume. For a rectangular room, the volume is the product of its length, width, and height. Thus,
+
+ 
+V equals (12 meters )(6 meters )(3 meters ) 
+ equals 216 cubic meters.
+ 
+
+For a constant volume flow rate, the replacement time is the room volume divided by the flow rate. Therefore,
+
+ 
+ change in t equals V over Q 
+ equals 216 cubic meters over 3.84 times ten to the minus 3 cubic meters/s 
+ equals 5.63 times ten to the 4 s.
+ 
+
+Converting this time to hours gives
+
+ 
+ change in t equals 5.63 times ten to the 4 s over 3600 s/hr 
+ equals 15.6 hr.
+ 
+
+**(c)** For the smaller conduit, the new diameter is 9.00 cm, so the new radius is r' equals 4.50 cm equals 0.0450 meters. Using Poiseuille’s law again with the same pressure difference, viscosity, and conduit length gives
+
+ 
+Q' equals change in P pi r' to the power of 4 over 8 eta l 
+ equals (0.054 pascals ) pi (0.0450 meters ) to the power of 4 over 8(1.81 times ten to the minus 5 pascals dot s )(20 meters ) 
+ equals 2.40 times ten to the minus 4 cubic meters/s.
+ 
+
+This result is also consistent with the radius dependence Q is proportional to r to the power of 4. Halving the radius reduces the flow rate by a factor of 2 to the power of 4 equals 16, so the new flow rate should be one-sixteenth of the original value:
+
+ 
+Q' equals Q over 16 equals 3.84 times ten to the minus 3 cubic meters/s over 16 equals 2.40 times ten to the minus 4 cubic meters/s.
+ 
+
+---
+
+The Conclusion.
+
+The volume flow rate through the original conduit is 3.84 times ten to the minus 3 cubic meters/s. At this rate, the time required to replace the 216 cubic meters of air in the room is 15.6 hr. If the conduit diameter is reduced from 18.00 cm to 9.00 cm, the new flow rate becomes 2.40 times ten to the minus 4 cubic meters/s.
+
+These results show that the flow rate is extremely sensitive to the conduit radius in laminar flow. Halving the diameter halves the radius, which reduces the flow rate by a factor of sixteen. This dramatic reduction explains why even a modest decrease in duct size can greatly increase the time required to move air through a system.
+
+---
+
+ **The Problem**
+In Example 14.8, we found the volume flow rate of an air conditioning system to be Q equals 3.84 times ten to the minus 3 cubic meters/s. This calculation assumed laminar flow. (a) Was this a good assumption? (b) At what velocity would the flow become turbulent?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+We model the air as flowing steadily through a round conduit of radius 0.0900 meters. To test whether the laminar-flow assumption is valid, we first determine the average fluid speed from the known volume flow rate and conduit cross section. We then use the Reynolds number to classify the flow. For part (b), the onset of turbulence is estimated by taking the Reynolds number to be 2000, which is the usual threshold between laminar and turbulent flow in a pipe.
+
+---
+
+The Math.
+
+**(a)** To determine whether the flow is laminar, we first need the average speed of the air in the conduit. For steady flow through a circular cross section, the volume flow rate is related to the speed by Q equals Av, where A equals pi r squared. Solving for the speed gives
+
+ 
+v equals Q over pi r squared.
+ 
+
+The volume flow rate is Q equals 3.84 times ten to the minus 3 cubic meters/s, and the conduit radius is r equals 0.0900 meters. Substituting these values gives
+
+ 
+v equals 3.84 times ten to the minus 3 cubic meters/s over pi (0.0900 meters ) squared 
+ equals 0.151 meters per second.
+ 
+
+To classify the flow, we use the Reynolds number for flow in a pipe. For a pipe of radius r, the Reynolds number is
+
+ 
+N_ R equals 2 rho v r over eta.
+ 
+
+At 20 degrees C, the density of air is rho equals 1.29 kilograms per cubic meter and its viscosity is eta equals 1.81 times ten to the minus 5 pascals dot s. Substituting these values together with v equals 0.151 meters per second and r equals 0.0900 meters gives
+
+ 
+N_ R equals 2(1.29 kilograms per cubic meter )(0.151 meters per second )(0.0900 meters ) over 1.81 times ten to the minus 5 pascals dot s 
+ equals 1940.
+ 
+
+Because this value is less than 2000, the flow is in the laminar regime.
+
+**(b)** To determine the speed at which the flow becomes turbulent, we set the Reynolds number equal to the threshold value 2000 and solve for v. Starting from N_ R equals 2 rho v r/ eta, dividing both sides by 2 rho r gives
+
+ 
+v equals N_ R eta over 2 rho r.
+ 
+
+Substituting N_ R equals 2000, eta equals 1.81 times ten to the minus 5 pascals dot s, rho equals 1.29 kilograms per cubic meter, and r equals 0.0900 meters gives
+
+ 
+v equals (2000)(1.81 times ten to the minus 5 pascals dot s ) over 2(1.29 kilograms per cubic meter )(0.0900 meters ) 
+ equals 0.156 meters per second.
+ 
+
+---
+
+The Conclusion.
+
+The Reynolds number for the air-conditioning flow is 1940, so the assumption of laminar flow is reasonable. The flow becomes turbulent when the speed reaches about 0.156 meters per second. Because the operating speed of 0.151 meters per second is only slightly below this threshold, the flow is just barely in the laminar regime.
+
+---

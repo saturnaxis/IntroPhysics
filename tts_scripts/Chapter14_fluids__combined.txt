@@ -1,0 +1,1297 @@
+14.1 Fluids, Density, and Pressure
+
+Fluid Mechanics.
+
+Fluids, Density, and Pressure.
+
+Characteristics of Solids and Fluids.
+
+**Solids** are rigid, have specific shapes, and occupy definite volumes. The atoms (or molecules) in a solid are in close proximity to each other, where there is a significant force between the molecules. Solids will take a form that is determined by the forces between the molecules. True solids are compressible, where it usually takes a large force to change the shape of a solid.
+
+Bullet point. The force between the molecules can allow them to organize into a lattice. 
+
+Bullet point. The structure of the 3D lattice is represented as molecules connected by rigid bonds (modeled as stiff springs), which allow *limited freedom of movement.* 
+
+Bullet point. Even a large force produces only small displacements in the atoms (or molecules) of the lattice, and the solid maintains its shape. Solids also resist shearing forces (see Section 12.3).
+
+Liquids and gases are both described as **fluids** of varying viscosity because they yield to shearing forces, whereas solids resist them. Like solids, the molecules in a liquid are bonded to neighboring molecules, but there are fewer (and weaker) bonds. 
+
+Bullet point. The molecules in a liquid are not locked in place and *can move with respect to each other.*
+
+Bullet point. The distance between molecules is similar to the distances in a solid. Liquids have definite volumes, but the shape of a liquid can change depending on the shape of its container.
+
+Bullet point. Gases are **not** bonded to neighboring atoms and *can have large separations* between molecules.
+
+Bullet point. Gases have neither specific shapes nor definite volumes, where their molecules move to fill the container.
+
+Liquids deform easily when stressed and do **not** spring back to their original shape once a force is removed. This occurs because the atoms (or molecules) are free to slide about and change neighbors. Liquids flow with the molecules held together by looser mutual attraction. When a liquid is placed in a container, it remains in the container (given the appropriate temperature and atmospheric pressure). Because the atoms are closely packed liquids resist compression, where an extremely large force is necessary to change the volume of a liquid.
+
+Atoms in gases are separated by large distances and the forces between atoms in a gas are very weak, except when the atoms collide with one another. This makes gases relatively easy to compress and allows them to flow like a fluid. When placed in an open container, gases will escape.
+
+Given the right conditions gases and fluids behave in similar ways, where it is common to drop the distinction and consider them both as fluids. There exists another phase of matter called a **plasma**, which exists at high temperatures, which is characterized by being composed of ions rather than neutral atoms. Plasma has different properties, which requires a detailed description of electrical charges and forces.
+
+Density.
+
+Suppose a block of brass and a block of wood have exactly the same mass. If both blocks are dropped in a tank of water, *why does the wood float* and the brass sink? This occurs because the brass has a greater density than water.
+
+**Density** is an important characteristic of substances because it is crucial in determining whether an object sinks or floats in a fluid.
+
+Density.
+
+ 
+
+The average density of a substance or object is defined as its mass per unit volume,
+
+ 
+ rho equals m over V,
+ 
+
+where rho (` rho `) is the symbol for density, m is the mass, and V is the volume.
+ 
+
+The SI unit for density is kilograms per cubic meter, where. Many materials are more easily measured using lower masses and/or volume which makes the cgs units system useful. The cgs density is the gram per cubic centimeter or per milliliter milliliters, where
+
+ 1 gram per cubic centimeter equals 1 gram per milliliter equals 1000 kilograms per cubic meter. 
+
+The metric system was originally devised so that water would have a density of 1 gram per cubic centimeter, thus the basic mass unit (the kilogram) was first devised to be the mass of 1 liters equals 1000 milliliters volume of water.
+
+Table. Densities of some common substances. This table compares representative densities for solids, liquids, and gases.
+
+The density of an object may help its composition. The density of gold is { approximately }2.5 times the density of iron, which itself is about { approximately }2.5 times the density of aluminum. The densities of liquids and solids are roughly comparable, which is consistent with the expectation (and measurement) of the close proximity of their atoms. The densities of solids and liquids are given for the standard temperature of 0 degrees C, where they can vary depending on the temperature.
+
+The densities of gases are much less than those of liquids and solids because the atoms in gases are separated by large amounts of empty space. The gases (in ) are displayed for a standard temperature of 0 degrees C and pressure of 101.3 kilopascals, where there is a strong dependence on the temperature and pressure.
+
+Table. Densities of water. This table shows that water reaches its maximum density near four degrees Celsius.
+
+ Table 14.2 shows the density of water at several temperatures and phases. As the temperature decreases, the density of water increases and reaches a maximum at 4.0 degrees C. It then decreases as the temperature falls below 4.0 degrees C, where this behavior explains why ice forms at the *top* of body of water (i.e., ponds and lakes freeze from the top-down).
+
+A **homogenous** substance is described by a uniform density throughout its volume (e.g., a solid iron bar). The density of any sample of a homogenous substance is the same as the average density. In contrast, a **heterogeneous** substance does not have a constant density throughout the substance (e.g., a chunk of Swiss cheese with solids and voids). The density at a specific location within a heterogeneous material is called *local density*, and is given as a function of location, rho equals rho (x, y, z), as shown in Figure.
+
+Figure referenced in the course notes.
+
+Local density can be obtained by taking the limit where the size of the volume approaches zero,
+
+ 
+ rho equals the limit of sub change in V arrow 0 change in m over change in V,
+ 
+
+where rho is the density, m is the mass, and V is the volume.
+
+Since gases are free to expand and contract, the densities of the gases vary considerably with temperature. The densities of liquids are often treated as constant (i.e., equal to the average density).
+
+Density is a dimensional property, where it often convenient to normalize the density to make it dimensionless and is then called the **specific gravity**. Specific gravity is defined as the ratio of the density relative to water at 4.0 degrees C and one atmosphere of pressure (i.e., 101.3 kilopascals ), which is 1000 kilograms per cubic meter:
+
+ Specific gravity equals Density of material over Density of water equals Density of material over 1000 kilograms per cubic meter. 
+
+Specific gravity provides a ready comparison among materials without have to worry about the unit of density. For instance the density of aluminum is 2700 kilograms per cubic meter, but its specific gravity is 2.7. Specific gravity is particularly useful quantity with regard to buoyancy.
+
+Pressure.
+
+You are likely familiar with the different kinds of pressure, whether it is your blood pressure or in relation to the weather. But we provide a formal definition of pressure in terms of a force.
+
+Pressure.
+
+ 
+
+**{Pressure}** ( P ) is defined as the *normal* force perpendicular force per unit area A over which the force is applied, or
+
+ 
+P equals perpendicular force over A.
+ 
+
+To define the pressure at a specific point, the pressure is defined as the force dF exerted by a fluid over an infinitesimal element of area dA containing the point, resulting in p equals dF over dA. 
+ 
+
+A given force can have a significantly different effect depending on the area over which the force is exerted. For example, a given force F applied to over an area of 1 square millimeters is 100 times as great as the same force applied to an area of 1 square centimeters. That is why a sharp needle is able to poke through the skin with a small force, but the same force does not allow your finger to poke through the skin (see Figure ).
+
+Figure referenced in the course notes.
+
+Although force is a vector, *pressure is a scalar*. Pressure represents the normal component of the force per unit area. In general it is defined as
+
+ P equals d vector F over dA dot vector n, 
+
+where n hat is the unit vector normal to the surface. This dot product extracts the component of force perpendicular to the surface, which is why the pressure is a scalar quantity. The SI unit for pressure is the *pascal* ( pascals ), which was named after Blaise Pascal, where
+
+ 1 pascals equals 1 newtons per square meter. 
+
+Variation of pressure with depth in a fluid of *constant* density.
+
+Pressure is defined for all states of matter, but it is particularly important for fluids. An important characteristic of fluids is that there is no *significant resistance* to the parallel component of force applied parallel to the surface of a fluid. The molecules of the fluid simply flow to accommodate the horizontal force. A force applied perpendicular to the surface *compresses* or expands the fluid. If you try to compress a fluid, you find that a reaction force develops at each point inside fluid in the outward direction, which balances the force applied on the molecules at the boundary.
+
+Consider a fluid of constant density (see Figure ). The pressure at the bottom of the container is due to the pressure of the atmosphere P naught plus the pressure due to the weight of fluid divided by the area. The weight of the fluid at a given height depends on the mass of enclosed fluid times the acceleration due to gravity.
+
+Figure referenced in the course notes.
+
+Since the density is constant, the weight of the mass enclosed can be calculated using the density:
+
+ 
+ rho equals m over V therefore m equals rho V, 
+w equals mg equals rho V g, 
+ equals rho Ahg,
+ 
+
+where we have used the volume of a cylinder with the area A at the bottom of the container and h is the height of the cylinder. The pressure at the bottom of the container is related to the atmospheric pressure P naught by
+
+ 
+ 
+
+P equals P naught + w over A, 
+ equals P naught + rho Ah g over A, 
+ equals P naught + rho hg.
+ 
+
+*Note*: this equation is only good for pressure at a depth for a fluid of constant density.
+
+**Example Problem**: Force on a Dam.
+
+The Problem.
+Consider the pressure and force acting on a dam retaining a reservoir of water. Suppose the dam is 500 meters wide and the water is 80.0 meters deep at the dam.
+(a) What is the average pressure on the dam due to the water? 
+(b) Calculate the force exerted against the dam.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+
+The Model.
+
+We model the water as a fluid of constant density rho equals 1000 kilograms per cubic meter. The pressure in a fluid increases linearly with depth according to P equals rho g h. The average pressure on the vertical face of the dam is equal to the pressure evaluated at the average depth. The force exerted by the water is the pressure acting over the area of the dam, F equals PA.
+
+---
+
+The Math.
+
+The pressure varies linearly from zero at the surface to a maximum at the bottom, so the average pressure is given by evaluating P equals rho g h at the average depth h equals H over 2, where H equals 80.0 meters. Thus,
+
+ 
+P equals rho g ( H over 2 ) 
+ equals (1000 kilograms per cubic meter )(9.81 meters per second squared )(40.0 meters ) 
+ equals 3.92 times ten to the 5 pascals.
+ 
+
+The area of the dam face is the width times the depth, so A equals (500 meters )(80.0 meters ). The force is then
+
+ 
+F equals P A 
+ equals (3.92 times ten to the 5 pascals )(4.00 times ten to the 4 square meters ) 
+ equals 1.57 times ten to the 10 newtons.
+ 
+
+---
+
+The Conclusion.
+
+The average pressure on the dam is 3.92 times ten to the 5 pascals, and the total force exerted by the water is 1.57 times ten to the 10 newtons $.
+
+---
+
+========================================================================
+
+14.2 Measuring Pressure
+
+Measuring Pressure.
+
+Gauge vs. Absolute Pressure.
+
+Suppose the pressure gauge on full scuba tank reads 3000 p s i, which is approximately 207 atm. When the valve is opened, air begins to escape because the pressure inside the tank is grater than the atmospheric pressure outside the tank. Air continues to escape from the tank until the pressure inside the tank equals the pressure of the atmosphere outside the tank. At this point, the pressure gauge on the tank reads, zero even though the pressure inside the tank is actually 1 atm (i.e., the same air pressure outside the tank).
+
+Most pressure gauges are calibrated to read zero at atmospheric pressure. Pressure reading from such gauges are called **gauge pressure**, which is the pressure relative to the atmospheric pressure. When the pressure inside the tank is greater than atmospheric pressure, the gauge reports a positive value.
+
+Some gauges are designed to measure *negative* pressure. For example, many physics experiments must take place in a vacuum chamber where nearly all the air is pumped out. the pressure inside the vacuum chamber is less than atmospheric pressure, so te pressure on the gauge reads a negative value.
+
+Unlike gauge pressure, **absolute pressure** accounts for atmospheric pressure, which in effect adds to the pressure in any fluid not enclosed in a rigid container.
+
+Absolute Pressure.
+
+ 
+
+The absolute pressure, or total pressure, is the sum of gauge pressure and atmospheric pressure:
+
+ P_ abs equals P_ g + P_ atm, 
+
+where P_ abs is the absolute pressure, P_ g is the gauge pressure, and P_ atm is the atmospheric pressure.
+ 
+
+For example, if a tire gauge reads 34 p s i, then the absolute pressure include the atmospheric pressure ( 14.7 p s i ), or 34 p s i + 14.7 p s i equals 48.7 p s i.
+
+In most cases, the absolute pressure in fluids cannot be negative. Fluids push rather than pull, so the smallest absolute pressure in a fluid is zero. Thus, the smallest possible gauge pressure is P_ g equals -P_ atm, which makes P_ abs equals 0. There is no theoretical limit for how large a gauge pressure can be.
+
+Measuring Pressure.
+
+A host of devices are used for measuring pressure, ranging from tire pressure gauges to blood pressure monitors. Any property that changes with pressure in a known way can be used to construct a pressure gauge. Some of the most common types include 
+
+Bullet point. strain gauges, which use the change in the shape of a material with pressure,
+
+Bullet point. capacitance pressure gauges, which use the change in electric capacitance due to shape change with pressure,
+
+Bullet point. piezoelectric pressure gauges, which generate a voltage difference across a piezoelectric material under a pressure difference between two sides, and
+ion gauges, which measure pressure by ionizing molecules in highly evacuated chambers.
+
+Different pressure gauges are useful in different pressure ranges and physical situations. Some examples are shown in Figure.
+
+Figure referenced in the course notes.
+
+Manometers.
+
+One of the most important classes of pressure gauges applies the property that pressure due to the weight of a fluid of constant density is given by P equals rho gh. The U-shaped tube shown in Figure is an example of a *manometer*. In Fig. a, both sides of the tube are open to the atmosphere, which allows atmospheric pressure to push down on each side equally so that its effects cancel.
+
+Figure referenced in the course notes.
+
+A manometer with only one side open to the atmosphere is an ideal device for measuring *gauge* pressures. The gauge pressure is P_ gauge equals rho gh and is found by measuring h. For example, suppose one side of the U-tube is connected to some source of pressure P_ abs (e.g., the ballon in Fig. b or the vacuum-packed peanut jar in Fig. c).
+
+Pressure is transmitted undiminished to the manometer, and the fluid levels are no longer equal. In Fig. b, P_ abs >P_ atm and in Fig. c, P_ abs < P_ atm. In both cases, P_ abs differs from the atmospheric pressure by an amount rho gh, where rho is the density of the fluid in the manometer.
+
+In Fig. b, P_ abs can support a column of fluid of height h, so it must exert a pressure rho gh greater than atmospheric pressure. In Fig. c, the *atmospheric* pressure can support a column of fluid of height h, so the absolute pressure is less than atmospheric pressure by an amount rho gh 
+
+Barometers.
+
+A *barometer* is a device that typically uses a single column of mercury to measure atmospheric pressure, which is in contrast to the U-shaped tube of a manometer. The barometer (invented by Evangelista Torricelli) is constructed from a glass tube closed at one end and filled with mercury. The tube is then inverted and placed in a pool of mercury. A barometer measures atmospheric pressure (rather than gauge pressure) because there is a nearly pure vacuum above the mercury in the tube. The height of the mercury is such that P_ atm equals rho gh and the height changes when the atmospheric pressure varies.
+
+Figure referenced in the course notes.
+
+Weather forecasters closely monitor changes in atmospheric pressure because it signals a change in the weather. The barometer can also be used as an altimeter, since the average atmospheric pressure varies with altitude. Mercury barometers and manometer are common enough so that millimeter heights of mercury ( millimeters of mercury ) are quoted for atmospheric and blood pressures.
+
+Units of pressure.
+
+The SI unit for pressure is the pascal ( pascals ), where 1 pascals equals 1 newtons per square meter. In addition to the pascal, there are many other units for pressure in common use (see ). Im meteorology, atmospheric pressure is often describe in the units of millibars ( millibars ), where
+
+ 
+1 bar equals ten to the 5 pascals, 
+1000 millibars equals ten to the 5 pascals.
+ 
+
+The millibar is convenient for meteorologists because the average atmospheric pressure at sea level on Earth is 1.013 times ten to the 5 pascals equals 1013 millibars equals 1 atm. Using the equations derived when considering pressure at a depth of fluid, pressure can also be measured as millimeters (or inches) of mercury. 
+
+The pressure at the bottom of a 760{-} mm column of mercury at 0 degrees in barometer is equal to the atmospheric pressure. Thus, 760 millimeters of mercury is also used in place of one atmosphere of pressure. 
+
+In vacuum physics labs, scientists often use another unit called torr (named after Torricelli), where 1 torr equals 1 millimeters of mercury.
+
+Table. Common units of pressure referenced to pascals. This table compares pascal, p s i, atmosphere, bar, torr, inches of mercury, and millibar.
+
+**Example Problem**: Fluid Heights in an Open U-Tube.
+
+The Problem.
+A U-tube with both ends open is filled with a liquid of density rho _1 to a height h on both sides. A liquid of density rho _2 < rho _1 is poured into one side and Liquid 2 settles on top of Liquid 1. The heights on the two sides are different. The height to the top of Liquid 2 from the interface is h sub 2 and the height to the top of Liquid 1 from the level of the interface is h sub 1. Derive a formula for the height difference.
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+Because both ends of the tube are open, each free surface is exposed to the same atmospheric pressure P naught. In hydrostatic equilibrium, two points at the same height within the same connected liquid must have the same pressure. We therefore compare the pressure at the interface on the right side to the pressure at a point in Liquid 1 on the left side at that same height. The pressure at each point is the atmospheric pressure plus the weight of the fluid column above it.
+
+The Math.
+
+On the left side, the point at the interface level lies beneath a column of Liquid 1 of height h sub 1, so its pressure is
+
+ 
+P_ left equals P naught + rho _1 g h sub 1.
+ 
+
+On the right side, the interface lies beneath a column of Liquid 2 of height h sub 2, so its pressure is
+
+ 
+P_ right equals P naught + rho _2 g h sub 2.
+ 
+
+Because these two points are at the same height in the same connected fluid, their pressures must be equal. Thus,
+
+ 
+ P naught + rho _1 g h sub 1 equals P naught + rho _2 g h sub 2.
+ 
+
+Subtracting P naught from both sides and dividing by g gives
+
+ 
+ rho _1 h sub 1 equals rho _2 h sub 2.
+ 
+
+Solving for h sub 1 gives
+
+ 
+ h sub 1 equals rho _2 over rho _1 h sub 2.
+ 
+
+The height difference between the two sides is therefore
+
+ 
+ h sub 2 - h sub 1 equals h sub 2 - rho _2 over rho _1 h sub 2 
+ equals (1 - rho _2 over rho _1 ) h sub 2.
+ 
+
+The Conclusion.
+
+The height difference between the two fluid levels is
+
+ 
+ h sub 2 - h sub 1 equals (1 - rho _2 over rho _1 ) h sub 2. 
+ 
+
+This result is consistent with the special case rho _2 equals rho _1, for which the two heights become equal.
+
+========================================================================
+
+14.3 Pascal's Principle and Hydraulics
+
+Pascal's Principle and Hydraulics.
+
+Pascal's Principle.
+
+In 1653, Blaise Pascal published his *Treatise on the Equilibrium of Liquids*, in which he develops his principles of static fluids. When a fluid is not flowing (i.e., static), we say that the fluid is in static equilibrium. If the fluid is water, we say it is in hydrostatic equilibrium. For a fluid in static equilibrium, the net force on any part of the fluid be zero because the fluid will would otherwise start to flow.
+
+Pascal's observations provide the foundation for hydraulics. Pascal observed that a *change in pressure* applied to an enclosed fluid is transmitted undiminished throughout the fluid and to the walls of the container. **Pascal's principle** implies that the total pressure in a fluid is the sum of the pressures from different sources. 
+
+Note that this principle does not say that the pressure is the *same* at all points of a fluid. A good example is the fluid at a depth depends on the depth of the fluid and the pressure of the atmosphere. Rather, Pascal's principle applies to the *change* in pressure.
+
+Figure referenced in the course notes.
+
+Suppose you place some water in a cylindrical container of height h and cross-sectional area A that has a movable piston of mass m (see Figure ). Adding a weight w equals Mg at the top of the piston increases the pressure at the top by w/A equals Mg/A, since the additional weight also acts over the area A of the lid by
+
+ change in p_ top equals Mg over A. 
+
+According to Pascal's principle, the pressure at all points in the water changes by the same amount, Mg/A. Thus the pressure at the bottom also increases by Mg/A. The pressure at the bottom of the container is equal to the sum of 
+
+Bullet point. the atmospheric pressure, 
+
+Bullet point. the pressure due to the fluid, and 
+
+Bullet point. the pressure supplied by the mass.
+
+The change in pressure at the bottom of the container due to the mass is 
+
+ change in p_ bottom equals Mg over A. 
+
+Since the pressure changes are the same everywhere in the fluid, we no longer need subscripts to designate the pressure change for the top or bottom, where
+
+ change in p equals change in p_ top equals change in p_ bottom equals change in p_ everywhere. 
+
+**Physics4Life**.
+
+ 
+
+ 
+ 
+
+Applications of Pascal's Principle and Hydraulic Systems.
+
+Hydraulic systems are used to operate automotive brakes, hydraulic jacks, and many other mechanical systems (see Figure ). We can derive a relationship between the forces in a simple hydraulic system by applying Pascal's principle.
+
+Figure referenced in the course notes.
+
+The two pistons (in the figure) are at the same height, so there is no difference in pressure due to a difference in depth. The pressure due to F sub 1 action on area A sub 1 is simply
+
+ P sub 1 equals F sub 1 over A sub 1. 
+
+According to Pascal's principle, the pressure is transmitted undiminished throughout the fluid and to all walls of the container. Thus, a pressure P sub 2 is felt at the other piston that is equal to P sub 1 (i.e., P sub 1 equals P sub 2 ). However, P sub 2 equals F sub 2 / A sub 2, for this to be so, we find that
+
+ 
+ F sub 1 over A sub 1 equals F sub 2 over A sub 2.
+ 
+
+This equation relates the ratios of force to area in any hydraulic system, provided that the pistons are at the same vertical height and that friction in the system is negligible.
+
+Hydraulic systems can increase or decrease the force applied to them. To mak the force larger, te pressure is applied to a larger area. For example if a 100 - N force is applied to the left cylinder in Figure and the right cylinder has an area 5 times greater, then the output force is 500 newtons. Hydraulic systems are analogous to simple levers, but they have the advantage tha pressure can be sent through curved lines to several places at once.
+
+The **hydraulic jack** is used to lift heavy loads, such as those used by auto mechanics to raise an automobile. It consists of an incompressible fluid filled in a U-tube fitted with a movable piston on each side. One side of the U-tube is narrower than the other. A small force applied over a small area can balance a much larger force on the other side over a larger area (see Figure ).
+
+Figure referenced in the course notes.
+
+From Pascal's principle, we find that the force needed to lift the care is less than the weight of the car:
+
+ F sub 1 equals ( A sub 1 over A sub 2 ) F sub 2, 
+
+where F sub 1 is the force applied to lift the car, A sub 1 is the cross-sectional area of the smaller piston, A sub 2 is the cross-sectional area of the larger piston, and F sub 2 is the weight of the car.
+
+**Example Problem**: Calculating Force on Wheel Cylinders.
+
+The Problem.
+Consider the automobile hydraulic system shown in. Suppose a force of 100 newtons is applied to the brake pedal, which acts on the pedal cylinder (acting as a “master” cylinder) through a lever. A force of 500 newtons is exerted on the pedal cylinder. Pressure created in the pedal cylinder is transmitted to the four wheel cylinders. The pedal cylinder has a diameter of 0.500 cm and each wheel cylinder has a diameter of 2.50 cm. Calculate the magnitude of the force F sub 2 created at each of the wheel cylinders.
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+We treat the brake fluid as an ideal fluid in static equilibrium, so Pascal’s principle applies. The pressure is transmitted equally throughout the fluid, which means the pressure in the master cylinder equals the pressure in each wheel cylinder. If F sub 1 is the force applied to the pedal cylinder, and A sub 1 and A sub 2 are the cross-sectional areas of the pedal and wheel cylinders, respectively, then F sub 1 / A sub 1 equals F sub 2 / A sub 2. Because the given 500 newtons is already the force exerted on the pedal cylinder, the lever analysis is not needed here.
+
+---
+
+The Math.
+
+We begin with Pascal’s principle, which states that the pressure is the same in both cylinders. This gives the relationship F sub 1 / A sub 1 equals F sub 2 / A sub 2, where F sub 1 is the force applied to the pedal cylinder and F sub 2 is the force exerted by each wheel cylinder. Solving this equation for the output force gives F sub 2 equals ( A sub 2 / A sub 1 ) F sub 1.
+
+Because both cylinders have circular cross sections, their areas can be written in terms of their radii as A equals pi r squared. Substituting this into the area ratio shows that the factor pi cancels, leaving A sub 2 / A sub 1 equals r sub 2 to the power of 2 / r sub 1 to the power of 2. This allows us to express the force entirely in terms of the cylinder radii.
+
+The given diameters of the pedal and wheel cylinders are 0.500 cm and 2.50 cm, respectively, so the corresponding radii are r sub 1 equals 0.250 cm and r sub 2 equals 1.25 cm. Substituting these values into the force relation gives
+
+ 
+ F sub 2 equals ( r sub 2 to the power of 2 over r sub 1 to the power of 2 ) F sub 1 
+ equals ( (1.25 cm ) squared over (0.250 cm ) squared )(500 newtons ) 
+ equals 25(500 newtons ) 
+ equals 1.25 times ten to the 4 newtons.
+ 
+
+---
+
+The Conclusion.
+
+Each wheel cylinder exerts a force of 1.25 times ten to the 4 newtons. This result is significantly larger than the 500 newtons force applied to the pedal cylinder, which reflects the large ratio of the cylinder areas in the hydraulic system. Because pressure is transmitted equally throughout the fluid, increasing the cross-sectional area of the output cylinder increases the force it exerts.
+
+This amplification of force explains how a driver can apply a relatively small force at the pedal and still generate a much larger braking force at the wheels. However, this increase in force comes at the expense of distance—the wheel cylinders move a smaller distance than the pedal cylinder, so the total work done remains consistent with energy conservation.
+
+---
+
+========================================================================
+
+14.4 Archimedes' Principle and Buoyancy
+
+Archimedes' Principle and Buoyancy.
+
+When placed in a fluid, some objects float due to a *buoyant force* (see Figure ).
+
+Bullet point. Where does this buoyant force come from?
+
+Bullet point. Why is it that some things float and others do not?
+
+Bullet point. Do objects that sink get any support at all from the fluid?
+
+Bullet point. Is your body buoyed by the atmosphere, or are helium balloons affected?
+
+Figure referenced in the course notes.
+
+*Pressure increases with depth in a fluid!*
+
+This means that the upward force on the bottom of an object (in a fluid) is greater than the downward force on top of the object. There is an upward, or **buoyant**, force on any object in any fluid (see Figure ).
+
+Figure referenced in the course notes.
+
+Bullet point. If the buoyant force is greater than the object's weight, the net force on the object is upward. If we release such an object, it will rise in the fluid. 
+
+Bullet point. If the buoyant force is less than the object's weight, the object sinks when released. 
+
+Bullet point. If the buoyant force equals the object's weight, the object can remain suspended at its present depth, either immersed in the fluid or partly above the surface.
+
+The buoyant force is always present, whether the object floats, sinks, or is suspended in a fluid.
+
+Buoyant Force.
+
+ 
+
+The buoyant force is the upward force on any object in any fluid.
+ 
+
+Archimedes' Principle.
+
+*Just how large is the buoyant force?*
+
+Consider what happens when a submerged object is removed from a fluid (see Figure ). If the object were not in the fluid, the space the object occupied would be filled by fluid having a weight w_ fl. This weight is supported by the surrounding fluid, so the buoyant force must equal w_ fl, or the weight of the fluid displaced by the object.
+
+Figure referenced in the course notes.
+
+Archimedes' Principle.
+
+ 
+
+The buoyant force on an object equals the weight of the fluid it displaces. In equation form, **Archimedes' principle** is 
+
+ F_ B equals w_ fl, 
+
+where F_ B is the buoyant force and w_ fl is the weight of the fluid displaced by the object.
+
+This principle is named after the Greek mathematician and inventor Archimedes of Syracuse, who state this principle long before concepts of force were well established.
+ 
+
+Archimedes' principle refers to the force of buoyancy that results when a body is submerged in a fluid, whether partially or wholly. The force that provides the pressure of a fluid acts on a body perpendicular to the surface. The force due to the pressure at the bottom is pointed up, while at the tope, the force due to the pressure is pointed down. The forces due to pressures at the sides are pointing *into* the body.
+
+Since the bottom of the body is at a greater depth than the top, the pressure at the lower part of the body is higher than the pressure at the upper part (as shown in the figure). Therefore a net upward force acts on the body. This upward force is the force of buoyancy.
+
+**TEDEd**.
+
+ 
+
+ 
+ 
+
+Density and Archimedes' Principle.
+
+If you drop a lump of clay in water, it will sink. But if you mold the same lump of clay into the shape of a boat, then it will float. The clay boat *displaces* more water than the lump and experiences a greater buoyant force, even though its mass is the same.
+
+The average density of an object is what ultimately determines whether it floats. If an object's average density is less than that of the surrounding fluid, it will float. The fluid has a higher density, which means contains more mass for a given volume and hence more weight. The buoyant force is greater than the weight of the object. An object denser than the fluid will sink.
+
+In Figure, the unloaded ship has a lower density and less of it is submerged compared with the loaded ship. We can derive a quantitative expression for the fraction submerged by considering density. 
+
+Figure referenced in the course notes.
+
+The fraction submerged is the ratio of the volume submerged to the volume of the object, or
+
+ fraction submerged equals V_ sub over V_ obj equals V_ fl over V_ obj. 
+
+The volume submerged V_ sub equals the volume of the fluid displaced V_ fl. We can obtain the relationship between the densities by substituting rho equals m/V, or V equals m/ rho. This gives
+
+ V_ fl over V_ obj equals ( m_ fl over rho _ fl ) ( rho _ obj over m_ obj ) equals ( m_ fl over m_ obj ) ( rho _ obj over rho _ fl ), 
+
+where rho _ obj is the average density of the object and rho _ fl is the density of the fluid. Since the object floats, its mass and that of the fluid displaced are equal (i.e., m_ obj equals m_ fl ), leaving
+
+ V_ fl over V_ obj equals rho _ obj over rho _ fl. 
+
+We can determine the density of an unknown fluid using an object of a known density and measuring the fraction of it that is submerged.
+
+Numerous lower-density objects or substances float in higher density fluids, such as:
+
+Bullet point. oil on water,
+
+Bullet point. a hot-air ballon in the atmosphere, 
+
+Bullet point. a bit of cork in wine, 
+
+Bullet point. an iceberg in salt water, and
+
+Bullet point. hot wax in a "lava lamp.
+
+A less obvious example is that mountain ranges float on the higher density crust and mantle beneath them.
+
+Measuring Density.
+
+A common technique to measure density is to use a scale balance (see Figure ), where you weigh the object (e.g., a coin) in air and then weigh it again submerged in a liquid of known density (e.g., water). The density of the object can be calculated and your (fool's) gold can be authenticated.
+
+Figure referenced in the course notes.
+
+This calculation is based on Archimedes' principle, where the buoyant force on an object is equal to the weight of the fluid it displaces. This means that the object appears to weigh less when submerged. The weight measured while submerged is called the object's apparent weight.
+
+The object suffers an apparent weight loss equal to the weight of the fluid displaced. On balances that measure mass, the object suffers an apparent mass loss equal to the mass of fluid displaced.
+
+**Example Problem**: Calculating Average Density.
+
+The Problem.
+Suppose a 60.0 kg woman floats in fresh water with 97.0 percent of her volume submerged when her lungs are full of air. What is her average density?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+When an object floats at rest, the buoyant force balances its weight. The buoyant force equals the weight of the displaced fluid, so rho _ fl g V_ sub equals rho _ obj g V. The fraction of the object’s volume that is submerged is therefore determined by the ratio of densities.
+
+---
+
+The Math.
+
+For an object in equilibrium, the buoyant force equals the weight, so rho _ fl g V_ sub equals rho _ obj g V. Dividing both sides by rho _ fl g V gives
+
+ 
+ V_ sub over V equals rho _ obj over rho _ fl.
+ 
+
+The problem states that 97.0 percent of the volume is submerged, so V_ sub /V equals 0.970. Solving for the density of the woman gives
+
+ 
+ rho _ obj equals ( V_ sub over V ) rho _ fl.
+ 
+
+Substituting the known values with rho _ fl equals 1000 kilograms per cubic meter gives
+
+ 
+ rho _ obj equals (0.970)(1000 kilograms per cubic meter ) equals 970 kilograms per cubic meter.
+ 
+
+--- 
+
+The Conclusion.
+
+The woman’s average density is 970 kilograms per cubic meter. This value is slightly less than the density of water, which is why she floats with most—but not all—of her volume submerged. The fact that 97.0 percent of her volume is below the surface directly reflects how close her density is to that of water.
+
+---
+
+========================================================================
+
+14.5 Fluid Dynamics
+
+Fluid Dynamics.
+
+In contrast to static fluids, there is the study of fluids in motion or fluid dynamics. Even the most basic forms of fluid motion can be quite complex. For this reason, we limit our investigation to **ideal fluids** in many of the examples. In ideal fluid is a fluid with negligible **viscosity**, where viscosity is a measure of the internal friction in a fluid. 
+
+Characteristics of Flow.
+
+Velocity vectors are often used to illustrate fluid motion in applications like meteorology. Wind can be modeled as a fluid motion of air in the atmosphere and represented by vectors indicating the speed and direction of the wind at any given point on a map. Figure shows velocity vectors describing the winds during Hurricane Arthur in 2014.
+
+Figure referenced in the course notes.
+
+Another method for representing fluid motion is a *streamline*. A streamline represents the path of a small volume of fluid as it flows. The velocity is always tangential to the streamline. Figure illustrates two examples of fluids moving through a pipe.
+
+Figure referenced in the course notes.
+
+There are two extremes of fluid flow:
+
+Bullet point. **laminar flow** (sometimes called steady flow) is represented by smooth, parallel streamlines. The velocity of the fluid is greatest in the center and decreases near the walls of the pipe. The gradient in velocity is due to the viscosity of the fluid and friction between the pipe walls and the fluid.
+
+Bullet point. **turbulent flow** has streamlines that are irregular and change over time. In turbulent flow the paths of the fluid flow are irregular as different parts of the fluid mix together or form small circular regions that resemble whirlpools.
+
+Flow Rate and its Relation to Velocity.
+
+The volume of fluid passing by a given location through an area during a period of time is called the **flow rate** Q, or volume flow rate. This is written as
+
+ 
+Q equals dV over dt,
+ 
+
+where V is the volume and t is the elapsed time. 
+
+Figure referenced in the course notes.
+
+In Figure, the volume of the cylinder is Ax and thus, the flow rate is
+
+ Q equals dV over dt equals d over dt (Ax) equals A dx over dt equals Av. 
+
+The SI unit for flow rate is cubic meters/s, but several other units are in common use, such as liters per minute ( L/min ).
+
+Flow rate and velocity are related, but measure different physical quantities. To make the distinction clear, consider the flow rate of a river. The greater the velocity of the water, the greater the flow rate of the river. Flow rate depends on the size and shape of the river. A rapid mountain stream carries far less water than the Amazon River.
+
+Figure illustrates the volume flow rate, which is given by Q equals dV over dt equals Av and depends on the cross-sectional area A of the pipe, as well as the average speed v. The relationship tells us that the larger the conduit, the greater its cross-sectional area. In Fig. Figure, the shaded cylinder has a volume V equals Ad, which flows past the point P in a time t. Dividing both sides by t gives
+
+ V over t equals Ad over t. 
+
+Since the average speed is given by v equals d/t and the flow rate is the changing volume over time ( Q equals V/t ), this means that Q equals Av.
+
+Figure referenced in the course notes.
+
+Figure shows an incompressible fluid flowing along a pipe of decreasing radius. Because the fluid is incompressible, the same amount of fluid must flow past any point in the tube in a given time to ensure continuity of flow. The flow is continuous because there are no sources (or sinks) to add (or remove) mass. The mass flowing into the pipe must equal the mass flowing out of the pipe.
+
+In this case, the cross-sectional area of the pipe decreases and the velocity must necessarily increase. This logic can be extended to say that the flow rate must be the same at all points along the pipe. In particular for two arbitrary points 1 and 2, we have
+
+ 
+ Q sub 1 equals Q sub 2, 
+ A sub 1v _1 equals A sub 2v _2.
+ 
+
+This is called the *equation of continuity* and is valid for any incompressible fluid (with constant density). Consider how water flows from a narrow spray nozzle: The water emerges with a large speed when the area of the nozzle is restricted. Conversely, when a river empties into one end of a reservoir, the water slows considerably and can pickup speed again when it leaves the other end of the reservoir. *Speed increases when the cross-sectional area decreases, and vice-versa.* 
+
+Liquids are essentially incompressible, which makes the equation of continuity valid for all liquids. however gases are compressible, so the the equation must be applied with caution to gases as they are subjected to compression or expansion. 
+
+Mass Conservation.
+
+The flow rate of a fluid can also be described by the *mass flow rate*. This is the rate at which a mass of the fluid moves past a fixed point. Consider the mass within the shaded volume of Figure. The mass can be determined from the density and volume:
+
+ m equals rho V equals rho Ax. 
+
+The mass flow rate is then defined by
+
+ dm over dt equals d over dt ( rho Ax ) equals rho A dx over dt equals rho Av, 
+
+where rho is the density, A is the cross-sectional area, and v is the speed (i.e., magnitude of velocity). The mass flow rate can be used to solve problems using equation of continuity. Consider the pipe (in the figure), where the inlet has a cross-sectional area A sub 1 and the outlet constricts with an cross sectional area A sub 2. From continuity, the total mass entering the pipe must be equal to the mass of fluid exiting the pipe. 
+
+We can find a relationship between the velocity and the cross-sectional area by setting the inlet mass flow rate equal to the outlet mass flow rate:
+
+ 
+ rho _1 A sub 1 v sub 1 equals rho _2 A sub 2 v sub 2.
+ 
+
+This is also known as the general form of the continuity equation. If the density of the fluid remains constant through the constriction (i.e., the fluid is incompressible), then the density cancels from the continuity equation,
+
+ A sub 1 v sub 1 equals A sub 2 v sub 2. 
+
+The equation reduces to show the volume flow rate into the pipe equals the volume flow rate out of the pipe.
+
+**Example Problem**: Calculating Fluid Speed through a Nozzle.
+
+The Problem.
+A nozzle with a diameter of 0.500 cm is attached to a garden hose with a radius of 0.900 cm. The flow rate through hose and nozzle is 0.500 liters per second. Calculate the speed of the water (a) in the hose and (b) in the nozzle.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+We model the water as an incompressible fluid flowing steadily through the hose and nozzle. Because the fluid is incompressible, the volume flow rate is conserved between different cross sections. The hose and nozzle are both treated as circular pipes, so their cross-sectional areas depend only on their radii. The given flow rate determines the fluid speed in each section through the geometry of the pipe.
+
+---
+
+The Math.
+
+**(a)** To determine the speed of the water in the hose, we begin with the definition of volume flow rate, which relates the flow rate to the cross-sectional area and the fluid speed. Solving this relationship for the speed allows us to express the velocity in terms of the known flow rate and the area of the hose.
+
+ 
+ v sub 1 equals Q over A sub 1.
+ 
+
+The hose has a radius of r sub 1 equals 0.900 cm equals 9.00 times ten to the minus 3 meters, so its cross-sectional area is A sub 1 equals pi r sub 1 to the power of 2. The flow rate is Q equals 0.500 liters per second equals 5.00 times ten to the minus 4 cubic meters/s. Substituting these values gives
+
+ 
+ v sub 1 equals Q over pi r sub 1 to the power of 2 
+ equals 5.00 times ten to the minus 4 cubic meters/s over pi (9.00 times ten to the minus 3 meters ) squared 
+ equals 1.96 meters per second.
+ 
+
+**(b)** To determine the speed in the nozzle, we use the continuity condition, which states that the flow rate is the same through both sections of the pipe. This implies that the product of cross-sectional area and speed is constant, so solving for the nozzle speed gives
+
+ 
+ v sub 2 equals A sub 1 over A sub 2 v sub 1.
+ 
+
+Because both cross sections are circular, the ratio of areas can be expressed in terms of the radii, which allows us to write
+
+ 
+ A sub 1 over A sub 2 equals r sub 1 to the power of 2 over r sub 2 to the power of 2.
+ 
+
+The nozzle diameter is 0.500 cm, so its radius is r sub 2 equals 0.250 cm. Substituting the known values gives
+
+ 
+ v sub 2 equals ( r sub 1 to the power of 2 over r sub 2 to the power of 2 ) v sub 1 
+ equals ( (0.900 cm ) squared over (0.250 cm ) squared )(1.96 meters per second ) 
+ equals 25.4 meters per second.
+ 
+
+---
+
+The Conclusion.
+
+The speed of the water in the hose is 1.96 meters per second, and the speed in the nozzle is 25.4 meters per second. The much higher speed in the nozzle is a direct consequence of the smaller cross-sectional area, since the same volume flow rate must pass through both sections. This illustrates how constricting a fluid flow increases its speed.
+
+---
+
+========================================================================
+
+14.6 Bernoulli's Equation
+
+Bernoulli's Equation.
+
+When a fluid flows into a narrower channel, its speed increases which means that its kinetic energy increases as well. The increased kinetic energy come from the net work don on the fluid to push it into the channel. If the fluid changes vertical position, work is also done on the fluid by the gravitational force.
+
+A pressure difference occurs when the channel narrows, where this difference results in a net force on the fluid because the P times A equals F, and this net force does work. Recall the work-energy theorem,
+
+ W_ net equals change in K equals K - K sub o equals 1 over 2 mv squared - 1 over 2 meters v sub o to the power of 2. 
+
+The net work done increases the fluid's kinetic energy. As a result, the pressure drops in a rapidly moving fluid whether or not the fluid is confined to a tube.
+
+For example, shower curtains have a disagreeable habit of bulging into the shower stall when the shower is on. The high-velocity stream of water and air creates a region of lower pressure inside the shower, whereas the pressure on the other side remains the same (at the standard atmospheric pressure). This pressure difference results in a net force, pushing the curtain inward.
+
+Similarly, when a car passes a semi on the highway, the two vehicles pull toward each other. The reason is the same: The high velocity of the air between the car and the truck creates a region of lower pressure between the vehicles, and they are pushed together by greater pressure on the outside (see Figure ). THis effect was observed as back as the mid-1800s, when it was found that trains passing in opposite directions tipped precariously toward one another.
+
+Figure referenced in the course notes.
+
+Energy Conservation and Bernoulli's Equation.
+
+The application of the principle of conservation of energy to frictionless laminar flow leads to a very useful relation between pressure and a fluid's flow speed. This relation is called **Bernoulli's equation**, named after Daniel Bernoulli who published his studies in his book *Hydrodynamica*.
+
+Consider an incompressible fluid flowing through a pipe that has a varying diameter and height (see Figure ). We identify two locations along the pipe using the subscripts 1 and 2 on the respective physical parameters: cross-sectional area, velocity, height, and pressure. We assume that the density at the two points is the same, where the shaded volumes must be equal since the fluid is incompressible.
+
+Figure referenced in the course notes.
+
+We also assume that there are no viscous forces in the fluid, so the energy of any part of the fluid will be conserved. To derive Bernoulli's equation, we first calculate the work that was done on the fluid:
+
+ 
+dW equals F sub 1 d x sub 1 - F sub 2 d x sub 2, 
+ equals P sub 1 A sub 1 d x sub 1 - P sub 2 A sub 2 d x sub 2, 
+ equals P sub 1 dV - P sub 2 dV equals ( P sub 1 - P sub 2 )dV.
+ 
+
+The work done was due to the conservative force of gravity and the change in the kinetic energy of the fluid. The change in the kinetic energy of the fluid is equal to
+
+ change in K equals 1 over 2 meters sub 2v _2 squared - 1 over 2 meters sub 1 v sub 1 to the power of 2 equals rho over 2 dV ( v sub 2 to the power of 2 - v sub 1 to the power of 2 ), 
+
+where we have used the relation m equals rho dV. The change in potential energy is
+
+ change in U equals mg h sub 2 - mg h sub 1 equals rho dV g( h sub 2 - h sub 1 ). 
+
+The energy equation then becomes
+
+ 
+dW equals change in K + change in U, 
+( P sub 1 - P sub 2 )dV equals rho over 2 dV ( v sub 2 to the power of 2 - v sub 1 to the power of 2 ) + rho dV g( h sub 2 - h sub 1 ), 
+ P sub 1 - P sub 2 equals 1 over 2 rho ( v sub 2 to the power of 2 - v sub 1 to the power of 2 ) + rho g( h sub 2 - h sub 1 ).
+ 
+
+Rearranging the equation gives Bernoulli's equation:
+
+ P sub 1 + 1 over 2 rho v sub 1 to the power of 2 + rho g h sub 1 equals P sub 2 + 1 over 2 rho v sub 2 to the power of 2 + rho g h sub 2. 
+
+This relation states that the mechanical energy of any part of the fluid changes as a result of the work done by the fluid external to that part, du to varying the pressure along the way. Since the two points were chosen arbitrarily, we can write Bernoulli's equation more generally as a conservation principle along the flow.
+
+Bernoulli's Equation.
+
+ 
+
+For an ideal fluid moving steadily, the pressure and energy density is conserved along a flow line. The conservation relation is given by
+
+ 
+P + 1 over 2 rho v squared + rho gh equals constant,
+ 
+
+where P is the pressure, rho is the mass density, v is the speed of the fluid, and h is the height.
+
+In a dynamic situation, the pressures at the same height in different parts of the fluid may be different if they have different speeds of flow.
+
+ 
+
+Analyzing Bernoulli's Equation.
+
+If we follow a small volume of fluid along its path, the sum of pressure and energy density remains the same even though various individual quantities may change. Bernoulli's equation is just a convenient statement of the conservation of energy for an *incompressible* fluid in the absence of friction. 
+
+Bernoulli's equation for *static* fluids.
+
+Consider the simple solution where the fluid is static (i.e., v sub 1 equals v sub 2 equals 0 ). Bernoulli's equation in that case is
+
+ P sub 1 + rho g h sub 1 equals P sub 2 + rho g h sub 2. 
+
+We can simplify the equation by measuring the relative height h as the difference between h sub 2 and h sub 1, or h equals h sub 2 - h sub 1. In this case, we get
+
+ P sub 2 equals P sub 1 + rho gh. 
+
+This equation tells us tha the pressure increases with depth for static fluids. As we go from point 1 to point 2 in the fluid, the depth increases by h and the difference in pressure is equal to rho gh. Thus, Bernoulli's equation confirms the fact that pressure change due to the weight of a fluid is rho gh. 
+
+Bernoulli's principle.
+
+Suppose a fluid is *moving* but its depth is constant (i.e, h sub 1 equals h sub 2 ). Under this condition, Bernoulli's equation becomes
+
+ P sub 1 + 1 over 2 rho v sub 1 to the power of 2 equals P sub 2 + 1 over 2 rho v sub 2 to the power of 2. 
+
+Situations in which fluid flows at a constant depth are so common that this equation is often called **Bernoulli's principle**, which is simply Bernoulli's equation for a constant depth. Bernoulli's principle reinforces that pressure drops as the speed increases in a moving fluid: If v sub 2 > v sub 1 in the equation, then P sub 2 must be less than P sub 1 for the equality to hold. It is more easily seen by
+
+ P sub 1 - P sub 2 equals 1 over 2 rho ( v sub 2 to the power of 2 - v sub 1 to the power of 2 ), 
+
+because v squared>0 and P sub 1 > P sub 2 must be true for the left-side to be positive.
+
+**Example Problem**: Calculating Pressure.
+
+The Problem.
+In Example 14.5, we found that the speed of water in a hose increased from 1.96 meters per second to 25.5 meters per second going from the hose to the nozzle. Calculate the pressure in the hose, given that the absolute pressure in the nozzle is 1.01 times ten to the 5 newtons per square meter (atmospheric, as it must be) and assuming level, frictionless flow.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+We model the fluid as incompressible and flowing steadily, so Bernoulli’s principle applies along a streamline. Because the flow is level, there is no change in gravitational potential energy. The pressure and kinetic energy of the fluid therefore trade off as the speed changes between the hose and the nozzle. The pressure at the nozzle is atmospheric because the fluid is exposed to the air.
+
+---
+
+The Math.
+
+We begin with Bernoulli’s principle, which relates the pressure and speed of the fluid at two points along the same streamline. Because the flow is level, the gravitational terms cancel, leaving a relationship between pressure and kinetic energy.
+
+ 
+ P sub 1 + 1 over 2 rho v sub 1 to the power of 2 equals P sub 2 + 1 over 2 rho v sub 2 to the power of 2.
+ 
+
+To determine the pressure in the hose, we solve this equation for P sub 1 by isolating it on one side. Subtracting the kinetic energy term at point 1 and adding the kinetic energy term at point 2 gives
+
+ 
+ P sub 1 equals P sub 2 + 1 over 2 rho v sub 2 to the power of 2 - 1 over 2 rho v sub 1 to the power of 2.
+ 
+
+Factoring out the common coefficient simplifies the expression to
+
+ 
+ P sub 1 equals P sub 2 + 1 over 2 rho ( v sub 2 to the power of 2 - v sub 1 to the power of 2 ).
+ 
+
+The known values are P sub 2 equals 1.01 times ten to the 5 newtons per square meter, rho equals 1000 kilograms per cubic meter, v sub 1 equals 1.96 meters per second, and v sub 2 equals 25.5 meters per second. Substituting these values gives
+
+ 
+ P sub 1 equals 1.01 times ten to the 5 newtons per square meter + 1 over 2 (1000 kilograms per cubic meter ) [(25.5 meters per second ) squared - (1.96 meters per second ) squared ] 
+ equals 1.01 times ten to the 5 newtons per square meter + 500 (650.25 - 3.84 ) 
+ equals 1.01 times ten to the 5 newtons per square meter + 3.23 times ten to the 5 newtons per square meter 
+ equals 4.24 times ten to the 5 newtons per square meter.
+ 
+---
+
+The Conclusion.
+
+The pressure in the hose is P sub 1 equals 4.24 times ten to the 5 newtons per square meter. This pressure is greater than atmospheric pressure because the fluid is moving more slowly in the hose than in the nozzle. As the fluid accelerates into the narrower nozzle, kinetic energy increases, which requires a decrease in pressure according to Bernoulli’s principle. This result is consistent with the expectation that higher-speed flow corresponds to lower pressure.
+
+---
+
+ **The Problem**
+Fire hoses used in major structural fires have an inside diameter of 6.40 cm. Suppose such a hose carries a flow of 40.0 liters per second, starting at a gauge pressure of 1.62 times ten to the 6 newtons per square meter. The hose rises up 10.0 meters along a ladder to a nozzle having an inside diameter of 3.00 cm. What is the pressure in the nozzle?
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+We model the water as an incompressible fluid in steady, frictionless flow, so Bernoulli’s principle applies along a streamline. The hose and nozzle are treated as circular pipes, so the fluid speeds can be found from the volume flow rate and the cross-sectional areas. Because the nozzle is higher than the hose, the pressure at the nozzle is reduced both by the gain in gravitational potential energy and by the increase in kinetic energy as the flow enters the narrower opening. The given initial pressure is a gauge pressure, so the final result will also be a gauge pressure.
+
+---
+
+The Math.
+
+To determine the nozzle pressure, we first need the fluid speeds in the hose and in the nozzle. For steady incompressible flow, the volume flow rate is the same at every cross section, so the speed is found from the flow-rate relation Q equals Av. Solving for the speed gives v equals Q/A.
+
+The hose has diameter 6.40 cm, so its radius is r sub 1 equals 3.20 cm equals 3.20 times ten to the minus 2 meters. The nozzle has diameter 3.00 cm, so its radius is r sub 2 equals 1.50 cm equals 1.50 times ten to the minus 2 meters. The flow rate is Q equals 40.0 liters per second equals 4.00 times ten to the minus 2 cubic meters/s. Using A equals pi r squared, the speed in the hose is
+
+ 
+ v sub 1 equals Q over A sub 1 
+ equals Q over pi r sub 1 to the power of 2 
+ equals 4.00 times ten to the minus 2 cubic meters/s over pi (3.20 times ten to the minus 2 meters ) squared 
+ equals 12.4 meters per second.
+ 
+
+Using the same method, the speed in the nozzle is
+
+ 
+ v sub 2 equals Q over A sub 2 
+ equals Q over pi r sub 2 to the power of 2 
+ equals 4.00 times ten to the minus 2 cubic meters/s over pi (1.50 times ten to the minus 2 meters ) squared 
+ equals 56.6 meters per second.
+ 
+
+Now that the speeds are known, we apply Bernoulli’s principle between the hose at ground level and the nozzle at the top of the ladder. For steady, incompressible, frictionless flow along a streamline, Bernoulli’s equation is
+
+ 
+ P sub 1 + 1 over 2 rho v sub 1 to the power of 2 + rho g h sub 1 equals P sub 2 + 1 over 2 rho v sub 2 to the power of 2 + rho g h sub 2.
+ 
+
+To determine the pressure in the nozzle, we solve this equation for P sub 2. Taking the hose level as the reference height gives h sub 1 equals 0 and h sub 2 equals 10.0 meters. Moving the kinetic-energy and gravitational terms to the other side gives
+
+ 
+ P sub 2 equals P sub 1 + 1 over 2 rho ( v sub 1 to the power of 2 - v sub 2 to the power of 2 ) - rho g h sub 2.
+ equals 1.62 times ten to the 6 newtons per square meter 
+
+Bullet point. 1 over 2 (1000 kilograms per cubic meter ) [(12.4 meters per second ) squared - (56.6 meters per second ) squared ]
+
+Bullet point. (1000 kilograms per cubic meter )(9.81 meters per second squared )(10.0 meters ) 
+ equals -2.96 times ten to the 3 newtons per square meter.
+ 
+
+---
+
+The Conclusion.
+
+The pressure in the nozzle is -2960 newtons per square meter, which is equivalent to -2.96 kilopascals gauge pressure. This result is very close to zero compared with atmospheric pressure, which is consistent with the fact that the water is about to emerge into the open air. The large drop in pressure occurs because the water both rises to a higher elevation and speeds up substantially as it enters the narrower nozzle.
+
+---
+
+========================================================================
+
+14.7 Viscosity and Turbulence
+
+Viscosity and Turbulence.
+
+Recall (from Chapter 6) that an object sliding across the floor with an initial velocity and no applied force will come to rest due to the frictional force. Friction depends on the types of materials in contact and is proportional to the normal force. 
+
+At low speeds, the drag is proportional to the velocity, whereas at high speeds, drag is proportional to the velocity squared. There are also forces of friction that act on fluids in motion. For example, a fluid flowing through a pipe is subject to resistance between the fluid and the walls. Friction also occurs between the different layers of fluid. The resistive forces (with the pipe walls and the layers of the fluid) affect the way the fluid flows through the pipe.
+
+Viscosity and Laminar Flow.
+
+When you pour yourself a glass of juice, the liquid flows freely and quickly. But if you pour syrups or honey, the liquid flows and sticks to the container. The difference is fluid friction, both within the fluid itself and between the fluid and its surroundings. We call this property of fluids *viscosity*. Water has a very low viscosity, while honey (or molasses) has a much higher viscosity.
+
+The precise definition of viscosity is based on laminar (i.e., nonturbulent) flow. Figure shows schematically how laminar and turbulent flow differ. When flow is laminary, *layers* flow without mixing. On the other hand, turbulent flow has the layers mixing and significant velocities occur in directions other than the overall direction of flow.
+
+Figure referenced in the course notes.
+
+**Turbulence** is a fluid flow in which layers mix together via eddies and swirls. It has two main causes:
+
+Item 1. Any obstruction or sharp corner (e.g., a faucet) creates turbulent by imparting velocities perpendicular to the flow.
+
+Item 2. The drag between adjacent layers of fluid and between the fluid and its surroundings can form swirls and eddies when the speed is great enough. 
+
+Figure shows how viscosity is measured for a fluid, where the to be measured is placed between two plates. The bottom plate is held fixed, while the top plate is moved to the right and drags the fluid with it. The layer (or laminar) of fluid in contact with either plate does not move relative to the plate, so the layer moves at a speed v while the bottom layer remains at rest. Each successive layer from the top down 
+
+Bullet point. exerts a force on the one below it,
+
+Bullet point. tries to drag the next layer along, and
+
+Bullet point. produce variation in speed from v to 0.
+
+Figure referenced in the course notes.
+
+In this approximation, the flow is laminar where the layers don't mix. The motion in Figure is like a continuous shearing motion. Fluids have zero shear strength, but the rate at which they are sheared is related to the same geometrical factors A and L as is the shear deformation for solids. The fluid is initially at rest in Figure.
+
+The layer of fluid in contact with the moving plate is accelerated and starts to move du to the internal friction between the moving plate and the fluid. The next layer is in contact with the moving layer and it accelerates because there is internal friction between the two layers. There is also internal friction between the stationary plate and the lowest layer of fluid, next to the station plate.
+
+A force F is required to keep the top plate in Fig. moving at a constant velocity v, and experiments show that this force F depends on four factors. The force F is
+
+Item 1. directly proportional to v (at least for laminar flows). A more complicated relation is needed for turbulent flows.
+
+Item 2. proportional to the area A of the plate. This seems reasonable because A is directly proportional to the amount of fluid being moved.
+
+Item 3. inversely proportional to the distance between the planets L. This is reasonable because L is like a lever arm, where the greater the lever arm, the less the force that is needed.
+
+Item 4. directly proportional to the *coefficient of viscosity* eta. The greater the viscosity, the greater the force required.
+
+These dependencies are combined into the equation
+
+ F equals eta vA over L. 
+
+The is equation gives us a working definition of fluid viscosity eta. Solving for eta gives
+
+ 
+ eta equals FL over vA.
+ 
+
+The SI unit of viscosity is N dot / [(meters per second) square meters ] equals ( newtons per square meter ) s or pascals dot s. Table lists the coefficients of viscosity for various fluids. Viscosity varies from one fluid to another by several orders of magnitude.
+
+Table. Coefficients of viscosity of various fluids. This table compares how viscosity varies across gases, liquids, oils, and syrups.
+
+Laminar Flow Confined to Tubes: Poiseuille's Law.
+
+*What causes flow?*
+
+It is a pressure difference. There is a very simple relationship between horizontal flow and pressure. Flow rate Q is in the direction from high to low pressure. The greater the pressure differential between two points, the greater the flow rate. This relationship can be stated as
+
+ 
+ 
+
+Q equals P sub 2 - P sub 1 over R,
+ 
+
+where P sub 1 and P sub 2 are the pressures a the two points and R is the resistance to flow. The resistance R includes everything, except pressure, that affects flow rate. For example R is greater for a long tube than for a short one. The greater the viscosity of a fluid, the greater the value of R. Turbulence greatly increases R, whereas increasing the diameter of a tube decreases R.
+
+If viscosity is zero, the fluid is frictionless and the resistance to flow is also zero. Comparing frictionless flow in a tube to viscous flow (see the figure), we see that for a viscous fluid, speed is greatest at midstream because of drag at the boundaries. We can see the effect of viscosity in a Bunsen burner flame, even though viscosity of natural gas is small.
+
+Figure referenced in the course notes.
+
+The resistance R to laminar flow of an incompressible fluid with viscosity eta through a horizontal tube of uniform radius r and length l is given by
+
+ 
+R equals 8 eta l over pi r to the power of 4.
+ 
+
+This equation is called **Poiseuille's law for resistance**, named after J. L Poiseuille who derived it in an attempt to understand the flow of blood through the body.
+
+In the expression for R, we see that resistance is directly proportional to both the fluid viscosity eta and the length l of a tube. Both of these directly affect the amount of friction encountered, where the greater the resistance, the smaller the flow. The radius r of a tube also affects the resistance, which makes sense because a larger radius allows for a greater flow (all other factors remaining the same). 
+
+Note.
+
+In Poiseuille's law, r is raised to the **fourth** power. This exponent means that any change in the radius of a tube has a very large effect on resistance. For example, doubling the radius of a tube decreases resistance by a factor of 2 to the power of 4 equals 16.
+ 
+
+Taking the flow rate Q and the resistance R together, we find the following expression for the flow rate:
+
+ 
+Q equals ( P sub 2 - P sub 1 ) pi r to the power of 4 over 8 eta l.
+ 
+
+Figure illustrates Poiseuille's law for a tube of length l. Notice that the flow rate is highest at the center of the tube.
+
+Figure referenced in the course notes.
+
+Flow and Resistance as Causes of Pressure Drops.
+
+Water Pressure in homes is sometimes lower than normal during times of heavy use (e.g., hot summer days). The drop in pressure occurs in the water main before it reaches individual homes (see Figure ). 
+
+Figure referenced in the course notes.
+
+We can understand why the pressure P sub 1 to the home drops during times of heavy use by rearranging Eqn.:
+
+ 
+Q equals fraction { P sub 2 - { P sub 1 }}{R}, 
+ P sub 2 - P sub 1 equals RQ.
+ 
+
+In this case, P sub 2 is the pressure at the water works and R is the resistance of the water main. During times of heavy use, the flow rate Q is large. This means that P sub 2 - P sub 1 must also be large (i.e., P sub 2 gg P sub 1 ). Therefore, P sub 1 must decrease assuming that P sub 2 stays the same. It is correct to think of flow and resistance as causing the pressure to drop from P sub 2 to P sub 1. *The equation P sub 2 - P sub 1 equals RQ is valid for both laminar and turbulent flows.*
+
+We can also ues this relation to analyze pressure drops occurring in more complex systems in which the tube radius is not the same everywhere Resistance is much greater in narrow places (e.g. an obstructed coronary artery). For a given flow rate Q, the pressure drop is greatest where the tube is most narrow. This is how water faucets control flow.
+
+Additionally, R is greatly increased by turbulence, and a constriction that creates turbulence greatly reduces the pressure downstream. Plaque in an artery reduces pressure and hence flow, both by its resistance and by the turbulence it creates.
+
+Measuring Turbulence.
+
+An indicator called the **Reynolds number** N sub R can reveal whether flow is laminar or turbulent. For flow in a tube of uniform diameter, the Reynolds number is defined as 
+
+ 
+ N sub R equals 2 over eta rho v r, (flow in tube) 
+ 
+
+where rho is the fluid density, v its speed, eta its viscosity, and r the tube radius. The Reynolds number is a *dimensionless* quantity. Experiments have revealed that N sub R is related to the onset of turbulence. 
+
+Bullet point. For N sub R below about 2000, the flow is laminar.
+
+Bullet point. For N sub R above 3000, the flow is turbulent.
+
+For 2000 < N sub R < 3000, the flow is unstable. It can be laminar, but small obstructions and surface roughness can make it turbulent. It may also oscillate randomly between being laminar and turbulent. In fact, the flow of a fluid with a Reynolds number between 2000-3000# is a good example of chaotic behavior.
+
+Tip.
+
+A system is defined to be chaotic when its behavior is so sensitive to the choice of the initial state, it is extremely difficult to predict precisely any future state.
+ 
+
+It is difficult (but not impossible) to predict whether the flow is turbulent or not when a fluid's Reynold's number falls in this range due to extremely sensitive dependence on factors like roughness and obstructions on the nature of the flow. A tiny variation in one factor has an exaggerated (or nonlinear) effect on the flow.
+
+**Example Problem**: Air Conditioning Systems.
+
+The Problem.
+An air conditioning system is being designed to supply air at a gauge pressure of 0.054 pascals at a temperature of 20 degrees C. The air is sent through an insulated, round conduit with a diameter of 18.00 cm. The conduit is 20 meters long and is open to a room at atmospheric pressure 101.30 kilopascals. The room has a length of 12 meters, a width of 6 meters, and a height of 3 meters. (a) What is the volume flow rate through the pipe, assuming laminar flow? (b) Estimate the length of time to completely replace the air in the room. (c) The builders decide to save money by using a conduit with a diameter of 9.00 cm. What is the new flow rate?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+We model the air as a fluid undergoing steady laminar flow through a round conduit, so Poiseuille’s law applies. The conduit is treated as cylindrical with constant radius along its length, and the pressure difference driving the flow is the given gauge pressure relative to the room. Because the room is open to the atmosphere, the outlet pressure is atmospheric, so the gauge pressure directly gives the pressure difference across the conduit. To estimate the air-replacement time, we treat the volume flow rate as constant and divide the room volume by that flow rate. In part (c), the conduit length, pressure difference, and viscosity remain unchanged, so the new flow rate depends only on the smaller radius through the r to the power of 4 dependence of Poiseuille flow.
+
+---
+
+The Math.
+
+**(a)** For steady laminar flow through a cylindrical conduit, Poiseuille’s law gives the volume flow rate in terms of the pressure difference, viscosity, conduit length, and conduit radius. The system requires the volume flow rate, given by
+
+ 
+Q equals change in P pi r to the power of 4 over 8 eta l.
+ 
+
+The pressure difference is the given gauge pressure, so change in P equals 0.054 pascals. From Table 14.4, the viscosity of air at 20 degrees C is eta equals 0.0181 times ten to the minus 3 pascals dot s equals 1.81 times ten to the minus 5 pascals dot s. The conduit diameter is 18.00 cm, so the radius is r equals 9.00 cm equals 0.0900 meters, and the conduit length is l equals 20 meters. Substituting these values gives
+
+ 
+Q equals (0.054 pascals ) pi (0.0900 meters ) to the power of 4 over 8(1.81 times ten to the minus 5 pascals dot s )(20 meters ) 
+ equals 3.84 times ten to the minus 3 cubic meters/s.
+ 
+
+**(b)** To estimate the time required to replace the air in the room, we first determine the room volume. For a rectangular room, the volume is the product of its length, width, and height. Thus,
+
+ 
+V equals (12 meters )(6 meters )(3 meters ) 
+ equals 216 cubic meters.
+ 
+
+For a constant volume flow rate, the replacement time is the room volume divided by the flow rate. Therefore,
+
+ 
+ change in t equals V over Q 
+ equals 216 cubic meters over 3.84 times ten to the minus 3 cubic meters/s 
+ equals 5.63 times ten to the 4 s.
+ 
+
+Converting this time to hours gives
+
+ 
+ change in t equals 5.63 times ten to the 4 s over 3600 s/hr 
+ equals 15.6 hr.
+ 
+
+**(c)** For the smaller conduit, the new diameter is 9.00 cm, so the new radius is r' equals 4.50 cm equals 0.0450 meters. Using Poiseuille’s law again with the same pressure difference, viscosity, and conduit length gives
+
+ 
+Q' equals change in P pi r' to the power of 4 over 8 eta l 
+ equals (0.054 pascals ) pi (0.0450 meters ) to the power of 4 over 8(1.81 times ten to the minus 5 pascals dot s )(20 meters ) 
+ equals 2.40 times ten to the minus 4 cubic meters/s.
+ 
+
+This result is also consistent with the radius dependence Q is proportional to r to the power of 4. Halving the radius reduces the flow rate by a factor of 2 to the power of 4 equals 16, so the new flow rate should be one-sixteenth of the original value:
+
+ 
+Q' equals Q over 16 equals 3.84 times ten to the minus 3 cubic meters/s over 16 equals 2.40 times ten to the minus 4 cubic meters/s.
+ 
+
+---
+
+The Conclusion.
+
+The volume flow rate through the original conduit is 3.84 times ten to the minus 3 cubic meters/s. At this rate, the time required to replace the 216 cubic meters of air in the room is 15.6 hr. If the conduit diameter is reduced from 18.00 cm to 9.00 cm, the new flow rate becomes 2.40 times ten to the minus 4 cubic meters/s.
+
+These results show that the flow rate is extremely sensitive to the conduit radius in laminar flow. Halving the diameter halves the radius, which reduces the flow rate by a factor of sixteen. This dramatic reduction explains why even a modest decrease in duct size can greatly increase the time required to move air through a system.
+
+---
+
+ **The Problem**
+In Example 14.8, we found the volume flow rate of an air conditioning system to be Q equals 3.84 times ten to the minus 3 cubic meters/s. This calculation assumed laminar flow. (a) Was this a good assumption? (b) At what velocity would the flow become turbulent?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+We model the air as flowing steadily through a round conduit of radius 0.0900 meters. To test whether the laminar-flow assumption is valid, we first determine the average fluid speed from the known volume flow rate and conduit cross section. We then use the Reynolds number to classify the flow. For part (b), the onset of turbulence is estimated by taking the Reynolds number to be 2000, which is the usual threshold between laminar and turbulent flow in a pipe.
+
+---
+
+The Math.
+
+**(a)** To determine whether the flow is laminar, we first need the average speed of the air in the conduit. For steady flow through a circular cross section, the volume flow rate is related to the speed by Q equals Av, where A equals pi r squared. Solving for the speed gives
+
+ 
+v equals Q over pi r squared.
+ 
+
+The volume flow rate is Q equals 3.84 times ten to the minus 3 cubic meters/s, and the conduit radius is r equals 0.0900 meters. Substituting these values gives
+
+ 
+v equals 3.84 times ten to the minus 3 cubic meters/s over pi (0.0900 meters ) squared 
+ equals 0.151 meters per second.
+ 
+
+To classify the flow, we use the Reynolds number for flow in a pipe. For a pipe of radius r, the Reynolds number is
+
+ 
+N_ R equals 2 rho v r over eta.
+ 
+
+At 20 degrees C, the density of air is rho equals 1.29 kilograms per cubic meter and its viscosity is eta equals 1.81 times ten to the minus 5 pascals dot s. Substituting these values together with v equals 0.151 meters per second and r equals 0.0900 meters gives
+
+ 
+N_ R equals 2(1.29 kilograms per cubic meter )(0.151 meters per second )(0.0900 meters ) over 1.81 times ten to the minus 5 pascals dot s 
+ equals 1940.
+ 
+
+Because this value is less than 2000, the flow is in the laminar regime.
+
+**(b)** To determine the speed at which the flow becomes turbulent, we set the Reynolds number equal to the threshold value 2000 and solve for v. Starting from N_ R equals 2 rho v r/ eta, dividing both sides by 2 rho r gives
+
+ 
+v equals N_ R eta over 2 rho r.
+ 
+
+Substituting N_ R equals 2000, eta equals 1.81 times ten to the minus 5 pascals dot s, rho equals 1.29 kilograms per cubic meter, and r equals 0.0900 meters gives
+
+ 
+v equals (2000)(1.81 times ten to the minus 5 pascals dot s ) over 2(1.29 kilograms per cubic meter )(0.0900 meters ) 
+ equals 0.156 meters per second.
+ 
+
+---
+
+The Conclusion.
+
+The Reynolds number for the air-conditioning flow is 1940, so the assumption of laminar flow is reasonable. The flow becomes turbulent when the speed reaches about 0.156 meters per second. Because the operating speed of 0.151 meters per second is only slightly below this threshold, the flow is just barely in the laminar regime.
+
+---
+
+========================================================================
