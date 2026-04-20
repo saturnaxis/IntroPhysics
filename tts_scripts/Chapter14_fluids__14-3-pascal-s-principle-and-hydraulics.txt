@@ -2,100 +2,91 @@ Pascal's Principle and Hydraulics.
 
 Pascal's Principle.
 
-In 1653, Blaise Pascal published his *Treatise on the Equilibrium of Liquids*, in which he develops his principles of static fluids. When a fluid is not flowing (i.e., static), we say that the fluid is in static equilibrium. If the fluid is water, we say it is in hydrostatic equilibrium. For a fluid in static equilibrium, the net force on any part of the fluid be zero because the fluid will would otherwise start to flow.
+In 1653, Blaise Pascal published his *Treatise on the Equilibrium of Liquids*, in which he develops his principles of static fluids. When a fluid is not flowing (i.e., static), we say that the fluid is in static equilibrium. If the fluid is water, we say it is in hydrostatic equilibrium. For a fluid in static equilibrium, the net force on any part of the fluid must be zero because the fluid will would otherwise start to flow.
 
-Pascal's observations provide the foundation for hydraulics. Pascal observed that a *change in pressure* applied to an enclosed fluid is transmitted undiminished throughout the fluid and to the walls of the container. **Pascal's principle** implies that the total pressure in a fluid is the sum of the pressures from different sources. 
+Pascal's observations provide the foundation for hydraulics. Pascal observed that a *change in pressure* applied to an enclosed fluid is transmitted undiminished throughout the fluid and to the walls of the container. **Pascal's principle** implies that the total pressure in a fluid is the sum of the pressures from different sources.
 
 Note that this principle does not say that the pressure is the *same* at all points of a fluid. A good example is the fluid at a depth depends on the depth of the fluid and the pressure of the atmosphere. Rather, Pascal's principle applies to the *change* in pressure.
 
-Figure referenced in the course notes.
+Figure 14.8. Fluid with a movable piston.
 
-Suppose you place some water in a cylindrical container of height h and cross-sectional area A that has a movable piston of mass m (see Figure ). Adding a weight w equals Mg at the top of the piston increases the pressure at the top by w/A equals Mg/A, since the additional weight also acts over the area A of the lid by
+Suppose you place some water in a cylindrical container of height h and cross-sectional area A that has a movable piston of mass m (see Figure 14.8). Adding a weight w equals Mg at the top of the piston increases the pressure at the top by w/A equals Mg/A, since the additional weight also acts over the area A of the lid by
 
- change in p_ top equals Mg over A. 
+change in p_ top equals Mg over A.
 
-According to Pascal's principle, the pressure at all points in the water changes by the same amount, Mg/A. Thus the pressure at the bottom also increases by Mg/A. The pressure at the bottom of the container is equal to the sum of 
+According to Pascal's principle, the pressure at all points in the water changes by the same amount, Mg/A. Thus the pressure at the bottom also increases by Mg/A. The pressure at the bottom of the container is equal to the sum of
 
-Bullet point. the atmospheric pressure, 
+Bullet point. the atmospheric pressure,
 
-Bullet point. the pressure due to the fluid, and 
+Bullet point. the pressure due to the fluid, and
 
 Bullet point. the pressure supplied by the mass.
 
-The change in pressure at the bottom of the container due to the mass is 
+The change in pressure at the bottom of the container due to the mass is
 
- change in p_ bottom equals Mg over A. 
+change in p_ bottom equals Mg over A.
 
 Since the pressure changes are the same everywhere in the fluid, we no longer need subscripts to designate the pressure change for the top or bottom, where
 
- change in p equals change in p_ top equals change in p_ bottom equals change in p_ everywhere. 
+change in p equals change in p_ top equals change in p_ bottom equals change in p_ everywhere.
 
+**Physics4Life**.
 
 Applications of Pascal's Principle and Hydraulic Systems.
 
-Hydraulic systems are used to operate automotive brakes, hydraulic jacks, and many other mechanical systems (see Figure 14.13 ). We can derive a relationship between the forces in a simple hydraulic system by applying Pascal's principle.
+Hydraulic systems are used to operate automotive brakes, hydraulic jacks, and many other mechanical systems (see Figure 14.9). We can derive a relationship between the forces in a simple hydraulic system by applying Pascal's principle.
 
-Figure referenced in the course notes.
+Figure 14.9. Hydraulic system with two pistons.
 
 The two pistons (in the figure) are at the same height, so there is no difference in pressure due to a difference in depth. The pressure due to F sub 1 action on area A sub 1 is simply
 
- P sub 1 equals F sub 1 over A sub 1. 
+P sub 1 equals F sub 1 over A sub 1.
 
-According to Pascal's principle, the pressure is transmitted undiminished throughout the fluid and to all walls of the container. Thus, a pressure P sub 2 is felt at the other piston that is equal to P sub 1 (i.e., P sub 1 equals P sub 2 ). However, P sub 2 equals F sub 2 / A sub 2, for this to be so, we find that
+According to Pascal's principle, the pressure is transmitted undiminished throughout the fluid and to all walls of the container. Thus, a pressure P sub 2 is felt at the other piston that is equal to P sub 1 (i.e., P sub 1 equals P sub 2). However, P sub 2 equals F sub 2 over A sub 2. For this to be so, we find that
 
- 
- F sub 1 over A sub 1 equals F sub 2 over A sub 2.
- 
+F sub 1 over A sub 1 equals F sub 2 over A sub 2.
 
 This equation relates the ratios of force to area in any hydraulic system, provided that the pistons are at the same vertical height and that friction in the system is negligible.
 
-Hydraulic systems can increase or decrease the force applied to them. To mak the force larger, te pressure is applied to a larger area. For example if a 100 - N force is applied to the left cylinder in Figure and the right cylinder has an area 5 times greater, then the output force is 500 newtons. Hydraulic systems are analogous to simple levers, but they have the advantage tha pressure can be sent through curved lines to several places at once.
+Hydraulic systems can increase or decrease the force applied to them. To mak the force larger, te pressure is applied to a larger area. For example, if a 100 - N force is applied to the left cylinder in Figure 14.9 and the right cylinder has an area 5 times greater, then the output force is 500 newtons. Hydraulic systems are analogous to simple levers, but they have the advantage tha pressure can be sent through curved lines to several places at once.
 
-The **hydraulic jack** is used to lift heavy loads, such as those used by auto mechanics to raise an automobile. It consists of an incompressible fluid filled in a U-tube fitted with a movable piston on each side. One side of the U-tube is narrower than the other. A small force applied over a small area can balance a much larger force on the other side over a larger area (see Figure ).
+The **hydraulic jack** is used to lift heavy loads, such as those used by auto mechanics to raise an automobile. It consists of an incompressible fluid filled in a U-tube fitted with a movable piston on each side. One side of the U-tube is narrower than the other. A small force applied over a small area can balance a much larger force on the other side over a larger area (see Figure 14.10).
 
-Figure referenced in the course notes.
+Figure 14.10. Hydraulic jack.
 
 From Pascal's principle, we find that the force needed to lift the care is less than the weight of the car:
 
- F sub 1 equals ( A sub 1 over A sub 2 ) F sub 2, 
+F sub 1 equals (A sub 1 over A sub 2) F sub 2,
 
 where F sub 1 is the force applied to lift the car, A sub 1 is the cross-sectional area of the smaller piston, A sub 2 is the cross-sectional area of the larger piston, and F sub 2 is the weight of the car.
 
 **Example Problem**: Calculating Force on Wheel Cylinders.
 
 The Problem.
-Consider the automobile hydraulic system shown in. Suppose a force of 100 newtons is applied to the brake pedal, which acts on the pedal cylinder (acting as a “master” cylinder) through a lever. A force of 500 newtons is exerted on the pedal cylinder. Pressure created in the pedal cylinder is transmitted to the four wheel cylinders. The pedal cylinder has a diameter of 0.500 cm and each wheel cylinder has a diameter of 2.50 cm. Calculate the magnitude of the force F sub 2 created at each of the wheel cylinders.
+Consider the automobile hydraulic system shown in Figure 14.11. Suppose a force of 100 newtons is applied to the brake pedal, which acts on the pedal cylinder (acting as a “master” cylinder) through a lever. A force of 500 newtons is exerted on the pedal cylinder. Pressure created in the pedal cylinder is transmitted to the four wheel cylinders. The pedal cylinder has a diameter of 0.500 cm and each wheel cylinder has a diameter of 2.50 cm. Calculate the magnitude of the force F sub 2 created at each of the wheel cylinders.
 
-Figure referenced in the course notes.
+Figure 14.11. Automobile hydraulic braking system.
 
 Expand the dropdown below to see the worked solution.
 
- 
- 
- 
- 
- 
-
 The Model.
 
-We treat the brake fluid as an ideal fluid in static equilibrium, so Pascal’s principle applies. The pressure is transmitted equally throughout the fluid, which means the pressure in the master cylinder equals the pressure in each wheel cylinder. If F sub 1 is the force applied to the pedal cylinder, and A sub 1 and A sub 2 are the cross-sectional areas of the pedal and wheel cylinders, respectively, then F sub 1 / A sub 1 equals F sub 2 / A sub 2. Because the given 500 newtons is already the force exerted on the pedal cylinder, the lever analysis is not needed here.
+We treat the brake fluid as an ideal fluid in static equilibrium, so Pascal’s principle applies. The pressure is transmitted equally throughout the fluid, which means the pressure in the master cylinder equals the pressure in each wheel cylinder. If F sub 1 is the force applied to the pedal cylinder, and A sub 1 and A sub 2 are the cross-sectional areas of the pedal and wheel cylinders, respectively, then F sub 1 over A sub 1 equals F sub 2 over A sub 2. Because the given 500 newtons is already the force exerted on the pedal cylinder, the lever analysis is not needed here.
 
 ---
 
 The Math.
 
-We begin with Pascal’s principle, which states that the pressure is the same in both cylinders. This gives the relationship F sub 1 / A sub 1 equals F sub 2 / A sub 2, where F sub 1 is the force applied to the pedal cylinder and F sub 2 is the force exerted by each wheel cylinder. Solving this equation for the output force gives F sub 2 equals ( A sub 2 / A sub 1 ) F sub 1.
+We begin with Pascal’s principle, which states that the pressure is the same in both cylinders. This gives the relationship F sub 1 over A sub 1 equals F sub 2 over A sub 2, where F sub 1 is the force applied to the pedal cylinder and F sub 2 is the force exerted by each wheel cylinder. Solving this equation for the output force gives F sub 2 equals (A sub 2 over A sub 1) F sub 1.
 
-Because both cylinders have circular cross sections, their areas can be written in terms of their radii as A equals pi r squared. Substituting this into the area ratio shows that the factor pi cancels, leaving A sub 2 / A sub 1 equals r sub 2 to the power of 2 / r sub 1 to the power of 2. This allows us to express the force entirely in terms of the cylinder radii.
+Because both cylinders have circular cross sections, their areas can be written in terms of their radii as A equals pi r squared. Substituting this into the area ratio shows that the factor pi cancels, leaving A sub 2 over A sub 1 equals r sub 2 to the power of 2 over r sub 1 to the power of 2. This allows us to express the force entirely in terms of the cylinder radii.
 
 The given diameters of the pedal and wheel cylinders are 0.500 cm and 2.50 cm, respectively, so the corresponding radii are r sub 1 equals 0.250 cm and r sub 2 equals 1.25 cm. Substituting these values into the force relation gives
 
- 
- F sub 2 equals ( r sub 2 to the power of 2 over r sub 1 to the power of 2 ) F sub 1 
- equals ( (1.25 cm ) squared over (0.250 cm ) squared )(500 newtons ) 
- equals 25(500 newtons ) 
- equals 1.25 times ten to the 4 newtons.
- 
+F sub 2 equals (r sub 2 to the power of 2 over r sub 1 to the power of 2) F sub 1
+equals ((1.25 cm) squared over (0.250 cm) squared)(500 newtons)
+equals 25(500 newtons)
+equals 1.25 times ten to the 4 newtons.
 
 ---
 
@@ -104,5 +95,3 @@ The Conclusion.
 Each wheel cylinder exerts a force of 1.25 times ten to the 4 newtons. This result is significantly larger than the 500 newtons force applied to the pedal cylinder, which reflects the large ratio of the cylinder areas in the hydraulic system. Because pressure is transmitted equally throughout the fluid, increasing the cross-sectional area of the output cylinder increases the force it exerts.
 
 This amplification of force explains how a driver can apply a relatively small force at the pedal and still generate a much larger braking force at the wheels. However, this increase in force comes at the expense of distance—the wheel cylinders move a smaller distance than the pedal cylinder, so the total work done remains consistent with energy conservation.
-
----

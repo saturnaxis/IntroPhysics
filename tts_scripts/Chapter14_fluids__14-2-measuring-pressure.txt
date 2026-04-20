@@ -2,95 +2,83 @@ Measuring Pressure.
 
 Gauge vs. Absolute Pressure.
 
-Suppose the pressure gauge on full scuba tank reads 3000 p s i, which is approximately 207 atm. When the valve is opened, air begins to escape because the pressure inside the tank is grater than the atmospheric pressure outside the tank. Air continues to escape from the tank until the pressure inside the tank equals the pressure of the atmosphere outside the tank. At this point, the pressure gauge on the tank reads, zero even though the pressure inside the tank is actually 1 atm (i.e., the same air pressure outside the tank).
+Suppose the pressure gauge on a full scuba tank reads 3000 p s i, which is approximately 207 atmospheres (atm). When the valve is opened, air begins to escape because the pressure inside the tank is grater than the atmospheric pressure outside the tank. Air continues to escape from the tank until the pressure inside the tank equals the pressure of the atmosphere outside the tank. At this point, the pressure gauge on the tank reads zero, even though the pressure inside the tank is actually 1 atm (i.e., the same air pressure outside the tank).
 
 Most pressure gauges are calibrated to read zero at atmospheric pressure. Pressure reading from such gauges are called **gauge pressure**, which is the pressure relative to the atmospheric pressure. When the pressure inside the tank is greater than atmospheric pressure, the gauge reports a positive value.
 
-Some gauges are designed to measure *negative* pressure. For example, many physics experiments must take place in a vacuum chamber where nearly all the air is pumped out. the pressure inside the vacuum chamber is less than atmospheric pressure, so te pressure on the gauge reads a negative value.
+Some gauges are designed to measure *negative* pressure. For example, many physics experiments must take place in a vacuum chamber where nearly all the air is pumped out. The pressure inside the vacuum chamber is less than atmospheric pressure, so te pressure on the gauge reads a negative value.
 
 Unlike gauge pressure, **absolute pressure** accounts for atmospheric pressure, which in effect adds to the pressure in any fluid not enclosed in a rigid container.
 
 Absolute Pressure.
 
- 
-
 The absolute pressure, or total pressure, is the sum of gauge pressure and atmospheric pressure:
 
- P_ abs equals P_ g + P_ atm, 
+P_ abs equals P_ g + P_ atm,
 
 where P_ abs is the absolute pressure, P_ g is the gauge pressure, and P_ atm is the atmospheric pressure.
- 
 
-For example, if a tire gauge reads 34 p s i, then the absolute pressure include the atmospheric pressure ( 14.7 p s i ), or 34 p s i + 14.7 p s i equals 48.7 p s i.
+For example, if a tire gauge reads 34 p s i, then the absolute pressure include the atmospheric pressure (14.7 p s i), or 34 p s i + 14.7 p s i equals 48.7 p s i.
 
 In most cases, the absolute pressure in fluids cannot be negative. Fluids push rather than pull, so the smallest absolute pressure in a fluid is zero. Thus, the smallest possible gauge pressure is P_ g equals -P_ atm, which makes P_ abs equals 0. There is no theoretical limit for how large a gauge pressure can be.
 
 Measuring Pressure.
 
-A host of devices are used for measuring pressure, ranging from tire pressure gauges to blood pressure monitors. Any property that changes with pressure in a known way can be used to construct a pressure gauge. Some of the most common types include 
+A host of devices are used for measuring pressure, ranging from tire pressure gauges to blood pressure monitors. Any property that changes with pressure in a known way can be used to construct a pressure gauge. Some of the most common types include:
 
 Bullet point. strain gauges, which use the change in the shape of a material with pressure,
 
 Bullet point. capacitance pressure gauges, which use the change in electric capacitance due to shape change with pressure,
 
-Bullet point. piezoelectric pressure gauges, which generate a voltage difference across a piezoelectric material under a pressure difference between two sides, and
-ion gauges, which measure pressure by ionizing molecules in highly evacuated chambers.
+Bullet point. piezoelectric pressure gauges, which generate a voltage difference across a piezoelectric material under a pressure difference between two sides, and ion gauges, which measure pressure by ionizing molecules in highly evacuated chambers.
 
-Different pressure gauges are useful in different pressure ranges and physical situations. Some examples are shown in Figure.
+Different pressure gauges are useful in different pressure ranges and physical situations. Some examples are shown in Figure 14.4.
 
-Figure referenced in the course notes.
+Figure 14.4. Examples of pressure-measuring devices.
 
 Manometers.
 
-One of the most important classes of pressure gauges applies the property that pressure due to the weight of a fluid of constant density is given by P equals rho gh. The U-shaped tube shown in Figure is an example of a *manometer*. In Fig. a, both sides of the tube are open to the atmosphere, which allows atmospheric pressure to push down on each side equally so that its effects cancel.
+One of the most important classes of pressure gauges applies the property that pressure due to the weight of a fluid of constant density is given by P equals rho g h. The U-shaped tube shown in Figure 14.5 is an example of a *manometer*. In Fig. a, both sides of the tube are open to the atmosphere, which allows atmospheric pressure to push down on each side equally so that its effects cancel.
 
-Figure referenced in the course notes.
+Figure 14.5. U-tube manometer configurations.
 
-A manometer with only one side open to the atmosphere is an ideal device for measuring *gauge* pressures. The gauge pressure is P_ gauge equals rho gh and is found by measuring h. For example, suppose one side of the U-tube is connected to some source of pressure P_ abs (e.g., the ballon in Fig. b or the vacuum-packed peanut jar in Fig. c).
+A manometer with only one side open to the atmosphere is an ideal device for measuring *gauge* pressures. The gauge pressure is P_ gauge equals rho g h and is found by measuring h. For example, suppose one side of the U-tube is connected to some source of pressure P_ abs (e.g., the ballon in Fig. b or the vacuum-packed peanut jar in Fig. c).
 
-Pressure is transmitted undiminished to the manometer, and the fluid levels are no longer equal. In Fig. b, P_ abs >P_ atm and in Fig. c, P_ abs < P_ atm. In both cases, P_ abs differs from the atmospheric pressure by an amount rho gh, where rho is the density of the fluid in the manometer.
+Pressure is transmitted undiminished to the manometer, and the fluid levels are no longer equal. In Fig. b, P_ abs > P_ atm, and in Fig. c, P_ abs < P_ atm. In both cases, P_ abs differs from the atmospheric pressure by an amount rho g h, where rho is the density of the fluid in the manometer.
 
-In Fig. b, P_ abs can support a column of fluid of height h, so it must exert a pressure rho gh greater than atmospheric pressure. In Fig. c, the *atmospheric* pressure can support a column of fluid of height h, so the absolute pressure is less than atmospheric pressure by an amount rho gh 
+In Fig. b, P_ abs can support a column of fluid of height h, so it must exert a pressure rho g h greater than atmospheric pressure. In Fig. c, the *atmospheric* pressure can support a column of fluid of height h, so the absolute pressure is less than atmospheric pressure by an amount rho g h.
 
 Barometers.
 
-A *barometer* is a device that typically uses a single column of mercury to measure atmospheric pressure, which is in contrast to the U-shaped tube of a manometer. The barometer (invented by Evangelista Torricelli) is constructed from a glass tube closed at one end and filled with mercury. The tube is then inverted and placed in a pool of mercury. A barometer measures atmospheric pressure (rather than gauge pressure) because there is a nearly pure vacuum above the mercury in the tube. The height of the mercury is such that P_ atm equals rho gh and the height changes when the atmospheric pressure varies.
+A *barometer* is a device that typically uses a single column of mercury to measure atmospheric pressure, which is in contrast to the U-shaped tube of a manometer. The barometer (invented by Evangelista Torricelli) is constructed from a glass tube closed at one end and filled with mercury. The tube is then inverted and placed in a pool of mercury. A barometer measures atmospheric pressure (rather than gauge pressure) because there is a nearly pure vacuum above the mercury in the tube. The height of the mercury is such that P_ atm equals rho g h, and the height changes when the atmospheric pressure varies.
 
-Figure referenced in the course notes.
+Figure 14.6. Mercury barometer.
 
-Weather forecasters closely monitor changes in atmospheric pressure because it signals a change in the weather. The barometer can also be used as an altimeter, since the average atmospheric pressure varies with altitude. Mercury barometers and manometer are common enough so that millimeter heights of mercury ( millimeters of mercury ) are quoted for atmospheric and blood pressures.
+Weather forecasters closely monitor changes in atmospheric pressure because it signals a change in the weather. The barometer can also be used as an altimeter, since the average atmospheric pressure varies with altitude. Mercury barometers and manometers are common enough so that millimeter heights of mercury (millimeters of mercury) are quoted for atmospheric and blood pressures.
 
 Units of pressure.
 
-The SI unit for pressure is the pascal ( pascals ), where 1 pascals equals 1 newtons per square meter. In addition to the pascal, there are many other units for pressure in common use (see ). Im meteorology, atmospheric pressure is often describe in the units of millibars ( millibars ), where
+The SI unit for pressure is the pascal (pascals), where 1 pascals equals 1 newtons per square meter. In addition to the pascal, there are many other units for pressure in common use (see Table 14.3). In meteorology, atmospheric pressure is often describe in the units of millibars (millibars), where
 
- 
-1 bar equals ten to the 5 pascals, 
+1 bar equals ten to the 5 pascals,
 1000 millibars equals ten to the 5 pascals.
- 
 
-The millibar is convenient for meteorologists because the average atmospheric pressure at sea level on Earth is 1.013 times ten to the 5 pascals equals 1013 millibars equals 1 atm. Using the equations derived when considering pressure at a depth of fluid, pressure can also be measured as millimeters (or inches) of mercury. 
+The millibar is convenient for meteorologists because the average atmospheric pressure at sea level on Earth is 1.013 times ten to the 5 pascals equals 1013 millibars equals 1 atm. Using the equations derived when considering pressure at a depth of fluid, pressure can also be measured as millimeters (or inches) of mercury.
 
-The pressure at the bottom of a 760{-} mm column of mercury at 0 degrees in barometer is equal to the atmospheric pressure. Thus, 760 millimeters of mercury is also used in place of one atmosphere of pressure. 
+The pressure at the bottom of a 760 mm column of mercury at 0 degrees in a barometer is equal to the atmospheric pressure. Thus, 760 millimeters of mercury is also used in place of one atmosphere of pressure.
 
 In vacuum physics labs, scientists often use another unit called torr (named after Torricelli), where 1 torr equals 1 millimeters of mercury.
 
-Table. Common units of pressure referenced to pascals. This table compares pascal, p s i, atmosphere, bar, torr, inches of mercury, and millibar.
+Table 14.3. Common units of pressure referenced to pascals. This table compares pascal, p s i, atmosphere, bar, torr, inches of mercury, and millibar.
 
 **Example Problem**: Fluid Heights in an Open U-Tube.
 
 The Problem.
-A U-tube with both ends open is filled with a liquid of density rho _1 to a height h on both sides. A liquid of density rho _2 < rho _1 is poured into one side and Liquid 2 settles on top of Liquid 1. The heights on the two sides are different. The height to the top of Liquid 2 from the interface is h sub 2 and the height to the top of Liquid 1 from the level of the interface is h sub 1. Derive a formula for the height difference.
+A U-tube with both ends open is filled with a liquid of density rho _1 to a height h on both sides. A liquid of density rho _2 < rho _1 is poured into one side and Liquid 2 settles on top of Liquid 1. The heights on the two sides are different. The height to the top of Liquid 2 from the interface is h sub 2, and the height to the top of Liquid 1 from the level of the interface is h sub 1. Derive a formula for the height difference.
 
-Figure referenced in the course notes.
+Figure 14.7. Two-fluid manometer.
 
 Expand the dropdown below to see the worked solution.
-
- 
- 
- 
- 
- 
 
 The Model.
 
@@ -100,47 +88,33 @@ The Math.
 
 On the left side, the point at the interface level lies beneath a column of Liquid 1 of height h sub 1, so its pressure is
 
- 
 P_ left equals P naught + rho _1 g h sub 1.
- 
 
 On the right side, the interface lies beneath a column of Liquid 2 of height h sub 2, so its pressure is
 
- 
 P_ right equals P naught + rho _2 g h sub 2.
- 
 
 Because these two points are at the same height in the same connected fluid, their pressures must be equal. Thus,
 
- 
- P naught + rho _1 g h sub 1 equals P naught + rho _2 g h sub 2.
- 
+P naught + rho _1 g h sub 1 equals P naught + rho _2 g h sub 2.
 
 Subtracting P naught from both sides and dividing by g gives
 
- 
- rho _1 h sub 1 equals rho _2 h sub 2.
- 
+rho _1 h sub 1 equals rho _2 h sub 2.
 
 Solving for h sub 1 gives
 
- 
- h sub 1 equals rho _2 over rho _1 h sub 2.
- 
+h sub 1 equals rho _2 over rho _1 h sub 2.
 
 The height difference between the two sides is therefore
 
- 
- h sub 2 - h sub 1 equals h sub 2 - rho _2 over rho _1 h sub 2 
- equals (1 - rho _2 over rho _1 ) h sub 2.
- 
+h sub 2 - h sub 1 equals h sub 2 - rho _2 over rho _1 h sub 2
+equals (1 - rho _2 over rho _1) h sub 2.
 
 The Conclusion.
 
 The height difference between the two fluid levels is
 
- 
- h sub 2 - h sub 1 equals (1 - rho _2 over rho _1 ) h sub 2. 
- 
+h sub 2 - h sub 1 equals (1 - rho _2 over rho _1) h sub 2.
 
 This result is consistent with the special case rho _2 equals rho _1, for which the two heights become equal.

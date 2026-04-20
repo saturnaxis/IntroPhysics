@@ -1,6 +1,6 @@
 Archimedes' Principle and Buoyancy.
 
-When placed in a fluid, some objects float due to a *buoyant force* (see Figure ).
+When placed in a fluid, some objects float due to a *buoyant force* (see Figure 14.12).
 
 Bullet point. Where does this buoyant force come from?
 
@@ -10,17 +10,17 @@ Bullet point. Do objects that sink get any support at all from the fluid?
 
 Bullet point. Is your body buoyed by the atmosphere, or are helium balloons affected?
 
-Figure referenced in the course notes.
+Figure 14.12. Buoyant force on an object.
 
 *Pressure increases with depth in a fluid!*
 
-This means that the upward force on the bottom of an object (in a fluid) is greater than the downward force on top of the object. There is an upward, or **buoyant**, force on any object in any fluid (see Figure ).
+This means that the upward force on the bottom of an object (in a fluid) is greater than the downward force on top of the object. There is an upward, or **buoyant**, force on any object in any fluid (see Figure 14.13).
 
-Figure referenced in the course notes.
+Figure 14.13. Pressure forces on a submerged object.
 
-Bullet point. If the buoyant force is greater than the object's weight, the net force on the object is upward. If we release such an object, it will rise in the fluid. 
+Bullet point. If the buoyant force is greater than the object's weight, the net force on the object is upward. If we release such an object, it will rise in the fluid.
 
-Bullet point. If the buoyant force is less than the object's weight, the object sinks when released. 
+Bullet point. If the buoyant force is less than the object's weight, the object sinks when released.
 
 Bullet point. If the buoyant force equals the object's weight, the object can remain suspended at its present depth, either immersed in the fluid or partly above the surface.
 
@@ -28,42 +28,31 @@ The buoyant force is always present, whether the object floats, sinks, or is sus
 
 Buoyant Force.
 
- 
-
 The buoyant force is the upward force on any object in any fluid.
- 
 
 Archimedes' Principle.
 
 *Just how large is the buoyant force?*
 
-Consider what happens when a submerged object is removed from a fluid (see Figure ). If the object were not in the fluid, the space the object occupied would be filled by fluid having a weight w_ fl. This weight is supported by the surrounding fluid, so the buoyant force must equal w_ fl, or the weight of the fluid displaced by the object.
+Consider what happens when a submerged object is removed from a fluid (see Figure 14.14). If the object were not in the fluid, the space the object occupied would be filled by fluid having a weight w_ fl. This weight is supported by the surrounding fluid, so the buoyant force must equal w_ fl, or the weight of the fluid displaced by the object.
 
-Figure referenced in the course notes.
+Figure 14.14. Displaced fluid.
 
 Archimedes' Principle.
 
- 
+The buoyant force on an object equals the weight of the fluid it displaces. In equation form, **Archimedes' principle** is
 
-The buoyant force on an object equals the weight of the fluid it displaces. In equation form, **Archimedes' principle** is 
-
- F_ B equals w_ fl, 
+F_ B equals w_ fl,
 
 where F_ B is the buoyant force and w_ fl is the weight of the fluid displaced by the object.
 
 This principle is named after the Greek mathematician and inventor Archimedes of Syracuse, who state this principle long before concepts of force were well established.
- 
 
 Archimedes' principle refers to the force of buoyancy that results when a body is submerged in a fluid, whether partially or wholly. The force that provides the pressure of a fluid acts on a body perpendicular to the surface. The force due to the pressure at the bottom is pointed up, while at the tope, the force due to the pressure is pointed down. The forces due to pressures at the sides are pointing *into* the body.
 
-Since the bottom of the body is at a greater depth than the top, the pressure at the lower part of the body is higher than the pressure at the upper part (as shown in the figure). Therefore a net upward force acts on the body. This upward force is the force of buoyancy.
+Since the bottom of the body is at a greater depth than the top, the pressure at the lower part of the body is higher than the pressure at the upper part (as shown in the figure). Therefore, a net upward force acts on the body. This upward force is the force of buoyancy.
 
 **TEDEd**.
-
- 
-
- 
- 
 
 Density and Archimedes' Principle.
 
@@ -71,21 +60,21 @@ If you drop a lump of clay in water, it will sink. But if you mold the same lump
 
 The average density of an object is what ultimately determines whether it floats. If an object's average density is less than that of the surrounding fluid, it will float. The fluid has a higher density, which means contains more mass for a given volume and hence more weight. The buoyant force is greater than the weight of the object. An object denser than the fluid will sink.
 
-In Figure, the unloaded ship has a lower density and less of it is submerged compared with the loaded ship. We can derive a quantitative expression for the fraction submerged by considering density. 
+In Figure 14.15, the unloaded ship has a lower density and less of it is submerged compared with the loaded ship. We can derive a quantitative expression for the fraction submerged by considering density.
 
-Figure referenced in the course notes.
+Figure 14.15. Loaded and unloaded ship.
 
 The fraction submerged is the ratio of the volume submerged to the volume of the object, or
 
- fraction submerged equals V_ sub over V_ obj equals V_ fl over V_ obj. 
+fraction submerged equals V_ sub over V_ obj equals V_ fl over V_ obj.
 
-The volume submerged V_ sub equals the volume of the fluid displaced V_ fl. We can obtain the relationship between the densities by substituting rho equals m/V, or V equals m/ rho. This gives
+The volume submerged V_ sub equals the volume of the fluid displaced V_ fl. We can obtain the relationship between the densities by substituting rho equals m/V, or V equals m over rho. This gives
 
- V_ fl over V_ obj equals ( m_ fl over rho _ fl ) ( rho _ obj over m_ obj ) equals ( m_ fl over m_ obj ) ( rho _ obj over rho _ fl ), 
+V_ fl over V_ obj equals (m_ fl over rho _ fl)(rho _ obj over m_ obj) equals (m_ fl over m_ obj)(rho _ obj over rho _ fl),
 
-where rho _ obj is the average density of the object and rho _ fl is the density of the fluid. Since the object floats, its mass and that of the fluid displaced are equal (i.e., m_ obj equals m_ fl ), leaving
+where rho _ obj is the average density of the object and rho _ fl is the density of the fluid. Since the object floats, its mass and that of the fluid displaced are equal (i.e., m_ obj equals m_ fl), leaving
 
- V_ fl over V_ obj equals rho _ obj over rho _ fl. 
+V_ fl over V_ obj equals rho _ obj over rho _ fl.
 
 We can determine the density of an unknown fluid using an object of a known density and measuring the fraction of it that is submerged.
 
@@ -93,9 +82,9 @@ Numerous lower-density objects or substances float in higher density fluids, suc
 
 Bullet point. oil on water,
 
-Bullet point. a hot-air ballon in the atmosphere, 
+Bullet point. a hot-air ballon in the atmosphere,
 
-Bullet point. a bit of cork in wine, 
+Bullet point. a bit of cork in wine,
 
 Bullet point. an iceberg in salt water, and
 
@@ -105,9 +94,9 @@ A less obvious example is that mountain ranges float on the higher density crust
 
 Measuring Density.
 
-A common technique to measure density is to use a scale balance (see Figure ), where you weigh the object (e.g., a coin) in air and then weigh it again submerged in a liquid of known density (e.g., water). The density of the object can be calculated and your (fool's) gold can be authenticated.
+A common technique to measure density is to use a scale balance (see Figure 14.16), where you weigh the object (e.g., a coin) in air and then weigh it again submerged in a liquid of known density (e.g., water). The density of the object can be calculated and your (fool's) gold can be authenticated.
 
-Figure referenced in the course notes.
+Figure 14.16. Measuring density using buoyancy.
 
 This calculation is based on Archimedes' principle, where the buoyant force on an object is equal to the weight of the fluid it displaces. This means that the object appears to weigh less when submerged. The weight measured while submerged is called the object's apparent weight.
 
@@ -120,12 +109,6 @@ Suppose a 60.0 kg woman floats in fresh water with 97.0 percent of her volume su
 
 Expand the dropdown below to see the worked solution.
 
- 
- 
- 
- 
- 
-
 The Model.
 
 When an object floats at rest, the buoyant force balances its weight. The buoyant force equals the weight of the displaced fluid, so rho _ fl g V_ sub equals rho _ obj g V. The fraction of the object’s volume that is submerged is therefore determined by the ratio of densities.
@@ -136,23 +119,17 @@ The Math.
 
 For an object in equilibrium, the buoyant force equals the weight, so rho _ fl g V_ sub equals rho _ obj g V. Dividing both sides by rho _ fl g V gives
 
- 
- V_ sub over V equals rho _ obj over rho _ fl.
- 
+V_ sub over V equals rho _ obj over rho _ fl.
 
-The problem states that 97.0 percent of the volume is submerged, so V_ sub /V equals 0.970. Solving for the density of the woman gives
+The problem states that 97.0 percent of the volume is submerged, so V_ sub over V equals 0.970. Solving for the density of the woman gives
 
- 
- rho _ obj equals ( V_ sub over V ) rho _ fl.
- 
+rho _ obj equals (V_ sub over V) rho _ fl.
 
 Substituting the known values with rho _ fl equals 1000 kilograms per cubic meter gives
 
- 
- rho _ obj equals (0.970)(1000 kilograms per cubic meter ) equals 970 kilograms per cubic meter.
- 
+rho _ obj equals (0.970)(1000 kilograms per cubic meter) equals 970 kilograms per cubic meter.
 
---- 
+---
 
 The Conclusion.
 

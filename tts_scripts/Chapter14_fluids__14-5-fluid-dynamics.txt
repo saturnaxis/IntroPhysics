@@ -1,85 +1,79 @@
 Fluid Dynamics.
 
-In contrast to static fluids, there is the study of fluids in motion or fluid dynamics. Even the most basic forms of fluid motion can be quite complex. For this reason, we limit our investigation to **ideal fluids** in many of the examples. In ideal fluid is a fluid with negligible **viscosity**, where viscosity is a measure of the internal friction in a fluid. 
+In contrast to static fluids, there is the study of fluids in motion, or fluid dynamics. Even the most basic forms of fluid motion can be quite complex. For this reason, we limit our investigation to **ideal fluids** in many of the examples. In ideal fluid is a fluid with negligible **viscosity**, where viscosity is a measure of the internal friction in a fluid.
 
 Characteristics of Flow.
 
-Velocity vectors are often used to illustrate fluid motion in applications like meteorology. Wind can be modeled as a fluid motion of air in the atmosphere and represented by vectors indicating the speed and direction of the wind at any given point on a map. Figure shows velocity vectors describing the winds during Hurricane Arthur in 2014.
+Velocity vectors are often used to illustrate fluid motion in applications like meteorology. Wind can be modeled as a fluid motion of air in the atmosphere and represented by vectors indicating the speed and direction of the wind at any given point on a map. Figure 14.17 shows velocity vectors describing the winds during Hurricane Arthur in 2014.
 
-Figure referenced in the course notes.
+Figure 14.17. Velocity field of atmospheric flow.
 
-Another method for representing fluid motion is a *streamline*. A streamline represents the path of a small volume of fluid as it flows. The velocity is always tangential to the streamline. Figure illustrates two examples of fluids moving through a pipe.
+Another method for representing fluid motion is a *streamline*. A streamline represents the path of a small volume of fluid as it flows. The velocity is always tangential to the streamline. Figure 14.18 illustrates two examples of fluids moving through a pipe.
 
-Figure referenced in the course notes.
+Figure 14.18. Streamlines in pipe flow.
 
 There are two extremes of fluid flow:
 
 Bullet point. **laminar flow** (sometimes called steady flow) is represented by smooth, parallel streamlines. The velocity of the fluid is greatest in the center and decreases near the walls of the pipe. The gradient in velocity is due to the viscosity of the fluid and friction between the pipe walls and the fluid.
 
-Bullet point. **turbulent flow** has streamlines that are irregular and change over time. In turbulent flow the paths of the fluid flow are irregular as different parts of the fluid mix together or form small circular regions that resemble whirlpools.
+Bullet point. **turbulent flow** has streamlines that are irregular and change over time. In turbulent flow, the paths of the fluid flow are irregular as different parts of the fluid mix together or form small circular regions that resemble whirlpools.
 
 Flow Rate and its Relation to Velocity.
 
 The volume of fluid passing by a given location through an area during a period of time is called the **flow rate** Q, or volume flow rate. This is written as
 
- 
 Q equals dV over dt,
- 
 
-where V is the volume and t is the elapsed time. 
+where V is the volume and t is the elapsed time.
 
-Figure referenced in the course notes.
+Figure 14.19. Fluid passing through a cross section.
 
-In Figure, the volume of the cylinder is Ax and thus, the flow rate is
+In Figure 14.19, the volume of the cylinder is Ax, and thus the flow rate is
 
- Q equals dV over dt equals d over dt (Ax) equals A dx over dt equals Av. 
+Q equals dV over dt equals d over dt (Ax) equals A dx over dt equals Av.
 
 The SI unit for flow rate is cubic meters/s, but several other units are in common use, such as liters per minute ( L/min ).
 
 Flow rate and velocity are related, but measure different physical quantities. To make the distinction clear, consider the flow rate of a river. The greater the velocity of the water, the greater the flow rate of the river. Flow rate depends on the size and shape of the river. A rapid mountain stream carries far less water than the Amazon River.
 
-Figure illustrates the volume flow rate, which is given by Q equals dV over dt equals Av and depends on the cross-sectional area A of the pipe, as well as the average speed v. The relationship tells us that the larger the conduit, the greater its cross-sectional area. In Fig. Figure, the shaded cylinder has a volume V equals Ad, which flows past the point P in a time t. Dividing both sides by t gives
+Figure 14.20 illustrates the volume flow rate, which is given by Q equals dV over dt equals Av and depends on the cross-sectional area A of the pipe, as well as the average speed v. The relationship tells us that the larger the conduit, the greater its cross-sectional area. In Fig. Figure 14.20, the shaded cylinder has a volume V equals Ad, which flows past the point P in a time t. Dividing both sides by t gives
 
- V over t equals Ad over t. 
+V over t equals Ad over t.
 
-Since the average speed is given by v equals d/t and the flow rate is the changing volume over time ( Q equals V/t ), this means that Q equals Av.
+Since the average speed is given by v equals d/t and the flow rate is the changing volume over time (Q equals V/t), this means that Q equals Av.
 
-Figure referenced in the course notes.
+Figure 14.20. Volume flow rate illustration.
 
-Figure shows an incompressible fluid flowing along a pipe of decreasing radius. Because the fluid is incompressible, the same amount of fluid must flow past any point in the tube in a given time to ensure continuity of flow. The flow is continuous because there are no sources (or sinks) to add (or remove) mass. The mass flowing into the pipe must equal the mass flowing out of the pipe.
+Figure 14.21 shows an incompressible fluid flowing along a pipe of decreasing radius. Because the fluid is incompressible, the same amount of fluid must flow past any point in the tube in a given time to ensure continuity of flow. The flow is continuous because there are no sources (or sinks) to add (or remove) mass. The mass flowing into the pipe must equal the mass flowing out of the pipe.
 
-In this case, the cross-sectional area of the pipe decreases and the velocity must necessarily increase. This logic can be extended to say that the flow rate must be the same at all points along the pipe. In particular for two arbitrary points 1 and 2, we have
+In this case, the cross-sectional area of the pipe decreases, and the velocity must necessarily increase. This logic can be extended to say that the flow rate must be the same at all points along the pipe. In particular, for two arbitrary points 1 and 2, we have
 
- 
- Q sub 1 equals Q sub 2, 
- A sub 1v _1 equals A sub 2v _2.
- 
+Q sub 1 equals Q sub 2,
+A sub 1 v sub 1 equals A sub 2 v sub 2.
 
-This is called the *equation of continuity* and is valid for any incompressible fluid (with constant density). Consider how water flows from a narrow spray nozzle: The water emerges with a large speed when the area of the nozzle is restricted. Conversely, when a river empties into one end of a reservoir, the water slows considerably and can pickup speed again when it leaves the other end of the reservoir. *Speed increases when the cross-sectional area decreases, and vice-versa.* 
+This is called the *equation of continuity* and is valid for any incompressible fluid (with constant density). Consider how water flows from a narrow spray nozzle: the water emerges with a large speed when the area of the nozzle is restricted. Conversely, when a river empties into one end of a reservoir, the water slows considerably and can pickup speed again when it leaves the other end of the reservoir. *Speed increases when the cross-sectional area decreases, and vice-versa.*
 
-Liquids are essentially incompressible, which makes the equation of continuity valid for all liquids. however gases are compressible, so the the equation must be applied with caution to gases as they are subjected to compression or expansion. 
+Liquids are essentially incompressible, which makes the equation of continuity valid for all liquids. however gases are compressible, so the the equation must be applied with caution to gases as they are subjected to compression or expansion.
 
 Mass Conservation.
 
-The flow rate of a fluid can also be described by the *mass flow rate*. This is the rate at which a mass of the fluid moves past a fixed point. Consider the mass within the shaded volume of Figure. The mass can be determined from the density and volume:
+The flow rate of a fluid can also be described by the *mass flow rate*. This is the rate at which a mass of the fluid moves past a fixed point. Consider the mass within the shaded volume of Figure 14.21. The mass can be determined from the density and volume:
 
- m equals rho V equals rho Ax. 
+m equals rho V equals rho Ax.
 
 The mass flow rate is then defined by
 
- dm over dt equals d over dt ( rho Ax ) equals rho A dx over dt equals rho Av, 
+dm over dt equals d over dt (rho Ax) equals rho A dx over dt equals rho Av,
 
-where rho is the density, A is the cross-sectional area, and v is the speed (i.e., magnitude of velocity). The mass flow rate can be used to solve problems using equation of continuity. Consider the pipe (in the figure), where the inlet has a cross-sectional area A sub 1 and the outlet constricts with an cross sectional area A sub 2. From continuity, the total mass entering the pipe must be equal to the mass of fluid exiting the pipe. 
+where rho is the density, A is the cross-sectional area, and v is the speed (i.e., magnitude of velocity). The mass flow rate can be used to solve problems using equation of continuity. Consider the pipe (in the figure), where the inlet has a cross-sectional area A sub 1 and the outlet constricts with an cross sectional area A sub 2. From continuity, the total mass entering the pipe must be equal to the mass of fluid exiting the pipe.
 
 We can find a relationship between the velocity and the cross-sectional area by setting the inlet mass flow rate equal to the outlet mass flow rate:
 
- 
- rho _1 A sub 1 v sub 1 equals rho _2 A sub 2 v sub 2.
- 
+rho _1 A sub 1 v sub 1 equals rho _2 A sub 2 v sub 2.
 
 This is also known as the general form of the continuity equation. If the density of the fluid remains constant through the constriction (i.e., the fluid is incompressible), then the density cancels from the continuity equation,
 
- A sub 1 v sub 1 equals A sub 2 v sub 2. 
+A sub 1 v sub 1 equals A sub 2 v sub 2.
 
 The equation reduces to show the volume flow rate into the pipe equals the volume flow rate out of the pipe.
 
@@ -89,12 +83,6 @@ The Problem.
 A nozzle with a diameter of 0.500 cm is attached to a garden hose with a radius of 0.900 cm. The flow rate through hose and nozzle is 0.500 liters per second. Calculate the speed of the water (a) in the hose and (b) in the nozzle.
 
 Expand the dropdown below to see the worked solution.
-
- 
- 
- 
- 
- 
 
 The Model.
 
@@ -106,37 +94,27 @@ The Math.
 
 **(a)** To determine the speed of the water in the hose, we begin with the definition of volume flow rate, which relates the flow rate to the cross-sectional area and the fluid speed. Solving this relationship for the speed allows us to express the velocity in terms of the known flow rate and the area of the hose.
 
- 
- v sub 1 equals Q over A sub 1.
- 
+v sub 1 equals Q over A sub 1.
 
 The hose has a radius of r sub 1 equals 0.900 cm equals 9.00 times ten to the minus 3 meters, so its cross-sectional area is A sub 1 equals pi r sub 1 to the power of 2. The flow rate is Q equals 0.500 liters per second equals 5.00 times ten to the minus 4 cubic meters/s. Substituting these values gives
 
- 
- v sub 1 equals Q over pi r sub 1 to the power of 2 
- equals 5.00 times ten to the minus 4 cubic meters/s over pi (9.00 times ten to the minus 3 meters ) squared 
- equals 1.96 meters per second.
- 
+v sub 1 equals Q over pi r sub 1 to the power of 2
+equals 5.00 times ten to the minus 4 cubic meters/s over pi (9.00 times ten to the minus 3 meters) squared
+equals 1.96 meters per second.
 
 **(b)** To determine the speed in the nozzle, we use the continuity condition, which states that the flow rate is the same through both sections of the pipe. This implies that the product of cross-sectional area and speed is constant, so solving for the nozzle speed gives
 
- 
- v sub 2 equals A sub 1 over A sub 2 v sub 1.
- 
+v sub 2 equals A sub 1 over A sub 2 v sub 1.
 
 Because both cross sections are circular, the ratio of areas can be expressed in terms of the radii, which allows us to write
 
- 
- A sub 1 over A sub 2 equals r sub 1 to the power of 2 over r sub 2 to the power of 2.
- 
+A sub 1 over A sub 2 equals r sub 1 to the power of 2 over r sub 2 to the power of 2.
 
 The nozzle diameter is 0.500 cm, so its radius is r sub 2 equals 0.250 cm. Substituting the known values gives
 
- 
- v sub 2 equals ( r sub 1 to the power of 2 over r sub 2 to the power of 2 ) v sub 1 
- equals ( (0.900 cm ) squared over (0.250 cm ) squared )(1.96 meters per second ) 
- equals 25.4 meters per second.
- 
+v sub 2 equals (r sub 1 to the power of 2 over r sub 2 to the power of 2) v sub 1
+equals ((0.900 cm) squared over (0.250 cm) squared)(1.96 meters per second)
+equals 25.4 meters per second.
 
 ---
 

@@ -195,7 +195,7 @@ Measuring Pressure.
 
 Gauge vs. Absolute Pressure.
 
-Suppose the pressure gauge on full scuba tank reads 3000 p s i, which is approximately 207 atm. When the valve is opened, air begins to escape because the pressure inside the tank is grater than the atmospheric pressure outside the tank. Air continues to escape from the tank until the pressure inside the tank equals the pressure of the atmosphere outside the tank. At this point, the pressure gauge on the tank reads, zero even though the pressure inside the tank is actually 1 atm (i.e., the same air pressure outside the tank).
+Suppose the pressure gauge on a full scuba tank reads 3000 p s i, which is approximately 207 atm. When the valve is opened, air begins to escape because the pressure inside the tank is grater than the atmospheric pressure outside the tank. Air continues to escape from the tank until the pressure inside the tank equals the pressure of the atmosphere outside the tank. At this point, the pressure gauge on the tank reads, zero even though the pressure inside the tank is actually 1 atm (i.e., the same air pressure outside the tank).
 
 Most pressure gauges are calibrated to read zero at atmospheric pressure. Pressure reading from such gauges are called **gauge pressure**, which is the pressure relative to the atmospheric pressure. When the pressure inside the tank is greater than atmospheric pressure, the gauge reports a positive value.
 
@@ -346,7 +346,7 @@ Pascal's Principle and Hydraulics.
 
 Pascal's Principle.
 
-In 1653, Blaise Pascal published his *Treatise on the Equilibrium of Liquids*, in which he develops his principles of static fluids. When a fluid is not flowing (i.e., static), we say that the fluid is in static equilibrium. If the fluid is water, we say it is in hydrostatic equilibrium. For a fluid in static equilibrium, the net force on any part of the fluid be zero because the fluid will would otherwise start to flow.
+In 1653, Blaise Pascal published his *Treatise on the Equilibrium of Liquids*, in which he develops his principles of static fluids. When a fluid is not flowing (i.e., static), we say that the fluid is in static equilibrium. If the fluid is water, we say it is in hydrostatic equilibrium. For a fluid in static equilibrium, the net force on any part of the fluid must be zero because the fluid will would otherwise start to flow.
 
 Pascal's observations provide the foundation for hydraulics. Pascal observed that a *change in pressure* applied to an enclosed fluid is transmitted undiminished throughout the fluid and to the walls of the container. **Pascal's principle** implies that the total pressure in a fluid is the sum of the pressures from different sources. 
 
@@ -628,6 +628,8 @@ The woman’s average density is 970 kilograms per cubic meter. This value is sl
 14.5 Fluid Dynamics
 
 Fluid Dynamics.
+
+_This audio is AI-generated._
 
 In contrast to static fluids, there is the study of fluids in motion or fluid dynamics. Even the most basic forms of fluid motion can be quite complex. For this reason, we limit our investigation to **ideal fluids** in many of the examples. In ideal fluid is a fluid with negligible **viscosity**, where viscosity is a measure of the internal friction in a fluid. 
 
@@ -1004,6 +1006,8 @@ The pressure in the nozzle is -2960 newtons per square meter, which is equivalen
 14.7 Viscosity and Turbulence
 
 Viscosity and Turbulence.
+
+_This audio is AI-generated._
 
 Recall (from Chapter 6) that an object sliding across the floor with an initial velocity and no applied force will come to rest due to the frictional force. Friction depends on the types of materials in contact and is proportional to the normal force. 
 
