@@ -54,6 +54,31 @@ Limited use is allowed.
 
 If you use AI, **say so** in your notebook. Undocumented use counts as academic dishonesty.
 
+## Can I use NotebookLM to study with the course notes?
+
+Yes. NotebookLM is allowed as a study-support tool for this course. You may use it to summarize sections of the course notes, generate review questions, create audio overviews, make study guides, or ask for explanations of course material.
+
+NotebookLM should be used to help you engage with the course notes, not to replace them. The written notes, worked examples, assigned problems, and class discussions are the authoritative course materials. If an AI-generated explanation disagrees with the notes, textbook, or what we discuss in class, rely on the course materials and ask for clarification.
+
+A good way to use NotebookLM is to add the relevant section of the course notes as a source, ask for a short overview, read the section yourself, and then ask it to generate practice questions or explain confusing points.
+
+You may not submit NotebookLM-generated text as your own reasoning in homework, quizzes, reflections, or exams. Submitted work must represent your own understanding and follow the required problem-solving format for the course.
+
+### What are good NotebookLM prompts for this course?
+
+Useful prompts include:
+
+- Summarize this section in plain language, but keep the important physics vocabulary.
+- List the most important equations in this section and explain when each one should be used.
+- Generate five conceptual questions that would test my understanding of this section.
+- Create a short quiz on this section, but do not show the answers until after the questions.
+- Explain the physical model used in this worked example.
+- What assumptions are being made in this example?
+- What are common mistakes students make with this topic?
+- Turn this section into a study guide for an exam.
+
+Use these prompts to check and improve your understanding. Do not use them to generate text that you submit as your own work.
+
 ##  How are grades weighted?
 
 * Discussions: **10%**
