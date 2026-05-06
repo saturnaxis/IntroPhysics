@@ -56,7 +56,7 @@ If you use AI, **say so** in your notebook. Undocumented use counts as academic 
 
 ## Can I use NotebookLM to study with the course notes?
 
-Yes. NotebookLM is allowed as a study-support tool for this course. You may use it to summarize sections of the course notes, generate review questions, create audio overviews, make study guides, or ask for explanations of course material.
+Yes. [NotebookLM](https://notebooklm.google.com/) is allowed as a study-support tool for this course. You may use it to summarize sections of the course notes, generate review questions, create audio overviews, make study guides, or ask for explanations of course material.
 
 NotebookLM should be used to help you engage with the course notes, not to replace them. The written notes, worked examples, assigned problems, and class discussions are the authoritative course materials. If an AI-generated explanation disagrees with the notes, textbook, or what we discuss in class, rely on the course materials and ask for clarification.
 
