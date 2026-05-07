@@ -596,7 +596,18 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="units-and-measurement">
 <h1><span class="section-number">1. </span>Units and Measurement<a class="headerlink" href="#units-and-measurement" title="Link to this heading">#</a></h1>
-<p>May 06, 2026 | 6123 words | 31 min read</p>
+<p>May 07, 2026 | 6586 words | 33 min read</p>
+<div class="note admonition">
+<p class="admonition-title">Chapter roadmap</p>
+<p>This chapter gives you the tools used in every later physics problem: units, conversion factors, dimensional analysis, uncertainty, and significant figures.</p>
+<p>As you read, focus on three questions:</p>
+<ol class="arabic simple">
+<li><p>Can I track units through a calculation?</p></li>
+<li><p>Can I tell whether an equation is dimensionally possible?</p></li>
+<li><p>Can I report a numerical answer with <strong>appropriate</strong> precision?</p></li>
+</ol>
+<p>These skills will be used repeatedly in homework, labs, and exams.</p>
+</div>
 <section id="scope-and-scale-of-physics">
 <h2><span class="section-number">1.1. </span>Scope and Scale of Physics<a class="headerlink" href="#scope-and-scale-of-physics" title="Link to this heading">#</a></h2>
 <audio class="plyr" controls>
@@ -628,13 +639,13 @@ document.write(`
 <p>The distance across the USA is about <span class="math notranslate nohighlight">\(4500\ {\rm km}\)</span> from east to west.  This seems like a long way, but the distance from the Earth to the Sun (or <strong>astronomical unit</strong>; AU) is about <span class="math notranslate nohighlight">\(149,000,000\ {\rm km}\)</span> or <span class="math notranslate nohighlight">\({\sim}33,000\times\)</span> more distant.  Light is incredibly fast and can travel 1 AU in only <span class="math notranslate nohighlight">\(8.3\ {\rm min}\)</span>.</p>
 <p><em>How far can light travel in a year?</em></p>
 <p>Instead of thinking in kilometers, it is simpler to instead describe this distance in AU, or how many Earth-Sun distances make up this proposed distance.  We have to give this distance a name, thus we call it a <a class="reference external" href="https://en.wikipedia.org/wiki/Light-year">lightyear</a>, or the distance that light travels in a year.  Let’s start with what we know so far (i.e., light travels 1 AU in 8.3 min):</p>
-<div class="amsmath math notranslate nohighlight" id="equation-8bd1eba7-b971-4587-90c3-40c515f0f4f7">
-<span class="eqno">(1.1)<a class="headerlink" href="#equation-8bd1eba7-b971-4587-90c3-40c515f0f4f7" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-cb6b86eb-7b2f-4e66-adc8-1f5c37366312">
+<span class="eqno">(1.1)<a class="headerlink" href="#equation-cb6b86eb-7b2f-4e66-adc8-1f5c37366312" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{1\ {\rm AU}}{8.3\ {\rm min}} &amp;= 0.12\ {\rm AU/min}.
 \end{align}\]</div>
 <p>Therefore, light travels at a speed of about <span class="math notranslate nohighlight">\(0.12\ {\rm AU/min}\)</span>.  Now, we can work our way through if we can somehow translate this speed into a distance.  For this we can use some other knowledge, for example:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c168fcbe-a0a9-4923-8bd1-a9c2c5c088dc">
-<span class="eqno">(1.2)<a class="headerlink" href="#equation-c168fcbe-a0a9-4923-8bd1-a9c2c5c088dc" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-9a6870df-8f0e-471b-9f25-179f2b0be971">
+<span class="eqno">(1.2)<a class="headerlink" href="#equation-9a6870df-8f0e-471b-9f25-179f2b0be971" title="Permalink to this equation">#</a></span>\[\begin{align}
 1\ {\rm h} &amp;= 60\ {\rm min}, \\
 1\ {\rm day} &amp;= 24\ {\rm h}, \\
 1\ {\rm yr} &amp;= 365.25\ {\rm days}.
@@ -643,16 +654,16 @@ document.write(`
 <ul class="simple">
 <li><p>To understand the distance <span class="math notranslate nohighlight">\(d\)</span> in a lightyear, we need to convert its speed <span class="math notranslate nohighlight">\(s\)</span> using different timescales <span class="math notranslate nohighlight">\(t\)</span> that make up a year.</p></li>
 </ul>
-<div class="amsmath math notranslate nohighlight" id="equation-b5c851ed-5f01-4fe8-9188-f40c910fc921">
-<span class="eqno">(1.3)<a class="headerlink" href="#equation-b5c851ed-5f01-4fe8-9188-f40c910fc921" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-513b0df4-90ff-43a2-a049-1a668db339a4">
+<span class="eqno">(1.3)<a class="headerlink" href="#equation-513b0df4-90ff-43a2-a049-1a668db339a4" title="Permalink to this equation">#</a></span>\[\begin{align}
 s &amp;= \frac{d}{t}, \\
 d &amp;= s \times t= st
 \end{align}\]</div>
-<p>Let’s begin with some analytical calculations, which we’ll followup with a verification using <code class="docutils literal notranslate"><span class="pre">python</span></code>.  We just need to use our known speed of light and multiply by different time conversion factors to determine the number of <span class="math notranslate nohighlight">\(\rm AU/yr\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-30f0deae-23a5-47c9-9cff-162b8b4b84eb">
-<span class="eqno">(1.4)<a class="headerlink" href="#equation-30f0deae-23a5-47c9-9cff-162b8b4b84eb" title="Permalink to this equation">#</a></span>\[\begin{align}
+<p>Let’s begin with some analytical calculations, which we’ll follow-up with a verification using <code class="docutils literal notranslate"><span class="pre">python</span></code>.  We just need to use our known speed of light and multiply by different time conversion factors to determine the number of <span class="math notranslate nohighlight">\(\rm AU/yr\)</span>, or</p>
+<div class="amsmath math notranslate nohighlight" id="equation-b2388379-5f44-43f6-995d-f71114fbab04">
+<span class="eqno">(1.4)<a class="headerlink" href="#equation-b2388379-5f44-43f6-995d-f71114fbab04" title="Permalink to this equation">#</a></span>\[\begin{align}
 s &amp;= \frac{0.12\ {\rm AU}}{\rm min} \times \frac{60\ {\rm min}}{1\ {\rm h}} \times \frac{24\ {\rm h}}{1\ {\rm day}} \times \frac{365.25\ {\rm days}}{1\ {\rm yr}}, \\
-&amp;= 63,000\ \frac{\rm AU}{\rm yr}.
+&amp;= 63{,}000\ \frac{\rm AU}{\rm yr}.
 \end{align}\]</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -693,14 +704,19 @@ The speed of light is 63000 AU/yr.
 \[\begin{align*}
 d &amp;= st, \\
 &amp;= \left(\frac{63,000\ {\rm AU}}{1\ {\rm yr}}\right) \times 1\ {\rm yr}, \\
-&amp;= 63,000\ {\rm AU}.
+&amp;= 63{,}000\ {\rm AU}.
 \end{align*}\]</div>
-<p>We have arrived at our goal, which is <span class="math notranslate nohighlight">\(1\ {\rm ly} = 63000\ {\rm AU}\)</span>.</p>
+<p>We have arrived at our goal, which is <span class="math notranslate nohighlight">\(1\ {\rm ly} = 63{,}000\ {\rm AU}\)</span>.</p>
 <ul class="simple">
 <li><p><strong>Why do we want to know this?</strong></p></li>
 </ul>
 <p>It shows us that a lightyear is really big, or <span class="math notranslate nohighlight">\(63,000\times\)</span> the distance from the Earth to the Sun.  Then, it shows that the distance to M51 is even bigger, meaning that it is 31 million times farther away than something that is only 1 lightyear away.</p>
 <p>Moreover, M51 is composed of billions of stars where these stars interact in a complex way that we can actually understand (to some degree).  For now, we posit that the force holding the galaxies together is the same as the one holding you onto the Earth.</p>
+<div class="tip margin admonition">
+<p class="admonition-title">Checkpoint</p>
+<p>A lightyear is a unit of distance, not time.</p>
+<p>Why does multiplying a speed by a time produce a distance?</p>
+</div>
 </section>
 <section id="on-the-earth">
 <h4><span class="section-number">1.1.2.2. </span>On the Earth<a class="headerlink" href="#on-the-earth" title="Link to this heading">#</a></h4>
@@ -721,7 +737,7 @@ d &amp;= st, \\
 </section>
 <section id="the-scale-of-physics">
 <h3><span class="section-number">1.1.3. </span>The Scale of Physics<a class="headerlink" href="#the-scale-of-physics" title="Link to this heading">#</a></h3>
-<p>The laws of physics operates at all measurable scales of length mass, and time.  To think on such scales, scientists use the concept of “<a class="reference external" href="https://en.wikipedia.org/wiki/Order_of_magnitude">order of magnitude</a>” because it provides an approximation for that scale that guides our thinking or intuition.  The breadth of physics is not limited to the mechanics of the 19th century, but has been the fuel of progress for the last 150 years and is expected to continue yielding returns into the future with AI.</p>
+<p>The laws of physics operate at all measurable scales of length, mass, and time.  To think on such scales, scientists use the concept of “<a class="reference external" href="https://en.wikipedia.org/wiki/Order_of_magnitude">order of magnitude</a>” because it provides an approximation for that scale that guides our thinking or intuition.  The breadth of physics is not limited to the mechanics of the 19th century, but has been the fuel of progress for the last 150 years and is expected to continue yielding returns into the future with AI.</p>
 <blockquote class="epigraph">
 <div><p>The next wave [of AI] requires us to understand things like the laws of physics, friction, inertia, and cause and effect.</p>
 <p class="attribution">—Jensen Huang, Nvidia CEO</p>
@@ -749,6 +765,11 @@ d &amp;= st, \\
 </ol>
 <p>The order of magnitude is a <code class="docutils literal notranslate"><span class="pre">ballpark</span></code> estimate for the scale (or size) of its value, where it rounds the numbers consistently to the nearest power of 10 on a logarithmic scale.  This makes doing mental arithmetic easier when dealing with very small or large numbers.</p>
 <p>The diameter of the hydrogen atom is <span class="math notranslate nohighlight">\({\sim}10^{-15}\ {\rm m}\)</span>, whereas the diameter of the Milky Way Galaxy is <span class="math notranslate nohighlight">\({\sim}10^{21}\ {\rm m}\)</span>.  It would take <span class="math notranslate nohighlight">\(10^{21}/10^{-15} = 10^{36}\)</span> hydrogen atoms to stretch across our Galaxy.  <em>It’s much easier to do in your head (or on the back of an envelope) if you can ignore the first factor in the more precise number.</em></p>
+<div class="tip margin admonition">
+<p class="admonition-title">Checkpoint</p>
+<p>Which number has order of magnitude <span class="math notranslate nohighlight">\(10^3\)</span>?</p>
+<p><span class="math notranslate nohighlight">\(250\)</span>, <span class="math notranslate nohighlight">\(450\)</span>, or <span class="math notranslate nohighlight">\(12345\)</span>?</p>
+</div>
 </section>
 <section id="known-ranges-of-length-mass-and-time">
 <h4><span class="section-number">1.1.3.2. </span>Known ranges of length, mass, and time<a class="headerlink" href="#known-ranges-of-length-mass-and-time" title="Link to this heading">#</a></h4>
@@ -762,7 +783,7 @@ d &amp;= st, \\
 <li><p>How many floating-point operations can a super computer do in a day?</p></li>
 </ul>
 <div class="math notranslate nohighlight">
-\[ 10^{5}\ {\rm s}/10^{-17}\ {s} = 10^{22}\ \text{floating-point operations}. \]</div>
+\[ 10^{5}\ {\rm s}/10^{-17}\ {\rm s} = 10^{22}\ \text{floating-point operations}. \]</div>
 <div class="note dropdown admonition">
 <p class="admonition-title">Formatting equations and units</p>
 <p>The above calculation uses <code class="docutils literal notranslate"><span class="pre">$$</span> <span class="pre">$$</span></code> as a shorthand environment that centers an equation without numbering it.  It requires a blank line before and after so that it renders properly.</p>
@@ -852,7 +873,7 @@ it’s wrong.</p>
 <li><p><strong>SI units</strong> (for the French Système International d’Unités) or metric system, and</p></li>
 <li><p><strong>English units</strong> (i.e., the imperial system).</p></li>
 </ol>
-<p>The system of units are also referred to by just listing what they use for length-mass-time (e.g., foot-pound-second or meter-kilogram-second).  The metric system is agreed on by scientists and mathematicians.  Engineers may use <em>SAE</em> (Society of Automotive Engineers) units that measure tools in fractions of an inch rather than millimeters.</p>
+<p>Systems of units are also referred to by just listing what they use for length-mass-time (e.g., foot-pound-second or meter-kilogram-second).  The metric system is agreed on by scientists and mathematicians.  Engineers may use <em>SAE</em> (Society of Automotive Engineers) units that measure tools in fractions of an inch rather than millimeters.</p>
 <section id="si-units-base-and-derived-units">
 <h3><span class="section-number">1.2.1. </span>SI Units: Base and Derived Units<a class="headerlink" href="#si-units-base-and-derived-units" title="Link to this heading">#</a></h3>
 <p>The <strong>base quantities</strong> are measured using a system’s base units.  All other physical quantities are combinations of the base quantities, where each are known as a <strong>derived quantity</strong> with its own <strong>derived unit</strong>.  The derived units can only be as accurate and precise as the base units from which they are derived.</p>
@@ -1029,6 +1050,12 @@ it’s wrong.</p>
 </table>
 </div>
 <p>The only rule when using the metric prefixes is that you <strong>cannot</strong> “double them up”.  For example, it is improper to talk about megagigameters, although <span class="math notranslate nohighlight">\(10^6 \times 10^9 = 10^{15}\)</span> (<span class="math notranslate nohighlight">\(1\ {\rm Pm} = 10^{15}\ {\rm m}\)</span>).</p>
+<div class="tip margin admonition">
+<p class="admonition-title">Checkpoint</p>
+<p>Which is the better metric-prefix form?</p>
+<p><span class="math notranslate nohighlight">\(0.0042\ {\rm g}\)</span> or <span class="math notranslate nohighlight">\(4.2\ {\rm mg}\)</span>?</p>
+<p>Why?</p>
+</div>
 <section id="example-problem-metric-prefixes">
 <h4><span class="section-number">1.2.3.1. </span><strong>Example Problem</strong>: Metric Prefixes<a class="headerlink" href="#example-problem-metric-prefixes" title="Link to this heading">#</a></h4>
 <div class="exercise etamu-exercise admonition" id="Chapter01/units-and-measurement-exercise-0">
@@ -1037,7 +1064,7 @@ it’s wrong.</p>
 <section id="exercise-content">
 <p><strong>The Problem</strong></p>
 <blockquote>
-<div><p>Restate the mass <span class="math notranslate nohighlight">\(1.93 \times 10^{13}\ \text{kg}\)</span> using a metric prefix such that the resulting numerical value is bigger than one but less than 1000.</p>
+<div><p>Restate the mass <span class="math notranslate nohighlight">\(1.93 \times 10^{13}\ {\rm kg}\)</span> using a metric prefix such that the resulting numerical value is bigger than one but less than 1000.</p>
 </div></blockquote>
 <hr class="docutils" />
 <p><strong>The Model</strong></p>
@@ -1048,9 +1075,9 @@ it’s wrong.</p>
 <p>The prefix <em>kilo-</em> corresponds to a factor of <span class="math notranslate nohighlight">\(10^{3}\)</span>. Rewriting the mass in grams gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-1.93 \times 10^{13}\ \text{kg}
-&amp;= \frac{1.93 \times 10^{13}\ {\rm kg}}{1} \times \frac{10^{3}\ \text{g}}{1\ {\rm kg}} \\
-&amp;= 1.93 \times 10^{16}\ \text{g}.
+1.93 \times 10^{13}\ {\rm kg}
+&amp;= \frac{1.93 \times 10^{13}\ {\rm kg}}{1} \times \frac{10^{3}\ {\rm g}}{1\ {\rm kg}} \\
+&amp;= 1.93 \times 10^{16}\ {\rm g}.
 \end{align*}\]</div>
 <p>From <a class="reference internal" href="#metric-prefixes-table"><span class="std std-numref">Table 1.2</span></a>, the power <span class="math notranslate nohighlight">\(10^{16}\)</span> lies between</p>
 <ul class="simple">
@@ -1060,26 +1087,26 @@ it’s wrong.</p>
 <p>If we factor out <span class="math notranslate nohighlight">\(10^{15}\)</span>, we obtain</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-1.93 \times 10^{16}\ \text{g}
-&amp;= 1.93 \times 10^{1}\ \text{Pg}
-= 19.3\ \text{Pg}.
+1.93 \times 10^{16}\ {\rm g}
+&amp;= 1.93 \times 10^{1}\ {\rm Pg}
+= 19.3\ {\rm Pg}.
 \end{align*}\]</div>
 <p>Alternatively, factoring out <span class="math notranslate nohighlight">\(10^{18}\)</span> gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-1.93 \times 10^{16}\ \text{g}
-&amp;= 1.93 \times 10^{-2}\ \text{Eg},
+1.93 \times 10^{16}\ {\rm g}
+&amp;= 1.93 \times 10^{-2}\ {\rm Eg},
 \end{align*}\]</div>
 <p>which produces a numerical value less than one and therefore does not satisfy the requirement of the problem.</p>
 <hr class="docutils" />
 <p><strong>The Conclusion</strong></p>
 <p>The mass expressed using a single metric prefix with a numerical value between 1 and 1000 is</p>
 <div class="math notranslate nohighlight">
-\[ \boxed{1.93 \times 10^{13}\ \text{kg} = 19.3\ \text{Pg}}.\]</div>
+\[ \boxed{1.93 \times 10^{13}\ {\rm kg} = 19.3\ {\rm Pg}}.\]</div>
 <hr class="docutils" />
 <p><strong>The Verification</strong></p>
 <p>We can verify this conversion numerically by explicitly tracking the powers of ten using Python (see below).</p>
-<p>This output confirms that <span class="math notranslate nohighlight">\(1.93 \times 10^{13}\ \text{kg} = 19.3\ \text{Pg}\)</span>, matching the analytical result.
+<p>This output confirms that <span class="math notranslate nohighlight">\(1.93 \times 10^{13}\ {\rm kg} = 19.3\ {\rm Pg}\)</span>, matching the analytical result.
 Comparing powers of ten also shows consistency: (13 + 3 = 1 + 15 = 16).</p>
 <p>For additional physical context, the scale of this mass can be compared to common mass benchmarks shown in Figure <a class="reference internal" href="#mks-scales-fig"><span class="std std-numref">1.2</span></a>.</p>
 </section>
@@ -1128,6 +1155,42 @@ Mass in petagrams: 19.3 Pg
 <div class="math notranslate nohighlight">
 \[ \frac{80\ {\rm m}}{1} \times \frac{1\ {\rm km}}{10^3\ {\rm m}} = 0.08\ {\rm km}. \]</div>
 <p>Note that the unwanted <span class="math notranslate nohighlight">\(\rm m\)</span> cancels, leaving only the desired <span class="math notranslate nohighlight">\(\rm km\)</span> unit.</p>
+<div class="tip margin admonition">
+<p class="admonition-title">Checkpoint</p>
+<p>When converting <span class="math notranslate nohighlight">\(80\ {\rm m}\)</span> to kilometers, why must the meter unit appear in the denominator of the conversion factor?</p>
+</div>
+<div class="pst-scrollable-table-container"><table class="table table-left" id="unit-conversion-workflow-table">
+<caption><span class="caption-number">Table 1.3 </span><span class="caption-text">Unit Conversion Workflow</span><a class="headerlink" href="#unit-conversion-workflow-table" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Step</strong></p></th>
+<th class="head"><p><strong>Question to ask</strong></p></th>
+<th class="head"><p><strong>Purpose</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>What quantity am I starting with?</p></td>
+<td><p>Identify the given value and unit.</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>What unit do I want?</p></td>
+<td><p>Identify the target unit.</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>What conversion factor connects the two units?</p></td>
+<td><p>Choose a ratio equal to one.</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Where must the unwanted unit go?</p></td>
+<td><p>Place the unwanted unit so it cancels.</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>Do the remaining units match the goal?</p></td>
+<td><p>Check the final unit before trusting the number.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="dropdown admonition">
 <p class="admonition-title">Using scipy.constants for Units and Conversions</p>
 <p>The Python library <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/constants.html"><strong><code class="docutils literal notranslate"><span class="pre">scipy.constants</span></code></strong></a> provides a standardized collection of physical constants and unit conversion factors expressed in <strong>SI units</strong>. This can be a useful tool for checking calculations and avoiding arithmetic mistakes, especially when working with very large or very small numbers.</p>
@@ -1143,7 +1206,7 @@ Mass in petagrams: 19.3 Pg
 </div>
 <p>corresponding to</p>
 <div class="math notranslate nohighlight">
-\[ c = 2.99792458 \times 10^{8}\ \text{m/s}. \]</div>
+\[ c = 2.99792458 \times 10^{8}\ {\rm m/s}. \]</div>
 <p>The <code class="docutils literal notranslate"><span class="pre">constants</span></code> module also includes common metric prefixes and conversion factors:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">constants</span><span class="o">.</span><span class="n">kilo</span><span class="p">)</span>   <span class="c1"># 10^3</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">constants</span><span class="o">.</span><span class="n">milli</span><span class="p">)</span>  <span class="c1"># 10^-3</span>
@@ -1177,7 +1240,7 @@ Mass in petagrams: 19.3 Pg
 <section id="exercise-content">
 <p><strong>The Problem</strong></p>
 <blockquote>
-<div><p>The density of iron is <span class="math notranslate nohighlight">\(7.86\ \text{g/cm}^3\)</span> under standard conditions. Convert this to <span class="math notranslate nohighlight">\(\text{kg/m}^3\)</span>.</p>
+<div><p>The density of iron is <span class="math notranslate nohighlight">\(7.86\ {\rm g/cm}^3\)</span> under standard conditions. Convert this to <span class="math notranslate nohighlight">\({\rm kg/m}^3\)</span>.</p>
 </div></blockquote>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
 <summary class="sd-summary-title sd-card-header etamu-dropdown-title">
@@ -1194,20 +1257,20 @@ Mass in petagrams: 19.3 Pg
 <p class="sd-card-text"><strong>The Math</strong></p>
 <p class="sd-card-text">The required conversion factors are</p>
 <div class="math notranslate nohighlight">
-\[1\ \text{kg} = 10^{3}\ \text{g}, \qquad 1\ \text{cm} = 10^{-2}\ \text{m}. \]</div>
-<p class="sd-card-text">Starting from the given density, <span class="math notranslate nohighlight">\(7.86\ \frac{\text{g}}{\text{cm}^3}\)</span>, we apply the conversion factors:</p>
+\[1\ {\rm kg} = 10^{3}\ {\rm g}, \qquad 1\ {\rm cm} = 10^{-2}\ {\rm m}. \]</div>
+<p class="sd-card-text">Starting from the given density, <span class="math notranslate nohighlight">\(7.86\ \frac{\rm g}{\rm cm^3}\)</span>, we apply the conversion factors:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-7.86\ \frac{\text{g}}{\text{cm}^3}
-&amp;= 7.86\ \frac{\text{g}}{\text{cm}^3} \times \left(\frac{1\ \text{kg}}{10^{3}\ \text{g}}\right) \times \left(\frac{1\ \text{cm}}{10^{-2}\ \text{m}}\right)^3 \\
-&amp;= \frac{7.86}{(10^{3})(10^{-6})}\ \frac{\text{kg}}{\text{m}^3} \\
-&amp;= 7.86 \times 10^{3}\ \frac{\text{kg}}{\text{m}^3}.
+7.86\ \frac{\rm g}{\rm cm^3}
+&amp;= 7.86\ \frac{\rm g}{\rm cm^3} \times \left(\frac{1\ {\rm kg}}{10^{3}\ {\rm g}}\right) \times \left(\frac{1\ {\rm cm}}{10^{-2}\ {\rm m}}\right)^3 \\
+&amp;= \frac{7.86}{(10^{3})(10^{-6})}\ \frac{\rm kg}{\rm m^3} \\
+&amp;= 7.86 \times 10^{3}\ \frac{\rm kg}{\rm m^3}.
 \end{align*}\]</div>
 <hr class="docutils" />
 <p class="sd-card-text"><strong>The Conclusion</strong></p>
 <p class="sd-card-text">The density of iron expressed in SI units is</p>
 <div class="math notranslate nohighlight">
-\[ \boxed{7.86\ \text{g/cm}^3 = 7.86 \times 10^{3}\ \text{kg/m}^3}. \]</div>
+\[ \boxed{7.86\ {\rm g/cm}^3 = 7.86 \times 10^{3}\ {\rm kg/m}^3}. \]</div>
 <hr class="docutils" />
 <p class="sd-card-text"><strong>The Verification</strong></p>
 <p class="sd-card-text">We can verify this result numerically by performing the same unit conversions in Python.</p>
@@ -1224,7 +1287,7 @@ Mass in petagrams: 19.3 Pg
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Density = </span><span class="si">{</span><span class="n">rho_kg_m3</span><span class="si">:</span><span class="s2">.2e</span><span class="si">}</span><span class="s2"> kg/m^3&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p class="sd-card-text">This calculation gives <span class="math notranslate nohighlight">\(7.86 \times 10^{3}\ \text{kg/m}^3\)</span>, which matches the analytical result.
+<p class="sd-card-text">This calculation gives <span class="math notranslate nohighlight">\(7.86 \times 10^{3}\ {\rm kg/m}^3\)</span>, which matches the analytical result.
 Both the numerical value and the final units are consistent with the desired SI expression.</p>
 </div>
 </details></section>
@@ -1238,7 +1301,7 @@ Both the numerical value and the final units are consistent with the desired SI 
   Your browser does not support the audio element.
 </audio>
 <p><em>This audio is AI-generated.</em></p>
-<p>The <strong>dimension</strong> of any physical quantity expresses its dependence on the base quantities as: (1) a product of symbols or (2) powers of symbols representing the base quantities. <a class="reference internal" href="#dimensions-table"><span class="std std-numref">Table 1.3</span></a> lists the base quantities and the symbols used for their dimension.</p>
+<p>The <strong>dimension</strong> of any physical quantity expresses its dependence on the base quantities as: (1) a product of symbols or (2) powers of symbols representing the base quantities. <a class="reference internal" href="#dimensions-table"><span class="std std-numref">Table 1.4</span></a> lists the base quantities and the symbols used for their dimension.</p>
 <p>Like units, dimensions obey the rules of algebra.  For example,</p>
 <ul class="simple">
 <li><p>area has dimension <span class="math notranslate nohighlight">\(L^2\)</span>,</p></li>
@@ -1246,7 +1309,7 @@ Both the numerical value and the final units are consistent with the desired SI 
 <li><p>speed has dimension <span class="math notranslate nohighlight">\(L/T\)</span> or <span class="math notranslate nohighlight">\(LT^{-1}\)</span>.</p></li>
 </ul>
 <div class="pst-scrollable-table-container"><table class="table table-left" id="dimensions-table">
-<caption><span class="caption-number">Table 1.3 </span><span class="caption-text">Base Quantities and Their Dimensions</span><a class="headerlink" href="#dimensions-table" title="Link to this table">#</a></caption>
+<caption><span class="caption-number">Table 1.4 </span><span class="caption-text">Base Quantities and Their Dimensions</span><a class="headerlink" href="#dimensions-table" title="Link to this table">#</a></caption>
 <colgroup>
 <col style="width: 70.0%" />
 <col style="width: 30.0%" />
@@ -1288,6 +1351,37 @@ Both the numerical value and the final units are consistent with the desired SI 
 <li><p>The arguments of any standard mathematical function (e.g., trigonometric functions like sine or cosine), logarithms, or exponential functions must be <strong>dimensionless</strong> (i.e. all dimensions cancel).  These functions require pure numbers as inputs and give pure numbers as output.</p></li>
 </ul>
 <p>If either of these rules are violated, this should be a <code class="docutils literal notranslate"><span class="pre">red</span> <span class="pre">flag</span></code> and can be used to help identify that there is a mistake in your calculation.</p>
+<div class="tip margin admonition">
+<p class="admonition-title">Checkpoint</p>
+<p>Can the expression <span class="math notranslate nohighlight">\(vt + at\)</span> represent position?</p>
+<p>Check the dimensions of each term.</p>
+</div>
+<div class="pst-scrollable-table-container"><table class="table table-left" id="dimensional-analysis-red-flags-table">
+<caption><span class="caption-number">Table 1.5 </span><span class="caption-text">Common Dimensional-Analysis Red Flags</span><a class="headerlink" href="#dimensional-analysis-red-flags-table" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Red flag</strong></p></th>
+<th class="head"><p><strong>What it means</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Terms being added have different dimensions</p></td>
+<td><p>The equation cannot be correct as written.</p></td>
+</tr>
+<tr class="row-odd"><td><p>The left and right sides have different dimensions</p></td>
+<td><p>The equation is not dimensionally consistent.</p></td>
+</tr>
+<tr class="row-even"><td><p>A trigonometric function contains a quantity with units</p></td>
+<td><p>The argument must be dimensionless.</p></td>
+</tr>
+<tr class="row-odd"><td><p>A logarithm contains a quantity with units</p></td>
+<td><p>The argument must be dimensionless.</p></td>
+</tr>
+<tr class="row-even"><td><p>A final answer has the wrong unit</p></td>
+<td><p>A conversion factor, algebra step, or formula was likely used incorrectly.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <section id="example-problem-checking-formulas">
 <h3><span class="section-number">1.4.1. </span><strong>Example Problem</strong> Checking Formulas<a class="headerlink" href="#example-problem-checking-formulas" title="Link to this heading">#</a></h3>
 <div class="exercise etamu-exercise admonition" id="Chapter01/units-and-measurement-exercise-2">
@@ -1392,10 +1486,14 @@ Both the numerical value and the final units are consistent with the desired SI 
 <section id="percent-uncertainty">
 <h4><span class="section-number">1.5.2.1. </span>Percent uncertainty<a class="headerlink" href="#percent-uncertainty" title="Link to this heading">#</a></h4>
 <p>Another method of expressing uncertainty is calculating how much the uncertainty deviates from the average value as a percent.  Suppose a  measurement <span class="math notranslate nohighlight">\(A \pm \delta A\)</span>, the <strong>percent uncertainty</strong> is:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-26a75a17-e456-4515-9f80-442a0f2989ea">
-<span class="eqno">(1.5)<a class="headerlink" href="#equation-26a75a17-e456-4515-9f80-442a0f2989ea" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-19d56933-a60b-48cd-af24-501e9212dd28">
+<span class="eqno">(1.5)<a class="headerlink" href="#equation-19d56933-a60b-48cd-af24-501e9212dd28" title="Permalink to this equation">#</a></span>\[\begin{align}
 \text{Percent uncertainty} = \frac{\delta A}{A} \times 100\%.
 \end{align}\]</div>
+<div class="tip margin admonition">
+<p class="admonition-title">Checkpoint</p>
+<p>If two measurements have the same absolute uncertainty, which one has the larger percent uncertainty: the smaller measurement or the larger measurement?</p>
+</div>
 <section id="example-problem-uncertainty-in-a-bag-of-apples">
 <h5><span class="section-number">1.5.2.1.1. </span><strong>Example Problem</strong>: Uncertainty in a bag of apples<a class="headerlink" href="#example-problem-uncertainty-in-a-bag-of-apples" title="Link to this heading">#</a></h5>
 <div class="exercise etamu-exercise admonition" id="Chapter01/units-and-measurement-exercise-3">
@@ -1411,36 +1509,32 @@ Both the numerical value and the final units are consistent with the desired SI 
 <li><p>Week 3 weight: 4.9 lb</p></li>
 <li><p>Week 4 weight: 5.4 lb</p></li>
 </ul>
-<p>We then determine the average weight of the <span class="math notranslate nohighlight">\(5\)</span>-lb bag of apples is <span class="math notranslate nohighlight">\(5.1 \pm 0.3\ \text{lb}\)</span> from using half of the range. What is the <strong>percent uncertainty</strong> of the bag’s weight?</p>
+<p>We then determine the average weight of the <span class="math notranslate nohighlight">\(5\)</span>-lb bag of apples is <span class="math notranslate nohighlight">\(5.1 \pm 0.3\ {\rm lb}\)</span> using half of the range. What is the <strong>percent uncertainty</strong> of the bag’s weight?</p>
 </div></blockquote>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
-<summary class="sd-summary-title sd-card-header etamu-dropdown-title">
-<span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
-<p class="sd-card-text"><strong>The Model</strong></p>
-<p class="sd-card-text">The measured weight of the bag is treated as a single physical quantity <span class="math notranslate nohighlight">\(A\)</span> with an associated uncertainty <span class="math notranslate nohighlight">\(\delta A\)</span>. The percent uncertainty provides a <strong>dimensionless measure</strong> of how large the uncertainty is relative to the measured value itself.</p>
-<p class="sd-card-text">We model the percent uncertainty using the ratio <span class="math notranslate nohighlight">\(\frac{\delta A}{A},\)</span> which compares the absolute uncertainty to the average value.</p>
+<p><strong>The Model</strong></p>
+<p>The measured weight of the bag is treated as a single physical quantity <span class="math notranslate nohighlight">\(A\)</span> with an associated uncertainty <span class="math notranslate nohighlight">\(\delta A\)</span>. The percent uncertainty provides a <strong>dimensionless measure</strong> of how large the uncertainty is relative to the measured value itself.</p>
+<p>We model the percent uncertainty using the ratio <span class="math notranslate nohighlight">\(\frac{\delta A}{A},\)</span> which compares the absolute uncertainty to the average value.</p>
 <hr class="docutils" />
-<p class="sd-card-text"><strong>The Math</strong></p>
-<p class="sd-card-text">The percent uncertainty is defined as</p>
+<p><strong>The Math</strong></p>
+<p>The percent uncertainty is defined as</p>
 <div class="math notranslate nohighlight">
 \[ \text{Percent uncertainty} = \frac{\delta A}{A} \times 100\%.\]</div>
-<p class="sd-card-text">For this problem, the average weight is <span class="math notranslate nohighlight">\(A = 5.1\ \text{lb},\)</span> and the uncertainty is <span class="math notranslate nohighlight">\(\delta A = 0.3\ \text{lb}.\)</span></p>
-<p class="sd-card-text">Substituting these values gives</p>
+<p>For this problem, the average weight is <span class="math notranslate nohighlight">\(A = 5.1\ {\rm lb},\)</span> and the uncertainty is <span class="math notranslate nohighlight">\(\delta A = 0.3\ {\rm lb}.\)</span></p>
+<p>Substituting these values gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-\text{Percent uncertainty} &amp;= \frac{0.3\ \text{lb}}{5.1\ \text{lb}} \times 100\%, \\
+\text{Percent uncertainty} &amp;= \frac{0.3\ {\rm lb}}{5.1\ {\rm lb}} \times 100\%, \\
 &amp;= 5.9\%, \\
 &amp;\approx 6\%.
 \end{align*}\]</div>
 <hr class="docutils" />
-<p class="sd-card-text"><strong>The Conclusion</strong></p>
-<p class="sd-card-text">The percent uncertainty in the weight of the bag of apples is <span class="math notranslate nohighlight">\(\boxed{6\%}.\)</span></p>
+<p><strong>The Conclusion</strong></p>
+<p>The percent uncertainty in the weight of the bag of apples is <span class="math notranslate nohighlight">\(\boxed{6\%}.\)</span></p>
 <hr class="docutils" />
-<p class="sd-card-text"><strong>The Verification</strong></p>
-<p class="sd-card-text">The percent uncertainty is dimensionless because the units cancel in the ratio <span class="math notranslate nohighlight">\(\delta A / A\)</span>. This makes percent uncertainty a convenient way to compare measurement quality across different quantities and unit systems.</p>
-<p class="sd-card-text">As a consistency check, a <span class="math notranslate nohighlight">\(6\%\)</span> uncertainty on a <span class="math notranslate nohighlight">\(5.1\)</span>-lb measurement corresponds to an uncertainty of order a few tenths of a pound, which agrees with the stated uncertainty of <span class="math notranslate nohighlight">\(\pm 0.3\ \text{lb}\)</span>.</p>
-</div>
-</details></section>
+<p><strong>The Verification</strong></p>
+<p>The percent uncertainty is dimensionless because the units cancel in the ratio <span class="math notranslate nohighlight">\(\delta A / A\)</span>. This makes percent uncertainty a convenient way to compare measurement quality across different quantities and unit systems.</p>
+<p>As a consistency check, a <span class="math notranslate nohighlight">\(6\%\)</span> uncertainty on a <span class="math notranslate nohighlight">\(5.1\)</span>-lb measurement corresponds to an uncertainty of order a few tenths of a pound, which agrees with the stated uncertainty of <span class="math notranslate nohighlight">\(\pm 0.3\ {\rm lb}\)</span>.</p>
+</section>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1505,6 +1599,38 @@ Both the numerical value and the final units are consistent with the desired SI 
 <li><p><span class="math notranslate nohighlight">\(1.300 \times 10^3\)</span> (4 sig figs),</p></li>
 </ul>
 <p>depending on the precision of the measurement. <em>Zeros are significant except when they serve only as placeholders.</em></p>
+<div class="tip margin admonition">
+<p class="admonition-title">Checkpoint</p>
+<p>Why is <span class="math notranslate nohighlight">\(1300\)</span> ambiguous, but <span class="math notranslate nohighlight">\(1.30 \times 10^3\)</span> is not?</p>
+</div>
+<div class="pst-scrollable-table-container"><table class="table table-left" id="sig-fig-rules-table">
+<caption><span class="caption-number">Table 1.6 </span><span class="caption-text">Quick Rules for Significant Figures</span><a class="headerlink" href="#sig-fig-rules-table" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Situation</strong></p></th>
+<th class="head"><p><strong>Rule</strong></p></th>
+<th class="head"><p><strong>Example</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Multiplication or division</p></td>
+<td><p>Match the number of significant figures in the least precise measured value.</p></td>
+<td><p><span class="math notranslate nohighlight">\(10.2\ {\rm m}\)</span> has 3 significant figures, so <span class="math notranslate nohighlight">\(\pi(10.2\ {\rm m})^2\)</span> should be reported with 3 significant figures.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Addition or subtraction</p></td>
+<td><p>Match the least precise decimal place.</p></td>
+<td><p><span class="math notranslate nohighlight">\(7.56\ {\rm kg} - 6.052\ {\rm kg} + 13.7\ {\rm kg}\)</span> is rounded to the tenths place.</p></td>
+</tr>
+<tr class="row-even"><td><p>Exact counted values or defined conversion factors</p></td>
+<td><p>Do not limit the number of significant figures.</p></td>
+<td><p><span class="math notranslate nohighlight">\(1\ {\rm km} = 1000\ {\rm m}\)</span> is exact.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ambiguous trailing zeros</p></td>
+<td><p>Use scientific notation to show the intended precision.</p></td>
+<td><p><span class="math notranslate nohighlight">\(1.30 \times 10^3\)</span> has 3 significant figures.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 <section id="significant-figures-in-calculations">
 <h4><span class="section-number">1.5.3.2. </span>Significant figures in calculations<a class="headerlink" href="#significant-figures-in-calculations" title="Link to this heading">#</a></h4>
@@ -1559,15 +1685,15 @@ Both the numerical value and the final units are consistent with the desired SI 
 <li><p>performing algebraic manipulations to isolate the desired quantity,</p></li>
 <li><p>and substituting numerical values only at the final stage.</p></li>
 </ul>
-<p>As an illustrative example, suppose we wish to convert a speed of <span class="math notranslate nohighlight">\(180\ \text{km/h}\)</span> into SI units of meters per second.</p>
+<p>As an illustrative example, suppose we wish to convert a speed of <span class="math notranslate nohighlight">\(180\ {\rm km/h}\)</span> into SI units of meters per second.</p>
 <p>Using the conversion factors</p>
 <div class="math notranslate nohighlight">
-\[ 1\ \text{km} = 10^{3}\ \text{m}, \qquad 1\ \text{h} = 3600\ \text{s},\]</div>
+\[ 1\ {\rm km} = 10^{3}\ {\rm m}, \qquad 1\ {\rm h} = 3600\ {\rm s},\]</div>
 <p>we write</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-v&amp;= 180\ \frac{\text{km}}{\text{h}} \times \left(\frac{10^{3}\ \text{m}}{1\ \text{km}}\right) \times \left(\frac{1\ \text{h}}{3600\ \text{s}}\right) \\
-&amp;= 50\ \text{m/s}.
+v&amp;= 180\ \frac{\rm km}{\rm h} \times \left(\frac{10^{3}\ {\rm m}}{1\ {\rm km}}\right) \times \left(\frac{1\ {\rm h}}{3600\ {\rm s}}\right) \\
+&amp;= 50\ {\rm m/s}.
 \end{align*}\]</div>
 <p>Keeping units visible throughout the calculation helps prevent mistakes and makes cancellations explicit.</p>
 </section>
@@ -1580,7 +1706,7 @@ v&amp;= 180\ \frac{\text{km}}{\text{h}} \times \left(\frac{10^{3}\ \text{m}}{1\ 
 <li><p>Is the numerical value physically reasonable?</p></li>
 <li><p>Does the result make sense given the original problem?</p></li>
 </ul>
-<p>In the example above, a speed of <span class="math notranslate nohighlight">\(50\ \text{m/s}\)</span> corresponds to a fast-moving vehicle, which is consistent with an initial speed of <span class="math notranslate nohighlight">\(180\ \text{km/h}\)</span>. The units and magnitude confirm that the result is reasonable.</p>
+<p>In the example above, a speed of <span class="math notranslate nohighlight">\(50\ {\rm m/s}\)</span> corresponds to a fast-moving vehicle, which is consistent with an initial speed of <span class="math notranslate nohighlight">\(180\ {\rm km/h}\)</span>. The units and magnitude confirm that the result is reasonable.</p>
 <p>This step is not optional.</p>
 </section>
 <section id="the-verification-script-in-python">
@@ -1613,6 +1739,17 @@ v&amp;= 180\ \frac{\text{km}}{\text{h}} \times \left(\frac{10^{3}\ \text{m}}{1\ 
 </section>
 <section id="in-class-problems">
 <h2><span class="section-number">1.7. </span>In-class Problems<a class="headerlink" href="#in-class-problems" title="Link to this heading">#</a></h2>
+<div class="important admonition">
+<p class="admonition-title">What your group notebook should include</p>
+<p>For each worked problem, your group should include:</p>
+<ol class="arabic simple">
+<li><p><strong>The Model</strong> — coordinate system, sign convention, assumptions, and physical interpretation.</p></li>
+<li><p><strong>The Math</strong> — equations introduced by complete sentences, with matching components combined correctly.</p></li>
+<li><p><strong>The Conclusion</strong> — final numerical answer with units and a short physical interpretation.</p></li>
+<li><p><strong>The Verification</strong> — Python confirmation when requested or when useful.</p></li>
+</ol>
+<p>A rough draft is acceptable during class, but the submitted version should be readable enough that another student could follow your reasoning.</p>
+</div>
 <div class="admonition-problem-1 admonition">
 <p class="admonition-title">Problem 1</p>
 <p><strong>(a)</strong> Calculate the number of cells in a hummingbird assuming the mass of an average cell is 10 times the mass of a bacterium.  See <a class="reference internal" href="#mks-scales-fig"><span class="std std-numref">Fig. 1.2</span></a>.</p>
@@ -1620,15 +1757,15 @@ v&amp;= 180\ \frac{\text{km}}{\text{h}} \times \left(\frac{10^{3}\ \text{m}}{1\ 
 </div>
 <div class="admonition-problem-2 admonition">
 <p class="admonition-title">Problem 2</p>
-<p>The following times are given in seconds. Use metric prefixes to rewrite them so the numerical value is greater than one but less than 1000. For example, <span class="math notranslate nohighlight">\(7.9 \times 10^{-2}\,\text{s}\)</span> could be written as either 7.9 cs or 79 ms.</p>
-<p><strong>(a)</strong> <span class="math notranslate nohighlight">\(9.57 \times 10^{5}\,\text{s}\)</span><br />
-<strong>(b)</strong> <span class="math notranslate nohighlight">\(0.045\,\text{s}\)</span><br />
-<strong>(c)</strong> <span class="math notranslate nohighlight">\(5.5 \times 10^{-7}\,\text{s}\)</span><br />
-<strong>(d)</strong> <span class="math notranslate nohighlight">\(3.16 \times 10^{7}\,\text{s}\)</span></p>
+<p>The following times are given in seconds. Use metric prefixes to rewrite them so the numerical value is greater than one but less than 1000. For example, <span class="math notranslate nohighlight">\(7.9 \times 10^{-2}\, {\rm s}\)</span> could be written as either 7.9 cs or 79 ms.</p>
+<p><strong>(a)</strong> <span class="math notranslate nohighlight">\(9.57 \times 10^{5}\,{\rm s}\)</span><br />
+<strong>(b)</strong> <span class="math notranslate nohighlight">\(0.045\,{\rm s}\)</span><br />
+<strong>(c)</strong> <span class="math notranslate nohighlight">\(5.5 \times 10^{-7}\,{\rm s}\)</span><br />
+<strong>(d)</strong> <span class="math notranslate nohighlight">\(3.16 \times 10^{7}\,{\rm s}\)</span></p>
 </div>
 <div class="admonition-problem-3 admonition">
 <p class="admonition-title">Problem 3</p>
-<p>The following masses are written using metric prefixes on the gram. Rewrite them in scientific notation in terms of the SI base unit of mass: the kilogram. For example, 40 Mg would be written as <span class="math notranslate nohighlight">\(4 \times 10^{4}\,\text{kg}\)</span>.</p>
+<p>The following masses are written using metric prefixes on the gram. Rewrite them in scientific notation in terms of the SI base unit of mass: the kilogram. For example, 40 Mg would be written as <span class="math notranslate nohighlight">\(4 \times 10^{4}\,{\rm kg}\)</span>.</p>
 <p><strong>(a)</strong> 23 mg<br />
 <strong>(b)</strong> 320 Tg<br />
 <strong>(c)</strong> 42 ng<br />
@@ -1637,11 +1774,11 @@ v&amp;= 180\ \frac{\text{km}}{\text{h}} \times \left(\frac{10^{3}\ \text{m}}{1\ 
 </div>
 <div class="admonition-problem-4 admonition">
 <p class="admonition-title">Problem 4</p>
-<p>American football is played on a 100-yd-long field, excluding the end zones. How long is the field in meters? (Assume that <span class="math notranslate nohighlight">\(1\,\text{m} = 3.281\,\text{ft}\)</span>.)</p>
+<p>American football is played on a 100-yd-long field, excluding the end zones. How long is the field in meters? (Assume that <span class="math notranslate nohighlight">\(1\,{\rm m} = 3.281\,{\rm ft}\)</span>.)</p>
 </div>
 <div class="admonition-problem-5 admonition">
 <p class="admonition-title">Problem 5</p>
-<p>Light travels a distance of about <span class="math notranslate nohighlight">\(3 \times 10^{8}\,\text{m/s}\)</span>. A light-minute is the distance light travels in 1 min. If the Sun is <span class="math notranslate nohighlight">\(1.5 \times 10^{11}\,\text{m}\)</span> from Earth, how far away is it in light-minutes?</p>
+<p>Light travels a distance of about <span class="math notranslate nohighlight">\(3 \times 10^{8}\,{\rm m/s}\)</span>. A light-minute is the distance light travels in 1 min. If the Sun is <span class="math notranslate nohighlight">\(1.5 \times 10^{11}\,{\rm m}\)</span> from Earth, how far away is it in light-minutes?</p>
 </div>
 <div class="admonition-problem-6 admonition">
 <p class="admonition-title">Problem 6</p>
@@ -1675,13 +1812,13 @@ b. If it is not, identify which term is incorrect and explain why based on units
 <h3><span class="section-number">1.8.2. </span>Problems<a class="headerlink" href="#problems" title="Link to this heading">#</a></h3>
 <div class="admonition-problem-3 admonition">
 <p class="admonition-title">Problem 3</p>
-<p>A car travels at a constant speed of <span class="math notranslate nohighlight">\(72\ \text{km/h}\)</span>.</p>
+<p>A car travels at a constant speed of <span class="math notranslate nohighlight">\(72\ {\rm km/h}\)</span>.</p>
 <p>a. Convert this speed to meters per second.<br />
 b. Without performing any calculations, state whether the numerical value of the speed should increase or decrease during this conversion and explain why.</p>
 </div>
 <div class="admonition-problem-4 admonition">
 <p class="admonition-title">Problem 4</p>
-<p>A distance is measured as <span class="math notranslate nohighlight">\(12.4\ \text{m}\)</span> and the corresponding time interval is measured as <span class="math notranslate nohighlight">\(3.02\ \text{s}\)</span>.</p>
+<p>A distance is measured as <span class="math notranslate nohighlight">\(12.4\ {\rm m}\)</span> and the corresponding time interval is measured as <span class="math notranslate nohighlight">\(3.02\ {\rm s}\)</span>.</p>
 <p>a. Calculate the average speed.<br />
 b. Report your result using the correct number of significant figures.<br />
 c. Explain how you determined the number of significant figures in the final answer.</p>
@@ -1691,15 +1828,15 @@ c. Explain how you determined the number of significant figures in the final ans
 <p>Estimate the order of magnitude of the number of seconds in one year.</p>
 <p>You may assume:</p>
 <ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(1\ \text{day} = 24\ \text{hours}\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(1\ \text{hour} = 3600\ \text{s}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(1\ {\rm day} = 24\ {\rm hours}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(1\ {\rm hour} = 3600\ {\rm s}\)</span></p></li>
 </ul>
 <p>a. Show your reasoning clearly.<br />
 b. Express your final answer as a power of ten.</p>
 </div>
 <div class="admonition-problem-6 admonition">
 <p class="admonition-title">Problem 6</p>
-<p>A spacecraft travels a distance of <span class="math notranslate nohighlight">\(3.0 \times 10^8\ \text{m}\)</span> in a time interval of <span class="math notranslate nohighlight">\(1.5 \times 10^3\ \text{s}\)</span>.</p>
+<p>A spacecraft travels a distance of <span class="math notranslate nohighlight">\(3.0 \times 10^8\ {\rm m}\)</span> in a time interval of <span class="math notranslate nohighlight">\(1.5 \times 10^3\ {\rm s}\)</span>.</p>
 <p>a. Calculate the average speed in meters per second.<br />
 b. Convert the distance to kilometers and recompute the average speed in kilometers per second.<br />
 c. Briefly explain which unit system is more convenient for this situation and why.</p>
