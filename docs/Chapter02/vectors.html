@@ -618,15 +618,16 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="vectors">
 <h1><span class="section-number">2. </span>Vectors<a class="headerlink" href="#vectors" title="Link to this heading">#</a></h1>
-<div class="note admonition">
-<p class="admonition-title">How to use this chapter</p>
-<p>This chapter introduces vectors using three connected representations:</p>
+<div class="tip admonition">
+<p class="admonition-title">Chapter roadmap</p>
+<p>This chapter introduces vectors as quantities with both magnitude and direction. Vectors can be represented geometrically with arrows, algebraically with components, and computationally with NumPy arrays.</p>
+<p>As you read, focus on three questions:</p>
 <ol class="arabic simple">
-<li><p><strong>Geometric representation</strong> — arrows, directions, and scale drawings.</p></li>
-<li><p><strong>Component representation</strong> — <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, and <span class="math notranslate nohighlight">\(z\)</span> components.</p></li>
-<li><p><strong>Computational representation</strong> — NumPy arrays that store components.</p></li>
+<li><p>Can I represent a vector using arrows, components, and Python arrays?</p></li>
+<li><p>Can I move deliberately between geometric, component, and computational representations?</p></li>
+<li><p>Can I explain the physical meaning of vector addition, subtraction, and components?</p></li>
 </ol>
-<p>When solving problems, you should move between these representations deliberately. A good solution explains the physical model, writes the vector math clearly, and uses Python only to verify the result.</p>
+<p>These ideas provide the mathematical language needed to describe motion, forces, momentum, and rotation throughout the course.</p>
 </div>
 <section id="scalars-and-vectors">
 <h2><span class="section-number">2.1. </span>Scalars and Vectors<a class="headerlink" href="#scalars-and-vectors" title="Link to this heading">#</a></h2>
@@ -658,8 +659,8 @@ document.write(`
 <h3><span class="section-number">2.1.2. </span>Scalar arithmetic<a class="headerlink" href="#scalar-arithmetic" title="Link to this heading">#</a></h3>
 <p>Scalar quantities can only be combined (or separated) when the have the same unit.  For example, a <span class="math notranslate nohighlight">\(50\)</span>-<span class="math notranslate nohighlight">\({\rm min}\)</span> class that ends <span class="math notranslate nohighlight">\(10\ {\rm min}\)</span> early lasts for <span class="math notranslate nohighlight">\(50\ {\rm min} - 10\ {\rm min} = 40\ {\rm min}\)</span>.</p>
 <p>If you were told that the class ended <span class="math notranslate nohighlight">\(600\ {\rm sec}\)</span> early, <strong>you cannot combine (or separate) the quantities directly</strong>.  Instead, you must <em>first</em> convert to a common unit, then you can proceed as before.</p>
-<div class="amsmath math notranslate nohighlight" id="equation-02a6a6c3-b384-4c20-8125-eae18e5b0dce">
-<span class="eqno">(2.1)<a class="headerlink" href="#equation-02a6a6c3-b384-4c20-8125-eae18e5b0dce" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-afe0ac0f-6bcd-4cd1-bb2d-5daf513ce873">
+<span class="eqno">(2.1)<a class="headerlink" href="#equation-afe0ac0f-6bcd-4cd1-bb2d-5daf513ce873" title="Permalink to this equation">#</a></span>\[\begin{align}
 50\ {\rm min} - 600\ {\rm sec} &amp;=, \\
 50\ {\rm min} - \left[\frac{600\ {\rm sec}}{1}\times \frac{1\ {\rm min}}{60\ {\rm sec}}\right] &amp;= , \\
 50\ {\rm min} - 10\ {\rm min} &amp;= 40\ {\rm min}.
@@ -1002,8 +1003,8 @@ document.write(`
 </div>
 <p>Your friend rests at point C, which is <span class="math notranslate nohighlight">\(3/4\)</span> of the way to the pond.  We also know that the full distance from the campsite to the pond is <span class="math notranslate nohighlight">\(6\ {\rm km}\)</span>.  <strong>What is his displacement vector <span class="math notranslate nohighlight">\(\vec{D}_{AC}\)</span> when he stops to rest?</strong></p>
 <p>Notice that the vector in panel (a) is not along the x-axis, but in a northeasterly direction.  In this question, we apply a unit vector <span class="math notranslate nohighlight">\(\hat{u}\)</span> so that we can define:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-4744642c-88a7-4bd6-823e-b87653321dce">
-<span class="eqno">(2.2)<a class="headerlink" href="#equation-4744642c-88a7-4bd6-823e-b87653321dce" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-dd494c2c-c207-45b7-9050-71a3b1697131">
+<span class="eqno">(2.2)<a class="headerlink" href="#equation-dd494c2c-c207-45b7-9050-71a3b1697131" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{D}_{AB} = 6\hat{u}\ {\rm km}.
 \end{align}\]</div>
 <p>There could be some transformation to decompose <span class="math notranslate nohighlight">\(\hat{u}\rightarrow x\hat{i} + y\hat{j}\)</span>, but we do not need to know (in this case) as long as we express all other vectors either <em>parallel</em> or <em>antiparallel</em> to <span class="math notranslate nohighlight">\(\hat{u}\)</span>.</p>
@@ -1020,8 +1021,8 @@ document.write(`
 <p>In all three cases, the direction of the new vector is preserved (i.e., unchanged) relative to the old vector, although the magnitude of the new vector can be different.</p>
 <hr class="docutils" />
 <p>We can represent the vector <span class="math notranslate nohighlight">\(\vec{D}_{AC}\)</span> as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7f156ea5-c873-46b5-b643-641a0c2365e1">
-<span class="eqno">(2.3)<a class="headerlink" href="#equation-7f156ea5-c873-46b5-b643-641a0c2365e1" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-dab078ae-3f1b-41e5-938d-2466ecb1a079">
+<span class="eqno">(2.3)<a class="headerlink" href="#equation-dab078ae-3f1b-41e5-938d-2466ecb1a079" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{D}_{AC} &amp;= 0.75 \vec{D}_{AB},\\
 &amp;= 4.5\hat{u}\ {\rm km}.
 \end{align}\]</div>
@@ -1090,8 +1091,8 @@ document.write(`
 <p><strong>Do you think <span class="math notranslate nohighlight">\(\vec{D}_{CD}\)</span> is parallel or antiparallel to <span class="math notranslate nohighlight">\(\vec{D}_{AB}\)</span>?</strong></p>
 <p>Since he had to retrace his steps, the vector <span class="math notranslate nohighlight">\(\vec{D}_{CD}\)</span> will have a direction that is opposite to <span class="math notranslate nohighlight">\(\vec{D}_{AC}\)</span> (and <span class="math notranslate nohighlight">\(\vec{D}_{AB}\)</span>.</p>
 <p>We can represent the vector <span class="math notranslate nohighlight">\(\vec{D}_{CD}\)</span> as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c67ecaa8-c90f-4ae2-b971-ebfd1bee3c90">
-<span class="eqno">(2.4)<a class="headerlink" href="#equation-c67ecaa8-c90f-4ae2-b971-ebfd1bee3c90" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a9ad39d2-83c3-4df3-8200-cba289020156">
+<span class="eqno">(2.4)<a class="headerlink" href="#equation-a9ad39d2-83c3-4df3-8200-cba289020156" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{D}_{CD} = -\frac{1.2}{6} \hat{u},
 &amp;=-0.2 \vec{D}_{AB}.
 \end{align}\]</div>
@@ -1162,20 +1163,20 @@ document.write(`
 </ul>
 <p>Since your friend had to turn back, he wants to know which location (campsite or fishing hole) is closer.  He’s not much of a hiker, and just wants to go to the closer location.</p>
 <p>We can find either vector <span class="math notranslate nohighlight">\(\vec{D}_{AD}\)</span> or <span class="math notranslate nohighlight">\(\vec{D}_{DB}\)</span> using a combination of the vectors we already know.  We can deduce <span class="math notranslate nohighlight">\(\vec{D}_{AD}\)</span> by the addition (or difference) of <span class="math notranslate nohighlight">\(\vec{D}_{AB}\)</span> with <span class="math notranslate nohighlight">\(\vec{D}_{AC}\)</span> and <span class="math notranslate nohighlight">\(\vec{D}_{CD}\)</span>.  Let’s start by defining:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f1282793-d53c-48b1-bbf9-295bef461538">
-<span class="eqno">(2.5)<a class="headerlink" href="#equation-f1282793-d53c-48b1-bbf9-295bef461538" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e8534df9-fd0b-49c5-a483-86d15e652b4b">
+<span class="eqno">(2.5)<a class="headerlink" href="#equation-e8534df9-fd0b-49c5-a483-86d15e652b4b" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{D}_{AD} = \vec{D}_{AC} + \vec{D}_{CD}.
 \end{align}\]</div>
 <p>The vector <span class="math notranslate nohighlight">\(\vec{D}_{AD}\)</span> simply represents your friend’s total path <em>accounting for a change in direction.</em> Through substitution, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-49ece4b6-857e-471e-86b4-0d05719924ad">
-<span class="eqno">(2.6)<a class="headerlink" href="#equation-49ece4b6-857e-471e-86b4-0d05719924ad" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-adb1e399-a793-490a-b001-ce99c3a9ed29">
+<span class="eqno">(2.6)<a class="headerlink" href="#equation-adb1e399-a793-490a-b001-ce99c3a9ed29" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{D}_{AD} &amp;= 0.75 \vec{D}_{AB} - 0.2\vec{D}_{AB},\\
 &amp;= 0.55\vec{D}_{AB}, \\
 &amp;= 3.3 \hat{u}\ {\rm km}.
 \end{align}\]</div>
 <p>We can find <span class="math notranslate nohighlight">\(\vec{D}_{DB}\)</span> through another deduction by,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9e7742c4-9670-4b99-b067-fb25a7064bf2">
-<span class="eqno">(2.7)<a class="headerlink" href="#equation-9e7742c4-9670-4b99-b067-fb25a7064bf2" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-5824cc56-5775-4f6e-8a5b-f6a603a7d410">
+<span class="eqno">(2.7)<a class="headerlink" href="#equation-5824cc56-5775-4f6e-8a5b-f6a603a7d410" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{D}_{DB} &amp;= \vec{D}_{AB} - \vec{D}_{AD},\\
 &amp;= 0.45\vec{D}_{AB}, \\
 &amp;= 2.7 \hat{u}\ {\rm km}.
@@ -1271,8 +1272,8 @@ document.write(`
 <section id="properties-of-vectors">
 <h3><span class="section-number">2.1.5. </span><em>Properties of vectors</em><a class="headerlink" href="#properties-of-vectors" title="Link to this heading">#</a></h3>
 <p>The <strong>resultant</strong> vector <span class="math notranslate nohighlight">\(\vec{R}\)</span> of two vectors <span class="math notranslate nohighlight">\(\vec{A}\)</span> and <span class="math notranslate nohighlight">\(\vec{B}\)</span> can be determined by the addition of the two vectors as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1341bc9d-a166-4902-9708-004bbb09f2e3">
-<span class="eqno">(2.8)<a class="headerlink" href="#equation-1341bc9d-a166-4902-9708-004bbb09f2e3" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-1e1e479c-7c77-4b50-8bdf-79e76e7b5d99">
+<span class="eqno">(2.8)<a class="headerlink" href="#equation-1e1e479c-7c77-4b50-8bdf-79e76e7b5d99" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{R} = \vec{A} + \vec{B}.
 \end{align}\]</div>
 <p>When we draw the resultant vector, we place them the tail at the origin and draw to place the head at the final location (i.e., <a class="reference external" href="https://www.youtube.com/watch?v=PkpJE0HZ7u8">head-to-tail</a> method).  In our above example, <span class="math notranslate nohighlight">\(\vec{D}_{AD}\)</span> was the resultant vector of the <span class="math notranslate nohighlight">\(\vec{D}_{AC} + \vec{D}_{CD}\)</span>.</p>
@@ -1287,8 +1288,8 @@ document.write(`
 \[ (\vec{A} + \vec{B}) + \vec{C} = \vec{A} + (\vec{B} + \vec{C}) \]</div>
 </li>
 <li><p>distribute scalar(s) across vector(s), where vector multiplication is <strong>distributive</strong>.</p>
-<div class="amsmath math notranslate nohighlight" id="equation-25dc3b4f-ce5a-48df-bbc3-610269d6ec74">
-<span class="eqno">(2.9)<a class="headerlink" href="#equation-25dc3b4f-ce5a-48df-bbc3-610269d6ec74" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-8d8efdce-9d85-4fc3-98ca-b8e514ffa7e9">
+<span class="eqno">(2.9)<a class="headerlink" href="#equation-8d8efdce-9d85-4fc3-98ca-b8e514ffa7e9" title="Permalink to this equation">#</a></span>\[\begin{align}
 (\alpha + \beta)\vec{A} &amp;= \alpha \vec{A} + \beta\vec{A}, \\
 \alpha(\vec{A}+\vec{B}) &amp;= \alpha \vec{A} + \alpha \vec{B}.
 \end{align}\]</div>
@@ -1793,15 +1794,15 @@ The computed vector S has magnitude 37.0 cm and direction 52.9 degrees.
 <section id="vector-components">
 <h3><span class="section-number">2.2.1. </span>Vector components<a class="headerlink" href="#vector-components" title="Link to this heading">#</a></h3>
 <p>A vector <span class="math notranslate nohighlight">\(\vec{A}\)</span> can be decomposed into its <strong>vector components</strong>, where each component is itself a vector.  These vector components are constructed using the <strong>unit vectors</strong> <span class="math notranslate nohighlight">\(\hat{i}\)</span> and <span class="math notranslate nohighlight">\(\hat{j}\)</span> that mark a unit step in either the <span class="math notranslate nohighlight">\(x\)</span> or <span class="math notranslate nohighlight">\(y\)</span>-axis, respectively.  Therefore, the vector <span class="math notranslate nohighlight">\(\vec{A}\)</span> can be represented as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6213cb83-d17a-4a0c-8e8d-1aff9a09ff6b">
-<span class="eqno">(2.10)<a class="headerlink" href="#equation-6213cb83-d17a-4a0c-8e8d-1aff9a09ff6b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-4f02410e-f625-4fdc-a3d8-0cb7b63d7644">
+<span class="eqno">(2.10)<a class="headerlink" href="#equation-4f02410e-f625-4fdc-a3d8-0cb7b63d7644" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{A} &amp;= \vec{A}_x + \vec{A}_y,\\
 &amp;= A_x\hat{i} + A_y\hat{j},
 \end{align}\]</div>
 <p>where the <span class="math notranslate nohighlight">\(A_x\)</span> and <span class="math notranslate nohighlight">\(A_y\)</span> represent the magnitude of the step along the respective Cartesian axis.  Recall the chessboard where the start of the vector can be anywhere on the board.  This means that the <strong>component magnitudes</strong> are measurements relative to where you start.</p>
 <p>Let’s define the starting location of vector <span class="math notranslate nohighlight">\(\vec{A}\)</span> as a point <span class="math notranslate nohighlight">\((x_o,\ y_o)\)</span>, and the vector terminates at a point <span class="math notranslate nohighlight">\((x,\ y)\)</span>.  Then, we can describe the vector as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2d2c73b1-90f1-4311-9a89-a75634fdda56">
-<span class="eqno">(2.11)<a class="headerlink" href="#equation-2d2c73b1-90f1-4311-9a89-a75634fdda56" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-01753ac7-eb71-4cd9-b7b4-3993db4974c7">
+<span class="eqno">(2.11)<a class="headerlink" href="#equation-01753ac7-eb71-4cd9-b7b4-3993db4974c7" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{A} &amp;= \vec{A}_x + \vec{A}_y, \\
 &amp;= (x-x_o)\hat{i} + (y-y_o)\hat{j}.
 \end{align}\]</div>
@@ -1926,8 +1927,8 @@ D_y &amp;= y_f - y_i = 4.5 - 1.6 = +2.9\ \text{cm}.
 </figcaption>
 </figure>
 <p>From the Euclidean distance formula (or Pythagorean theorem), we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f6bb2205-595e-46fa-8721-8da90bafe0d0">
-<span class="eqno">(2.12)<a class="headerlink" href="#equation-f6bb2205-595e-46fa-8721-8da90bafe0d0" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-756d615e-98c5-4bde-9a34-bc2f66985352">
+<span class="eqno">(2.12)<a class="headerlink" href="#equation-756d615e-98c5-4bde-9a34-bc2f66985352" title="Permalink to this equation">#</a></span>\[\begin{align}
 |A| &amp;= \sqrt{(x-x_o)^2 + (y-y_o)^2},\\
 &amp;= \sqrt{A_x^2 + A_y^2}.
 \end{align}\]</div>
@@ -2057,8 +2058,8 @@ D_y &amp;= y_f - y_i = 4.5 - 1.6 = +2.9\ \text{cm}.
 </div>
 </div>
 <p>Since we have the lengths of both the adjacent (<span class="math notranslate nohighlight">\(A_x\)</span>) and opposite (<span class="math notranslate nohighlight">\(A_y\)</span>) sides of the triangle, it is easiest to use the <span class="math notranslate nohighlight">\(\tan{\theta}\)</span> function, which results in</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f334644a-38b0-41fd-8201-42a86dcb2ba9">
-<span class="eqno">(2.13)<a class="headerlink" href="#equation-f334644a-38b0-41fd-8201-42a86dcb2ba9" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-deaa43c1-253f-46fd-9c4c-d4ecd360bae2">
+<span class="eqno">(2.13)<a class="headerlink" href="#equation-deaa43c1-253f-46fd-9c4c-d4ecd360bae2" title="Permalink to this equation">#</a></span>\[\begin{align}
 \tan{\theta} = \frac{A_y}{A_x}.
 \end{align}\]</div>
 <p>If <span class="math notranslate nohighlight">\(\vec{A}\)</span> lies in quadrants I or IV, the angle <span class="math notranslate nohighlight">\(\theta = \theta_A\)</span>,
@@ -2228,8 +2229,8 @@ Failing to account for this would give the wrong direction angle.</p>
 <p>The location of a point is instead defined by the <strong>radial coordinate</strong> <span class="math notranslate nohighlight">\(r\)</span> (i.e., distance from the origin) and <strong>angular coordinate</strong> <span class="math notranslate nohighlight">\(\varphi\)</span> (sometimes called the azimuthal coordinate) which measures the rotation angle with some chosen direction, usually the positive <span class="math notranslate nohighlight">\(x\)</span>-direction.  <em>The angular coordinate is often measured in radians.</em></p>
 <p>The unit vectors for polar coordinates are given as <span class="math notranslate nohighlight">\(\hat{r}\)</span> (radial) and <span class="math notranslate nohighlight">\(\hat{t}\)</span> (transverse).  The <span class="math notranslate nohighlight">\(\hat{r}\)</span> describes points outward in radius relative to the center.  The positive <span class="math notranslate nohighlight">\(\hat{t}\)</span> direction indicates how the angle <span class="math notranslate nohighlight">\(\varphi\)</span> changes in the <em>counterclockwise</em> direction.</p>
 <p>We can connect a the Cartesian point to a polar equivalent via a transformation:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6c8f71f2-d326-4c1d-8d61-b913b9a56f33">
-<span class="eqno">(2.14)<a class="headerlink" href="#equation-6c8f71f2-d326-4c1d-8d61-b913b9a56f33" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e9c30e5a-be2b-4ca1-aa7d-61faa2d46704">
+<span class="eqno">(2.14)<a class="headerlink" href="#equation-e9c30e5a-be2b-4ca1-aa7d-61faa2d46704" title="Permalink to this equation">#</a></span>\[\begin{align}
 x &amp;= r\cos{\varphi}, \\
 y &amp;= r\sin{\varphi}.
 \end{align}\]</div>
@@ -2378,14 +2379,14 @@ The gold coin is located at (-9.4, 3.4) m relative to the well.
 </figcaption>
 </figure>
 <p>The 3D version of the vector <span class="math notranslate nohighlight">\(\vec{A}\)</span> has three components, which can be represented by the sum of the components by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-af2cd2e3-7c29-41c7-9b57-5afc0f9e68d1">
-<span class="eqno">(2.15)<a class="headerlink" href="#equation-af2cd2e3-7c29-41c7-9b57-5afc0f9e68d1" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ca2fed49-0a3e-4332-8c17-3e84f8021800">
+<span class="eqno">(2.15)<a class="headerlink" href="#equation-ca2fed49-0a3e-4332-8c17-3e84f8021800" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{A} &amp;= A_x\hat{i} + A_y\hat{j} + A_z\hat{k},\\
 &amp;= (x-x_o)\hat{i} + (y-y_o)\hat{j} + (z-z_o)\hat{k}.
 \end{align}\]</div>
 <p>The magnitude <span class="math notranslate nohighlight">\(A\)</span> is now defined by generalizing the distance equation to</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a35dd70e-0762-4a2c-9c2f-33febfaf7a3c">
-<span class="eqno">(2.16)<a class="headerlink" href="#equation-a35dd70e-0762-4a2c-9c2f-33febfaf7a3c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-c60eee88-797c-4432-b220-059cab2ce471">
+<span class="eqno">(2.16)<a class="headerlink" href="#equation-c60eee88-797c-4432-b220-059cab2ce471" title="Permalink to this equation">#</a></span>\[\begin{align}
 A = \sqrt{A_x^2 + A_y^2 + A_z^2}.
 \end{align}\]</div>
 <p>The figure below illustrates the vector components and how they map to the edges of a cube in 3D space.</p>
@@ -2485,16 +2486,16 @@ print(f&quot;The computed magnitude of the displacement is {D_mag:.2f} km.&quot;
 <li><p>made equal.</p></li>
 </ul>
 <p>To reverse the direction of a vector, we follow the rules for scaling a vector:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ff0fb761-fe64-40c9-a07d-90c9e1b03044">
-<span class="eqno">(2.17)<a class="headerlink" href="#equation-ff0fb761-fe64-40c9-a07d-90c9e1b03044" title="Permalink to this equation">#</a></span>\[\begin{align} 
+<div class="amsmath math notranslate nohighlight" id="equation-7883d862-3a4b-4bed-b2d9-33bd6b47db27">
+<span class="eqno">(2.17)<a class="headerlink" href="#equation-7883d862-3a4b-4bed-b2d9-33bd6b47db27" title="Permalink to this equation">#</a></span>\[\begin{align} 
 -\vec{A} = -A_x\hat{i} - A_y\hat{j} - A_z\hat{k}.
 \end{align}\]</div>
 <p>The number zero can be generalized to vector algebra through the object called the <strong>null vector</strong>, denoted by <span class="math notranslate nohighlight">\(\vec{0}\)</span>.  It represents a vector that has no length or direction,</p>
 <div class="math notranslate nohighlight">
 \[ \vec{0} =0 \hat{i} + 0\hat{j} + 0\hat{k}. \]</div>
 <p>If the difference of two vectors (<span class="math notranslate nohighlight">\(\vec{A}\)</span> and <span class="math notranslate nohighlight">\(\vec{B}\)</span>) is set to the null vector, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-98b8a0d0-5c25-470d-9515-7c86892b1832">
-<span class="eqno">(2.18)<a class="headerlink" href="#equation-98b8a0d0-5c25-470d-9515-7c86892b1832" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-5b8c2b28-dc15-46e6-aef1-01bb1b31d823">
+<span class="eqno">(2.18)<a class="headerlink" href="#equation-5b8c2b28-dc15-46e6-aef1-01bb1b31d823" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{A} - \vec{B} &amp;= 0 \hat{i} + 0\hat{j} + 0\hat{k} = \vec{0},\\
 &amp;= (A_x-B_x)\hat{i} + (A_y-B_y)\hat{j} + (A_z-B_z)\hat{k}.
 \end{align}\]</div>
@@ -2637,26 +2638,26 @@ The horizontal retreat direction is 37 degrees south of west.
 </div></blockquote>
 </div>
 </details><p>Vector addition by components is accomplished as follows:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-550a4839-e7d3-4c42-bb6f-08cf0deb7d23">
-<span class="eqno">(2.19)<a class="headerlink" href="#equation-550a4839-e7d3-4c42-bb6f-08cf0deb7d23" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d306018a-a8a2-43f0-8289-a624319e43b5">
+<span class="eqno">(2.19)<a class="headerlink" href="#equation-d306018a-a8a2-43f0-8289-a624319e43b5" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{R} &amp;= \vec{A} + \vec{B}, \\
 &amp;= (A_x+B_x)\hat{i} + (A_y+B_y)\hat{j} + (A_z+B_z)\hat{k}, \\
 &amp;= R_x\hat{i} + R_y\hat{j} + R_z\hat{k}.
 \end{align}\]</div>
 <p>Analytical methods can be used to find the result of many vectors by combining them by components.  For example, if we sum up <span class="math notranslate nohighlight">\(N\)</span> vectors (<span class="math notranslate nohighlight">\(\vec{F}_1,\ldots,\vec{F}_N\)</span>), where each vector <span class="math notranslate nohighlight">\(\vec{F}_n = F_{nx}\hat{i} + F_{ny}\hat{j} + F_{nz}\hat{k}\)</span>, the resultant vector is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3eda6a1a-7e31-4932-adf5-1d8983f3b657">
-<span class="eqno">(2.20)<a class="headerlink" href="#equation-3eda6a1a-7e31-4932-adf5-1d8983f3b657" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-c4826304-1a8d-423c-979e-6a46980bb6ab">
+<span class="eqno">(2.20)<a class="headerlink" href="#equation-c4826304-1a8d-423c-979e-6a46980bb6ab" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{F}_R &amp;= \vec{F}_1 + \vec{F}_2 + \ldots + \vec{F}_N = \sum_{n=1}^N \vec{F}_n,\\
 &amp;= \sum_{n=1}^N \left( F_{nx}\hat{i} + F_{ny}\hat{j} + F_{nz}\hat{k}\right) = \sum_{n=1}^n \left( F_{nx}\right) \hat{i} + \sum_{n=1}^N \left( F_{ny}\right) \hat{j} + \sum_{n=1}^N \left( F_{nz}\right) \hat{k}.
 \end{align}\]</div>
 <p>The resultant vector is defined as:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-bc9b5f12-2ec2-4c12-a199-a8cbb4d159d6">
-<span class="eqno">(2.21)<a class="headerlink" href="#equation-bc9b5f12-2ec2-4c12-a199-a8cbb4d159d6" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-bc67cff5-6231-49c2-aea9-2bd92953a4fb">
+<span class="eqno">(2.21)<a class="headerlink" href="#equation-bc67cff5-6231-49c2-aea9-2bd92953a4fb" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{F}_R = F_{Rx}\hat{i} + F_{Ry}\hat{j} + F_{Rz}\hat{k},
 \end{align}\]</div>
 <p>where</p>
-<div class="amsmath math notranslate nohighlight" id="equation-fb7458b1-fe46-4e45-bc6d-395f2a527164">
-<span class="eqno">(2.22)<a class="headerlink" href="#equation-fb7458b1-fe46-4e45-bc6d-395f2a527164" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-4a26b084-bd22-4b47-85fa-8934428abc41">
+<span class="eqno">(2.22)<a class="headerlink" href="#equation-4a26b084-bd22-4b47-85fa-8934428abc41" title="Permalink to this equation">#</a></span>\[\begin{align}
 F_{Rx} &amp;= \sum_{n=1}^N F_{nx} = F_{1x} + F_{2x} + \ldots + F_{Nx}, \\
 F_{Ry} &amp;= \sum_{n=1}^N F_{ny} = F_{1y} + F_{2y} + \ldots + F_{Ny}, \\
 F_{Rz} &amp;= \sum_{n=1}^N F_{nz} = F_{1z} + F_{2z} + \ldots + F_{Nz}.
@@ -3085,8 +3086,8 @@ R_y &amp;= A_y + B_y + C_y = -131.1 + 100.0 + 80.3 = 49.2\ \text{N}.
 </ul>
 <p>The unit vector gives a vector its direction and it is dimensionless (i.e., has no physical units).  When the vector lies along one of the axes in the coordinate system, finding the direction is simple.  Its direction either parallel or antiparallel to that coordinate axis.  For example, the direction of the vector <span class="math notranslate nohighlight">\(\vec{d} = -5\hat{i}\ {\rm m}\)</span> is the unit vector <span class="math notranslate nohighlight">\(\hat{d} = -\hat{i}\)</span> (i.e., <span class="math notranslate nohighlight">\(\vec{d} = 5\hat{d}\ {\rm m}\)</span>).</p>
 <p>The general rule of finding the unit vector <span class="math notranslate nohighlight">\(\widehat{V}\)</span> of a vector <span class="math notranslate nohighlight">\(\overrightarrow{V}\)</span> is to divide it by its magnitude <span class="math notranslate nohighlight">\(V\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2110bc59-ab7a-463f-9d68-4c895894fa06">
-<span class="eqno">(2.23)<a class="headerlink" href="#equation-2110bc59-ab7a-463f-9d68-4c895894fa06" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ae62af37-40e8-4de5-8ac1-b3f0e6b43e96">
+<span class="eqno">(2.23)<a class="headerlink" href="#equation-ae62af37-40e8-4de5-8ac1-b3f0e6b43e96" title="Permalink to this equation">#</a></span>\[\begin{align}
 \widehat{V} &amp;= \frac{\overrightarrow{V}}{V}.
 \end{align}\]</div>
 </section>
@@ -3179,8 +3180,8 @@ R_y &amp;= A_y + B_y + C_y = -131.1 + 100.0 + 80.3 = 49.2\ \text{N}.
 <section id="the-dot-product">
 <h3><span class="section-number">2.4.1. </span>The Dot Product<a class="headerlink" href="#the-dot-product" title="Link to this heading">#</a></h3>
 <p>The <strong>scalar product</strong> of two vectors is denoted using <span class="math notranslate nohighlight">\(\cdot\)</span> (<code class="docutils literal notranslate"><span class="pre">\cdot</span></code>) symbol instead of the normal <span class="math notranslate nohighlight">\(\times\)</span> (<code class="docutils literal notranslate"><span class="pre">\times</span></code>) symbol.  The scalar product of vectors <span class="math notranslate nohighlight">\(\vec{A}\)</span> and <span class="math notranslate nohighlight">\(\vec{B}\)</span> is defined by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c5599cf3-7a20-43c8-a6b7-6f940817cfff">
-<span class="eqno">(2.24)<a class="headerlink" href="#equation-c5599cf3-7a20-43c8-a6b7-6f940817cfff" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-49ea0584-1c9d-4b72-ab97-e530e37bf721">
+<span class="eqno">(2.24)<a class="headerlink" href="#equation-49ea0584-1c9d-4b72-ab97-e530e37bf721" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{A} \cdot \vec{B} = AB\cos{\varphi},
 \end{align}\]</div>
 <p>where the angle <span class="math notranslate nohighlight">\(\varphi\)</span> represents an angle between the two vectors.</p>
@@ -3196,8 +3197,8 @@ R_y &amp;= A_y + B_y + C_y = -131.1 + 100.0 + 80.3 = 49.2\ \text{N}.
 <li><p>for perpendicular (or orthogonal) vectors, <span class="math notranslate nohighlight">\(\vec{A} \cdot \vec{B} = 0\)</span>.</p></li>
 </ul>
 <p>The scalar product of a vector with itself is the square of its magnitude:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-09c72285-23ca-4885-89d8-886eaa43a7a6">
-<span class="eqno">(2.25)<a class="headerlink" href="#equation-09c72285-23ca-4885-89d8-886eaa43a7a6" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-25089f28-e5c1-428e-95a4-ac147ac0e5c0">
+<span class="eqno">(2.25)<a class="headerlink" href="#equation-25089f28-e5c1-428e-95a4-ac147ac0e5c0" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{A}^2 &amp;\equiv \vec{A} \cdot \vec{A} = AA\cos{0} = A^2.
 \end{align}\]</div>
 <div class="tip margin admonition">
@@ -3209,29 +3210,29 @@ R_y &amp;= A_y + B_y + C_y = -131.1 + 100.0 + 80.3 = 49.2\ \text{N}.
 <section id="rules-using-unit-vectors">
 <h3><span class="section-number">2.4.2. </span>Rules using unit vectors<a class="headerlink" href="#rules-using-unit-vectors" title="Link to this heading">#</a></h3>
 <p>In the Cartesian coordinate system, scalar products of a unit vector with another (different) unit vector vanish because these unit vectors are <strong>orthogonal</strong>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b968c883-5c88-41ea-b904-2ca0dd193c1b">
-<span class="eqno">(2.26)<a class="headerlink" href="#equation-b968c883-5c88-41ea-b904-2ca0dd193c1b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e0c351fe-7f61-4c7e-ba40-cab63fc87d03">
+<span class="eqno">(2.26)<a class="headerlink" href="#equation-e0c351fe-7f61-4c7e-ba40-cab63fc87d03" title="Permalink to this equation">#</a></span>\[\begin{align}
 \hat{i} \cdot \hat{j} &amp;= \cos{\left(\frac{\pi}{2}\right)} = 0, \\
 \hat{i} \cdot \hat{k} &amp;= \cos{\left(\frac{\pi}{2}\right)} = 0, \\
 \hat{k} \cdot \hat{j} &amp;= \cos{\left(\frac{\pi}{2}\right)} = 0.
 \end{align}\]</div>
 <p>We often take advantage of the fact that the magnitudes of all unit vectors are one:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e28a9f5c-4e6b-4aee-9edb-afd70ca74033">
-<span class="eqno">(2.27)<a class="headerlink" href="#equation-e28a9f5c-4e6b-4aee-9edb-afd70ca74033" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b0be0b9d-5012-49dc-8a07-c79122e30960">
+<span class="eqno">(2.27)<a class="headerlink" href="#equation-b0be0b9d-5012-49dc-8a07-c79122e30960" title="Permalink to this equation">#</a></span>\[\begin{align}
 |\hat{i}| &amp;= \hat{i} \cdot \hat {i} = i^2 = 1, \\
 |\hat{j}| &amp;= \hat{j} \cdot \hat {j} = j^2 = 1, \\
 |\hat{k}| &amp;= \hat{k} \cdot \hat {k} = k^2 = 1. 
 \end{align}\]</div>
 <p>The scalar product is also interpreted as the <em>projection</em> of one vector onto the <em>direction</em> of the other vector (i.e., projection <span class="math notranslate nohighlight">\(A_{||}\)</span> onto the direction of <span class="math notranslate nohighlight">\(\vec{B}\)</span>):</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ad609adc-95dc-4946-8f5e-322ee0f7b4fc">
-<span class="eqno">(2.28)<a class="headerlink" href="#equation-ad609adc-95dc-4946-8f5e-322ee0f7b4fc" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-79e0a864-0ccb-4a5e-b1ef-dd136670a043">
+<span class="eqno">(2.28)<a class="headerlink" href="#equation-79e0a864-0ccb-4a5e-b1ef-dd136670a043" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{A} \cdot \vec{B} &amp;= AB\cos{\varphi}, \\
 &amp;= B(A\cos{\varphi}) = BA_{||}, \\
 &amp;= A(B\cos{\varphi}) = AB_{||}.
 \end{align}\]</div>
 <p>Recall the definitions of the vector components <span class="math notranslate nohighlight">\(A_x\)</span> and <span class="math notranslate nohighlight">\(A_y\)</span>.  We can define these quantities through the dot product with the appropriate unit vector.  For example, using the vector <span class="math notranslate nohighlight">\(\vec{A} = A_x\hat{i} + A_y\hat{j}\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-16763fe6-4dac-4145-a2d2-328d90c3a103">
-<span class="eqno">(2.29)<a class="headerlink" href="#equation-16763fe6-4dac-4145-a2d2-328d90c3a103" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-62df142c-65b7-4066-83dc-fc6ab17214fb">
+<span class="eqno">(2.29)<a class="headerlink" href="#equation-62df142c-65b7-4066-83dc-fc6ab17214fb" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{A}\cdot \hat{i} &amp;= A_x (\hat{i} \cdot \hat{i}) + A_y (\hat{i}\cdot \hat{j}) = A_x \cos(0) + A_y \cos(\pi/2) = A_x, \\
 \vec{A}\cdot \hat{j} &amp;= A_x (\hat{j} \cdot \hat{i}) + A_y (\hat{j}\cdot \hat{j}) = A_x \cos(\pi/2) + A_y \cos(0) = A_y.
 \end{align}\]</div>
@@ -3249,13 +3250,13 @@ R_y &amp;= A_y + B_y + C_y = -131.1 + 100.0 + 80.3 = 49.2\ \text{N}.
 &amp;\quad + A_z B_x\, \hat{k}\cdot\hat{i} + A_z B_y\, \hat{k}\cdot\hat{j} + A_z B_z\, \hat{k}\cdot\hat{k}.
 \end{align*}\]</div>
 <p>Applying our rules for the dot products of unit vectors, the above expression simplifies quickly to</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ef83bb63-de3d-4350-a825-d178187f2649">
-<span class="eqno">(2.30)<a class="headerlink" href="#equation-ef83bb63-de3d-4350-a825-d178187f2649" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-cd45fad8-0aba-4b22-a5e4-864c635d5745">
+<span class="eqno">(2.30)<a class="headerlink" href="#equation-cd45fad8-0aba-4b22-a5e4-864c635d5745" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{A}\cdot\vec{B} &amp;= A_x B_x + A_yB_y + A_zB_z
 \end{align}\]</div>
 <p>If we know the magnitudes (<span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>) and the vector components of each vector, then we can solve for the angle <span class="math notranslate nohighlight">\(\varphi\)</span> between them:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1915d07c-81da-4678-935c-5917606fc434">
-<span class="eqno">(2.31)<a class="headerlink" href="#equation-1915d07c-81da-4678-935c-5917606fc434" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-cc0f8f4e-af35-4808-94dd-83f383e05571">
+<span class="eqno">(2.31)<a class="headerlink" href="#equation-cc0f8f4e-af35-4808-94dd-83f383e05571" title="Permalink to this equation">#</a></span>\[\begin{align}
 \cos{\varphi}  &amp;= \frac{\vec{A}\cdot \vec{B}}{AB} = \frac{A_x B_x + A_yB_y + A_zB_z}{AB}, \\
 \varphi &amp;= \cos^{-1}\left( \frac{A_x B_x + A_yB_y + A_zB_z}{AB}\right).
 \end{align}\]</div>
@@ -3338,8 +3339,8 @@ F_2 &amp;= \sqrt{(-15.0)^2 + (0.0)^2 + (-6.2)^2} = 16.2\ \text{N}.
 <h3><span class="section-number">2.4.3. </span>The Cross Product<a class="headerlink" href="#the-cross-product" title="Link to this heading">#</a></h3>
 <p>The <strong>vector product</strong> yields (you guessed it) a vector.  The vector product of two vectors is denoted by <span class="math notranslate nohighlight">\(\vec{A} \times \vec{B}\)</span> and is often called the <strong>cross product</strong>, due to the <span class="math notranslate nohighlight">\(\times\)</span> (<code class="docutils literal notranslate"><span class="pre">\times</span></code>) operator.</p>
 <p>The vector product produces a vector that is perpendicular to the plane containing both vectors.  The magnitude of the vector product is defined as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f6c57f64-29d8-44e7-b8bc-626f360c238d">
-<span class="eqno">(2.32)<a class="headerlink" href="#equation-f6c57f64-29d8-44e7-b8bc-626f360c238d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-22f511ea-ed9e-4e1a-94f4-7fd64287380a">
+<span class="eqno">(2.32)<a class="headerlink" href="#equation-22f511ea-ed9e-4e1a-94f4-7fd64287380a" title="Permalink to this equation">#</a></span>\[\begin{align}
 |\vec{A} \times \vec{B}| = AB\sin{\varphi},
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\varphi\)</span> represents the angle measured between the two vectors.  In this case, the direction (i.e., sign) of <span class="math notranslate nohighlight">\(\varphi\)</span> makes a difference because <span class="math notranslate nohighlight">\(\sin{(-\varphi)} = -\sin{(\varphi)}\)</span> (an odd function).</p>
@@ -3352,8 +3353,8 @@ F_2 &amp;= \sqrt{(-15.0)^2 + (0.0)^2 + (-6.2)^2} = 16.2\ \text{N}.
 </figure>
 <p>The figure above shows that on the line perpendicular to the plane, there are two alternative directions.  In the standard right-handed orientation, where <span class="math notranslate nohighlight">\(\varphi\)</span> is measured <em>counterclockwise</em> from the first vector, the resulting vector points upward.  If we reverse <span class="math notranslate nohighlight">\(\varphi\)</span>, then the resulting vector points downward.</p>
 <p>This means the vector product is <strong>anticommutative</strong> because it reverses sign when the multiplication order is reversed:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5e060953-d465-40cf-b7a3-caed84d5e1f5">
-<span class="eqno">(2.33)<a class="headerlink" href="#equation-5e060953-d465-40cf-b7a3-caed84d5e1f5" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d167752d-26bf-4276-a165-fce50f266300">
+<span class="eqno">(2.33)<a class="headerlink" href="#equation-d167752d-26bf-4276-a165-fce50f266300" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{A} \times \vec{B} = -\vec{B} \times \vec{A}.
 \end{align}\]</div>
 <p>The <a class="reference external" href="https://en.wikipedia.org/wiki/Right-hand_rule"><strong>right-hand rule</strong></a> (shown below) helps determine the direction of the vector product, where one use the index finger for vector <span class="math notranslate nohighlight">\(\vec{A}\)</span>, middle finger for vector <span class="math notranslate nohighlight">\(\vec{B}\)</span>, and thumb for the vector product <span class="math notranslate nohighlight">\(\vec{A} \times \vec{B}\)</span> on the right-hand.</p>
@@ -3364,21 +3365,21 @@ F_2 &amp;= \sqrt{(-15.0)^2 + (0.0)^2 + (-6.2)^2} = 16.2\ \text{N}.
 </figcaption>
 </figure>
 <p>Similar to the dot product, the cross product is distributive:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-4d65cdb3-aa0b-4757-88af-9391080d7586">
-<span class="eqno">(2.34)<a class="headerlink" href="#equation-4d65cdb3-aa0b-4757-88af-9391080d7586" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-57fcc497-bf1d-4a7d-b1cf-d16b4c3d7046">
+<span class="eqno">(2.34)<a class="headerlink" href="#equation-57fcc497-bf1d-4a7d-b1cf-d16b4c3d7046" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{A} \times (\vec{B} + \vec{C}) = (\vec{A} \times \vec{B}) + (\vec{A} \times \vec{C}).
 \end{align}\]</div>
 <p>When we apply the definition of the cross product to the Cartesian unit vectors <span class="math notranslate nohighlight">\(\hat{i}\)</span>, <span class="math notranslate nohighlight">\(\hat{j}\)</span>, and <span class="math notranslate nohighlight">\(\hat{k}\)</span>, we find that</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6c4fdbb2-cd09-460b-a692-176925a4e431">
-<span class="eqno">(2.35)<a class="headerlink" href="#equation-6c4fdbb2-cd09-460b-a692-176925a4e431" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-510c2d04-2b60-4b9e-b97f-554b11ebf9a0">
+<span class="eqno">(2.35)<a class="headerlink" href="#equation-510c2d04-2b60-4b9e-b97f-554b11ebf9a0" title="Permalink to this equation">#</a></span>\[\begin{align}
 \hat{i} \times \hat{i} &amp;= \hat{j} \times \hat{j} = \hat{k} \times \hat{k} = 0.
 \end{align}\]</div>
 <ul class="simple">
 <li><p><strong>What makes this so?</strong></p></li>
 </ul>
 <p>All other cross products must have a magnitude equal to unity because the unit vectors are orthogonal, e.g. <span class="math notranslate nohighlight">\(|\hat{i} \times \hat{j}| = ij\sin\left({\pi/2}\right) = 1\)</span>.  The vector product must be along the <span class="math notranslate nohighlight">\(z\)</span>-axis, following <span class="math notranslate nohighlight">\(-\hat{k}\)</span> or <span class="math notranslate nohighlight">\(+\hat{k}\)</span>.  Following the right-hand rule, we arrive at the following relations:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-35568858-54f6-462b-89a2-b3838a63f274">
-<span class="eqno">(2.36)<a class="headerlink" href="#equation-35568858-54f6-462b-89a2-b3838a63f274" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-1eab1e32-4855-410e-93dc-b05133f91b22">
+<span class="eqno">(2.36)<a class="headerlink" href="#equation-1eab1e32-4855-410e-93dc-b05133f91b22" title="Permalink to this equation">#</a></span>\[\begin{align}
 \hat{i} \times \hat{j} &amp;= +\hat{k}, \\
 \hat{j} \times \hat{k} &amp;= +\hat{i}, \\
 \hat{k} \times \hat{i} &amp;= +\hat{j}.
@@ -3421,8 +3422,8 @@ B_x &amp; B_y &amp; B_z
 <p>When performing algebraic operations involving the cross product, <strong>the order of multiplication matters</strong> because it is anticommutative.</p>
 </div>
 <p>We can finally determine the vector <span class="math notranslate nohighlight">\(\vec{C} = \vec{A} \times \vec{B}\)</span>  in terms of its components:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9705ec1b-33bc-46bf-a8ae-c45849e12cde">
-<span class="eqno">(2.37)<a class="headerlink" href="#equation-9705ec1b-33bc-46bf-a8ae-c45849e12cde" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a30db5d8-679c-4cbc-9681-bcb4b816ecd7">
+<span class="eqno">(2.37)<a class="headerlink" href="#equation-a30db5d8-679c-4cbc-9681-bcb4b816ecd7" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{C} &amp;= (A_y B_z - A_z B_y)\hat{i} + (A_z B_x - A_x B_z)\hat{j} + (A_x B_y - A_y B_x)\hat{k}, \\
 &amp;= C_x\hat{i} + C_y\hat{j} + C_z\hat{k}.
 \end{align}\]</div>
