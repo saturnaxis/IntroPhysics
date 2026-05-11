@@ -639,13 +639,13 @@ document.write(`
 <p>The distance across the USA is about <span class="math notranslate nohighlight">\(4500\ {\rm km}\)</span> from east to west.  This seems like a long way, but the distance from the Earth to the Sun (or <strong>astronomical unit</strong>; AU) is about <span class="math notranslate nohighlight">\(149,000,000\ {\rm km}\)</span> or <span class="math notranslate nohighlight">\({\sim}33,000\times\)</span> more distant.  Light is incredibly fast and can travel 1 AU in only <span class="math notranslate nohighlight">\(8.3\ {\rm min}\)</span>.</p>
 <p><em>How far can light travel in a year?</em></p>
 <p>Instead of thinking in kilometers, it is simpler to instead describe this distance in AU, or how many Earth-Sun distances make up this proposed distance.  We have to give this distance a name, thus we call it a <a class="reference external" href="https://en.wikipedia.org/wiki/Light-year">lightyear</a>, or the distance that light travels in a year.  Let’s start with what we know so far (i.e., light travels 1 AU in 8.3 min):</p>
-<div class="amsmath math notranslate nohighlight" id="equation-cb6b86eb-7b2f-4e66-adc8-1f5c37366312">
-<span class="eqno">(1.1)<a class="headerlink" href="#equation-cb6b86eb-7b2f-4e66-adc8-1f5c37366312" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b0293ceb-4de0-4d07-b71d-5a4401411fb4">
+<span class="eqno">(1.1)<a class="headerlink" href="#equation-b0293ceb-4de0-4d07-b71d-5a4401411fb4" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{1\ {\rm AU}}{8.3\ {\rm min}} &amp;= 0.12\ {\rm AU/min}.
 \end{align}\]</div>
 <p>Therefore, light travels at a speed of about <span class="math notranslate nohighlight">\(0.12\ {\rm AU/min}\)</span>.  Now, we can work our way through if we can somehow translate this speed into a distance.  For this we can use some other knowledge, for example:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9a6870df-8f0e-471b-9f25-179f2b0be971">
-<span class="eqno">(1.2)<a class="headerlink" href="#equation-9a6870df-8f0e-471b-9f25-179f2b0be971" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-6f2619af-04c9-4b47-97a8-debb0ac16326">
+<span class="eqno">(1.2)<a class="headerlink" href="#equation-6f2619af-04c9-4b47-97a8-debb0ac16326" title="Permalink to this equation">#</a></span>\[\begin{align}
 1\ {\rm h} &amp;= 60\ {\rm min}, \\
 1\ {\rm day} &amp;= 24\ {\rm h}, \\
 1\ {\rm yr} &amp;= 365.25\ {\rm days}.
@@ -654,14 +654,14 @@ document.write(`
 <ul class="simple">
 <li><p>To understand the distance <span class="math notranslate nohighlight">\(d\)</span> in a lightyear, we need to convert its speed <span class="math notranslate nohighlight">\(s\)</span> using different timescales <span class="math notranslate nohighlight">\(t\)</span> that make up a year.</p></li>
 </ul>
-<div class="amsmath math notranslate nohighlight" id="equation-513b0df4-90ff-43a2-a049-1a668db339a4">
-<span class="eqno">(1.3)<a class="headerlink" href="#equation-513b0df4-90ff-43a2-a049-1a668db339a4" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ef8bac44-9dc1-49d9-87c6-bff36682b427">
+<span class="eqno">(1.3)<a class="headerlink" href="#equation-ef8bac44-9dc1-49d9-87c6-bff36682b427" title="Permalink to this equation">#</a></span>\[\begin{align}
 s &amp;= \frac{d}{t}, \\
 d &amp;= s \times t= st
 \end{align}\]</div>
 <p>Let’s begin with some analytical calculations, which we’ll follow-up with a verification using <code class="docutils literal notranslate"><span class="pre">python</span></code>.  We just need to use our known speed of light and multiply by different time conversion factors to determine the number of <span class="math notranslate nohighlight">\(\rm AU/yr\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b2388379-5f44-43f6-995d-f71114fbab04">
-<span class="eqno">(1.4)<a class="headerlink" href="#equation-b2388379-5f44-43f6-995d-f71114fbab04" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-bf9230bb-b6e1-4edc-95a0-2a98d5f0620f">
+<span class="eqno">(1.4)<a class="headerlink" href="#equation-bf9230bb-b6e1-4edc-95a0-2a98d5f0620f" title="Permalink to this equation">#</a></span>\[\begin{align}
 s &amp;= \frac{0.12\ {\rm AU}}{\rm min} \times \frac{60\ {\rm min}}{1\ {\rm h}} \times \frac{24\ {\rm h}}{1\ {\rm day}} \times \frac{365.25\ {\rm days}}{1\ {\rm yr}}, \\
 &amp;= 63{,}000\ \frac{\rm AU}{\rm yr}.
 \end{align}\]</div>
@@ -681,7 +681,7 @@ s &amp;= \frac{0.12\ {\rm AU}}{\rm min} \times \frac{60\ {\rm min}}{1\ {\rm h}} 
 <span class="n">day2yr</span> <span class="o">=</span> <span class="mf">365.25</span> <span class="c1">#number of days in a year</span>
 
 <span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="o">*</span><span class="n">min2hr</span><span class="o">*</span><span class="n">hr2day</span><span class="o">*</span><span class="n">day2yr</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The speed of light is </span><span class="si">%4.0f</span><span class="s2"> AU/yr.&quot;</span> <span class="o">%</span><span class="k">s</span>)
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The speed of light is </span><span class="si">%4.0f</span><span class="s2"> AU/yr.&quot;</span> <span class="o">%</span> <span class="n">s</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-------&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Note this is not accurately describing our calculation.  We are limited by the precision of s.&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-------&quot;</span><span class="p">)</span>
@@ -707,16 +707,16 @@ d &amp;= st, \\
 &amp;= 63{,}000\ {\rm AU}.
 \end{align*}\]</div>
 <p>We have arrived at our goal, which is <span class="math notranslate nohighlight">\(1\ {\rm ly} = 63{,}000\ {\rm AU}\)</span>.</p>
-<ul class="simple">
-<li><p><strong>Why do we want to know this?</strong></p></li>
-</ul>
-<p>It shows us that a lightyear is really big, or <span class="math notranslate nohighlight">\(63,000\times\)</span> the distance from the Earth to the Sun.  Then, it shows that the distance to M51 is even bigger, meaning that it is 31 million times farther away than something that is only 1 lightyear away.</p>
-<p>Moreover, M51 is composed of billions of stars where these stars interact in a complex way that we can actually understand (to some degree).  For now, we posit that the force holding the galaxies together is the same as the one holding you onto the Earth.</p>
 <div class="tip margin admonition">
 <p class="admonition-title">Checkpoint</p>
 <p>A lightyear is a unit of distance, not time.</p>
 <p>Why does multiplying a speed by a time produce a distance?</p>
 </div>
+<ul class="simple">
+<li><p><strong>Why do we want to know this?</strong></p></li>
+</ul>
+<p>It shows us that a lightyear is really big, or <span class="math notranslate nohighlight">\(63,000\times\)</span> the distance from the Earth to the Sun.  Then, it shows that the distance to M51 is even bigger, meaning that it is 31 million times farther away than something that is only 1 lightyear away.</p>
+<p>Moreover, M51 is composed of billions of stars where these stars interact in a complex way that we can actually understand (to some degree).  For now, we posit that the force holding the galaxies together is the same as the one holding you onto the Earth.</p>
 </section>
 <section id="on-the-earth">
 <h4><span class="section-number">1.1.2.2. </span>On the Earth<a class="headerlink" href="#on-the-earth" title="Link to this heading">#</a></h4>
@@ -1486,8 +1486,8 @@ Both the numerical value and the final units are consistent with the desired SI 
 <section id="percent-uncertainty">
 <h4><span class="section-number">1.5.2.1. </span>Percent uncertainty<a class="headerlink" href="#percent-uncertainty" title="Link to this heading">#</a></h4>
 <p>Another method of expressing uncertainty is calculating how much the uncertainty deviates from the average value as a percent.  Suppose a  measurement <span class="math notranslate nohighlight">\(A \pm \delta A\)</span>, the <strong>percent uncertainty</strong> is:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-19d56933-a60b-48cd-af24-501e9212dd28">
-<span class="eqno">(1.5)<a class="headerlink" href="#equation-19d56933-a60b-48cd-af24-501e9212dd28" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b2c2ac4a-fa5c-4391-8e9f-af7f03b31f6f">
+<span class="eqno">(1.5)<a class="headerlink" href="#equation-b2c2ac4a-fa5c-4391-8e9f-af7f03b31f6f" title="Permalink to this equation">#</a></span>\[\begin{align}
 \text{Percent uncertainty} = \frac{\delta A}{A} \times 100\%.
 \end{align}\]</div>
 <div class="tip margin admonition">
