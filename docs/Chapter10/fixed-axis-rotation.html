@@ -28,7 +28,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -40,8 +40,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/sphinx_iframe.css?v=96c28b52" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="https://cdn.plyr.io/3.8.4/plyr.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=b9e54c64" />
-    <link rel="stylesheet" type="text/css" href="../_static/mycss.css?v=3589796e" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=8bfeba2f" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -240,6 +239,16 @@
 <li class="toctree-l1"><a class="reference internal" href="../Chapter12/static-equilibrium-elasticity.html">12. Static Equilibrium and Elasticity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter13/gravitation.html">13. Gravitation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter14/fluids.html">14. Fluid Mechanics</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Movie Review</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/martian.html">The Martian</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/apollo13.html">Apollo 13</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/october_sky.html">October Sky</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/speed.html">Speed</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/ford_ferrari.html">Ford v Ferrari</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/italian_job.html">The Italian Job</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/right_stuff.html">The Right Stuff</a></li>
 </ul>
 
     </div>
@@ -88734,12 +88743,12 @@ jIAFAADgMgIWAACAywhYAAAALvv/AZMl9NmPBqp7AAAAAElFTkSuQmCC\
 <span class="expanded">Hide code cell content</span>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">matplotlib.animation</span> <span class="kn">import</span> <span class="n">FuncAnimation</span>
-<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
-<span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.animation</span><span class="w"> </span><span class="kn">import</span> <span class="n">FuncAnimation</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">HTML</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">myst_nb</span><span class="w"> </span><span class="kn">import</span> <span class="n">glue</span>
 
 <span class="c1"># ----------------------------</span>
 <span class="c1"># Parameters you can tweak</span>
@@ -88787,13 +88796,13 @@ jIAFAADgMgIWAACAywhYAAAALvv/AZMl9NmPBqp7AAAAAElFTkSuQmCC\
 <span class="c1"># ----------------------------</span>
 <span class="c1"># Animation functions</span>
 <span class="c1"># ----------------------------</span>
-<span class="k">def</span> <span class="nf">init</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">init</span><span class="p">():</span>
     <span class="n">vec_line</span><span class="o">.</span><span class="n">set_data</span><span class="p">([],</span> <span class="p">[])</span>
     <span class="n">pt</span><span class="o">.</span><span class="n">set_data</span><span class="p">([],</span> <span class="p">[])</span>
     <span class="n">trail_line</span><span class="o">.</span><span class="n">set_data</span><span class="p">([],</span> <span class="p">[])</span>
     <span class="k">return</span> <span class="n">vec_line</span><span class="p">,</span> <span class="n">pt</span><span class="p">,</span> <span class="n">trail_line</span>
 
-<span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">update</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
     <span class="c1"># Angle for this frame (wraps naturally)</span>
     <span class="n">th</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">i</span><span class="o">/</span><span class="p">(</span><span class="n">n_frames</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 
@@ -88904,10 +88913,10 @@ v_2 &amp;= \left(\frac{r_2}{r_1}\right)v_1.
 <span class="expanded">Hide code cell content</span>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">plotly.graph_objects</span> <span class="k">as</span> <span class="nn">go</span>
-<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
-<span class="kn">import</span> <span class="nn">plotly.io</span> <span class="k">as</span> <span class="nn">pio</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">plotly.graph_objects</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">go</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">plotly.io</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pio</span>
 <span class="n">pio</span><span class="o">.</span><span class="n">renderers</span><span class="o">.</span><span class="n">default</span> <span class="o">=</span> <span class="s2">&quot;iframe&quot;</span>
 
 <span class="n">outdir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&quot;../_static/plotly&quot;</span><span class="p">)</span>
@@ -88953,7 +88962,7 @@ v_2 &amp;= \left(\frac{r_2}{r_1}\right)v_1.
 <span class="c1"># -----------------------------</span>
 <span class="c1"># Rim direction arrows (CCW)</span>
 <span class="c1"># -----------------------------</span>
-<span class="k">def</span> <span class="nf">rot2</span><span class="p">(</span><span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">angle</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">rot2</span><span class="p">(</span><span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">angle</span><span class="p">):</span>
     <span class="n">ca</span><span class="p">,</span> <span class="n">sa</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">angle</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">ca</span><span class="o">*</span><span class="n">u</span> <span class="o">-</span> <span class="n">sa</span><span class="o">*</span><span class="n">v</span><span class="p">,</span> <span class="n">sa</span><span class="o">*</span><span class="n">u</span> <span class="o">+</span> <span class="n">ca</span><span class="o">*</span><span class="n">v</span>
 <span class="n">phi</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="n">rim_arrow_spread_deg</span><span class="p">)</span>
@@ -89103,7 +89112,7 @@ v_t &amp;= (0.10\ {\rm m})(45\ {\rm rad/s}) \\
 <hr class="docutils" />
 <p><strong>The Verification</strong></p>
 <p>The Python code verifies the analytical solution by evaluating the same physical relationships used in the derivation. The script computes the angular displacement using the rotational kinematic relation and calculates the tangential speed from the linear–rotational relationship.  Because the computation implements the same equations derived analytically, the numerical results reproduce the analytical solution, providing an independent confirmation of the calculations.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 
 <span class="n">omega</span> <span class="o">=</span> <span class="mi">45</span> <span class="c1"># Angular velocity (rad/s)</span>
@@ -89247,7 +89256,7 @@ a_t &amp;= \frac{d(r\omega)}{dt},\\
 <hr class="docutils" />
 <p><strong>The Verification</strong></p>
 <p>The Python code verifies the analytical solution by evaluating the same relationships used in the derivation. The script converts the angular velocity from revolutions per minute to radians per second, computes the average angular acceleration, and determines the stopping time using the rotational kinematic definitions. Because the computation directly implements the same physical equations used in the derivation, the numerical results reproduce the calculated angular acceleration and stopping time, confirming the correctness of the solution.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="n">omega_rpm</span> <span class="o">=</span> <span class="mi">250</span>
 <span class="n">omega</span> <span class="o">=</span> <span class="n">omega_rpm</span> <span class="o">*</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">60</span>
@@ -89336,7 +89345,7 @@ a_t &amp;= \frac{d(r\omega)}{dt},\\
 <p><strong>The Verification</strong></p>
 <p>The Python code verifies the analytical solution by evaluating the same angular velocity function used in the derivation and then computing both the average and instantaneous angular accelerations from that model. The script first evaluates the angular velocity at the beginning and end of the shutdown interval, then uses the definition of average angular acceleration and the derivative of <span class="math notranslate nohighlight">\(\omega(t)\)</span> to determine the requested quantities.</p>
 <p>Because the computation directly implements the same rotational kinematic relationships used in the analytical work, the numerical results reproduce the average angular acceleration and the instantaneous angular accelerations found above. This agreement confirms that the derivative and endpoint calculations were carried out correctly.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># Time values in seconds</span>
 <span class="n">t0</span> <span class="o">=</span> <span class="mf">0.0</span>
@@ -89344,11 +89353,11 @@ a_t &amp;= \frac{d(r\omega)}{dt},\\
 <span class="n">times</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">15.0</span><span class="p">,</span> <span class="mf">30.0</span><span class="p">])</span>
 
 <span class="c1"># Angular velocity function in rad/s</span>
-<span class="k">def</span> <span class="nf">omega</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">omega</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
     <span class="k">return</span> <span class="p">((</span><span class="n">t</span> <span class="o">-</span> <span class="mf">30.0</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="mf">100.0</span><span class="p">)</span>
 
 <span class="c1"># Instantaneous angular acceleration function in rad/s^2</span>
-<span class="k">def</span> <span class="nf">alpha</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">alpha</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
     <span class="k">return</span> <span class="p">(</span><span class="n">t</span> <span class="o">-</span> <span class="mf">30.0</span><span class="p">)</span> <span class="o">/</span> <span class="mf">50.0</span>
 
 <span class="c1"># Initial and final angular velocities</span>
@@ -89514,7 +89523,7 @@ N &amp;= \frac{220\ {\rm rad}}{2\pi} \\
 <p><strong>The Verification</strong></p>
 <p>The Python code verifies the analytical solution by evaluating the same rotational kinematic relationships used in the derivation. The script computes the final angular velocity from the constant-acceleration angular velocity equation, computes the angular displacement from the constant-acceleration angular position equation, and then converts that displacement from radians to revolutions.</p>
 <p>Because the computation directly implements the same kinematic model used in the analytical solution, the numerical results reproduce the calculated angular velocity and number of revolutions. This agreement confirms that the constant-angular-acceleration equations were applied correctly.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 
 <span class="n">alpha</span> <span class="o">=</span> <span class="mi">110</span> <span class="c1"># Angular acceleration (rad/s^2)</span>
@@ -89572,7 +89581,7 @@ t &amp;= \frac{0-220\ {\rm rad/s}}{-300\ {\rm rad/s^2}} \\
 <p><strong>The Verification</strong></p>
 <p>The Python code verifies the analytical solution by evaluating the same constant-angular-acceleration relationship used in the derivation. The script defines the initial angular velocity, the final angular velocity, and the braking angular acceleration, then computes the stopping time from the rearranged kinematic equation.</p>
 <p>Because the computation directly implements the same rotational kinematic model used in the analytical solution, the numerical result reproduces the calculated stopping time. This agreement confirms that the algebraic rearrangement and sign conventions were applied correctly.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 
 <span class="n">omega_0</span> <span class="o">=</span> <span class="mi">220</span> <span class="c1"># Initial angular velocity (rad/s)</span>
@@ -89640,8 +89649,8 @@ t &amp;= \frac{0-220\ {\rm rad/s}}{-300\ {\rm rad/s^2}} \\
 <hr class="docutils" />
 <p><strong>The Verification</strong></p>
 <p>The Python code reproduces the physical model by defining a linear angular velocity function that decreases from <span class="math notranslate nohighlight">\(30\ {\rm rad/s}\)</span> to <span class="math notranslate nohighlight">\(0\ {\rm rad/s}\)</span> over <span class="math notranslate nohighlight">\(5\ {\rm s}\)</span>. The script generates the <span class="math notranslate nohighlight">\(\omega\)</span>–<span class="math notranslate nohighlight">\(t\)</span> graph, computes the slope to determine the angular acceleration, and evaluates the angular displacement using the same kinematic equation derived in the analytical solution.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 
 <span class="n">omega_0</span> <span class="o">=</span> <span class="mi">30</span> <span class="c1"># Initial angular velocity (rad/s)</span>
@@ -89905,7 +89914,7 @@ a_c &amp;= \frac{(7.0)^2}{0.20}, \\
 <hr class="docutils" />
 <p><strong>The Verification</strong></p>
 <p>The Python code verifies the analytical solution by computing the angular acceleration from the change in angular velocity, determining the angular speed at <span class="math notranslate nohighlight">\(t=29\ {\rm s}\)</span>, and evaluating the centripetal and tangential accelerations. The magnitude and direction of the total acceleration are then computed from the vector components.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="n">r</span> <span class="o">=</span> <span class="mf">0.20</span> <span class="c1"># Radius (m)</span>
 <span class="n">rpm0</span> <span class="o">=</span> <span class="mf">1e4</span> <span class="c1"># Initial rotation rate (rpm)</span>
@@ -89947,9 +89956,9 @@ a_c &amp;= \frac{(7.0)^2}{0.20}, \\
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># -----------------------------</span>
 <span class="c1"># Vector sketch</span>
 <span class="c1"># -----------------------------</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">matplotlib.patches</span> <span class="kn">import</span> <span class="n">Arc</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.patches</span><span class="w"> </span><span class="kn">import</span> <span class="n">Arc</span>
 
 <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">,</span><span class="n">aspect</span><span class="o">=</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
@@ -90149,7 +90158,7 @@ K &amp;= \frac{1}{2}(0.0035\ {\rm kg\cdot m^2})(31\ {\rm rad/s})^2 \\
 <p><strong>The Verification</strong></p>
 <p>The Python code verifies the analytical solution by implementing the same particle-model description used in the derivation. The script defines the washer mass and the set of distances from the axis, then computes the moment of inertia by summing the terms <span class="math notranslate nohighlight">\(mr^2\)</span> for the full system and for the reduced four-washer system.</p>
 <p>The code also converts the angular speed from revolutions per second to radians per second and evaluates the rotational kinetic energy using the moment of inertia from part (a). Because the computation follows the same discrete-particle model and energy relation used in the analytical work, the numerical results reproduce the calculated moments of inertia and rotational kinetic energy.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="n">m</span> <span class="o">=</span> <span class="mf">0.020</span> <span class="c1"># Mass of each washer (kg)</span>
 
@@ -90268,7 +90277,7 @@ K_{\rm trans} &amp;= \frac{1}{2}(1000\ {\rm kg})(20\ {\rm m/s})^2 \\
 <p><strong>The Verification</strong></p>
 <p>The Python code verifies the analytical solution by implementing the same thin-rod model and kinetic-energy relations used in the derivation. The script converts the blade rotation rate to radians per second, computes the total moment of inertia of the four blades, evaluates the rotational kinetic energy, and then computes the translational kinetic energy of the helicopter.</p>
 <p>Because the computation uses the same physical model and energy equations as the analytical work, the numerical results reproduce the calculated rotational energy, translational energy, and their ratio. This agreement confirms that the unit conversion and the energy calculations were carried out consistently.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="n">L</span> <span class="o">=</span> <span class="mf">4.0</span> <span class="c1"># Blade length (m)</span>
 <span class="n">M</span> <span class="o">=</span> <span class="mf">50.0</span> <span class="c1"># Mass of one blade (kg)</span>
@@ -90397,7 +90406,7 @@ h &amp;= \frac{(19\ {\rm m/s})^2}{2(9.81\ {\rm m/s^2})} \\
 <p><strong>The Verification</strong></p>
 <p>The Python code verifies the analytical solution by evaluating the same moment of inertia, kinetic energy, and energy-conservation relationships used in the derivation. The script computes the boomerang’s rotational and translational kinetic energies at launch, then uses the vertical launch speed and conservation of mechanical energy to determine the maximum height.</p>
 <p>Because the computation implements the same physical model used in the analytical solution, the numerical results reproduce the total launch energy and the maximum height. This agreement confirms that the unit conversion, energy expressions, and launch-speed decomposition were applied consistently.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="n">m</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="c1"># Mass of the boomerang (kg)</span>
 <span class="n">L</span> <span class="o">=</span> <span class="mf">0.7</span> <span class="c1"># Characteristic length in the moment of inertia formula (m)</span>
@@ -90666,7 +90675,7 @@ I_{\rm total} &amp;= I_c + I_m \\
 <hr class="docutils" />
 <p class="sd-card-text"><strong>The Verification</strong></p>
 <p class="sd-card-text">The Python code verifies the analytical solution by computing the two separate moment-of-inertia contributions and then summing them to obtain the total for the system. The script uses the point-mass model for the child and the uniform-disk model for the merry-go-round, so it mirrors the same physical model used in the derivation.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="n">m_c</span> <span class="o">=</span> <span class="mi">25</span> <span class="c1"># Child mass (kg)</span>
 <span class="n">r_c</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="c1"># Child distance from axis (m)</span>
@@ -90768,7 +90777,7 @@ I_{\rm total} &amp;= 0.17\ {\rm kg\cdot m^2} + 0.056\ {\rm kg\cdot m^2} \\
 <p class="sd-card-text"><strong>The Verification</strong></p>
 <p class="sd-card-text">The Python code verifies the analytical solution by computing the rod contribution directly and then applying the parallel-axis theorem to the sphere for each axis location. The script uses the same geometric distances from the sphere’s center to the rotation axis that were used in the derivation.</p>
 <p class="sd-card-text">Because the computation implements the same compound-body model and the same parallel-axis reasoning, the numerical results reproduce the two moments of inertia found analytically. This agreement confirms that the geometry and the additive structure of the moment of inertia were handled consistently.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="n">L</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="c1"># Rod length (m)</span>
 <span class="n">m_rod</span> <span class="o">=</span> <span class="mf">2.0</span> <span class="c1"># Rod mass (kg)</span>
@@ -90860,7 +90869,7 @@ mg\frac{L}{2}(1-\cos\theta) &amp;= \frac{1}{2}\left(\frac{1}{3}mL^2\right)\omega
 <p><strong>The Verification</strong></p>
 <p>The Python code verifies the analytical solution by evaluating the same energy-conservation relationship used in the derivation. The script computes the angular velocity from the closed-form expression obtained by combining the gravitational potential-energy change with the rotational kinetic-energy expression for a uniform rod about one end.</p>
 <p>Because the computation implements the same physical model used in the analytical solution, the numerical result reproduces the calculated angular velocity at the lowest point. This agreement confirms that the energy method and the moment-of-inertia substitution were applied consistently.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="n">L</span> <span class="o">=</span> <span class="mf">0.30</span> <span class="c1"># Rod length (m)</span>
 <span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span> <span class="c1"># Release angle (rad)</span>
@@ -91042,7 +91051,7 @@ mg\frac{L}{2}(1-\cos\theta) &amp;= \frac{1}{2}\left(\frac{1}{3}mL^2\right)\omega
 <p><strong>The Verification</strong></p>
 <p>The Python code verifies the analytical solution by computing the torque from each force using the same magnitude relation and sign convention used in the derivation. The script stores the individual torque values with their signs, then adds them algebraically to determine the net torque.</p>
 <p>Because the computation follows the same torque model and sign convention used in the analytical work, the numerical results reproduce the individual torques and the net torque. This agreement confirms that the lever arms, force components, and torque directions were handled consistently.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="n">tau1</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">*</span> <span class="mi">40</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="mi">90</span><span class="p">))</span> <span class="c1"># Torque from 40 N force (N·m)</span>
 <span class="n">tau2</span> <span class="o">=</span> <span class="o">-</span><span class="mi">3</span> <span class="o">*</span> <span class="mi">20</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="mi">90</span><span class="p">))</span> <span class="c1"># Torque from 20 N force at y = -3 m (N·m)</span>
@@ -91126,7 +91135,7 @@ mg\frac{L}{2}(1-\cos\theta) &amp;= \frac{1}{2}\left(\frac{1}{3}mL^2\right)\omega
 <p><strong>The Verification</strong></p>
 <p>The Python code verifies the analytical solution by evaluating the torque from each force using the same magnitude relation and sign convention used in the derivation. The script computes the three torques from the given radius, force magnitudes, and angles, then adds them algebraically to determine the net torque.</p>
 <p>Because the computation follows the same torque model and sign convention used in the analytical work, the numerical results reproduce the individual torques and the net torque. This agreement confirms that the force directions, torque signs, and angle choices were handled consistently.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="n">r</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="c1"># Radius from the center to each point of application (m)</span>
 <span class="n">F1</span> <span class="o">=</span> <span class="mi">20</span> <span class="c1"># Magnitude of F1 (N)</span>
@@ -91311,7 +91320,7 @@ I_{\rm total} &amp;= 56.25\ {\rm kg\cdot m^2} + 28.13\ {\rm kg\cdot m^2} \\
 <p><strong>The Verification</strong></p>
 <p>The Python code verifies the analytical solution by computing the applied torque from the given force and radius, then evaluating the angular acceleration from the rotational form of Newton’s second law. The script first treats the merry-go-round as an isolated uniform disk and then adds the child’s point-mass contribution to the moment of inertia for the second case.</p>
 <p>Because the computation uses the same torque relation and the same moment-of-inertia models as the analytical derivation, the numerical results reproduce the two angular accelerations found above. This agreement confirms that the effect of mass distribution on the rotational response has been modeled consistently.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="n">F</span> <span class="o">=</span> <span class="mi">250</span> <span class="c1"># Applied force (N)</span>
 <span class="n">R</span> <span class="o">=</span> <span class="mf">1.50</span> <span class="c1"># Merry-go-round radius (m)</span>
@@ -91456,7 +91465,7 @@ W = \frac{1}{2}I\omega_f^2.
 <p><strong>The Verification</strong></p>
 <p>The Python code verifies the analytical solution by first converting the angular displacement from revolutions to radians, then computing the rotational work done by the constant torque. The script uses the rotational work–energy theorem to solve for the final angular velocity from the work and the flywheel’s moment of inertia.</p>
 <p>Because the computation implements the same work–energy model used in the analytical derivation, the numerical result reproduces the calculated angular velocity. This agreement confirms that the angular displacement conversion and the energy relation were applied consistently.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="n">tau</span> <span class="o">=</span> <span class="mi">12</span> <span class="c1"># Applied torque (N·m)</span>
 <span class="n">I</span> <span class="o">=</span> <span class="mi">30</span> <span class="c1"># Moment of inertia (kg·m^2)</span>
@@ -91536,7 +91545,7 @@ W = \frac{1}{2}I\omega_f^2.
 <p><strong>The Verification</strong></p>
 <p>The Python code verifies the analytical solution by evaluating the same work–energy relationships used in the derivation. The script computes the work done by the applied force over the unwound distance and then uses the rotational work–energy theorem to determine the final angular velocity from the pulley’s moment of inertia.</p>
 <p>Because the computation implements the same physical model used in the analytical solution, the numerical result reproduces the calculated angular velocity. This agreement confirms that the work calculation and the rotational energy relation were applied consistently.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="n">F</span> <span class="o">=</span> <span class="mi">50</span> <span class="c1"># Applied force (N)</span>
 <span class="n">d</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="c1"># Distance unwound by the string (m)</span>
@@ -91615,7 +91624,7 @@ P = \tau \omega.
 <p><strong>The Verification</strong></p>
 <p>The Python code verifies the analytical solution by converting the rotation rate from revolutions per minute to radians per second and then computing the torque from the relation <span class="math notranslate nohighlight">\(P=\tau\omega\)</span>. The script performs the same unit conversion and algebraic calculation used in the analytical derivation.</p>
 <p>Because the computation follows the same physical model and unit conversions used in the derivation, the numerical result reproduces the calculated torque on the propeller shaft.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="n">P</span> <span class="o">=</span> <span class="mf">9.0e4</span> <span class="c1"># Engine power output (W)</span>
 <span class="n">rpm</span> <span class="o">=</span> <span class="mi">300</span> <span class="c1"># Rotation rate (rev/min)</span>

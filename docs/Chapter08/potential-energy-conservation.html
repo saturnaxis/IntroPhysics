@@ -28,7 +28,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -40,8 +40,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/sphinx_iframe.css?v=96c28b52" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="https://cdn.plyr.io/3.8.4/plyr.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=0a613744" />
-    <link rel="stylesheet" type="text/css" href="../_static/mycss.css?v=3589796e" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=8bfeba2f" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -240,6 +239,16 @@
 <li class="toctree-l1"><a class="reference internal" href="../Chapter12/static-equilibrium-elasticity.html">12. Static Equilibrium and Elasticity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter13/gravitation.html">13. Gravitation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter14/fluids.html">14. Fluid Mechanics</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Movie Review</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/martian.html">The Martian</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/apollo13.html">Apollo 13</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/october_sky.html">October Sky</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/speed.html">Speed</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/ford_ferrari.html">Ford v Ferrari</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/italian_job.html">The Italian Job</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/right_stuff.html">The Right Stuff</a></li>
 </ul>
 
     </div>
@@ -703,11 +712,11 @@ position-dependent nature of the force.</p>
 <hr class="docutils" />
 <p><strong>The Verification</strong></p>
 <p>The potential energy difference is verified by evaluating the potential energy function at <span class="math notranslate nohighlight">\(x = 1\ \mathrm{m}\)</span> and <span class="math notranslate nohighlight">\(x = 2\ \mathrm{m}\)</span> and confirming that their difference equals <span class="math notranslate nohighlight">\(7\ \mathrm{J}\)</span>.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="n">a</span> <span class="o">=</span> <span class="mf">3.0</span>  <span class="c1"># N/m^2</span>
 
-<span class="k">def</span> <span class="nf">U</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">U</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="k">return</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span> <span class="o">+</span> <span class="mf">0.5</span>
 
 <span class="n">U1</span> <span class="o">=</span> <span class="n">U</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span>
@@ -807,7 +816,7 @@ base, <span class="math notranslate nohighlight">\(1.08 \times 10^{5}\ \mathrm{J
 <p><strong>The Verification</strong></p>
 <p>The results are verified by recomputing the gravitational potential energy using <span class="math notranslate nohighlight">\(U = m g y\)</span> at each vertical position relative to the base height and
 confirming that the differences in potential energy correspond to the associated height changes.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="n">m</span> <span class="o">=</span> <span class="mf">75.0</span>          <span class="c1"># kg</span>
 <span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>          <span class="c1"># m/s^2</span>
@@ -887,7 +896,7 @@ U
 <hr class="docutils" />
 <p><strong>The Verification</strong></p>
 <p>The results are verified by computing the elastic potential energy using <span class="math notranslate nohighlight">\(U = \tfrac{1}{2} k x^2\)</span> with the displacement expressed in centimeters and confirming the difference between the two energies.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="n">k</span> <span class="o">=</span> <span class="mf">4.0</span>   <span class="c1"># N/cm</span>
 <span class="n">x1</span> <span class="o">=</span> <span class="mf">3.0</span>  <span class="c1"># cm</span>
@@ -1067,7 +1076,7 @@ v &amp;= \sqrt{\frac{2K_B}{m}} \\
 <hr class="docutils" />
 <p><strong>The Verification</strong></p>
 <p>The results are verified by recomputing the gravitational and elastic potential energies at points <span class="math notranslate nohighlight">\(B\)</span> and <span class="math notranslate nohighlight">\(C\)</span> and confirming that the total mechanical energy remains zero and that the kinetic energy at point <span class="math notranslate nohighlight">\(B\)</span> matches the derived speed.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="n">Fw</span> <span class="o">=</span> <span class="mf">1.2</span>      <span class="c1"># N</span>
 <span class="n">k</span> <span class="o">=</span> <span class="mf">6.0</span>       <span class="c1"># N/m</span>
@@ -1206,7 +1215,7 @@ F_l = -\frac{dU}{dl}.
 <hr class="docutils" />
 <p><strong>The Verification</strong></p>
 <p>The results are verified by symbolically evaluating the mixed partial derivatives of each force component and confirming whether they are equal.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sympy</span> <span class="k">as</span> <span class="nn">sp</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sp</span>
 
 <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;x y a b&#39;</span><span class="p">)</span>
 
@@ -1273,7 +1282,7 @@ F_x &amp;= -\frac{dU}{dx} = -c x^3.
 <hr class="docutils" />
 <p><strong>The Verification</strong></p>
 <p>Substituting <span class="math notranslate nohighlight">\(x = \pm 1\ \mathrm{m}\)</span> into the potential energy function confirms that <span class="math notranslate nohighlight">\(U = 2\ \mathrm{J}\)</span> at both positions, matching the total mechanical energy. Differentiating the potential energy function reproduces the force expression and confirms that the force always acts toward decreasing <span class="math notranslate nohighlight">\(|x|\)</span>.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sympy</span> <span class="k">as</span> <span class="nn">sp</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sp</span>
 
 <span class="n">x</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
 <span class="n">c</span> <span class="o">=</span> <span class="mi">8</span>
@@ -1391,9 +1400,9 @@ v &amp;= \sqrt{2(9.81\ \mathrm{m/s^2})(1.0\ \mathrm{m})(1-\cos 30^\circ)} \\
 <hr class="docutils" />
 <p><strong>The Verification</strong></p>
 <p>The analytic speed is verified by computing the total energy from the initial height and confirming that the kinetic energy at the bottom equals that total energy. An animation is then generated in which the pendulum swings from <span class="math notranslate nohighlight">\(\theta_o\)</span> toward the lowest point while an energy bar graph updates to show constant total energy and the exchange between gravitational potential energy and kinetic energy.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">matplotlib.animation</span> <span class="kn">import</span> <span class="n">FuncAnimation</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.animation</span><span class="w"> </span><span class="kn">import</span> <span class="n">FuncAnimation</span>
 
 <span class="c1"># Parameters</span>
 <span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>            <span class="c1"># m/s^2</span>
@@ -1421,10 +1430,10 @@ v &amp;= \sqrt{2(9.81\ \mathrm{m/s^2})(1.0\ \mathrm{m})(1-\cos 30^\circ)} \\
 <span class="expanded">Hide code cell source</span>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">matplotlib.animation</span> <span class="kn">import</span> <span class="n">FuncAnimation</span>
-<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.animation</span><span class="w"> </span><span class="kn">import</span> <span class="n">FuncAnimation</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">HTML</span>
 
 <span class="c1"># ---------------- parameters ----------------</span>
 <span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>
@@ -1546,7 +1555,7 @@ v &amp;= \sqrt{2(9.81\ \mathrm{m/s^2})(1.0\ \mathrm{m})(1-\cos 30^\circ)} \\
 <span class="n">ax_e</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.02</span><span class="p">,</span> <span class="mf">0.98</span><span class="p">,</span> <span class="s2">&quot;U: gravitational&quot;</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">ax_e</span><span class="o">.</span><span class="n">transAxes</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;top&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">color_U</span><span class="p">)</span>
 <span class="n">ax_e</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.42</span><span class="p">,</span> <span class="mf">0.98</span><span class="p">,</span> <span class="s2">&quot;K: kinetic&quot;</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">ax_e</span><span class="o">.</span><span class="n">transAxes</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;top&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">color_K</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">init</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">init</span><span class="p">():</span>
     <span class="n">line</span><span class="o">.</span><span class="n">set_data</span><span class="p">([],</span> <span class="p">[])</span>
     <span class="n">bob</span><span class="o">.</span><span class="n">set_data</span><span class="p">([],</span> <span class="p">[])</span>
     <span class="n">E_U</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_height</span><span class="p">(</span><span class="mf">0.0</span><span class="p">)</span>
@@ -1556,7 +1565,7 @@ v &amp;= \sqrt{2(9.81\ \mathrm{m/s^2})(1.0\ \mathrm{m})(1-\cos 30^\circ)} \\
     <span class="n">bar_K</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_height</span><span class="p">(</span><span class="mf">0.0</span><span class="p">)</span>
     <span class="k">return</span> <span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="n">bob</span><span class="p">,</span> <span class="n">E_U</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">E_K</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">bar_U</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">bar_K</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 
-<span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">update</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
     <span class="c1"># pendulum</span>
     <span class="n">line</span><span class="o">.</span><span class="n">set_data</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]])</span>
     <span class="n">bob</span><span class="o">.</span><span class="n">set_data</span><span class="p">([</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]],</span> <span class="p">[</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]])</span>
@@ -77743,7 +77752,7 @@ W_{\mathrm{nc},if}
 <hr class="docutils" />
 <p><strong>The Verification</strong></p>
 <p>The first verification recomputes the dissipated energy directly from <span class="math notranslate nohighlight">\(\Delta E_{\mathrm{diss}} = mgh - \tfrac{1}{2}mv^2\)</span>. The second verification produces a simple animation of a falling object with air resistance modeled as a linear drag force <span class="math notranslate nohighlight">\(F_d = -bv\)</span>. The drag coefficient <span class="math notranslate nohighlight">\(b\)</span> is chosen so that the object hits the ground at approximately <span class="math notranslate nohighlight">\(45\ \mathrm{m/s}\)</span>, and an energy bar chart is updated during the fall to show gravitational potential energy decreasing, kinetic energy increasing, and total mechanical energy decreasing due to dissipation.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="n">m</span> <span class="o">=</span> <span class="mf">15.0</span>
 <span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>
@@ -77768,10 +77777,10 @@ W_{\mathrm{nc},if}
 <span class="expanded">Hide code cell source</span>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">matplotlib.animation</span> <span class="kn">import</span> <span class="n">FuncAnimation</span>
-<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.animation</span><span class="w"> </span><span class="kn">import</span> <span class="n">FuncAnimation</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">HTML</span>
 
 <span class="c1"># ---------------- given parameters ----------------</span>
 <span class="n">m</span> <span class="o">=</span> <span class="mf">15.0</span>
@@ -77903,7 +77912,7 @@ W_{\mathrm{nc},if}
 <span class="n">ax_e</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.72</span><span class="p">,</span> <span class="mf">0.98</span><span class="p">,</span> <span class="s2">&quot;$E_{</span><span class="se">\\</span><span class="s2">rm diss}$: dissipation&quot;</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">ax_e</span><span class="o">.</span><span class="n">transAxes</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;top&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">color_D</span><span class="p">)</span>
 
 
-<span class="k">def</span> <span class="nf">init</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">init</span><span class="p">():</span>
     <span class="n">obj</span><span class="o">.</span><span class="n">set_data</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="n">ys_a</span><span class="p">[</span><span class="mi">0</span><span class="p">]])</span>
     <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="p">[</span><span class="n">E_U</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">E_K</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">E_D</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">bar_U</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">bar_K</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">bar_D</span><span class="p">[</span><span class="mi">0</span><span class="p">]]:</span>
         <span class="n">b</span><span class="o">.</span><span class="n">set_height</span><span class="p">(</span><span class="mf">0.0</span><span class="p">)</span>
@@ -77911,7 +77920,7 @@ W_{\mathrm{nc},if}
     <span class="n">E_D</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_y</span><span class="p">(</span><span class="mf">0.0</span><span class="p">)</span>
     <span class="k">return</span> <span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">E_U</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">E_K</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">E_D</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">bar_U</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">bar_K</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">bar_D</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 
-<span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">update</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
     <span class="n">obj</span><span class="o">.</span><span class="n">set_data</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="n">ys_a</span><span class="p">[</span><span class="n">i</span><span class="p">]])</span>
 
     <span class="n">u_i</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">U_a</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
@@ -206195,7 +206204,7 @@ x(t) = x_o - \frac{1}{2}\left(\frac{E}{m x_o}\right)t^2.
 F = -\frac{dU}{dx} = -\frac{E}{x_o},
 \]</div>
 <p>since <span class="math notranslate nohighlight">\(a = F/m\)</span>.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sympy</span> <span class="k">as</span> <span class="nn">sp</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sp</span>
 
 <span class="n">t</span><span class="p">,</span> <span class="n">E</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">x0</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;t E m x0&#39;</span><span class="p">,</span> <span class="n">positive</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">x0</span> <span class="o">-</span> <span class="n">sp</span><span class="o">.</span><span class="n">Rational</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">E</span><span class="o">/</span><span class="p">(</span><span class="n">m</span><span class="o">*</span><span class="n">x0</span><span class="p">))</span><span class="o">*</span><span class="n">t</span><span class="o">**</span><span class="mi">2</span>
@@ -206234,13 +206243,13 @@ F = -\frac{dU}{dx} = -\frac{E}{x_o},
 <span class="expanded">Hide code cell source</span>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
-<span class="kn">from</span> <span class="nn">matplotlib.patches</span> <span class="kn">import</span> <span class="n">PathPatch</span><span class="p">,</span> <span class="n">Path</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.patches</span><span class="w"> </span><span class="kn">import</span> <span class="n">PathPatch</span><span class="p">,</span> <span class="n">Path</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
-<span class="k">def</span> <span class="nf">CurlyBrace</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="mi">8</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mf">1.</span><span class="p">,</span> <span class="n">curliness</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">e</span><span class="p">,</span> <span class="n">pointing</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">patch_kw</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">CurlyBrace</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="mi">8</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mf">1.</span><span class="p">,</span> <span class="n">curliness</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">e</span><span class="p">,</span> <span class="n">pointing</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">patch_kw</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;Create a matplotlib patch corresponding to a curly brace (i.e. this thing: &quot;{&quot;)</span>
 <span class="sd">    https://github.com/bensondaled/curly_brace/blob/master/curly_brace_patch.py</span>
 <span class="sd">    Parameters</span>
@@ -206293,7 +206302,7 @@ F = -\frac{dU}{dx} = -\frac{E}{x_o},
     <span class="n">pp</span> <span class="o">=</span> <span class="n">PathPatch</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;none&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">patch_kw</span><span class="p">)</span> 
     <span class="k">return</span> <span class="n">pp</span>
 
-<span class="k">def</span> <span class="nf">grav_pot</span><span class="p">(</span><span class="n">y</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">grav_pot</span><span class="p">(</span><span class="n">y</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">m</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">y</span>
 
 <span class="n">fs</span> <span class="o">=</span> <span class="s1">&#39;large&#39;</span>
@@ -206483,12 +206492,12 @@ x &amp;= 0,\ \pm\frac{1}{\sqrt{2}}.
 <span class="expanded">Hide code cell source</span>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="c1"># ----- parameters -----</span>
 <span class="n">E</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.25</span>
-<span class="k">def</span> <span class="nf">U</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">U</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="k">return</span> <span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">4</span> <span class="o">-</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
 
 <span class="c1"># Turning points from the analytic x^2 bounds</span>
@@ -206635,8 +206644,8 @@ x(t)=\pm\sqrt{\frac{2E}{k}}\cos\!\left(\sqrt{\frac{k}{m}}\,t\right).
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="c1"># ----- choose numerical values for a check -----</span>
 <span class="n">m</span> <span class="o">=</span> <span class="mf">0.50</span>          <span class="c1"># kg</span>

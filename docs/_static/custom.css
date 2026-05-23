@@ -1,4 +1,5 @@
 /* docs/_static/custom.css */
+P {text-align: justify;}
 
 /* -----------------------------
    ETAMU theme tokens
@@ -320,6 +321,43 @@ html[data-theme="dark"] figure figcaption p{
   margin-top: 0.5em;
   opacity: 0.85;
   color: var(--pst-color-text-base, #666);
+}
+
+/* -----------------------------
+   Checkpoint margin boxes
+   ----------------------------- */
+
+/* Left-align body text, not the title */
+.bd-content div.admonition.checkpoint.margin > p:not(.admonition-title),
+.bd-content aside.margin div.admonition.checkpoint > p:not(.admonition-title),
+.bd-content div.margin div.admonition.checkpoint > p:not(.admonition-title) {
+  text-align: left !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Left-align lists if used inside checkpoint boxes */
+.bd-content div.admonition.checkpoint.margin li,
+.bd-content aside.margin div.admonition.checkpoint li,
+.bd-content div.margin div.admonition.checkpoint li {
+  text-align: left !important;
+}
+
+/* Keep the title layout unchanged */
+.bd-content div.admonition.checkpoint.margin > .admonition-title,
+.bd-content aside.margin div.admonition.checkpoint > .admonition-title,
+.bd-content div.margin div.admonition.checkpoint > .admonition-title {
+  text-align: left;
+}
+
+/* If display math is ever used in a checkpoint */
+.bd-content div.admonition.checkpoint.margin mjx-container[display="true"],
+.bd-content aside.margin div.admonition.checkpoint mjx-container[display="true"],
+.bd-content div.margin div.admonition.checkpoint mjx-container[display="true"] {
+  text-align: left !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 

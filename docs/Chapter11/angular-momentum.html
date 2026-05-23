@@ -28,7 +28,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -40,8 +40,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/sphinx_iframe.css?v=96c28b52" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="https://cdn.plyr.io/3.8.4/plyr.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=b9e54c64" />
-    <link rel="stylesheet" type="text/css" href="../_static/mycss.css?v=3589796e" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=8bfeba2f" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -240,6 +239,16 @@
 <li class="toctree-l1"><a class="reference internal" href="../Chapter12/static-equilibrium-elasticity.html">12. Static Equilibrium and Elasticity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter13/gravitation.html">13. Gravitation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter14/fluids.html">14. Fluid Mechanics</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Movie Review</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/martian.html">The Martian</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/apollo13.html">Apollo 13</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/october_sky.html">October Sky</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/speed.html">Speed</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/ford_ferrari.html">Ford v Ferrari</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/italian_job.html">The Italian Job</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/right_stuff.html">The Right Stuff</a></li>
 </ul>
 
     </div>
@@ -726,8 +735,8 @@ f_s &amp;= \frac{I_{\rm CoM} a_{\rm CoM}}{r^2} \\
 <p><strong>The Verification</strong></p>
 <p>The analytical solution predicts that the acceleration of the cylinder depends only on the incline angle and gravitational acceleration once the moment of inertia of a solid cylinder is included. The computation below evaluates the acceleration and friction force directly from the derived expressions.</p>
 <p>The numerical calculation confirms that the analytical formulas reproduce the predicted acceleration and the minimum coefficient of static friction required for rolling without slipping.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="c1"># Parameters</span>
 <span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span> <span class="c1"># gravitational acceleration (m/s^2)</span>
@@ -851,8 +860,8 @@ mg\sin\theta - \mu_k mg\cos\theta &amp;= m a_{\rm CoM}.
 <p><strong>The Verification</strong></p>
 <p>The analytical solution predicts that the linear acceleration comes from the net force along the incline, while the angular acceleration comes from the torque due to kinetic friction about the center of mass. The computation below evaluates both expressions directly for a representative set of parameter values.</p>
 <p>The numerical calculation confirms that the analytical formulas reproduce the expected linear and angular accelerations for a slipping solid cylinder on an incline.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="c1"># Parameters</span>
 <span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span> <span class="c1"># gravitational acceleration (m/s^2)</span>
@@ -956,8 +965,8 @@ v_{\rm CoM} &amp;= \sqrt{(3.71\ {\rm m/s^2})(25\ {\rm m})} \\
 <p><strong>The Verification</strong></p>
 <p>The analytical solution predicts that the wheel’s gravitational potential energy is converted into both translational and rotational kinetic energy as it rolls downward. The computation below evaluates the speed using the same energy relation and the hollow-cylinder moment of inertia used in the analytical derivation.</p>
 <p>The numerical calculation confirms that the energy-conservation model reproduces the analytical result for the speed of the wheel at the bottom of the basin.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="c1"># Parameters</span>
 <span class="n">g_mars</span> <span class="o">=</span> <span class="mf">3.71</span> <span class="c1"># Mars gravitational acceleration (m/s^2)</span>
@@ -1154,8 +1163,8 @@ L &amp;= rp\sin{\theta}, \\
 <p><strong>The Verification</strong></p>
 <p>The analytical solution uses the vector definitions <span class="math notranslate nohighlight">\(\vec{L} = \vec{r}\times\vec{p}\)</span> and <span class="math notranslate nohighlight">\(\sum \vec{\tau} = \vec{r}\times\vec{F}\)</span> with <span class="math notranslate nohighlight">\(\vec{F} = m\vec{a}\)</span>. The computation below evaluates these same cross products directly in component form using SI units.</p>
 <p>The numerical calculation confirms that the cross-product method reproduces the analytical values and shows that both the angular momentum and torque point in the negative <span class="math notranslate nohighlight">\(\hat{k}\)</span> direction.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 
 <span class="n">r_vec</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">2.5e4</span><span class="p">,</span> <span class="mf">2.5e4</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">])</span> <span class="c1"># Position vector of the meteor relative to the observer (m)</span>
@@ -1342,8 +1351,8 @@ L &amp;= rp\sin{\theta}, \\
 <p><strong>The Verification</strong></p>
 <p>The analytical solution computes the angular momentum and torque of each particle separately and then adds the vector contributions. The computation below reproduces that same method using NumPy cross products for the three position, momentum, and force vectors.</p>
 <p>The numerical calculation confirms that the individual contributions combine to give the same total angular momentum and net torque obtained analytically.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="c1"># Position vectors of the three particles (m)</span>
 <span class="n">r1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mf">2.0</span><span class="p">,</span>  <span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">])</span>
@@ -1545,8 +1554,8 @@ L &amp;= I_{\rm tot}\omega \\
 <p><strong>The Verification</strong></p>
 <p>The analytical solution computes the total moment of inertia for each configuration and then uses <span class="math notranslate nohighlight">\(L = I\omega\)</span> and <span class="math notranslate nohighlight">\(\sum \tau = I\alpha\)</span> to determine the angular momentum and torque. The computation below follows that same sequence using the rod and point-mass approximations described in the model.</p>
 <p>The numerical calculation confirms that the angular momentum increases when the Mars rock is included and that the torque during the acceleration interval matches the analytical result.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="c1"># Given parameters</span>
 <span class="n">r</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="c1"># Length of the robot arm (m)</span>
@@ -1733,8 +1742,8 @@ K_f &amp;= \frac{1}{2}(4I_o)\left(\frac{\omega_o}{4}\right)^2 \\
 <p><strong>The Verification</strong></p>
 <p>The analytical solution first applies conservation of angular momentum to determine the final common angular velocity and then uses that result to compare the final and initial rotational kinetic energies. The computation below implements those same two steps directly.</p>
 <p>The numerical calculation confirms that the coupled flywheels rotate at one-fourth of the initial angular velocity and retain only one-fourth of the original kinetic energy, so three-fourths of the initial kinetic energy is lost during the coupling.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="c1"># Parameters</span>
 <span class="n">omega0_rpm</span> <span class="o">=</span> <span class="mf">600.0</span> <span class="c1"># Initial angular velocity of the rotating flywheel (rev/min)</span>
@@ -1862,8 +1871,8 @@ N &amp;= \omega_f t \\
 <p><strong>The Verification</strong></p>
 <p>The analytical solution first uses conservation of angular momentum to determine the gymnast’s rotation rate in the tuck and then uses free-fall kinematics to determine the time interval over which that faster rotation occurs. The computation below follows the same sequence and then multiplies the tuck rotation rate by the time in the tuck to obtain the number of revolutions.</p>
 <p>The numerical calculation confirms that the reduced moment of inertia in the tuck increases the angular speed enough for the gymnast to complete essentially two revolutions before opening up again.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="c1"># Given parameters</span>
 <span class="n">m</span> <span class="o">=</span> <span class="mf">80.0</span> <span class="c1"># Mass of the gymnast (kg)</span>
@@ -1980,8 +1989,8 @@ I_f &amp;= I_{\rm bullet} + I_{\rm disk} \\
 <p><strong>The Verification</strong></p>
 <p>The analytical solution computes the bullet’s initial angular momentum about the disk’s axis and then divides by the total final moment of inertia of the embedded bullet and solid disk. The computation below follows that same method directly using the given numerical values in SI units.</p>
 <p>The numerical calculation confirms that conserving angular momentum during the collision gives a final angular velocity a little larger than <span class="math notranslate nohighlight">\(1\ {\rm rad/s}\)</span> for the combined system.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="c1"># Given parameters</span>
 <span class="n">m</span> <span class="o">=</span> <span class="mf">2.0e-3</span> <span class="c1"># Mass of the bullet (kg)</span>
@@ -2158,8 +2167,8 @@ T_P &amp;= \frac{2\pi}{3.12\ {\rm rad/s}} \\
 <p><strong>The Verification</strong></p>
 <p>The analytical solution computes the disk’s moment of inertia, converts the spin rate into radians per second, and then uses the steady-precession formula to determine the precessional angular speed and period. The computation below follows that same sequence directly from the given numerical values.</p>
 <p>The numerical calculation confirms that the gyroscope precesses much more slowly than it spins and gives a precessional period of about <span class="math notranslate nohighlight">\(2\ {\rm s}\)</span>.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="c1"># Given parameters</span>
 <span class="n">m</span> <span class="o">=</span> <span class="mf">0.3</span> <span class="c1"># Mass of the gyroscope disk (kg)</span>

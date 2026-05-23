@@ -28,7 +28,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -40,8 +40,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/sphinx_iframe.css?v=96c28b52" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="https://cdn.plyr.io/3.8.4/plyr.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=180fcd40" />
-    <link rel="stylesheet" type="text/css" href="../_static/mycss.css?v=3589796e" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=8bfeba2f" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -649,17 +648,17 @@ document.write(`
 <p>See the <code class="docutils literal notranslate"><span class="pre">python</span></code> code below that demonstrates how to plot a 3D vector in <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">matplotlib.patches</span> <span class="kn">import</span> <span class="n">FancyArrowPatch</span>
-<span class="kn">from</span> <span class="nn">mpl_toolkits.mplot3d</span> <span class="kn">import</span> <span class="n">proj3d</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.patches</span><span class="w"> </span><span class="kn">import</span> <span class="n">FancyArrowPatch</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">mpl_toolkits.mplot3d</span><span class="w"> </span><span class="kn">import</span> <span class="n">proj3d</span>
 
 <span class="c1"># Custom class to draw true 3D arrows (matplotlib does not support these natively)</span>
-<span class="k">class</span> <span class="nc">Arrow3D</span><span class="p">(</span><span class="n">FancyArrowPatch</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">xs</span><span class="p">,</span> <span class="n">ys</span><span class="p">,</span> <span class="n">zs</span><span class="p">,</span> <span class="n">mutation_scale</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">arrowstyle</span><span class="o">=</span><span class="s2">&quot;-|&gt;&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Arrow3D</span><span class="p">(</span><span class="n">FancyArrowPatch</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">xs</span><span class="p">,</span> <span class="n">ys</span><span class="p">,</span> <span class="n">zs</span><span class="p">,</span> <span class="n">mutation_scale</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">arrowstyle</span><span class="o">=</span><span class="s2">&quot;-|&gt;&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span><span class="n">mutation_scale</span><span class="o">=</span><span class="n">mutation_scale</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="n">lw</span><span class="p">,</span> <span class="n">arrowstyle</span><span class="o">=</span><span class="n">arrowstyle</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_verts3d</span> <span class="o">=</span> <span class="n">xs</span><span class="p">,</span> <span class="n">ys</span><span class="p">,</span> <span class="n">zs</span>
-    <span class="k">def</span> <span class="nf">do_3d_projection</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">renderer</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">do_3d_projection</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">renderer</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="n">xs</span><span class="p">,</span> <span class="n">ys</span><span class="p">,</span> <span class="n">zs</span> <span class="o">=</span> <span class="n">proj3d</span><span class="o">.</span><span class="n">proj_transform</span><span class="p">(</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">_verts3d</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">axes</span><span class="o">.</span><span class="n">M</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">set_positions</span><span class="p">((</span><span class="n">xs</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">ys</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="p">(</span><span class="n">xs</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">ys</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
         <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">zs</span><span class="p">)</span>
@@ -766,8 +765,8 @@ r = 6370\ {\rm km} + 400\ {\rm km} = 6770\ {\rm km}.
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Verification of polar orbit displacement problem</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="c1"># Given values</span>
 <span class="n">R_earth</span> <span class="o">=</span> <span class="mf">6370.0</span>          <span class="c1"># radius of Earth in km</span>
@@ -953,10 +952,10 @@ v_x(t) = \frac{dx(t)}{dt}, \quad &amp; v_y(t) = \frac{dy(t)}{dt}, \quad &amp; v_
 <p><strong>The Verification</strong></p>
 <p>The Python check evaluates the analytical derivative at <span class="math notranslate nohighlight">\(t=2.0\ {\rm s}\)</span> and independently computes the average velocity from the endpoint position vectors. This confirms that the two velocities match for the chosen interval.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Verification of velocity vector problem</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># Define the position function in km.</span>
-<span class="k">def</span> <span class="nf">r</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">r</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">2.0</span><span class="o">*</span><span class="n">t</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="mf">2.0</span> <span class="o">+</span> <span class="mf">3.0</span><span class="o">*</span><span class="n">t</span><span class="p">,</span> <span class="mf">5.0</span><span class="o">*</span><span class="n">t</span><span class="p">])</span>
 
 <span class="c1"># Times in seconds.</span>
@@ -981,10 +980,10 @@ v_x(t) = \frac{dx(t)}{dt}, \quad &amp; v_y(t) = \frac{dy(t)}{dt}, \quad &amp; v_
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Verification of velocity vector problem</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">sympy</span> <span class="k">as</span> <span class="nn">sp</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sp</span>
 
-<span class="k">def</span> <span class="nf">array_from_sympy</span><span class="p">(</span><span class="n">expressions</span><span class="p">,</span> <span class="n">variable</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">array_from_sympy</span><span class="p">(</span><span class="n">expressions</span><span class="p">,</span> <span class="n">variable</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Evaluate a list of SymPy expressions and return a NumPy array.&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="nb">float</span><span class="p">(</span><span class="n">expr</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">variable</span><span class="p">,</span> <span class="n">value</span><span class="p">))</span> <span class="k">for</span> <span class="n">expr</span> <span class="ow">in</span> <span class="n">expressions</span><span class="p">])</span>
 
@@ -1135,7 +1134,7 @@ From t = 1.0 s to t = 3.0 s, the average velocity is (8.0 i-hat + 3.0 j-hat + 5.
 <p class="sd-card-text"><strong>The Verification</strong></p>
 <p class="sd-card-text">The Python check evaluates the acceleration vector at the specified time, computes its magnitude with <code class="docutils literal notranslate"><span class="pre">np.linalg.norm</span></code>, and normalizes the vector to obtain the direction unit vector. The output is printed as complete sentences that identify the vector, magnitude, and direction.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Verification of acceleration vector</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># Evaluation time in seconds.</span>
 <span class="n">t</span> <span class="o">=</span> <span class="mf">2.0</span>
@@ -1209,8 +1208,8 @@ t=10\ {\rm s}.\)</span></p>
 <p>A visualization using <code class="docutils literal notranslate"><span class="pre">plotly</span></code> is given below so that you can interact with the figure to see different perspectives.  <em>You are not expected to know to generate figures with plotly.</em></p>
 </div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Verification of particle motion from the position function</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="c1"># Time array</span>
 <span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span>
@@ -1258,8 +1257,8 @@ t=10\ {\rm s}.\)</span></p>
 <span class="expanded">Hide code cell source</span>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span><span class="o">,</span> <span class="nn">plotly.graph_objects</span> <span class="k">as</span> <span class="nn">go</span>
-<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span><span class="o">,</span><span class="w"> </span><span class="nn">plotly.graph_objects</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">go</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">HTML</span>
 
 <span class="n">t</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">60</span><span class="p">);</span> <span class="n">x</span><span class="o">=</span><span class="mi">10</span><span class="o">*</span><span class="n">t</span><span class="o">-</span><span class="n">t</span><span class="o">**</span><span class="mi">2</span><span class="p">;</span> <span class="n">y</span><span class="o">=</span><span class="mi">5</span><span class="o">*</span><span class="n">t</span><span class="p">;</span> <span class="n">z</span><span class="o">=</span><span class="mi">5</span><span class="o">*</span><span class="n">t</span><span class="p">;</span> <span class="n">L</span><span class="o">=</span><span class="mi">55</span><span class="p">;</span> <span class="n">A</span><span class="o">=</span><span class="mf">0.18</span><span class="o">*</span><span class="n">L</span>
 
@@ -1268,12 +1267,12 @@ t=10\ {\rm s}.\)</span></p>
     <span class="n">marker</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="n">t</span><span class="p">,</span><span class="n">colorscale</span><span class="o">=</span><span class="s1">&#39;Viridis&#39;</span><span class="p">,</span><span class="n">opacity</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span><span class="n">showscale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
     <span class="n">colorbar</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;time (s)&quot;</span><span class="p">,</span><span class="n">thickness</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span><span class="nb">len</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span><span class="n">x</span><span class="o">=</span><span class="mf">1.03</span><span class="p">,</span><span class="n">tickfont</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">14</span><span class="p">))),</span><span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
 
-<span class="k">def</span> <span class="nf">axis_line</span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="n">q</span><span class="p">):</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter3d</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="p">[</span><span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">q</span><span class="p">[</span><span class="mi">0</span><span class="p">]],</span><span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">q</span><span class="p">[</span><span class="mi">1</span><span class="p">]],</span><span class="n">z</span><span class="o">=</span><span class="p">[</span><span class="n">p</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span><span class="n">q</span><span class="p">[</span><span class="mi">2</span><span class="p">]],</span><span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines&#39;</span><span class="p">,</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">axis_line</span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="n">q</span><span class="p">):</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter3d</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="p">[</span><span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">q</span><span class="p">[</span><span class="mi">0</span><span class="p">]],</span><span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">q</span><span class="p">[</span><span class="mi">1</span><span class="p">]],</span><span class="n">z</span><span class="o">=</span><span class="p">[</span><span class="n">p</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span><span class="n">q</span><span class="p">[</span><span class="mi">2</span><span class="p">]],</span><span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines&#39;</span><span class="p">,</span>
                                               <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">6</span><span class="p">),</span><span class="n">hoverinfo</span><span class="o">=</span><span class="s1">&#39;skip&#39;</span><span class="p">,</span><span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">))</span>
-<span class="k">def</span> <span class="nf">axis_tip</span><span class="p">(</span><span class="n">px</span><span class="p">,</span><span class="n">py</span><span class="p">,</span><span class="n">pz</span><span class="p">,</span><span class="n">ux</span><span class="p">,</span><span class="n">uy</span><span class="p">,</span><span class="n">uz</span><span class="p">):</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Cone</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="p">[</span><span class="n">px</span><span class="p">],</span><span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="n">py</span><span class="p">],</span><span class="n">z</span><span class="o">=</span><span class="p">[</span><span class="n">pz</span><span class="p">],</span><span class="n">u</span><span class="o">=</span><span class="p">[</span><span class="n">ux</span><span class="p">],</span><span class="n">v</span><span class="o">=</span><span class="p">[</span><span class="n">uy</span><span class="p">],</span><span class="n">w</span><span class="o">=</span><span class="p">[</span><span class="n">uz</span><span class="p">],</span><span class="n">anchor</span><span class="o">=</span><span class="s1">&#39;tip&#39;</span><span class="p">,</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">axis_tip</span><span class="p">(</span><span class="n">px</span><span class="p">,</span><span class="n">py</span><span class="p">,</span><span class="n">pz</span><span class="p">,</span><span class="n">ux</span><span class="p">,</span><span class="n">uy</span><span class="p">,</span><span class="n">uz</span><span class="p">):</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Cone</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="p">[</span><span class="n">px</span><span class="p">],</span><span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="n">py</span><span class="p">],</span><span class="n">z</span><span class="o">=</span><span class="p">[</span><span class="n">pz</span><span class="p">],</span><span class="n">u</span><span class="o">=</span><span class="p">[</span><span class="n">ux</span><span class="p">],</span><span class="n">v</span><span class="o">=</span><span class="p">[</span><span class="n">uy</span><span class="p">],</span><span class="n">w</span><span class="o">=</span><span class="p">[</span><span class="n">uz</span><span class="p">],</span><span class="n">anchor</span><span class="o">=</span><span class="s1">&#39;tip&#39;</span><span class="p">,</span>
                                                       <span class="n">sizemode</span><span class="o">=</span><span class="s1">&#39;absolute&#39;</span><span class="p">,</span><span class="n">sizeref</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span><span class="n">showscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
                                                       <span class="n">colorscale</span><span class="o">=</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;black&#39;</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;black&#39;</span><span class="p">]],</span><span class="n">hoverinfo</span><span class="o">=</span><span class="s1">&#39;skip&#39;</span><span class="p">,</span><span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">))</span>
-<span class="k">def</span> <span class="nf">axis_label</span><span class="p">(</span><span class="n">px</span><span class="p">,</span><span class="n">py</span><span class="p">,</span><span class="n">pz</span><span class="p">,</span><span class="n">txt</span><span class="p">):</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter3d</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="p">[</span><span class="n">px</span><span class="p">],</span><span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="n">py</span><span class="p">],</span><span class="n">z</span><span class="o">=</span><span class="p">[</span><span class="n">pz</span><span class="p">],</span><span class="n">mode</span><span class="o">=</span><span class="s1">&#39;text&#39;</span><span class="p">,</span><span class="n">text</span><span class="o">=</span><span class="p">[</span><span class="n">txt</span><span class="p">],</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">axis_label</span><span class="p">(</span><span class="n">px</span><span class="p">,</span><span class="n">py</span><span class="p">,</span><span class="n">pz</span><span class="p">,</span><span class="n">txt</span><span class="p">):</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter3d</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="p">[</span><span class="n">px</span><span class="p">],</span><span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="n">py</span><span class="p">],</span><span class="n">z</span><span class="o">=</span><span class="p">[</span><span class="n">pz</span><span class="p">],</span><span class="n">mode</span><span class="o">=</span><span class="s1">&#39;text&#39;</span><span class="p">,</span><span class="n">text</span><span class="o">=</span><span class="p">[</span><span class="n">txt</span><span class="p">],</span>
                                                         <span class="n">textfont</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">),</span><span class="n">hoverinfo</span><span class="o">=</span><span class="s1">&#39;skip&#39;</span><span class="p">,</span><span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">))</span>
 
 <span class="n">axis_line</span><span class="p">((</span><span class="o">-</span><span class="n">L</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),(</span> <span class="n">L</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">));</span> <span class="n">axis_line</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="n">L</span><span class="p">,</span><span class="mi">0</span><span class="p">),(</span><span class="mi">0</span><span class="p">,</span> <span class="n">L</span><span class="p">,</span><span class="mi">0</span><span class="p">));</span> <span class="n">axis_line</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="n">L</span><span class="p">),(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span> <span class="n">L</span><span class="p">))</span>
@@ -1433,7 +1432,7 @@ y(t) &amp;= -50.0 - 1.1t - 0.272t^2, &amp; v_y(t) &amp;= -1.1 - 0.544t.
 <p class="sd-card-text"><strong>The Verification</strong></p>
 <p class="sd-card-text">The Python check resolves the acceleration into components and evaluates the same component kinematic equations at <span class="math notranslate nohighlight">\(t=10.0\ {\rm s}\)</span>. The printed statements identify the acceleration, position, and velocity components rather than displaying a raw array.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Verification of skier motion on an inclined slope</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># Given values.</span>
 <span class="n">a</span> <span class="o">=</span> <span class="mf">2.1</span>                         <span class="c1"># acceleration magnitude in m/s^2</span>
@@ -1462,8 +1461,8 @@ y(t) &amp;= -50.0 - 1.1t - 0.272t^2, &amp; v_y(t) &amp;= -1.1 - 0.544t.
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="c1"># Time array</span>
 <span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>
@@ -1692,7 +1691,7 @@ x=(18.1\ {\rm m/s})(6.89\ {\rm s})=125\ {\rm m}.
 <p class="sd-card-text"><strong>The Verification</strong></p>
 <p class="sd-card-text">The Python check resolves the initial velocity into components and applies the same vertical and horizontal projectile equations used in the analytical solution. The printed statements report the height, time, horizontal displacement, and total displacement as complete sentences.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Verification of fireworks projectile problem</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># Given values.</span>
 <span class="n">v0</span> <span class="o">=</span> <span class="mf">70.0</span>                       <span class="c1"># launch speed in m/s</span>
@@ -1803,7 +1802,7 @@ v=\sqrt{v_x^2+v_y^2}=\sqrt{(21)^2+(-16)^2}\ {\rm m/s}=27\ {\rm m/s}.
 <p class="sd-card-text"><strong>The Verification</strong></p>
 <p class="sd-card-text">The Python check solves the vertical-position quadratic, selects the later root, and then evaluates the velocity components at that time. The printed statements report the catch time, velocity components, impact speed, and direction as complete sentences.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Verification of tennis projectile problem</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># Given values.</span>
 <span class="n">v0</span> <span class="o">=</span> <span class="mf">30.0</span>                       <span class="c1"># launch speed in m/s</span>
@@ -1941,9 +1940,9 @@ R &amp;= \frac{v_o^2\left(\sin{\theta_o}\cos{\theta_o}\right)}{g}, \\
 <p>See the python code below and the figure illustrating the differences between <span class="math notranslate nohighlight">\(\sin{\theta}\)</span> and <span class="math notranslate nohighlight">\(\sin{2\theta}\)</span>.  This shows that there is positive maxima for <span class="math notranslate nohighlight">\(\sin{2\theta}\)</span>, which  <strong>does not</strong> occur at <span class="math notranslate nohighlight">\(\pi/2\)</span> (or <span class="math notranslate nohighlight">\(90^\circ\)</span>).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">fractions</span> <span class="kn">import</span> <span class="n">Fraction</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">fractions</span><span class="w"> </span><span class="kn">import</span> <span class="n">Fraction</span>
 
 <span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">)</span>
 <span class="n">y1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span>
@@ -2106,8 +2105,8 @@ y(x)=x\tan(70^\circ)-\frac{9.81}{2[(37)\cos(70^\circ)]^2}x^2 \approx 2.8x-0.031x
 <p class="sd-card-text"><strong>The Verification</strong></p>
 <p class="sd-card-text">The Python check computes both launch speeds from the range equation, evaluates the two trajectory equations, and verifies that both trajectories return to ground level at <span class="math notranslate nohighlight">\(x=90\ {\rm m}\)</span>. The printed statements report the physical meaning of each numerical result.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Verification of golf shot trajectories</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="c1"># Given values.</span>
 <span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>             <span class="c1"># gravitational acceleration in m/s^2</span>
@@ -2367,8 +2366,8 @@ r=\frac{(134.1\ {\rm m/s})^2}{9.81\ {\rm m/s^2}}=1830\ {\rm m}=1.83\ {\rm km}.
 <p class="sd-card-text"><strong>The Verification</strong></p>
 <p class="sd-card-text">The Python check computes the angular frequency, evaluates the circular-motion position vector at <span class="math notranslate nohighlight">\(t=200\ {\rm ns}\)</span>, and draws the circular path with the initial and final positions marked. The printed output reports the angular frequency, angular position, and final position in complete sentences.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Verification of circular motion of a proton</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="c1"># Given values.</span>
 <span class="n">r</span> <span class="o">=</span> <span class="mf">0.175</span>        <span class="c1"># radius in m</span>
@@ -2497,8 +2496,8 @@ a_T=\frac{12.0}{(2.0)^3}=1.5\ {\rm m/s^2}.
 <p class="sd-card-text"><strong>The Verification</strong></p>
 <p class="sd-card-text">The Python check evaluates the speed function and its derivative at <span class="math notranslate nohighlight">\(t=2.0\ {\rm s}\)</span>, then combines the perpendicular acceleration components to find the total acceleration. The printed statements describe each component before drawing the acceleration geometry.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Verification of nonuniform circular motion</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="c1"># Given values.</span>
 <span class="n">r</span> <span class="o">=</span> <span class="mf">2.0</span>       <span class="c1"># radius in m</span>
@@ -2629,9 +2628,9 @@ a_T=\frac{12.0}{(2.0)^3}=1.5\ {\rm m/s^2}.
 <span class="expanded">Hide code cell content</span>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">myst_nb</span><span class="w"> </span><span class="kn">import</span> <span class="n">glue</span>
 
 <span class="c1"># Define points in 2D</span>
 <span class="n">S</span>  <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">])</span>
@@ -2763,7 +2762,7 @@ a_T=\frac{12.0}{(2.0)^3}=1.5\ {\rm m/s^2}.
 <p class="sd-card-text"><strong>The Verification</strong></p>
 <p class="sd-card-text">The Python check constructs the two Earth-frame velocity vectors and subtracts them to obtain the relative velocity. This also guards against the common sign error of treating a southward truck velocity as positive <span class="math notranslate nohighlight">\(y\)</span>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Verification of relative velocity</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># Velocity vectors in km/h, using +x east and +y north.</span>
 <span class="n">v_CE</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">80.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">])</span>      <span class="c1"># car relative to Earth</span>
@@ -2853,8 +2852,8 @@ a_T=\frac{12.0}{(2.0)^3}=1.5\ {\rm m/s^2}.
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Verification of plane motion in a wind</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="c1"># Given values.</span>
 <span class="n">v_PA</span> <span class="o">=</span> <span class="mf">300.0</span>       <span class="c1"># plane speed relative to air in km/h</span>
@@ -2881,7 +2880,7 @@ a_T=\frac{12.0}{(2.0)^3}=1.5\ {\rm m/s^2}.
 <span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">draw_vec</span><span class="p">(</span><span class="n">vec</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">text_offset</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">draw_vec</span><span class="p">(</span><span class="n">vec</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">text_offset</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)):</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">vec</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">vec</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
                 <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s2">&quot;-&gt;&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.55</span><span class="o">*</span><span class="n">vec</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">text_offset</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>

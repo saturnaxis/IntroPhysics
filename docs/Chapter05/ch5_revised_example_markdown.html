@@ -1,0 +1,1417 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>PHYS 2425 Chapter 5 Revised Example Problems, Canonical Dropdown Style (v4) &#8212; Introductory Physics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/exercise.css?v=20ffa6e1" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=4c969af8" />
+    <link rel="stylesheet" type="text/css" href="../_static/metadata_figure.css?v=2463d4a7" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx_iframe.css?v=96c28b52" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.plyr.io/3.8.4/plyr.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=180fcd40" />
+    <link rel="stylesheet" type="text/css" href="../_static/mycss.css?v=3589796e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../_static/tabs.js?v=3ee01567"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../_static/h5p-resizer.js?v=a3e8b8ed"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-6TWF14MYK4"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-6TWF14MYK4');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-6TWF14MYK4');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Chapter05/ch5_revised_example_markdown';</script>
+    <script src="https://cdn.plyr.io/3.8.4/plyr.polyfilled.js"></script>
+    <script src="../_static/init-plyr.js?v=bf401924"></script>
+    <link rel="canonical" href="https://saturnaxis.github.io/IntroPhysics/Chapter05/ch5_revised_example_markdown.html" />
+    <link rel="icon" href="../_static/IntroPhysics_Icon.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../home.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/IntroPhysics_Icon.png" class="logo__image only-light" alt="Introductory Physics - Home"/>
+    <script>document.write(`<img src="../_static/IntroPhysics_Icon.png" class="logo__image only-dark" alt="Introductory Physics - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../home.html">
+                    Welcome to Introductory Physics
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Preamble</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Preamble/who-for.html">Who Are These Notes For?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Preamble/cite-reuse.html">How to Cite and Reuse This Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Preamble/computational-writing-primer.html">Computational and Writing Primer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Preamble/figures-primer.html">Figures Primer (Matplotlib)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Preamble/course-faq.html">Course FAQ</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Measurements, Vectors, Kinematics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Chapter01/units-and-measurement.html">1. Units and Measurement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter02/vectors.html">2. Vectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter03/motion-along-1D.html">3. Motion along 1D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter04/motion-in-2D-3D.html">4. Motion in 2D and 3D</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Newton's Laws and Energy</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="newtons-laws.html">5. Newton’s Laws of Motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter06/application-of-newtons-laws.html">6. Application of Newton’s Laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter07/work-kinetic-energy.html">7. Work and Kinetic Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter08/potential-energy-conservation.html">8. Potential Energy and Conservation of Energy</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Momentum, Collisions, Rotation</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Chapter09/momentum-collisions.html">9. Linear Momentum and Collisions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter10/fixed-axis-rotation.html">10. Fixed-axis Rotation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter11/angular-momentum.html">11. Angular Momentum</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Statics, Gravitation, Fluids</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Chapter12/static-equilibrium-elasticity.html">12. Static Equilibrium and Elasticity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter13/gravitation.html">13. Gravitation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter14/fluids.html">14. Fluid Mechanics</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Movie Review</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/martian.html">The Martian</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/apollo13.html">Apollo 13</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/october_sky.html">October Sky</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/speed.html">Speed</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/ford_ferrari.html">Ford v Ferrari</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/italian_job.html">The Italian Job</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/right_stuff.html">The Right Stuff</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/saturnaxis/IntroPhysics" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/saturnaxis/IntroPhysics/issues/new?title=Issue%20on%20page%20%2FChapter05/ch5_revised_example_markdown.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/Chapter05/ch5_revised_example_markdown.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>PHYS 2425 Chapter 5 Revised Example Problems, Canonical Dropdown Style (v4)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-applying-newton-s-1st-law-to-your-car"><strong>Example Problem</strong>: Applying Newton’s 1st Law to your car</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-pushing-a-lawnmower"><strong>Example Problem</strong>: Pushing a Lawnmower</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-comparing-forces"><strong>Example Problem</strong>: Comparing Forces</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-thrust-on-a-sled"><strong>Example Problem</strong>: Thrust on a Sled</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-force-on-a-soccer-ball"><strong>Example Problem</strong>: Force on a Soccer Ball</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-mass-of-a-car"><strong>Example Problem</strong>: Mass of a Car</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-several-forces"><strong>Example Problem</strong>: Several Forces</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-lifting-a-stone"><strong>Example Problem</strong>: Lifting a Stone</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-forces-on-a-stationary-object"><strong>Example Problem</strong>: Forces on a Stationary Object</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-force-on-the-cart-part-1"><strong>Example Problem</strong>: Force on the Cart (Part 1)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-force-on-the-cart-part-2"><strong>Example Problem</strong>: Force on the Cart (Part 2)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-weight-on-an-incline"><strong>Example Problem</strong>: Weight on an incline</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-tension-in-a-tightrope"><strong>Example Problem</strong>: Tension in a Tightrope</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-two-blocks-on-an-inclined-plane"><strong>Example Problem</strong>: Two Blocks on an Inclined Plane</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-two-blocks-in-contact"><strong>Example Problem</strong>: Two Blocks in Contact</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-block-on-the-table"><strong>Example Problem</strong>: Block on the Table</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="phys-2425-chapter-5-revised-example-problems-canonical-dropdown-style-v4">
+<h1>PHYS 2425 Chapter 5 Revised Example Problems, Canonical Dropdown Style (v4)<a class="headerlink" href="#phys-2425-chapter-5-revised-example-problems-canonical-dropdown-style-v4" title="Link to this heading">#</a></h1>
+<p>These revised markdown blocks preserve the original problem statements and figure directives from the Chapter 5 notebook while applying the canonical <code class="docutils literal notranslate"><span class="pre">etamu-exercise</span></code> dropdown rules. The solution sections are written to keep the Model free of algebra and numerical substitution, move coordinate choices into the Model, and make the Math section narrative-first.</p>
+<hr class="docutils" />
+<section id="example-problem-applying-newton-s-1st-law-to-your-car">
+<h2><strong>Example Problem</strong>: Applying Newton’s 1st Law to your car<a class="headerlink" href="#example-problem-applying-newton-s-1st-law-to-your-car" title="Link to this heading">#</a></h2>
+<div class="exercise etamu-exercise admonition" id="Chapter05/ch5_revised_example_markdown-exercise-0">
+
+<p class="admonition-title"></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>Newton’s laws can be applied to all physical processes involving force and motion, including something as mundane as driving a car.</p>
+<p>(a) Your car is parked outside your house. Does Newton’s first law apply in this situation? Why or why not?</p>
+<p>(b) Your car moves at constant velocity down the street. Does Newton’s first law apply in this situation? Why or why not?</p>
+</div></blockquote>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The car is modeled as a single object observed from the ground, which we treat as an inertial reference frame. For the parked car, the coordinate system has <span class="math notranslate nohighlight">\(+\hat{j}\)</span> upward. For the moving car, <span class="math notranslate nohighlight">\(+\hat{i}\)</span> points in the direction of motion and <span class="math notranslate nohighlight">\(+\hat{j}\)</span> points upward. In both cases, the question is not whether forces exist, but whether the vector sum of the external forces is zero.</p>
+<p class="sd-card-text">For the parked car, the only forces that need to be considered are the downward weight and the upward contact force from the ground. For the car moving at constant velocity, the vertical forces still balance, and the horizontal driving force from the road balances the resistive forces from air drag and rolling resistance.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">Newton’s first law applies when the net external force on an object is zero. Under that condition, the acceleration is zero, so the object remains at rest or moves with constant velocity,</p>
+<div class="math notranslate nohighlight">
+\[
+\sum \vec{F}_{\rm ext} = \vec{0} \quad \Rightarrow \quad \vec{a}=\vec{0}.
+\]</div>
+<p class="sd-card-text">For the parked car, the weight acts downward and the ground exerts an upward contact force. Writing these qualitatively as <span class="math notranslate nohighlight">\(\vec{W}=-w\,\hat{j}\)</span> and <span class="math notranslate nohighlight">\(\vec{N}=n\,\hat{j}\)</span>, the force sum is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\sum \vec{F}_{\rm ext} &amp;= \vec{N}+\vec{W},\\
+&amp;= n\,\hat{j}-w\,\hat{j},\\
+&amp;= (n-w)\,\hat{j}.
+\end{align*}\]</div>
+<p class="sd-card-text">Since the parked car is not accelerating, the net force is zero and <span class="math notranslate nohighlight">\(n=w\)</span>. Newton’s first law therefore applies.</p>
+<p class="sd-card-text">For the car moving at constant velocity, the acceleration is still zero. The vertical forces balance as before. In the horizontal direction, the forward force from the road on the tires must balance the backward resistive force. If <span class="math notranslate nohighlight">\(\vec{F}_{\rm road}=f\,\hat{i}\)</span> and <span class="math notranslate nohighlight">\(\vec{F}_{\rm res}=-f\,\hat{i}\)</span>, then</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{F}_{\rm road}+\vec{F}_{\rm res}=\vec{0}.
+\]</div>
+<p class="sd-card-text">The total net force is zero, so Newton’s first law applies in this case as well.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">Newton’s first law applies in both situations. For the parked car, the upward contact force from the ground balances the downward weight. For the car moving at constant velocity, the vertical forces balance and the horizontal driving and resistive forces also balance. The important point is that zero net force means zero acceleration, not necessarily zero velocity.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The Python check in the next cell represents each force as a vector and confirms that the net force is zero in both cases. The free-body diagrams are schematic and are used to show balanced forces, not to represent a specific car or numerical force scale.</p>
+</div>
+</details></section>
+</div>
+<hr class="docutils" />
+</section>
+<section id="example-problem-pushing-a-lawnmower">
+<h2><strong>Example Problem</strong>: Pushing a Lawnmower<a class="headerlink" href="#example-problem-pushing-a-lawnmower" title="Link to this heading">#</a></h2>
+<div class="exercise etamu-exercise admonition" id="Chapter05/ch5_revised_example_markdown-exercise-1">
+
+<p class="admonition-title"></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>Suppose that the net external force (push minus friction) exerted on a lawn mower is <span class="math notranslate nohighlight">\(51\ \text{N}\)</span> (about <span class="math notranslate nohighlight">\(11\ \text{lb}.)\)</span> parallel to the ground (Figure <a class="reference internal" href="newtons-laws.html#mower-force-fig"><span class="std std-numref">5.8</span></a>). The mass of the mower is <span class="math notranslate nohighlight">\(24\ \text{kg}\)</span>. What is its acceleration?</p>
+</div></blockquote>
+<figure class="align-default" id="mower-force-fig">
+<img alt="net force on mower" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/301730c548a739c3cc3e4830700fe6ef50e7aedd" />
+<figcaption>
+<p><span class="caption-text">(a) The net force on a lawn mower is 51 N to the right. At what rate does the lawn mower accelerate to the right? (b) The free-body diagram for this problem is shown. Figure Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law">Newton’s Second Law</a></span><a class="headerlink" href="#mower-force-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The lawn mower is modeled as a particle moving on level ground. The positive <span class="math notranslate nohighlight">\(x\)</span> direction is chosen parallel to the ground in the direction of the stated net force, and the positive <span class="math notranslate nohighlight">\(y\)</span> direction is upward. The problem already gives the net horizontal force, so the individual push and friction forces do not need to be modeled separately. The vertical forces balance and do not affect the horizontal acceleration.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">Newton’s second law relates the net external force to the acceleration of the mower. With the net force and acceleration both along <span class="math notranslate nohighlight">\(+\hat{i}\)</span>, we can write <span class="math notranslate nohighlight">\(\vec{F}_{\rm net}=(51\ {\rm N})\hat{i}\)</span> and <span class="math notranslate nohighlight">\(\vec{a}=a\hat{i}\)</span>. We substitute the force vector and acceleration vector into Newton’s second law to obtain</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\sum \vec{F}_{\rm ext} &amp;= m\vec{a},\\
+(51\ {\rm N})\hat{i} &amp;= (24\ {\rm kg})(a\hat{i}).
+\end{align*}\]</div>
+<p class="sd-card-text">Because both sides point in the same direction, the scalar magnitudes satisfy</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+51\ {\rm N} &amp;= (24\ {\rm kg})a,\\
+a &amp;= \frac{51\ {\rm N}}{24\ {\rm kg}},\\
+&amp;= 2.1\ {\rm m/s^2}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The lawn mower accelerates at <span class="math notranslate nohighlight">\(2.1\ {\rm m/s^2}\)</span> in the direction of the net force. This result uses the net external force, not the applied push alone, because friction has already been subtracted from the push in the given force.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The Python check in the next cell recomputes <span class="math notranslate nohighlight">\(a=F_{\rm net}/m\)</span> and checks that <span class="math notranslate nohighlight">\(ma\)</span> reproduces the given net force. The accompanying free-body diagram shows the net horizontal force used in the calculation.</p>
+</div>
+</details></section>
+</div>
+<hr class="docutils" />
+</section>
+<section id="example-problem-comparing-forces">
+<h2><strong>Example Problem</strong>: Comparing Forces<a class="headerlink" href="#example-problem-comparing-forces" title="Link to this heading">#</a></h2>
+<div class="exercise etamu-exercise admonition" id="Chapter05/ch5_revised_example_markdown-exercise-2">
+
+<p class="admonition-title"></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>(a) The car shown in Figure <a class="reference internal" href="newtons-laws.html#car-force-fig"><span class="std std-numref">5.9</span></a> is moving at a constant speed. Which force is bigger, <span class="math notranslate nohighlight">\(\vec{F}_{\text{friction}}\)</span> or <span class="math notranslate nohighlight">\(\vec{F}_{\text{drag}}\)</span>? Explain.</p>
+<p>(b) The same car is now accelerating to the right. Which force is bigger, <span class="math notranslate nohighlight">\(\vec{F}_{\text{friction}}\)</span> or <span class="math notranslate nohighlight">\(\vec{F}_{\text{drag}}\)</span>? Explain.</p>
+</div></blockquote>
+<figure class="align-default" id="car-force-fig">
+<img alt="comparing forces on car" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/4208aa77e974f170b705874223ddfa5927e09929" />
+<figcaption>
+<p><span class="caption-text">A car is shown (a) moving at constant speed and (b) accelerating. How do the forces acting on the car compare in each case? (a) What does the knowledge that the car is moving at constant velocity tell us about the net horizontal force on the car compared to the friction force? (b) What does the knowledge that the car is accelerating tell us about the horizontal force on the car compared to the friction force? Figure Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law">Newton’s Second Law</a></span><a class="headerlink" href="#car-force-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The car is modeled as a particle moving horizontally. The positive <span class="math notranslate nohighlight">\(x\)</span> direction is chosen to the right, in the direction of motion. The forward force <span class="math notranslate nohighlight">\(\vec{F}_{\rm friction}\)</span> is the static friction force exerted by the road on the tires, while <span class="math notranslate nohighlight">\(\vec{F}_{\rm drag}\)</span> represents resistive forces such as air drag and rolling resistance acting opposite the motion. Vertical forces balance and are not needed for the horizontal comparison.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text"><strong>(a)</strong> For the constant-speed case, the car moves in a straight line with zero acceleration. Newton’s second law then requires the horizontal net force to be zero. Taking right as positive,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\sum F_x &amp;= 0,\\
+F_{\rm friction}-F_{\rm drag} &amp;= 0.
+\end{align*}\]</div>
+<p class="sd-card-text">Thus the two forces have equal magnitudes.</p>
+<p class="sd-card-text"><strong>(b)</strong> For the accelerating case, the car accelerates to the right. Newton’s second law requires the net horizontal force to point to the right, so</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\sum F_x &amp;= ma_x,\\
+F_{\rm friction}-F_{\rm drag} &amp;&gt; 0.
+\end{align*}\]</div>
+<p class="sd-card-text">This inequality means that the forward static friction force must be larger than the backward drag force.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">For constant-speed motion, <span class="math notranslate nohighlight">\(\vec{F}_{\rm friction}\)</span> and <span class="math notranslate nohighlight">\(\vec{F}_{\rm drag}\)</span> have equal magnitudes and opposite directions. When the car accelerates to the right, the forward friction force is larger than the backward drag force. The distinction is not whether the car is moving, but whether its velocity is changing.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The Python check in the next cell draws schematic free-body diagrams for the two cases. In the constant-speed case, the horizontal force vectors are equal in length; in the accelerating case, the forward force is longer, producing a net force to the right.</p>
+</div>
+</details></section>
+</div>
+<hr class="docutils" />
+</section>
+<section id="example-problem-thrust-on-a-sled">
+<h2><strong>Example Problem</strong>: Thrust on a Sled<a class="headerlink" href="#example-problem-thrust-on-a-sled" title="Link to this heading">#</a></h2>
+<div class="exercise etamu-exercise admonition" id="Chapter05/ch5_revised_example_markdown-exercise-3">
+
+<p class="admonition-title"></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>Before space flights carrying astronauts, rocket sleds were used to test aircraft, missile equipment, and physiological effects on human subjects at high speeds. They consisted of a platform that was mounted on one or two rails and propelled by several rockets.</p>
+<p>Calculate the magnitude of force exerted by each rocket, called its thrust <span class="math notranslate nohighlight">\(T\)</span>, for the four-rocket propulsion system shown in Figure <code class="xref std std-numref docutils literal notranslate"><span class="pre">{number}</span></code>. The sled’s initial acceleration is <span class="math notranslate nohighlight">\(49\ \text{m/s}^2\)</span>, the mass of the system is <span class="math notranslate nohighlight">\(2100\ \text{kg}\)</span>, and the force of friction opposing the motion is <span class="math notranslate nohighlight">\(650\ \text{N}\)</span>.</p>
+</div></blockquote>
+<figure class="align-default" id="sled-force-fig">
+<img alt="forces on rocket sled" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/af7c2b785de4e2c3ce7256ee0e357cb2c7e32fcd" />
+<figcaption>
+<p><span class="caption-text">A sled experiences a rocket thrust that accelerates it to the right. Each rocket creates an identical thrust T. The system here is the sled, its rockets, and its rider, so none of the forces between these objects are considered. Figure Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law">Newton’s Second Law</a></span><a class="headerlink" href="#sled-force-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The system is the rocket sled, rockets, and rider treated as one object moving horizontally. The positive <span class="math notranslate nohighlight">\(x\)</span> direction is chosen in the direction of the sled’s acceleration, and the positive <span class="math notranslate nohighlight">\(y\)</span> direction is upward. Four identical rockets exert equal thrusts in the positive <span class="math notranslate nohighlight">\(x\)</span> direction, while friction acts in the negative <span class="math notranslate nohighlight">\(x\)</span> direction. The normal force and weight balance vertically, so the acceleration is entirely horizontal.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">Newton’s second law is applied along the horizontal direction. The total forward thrust from the four rockets is <span class="math notranslate nohighlight">\(4T\)</span>, and the friction force of magnitude <span class="math notranslate nohighlight">\(f\)</span> opposes the motion. The corresponding force equation is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\sum F_x &amp;= ma,\\
+4T-f &amp;= ma.
+\end{align*}\]</div>
+<p class="sd-card-text">We solve the horizontal force equation for the thrust from one rocket because <span class="math notranslate nohighlight">\(T\)</span> is the requested unknown quantity.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+4T &amp;= ma+f,\\
+T &amp;= \frac{ma+f}{4}.
+\end{align*}\]</div>
+<p class="sd-card-text">We now substitute the sled mass, acceleration, and friction force into the expression for the thrust from one rocket:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+T &amp;= \frac{(2100\ {\rm kg})(49\ {\rm m/s^2})+650\ {\rm N}}{4},\\
+&amp;= 2.6\times10^4\ {\rm N}.
+\end{align*}\]</div>
+<p class="sd-card-text">The result is reported to two significant figures because the acceleration is given as <span class="math notranslate nohighlight">\(49\ {\rm m/s^2}\)</span>.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">Each rocket must exert a thrust of <span class="math notranslate nohighlight">\(2.6\times10^4\ {\rm N}\)</span>. The total thrust must both overcome friction and provide the net force needed to accelerate the massive sled. The vertical forces are not part of this calculation because they balance and produce no vertical acceleration.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The Python check in the next cell recomputes the total thrust from <span class="math notranslate nohighlight">\(4T=ma+f\)</span> and divides by four. The free-body diagram is schematic and shows the four thrust forces acting forward and the friction force acting backward.</p>
+</div>
+</details></section>
+</div>
+<hr class="docutils" />
+</section>
+<section id="example-problem-force-on-a-soccer-ball">
+<h2><strong>Example Problem</strong>: Force on a Soccer Ball<a class="headerlink" href="#example-problem-force-on-a-soccer-ball" title="Link to this heading">#</a></h2>
+<div class="exercise etamu-exercise admonition" id="Chapter05/ch5_revised_example_markdown-exercise-4">
+
+<p class="admonition-title"></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<p>A <span class="math notranslate nohighlight">\(0.400\ \text{kg}\)</span> soccer ball is kicked across the field by a player; it undergoes acceleration given by <span class="math notranslate nohighlight">\(\vec{a} = 3.00\hat{i} + 7.00\hat{j}\ \text{m/s}^2.\)</span> Find (a) the resultant force acting on the ball and (b) the magnitude and direction of the resultant force.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The soccer ball is modeled as a particle moving in the <span class="math notranslate nohighlight">\(x\)</span>-<span class="math notranslate nohighlight">\(y\)</span> plane. The positive <span class="math notranslate nohighlight">\(x\)</span> direction is along <span class="math notranslate nohighlight">\(\hat{i}\)</span>, and the positive <span class="math notranslate nohighlight">\(y\)</span> direction is along <span class="math notranslate nohighlight">\(\hat{j}\)</span>. The given acceleration already provides the acceleration components in this coordinate system. The net external force represents the combined effect of all interactions acting on the ball during the kick.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">Newton’s second law can be applied directly in vector form because the acceleration is already written in component form. Multiplying the acceleration vector by the mass gives the net force vector,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\vec{F}_{\rm net} &amp;= m\vec{a},\\
+&amp;= (0.400\ {\rm kg})(3.00\hat{i}+7.00\hat{j})\ {\rm m/s^2},\\
+&amp;= (1.20\hat{i}+2.80\hat{j})\ {\rm N}.
+\end{align*}\]</div>
+<p class="sd-card-text">This is the resultant force in component form. The magnitude is found from the components,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+F_{\rm net} &amp;= \sqrt{F_x^2+F_y^2},\\
+&amp;= \sqrt{(1.20\ {\rm N})^2+(2.80\ {\rm N})^2},\\
+&amp;= 3.05\ {\rm N}.
+\end{align*}\]</div>
+<p class="sd-card-text">The direction is measured counterclockwise from the <span class="math notranslate nohighlight">\(+\hat{i}\)</span> axis. Since both force components are positive, the force lies in the first quadrant,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\theta &amp;= \tan^{-1}\!\left(\frac{F_y}{F_x}\right),\\
+&amp;= \tan^{-1}\!\left(\frac{2.80}{1.20}\right),\\
+&amp;= 66.8^\circ.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The resultant force on the soccer ball is <span class="math notranslate nohighlight">\(\vec{F}_{\rm net}=(1.20\hat{i}+2.80\hat{j})\ {\rm N}\)</span>. Its magnitude is <span class="math notranslate nohighlight">\(3.05\ {\rm N}\)</span>, directed <span class="math notranslate nohighlight">\(66.8^\circ\)</span> counterclockwise from the <span class="math notranslate nohighlight">\(+\hat{i}\)</span> axis. The force points in the same direction as the acceleration because the mass is a positive scalar.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The Python check in the next cell recomputes the force components from <span class="math notranslate nohighlight">\(\vec{F}_{\rm net}=m\vec{a}\)</span> and then calculates the magnitude and direction using the same component relationships. The diagram shows the net force vector and its components.</p>
+</div>
+</details></section>
+</div>
+<hr class="docutils" />
+</section>
+<section id="example-problem-mass-of-a-car">
+<h2><strong>Example Problem</strong>: Mass of a Car<a class="headerlink" href="#example-problem-mass-of-a-car" title="Link to this heading">#</a></h2>
+<div class="exercise etamu-exercise admonition" id="Chapter05/ch5_revised_example_markdown-exercise-5">
+
+<p class="admonition-title"></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>Find the mass of a car if a net force of <span class="math notranslate nohighlight">\(-600.0\,\hat{j}\ \text{N}\)</span> produces an acceleration of <span class="math notranslate nohighlight">\(-0.2\,\hat{j}\ \text{m/s}^2\)</span>.</p>
+</div></blockquote>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The car is modeled as a particle subject to a net external force. The positive <span class="math notranslate nohighlight">\(y\)</span> direction is chosen along <span class="math notranslate nohighlight">\(+\hat{j}\)</span>, so both the given net force and acceleration point in the negative <span class="math notranslate nohighlight">\(y\)</span> direction. The force and acceleration are parallel, so a scalar component equation can represent the motion. No other forces need to be modeled separately because the net force is already given.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">Newton’s second law relates the net external force to the acceleration,</p>
+<div class="math notranslate nohighlight">
+\[
+\sum \vec{F}_{\rm ext}=m\vec{a}.
+\]</div>
+<p class="sd-card-text">Mass is a scalar, so we do not divide vectors. Instead, because the force and acceleration point in the same direction, we compare their magnitudes,</p>
+<div class="math notranslate nohighlight">
+\[
+F_{\rm net}=ma.
+\]</div>
+<p class="sd-card-text">We solve Newton’s second law for the scalar mass because the mass is the requested unknown quantity.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+m &amp;= \frac{F_{\rm net}}{a},\\
+&amp;= \frac{600.0\ {\rm N}}{0.2\ {\rm m/s^2}},\\
+&amp;= 3\times10^3\ {\rm kg}.
+\end{align*}\]</div>
+<p class="sd-card-text">The direction signs cancel because the force and acceleration are both in the <span class="math notranslate nohighlight">\(-\hat{j}\)</span> direction.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The mass of the car is <span class="math notranslate nohighlight">\(3\times10^3\ {\rm kg}\)</span>. The result is a scalar, so it has no direction. The negative signs in the original vectors tell us that the force and acceleration point in the same direction, not that the mass is negative.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The Python check computes the ratio of the force magnitude to the acceleration magnitude, matching the scalar form of Newton’s second law used in the analytical solution. The printed result uses significant-figure-appropriate scientific notation so the output does not imply more precision than the given acceleration supports.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="n">Fnet</span> <span class="o">=</span> <span class="mf">600.0</span>   <span class="c1"># N</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mf">0.2</span>        <span class="c1"># m/s^2</span>
+
+<span class="n">m</span> <span class="o">=</span> <span class="n">Fnet</span><span class="o">/</span><span class="n">a</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The computed mass of the car is </span><span class="si">{</span><span class="n">m</span><span class="si">:</span><span class="s2">.1g</span><span class="si">}</span><span class="s2"> kg.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details></section>
+</div>
+<hr class="docutils" />
+</section>
+<section id="example-problem-several-forces">
+<h2><strong>Example Problem</strong>: Several Forces<a class="headerlink" href="#example-problem-several-forces" title="Link to this heading">#</a></h2>
+<div class="exercise etamu-exercise admonition" id="Chapter05/ch5_revised_example_markdown-exercise-6">
+
+<p class="admonition-title"></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>A particle of mass <span class="math notranslate nohighlight">\(m = 4.0\ \text{kg}\)</span> is acted upon by four forces of magnitudes <span class="math notranslate nohighlight">\(F_1 = 10.0\ \text{N}\)</span>, <span class="math notranslate nohighlight">\(F_2 = 40.0\ \text{N}\)</span>, <span class="math notranslate nohighlight">\(F_3 = 5.0\ \text{N}\)</span>, and <span class="math notranslate nohighlight">\(F_4 = 2.0\ \text{N}\)</span>, with the directions as shown in the free-body diagram in Fig. <a class="reference internal" href="newtons-laws.html#four-forces-fig"><span class="std std-numref">5.10</span></a>.  What is the acceleration of the particle?</p>
+</div></blockquote>
+<figure class="align-default" id="four-forces-fig">
+<img alt="four forces" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/c99b424299139944364181eb0d08967715c107e3" />
+<figcaption>
+<p><span class="caption-text">Four forces in the xy-plane are applied to a 4.0-kg particle. Figure Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law">Newton’s Second Law</a></span><a class="headerlink" href="#four-forces-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The particle is modeled as a point mass moving in the <span class="math notranslate nohighlight">\(x\)</span>-<span class="math notranslate nohighlight">\(y\)</span> plane. The positive <span class="math notranslate nohighlight">\(x\)</span> direction is to the right and the positive <span class="math notranslate nohighlight">\(y\)</span> direction is upward, matching the axes shown in the free-body diagram. Each force is treated as an external force acting on the particle. The force <span class="math notranslate nohighlight">\(F_1\)</span> has both <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> components, while <span class="math notranslate nohighlight">\(F_2\)</span>, <span class="math notranslate nohighlight">\(F_3\)</span>, and <span class="math notranslate nohighlight">\(F_4\)</span> act along coordinate axes.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">Newton’s second law is applied independently in the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> directions,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\sum F_x &amp;= ma_x,\\
+\sum F_y &amp;= ma_y.
+\end{align*}\]</div>
+<p class="sd-card-text">In the <span class="math notranslate nohighlight">\(x\)</span> direction, <span class="math notranslate nohighlight">\(F_1\)</span> contributes a positive component <span class="math notranslate nohighlight">\(F_1\cos30^\circ\)</span>, and <span class="math notranslate nohighlight">\(F_3\)</span> acts in the negative <span class="math notranslate nohighlight">\(x\)</span> direction. The corresponding force equation is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+F_1\cos30^\circ - F_3 &amp;= ma_x,\\
+a_x &amp;= \frac{F_1\cos30^\circ-F_3}{m}.
+\end{align*}\]</div>
+<p class="sd-card-text">We now substitute the force magnitudes and mass into the expression for the horizontal acceleration:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+a_x &amp;= \frac{(10.0\ {\rm N})\cos30^\circ - 5.0\ {\rm N}}{4.0\ {\rm kg}},\\
+&amp;= 0.92\ {\rm m/s^2}.
+\end{align*}\]</div>
+<p class="sd-card-text">In the <span class="math notranslate nohighlight">\(y\)</span> direction, the vertical component of <span class="math notranslate nohighlight">\(F_1\)</span> and the force <span class="math notranslate nohighlight">\(F_4\)</span> act upward, while <span class="math notranslate nohighlight">\(F_2\)</span> acts downward. The corresponding force equation is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+F_1\sin30^\circ+F_4-F_2 &amp;= ma_y,\\
+a_y &amp;= \frac{F_1\sin30^\circ+F_4-F_2}{m}.
+\end{align*}\]</div>
+<p class="sd-card-text">We now substitute the vertical force magnitudes and mass into the expression for the vertical acceleration:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+a_y &amp;= \frac{(10.0\ {\rm N})\sin30^\circ+2.0\ {\rm N}-40.0\ {\rm N}}{4.0\ {\rm kg}},\\
+&amp;= -8.3\ {\rm m/s^2}.
+\end{align*}\]</div>
+<p class="sd-card-text">Combining the components gives the acceleration vector,</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{a}=(0.92\hat{i}-8.3\hat{j})\ {\rm m/s^2}.
+\]</div>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The particle accelerates as <span class="math notranslate nohighlight">\(\vec{a}=(0.92\hat{i}-8.3\hat{j})\ {\rm m/s^2}\)</span>. The acceleration is mostly downward because the downward force <span class="math notranslate nohighlight">\(F_2\)</span> is much larger than the upward forces, while the horizontal forces only partially fail to cancel.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The Python check in the next cell resolves the angled force into components, sums all four force vectors, and divides by the mass. The free-body diagram confirms that the force directions used in the calculation match the diagram.</p>
+</div>
+</details></section>
+</div>
+<hr class="docutils" />
+</section>
+<section id="example-problem-lifting-a-stone">
+<h2><strong>Example Problem</strong>: Lifting a Stone<a class="headerlink" href="#example-problem-lifting-a-stone" title="Link to this heading">#</a></h2>
+<div class="exercise etamu-exercise admonition" id="Chapter05/ch5_revised_example_markdown-exercise-7">
+
+<p class="admonition-title"></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>A farmer is lifting some moderately heavy rocks from a field to plant crops.  He lifts a stone that weighs <span class="math notranslate nohighlight">\(40.0\ \text{lb}\)</span> (about <span class="math notranslate nohighlight">\(180\ \text{N}\)</span>). What force does he apply if the stone accelerates upward at a rate of <span class="math notranslate nohighlight">\(1.5\ \text{m/s}^2\)</span>?</p>
+</div></blockquote>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The stone is modeled as a particle moving vertically. The positive <span class="math notranslate nohighlight">\(y\)</span> direction is chosen upward, in the direction of the stone’s acceleration. The farmer exerts an upward applied force on the stone, while the stone’s weight acts downward. Air resistance is neglected. The stated weight is the gravitational force on the stone, not its mass.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">The stone’s weight is related to its mass by <span class="math notranslate nohighlight">\(w=mg\)</span>. We solve Newton’s second law for the scalar mass because the mass is the requested unknown quantity.</p>
+<div class="math notranslate nohighlight">
+\[
+m=\frac{w}{g}.
+\]</div>
+<p class="sd-card-text">We substitute the given weight and <span class="math notranslate nohighlight">\(g=9.81\ {\rm m/s^2}\)</span> into the expression for the mass of the stone.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+m &amp;= \frac{180\ {\rm N}}{9.81\ {\rm m/s^2}},\\
+&amp;= 18.3\ {\rm kg}.
+\end{align*}\]</div>
+<p class="sd-card-text">Newton’s second law is applied in the vertical direction. The applied force <span class="math notranslate nohighlight">\(F\)</span> is upward and the weight <span class="math notranslate nohighlight">\(w\)</span> is downward, so</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\sum F_y &amp;= ma_y,\\
+F-w &amp;= ma.
+\end{align*}\]</div>
+<p class="sd-card-text">We solve the vertical force equation for the applied force because the farmer’s force is the requested unknown quantity.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+F &amp;= ma+w,\\
+&amp;= (18.3\ {\rm kg})(1.5\ {\rm m/s^2})+180\ {\rm N},\\
+&amp;= 210\ {\rm N}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The farmer applies an upward force of <span class="math notranslate nohighlight">\(210\ {\rm N}\)</span> to the stone. This force is larger than the stone’s weight because the stone is accelerating upward; if the applied force equaled the weight, the net force would be zero and the stone would not accelerate.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The Python check in the next cell computes the mass from the given weight and then applies Newton’s second law to recover the required applied force. The free-body diagram confirms that the applied force must be larger than the weight for the net force to point upward.</p>
+</div>
+</details></section>
+</div>
+<hr class="docutils" />
+</section>
+<section id="example-problem-forces-on-a-stationary-object">
+<h2><strong>Example Problem</strong>: Forces on a Stationary Object<a class="headerlink" href="#example-problem-forces-on-a-stationary-object" title="Link to this heading">#</a></h2>
+<div class="exercise etamu-exercise admonition" id="Chapter05/ch5_revised_example_markdown-exercise-8">
+
+<p class="admonition-title"></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>The package in Figure <a class="reference internal" href="newtons-laws.html#scale-reaction-fig"><span class="std std-numref">5.13</span></a> is sitting on a scale. For the scale and package at rest (i.e., not accelerating), show that the scale indicates the weight of the package.</p>
+</div></blockquote>
+<figure class="align-default" id="scale-reaction-fig">
+<img alt="scale reaction force" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/00c26de7728563423d12455f471da91123b49cfb" />
+<figcaption>
+<p><span class="caption-text">(a) The forces on a package sitting on a scale, along with their reaction forces. The force <span class="math notranslate nohighlight">\(\vec{w}\)</span> is the weight of the package (the force due to Earth’s gravity) and <span class="math notranslate nohighlight">\(\vec{s}\)</span>  is the force of the scale on the package. (b) Isolation of the package-scale system and the package-Earth system makes the action and reaction pairs clear. Figure Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/5-5-newtons-third-law">Newton’s Third Law</a></span><a class="headerlink" href="#scale-reaction-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The system is the package alone. The positive <span class="math notranslate nohighlight">\(y\)</span> direction is chosen upward, so the scale force on the package points in the <span class="math notranslate nohighlight">\(+\hat{j}\)</span> direction and the weight points in the <span class="math notranslate nohighlight">\(-\hat{j}\)</span> direction. The package is at rest in an inertial frame, so its acceleration is zero. Only vertical forces act on the package; the reaction forces shown in the figure act on other objects and are not included in the free-body diagram of the package.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">Newton’s second law requires the net external force to be zero when the acceleration is zero,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\sum \vec{F}_{\rm ext} &amp;= m\vec{a},\\
+&amp;= \vec{0}.
+\end{align*}\]</div>
+<p class="sd-card-text">The scale exerts an upward force <span class="math notranslate nohighlight">\(\vec{s}=s\,\hat{j}\)</span> on the package, and Earth exerts the downward weight <span class="math notranslate nohighlight">\(\vec{w}=-w\,\hat{j}\)</span>. The force balance on the package is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\vec{s}+\vec{w} &amp;= \vec{0},\\
+s\,\hat{j}-w\,\hat{j} &amp;= \vec{0},\\
+(s-w)\,\hat{j} &amp;= \vec{0}.
+\end{align*}\]</div>
+<p class="sd-card-text">For this vector to be zero, the scalar magnitudes must be equal,</p>
+<div class="math notranslate nohighlight">
+\[
+s=w.
+\]</div>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The scale reading equals the package’s weight when the package is at rest. More precisely, the scale measures the upward contact force it exerts on the package, and in this zero-acceleration case that contact force has the same magnitude as the gravitational force on the package.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The Python check in the next cell represents the scale force and weight as equal and opposite vertical vectors. The resulting net force is zero, and the free-body diagram shows the forces acting on the package.</p>
+</div>
+</details></section>
+</div>
+<hr class="docutils" />
+</section>
+<section id="example-problem-force-on-the-cart-part-1">
+<h2><strong>Example Problem</strong>: Force on the Cart (Part 1)<a class="headerlink" href="#example-problem-force-on-the-cart-part-1" title="Link to this heading">#</a></h2>
+<div class="exercise etamu-exercise admonition" id="Chapter05/ch5_revised_example_markdown-exercise-9">
+
+<p class="admonition-title"></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>A physics professor pushes a cart of demonstration equipment to a lecture hall (Figure <a class="reference internal" href="newtons-laws.html#cart-reaction-fig"><span class="std std-numref">5.14</span></a>). Her mass is <span class="math notranslate nohighlight">\(65\ {\rm kg}\)</span>, the cart’s mass is <span class="math notranslate nohighlight">\(12\ {\rm kg}\)</span>, and the equipment’s mass is <span class="math notranslate nohighlight">\(7\ {\rm kg}\)</span>. Calculate the acceleration produced when the professor exerts a backward force of <span class="math notranslate nohighlight">\(150\ {\rm N}\)</span> on the floor. All forces opposing the motion, such as friction on the cart’s wheels and air resistance, total <span class="math notranslate nohighlight">\(24.0\ {\rm N}\)</span>.</p>
+</div></blockquote>
+<figure class="align-default" id="cart-reaction-fig">
+<img alt="cart reaction force" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/7954635a55ec857e43667d5a90ed1aa42226b970" />
+<figcaption>
+<p><span class="caption-text">A professor pushes the cart with her demonstration equipment. The lengths of the arrows are proportional to the magnitudes of the forces (except for <span class="math notranslate nohighlight">\(\vec{f}\)</span>, because it is too small to be drawn to scale). System 1 is appropriate for this example, because it asks for the acceleration of the entire group of objects. Only <span class="math notranslate nohighlight">\(\vec{F}_{\rm floor}\)</span>  and <span class="math notranslate nohighlight">\(\vec{f}\)</span> are external forces acting on System 1 along the line of motion. All other forces either cancel or act on the outside world. System 2 is chosen for the next example so that <span class="math notranslate nohighlight">\(\vec{F}_{\rm prof}\)</span> is an external force and enters into Newton’s second law. The free-body diagrams, which serve as the basis for Newton’s second law, vary with the system chosen. Figure Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/5-5-newtons-third-law">Newton’s Third Law</a></span><a class="headerlink" href="#cart-reaction-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The system is the professor, cart, and equipment together, corresponding to System 1 in the figure. The positive <span class="math notranslate nohighlight">\(x\)</span> direction is chosen forward, in the direction of the motion, and the positive <span class="math notranslate nohighlight">\(y\)</span> direction is upward. The floor exerts a forward force on the system because the professor pushes backward on the floor. The total resistive force from wheel friction and air resistance acts backward. The vertical forces balance, and forces between the professor, cart, and equipment are internal to this chosen system.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">Newton’s second law is applied to the external horizontal forces on System 1. The forward force from the floor has magnitude <span class="math notranslate nohighlight">\(F_{\rm floor}\)</span>, and the total resistive force has magnitude <span class="math notranslate nohighlight">\(f\)</span>, so</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\sum F_x &amp;= ma,\\
+F_{\rm floor}-f &amp;= ma.
+\end{align*}\]</div>
+<p class="sd-card-text">The mass of the system is the sum of the professor, cart, and equipment masses,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+m &amp;= 65\ {\rm kg}+12\ {\rm kg}+7\ {\rm kg},\\
+&amp;= 84\ {\rm kg}.
+\end{align*}\]</div>
+<p class="sd-card-text">We solve the horizontal force equation for the acceleration because the acceleration is the requested unknown quantity.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+a &amp;= \frac{F_{\rm floor}-f}{m},\\
+&amp;= \frac{150\ {\rm N}-24.0\ {\rm N}}{84\ {\rm kg}},\\
+&amp;= 1.5\ {\rm m/s^2}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The professor, cart, and equipment accelerate forward at <span class="math notranslate nohighlight">\(1.5\ {\rm m/s^2}\)</span>. This acceleration is determined by the net external horizontal force on System 1, not by the internal forces between the professor and the cart.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The Python check in the next cell recomputes the total system mass, the net external horizontal force, and the acceleration. The free-body diagram shows the external forces on System 1: the forward floor force, the backward resistive force, and the balancing vertical forces.</p>
+</div>
+</details></section>
+</div>
+<hr class="docutils" />
+</section>
+<section id="example-problem-force-on-the-cart-part-2">
+<h2><strong>Example Problem</strong>: Force on the Cart (Part 2)<a class="headerlink" href="#example-problem-force-on-the-cart-part-2" title="Link to this heading">#</a></h2>
+<div class="exercise etamu-exercise admonition" id="Chapter05/ch5_revised_example_markdown-exercise-10">
+
+<p class="admonition-title"></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>Calculate the force the professor exerts on the cart in Figure <a class="reference internal" href="newtons-laws.html#cart-reaction-fig"><span class="std std-numref">5.14</span></a>, using data from the previous example if needed.</p>
+</div></blockquote>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The system is now the cart plus the equipment, corresponding to System 2 in the previous figure. The positive <span class="math notranslate nohighlight">\(x\)</span> direction is forward, in the direction of the acceleration found in the previous example, and the positive <span class="math notranslate nohighlight">\(y\)</span> direction is upward. The professor’s push on the cart is external to this smaller system. The same total resistive force opposes the motion, and the vertical forces balance.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">For System 2, the horizontal external forces are the professor’s forward force and the backward resistive force. Newton’s second law gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\sum F_x &amp;= ma,\\
+F_{\rm prof}-f &amp;= ma.
+\end{align*}\]</div>
+<p class="sd-card-text">We solve the horizontal force equation for the professor’s force on the cart because that force is the requested unknown quantity.</p>
+<div class="math notranslate nohighlight">
+\[
+F_{\rm prof}=ma+f.
+\]</div>
+<p class="sd-card-text">The mass of System 2 is the cart plus the equipment,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+m &amp;= 12.0\ {\rm kg}+7.0\ {\rm kg},\\
+&amp;= 19.0\ {\rm kg}.
+\end{align*}\]</div>
+<p class="sd-card-text">We now use the acceleration found in the previous example in the expression for the professor’s force on System 2:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+F_{\rm prof} &amp;= (19.0\ {\rm kg})(1.5\ {\rm m/s^2})+24.0\ {\rm N},\\
+&amp;= 53\ {\rm N}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The professor exerts a forward force of <span class="math notranslate nohighlight">\(53\ {\rm N}\)</span> on the cart. This is smaller than the <span class="math notranslate nohighlight">\(150\ {\rm N}\)</span> interaction with the floor because the floor force accelerates the professor, cart, and equipment together, while <span class="math notranslate nohighlight">\(F_{\rm prof}\)</span> only has to accelerate the cart and equipment while overcoming the resistive force on that smaller system.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The Python check in the next cell recomputes <span class="math notranslate nohighlight">\(F_{\rm prof}=ma+f\)</span> using the mass of System 2 and the acceleration from the previous example. The free-body diagram shows the external forces on the cart-plus-equipment system.</p>
+</div>
+</details></section>
+</div>
+<hr class="docutils" />
+<section id="example-problem-weight-on-an-incline">
+<h3><strong>Example Problem</strong>: Weight on an incline<a class="headerlink" href="#example-problem-weight-on-an-incline" title="Link to this heading">#</a></h3>
+<div class="exercise etamu-exercise admonition" id="Chapter05/ch5_revised_example_markdown-exercise-11">
+
+<p class="admonition-title"></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>Consider the skier on the slope in Figure <a class="reference internal" href="newtons-laws.html#skier-incline-fig"><span class="std std-numref">5.18</span></a>. Her mass including equipment is <span class="math notranslate nohighlight">\(60.0\ \text{kg}\)</span>.
+(a) What is her acceleration if friction is negligible?
+(b) What is her acceleration if friction is <span class="math notranslate nohighlight">\(45.0\ \text{N}\)</span>?</p>
+</div></blockquote>
+<figure class="align-default" id="skier-incline-fig">
+<img alt="skier incline example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/095c5f6fefc5827b20d2c19a057c48ddb4e0d793" />
+<figcaption>
+<p><span class="caption-text">Since the acceleration is parallel to the slope and acting down the slope, it is most convenient to project all forces onto a coordinate system where one axis is parallel to the slope and the other is perpendicular to it (axes shown to the left of the skier). <span class="math notranslate nohighlight">\(\vec{N}\)</span> is perpendicular to the slope and <span class="math notranslate nohighlight">\(\vec{f}\)</span> is parallel to the slope, but <span class="math notranslate nohighlight">\(\vec{w}\)</span> has components along both axes, namely, <span class="math notranslate nohighlight">\(w_y\)</span> and <span class="math notranslate nohighlight">\(w_x\)</span>. Here, <span class="math notranslate nohighlight">\(\vec{w}\)</span> has a squiggly line to show that it has been replaced by these components. The force <span class="math notranslate nohighlight">\(\vec{N}\)</span> is equal in magnitude to <span class="math notranslate nohighlight">\(w_y\)</span>, so there is no acceleration perpendicular to the slope, but <span class="math notranslate nohighlight">\(f\)</span> is less than <span class="math notranslate nohighlight">\(w_x\)</span>, so there is a downslope acceleration (along the axis parallel to the slope). Figure Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/5-6-common-forces">Common Forces</a></span><a class="headerlink" href="#skier-incline-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The skier and equipment are modeled as one particle moving along a rigid incline. The <span class="math notranslate nohighlight">\(x\)</span> axis is chosen parallel to the slope and positive down the slope, while the <span class="math notranslate nohighlight">\(y\)</span> axis is chosen perpendicular to the slope and positive away from the surface. With this coordinate choice, the acceleration is along the slope and there is no acceleration perpendicular to the surface. The forces are the weight <span class="math notranslate nohighlight">\(\vec{w}\)</span>, the normal force <span class="math notranslate nohighlight">\(\vec{N}\)</span>, and, when present, the friction force <span class="math notranslate nohighlight">\(\vec{f}\)</span> acting up the slope.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">The weight is resolved into components along the incline axes. With the incline angle <span class="math notranslate nohighlight">\(\theta\)</span>, the component parallel to the slope is <span class="math notranslate nohighlight">\(w_x=mg\sin\theta\)</span>, and the component perpendicular to the slope is <span class="math notranslate nohighlight">\(w_y=mg\cos\theta\)</span>. The perpendicular forces balance because <span class="math notranslate nohighlight">\(a_y=0\)</span>, so <span class="math notranslate nohighlight">\(N=w_y\)</span>.</p>
+<p class="sd-card-text"><strong>(a)</strong> For the frictionless case, the only force parallel to the slope is <span class="math notranslate nohighlight">\(w_x\)</span>. Newton’s second law along the slope gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\sum F_x &amp;= ma_x,\\
+mg\sin\theta &amp;= ma_x.
+\end{align*}\]</div>
+<p class="sd-card-text">The mass cancels, leaving</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+a_x &amp;= g\sin\theta,\\
+&amp;= (9.81\ {\rm m/s^2})\sin25^\circ,\\
+&amp;= 4.1\ {\rm m/s^2}.
+\end{align*}\]</div>
+<p class="sd-card-text"><strong>(b)</strong> For the case with friction, the friction force acts up the slope, opposite the motion. The net force along the slope is reduced to <span class="math notranslate nohighlight">\(mg\sin\theta-f\)</span>, so</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+mg\sin\theta-f &amp;= ma_x,\\
+a_x &amp;= \frac{mg\sin\theta-f}{m}.
+\end{align*}\]</div>
+<p class="sd-card-text">We now substitute the skier’s mass, gravitational acceleration, incline angle, and friction force into the expression for the acceleration along the slope:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+a_x &amp;= \frac{(60.0\ {\rm kg})(9.81\ {\rm m/s^2})\sin25^\circ-45.0\ {\rm N}}{60.0\ {\rm kg}},\\
+&amp;= 3.4\ {\rm m/s^2}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">With negligible friction, the skier accelerates down the slope at <span class="math notranslate nohighlight">\(4.1\ {\rm m/s^2}\)</span>. When a <span class="math notranslate nohighlight">\(45.0\ {\rm N}\)</span> friction force acts up the slope, the acceleration is reduced to <span class="math notranslate nohighlight">\(3.4\ {\rm m/s^2}\)</span>. Both accelerations are down the slope because the downslope component of weight is still larger than the opposing friction force.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The Python check in the next cell computes <span class="math notranslate nohighlight">\(w_x=mg\sin\theta\)</span>, evaluates the acceleration with and without friction, and draws a schematic free-body diagram using axes aligned with the incline.</p>
+</div>
+</details></section>
+</div>
+</section>
+<hr class="docutils" />
+<section id="example-problem-tension-in-a-tightrope">
+<h3><strong>Example Problem</strong>: Tension in a Tightrope<a class="headerlink" href="#example-problem-tension-in-a-tightrope" title="Link to this heading">#</a></h3>
+<div class="exercise etamu-exercise admonition" id="Chapter05/ch5_revised_example_markdown-exercise-12">
+
+<p class="admonition-title"></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>Calculate the tension in the wire supporting the <span class="math notranslate nohighlight">\(70.0\ \mathrm{kg}\)</span> tightrope walker shown in Figure <a class="reference internal" href="newtons-laws.html#tension-tightrope-fig"><span class="std std-numref">5.20</span></a>.</p>
+</div></blockquote>
+<figure class="align-default" id="tension-tightrope-fbd-fig">
+<img alt="tension tightrope FBD example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/f4d052ad93fc813ea956895cacb8f1f74e44e658" />
+<figcaption>
+<p><span class="caption-text">When the vectors are projected onto vertical and horizontal axes, their components along these axes must add to zero, since the tightrope walker is stationary. The small angle results in <span class="math notranslate nohighlight">\(T\)</span> being much greater than <span class="math notranslate nohighlight">\(w\)</span>. Figure Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/5-6-common-forces">Common Forces</a></span><a class="headerlink" href="#tension-tightrope-fbd-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The system is the tightrope walker, treated as a particle at rest. The positive <span class="math notranslate nohighlight">\(x\)</span> direction is horizontal to the right, and the positive <span class="math notranslate nohighlight">\(y\)</span> direction is upward. The wire is symmetric about the walker, so the left and right tension magnitudes are equal and are denoted by <span class="math notranslate nohighlight">\(T\)</span>. Each wire segment makes the same small angle above the horizontal. The walker is stationary, so the net force is zero in both coordinate directions.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">The horizontal components of the two tensions cancel by symmetry. The vertical components of the two tensions support the weight of the walker. Applying Newton’s second law in the vertical direction,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\sum F_y &amp;= 0,\\
+T\sin\theta+T\sin\theta-w &amp;= 0,\\
+2T\sin\theta &amp;= w.
+\end{align*}\]</div>
+<p class="sd-card-text">The weight is <span class="math notranslate nohighlight">\(w=mg\)</span>, so the tension is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+T &amp;= \frac{w}{2\sin\theta},\\
+&amp;= \frac{mg}{2\sin\theta}.
+\end{align*}\]</div>
+<p class="sd-card-text">We now substitute the walker’s mass, gravitational acceleration, and wire angle into the tension equation:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+T &amp;= \frac{(70.0\ {\rm kg})(9.81\ {\rm m/s^2})}{2\sin5.0^\circ},\\
+&amp;= 3.9\times10^3\ {\rm N}.
+\end{align*}\]</div>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">Each side of the wire has a tension of <span class="math notranslate nohighlight">\(3.9\times10^3\ {\rm N}\)</span>. This is much larger than the walker’s weight because the wire is nearly horizontal, so only a small vertical component of each tension supports the walker.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The Python check following this example evaluates <span class="math notranslate nohighlight">\(T=mg/(2\sin\theta)\)</span> and shows that the two vertical components <span class="math notranslate nohighlight">\(T\sin\theta\)</span> add to the weight. The accompanying diagram resolves the two tension forces into horizontal and vertical components.</p>
+</div>
+</details></section>
+</div>
+<hr class="docutils" />
+</section>
+</section>
+<section id="example-problem-two-blocks-on-an-inclined-plane">
+<h2><strong>Example Problem</strong>: Two Blocks on an Inclined Plane<a class="headerlink" href="#example-problem-two-blocks-on-an-inclined-plane" title="Link to this heading">#</a></h2>
+<div class="exercise etamu-exercise admonition" id="Chapter05/ch5_revised_example_markdown-exercise-13">
+
+<p class="admonition-title"></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>Construct the free-body diagram for object A and object B in Figure <a class="reference internal" href="newtons-laws.html#blocks-fbd-fig"><span class="std std-numref">5.24</span></a>.</p>
+</div></blockquote>
+<figure class="align-default" id="blocks-fbd-fig">
+<img alt="2 blocks FBD example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/144f787db4c7c97ebb616984e0c0a811d05819b9" />
+<figcaption>
+<p><span class="caption-text">(a) The free-body diagram for isolated object A. (b) The free-body diagram for isolated object B. Comparing the two drawings, we see that friction acts in the opposite direction in the two figures. Friction always acts opposite the direction of motion or intended motion. Because object A is moving to the right, friction by B must act to the left. Object B is moving to the left relative to B, so the friction by A on B is to the right. The friction force by object A on object B is the third law pair of the friction force by B on A, and therefore these two forces must be in opposite directions. Because object B is sliding down the incline, the friction force by the ramp must oppose it and act up the ramp. Figure Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/5-7-drawing-free-body-diagrams">Drawing Free-body Diagrams</a></span><a class="headerlink" href="#blocks-fbd-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">Objects A and B are treated as separate particles on an inclined plane. The <span class="math notranslate nohighlight">\(x\)</span> axis is chosen parallel to the incline, and the <span class="math notranslate nohighlight">\(y\)</span> axis is chosen perpendicular to the incline. Object A is attached to a cord and is in contact with object B. Object B is in contact with both object A and the incline. Normal forces act perpendicular to contact surfaces, friction forces act parallel to contact surfaces, and tension acts along the cord. Each free-body diagram includes only forces acting on the isolated object.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">For object A, the forces acting on the isolated object are its weight <span class="math notranslate nohighlight">\(\vec{w}_A\)</span>, the tension <span class="math notranslate nohighlight">\(\vec{T}\)</span> from the cord, the normal force <span class="math notranslate nohighlight">\(\vec{N}_{BA}\)</span> exerted by B on A, and the friction force <span class="math notranslate nohighlight">\(\vec{f}_{BA}\)</span> exerted by B on A.</p>
+<p class="sd-card-text">For object B, the forces acting on the isolated object are its weight <span class="math notranslate nohighlight">\(\vec{w}_B\)</span>, the normal force <span class="math notranslate nohighlight">\(\vec{N}_B\)</span> from the incline, the friction force <span class="math notranslate nohighlight">\(\vec{f}_B\)</span> from the incline, the normal force <span class="math notranslate nohighlight">\(\vec{N}_{AB}\)</span> exerted by A on B, and the friction force <span class="math notranslate nohighlight">\(\vec{f}_{AB}\)</span> exerted by A on B.</p>
+<p class="sd-card-text">The contact forces between A and B occur in third-law pairs. The corresponding force equation is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\vec{N}_{AB} &amp;= -\vec{N}_{BA},\\
+\vec{f}_{AB} &amp;= -\vec{f}_{BA}.
+\end{align*}\]</div>
+<p class="sd-card-text">These pairs act on different objects, so they appear on different free-body diagrams.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The free-body diagram for object A contains <span class="math notranslate nohighlight">\(\vec{w}_A\)</span>, <span class="math notranslate nohighlight">\(\vec{T}\)</span>, <span class="math notranslate nohighlight">\(\vec{N}_{BA}\)</span>, and <span class="math notranslate nohighlight">\(\vec{f}_{BA}\)</span>. The free-body diagram for object B contains <span class="math notranslate nohighlight">\(\vec{w}_B\)</span>, <span class="math notranslate nohighlight">\(\vec{N}_B\)</span>, <span class="math notranslate nohighlight">\(\vec{f}_B\)</span>, <span class="math notranslate nohighlight">\(\vec{N}_{AB}\)</span>, and <span class="math notranslate nohighlight">\(\vec{f}_{AB}\)</span>. Drawing the objects separately is essential because action-reaction pairs do not cancel within a single object’s free-body diagram.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The Python check in the next cell draws representative free-body diagrams for both objects. The vectors are schematic and are intended to verify which forces belong on each isolated object.</p>
+</div>
+</details></section>
+</div>
+<hr class="docutils" />
+</section>
+<section id="example-problem-two-blocks-in-contact">
+<h2><strong>Example Problem</strong>: Two Blocks in Contact<a class="headerlink" href="#example-problem-two-blocks-in-contact" title="Link to this heading">#</a></h2>
+<div class="exercise etamu-exercise admonition" id="Chapter05/ch5_revised_example_markdown-exercise-14">
+
+<p class="admonition-title"></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>A force is applied to two blocks in contact, as shown in Fig. <a class="reference internal" href="newtons-laws.html#blocks-contact-fbd-fig"><span class="std std-numref">5.25</span></a>. Draw the reaction forces between the two blocks.</p>
+</div></blockquote>
+<figure class="align-default" id="blocks-contact-fbd-fig">
+<img alt="2 blocks contact FBD example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/7f841e852d86c9170a71c72dc0aff0a013355033" />
+<figcaption>
+<p><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/5-7-drawing-free-body-diagrams">Drawing Free-body Diagrams</a></span><a class="headerlink" href="#blocks-contact-fbd-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The blocks are treated as two separate systems on a horizontal surface. The positive <span class="math notranslate nohighlight">\(x\)</span> direction is chosen to the right, in the direction of the applied force on block <span class="math notranslate nohighlight">\(m_1\)</span>. At the contact surface, block <span class="math notranslate nohighlight">\(m_1\)</span> pushes on block <span class="math notranslate nohighlight">\(m_2\)</span> to the right, while block <span class="math notranslate nohighlight">\(m_2\)</span> pushes on block <span class="math notranslate nohighlight">\(m_1\)</span> to the left. The prompt asks only for the reaction forces between the blocks, so other forces are not required unless drawing complete free-body diagrams.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">Newton’s third law states that the interaction forces between the two blocks have equal magnitude and opposite direction. If <span class="math notranslate nohighlight">\(\vec{A}_{12}\)</span> is the force on block <span class="math notranslate nohighlight">\(m_2\)</span> due to block <span class="math notranslate nohighlight">\(m_1\)</span>, and <span class="math notranslate nohighlight">\(\vec{A}_{21}\)</span> is the force on block <span class="math notranslate nohighlight">\(m_1\)</span> due to block <span class="math notranslate nohighlight">\(m_2\)</span>, then</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{A}_{12}=-\vec{A}_{21}.
+\]</div>
+<p class="sd-card-text">Because block <span class="math notranslate nohighlight">\(m_1\)</span> pushes block <span class="math notranslate nohighlight">\(m_2\)</span> to the right, <span class="math notranslate nohighlight">\(\vec{A}_{12}\)</span> points in the <span class="math notranslate nohighlight">\(+\hat{i}\)</span> direction. The reaction force <span class="math notranslate nohighlight">\(\vec{A}_{21}\)</span> therefore points in the <span class="math notranslate nohighlight">\(-\hat{i}\)</span> direction.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The reaction-force pair is <span class="math notranslate nohighlight">\(\vec{A}_{12}\)</span> on block <span class="math notranslate nohighlight">\(m_2\)</span> to the right and <span class="math notranslate nohighlight">\(\vec{A}_{21}\)</span> on block <span class="math notranslate nohighlight">\(m_1\)</span> to the left. These forces have equal magnitude and opposite direction, but they act on different blocks, so they do not cancel in either block’s individual free-body diagram.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The Python check in the next cell draws the interaction forces on separate diagrams for the two blocks. This verifies that the third-law pair acts on different objects.</p>
+</div>
+</details></section>
+</div>
+<hr class="docutils" />
+</section>
+<section id="example-problem-block-on-the-table">
+<h2><strong>Example Problem</strong>: Block on the Table<a class="headerlink" href="#example-problem-block-on-the-table" title="Link to this heading">#</a></h2>
+<div class="exercise etamu-exercise admonition" id="Chapter05/ch5_revised_example_markdown-exercise-15">
+
+<p class="admonition-title"></p>
+<section id="exercise-content">
+<p><strong>The Problem</strong></p>
+<blockquote>
+<div><p>A block rests on the table, as shown in Fig. <a class="reference internal" href="newtons-laws.html#blocks-contact-fbd-fig"><span class="std std-numref">5.25</span></a>. A light rope is attached to it and runs over a pulley. The other end of the rope is attached to a second block. The two blocks are said to be coupled. Block <span class="math notranslate nohighlight">\(m_2\)</span> exerts a force due to its weight, which causes the system (two blocks and a string) to accelerate.</p>
+<p>We assume that the string has no mass so that we do not have to consider it as a separate object. Draw a free-body diagram for each block.</p>
+</div></blockquote>
+<figure class="align-default" id="blocks-pulley-fbd-fig">
+<img alt="2 blocks pulley FBD example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/6074c38d1454c55251b327838e603249a92fd375" />
+<figcaption>
+<p><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/5-7-drawing-free-body-diagrams">Drawing Free-body Diagrams</a></span><a class="headerlink" href="#blocks-pulley-fbd-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The two blocks are treated as separate systems connected by a taut, massless rope over a frictionless pulley. For block <span class="math notranslate nohighlight">\(m_1\)</span>, the positive <span class="math notranslate nohighlight">\(x\)</span> direction is to the right, toward the pulley, and the positive <span class="math notranslate nohighlight">\(y\)</span> direction is upward. For block <span class="math notranslate nohighlight">\(m_2\)</span>, the positive <span class="math notranslate nohighlight">\(y\)</span> direction is upward. The table is treated as frictionless, so no friction force acts on <span class="math notranslate nohighlight">\(m_1\)</span>. The rope tension has the same magnitude on both blocks.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">To construct the free-body diagrams, each block is isolated and only forces acting on that block are included.</p>
+<p class="sd-card-text">For block <span class="math notranslate nohighlight">\(m_1\)</span>, the weight <span class="math notranslate nohighlight">\(\vec{w}_1\)</span> acts downward, the normal force <span class="math notranslate nohighlight">\(\vec{N}\)</span> from the table acts upward, and the rope tension <span class="math notranslate nohighlight">\(\vec{T}\)</span> acts horizontally to the right toward the pulley.</p>
+<p class="sd-card-text">For block <span class="math notranslate nohighlight">\(m_2\)</span>, the weight <span class="math notranslate nohighlight">\(\vec{w}_2\)</span> acts downward and the rope tension <span class="math notranslate nohighlight">\(\vec{T}\)</span> acts upward. The tension has the same magnitude in both diagrams because the rope is massless and the pulley is frictionless.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The free-body diagram for <span class="math notranslate nohighlight">\(m_1\)</span> contains <span class="math notranslate nohighlight">\(\vec{N}\)</span> upward, <span class="math notranslate nohighlight">\(\vec{w}_1\)</span> downward, and <span class="math notranslate nohighlight">\(\vec{T}\)</span> to the right. The free-body diagram for <span class="math notranslate nohighlight">\(m_2\)</span> contains <span class="math notranslate nohighlight">\(\vec{T}\)</span> upward and <span class="math notranslate nohighlight">\(\vec{w}_2\)</span> downward. The two blocks require separate free-body diagrams because the forces acting on each block are different, even though their accelerations are linked by the rope.</p>
+<hr class="docutils" />
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The Python check in the next cell draws schematic free-body diagrams for both blocks. The purpose is to verify that the correct forces appear on each isolated block, not to solve for the acceleration or tension.</p>
+</div>
+</details></section>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "saturnaxis/IntroPhysics",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Chapter05"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-applying-newton-s-1st-law-to-your-car"><strong>Example Problem</strong>: Applying Newton’s 1st Law to your car</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-pushing-a-lawnmower"><strong>Example Problem</strong>: Pushing a Lawnmower</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-comparing-forces"><strong>Example Problem</strong>: Comparing Forces</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-thrust-on-a-sled"><strong>Example Problem</strong>: Thrust on a Sled</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-force-on-a-soccer-ball"><strong>Example Problem</strong>: Force on a Soccer Ball</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-mass-of-a-car"><strong>Example Problem</strong>: Mass of a Car</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-several-forces"><strong>Example Problem</strong>: Several Forces</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-lifting-a-stone"><strong>Example Problem</strong>: Lifting a Stone</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-forces-on-a-stationary-object"><strong>Example Problem</strong>: Forces on a Stationary Object</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-force-on-the-cart-part-1"><strong>Example Problem</strong>: Force on the Cart (Part 1)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-force-on-the-cart-part-2"><strong>Example Problem</strong>: Force on the Cart (Part 2)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-weight-on-an-incline"><strong>Example Problem</strong>: Weight on an incline</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-tension-in-a-tightrope"><strong>Example Problem</strong>: Tension in a Tightrope</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-two-blocks-on-an-inclined-plane"><strong>Example Problem</strong>: Two Blocks on an Inclined Plane</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-two-blocks-in-contact"><strong>Example Problem</strong>: Two Blocks in Contact</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-block-on-the-table"><strong>Example Problem</strong>: Block on the Table</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Billy Quarles
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

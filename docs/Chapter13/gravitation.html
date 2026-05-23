@@ -28,7 +28,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -40,8 +40,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/sphinx_iframe.css?v=96c28b52" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="https://cdn.plyr.io/3.8.4/plyr.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=180fcd40" />
-    <link rel="stylesheet" type="text/css" href="../_static/mycss.css?v=3589796e" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=8bfeba2f" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -240,6 +239,16 @@
 <li class="toctree-l1"><a class="reference internal" href="../Chapter12/static-equilibrium-elasticity.html">12. Static Equilibrium and Elasticity</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">13. Gravitation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Chapter14/fluids.html">14. Fluid Mechanics</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Movie Review</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/martian.html">The Martian</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/apollo13.html">Apollo 13</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/october_sky.html">October Sky</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/speed.html">Speed</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/ford_ferrari.html">Ford v Ferrari</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/italian_job.html">The Italian Job</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Movie_review/right_stuff.html">The Right Stuff</a></li>
 </ul>
 
     </div>
@@ -740,7 +749,7 @@ t &amp;= \frac{3.61\times10^{-4}\ {\rm m/s}}{2.17\times10^{-8}\ {\rm m/s^2}}, \\
 <hr class="docutils" />
 <p class="sd-card-text"><strong>The Verification</strong></p>
 <p class="sd-card-text">The verification reproduces the same sequence of calculations used in the analytical solution. It computes the initial force, the initial and final accelerations, the average acceleration used in the estimate, and then applies the constant-acceleration kinematic relations to confirm the estimated impact speed and collision time.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># Define the gravitational constant and spacecraft properties</span>
 <span class="n">G</span> <span class="o">=</span> <span class="mf">6.67e-11</span>          <span class="c1"># Gravitational constant in N·m^2/kg^2</span>
@@ -834,7 +843,7 @@ a = 1.9\times10^{-13}\ {\rm m/s^2}.
 <hr class="docutils" />
 <p class="sd-card-text"><strong>The Verification</strong></p>
 <p class="sd-card-text">The verification computes the galaxy mass in kilograms, converts the separation from light-years to meters, and then applies the same gravitational acceleration formula used in the analytical solution. This confirms that the numerical result is consistent with the model and unit conversions.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># Define constants</span>
 <span class="n">G</span> <span class="o">=</span> <span class="mf">6.67e-11</span>              <span class="c1"># Gravitational constant in N·m^2/kg^2</span>
@@ -927,7 +936,7 @@ g_M &amp;= (9.81\ {\rm m/s^2})\left(\frac{1}{75}\right)\left(\frac{6.37\times10^
 <hr class="docutils" />
 <p class="sd-card-text"><strong>The Verification</strong></p>
 <p class="sd-card-text">The verification reproduces the Earth mass using measured values of <span class="math notranslate nohighlight">\(g\)</span>, <span class="math notranslate nohighlight">\(R_E\)</span>, and <span class="math notranslate nohighlight">\(G\)</span>, and then computes the Moon’s surface gravity using the ratio expression derived above. This confirms consistency with the analytical solution.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># Constants</span>
 <span class="n">G</span> <span class="o">=</span> <span class="mf">6.67e-11</span>
@@ -987,7 +996,7 @@ g &amp;= (9.81\ {\rm m/s^2})\left(\frac{6.37\times10^3\ {\rm km}}{6.37\times10^3
 <hr class="docutils" />
 <p class="sd-card-text"><strong>The Verification</strong></p>
 <p class="sd-card-text">The verification evaluates the ratio expression using the given altitude and Earth’s radius. This confirms that the gravitational acceleration at orbital altitude remains close to the surface value.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># Given values</span>
 <span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>          <span class="c1"># m/s^2</span>
@@ -1024,16 +1033,16 @@ g &amp;= (9.81\ {\rm m/s^2})\left(\frac{6.37\times10^3\ {\rm km}}{6.37\times10^3
 <span class="expanded">Hide code cell content</span>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">matplotlib.colors</span> <span class="kn">import</span> <span class="n">Normalize</span>
-<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">rcParams</span>
-<span class="kn">from</span> <span class="nn">matplotlib.patches</span> <span class="kn">import</span> <span class="n">Circle</span>
-<span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.colors</span><span class="w"> </span><span class="kn">import</span> <span class="n">Normalize</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">rcParams</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.patches</span><span class="w"> </span><span class="kn">import</span> <span class="n">Circle</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">myst_nb</span><span class="w"> </span><span class="kn">import</span> <span class="n">glue</span>
 
-<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
-<span class="kn">import</span> <span class="nn">requests</span>
-<span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="n">BytesIO</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">PIL</span><span class="w"> </span><span class="kn">import</span> <span class="n">Image</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">io</span><span class="w"> </span><span class="kn">import</span> <span class="n">BytesIO</span>
 
 <span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">})</span>
 
@@ -1212,7 +1221,7 @@ T &amp;= \frac{2\pi(6.37\times10^6\ {\rm m})}{7910\ {\rm m/s}} \\
 <hr class="docutils" />
 <p class="sd-card-text"><strong>The Verification</strong></p>
 <p class="sd-card-text">The verification computes the required speed from the condition <span class="math notranslate nohighlight">\(g = v^2/R_\oplus\)</span> and then determines the rotation period from the circumference of Earth. This confirms the analytical results.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># Given values</span>
 <span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>          <span class="c1"># m/s^2</span>
@@ -1354,7 +1363,7 @@ U = -\frac{GM_\oplus m}{r}.
 <hr class="docutils" />
 <p class="sd-card-text"><strong>The Verification</strong></p>
 <p class="sd-card-text">The verification computes the change in gravitational potential energy using the same expression derived above. This confirms the magnitude of the energy required to lift the payload.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># Define constants</span>
 <span class="n">G</span> <span class="o">=</span> <span class="mf">6.67e-11</span>          <span class="c1"># Gravitational constant in N·m^2/kg^2</span>
@@ -1419,11 +1428,11 @@ v_{\rm esc} &amp;= \sqrt{\frac{2Gm_2}{R}}.
 <span class="expanded">Hide code cell source</span>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">G</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.constants</span><span class="w"> </span><span class="kn">import</span> <span class="n">G</span>
 
-<span class="k">def</span> <span class="nf">energy</span><span class="p">(</span><span class="n">v</span><span class="p">,</span><span class="n">U_g</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">energy</span><span class="p">(</span><span class="n">v</span><span class="p">,</span><span class="n">U_g</span><span class="p">):</span>
     <span class="c1">#total specific energy given a potential energy U_g, and </span>
     <span class="c1">#velocity in m/s</span>
     <span class="k">return</span> <span class="n">U_g</span> <span class="o">+</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span>
@@ -1543,7 +1552,7 @@ v_{{\rm esc},\odot} &amp;= (3.76)(11.2\ {\rm km/s}) \\
 <hr class="docutils" />
 <p class="sd-card-text"><strong>The Verification</strong></p>
 <p class="sd-card-text">The verification computes both escape speeds directly using <span class="math notranslate nohighlight">\(v_{\rm esc} = \sqrt{2GM/r}\)</span> and compares them to the ratio-based result.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># Define constants</span>
 <span class="n">G</span> <span class="o">=</span> <span class="mf">6.67e-11</span>           <span class="c1"># Gravitational constant in N·m^2/kg^2</span>
@@ -1614,7 +1623,7 @@ r_f = 2(1.50\times10^{11}\ {\rm m}) = 3.0\times10^{11}\ {\rm m}.
 <hr class="docutils" />
 <p class="sd-card-text"><strong>The Verification</strong></p>
 <p class="sd-card-text">The verification uses the circular-speed relation and conservation of energy to compute the turning-point distance numerically. This confirms that an object launched radially outward with the circular speed at Earth’s orbit reaches exactly twice its initial distance before stopping.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># Define constants</span>
 <span class="n">G</span> <span class="o">=</span> <span class="mf">6.67e-11</span>          <span class="c1"># Gravitational constant in N·m^2/kg^2</span>
@@ -1690,10 +1699,10 @@ T^2 &amp;= \frac{4\pi^2}{GM_\oplus}r^3.
 <span class="expanded">Hide code cell source</span>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">solve_ivp</span>
-<span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">G</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.integrate</span><span class="w"> </span><span class="kn">import</span> <span class="n">solve_ivp</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.constants</span><span class="w"> </span><span class="kn">import</span> <span class="n">G</span>
 
 <span class="c1"># ============================================================</span>
 <span class="c1"># Earth + cannon with inverse-square gravity (no constant g)</span>
@@ -1727,14 +1736,14 @@ T^2 &amp;= \frac{4\pi^2}{GM_\oplus}r^3.
 <span class="c1"># -------------------------</span>
 <span class="c1"># ODE system</span>
 <span class="c1"># -------------------------</span>
-<span class="k">def</span> <span class="nf">deriv</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">deriv</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
     <span class="n">x</span><span class="p">,</span> <span class="n">y_pos</span><span class="p">,</span> <span class="n">vx</span><span class="p">,</span> <span class="n">vy</span> <span class="o">=</span> <span class="n">y</span>
     <span class="n">r</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">y_pos</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
     <span class="n">ax</span> <span class="o">=</span> <span class="o">-</span><span class="n">mu</span> <span class="o">*</span> <span class="n">x</span> <span class="o">/</span> <span class="n">r</span><span class="o">**</span><span class="mi">3</span>
     <span class="n">ay</span> <span class="o">=</span> <span class="o">-</span><span class="n">mu</span> <span class="o">*</span> <span class="n">y_pos</span> <span class="o">/</span> <span class="n">r</span><span class="o">**</span><span class="mi">3</span>
     <span class="k">return</span> <span class="p">[</span><span class="n">vx</span><span class="p">,</span> <span class="n">vy</span><span class="p">,</span> <span class="n">ax</span><span class="p">,</span> <span class="n">ay</span><span class="p">]</span>
 <span class="c1"># Stop when hitting Earth</span>
-<span class="k">def</span> <span class="nf">hit_earth</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">hit_earth</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
     <span class="n">x</span><span class="p">,</span> <span class="n">y_pos</span> <span class="o">=</span> <span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">y</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">y_pos</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="n">R_E</span>
 <span class="n">hit_earth</span><span class="o">.</span><span class="n">terminal</span> <span class="o">=</span> <span class="kc">True</span>
@@ -1847,7 +1856,7 @@ T &amp;= \frac{2\pi(6770\ {\rm km})}{7.67\ {\rm km/s}} \\
 <hr class="docutils" />
 <p class="sd-card-text"><strong>The Verification</strong></p>
 <p class="sd-card-text">The verification computes the orbital radius from Earth’s radius and the ISS altitude, evaluates the orbital speed, and then determines the period using the circumference of the orbit. This confirms the analytical results.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># Define constants</span>
 <span class="n">G</span> <span class="o">=</span> <span class="mf">6.67e-11</span>          <span class="c1"># Gravitational constant in N·m^2/kg^2</span>
@@ -1931,7 +1940,7 @@ M_\oplus &amp;= \frac{4\pi^2 r_M^3}{G T^2} \\
 <hr class="docutils" />
 <p class="sd-card-text"><strong>The Verification</strong></p>
 <p class="sd-card-text">The verification computes Earth’s mass directly from the Moon’s orbital radius and period, then repeats the calculation using the ratio method with <span class="math notranslate nohighlight">\(r \approx 60R_\oplus\)</span>. This confirms that both approaches produce nearly the same value.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># Define constants</span>
 <span class="n">G</span> <span class="o">=</span> <span class="mf">6.67e-11</span>          <span class="c1"># Gravitational constant in N·m^2/kg^2</span>
@@ -2007,7 +2016,7 @@ T &amp;= \frac{\pi(2.38\times10^{22}\ {\rm m})}{4.7\times10^4\ {\rm m/s}} \\
 <hr class="docutils" />
 <p class="sd-card-text"><strong>The Verification</strong></p>
 <p class="sd-card-text">The verification computes the galaxy mass, converts the separation into meters, and evaluates the orbital speed using the derived expression. It then computes the orbital period using the orbital radius and speed. This confirms the analytical results.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># Define constants</span>
 <span class="n">G</span> <span class="o">=</span> <span class="mf">6.67e-11</span>              <span class="c1"># Gravitational constant in N·m^2/kg^2</span>
@@ -2097,7 +2106,7 @@ K_{\rm orbit}
 <hr class="docutils" />
 <p class="sd-card-text"><strong>The Verification</strong></p>
 <p class="sd-card-text">The verification computes the total energy at Earth’s surface and in orbit using the standard expressions for gravitational potential and circular-orbit energy. The difference gives the required energy input, and the orbital kinetic energy is computed independently from the orbital-speed relation.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># Define constants</span>
 <span class="n">G</span> <span class="o">=</span> <span class="mf">6.67e-11</span>          <span class="c1"># Gravitational constant in N·m^2/kg^2</span>
@@ -2154,13 +2163,13 @@ y &amp;= k + b\sin{\theta},
 <span class="expanded">Hide code cell source</span>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">matplotlib.patches</span> <span class="kn">import</span> <span class="n">Arc</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.patches</span><span class="w"> </span><span class="kn">import</span> <span class="n">Arc</span>
 
-<span class="k">def</span> <span class="nf">ellipse_x</span><span class="p">(</span><span class="n">h</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">theta</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">ellipse_x</span><span class="p">(</span><span class="n">h</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">theta</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">h</span> <span class="o">+</span> <span class="n">a</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">ellipse_y</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">theta</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">ellipse_y</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">theta</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">k</span> <span class="o">+</span> <span class="n">b</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span>
 
 <span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mf">0.001</span><span class="p">)</span>
@@ -2246,13 +2255,13 @@ y &amp;= k + b\sin{\theta},
 <span class="expanded">Hide code cell source</span>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">matplotlib.patches</span> <span class="kn">import</span> <span class="n">Arc</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.patches</span><span class="w"> </span><span class="kn">import</span> <span class="n">Arc</span>
 
-<span class="k">def</span> <span class="nf">ellipse_x</span><span class="p">(</span><span class="n">h</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">theta</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">ellipse_x</span><span class="p">(</span><span class="n">h</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">theta</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">h</span> <span class="o">+</span> <span class="n">a</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">ellipse_y</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">theta</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">ellipse_y</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">theta</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">k</span> <span class="o">+</span> <span class="n">b</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span>
 
 <span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mf">0.001</span><span class="p">)</span>
@@ -2502,7 +2511,7 @@ r_{\rm ap} &amp;= 2(17.8) - 0.586 \\
 <hr class="docutils" />
 <p class="sd-card-text"><strong>The Verification</strong></p>
 <p class="sd-card-text">The verification uses Kepler’s third law in AU–yr units to compute the semimajor axis and then applies the ellipse relation to find the aphelion distance.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># Given values</span>
 <span class="n">T</span> <span class="o">=</span> <span class="mf">75.3</span>              <span class="c1"># Orbital period in years</span>
@@ -2641,7 +2650,7 @@ M_{\rm Moon} &amp;= 0.0123\,M_\oplus
 <hr class="docutils" />
 <p class="sd-card-text"><strong>The Verification</strong></p>
 <p class="sd-card-text">The verification computes the tidal-force ratio using the proportionality <span class="math notranslate nohighlight">\(F_{\rm tidal} \propto M/d^3\)</span>. This confirms that the Moon’s tidal effect is a little more than twice that of the Sun.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># Define mass ratios</span>
 <span class="n">M_moon_E</span> <span class="o">=</span> <span class="mf">0.0123</span>          <span class="c1"># Mass of the Moon in Earth masses</span>
@@ -2810,7 +2819,7 @@ R_{S,\oplus} &amp;= \frac{2GM_\oplus}{c^2} \\
 <hr class="docutils" />
 <p class="sd-card-text"><strong>The Verification</strong></p>
 <p class="sd-card-text">The verification computes the Schwarzschild radii of the Sun and Earth from the standard formula, then uses Earth’s Schwarzschild radius to compute the corresponding average density. Finally, it compares that density with the density of an atomic nucleus.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># Define constants</span>
 <span class="n">G</span> <span class="o">=</span> <span class="mf">6.67e-11</span>               <span class="c1"># Gravitational constant in N·m^2/kg^2</span>

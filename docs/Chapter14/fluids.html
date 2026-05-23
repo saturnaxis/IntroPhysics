@@ -28,7 +28,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -40,8 +40,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/sphinx_iframe.css?v=96c28b52" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="https://cdn.plyr.io/3.8.4/plyr.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=180fcd40" />
-    <link rel="stylesheet" type="text/css" href="../_static/mycss.css?v=3589796e" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=8bfeba2f" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -961,7 +960,7 @@ F &amp;= P A \\
 <hr class="docutils" />
 <p class="sd-card-text"><strong>The Verification</strong></p>
 <p class="sd-card-text">The calculation evaluates the hydrostatic pressure at the average depth and multiplies by the area of the dam to obtain the total force.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># given values</span>
 <span class="n">rho</span> <span class="o">=</span> <span class="mi">1000</span>      <span class="c1"># density of water (in kg/m^3)</span>
@@ -1470,7 +1469,7 @@ F_2 &amp;= \left(\frac{r_2^2}{r_1^2}\right) F_1 \\
 <hr class="docutils" />
 <p class="sd-card-text"><strong>The Verification</strong></p>
 <p class="sd-card-text">The code below computes the area ratio from the cylinder radii and then uses Pascal’s principle to calculate the force produced by each wheel cylinder.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># given values</span>
 <span class="n">F1</span> <span class="o">=</span> <span class="mf">500.0</span>       <span class="c1"># force applied to the pedal cylinder (N)</span>
@@ -1795,7 +1794,7 @@ v_2 &amp;= \left(\frac{r_1^2}{r_2^2}\right) v_1 \\
 <hr class="docutils" />
 <p class="sd-card-text"><strong>The Verification</strong></p>
 <p class="sd-card-text">The calculation computes the fluid speed in the hose using the flow rate and cross-sectional area, then applies continuity to determine the speed in the nozzle. This mirrors the analytical method used above.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># given values</span>
 <span class="n">Q</span> <span class="o">=</span> <span class="mf">5.00e-4</span>      <span class="c1"># flow rate (m^3/s)</span>
@@ -1954,7 +1953,7 @@ P_1 &amp;= 1.01\times10^{5}\ {\rm N/m^2} + \frac{1}{2}(1000\ {\rm kg/m^3})\left[
 <hr class="docutils" />
 <p class="sd-card-text"><strong>The Verification</strong></p>
 <p class="sd-card-text">The calculation evaluates Bernoulli’s equation using the given speeds and fluid density to compute the pressure difference between the hose and nozzle. This directly mirrors the analytical steps shown above.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># given values</span>
 <span class="n">P2</span> <span class="o">=</span> <span class="mf">1.01e5</span>     <span class="c1"># nozzle pressure (Pa)</span>
@@ -2069,7 +2068,7 @@ P_2 &amp;= P_1 + \frac{1}{2}\rho\left(v_1^2 - v_2^2\right) - \rho g h_2,\\
 <hr class="docutils" />
 <p class="sd-card-text"><strong>The Verification</strong></p>
 <p class="sd-card-text">The code below first computes the fluid speeds from the flow rate and the circular cross-sectional areas, then substitutes those values into Bernoulli’s equation to compute the nozzle pressure. This mirrors the analytical solution directly.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># given values</span>
 <span class="n">Q</span> <span class="o">=</span> <span class="mf">4.00e-2</span>      <span class="c1"># flow rate (m^3/s)</span>
@@ -2438,7 +2437,7 @@ Q' = \frac{Q}{16} = \frac{3.84\times10^{-3}\ {\rm m^3/s}}{16} = 2.40\times10^{-4
 <hr class="docutils" />
 <p class="sd-card-text"><strong>The Verification</strong></p>
 <p class="sd-card-text">The code below evaluates Poiseuille’s law for the original and reduced conduit sizes, then computes the room volume and the replacement time using the original flow rate. This mirrors the same sequence of calculations used in the analytical solution.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># given values</span>
 <span class="n">d1</span> <span class="o">=</span> <span class="mf">0.1800</span>          <span class="c1"># original conduit diameter (m)</span>
@@ -2531,7 +2530,7 @@ v &amp;= \frac{(2000)(1.81\times10^{-5}\ {\rm Pa\cdot s})}{2(1.29\ {\rm kg/m^3})
 <hr class="docutils" />
 <p class="sd-card-text"><strong>The Verification</strong></p>
 <p class="sd-card-text">The code below computes the flow speed from the volume flow rate and conduit radius, then uses that speed to evaluate the Reynolds number. It then solves the Reynolds-number relation for the threshold speed corresponding to the onset of turbulence.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># given values</span>
 <span class="n">Q</span> <span class="o">=</span> <span class="mf">3.84e-3</span>      <span class="c1"># volume flow rate (m^3/s)</span>
