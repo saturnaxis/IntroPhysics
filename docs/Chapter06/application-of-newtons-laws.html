@@ -594,9 +594,24 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="application-of-newton-s-laws">
 <h1><span class="section-number">6. </span>Application of Newton’s Laws<a class="headerlink" href="#application-of-newton-s-laws" title="Link to this heading">#</a></h1>
-<p>May 27, 2026 | 13068 words | 65 min read</p>
+<p>May 29, 2026 | 13384 words | 67 min read</p>
+<div class="tip admonition">
+<p class="admonition-title">Chapter roadmap</p>
+<p>This chapter applies Newton’s laws to more realistic situations involving several common forces. We will use free-body diagrams to analyze systems with friction, tension, normal forces, springs, and circular motion, while keeping the connection between force and acceleration at the center of each problem.</p>
+<p>As you read, focus on three questions:</p>
+<ol class="arabic simple">
+<li><p>Which forces act on the object or system?</p></li>
+<li><p>Which direction should the coordinate axes point?</p></li>
+<li><p>What physical condition determines the acceleration or force balance?</p></li>
+</ol>
+<p>These ideas will be used to solve problems involving connected objects, inclined planes, friction, drag, springs, and circular motion.</p>
+</div>
 <section id="solving-newton-s-laws">
 <h2><span class="section-number">6.1. </span>Solving Newton’s Laws<a class="headerlink" href="#solving-newton-s-laws" title="Link to this heading">#</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This chapter combines several tools developed earlier in the course. We use <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter02/vectors.html#coordinate-systems-and-vector-components">vector components</a> from Chapter 2, <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter04/motion-in-2D-3D.html#acceleration-vector">acceleration vectors</a> from Chapter 4, and <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter05/newtons-laws.html#drawing-free-body-diagrams">free-body diagrams</a> from Chapter 5 to apply Newton’s second law to real systems.</p>
+</div>
 <section id="problem-solving-strategies">
 <h3><span class="section-number">6.1.1. </span>Problem-Solving Strategies<a class="headerlink" href="#problem-solving-strategies" title="Link to this heading">#</a></h3>
 <div class="note admonition">
@@ -683,6 +698,7 @@ document.write(`
 <p class="admonition-title">Checkpoint</p>
 <p>If an object is moving at constant velocity, is it in equilibrium? What does that imply about <span class="math notranslate nohighlight">\(\sum \vec{F}\)</span>?</p>
 </div>
+<p>Particle equilibrium is the force version of constant velocity. If the acceleration is zero, Newton’s second law becomes <span class="math notranslate nohighlight">\(\sum \vec{F}=0\)</span>. This extends the equilibrium ideas from <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter05/newtons-laws.html#newtons-1st-law">Newton’s first law</a> and the free-body-diagram workflow from <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter05/newtons-laws.html#drawing-free-body-diagrams">Chapter 5</a>.</p>
 <section id="example-problem-different-tensions-at-different-angles">
 <h4><span class="section-number">6.1.2.1. </span><strong>Example Problem</strong>: Different Tensions at Different Angles<a class="headerlink" href="#example-problem-different-tensions-at-different-angles" title="Link to this heading">#</a></h4>
 <div class="exercise etamu-exercise admonition" id="Chapter06/application-of-newtons-laws-exercise-0">
@@ -780,6 +796,7 @@ T_2 &amp;= T_1\frac{\cos 30^\circ}{\cos 45^\circ} \\
 <section id="particle-acceleration">
 <h3><span class="section-number">6.1.3. </span>Particle Acceleration<a class="headerlink" href="#particle-acceleration" title="Link to this heading">#</a></h3>
 <p>Instead of reducing the problem to a particle in <em>static</em> equilibrium (i.e., <span class="math notranslate nohighlight">\(\sum F_{\rm net} = 0\)</span>), we can also reduce complex problems into one where the net force is nonzero, or a particle with an acceleration.</p>
+<p>When the net force is not zero, the object accelerates in the direction of the net force. The vector equation <span class="math notranslate nohighlight">\(\sum \vec{F}=m\vec{a}\)</span> is solved component by component, using the same vector-component ideas introduced in <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter02/vectors.html#coordinate-systems-and-vector-components">Chapter 2</a>.</p>
 <p>We’ll look through 4 examples that illustrate different ways we can decompose the complex motion into a simpler one:</p>
 <ul class="simple">
 <li><p>Drag force on a barge,</p></li>
@@ -1392,6 +1409,7 @@ T &amp;= (2.00\ {\rm kg})(9.81\ {\rm m/s^2} + 3.27\ {\rm m/s^2}) \\
 <section id="newton-s-laws-of-motion-and-kinematics">
 <h3><span class="section-number">6.1.4. </span>Newton’s Laws of Motion and Kinematics<a class="headerlink" href="#newton-s-laws-of-motion-and-kinematics" title="Link to this heading">#</a></h3>
 <p>Newton’s laws of motion can also be integrated with other concepts to solve problems of motion.  For example, forces produce accelerations, which was the main topic when discussing kinematics.</p>
+<p>Newton’s second law gives the acceleration. Once the acceleration is known, the motion is found using the kinematics tools developed earlier, including constant-acceleration motion in Chapter 3 and vector motion in <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter04/motion-in-2D-3D.html">Chapter 4</a>.</p>
 <p>For problems that involve various types of forces, acceleration, velocity and/or position, it helps to identify the principles involved when listing the givens and quantities to be calculated.  The following examples illustrate how to apply the <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter06/application-of-newtons-laws.html#problem-solving-strategies"><strong>problem-solving strategies</strong></a>.  These example problems are</p>
 <ul class="simple">
 <li><p>Soccer player at top speed,</p></li>
@@ -1897,6 +1915,7 @@ The percent difference between the two methods is 9.86e-10%.
 <li><p>Friction opposed relative motion between systems in contact, but also allows us to move.</p></li>
 <li><p>Try walking on ice.  You need boots that grip (i.e., increase friction).</p></li>
 </ul>
+<p>Friction is one of the common contact forces introduced in <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter05/newtons-laws.html#common-forces">Chapter 5</a>. In this chapter, we use friction quantitatively by adding it to the free-body diagram and applying Newton’s second law.</p>
 <section id="static-and-kinetic-friction">
 <h3><span class="section-number">6.2.1. </span>Static and Kinetic Friction<a class="headerlink" href="#static-and-kinetic-friction" title="Link to this heading">#</a></h3>
 <div class="note admonition">
@@ -1939,16 +1958,16 @@ The percent difference between the two methods is 9.86e-10%.
 <div class="note admonition">
 <p class="admonition-title">Magnitude of Static and Kinetic Friction</p>
 <p>The magnitude of static friction <span class="math notranslate nohighlight">\(f_s\)</span> is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-846555f6-28d7-4e93-bc16-d64b4558aadf">
-<span class="eqno">(6.1)<a class="headerlink" href="#equation-846555f6-28d7-4e93-bc16-d64b4558aadf" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e7b9b894-ae78-4f2f-b7da-262746689375">
+<span class="eqno">(6.1)<a class="headerlink" href="#equation-e7b9b894-ae78-4f2f-b7da-262746689375" title="Permalink to this equation">#</a></span>\[\begin{align}
 f_s \leq \mu_s N,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\mu_s\)</span> (or <code class="docutils literal notranslate"><span class="pre">\mu_s</span></code>) is the coefficient of static friction and <span class="math notranslate nohighlight">\(N\)</span> is the magnitude fo the normal force.  Static friction is a responsive force that increases to be equal and opposite to whatever force is exerted.  Once the applied force exceeds <span class="math notranslate nohighlight">\(f_s(\text{max})\)</span>, the object moves, and</p>
 <div class="math notranslate nohighlight">
 \[ f_s(\text{max}) = \mu_s N.\]</div>
 <p>The magnitude of kinetic friction <span class="math notranslate nohighlight">\(f_k\)</span> is given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3e07eae6-8d48-4a4f-981a-2fbbd26c6bb6">
-<span class="eqno">(6.2)<a class="headerlink" href="#equation-3e07eae6-8d48-4a4f-981a-2fbbd26c6bb6" title="Permalink to this equation">#</a></span>\[\begin{align} 
+<div class="amsmath math notranslate nohighlight" id="equation-1928f633-2fb3-4809-aac4-ed375923164a">
+<span class="eqno">(6.2)<a class="headerlink" href="#equation-1928f633-2fb3-4809-aac4-ed375923164a" title="Permalink to this equation">#</a></span>\[\begin{align} 
 f_k = \mu_k N,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\mu_k\)</span> (or <code class="docutils literal notranslate"><span class="pre">\mu_k</span></code>) is the coefficient of kinetic friction.  Figure <a class="reference internal" href="#friction-fig"><span class="std std-numref">6.10</span></a> illustrates the transition from static friction (stationary in Fig. <a class="reference internal" href="#friction-fig"><span class="std std-numref">6.10</span></a>a) to kinetic friction (moving in Fig. <a class="reference internal" href="#friction-fig"><span class="std std-numref">6.10</span></a>b).</p>
@@ -2186,6 +2205,7 @@ When the applied force is 180 N, the friction magnitude is 120 N and the frictio
 <section id="friction-and-the-inclined-plane">
 <h3><span class="section-number">6.2.2. </span>Friction and the Inclined Plane<a class="headerlink" href="#friction-and-the-inclined-plane" title="Link to this heading">#</a></h3>
 <p>Friction plays an obvious role when there is an object on a slope.  It could be a crate pushed up a ramp or a skateboarder coasting down a mountain, but the basic physics is the same.</p>
+<p>Incline problems are easier when the axes are rotated so that one axis is parallel to the slope and the other is perpendicular to it. This uses the same component logic from <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter02/vectors.html#vector-components">Chapter 2</a> and extends the incline free-body-diagram work from <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter05/newtons-laws.html#example-problem-weight-on-an-incline">Chapter 5</a>.</p>
 <p>We generalize the sloping surface and call it an inclined plane.  Recall the <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter05/newtons-laws.html#example-problem-weight-on-an-incline"><strong>Weight on an incline</strong></a> problem, where we orient our system axes so that the motion is along the <span class="math notranslate nohighlight">\(x\)</span>-axis only (i.e., flat).</p>
 <p>When an object rests on a horizontal surface, the normal force supporting it is equal in magnitude to its weight.  Additionally, simple friction is always proportional to the normal force.  However with the inclined plane, we must find the force acting on the object that is directed perpendicular to the surface (i.e., it is a <em>component of the weight</em>).</p>
 <p>Consider an object that slides down an inclined plane at <em>constant velocity</em> (i.e., the net force is zero).  Such conditions can be used to measure the coefficient of kinetic friction between two objects.</p>
@@ -2587,6 +2607,7 @@ a_x &amp;= (9.81\ {\rm m/s^2})(\sin 13^\circ - 0.20\cos 13^\circ) \\
 </section>
 <section id="centripetal-force">
 <h2><span class="section-number">6.3. </span>Centripetal Force<a class="headerlink" href="#centripetal-force" title="Link to this heading">#</a></h2>
+<p>Chapter 4 introduced <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter04/motion-in-2D-3D.html#centripetal-acceleration">centripetal acceleration</a> as the inward acceleration required for circular motion. In this section, we apply Newton’s second law to identify which real force, or combination of forces, provides that inward acceleration.</p>
 <p>Recall that an object undergoing circular motion must be accelerating because the direction of the object’s velocity is changing.  This centripetal acceleration is given by:</p>
 <div class="math notranslate nohighlight">
 \[ \vec{a}_c = \frac{v^2}{r}\ \hat{r}, \]</div>
@@ -2617,8 +2638,8 @@ According to Newton’s 2nd law, the net force is mass times acceleration or <sp
 <div class="math notranslate nohighlight">
 \[ F_c = m a_c.\]</div>
 <p>Because we had 2 expressions for the centripetal acceleration, we therefore have two expressions for the centripetal force:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-61f41745-1820-4148-85d6-8116dc7a5613">
-<span class="eqno">(6.3)<a class="headerlink" href="#equation-61f41745-1820-4148-85d6-8116dc7a5613" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e86df13e-cdee-47ec-8b55-8c4b6e226e1d">
+<span class="eqno">(6.3)<a class="headerlink" href="#equation-e86df13e-cdee-47ec-8b55-8c4b6e226e1d" title="Permalink to this equation">#</a></span>\[\begin{align}
 F_c &amp;= \frac{mv^2}{r}, \\
 &amp;= mr\omega^2.
 \end{align}\]</div>
@@ -2759,8 +2780,8 @@ F_y = N\cos{\theta} - mg &amp;= 0, \\
 \tan{\theta} &amp;= \frac{v^2}{rg}.
 \end{align*}\]</div>
 <p>Taking the inverse tangent gives</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c6d585da-f8f4-476d-961b-65e70c6b4f84">
-<span class="eqno">(6.4)<a class="headerlink" href="#equation-c6d585da-f8f4-476d-961b-65e70c6b4f84" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-8559013a-7100-420e-bca7-ab5633a291e2">
+<span class="eqno">(6.4)<a class="headerlink" href="#equation-8559013a-7100-420e-bca7-ab5633a291e2" title="Permalink to this equation">#</a></span>\[\begin{align}
 \theta = \tan^{-1}\left(\frac{v^2}{rg}\right).
 \end{align}\]</div>
 <div class="tip margin checkpoint admonition">
@@ -3028,8 +3049,8 @@ v_{\rm T} &amp;= \sqrt{\frac{2mg}{\rho CA}}
 <div class="note admonition">
 <p class="admonition-title"><strong>Stokes’ Law</strong></p>
 <p>For a spherical object falling in a medium, the drag force is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-080f44b9-188e-419a-a9a9-0098d64b78f2">
-<span class="eqno">(6.6)<a class="headerlink" href="#equation-080f44b9-188e-419a-a9a9-0098d64b78f2" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-96718b20-7a06-4d85-ba44-1dc691f2b8ff">
+<span class="eqno">(6.6)<a class="headerlink" href="#equation-96718b20-7a06-4d85-ba44-1dc691f2b8ff" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{F}_s = 6\pi r \eta \vec{\rm vv},
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(r\)</span> is the radius of the sphere, <span class="math notranslate nohighlight">\(\eta\)</span> is the <a class="reference external" href="https://en.wikipedia.org/wiki/Viscosity">viscosity</a> of the fluid, and <span class="math notranslate nohighlight">\(\vec{\rm v}\)</span> is the object’s velocity.</p>

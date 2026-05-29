@@ -516,7 +516,7 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-basic-properties-of-potential-energy">8.1.1.1. <strong>Example Problem</strong>: Basic Properties of Potential Energy</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#systems-of-several-particles">8.1.2. Systems Of Several Particles</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#systems-of-several-particles">8.1.2. Systems of Several Particles</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-potential-energy">8.1.3. Types of Potential Energy</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#gravitational-potential-energy-near-earth-s-surface">8.1.3.1. Gravitational potential energy near Earth’s surface</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-gravitational-potential-energy-of-a-hiker">8.1.3.1.1. <strong>Example Problem</strong>: Gravitational Potential Energy of a Hiker</a></li>
@@ -580,22 +580,33 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="potential-energy-and-conservation-of-energy">
 <h1><span class="section-number">8. </span>Potential Energy and Conservation of Energy<a class="headerlink" href="#potential-energy-and-conservation-of-energy" title="Link to this heading">#</a></h1>
-<p>May 27, 2026 | 7323 words | 37 min read</p>
+<p>May 29, 2026 | 7873 words | 39 min read</p>
+<div class="tip admonition">
+<p class="admonition-title">Chapter roadmap</p>
+<p>This chapter turns work into a more flexible bookkeeping tool by introducing potential energy and then combining potential and kinetic energy into mechanical energy. The goal is to decide when energy can be transferred back and forth within a system and when energy leaves the mechanical system through non-conservative work.</p>
+<p>As you read, focus on three questions:</p>
+<ol class="arabic simple">
+<li><p>How does the choice of system determine which forms of potential energy belong in the problem?</p></li>
+<li><p>How can the same physical motion be described using work, potential energy, or conservation of mechanical energy?</p></li>
+<li><p>How do energy diagrams show allowed motion, turning points, and equilibrium?</p></li>
+</ol>
+<p>These ideas let you solve motion problems without always tracking the full path or solving for the acceleration at every instant.</p>
+</div>
 <section id="potential-energy-of-a-system">
 <h2><span class="section-number">8.1. </span>Potential Energy of a System<a class="headerlink" href="#potential-energy-of-a-system" title="Link to this heading">#</a></h2>
-<p>The work done on an object by gravity (near Earth’s surface) is function only of the displacement <span class="math notranslate nohighlight">\(\Delta y\)</span> (or a height <span class="math notranslate nohighlight">\(h\)</span>).  This property allows us to define a different kind of energy for the system, which is called <strong>potential energy</strong> (in contrast to the kinetic energy).</p>
+<p>The work done on an object by gravity (near Earth’s surface) is a function only of the displacement <span class="math notranslate nohighlight">\(\Delta y\)</span> (or a height <span class="math notranslate nohighlight">\(h\)</span>).  This property allows us to define a different kind of energy for the system, which is called <strong>potential energy</strong> (in contrast to the kinetic energy).</p>
 <section id="potential-energy-basics">
 <h3><span class="section-number">8.1.1. </span>Potential Energy Basics<a class="headerlink" href="#potential-energy-basics" title="Link to this heading">#</a></h3>
 <p>Consider the kicking of a football (see Fig. <a class="reference internal" href="#football-energy-example"><span class="std std-numref">8.1</span></a>).  Ignoring friction and air resistance, we begin the analysis immediately after the kick, or at the start of the projectile motion of the ball.</p>
 <ul class="simple">
 <li><p>As the football rises, the work done by the gravitational force on the ball is <em>negative</em>, because the ball’s displacement is positive vertically and the gravitational force is negative vertically.</p></li>
-<li><p>The ball slowed down until it reaches its highest point in the motion, thereby decreasing the ball’s kinetic energy.</p></li>
+<li><p>The ball slows down until it reaches its highest point in the motion, thereby decreasing the ball’s kinetic energy.</p></li>
 </ul>
 <p>The loss in kinetic energy translates to a gain in the gravitational potential energy of the football-Earth system.</p>
 <figure class="align-default" id="football-energy-example">
-<img alt="football energy example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/13ef169de2a398af22938e0a021d39673f02d362" />
+<img alt="football trajectory showing kinetic and gravitational potential energy changes" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/13ef169de2a398af22938e0a021d39673f02d362" />
 <figcaption>
-<p><span class="caption-number">Fig. 8.1 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#football-energy-example" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 8.1 </span><span class="caption-text">As a football starts its descent toward the receiver, gravitational potential energy is converted back into kinetic energy. During the upward part of the motion, kinetic energy decreases while gravitational potential energy increases; during the downward part, the transfer reverses. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/8-1-potential-energy-of-a-system">Potential Energy of a System</a>.</span><a class="headerlink" href="#football-energy-example" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
@@ -603,14 +614,14 @@ document.write(`
 <li><p>The ball speeds up, which indicates an increase in kinetic energy.</p></li>
 </ul>
 <p>Therefore, energy is converted from gravitational potential energy back into kinetic energy.</p>
-<p>Based on this scenario, we define difference of potential energy from point <span class="math notranslate nohighlight">\(A\)</span> to <span class="math notranslate nohighlight">\(B\)</span> as the negative of the work done, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-18de84fc-1889-4001-9250-34bd3182c5ca">
-<span class="eqno">(8.1)<a class="headerlink" href="#equation-18de84fc-1889-4001-9250-34bd3182c5ca" title="Permalink to this equation">#</a></span>\[\begin{align}
+<p>Based on this scenario, we define the difference in potential energy from point <span class="math notranslate nohighlight">\(A\)</span> to <span class="math notranslate nohighlight">\(B\)</span> as the negative of the work done, or</p>
+<div class="amsmath math notranslate nohighlight" id="equation-b4d24129-7738-44d1-9c86-aa85bf436a32">
+<span class="eqno">(8.1)<a class="headerlink" href="#equation-b4d24129-7738-44d1-9c86-aa85bf436a32" title="Permalink to this equation">#</a></span>\[\begin{align}
 \Delta U_{AB} &amp;= U_B - U_A = -W_{AB}.
 \end{align}\]</div>
 <p>We call this a <strong>potential energy difference</strong>, not just an absolute potential energy.  Thus, we define the potential energy relative to a given position <span class="math notranslate nohighlight">\(\vec{r}\)</span> and initial position <span class="math notranslate nohighlight">\(\vec{r}_o\)</span>.  We do this by rewriting the potential energy function as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a2fedcf1-4e1e-47af-9463-e4945801128d">
-<span class="eqno">(8.2)<a class="headerlink" href="#equation-a2fedcf1-4e1e-47af-9463-e4945801128d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-57e6a569-1c5b-45b6-bced-8abdd1d69210">
+<span class="eqno">(8.2)<a class="headerlink" href="#equation-57e6a569-1c5b-45b6-bced-8abdd1d69210" title="Permalink to this equation">#</a></span>\[\begin{align}
 \Delta U &amp;= U\left(\vec{r}\right) - U\left(\vec{r}_o \right).
 \end{align}\]</div>
 <div class="admonition note">
@@ -623,13 +634,17 @@ document.write(`
 </ul>
 <p>Then the potential energy with respect to zero at <span class="math notranslate nohighlight">\(\vec{r}_o\)</span> is just</p>
 <div class="math notranslate nohighlight">
-\[ \Delta U = U\left(\vec{r}\right). \]</div>
+\[\Delta U = U\left(\vec{r}\right).\]</div>
 </div>
 <p>As long as there is no friction (or air resistance), the change in kinetic energy of the football equals the negative of the change in gravitational potential energy of the football.  This can be generalized to</p>
-<div class="amsmath math notranslate nohighlight" id="equation-92fc32b0-73e7-4d98-82ab-78119616e2f0">
-<span class="eqno">(8.3)<a class="headerlink" href="#equation-92fc32b0-73e7-4d98-82ab-78119616e2f0" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-dafc6cc8-7486-4e2a-a913-cfa2eb2c57fa">
+<span class="eqno">(8.3)<a class="headerlink" href="#equation-dafc6cc8-7486-4e2a-a913-cfa2eb2c57fa" title="Permalink to this equation">#</a></span>\[\begin{align}
 \Delta K_{AB} &amp;= -\Delta U_{AB}.
 \end{align}\]</div>
+<div class="tip margin checkpoint admonition">
+<p class="admonition-title">Checkpoint</p>
+<p>If you change the zero reference level for gravitational potential energy, does the change in gravitational potential energy between two fixed heights change? Explain briefly.</p>
+</div>
 <section id="example-problem-basic-properties-of-potential-energy">
 <h4><span class="section-number">8.1.1.1. </span><strong>Example Problem</strong>: Basic Properties of Potential Energy<a class="headerlink" href="#example-problem-basic-properties-of-potential-energy" title="Link to this heading">#</a></h4>
 <div class="exercise etamu-exercise admonition" id="Chapter08/potential-energy-conservation-exercise-0">
@@ -645,25 +660,27 @@ document.write(`
 <p><strong>(b)</strong> What is the particle’s potential energy at <span class="math notranslate nohighlight">\(x = 1\ \mathrm{m}\)</span> with
 respect to a given <span class="math notranslate nohighlight">\(0.5\ \mathrm{J}\)</span> of potential energy at <span class="math notranslate nohighlight">\(x = 0\)</span>?</p>
 </div></blockquote>
-<hr class="docutils" />
-<p><strong>The Model</strong></p>
-<p>The system consists of a single particle constrained to move along the <span class="math notranslate nohighlight">\(x\)</span>-axis. The force acting on the particle depends only on its position along
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The system consists of a single particle constrained to move along the <span class="math notranslate nohighlight">\(x\)</span>-axis. The force acting on the particle depends only on its position along
 the <span class="math notranslate nohighlight">\(x\)</span>-axis and points along the same axis, with the negative sign indicating that the force acts opposite the direction of increasing <span class="math notranslate nohighlight">\(x\)</span>. No other forces
 act on the particle.</p>
-<p>The motion is treated as one-dimensional, with positive displacement defined in the <span class="math notranslate nohighlight">\(+x\)</span> direction. Because the force depends only on
+<p class="sd-card-text">The motion is treated as one-dimensional, with positive displacement defined in the <span class="math notranslate nohighlight">\(+x\)</span> direction. Because the force depends only on
 position and not on the path taken, it is conservative, and the work done by the force depends only on the initial and final positions. A potential energy
 function can therefore be defined for this system.</p>
 <hr class="docutils" />
-<p><strong>The Math</strong></p>
-<p>For a conservative force, the change in potential energy between two points is
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">For a conservative force, the change in potential energy between two points is
 defined as the negative of the work done by the force.</p>
-<p>The work done by a force during an infinitesimal displacement is given by the dot product of the force and the displacement. Because both the force and the
+<p class="sd-card-text">The work done by a force during an infinitesimal displacement is given by the dot product of the force and the displacement. Because both the force and the
 displacement lie along the <span class="math notranslate nohighlight">\(x\)</span>-axis, this dot product reduces to ordinary multiplication:</p>
 <div class="math notranslate nohighlight">
 \[
 dW = \vec{F} \cdot d\vec{r} = F\,dx = -a x^2\,dx.
 \]</div>
-<p><strong>(a)</strong> The change in potential energy between <span class="math notranslate nohighlight">\(x_A\)</span> and <span class="math notranslate nohighlight">\(x_B\)</span> is obtained by integrating the work expression between the initial and final positions and
+<p class="sd-card-text"><strong>(a)</strong> The change in potential energy between <span class="math notranslate nohighlight">\(x_A\)</span> and <span class="math notranslate nohighlight">\(x_B\)</span> is obtained by integrating the work expression between the initial and final positions and
 applying the definition of potential energy difference.  This is done mathematically by:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -672,32 +689,32 @@ applying the definition of potential energy difference.  This is done mathematic
 &amp;= -\int_{x_A}^{x_B} (-a x^2)\,dx \\
 &amp;= \int_{x_A}^{x_B} a x^2\,dx.
 \end{align*}\]</div>
-<p>Evaluating the integral gives</p>
+<p class="sd-card-text">Evaluating the integral gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \Delta U_{AB}
 &amp;= \left.\frac{1}{3} a x^3 \right|_{x_A}^{x_B},
 \end{align*}\]</div>
-<p>where we can substitute the given values,</p>
+<p class="sd-card-text">where we can substitute the given values,</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \Delta U_{AB}
 &amp;= \frac{1}{3} (3\ \mathrm{N/m^2}) \left[(2\ \mathrm{m})^3 - (1\ \mathrm{m})^3\right] \\
 &amp;= 7\ \mathrm{J}
 \end{align*}\]</div>
-<p><strong>(b)</strong> The potential energy function is found by integrating the force with respect to position and introducing a constant of integration that reflects
+<p class="sd-card-text"><strong>(b)</strong> The potential energy function is found by integrating the force with respect to position and introducing a constant of integration that reflects
 the chosen reference level.  From the integration, we have</p>
 <div class="math notranslate nohighlight">
 \[
 U(x) = \frac{1}{3} a x^3 + C.
 \]</div>
-<p>The value of the constant is determined using the given reference condition <span class="math notranslate nohighlight">\(U(0) = 0.5\ \mathrm{J}\)</span>, which gives</p>
+<p class="sd-card-text">The value of the constant is determined using the given reference condition <span class="math notranslate nohighlight">\(U(0) = 0.5\ \mathrm{J}\)</span>, which gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 0.5\ \mathrm{J} &amp;= \frac{1}{3} a (0)^3 + C \\
 C &amp;= 0.5\ \mathrm{J}.
 \end{align*}\]</div>
-<p>Substituting <span class="math notranslate nohighlight">\(x = 1\ \mathrm{m}\)</span> into the potential energy function yields</p>
+<p class="sd-card-text">Substituting <span class="math notranslate nohighlight">\(x = 1\ \mathrm{m}\)</span> into the potential energy function yields</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 U(1\ \mathrm{m})
@@ -705,13 +722,13 @@ U(1\ \mathrm{m})
 &amp;= 1.5\ \mathrm{J}.
 \end{align*}\]</div>
 <hr class="docutils" />
-<p><strong>The Conclusion</strong></p>
-<p>The particle’s potential energy increases by <span class="math notranslate nohighlight">\(7\ \mathrm{J}\)</span> as it moves from <span class="math notranslate nohighlight">\(x = 1\ \mathrm{m}\)</span> to <span class="math notranslate nohighlight">\(x = 2\ \mathrm{m}\)</span>. When the potential energy is defined
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The particle’s potential energy increases by <span class="math notranslate nohighlight">\(7\ \mathrm{J}\)</span> as it moves from <span class="math notranslate nohighlight">\(x = 1\ \mathrm{m}\)</span> to <span class="math notranslate nohighlight">\(x = 2\ \mathrm{m}\)</span>. When the potential energy is defined
 to be <span class="math notranslate nohighlight">\(0.5\ \mathrm{J}\)</span> at <span class="math notranslate nohighlight">\(x = 0\)</span>, the potential energy at <span class="math notranslate nohighlight">\(x = 1\ \mathrm{m}\)</span> is <span class="math notranslate nohighlight">\(1.5\ \mathrm{J}\)</span>. These results follow directly from the conservative,
 position-dependent nature of the force.</p>
 <hr class="docutils" />
-<p><strong>The Verification</strong></p>
-<p>The potential energy difference is verified by evaluating the potential energy function at <span class="math notranslate nohighlight">\(x = 1\ \mathrm{m}\)</span> and <span class="math notranslate nohighlight">\(x = 2\ \mathrm{m}\)</span> and confirming that their difference equals <span class="math notranslate nohighlight">\(7\ \mathrm{J}\)</span>.</p>
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The potential energy difference is verified by evaluating the potential energy function at <span class="math notranslate nohighlight">\(x = 1\ \mathrm{m}\)</span> and <span class="math notranslate nohighlight">\(x = 2\ \mathrm{m}\)</span> and confirming that their difference equals <span class="math notranslate nohighlight">\(7\ \mathrm{J}\)</span>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="n">a</span> <span class="o">=</span> <span class="mf">3.0</span>  <span class="c1"># N/m^2</span>
@@ -728,7 +745,8 @@ position-dependent nature of the force.</p>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The change in potential energy is </span><span class="si">%.0f</span><span class="s2"> J.&quot;</span> <span class="o">%</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">delta_U</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
 </pre></div>
 </div>
-</section>
+</div>
+</details></section>
 </div>
 <div class="tip admonition">
 <p class="admonition-title"><a class="reference external" href="https://www.youtube.com/&#64;3blue1brown"><strong>3Blue1Brown</strong></a></p>
@@ -741,7 +759,7 @@ position-dependent nature of the force.</p>
 </section>
 </section>
 <section id="systems-of-several-particles">
-<h3><span class="section-number">8.1.2. </span>Systems Of Several Particles<a class="headerlink" href="#systems-of-several-particles" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">8.1.2. </span>Systems of Several Particles<a class="headerlink" href="#systems-of-several-particles" title="Link to this heading">#</a></h3>
 <p>A system of interest could contain several particles.  The difference in potential energy of the system is the negative work done by the gravitational or elastic (i.e., conservative) forces.  The potential energy depends mainly on the initial and final positions of the particles, as well as some parameters that characterize the interaction (e.g., mass for gravity or spring constant for a Hooke’s law force).</p>
 <p>Potential energy is a property of the interactions between objects in a chosen system, and not just a property of each object.</p>
 </section>
@@ -760,13 +778,13 @@ position-dependent nature of the force.</p>
 </ul>
 <p>Since the ratio of the mass of any ordinary object to Earth’s mass is vanishingly small, the motion of Earth can be completely neglected.  Therefore, we consider the particle (or a system of particles) subject to the uniform gravitational force of Earth.</p>
 <p>The work done on a body by Earth’s uniform gravitational force (near the surface) depends on the mass of the body <span class="math notranslate nohighlight">\(m\)</span>, the acceleration due to gravity <span class="math notranslate nohighlight">\(g\)</span>, and the difference in height <span class="math notranslate nohighlight">\(h\)</span> the body traveled.  By definition, this work is the negative of the difference in the gravitational potential energy or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e1c25b93-24b5-47c6-a0ad-f8f6cb119c90">
-<span class="eqno">(8.4)<a class="headerlink" href="#equation-e1c25b93-24b5-47c6-a0ad-f8f6cb119c90" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-908b968f-1eae-4902-bb2e-7aebb0278c6c">
+<span class="eqno">(8.4)<a class="headerlink" href="#equation-908b968f-1eae-4902-bb2e-7aebb0278c6c" title="Permalink to this equation">#</a></span>\[\begin{align}
 \Delta U_{\rm grav} &amp;= -W_{{\rm grav},AB} = mg\left(y_B-y_A\right).
 \end{align}\]</div>
 <p>We define the gravitational potential energy function (near Earth’s surface) as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-22c72d3c-4787-4df4-bfd6-5a530556e6ca">
-<span class="eqno">(8.5)<a class="headerlink" href="#equation-22c72d3c-4787-4df4-bfd6-5a530556e6ca" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d9492bb3-a9e2-41d7-8a5e-d0b7565d3163">
+<span class="eqno">(8.5)<a class="headerlink" href="#equation-d9492bb3-a9e2-41d7-8a5e-d0b7565d3163" title="Permalink to this equation">#</a></span>\[\begin{align}
 U(y) = mgy + \text{const}.
 \end{align}\]</div>
 <p>You can choose the value of the constant, where the most convenient constant to choose is zero for when <span class="math notranslate nohighlight">\(y=0\)</span>.  This corresponds to the lowest position in the problem.</p>
@@ -780,19 +798,21 @@ U(y) = mgy + \text{const}.
 <blockquote>
 <div><p>The summit of Great Blue Hill in Milton, MA, is <span class="math notranslate nohighlight">\(147\ \mathrm{m}\)</span> above its base and has an elevation above sea level of <span class="math notranslate nohighlight">\(195\ \mathrm{m}\)</span>. A <span class="math notranslate nohighlight">\(75\ \mathrm{kg}\)</span> hiker ascends from the base to the summit. What is the gravitational potential energy of the hiker–Earth system with respect to zero gravitational potential energy at base height, when the hiker is <strong>(a)</strong> at the base of the hill, <strong>(b)</strong> at the summit, and <strong>(c)</strong> at sea level, afterward?</p>
 </div></blockquote>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The system consists of the hiker and the Earth, treated together so that gravitational potential energy is an internal energy of the system. The motion is vertical, and air resistance is neglected. The gravitational field near Earth’s surface is approximated as uniform. The vertical coordinate <span class="math notranslate nohighlight">\(y\)</span> is defined to be positive upward, with the base of the hill chosen as the reference height where the gravitational potential energy is zero. With this choice, the constant of integration is determined by the reference condition at the base.</p>
 <hr class="docutils" />
-<p><strong>The Model</strong></p>
-<p>The system consists of the hiker and the Earth, treated together so that gravitational potential energy is an internal energy of the system. The motion is vertical, and air resistance is neglected. The gravitational field near Earth’s surface is approximated as uniform. The vertical coordinate <span class="math notranslate nohighlight">\(y\)</span> is defined to be positive upward, with the base of the hill chosen as the reference height where the gravitational potential energy is zero. With this choice, the constant of integration is determined by the reference condition at the base.</p>
-<hr class="docutils" />
-<p><strong>The Math</strong></p>
-<p>Gravitational potential energy in a uniform gravitational field depends on the vertical position of the system relative to the chosen reference height and is
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">Gravitational potential energy in a uniform gravitational field depends on the vertical position of the system relative to the chosen reference height and is
 given by <span class="math notranslate nohighlight">\(U = m g y + C\)</span>.</p>
-<p><strong>(a)</strong> At the base of the hill, the vertical coordinate is <span class="math notranslate nohighlight">\(y = 0\)</span> by definition of the reference level, so the gravitational potential energy is</p>
+<p class="sd-card-text"><strong>(a)</strong> At the base of the hill, the vertical coordinate is <span class="math notranslate nohighlight">\(y = 0\)</span> by definition of the reference level, so the gravitational potential energy is</p>
 <div class="math notranslate nohighlight">
 \[
 U_{\text{base}} = m g (0) = 0.
 \]</div>
-<p><strong>(b)</strong> At the summit, the hiker is <span class="math notranslate nohighlight">\(147\ \mathrm{m}\)</span> above the base, so <span class="math notranslate nohighlight">\(y = 147\ \mathrm{m}\)</span>. Substituting this value into the gravitational potential
+<p class="sd-card-text"><strong>(b)</strong> At the summit, the hiker is <span class="math notranslate nohighlight">\(147\ \mathrm{m}\)</span> above the base, so <span class="math notranslate nohighlight">\(y = 147\ \mathrm{m}\)</span>. Substituting this value into the gravitational potential
 energy expression gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -800,7 +820,7 @@ U_{\text{summit}}
 &amp;= (75\ \mathrm{kg})(9.81\ \mathrm{m/s^2})(147\ \mathrm{m}) \\
 &amp;= 1.08 \times 10^{5}\ \mathrm{J}.
 \end{align*}\]</div>
-<p><strong>(c)</strong> Sea level is <span class="math notranslate nohighlight">\(195\ \mathrm{m}\)</span> below the summit, which places it <span class="math notranslate nohighlight">\(48\ \mathrm{m}\)</span> below the base. With upward taken as positive, the vertical
+<p class="sd-card-text"><strong>(c)</strong> Sea level is <span class="math notranslate nohighlight">\(195\ \mathrm{m}\)</span> below the summit, which places it <span class="math notranslate nohighlight">\(48\ \mathrm{m}\)</span> below the base. With upward taken as positive, the vertical
 coordinate at sea level is therefore <span class="math notranslate nohighlight">\(y = -48\ \mathrm{m}\)</span>. Substituting this value gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -809,12 +829,12 @@ U_{\text{sea level}}
 &amp;= -3.53 \times 10^{4}\ \mathrm{J}.
 \end{align*}\]</div>
 <hr class="docutils" />
-<p><strong>The Conclusion</strong></p>
-<p>With gravitational potential energy defined to be zero at the base of the hill, the hiker–Earth system has zero gravitational potential energy at the
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">With gravitational potential energy defined to be zero at the base of the hill, the hiker–Earth system has zero gravitational potential energy at the
 base, <span class="math notranslate nohighlight">\(1.08 \times 10^{5}\ \mathrm{J}\)</span> at the summit, and <span class="math notranslate nohighlight">\(-3.53 \times 10^{4}\ \mathrm{J}\)</span> at sea level. The negative value at sea level reflects that this position lies below the chosen reference height, not that the energy is physically problematic.</p>
 <hr class="docutils" />
-<p><strong>The Verification</strong></p>
-<p>The results are verified by recomputing the gravitational potential energy using <span class="math notranslate nohighlight">\(U = m g y\)</span> at each vertical position relative to the base height and
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The results are verified by recomputing the gravitational potential energy using <span class="math notranslate nohighlight">\(U = m g y\)</span> at each vertical position relative to the base height and
 confirming that the differences in potential energy correspond to the associated height changes.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
@@ -834,7 +854,8 @@ confirming that the differences in potential energy correspond to the associated
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The gravitational potential energy at sea level is </span><span class="si">%d</span><span class="s2"> J.&quot;</span> <span class="o">%</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">U_sea</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
 </pre></div>
 </div>
-</section>
+</div>
+</details></section>
 </div>
 </section>
 </section>
@@ -842,16 +863,20 @@ confirming that the differences in potential energy correspond to the associated
 <h4><span class="section-number">8.1.3.2. </span>Elastic potential energy<a class="headerlink" href="#elastic-potential-energy" title="Link to this heading">#</a></h4>
 <p>The work done by a perfectly elastic spring (in 1D) depends only on the spring constant <span class="math notranslate nohighlight">\(k\)</span> and the squares of the displacements from the unstretched position (<span class="math notranslate nohighlight">\(x^2-x_o^2\)</span>).  This work involves only the properties of a Hooke’s law interaction and not the properties of real springs and whatever is attached to them.</p>
 <p>We define the difference of elastic potential energy for a spring force as the negative of the work done by the spring force.  Thus,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-40d14977-b2a9-4d83-8809-b220f36a13c3">
-<span class="eqno">(8.6)<a class="headerlink" href="#equation-40d14977-b2a9-4d83-8809-b220f36a13c3" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-144b857a-ffc4-42ca-940c-af64515d9116">
+<span class="eqno">(8.6)<a class="headerlink" href="#equation-144b857a-ffc4-42ca-940c-af64515d9116" title="Permalink to this equation">#</a></span>\[\begin{align}
 \Delta U &amp;= -W_{\rm AB} = \frac{1}{2}k\left(x_B^2-x_A^2\right),
 \end{align}\]</div>
-<p>where the object attached to the spring travels from point <span class="math notranslate nohighlight">\(A\)</span> to point <span class="math notranslate nohighlight">\(B\)</span>.  the potential energy function corresponding to this difference is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6301ddbc-eb26-45f3-a6f2-d7a73fa84a19">
-<span class="eqno">(8.7)<a class="headerlink" href="#equation-6301ddbc-eb26-45f3-a6f2-d7a73fa84a19" title="Permalink to this equation">#</a></span>\[\begin{align}
+<p>where the object attached to the spring travels from point <span class="math notranslate nohighlight">\(A\)</span> to point <span class="math notranslate nohighlight">\(B\)</span>.  The potential energy function corresponding to this difference is</p>
+<div class="amsmath math notranslate nohighlight" id="equation-635e3652-307f-4181-b601-07ca64d1d9ba">
+<span class="eqno">(8.7)<a class="headerlink" href="#equation-635e3652-307f-4181-b601-07ca64d1d9ba" title="Permalink to this equation">#</a></span>\[\begin{align}
 U(x) &amp;= \frac{1}{2}kx^2 + \text{const}.
 \end{align}\]</div>
 <p>If the spring force is the only force, it is simplest to take the zero of potential energy at <span class="math notranslate nohighlight">\(x=0\)</span>.  This corresponds to when the spring is at its unstretched length.</p>
+<div class="tip margin checkpoint admonition">
+<p class="admonition-title">Checkpoint</p>
+<p>For a stretched spring, what physical position naturally makes the elastic potential energy equal to zero?</p>
+</div>
 <section id="example-problem-spring-potential-energy">
 <h5><span class="section-number">8.1.3.2.1. </span><strong>Example Problem</strong>: Spring Potential Energy<a class="headerlink" href="#example-problem-spring-potential-energy" title="Link to this heading">#</a></h5>
 <div class="exercise etamu-exercise admonition" id="Chapter08/potential-energy-conservation-exercise-2">
@@ -862,13 +887,15 @@ U(x) &amp;= \frac{1}{2}kx^2 + \text{const}.
 <blockquote>
 <div><p>A system contains a perfectly elastic spring, with an unstretched length of <span class="math notranslate nohighlight">\(20\ \mathrm{cm}\)</span> and a spring constant of <span class="math notranslate nohighlight">\(4\ \mathrm{N/cm}\)</span>. <strong>(a)</strong> How much elastic potential energy does the spring contribute when its length is <span class="math notranslate nohighlight">\(23\ \mathrm{cm}\)</span>? <strong>(b)</strong> How much more potential energy does it contribute if its length increases to <span class="math notranslate nohighlight">\(26\ \mathrm{cm}\)</span>?</p>
 </div></blockquote>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The system consists of a single ideal spring that obeys Hooke’s law and stores elastic potential energy when stretched or compressed from its unstretched length. The spring is assumed to be perfectly elastic, with no energy losses, so its elastic potential energy depends only on the magnitude of the displacement from equilibrium. The displacement <span class="math notranslate nohighlight">\(x\)</span> is defined as the difference between the current length of the spring and its unstretched length, measured along the axis of the spring. The reference configuration for zero elastic potential energy is the unstretched length. Because the spring constant is given in <span class="math notranslate nohighlight">\(\mathrm{N/cm}\)</span>, lengths and displacements are treated consistently in centimeters.</p>
 <hr class="docutils" />
-<p><strong>The Model</strong></p>
-<p>The system consists of a single ideal spring that obeys Hooke’s law and stores elastic potential energy when stretched or compressed from its unstretched length. The spring is assumed to be perfectly elastic, with no energy losses, so its elastic potential energy depends only on the magnitude of the displacement from equilibrium. The displacement <span class="math notranslate nohighlight">\(x\)</span> is defined as the difference between the current length of the spring and its unstretched length, measured along the axis of the spring. The reference configuration for zero elastic potential energy is the unstretched length. Because the spring constant is given in <span class="math notranslate nohighlight">\(\mathrm{N/cm}\)</span>, lengths and displacements are treated consistently in centimeters.</p>
-<hr class="docutils" />
-<p><strong>The Math</strong></p>
-<p>Elastic potential energy for an ideal spring is given by <span class="math notranslate nohighlight">\(U = \tfrac{1}{2} k x^2\)</span>, where <span class="math notranslate nohighlight">\(k\)</span> is the spring constant and <span class="math notranslate nohighlight">\(x\)</span> is the displacement from the unstretched length.</p>
-<p><strong>(a)</strong> When the spring length is <span class="math notranslate nohighlight">\(23\ \mathrm{cm}\)</span>, the displacement from the unstretched length is <span class="math notranslate nohighlight">\(x = 3\ \mathrm{cm}\)</span>. Substituting this displacement into the elastic potential energy expression gives</p>
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">Elastic potential energy for an ideal spring is given by <span class="math notranslate nohighlight">\(U = \tfrac{1}{2} k x^2\)</span>, where <span class="math notranslate nohighlight">\(k\)</span> is the spring constant and <span class="math notranslate nohighlight">\(x\)</span> is the displacement from the unstretched length.</p>
+<p class="sd-card-text"><strong>(a)</strong> When the spring length is <span class="math notranslate nohighlight">\(23\ \mathrm{cm}\)</span>, the displacement from the unstretched length is <span class="math notranslate nohighlight">\(x = 3\ \mathrm{cm}\)</span>. Substituting this displacement into the elastic potential energy expression gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 U
@@ -876,14 +903,14 @@ U
 &amp;= \frac{1}{2} (4\ \mathrm{N/cm})(3\ \mathrm{cm})^2 \\
 &amp;= 0.18\ \mathrm{J}.
 \end{align*}\]</div>
-<p><strong>(b)</strong> When the spring length increases to <span class="math notranslate nohighlight">\(26\ \mathrm{cm}\)</span>, the displacement is <span class="math notranslate nohighlight">\(x = 6\ \mathrm{cm}\)</span>. Substituting this value gives</p>
+<p class="sd-card-text"><strong>(b)</strong> When the spring length increases to <span class="math notranslate nohighlight">\(26\ \mathrm{cm}\)</span>, the displacement is <span class="math notranslate nohighlight">\(x = 6\ \mathrm{cm}\)</span>. Substituting this value gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 U
 &amp;= \frac{1}{2} (4\ \mathrm{N/cm})(6\ \mathrm{cm})^2 \\
 &amp;= 0.72\ \mathrm{J}.
 \end{align*}\]</div>
-<p>The additional elastic potential energy contributed relative to part (a) is therefore</p>
+<p class="sd-card-text">The additional elastic potential energy contributed relative to part (a) is therefore</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \Delta U
@@ -891,11 +918,11 @@ U
 &amp;= 0.54\ \mathrm{J}.
 \end{align*}\]</div>
 <hr class="docutils" />
-<p><strong>The Conclusion</strong></p>
-<p>When the spring is stretched to <span class="math notranslate nohighlight">\(23\ \mathrm{cm}\)</span>, it stores <span class="math notranslate nohighlight">\(0.18\ \mathrm{J}\)</span> of elastic potential energy. Increasing the length to <span class="math notranslate nohighlight">\(26\ \mathrm{cm}\)</span> increases the stored energy to <span class="math notranslate nohighlight">\(0.72\ \mathrm{J}\)</span>, which is an additional <span class="math notranslate nohighlight">\(0.54\ \mathrm{J}\)</span>. These results follow directly from the quadratic dependence of elastic potential energy on displacement and from maintaining a consistent unit system throughout the calculation.</p>
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">When the spring is stretched to <span class="math notranslate nohighlight">\(23\ \mathrm{cm}\)</span>, it stores <span class="math notranslate nohighlight">\(0.18\ \mathrm{J}\)</span> of elastic potential energy. Increasing the length to <span class="math notranslate nohighlight">\(26\ \mathrm{cm}\)</span> increases the stored energy to <span class="math notranslate nohighlight">\(0.72\ \mathrm{J}\)</span>, which is an additional <span class="math notranslate nohighlight">\(0.54\ \mathrm{J}\)</span>. These results follow directly from the quadratic dependence of elastic potential energy on displacement and from maintaining a consistent unit system throughout the calculation.</p>
 <hr class="docutils" />
-<p><strong>The Verification</strong></p>
-<p>The results are verified by computing the elastic potential energy using <span class="math notranslate nohighlight">\(U = \tfrac{1}{2} k x^2\)</span> with the displacement expressed in centimeters and confirming the difference between the two energies.</p>
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The results are verified by computing the elastic potential energy using <span class="math notranslate nohighlight">\(U = \tfrac{1}{2} k x^2\)</span> with the displacement expressed in centimeters and confirming the difference between the two energies.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="n">k</span> <span class="o">=</span> <span class="mf">4.0</span>   <span class="c1"># N/cm</span>
@@ -911,7 +938,8 @@ U
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The additional potential energy is </span><span class="si">%.2f</span><span class="s2"> J.&quot;</span> <span class="o">%</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">dU</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
 </pre></div>
 </div>
-</section>
+</div>
+</details></section>
 </div>
 </section>
 </section>
@@ -919,9 +947,9 @@ U
 <h4><span class="section-number">8.1.3.3. </span>Gravitational and elastic potential energy<a class="headerlink" href="#gravitational-and-elastic-potential-energy" title="Link to this heading">#</a></h4>
 <p>A simple system with both gravitational and elastic types of potential energy is a 1D, vertical mass-spring system (see Fig. <a class="reference internal" href="#mass-spring-system-fig"><span class="std std-numref">8.2</span></a>). <em>Note that the three mass-spring systems are snapshots of the same system at three different times <span class="math notranslate nohighlight">\(t_A\)</span>, <span class="math notranslate nohighlight">\(t_B\)</span>, and <span class="math notranslate nohighlight">\(t_C\)</span>.</em></p>
 <figure class="align-default" id="mass-spring-system-fig">
-<img alt="mass spring system example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/6ffcf3843c8511dfc6ac06f929c66dfbd659c855" />
+<img alt="vertical mass-spring system at three positions" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/6ffcf3843c8511dfc6ac06f929c66dfbd659c855" />
 <figcaption>
-<p><span class="caption-number">Fig. 8.2 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#mass-spring-system-fig" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 8.2 </span><span class="caption-text">A vertical mass-spring system, with the positive <span class="math notranslate nohighlight">\(y\)</span>-axis pointing upward. The mass is initially at an unstretched spring length, point <span class="math notranslate nohighlight">\(A\)</span>. Then it is released, expanding past point <span class="math notranslate nohighlight">\(B\)</span> to point <span class="math notranslate nohighlight">\(C\)</span>, where it comes to a stop. This setup shows how gravitational and elastic potential energies can both contribute to the same system. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/8-1-potential-energy-of-a-system">Potential Energy of a System</a>.</span><a class="headerlink" href="#mass-spring-system-fig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Consider the potential energy of the system (mass and spring).  We need to define the constant in the potential energy function for gravity and the elastic potential energy.</p>
@@ -1017,53 +1045,55 @@ y_c &amp;= \frac{-2mg}{k}.
 <blockquote>
 <div><p>A block weighing <span class="math notranslate nohighlight">\(1.2\ \mathrm{N}\)</span> is hung from a spring with a spring constant of <span class="math notranslate nohighlight">\(6.0\ \mathrm{N/m}\)</span>, as shown in Figure <a class="reference internal" href="#mass-spring-system-fig"><span class="std std-numref">8.2</span></a>. <strong>(a)</strong> What is the maximum expansion of the spring, as seen at point <span class="math notranslate nohighlight">\(C\)</span>? <strong>(b)</strong> What is the total potential energy at point <span class="math notranslate nohighlight">\(B\)</span>, halfway between <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(C\)</span>? <strong>(c)</strong> What is the speed of the block at point <span class="math notranslate nohighlight">\(B\)</span>?</p>
 </div></blockquote>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The system consists of the block, the spring, and the Earth, treated together so that gravitational and elastic potential energies are internal to the system. The block moves only in the vertical direction, and air resistance is neglected. The spring is assumed to be ideal and massless, obeying Hooke’s law. The vertical coordinate <span class="math notranslate nohighlight">\(y\)</span> is defined to be positive upward, with point <span class="math notranslate nohighlight">\(A\)</span> chosen as the reference position where the block is initially released from rest and the total mechanical energy of the system is zero. With this choice, gravitational and spring potential energies are measured relative to point <span class="math notranslate nohighlight">\(A\)</span>, and mechanical energy is conserved throughout the motion.</p>
 <hr class="docutils" />
-<p><strong>The Model</strong></p>
-<p>The system consists of the block, the spring, and the Earth, treated together so that gravitational and elastic potential energies are internal to the system. The block moves only in the vertical direction, and air resistance is neglected. The spring is assumed to be ideal and massless, obeying Hooke’s law. The vertical coordinate <span class="math notranslate nohighlight">\(y\)</span> is defined to be positive upward, with point <span class="math notranslate nohighlight">\(A\)</span> chosen as the reference position where the block is initially released from rest and the total mechanical energy of the system is zero. With this choice, gravitational and spring potential energies are measured relative to point <span class="math notranslate nohighlight">\(A\)</span>, and mechanical energy is conserved throughout the motion.</p>
-<hr class="docutils" />
-<p><strong>The Math</strong></p>
-<p>Mechanical energy is conserved because only conservative forces act on the system, so the sum of kinetic, gravitational potential, and elastic potential energies is constant.</p>
-<p><strong>(a)</strong> At point <span class="math notranslate nohighlight">\(C\)</span>, the block momentarily comes to rest, so its kinetic energy is zero. Conservation of energy between point <span class="math notranslate nohighlight">\(A\)</span> and point <span class="math notranslate nohighlight">\(C\)</span> therefore requires that the loss of gravitational potential energy equals the gain in elastic potential energy. Writing this condition gives</p>
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">Mechanical energy is conserved because only conservative forces act on the system, so the sum of kinetic, gravitational potential, and elastic potential energies is constant.</p>
+<p class="sd-card-text"><strong>(a)</strong> At point <span class="math notranslate nohighlight">\(C\)</span>, the block momentarily comes to rest, so its kinetic energy is zero. Conservation of energy between point <span class="math notranslate nohighlight">\(A\)</span> and point <span class="math notranslate nohighlight">\(C\)</span> therefore requires that the loss of gravitational potential energy equals the gain in elastic potential energy. Writing this condition gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 0 &amp;= (mg)y_C + \frac{1}{2}k y_C^2.
 \end{align*}\]</div>
-<p>Factoring out <span class="math notranslate nohighlight">\(y_C\)</span> and solving for the nonzero solution yields</p>
+<p class="sd-card-text">Factoring out <span class="math notranslate nohighlight">\(y_C\)</span> and solving for the nonzero solution yields</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 y_C &amp;= -\frac{2mg}{k}.
 \end{align*}\]</div>
-<p>Substituting the given values gives</p>
+<p class="sd-card-text">Substituting the given values gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 y_C &amp;= -\frac{2(1.2\ \mathrm{N})}{6.0\ \mathrm{N/m}} \\
 &amp;= -0.40\ \mathrm{m}.
 \end{align*}\]</div>
-<p><strong>(b)</strong> Point <span class="math notranslate nohighlight">\(B\)</span> is halfway between <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(C\)</span>, so its vertical position is <span class="math notranslate nohighlight">\(y_B = y_C/2 = -mg/k\)</span>. The total potential energy at point <span class="math notranslate nohighlight">\(B\)</span> is the sum of gravitational and elastic potential energies, which is</p>
+<p class="sd-card-text"><strong>(b)</strong> Point <span class="math notranslate nohighlight">\(B\)</span> is halfway between <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(C\)</span>, so its vertical position is <span class="math notranslate nohighlight">\(y_B = y_C/2 = -mg/k\)</span>. The total potential energy at point <span class="math notranslate nohighlight">\(B\)</span> is the sum of gravitational and elastic potential energies, which is</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 U_B &amp;= mg y_B + \frac{1}{2}k y_B^2 \\
 &amp;= mg\!\left(-\frac{mg}{k}\right) + \frac{1}{2}k\!\left(-\frac{mg}{k}\right)^2 \\
 &amp;= -\frac{(mg)^2}{2k}.
 \end{align*}\]</div>
-<p>Substituting the numerical values gives</p>
+<p class="sd-card-text">Substituting the numerical values gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 U_B &amp;= (1.2\ \mathrm{N})(-0.20\ \mathrm{m}) + \frac{1}{2}(6.0\ \mathrm{N/m})(0.20\ \mathrm{m})^2 \\
 &amp;= -0.12\ \mathrm{J}.
 \end{align*}\]</div>
-<p><strong>(c)</strong> The total mechanical energy of the system is zero, so the kinetic energy at point <span class="math notranslate nohighlight">\(B\)</span> must be equal in magnitude to the total potential energy at that point. The kinetic energy at point <span class="math notranslate nohighlight">\(B\)</span> is therefore <span class="math notranslate nohighlight">\(K_B = 0.12\ \mathrm{J}\)</span>. The mass of the block is found from its weight using <span class="math notranslate nohighlight">\(m = F_w/g\)</span>, which gives</p>
+<p class="sd-card-text"><strong>(c)</strong> The total mechanical energy of the system is zero, so the kinetic energy at point <span class="math notranslate nohighlight">\(B\)</span> must be equal in magnitude to the total potential energy at that point. The kinetic energy at point <span class="math notranslate nohighlight">\(B\)</span> is therefore <span class="math notranslate nohighlight">\(K_B = 0.12\ \mathrm{J}\)</span>. The mass of the block is found from its weight using <span class="math notranslate nohighlight">\(m = F_w/g\)</span>, which gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 m &amp;= \frac{1.2\ \mathrm{N}}{9.81\ \mathrm{m/s^2}} \\
 &amp;= 0.12\ \mathrm{kg}.
 \end{align*}\]</div>
-<p>Using the definition of kinetic energy, the speed of the block at point <span class="math notranslate nohighlight">\(B\)</span> is obtained from</p>
+<p class="sd-card-text">Using the definition of kinetic energy, the speed of the block at point <span class="math notranslate nohighlight">\(B\)</span> is obtained from</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 K_B &amp;= \frac{1}{2} m v^2,
 \end{align*}\]</div>
-<p>which yields</p>
+<p class="sd-card-text">which yields</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 v &amp;= \sqrt{\frac{2K_B}{m}} \\
@@ -1071,11 +1101,11 @@ v &amp;= \sqrt{\frac{2K_B}{m}} \\
 &amp;= 1.4\ \mathrm{m/s}.
 \end{align*}\]</div>
 <hr class="docutils" />
-<p><strong>The Conclusion</strong></p>
-<p>The maximum expansion of the spring is <span class="math notranslate nohighlight">\(0.40\ \mathrm{m}\)</span> downward from the release point. At the midpoint between the release point and the maximum extension, the total potential energy of the system is <span class="math notranslate nohighlight">\(-0.12\ \mathrm{J}\)</span>. At that same point, the block has a speed of <span class="math notranslate nohighlight">\(1.4\ \mathrm{m/s}\)</span>. These results follow directly from conservation of mechanical energy and from the chosen reference level for zero total energy.</p>
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The maximum expansion of the spring is <span class="math notranslate nohighlight">\(0.40\ \mathrm{m}\)</span> downward from the release point. At the midpoint between the release point and the maximum extension, the total potential energy of the system is <span class="math notranslate nohighlight">\(-0.12\ \mathrm{J}\)</span>. At that same point, the block has a speed of <span class="math notranslate nohighlight">\(1.4\ \mathrm{m/s}\)</span>. These results follow directly from conservation of mechanical energy and from the chosen reference level for zero total energy.</p>
 <hr class="docutils" />
-<p><strong>The Verification</strong></p>
-<p>The results are verified by recomputing the gravitational and elastic potential energies at points <span class="math notranslate nohighlight">\(B\)</span> and <span class="math notranslate nohighlight">\(C\)</span> and confirming that the total mechanical energy remains zero and that the kinetic energy at point <span class="math notranslate nohighlight">\(B\)</span> matches the derived speed.</p>
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The results are verified by recomputing the gravitational and elastic potential energies at points <span class="math notranslate nohighlight">\(B\)</span> and <span class="math notranslate nohighlight">\(C\)</span> and confirming that the total mechanical energy remains zero and that the kinetic energy at point <span class="math notranslate nohighlight">\(B\)</span> matches the derived speed.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="n">Fw</span> <span class="o">=</span> <span class="mf">1.2</span>      <span class="c1"># N</span>
@@ -1095,7 +1125,8 @@ v &amp;= \sqrt{\frac{2K_B}{m}} \\
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The speed at point B is </span><span class="si">%.1f</span><span class="s2"> m/s.&quot;</span> <span class="o">%</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">vB</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
 </pre></div>
 </div>
-</section>
+</div>
+</details></section>
 </div>
 </section>
 </section>
@@ -1104,22 +1135,22 @@ v &amp;= \sqrt{\frac{2K_B}{m}} \\
 <section id="conservative-and-non-conservative-forces">
 <h2><span class="section-number">8.2. </span>Conservative and Non-conservative Forces<a class="headerlink" href="#conservative-and-non-conservative-forces" title="Link to this heading">#</a></h2>
 <p>Thus far, any transition between kinetic and potential energy did not change the total energy of the system.  The transition was path independent, which means that we can start and stop at any two points in the problem.  The total energy of the system (<span class="math notranslate nohighlight">\(K+U\)</span>) at these two points are equal to each other.  This is a characteristic of a <strong>conservative force</strong> (e.g., gravitational or spring force).</p>
-<p><strong>Non-conservative forces</strong> and the work that they do are path dependent.  Dissipative forces (e.g., forces and air resistance) are non-conservative.  These forces take energy away from the system as the system evolves over time.  Push-pull forces are generally non-conservative.</p>
+<p><strong>Non-conservative forces</strong> and the work that they do are path dependent.  Dissipative forces (e.g., friction and air resistance) are non-conservative.  These forces take energy away from the system as the system evolves over time.  Push-pull forces are generally non-conservative.</p>
 <ul class="simple">
 <li><p>Imagine pushing a merry-go-round.  The total work done depends on how many revolutions are completed and therefore, the total energy at a given location is not constant.</p></li>
 </ul>
 <div class="note admonition">
 <p class="admonition-title">Conservative Force</p>
 <p>The work done by a conservative force is independent of the path, which means the work done by a conservative force is the same for any path connecting two points:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e5645825-b1b9-4a3f-ac92-988ca72ae073">
-<span class="eqno">(8.8)<a class="headerlink" href="#equation-e5645825-b1b9-4a3f-ac92-988ca72ae073" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-13c9c26a-41a0-435b-aef5-c37b8dd0878c">
+<span class="eqno">(8.8)<a class="headerlink" href="#equation-13c9c26a-41a0-435b-aef5-c37b8dd0878c" title="Permalink to this equation">#</a></span>\[\begin{align}
 W_{{AB,\text{path 1}}} &amp;= \int_{A,\text{path 1}}^B \vec{F}_{\text{cons}}\cdot d\vec{r}, \\
 &amp;= \int_{A,\text{path 2}}^B \vec{F}_{\text{cons}}\cdot d\vec{r}. 
 \end{align}\]</div>
 <p>The work done by a non-conservative force <em>depends</em> on the path taken.</p>
 <p>A force is conservative if the work it does around any closed path is zero:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ee2b8832-c572-4db5-9689-62aba20f1ffe">
-<span class="eqno">(8.9)<a class="headerlink" href="#equation-ee2b8832-c572-4db5-9689-62aba20f1ffe" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ecccdb42-19b1-46e1-ab7a-c1c627e80caa">
+<span class="eqno">(8.9)<a class="headerlink" href="#equation-ecccdb42-19b1-46e1-ab7a-c1c627e80caa" title="Permalink to this equation">#</a></span>\[\begin{align}
 W_{\rm closed\ path} = \oint \vec{F}_{\rm cons}\cdot d\vec{r} = 0.
 \end{align}\]</div>
 <p>The notation of a circle in the middle of the integral sign denotes a line integral over a closed path. Any closed path is the sum of two paths: the first going from <span class="math notranslate nohighlight">\(A\)</span> to <span class="math notranslate nohighlight">\(B\)</span>, and the second going from <span class="math notranslate nohighlight">\(B\)</span> to <span class="math notranslate nohighlight">\(A\)</span>.</p>
@@ -1134,8 +1165,8 @@ W_{\rm closed\ path} = \oint \vec{F}_{\rm cons}\cdot d\vec{r} = 0.
 <div class="math notranslate nohighlight">
 \[ \vec{F}\cdot d\vec{r} = F_x dx + F_ydy \]</div>
 <p>to be an exact differential is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-78615a0e-26b2-4639-b2d9-dabdf44b594a">
-<span class="eqno">(8.10)<a class="headerlink" href="#equation-78615a0e-26b2-4639-b2d9-dabdf44b594a" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-efb725ed-1c6a-437b-a532-475d2304f90d">
+<span class="eqno">(8.10)<a class="headerlink" href="#equation-efb725ed-1c6a-437b-a532-475d2304f90d" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{dF_x}{dy} &amp;= \frac{dF_y}{dx}.
 \end{align}\]</div>
 <p>In <a class="reference external" href="https://en.wikipedia.org/wiki/Exact_differential">Example Problem: Work Done by a Variable Force</a>, the work done by the force depended on the path.  For that force,</p>
@@ -1154,8 +1185,8 @@ W_{\rm closed\ path} = \oint \vec{F}_{\rm cons}\cdot d\vec{r} = 0.
 <div class="math notranslate nohighlight">
 \[ dU = -\vec{F}\cdot d\vec{l} = -F_l\, dl. \]</div>
 <p>We chose to represent the displacement in an arbitrary direction by <span class="math notranslate nohighlight">\(d\vec{l}\)</span>, so as not to imply any particular coordinate direction.  Since <span class="math notranslate nohighlight">\(dU\)</span>, <span class="math notranslate nohighlight">\(F_l\)</span>, and <span class="math notranslate nohighlight">\(dl\)</span> are scalars, you can divide to get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3a5a293c-2559-41d9-81d0-37f5c0df6e6d">
-<span class="eqno">(8.11)<a class="headerlink" href="#equation-3a5a293c-2559-41d9-81d0-37f5c0df6e6d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-18ee0892-027e-4788-be79-ce08db721dd8">
+<span class="eqno">(8.11)<a class="headerlink" href="#equation-18ee0892-027e-4788-be79-ce08db721dd8" title="Permalink to this equation">#</a></span>\[\begin{align}
 F_l = -\frac{dU}{dl}.
 \end{align}\]</div>
 <p>This equation gives the relation between force and the potential energy associated with it.  For 1D motion along the <span class="math notranslate nohighlight">\(x\)</span>-axis, it can give the entire vector force <span class="math notranslate nohighlight">\(\vec{F} = F_x\hat{i} = -\frac{d U}{dx} \hat{i}.\)</span></p>
@@ -1169,6 +1200,12 @@ F_l = -\frac{dU}{dl}.
  &amp;= -\left(\frac{\partial U}{\partial x}\right)\hat{i} - \left(\frac{\partial U}{\partial y}\right)\hat{j} - \left(\frac{\partial U}{\partial z}\right)\hat{k} = -\nabla U.
  \end{align*}\]</div>
 <p>This describes the force as the negative <em>gradient</em> of the potential <span class="math notranslate nohighlight">\(U\)</span>.  The gradient symbol <span class="math notranslate nohighlight">\(\nabla\)</span> uses <code class="docutils literal notranslate"><span class="pre">\nabla</span></code> to represent it in LaTeX.</p>
+<div class="tip admonition">
+<p class="admonition-title"><a class="reference external" href="https://www.khanacademy.org/science/physics/work-and-energy/work-and-energy-tutorial/v/conservative-forces"><strong>Khan Academy</strong></a></p>
+<div class="video_wrapper align-center" style="text-align: center">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/qWR7SBsnLwo" style="border: 0; height: 435px; width: 720px">
+</iframe></div><p>Focus on the idea that a conservative force allows energy to move between kinetic and potential forms without being dissipated, while a non-conservative force such as friction or air resistance removes mechanical energy from the system.</p>
+</div>
 <section id="example-problem-conservative-or-not">
 <h3><span class="section-number">8.2.1. </span><strong>Example Problem</strong>: Conservative or Not?<a class="headerlink" href="#example-problem-conservative-or-not" title="Link to this heading">#</a></h3>
 <div class="exercise etamu-exercise admonition" id="Chapter08/potential-energy-conservation-exercise-4">
@@ -1182,39 +1219,41 @@ F_l = -\frac{dU}{dl}.
 <strong>(b)</strong> <span class="math notranslate nohighlight">\(\vec{F} = a\!\left(\frac{y^2}{x}\,\hat{i} + 2y\ln\!\left(\frac{x}{b}\right)\hat{j}\right)\)</span><br />
 <strong>(c)</strong> <span class="math notranslate nohighlight">\(\vec{F} = \dfrac{ax\,\hat{i} + ay\,\hat{j}}{x^2 + y^2}\)</span></p>
 </div></blockquote>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">Each force acts on a particle constrained to move in the two-dimensional <span class="math notranslate nohighlight">\(x\)</span>–<span class="math notranslate nohighlight">\(y\)</span> plane. The force fields are assumed to be time-independent and sufficiently smooth in the region of interest so that partial derivatives exist. A force is conservative if the work it does between two points is independent of the path taken, which in two dimensions is equivalent to requiring that the mixed partial derivatives of the force components satisfy <span class="math notranslate nohighlight">\(\partial F_x / \partial y = \partial F_y / \partial x\)</span> throughout the region. This condition is used to classify each force.</p>
 <hr class="docutils" />
-<p><strong>The Model</strong></p>
-<p>Each force acts on a particle constrained to move in the two-dimensional <span class="math notranslate nohighlight">\(x\)</span>–<span class="math notranslate nohighlight">\(y\)</span> plane. The force fields are assumed to be time-independent and sufficiently smooth in the region of interest so that partial derivatives exist. A force is conservative if the work it does between two points is independent of the path taken, which in two dimensions is equivalent to requiring that the mixed partial derivatives of the force components satisfy <span class="math notranslate nohighlight">\(\partial F_x / \partial y = \partial F_y / \partial x\)</span> throughout the region. This condition is used to classify each force.</p>
-<hr class="docutils" />
-<p><strong>The Math</strong></p>
-<p>For a two-dimensional force <span class="math notranslate nohighlight">\(\vec{F} = F_x(x,y)\,\hat{i} + F_y(x,y)\,\hat{j}\)</span>, the force is conservative if <span class="math notranslate nohighlight">\(\partial F_x / \partial y = \partial F_y / \partial x\)</span>.</p>
-<p><strong>(a)</strong> For the force <span class="math notranslate nohighlight">\(\vec{F} = axy^3\,\hat{i} + ayx^3\,\hat{j}\)</span>, the required partial derivatives are</p>
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">For a two-dimensional force <span class="math notranslate nohighlight">\(\vec{F} = F_x(x,y)\,\hat{i} + F_y(x,y)\,\hat{j}\)</span>, the force is conservative if <span class="math notranslate nohighlight">\(\partial F_x / \partial y = \partial F_y / \partial x\)</span>.</p>
+<p class="sd-card-text"><strong>(a)</strong> For the force <span class="math notranslate nohighlight">\(\vec{F} = axy^3\,\hat{i} + ayx^3\,\hat{j}\)</span>, the required partial derivatives are</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \frac{\partial F_x}{\partial y} &amp;= \frac{\partial}{\partial y}(axy^3) = 3axy^2, \\
 \frac{\partial F_y}{\partial x} &amp;= \frac{\partial}{\partial x}(ayx^3) = 3ayx^2.
 \end{align*}\]</div>
-<p>Because these two expressions are not equal in general, this force is nonconservative.</p>
-<p><strong>(b)</strong> For the force <span class="math notranslate nohighlight">\(\vec{F} = a\!\left(\dfrac{y^2}{x}\,\hat{i} + 2y\ln\!\left(\dfrac{x}{b}\right)\hat{j}\right)\)</span>, the partial derivatives are</p>
+<p class="sd-card-text">Because these two expressions are not equal in general, this force is nonconservative.</p>
+<p class="sd-card-text"><strong>(b)</strong> For the force <span class="math notranslate nohighlight">\(\vec{F} = a\!\left(\dfrac{y^2}{x}\,\hat{i} + 2y\ln\!\left(\dfrac{x}{b}\right)\hat{j}\right)\)</span>, the partial derivatives are</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \frac{\partial F_x}{\partial y} &amp;= \frac{\partial}{\partial y}\!\left(a\frac{y^2}{x}\right) = \frac{2ay}{x}, \\
 \frac{\partial F_y}{\partial x} &amp;= \frac{\partial}{\partial x}\!\left(2ay\ln\!\left(\frac{x}{b}\right)\right) = \frac{2ay}{x}.
 \end{align*}\]</div>
-<p>Since the mixed partial derivatives are equal, this force is conservative.</p>
-<p><strong>(c)</strong> For the force <span class="math notranslate nohighlight">\(\vec{F} = \dfrac{ax\,\hat{i} + ay\,\hat{j}}{x^2 + y^2}\)</span>, the partial derivatives are</p>
+<p class="sd-card-text">Since the mixed partial derivatives are equal, this force is conservative.</p>
+<p class="sd-card-text"><strong>(c)</strong> For the force <span class="math notranslate nohighlight">\(\vec{F} = \dfrac{ax\,\hat{i} + ay\,\hat{j}}{x^2 + y^2}\)</span>, the partial derivatives are</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \frac{\partial F_x}{\partial y} &amp;= \frac{\partial}{\partial y}\!\left(\frac{ax}{x^2 + y^2}\right) = -\frac{2axy}{(x^2 + y^2)^2}, \\
 \frac{\partial F_y}{\partial x} &amp;= \frac{\partial}{\partial x}\!\left(\frac{ay}{x^2 + y^2}\right) = -\frac{2axy}{(x^2 + y^2)^2}.
 \end{align*}\]</div>
-<p>Because these derivatives are equal, this force is conservative in the region where it is defined.</p>
+<p class="sd-card-text">Because these derivatives are equal, this force is conservative in the region where it is defined.</p>
 <hr class="docutils" />
-<p><strong>The Conclusion</strong></p>
-<p>The force in part <strong>(a)</strong> is nonconservative because the mixed partial derivatives of its components are not equal. The forces in parts <strong>(b)</strong> and <strong>(c)</strong> satisfy the condition <span class="math notranslate nohighlight">\(\partial F_x / \partial y = \partial F_y / \partial x\)</span> and are therefore conservative. This classification determines whether a potential energy function can be defined for each force.</p>
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The force in part <strong>(a)</strong> is nonconservative because the mixed partial derivatives of its components are not equal. The forces in parts <strong>(b)</strong> and <strong>(c)</strong> satisfy the condition <span class="math notranslate nohighlight">\(\partial F_x / \partial y = \partial F_y / \partial x\)</span> and are therefore conservative. This classification determines whether a potential energy function can be defined for each force.</p>
 <hr class="docutils" />
-<p><strong>The Verification</strong></p>
-<p>The results are verified by symbolically evaluating the mixed partial derivatives of each force component and confirming whether they are equal.</p>
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The results are verified by symbolically evaluating the mixed partial derivatives of each force component and confirming whether they are equal.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sp</span>
 
 <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;x y a b&#39;</span><span class="p">)</span>
@@ -1233,7 +1272,12 @@ F_l = -\frac{dU}{dl}.
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Part (c):&quot;</span><span class="p">,</span> <span class="n">sp</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">Fx_c</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span> <span class="n">sp</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">Fy_c</span><span class="p">,</span> <span class="n">x</span><span class="p">))</span>
 </pre></div>
 </div>
-</section>
+</div>
+</details></section>
+</div>
+<div class="tip margin checkpoint admonition">
+<p class="admonition-title">Checkpoint</p>
+<p>A force does different amounts of work along two different paths between the same endpoints. Can that force be described by a single potential energy function?</p>
 </div>
 </section>
 <section id="example-problem-force-due-to-a-quartic-potential-energy">
@@ -1249,39 +1293,41 @@ F_l = -\frac{dU}{dl}.
 \[ U(x) = \frac{1}{4} c x^4, \]</div>
 <p>where <span class="math notranslate nohighlight">\(c = 8\ \mathrm{N/m^3}\)</span>. Its total energy at <span class="math notranslate nohighlight">\(x = 0\)</span> is <span class="math notranslate nohighlight">\(2\ \mathrm{J}\)</span>, and it is not subject to any non-conservative forces. Find <strong>(a)</strong> the positions where its kinetic energy is zero and <strong>(b)</strong> the forces at those positions.</p>
 </div></blockquote>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The system consists of the particle alone moving along the <span class="math notranslate nohighlight">\(x\)</span>-axis under the influence of a position-dependent conservative force derived from the given potential energy function. No non-conservative forces act on the particle, so mechanical energy is conserved. The total mechanical energy of the system is constant and equal to <span class="math notranslate nohighlight">\(2\ \mathrm{J}\)</span> at all positions. Points where the kinetic energy is zero correspond to turning points of the motion, where the total energy equals the potential energy. The force acting on the particle is obtained from the negative derivative of the potential energy with respect to position.</p>
 <hr class="docutils" />
-<p><strong>The Model</strong></p>
-<p>The system consists of the particle alone moving along the <span class="math notranslate nohighlight">\(x\)</span>-axis under the influence of a position-dependent conservative force derived from the given potential energy function. No non-conservative forces act on the particle, so mechanical energy is conserved. The total mechanical energy of the system is constant and equal to <span class="math notranslate nohighlight">\(2\ \mathrm{J}\)</span> at all positions. Points where the kinetic energy is zero correspond to turning points of the motion, where the total energy equals the potential energy. The force acting on the particle is obtained from the negative derivative of the potential energy with respect to position.</p>
-<hr class="docutils" />
-<p><strong>The Math</strong></p>
-<p><strong>(a)</strong> The kinetic energy is zero when the potential energy equals the total mechanical energy. Setting <span class="math notranslate nohighlight">\(U(x)\)</span> equal to <span class="math notranslate nohighlight">\(2\ \mathrm{J}\)</span> gives</p>
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text"><strong>(a)</strong> The kinetic energy is zero when the potential energy equals the total mechanical energy. Setting <span class="math notranslate nohighlight">\(U(x)\)</span> equal to <span class="math notranslate nohighlight">\(2\ \mathrm{J}\)</span> gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 2\ \mathrm{J} &amp;= \frac{1}{4} (8\ \mathrm{N/m^3}) x^4.
 \end{align*}\]</div>
-<p>Solving for <span class="math notranslate nohighlight">\(x\)</span> yields</p>
+<p class="sd-card-text">Solving for <span class="math notranslate nohighlight">\(x\)</span> yields</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 x^4 &amp;= 1 \\
 x &amp;= \pm 1\ \mathrm{m}.
 \end{align*}\]</div>
-<p><strong>(b)</strong> The force associated with a one-dimensional potential energy function is given by the negative derivative of the potential energy with respect to position, so the force is</p>
+<p class="sd-card-text"><strong>(b)</strong> The force associated with a one-dimensional potential energy function is given by the negative derivative of the potential energy with respect to position, so the force is</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 F_x &amp;= -\frac{dU}{dx} = -c x^3.
 \end{align*}\]</div>
-<p>Evaluating the force at the turning points gives</p>
+<p class="sd-card-text">Evaluating the force at the turning points gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \vec{F}(+1\ \mathrm{m}) &amp;= -(8\ \mathrm{N/m^3})(1\ \mathrm{m})^3\,\hat{i} = -8\ \mathrm{N}\,\hat{i}, \\
 \vec{F}(-1\ \mathrm{m}) &amp;= -(8\ \mathrm{N/m^3})(-1\ \mathrm{m})^3\,\hat{i} = +8\ \mathrm{N}\,\hat{i}.
 \end{align*}\]</div>
 <hr class="docutils" />
-<p><strong>The Conclusion</strong></p>
-<p>The particle’s kinetic energy is zero at <span class="math notranslate nohighlight">\(x = \pm 1\ \mathrm{m}\)</span>. At both positions, the magnitude of the force is <span class="math notranslate nohighlight">\(8\ \mathrm{N}\)</span>, and the force points toward the origin. This behavior is characteristic of a restoring force associated with a symmetric potential energy minimum at <span class="math notranslate nohighlight">\(x = 0\)</span>.</p>
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The particle’s kinetic energy is zero at <span class="math notranslate nohighlight">\(x = \pm 1\ \mathrm{m}\)</span>. At both positions, the magnitude of the force is <span class="math notranslate nohighlight">\(8\ \mathrm{N}\)</span>, and the force points toward the origin. This behavior is characteristic of a restoring force associated with a symmetric potential energy minimum at <span class="math notranslate nohighlight">\(x = 0\)</span>.</p>
 <hr class="docutils" />
-<p><strong>The Verification</strong></p>
-<p>Substituting <span class="math notranslate nohighlight">\(x = \pm 1\ \mathrm{m}\)</span> into the potential energy function confirms that <span class="math notranslate nohighlight">\(U = 2\ \mathrm{J}\)</span> at both positions, matching the total mechanical energy. Differentiating the potential energy function reproduces the force expression and confirms that the force always acts toward decreasing <span class="math notranslate nohighlight">\(|x|\)</span>.</p>
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">Substituting <span class="math notranslate nohighlight">\(x = \pm 1\ \mathrm{m}\)</span> into the potential energy function confirms that <span class="math notranslate nohighlight">\(U = 2\ \mathrm{J}\)</span> at both positions, matching the total mechanical energy. Differentiating the potential energy function reproduces the force expression and confirms that the force always acts toward decreasing <span class="math notranslate nohighlight">\(|x|\)</span>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sp</span>
 
 <span class="n">x</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
@@ -1296,7 +1342,8 @@ F_x &amp;= -\frac{dU}{dx} = -c x^3.
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Force at x = -1 m:&quot;</span><span class="p">,</span> <span class="n">F</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
 </pre></div>
 </div>
-</section>
+</div>
+</details></section>
 </div>
 </section>
 </section>
@@ -1315,14 +1362,14 @@ F_x &amp;= -\frac{dU}{dx} = -c x^3.
 <div class="note admonition">
 <p class="admonition-title">Conservation of Energy</p>
 <p>The mechanical energy <span class="math notranslate nohighlight">\(E\)</span> of a particle stays constant unless external or non-conservative forces do work on it.  The change in mechanical energy is equal to the work done (from <span class="math notranslate nohighlight">\(A\)</span> to <span class="math notranslate nohighlight">\(B\)</span>) by the non-conservative forces <span class="math notranslate nohighlight">\(W_{{\rm nc},AB}\)</span>: or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9f7f06fe-bfce-45eb-be7e-f730cfe58fb6">
-<span class="eqno">(8.12)<a class="headerlink" href="#equation-9f7f06fe-bfce-45eb-be7e-f730cfe58fb6" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-4431462d-64b1-4dab-96ff-e5a370c29607">
+<span class="eqno">(8.12)<a class="headerlink" href="#equation-4431462d-64b1-4dab-96ff-e5a370c29607" title="Permalink to this equation">#</a></span>\[\begin{align}
 W_{{\rm nc},AB} = \Delta(K+U)_{AB} = \Delta E_{AB}.
 \end{align}\]</div>
 </div>
 <p>This expression describes the concept of <strong>energy conservation</strong> for a classical particle, which is a point mass, moves at nonrelativistic speed, and obey’s Newton’s laws of motion.  We can recover the prior expression when there are no non-conservative forces or the non-conservative forces do no work.  In this case we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e55778ce-c8dd-4ab2-b46b-01373ba8657e">
-<span class="eqno">(8.13)<a class="headerlink" href="#equation-e55778ce-c8dd-4ab2-b46b-01373ba8657e" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d850054a-e1da-4e47-ad5f-43fb31483020">
+<span class="eqno">(8.13)<a class="headerlink" href="#equation-d850054a-e1da-4e47-ad5f-43fb31483020" title="Permalink to this equation">#</a></span>\[\begin{align}
 W_{{\rm nc},AB} &amp;= \Delta E_{AB} = 0, \\
 0 &amp;= \Delta(K+U)_{AB} = (K_B-K_A) + (U_B-U_A),\\
 K_A + U_A &amp;= K_B + U_B. \checkmark
@@ -1362,44 +1409,46 @@ t &amp;= \int_o^t dt, \\
 <div><p>A particle of mass <span class="math notranslate nohighlight">\(m\)</span> is hung from the ceiling by a massless string of length <span class="math notranslate nohighlight">\(1.0\ \mathrm{m}\)</span>, as shown in Figure <a class="reference internal" href="#pendulum-energy-example"><span class="std std-numref">8.3</span></a>. The particle is released from rest, when the angle between the string and the downward vertical direction is <span class="math notranslate nohighlight">\(30^\circ\)</span>. What is its speed when it reaches the lowest point of its arc?</p>
 </div></blockquote>
 <figure class="align-default" id="pendulum-energy-example">
-<img alt="pendulum energy example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260105.231123/resources/65ed9be40be5ff9da459a7a1163e71471f30ce1c" />
+<img alt="simple pendulum released from rest at an angle" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260105.231123/resources/65ed9be40be5ff9da459a7a1163e71471f30ce1c" />
 <figcaption>
-<p><span class="caption-number">Fig. 8.3 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#pendulum-energy-example" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 8.3 </span><span class="caption-text">A particle hung from a string constitutes a simple pendulum. It is shown when released from rest, along with the distances used to determine the height above the lowest point of the swing. That height determines the initial gravitational potential energy that becomes kinetic energy at the bottom. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/8-3-conservation-of-energy">Conservation of Energy</a>.</span><a class="headerlink" href="#pendulum-energy-example" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The system consists of the particle and the Earth so that gravitational potential energy is internal to the system. The string is massless and constrains the particle to move on a circular arc of radius <span class="math notranslate nohighlight">\(L = 1.0\ \mathrm{m}\)</span>. Air resistance is neglected. The string tension does no work on the particle because the tension force is always directed along the string while the displacement is tangent to the arc, so the tension is perpendicular to the instantaneous displacement. The only force that does work is gravity, which is conservative, so mechanical energy is conserved. The gravitational potential energy is defined to be zero at the lowest point of the swing. The particle is released from rest at an initial angle <span class="math notranslate nohighlight">\(\theta_o = 30^\circ\)</span> measured from the downward vertical, so the initial mechanical energy is purely gravitational potential energy determined by the vertical height above the lowest point.</p>
 <hr class="docutils" />
-<p><strong>The Model</strong></p>
-<p>The system consists of the particle and the Earth so that gravitational potential energy is internal to the system. The string is massless and constrains the particle to move on a circular arc of radius <span class="math notranslate nohighlight">\(L = 1.0\ \mathrm{m}\)</span>. Air resistance is neglected. The string tension does no work on the particle because the tension force is always directed along the string while the displacement is tangent to the arc, so the tension is perpendicular to the instantaneous displacement. The only force that does work is gravity, which is conservative, so mechanical energy is conserved. The gravitational potential energy is defined to be zero at the lowest point of the swing. The particle is released from rest at an initial angle <span class="math notranslate nohighlight">\(\theta_o = 30^\circ\)</span> measured from the downward vertical, so the initial mechanical energy is purely gravitational potential energy determined by the vertical height above the lowest point.</p>
-<hr class="docutils" />
-<p><strong>The Math</strong></p>
-<p>Because only conservative work is done on the particle–Earth system, mechanical energy is conserved, so the total mechanical energy at release equals the total mechanical energy at the lowest point. The particle starts from rest, so its initial kinetic energy is zero, and at the lowest point the gravitational potential energy is defined to be zero. Conservation of energy therefore requires that the initial gravitational potential energy equals the final kinetic energy, which gives</p>
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">Because only conservative work is done on the particle–Earth system, mechanical energy is conserved, so the total mechanical energy at release equals the total mechanical energy at the lowest point. The particle starts from rest, so its initial kinetic energy is zero, and at the lowest point the gravitational potential energy is defined to be zero. Conservation of energy therefore requires that the initial gravitational potential energy equals the final kinetic energy, which gives</p>
 <div class="math notranslate nohighlight">
 \[
 mgh = \frac{1}{2}mv^2.
 \]</div>
-<p>The height <span class="math notranslate nohighlight">\(h\)</span> is found from the geometry of a circle of radius <span class="math notranslate nohighlight">\(L\)</span>. At the release angle <span class="math notranslate nohighlight">\(\theta_o\)</span>, the vertical distance from the pivot to the particle is <span class="math notranslate nohighlight">\(L\cos\theta_o\)</span>, while at the lowest point that vertical distance is <span class="math notranslate nohighlight">\(L\)</span>, so the particle is higher than the lowest point by</p>
+<p class="sd-card-text">The height <span class="math notranslate nohighlight">\(h\)</span> is found from the geometry of a circle of radius <span class="math notranslate nohighlight">\(L\)</span>. At the release angle <span class="math notranslate nohighlight">\(\theta_o\)</span>, the vertical distance from the pivot to the particle is <span class="math notranslate nohighlight">\(L\cos\theta_o\)</span>, while at the lowest point that vertical distance is <span class="math notranslate nohighlight">\(L\)</span>, so the particle is higher than the lowest point by</p>
 <div class="math notranslate nohighlight">
 \[
 h = L - L\cos\theta_o = L(1-\cos\theta_o).
 \]</div>
-<p>Substituting this height into the energy equation and canceling <span class="math notranslate nohighlight">\(m\)</span> gives</p>
+<p class="sd-card-text">Substituting this height into the energy equation and canceling <span class="math notranslate nohighlight">\(m\)</span> gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 m g L(1-\cos\theta_o) &amp;= \frac{1}{2} m v^2, \\
 v &amp;= \sqrt{2gL(1-\cos\theta_o)}.
 \end{align*}\]</div>
-<p>Substituting <span class="math notranslate nohighlight">\(g = 9.81\ \mathrm{m/s^2}\)</span>, <span class="math notranslate nohighlight">\(L = 1.0\ \mathrm{m}\)</span>, and <span class="math notranslate nohighlight">\(\theta_o = 30^\circ\)</span> yields</p>
+<p class="sd-card-text">Substituting <span class="math notranslate nohighlight">\(g = 9.81\ \mathrm{m/s^2}\)</span>, <span class="math notranslate nohighlight">\(L = 1.0\ \mathrm{m}\)</span>, and <span class="math notranslate nohighlight">\(\theta_o = 30^\circ\)</span> yields</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 v &amp;= \sqrt{2(9.81\ \mathrm{m/s^2})(1.0\ \mathrm{m})(1-\cos 30^\circ)} \\
 &amp;= 1.62\ \mathrm{m/s}.
 \end{align*}\]</div>
 <hr class="docutils" />
-<p><strong>The Conclusion</strong></p>
-<p>The particle’s speed at the lowest point of its arc is <span class="math notranslate nohighlight">\(1.62\ \mathrm{m/s}\)</span>. This result follows from conservation of mechanical energy, using the vertical height change implied by the pendulum geometry and defining gravitational potential energy to be zero at the lowest point.</p>
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The particle’s speed at the lowest point of its arc is <span class="math notranslate nohighlight">\(1.62\ \mathrm{m/s}\)</span>. This result follows from conservation of mechanical energy, using the vertical height change implied by the pendulum geometry and defining gravitational potential energy to be zero at the lowest point.</p>
 <hr class="docutils" />
-<p><strong>The Verification</strong></p>
-<p>The analytic speed is verified by computing the total energy from the initial height and confirming that the kinetic energy at the bottom equals that total energy. An animation is then generated in which the pendulum swings from <span class="math notranslate nohighlight">\(\theta_o\)</span> toward the lowest point while an energy bar graph updates to show constant total energy and the exchange between gravitational potential energy and kinetic energy.</p>
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The analytic speed is verified by computing the total energy from the initial height and confirming that the kinetic energy at the bottom equals that total energy. An animation is then generated in which the pendulum swings from <span class="math notranslate nohighlight">\(\theta_o\)</span> toward the lowest point while an energy bar graph updates to show constant total energy and the exchange between gravitational potential energy and kinetic energy.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.animation</span><span class="w"> </span><span class="kn">import</span> <span class="n">FuncAnimation</span>
@@ -1421,7 +1470,8 @@ v &amp;= \sqrt{2(9.81\ \mathrm{m/s^2})(1.0\ \mathrm{m})(1-\cos 30^\circ)} \\
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The total mechanical energy (with U=0 at the bottom) is </span><span class="si">%.3f</span><span class="s2"> J.&quot;</span> <span class="o">%</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">E_total</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
 </pre></div>
 </div>
-</section>
+</div>
+</details></section>
 </div>
 <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
@@ -1776,42 +1826,42 @@ input[type=range].anim-slider {
 </style>
 
 <div class="animation">
-  <img id="_anim_img7ffb18a8596542219bbb2e015e95fca5">
+  <img id="_anim_img56e16d9bf6314001be3c71863ee1941c">
   <div class="anim-controls">
-    <input id="_anim_slider7ffb18a8596542219bbb2e015e95fca5" type="range" class="anim-slider"
+    <input id="_anim_slider56e16d9bf6314001be3c71863ee1941c" type="range" class="anim-slider"
            name="points" min="0" max="1" step="1" value="0"
-           oninput="anim7ffb18a8596542219bbb2e015e95fca5.set_frame(parseInt(this.value));">
+           oninput="anim56e16d9bf6314001be3c71863ee1941c.set_frame(parseInt(this.value));">
     <div class="anim-buttons">
-      <button title="Decrease speed" aria-label="Decrease speed" onclick="anim7ffb18a8596542219bbb2e015e95fca5.slower()">
+      <button title="Decrease speed" aria-label="Decrease speed" onclick="anim56e16d9bf6314001be3c71863ee1941c.slower()">
           <i class="fa fa-minus"></i></button>
-      <button title="First frame" aria-label="First frame" onclick="anim7ffb18a8596542219bbb2e015e95fca5.first_frame()">
+      <button title="First frame" aria-label="First frame" onclick="anim56e16d9bf6314001be3c71863ee1941c.first_frame()">
         <i class="fa fa-fast-backward"></i></button>
-      <button title="Previous frame" aria-label="Previous frame" onclick="anim7ffb18a8596542219bbb2e015e95fca5.previous_frame()">
+      <button title="Previous frame" aria-label="Previous frame" onclick="anim56e16d9bf6314001be3c71863ee1941c.previous_frame()">
           <i class="fa fa-step-backward"></i></button>
-      <button title="Play backwards" aria-label="Play backwards" onclick="anim7ffb18a8596542219bbb2e015e95fca5.reverse_animation()">
+      <button title="Play backwards" aria-label="Play backwards" onclick="anim56e16d9bf6314001be3c71863ee1941c.reverse_animation()">
           <i class="fa fa-play fa-flip-horizontal"></i></button>
-      <button title="Pause" aria-label="Pause" onclick="anim7ffb18a8596542219bbb2e015e95fca5.pause_animation()">
+      <button title="Pause" aria-label="Pause" onclick="anim56e16d9bf6314001be3c71863ee1941c.pause_animation()">
           <i class="fa fa-pause"></i></button>
-      <button title="Play" aria-label="Play" onclick="anim7ffb18a8596542219bbb2e015e95fca5.play_animation()">
+      <button title="Play" aria-label="Play" onclick="anim56e16d9bf6314001be3c71863ee1941c.play_animation()">
           <i class="fa fa-play"></i></button>
-      <button title="Next frame" aria-label="Next frame" onclick="anim7ffb18a8596542219bbb2e015e95fca5.next_frame()">
+      <button title="Next frame" aria-label="Next frame" onclick="anim56e16d9bf6314001be3c71863ee1941c.next_frame()">
           <i class="fa fa-step-forward"></i></button>
-      <button title="Last frame" aria-label="Last frame" onclick="anim7ffb18a8596542219bbb2e015e95fca5.last_frame()">
+      <button title="Last frame" aria-label="Last frame" onclick="anim56e16d9bf6314001be3c71863ee1941c.last_frame()">
           <i class="fa fa-fast-forward"></i></button>
-      <button title="Increase speed" aria-label="Increase speed" onclick="anim7ffb18a8596542219bbb2e015e95fca5.faster()">
+      <button title="Increase speed" aria-label="Increase speed" onclick="anim56e16d9bf6314001be3c71863ee1941c.faster()">
           <i class="fa fa-plus"></i></button>
     </div>
-    <form title="Repetition mode" aria-label="Repetition mode" action="#n" name="_anim_loop_select7ffb18a8596542219bbb2e015e95fca5"
+    <form title="Repetition mode" aria-label="Repetition mode" action="#n" name="_anim_loop_select56e16d9bf6314001be3c71863ee1941c"
           class="anim-state">
-      <input type="radio" name="state" value="once" id="_anim_radio1_7ffb18a8596542219bbb2e015e95fca5"
+      <input type="radio" name="state" value="once" id="_anim_radio1_56e16d9bf6314001be3c71863ee1941c"
              >
-      <label for="_anim_radio1_7ffb18a8596542219bbb2e015e95fca5">Once</label>
-      <input type="radio" name="state" value="loop" id="_anim_radio2_7ffb18a8596542219bbb2e015e95fca5"
+      <label for="_anim_radio1_56e16d9bf6314001be3c71863ee1941c">Once</label>
+      <input type="radio" name="state" value="loop" id="_anim_radio2_56e16d9bf6314001be3c71863ee1941c"
              checked>
-      <label for="_anim_radio2_7ffb18a8596542219bbb2e015e95fca5">Loop</label>
-      <input type="radio" name="state" value="reflect" id="_anim_radio3_7ffb18a8596542219bbb2e015e95fca5"
+      <label for="_anim_radio2_56e16d9bf6314001be3c71863ee1941c">Loop</label>
+      <input type="radio" name="state" value="reflect" id="_anim_radio3_56e16d9bf6314001be3c71863ee1941c"
              >
-      <label for="_anim_radio3_7ffb18a8596542219bbb2e015e95fca5">Reflect</label>
+      <label for="_anim_radio3_56e16d9bf6314001be3c71863ee1941c">Reflect</label>
     </form>
   </div>
 </div>
@@ -1821,9 +1871,9 @@ input[type=range].anim-slider {
   /* Instantiate the Animation class. */
   /* The IDs given should match those used in the template above. */
   (function() {
-    var img_id = "_anim_img7ffb18a8596542219bbb2e015e95fca5";
-    var slider_id = "_anim_slider7ffb18a8596542219bbb2e015e95fca5";
-    var loop_select_id = "_anim_loop_select7ffb18a8596542219bbb2e015e95fca5";
+    var img_id = "_anim_img56e16d9bf6314001be3c71863ee1941c";
+    var slider_id = "_anim_slider56e16d9bf6314001be3c71863ee1941c";
+    var loop_select_id = "_anim_loop_select56e16d9bf6314001be3c71863ee1941c";
     var frames = new Array(131);
     
   frames[0] = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABXgAAAJ2CAYAAADlpurJAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90\
@@ -77690,7 +77740,7 @@ CbwAAAAAAJkSeAEAAAAAMvUvScuryPLfEGIAAAAASUVORK5CYII=\
     /* set a timeout to make sure all the above elements are created before
        the object is initialized. */
     setTimeout(function() {
-        anim7ffb18a8596542219bbb2e015e95fca5 = new Animation(frames, img_id, slider_id, 20.0,
+        anim56e16d9bf6314001be3c71863ee1941c = new Animation(frames, img_id, slider_id, 20.0,
                                  loop_select_id);
     }, 0);
   })()
@@ -77709,37 +77759,39 @@ CbwAAAAAAJkSeAEAAAAAMvUvScuryPLfEGIAAAAASUVORK5CYII=\
 <div><p>A helicopter is hovering at an altitude of <span class="math notranslate nohighlight">\(1\ \mathrm{km}\)</span> when a panel from its underside breaks loose and plummets to the ground (Figure <a class="reference internal" href="#helicopter-energy-example"><span class="std std-numref">8.4</span></a>). The mass of the panel is <span class="math notranslate nohighlight">\(15\ \mathrm{kg}\)</span>, and it hits the ground with a speed of <span class="math notranslate nohighlight">\(45\ \mathrm{m/s}\)</span>. How much mechanical energy was dissipated by air resistance during the panel’s descent?</p>
 </div></blockquote>
 <figure class="align-default" id="helicopter-energy-example">
-<img alt="helicopter energy example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260105.231123/resources/a011900937d51f442f3cffe060fc15dea8c5deae" />
+<img alt="helicopter losing a panel with energy bar graphs" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260105.231123/resources/a011900937d51f442f3cffe060fc15dea8c5deae" />
 <figcaption>
-<p><span class="caption-number">Fig. 8.4 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#helicopter-energy-example" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 8.4 </span><span class="caption-text">A helicopter loses a panel that falls until it reaches terminal velocity. At the start of the fall, the panel has gravitational potential energy and no kinetic energy. Later, the panel has kinetic energy and less gravitational potential energy, but the total mechanical energy has decreased because air resistance dissipates mechanical energy. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/8-3-conservation-of-energy">Conservation of Energy</a>.</span><a class="headerlink" href="#helicopter-energy-example" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The system consists of the panel and the Earth. Gravity is a conservative force, while air resistance is a non-conservative force that does negative work during the fall. The panel is released from rest at an altitude of <span class="math notranslate nohighlight">\(1\ \mathrm{km}\)</span> and reaches the ground with a known speed, so the dissipated mechanical energy can be found from the change in the system’s mechanical energy. The gravitational potential energy is defined to be zero at ground level. The energy dissipated by air resistance is taken to be the magnitude of the non-conservative work, which equals the decrease in mechanical energy from the initial state to the final state.</p>
 <hr class="docutils" />
-<p><strong>The Model</strong></p>
-<p>The system consists of the panel and the Earth. Gravity is a conservative force, while air resistance is a non-conservative force that does negative work during the fall. The panel is released from rest at an altitude of <span class="math notranslate nohighlight">\(1\ \mathrm{km}\)</span> and reaches the ground with a known speed, so the dissipated mechanical energy can be found from the change in the system’s mechanical energy. The gravitational potential energy is defined to be zero at ground level. The energy dissipated by air resistance is taken to be the magnitude of the non-conservative work, which equals the decrease in mechanical energy from the initial state to the final state.</p>
-<hr class="docutils" />
-<p><strong>The Math</strong></p>
-<p>The change in mechanical energy between the initial state <span class="math notranslate nohighlight">\(i\)</span> and the final state <span class="math notranslate nohighlight">\(f\)</span> is related to the non-conservative work by</p>
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">The change in mechanical energy between the initial state <span class="math notranslate nohighlight">\(i\)</span> and the final state <span class="math notranslate nohighlight">\(f\)</span> is related to the non-conservative work by</p>
 <div class="math notranslate nohighlight">
 \[
 W_{\mathrm{nc},if} = \Delta(K+U)_{if} = (K_f+U_f) - (K_i+U_i).
 \]</div>
-<p>Because air resistance dissipates energy, the dissipated mechanical energy is the magnitude of this work, so <span class="math notranslate nohighlight">\(\Delta E_{\mathrm{diss}} = |W_{\mathrm{nc},if}|\)</span>.</p>
-<p>At release, the panel starts from rest, so <span class="math notranslate nohighlight">\(K_i = 0\)</span>. The gravitational potential energy is defined to be zero at the ground, so <span class="math notranslate nohighlight">\(U_f = 0\)</span> and <span class="math notranslate nohighlight">\(U_i = mgh\)</span> with <span class="math notranslate nohighlight">\(h = 1000\ \mathrm{m}\)</span>. The final kinetic energy is <span class="math notranslate nohighlight">\(K_f = \tfrac{1}{2}mv^2\)</span> with <span class="math notranslate nohighlight">\(v = 45\ \mathrm{m/s}\)</span>. Substituting these expressions gives</p>
+<p class="sd-card-text">Because air resistance dissipates energy, the dissipated mechanical energy is the magnitude of this work, so <span class="math notranslate nohighlight">\(\Delta E_{\mathrm{diss}} = |W_{\mathrm{nc},if}|\)</span>.</p>
+<p class="sd-card-text">At release, the panel starts from rest, so <span class="math notranslate nohighlight">\(K_i = 0\)</span>. The gravitational potential energy is defined to be zero at the ground, so <span class="math notranslate nohighlight">\(U_f = 0\)</span> and <span class="math notranslate nohighlight">\(U_i = mgh\)</span> with <span class="math notranslate nohighlight">\(h = 1000\ \mathrm{m}\)</span>. The final kinetic energy is <span class="math notranslate nohighlight">\(K_f = \tfrac{1}{2}mv^2\)</span> with <span class="math notranslate nohighlight">\(v = 45\ \mathrm{m/s}\)</span>. Substituting these expressions gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 W_{\mathrm{nc},if}
 &amp;= \left(\frac{1}{2}mv^2 + 0\right) - \left(0 + mgh\right) \\
 &amp;= \frac{1}{2}mv^2 - mgh.
 \end{align*}\]</div>
-<p>Using <span class="math notranslate nohighlight">\(m = 15\ \mathrm{kg}\)</span>, <span class="math notranslate nohighlight">\(v = 45\ \mathrm{m/s}\)</span>, <span class="math notranslate nohighlight">\(g = 9.81\ \mathrm{m/s^2}\)</span>, and <span class="math notranslate nohighlight">\(h = 1000\ \mathrm{m}\)</span> yields</p>
+<p class="sd-card-text">Using <span class="math notranslate nohighlight">\(m = 15\ \mathrm{kg}\)</span>, <span class="math notranslate nohighlight">\(v = 45\ \mathrm{m/s}\)</span>, <span class="math notranslate nohighlight">\(g = 9.81\ \mathrm{m/s^2}\)</span>, and <span class="math notranslate nohighlight">\(h = 1000\ \mathrm{m}\)</span> yields</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 W_{\mathrm{nc},if}
 &amp;= \frac{1}{2}(15\ \mathrm{kg})(45\ \mathrm{m/s})^2 - (15\ \mathrm{kg})(9.81\ \mathrm{m/s^2})(1000\ \mathrm{m}) \\
 &amp;= -1.32\times 10^{5}\ \mathrm{J}.
 \end{align*}\]</div>
-<p>Therefore, the mechanical energy dissipated by air resistance is</p>
+<p class="sd-card-text">Therefore, the mechanical energy dissipated by air resistance is</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \Delta E_{\mathrm{diss}}
@@ -77748,11 +77800,11 @@ W_{\mathrm{nc},if}
 &amp;= 132\ \mathrm{kJ}.
 \end{align*}\]</div>
 <hr class="docutils" />
-<p><strong>The Conclusion</strong></p>
-<p>Air resistance dissipated <span class="math notranslate nohighlight">\(132\ \mathrm{kJ}\)</span> of mechanical energy during the panel’s fall. This equals the decrease in the system’s mechanical energy from the initial state at <span class="math notranslate nohighlight">\(1\ \mathrm{km}\)</span> altitude to the final state at the ground.</p>
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">Air resistance dissipated <span class="math notranslate nohighlight">\(132\ \mathrm{kJ}\)</span> of mechanical energy during the panel’s fall. This equals the decrease in the system’s mechanical energy from the initial state at <span class="math notranslate nohighlight">\(1\ \mathrm{km}\)</span> altitude to the final state at the ground.</p>
 <hr class="docutils" />
-<p><strong>The Verification</strong></p>
-<p>The first verification recomputes the dissipated energy directly from <span class="math notranslate nohighlight">\(\Delta E_{\mathrm{diss}} = mgh - \tfrac{1}{2}mv^2\)</span>. The second verification produces a simple animation of a falling object with air resistance modeled as a linear drag force <span class="math notranslate nohighlight">\(F_d = -bv\)</span>. The drag coefficient <span class="math notranslate nohighlight">\(b\)</span> is chosen so that the object hits the ground at approximately <span class="math notranslate nohighlight">\(45\ \mathrm{m/s}\)</span>, and an energy bar chart is updated during the fall to show gravitational potential energy decreasing, kinetic energy increasing, and total mechanical energy decreasing due to dissipation.</p>
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The first verification recomputes the dissipated energy directly from <span class="math notranslate nohighlight">\(\Delta E_{\mathrm{diss}} = mgh - \tfrac{1}{2}mv^2\)</span>. The second verification produces a simple animation of a falling object with air resistance modeled as a linear drag force <span class="math notranslate nohighlight">\(F_d = -bv\)</span>. The drag coefficient <span class="math notranslate nohighlight">\(b\)</span> is chosen so that the object hits the ground at approximately <span class="math notranslate nohighlight">\(45\ \mathrm{m/s}\)</span>, and an energy bar chart is updated during the fall to show gravitational potential energy decreasing, kinetic energy increasing, and total mechanical energy decreasing due to dissipation.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="n">m</span> <span class="o">=</span> <span class="mf">15.0</span>
@@ -77769,7 +77821,8 @@ W_{\mathrm{nc},if}
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dissipated mechanical energy: </span><span class="si">%.0f</span><span class="s2"> J (</span><span class="si">%.0f</span><span class="s2"> kJ)&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">Ediss</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">Ediss</span><span class="o">/</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">0</span><span class="p">)))</span>
 </pre></div>
 </div>
-</section>
+</div>
+</details></section>
 </div>
 <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
@@ -78142,42 +78195,42 @@ input[type=range].anim-slider {
 </style>
 
 <div class="animation">
-  <img id="_anim_imgd0914d8dfb554e918f4aba5847e679b3">
+  <img id="_anim_img263afbb8689743b88da027722f178e48">
   <div class="anim-controls">
-    <input id="_anim_sliderd0914d8dfb554e918f4aba5847e679b3" type="range" class="anim-slider"
+    <input id="_anim_slider263afbb8689743b88da027722f178e48" type="range" class="anim-slider"
            name="points" min="0" max="1" step="1" value="0"
-           oninput="animd0914d8dfb554e918f4aba5847e679b3.set_frame(parseInt(this.value));">
+           oninput="anim263afbb8689743b88da027722f178e48.set_frame(parseInt(this.value));">
     <div class="anim-buttons">
-      <button title="Decrease speed" aria-label="Decrease speed" onclick="animd0914d8dfb554e918f4aba5847e679b3.slower()">
+      <button title="Decrease speed" aria-label="Decrease speed" onclick="anim263afbb8689743b88da027722f178e48.slower()">
           <i class="fa fa-minus"></i></button>
-      <button title="First frame" aria-label="First frame" onclick="animd0914d8dfb554e918f4aba5847e679b3.first_frame()">
+      <button title="First frame" aria-label="First frame" onclick="anim263afbb8689743b88da027722f178e48.first_frame()">
         <i class="fa fa-fast-backward"></i></button>
-      <button title="Previous frame" aria-label="Previous frame" onclick="animd0914d8dfb554e918f4aba5847e679b3.previous_frame()">
+      <button title="Previous frame" aria-label="Previous frame" onclick="anim263afbb8689743b88da027722f178e48.previous_frame()">
           <i class="fa fa-step-backward"></i></button>
-      <button title="Play backwards" aria-label="Play backwards" onclick="animd0914d8dfb554e918f4aba5847e679b3.reverse_animation()">
+      <button title="Play backwards" aria-label="Play backwards" onclick="anim263afbb8689743b88da027722f178e48.reverse_animation()">
           <i class="fa fa-play fa-flip-horizontal"></i></button>
-      <button title="Pause" aria-label="Pause" onclick="animd0914d8dfb554e918f4aba5847e679b3.pause_animation()">
+      <button title="Pause" aria-label="Pause" onclick="anim263afbb8689743b88da027722f178e48.pause_animation()">
           <i class="fa fa-pause"></i></button>
-      <button title="Play" aria-label="Play" onclick="animd0914d8dfb554e918f4aba5847e679b3.play_animation()">
+      <button title="Play" aria-label="Play" onclick="anim263afbb8689743b88da027722f178e48.play_animation()">
           <i class="fa fa-play"></i></button>
-      <button title="Next frame" aria-label="Next frame" onclick="animd0914d8dfb554e918f4aba5847e679b3.next_frame()">
+      <button title="Next frame" aria-label="Next frame" onclick="anim263afbb8689743b88da027722f178e48.next_frame()">
           <i class="fa fa-step-forward"></i></button>
-      <button title="Last frame" aria-label="Last frame" onclick="animd0914d8dfb554e918f4aba5847e679b3.last_frame()">
+      <button title="Last frame" aria-label="Last frame" onclick="anim263afbb8689743b88da027722f178e48.last_frame()">
           <i class="fa fa-fast-forward"></i></button>
-      <button title="Increase speed" aria-label="Increase speed" onclick="animd0914d8dfb554e918f4aba5847e679b3.faster()">
+      <button title="Increase speed" aria-label="Increase speed" onclick="anim263afbb8689743b88da027722f178e48.faster()">
           <i class="fa fa-plus"></i></button>
     </div>
-    <form title="Repetition mode" aria-label="Repetition mode" action="#n" name="_anim_loop_selectd0914d8dfb554e918f4aba5847e679b3"
+    <form title="Repetition mode" aria-label="Repetition mode" action="#n" name="_anim_loop_select263afbb8689743b88da027722f178e48"
           class="anim-state">
-      <input type="radio" name="state" value="once" id="_anim_radio1_d0914d8dfb554e918f4aba5847e679b3"
+      <input type="radio" name="state" value="once" id="_anim_radio1_263afbb8689743b88da027722f178e48"
              >
-      <label for="_anim_radio1_d0914d8dfb554e918f4aba5847e679b3">Once</label>
-      <input type="radio" name="state" value="loop" id="_anim_radio2_d0914d8dfb554e918f4aba5847e679b3"
+      <label for="_anim_radio1_263afbb8689743b88da027722f178e48">Once</label>
+      <input type="radio" name="state" value="loop" id="_anim_radio2_263afbb8689743b88da027722f178e48"
              checked>
-      <label for="_anim_radio2_d0914d8dfb554e918f4aba5847e679b3">Loop</label>
-      <input type="radio" name="state" value="reflect" id="_anim_radio3_d0914d8dfb554e918f4aba5847e679b3"
+      <label for="_anim_radio2_263afbb8689743b88da027722f178e48">Loop</label>
+      <input type="radio" name="state" value="reflect" id="_anim_radio3_263afbb8689743b88da027722f178e48"
              >
-      <label for="_anim_radio3_d0914d8dfb554e918f4aba5847e679b3">Reflect</label>
+      <label for="_anim_radio3_263afbb8689743b88da027722f178e48">Reflect</label>
     </form>
   </div>
 </div>
@@ -78187,9 +78240,9 @@ input[type=range].anim-slider {
   /* Instantiate the Animation class. */
   /* The IDs given should match those used in the template above. */
   (function() {
-    var img_id = "_anim_imgd0914d8dfb554e918f4aba5847e679b3";
-    var slider_id = "_anim_sliderd0914d8dfb554e918f4aba5847e679b3";
-    var loop_select_id = "_anim_loop_selectd0914d8dfb554e918f4aba5847e679b3";
+    var img_id = "_anim_img263afbb8689743b88da027722f178e48";
+    var slider_id = "_anim_slider263afbb8689743b88da027722f178e48";
+    var loop_select_id = "_anim_loop_select263afbb8689743b88da027722f178e48";
     var frames = new Array(269);
     
   frames[0] = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABXgAAAJ2CAYAAADlpurJAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90\
@@ -206196,7 +206249,7 @@ BLwAAAAAACUl4AUAAAAAKCkBLwAAAABASQl4AQAAAABK6v8DBhTkujmO0u8AAAAASUVORK5CYII=\
     /* set a timeout to make sure all the above elements are created before
        the object is initialized. */
     setTimeout(function() {
-        animd0914d8dfb554e918f4aba5847e679b3 = new Animation(frames, img_id, slider_id, 14.0,
+        anim263afbb8689743b88da027722f178e48 = new Animation(frames, img_id, slider_id, 14.0,
                                  loop_select_id);
     }, 0);
   })()
@@ -206214,15 +206267,17 @@ BLwAAAAAACUl4AUAAAAAKCkBLwAAAABASQl4AQAAAABK6v8DBhTkujmO0u8AAAAASUVORK5CYII=\
 <blockquote>
 <div><p>Use the potential energy <span class="math notranslate nohighlight">\(U(x) = E(x/x_o)\)</span>, for <span class="math notranslate nohighlight">\(E &gt; 0\)</span>, in Equation <a class="reference internal" href="#equation-time-integral">(8.14)</a> to find the position <span class="math notranslate nohighlight">\(x\)</span> of a particle as a function of time <span class="math notranslate nohighlight">\(t\)</span>.</p>
 </div></blockquote>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The system consists of a particle undergoing one-dimensional motion along the <span class="math notranslate nohighlight">\(x\)</span>-axis under the influence of a conservative force derived from the given potential energy function. The potential energy varies linearly with position, so the corresponding force is constant. The particle starts from rest at position <span class="math notranslate nohighlight">\(x_o\)</span> and moves under this constant force without the influence of any non-conservative forces. Mechanical energy is conserved, allowing the motion to be analyzed using the energy–time relation given in Equation <a class="reference internal" href="#equation-time-integral">(8.14)</a>.</p>
 <hr class="docutils" />
-<p><strong>The Model</strong></p>
-<p>The system consists of a particle undergoing one-dimensional motion along the <span class="math notranslate nohighlight">\(x\)</span>-axis under the influence of a conservative force derived from the given potential energy function. The potential energy varies linearly with position, so the corresponding force is constant. The particle starts from rest at position <span class="math notranslate nohighlight">\(x_o\)</span> and moves under this constant force without the influence of any non-conservative forces. Mechanical energy is conserved, allowing the motion to be analyzed using the energy–time relation given in Equation <a class="reference internal" href="#equation-time-integral">(8.14)</a>.</p>
-<hr class="docutils" />
-<p><strong>The Math</strong></p>
-<p>The energy–time relation for one-dimensional motion under a conservative force can be written as</p>
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">The energy–time relation for one-dimensional motion under a conservative force can be written as</p>
 <div class="math notranslate nohighlight">
 \[ t = \int_{x_o}^{x} \frac{dx}{\sqrt{\frac{2}{m}\,[E - U(x)]}}. \]</div>
-<p>Substituting <span class="math notranslate nohighlight">\(U(x) = E(x/x_o)\)</span> into this expression gives</p>
+<p class="sd-card-text">Substituting <span class="math notranslate nohighlight">\(U(x) = E(x/x_o)\)</span> into this expression gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 t &amp;= \int_{x_o}^{x} \frac{dx}{\sqrt{\frac{2E}{m}\left(1-\frac{x}{x_o}\right)}} \\
@@ -206230,27 +206285,27 @@ t &amp;= \int_{x_o}^{x} \frac{dx}{\sqrt{\frac{2E}{m}\left(1-\frac{x}{x_o}\right)
 &amp;= \frac{1}{\sqrt{2E/(m x_o)}} \left[-2\sqrt{x_o - x}\right]_{x_o}^{x} \\
 &amp;= -\frac{2\sqrt{x_o - x}}{\sqrt{2E/(m x_o)}}.
 \end{align*}\]</div>
-<p>Solving this expression for the position as a function of time yields</p>
+<p class="sd-card-text">Solving this expression for the position as a function of time yields</p>
 <div class="math notranslate nohighlight">
 \[
 x(t) = x_o - \frac{1}{2}\left(\frac{E}{m x_o}\right)t^2.
 \]</div>
 <hr class="docutils" />
-<p><strong>The Conclusion</strong></p>
-<p>The particle’s position varies quadratically with time according to</p>
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The particle’s position varies quadratically with time according to</p>
 <div class="math notranslate nohighlight">
 \[
 x(t) = x_o - \frac{1}{2}\left(\frac{E}{m x_o}\right)t^2.
 \]</div>
-<p>This corresponds to motion starting from rest at <span class="math notranslate nohighlight">\(x_o\)</span> with a constant acceleration directed toward decreasing <span class="math notranslate nohighlight">\(x\)</span>.</p>
+<p class="sd-card-text">This corresponds to motion starting from rest at <span class="math notranslate nohighlight">\(x_o\)</span> with a constant acceleration directed toward decreasing <span class="math notranslate nohighlight">\(x\)</span>.</p>
 <hr class="docutils" />
-<p><strong>The Verification</strong></p>
-<p>Differentiating the position function twice with respect to time gives a constant acceleration <span class="math notranslate nohighlight">\(a = -\frac{E}{m x_o}.\)</span>  This acceleration is consistent with the force obtained directly from the potential energy,</p>
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">Differentiating the position function twice with respect to time gives a constant acceleration <span class="math notranslate nohighlight">\(a = -\frac{E}{m x_o}.\)</span>  This acceleration is consistent with the force obtained directly from the potential energy,</p>
 <div class="math notranslate nohighlight">
 \[
 F = -\frac{dU}{dx} = -\frac{E}{x_o},
 \]</div>
-<p>since <span class="math notranslate nohighlight">\(a = F/m\)</span>.</p>
+<p class="sd-card-text">since <span class="math notranslate nohighlight">\(a = F/m\)</span>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sp</span>
 
 <span class="n">t</span><span class="p">,</span> <span class="n">E</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">x0</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;t E m x0&#39;</span><span class="p">,</span> <span class="n">positive</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -206264,15 +206319,16 @@ F = -\frac{dU}{dx} = -\frac{E}{x_o},
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Force F =&quot;</span><span class="p">,</span> <span class="n">F</span><span class="p">)</span>
 </pre></div>
 </div>
-</section>
+</div>
+</details></section>
 </div>
 </section>
 </section>
 <section id="systems-with-several-particles">
 <h3><span class="section-number">8.3.2. </span>Systems with Several Particles<a class="headerlink" href="#systems-with-several-particles" title="Link to this heading">#</a></h3>
 <p>Systems generally consist of multiple particles.  To apply conservation of energy to such a system, you just have to include the kinetic energy <span class="math notranslate nohighlight">\(K_i\)</span> and potential energy <span class="math notranslate nohighlight">\(U_i\)</span> of all the particles; and the work done by the non-conservative forces acting on them. In this case we have,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3ca96173-98a9-44b8-994a-146d25946893">
-<span class="eqno">(8.15)<a class="headerlink" href="#equation-3ca96173-98a9-44b8-994a-146d25946893" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-55c87d03-383a-4b87-99d0-0d9c7b91b0d6">
+<span class="eqno">(8.15)<a class="headerlink" href="#equation-55c87d03-383a-4b87-99d0-0d9c7b91b0d6" title="Permalink to this equation">#</a></span>\[\begin{align}
 \sum W_{{\rm nc},AB} &amp;= \sum_{i=1}^N \Delta(K_i+U_i)_{AB}.
 \end{align}\]</div>
 </section>
@@ -206283,6 +206339,10 @@ F = -\frac{dU}{dx} = -\frac{E}{x_o},
 <h3><span class="section-number">8.4.1. </span>Gravitational Potential Energy<a class="headerlink" href="#gravitational-potential-energy" title="Link to this heading">#</a></h3>
 <p>Graphs are a good way to obtain useful information about the dynamical behavior of a system.  Let’s consider a 1D system, whose potential energy is known, <span class="math notranslate nohighlight">\(U(y) = mgy\)</span>.</p>
 <p>We can use this potential energy function for an object in free-fall near the Earth’s surface, neglecting air resistance.  The mechanical energy of the object is conserved <span class="math notranslate nohighlight">\((E=K+U=\text{constant})\)</span>.  We choose <span class="math notranslate nohighlight">\(y\)</span> to represent the vertical height relative to the ground (<span class="math notranslate nohighlight">\(y=0\)</span>).  The potential energy diagram in the figure below shows how we can show that while the kinetic energy decreases, the potential energy increases.</p>
+<div class="tip margin checkpoint admonition">
+<p class="admonition-title">Checkpoint</p>
+<p>On a potential-energy diagram, what must be true about the kinetic energy at a turning point?</p>
+</div>
 <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -206411,7 +206471,7 @@ F = -\frac{dU}{dx} = -\frac{E}{x_o},
 <img alt="../_images/b2648b42d43f9368b3b0edd4975a1614f32f3892f757101be08aed66a3f056cf.png" src="../_images/b2648b42d43f9368b3b0edd4975a1614f32f3892f757101be08aed66a3f056cf.png" />
 </div>
 </div>
-<p>The line at energy <span class="math notranslate nohighlight">\(E=98.1\ {\rm J}\)</span> represents the constant mechanical energy of the object, whereas the kinetic (<span class="math notranslate nohighlight">\(K_A\)</span>) and potential (<span class="math notranslate nohighlight">\(U_A\)</span>) energies are indicated at a particular height <span class="math notranslate nohighlight">\(y_A\)</span>.  The total energy is divided between kinetic and potential energy as the object’s height changes.</p>
+<p>The line at energy <span class="math notranslate nohighlight">\(E=98.1\ \mathrm{J}\)</span> represents the constant mechanical energy of the object, whereas the kinetic (<span class="math notranslate nohighlight">\(K_A\)</span>) and potential (<span class="math notranslate nohighlight">\(U_A\)</span>) energies are indicated at a particular height <span class="math notranslate nohighlight">\(y_A\)</span>.  The total energy is divided between kinetic and potential energy as the object’s height changes.</p>
 <p>There is a maximum potential energy and a maximum height, which an object with the given total energy cannot exceed:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -206438,9 +206498,9 @@ v_o &amp;= \pm \sqrt{\frac{2E}{m}}.
 <li><p>This is like a 1D system whose mechanical energy <span class="math notranslate nohighlight">\(E\)</span> is a constant and whose potential energy <span class="math notranslate nohighlight">\(U(x) = \frac{1}{2}kx^2\)</span> with respect to zero energy at zero displacement from the spring’s unstretched length <span class="math notranslate nohighlight">\(x=0\)</span>.</p></li>
 </ul>
 <figure class="align-default" id="spring-potential-example">
-<img alt="spring potential example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/c32bdeba8234f318d29b50ceb4c1d8be387adb9f" />
+<img alt="horizontal mass-spring system and potential energy diagram" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/c32bdeba8234f318d29b50ceb4c1d8be387adb9f" />
 <figcaption>
-<p><span class="caption-number">Fig. 8.5 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#spring-potential-example" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 8.5 </span><span class="caption-text">A glider between springs on an air track is an example of a horizontal mass-spring system. The potential energy diagram shows how the total mechanical energy sets the turning points, while the slope of <span class="math notranslate nohighlight">\(U(x)\)</span> determines the force direction. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/8-4-potential-energy-diagrams-and-stability">Potential Energy Diagrams and Stability</a>.</span><a class="headerlink" href="#spring-potential-example" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>You can deduce the physically allowable range of motion, as well as, the maximum values of distance and speed from the limits on the kinetic energy (<span class="math notranslate nohighlight">\(0\leq K \leq E\)</span>).  We can find two <strong>turning points</strong> when <span class="math notranslate nohighlight">\(K=0\)</span> and <span class="math notranslate nohighlight">\(U=E\)</span> for the elastic spring potential energy,</p>
@@ -206466,71 +206526,74 @@ v_o &amp;= \pm \sqrt{\frac{2E}{m}}.
 <blockquote>
 <div><p>The potential energy for a particle undergoing one-dimensional motion along the <span class="math notranslate nohighlight">\(x\)</span>-axis is <span class="math notranslate nohighlight">\(U(x) = 2\left(x^4-x^2\right)\)</span>, where <span class="math notranslate nohighlight">\(U\)</span> is in joules and <span class="math notranslate nohighlight">\(x\)</span> is in meters. The particle is not subject to any non-conservative forces and its mechanical energy is constant at <span class="math notranslate nohighlight">\(E = -0.25\ \mathrm{J}\)</span>. <strong>(a)</strong> Is the motion of the particle confined to any regions on the <span class="math notranslate nohighlight">\(x\)</span>-axis, and if so, what are they? <strong>(b)</strong> Are there any equilibrium points, and if so, where are they and are they stable or unstable?</p>
 </div></blockquote>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The system consists of the particle moving along the <span class="math notranslate nohighlight">\(x\)</span>-axis under a conservative force derived from the given potential energy function. No non-conservative forces act, so the mechanical energy <span class="math notranslate nohighlight">\(E\)</span> is constant. The motion is only allowed where the kinetic energy satisfies <span class="math notranslate nohighlight">\(K = E - U(x) \ge 0\)</span>, which is equivalent to <span class="math notranslate nohighlight">\(U(x) \le E\)</span>. Equilibrium points occur where the net force is zero, which for a one-dimensional conservative system means <span class="math notranslate nohighlight">\(F_x = -dU/dx = 0\)</span>. Stability is determined from the shape of <span class="math notranslate nohighlight">\(U(x)\)</span> near the equilibrium point: a relative minimum corresponds to stable equilibrium and a relative maximum corresponds to unstable equilibrium.</p>
 <hr class="docutils" />
-<p><strong>The Model</strong></p>
-<p>The system consists of the particle moving along the <span class="math notranslate nohighlight">\(x\)</span>-axis under a conservative force derived from the given potential energy function. No non-conservative forces act, so the mechanical energy <span class="math notranslate nohighlight">\(E\)</span> is constant. The motion is only allowed where the kinetic energy satisfies <span class="math notranslate nohighlight">\(K = E - U(x) \ge 0\)</span>, which is equivalent to <span class="math notranslate nohighlight">\(U(x) \le E\)</span>. Equilibrium points occur where the net force is zero, which for a one-dimensional conservative system means <span class="math notranslate nohighlight">\(F_x = -dU/dx = 0\)</span>. Stability is determined from the shape of <span class="math notranslate nohighlight">\(U(x)\)</span> near the equilibrium point: a relative minimum corresponds to stable equilibrium and a relative maximum corresponds to unstable equilibrium.</p>
-<hr class="docutils" />
-<p><strong>The Math</strong></p>
-<p><strong>(a)</strong> The motion is allowed where <span class="math notranslate nohighlight">\(K = E - U(x) \ge 0\)</span>, so</p>
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text"><strong>(a)</strong> The motion is allowed where <span class="math notranslate nohighlight">\(K = E - U(x) \ge 0\)</span>, so</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 E - U(x) &amp;\ge 0 \\
 -0.25 - 2(x^4-x^2) &amp;\ge 0.
 \end{align*}\]</div>
-<p>Rearranging and completing the square in <span class="math notranslate nohighlight">\(x^2\)</span> gives</p>
+<p class="sd-card-text">Rearranging and completing the square in <span class="math notranslate nohighlight">\(x^2\)</span> gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 2(x^4-x^2) &amp;\le -0.25 \\
 2\left(x^4-x^2+\frac{1}{4}\right) &amp;\le -0.25 + 2\left(\frac{1}{4}\right) \\
 2\left(x^2-\frac{1}{2}\right)^2 &amp;\le \frac{1}{4}.
 \end{align*}\]</div>
-<p>Dividing by <span class="math notranslate nohighlight">\(2\)</span> and taking square roots yields the condition on <span class="math notranslate nohighlight">\(x^2\)</span>,</p>
+<p class="sd-card-text">Dividing by <span class="math notranslate nohighlight">\(2\)</span> and taking square roots yields the condition on <span class="math notranslate nohighlight">\(x^2\)</span>,</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \left(x^2-\frac{1}{2}\right)^2 &amp;\le \frac{1}{8} \\
 -\sqrt{\frac{1}{8}} \le x^2-\frac{1}{2} &amp;\le \sqrt{\frac{1}{8}} \\
 \frac{1}{2}-\sqrt{\frac{1}{8}} \le x^2 &amp;\le \frac{1}{2}+\sqrt{\frac{1}{8}}.
 \end{align*}\]</div>
-<p>Therefore the motion is confined to two symmetric intervals,</p>
+<p class="sd-card-text">Therefore the motion is confined to two symmetric intervals,</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 x_P \le x \le x_R \quad \text{and} \quad -x_R \le x \le -x_P,
 \end{align*}\]</div>
-<p>where</p>
+<p class="sd-card-text">where</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 x_P &amp;= \sqrt{\frac{1}{2}-\sqrt{\frac{1}{8}}} \approx 0.38\ \mathrm{m}, \\
 x_R &amp;= \sqrt{\frac{1}{2}+\sqrt{\frac{1}{8}}} \approx 0.92\ \mathrm{m}.
 \end{align*}\]</div>
-<p><strong>(b)</strong> Equilibrium points occur where <span class="math notranslate nohighlight">\(F_x = -dU/dx = 0\)</span>, which is equivalent to <span class="math notranslate nohighlight">\(dU/dx = 0\)</span>. Differentiating <span class="math notranslate nohighlight">\(U(x)=2(x^4-x^2)\)</span> gives</p>
+<p class="sd-card-text"><strong>(b)</strong> Equilibrium points occur where <span class="math notranslate nohighlight">\(F_x = -dU/dx = 0\)</span>, which is equivalent to <span class="math notranslate nohighlight">\(dU/dx = 0\)</span>. Differentiating <span class="math notranslate nohighlight">\(U(x)=2(x^4-x^2)\)</span> gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \frac{dU}{dx} &amp;= 2(4x^3-2x) = 8x^3-4x = 4x(2x^2-1).
 \end{align*}\]</div>
-<p>Setting this equal to zero yields</p>
+<p class="sd-card-text">Setting this equal to zero yields</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 4x(2x^2-1) &amp;= 0 \\
 x &amp;= 0,\ \pm\frac{1}{\sqrt{2}}.
 \end{align*}\]</div>
-<p>Stability is determined from the second derivative,</p>
+<p class="sd-card-text">Stability is determined from the second derivative,</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \frac{d^2U}{dx^2} &amp;= \frac{d}{dx}(8x^3-4x) = 24x^2-4.
 \end{align*}\]</div>
-<p>Evaluating at the equilibrium points gives</p>
+<p class="sd-card-text">Evaluating at the equilibrium points gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \frac{d^2U}{dx^2}\bigg|_{x=0} &amp;= -4 &lt; 0 \quad \Rightarrow \quad \text{unstable equilibrium at } x=0, \\
 \frac{d^2U}{dx^2}\bigg|_{x=\pm 1/\sqrt{2}} &amp;= 24\left(\frac{1}{2}\right)-4 = 8 &gt; 0 \quad \Rightarrow \quad \text{stable equilibrium at } x=\pm\frac{1}{\sqrt{2}}.
 \end{align*}\]</div>
 <hr class="docutils" />
-<p><strong>The Conclusion</strong></p>
-<p>The particle’s motion is confined to two allowed regions where <span class="math notranslate nohighlight">\(U(x) \le E\)</span>, namely <span class="math notranslate nohighlight">\(x_P \le x \le x_R\)</span> and <span class="math notranslate nohighlight">\(-x_R \le x \le -x_P\)</span>, with <span class="math notranslate nohighlight">\(x_P \approx 0.38\ \mathrm{m}\)</span> and <span class="math notranslate nohighlight">\(x_R \approx 0.92\ \mathrm{m}\)</span>. The equilibrium points are at <span class="math notranslate nohighlight">\(x=0\)</span> and <span class="math notranslate nohighlight">\(x=\pm 1/\sqrt{2}\)</span>; the equilibrium at <span class="math notranslate nohighlight">\(x=0\)</span> is unstable, while the equilibria at <span class="math notranslate nohighlight">\(x=\pm 1/\sqrt{2}\)</span> are stable.</p>
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The particle’s motion is confined to two allowed regions where <span class="math notranslate nohighlight">\(U(x) \le E\)</span>, namely <span class="math notranslate nohighlight">\(x_P \le x \le x_R\)</span> and <span class="math notranslate nohighlight">\(-x_R \le x \le -x_P\)</span>, with <span class="math notranslate nohighlight">\(x_P \approx 0.38\ \mathrm{m}\)</span> and <span class="math notranslate nohighlight">\(x_R \approx 0.92\ \mathrm{m}\)</span>. The equilibrium points are at <span class="math notranslate nohighlight">\(x=0\)</span> and <span class="math notranslate nohighlight">\(x=\pm 1/\sqrt{2}\)</span>; the equilibrium at <span class="math notranslate nohighlight">\(x=0\)</span> is unstable, while the equilibria at <span class="math notranslate nohighlight">\(x=\pm 1/\sqrt{2}\)</span> are stable.</p>
 <hr class="docutils" />
-<p><strong>The Verification</strong></p>
-<p>The python code belows verifies the solution by generating a plot of the potential and labeling the equilibria.</p>
-</section>
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The python code belows verifies the solution by generating a plot of the potential and labeling the equilibria.</p>
+</div>
+</details></section>
 </div>
 <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
@@ -206643,51 +206706,54 @@ Equilibria at x = 0 and x = ±1/sqrt(2) = ±0.707 m
 <blockquote>
 <div><p>Find <span class="math notranslate nohighlight">\(x(t)\)</span> for a particle moving with a constant mechanical energy <span class="math notranslate nohighlight">\(E&gt;0\)</span> and a potential energy <span class="math notranslate nohighlight">\(U(x)=\tfrac{1}{2}kx^2\)</span>, when the particle starts from rest at time <span class="math notranslate nohighlight">\(t=0\)</span>.</p>
 </div></blockquote>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The particle undergoes one-dimensional motion along the <span class="math notranslate nohighlight">\(x\)</span>-axis under a conservative force derived from the quadratic potential energy <span class="math notranslate nohighlight">\(U(x)=\tfrac{1}{2}kx^2\)</span>. No non-conservative forces act, so the mechanical energy <span class="math notranslate nohighlight">\(E=K+U\)</span> is conserved. The particle is released from rest, which means its initial kinetic energy is zero and all of the mechanical energy is initially stored as potential energy. The motion is therefore bounded between turning points where the kinetic energy vanishes and the potential energy equals the total energy.</p>
 <hr class="docutils" />
-<p><strong>The Model</strong></p>
-<p>The particle undergoes one-dimensional motion along the <span class="math notranslate nohighlight">\(x\)</span>-axis under a conservative force derived from the quadratic potential energy <span class="math notranslate nohighlight">\(U(x)=\tfrac{1}{2}kx^2\)</span>. No non-conservative forces act, so the mechanical energy <span class="math notranslate nohighlight">\(E=K+U\)</span> is conserved. The particle is released from rest, which means its initial kinetic energy is zero and all of the mechanical energy is initially stored as potential energy. The motion is therefore bounded between turning points where the kinetic energy vanishes and the potential energy equals the total energy.</p>
-<hr class="docutils" />
-<p><strong>The Math</strong></p>
-<p>We begin from the energy-based equation of motion for one-dimensional conservative systems,</p>
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">We begin from the energy-based equation of motion for one-dimensional conservative systems,</p>
 <div class="math notranslate nohighlight">
 \[
 t=\int_{x_o}^{x}\frac{dx}{\sqrt{\tfrac{2}{m}\,[E-U(x)]}}.
 \]</div>
-<p>Substituting <span class="math notranslate nohighlight">\(U(x)=\tfrac{1}{2}kx^2\)</span> gives</p>
+<p class="sd-card-text">Substituting <span class="math notranslate nohighlight">\(U(x)=\tfrac{1}{2}kx^2\)</span> gives</p>
 <div class="math notranslate nohighlight">
 \[
 t=\int_{x_o}^{x}\frac{dx}{\sqrt{(k/m)\left[(2E/k)-x^2\right]}}.
 \]</div>
-<p>Factoring out the constants allows the integral to be written as</p>
+<p class="sd-card-text">Factoring out the constants allows the integral to be written as</p>
 <div class="math notranslate nohighlight">
 \[
 t=\sqrt{\frac{m}{k}}\int_{x_o}^{x}\frac{dx}{\sqrt{(2E/k)-x^2}}.
 \]</div>
-<p>Evaluating this standard integral yields</p>
+<p class="sd-card-text">Evaluating this standard integral yields</p>
 <div class="math notranslate nohighlight">
 \[
 t=\sqrt{\frac{m}{k}}\left[\sin^{-1}\!\left(\frac{x}{\sqrt{2E/k}}\right)-\sin^{-1}\!\left(\frac{x_o}{\sqrt{2E/k}}\right)\right].
 \]</div>
-<p>The particle starts from rest at <span class="math notranslate nohighlight">\(t=0\)</span>, so the initial kinetic energy is zero and the initial potential energy satisfies <span class="math notranslate nohighlight">\(\tfrac{1}{2}kx_o^2=E\)</span>. This implies <span class="math notranslate nohighlight">\(x_o/\sqrt{2E/k}=\pm 1\)</span>, and therefore <span class="math notranslate nohighlight">\(\sin^{-1}(\pm 1)=\pm 90^\circ\)</span>. Solving the previous expression for <span class="math notranslate nohighlight">\(x\)</span> gives</p>
+<p class="sd-card-text">The particle starts from rest at <span class="math notranslate nohighlight">\(t=0\)</span>, so the initial kinetic energy is zero and the initial potential energy satisfies <span class="math notranslate nohighlight">\(\tfrac{1}{2}kx_o^2=E\)</span>. This implies <span class="math notranslate nohighlight">\(x_o/\sqrt{2E/k}=\pm 1\)</span>, and therefore <span class="math notranslate nohighlight">\(\sin^{-1}(\pm 1)=\pm 90^\circ\)</span>. Solving the previous expression for <span class="math notranslate nohighlight">\(x\)</span> gives</p>
 <div class="math notranslate nohighlight">
 \[
 x(t)=\sqrt{\frac{2E}{k}}\sin\!\left[\sqrt{\frac{k}{m}}\,t\pm 90^\circ\right].
 \]</div>
-<p>Using the trigonometric identity <span class="math notranslate nohighlight">\(\sin(\theta\pm 90^\circ)=\pm\cos\theta\)</span>, the position can be written in the more familiar form</p>
+<p class="sd-card-text">Using the trigonometric identity <span class="math notranslate nohighlight">\(\sin(\theta\pm 90^\circ)=\pm\cos\theta\)</span>, the position can be written in the more familiar form</p>
 <div class="math notranslate nohighlight">
 \[
 x(t)=\pm\sqrt{\frac{2E}{k}}\cos\!\left(\sqrt{\frac{k}{m}}\,t\right).
 \]</div>
 <hr class="docutils" />
-<p><strong>The Conclusion</strong></p>
-<p>The particle executes sinusoidal motion with position</p>
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The particle executes sinusoidal motion with position</p>
 <div class="math notranslate nohighlight">
 \[ x(t)=\pm\sqrt{\frac{2E}{k}}\cos\!\left(\sqrt{\frac{k}{m}}\,t\right),\]</div>
-<p>where the amplitude is <span class="math notranslate nohighlight">\(\sqrt{2E/k}\)</span> and the angular frequency is <span class="math notranslate nohighlight">\(\sqrt{k/m}\)</span>. The motion is periodic and bounded between the turning points where the kinetic energy vanishes.</p>
+<p class="sd-card-text">where the amplitude is <span class="math notranslate nohighlight">\(\sqrt{2E/k}\)</span> and the angular frequency is <span class="math notranslate nohighlight">\(\sqrt{k/m}\)</span>. The motion is periodic and bounded between the turning points where the kinetic energy vanishes.</p>
 <hr class="docutils" />
-<p><strong>The Verification</strong></p>
-<p>The result is consistent with the standard solution for a mass–spring system undergoing simple harmonic motion, where the force is linear in displacement and the acceleration is proportional to <span class="math notranslate nohighlight">\(-x\)</span>. The cosine dependence reflects the fact that the particle is released from rest at a turning point, with all of its energy initially stored as potential energy.</p>
-</section>
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The result is consistent with the standard solution for a mass–spring system undergoing simple harmonic motion, where the force is linear in displacement and the acceleration is proportional to <span class="math notranslate nohighlight">\(-x\)</span>. The cosine dependence reflects the fact that the particle is released from rest at a turning point, with all of its energy initially stored as potential energy.</p>
+</div>
+</details></section>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -206814,9 +206880,9 @@ x(t)=\pm\sqrt{\frac{2E}{k}}\cos\!\left(\sqrt{\frac{k}{m}}\,t\right).
 (a) If the block starts from rest at <span class="math notranslate nohighlight">\(A\)</span>, what is its speed at <span class="math notranslate nohighlight">\(B\)</span>?<br />
 (b) What is the force of the track on the block at <span class="math notranslate nohighlight">\(B\)</span>?</p>
 <figure class="align-default" id="loop-energy-prob">
-<img alt="rloop energy problem" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/2a817ba5930da22a62fc22afbfbc3acc23d6bd82" />
+<img alt="loop-the-loop track with positions A and B labeled" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20251118.192121/resources/2a817ba5930da22a62fc22afbfbc3acc23d6bd82" />
 <figcaption>
-<p><span class="caption-number">Fig. 8.6 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#loop-energy-prob" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 8.6 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/8-problems">Chapter 8 Problems</a>.</span><a class="headerlink" href="#loop-energy-prob" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -206843,13 +206909,12 @@ x(t)=\pm\sqrt{\frac{2E}{k}}\cos\!\left(\sqrt{\frac{k}{m}}\,t\right).
 <h3><span class="section-number">8.7.2. </span>Numerical Problems<a class="headerlink" href="#numerical-problems" title="Link to this heading">#</a></h3>
 <div class="admonition-problem-3 admonition">
 <p class="admonition-title">Problem 3</p>
-<p>A camera weighing <span class="math notranslate nohighlight">\(10\ \mathrm{N}\)</span> falls from a small drone hovering <span class="math notranslate nohighlight">\(20\ \mathrm{m}\)</span> overhead and enters free fall.</p>
-<p>What is the gravitational potential energy change of the camera from the drone to the ground if you take a reference point of
-(a) the ground being zero gravitational potential energy?
-(b) The drone being zero gravitational potential energy?</p>
-<p>If you take a reference point of a second person looking out of a building <span class="math notranslate nohighlight">\(30\ {\rm m}\)</span> from the ground, what is the gravitational potential energy of the camera
-(c) before it falls from the drone?
-(d) after the camera lands on the ground?</p>
+<p>A camera weighing <span class="math notranslate nohighlight">\(10\ \mathrm{N}\)</span> falls from a small drone hovering <span class="math notranslate nohighlight">\(20\ \mathrm{m}\)</span> above the ground and enters free fall.</p>
+<p>(a) What is the change in gravitational potential energy of the camera as it falls from the drone to the ground if the ground is chosen as the zero reference level?</p>
+<p>(b) What is the change in gravitational potential energy if the drone is chosen as the zero reference level?</p>
+<p>If the zero reference level is instead chosen to be a person standing <span class="math notranslate nohighlight">\(30\ \mathrm{m}\)</span> above the ground:</p>
+<p>(c) What is the gravitational potential energy of the camera just before it falls?</p>
+<p>(d) What is the gravitational potential energy of the camera after it lands on the ground?</p>
 </div>
 <div class="admonition-problem-4 admonition">
 <p class="admonition-title">Problem 4</p>
@@ -206870,9 +206935,9 @@ x(t)=\pm\sqrt{\frac{2E}{k}}\cos\!\left(\sqrt{\frac{k}{m}}\,t\right).
 (d) Does the particle turn around at some point and head back toward the origin?<br />
 (e) Repeat part (d) if <span class="math notranslate nohighlight">\(v = 2.0\ \mathrm{m/s}\)</span> at <span class="math notranslate nohighlight">\(x = 0\)</span>.</p>
 <figure class="align-default" id="particle-force-problem">
-<img alt="particle force problem" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260105.231123/resources/ebab68e633d77ffe2b79a500f3c8ec9056cf3e27" />
+<img alt="force as a function of position for a particle moving along the x-axis" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260105.231123/resources/ebab68e633d77ffe2b79a500f3c8ec9056cf3e27" />
 <figcaption>
-<p><span class="caption-number">Fig. 8.7 </span><span class="caption-text">Image Credit: Openstax</span><a class="headerlink" href="#particle-force-problem" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 8.7 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/8-problems">Chapter 8 Problems</a>.</span><a class="headerlink" href="#particle-force-problem" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -206952,7 +207017,7 @@ x(t)=\pm\sqrt{\frac{2E}{k}}\cos\!\left(\sqrt{\frac{k}{m}}\,t\right).
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-basic-properties-of-potential-energy">8.1.1.1. <strong>Example Problem</strong>: Basic Properties of Potential Energy</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#systems-of-several-particles">8.1.2. Systems Of Several Particles</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#systems-of-several-particles">8.1.2. Systems of Several Particles</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-potential-energy">8.1.3. Types of Potential Energy</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#gravitational-potential-energy-near-earth-s-surface">8.1.3.1. Gravitational potential energy near Earth’s surface</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-gravitational-potential-energy-of-a-hiker">8.1.3.1.1. <strong>Example Problem</strong>: Gravitational Potential Energy of a Hiker</a></li>
