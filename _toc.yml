@@ -11,6 +11,7 @@ parts:
   - file: Preamble/computational-writing-primer
   - file: Preamble/figures-primer
   - file: Preamble/course-faq
+  - file: Preamble/physics-recruitment.ipynb
 - caption: Measurements, Vectors, Kinematics
   numbered: true
   maxdepth: 3 
