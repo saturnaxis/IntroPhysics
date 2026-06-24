@@ -100,6 +100,11 @@ div.exercise > p.admonition-title{
   cursor: help;
 }
 
+.large-reference-figure {
+  max-height: 80vh !important;
+  width: auto !important;
+}
+
 /* -----------------------------
    etamu-dropdown styling
    ----------------------------- */
