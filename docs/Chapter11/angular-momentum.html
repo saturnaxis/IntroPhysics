@@ -40,7 +40,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/sphinx_iframe.css?v=96c28b52" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="https://cdn.plyr.io/3.8.4/plyr.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=80fd4ae3" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=e9fd1fb5" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -213,6 +213,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../Preamble/computational-writing-primer.html">Computational and Writing Primer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Preamble/figures-primer.html">Figures Primer (Matplotlib)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Preamble/course-faq.html">Course FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Preamble/physics-recruitment.html">Finding Your Path in Physics</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Measurements, Vectors, Kinematics</span></p>
 <ul class="nav bd-sidenav">
@@ -574,13 +575,24 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="angular-momentum">
 <h1><span class="section-number">11. </span>Angular Momentum<a class="headerlink" href="#angular-momentum" title="Link to this heading">#</a></h1>
-<p>May 29, 2026 | 9534 words | 48 min read</p>
+<p>Jun 23, 2026 | 10138 words | 51 min read</p>
+<div class="tip admonition">
+<p class="admonition-title">Chapter roadmap</p>
+<p>Angular momentum helps you describe how objects keep, change, or share rotational motion. In this chapter, you will connect rolling motion, torque, and conservation laws into one framework for analyzing rotating systems.</p>
+<p>As you read, focus on three questions:</p>
+<ol class="arabic simple">
+<li><p>How does rolling motion connect translation of the center of mass with rotation about the center of mass?</p></li>
+<li><p>How do torque and angular momentum depend on the origin or axis you choose?</p></li>
+<li><p>When can angular momentum be conserved, even if kinetic energy changes?</p></li>
+</ol>
+<p>These ideas will let you analyze wheels, gyroscopes, collisions, spinning bodies, and systems that change their moment of inertia.</p>
+</div>
 <section id="rolling-motion">
 <h2><span class="section-number">11.1. </span>Rolling Motion<a class="headerlink" href="#rolling-motion" title="Link to this heading">#</a></h2>
 <p>Rolling motion is a combination of rotational and translational motion.  It is seen through wheels moving on a car, on a plane, or on a robotic explorer on another planet.  Understanding the forces and torques involved in <strong>rolling motion</strong> is a crucial factor in many different types of situations.</p>
 <section id="rolling-motion-without-slipping">
 <h3><span class="section-number">11.1.1. </span>Rolling Motion without Slipping<a class="headerlink" href="#rolling-motion-without-slipping" title="Link to this heading">#</a></h3>
-<p>Consider teh interaction of a car’s tires and the surface of the road.  If the driver</p>
+<p>Consider the interaction of a car’s tires and the surface of the road.  If the driver</p>
 <ul class="simple">
 <li><p>suddenly depresses the accelerator to the floor, then the tires spin without the car moving forward.  There must be kinetic friction between the wheels and the surface of the road.</p></li>
 <li><p>slowly depresses the accelerator, then the car moves forward because the tires roll <em>without slipping</em>.  The bottom of the wheel is at rest (with respect to the ground) which means that there must be static friction between the tires and the road surface.</p></li>
@@ -588,14 +600,18 @@ document.write(`
 <figure class="align-default" id="bicycle-rolling-example">
 <img alt="bicycle rolling example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/c8fae851235d71d82aa3effd2060b662289d4490" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.1 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#bicycle-rolling-example" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.1 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-1-rolling-motion">Rolling Motion</a>.</span><a class="headerlink" href="#bicycle-rolling-example" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Figure <a class="reference internal" href="#bicycle-rolling-example"><span class="std std-numref">11.1</span></a> shows a bicycle in motion while the rider stays upright.  The tires have contact with the road surface and the bottoms of the tires deform slightly (while not slipping) and are at rest with respect to the road surface for a measurable amount of time, even though the tires are rolling.  There must be static friction between the tire and the road surface.</p>
+<div class="tip margin checkpoint admonition">
+<p class="admonition-title">Checkpoint</p>
+<p>When a wheel rolls without slipping, which point on the wheel is instantaneously at rest relative to the ground?</p>
+</div>
 <p><em>What type of surface has the maximum amount of slipping?</em></p>
 <p>In the case of Scooby-Doo, all surfaces have the potential for maximal slipping (see Fig. <a class="reference internal" href="#scooby-doo-slipping"><span class="std std-numref">11.2</span></a>).  In real life, it is a frictionless, perfectly horizontal surface.</p>
 <figure class="align-default" id="scooby-doo-slipping">
-<img alt="https://media1.tenor.com/m/NbJD5xVfVPUAAAAC/scooby-doo-scooby.gif" src="https://media1.tenor.com/m/NbJD5xVfVPUAAAAC/scooby-doo-scooby.gif" />
+<img alt="Scooby-Doo running without traction" src="https://media1.tenor.com/m/NbJD5xVfVPUAAAAC/scooby-doo-scooby.gif" />
 <figcaption>
 <p><span class="caption-number">Fig. 11.2 </span><span class="caption-text">Image Credit: <a class="reference external" href="https://tenor.com/search/scooby-doo-running-away-gifs">tenor.com</a></span><a class="headerlink" href="#scooby-doo-slipping" title="Link to this image">#</a></p>
 </figcaption>
@@ -604,7 +620,7 @@ document.write(`
 <figure class="align-default" id="forces-on-wheel">
 <img alt="forces on rolling wheel" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/3c86e4a4d109c5e45891d81ffa69459d42d5735c" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.3 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#forces-on-wheel" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.3 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-1-rolling-motion">Rolling Motion</a>.</span><a class="headerlink" href="#forces-on-wheel" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Figure <a class="reference internal" href="#forces-on-wheel"><span class="std std-numref">11.3</span></a>a shows the force vectors involved that prevent the wheel from slipping.  The wheel is in contact with the surface at point <span class="math notranslate nohighlight">\(P\)</span>, which remains at rest relative to the surface in Fig. <a class="reference internal" href="#forces-on-wheel"><span class="std std-numref">11.3</span></a>b.  Relative to the center-of-mass, point <span class="math notranslate nohighlight">\(P\)</span> has a velocity <span class="math notranslate nohighlight">\(-R\omega\hat{i}\)</span>, where <span class="math notranslate nohighlight">\(R\)</span> is the radius of the wheel and <span class="math notranslate nohighlight">\(\omega\)</span> is the wheel’s angular velocity about its axis.</p>
@@ -612,30 +628,31 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[ \vec{\rm v}_P = -R\omega\hat{i} + v_{\rm CoM}\hat{i}, \]</div>
 <p>which includes both the center-of-mass velocity for the wheel and the relative velocity of point <span class="math notranslate nohighlight">\(P\)</span> relative to the center-of-mass.  If the wheel is rolling <em>without slipping</em>, then <span class="math notranslate nohighlight">\(|\vec{\rm v}_P| = v_P = 0\)</span> (i.e., the velocity of <span class="math notranslate nohighlight">\(P\)</span> relative to the surface is zero), and we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9656442d-5550-4500-924f-437d77b47680">
-<span class="eqno">(11.1)<a class="headerlink" href="#equation-9656442d-5550-4500-924f-437d77b47680" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
 0 &amp;= -R\omega + v_{\rm CoM}, \\
 v_{\rm CoM} &amp;= R\omega.
-\end{align}\]</div>
-<p>The velocity of the wheel’s center of mass is its radius times the angular velocity about its axis.  Now we have a correspondence of the linear variable (<span class="math notranslate nohighlight">\(v_{\rm CoM}\)</span>) to the angular variable (<span class="math notranslate nohighlight">\(R\omega\)</span>).</p>
+\end{align*}\]</div>
+<p>The velocity of the wheel’s center of mass is its radius times the angular velocity about its axis.  Now we have a correspondence of the linear variable (<span class="math notranslate nohighlight">\(v_{\rm CoM}\)</span>) to the angular variable (<span class="math notranslate nohighlight">\(R\omega\)</span>).
+This uses the same vector-component reasoning introduced in <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter04/motion-in-2D-3D.html">Chapter 4</a>, but now the linear motion is tied to rotation through the radius of the wheel.</p>
 <p>If we take a time-derivative to find the rate of change for the center-of-mass velocity <span class="math notranslate nohighlight">\(a_{\rm CoM}\)</span>, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a9ab9154-8653-40e5-8f2d-e1a5c90a7aec">
-<span class="eqno">(11.2)<a class="headerlink" href="#equation-a9ab9154-8653-40e5-8f2d-e1a5c90a7aec" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
 a_{\rm CoM} &amp;= \frac{d}{dt}v_{\rm CoM} = \frac{dR}{dt}\omega + R\frac{d\omega}{dt}, \\
 &amp;= R\frac{d\omega}{dt} = R\alpha.
-\end{align}\]</div>
+\end{align*}\]</div>
 <p>Since <span class="math notranslate nohighlight">\(R\)</span> is a constant, then <span class="math notranslate nohighlight">\(\frac{dR}{dt} = 0\)</span>.</p>
 <figure class="align-default" id="arclength-wheel">
 <img alt="distance traveled by wheel CoM" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/dbe6699af551c871539e43d20ef156aa78f6ce4f" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.4 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#arclength-wheel" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.4 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-1-rolling-motion">Rolling Motion</a>.</span><a class="headerlink" href="#arclength-wheel" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>We can also find the distance the wheel travels in terms of the angular variables.  In Figure <a class="reference internal" href="#arclength-wheel"><span class="std std-numref">11.4</span></a>, the wheel rolls from point <span class="math notranslate nohighlight">\(A\)</span> to point <span class="math notranslate nohighlight">\(B\)</span>, but its outer surface maps onto the ground by exactly the distance traveled <span class="math notranslate nohighlight">\(d_{\rm CoM}\)</span>.  The outer surface that maps onto the ground is the arclength <span class="math notranslate nohighlight">\(R\theta\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7f18a918-ddc8-4602-a7d2-2a530fe93538">
-<span class="eqno">(11.3)<a class="headerlink" href="#equation-7f18a918-ddc8-4602-a7d2-2a530fe93538" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
 d_{\rm CoM} = R\theta.
-\end{align}\]</div>
+\end{align*}\]</div>
 <section id="example-problem-rolling-down-an-inclined-plane">
 <h4><span class="section-number">11.1.1.1. </span><strong>Example Problem</strong>: Rolling Down an Inclined Plane<a class="headerlink" href="#example-problem-rolling-down-an-inclined-plane" title="Link to this heading">#</a></h4>
 <div class="exercise etamu-exercise admonition" id="Chapter11/angular-momentum-exercise-0">
@@ -651,47 +668,49 @@ d_{\rm CoM} = R\theta.
 <figure class="align-default" id="rolling-without-slipping-example">
 <img alt="rolling without slipping example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/6238b3e259d0fa95a2528d802f34a6749d14e70c" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.5 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#rolling-without-slipping-example" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.5 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-1-rolling-motion">Rolling Motion</a>.</span><a class="headerlink" href="#rolling-without-slipping-example" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The cylinder rolls down an inclined plane while maintaining the rolling-without-slipping constraint. The motion therefore involves both translational motion of the center of mass and rotational motion about the center of mass. The physical framework required to describe the motion is Newton’s 2nd law for translation together with Newton’s 2nd law for rotation.</p>
+<p class="sd-card-text">A coordinate system is chosen so that the <span class="math notranslate nohighlight">\(x\)</span>-axis lies along the plane and points down the incline, while the <span class="math notranslate nohighlight">\(y\)</span>-axis is perpendicular to the plane and points away from the surface. With this coordinate choice, the component of gravity parallel to the incline points in the positive <span class="math notranslate nohighlight">\(x\)</span>-direction, while the normal force points in the positive <span class="math notranslate nohighlight">\(y\)</span>-direction.</p>
+<p class="sd-card-text">The forces acting on the cylinder are the gravitational force <span class="math notranslate nohighlight">\(\vec{W}\)</span>, the normal force <span class="math notranslate nohighlight">\(\vec{N}\)</span> exerted by the surface, and the static friction force <span class="math notranslate nohighlight">\(\vec{f}_s\)</span>. The gravitational force acts vertically downward, the normal force acts perpendicular to the surface, and the static friction force acts along the plane. Because the cylinder rolls without slipping, the friction force acts up the incline and provides the torque required to produce rotational motion.</p>
+<p class="sd-card-text">The rolling constraint ties the translational acceleration of the center of mass to the angular acceleration through the cylinder radius. The strategy is therefore to apply Newton’s 2nd law along the incline to determine the translational acceleration and then apply the rotational equation about the center of mass to relate the friction force to the angular acceleration.</p>
 <hr class="docutils" />
-<p><strong>The Model</strong></p>
-<p>The cylinder rolls down an inclined plane while maintaining the rolling-without-slipping constraint. The motion therefore involves both translational motion of the center of mass and rotational motion about the center of mass. The physical framework required to describe the motion is Newton’s 2nd law for translation together with Newton’s 2nd law for rotation.</p>
-<p>A coordinate system is chosen so that the <span class="math notranslate nohighlight">\(x\)</span>-axis lies along the plane and points down the incline, while the <span class="math notranslate nohighlight">\(y\)</span>-axis is perpendicular to the plane and points away from the surface. With this coordinate choice, the component of gravity parallel to the incline accelerates the cylinder down the plane, while the normal force balances the perpendicular component of gravity.</p>
-<p>The forces acting on the cylinder are the gravitational force <span class="math notranslate nohighlight">\(\vec{W}\)</span>, the normal force <span class="math notranslate nohighlight">\(\vec{N}\)</span> exerted by the surface, and the static friction force <span class="math notranslate nohighlight">\(\vec{f}_s\)</span>. The gravitational force acts vertically downward, the normal force acts perpendicular to the surface, and the static friction force acts along the plane. Because the cylinder rolls without slipping, the friction force acts up the incline and provides the torque required to produce rotational motion.</p>
-<p>The rolling constraint relates the translational acceleration of the center of mass to the angular acceleration through the geometric condition <span class="math notranslate nohighlight">\(a_{\rm CoM} = r\alpha\)</span>. The strategy is therefore to apply Newton’s 2nd law along the incline to determine the translational acceleration and then apply the rotational equation about the center of mass to relate the friction force to the angular acceleration.</p>
-<hr class="docutils" />
-<p><strong>The Math</strong></p>
-<p>The motion of the cylinder is governed by Newton’s 2nd law applied along and perpendicular to the inclined plane. Along the incline, the component of gravity acts downward while the static friction force acts upward. Applying Newton’s 2nd law along the <span class="math notranslate nohighlight">\(x\)</span>-direction gives</p>
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">The motion of the cylinder is governed by Newton’s 2nd law applied along and perpendicular to the inclined plane. Along the incline, the component of gravity acts downward while the static friction force acts upward. Applying Newton’s 2nd law along the <span class="math notranslate nohighlight">\(x\)</span>-direction gives</p>
 <div class="math notranslate nohighlight">
 \[ mg\sin\theta - f_s = m a_{\rm CoM}. \]</div>
-<p>Perpendicular to the plane, the normal force balances the perpendicular component of gravity. Newton’s 2nd law in the <span class="math notranslate nohighlight">\(y\)</span>-direction therefore gives</p>
+<p class="sd-card-text">Perpendicular to the plane, the normal force balances the perpendicular component of gravity. Newton’s 2nd law in the <span class="math notranslate nohighlight">\(y\)</span>-direction therefore gives</p>
 <div class="math notranslate nohighlight">
 \[ N - mg\cos\theta = 0. \]</div>
-<p>The rotational motion of the cylinder is governed by Newton’s 2nd law for rotation about the center of mass. The only force producing a torque about the center of mass is the friction force. The rotational equation therefore gives</p>
+<p class="sd-card-text">The rotational motion of the cylinder is governed by Newton’s 2nd law for rotation about the center of mass. The only force producing a torque about the center of mass is the friction force. The rotational equation therefore gives</p>
 <div class="math notranslate nohighlight">
 \[ f_s r = I_{\rm CoM}\alpha. \]</div>
-<p>Because the cylinder rolls without slipping, the translational and rotational accelerations are related by the rolling constraint. The linear acceleration of the center of mass is therefore related to the angular acceleration by</p>
+<p class="sd-card-text">Because the cylinder rolls without slipping, the translational and rotational accelerations are related by the rolling constraint. The linear acceleration of the center of mass is therefore related to the angular acceleration by</p>
 <div class="math notranslate nohighlight">
 \[ a_{\rm CoM} = r\alpha. \]</div>
-<p>Solving the rotational equation for the friction force and using the rolling constraint gives</p>
+<p class="sd-card-text">Solving the rotational equation for the friction force and using the rolling constraint gives</p>
 <div class="math notranslate nohighlight">
 \[ f_s = \frac{I_{\rm CoM}\alpha}{r} = \frac{I_{\rm CoM} a_{\rm CoM}}{r^2}.\]</div>
-<p>Substituting this expression for the friction force into the translational equation along the incline gives</p>
+<p class="sd-card-text">Replacing the friction force in the translational equation with this rotational expression gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 mg\sin\theta - \frac{I_{\rm CoM} a_{\rm CoM}}{r^2}
 &amp;= m a_{\rm CoM}.
 \end{align*}\]</div>
-<p>Solving this equation for the acceleration of the center of mass gives</p>
+<p class="sd-card-text">Solving this equation for the acceleration of the center of mass gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 a_{\rm CoM} &amp;= \frac{mg\sin\theta}{m + I_{\rm CoM}/r^2}.
 \end{align*}\]</div>
-<p>For a solid cylinder, the moment of inertia about the center of mass is</p>
+<p class="sd-card-text">For a solid cylinder, the moment of inertia about the center of mass is</p>
 <div class="math notranslate nohighlight">
 \[ I_{\rm CoM} = \frac{1}{2}mr^2. \]</div>
-<p>Substituting this expression into the acceleration formula gives</p>
+<p class="sd-card-text">Substituting this expression into the acceleration formula gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 a_{\rm CoM}
@@ -699,42 +718,42 @@ a_{\rm CoM}
 &amp;= \frac{mg\sin\theta}{m + m/2} \\
 &amp;= \frac{2}{3}g\sin\theta.
 \end{align*}\]</div>
-<p>This result determines the translational acceleration of the cylinder.</p>
-<p>To determine the condition for rolling without slipping, we first determine the friction force required to maintain the rolling motion. Using the rotational relation and the expression for the acceleration gives</p>
+<p class="sd-card-text">This result determines the translational acceleration of the cylinder.</p>
+<p class="sd-card-text">To determine the condition for rolling without slipping, we first determine the friction force required to maintain the rolling motion. Using the rotational relation and the expression for the acceleration gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 f_s &amp;= \frac{I_{\rm CoM} a_{\rm CoM}}{r^2} \\
 &amp;= \frac{I_{\rm CoM}}{r^2} \left(\frac{mg\sin\theta}{m + I_{\rm CoM}/r^2}\right) \\
 &amp;= \frac{mg I_{\rm CoM}\sin\theta}{mr^2 + I_{\rm CoM}}.
 \end{align*}\]</div>
-<p>Rolling without slipping requires that the magnitude of the friction force not exceed the maximum static friction force. The condition for rolling is therefore</p>
+<p class="sd-card-text">Rolling without slipping requires that the magnitude of the friction force not exceed the maximum static friction force. The condition for rolling is therefore</p>
 <div class="math notranslate nohighlight">
 \[ f_s \le \mu_s N. \]</div>
-<p>Substituting the expression for the normal force <span class="math notranslate nohighlight">\(N = mg\cos\theta\)</span> gives</p>
+<p class="sd-card-text">Substituting the expression for the normal force <span class="math notranslate nohighlight">\(N = mg\cos\theta\)</span> gives</p>
 <div class="math notranslate nohighlight">
 \[ \frac{mg I_{\rm CoM}\sin\theta}{mr^2 + I_{\rm CoM}} \le \mu_s mg\cos\theta. \]</div>
-<p>Solving this inequality for <span class="math notranslate nohighlight">\(\mu_s\)</span> gives</p>
+<p class="sd-card-text">Solving this inequality for <span class="math notranslate nohighlight">\(\mu_s\)</span> gives</p>
 <div class="math notranslate nohighlight">
 \[ \mu_s \ge \frac{\tan\theta}{1 + (mr^2/I_{\rm CoM})}. \]</div>
-<p>For a solid cylinder, <span class="math notranslate nohighlight">\(I_{\rm CoM} = \tfrac{1}{2}mr^2\)</span>, which gives</p>
+<p class="sd-card-text">For a solid cylinder, <span class="math notranslate nohighlight">\(I_{\rm CoM} = \tfrac{1}{2}mr^2\)</span>, which gives</p>
 <div class="math notranslate nohighlight">
 \[ \mu_s \ge \frac{1}{3}\tan\theta. \]</div>
 <hr class="docutils" />
-<p><strong>The Conclusion</strong></p>
-<p>The acceleration of a solid cylinder rolling down an incline without slipping is</p>
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The acceleration of a solid cylinder rolling down an incline without slipping is</p>
 <div class="math notranslate nohighlight">
 \[ a_{\rm CoM} = \frac{2}{3} g\sin\theta. \]</div>
-<p>This result shows that the acceleration depends only on the gravitational acceleration and the incline angle and is independent of the coefficient of static friction, provided sufficient friction exists to maintain rolling.</p>
-<p>The condition required to prevent slipping is</p>
+<p class="sd-card-text">This result shows that the acceleration depends only on the gravitational acceleration and the incline angle and is independent of the coefficient of static friction, provided sufficient friction exists to maintain rolling.</p>
+<p class="sd-card-text">The condition required to prevent slipping is</p>
 <div class="math notranslate nohighlight">
 \[
 \mu_s \ge \frac{1}{3}\tan\theta.
 \]</div>
-<p>This result indicates that steeper inclines require a larger coefficient of static friction to maintain rolling without slipping.</p>
+<p class="sd-card-text">This result indicates that steeper inclines require a larger coefficient of static friction to maintain rolling without slipping.</p>
 <hr class="docutils" />
-<p><strong>The Verification</strong></p>
-<p>The analytical solution predicts that the acceleration of the cylinder depends only on the incline angle and gravitational acceleration once the moment of inertia of a solid cylinder is included. The computation below evaluates the acceleration and friction force directly from the derived expressions.</p>
-<p>The numerical calculation confirms that the analytical formulas reproduce the predicted acceleration and the minimum coefficient of static friction required for rolling without slipping.</p>
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The analytical solution predicts that the acceleration of the cylinder depends only on the incline angle and gravitational acceleration once the moment of inertia of a solid cylinder is included. The computation below evaluates the acceleration and friction force directly from the derived expressions.</p>
+<p class="sd-card-text">The numerical calculation confirms that the analytical formulas reproduce the predicted acceleration and the minimum coefficient of static friction required for rolling without slipping.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
@@ -770,7 +789,8 @@ f_s &amp;= \frac{I_{\rm CoM} a_{\rm CoM}}{r^2} \\
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</section>
+</div>
+</details></section>
 </div>
 </section>
 </section>
@@ -784,7 +804,7 @@ f_s &amp;= \frac{I_{\rm CoM} a_{\rm CoM}}{r^2} \\
 <figure class="align-default" id="rolling-slipping-example">
 <img alt="wheel rolling and slipping" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/2fa8fc32149cf8962886551a2c3f6927b663ee26" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.6 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#rolling-slipping-example" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.6 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-1-rolling-motion">Rolling Motion</a>.</span><a class="headerlink" href="#rolling-slipping-example" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <section id="example-problem-rolling-down-an-inclined-plane-with-slipping">
@@ -802,64 +822,67 @@ f_s &amp;= \frac{I_{\rm CoM} a_{\rm CoM}}{r^2} \\
 <figure class="align-default" id="rolling-slipping-problem">
 <img alt="rolling slipping problem" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/f14c32c74e2b8a6af2e38740a8a1c489b0fc698d" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.7 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#rolling-slipping-problem" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.7 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-1-rolling-motion">Rolling Motion</a>.</span><a class="headerlink" href="#rolling-slipping-problem" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The cylinder moves down an inclined plane while slipping, so the rolling-without-slipping constraint does not apply. The motion therefore consists of translational motion of the center of mass together with rotational motion about the center of mass, but these two motions are not linked by the usual rolling constraint. The physical framework required to describe the motion is Newton’s 2nd law for translation together with Newton’s 2nd law for rotation.</p>
+<p class="sd-card-text">A coordinate system is chosen so that the <span class="math notranslate nohighlight">\(x\)</span>-axis lies along the plane and points down the incline, while the <span class="math notranslate nohighlight">\(y\)</span>-axis is perpendicular to the plane and points away from the surface. With this coordinate choice, the component of gravity parallel to the incline points in the positive <span class="math notranslate nohighlight">\(x\)</span>-direction, while the normal force points in the positive <span class="math notranslate nohighlight">\(y\)</span>-direction.</p>
+<p class="sd-card-text">The forces acting on the cylinder are the gravitational force <span class="math notranslate nohighlight">\(\vec{W}\)</span>, the normal force <span class="math notranslate nohighlight">\(\vec{N}\)</span> exerted by the surface, and the kinetic friction force <span class="math notranslate nohighlight">\(\vec{f}_k\)</span>. The gravitational force acts vertically downward, the normal force acts perpendicular to the plane, and the kinetic friction force acts up the incline because the cylinder slips relative to the surface while moving downward.</p>
+<p class="sd-card-text">The strategy is to apply Newton’s 2nd law along the incline to determine the linear acceleration of the center of mass and then apply Newton’s 2nd law for rotation about the center of mass to determine the angular acceleration produced by the kinetic friction force.</p>
 <hr class="docutils" />
-<p><strong>The Model</strong></p>
-<p>The cylinder moves down an inclined plane while slipping, so the rolling-without-slipping constraint does not apply. The motion therefore consists of translational motion of the center of mass together with rotational motion about the center of mass, but these two motions are not constrained by the geometric relation <span class="math notranslate nohighlight">\(a_{\rm CoM} = r\alpha\)</span>. The physical framework required to describe the motion is Newton’s 2nd law for translation together with Newton’s 2nd law for rotation.</p>
-<p>A coordinate system is chosen so that the <span class="math notranslate nohighlight">\(x\)</span>-axis lies along the plane and points down the incline, while the <span class="math notranslate nohighlight">\(y\)</span>-axis is perpendicular to the plane and points away from the surface. With this coordinate choice, the component of gravity parallel to the incline accelerates the cylinder down the plane, while the normal force balances the perpendicular component of gravity.</p>
-<p>The forces acting on the cylinder are the gravitational force <span class="math notranslate nohighlight">\(\vec{W}\)</span>, the normal force <span class="math notranslate nohighlight">\(\vec{N}\)</span> exerted by the surface, and the kinetic friction force <span class="math notranslate nohighlight">\(\vec{f}_k\)</span>. The gravitational force acts vertically downward, the normal force acts perpendicular to the plane, and the kinetic friction force acts up the incline because the cylinder slips relative to the surface while moving downward. Since the cylinder is slipping, the friction force has magnitude <span class="math notranslate nohighlight">\(f_k = \mu_k N\)</span>.</p>
-<p>The strategy is to apply Newton’s 2nd law along the incline to determine the linear acceleration of the center of mass and then apply Newton’s 2nd law for rotation about the center of mass to determine the angular acceleration produced by the kinetic friction force.</p>
-<hr class="docutils" />
-<p><strong>The Math</strong></p>
-<p>The translational motion of the cylinder is governed by Newton’s 2nd law applied along and perpendicular to the inclined plane. Along the incline, the component of gravity acts downward while the kinetic friction force acts upward. Applying Newton’s 2nd law along the <span class="math notranslate nohighlight">\(x\)</span>-direction gives</p>
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">The translational motion of the cylinder is governed by Newton’s 2nd law applied along and perpendicular to the inclined plane.
+This is the same free-body-diagram and force-balance logic used in <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter05/newtons-laws.html">Chapter 5</a>, but the force now also determines a torque. Along the incline, the component of gravity acts downward while the kinetic friction force acts upward. Applying Newton’s 2nd law along the <span class="math notranslate nohighlight">\(x\)</span>-direction gives</p>
 <div class="math notranslate nohighlight">
 \[ mg\sin\theta - f_k = m a_{\rm CoM}. \]</div>
-<p>Perpendicular to the plane, the normal force balances the perpendicular component of gravity. Newton’s 2nd law in the <span class="math notranslate nohighlight">\(y\)</span>-direction therefore gives</p>
+<p class="sd-card-text">Perpendicular to the plane, the normal force balances the perpendicular component of gravity. Newton’s 2nd law in the <span class="math notranslate nohighlight">\(y\)</span>-direction therefore gives</p>
 <div class="math notranslate nohighlight">
 \[ N - mg\cos\theta = 0. \]</div>
-<p>Because the cylinder is slipping, the friction force is kinetic friction. Substituting <span class="math notranslate nohighlight">\(N = mg\cos\theta\)</span> into the kinetic friction law gives</p>
+<p class="sd-card-text">Because the cylinder is slipping, the friction force is kinetic friction. The kinetic friction force follows from the normal force found from the perpendicular force balance:</p>
 <div class="math notranslate nohighlight">
 \[ f_k = \mu_k N = \mu_k mg\cos\theta. \]</div>
-<p>Substituting this expression for the kinetic friction force into the translational equation gives</p>
+<p class="sd-card-text">Replacing the kinetic friction force in the translational equation gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 mg\sin\theta - \mu_k mg\cos\theta &amp;= m a_{\rm CoM}.
 \end{align*}\]</div>
-<p>Solving this equation for the linear acceleration gives</p>
+<p class="sd-card-text">Solving this equation for the linear acceleration gives</p>
 <div class="math notranslate nohighlight">
 \[ a_{\rm CoM} = g(\sin\theta - \mu_k\cos\theta). \]</div>
-<p>This result determines the linear acceleration of the center of mass.</p>
-<p>The rotational motion of the cylinder is governed by Newton’s 2nd law for rotation about the center of mass. The only force producing a torque about the center of mass is the kinetic friction force. The rotational equation therefore gives</p>
+<p class="sd-card-text">This result determines the linear acceleration of the center of mass.</p>
+<p class="sd-card-text">The rotational motion of the cylinder is governed by Newton’s 2nd law for rotation about the center of mass. The only force producing a torque about the center of mass is the kinetic friction force. The rotational equation therefore gives</p>
 <div class="math notranslate nohighlight">
 \[ f_k r = I_{\rm CoM}\alpha. \]</div>
-<p>For a solid cylinder, the moment of inertia about the center of mass is</p>
+<p class="sd-card-text">For a solid cylinder, the moment of inertia about the center of mass is</p>
 <div class="math notranslate nohighlight">
 \[ I_{\rm CoM} = \frac{1}{2}mr^2. \]</div>
-<p>Substituting this expression for the moment of inertia into the rotational equation gives</p>
+<p class="sd-card-text">Substituting this expression for the moment of inertia into the rotational equation gives</p>
 <div class="math notranslate nohighlight">
 \[ f_k r = \frac{1}{2}mr^2\alpha. \]</div>
-<p>We solve this expression for the angular acceleration, which gives</p>
+<p class="sd-card-text">We solve this expression for the angular acceleration, which gives</p>
 <div class="math notranslate nohighlight">
 \[ \alpha = \frac{2f_k}{mr}. \]</div>
-<p>Substituting <span class="math notranslate nohighlight">\(f_k = \mu_k mg\cos\theta\)</span> into this expression gives</p>
+<p class="sd-card-text">Substituting <span class="math notranslate nohighlight">\(f_k = \mu_k mg\cos\theta\)</span> into this expression gives</p>
 <div class="math notranslate nohighlight">
 \[ \alpha = \frac{2\mu_k g\cos\theta}{r}. \]</div>
 <hr class="docutils" />
-<p><strong>The Conclusion</strong></p>
-<p>The linear acceleration of the cylinder while it slips down the incline is</p>
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The linear acceleration of the cylinder while it slips down the incline is</p>
 <div class="math notranslate nohighlight">
 \[ a_{\rm CoM} = g(\sin\theta - \mu_k\cos\theta). \]</div>
-<p>This result is the same as the acceleration of an object sliding down an incline with kinetic friction because the translational motion depends only on the net force along the plane.</p>
-<p>The angular acceleration of the cylinder about its center of mass is</p>
+<p class="sd-card-text">This result is the same as the acceleration of an object sliding down an incline with kinetic friction because the translational motion depends only on the net force along the plane.</p>
+<p class="sd-card-text">The angular acceleration of the cylinder about its center of mass is</p>
 <div class="math notranslate nohighlight">
 \[ \alpha = \frac{2\mu_k g\cos\theta}{r}. \]</div>
-<p>This result shows that the angular acceleration is produced entirely by the kinetic friction force, so it depends on <span class="math notranslate nohighlight">\(\mu_k\)</span>, the incline angle, and the cylinder radius.</p>
+<p class="sd-card-text">This result shows that the angular acceleration is produced entirely by the kinetic friction force, so it depends on <span class="math notranslate nohighlight">\(\mu_k\)</span>, the incline angle, and the cylinder radius.</p>
 <hr class="docutils" />
-<p><strong>The Verification</strong></p>
-<p>The analytical solution predicts that the linear acceleration comes from the net force along the incline, while the angular acceleration comes from the torque due to kinetic friction about the center of mass. The computation below evaluates both expressions directly for a representative set of parameter values.</p>
-<p>The numerical calculation confirms that the analytical formulas reproduce the expected linear and angular accelerations for a slipping solid cylinder on an incline.</p>
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The analytical solution predicts that the linear acceleration comes from the net force along the incline, while the angular acceleration comes from the torque due to kinetic friction about the center of mass. The computation below evaluates both expressions directly for a representative set of parameter values.</p>
+<p class="sd-card-text">The numerical calculation confirms that the analytical formulas reproduce the expected linear and angular accelerations for a slipping solid cylinder on an incline.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
@@ -893,7 +916,8 @@ mg\sin\theta - \mu_k mg\cos\theta &amp;= m a_{\rm CoM}.
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</section>
+</div>
+</details></section>
 </div>
 </section>
 </section>
@@ -905,6 +929,10 @@ mg\sin\theta - \mu_k mg\cos\theta &amp;= m a_{\rm CoM}.
 <p>In the absence of any nonconservative forces, the total energy of a rolling object <em>without slipping</em> is conserved and is constant throughout the motion.  In contrast, the energy is not conserved when there is a rolling object that is slipping which produces heat as a result of kinetic friction, and a rolling object encountering air resistance.</p>
 <p><em>Why does a rolling object without slipping conserve energy when the static frictional force is nonconservative?</em></p>
 <p>From Fig. <a class="reference internal" href="#forces-on-wheel"><span class="std std-numref">11.3</span></a>, point <span class="math notranslate nohighlight">\(P\)</span> is in contact with the surface at rest with respect to the surface.  Therefore, its infinitesimal displacement <span class="math notranslate nohighlight">\(d\vec{r}\)</span> with respect to the surface is zero, and the incremental work done by the static friction is zero.</p>
+<div class="tip margin checkpoint admonition">
+<p class="admonition-title">Checkpoint</p>
+<p>If the contact point of a rolling wheel is instantaneously at rest, why can static friction be present without doing work on that point?</p>
+</div>
 <section id="example-problem-curiosity-rover">
 <h4><span class="section-number">11.1.3.1. </span><strong>Example Problem</strong>: Curiosity Rover<a class="headerlink" href="#example-problem-curiosity-rover" title="Link to this heading">#</a></h4>
 <div class="exercise etamu-exercise admonition" id="Chapter11/angular-momentum-exercise-2">
@@ -915,56 +943,58 @@ mg\sin\theta - \mu_k mg\cos\theta &amp;= m a_{\rm CoM}.
 <blockquote>
 <div><p>The <em>Curiosity</em> rover was deployed on Mars on August 6, 2012. The wheels of the rover have a radius of <span class="math notranslate nohighlight">\(25\ {\rm cm}\)</span>. Suppose astronauts arrive on Mars in the year <span class="math notranslate nohighlight">\(2050\)</span> and find the now-inoperative <em>Curiosity</em> on the side of a basin. While they are dismantling the rover, an astronaut accidentally loses a grip on one of the wheels, which rolls without slipping down into the bottom of the basin <span class="math notranslate nohighlight">\(25\ {\rm m}\)</span> below. If the wheel has a mass of <span class="math notranslate nohighlight">\(5\ {\rm kg}\)</span>, what is its velocity at the bottom of the basin?</p>
 </div></blockquote>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The wheel rolls down into the basin without slipping, so its motion includes both translational motion of the center of mass and rotational motion about the center of mass. Because the problem asks for the speed at the bottom after a vertical drop, the appropriate physical framework is conservation of mechanical energy. The wheel starts from rest at the top, so its initial energy is entirely gravitational potential energy. At the bottom, that potential energy has been converted into translational kinetic energy and rotational kinetic energy.</p>
+<p class="sd-card-text">The wheel is modeled as a hollow cylinder, which is a reasonable approximation for the rover wheel. Since the wheel rolls without slipping, the translational and rotational variables are tied together by the rolling constraint.</p>
+<p class="sd-card-text">The strategy is to apply conservation of mechanical energy between the top and bottom of the basin, use the hollow-cylinder moment of inertia, apply the rolling constraint to eliminate the angular speed, and then solve for the linear speed at the bottom.</p>
 <hr class="docutils" />
-<p><strong>The Model</strong></p>
-<p>The wheel rolls down into the basin without slipping, so its motion includes both translational motion of the center of mass and rotational motion about the center of mass. Because the problem asks for the speed at the bottom after a vertical drop, the appropriate physical framework is conservation of mechanical energy. The wheel starts from rest at the top, so its initial energy is entirely gravitational potential energy. At the bottom, that potential energy has been converted into translational kinetic energy and rotational kinetic energy.</p>
-<p>The wheel is modeled as a hollow cylinder, which is a reasonable approximation for the rover wheel. With this model, the moment of inertia about the center of mass is <span class="math notranslate nohighlight">\(I_{\rm CoM} = mr^2\)</span>. Since the wheel rolls without slipping, the translational and rotational variables are related by the rolling constraint <span class="math notranslate nohighlight">\(v_{\rm CoM} = r\omega\)</span>.</p>
-<p>The strategy is to apply conservation of mechanical energy between the top and bottom of the basin, substitute the hollow-cylinder moment of inertia, use the rolling constraint to eliminate the angular speed, and then solve for the linear speed at the bottom.</p>
-<hr class="docutils" />
-<p><strong>The Math</strong></p>
-<p>Because only conservative work is included in the model, the mechanical energy of the wheel is conserved as it rolls into the basin. The initial gravitational potential energy therefore equals the final translational plus rotational kinetic energy, which gives</p>
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">Because only conservative work is included in the model, the mechanical energy of the wheel is conserved as it rolls into the basin. The initial gravitational potential energy therefore equals the final translational plus rotational kinetic energy, which gives</p>
 <div class="math notranslate nohighlight">
 \[ mgh = \frac{1}{2}mv_{\rm CoM}^2 + \frac{1}{2}I_{\rm CoM}\omega^2. \]</div>
-<p>The wheel is modeled as a hollow cylinder, so its moment of inertia about the center of mass is</p>
+<p class="sd-card-text">The wheel is modeled as a hollow cylinder, so its moment of inertia about the center of mass is</p>
 <div class="math notranslate nohighlight">
 \[ I_{\rm CoM} = mr^2. \]</div>
-<p>Because the wheel rolls without slipping, the linear speed and angular speed are related by the rolling constraint</p>
+<p class="sd-card-text">Because the wheel rolls without slipping, the linear speed and angular speed are related by the rolling constraint</p>
 <div class="math notranslate nohighlight">
 \[ v_{\rm CoM} = r\omega. \]</div>
-<p>We solve this relation for the angular speed so that it can be substituted into the energy equation, which gives</p>
+<p class="sd-card-text">We solve this relation for the angular speed so that it can be substituted into the energy equation, which gives</p>
 <div class="math notranslate nohighlight">
 \[ \omega = \frac{v_{\rm CoM}}{r}. \]</div>
-<p>Substituting <span class="math notranslate nohighlight">\(I_{\rm CoM} = mr^2\)</span> and <span class="math notranslate nohighlight">\(\omega = v_{\rm CoM}/r\)</span> into the energy equation gives</p>
+<p class="sd-card-text">The energy equation becomes simpler when the hollow-cylinder moment of inertia and rolling constraint are used:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 mgh &amp;= \frac{1}{2}mv_{\rm CoM}^2 + \frac{1}{2}(mr^2)\left(\frac{v_{\rm CoM}}{r}\right)^2 \\
 &amp;= \frac{1}{2}mv_{\rm CoM}^2 + \frac{1}{2}mv_{\rm CoM}^2.
 \end{align*}\]</div>
-<p>Combining the two kinetic-energy terms gives</p>
+<p class="sd-card-text">Combining the two kinetic-energy terms gives</p>
 <div class="math notranslate nohighlight">
 \[ mgh = mv_{\rm CoM}^2. \]</div>
-<p>We divide both sides by <span class="math notranslate nohighlight">\(m\)</span> to eliminate the mass, which gives</p>
+<p class="sd-card-text">We divide both sides by <span class="math notranslate nohighlight">\(m\)</span> to eliminate the mass, which gives</p>
 <div class="math notranslate nohighlight">
 \[ gh = v_{\rm CoM}^2. \]</div>
-<p>We now solve this expression for the speed at the bottom of the basin, which gives</p>
+<p class="sd-card-text">We now solve this expression for the speed at the bottom of the basin, which gives</p>
 <div class="math notranslate nohighlight">
 \[ v_{\rm CoM} = \sqrt{gh}. \]</div>
-<p>For Mars, the gravitational acceleration is <span class="math notranslate nohighlight">\(g = 3.71\ {\rm m/s^2}\)</span>, and the vertical drop is <span class="math notranslate nohighlight">\(h = 25\ {\rm m}\)</span>. Substituting these values into the expression for the speed gives</p>
+<p class="sd-card-text">For Mars, the gravitational acceleration is <span class="math notranslate nohighlight">\(g = 3.71\ {\rm m/s^2}\)</span>, and the vertical drop is <span class="math notranslate nohighlight">\(h = 25\ {\rm m}\)</span>. Substituting these values into the expression for the speed gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 v_{\rm CoM} &amp;= \sqrt{(3.71\ {\rm m/s^2})(25\ {\rm m})} \\
 &amp;= 9.63\ {\rm m/s}.
 \end{align*}\]</div>
 <hr class="docutils" />
-<p><strong>The Conclusion</strong></p>
-<p>The speed of the rover wheel at the bottom of the basin is</p>
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The speed of the rover wheel at the bottom of the basin is</p>
 <div class="math notranslate nohighlight">
 \[ v_{\rm CoM} = 9.63\ {\rm m/s}. \]</div>
-<p>This result follows from conservation of mechanical energy with the wheel modeled as a hollow cylinder rolling without slipping. Because part of the gravitational potential energy becomes rotational kinetic energy, the wheel reaches the bottom with a smaller speed than a point mass or sliding object would have after the same vertical drop.</p>
+<p class="sd-card-text">This result follows from conservation of mechanical energy with the wheel modeled as a hollow cylinder rolling without slipping. Because part of the gravitational potential energy becomes rotational kinetic energy, the wheel reaches the bottom with a smaller speed than a point mass or sliding object would have after the same vertical drop.</p>
 <hr class="docutils" />
-<p><strong>The Verification</strong></p>
-<p>The analytical solution predicts that the wheel’s gravitational potential energy is converted into both translational and rotational kinetic energy as it rolls downward. The computation below evaluates the speed using the same energy relation and the hollow-cylinder moment of inertia used in the analytical derivation.</p>
-<p>The numerical calculation confirms that the energy-conservation model reproduces the analytical result for the speed of the wheel at the bottom of the basin.</p>
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The analytical solution predicts that the wheel’s gravitational potential energy is converted into both translational and rotational kinetic energy as it rolls downward. The computation below evaluates the speed using the same energy relation and the hollow-cylinder moment of inertia used in the analytical derivation.</p>
+<p class="sd-card-text">The numerical calculation confirms that the energy-conservation model reproduces the analytical result for the speed of the wheel at the bottom of the basin.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
@@ -1000,7 +1030,8 @@ v_{\rm CoM} &amp;= \sqrt{(3.71\ {\rm m/s^2})(25\ {\rm m})} \\
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</section>
+</div>
+</details></section>
 </div>
 </section>
 </section>
@@ -1018,20 +1049,20 @@ Why does she not have to exert a torque to spin faster?</p></li>
 <p>Questions like these are answered by <em>angular momentum</em>, which is the rotational analog to linear momentum.</p>
 <section id="angular-momentum-of-a-single-particle">
 <h3><span class="section-number">11.2.1. </span>Angular Momentum of a Single Particle<a class="headerlink" href="#angular-momentum-of-a-single-particle" title="Link to this heading">#</a></h3>
-<p>Figure <a class="reference internal" href="#particle-ang-momentum-example"><span class="std std-numref">11.8</span></a> illustrates how we can define the coordinate system for a particle moving in the <span class="math notranslate nohighlight">\(xy\)</span>-planet with a linear momentum <span class="math notranslate nohighlight">\(\vec{p}\)</span>.  The particle is located within the <span class="math notranslate nohighlight">\(xy\)</span>-plane using the vector <span class="math notranslate nohighlight">\(\vec{r}\)</span> relative to the origin.</p>
+<p>Figure <a class="reference internal" href="#particle-ang-momentum-example"><span class="std std-numref">11.8</span></a> illustrates how we can define the coordinate system for a particle moving in the <span class="math notranslate nohighlight">\(xy\)</span>-plane with a linear momentum <span class="math notranslate nohighlight">\(\vec{p}\)</span>.  The particle is located within the <span class="math notranslate nohighlight">\(xy\)</span>-plane using the vector <span class="math notranslate nohighlight">\(\vec{r}\)</span> relative to the origin.</p>
 <figure class="align-default" id="particle-ang-momentum-example">
 <img alt="angular momentum coordinates" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/539865005b3ae242a2c04dc146583e138be8be9b" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.8 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#particle-ang-momentum-example" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.8 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-2-angular-momentum">Angular Momentum</a>.</span><a class="headerlink" href="#particle-ang-momentum-example" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="note admonition">
 <p class="admonition-title">Angular Momentum of a Particle</p>
 <p>The <strong>angular momentum</strong> <span class="math notranslate nohighlight">\(\vec{L}\)</span> of a particle is defined as the cross-product of <span class="math notranslate nohighlight">\(\vec{r}\)</span> and <span class="math notranslate nohighlight">\(\vec{p}\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-04d79d86-c19c-4107-910d-b44f6923a7a9">
-<span class="eqno">(11.4)<a class="headerlink" href="#equation-04d79d86-c19c-4107-910d-b44f6923a7a9" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
 \vec{L} = \vec{r} \times \vec{p}.
-\end{align}\]</div>
+\end{align*}\]</div>
 <p>Recall the property of a cross product produces a vector that is perpendicular to the plane containing the two vectors.  Also the positive vector points upward relative to the plane and counterclockwise denotes a positive direction so that we can use the <em>right-hand rule</em>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -1055,18 +1086,28 @@ L &amp;= rp\sin{\theta}, \\
 <ul class="simple">
 <li><p>The magnitude of the angular momentum depends on the choice of origin.</p></li>
 </ul>
+<div class="tip margin checkpoint admonition">
+<p class="admonition-title">Checkpoint</p>
+<p>If a particle’s momentum points directly toward or directly away from the chosen origin, what happens to its lever arm?</p>
+</div>
+<div class="tip admonition">
+<p class="admonition-title"><a class="reference external" href="https://www.youtube.com/&#64;khanacademy"><strong>Khan Academy</strong></a></p>
+<div class="video_wrapper align-center" style="text-align: center">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/inus3WE5eTI" style="border: 0; height: 435px; width: 720px">
+</iframe></div><p>As you watch, focus on why an object moving in a straight line can still have angular momentum about a chosen origin. The key question is whether the line of motion has a nonzero lever arm relative to that origin.</p>
+</div>
 <p>If we take the time-derivative of the angular momentum, we arrive at the net torque on the particle:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \frac{d\vec{L}}{dt} &amp;= \frac{d\vec{r}}{dt} \times \vec{p} + \vec{r} \times \frac{d\vec{p}}{dt}, \\
-&amp;= \vec{v} \times m\vec{v} + \vec{r} \times \sum_j \vec{F}_j, \\
+&amp;= \vec{\rm v} \times m\vec{\rm v} + \vec{r} \times \sum_j \vec{F}_j, \\
 &amp;= \sum_j \left(\vec{r} \times  \vec{F}_j \right) = \sum_j \vec{\tau}_j.
 \end{align*}\]</div>
 <p>We used the vector property that <span class="math notranslate nohighlight">\(\vec{a} \times \vec{a} = 0\)</span>, and the alternative form of Newton’s 2nd law.  Therefore, we can write the definition of the net torque as:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-42aa80ba-0818-4cdb-8e0d-f9b5f939b2eb">
-<span class="eqno">(11.5)<a class="headerlink" href="#equation-42aa80ba-0818-4cdb-8e0d-f9b5f939b2eb" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
 \vec{\tau}_{\rm net} = \sum_j \vec{\tau}_j = \frac{d\vec{L}}{dt}.
-\end{align}\]</div>
+\end{align*}\]</div>
 <div class="note admonition">
 <p class="admonition-title">Problem-Solving Strategy</p>
 <p><strong>Angular Momentum of a Particle</strong></p>
@@ -1078,7 +1119,7 @@ L &amp;= rp\sin{\theta}, \\
 </ol>
 <ul class="simple">
 <li><p>Use <span class="math notranslate nohighlight">\(\frac{d\vec{L}}{dt} = \displaystyle \sum_j \vec{\tau}_j\)</span> calculate the net torque from the time-varying angular momentum.</p></li>
-<li><p>If there is not time dependence, then <span class="math notranslate nohighlight">\(\tau_{\rm net} = 0\)</span>.</p></li>
+<li><p>If there is no time dependence, then <span class="math notranslate nohighlight">\(\tau_{\rm net} = 0\)</span>.</p></li>
 </ul>
 </div>
 <section id="example-problem-angular-momentum-and-torque-on-a-meteor">
@@ -1096,73 +1137,75 @@ L &amp;= rp\sin{\theta}, \\
 <figure class="align-default" id="meteor-problem">
 <img alt="angular momentum and torque on meteor" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/02ad2ddfe83fa26eeb264ce542c21533aa874908" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.9 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#meteor-problem" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.9 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-2-angular-momentum">Angular Momentum</a>.</span><a class="headerlink" href="#meteor-problem" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The meteor is treated as a particle moving in the <span class="math notranslate nohighlight">\(xy\)</span>-plane, where the origin is located at the observer. The angular momentum of a particle about a chosen origin is determined from the cross product of its position vector and its linear momentum, and the torque about that same origin is determined from the cross product of the position vector with the net force.</p>
+<p class="sd-card-text">The coordinate system is defined so that <span class="math notranslate nohighlight">\(\hat{i}\)</span> points horizontally and <span class="math notranslate nohighlight">\(\hat{j}\)</span> points vertically upward. The given position vector has both <span class="math notranslate nohighlight">\(x\)</span>- and <span class="math notranslate nohighlight">\(y\)</span>-components, while the meteor’s momentum and acceleration are purely in the negative <span class="math notranslate nohighlight">\(y\)</span>-direction. Because the position and momentum vectors lie in the <span class="math notranslate nohighlight">\(xy\)</span>-plane, the angular momentum must point along the <span class="math notranslate nohighlight">\(z\)</span>-axis. The same is true for the torque because the force is also confined to the <span class="math notranslate nohighlight">\(xy\)</span>-plane.</p>
+<p class="sd-card-text">The strategy is to compute the angular momentum directly from the position and momentum vectors using component form. We then compute the torque from the position vector and the net force, where the net force is found from Newton’s 2nd law.</p>
 <hr class="docutils" />
-<p><strong>The Model</strong></p>
-<p>The meteor is treated as a particle moving in the <span class="math notranslate nohighlight">\(xy\)</span>-plane, where the origin is located at the observer. The angular momentum of a particle about a chosen origin is determined from the cross product of its position vector and its linear momentum, and the torque about that same origin is determined either from the time derivative of the angular momentum or from the cross product of the position vector with the net force.</p>
-<p>The coordinate system is defined so that <span class="math notranslate nohighlight">\(\hat{i}\)</span> points horizontally and <span class="math notranslate nohighlight">\(\hat{j}\)</span> points vertically upward. The given position vector has both <span class="math notranslate nohighlight">\(x\)</span>- and <span class="math notranslate nohighlight">\(y\)</span>-components, while the meteor’s momentum and acceleration are purely in the negative <span class="math notranslate nohighlight">\(y\)</span>-direction. Because both <span class="math notranslate nohighlight">\(\vec{r}\)</span> and <span class="math notranslate nohighlight">\(\vec{p}\)</span> lie in the <span class="math notranslate nohighlight">\(xy\)</span>-plane, the angular momentum must point along the <span class="math notranslate nohighlight">\(z\)</span>-axis. The same is true for the torque because the force is also confined to the <span class="math notranslate nohighlight">\(xy\)</span>-plane.</p>
-<p>The strategy is to compute the angular momentum directly from <span class="math notranslate nohighlight">\(\vec{L} = \vec{r} \times \vec{p}\)</span> using component form. We then compute the torque from <span class="math notranslate nohighlight">\(\sum \vec{\tau} = \vec{r} \times \vec{F}\)</span>, where the net force is found from Newton’s 2nd law, <span class="math notranslate nohighlight">\(\vec{F} = m\vec{a}\)</span>.</p>
-<hr class="docutils" />
-<p><strong>The Math</strong></p>
-<p>The angular momentum of a particle about the origin is given by the cross product of its position vector and its linear momentum. Using the given vectors, we write</p>
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">The angular momentum of a particle about the origin is given by the cross product of its position vector and its linear momentum. Using the given vectors, we write</p>
 <div class="math notranslate nohighlight">
 \[ \vec{L} = \vec{r} \times \vec{p}. \]</div>
-<p>Before carrying out the cross product, we convert the given quantities into SI units. The position vector becomes</p>
+<p class="sd-card-text">Before carrying out the cross product, we convert the given quantities into SI units. The position vector becomes</p>
 <div class="math notranslate nohighlight">
 \[ \vec{r} = 2.5\times10^4\ {\rm m}\,\hat{i} + 2.5\times10^4\ {\rm m}\,\hat{j}, \]</div>
-<p>and the linear momentum becomes</p>
+<p class="sd-card-text">and the linear momentum becomes</p>
 <div class="math notranslate nohighlight">
 \[ \vec{p} = 15\ {\rm kg}(-2.0\times10^3\ {\rm m/s}\,\hat{j}) = -3.0\times10^4\ {\rm kg\cdot m/s}\,\hat{j}. \]</div>
-<p>Substituting these expressions into the cross product gives</p>
+<p class="sd-card-text">Substituting these expressions into the cross product gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \vec{L} &amp;= \left(2.5\times10^4\ \hat{i} + 2.5\times10^4\ \hat{j}\right) \times \left(-3.0\times10^4\ \hat{j}\right)\ {\rm kg\cdot m^2/s} \\
 &amp;= \left(2.5\times10^4\ \hat{i}\right)\times\left(-3.0\times10^4\ \hat{j}\right) + \left(2.5\times10^4\ \hat{j}\right)\times\left(-3.0\times10^4\ \hat{j}\right)\ {\rm kg\cdot m^2/s}.
 \end{align*}\]</div>
-<p>The second term is zero because <span class="math notranslate nohighlight">\(\hat{j}\times\hat{j}=0\)</span>, so the angular momentum reduces to</p>
+<p class="sd-card-text">The second term is zero because <span class="math notranslate nohighlight">\(\hat{j}\times\hat{j}=0\)</span>, so the angular momentum reduces to</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \vec{L} &amp;= -\left(2.5\times10^4\right)\left(3.0\times10^4\right)\hat{k}\ {\rm kg\cdot m^2/s} \\
 &amp;= -7.5\times10^8\ {\rm kg\cdot m^2/s}\,\hat{k}.
 \end{align*}\]</div>
-<p>This result gives the angular momentum of the meteor about the observer.</p>
-<p>The torque on the meteor about the origin is the cross product of the position vector with the net force. We first determine the net force from Newton’s 2nd law. The meteor’s acceleration is</p>
+<p class="sd-card-text">This result gives the angular momentum of the meteor about the observer.</p>
+<p class="sd-card-text">The torque on the meteor about the origin is the cross product of the position vector with the net force. We first determine the net force from Newton’s 2nd law. The meteor’s acceleration is</p>
 <div class="math notranslate nohighlight">
 \[ \vec{a} = -2.0\ {\rm m/s^2}\,\hat{j}.\]</div>
-<p>Multiplying by the mass gives the net force,</p>
+<p class="sd-card-text">Multiplying by the mass gives the net force,</p>
 <div class="math notranslate nohighlight">
 \[ \vec{F} = m\vec{a} = 15.0\ {\rm kg}(-2.0\ {\rm m/s^2}\,\hat{j}) = -30.0\ {\rm N}\,\hat{j}.\]</div>
-<p>The torque about the origin is therefore</p>
+<p class="sd-card-text">The torque about the origin is therefore</p>
 <div class="math notranslate nohighlight">
 \[ \sum \vec{\tau} = \vec{r} \times \vec{F},\]</div>
-<p>and through substitution, we find that</p>
+<p class="sd-card-text">and through substitution, we find that</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \sum \vec{\tau} &amp;= \left(2.5\times10^4\ \hat{i} + 2.5\times10^4\ \hat{j}\right)\times\left(-30.0\ \hat{j}\right)\ {\rm N\cdot m} \\
 &amp;= \left(2.5\times10^4\ \hat{i}\right)\times\left(-30.0\ \hat{j}\right) + \left(2.5\times10^4\ \hat{j}\right)\times\left(-30.0\ \hat{j}\right)\ {\rm N\cdot m}.
 \end{align*}\]</div>
-<p>Again, the second term is zero because <span class="math notranslate nohighlight">\(\hat{j}\times\hat{j}=0\)</span>, so the torque becomes</p>
+<p class="sd-card-text">Again, the second term is zero because <span class="math notranslate nohighlight">\(\hat{j}\times\hat{j}=0\)</span>, so the torque becomes</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \sum \vec{\tau} &amp;= -\left(2.5\times10^4\right)\left(30.0\right)\hat{k}\ {\rm N\cdot m} \\
 &amp;= -7.5\times10^5\ {\rm N\cdot m}\,\hat{k}.
 \end{align*}\]</div>
 <hr class="docutils" />
-<p><strong>The Conclusion</strong></p>
-<p>The angular momentum of the meteor about the observer is</p>
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The angular momentum of the meteor about the observer is</p>
 <div class="math notranslate nohighlight">
 \[ \vec{L} = -7.5\times10^8\ {\rm kg\cdot m^2/s}\,\hat{k}. \]</div>
-<p>The negative <span class="math notranslate nohighlight">\(\hat{k}\)</span> direction means the angular momentum points into the page when the motion is viewed in the standard <span class="math notranslate nohighlight">\(xy\)</span>-plane.</p>
-<p>The torque on the meteor about the observer is</p>
+<p class="sd-card-text">The negative <span class="math notranslate nohighlight">\(\hat{k}\)</span> direction means the angular momentum points into the page when the motion is viewed in the standard <span class="math notranslate nohighlight">\(xy\)</span>-plane.</p>
+<p class="sd-card-text">The torque on the meteor about the observer is</p>
 <div class="math notranslate nohighlight">
 \[ \sum \vec{\tau} = -7.5\times10^5\ {\rm N\cdot m}\,\hat{k}. \]</div>
-<p>This torque has the same direction as the angular momentum change, which is consistent with the meteor accelerating downward while its line of motion remains offset from the observer.</p>
+<p class="sd-card-text">This torque has the same direction as the angular momentum change, which is consistent with the meteor accelerating downward while its line of motion remains offset from the observer.</p>
 <hr class="docutils" />
-<p><strong>The Verification</strong></p>
-<p>The analytical solution uses the vector definitions <span class="math notranslate nohighlight">\(\vec{L} = \vec{r}\times\vec{p}\)</span> and <span class="math notranslate nohighlight">\(\sum \vec{\tau} = \vec{r}\times\vec{F}\)</span> with <span class="math notranslate nohighlight">\(\vec{F} = m\vec{a}\)</span>. The computation below evaluates these same cross products directly in component form using SI units.</p>
-<p>The numerical calculation confirms that the cross-product method reproduces the analytical values and shows that both the angular momentum and torque point in the negative <span class="math notranslate nohighlight">\(\hat{k}\)</span> direction.</p>
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The analytical solution uses the vector definitions <span class="math notranslate nohighlight">\(\vec{L} = \vec{r}\times\vec{p}\)</span> and <span class="math notranslate nohighlight">\(\sum \vec{\tau} = \vec{r}\times\vec{F}\)</span> with <span class="math notranslate nohighlight">\(\vec{F} = m\vec{a}\)</span>. The computation below evaluates these same cross products directly in component form using SI units.</p>
+<p class="sd-card-text">The numerical calculation confirms that the cross-product method reproduces the analytical values and shows that both the angular momentum and torque point in the negative <span class="math notranslate nohighlight">\(\hat{k}\)</span> direction.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
@@ -1200,19 +1243,20 @@ L &amp;= rp\sin{\theta}, \\
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</section>
+</div>
+</details></section>
 </div>
 </section>
 </section>
 <section id="angular-momentum-of-a-system-of-particles">
 <h3><span class="section-number">11.2.2. </span>Angular Momentum of a System of Particles<a class="headerlink" href="#angular-momentum-of-a-system-of-particles" title="Link to this heading">#</a></h3>
 <p>The angular momentum of a system of particles is important for many scientific disciplines, especially for those considering a spinning disk composed of individual particles (e.g., astronomy).</p>
-<p>Consider a spiral galaxy, where the individual stars can be treated as point particles and each particle has its own angular momentum.  The vector sum of the individual angular momenta give the total angular momentum of the galaxy.</p>
+<p>Consider a spiral galaxy, where the individual stars can be treated as point particles and each particle has its own angular momentum.  The vector sum of the individual angular momenta gives the total angular momentum of the galaxy.</p>
 <p>If we have a system of <span class="math notranslate nohighlight">\(N\)</span> particles, then each particle will have its own position vector <span class="math notranslate nohighlight">\(\vec{r}_j\)</span> and momentum <span class="math notranslate nohighlight">\(\vec{p}_j\)</span> relative to the origin.  The total angular momentum of the system of particles is the vector sum of the individual angular momenta, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e8b3b2f5-654f-4b65-9005-78a8a90307cd">
-<span class="eqno">(11.6)<a class="headerlink" href="#equation-e8b3b2f5-654f-4b65-9005-78a8a90307cd" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
 \vec{L}_{tot} = \sum_j \vec{L}_j = \vec{L}_1 + \vec{L}_2 + \cdots + \vec{L}_N.
-\end{align}\]</div>
+\end{align*}\]</div>
 <p>If particle <span class="math notranslate nohighlight">\(j\)</span> is subject to a net torque <span class="math notranslate nohighlight">\(\vec{\tau}_j\)</span> about the origin, then we can find the net torque due to the system of particles by differentiating with respect to time, or</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -1221,7 +1265,7 @@ L &amp;= rp\sin{\theta}, \\
 \end{align*}\]</div>
 <p><em>The rate of change of the total angular momentum of a system is equal to the net external torque acting on the system when both quantities are measured with respect to a given origin.</em>  Mathematically, this is given as</p>
 <div class="math notranslate nohighlight" id="equation-ang-momentum-torque">
-<span class="eqno">(11.7)<a class="headerlink" href="#equation-ang-momentum-torque" title="Link to this equation">#</a></span>\[\frac{d\vec{L}}{dt} = \sum_j \vec{\tau}_j = \vec{\tau}_{\rm net}.\]</div>
+<span class="eqno">(11.1)<a class="headerlink" href="#equation-ang-momentum-torque" title="Link to this equation">#</a></span>\[\frac{d\vec{L}}{dt} = \sum_j \vec{\tau}_j = \vec{\tau}_{\rm net}.\]</div>
 <section id="example-problem-angular-momentum-of-3-particles">
 <h4><span class="section-number">11.2.2.1. </span><strong>Example Problem</strong>: Angular Momentum of 3 Particles<a class="headerlink" href="#example-problem-angular-momentum-of-3-particles" title="Link to this heading">#</a></h4>
 <div class="exercise etamu-exercise admonition" id="Chapter11/angular-momentum-exercise-4">
@@ -1235,122 +1279,124 @@ L &amp;= rp\sin{\theta}, \\
 <figure class="align-default" id="three-particles-angular-momentum">
 <img alt="angular momentum of three particles" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/4a21d9f7b69a56931969b2b745e729bae53dd519" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.10 </span><span class="caption-text">Image Credit: OpenStax.</span><a class="headerlink" href="#three-particles-angular-momentum" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.10 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-2-angular-momentum">Angular Momentum</a>.</span><a class="headerlink" href="#three-particles-angular-momentum" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The system consists of three particles moving in the <span class="math notranslate nohighlight">\(xy\)</span>-plane, each with a specified position, mass, velocity, and applied force. The total angular momentum of the system about the origin is the vector sum of the angular momenta of the individual particles. The rate of change of the total angular momentum is equal to the net external torque about the origin, which is the vector sum of the torques due to the applied forces.</p>
+<p class="sd-card-text">The coordinate system is the standard Cartesian system shown in the figure, with <span class="math notranslate nohighlight">\(\hat{i}\)</span> along the <span class="math notranslate nohighlight">\(x\)</span>-axis and <span class="math notranslate nohighlight">\(\hat{j}\)</span> along the <span class="math notranslate nohighlight">\(y\)</span>-axis. Since all position, momentum, and force vectors lie in the <span class="math notranslate nohighlight">\(xy\)</span>-plane, every angular momentum and torque vector must point along the <span class="math notranslate nohighlight">\(z\)</span>-axis. The sign of each contribution is determined by the right-hand rule applied to the relevant cross product.</p>
+<p class="sd-card-text">The strategy is to write the position and momentum vectors for each particle, compute the three angular momenta about the origin, and add them to obtain the total angular momentum. We then compute the torque on each particle from its position vector and applied force and add those torques to determine the rate of change of the total angular momentum.</p>
 <hr class="docutils" />
-<p><strong>The Model</strong></p>
-<p>The system consists of three particles moving in the <span class="math notranslate nohighlight">\(xy\)</span>-plane, each with a specified position, mass, velocity, and applied force. The total angular momentum of the system about the origin is the vector sum of the angular momenta of the individual particles, where each particle contributes <span class="math notranslate nohighlight">\(\vec{L}_i = \vec{r}_i \times \vec{p}_i\)</span>. The rate of change of the total angular momentum is equal to the net external torque about the origin, which is the vector sum of the torques due to the applied forces.</p>
-<p>The coordinate system is the standard Cartesian system shown in the figure, with <span class="math notranslate nohighlight">\(\hat{i}\)</span> along the <span class="math notranslate nohighlight">\(x\)</span>-axis and <span class="math notranslate nohighlight">\(\hat{j}\)</span> along the <span class="math notranslate nohighlight">\(y\)</span>-axis. Since all position, momentum, and force vectors lie in the <span class="math notranslate nohighlight">\(xy\)</span>-plane, every angular momentum and torque vector must point along the <span class="math notranslate nohighlight">\(z\)</span>-axis. The sign of each contribution is determined by the right-hand rule applied to the relevant cross product.</p>
-<p>The strategy is to write the position and momentum vectors for each particle, compute the three angular momenta about the origin, and add them to obtain the total angular momentum. We then compute the torque on each particle from <span class="math notranslate nohighlight">\(\vec{\tau}_i = \vec{r}_i \times \vec{F}_i\)</span> and add those torques to determine the rate of change of the total angular momentum.</p>
-<hr class="docutils" />
-<p><strong>The Math</strong></p>
-<p>The total angular momentum of the system is the vector sum of the angular momenta of the three particles. For each particle, the angular momentum about the origin is given by</p>
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">The total angular momentum of the system is the vector sum of the angular momenta of the three particles. For each particle, the angular momentum about the origin is given by</p>
 <div class="math notranslate nohighlight">
 \[ \vec{L}_i = \vec{r}_i \times \vec{p}_i. \]</div>
-<p>We begin by writing the position and momentum vectors for particle 1. From the figure, the position vector is</p>
+<p class="sd-card-text">We begin by writing the position and momentum vectors for particle 1. From the figure, the position vector is</p>
 <div class="math notranslate nohighlight">
 \[ \vec{r}_1 = -2.0\ {\rm m}\,\hat{i} + 1.0\ {\rm m}\,\hat{j}, \]</div>
-<p>and the momentum vector is</p>
+<p class="sd-card-text">and the momentum vector is</p>
 <div class="math notranslate nohighlight">
-\[ \vec{p}_1 = m_1\vec{v}_1 = 2.0\ {\rm kg}(4.0\ {\rm m/s}\,\hat{j}) = 8.0\ {\rm kg\cdot m/s}\,\hat{j}. \]</div>
-<p>Substituting these vectors into the cross product gives</p>
+\[ \vec{p}_1 = m_1\vec{\rm v}_1 = 2.0\ {\rm kg}(4.0\ {\rm m/s}\,\hat{j}) = 8.0\ {\rm kg\cdot m/s}\,\hat{j}. \]</div>
+<p class="sd-card-text">Substituting these vectors into the cross product gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \vec{L}_1 &amp;= \vec{r}_1 \times \vec{p}_1 \\
 &amp;= \left(-2.0\ \hat{i} + 1.0\ \hat{j}\right)\times\left(8.0\ \hat{j}\right)\ {\rm kg\cdot m^2/s} \\
 &amp;= -16.0\ {\rm kg\cdot m^2/s}\,\hat{k}.
 \end{align*}\]</div>
-<p>For particle 2, the position vector is</p>
+<p class="sd-card-text">For particle 2, the position vector is</p>
 <div class="math notranslate nohighlight">
 \[ \vec{r}_2 = 4.0\ {\rm m}\,\hat{i} + 1.0\ {\rm m}\,\hat{j}, \]</div>
-<p>and the momentum vector is</p>
+<p class="sd-card-text">and the momentum vector is</p>
 <div class="math notranslate nohighlight">
-\[ \vec{p}_2 = m_2\vec{v}_2 = 4.0\ {\rm kg}(5.0\ {\rm m/s}\,\hat{i}) = 20.0\ {\rm kg\cdot m/s}\,\hat{i}. \]</div>
-<p>Substituting these vectors into the cross product gives</p>
+\[ \vec{p}_2 = m_2\vec{\rm v}_2 = 4.0\ {\rm kg}(5.0\ {\rm m/s}\,\hat{i}) = 20.0\ {\rm kg\cdot m/s}\,\hat{i}. \]</div>
+<p class="sd-card-text">Substituting these vectors into the cross product gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \vec{L}_2 &amp;= \vec{r}_2 \times \vec{p}_2 \\
 &amp;= \left(4.0\ \hat{i} + 1.0\ \hat{j}\right)\times\left(20.0\ \hat{i}\right)\ {\rm kg\cdot m^2/s} \\
 &amp;= -20.0\ {\rm kg\cdot m^2/s}\,\hat{k}.
 \end{align*}\]</div>
-<p>For particle 3, the position vector is</p>
+<p class="sd-card-text">For particle 3, the position vector is</p>
 <div class="math notranslate nohighlight">
 \[ \vec{r}_3 = 2.0\ {\rm m}\,\hat{i} - 2.0\ {\rm m}\,\hat{j}, \]</div>
-<p>and the momentum vector is</p>
+<p class="sd-card-text">and the momentum vector is</p>
 <div class="math notranslate nohighlight">
-\[ \vec{p}_3 = m_3\vec{v}_3 = 1.0\ {\rm kg}(3.0\ {\rm m/s}\,\hat{i}) = 3.0\ {\rm kg\cdot m/s}\,\hat{i}. \]</div>
-<p>Substituting these vectors into the cross product gives</p>
+\[ \vec{p}_3 = m_3\vec{\rm v}_3 = 1.0\ {\rm kg}(3.0\ {\rm m/s}\,\hat{i}) = 3.0\ {\rm kg\cdot m/s}\,\hat{i}. \]</div>
+<p class="sd-card-text">Substituting these vectors into the cross product gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \vec{L}_3 &amp;= \vec{r}_3 \times \vec{p}_3 \\
 &amp;= \left(2.0\ \hat{i} - 2.0\ \hat{j}\right)\times\left(3.0\ \hat{i}\right)\ {\rm kg\cdot m^2/s} \\
 &amp;= 6.0\ {\rm kg\cdot m^2/s}\,\hat{k}.
 \end{align*}\]</div>
-<p>The total angular momentum is the sum of these three contributions. Adding the individual angular momenta gives</p>
+<p class="sd-card-text">The total angular momentum is the sum of these three contributions. Adding the individual angular momenta gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \vec{L}_{\rm tot} &amp;= \vec{L}_1 + \vec{L}_2 + \vec{L}_3 \\
 &amp;= \left(-16.0 - 20.0 + 6.0\right)\hat{k}\ {\rm kg\cdot m^2/s} \\
 &amp;= -30.0\ {\rm kg\cdot m^2/s}\,\hat{k}.
 \end{align*}\]</div>
-<p>The rate of change of angular momentum is equal to the net torque about the origin. For each particle, the torque is given by</p>
+<p class="sd-card-text">The rate of change of angular momentum is equal to the net torque about the origin. For each particle, the torque is given by</p>
 <div class="math notranslate nohighlight">
 \[ \vec{\tau}_i = \vec{r}_i \times \vec{F}_i. \]</div>
-<p>For particle 1, the applied force is</p>
+<p class="sd-card-text">For particle 1, the applied force is</p>
 <div class="math notranslate nohighlight">
 \[ \vec{F}_1 = -6.0\ {\rm N}\,\hat{i}. \]</div>
-<p>Substituting <span class="math notranslate nohighlight">\(\vec{r}_1\)</span> and <span class="math notranslate nohighlight">\(\vec{F}_1\)</span> into the torque expression gives</p>
+<p class="sd-card-text">Substituting <span class="math notranslate nohighlight">\(\vec{r}_1\)</span> and <span class="math notranslate nohighlight">\(\vec{F}_1\)</span> into the torque expression gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \vec{\tau}_1 &amp;= \vec{r}_1 \times \vec{F}_1 \\
 &amp;= \left(-2.0\ \hat{i} + 1.0\ \hat{j}\right)\times\left(-6.0\ \hat{i}\right)\ {\rm N\cdot m} \\
 &amp;= 6.0\ {\rm N\cdot m}\,\hat{k}.
 \end{align*}\]</div>
-<p>For particle 2, the applied force is</p>
+<p class="sd-card-text">For particle 2, the applied force is</p>
 <div class="math notranslate nohighlight">
 \[ \vec{F}_2 = 10.0\ {\rm N}\,\hat{j}. \]</div>
-<p>Substituting <span class="math notranslate nohighlight">\(\vec{r}_2\)</span> and <span class="math notranslate nohighlight">\(\vec{F}_2\)</span> into the torque expression gives</p>
+<p class="sd-card-text">Substituting <span class="math notranslate nohighlight">\(\vec{r}_2\)</span> and <span class="math notranslate nohighlight">\(\vec{F}_2\)</span> into the torque expression gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \vec{\tau}_2 &amp;= \vec{r}_2 \times \vec{F}_2 \\
 &amp;= \left(4.0\ \hat{i} + 1.0\ \hat{j}\right)\times\left(10.0\ \hat{j}\right)\ {\rm N\cdot m} \\
 &amp;= 40.0\ {\rm N\cdot m}\,\hat{k}.
 \end{align*}\]</div>
-<p>For particle 3, the applied force is</p>
+<p class="sd-card-text">For particle 3, the applied force is</p>
 <div class="math notranslate nohighlight">
 \[ \vec{F}_3 = -8.0\ {\rm N}\,\hat{j}. \]</div>
-<p>Substituting <span class="math notranslate nohighlight">\(\vec{r}_3\)</span> and <span class="math notranslate nohighlight">\(\vec{F}_3\)</span> into the torque expression gives</p>
+<p class="sd-card-text">Substituting <span class="math notranslate nohighlight">\(\vec{r}_3\)</span> and <span class="math notranslate nohighlight">\(\vec{F}_3\)</span> into the torque expression gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \vec{\tau}_3 &amp;= \vec{r}_3 \times \vec{F}_3 \\
 &amp;= \left(2.0\ \hat{i} - 2.0\ \hat{j}\right)\times\left(-8.0\ \hat{j}\right)\ {\rm N\cdot m} \\
 &amp;= -16.0\ {\rm N\cdot m}\,\hat{k}.
 \end{align*}\]</div>
-<p>The net torque is the sum of the three torque contributions. Adding them gives</p>
+<p class="sd-card-text">The net torque is the sum of the three torque contributions. Adding them gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \sum \vec{\tau} &amp;= \vec{\tau}_1 + \vec{\tau}_2 + \vec{\tau}_3 \\
 &amp;= \left(6.0 + 40.0 - 16.0\right)\hat{k}\ {\rm N\cdot m} \\
 &amp;= 30.0\ {\rm N\cdot m}\,\hat{k}.
 \end{align*}\]</div>
-<p>Since the net torque equals the rate of change of angular momentum, we have</p>
+<p class="sd-card-text">Since the net torque equals the rate of change of angular momentum, we have</p>
 <div class="math notranslate nohighlight">
 \[ \frac{d\vec{L}_{\rm tot}}{dt} = 30.0\ {\rm N\cdot m}\,\hat{k}. \]</div>
 <hr class="docutils" />
-<p><strong>The Conclusion</strong></p>
-<p>The total angular momentum of the three-particle system about the origin is</p>
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The total angular momentum of the three-particle system about the origin is</p>
 <div class="math notranslate nohighlight">
 \[ \vec{L}_{\rm tot} = -30.0\ {\rm kg\cdot m^2/s}\,\hat{k}. \]</div>
-<p>The negative <span class="math notranslate nohighlight">\(\hat{k}\)</span> direction means the total angular momentum points into the page.</p>
-<p>The rate of change of the angular momentum is</p>
+<p class="sd-card-text">The negative <span class="math notranslate nohighlight">\(\hat{k}\)</span> direction means the total angular momentum points into the page.</p>
+<p class="sd-card-text">The rate of change of the angular momentum is</p>
 <div class="math notranslate nohighlight">
 \[ \frac{d\vec{L}_{\rm tot}}{dt} = 30.0\ {\rm N\cdot m}\,\hat{k}. \]</div>
-<p>This result is equal to the net external torque about the origin, which points out of the page in the positive <span class="math notranslate nohighlight">\(\hat{k}\)</span> direction.</p>
+<p class="sd-card-text">This result is equal to the net external torque about the origin, which points out of the page in the positive <span class="math notranslate nohighlight">\(\hat{k}\)</span> direction.</p>
 <hr class="docutils" />
-<p><strong>The Verification</strong></p>
-<p>The analytical solution computes the angular momentum and torque of each particle separately and then adds the vector contributions. The computation below reproduces that same method using NumPy cross products for the three position, momentum, and force vectors.</p>
-<p>The numerical calculation confirms that the individual contributions combine to give the same total angular momentum and net torque obtained analytically.</p>
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The analytical solution computes the angular momentum and torque of each particle separately and then adds the vector contributions. The computation below reproduces that same method using NumPy cross products for the three position, momentum, and force vectors.</p>
+<p class="sd-card-text">The numerical calculation confirms that the individual contributions combine to give the same total angular momentum and net torque obtained analytically.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
@@ -1404,7 +1450,8 @@ L &amp;= rp\sin{\theta}, \\
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</section>
+</div>
+</details></section>
 </div>
 </section>
 </section>
@@ -1415,15 +1462,15 @@ L &amp;= rp\sin{\theta}, \\
 <figure class="align-default" id="rigid-ang-momentum-example">
 <img alt="rigid body angular momentum example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/3ddf5b2f629cba6d9c736e44f91a85592ff2d98c" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.11 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#rigid-ang-momentum-example" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.11 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-2-angular-momentum">Angular Momentum</a>.</span><a class="headerlink" href="#rigid-ang-momentum-example" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Figure <a class="reference internal" href="#rigid-ang-momentum-example"><span class="std std-numref">11.11</span></a>a shows a mass segment <span class="math notranslate nohighlight">\(\Delta m_i\)</span> with a position vector <span class="math notranslate nohighlight">\(\vec{r}_i\)</span> from teh origin, and a radius <span class="math notranslate nohighlight">\(R_i\)</span> to the <span class="math notranslate nohighlight">\(z\)</span>-axis.  The magnitude of its tangential velocity is <span class="math notranslate nohighlight">\(v_i = R_i\omega\)</span> because it is undergoing circular motion.  Since <span class="math notranslate nohighlight">\(\vec{\rm v}_i\)</span> is perpendicular to <span class="math notranslate nohighlight">\(\vec{r}_i\)</span>, the magnitude of the angular momentum of this mass segment is</p>
+<p>Figure <a class="reference internal" href="#rigid-ang-momentum-example"><span class="std std-numref">11.11</span></a>a shows a mass segment <span class="math notranslate nohighlight">\(\Delta m_i\)</span> with a position vector <span class="math notranslate nohighlight">\(\vec{r}_i\)</span> from the origin, and a radius <span class="math notranslate nohighlight">\(R_i\)</span> to the <span class="math notranslate nohighlight">\(z\)</span>-axis.  The magnitude of its tangential velocity is <span class="math notranslate nohighlight">\(v_i = R_i\omega\)</span> because it is undergoing circular motion.  Since <span class="math notranslate nohighlight">\(\vec{\rm v}_i\)</span> is perpendicular to <span class="math notranslate nohighlight">\(\vec{r}_i\)</span>, the magnitude of the angular momentum of this mass segment is</p>
 <div class="math notranslate nohighlight">
 \[ L_i = \Delta m_iv_i r_i \sin{90^\circ} = \Delta m_iv_i r_i. \]</div>
-<p>The angular momentum vector <span class="math notranslate nohighlight">\(\vec{L}_i\)</span> points in a direction perpendicular to the <span class="math notranslate nohighlight">\(rv\)</span>-planet towards the <span class="math notranslate nohighlight">\(z\)</span>-axis, which we can find using the right-hand rule.</p>
+<p>The angular momentum vector <span class="math notranslate nohighlight">\(\vec{L}_i\)</span> points in a direction perpendicular to the <span class="math notranslate nohighlight">\(rv\)</span>-plane towards the <span class="math notranslate nohighlight">\(z\)</span>-axis, which we can find using the right-hand rule.</p>
 <p>The sum of the angular momenta of all the mass segments contains components <em>both along and perpendicular</em> to the axis of rotation.  However, due to cylindrical symmetry, every mass segment has a perpendicular component of the angular momentum that will be cancelled by an identical mass segment that is on the opposite side of the body.</p>
-<p>The component along the axis of rotation <span class="math notranslate nohighlight">\(\left(\vec{L}_i\right)_z\)</span> is the only component that gives a nonzero value when summed over all the mass segments.  This component is give by</p>
+<p>The component along the axis of rotation <span class="math notranslate nohighlight">\(\left(\vec{L}_i\right)_z\)</span> is the only component that gives a nonzero value when summed over all the mass segments.  This component is given by</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \left(\vec{L}_i\right)_z &amp;= L_i\sin{\theta_i} = \Delta m_iv_i r_i \sin{\theta_i}, \\
@@ -1437,11 +1484,11 @@ L &amp;= \sum_i \left(\vec{L}_i\right)_z = \Delta m_iv_i R_i, \\
 &amp;= \omega\sum_i \Delta m_i R_i^2.
 \end{align*}\]</div>
 <p>The summation <span class="math notranslate nohighlight">\(\displaystyle \sum_i \Delta m_i R_i^2\)</span> is simply the moment of inertia <span class="math notranslate nohighlight">\(I\)</span> of the rigid body about the axis of rotation.  The magnitude of the angular momentum along the axis of the rotation of a rigid body that rotates with an angular velocity <span class="math notranslate nohighlight">\(\omega\)</span> is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-567a1d94-b03d-4e86-809c-4faf85af50de">
-<span class="eqno">(11.8)<a class="headerlink" href="#equation-567a1d94-b03d-4e86-809c-4faf85af50de" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
 L = I\omega.
-\end{align}\]</div>
-<p>The direction of the angular momentum vector is direction along the axis of rotation given by the right hand rule.</p>
+\end{align*}\]</div>
+<p>The direction of the angular momentum vector is directed along the axis of rotation given by the right-hand rule.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Recall that the magnitude of the linear momentum is <span class="math notranslate nohighlight">\(p = mv.\)</span>  The form of the equation has a source of inertia times a velocity.  The form of the equation for a rigid rotator is <span class="math notranslate nohighlight">\(L = I\omega\)</span>, which also has a source of inertia times a velocity.</p>
@@ -1462,35 +1509,37 @@ L = I\omega.
 <figure class="align-default" id="robot-arm-problem">
 <img alt="angular momentum of a robot arm" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/90e364bcd3056ebf481e92f7f1763e05a093d296" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.12 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#robot-arm-problem" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.12 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-2-angular-momentum">Angular Momentum</a>.</span><a class="headerlink" href="#robot-arm-problem" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The robot arm rotates about a fixed axis at the point where it connects to the rover. The angular momentum of a rigid system about that axis depends on the total moment of inertia and the angular speed. The torque during the speeding-up phase is determined from Newton’s 2nd law for rotation.</p>
+<p class="sd-card-text">The arm is modeled as a uniform solid rod rotating about one end. The forceps and the Mars rock are each modeled as point masses located at the free end of the arm. The total moment of inertia is therefore the sum of the contributions from the arm, the forceps, and, when present, the Mars rock.</p>
+<p class="sd-card-text">The direction of the angular momentum is determined by the right-hand rule. When the arm rotates downward as shown, the angular momentum points out of the page in the positive <span class="math notranslate nohighlight">\(\hat{k}\)</span> direction. When the arm rotates upward after picking up the rock, the angular momentum points into the page in the negative <span class="math notranslate nohighlight">\(\hat{k}\)</span> direction.</p>
+<p class="sd-card-text">The strategy is to compute the total moment of inertia for each configuration, multiply by the given angular speed to obtain the angular momentum, and then use the angular acceleration during the startup interval to determine the torque.</p>
 <hr class="docutils" />
-<p><strong>The Model</strong></p>
-<p>The robot arm rotates about a fixed axis at the point where it connects to the rover. The angular momentum of a rigid system about that axis is given by <span class="math notranslate nohighlight">\(L = I\omega\)</span>, where <span class="math notranslate nohighlight">\(I\)</span> is the total moment of inertia about the axis of rotation. The torque during the speeding-up phase is determined from Newton’s 2nd law for rotation, <span class="math notranslate nohighlight">\(\sum \tau = I\alpha\)</span>.</p>
-<p>The arm is modeled as a uniform solid rod of length <span class="math notranslate nohighlight">\(r = 1.0\ {\rm m}\)</span> rotating about one end, so its moment of inertia is <span class="math notranslate nohighlight">\(I_{\rm arm} = \tfrac{1}{3}mr^2\)</span>. The forceps and the Mars rock are each modeled as point masses located at the free end of the arm, so their moments of inertia are <span class="math notranslate nohighlight">\(I = mr^2\)</span>. The total moment of inertia is therefore the sum of the contributions from the arm, the forceps, and, when present, the Mars rock.</p>
-<p>The direction of the angular momentum is determined by the right-hand rule. When the arm rotates downward as shown, the angular momentum points out of the page in the positive <span class="math notranslate nohighlight">\(\hat{k}\)</span> direction. When the arm rotates upward after picking up the rock, the angular momentum points into the page in the negative <span class="math notranslate nohighlight">\(\hat{k}\)</span> direction.</p>
-<p>The strategy is to compute the total moment of inertia for each configuration, multiply by the given angular speed to obtain the angular momentum, and then use the angular acceleration during the startup interval to determine the torque.</p>
-<hr class="docutils" />
-<p><strong>The Math</strong></p>
-<p>The angular momentum of a rotating system about a fixed axis is given by <span class="math notranslate nohighlight">\( L = I\omega. \)</span></p>
-<p>We first determine the individual moments of inertia about the pivot point. The robot arm is modeled as a uniform rod rotating about one end, so its moment of inertia is</p>
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">The angular momentum of a rotating system about a fixed axis is given by <span class="math notranslate nohighlight">\( L = I\omega. \)</span></p>
+<p class="sd-card-text">We first determine the individual moments of inertia about the pivot point. The robot arm is modeled as a uniform rod rotating about one end, so its moment of inertia is</p>
 <div class="math notranslate nohighlight">
 \[ I_{\rm arm} = \frac{1}{3}mr^2 = \frac{1}{3}(2.0\ {\rm kg})(1.0\ {\rm m})^2 = 0.667\ {\rm kg\cdot m^2}. \]</div>
-<p>The forceps are modeled as a point mass located at the free end of the arm, so their moment of inertia is</p>
+<p class="sd-card-text">The forceps are modeled as a point mass located at the free end of the arm, so their moment of inertia is</p>
 <div class="math notranslate nohighlight">
 \[ I_{\rm forceps} = mr^2 = (1.0\ {\rm kg})(1.0\ {\rm m})^2 = 1.0\ {\rm kg\cdot m^2}. \]</div>
-<p>The Mars rock is also modeled as a point mass located at the free end, so its moment of inertia is</p>
+<p class="sd-card-text">The Mars rock is also modeled as a point mass located at the free end, so its moment of inertia is</p>
 <div class="math notranslate nohighlight">
 \[ I_{\rm rock} = mr^2 = (1.5\ {\rm kg})(1.0\ {\rm m})^2 = 1.5\ {\rm kg\cdot m^2}. \]</div>
-<p><strong>(a)</strong> When the arm is rotating without the Mars rock, the total moment of inertia is the sum of the arm and forceps contributions. This gives</p>
+<p class="sd-card-text"><strong>(a)</strong> When the arm is rotating without the Mars rock, the total moment of inertia is the sum of the arm and forceps contributions. This gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 I_{\rm tot} &amp;= I_{\rm arm} + I_{\rm forceps} \\
 &amp;= 0.667 + 1.0 \\
 &amp;= 1.67\ {\rm kg\cdot m^2}.
 \end{align*}\]</div>
-<p>After <span class="math notranslate nohighlight">\(0.1\ {\rm s}\)</span>, the angular speed is <span class="math notranslate nohighlight">\(\omega = 0.1\pi\ {\rm rad/s}\)</span>. Substituting this angular speed into <span class="math notranslate nohighlight">\(L = I\omega\)</span> gives</p>
+<p class="sd-card-text">After <span class="math notranslate nohighlight">\(0.1\ {\rm s}\)</span>, the angular speed is <span class="math notranslate nohighlight">\(\omega = 0.1\pi\ {\rm rad/s}\)</span>. Substituting this angular speed into <span class="math notranslate nohighlight">\(L = I\omega\)</span> gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 L &amp;= I_{\rm tot}\omega \\
@@ -1498,17 +1547,17 @@ L &amp;= I_{\rm tot}\omega \\
 &amp;= 0.167\pi\ {\rm kg\cdot m^2/s} \\
 &amp;= 0.524\ {\rm kg\cdot m^2/s}.
 \end{align*}\]</div>
-<p>The arm is rotating downward, so the right-hand rule gives the angular momentum direction as positive <span class="math notranslate nohighlight">\(\hat{k}\)</span>. Therefore,</p>
+<p class="sd-card-text">The arm is rotating downward, so the right-hand rule gives the angular momentum direction as positive <span class="math notranslate nohighlight">\(\hat{k}\)</span>. This direction statement gives the angular momentum vector,</p>
 <div class="math notranslate nohighlight">
 \[ \vec{L} = 0.524\ {\rm kg\cdot m^2/s}\,\hat{k}. \]</div>
-<p><strong>(b)</strong> When the arm is holding the Mars rock, the total moment of inertia must include the arm, the forceps, and the rock. This gives</p>
+<p class="sd-card-text"><strong>(b)</strong> When the arm is holding the Mars rock, the total moment of inertia must include the arm, the forceps, and the rock. This gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 I_{\rm tot} &amp;= I_{\rm arm} + I_{\rm forceps} + I_{\rm rock} \\
 &amp;= 0.667 + 1.0 + 1.5 \\
 &amp;= 3.17\ {\rm kg\cdot m^2}.
 \end{align*}\]</div>
-<p>Using the same angular speed, the angular momentum becomes</p>
+<p class="sd-card-text">Using the same angular speed, the angular momentum becomes</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 L &amp;= I_{\rm tot}\omega \\
@@ -1516,20 +1565,20 @@ L &amp;= I_{\rm tot}\omega \\
 &amp;= 0.317\pi\ {\rm kg\cdot m^2/s} \\
 &amp;= 0.995\ {\rm kg\cdot m^2/s}.
 \end{align*}\]</div>
-<p>The arm is now rotating upward, so the right-hand rule gives the angular momentum direction as negative <span class="math notranslate nohighlight">\(\hat{k}\)</span>. Therefore,</p>
+<p class="sd-card-text">The arm is now rotating upward, so the right-hand rule gives the angular momentum direction as negative <span class="math notranslate nohighlight">\(\hat{k}\)</span>. This direction statement gives the angular momentum vector,</p>
 <div class="math notranslate nohighlight">
 \[ \vec{L} = -0.995\ {\rm kg\cdot m^2/s}\,\hat{k}. \]</div>
-<p><strong>(c)</strong> When the arm does not have the Mars rock, the torque during the speeding-up interval is determined from Newton’s 2nd law for rotation,</p>
+<p class="sd-card-text"><strong>(c)</strong> When the arm does not have the Mars rock, the torque during the speeding-up interval is determined from Newton’s 2nd law for rotation,</p>
 <div class="math notranslate nohighlight">
 \[ \sum \tau = I\alpha. \]</div>
-<p>The angular acceleration is the change in angular speed divided by the time interval. Since the arm starts from rest and reaches <span class="math notranslate nohighlight">\(0.1\pi\ {\rm rad/s}\)</span> in <span class="math notranslate nohighlight">\(0.1\ {\rm s}\)</span>, the angular acceleration is</p>
+<p class="sd-card-text">The angular acceleration is the change in angular speed divided by the time interval. Since the arm starts from rest and reaches <span class="math notranslate nohighlight">\(0.1\pi\ {\rm rad/s}\)</span> in <span class="math notranslate nohighlight">\(0.1\ {\rm s}\)</span>, the angular acceleration is</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \alpha &amp;= \frac{\Delta\omega}{\Delta t} \\
 &amp;= \frac{0.1\pi\ {\rm rad/s} - 0}{0.1\ {\rm s}} \\
 &amp;= \pi\ {\rm rad/s^2}.
 \end{align*}\]</div>
-<p>The relevant moment of inertia is the one from part (a), since the rock is not present. Substituting <span class="math notranslate nohighlight">\(I = 1.67\ {\rm kg\cdot m^2}\)</span> and <span class="math notranslate nohighlight">\(\alpha = \pi\ {\rm rad/s^2}\)</span> into the rotational equation gives</p>
+<p class="sd-card-text">The relevant moment of inertia is the one from part (a), since the rock is not present. Substituting <span class="math notranslate nohighlight">\(I = 1.67\ {\rm kg\cdot m^2}\)</span> and <span class="math notranslate nohighlight">\(\alpha = \pi\ {\rm rad/s^2}\)</span> into the rotational equation gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \sum \tau &amp;= I\alpha \\
@@ -1538,22 +1587,22 @@ L &amp;= I_{\rm tot}\omega \\
 &amp;= 5.24\ {\rm N\cdot m}.
 \end{align*}\]</div>
 <hr class="docutils" />
-<p><strong>The Conclusion</strong></p>
-<p>When the robot arm rotates downward without the Mars rock, its angular momentum is</p>
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">When the robot arm rotates downward without the Mars rock, its angular momentum is</p>
 <div class="math notranslate nohighlight">
 \[ \vec{L} = 0.524\ {\rm kg\cdot m^2/s}\,\hat{k}. \]</div>
-<p>When the robot arm rotates upward while holding the Mars rock, its angular momentum is</p>
+<p class="sd-card-text">When the robot arm rotates upward while holding the Mars rock, its angular momentum is</p>
 <div class="math notranslate nohighlight">
 \[ \vec{L} = -0.995\ {\rm kg\cdot m^2/s}\,\hat{k}. \]</div>
-<p>The larger magnitude in part (b) occurs because the Mars rock increases the total moment of inertia while the angular speed remains the same.</p>
-<p>When the arm accelerates from rest to its final angular speed without the Mars rock, the torque about the pivot is</p>
+<p class="sd-card-text">The larger magnitude in part (b) occurs because the Mars rock increases the total moment of inertia while the angular speed remains the same.</p>
+<p class="sd-card-text">When the arm accelerates from rest to its final angular speed without the Mars rock, the torque about the pivot is</p>
 <div class="math notranslate nohighlight">
 \[ \sum \tau = 5.24\ {\rm N\cdot m}. \]</div>
-<p>This torque is positive in the sense of the downward rotation used in part (a).</p>
+<p class="sd-card-text">This torque is positive in the sense of the downward rotation used in part (a).</p>
 <hr class="docutils" />
-<p><strong>The Verification</strong></p>
-<p>The analytical solution computes the total moment of inertia for each configuration and then uses <span class="math notranslate nohighlight">\(L = I\omega\)</span> and <span class="math notranslate nohighlight">\(\sum \tau = I\alpha\)</span> to determine the angular momentum and torque. The computation below follows that same sequence using the rod and point-mass approximations described in the model.</p>
-<p>The numerical calculation confirms that the angular momentum increases when the Mars rock is included and that the torque during the acceleration interval matches the analytical result.</p>
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The analytical solution computes the total moment of inertia for each configuration and then uses <span class="math notranslate nohighlight">\(L = I\omega\)</span> and <span class="math notranslate nohighlight">\(\sum \tau = I\alpha\)</span> to determine the angular momentum and torque. The computation below follows that same sequence using the rod and point-mass approximations described in the model.</p>
+<p class="sd-card-text">The numerical calculation confirms that the angular momentum increases when the Mars rock is included and that the torque during the acceleration interval matches the analytical result.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
@@ -1602,39 +1651,50 @@ L &amp;= I_{\rm tot}\omega \\
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</section>
+</div>
+</details></section>
+</div>
+<div class="tip admonition">
+<p class="admonition-title"><a class="reference external" href="https://www.youtube.com/&#64;khanacademy"><strong>Khan Academy</strong></a></p>
+<div class="video_wrapper align-center" style="text-align: center">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/KFrhclyEpVM" style="border: 0; height: 435px; width: 720px">
+</iframe></div><p>As you watch, compare the particle expression <span class="math notranslate nohighlight">\(\vec{L} = \vec{r}\times\vec{p}\)</span> with the rigid-body result <span class="math notranslate nohighlight">\(L = I\omega\)</span>. The important connection is that a rigid body can be treated as many small mass pieces whose angular momenta add together.</p>
 </div>
 </section>
 </section>
 </section>
 <section id="conservation-of-angular-momentum">
 <h2><span class="section-number">11.3. </span>Conservation of Angular Momentum<a class="headerlink" href="#conservation-of-angular-momentum" title="Link to this heading">#</a></h2>
-<p>Suppose there is not net external torque on the system, <span class="math notranslate nohighlight">\(\vec{\tau}_{\rm net} = 0.\)</span>  In this case, Equation <a class="reference internal" href="#equation-ang-momentum-torque">(11.7)</a> becomes the <strong>law of conservation of angular momentum</strong>.</p>
+<p>Suppose there is no net external torque on the system, <span class="math notranslate nohighlight">\(\vec{\tau}_{\rm net} = 0.\)</span>  In this case, Equation <a class="reference internal" href="#equation-ang-momentum-torque">(11.1)</a> becomes the <strong>law of conservation of angular momentum</strong>.</p>
 <div class="note admonition">
 <p class="admonition-title">Law of Conservation of Angular Momentum</p>
-<p>The angular momentum of a system of particles around a point in fixed inertial frame is conserved if there is not net external torque around that point:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7fbc7636-8bc8-4c21-8d15-3fd617fd6f7c">
-<span class="eqno">(11.9)<a class="headerlink" href="#equation-7fbc7636-8bc8-4c21-8d15-3fd617fd6f7c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<p>The angular momentum of a system of particles around a point in a fixed inertial frame is conserved if there is no net external torque around that point:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
 \frac{d\vec{L}}{dt} = 0,
-\end{align}\]</div>
+\end{align*}\]</div>
 <p>or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-21ba9a14-cf9e-4723-84b0-db5429c9b7c5">
-<span class="eqno">(11.10)<a class="headerlink" href="#equation-21ba9a14-cf9e-4723-84b0-db5429c9b7c5" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
 \vec{L} = \vec{L}_1 + \vec{L}_2 + \cdots + \vec{L}_N = \text{constant}.
-\end{align}\]</div>
+\end{align*}\]</div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>The <em>total</em> angular momentum <span class="math notranslate nohighlight">\(\vec{L}\)</span> is conserved.  Any of the individual angular momenta can change as long as their sum remains constant.  This is analogous to linear momentum being conserved when the external force on a system is zero.</p>
 </div>
 </div>
+<div class="tip margin checkpoint admonition">
+<p class="admonition-title">Checkpoint</p>
+<p>During a collision or shape change, which torques decide whether angular momentum is conserved for the system you chose: internal torques, external torques, or both?</p>
+</div>
 <p>Figure <a class="reference internal" href="#figure-skater-example"><span class="std std-numref">11.13</span></a> shows an ice skater executing a spin.  The net torque on her is very close to zero because there is relatively little friction between her skates and the ice.  The friction is exerted very close to the pivot point.  Since <span class="math notranslate nohighlight">\(|\vec{F}|\)</span> and <span class="math notranslate nohighlight">\(|\vec{r}|\)</span> are both small, this means that <span class="math notranslate nohighlight">\(|\vec{\tau}|\)</span> is negligible.  Consequently, she can spin for quite some time.</p>
 <figure class="align-default" id="figure-skater-example">
 <img alt="figure skater example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/f6343406c922626518c9241c6f79ea3df73c5f9e" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.13 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#figure-skater-example" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.13 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-3-conservation-of-angular-momentum">Conservation of Angular Momentum</a>.</span><a class="headerlink" href="#figure-skater-example" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>The ice skater can increase her rate of spin by pulling her arms and legs in.  *<em>Why does this increase her spin rate?</em></p>
+<p>The ice skater can increase her rate of spin by pulling her arms and legs in.  <strong>Why does this increase her spin rate?</strong></p>
 <p>Her angular momentum is constant, where we represent the angular momentum <span class="math notranslate nohighlight">\(L\)</span> and <span class="math notranslate nohighlight">\(L^\prime\)</span>, before and after she has pulled her arms in, respectively.  We can model her as a rigid body and find</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -1642,7 +1702,7 @@ L &amp;= L^\prime, \\
 I\omega &amp;= I^\prime \omega^\prime.
 \end{align*}\]</div>
 <p>Because <span class="math notranslate nohighlight">\(I^\prime\)</span> corresponds to her smaller radius (i.e., smaller moment of inertia), the angular velocity <span class="math notranslate nohighlight">\(\omega^\prime\)</span> must increase to keep the angular momentum constant.</p>
-<p>Since here moment of inertia changes, <em>does that also change her rotational kinetic energy?</em></p>
+<p>Since her moment of inertia changes, <em>does that also change her rotational kinetic energy?</em></p>
 <p>Let’s represent her initial rotational kinetic energy as <span class="math notranslate nohighlight">\(K_{rot} = \frac{1}{2}I\omega^2\)</span>, and her final rotational kinetic energy <span class="math notranslate nohighlight">\(K_{rot}^\prime = \frac{1}{2}I^\prime \left(\omega^\prime\right)^2\)</span>.  Then we can compare her final to initial kinetic energy through the ratio,</p>
 <div class="math notranslate nohighlight">
 \[ \frac{K^\prime_{rot}}{K_{rot}} = \frac{I^\prime(\omega^\prime)^2}{I\omega^2} = \frac{I^\prime}{I}\left(\frac{ \omega^\prime}{\omega}\right)^2.\]</div>
@@ -1653,14 +1713,20 @@ I\omega &amp;= I^\prime \omega^\prime.
 K^\prime_{rot} &amp;= \left(\frac{I}{I^\prime}\right) K_{rot}.
 \end{align*}\]</div>
 <p>Because her moment of inertia has decreased (<span class="math notranslate nohighlight">\(I^\prime &lt; I\)</span>), her final rotational kinetic energy has increased.  The source of this additional kinetic energy is the work required to pull her arms inward.  This work causes an increase in the rotational kinetic energy, while her angular momentum remains constant.</p>
-<p>Since she is in a frictionless environment, no energy escapes the system.  Thus, she can return to her original angular velocity by extending here arms to their original positions.</p>
+<p>Since she is in a frictionless environment, no energy escapes the system.  Thus, she can return to her original angular velocity by extending her arms to their original positions.</p>
 <p>The Solar System is another example of how conservation of angular momentum works in our universe.  Our Solar System was born from a huge cloud of gas and dust that initially had rotational energy.  As the gas cloud contracted under gravity, the rotation rate increased as a result of conservation of angular momentum (see Fig. <a class="reference internal" href="#solar-system-example"><span class="std std-numref">11.14</span></a>).</p>
 <figure class="align-default" id="solar-system-example">
 <img alt="Solar System example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/806b9b2e4e4680a537c223b789be8f2e18f9e6f3" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.14 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#solar-system-example" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.14 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-3-conservation-of-angular-momentum">Conservation of Angular Momentum</a>.</span><a class="headerlink" href="#solar-system-example" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
+<div class="tip admonition">
+<p class="admonition-title"><a class="reference external" href="https://www.youtube.com/&#64;khanacademy"><strong>Khan Academy</strong></a></p>
+<div class="video_wrapper align-center" style="text-align: center">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/vfmLI150g4w" style="border: 0; height: 435px; width: 720px">
+</iframe></div><p>As you watch, track the system choice carefully. Angular momentum is conserved only when the net external torque on that system is zero, even if internal forces or friction redistribute the motion inside the system.</p>
+</div>
 <section id="example-problem-coupled-flywheels">
 <h3><span class="section-number">11.3.1. </span><strong>Example Problem</strong>: Coupled Flywheels<a class="headerlink" href="#example-problem-coupled-flywheels" title="Link to this heading">#</a></h3>
 <div class="exercise etamu-exercise admonition" id="Chapter11/angular-momentum-exercise-6">
@@ -1676,72 +1742,74 @@ K^\prime_{rot} &amp;= \left(\frac{I}{I^\prime}\right) K_{rot}.
 <figure class="align-default" id="coupled-flywheels-problem">
 <img alt="coupled flywheels" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/cb28aa966fd4211a750979eef23cee06a67cae59" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.15 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#coupled-flywheels-problem" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.15 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-3-conservation-of-angular-momentum">Conservation of Angular Momentum</a>.</span><a class="headerlink" href="#coupled-flywheels-problem" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The two flywheels rotate about the same fixed vertical axis, and the shaft is frictionless with negligible rotational inertia. Because no external torque acts about the rotation axis, the total angular momentum of the two-flywheel system is conserved during the coupling process. The friction between the flywheels is internal to the system, so it can redistribute angular momentum between the flywheels but cannot change the total angular momentum.</p>
+<p class="sd-card-text">Initially, only the lower flywheel rotates, while the upper flywheel is at rest. After contact, friction causes the two flywheels to reach a common angular velocity and rotate together as a single system. The relevant physical framework is therefore conservation of angular momentum for the rotational motion and comparison of rotational kinetic energies before and after coupling.</p>
+<p class="sd-card-text">The strategy is to write the initial and final angular momenta about the common axis, solve for the shared final angular velocity, and then use that result to compare the final rotational kinetic energy with the initial rotational kinetic energy. The difference between those two energies determines the fraction of energy lost during the coupling.</p>
 <hr class="docutils" />
-<p><strong>The Model</strong></p>
-<p>The two flywheels rotate about the same fixed vertical axis, and the shaft is frictionless with negligible rotational inertia. Because no external torque acts about the rotation axis, the total angular momentum of the two-flywheel system is conserved during the coupling process. The friction between the flywheels is internal to the system, so it can redistribute angular momentum between the flywheels but cannot change the total angular momentum.</p>
-<p>Initially, only the lower flywheel rotates, while the upper flywheel is at rest. After contact, friction causes the two flywheels to reach a common angular velocity and rotate together as a single system. The relevant physical framework is therefore conservation of angular momentum for part (a) and comparison of rotational kinetic energies before and after coupling for part (b).</p>
-<p>The strategy is to write the initial and final angular momenta about the common axis, solve for the shared final angular velocity, and then use that result to compare the final rotational kinetic energy with the initial rotational kinetic energy. The difference between those two energies determines the fraction of energy lost during the coupling.</p>
-<hr class="docutils" />
-<p><strong>The Math</strong></p>
-<p>Because no external torque acts on the two-flywheel system about the common axis, the total angular momentum is conserved during the coupling. The initial angular momentum is due only to the rotating flywheel, while the second flywheel is initially at rest. If the first flywheel has moment of inertia <span class="math notranslate nohighlight">\(I_o\)</span>, then the second flywheel has moment of inertia <span class="math notranslate nohighlight">\(3I_o\)</span>.</p>
-<p><strong>(a)</strong> Conservation of angular momentum requires that the initial angular momentum equal the final angular momentum. This gives</p>
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">Because no external torque acts on the two-flywheel system about the common axis, the total angular momentum is conserved during the coupling. The initial angular momentum is due only to the rotating flywheel, while the second flywheel is initially at rest. If the first flywheel has moment of inertia <span class="math notranslate nohighlight">\(I_o\)</span>, then the second flywheel has moment of inertia <span class="math notranslate nohighlight">\(3I_o\)</span>.</p>
+<p class="sd-card-text"><strong>(a)</strong> Conservation of angular momentum requires that the initial angular momentum equal the final angular momentum. This gives</p>
 <div class="math notranslate nohighlight">
 \[ I_o\omega_o = (I_o + 3I_o)\omega. \]</div>
-<p>The total final moment of inertia is therefore</p>
+<p class="sd-card-text">The total final moment of inertia is therefore</p>
 <div class="math notranslate nohighlight">
 \[ I_{\rm f} = 4I_o. \]</div>
-<p>We solve the angular-momentum equation for the common final angular velocity, which gives</p>
+<p class="sd-card-text">We solve the angular-momentum equation for the common final angular velocity, which gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \omega &amp;= \frac{I_o\omega_o}{4I_o} \\
 &amp;= \frac{1}{4}\omega_o.
 \end{align*}\]</div>
-<p>Substituting <span class="math notranslate nohighlight">\(\omega_o = 600\ {\rm rev/min}\)</span> gives</p>
+<p class="sd-card-text">Substituting <span class="math notranslate nohighlight">\(\omega_o = 600\ {\rm rev/min}\)</span> gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \omega &amp;= \frac{1}{4}(600\ {\rm rev/min}) \\
 &amp;= 150\ {\rm rev/min}.
 \end{align*}\]</div>
-<p>To express this result in SI units, we convert revolutions per minute to radians per second. This gives</p>
+<p class="sd-card-text">To express this result in SI units, we convert revolutions per minute to radians per second. This gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \omega &amp;= 150\ {\rm rev/min}\left(\frac{2\pi\ {\rm rad}}{1\ {\rm rev}}\right)\left(\frac{1\ {\rm min}}{60\ {\rm s}}\right) \\
 &amp;= 5\pi\ {\rm rad/s} \\
 &amp;= 15.7\ {\rm rad/s}.
 \end{align*}\]</div>
-<p><strong>(b)</strong> The initial rotational kinetic energy is due only to the rotating flywheel. This gives</p>
+<p class="sd-card-text"><strong>(b)</strong> The initial rotational kinetic energy is due only to the rotating flywheel. This gives</p>
 <div class="math notranslate nohighlight">
 \[ K_i = \frac{1}{2}I_o\omega_o^2. \]</div>
-<p>After the two flywheels couple, they rotate together with total moment of inertia <span class="math notranslate nohighlight">\(4I_o\)</span> and angular velocity <span class="math notranslate nohighlight">\(\omega = \omega_o/4\)</span>. The final rotational kinetic energy is therefore</p>
+<p class="sd-card-text">After the two flywheels couple, they rotate together with total moment of inertia <span class="math notranslate nohighlight">\(4I_o\)</span> and angular velocity <span class="math notranslate nohighlight">\(\omega = \omega_o/4\)</span>. The final rotational kinetic energy is therefore</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 K_f &amp;= \frac{1}{2}(4I_o)\left(\frac{\omega_o}{4}\right)^2 \\
 &amp;= \frac{1}{2}(4I_o)\frac{\omega_o^2}{16} \\
 &amp;= \frac{1}{8}I_o\omega_o^2.
 \end{align*}\]</div>
-<p>We now compare the final and initial kinetic energies to determine the fraction that remains after coupling. This ratio is</p>
+<p class="sd-card-text">We now compare the final and initial kinetic energies to determine the fraction that remains after coupling. This ratio is</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \frac{K_f}{K_i} &amp;= \frac{\frac{1}{8}I_o\omega_o^2}{\frac{1}{2}I_o\omega_o^2} \\
 &amp;= \frac{1}{4}.
 \end{align*}\]</div>
-<p>Thus, the final kinetic energy is one-fourth of the initial kinetic energy. The fraction of the initial kinetic energy lost is therefore</p>
+<p class="sd-card-text">Thus, the final kinetic energy is one-fourth of the initial kinetic energy. The fraction of the initial kinetic energy lost is therefore</p>
 <div class="math notranslate nohighlight">
 \[ 1 - \frac{1}{4} = \frac{3}{4}. \]</div>
 <hr class="docutils" />
-<p><strong>The Conclusion</strong></p>
-<p>The common angular velocity of the coupled flywheels is</p>
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The common angular velocity of the coupled flywheels is</p>
 <div class="math notranslate nohighlight">
 \[ \omega = 150\ {\rm rev/min} = 15.7\ {\rm rad/s}. \]</div>
-<p>This decrease in angular speed occurs because the total rotational inertia increases by a factor of <span class="math notranslate nohighlight">\(4\)</span> while angular momentum remains constant.</p>
-<p>The fraction of the initial kinetic energy lost during the coupling is <span class="math notranslate nohighlight">\( \frac{3}{4}. \)</span>  This result shows that although angular momentum is conserved, rotational kinetic energy is not conserved during the coupling because friction converts some of the mechanical energy into thermal energy.</p>
+<p class="sd-card-text">This decrease in angular speed occurs because the total rotational inertia increases by a factor of <span class="math notranslate nohighlight">\(4\)</span> while angular momentum remains constant.</p>
+<p class="sd-card-text">The fraction of the initial kinetic energy lost during the coupling is <span class="math notranslate nohighlight">\( \frac{3}{4}. \)</span>  This result shows that although angular momentum is conserved, rotational kinetic energy is not conserved during the coupling because friction converts some of the mechanical energy into thermal energy.</p>
 <hr class="docutils" />
-<p><strong>The Verification</strong></p>
-<p>The analytical solution first applies conservation of angular momentum to determine the final common angular velocity and then uses that result to compare the final and initial rotational kinetic energies. The computation below implements those same two steps directly.</p>
-<p>The numerical calculation confirms that the coupled flywheels rotate at one-fourth of the initial angular velocity and retain only one-fourth of the original kinetic energy, so three-fourths of the initial kinetic energy is lost during the coupling.</p>
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The analytical solution first applies conservation of angular momentum to determine the final common angular velocity and then uses that result to compare the final and initial rotational kinetic energies. The computation below implements those same two steps directly.</p>
+<p class="sd-card-text">The numerical calculation confirms that the coupled flywheels rotate at one-fourth of the initial angular velocity and retain only one-fourth of the original kinetic energy, so three-fourths of the initial kinetic energy is lost during the coupling.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
@@ -1782,7 +1850,8 @@ K_f &amp;= \frac{1}{2}(4I_o)\left(\frac{\omega_o}{4}\right)^2 \\
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</section>
+</div>
+</details></section>
 </div>
 </section>
 <section id="example-problem-dismount-from-a-high-bar">
@@ -1798,79 +1867,81 @@ K_f &amp;= \frac{1}{2}(4I_o)\left(\frac{\omega_o}{4}\right)^2 \\
 <figure class="align-default" id="high-bar-dismount-problem">
 <img alt="dismount from a high bar" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/757b60297e82d2b2c43e957c2ba5278d7e3cec80" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.16 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#high-bar-dismount-problem" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.16 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-3-conservation-of-angular-momentum">Conservation of Angular Momentum</a>.</span><a class="headerlink" href="#high-bar-dismount-problem" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The gymnast is modeled as a rotating rigid body whose moment of inertia changes when he moves from full extension into the tuck position. While airborne, the external torque about his center of mass is negligible, so the angular momentum of the gymnast about his center of mass is conserved during the change in body configuration. This allows the rotation rate in the tuck to be determined from the ratio of the moments of inertia.</p>
+<p class="sd-card-text">The gymnast’s body is approximated as a uniform rod in both positions. At full extension, the effective rod length is larger; in the tuck position, the effective rod length is half as large. Since the rod rotates about its center of mass, the appropriate moment-of-inertia model is the one for a rod about its center.</p>
+<p class="sd-card-text">The vertical motion of the center of mass is independent of the rotation and is modeled as free fall. The gymnast enters the tuck while moving horizontally, so the initial vertical velocity is zero. The time spent in the tuck is therefore determined from the vertical drop using constant-acceleration kinematics. Once the time in the tuck is known, the number of revolutions follows from the angular speed in the tuck multiplied by that time interval.</p>
 <hr class="docutils" />
-<p><strong>The Model</strong></p>
-<p>The gymnast is modeled as a rotating rigid body whose moment of inertia changes when he moves from full extension into the tuck position. While airborne, the external torque about his center of mass is negligible, so the angular momentum of the gymnast about his center of mass is conserved during the change in body configuration. This allows the rotation rate in the tuck to be determined from the ratio of the moments of inertia.</p>
-<p>The gymnast’s body is approximated as a uniform rod. At full extension, the rod length is <span class="math notranslate nohighlight">\(1.8\ {\rm m}\)</span>, and in the tuck position the effective rod length is half as large, or <span class="math notranslate nohighlight">\(0.9\ {\rm m}\)</span>. Since the rod rotates about its center of mass, the appropriate moment of inertia model is <span class="math notranslate nohighlight">\(I = \tfrac{1}{12}mL^2\)</span>.</p>
-<p>The vertical motion of the center of mass is independent of the rotation and is modeled as free fall. The gymnast enters the tuck while moving horizontally, so the initial vertical velocity is zero. The time spent in the tuck is therefore determined from the vertical drop from <span class="math notranslate nohighlight">\(3.0\ {\rm m}\)</span> to <span class="math notranslate nohighlight">\(1.8\ {\rm m}\)</span> using constant-acceleration kinematics. Once the time in the tuck is known, the number of revolutions follows from the angular speed in the tuck multiplied by that time interval.</p>
-<hr class="docutils" />
-<p><strong>The Math</strong></p>
-<p>The moment of inertia of a uniform rod rotating about its center of mass is given by</p>
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">The moment of inertia of a uniform rod rotating about its center of mass is given by</p>
 <div class="math notranslate nohighlight">
 \[ I = \frac{1}{12}mL^2. \]</div>
-<p>At full extension, the gymnast is modeled as a rod of length <span class="math notranslate nohighlight">\(L_0 = 1.8\ {\rm m}\)</span>. Substituting the given mass and length gives</p>
+<p class="sd-card-text">At full extension, the gymnast is modeled as a rod of length <span class="math notranslate nohighlight">\(L_0 = 1.8\ {\rm m}\)</span>. Substituting the given mass and length gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 I_o &amp;= \frac{1}{12}mL_0^2 \\
 &amp;= \frac{1}{12}(80.0\ {\rm kg})(1.8\ {\rm m})^2 \\
 &amp;= 21.6\ {\rm kg\cdot m^2}.
 \end{align*}\]</div>
-<p>In the tuck position, the effective length is half as large, so <span class="math notranslate nohighlight">\(L_f = 0.9\ {\rm m}\)</span>. Substituting this length into the same expression gives</p>
+<p class="sd-card-text">In the tuck position, the effective length is half as large, so <span class="math notranslate nohighlight">\(L_f = 0.9\ {\rm m}\)</span>. Substituting this length into the same expression gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 I_f &amp;= \frac{1}{12}mL_f^2 \\
 &amp;= \frac{1}{12}(80.0\ {\rm kg})(0.9\ {\rm m})^2 \\
 &amp;= 5.40\ {\rm kg\cdot m^2}.
 \end{align*}\]</div>
-<p>Because the external torque is negligible while the gymnast changes shape in midair, angular momentum is conserved. The initial and final angular momenta are therefore equal, which gives</p>
+<p class="sd-card-text">Because the external torque is negligible while the gymnast changes shape in midair, angular momentum is conserved. The initial and final angular momenta are therefore equal, which gives</p>
 <div class="math notranslate nohighlight">
 \[ I_f\omega_f = I_o\omega_o. \]</div>
-<p>We solve this expression for the angular speed in the tuck, which gives</p>
+<p class="sd-card-text">We solve this expression for the angular speed in the tuck, which gives</p>
 <div class="math notranslate nohighlight">
 \[ \omega_f = \frac{I_o}{I_f}\omega_o. \]</div>
-<p>Substituting the values of the moments of inertia and the initial rotation rate <span class="math notranslate nohighlight">\(\omega_o = 1.0\ {\rm rev/s}\)</span> gives</p>
+<p class="sd-card-text">The tuck rotation rate follows from the angular-momentum ratio using the two moments of inertia and <span class="math notranslate nohighlight">\(\omega_o = 1.0\ {\rm rev/s}\)</span>:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \omega_f &amp;= \frac{21.6}{5.40}(1.0\ {\rm rev/s}) \\
 &amp;= 4.0\ {\rm rev/s}.
 \end{align*}\]</div>
-<p>The time spent in the tuck is determined from the vertical motion of the center of mass. The gymnast drops from <span class="math notranslate nohighlight">\(3.0\ {\rm m}\)</span> to <span class="math notranslate nohighlight">\(1.8\ {\rm m}\)</span>, so the vertical displacement is</p>
+<p class="sd-card-text">The time spent in the tuck is determined from the vertical motion of the center of mass. The gymnast drops from <span class="math notranslate nohighlight">\(3.0\ {\rm m}\)</span> to <span class="math notranslate nohighlight">\(1.8\ {\rm m}\)</span>, so the vertical displacement is</p>
 <div class="math notranslate nohighlight">
 \[ \Delta y = y_f - y_i = 1.8\ {\rm m} - 3.0\ {\rm m} = -1.2\ {\rm m}. \]</div>
-<p>Since the gymnast enters the tuck moving horizontally, the initial vertical velocity is zero. Taking upward as the positive <span class="math notranslate nohighlight">\(y\)</span>-direction, the vertical acceleration is <span class="math notranslate nohighlight">\(a_y = -g = -9.81\ {\rm m/s^2}\)</span>. The constant-acceleration relation for vertical displacement is therefore</p>
+<p class="sd-card-text">Since the gymnast enters the tuck moving horizontally, the initial vertical velocity is zero. Taking upward as the positive <span class="math notranslate nohighlight">\(y\)</span>-direction, the vertical acceleration is <span class="math notranslate nohighlight">\(a_y = -g = -9.81\ {\rm m/s^2}\)</span>. The constant-acceleration relation for vertical displacement is therefore</p>
 <div class="math notranslate nohighlight">
 \[ \Delta y = v_{y0}t + \frac{1}{2}a_yt^2. \]</div>
-<p>Substituting <span class="math notranslate nohighlight">\(v_{y0} = 0\)</span>, <span class="math notranslate nohighlight">\(\Delta y = -1.2\ {\rm m}\)</span>, and <span class="math notranslate nohighlight">\(a_y = -9.81\ {\rm m/s^2}\)</span> gives</p>
+<p class="sd-card-text">The time in the tuck follows from the vertical displacement equation with <span class="math notranslate nohighlight">\(v_{y0} = 0\)</span>, <span class="math notranslate nohighlight">\(\Delta y = -1.2\ {\rm m}\)</span>, and <span class="math notranslate nohighlight">\(a_y = -9.81\ {\rm m/s^2}\)</span>:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 -1.2 &amp;= \frac{1}{2}(-9.81)t^2.
 \end{align*}\]</div>
-<p>We solve this expression for the time interval in the tuck, which gives</p>
+<p class="sd-card-text">We solve this expression for the time interval in the tuck, which gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 t &amp;= \sqrt{\frac{2(1.2)}{9.81}} \\
 &amp;= 0.495\ {\rm s}.
 \end{align*}\]</div>
-<p>The number of revolutions completed while tucked is the angular speed multiplied by the time spent in the tuck. This gives</p>
+<p class="sd-card-text">The number of revolutions completed while tucked is the angular speed multiplied by the time spent in the tuck. This gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 N &amp;= \omega_f t \\
 &amp;= (4.0\ {\rm rev/s})(0.495\ {\rm s}) \\
 &amp;= 1.98\ {\rm rev}.
 \end{align*}\]</div>
-<p>Rounded to an appropriate number of significant figures, the gymnast can execute</p>
+<p class="sd-card-text">Rounded to an appropriate number of significant figures, the gymnast can execute</p>
 <div class="math notranslate nohighlight">
 \[ N = 2.0\ {\rm rev}. \]</div>
 <hr class="docutils" />
-<p><strong>The Conclusion</strong></p>
-<p>The gymnast can complete <span class="math notranslate nohighlight">\( N = 2.0\ {\rm rev} \)</span> while in the tuck position.  This result follows from two facts: tucking reduces the moment of inertia by a factor of <span class="math notranslate nohighlight">\(4\)</span>, which increases the rotation rate from <span class="math notranslate nohighlight">\(1.0\ {\rm rev/s}\)</span> to <span class="math notranslate nohighlight">\(4.0\ {\rm rev/s}\)</span>, and the gymnast remains in the tuck for about <span class="math notranslate nohighlight">\(0.495\ {\rm s}\)</span> while falling from <span class="math notranslate nohighlight">\(3.0\ {\rm m}\)</span> to <span class="math notranslate nohighlight">\(1.8\ {\rm m}\)</span>. The answer is therefore very close to two full revolutions.</p>
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The gymnast can complete <span class="math notranslate nohighlight">\( N = 2.0\ {\rm rev} \)</span> while in the tuck position.  This result follows from two facts: tucking reduces the moment of inertia by a factor of <span class="math notranslate nohighlight">\(4\)</span>, which increases the rotation rate from <span class="math notranslate nohighlight">\(1.0\ {\rm rev/s}\)</span> to <span class="math notranslate nohighlight">\(4.0\ {\rm rev/s}\)</span>, and the gymnast remains in the tuck for about <span class="math notranslate nohighlight">\(0.495\ {\rm s}\)</span> while falling from <span class="math notranslate nohighlight">\(3.0\ {\rm m}\)</span> to <span class="math notranslate nohighlight">\(1.8\ {\rm m}\)</span>. The answer is therefore very close to two full revolutions.</p>
 <hr class="docutils" />
-<p><strong>The Verification</strong></p>
-<p>The analytical solution first uses conservation of angular momentum to determine the gymnast’s rotation rate in the tuck and then uses free-fall kinematics to determine the time interval over which that faster rotation occurs. The computation below follows the same sequence and then multiplies the tuck rotation rate by the time in the tuck to obtain the number of revolutions.</p>
-<p>The numerical calculation confirms that the reduced moment of inertia in the tuck increases the angular speed enough for the gymnast to complete essentially two revolutions before opening up again.</p>
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The analytical solution first uses conservation of angular momentum to determine the gymnast’s rotation rate in the tuck and then uses free-fall kinematics to determine the time interval over which that faster rotation occurs. The computation below follows the same sequence and then multiplies the tuck rotation rate by the time in the tuck to obtain the number of revolutions.</p>
+<p class="sd-card-text">The numerical calculation confirms that the reduced moment of inertia in the tuck increases the angular speed enough for the gymnast to complete essentially two revolutions before opening up again.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
@@ -1915,7 +1986,8 @@ N &amp;= \omega_f t \\
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</section>
+</div>
+</details></section>
 </div>
 </section>
 <section id="example-problem-conservation-of-angular-momentum-of-a-collision">
@@ -1931,64 +2003,66 @@ N &amp;= \omega_f t \\
 <figure class="align-default" id="bullet-disk-collision-problem">
 <img alt="conservation of angular momentum of a collision" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/b6a1ef1e37a0bafc67e967b2ab3030627f2f7e83" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.17 </span><span class="caption-text">Image Credit: OpenStax.</span><a class="headerlink" href="#bullet-disk-collision-problem" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.17 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-3-conservation-of-angular-momentum">Conservation of Angular Momentum</a>.</span><a class="headerlink" href="#bullet-disk-collision-problem" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The system consists of a bullet and a solid disk that rotate about the fixed vertical axis through the center of the disk. During the short collision interval, the external torque about this rotation axis is negligible, so the angular momentum of the bullet-disk system about that axis is conserved. This makes conservation of angular momentum the appropriate framework for the problem.</p>
+<p class="sd-card-text">Before the collision, only the bullet contributes to the system’s angular momentum because the disk is initially at rest. The bullet is modeled as a point mass striking the rim of the disk at a perpendicular distance equal to the disk radius from the axis. After the collision, the bullet remains embedded in the disk, so the two objects rotate together as a single rigid system.</p>
+<p class="sd-card-text">The final rotating system has two contributions to its moment of inertia: the solid disk about its center and the embedded bullet at the rim. The strategy is therefore to compute the initial angular momentum of the bullet about the disk’s axis, compute the total final moment of inertia, and then solve for the common angular velocity immediately after impact.</p>
 <hr class="docutils" />
-<p><strong>The Model</strong></p>
-<p>The system consists of a bullet and a solid disk that rotate about the fixed vertical axis through the center of the disk. During the short collision interval, the external torque about this rotation axis is negligible, so the angular momentum of the bullet-disk system about that axis is conserved. This makes conservation of angular momentum the appropriate framework for the problem.</p>
-<p>Before the collision, only the bullet contributes to the system’s angular momentum because the disk is initially at rest. The bullet is modeled as a point mass striking the rim of the disk at a perpendicular distance <span class="math notranslate nohighlight">\(R\)</span> from the axis. After the collision, the bullet remains embedded in the disk, so the two objects rotate together as a single rigid system.</p>
-<p>The final rotating system has two contributions to its moment of inertia: the solid disk, modeled with <span class="math notranslate nohighlight">\(I_{\rm disk} = \tfrac{1}{2}MR^2\)</span>, and the embedded bullet, modeled as a point mass with <span class="math notranslate nohighlight">\(I_{\rm bullet} = mR^2\)</span>. The strategy is therefore to compute the initial angular momentum of the bullet about the disk’s axis, compute the total final moment of inertia, and then solve for the common angular velocity immediately after impact.</p>
-<hr class="docutils" />
-<p><strong>The Math</strong></p>
-<p>Because the external torque about the disk’s rotation axis is negligible during the collision, the angular momentum of the system about that axis is conserved. The initial angular momentum is due only to the bullet, since the disk is initially at rest.</p>
-<p>The bullet strikes the edge of the disk, so the lever arm is the disk radius <span class="math notranslate nohighlight">\(R\)</span>. The initial angular momentum of the bullet about the axis is therefore</p>
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">Because the external torque about the disk’s rotation axis is negligible during the collision, the angular momentum of the system about that axis is conserved. The initial angular momentum is due only to the bullet, since the disk is initially at rest.</p>
+<p class="sd-card-text">The bullet strikes the edge of the disk, so the lever arm is the disk radius <span class="math notranslate nohighlight">\(R\)</span>. The initial angular momentum of the bullet about the axis is therefore</p>
 <div class="math notranslate nohighlight">
 \[ L_i = mvR. \]</div>
-<p>Before substituting numerical values, we convert the bullet’s mass into SI units. This gives</p>
+<p class="sd-card-text">Before substituting numerical values, we convert the bullet’s mass into SI units. This gives</p>
 <div class="math notranslate nohighlight">
 \[ m = 2.0\ {\rm g} = 2.0\times10^{-3}\ {\rm kg}. \]</div>
-<p>After the collision, the bullet remains embedded in the edge of the disk, so the bullet and disk rotate together with a common angular velocity <span class="math notranslate nohighlight">\(\omega_f\)</span>. The total moment of inertia of this combined system is the sum of the moment of inertia of the disk and the moment of inertia of the embedded bullet.</p>
-<p>The bullet is modeled as a point mass at radius <span class="math notranslate nohighlight">\(R\)</span>, so its moment of inertia is</p>
+<p class="sd-card-text">After the collision, the bullet remains embedded in the edge of the disk, so the bullet and disk rotate together with a common angular velocity <span class="math notranslate nohighlight">\(\omega_f\)</span>. The total moment of inertia of this combined system is the sum of the moment of inertia of the disk and the moment of inertia of the embedded bullet.</p>
+<p class="sd-card-text">The bullet is modeled as a point mass at radius <span class="math notranslate nohighlight">\(R\)</span>, so its moment of inertia is</p>
 <div class="math notranslate nohighlight">
 \[ I_{\rm bullet} = mR^2. \]</div>
-<p>The disk is modeled as a solid disk rotating about its center, so its moment of inertia is</p>
+<p class="sd-card-text">The disk is modeled as a solid disk rotating about its center, so its moment of inertia is</p>
 <div class="math notranslate nohighlight">
 \[ I_{\rm disk} = \frac{1}{2}MR^2. \]</div>
-<p>Adding these two contributions gives the total final moment of inertia,</p>
+<p class="sd-card-text">Adding these two contributions gives the total final moment of inertia,</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 I_f &amp;= I_{\rm bullet} + I_{\rm disk} \\
 &amp;= mR^2 + \frac{1}{2}MR^2 \\
 &amp;= \left(m + \frac{M}{2}\right)R^2.
 \end{align*}\]</div>
-<p>The final angular momentum of the combined system is therefore</p>
+<p class="sd-card-text">The final angular momentum of the combined system is therefore</p>
 <div class="math notranslate nohighlight">
 \[ L_f = I_f\omega_f. \]</div>
-<p>Conservation of angular momentum requires that the initial and final angular momenta be equal, so</p>
+<p class="sd-card-text">Conservation of angular momentum requires that the initial and final angular momenta be equal, so</p>
 <div class="math notranslate nohighlight">
 \[ L_i = L_f. \]</div>
-<p>Substituting the expressions for <span class="math notranslate nohighlight">\(L_i\)</span> and <span class="math notranslate nohighlight">\(L_f\)</span> gives</p>
+<p class="sd-card-text">The conservation equation becomes</p>
 <div class="math notranslate nohighlight">
 \[ mvR = \left(m + \frac{M}{2}\right)R^2\omega_f. \]</div>
-<p>We solve this expression for the final angular velocity, which gives</p>
+<p class="sd-card-text">We solve this expression for the final angular velocity, which gives</p>
 <div class="math notranslate nohighlight">
 \[ \omega_f = \frac{mvR}{\left(m + \frac{M}{2}\right)R^2}. \]</div>
-<p>Substituting <span class="math notranslate nohighlight">\(m = 2.0\times10^{-3}\ {\rm kg}\)</span>, <span class="math notranslate nohighlight">\(v = 500.0\ {\rm m/s}\)</span>, <span class="math notranslate nohighlight">\(M = 3.2\ {\rm kg}\)</span>, and <span class="math notranslate nohighlight">\(R = 0.5\ {\rm m}\)</span> gives</p>
+<p class="sd-card-text">The final angular speed follows from the conserved angular momentum and the total final moment of inertia:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \omega_f &amp;= \frac{(2.0\times10^{-3}\ {\rm kg})(500.0\ {\rm m/s})(0.5\ {\rm m})}{\left(2.0\times10^{-3}\ {\rm kg} + 3.2\ {\rm kg}/2\right)(0.5\ {\rm m})^2} \\
 &amp;= 1.25\ {\rm rad/s}.
 \end{align*}\]</div>
-<p>Rounded to the appropriate number of significant figures, the final angular velocity is <span class="math notranslate nohighlight">\( \omega_f = 1.3\ {\rm rad/s}. \)</span></p>
+<p class="sd-card-text">Rounded to the appropriate number of significant figures, the final angular velocity is <span class="math notranslate nohighlight">\( \omega_f = 1.3\ {\rm rad/s}. \)</span></p>
 <hr class="docutils" />
-<p><strong>The Conclusion</strong></p>
-<p>The angular velocity of the disk immediately after the bullet becomes embedded is <span class="math notranslate nohighlight">\( \omega_f = 1.3\ {\rm rad/s}. \)</span></p>
-<p>This result follows from conservation of angular momentum about the disk’s rotation axis during the collision. The bullet supplies the initial angular momentum, and after impact that same angular momentum is shared by the much larger rotational inertia of the combined bullet-disk system, which is why the final angular speed is relatively small.</p>
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The angular velocity of the disk immediately after the bullet becomes embedded is <span class="math notranslate nohighlight">\( \omega_f = 1.3\ {\rm rad/s}. \)</span></p>
+<p class="sd-card-text">This result follows from conservation of angular momentum about the disk’s rotation axis during the collision. The bullet supplies the initial angular momentum, and after impact that same angular momentum is shared by the much larger rotational inertia of the combined bullet-disk system, which is why the final angular speed is relatively small.</p>
 <hr class="docutils" />
-<p><strong>The Verification</strong></p>
-<p>The analytical solution computes the bullet’s initial angular momentum about the disk’s axis and then divides by the total final moment of inertia of the embedded bullet and solid disk. The computation below follows that same method directly using the given numerical values in SI units.</p>
-<p>The numerical calculation confirms that conserving angular momentum during the collision gives a final angular velocity a little larger than <span class="math notranslate nohighlight">\(1\ {\rm rad/s}\)</span> for the combined system.</p>
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The analytical solution computes the bullet’s initial angular momentum about the disk’s axis and then divides by the total final moment of inertia of the embedded bullet and solid disk. The computation below follows that same method directly using the given numerical values in SI units.</p>
+<p class="sd-card-text">The numerical calculation confirms that conserving angular momentum during the collision gives a final angular velocity a little larger than <span class="math notranslate nohighlight">\(1\ {\rm rad/s}\)</span> for the combined system.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
@@ -2034,7 +2108,8 @@ I_f &amp;= I_{\rm bullet} + I_{\rm disk} \\
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</section>
+</div>
+</details></section>
 </div>
 </section>
 </section>
@@ -2051,15 +2126,19 @@ I_f &amp;= I_{\rm bullet} + I_{\rm disk} \\
 <figure class="align-default" id="toy-top-example">
 <img alt="top precession example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/c0f9372229183425cd17d18947c8a85325df1fba" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.19 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#toy-top-example" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.19 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-4-precession-of-a-gyroscope">Precession of a Gyroscope</a>.</span><a class="headerlink" href="#toy-top-example" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>However if the top is spinning on its axis, it precesses about the vertical instead of toppling over due to this torque (see Fig. <a class="reference internal" href="#toy-top-example"><span class="std std-numref">11.19</span></a>b).  This is due to the torque on the center-of-mass, which provides the change in angular momentum.</p>
-<p>Figure <a class="reference internal" href="#force-top-example"><span class="std std-numref">11.20</span></a> shows the forces acting on a spinning top.  The torque <span class="math notranslate nohighlight">\(\vec{\tau}\)</span> produced is perpendicular to the angular momentum vector <span class="math notranslate nohighlight">\(\vec{L}\)</span>.  This changes the direction of the angular momentum vector according to <span class="math notranslate nohighlight">\(d\vec{L} = \vec{\tau} dt\)</span>, but not its magnitude.  As a result, the op <em>precesses</em> around a vertical axis, since the torque is always horizontal and perpendicular to <span class="math notranslate nohighlight">\(\vec{L}\)</span>.</p>
+<p>Figure <a class="reference internal" href="#force-top-example"><span class="std std-numref">11.20</span></a> shows the forces acting on a spinning top.  The torque <span class="math notranslate nohighlight">\(\vec{\tau}\)</span> produced is perpendicular to the angular momentum vector <span class="math notranslate nohighlight">\(\vec{L}\)</span>.  This changes the direction of the angular momentum vector according to <span class="math notranslate nohighlight">\(d\vec{L} = \vec{\tau} dt\)</span>, but not its magnitude.  As a result, the top <em>precesses</em> around a vertical axis, since the torque is always horizontal and perpendicular to <span class="math notranslate nohighlight">\(\vec{L}\)</span>.</p>
+<div class="tip margin checkpoint admonition">
+<p class="admonition-title">Checkpoint</p>
+<p>If a torque is perpendicular to the angular momentum vector, does it mainly change the magnitude of <span class="math notranslate nohighlight">\(\vec{L}\)</span> or the direction of <span class="math notranslate nohighlight">\(\vec{L}\)</span>?</p>
+</div>
 <figure class="align-default" id="force-top-example">
 <img alt="forces precession example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/dba26d6468d240cab0a9b5c2c39140b47dfa7848" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.20 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#force-top-example" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.20 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-4-precession-of-a-gyroscope">Precession of a Gyroscope</a>.</span><a class="headerlink" href="#force-top-example" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>If the top is <em>not spinning</em>, it acquires angular momentum in the direction of the torque.  It rotates around a horizontal axis and falls over just as we expect.</p>
@@ -2067,18 +2146,16 @@ I_f &amp;= I_{\rm bullet} + I_{\rm disk} \\
 <figure class="align-default" id="bicycle-wheel-example">
 <img alt="bicycle wheel example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/d6e2d56f4a443df836f69063456c96e55bf2eca3" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.21 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#bicycle-wheel-example" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.21 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-4-precession-of-a-gyroscope">Precession of a Gyroscope</a>.</span><a class="headerlink" href="#bicycle-wheel-example" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The spinning of the bicycle wheel when you’re riding acts as a gyroscope and keeps you from falling over.</p>
 <div class="tip admonition">
 <p class="admonition-title"><a class="reference external" href="https://www.youtube.com/&#64;veritasium"><strong>Veritasium</strong></a></p>
-<div class="video-wrapper" style="max-width:560px; margin-left: auto; margin-right: auto;">
-  <div class="video-container" style="aspect-ratio:16/9; position:relative; width:100%;">
-    <iframe src="https://www.youtube.com/embed/ty9QSiVC2g0" allowfullscreen style="width:100%; height:100%; position:absolute; left:0; top:0; border:0;" loading="lazy"></iframe>
-  </div>
-  <div class="video-caption" style="margin-top:0.5em; text-align:left; color:#666;">This video explains how the torque influences a spinning bicycle wheel and provides a demonstration.</div>
-</div></div>
+<div class="video_wrapper align-center" style="text-align: center">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/ty9QSiVC2g0" style="border: 0; height: 435px; width: 720px">
+</iframe></div><p>As you watch, focus on the direction of the applied torque and how the spinning wheel responds by changing the direction of its angular momentum rather than simply tipping straight down.</p>
+</div>
 <p>We can calculate the precession rate of the top in Fig. <a class="reference internal" href="#force-top-example"><span class="std std-numref">11.20</span></a>, where we see that the magnitude of the torque is</p>
 <div class="math notranslate nohighlight">
 \[ \tau = Mgr\sin{\theta},\]</div>
@@ -2089,11 +2166,11 @@ I_f &amp;= I_{\rm bullet} + I_{\rm disk} \\
 <div class="math notranslate nohighlight">
 \[ d\phi = \frac{dL}{L\sin{\theta}} = \frac{Mgr\sin{\theta}}{L\sin{\theta}} = Mg\left(\frac{r}{L}\right) dt. \]</div>
 <p>The precession angular velocity is <span class="math notranslate nohighlight">\(\omega_P = \frac{d\phi}{dt}\)</span>, where we see that</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0806a8a4-9a11-48a7-922e-153c745212c6">
-<span class="eqno">(11.11)<a class="headerlink" href="#equation-0806a8a4-9a11-48a7-922e-153c745212c6" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
 \omega_p &amp;= Mg\left(\frac{r}{L}\right), \\
 &amp;= \frac{Mgr}{I\omega},
-\end{align}\]</div>
+\end{align*}\]</div>
 <p>since <span class="math notranslate nohighlight">\(L = I\omega\)</span>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -2102,12 +2179,10 @@ I_f &amp;= I_{\rm bullet} + I_{\rm disk} \\
 <p>Earth acts like a gigantic gyroscope.  Its angular momentum is along its axis and currently points at Polaris, the North Star. But Earth is slowly precessing (every <span class="math notranslate nohighlight">\({\sim}\)</span>26,000 years) due to the torque of the Sun and the Moon on its nonspherical shape.</p>
 <div class="tip admonition">
 <p class="admonition-title"><a class="reference external" href="https://www.youtube.com/&#64;AUastronomy"><strong>UNL Astronomy</strong></a></p>
-<div class="video-wrapper" style="max-width:560px; margin-left: auto; margin-right: auto;">
-  <div class="video-container" style="aspect-ratio:16/9; position:relative; width:100%;">
-    <iframe src="https://www.youtube.com/embed/0qHjtp4cdCA" allowfullscreen style="width:100%; height:100%; position:absolute; left:0; top:0; border:0;" loading="lazy"></iframe>
-  </div>
-  <div class="video-caption" style="margin-top:0.5em; text-align:left; color:#666;">This video explains explains how Earth acts like a gyroscope and demonstrates its axial precession.</div>
-</div></div>
+<div class="video_wrapper align-center" style="text-align: center">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/0qHjtp4cdCA" style="border: 0; height: 435px; width: 720px">
+</iframe></div><p>As you watch, compare Earth’s slow axial precession with the precession of a toy top. The important idea is that a long-term torque can slowly change the direction of a large angular momentum vector.</p>
+</div>
 <section id="example-problem-period-of-precession">
 <h3><span class="section-number">11.4.1. </span><strong>Example Problem</strong>: Period of Precession<a class="headerlink" href="#example-problem-period-of-precession" title="Link to this heading">#</a></h3>
 <div class="exercise etamu-exercise admonition" id="Chapter11/angular-momentum-exercise-9">
@@ -2118,55 +2193,57 @@ I_f &amp;= I_{\rm bullet} + I_{\rm disk} \\
 <blockquote>
 <div><p>A gyroscope spins with its tip on the ground and is spinning with negligible frictional resistance. The disk of the gyroscope has mass <span class="math notranslate nohighlight">\(0.3\ {\rm kg}\)</span> and is spinning at <span class="math notranslate nohighlight">\(20\ {\rm rev/s}\)</span>. Its center of mass is <span class="math notranslate nohighlight">\(5.0\ {\rm cm}\)</span> from the pivot and the radius of the disk is <span class="math notranslate nohighlight">\(5.0\ {\rm cm}\)</span>. What is the precessional period of the gyroscope?</p>
 </div></blockquote>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
+<summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
+<p class="sd-card-text"><strong>The Model</strong></p>
+<p class="sd-card-text">The gyroscope is modeled as a spinning solid disk whose axle is supported at one end. The weight of the disk acts at its center of mass, which is offset from the pivot. Because the gyroscope spins rapidly and friction is negligible, the gravitational torque does not significantly change the magnitude of the spin angular momentum. Instead, that torque causes the angular momentum vector to change direction slowly, producing steady precession.</p>
+<p class="sd-card-text">The relevant physical framework is the steady-precession model for a rapidly spinning rigid body under the action of gravity. The torque magnitude is set by the weight of the disk and the distance from the pivot to the center of mass, while the spin angular momentum depends on the disk’s moment of inertia and spin angular speed. The disk is modeled as a solid disk about its spin axis.</p>
+<p class="sd-card-text">The strategy is to compute the disk’s moment of inertia, convert the spin rate into radians per second, use these quantities to find the precessional angular speed, and then convert that angular speed into the precessional period.</p>
 <hr class="docutils" />
-<p><strong>The Model</strong></p>
-<p>The gyroscope is modeled as a spinning solid disk whose axle is supported at one end. The weight of the disk acts at its center of mass, which is a distance <span class="math notranslate nohighlight">\(r = 5.0\ {\rm cm}\)</span> from the pivot. Because the gyroscope spins rapidly and friction is negligible, the gravitational torque does not significantly change the magnitude of the spin angular momentum. Instead, that torque causes the angular momentum vector to change direction slowly, producing steady precession.</p>
-<p>The relevant physical framework is the standard precession relation for a rapidly spinning rigid body under the action of gravity. The precessional angular speed is given by <span class="math notranslate nohighlight">\(\omega_P = \tau/L\)</span>, where the torque magnitude is <span class="math notranslate nohighlight">\(\tau = rMg\)</span> and the spin angular momentum magnitude is <span class="math notranslate nohighlight">\(L = I\omega\)</span>. The disk is modeled as a solid disk, so its moment of inertia about its spin axis is <span class="math notranslate nohighlight">\(I = \tfrac{1}{2}mR^2\)</span>.</p>
-<p>The strategy is to compute the disk’s moment of inertia, convert the spin rate into radians per second, use these quantities to find the precessional angular speed, and then convert that angular speed into the precessional period.</p>
-<hr class="docutils" />
-<p><strong>The Math</strong></p>
-<p>For a rapidly spinning gyroscope undergoing steady precession, the precessional angular speed is given by</p>
+<p class="sd-card-text"><strong>The Math</strong></p>
+<p class="sd-card-text">For a rapidly spinning gyroscope undergoing steady precession, the precessional angular speed is given by</p>
 <div class="math notranslate nohighlight">
 \[ \omega_P = \frac{rMg}{I\omega}. \]</div>
-<p>The disk is modeled as a solid disk spinning about its symmetry axis, so its moment of inertia is</p>
+<p class="sd-card-text">The disk is modeled as a solid disk spinning about its symmetry axis, so its moment of inertia is</p>
 <div class="math notranslate nohighlight">
 \[ I = \frac{1}{2}mR^2. \]</div>
-<p>The mass of the disk is <span class="math notranslate nohighlight">\(m = 0.3\ {\rm kg}\)</span> and the radius of the disk is <span class="math notranslate nohighlight">\(R = 5.0\ {\rm cm} = 0.050\ {\rm m}\)</span>. Substituting these values into the moment-of-inertia expression gives</p>
+<p class="sd-card-text">The mass of the disk is <span class="math notranslate nohighlight">\(m = 0.3\ {\rm kg}\)</span> and the radius of the disk is <span class="math notranslate nohighlight">\(R = 5.0\ {\rm cm} = 0.050\ {\rm m}\)</span>. Substituting these values into the moment-of-inertia expression gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 I &amp;= \frac{1}{2}(0.3\ {\rm kg})(0.050\ {\rm m})^2 \\
 &amp;= 3.75\times10^{-4}\ {\rm kg\cdot m^2}.
 \end{align*}\]</div>
-<p>The given spin rate is <span class="math notranslate nohighlight">\(20\ {\rm rev/s}\)</span>. To use the precession formula, we convert this spin rate into radians per second. This gives</p>
+<p class="sd-card-text">The given spin rate is <span class="math notranslate nohighlight">\(20\ {\rm rev/s}\)</span>. To use the precession formula, we convert this spin rate into radians per second. This gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \omega &amp;= 20\ {\rm rev/s}\left(\frac{2\pi\ {\rm rad}}{1\ {\rm rev}}\right) \\
 &amp;= 40\pi\ {\rm rad/s} \\
 &amp;= 126\ {\rm rad/s}.
 \end{align*}\]</div>
-<p>The center of mass is located <span class="math notranslate nohighlight">\(r = 5.0\ {\rm cm} = 0.050\ {\rm m}\)</span> from the pivot. Substituting <span class="math notranslate nohighlight">\(r = 0.050\ {\rm m}\)</span>, <span class="math notranslate nohighlight">\(M = 0.3\ {\rm kg}\)</span>, <span class="math notranslate nohighlight">\(g = 9.81\ {\rm m/s^2}\)</span>, <span class="math notranslate nohighlight">\(I = 3.75\times10^{-4}\ {\rm kg\cdot m^2}\)</span>, and <span class="math notranslate nohighlight">\(\omega = 40\pi\ {\rm rad/s}\)</span> into the precession formula gives</p>
+<p class="sd-card-text">The center of mass is located <span class="math notranslate nohighlight">\(r = 5.0\ {\rm cm} = 0.050\ {\rm m}\)</span> from the pivot. The precessional angular speed follows from the gravitational torque and spin angular momentum:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \omega_P &amp;= \frac{(0.050\ {\rm m})(0.3\ {\rm kg})(9.81\ {\rm m/s^2})}{(3.75\times10^{-4}\ {\rm kg\cdot m^2})(40\pi\ {\rm rad/s})} \\
 &amp;= 3.12\ {\rm rad/s}.
 \end{align*}\]</div>
-<p>The precessional period is the time required for one complete revolution of the precession motion. This period is related to the precessional angular speed by</p>
+<p class="sd-card-text">The precessional period is the time required for one complete revolution of the precession motion. This period is related to the precessional angular speed by</p>
 <div class="math notranslate nohighlight">
 \[ T_P = \frac{2\pi}{\omega_P}. \]</div>
-<p>Substituting <span class="math notranslate nohighlight">\(\omega_P = 3.12\ {\rm rad/s}\)</span> gives</p>
+<p class="sd-card-text">The precessional period follows from this precessional angular speed:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 T_P &amp;= \frac{2\pi}{3.12\ {\rm rad/s}} \\
 &amp;= 2.01\ {\rm s}.
 \end{align*}\]</div>
-<p>Rounded appropriately, the precessional period is <span class="math notranslate nohighlight">\( T_P = 2.0\ {\rm s}. \)</span></p>
+<p class="sd-card-text">Rounded appropriately, the precessional period is <span class="math notranslate nohighlight">\( T_P = 2.0\ {\rm s}. \)</span></p>
 <hr class="docutils" />
-<p><strong>The Conclusion</strong></p>
-<p>The precessional period of the gyroscope is <span class="math notranslate nohighlight">\( T_P = 2.0\ {\rm s}.\)</span>  This result means the gyroscope’s axis sweeps once around the vertical in about two seconds. The precession is much slower than the spin itself, which is consistent with the steady-precession approximation used in the model.</p>
+<p class="sd-card-text"><strong>The Conclusion</strong></p>
+<p class="sd-card-text">The precessional period of the gyroscope is <span class="math notranslate nohighlight">\( T_P = 2.0\ {\rm s}.\)</span>  This result means the gyroscope’s axis sweeps once around the vertical in about two seconds. The precession is much slower than the spin itself, which is consistent with the steady-precession approximation used in the model.</p>
 <hr class="docutils" />
-<p><strong>The Verification</strong></p>
-<p>The analytical solution computes the disk’s moment of inertia, converts the spin rate into radians per second, and then uses the steady-precession formula to determine the precessional angular speed and period. The computation below follows that same sequence directly from the given numerical values.</p>
-<p>The numerical calculation confirms that the gyroscope precesses much more slowly than it spins and gives a precessional period of about <span class="math notranslate nohighlight">\(2\ {\rm s}\)</span>.</p>
+<p class="sd-card-text"><strong>The Verification</strong></p>
+<p class="sd-card-text">The analytical solution computes the disk’s moment of inertia, converts the spin rate into radians per second, and then uses the steady-precession formula to determine the precessional angular speed and period. The computation below follows that same sequence directly from the given numerical values.</p>
+<p class="sd-card-text">The numerical calculation confirms that the gyroscope precesses much more slowly than it spins and gives a precessional period of about <span class="math notranslate nohighlight">\(2\ {\rm s}\)</span>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
@@ -2205,7 +2282,13 @@ T_P &amp;= \frac{2\pi}{3.12\ {\rm rad/s}} \\
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</section>
+</div>
+</details></section>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">PhET Interactive: Torque</p>
+<p><a class="reference external" href="https://phet.colorado.edu/en/simulations/torque">Open the PhET Torque simulation</a></p>
+<p>Adjust the applied force, the distance from the rotation axis, and the rotational inertia. Watch how the angular acceleration and angular momentum respond, then compare cases where the same force is applied closer to or farther from the axis.</p>
 </div>
 </section>
 </section>
@@ -2257,7 +2340,7 @@ T_P &amp;= \frac{2\pi}{3.12\ {\rm rad/s}} \\
 <figure class="align-default" id="earth-precession-problem">
 <img alt="Earth precession problem" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/b10d2d7414b6c52a136b516b8ee695368343407c" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.22 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#earth-precession-problem" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.22 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-problems">Chapter 11 Problems</a>.</span><a class="headerlink" href="#earth-precession-problem" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
