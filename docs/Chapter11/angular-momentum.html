@@ -575,7 +575,8 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="angular-momentum">
 <h1><span class="section-number">11. </span>Angular Momentum<a class="headerlink" href="#angular-momentum" title="Link to this heading">#</a></h1>
-<p>Jun 23, 2026 | 10138 words | 51 min read</p>
+<p>Jun 30, 2026 | 10791 words | 54 min read</p>
+<p><strong>Version:</strong> v1.0-captioned baseline</p>
 <div class="tip admonition">
 <p class="admonition-title">Chapter roadmap</p>
 <p>Angular momentum helps you describe how objects keep, change, or share rotational motion. In this chapter, you will connect rolling motion, torque, and conservation laws into one framework for analyzing rotating systems.</p>
@@ -600,7 +601,7 @@ document.write(`
 <figure class="align-default" id="bicycle-rolling-example">
 <img alt="bicycle rolling example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/c8fae851235d71d82aa3effd2060b662289d4490" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.1 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-1-rolling-motion">Rolling Motion</a>.</span><a class="headerlink" href="#bicycle-rolling-example" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.1 </span><span class="caption-text">A bicycle wheel rolls along the road without slipping. The tire contact point is momentarily at rest relative to the ground, even though the bicycle moves forward. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-1-rolling-motion">Rolling Motion</a>.</span><a class="headerlink" href="#bicycle-rolling-example" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Figure <a class="reference internal" href="#bicycle-rolling-example"><span class="std std-numref">11.1</span></a> shows a bicycle in motion while the rider stays upright.  The tires have contact with the road surface and the bottoms of the tires deform slightly (while not slipping) and are at rest with respect to the road surface for a measurable amount of time, even though the tires are rolling.  There must be static friction between the tire and the road surface.</p>
@@ -613,14 +614,14 @@ document.write(`
 <figure class="align-default" id="scooby-doo-slipping">
 <img alt="Scooby-Doo running without traction" src="https://media1.tenor.com/m/NbJD5xVfVPUAAAAC/scooby-doo-scooby.gif" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.2 </span><span class="caption-text">Image Credit: <a class="reference external" href="https://tenor.com/search/scooby-doo-running-away-gifs">tenor.com</a></span><a class="headerlink" href="#scooby-doo-slipping" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.2 </span><span class="caption-text">A cartoon example of motion without useful traction. The feet move rapidly, but the body does not immediately move forward because the contact with the ground is slipping rather than rolling without slipping. Image Credit: <a class="reference external" href="https://tenor.com/search/scooby-doo-running-away-gifs">tenor.com</a>.</span><a class="headerlink" href="#scooby-doo-slipping" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>To analyze rolling without slipping, we relate the linear variables of velocity and acceleration (of the center-of-mass) of the wheel in terms of the angular variables that describe the wheel’s motion (see Fig. <a class="reference internal" href="#forces-on-wheel"><span class="std std-numref">11.3</span></a>).</p>
 <figure class="align-default" id="forces-on-wheel">
 <img alt="forces on rolling wheel" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/3c86e4a4d109c5e45891d81ffa69459d42d5735c" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.3 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-1-rolling-motion">Rolling Motion</a>.</span><a class="headerlink" href="#forces-on-wheel" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.3 </span><span class="caption-text">A rolling wheel can be analyzed by separating the motion of the center of mass from the rotation about the center of mass. When rolling occurs without slipping, the contact point is momentarily at rest relative to the ground. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-1-rolling-motion">Rolling Motion</a>.</span><a class="headerlink" href="#forces-on-wheel" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Figure <a class="reference internal" href="#forces-on-wheel"><span class="std std-numref">11.3</span></a>a shows the force vectors involved that prevent the wheel from slipping.  The wheel is in contact with the surface at point <span class="math notranslate nohighlight">\(P\)</span>, which remains at rest relative to the surface in Fig. <a class="reference internal" href="#forces-on-wheel"><span class="std std-numref">11.3</span></a>b.  Relative to the center-of-mass, point <span class="math notranslate nohighlight">\(P\)</span> has a velocity <span class="math notranslate nohighlight">\(-R\omega\hat{i}\)</span>, where <span class="math notranslate nohighlight">\(R\)</span> is the radius of the wheel and <span class="math notranslate nohighlight">\(\omega\)</span> is the wheel’s angular velocity about its axis.</p>
@@ -645,7 +646,7 @@ a_{\rm CoM} &amp;= \frac{d}{dt}v_{\rm CoM} = \frac{dR}{dt}\omega + R\frac{d\omeg
 <figure class="align-default" id="arclength-wheel">
 <img alt="distance traveled by wheel CoM" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/dbe6699af551c871539e43d20ef156aa78f6ce4f" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.4 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-1-rolling-motion">Rolling Motion</a>.</span><a class="headerlink" href="#arclength-wheel" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.4 </span><span class="caption-text">As a wheel rolls without slipping from <span class="math notranslate nohighlight">\(A\)</span> to <span class="math notranslate nohighlight">\(B\)</span>, the center of mass moves the same distance as the arc length that unwraps from the rim. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-1-rolling-motion">Rolling Motion</a>.</span><a class="headerlink" href="#arclength-wheel" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>We can also find the distance the wheel travels in terms of the angular variables.  In Figure <a class="reference internal" href="#arclength-wheel"><span class="std std-numref">11.4</span></a>, the wheel rolls from point <span class="math notranslate nohighlight">\(A\)</span> to point <span class="math notranslate nohighlight">\(B\)</span>, but its outer surface maps onto the ground by exactly the distance traveled <span class="math notranslate nohighlight">\(d_{\rm CoM}\)</span>.  The outer surface that maps onto the ground is the arclength <span class="math notranslate nohighlight">\(R\theta\)</span>, or</p>
@@ -668,7 +669,7 @@ d_{\rm CoM} = R\theta.
 <figure class="align-default" id="rolling-without-slipping-example">
 <img alt="rolling without slipping example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/6238b3e259d0fa95a2528d802f34a6749d14e70c" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.5 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-1-rolling-motion">Rolling Motion</a>.</span><a class="headerlink" href="#rolling-without-slipping-example" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.5 </span><span class="caption-text">A solid cylinder rolls down an incline without slipping. Gravity, the normal force, and static friction act on the cylinder, with friction supplying the torque that makes the cylinder rotate. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-1-rolling-motion">Rolling Motion</a>.</span><a class="headerlink" href="#rolling-without-slipping-example" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
@@ -804,7 +805,7 @@ f_s &amp;= \frac{I_{\rm CoM} a_{\rm CoM}}{r^2} \\
 <figure class="align-default" id="rolling-slipping-example">
 <img alt="wheel rolling and slipping" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/2fa8fc32149cf8962886551a2c3f6927b663ee26" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.6 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-1-rolling-motion">Rolling Motion</a>.</span><a class="headerlink" href="#rolling-slipping-example" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.6 </span><span class="caption-text">When the contact point slides relative to the surface, the wheel’s translation and rotation are no longer locked together by the rolling-without-slipping constraint. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-1-rolling-motion">Rolling Motion</a>.</span><a class="headerlink" href="#rolling-slipping-example" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <section id="example-problem-rolling-down-an-inclined-plane-with-slipping">
@@ -822,7 +823,7 @@ f_s &amp;= \frac{I_{\rm CoM} a_{\rm CoM}}{r^2} \\
 <figure class="align-default" id="rolling-slipping-problem">
 <img alt="rolling slipping problem" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/f14c32c74e2b8a6af2e38740a8a1c489b0fc698d" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.7 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-1-rolling-motion">Rolling Motion</a>.</span><a class="headerlink" href="#rolling-slipping-problem" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.7 </span><span class="caption-text">For a cylinder that slips while moving down an incline, kinetic friction acts opposite the slipping motion and provides the torque that changes the cylinder’s angular speed. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-1-rolling-motion">Rolling Motion</a>.</span><a class="headerlink" href="#rolling-slipping-problem" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
@@ -1053,7 +1054,7 @@ Why does she not have to exert a torque to spin faster?</p></li>
 <figure class="align-default" id="particle-ang-momentum-example">
 <img alt="angular momentum coordinates" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/539865005b3ae242a2c04dc146583e138be8be9b" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.8 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-2-angular-momentum">Angular Momentum</a>.</span><a class="headerlink" href="#particle-ang-momentum-example" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.8 </span><span class="caption-text">A particle’s angular momentum about the origin depends on both its position vector and its linear momentum. The cross product points perpendicular to the plane formed by those two vectors. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-2-angular-momentum">Angular Momentum</a>.</span><a class="headerlink" href="#particle-ang-momentum-example" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="note admonition">
@@ -1137,7 +1138,7 @@ L &amp;= rp\sin{\theta}, \\
 <figure class="align-default" id="meteor-problem">
 <img alt="angular momentum and torque on meteor" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/02ad2ddfe83fa26eeb264ce542c21533aa874908" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.9 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-2-angular-momentum">Angular Momentum</a>.</span><a class="headerlink" href="#meteor-problem" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.9 </span><span class="caption-text">The meteor’s position vector points from the observer to the meteor, while its linear momentum points downward. Their cross product determines the angular momentum about the observer. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-2-angular-momentum">Angular Momentum</a>.</span><a class="headerlink" href="#meteor-problem" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
@@ -1279,7 +1280,7 @@ L &amp;= rp\sin{\theta}, \\
 <figure class="align-default" id="three-particles-angular-momentum">
 <img alt="angular momentum of three particles" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/4a21d9f7b69a56931969b2b745e729bae53dd519" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.10 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-2-angular-momentum">Angular Momentum</a>.</span><a class="headerlink" href="#three-particles-angular-momentum" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.10 </span><span class="caption-text">Three particles have different positions, velocities, and applied forces in the <span class="math notranslate nohighlight">\(xy\)</span>-plane. The system’s total angular momentum and net torque are found by adding the individual vector contributions. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-2-angular-momentum">Angular Momentum</a>.</span><a class="headerlink" href="#three-particles-angular-momentum" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
@@ -1462,7 +1463,7 @@ L &amp;= rp\sin{\theta}, \\
 <figure class="align-default" id="rigid-ang-momentum-example">
 <img alt="rigid body angular momentum example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/3ddf5b2f629cba6d9c736e44f91a85592ff2d98c" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.11 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-2-angular-momentum">Angular Momentum</a>.</span><a class="headerlink" href="#rigid-ang-momentum-example" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.11 </span><span class="caption-text">A rigid body rotating about the <span class="math notranslate nohighlight">\(z\)</span>-axis can be treated as many small mass elements. Each element contributes angular momentum, and the sum gives the angular momentum of the rigid body. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-2-angular-momentum">Angular Momentum</a>.</span><a class="headerlink" href="#rigid-ang-momentum-example" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Figure <a class="reference internal" href="#rigid-ang-momentum-example"><span class="std std-numref">11.11</span></a>a shows a mass segment <span class="math notranslate nohighlight">\(\Delta m_i\)</span> with a position vector <span class="math notranslate nohighlight">\(\vec{r}_i\)</span> from the origin, and a radius <span class="math notranslate nohighlight">\(R_i\)</span> to the <span class="math notranslate nohighlight">\(z\)</span>-axis.  The magnitude of its tangential velocity is <span class="math notranslate nohighlight">\(v_i = R_i\omega\)</span> because it is undergoing circular motion.  Since <span class="math notranslate nohighlight">\(\vec{\rm v}_i\)</span> is perpendicular to <span class="math notranslate nohighlight">\(\vec{r}_i\)</span>, the magnitude of the angular momentum of this mass segment is</p>
@@ -1509,7 +1510,7 @@ L = I\omega.
 <figure class="align-default" id="robot-arm-problem">
 <img alt="angular momentum of a robot arm" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/90e364bcd3056ebf481e92f7f1763e05a093d296" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.12 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-2-angular-momentum">Angular Momentum</a>.</span><a class="headerlink" href="#robot-arm-problem" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.12 </span><span class="caption-text">A rover arm rotates about the joint where it attaches to the rover. The arm can be modeled as a rod, while the forceps and rock can be modeled as point masses near the end of the arm. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-2-angular-momentum">Angular Momentum</a>.</span><a class="headerlink" href="#robot-arm-problem" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
@@ -1691,7 +1692,7 @@ L &amp;= I_{\rm tot}\omega \\
 <figure class="align-default" id="figure-skater-example">
 <img alt="figure skater example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/f6343406c922626518c9241c6f79ea3df73c5f9e" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.13 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-3-conservation-of-angular-momentum">Conservation of Angular Momentum</a>.</span><a class="headerlink" href="#figure-skater-example" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.13 </span><span class="caption-text">An ice skater changes her spin rate by changing how far her mass is from the rotation axis. Pulling her arms inward decreases rotational inertia and increases angular speed. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-3-conservation-of-angular-momentum">Conservation of Angular Momentum</a>.</span><a class="headerlink" href="#figure-skater-example" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The ice skater can increase her rate of spin by pulling her arms and legs in.  <strong>Why does this increase her spin rate?</strong></p>
@@ -1718,7 +1719,7 @@ K^\prime_{rot} &amp;= \left(\frac{I}{I^\prime}\right) K_{rot}.
 <figure class="align-default" id="solar-system-example">
 <img alt="Solar System example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/806b9b2e4e4680a537c223b789be8f2e18f9e6f3" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.14 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-3-conservation-of-angular-momentum">Conservation of Angular Momentum</a>.</span><a class="headerlink" href="#solar-system-example" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.14 </span><span class="caption-text">A rotating cloud of gas and dust spins faster as it contracts under gravity. This same angular-momentum idea helps explain why material in the Solar System formed with a common rotation direction. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-3-conservation-of-angular-momentum">Conservation of Angular Momentum</a>.</span><a class="headerlink" href="#solar-system-example" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="tip admonition">
@@ -1742,7 +1743,7 @@ K^\prime_{rot} &amp;= \left(\frac{I}{I^\prime}\right) K_{rot}.
 <figure class="align-default" id="coupled-flywheels-problem">
 <img alt="coupled flywheels" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/cb28aa966fd4211a750979eef23cee06a67cae59" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.15 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-3-conservation-of-angular-momentum">Conservation of Angular Momentum</a>.</span><a class="headerlink" href="#coupled-flywheels-problem" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.15 </span><span class="caption-text">Two flywheels couple through internal friction and eventually rotate together. Angular momentum is conserved for the pair, even though some rotational kinetic energy is transformed into thermal energy. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-3-conservation-of-angular-momentum">Conservation of Angular Momentum</a>.</span><a class="headerlink" href="#coupled-flywheels-problem" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
@@ -1867,7 +1868,7 @@ K_f &amp;= \frac{1}{2}(4I_o)\left(\frac{\omega_o}{4}\right)^2 \\
 <figure class="align-default" id="high-bar-dismount-problem">
 <img alt="dismount from a high bar" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/757b60297e82d2b2c43e957c2ba5278d7e3cec80" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.16 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-3-conservation-of-angular-momentum">Conservation of Angular Momentum</a>.</span><a class="headerlink" href="#high-bar-dismount-problem" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.16 </span><span class="caption-text">A gymnast changes rotational inertia by moving from an extended position into a tuck. The smaller rotational inertia in the tuck increases the rotation rate during the dismount. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-3-conservation-of-angular-momentum">Conservation of Angular Momentum</a>.</span><a class="headerlink" href="#high-bar-dismount-problem" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
@@ -2003,7 +2004,7 @@ N &amp;= \omega_f t \\
 <figure class="align-default" id="bullet-disk-collision-problem">
 <img alt="conservation of angular momentum of a collision" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/b6a1ef1e37a0bafc67e967b2ab3030627f2f7e83" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.17 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-3-conservation-of-angular-momentum">Conservation of Angular Momentum</a>.</span><a class="headerlink" href="#bullet-disk-collision-problem" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.17 </span><span class="caption-text">A bullet embeds in the edge of a disk that is free to rotate about its vertical axis. The collision is inelastic, but angular momentum about the disk’s axis is conserved during the impact. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-3-conservation-of-angular-momentum">Conservation of Angular Momentum</a>.</span><a class="headerlink" href="#bullet-disk-collision-problem" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 etamu-dropdown">
@@ -2119,14 +2120,14 @@ I_f &amp;= I_{\rm bullet} + I_{\rm disk} \\
 <figure class="align-default" id="gyroscope-example">
 <img alt="gyroscope example" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Gyroscope_operation.gif" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.18 </span><span class="caption-text">Image Credit: Wikipedia:<a class="reference external" href="https://en.wikipedia.org/wiki/Gyroscope">gyroscope</a>.</span><a class="headerlink" href="#gyroscope-example" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.18 </span><span class="caption-text">A gyroscope keeps the direction of its spin axis nearly fixed as the supporting frame changes orientation. This behavior is why gyroscopes are useful for navigation and attitude control. Image Credit: Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Gyroscope">Gyroscope</a>.</span><a class="headerlink" href="#gyroscope-example" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The <strong>precession</strong> of a gyroscope can be illustrated with an example of a toy top.  If the top is placed on a flat surface near the ground at an angle and is <em>not spinning</em>, it will fall over.  The force of gravity produces a torque on its center-of-mass (see Fig. <a class="reference internal" href="#toy-top-example"><span class="std std-numref">11.19</span></a>a).</p>
 <figure class="align-default" id="toy-top-example">
 <img alt="top precession example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/c0f9372229183425cd17d18947c8a85325df1fba" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.19 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-4-precession-of-a-gyroscope">Precession of a Gyroscope</a>.</span><a class="headerlink" href="#toy-top-example" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.19 </span><span class="caption-text">A top that is not spinning topples because gravity produces a torque about the contact point. A spinning top instead precesses, so its axis sweeps around rather than simply falling. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-4-precession-of-a-gyroscope">Precession of a Gyroscope</a>.</span><a class="headerlink" href="#toy-top-example" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>However if the top is spinning on its axis, it precesses about the vertical instead of toppling over due to this torque (see Fig. <a class="reference internal" href="#toy-top-example"><span class="std std-numref">11.19</span></a>b).  This is due to the torque on the center-of-mass, which provides the change in angular momentum.</p>
@@ -2138,7 +2139,7 @@ I_f &amp;= I_{\rm bullet} + I_{\rm disk} \\
 <figure class="align-default" id="force-top-example">
 <img alt="forces precession example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/dba26d6468d240cab0a9b5c2c39140b47dfa7848" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.20 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-4-precession-of-a-gyroscope">Precession of a Gyroscope</a>.</span><a class="headerlink" href="#force-top-example" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.20 </span><span class="caption-text">The weight of a spinning top acts at its center of mass and creates a torque about the pivot. This torque changes the direction of the angular momentum vector and produces precession. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-4-precession-of-a-gyroscope">Precession of a Gyroscope</a>.</span><a class="headerlink" href="#force-top-example" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>If the top is <em>not spinning</em>, it acquires angular momentum in the direction of the torque.  It rotates around a horizontal axis and falls over just as we expect.</p>
@@ -2146,7 +2147,7 @@ I_f &amp;= I_{\rm bullet} + I_{\rm disk} \\
 <figure class="align-default" id="bicycle-wheel-example">
 <img alt="bicycle wheel example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/d6e2d56f4a443df836f69063456c96e55bf2eca3" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.21 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-4-precession-of-a-gyroscope">Precession of a Gyroscope</a>.</span><a class="headerlink" href="#bicycle-wheel-example" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.21 </span><span class="caption-text">A spinning bicycle wheel behaves like a gyroscope. Forces that try to tilt the wheel change the direction of the angular momentum and produce precession. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-4-precession-of-a-gyroscope">Precession of a Gyroscope</a>.</span><a class="headerlink" href="#bicycle-wheel-example" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The spinning of the bicycle wheel when you’re riding acts as a gyroscope and keeps you from falling over.</p>
@@ -2340,7 +2341,7 @@ T_P &amp;= \frac{2\pi}{3.12\ {\rm rad/s}} \\
 <figure class="align-default" id="earth-precession-problem">
 <img alt="Earth precession problem" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/b10d2d7414b6c52a136b516b8ee695368343407c" />
 <figcaption>
-<p><span class="caption-number">Fig. 11.22 </span><span class="caption-text">Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-problems">Chapter 11 Problems</a>.</span><a class="headerlink" href="#earth-precession-problem" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 11.22 </span><span class="caption-text">Earth’s rotation axis is tilted relative to the plane of its orbit and slowly precesses. In half a precession cycle, the angular momentum vector changes direction by sweeping to the opposite side of the cone. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/11-problems">Chapter 11 Problems</a>.</span><a class="headerlink" href="#earth-precession-problem" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
