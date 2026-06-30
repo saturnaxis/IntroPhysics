@@ -40,7 +40,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/sphinx_iframe.css?v=96c28b52" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="https://cdn.plyr.io/3.8.4/plyr.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=80fd4ae3" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=e9fd1fb5" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -213,6 +213,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../Preamble/computational-writing-primer.html">Computational and Writing Primer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Preamble/figures-primer.html">Figures Primer (Matplotlib)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Preamble/course-faq.html">Course FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Preamble/physics-recruitment.html">Finding Your Path in Physics</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Measurements, Vectors, Kinematics</span></p>
 <ul class="nav bd-sidenav">
@@ -562,10 +563,10 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kepler-s-laws-of-planetary-motion">13.5. Kepler’s Laws of Planetary Motion</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kepler-s-1st-law">13.5.1. Kepler’s 1st Law</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kepler-s-first-law">13.5.1. Kepler’s First Law</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#orbital-transfers">13.5.2. Orbital Transfers</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kepler-s-2nd-law">13.5.3. Kepler’s 2nd Law</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kepler-s-3rd-law">13.5.4. Kepler’s 3rd Law</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kepler-s-second-law">13.5.3. Kepler’s Second Law</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kepler-s-third-law">13.5.4. Kepler’s Third Law</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-orbit-of-halley-s-comet">13.5.5. <strong>Example Problem</strong>: Orbit of Halley’s Comet</a></li>
 </ul>
 </li>
@@ -613,15 +614,26 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="gravitation">
 <h1><span class="section-number">13. </span>Gravitation<a class="headerlink" href="#gravitation" title="Link to this heading">#</a></h1>
-<p>May 29, 2026 | 12438 words | 62 min read</p>
+<p>Jun 30, 2026 | 13373 words | 67 min read</p>
+<div class="tip admonition">
+<p class="admonition-title">Chapter roadmap</p>
+<p>Gravity connects motion on Earth with motion throughout the universe. In this chapter, you will use Newton’s law of gravitation, energy, and circular-motion ideas to describe falling objects, satellite orbits, tides, and black holes.</p>
+<p>As you read, focus on three questions:</p>
+<ol class="arabic simple">
+<li><p>How does the gravitational force change when mass or distance changes?</p></li>
+<li><p>How do energy and circular motion help us understand orbits and escape speed?</p></li>
+<li><p>Why do small differences in gravity across an object produce tides and other large-scale effects?</p></li>
+</ol>
+<p>These ideas will let you connect everyday weight to the motion of satellites, planets, galaxies, and compact objects.</p>
+</div>
 <section id="newton-s-law-of-universal-gravitation">
 <h2><span class="section-number">13.1. </span>Newton’s Law of Universal Gravitation<a class="headerlink" href="#newton-s-law-of-universal-gravitation" title="Link to this heading">#</a></h2>
 <section id="the-history-of-gravitation">
 <h3><span class="section-number">13.1.1. </span>The History of Gravitation<a class="headerlink" href="#the-history-of-gravitation" title="Link to this heading">#</a></h3>
 <p>The earliest philosophers wondered why objects naturally tend to fall toward the ground.  <a class="reference external" href="https://en.wikipedia.org/wiki/Aristotle">Aristotle</a> believed that the natural state of some objects to seek the Earth, while others (e.g., fire) would float away and seek Heaven instead.  Almost a millennium  later, <a class="reference external" href="https://en.wikipedia.org/wiki/Brahmagupta">Brahmagupta</a> described an attractive force that caused all objects to fall toward the center of a spherical Earth.</p>
 <p>The motions of the Sun, Moon, and the planets were studied for thousands of years before an accurate model was developed.  About 2000 years ago, <a class="reference external" href="https://en.wikipedia.org/wiki/Ptolemy">Ptolemy</a> used the method of epicycles, which proved to be an accurate method given the technological sophistication of making the measurements.  Although several scholars may have developed ideas about an inward seeking force or the motions of astronomical bodies, there is little evidence that anyone had synthesized these ideas together into a single framework until the 17th century (i.e., 1600-1700 AD).</p>
-<p>The idea of heliocentrism (e.g., the Sun is at the center of the Solar System) was introduced (at least) by the 3rd century BC by Aristarchus of Samos.  For many years, scholars paid little attention to the idea because the could not reconcile a moving Earth with the absence of an observable <a class="reference external" href="https://en.wikipedia.org/wiki/parallax">parallax</a>.  Therefore, Ptolemy’s geocentric model held sway until the 16th century, when <a class="reference external" href="https://en.wikipedia.org/wiki/Nicolaus_Copernicus">Nicolaus Copernicus</a> proposed a mathematical model of a heliocentric system and estimated the distances for each of the planets to the Sun, albeit on assumed circular orbits.  Copernicus’ ideas were initially supported by religious figures at the time, but eventually (about a century later) ran in contrast to the Catholic church’s teachings.</p>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Tycho_Brahe">Tycho Brahe</a> attempted to develop a hybrid geocentric-heliocentric model but did not finish before his death.  Prior to his demise, he employed <a class="reference external" href="https://en.wikipedia.org/wiki/Johannes_Kepler">Johannes Kepler</a> as a research assistant.  Brahe assigned Kepler the so-called ‘Mars problem’ as an attempt to stall Kepler from overshadowing him.  However, Kepler would develop his laws of planetary motion (in 1609 (1st and 2nd) and 1619 (3rd)) that largely corrected the Copernican model use ellipses instead of circles for the orbits.  At the same time (~1610) <a class="reference external" href="https://en.wikipedia.org/wiki/Galileo_Galilei">Galileo</a> was using his ‘telescope’ to observe the heavens and discovering that Jupiter hosted 4 moons of its own.  Western European natural scientists could develop a model that predicted the location of the planets with higher accuracy, however they had no mathematical description to explain why the planets moved around the Sun.</p>
+<p>The idea of heliocentrism (e.g., the Sun is at the center of the Solar System) was introduced (at least) by the 3rd century BC by Aristarchus of Samos.  For many years, scholars paid little attention to the idea because they could not reconcile a moving Earth with the absence of an observable <a class="reference external" href="https://en.wikipedia.org/wiki/parallax">parallax</a>.  Therefore, Ptolemy’s geocentric model held sway until the 16th century, when <a class="reference external" href="https://en.wikipedia.org/wiki/Nicolaus_Copernicus">Nicolaus Copernicus</a> proposed a mathematical model of a heliocentric system and estimated the distances for each of the planets to the Sun, albeit on assumed circular orbits.  Copernicus’ ideas were initially supported by religious figures at the time, but eventually (about a century later) ran in contrast to the Catholic church’s teachings.</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Tycho_Brahe">Tycho Brahe</a> attempted to develop a hybrid geocentric-heliocentric model but did not finish before his death.  Prior to his demise, he employed <a class="reference external" href="https://en.wikipedia.org/wiki/Johannes_Kepler">Johannes Kepler</a> as a research assistant.  Brahe assigned Kepler the so-called ‘Mars problem’ as an attempt to stall Kepler from overshadowing him.  However, Kepler would develop his laws of planetary motion (in 1609 (1st and 2nd) and 1619 (3rd)) that largely corrected the Copernican model by using ellipses instead of circles for the orbits.  At the same time (~1610) <a class="reference external" href="https://en.wikipedia.org/wiki/Galileo_Galilei">Galileo</a> was using his ‘telescope’ to observe the heavens and discovering that Jupiter hosted 4 moons of its own.  Western European natural scientists could develop a model that predicted the location of the planets with higher accuracy, however they had no mathematical description to explain why the planets moved around the Sun.</p>
 <p>It was <a class="reference external" href="https://en.wikipedia.org/wiki/Isaac_Newton">Isaac Newton</a> who connected the acceleration of objects near Earth’s surface with the centripetal acceleration of the planets around the Sun (i.e., gravity).  To accomplish this feat, Newton had to largely invent new domains of study, which included calculus and by its application mechanics.  He also made ground-breaking discoveries in his day for the field of optics and thermodynamics.  He developed a numerical algorithm that is efficient in solving some problems (e.g., root-finding or solving transcendental equations) that is still used today in modern-computing, <a class="reference external" href="https://en.wikipedia.org/wiki/Newton%27s_method">Newton-Raphson method</a>.</p>
 </section>
 <section id="newton-s-law-of-universal-gravitation-defined">
@@ -631,8 +643,8 @@ document.write(`
 <div class="note admonition">
 <p class="admonition-title">Newton’s Law of Gravitation</p>
 <p>Newton’s law of gravitation can be expressed as a vector by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9e7bbc8d-88d8-41bb-88eb-c2f5184ba723">
-<span class="eqno">(13.1)<a class="headerlink" href="#equation-9e7bbc8d-88d8-41bb-88eb-c2f5184ba723" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-def559f8-be78-4683-ab55-e1eb43fe0395">
+<span class="eqno">(13.1)<a class="headerlink" href="#equation-def559f8-be78-4683-ab55-e1eb43fe0395" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{F}_{12} = \frac{Gm_1m_2}{r^2}\hat{r}_{12},
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\vec{F}_{12}\)</span> is the force between object 1 exerted by object 2 and <span class="math notranslate nohighlight">\(\hat{r}_{12}\)</span> is the <em>radial</em> unit vector that points from object 1 toward object 2.</p>
@@ -640,11 +652,15 @@ document.write(`
 <figure class="align-default" id="gravity-vector-example">
 <img alt="Gravity force as a vector" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/632d3d8fd205334c778d4d172024e31cbdcb17c0" />
 <figcaption>
-<p><span class="caption-number">Fig. 13.1 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#gravity-vector-example" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 13.1 </span><span class="caption-text">Two masses attract one another along the line connecting their centers. The force on each object points toward the other object, and the pair of forces have equal magnitude and opposite direction, as required by Newton’s third law. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/13-1-newtons-law-of-universal-gravitation">Newton’s Law of Universal Gravitation</a>.</span><a class="headerlink" href="#gravity-vector-example" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Figure <a class="reference internal" href="#gravity-vector-example"><span class="std std-numref">13.1</span></a> shows how <span class="math notranslate nohighlight">\(\vec{F}_{12}\)</span> describes as an attractive force pulling object 1 toward object 2.  However, there is an equal but opposite force <span class="math notranslate nohighlight">\(\vec{F}_{21}\)</span> directed from object 2 toward object 1, <span class="math notranslate nohighlight">\(\vec{F}_{12} = -\vec{F}_{21}\)</span>.</p>
-<p>These equal but opposite forces reflect Newton’s 3rd law.  Newton’s law of gravitation (as expressed) applies to any spherically symmetric object, where <span class="math notranslate nohighlight">\(r\)</span> is the distance each object’s center-of-mass.  This also implicitly assumes that the individual radii of the masses (<span class="math notranslate nohighlight">\(R\)</span>) is much smaller than the distance between the objects (<span class="math notranslate nohighlight">\(R\ll r\)</span>).  In many cases, Newton’s formulation still works for nonsymmetrical objects due to <span class="math notranslate nohighlight">\(R\ll r\)</span>.</p>
+<div class="tip margin checkpoint admonition">
+<p class="admonition-title">Checkpoint</p>
+<p>If the distance between two objects doubles while their masses stay the same, what happens to the gravitational force between them?</p>
+</div>
+<p>These equal but opposite forces reflect Newton’s third law.  Newton’s law of gravitation (as expressed) applies to any spherically symmetric object, where <span class="math notranslate nohighlight">\(r\)</span> is the distance each object’s center-of-mass.  This also implicitly assumes that the individual radii of the masses (<span class="math notranslate nohighlight">\(R\)</span>) is much smaller than the distance between the objects (<span class="math notranslate nohighlight">\(R\ll r\)</span>).  In many cases, Newton’s formulation still works for nonsymmetrical objects due to <span class="math notranslate nohighlight">\(R\ll r\)</span>.</p>
 </section>
 <section id="the-cavendish-experiment-measuring-g">
 <h3><span class="section-number">13.1.3. </span>The Cavendish Experiment (measuring <span class="math notranslate nohighlight">\(G\)</span>)<a class="headerlink" href="#the-cavendish-experiment-measuring-g" title="Link to this heading">#</a></h3>
@@ -652,13 +668,13 @@ document.write(`
 <figure class="align-default" id="cavendish-apparatus">
 <img alt="Cavendish apparatus example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/4cdf59fde008dc8b6cff7a0b5f39a9ab14103d14" />
 <figcaption>
-<p><span class="caption-number">Fig. 13.2 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#cavendish-apparatus" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 13.2 </span><span class="caption-text">The Cavendish apparatus measures the tiny gravitational attraction between masses by observing the twist of a suspended rod. The deflection of reflected light makes a very small torque measurable, allowing the value of <span class="math notranslate nohighlight">\(G\)</span> to be determined. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/13-1-newtons-law-of-universal-gravitation">Newton’s Law of Universal Gravitation</a>.</span><a class="headerlink" href="#cavendish-apparatus" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>The constant <span class="math notranslate nohighlight">\(G\)</span> is called the <strong>universal gravitational constant</strong> and Cavendish determined it as <span class="math notranslate nohighlight">\(G = 6.67 \times 10^{-11}\ {\rm N\cdot m^2/kg^2}\)</span>.  The word ‘universal’ indicates that scientists think that this constant applies to masses of any composition and that it is the same throughout the Universe.  The value of <span class="math notranslate nohighlight">\(G\)</span> (in SI units) is an incredibly small number, which shows that the force of gravity is very weak.  For example, two <span class="math notranslate nohighlight">\(1\ {\rm kg}\)</span> masses locates a meter apart exert a force of <span class="math notranslate nohighlight">\(7 \times 10^{-11}\ {\rm N}\)</span> on each other.</p>
+<p>The constant <span class="math notranslate nohighlight">\(G\)</span> is called the <strong>universal gravitational constant</strong> and Cavendish determined it as <span class="math notranslate nohighlight">\(G = 6.67 \times 10^{-11}\ {\rm N\cdot m^2/kg^2}\)</span>.  The word ‘universal’ indicates that scientists think that this constant applies to masses of any composition and that it is the same throughout the Universe.  The value of <span class="math notranslate nohighlight">\(G\)</span> (in SI units) is an incredibly small number, which shows that the force of gravity is very weak.  For example, two <span class="math notranslate nohighlight">\(1\ {\rm kg}\)</span> masses located a meter apart exert a force of <span class="math notranslate nohighlight">\(7 \times 10^{-11}\ {\rm N}\)</span> on each other.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The value of <span class="math notranslate nohighlight">\(G\)</span> given here depends on the units used (i.e., SI units).  However, if you choose to work in a different (sometimes more convenient) set of units, then you could determine <span class="math notranslate nohighlight">\(G\)</span> to a easy magnitude to remember.  In orbital mechanics, researchers will often use a magnitude of <span class="math notranslate nohighlight">\(G\)</span> so that it equals <span class="math notranslate nohighlight">\(1\)</span> or <span class="math notranslate nohighlight">\(4\pi^2\)</span>, but you must reconcile the units appropriately.</p>
+<p>The value of <span class="math notranslate nohighlight">\(G\)</span> given here depends on the units used (i.e., SI units).  However, if you choose to work in a different (sometimes more convenient) set of units, then you could determine <span class="math notranslate nohighlight">\(G\)</span> to an easy magnitude to remember.  In orbital mechanics, researchers will often use a magnitude of <span class="math notranslate nohighlight">\(G\)</span> so that it equals <span class="math notranslate nohighlight">\(1\)</span> or <span class="math notranslate nohighlight">\(4\pi^2\)</span>, but you must reconcile the units appropriately.</p>
 </div>
 <p>Although gravity is the weakest force compared to the other three fundamental forces of nature, its attractive force holds us to the Earth, causes the planets to orbit the Sun, and the Sun to orbit our Galaxy.  It goes even further to bind galaxies into clusters and is the force that determines the fate of the Universe.</p>
 <div class="note admonition">
@@ -668,7 +684,7 @@ document.write(`
 <ol class="arabic simple">
 <li><p>Identify the two masses.</p></li>
 <li><p>Draw a free-body diagram, sketch the force acting on each mass, and indicate the distance between their respective center-of-mass.</p></li>
-<li><p>Apply Newton’s 2nd law of motion to each mass to determine how it will move.</p></li>
+<li><p>Apply Newton’s second law of motion to each mass to determine how it will move.</p></li>
 </ol>
 </div>
 </section>
@@ -695,7 +711,7 @@ document.write(`
 <p class="sd-card-text">Because the two payload vehicles have equal mass, we set <span class="math notranslate nohighlight">\(m_1 = m_2 = m\)</span>, so the force becomes</p>
 <div class="math notranslate nohighlight">
 \[ F = G \frac{m^2}{r^2}. \]</div>
-<p class="sd-card-text">The acceleration of either vehicle is then found from Newton’s 2nd law. Since each vehicle experiences the same force and has the same mass, the acceleration of either one is</p>
+<p class="sd-card-text">The acceleration of either vehicle is then found from Newton’s second law. Since each vehicle experiences the same force and has the same mass, the acceleration of either one is</p>
 <div class="math notranslate nohighlight">
 \[ a = \frac{F}{m} = \frac{Gm}{r^2} \]</div>
 <p class="sd-card-text">This expression gives the initial acceleration when the separation is <span class="math notranslate nohighlight">\(r_i = 10.0\ {\rm m}\)</span> and the final acceleration just before contact when the separation is <span class="math notranslate nohighlight">\(r_f = 4.0\ {\rm m}\)</span>.  The initial gravitational force is found by substituting <span class="math notranslate nohighlight">\(m = 9000\ {\rm kg}\)</span> and <span class="math notranslate nohighlight">\(r_i = 10.0\ {\rm m}\)</span>:</p>
@@ -716,13 +732,13 @@ a_i &amp;= \frac{F_i}{m} = \frac{5.40\times10^{-5}\ {\rm N}}{9000\ {\rm kg}}, \\
 <p class="sd-card-text">Solving for the final acceleration gives</p>
 <div class="math notranslate nohighlight">
 \[ a_f = a_i \left(\frac{r_i}{r_f}\right)^2. \]</div>
-<p class="sd-card-text">Substituting the numerical values gives</p>
+<p class="sd-card-text">The numerical value follows by evaluating the expression with the given values:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 a_f &amp;= (6.00\times10^{-9}\ {\rm m/s^2})\left(\frac{10.0\ {\rm m}}{4.0\ {\rm m}}\right)^2 \\
     &amp;= 3.75\times10^{-8}\ {\rm m/s^2}.
 \end{align*}\]</div>
-<p class="sd-card-text">To estimate the motion, we use the average of the initial and final accelerations: <span class="math notranslate nohighlight">\( a_{\rm avg} = \frac{a_i + a_f}{2}.\)</span> Substituting the two values gives</p>
+<p class="sd-card-text">To estimate the motion, we use the average of the initial and final accelerations: <span class="math notranslate nohighlight">\( a_{\rm avg} = \frac{a_i + a_f}{2}.\)</span> The average acceleration follows from these two values:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 a_{\rm avg} &amp;= \frac{6.00\times10^{-9}\ {\rm m/s^2} + 3.75\times10^{-8}\ {\rm m/s^2}}{2}, \\
@@ -807,7 +823,7 @@ t &amp;= \frac{3.61\times10^{-4}\ {\rm m/s}}{2.17\times10^{-8}\ {\rm m/s^2}}, \\
 <p class="sd-card-text">Because the two galaxies are taken to have equal mass, we set <span class="math notranslate nohighlight">\(m_1 = m_2 = m\)</span>. The magnitude of the gravitational force between two masses separated by a distance <span class="math notranslate nohighlight">\(r\)</span> is given by Newton’s law of gravitation,</p>
 <div class="math notranslate nohighlight">
 \[ F = G \frac{m^2}{r^2}. \]</div>
-<p class="sd-card-text">The acceleration of the Milky Way then follows from Newton’s 2nd law, where we can substitute the expression for the gravitational force to get</p>
+<p class="sd-card-text">The acceleration of the Milky Way then follows from Newton’s second law, where we can substitute the expression for the gravitational force to get</p>
 <div class="math notranslate nohighlight">
 \[
 a = \frac{Gm}{r^2}.
@@ -871,10 +887,10 @@ a = 1.9\times10^{-13}\ {\rm m/s^2}.
 <h2><span class="section-number">13.2. </span>Gravitation Near Earth’s Surface<a class="headerlink" href="#gravitation-near-earth-s-surface" title="Link to this heading">#</a></h2>
 <section id="weight">
 <h3><span class="section-number">13.2.1. </span>Weight<a class="headerlink" href="#weight" title="Link to this heading">#</a></h3>
-<p>Recall that the acceleration of a free-falling object near Earth’s surface is approximately <span class="math notranslate nohighlight">\(9.81\ {\rm m/s^2}\)</span>.  The force causing this acceleration is called the weight of the object, where we previously found that it has a value <span class="math notranslate nohighlight">\(w=mg\)</span> from Newton’s 2nd law.  The weight is present regardless of whether the object is in free fall or not.</p>
+<p>Recall that the acceleration of a free-falling object near Earth’s surface is approximately <span class="math notranslate nohighlight">\(9.81\ {\rm m/s^2}\)</span>.  The force causing this acceleration is called the weight of the object, where we previously found that it has a value <span class="math notranslate nohighlight">\(w=mg\)</span> from Newton’s second law.  The weight is present regardless of whether the object is in free fall or not.</p>
 <p>We now know the weight is caused by the gravitational force between the object of mass <span class="math notranslate nohighlight">\(m\)</span> and the Earth of mass <span class="math notranslate nohighlight">\(M_\oplus\)</span>.  If we equate the measured weight with the expected gravitational force, we can arrive at a scalar equation because both forces act in the same radial direction <span class="math notranslate nohighlight">\(\hat{r}\)</span>.  The scalar equation is given as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-cbf5bd86-0b42-4e92-af93-1498c842321f">
-<span class="eqno">(13.2)<a class="headerlink" href="#equation-cbf5bd86-0b42-4e92-af93-1498c842321f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-13b1c6f9-af2e-4b8b-becc-61a745c8362d">
+<span class="eqno">(13.2)<a class="headerlink" href="#equation-13b1c6f9-af2e-4b8b-becc-61a745c8362d" title="Permalink to this equation">#</a></span>\[\begin{align}
 mg &amp;= \frac{GM_\oplus m}{(R_\oplus + h)^2}, \\[6pt]
 &amp;= \frac{GM_\oplus m}{r^2},
 \end{align}\]</div>
@@ -885,7 +901,7 @@ mg &amp;= \frac{GM_\oplus m}{(R_\oplus + h)^2}, \\[6pt]
 <figure class="align-default" id="earth-com-example">
 <img alt="Earth center of mass example" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/477c798ef3354d4f193f7323b157dd85c747e81c" />
 <figcaption>
-<p><span class="caption-number">Fig. 13.3 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#earth-com-example" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 13.3 </span><span class="caption-text">For a spherically symmetric Earth, the gravitational force outside the planet acts as though Earth’s mass were concentrated at its center. This is why the distance <span class="math notranslate nohighlight">\(r\)</span> in Newton’s law is measured from the center of Earth. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/13-2-gravitation-near-earths-surface">Gravitation Near Earth’s Surface</a>.</span><a class="headerlink" href="#earth-com-example" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <section id="example-problem-mass-of-the-earth-and-moon">
@@ -983,8 +999,8 @@ g_M &amp;= (9.81\ {\rm m/s^2})\left(\frac{1}{75}\right)\left(\frac{6.37\times10^
 \[ \frac{g_{\rm ISS}}{g} = \left(\frac{R_\oplus}{r}\right)^2. \]</div>
 <p class="sd-card-text">The orbital radius is <span class="math notranslate nohighlight">\( r = R_\oplus + h.\)</span>  Substituting into the ratio gives</p>
 <div class="math notranslate nohighlight">
-\[ g_{\rm ISS} = g \left(\frac{R_\oplus}{R_E\oplus + h}\right)^2. \]</div>
-<p class="sd-card-text">Substituting the numerical values gives</p>
+\[ g_{\rm ISS} = g \left(\frac{R_\oplus}{R_\oplus + h}\right)^2. \]</div>
+<p class="sd-card-text">The numerical value follows by evaluating the expression with the given values:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 g &amp;= (9.81\ {\rm m/s^2})\left(\frac{6.37\times10^3\ {\rm km}}{6.37\times10^3\ {\rm km} + 400\ {\rm km}}\right)^2 \\
@@ -1006,7 +1022,7 @@ g &amp;= (9.81\ {\rm m/s^2})\left(\frac{6.37\times10^3\ {\rm km}}{6.37\times10^3
 <span class="c1"># Compute g at altitude</span>
 <span class="n">g_ISS</span> <span class="o">=</span> <span class="n">g</span> <span class="o">*</span> <span class="p">(</span><span class="n">R_E</span> <span class="o">/</span> <span class="p">(</span><span class="n">R_E</span> <span class="o">+</span> <span class="n">h</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The gravitational acceleration at 400 km altitude is </span><span class="si">{</span><span class="n">g</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> m/s^2.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The gravitational acceleration at 400 km altitude is </span><span class="si">{</span><span class="n">g_ISS</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> m/s^2.&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1033,12 +1049,17 @@ g &amp;= (9.81\ {\rm m/s^2})\left(\frac{6.37\times10^3\ {\rm km}}{6.37\times10^3
 <span class="expanded">Hide code cell content</span>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.colors</span><span class="w"> </span><span class="kn">import</span> <span class="n">Normalize</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">rcParams</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.patches</span><span class="w"> </span><span class="kn">import</span> <span class="n">Circle</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">myst_nb</span><span class="w"> </span><span class="kn">import</span> <span class="n">glue</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="kn">from</span><span class="w"> </span><span class="nn">myst_nb</span><span class="w"> </span><span class="kn">import</span> <span class="n">glue</span>
+<span class="k">except</span> <span class="ne">ModuleNotFoundError</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">glue</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">None</span>
 
 <span class="kn">from</span><span class="w"> </span><span class="nn">PIL</span><span class="w"> </span><span class="kn">import</span> <span class="n">Image</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
@@ -1047,8 +1068,8 @@ g &amp;= (9.81\ {\rm m/s^2})\left(\frac{6.37\times10^3\ {\rm km}}{6.37\times10^3
 <span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">})</span>
 
 <span class="n">G</span> <span class="o">=</span> <span class="mi">4</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">**</span><span class="mi">2</span>
-<span class="n">M</span> <span class="o">=</span> <span class="mf">3.003e-6</span> <span class="c1">#mass of Earth (in M_sun)</span>
-<span class="n">R_earth</span> <span class="o">=</span> <span class="mf">4.26e-5</span> <span class="c1">#Radius of Earth (in AU)</span>
+<span class="n">M</span> <span class="o">=</span> <span class="mf">3.003e-6</span>        <span class="c1"># Mass of Earth in solar masses</span>
+<span class="n">R_earth</span> <span class="o">=</span> <span class="mf">4.26e-5</span>  <span class="c1"># Radius of Earth in AU</span>
 
 <span class="n">fs</span> <span class="o">=</span> <span class="s1">&#39;large&#39;</span>
 <span class="n">lim</span> <span class="o">=</span> <span class="mf">2.3</span>
@@ -1105,23 +1126,26 @@ g &amp;= (9.81\ {\rm m/s^2})\left(\frac{6.37\times10^3\ {\rm km}}{6.37\times10^3
 <span class="n">cbar</span><span class="o">.</span><span class="n">set_label</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$|\vec</span><span class="si">{g}</span><span class="s1">|\ (g_{\rm surf})$&#39;</span><span class="p">)</span>
 <span class="n">cbar</span><span class="o">.</span><span class="n">ax</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">,</span> <span class="n">which</span><span class="o">=</span><span class="s1">&#39;major&#39;</span><span class="p">,</span> <span class="n">labelsize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 
-<span class="c1">#Clip Earth image from Wikipedia to a circle</span>
-<span class="n">img</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s2">&quot;Earth_Western_Hemisphere.jpg&quot;</span><span class="p">)</span>
-<span class="n">img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
-<span class="c1"># Create alpha channel: make near-black pixels transparent</span>
-<span class="n">threshold</span> <span class="o">=</span> <span class="mi">20</span>
-<span class="n">mask</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">img</span> <span class="o">&lt;</span> <span class="n">threshold</span><span class="p">,</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">rgba</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dstack</span><span class="p">((</span><span class="n">img</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">[:</span><span class="mi">2</span><span class="p">])</span> <span class="o">*</span> <span class="mi">255</span><span class="p">))</span>
-<span class="n">rgba</span><span class="p">[</span><span class="n">mask</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># set alpha=0 where black</span>
-<span class="n">img</span> <span class="o">=</span> <span class="n">rgba</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
-<span class="c1"># draw image so it fills the square from x=-1..1 and y=-1..1</span>
-<span class="n">im</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">extent</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mf">1.15</span><span class="p">,</span> <span class="mf">1.15</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.15</span><span class="p">,</span> <span class="mf">1.15</span><span class="p">],</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-<span class="c1"># clip the image to a circle of radius 1 centered at (0, 0)</span>
-<span class="n">clip</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">1</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transData</span><span class="p">)</span>
-<span class="n">im</span><span class="o">.</span><span class="n">set_clip_path</span><span class="p">(</span><span class="n">clip</span><span class="p">)</span>
-<span class="c1"># optional: add a visible circular edge</span>
-<span class="c1"># edge = Circle((0, 0), 1, facecolor=&#39;none&#39;, edgecolor=&#39;black&#39;, linewidth=1.5, zorder=6)</span>
-<span class="c1"># ax.add_patch(edge)</span>
+<span class="c1"># Draw Earth, using the local image if it is available</span>
+<span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s2">&quot;Earth_Western_Hemisphere.jpg&quot;</span><span class="p">):</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s2">&quot;Earth_Western_Hemisphere.jpg&quot;</span><span class="p">)</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+
+    <span class="c1"># Create alpha channel so near-black pixels are transparent</span>
+    <span class="n">threshold</span> <span class="o">=</span> <span class="mi">20</span>
+    <span class="n">image_mask</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">img</span> <span class="o">&lt;</span> <span class="n">threshold</span><span class="p">,</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">rgba</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dstack</span><span class="p">((</span><span class="n">img</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">[:</span><span class="mi">2</span><span class="p">])</span> <span class="o">*</span> <span class="mi">255</span><span class="p">))</span>
+    <span class="n">rgba</span><span class="p">[</span><span class="n">image_mask</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">rgba</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
+
+    <span class="c1"># Draw and clip the image to a circle of radius 1</span>
+    <span class="n">im</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">extent</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mf">1.15</span><span class="p">,</span> <span class="mf">1.15</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.15</span><span class="p">,</span> <span class="mf">1.15</span><span class="p">],</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+    <span class="n">clip</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">1</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transData</span><span class="p">)</span>
+    <span class="n">im</span><span class="o">.</span><span class="n">set_clip_path</span><span class="p">(</span><span class="n">clip</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="c1"># Fallback if the image file is not available</span>
+    <span class="n">earth_disk</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">1</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s2">&quot;0.85&quot;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">earth_disk</span><span class="p">)</span>
 
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="n">lim</span><span class="p">,</span> <span class="n">lim</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="n">lim</span><span class="p">,</span> <span class="n">lim</span><span class="p">)</span>
@@ -1154,15 +1178,15 @@ g &amp;= (9.81\ {\rm m/s^2})\left(\frac{6.37\times10^3\ {\rm km}}{6.37\times10^3
 <figure class="align-default" id="gravity-centripetal-example">
 <img alt="Weight accounting for Earth's rotation" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/d6b661f9647a7791d26c5da545c69afbfa2dca97" />
 <figcaption>
-<p><span class="caption-number">Fig. 13.5 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#gravity-centripetal-example" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 13.5 </span><span class="caption-text">At the equator, part of gravity supplies the centripetal acceleration needed for circular motion with Earth’s rotation. Away from the equator, the normal force is not exactly radial because the required centripetal acceleration points toward the rotation axis. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/13-2-gravitation-near-earths-surface">Gravitation Near Earth’s Surface</a>.</span><a class="headerlink" href="#gravity-centripetal-example" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>With rotation, the sum of these forces must provide the centripetal acceleration <span class="math notranslate nohighlight">\(a_c\)</span>.  Using Newton’s 2nd law, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-fe77283e-f45b-42e1-a880-80dd5cd62bf9">
-<span class="eqno">(13.4)<a class="headerlink" href="#equation-fe77283e-f45b-42e1-a880-80dd5cd62bf9" title="Permalink to this equation">#</a></span>\[\begin{align} 
+<p>With rotation, the sum of these forces must provide the centripetal acceleration <span class="math notranslate nohighlight">\(a_c\)</span>.  Using Newton’s second law, we have</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*} 
 \sum F &amp;= F_{\rm SE} - mg = ma_c, \\
 &amp;=-\frac{mv^2}{r}.
-\end{align}\]</div>
+\end{align*}\]</div>
 <p>The centripetal acceleration <span class="math notranslate nohighlight">\(a_c = -\frac{v^2}{r}\)</span> points in the same direction as the weight; hence, it is negative.  The tangential speed <span class="math notranslate nohighlight">\(v\)</span> is the speed at the equator and <span class="math notranslate nohighlight">\(r = R_\oplus\)</span>.</p>
 <p>We can calculate the speed simply by noting that objects on the equator travel the circumference of Earth in 24 hours.  Recall that the tangential speed is related to the angular speed <span class="math notranslate nohighlight">\(\omega\)</span> by <span class="math notranslate nohighlight">\(v = r\omega\)</span>, and <span class="math notranslate nohighlight">\(a_c = -r\omega^2\)</span>.  Therefore, we can write the force in terms of the angular speed by</p>
 <div class="math notranslate nohighlight">
@@ -1208,7 +1232,7 @@ v &amp;= \sqrt{(9.81\ {\rm m/s^2})(6.37\times10^6\ {\rm m})}, \\
 <p class="sd-card-text">Solving for the period gives</p>
 <div class="math notranslate nohighlight">
 \[ T = \frac{2\pi R_\oplus}{v}.\]</div>
-<p class="sd-card-text">Substituting the numerical values gives</p>
+<p class="sd-card-text">The numerical value follows by evaluating the expression with the given values:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 T &amp;= \frac{2\pi(6.37\times10^6\ {\rm m})}{7910\ {\rm m/s}} \\
@@ -1266,10 +1290,14 @@ g &amp;= \frac{GM_r}{r^2} = \frac{4}{3}G\rho\pi r.
 <figure class="align-default" id="gravity-inside-earth">
 <img alt="gravity inside Earth" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/2a2cdd002f5f22425a1203706f3e956ed8f66b01" />
 <figcaption>
-<p><span class="caption-number">Fig. 13.6 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#gravity-inside-earth" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 13.6 </span><span class="caption-text">Inside Earth, only the mass enclosed within a smaller radius contributes to the gravitational field at that radius. The idealized linear trend applies to a uniform-density Earth, while the actual curve differs because Earth’s density varies with depth. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/13-2-gravitation-near-earths-surface">Gravitation Near Earth’s Surface</a>.</span><a class="headerlink" href="#gravity-inside-earth" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The second interesting case concerns living on a spherical shell planet.  This scenario has been proposed in many science fiction stories.  Ignoring significant engineering issues, the shell could be constructed with a desired radius and total mass to mimic Earth’s surface gravity <span class="math notranslate nohighlight">\(g\)</span>.</p>
+<div class="tip margin checkpoint admonition">
+<p class="admonition-title">Checkpoint</p>
+<p>At the height of the ISS, is gravity almost gone, or is the ISS mainly in continuous free fall? Explain briefly.</p>
+</div>
 </section>
 </section>
 <section id="gravitational-potential-energy-and-total-energy">
@@ -1282,7 +1310,7 @@ g &amp;= \frac{GM_r}{r^2} = \frac{4}{3}G\rho\pi r.
 <figure class="align-default" id="earth-gravity-potential">
 <img alt="gravitational potential energy" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/6ffbf9c2692e50a59a890ab51a8e4c80c1e1bdc3" />
 <figcaption>
-<p><span class="caption-number">Fig. 13.7 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#earth-gravity-potential" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 13.7 </span><span class="caption-text">The gravitational potential energy becomes less negative as an object moves farther from Earth. The zero of potential energy is chosen at infinite separation, so bound systems have negative total energy. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/13-3-gravitational-potential-energy-and-total-energy">Gravitational Potential Energy and Total Energy</a>.</span><a class="headerlink" href="#earth-gravity-potential" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>In Fig. <a class="reference internal" href="#earth-gravity-potential"><span class="std std-numref">13.7</span></a>, we take <span class="math notranslate nohighlight">\(m\)</span> from a distance <span class="math notranslate nohighlight">\(r_1\)</span> to a distance <span class="math notranslate nohighlight">\(r_2\)</span>, where both radii are measured relative to Earth’s center.  Gravity is a conservative force, so we can take any path we wish and the result for the calculation of the work is the same.  Therefore,</p>
@@ -1294,15 +1322,15 @@ g &amp;= \frac{GM_r}{r^2} = \frac{4}{3}G\rho\pi r.
 <div class="math notranslate nohighlight">
 \[ E = K_1 + U_1 = K_2 + U_2. \]</div>
 <p>Along the arc, <span class="math notranslate nohighlight">\(\vec{F}\)</span> is perpendicular to <span class="math notranslate nohighlight">\(d\vec{r}\)</span>, so <span class="math notranslate nohighlight">\(\vec{F}\cdot d\vec{r} = 0\)</span>.  No work is done as we move along the arc.  Using the expression for the gravitational force and noting the values for <span class="math notranslate nohighlight">\(\vec{F}\cdot d\vec{r}\)</span> along the two paths we have</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
+<div class="amsmath math notranslate nohighlight" id="equation-8a77007b-baba-48f7-92a3-d5dc5c5d062e">
+<span class="eqno">(13.4)<a class="headerlink" href="#equation-8a77007b-baba-48f7-92a3-d5dc5c5d062e" title="Permalink to this equation">#</a></span>\[\begin{align}
 \Delta U &amp;= - \int_{r_1}^{r_2} \vec{F}\cdot d\vec{r} = GM_\oplus m \int_{r_1}^{r_2} \frac{dr}{r^2}, \\
 &amp;=  -GM_\oplus m\left(\frac{1}{r}\right)\bigg\vert_{r_1}^{r_2} = -GM_\oplus m\left(\frac{1}{r_2}-\frac{1}{r_1}\right), \\
 &amp;= GM_\oplus m\left(\frac{1}{r_1}-\frac{1}{r_2}\right).
-\end{align*}\]</div>
+\end{align}\]</div>
 <p>Since <span class="math notranslate nohighlight">\(\Delta U = U_2 - U_1\)</span>, we can adopt a simple expression for the potential energy function <span class="math notranslate nohighlight">\(U(r)\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-4cae0141-252c-4a93-bc0a-ddc0597331db">
-<span class="eqno">(13.5)<a class="headerlink" href="#equation-4cae0141-252c-4a93-bc0a-ddc0597331db" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-1a001350-2105-4b44-bbc8-c7e7521227d0">
+<span class="eqno">(13.5)<a class="headerlink" href="#equation-1a001350-2105-4b44-bbc8-c7e7521227d0" title="Permalink to this equation">#</a></span>\[\begin{align}
 U(r) = -\frac{GM_\oplus m}{r}.
 \end{align}\]</div>
 <div class="admonition note">
@@ -1389,8 +1417,8 @@ U = -\frac{GM_\oplus m}{r}.
 <section id="conservation-of-energy">
 <h3><span class="section-number">13.3.2. </span>Conservation of Energy<a class="headerlink" href="#conservation-of-energy" title="Link to this heading">#</a></h3>
 <p>In <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter08/potential-energy-conservation.html">Chapter 8</a>, we described how to apply conservation of energy for systems with conservative forces.  We solved some problems involving gravity using the conservation of energy, where similar principles and strategies can be applied here.  The only change is use the more general expression for the gravitational potential energy function <span class="math notranslate nohighlight">\(U(r)\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-201dc360-cad3-471b-8367-7fb26ece57bf">
-<span class="eqno">(13.6)<a class="headerlink" href="#equation-201dc360-cad3-471b-8367-7fb26ece57bf" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-3a6ebd48-5f40-4aca-89a4-d9b36af873df">
+<span class="eqno">(13.6)<a class="headerlink" href="#equation-3a6ebd48-5f40-4aca-89a4-d9b36af873df" title="Permalink to this equation">#</a></span>\[\begin{align}
 K_i + U_i &amp;= K_f + U_f, \\
 \frac{1}{2}m_1(v_1^2)^i - \frac{Gm_2m_1}{r_{12}^i} &amp;= \frac{1}{2}m_1(v_1^2)^f - \frac{Gm_2m_1}{r_{12}^f},\\
 (v_1^2)^i - \frac{2Gm_2}{r_{12}^i} &amp;= (v_1^2)^f - \frac{2Gm_2}{r_{12}^f}, \\
@@ -1405,8 +1433,8 @@ K_i + U_i &amp;= K_f + U_f, \\
 <p>The <em>minimum</em> initial velocity of an object where it can escape the surface of a large body (i.e., the Earth) is called the <strong>escape velocity</strong>.  We assume that no energy is lost to an atmosphere, so this just the ideal case.</p>
 <p>Consider an object with a positive launch velocity directed away from the Earth.  With the <em>minimum</em> velocity needed for escape, the object would come to rest once it is infinitely far away (i.e., where the force of gravity becomes negligible or the gravitational potential <span class="math notranslate nohighlight">\(U(r)\)</span> goes to zero).  Since <span class="math notranslate nohighlight">\(\displaystyle \lim_{r\rightarrow \infty} U_g(r) = 0\)</span>, this means that the total energy is also zero.</p>
 <p>Thus, we find the escape velocity from the surface of an astronomical body of mass <span class="math notranslate nohighlight">\(m_2\)</span> and radius <span class="math notranslate nohighlight">\(R\)</span> by setting the total energy equal to zero.  At the surface of the body, the object is located at <span class="math notranslate nohighlight">\(r_{12}^i = R\)</span> and it has an escape velocity <span class="math notranslate nohighlight">\(v_1^i = v_{\rm esc}\)</span>.  It reaches <span class="math notranslate nohighlight">\(r_{12}^f = \infty\)</span> with a velocity <span class="math notranslate nohighlight">\(v_1^f = 0\)</span>.  Substituting into our conservation of energy equation, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-550f3c31-2c0f-4be5-b836-3812076f61c2">
-<span class="eqno">(13.7)<a class="headerlink" href="#equation-550f3c31-2c0f-4be5-b836-3812076f61c2" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-59af2bb3-7160-49ab-8917-564765b8e430">
+<span class="eqno">(13.7)<a class="headerlink" href="#equation-59af2bb3-7160-49ab-8917-564765b8e430" title="Permalink to this equation">#</a></span>\[\begin{align}
 K_i + U_i &amp;= K_f + U_f, \\
 v_{\rm esc}^2 - 0 &amp;=  \frac{2Gm_2}{R}- \frac{2Gm_2}{\infty}, \\
 v_{\rm esc} &amp;= \sqrt{\frac{2Gm_2}{R}}.
@@ -1504,16 +1532,14 @@ v_{\rm esc} &amp;= \sqrt{\frac{2Gm_2}{R}}.
 <summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
 <span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
 <p class="sd-card-text"><strong>The Model</strong></p>
-<p class="sd-card-text">Escape speed is found by equating kinetic energy with gravitational potential energy. The key point is that <strong>the mass and distance must always correspond to the same central body</strong>. For Earth, we use <span class="math notranslate nohighlight">\(M_\oplus\)</span> and <span class="math notranslate nohighlight">\(R_\oplus\)</span>. For the Sun (at Earth’s orbit), we use <span class="math notranslate nohighlight">\(M_\odot\)</span> and <span class="math notranslate nohighlight">\(a_\oplus\)</span>, where <span class="math notranslate nohighlight">\(a_\oplus\)</span> is Earth’s orbital radius (its semimajor axis).</p>
-<p class="sd-card-text">After computing the escape speed directly, we show how ratios allow us to relate escape speeds at different locations without recomputing everything from scratch.</p>
+<p class="sd-card-text">Escape speed is found by equating kinetic energy with gravitational potential energy. The mass and distance must always correspond to the same central body. For escape from Earth’s surface, the central body is Earth, so we use <span class="math notranslate nohighlight">\(M_\oplus\)</span> and <span class="math notranslate nohighlight">\(R_\oplus\)</span>. For escape from the Sun starting at Earth’s orbit, the central body is the Sun, so we use <span class="math notranslate nohighlight">\(M_\odot\)</span> and <span class="math notranslate nohighlight">\(a_\oplus\)</span>, where <span class="math notranslate nohighlight">\(a_\oplus\)</span> is Earth’s semimajor axis.</p>
+<p class="sd-card-text">After computing the escape speed directly, we compare the two escape speeds with a ratio so you can see how the result scales with central mass and distance.</p>
 <hr class="docutils" />
 <p class="sd-card-text"><strong>The Math</strong></p>
-<p class="sd-card-text">Starting from energy conservation, the escape speed from a distance <span class="math notranslate nohighlight">\(r\)</span> from a mass <span class="math notranslate nohighlight">\(M\)</span> is</p>
+<p class="sd-card-text">Starting from energy conservation, the escape speed from a distance <span class="math notranslate nohighlight">\(r\)</span> from a central mass <span class="math notranslate nohighlight">\(M\)</span> is</p>
 <div class="math notranslate nohighlight">
-\[
-v_{\rm esc} = \sqrt{\frac{2GM}{r}}.
-\]</div>
-<p class="sd-card-text">For Earth, the escape speed from its surface is</p>
+\[ v_{\rm esc} = \sqrt{\frac{2GM}{r}}. \]</div>
+<p class="sd-card-text">For escape from Earth’s surface, the central mass is <span class="math notranslate nohighlight">\(M_\oplus\)</span> and the distance from the central body is <span class="math notranslate nohighlight">\(R_\oplus\)</span>:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 v_{{\rm esc},\oplus} &amp;= \sqrt{\frac{2GM_\oplus}{R_\oplus}} \\
@@ -1521,26 +1547,24 @@ v_{{\rm esc},\oplus} &amp;= \sqrt{\frac{2GM_\oplus}{R_\oplus}} \\
 {6.37\times10^6\ {\rm m}}} \\
 &amp;= 11.2\ {\rm km/s}.
 \end{align*}\]</div>
-<p class="sd-card-text">Now consider escape from the Sun, starting at Earth’s orbit. The relevant distance is the Earth–Sun separation, <span class="math notranslate nohighlight">\(a_\oplus\)</span>, so</p>
+<p class="sd-card-text">For escape from the Sun starting at Earth’s orbit, the central mass is <span class="math notranslate nohighlight">\(M_\odot\)</span> and the distance from the central body is <span class="math notranslate nohighlight">\(a_\oplus\)</span>:</p>
 <div class="math notranslate nohighlight">
-\[
-v_{{\rm esc},\odot} = \sqrt{\frac{2GM_\odot}{a_\oplus}}.
-\]</div>
-<p class="sd-card-text">Rather than computing this directly, we form a ratio with Earth’s escape speed:</p>
+\[ v_{{\rm esc},\odot} = \sqrt{\frac{2GM_\odot}{a_\oplus}}. \]</div>
+<p class="sd-card-text">The ratio of the solar escape speed at Earth’s orbit to the escape speed from Earth’s surface is</p>
 <div class="math notranslate nohighlight">
 \[
 \frac{v_{{\rm esc},\odot}}{v_{{\rm esc},\oplus}} 
 = \sqrt{\left(\frac{M_\odot}{M_\oplus}\right)\left(\frac{R_\oplus}{a_\oplus}\right)}.
 \]</div>
-<p class="sd-card-text">Substituting the values gives</p>
+<p class="sd-card-text">The numerical ratio follows from the central-body masses and their corresponding distances:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \frac{v_{{\rm esc},\odot}}{v_{{\rm esc},\oplus}} 
-&amp;= \sqrt{\left(\frac{1.99\times10^{30}}{5.96\times10^{24}}\right)
-\left(\frac{6.37\times10^6}{1.50\times10^{11}}\right)} \\
+&amp;= \sqrt{\left(\frac{1.99\times10^{30}\ {\rm kg}}{5.96\times10^{24}\ {\rm kg}}\right)
+\left(\frac{6.37\times10^6\ {\rm m}}{1.50\times10^{11}\ {\rm m}}\right)} \\
 &amp;= 3.76.
 \end{align*}\]</div>
-<p class="sd-card-text">Thus, the escape speed from the Sun at Earth’s orbit is</p>
+<p class="sd-card-text">The solar escape speed at Earth’s orbit is therefore</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 v_{{\rm esc},\odot} &amp;= (3.76)(11.2\ {\rm km/s}) \\
@@ -1548,10 +1572,10 @@ v_{{\rm esc},\odot} &amp;= (3.76)(11.2\ {\rm km/s}) \\
 \end{align*}\]</div>
 <hr class="docutils" />
 <p class="sd-card-text"><strong>The Conclusion</strong></p>
-<p class="sd-card-text">The escape speed from Earth’s surface is <span class="math notranslate nohighlight">\(11.2\ {\rm km/s}\)</span>. The escape speed from the Sun, starting from Earth’s orbit, is <span class="math notranslate nohighlight">\(42.1\ {\rm km/s}\)</span>, which is about <span class="math notranslate nohighlight">\(3.8\)</span> times larger.</p>
+<p class="sd-card-text">The escape speed from Earth’s surface is <span class="math notranslate nohighlight">\(11.2\ {\rm km/s}\)</span>. The escape speed from the Sun, starting from Earth’s orbit, is <span class="math notranslate nohighlight">\(42.1\ {\rm km/s}\)</span>, which is about <span class="math notranslate nohighlight">\(3.8\)</span> times larger. The comparison works only because each mass is paired with the appropriate distance from that central body.</p>
 <hr class="docutils" />
 <p class="sd-card-text"><strong>The Verification</strong></p>
-<p class="sd-card-text">The verification computes both escape speeds directly using <span class="math notranslate nohighlight">\(v_{\rm esc} = \sqrt{2GM/r}\)</span> and compares them to the ratio-based result.</p>
+<p class="sd-card-text">The verification computes both escape speeds directly using <span class="math notranslate nohighlight">\(v_{\rm esc} = \sqrt{2GM/r}\)</span> and then compares the ratio of the two results. This mirrors the analytical method and checks the central-body pairing used in the solution.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># Define constants</span>
@@ -1559,18 +1583,18 @@ v_{{\rm esc},\odot} &amp;= (3.76)(11.2\ {\rm km/s}) \\
 <span class="n">M_E</span> <span class="o">=</span> <span class="mf">5.96e24</span>          <span class="c1"># Mass of Earth in kg</span>
 <span class="n">M_sun</span> <span class="o">=</span> <span class="mf">1.99e30</span>        <span class="c1"># Mass of the Sun in kg</span>
 <span class="n">R_E</span> <span class="o">=</span> <span class="mf">6.37e6</span>           <span class="c1"># Radius of Earth in m</span>
-<span class="n">a_E</span> <span class="o">=</span> <span class="mf">1.50e11</span>          <span class="c1"># Earth&#39;s orbital radius (semimajor axis) in m</span>
+<span class="n">a_E</span> <span class="o">=</span> <span class="mf">1.50e11</span>          <span class="c1"># Earth&#39;s semimajor axis in m</span>
 
 <span class="c1"># Compute escape speeds directly</span>
 <span class="n">v_esc_E</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">G</span> <span class="o">*</span> <span class="n">M_E</span> <span class="o">/</span> <span class="n">R_E</span><span class="p">)</span>       <span class="c1"># Escape speed from Earth in m/s</span>
-<span class="n">v_esc_sun</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">G</span> <span class="o">*</span> <span class="n">M_sun</span> <span class="o">/</span> <span class="n">a_E</span><span class="p">)</span>   <span class="c1"># Escape speed from Sun at Earth&#39;s orbit in m/s</span>
+<span class="n">v_esc_sun</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">G</span> <span class="o">*</span> <span class="n">M_sun</span> <span class="o">/</span> <span class="n">a_E</span><span class="p">)</span>   <span class="c1"># Solar escape speed at Earth in m/s</span>
 
-<span class="c1"># Compute ratio</span>
-<span class="n">ratio</span> <span class="o">=</span> <span class="n">v_esc_sun</span> <span class="o">/</span> <span class="n">v_esc_E</span>
+<span class="c1"># Compute the ratio of escape speeds</span>
+<span class="n">speed_ratio</span> <span class="o">=</span> <span class="n">v_esc_sun</span> <span class="o">/</span> <span class="n">v_esc_E</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The escape speed from Earth&#39;s surface is </span><span class="si">{</span><span class="n">v_esc_E</span><span class="o">/</span><span class="mi">1000</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> km/s.&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The escape speed from the Sun at Earth&#39;s orbit is </span><span class="si">{</span><span class="n">v_esc_sun</span><span class="o">/</span><span class="mi">1000</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> km/s.&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The ratio of escape speeds is </span><span class="si">{</span><span class="n">ratio</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The ratio of escape speeds is </span><span class="si">{</span><span class="n">speed_ratio</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1652,21 +1676,21 @@ r_f = 2(1.50\times10^{11}\ {\rm m}) = 3.0\times10^{11}\ {\rm m}.
 <section id="circular-orbits">
 <h3><span class="section-number">13.4.1. </span>Circular Orbits<a class="headerlink" href="#circular-orbits" title="Link to this heading">#</a></h3>
 <p>Nicolaus Copernicus suggested that the planets orbit the Sun in circles, where determined the radii of these circles using the synodic and sidereal periods (see my <a class="reference external" href="https://saturnaxis.github.io/IntroAstro/Tutorials/motion-astronomical-bodies.html#orbital-periods">Introductory Astronomy Notes</a>).  Kepler was forced to abandon the assumption of circular orbits, where he showed that using elliptical orbits fit the data much better.  Most of the planets in the Solar System have nearly circular orbits, where the Earth’s orbital eccentricity is <span class="math notranslate nohighlight">\({\sim}0.0167\)</span>.  In contrast, the orbit of Mars and Mercury have an eccentricity of <span class="math notranslate nohighlight">\({\sim}0.1\)</span> and <span class="math notranslate nohighlight">\({\sim}0.2\)</span>, respectively.</p>
-<p>Determining the <strong>orbital speed</strong> and <strong>orbital period</strong> of a satellite can be more easily determined by first assuming that they have circular orbits.  Consider a satellite of mass <span class="math notranslate nohighlight">\(m\)</span> in a circular orbit about Earth at a distance <span class="math notranslate nohighlight">\(r\)</span> from the center of Earth (see Figure <a class="reference internal" href="#satellite-orbit"><span class="std std-numref">13.8</span></a>).  It has a centripetal acceleration directed toward Earth’s center and gravity is the only force.  Newton’s 2nd law can be used, which gives</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
+<p>Determining the <strong>orbital speed</strong> and <strong>orbital period</strong> of a satellite can be more easily determined by first assuming that they have circular orbits.  Consider a satellite of mass <span class="math notranslate nohighlight">\(m\)</span> in a circular orbit about Earth at a distance <span class="math notranslate nohighlight">\(r\)</span> from the center of Earth (see Figure <a class="reference internal" href="#satellite-orbit"><span class="std std-numref">13.8</span></a>).  It has a centripetal acceleration directed toward Earth’s center and gravity is the only force.  Newton’s second law can be used, which gives</p>
+<div class="amsmath math notranslate nohighlight" id="equation-560f6fe1-9887-4795-bfc0-13b5cdf61cf9">
+<span class="eqno">(13.9)<a class="headerlink" href="#equation-560f6fe1-9887-4795-bfc0-13b5cdf61cf9" title="Permalink to this equation">#</a></span>\[\begin{align}
 F_g &amp;= F_c, \\[6pt]
 \frac{GM_\oplus m}{r^2} &amp;= \frac{mv_{\rm orbit}^2}{r}.
-\end{align*}\]</div>
+\end{align}\]</div>
 <figure class="align-default" id="satellite-orbit" style="width: 500px">
 <img alt="satellite orbiting Earth" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/301922cf87eea7d10a0da283cf9b7432461bcdfc" />
 <figcaption>
-<p><span class="caption-number">Fig. 13.8 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#satellite-orbit" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 13.8 </span><span class="caption-text">A satellite in circular orbit continually falls toward Earth while moving sideways fast enough to keep missing the surface. Gravity supplies the inward centripetal acceleration required for the orbit. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/13-4-satellite-orbits-and-energy">Satellite Orbits and Energy</a>.</span><a class="headerlink" href="#satellite-orbit" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>We can solve for the speed of the orbit <span class="math notranslate nohighlight">\(v_{\rm orbit}\)</span> (note that <span class="math notranslate nohighlight">\(m\)</span> cancels) to get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9dd7a32a-0489-4e26-98b7-259f01e9758b">
-<span class="eqno">(13.9)<a class="headerlink" href="#equation-9dd7a32a-0489-4e26-98b7-259f01e9758b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-28b9c63d-5f92-46fb-83b2-b59368892448">
+<span class="eqno">(13.10)<a class="headerlink" href="#equation-28b9c63d-5f92-46fb-83b2-b59368892448" title="Permalink to this equation">#</a></span>\[\begin{align}
 v_{\rm orbit} = \sqrt{\frac{GM_\oplus}{r}}.
 \end{align}\]</div>
 <p>The value of <span class="math notranslate nohighlight">\(g\)</span>, the escape velocity, and the orbital velocity depend only on the distance from the center of the planet, and <em>not</em> upon the mass of the object.  Let’s compare the escape velocity (see Eqn. <a class="reference internal" href="#equation-escape-velocity">(13.8)</a>) to the orbital velocity through the ratio, assuming that <span class="math notranslate nohighlight">\(m_1 = M_\oplus\)</span> and <span class="math notranslate nohighlight">\(m_2 = m\)</span>.  Then, we have</p>
@@ -1681,8 +1705,8 @@ v_{\rm orbit} = \sqrt{\frac{GM_\oplus}{r}}.
 \[ v_{\rm orbit} = \frac{\Delta s}{\Delta t}, \]</div>
 <p>where <span class="math notranslate nohighlight">\(\Delta s\)</span> is the distance traveled along the circumference of the circle and <span class="math notranslate nohighlight">\(\Delta t\)</span> is the time it takes to traverse that distance.  In physics and astronomy, it is common to use the letter <span class="math notranslate nohighlight">\(T\)</span> for this time interval, partly because we’ve used <span class="math notranslate nohighlight">\(p\)</span> for momentum already and will use <span class="math notranslate nohighlight">\(P\)</span> for pressure later.</p>
 <p>For the satellite to complete one orbit in a time <span class="math notranslate nohighlight">\(T\)</span>, <span class="math notranslate nohighlight">\(\delta s\)</span> must be the circumference of the circle or <span class="math notranslate nohighlight">\(2\pi r\)</span>.  Now we can substitute this into our equation for orbital speed and solve for <span class="math notranslate nohighlight">\(T\)</span>.  Therefore we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-847093a2-219e-4bc3-a0cd-0ffba207fd53">
-<span class="eqno">(13.10)<a class="headerlink" href="#equation-847093a2-219e-4bc3-a0cd-0ffba207fd53" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-85eec5ed-8e4a-4d78-83ef-13ea6d2e68b2">
+<span class="eqno">(13.11)<a class="headerlink" href="#equation-85eec5ed-8e4a-4d78-83ef-13ea6d2e68b2" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{2\pi r}{T} &amp;= \sqrt{\frac{GM_\oplus}{r}} \quad \text{invert both sides} \Rightarrow
 \frac{T}{2\pi r} &amp;= \sqrt{\frac{r}{GM_\oplus}}, \\
 T &amp;= 2\pi\sqrt{\frac{r^3}{GM_\oplus}}, \\
@@ -1692,6 +1716,10 @@ T^2 &amp;= \frac{4\pi^2}{GM_\oplus}r^3.
 <p>To achieve a circular orbit, Newton described in his <em>Principia</em> a thought experiment, where a cannon was set on top of a tall tower and fired the cannonball.  In <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter04/motion-in-2D-3D.html#projectile-motion">Chapter 4</a>, we say this as projectile motion.  However, his though was to increase the initial velocity <span class="math notranslate nohighlight">\(v_o\)</span> incrementally and orient the cannon to fire horizontally.</p>
 <p>As you increase the speed of the cannonball, you would notice that our expectation of a parabolic trajectory begins to break.  The cannon goes farther and farther, until it curves around the Earth.  At this point, it achieves the necessary speed to be in a circular orbit.</p>
 <p>The figure below demonstrates this by placing a cannon at <span class="math notranslate nohighlight">\({\sim}955\ {\rm km}\)</span> above Earth’s surface and firing a cannon at various speeds.  <em>This is a thought experiment, so complete realism is not required.</em>  Once the cannon is fired at <span class="math notranslate nohighlight">\({\sim}7.4\ {\rm km/s}\)</span> (i..e., the circular velocity for the given height), then the cannonball can be in a circular orbit (in red).  If you keep going, then the orbit is more elliptical.  Until you reach the escape speed and the trajectory no longer bends back towards the Earth (i.e., it becomes unbound).</p>
+<div class="tip margin checkpoint admonition">
+<p class="admonition-title">Checkpoint</p>
+<p>In a circular orbit, is centripetal force a new force, or is gravity providing the inward net force?</p>
+</div>
 <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -1699,8 +1727,10 @@ T^2 &amp;= \frac{4\pi^2}{GM_\oplus}r^3.
 <span class="expanded">Hide code cell source</span>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.patches</span><span class="w"> </span><span class="kn">import</span> <span class="n">Circle</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">scipy.integrate</span><span class="w"> </span><span class="kn">import</span> <span class="n">solve_ivp</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">scipy.constants</span><span class="w"> </span><span class="kn">import</span> <span class="n">G</span>
 
@@ -1710,8 +1740,8 @@ T^2 &amp;= \frac{4\pi^2}{GM_\oplus}r^3.
 <span class="c1"># -------------------------</span>
 <span class="c1"># Constants</span>
 <span class="c1"># -------------------------</span>
-<span class="n">M_E</span> <span class="o">=</span> <span class="mf">5.972e24</span> <span class="c1">#Earth mass (in kg)</span>
-<span class="n">R_E</span> <span class="o">=</span> <span class="mf">6371e3</span> <span class="c1">#Earth radius (in m)</span>
+<span class="n">M_E</span> <span class="o">=</span> <span class="mf">5.972e24</span>          <span class="c1"># Earth mass in kg</span>
+<span class="n">R_E</span> <span class="o">=</span> <span class="mf">6371e3</span>            <span class="c1"># Earth radius in m</span>
 <span class="n">mu</span> <span class="o">=</span> <span class="n">G</span> <span class="o">*</span> <span class="n">M_E</span>
 <span class="c1"># -------------------------</span>
 <span class="c1"># Launch setup</span>
@@ -1754,20 +1784,26 @@ T^2 &amp;= \frac{4\pi^2}{GM_\oplus}r^3.
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span><span class="n">dpi</span><span class="o">=</span><span class="mi">120</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span><span class="n">zorder</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 
-<span class="c1">#Clip Earth image from Wikipedia to a circle</span>
-<span class="n">img</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s2">&quot;Earth_Western_Hemisphere.jpg&quot;</span><span class="p">)</span>
-<span class="n">img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
-<span class="c1"># Create alpha channel: make near-black pixels transparent</span>
-<span class="n">threshold</span> <span class="o">=</span> <span class="mi">20</span>
-<span class="n">mask</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">img</span> <span class="o">&lt;</span> <span class="n">threshold</span><span class="p">,</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">rgba</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dstack</span><span class="p">((</span><span class="n">img</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">[:</span><span class="mi">2</span><span class="p">])</span> <span class="o">*</span> <span class="mi">255</span><span class="p">))</span>
-<span class="n">rgba</span><span class="p">[</span><span class="n">mask</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># set alpha=0 where black</span>
-<span class="n">img</span> <span class="o">=</span> <span class="n">rgba</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
-<span class="c1"># draw image so it fills the square from x=-1..1 and y=-1..1</span>
-<span class="n">im</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">extent</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mf">1.15</span><span class="p">,</span> <span class="mf">1.15</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.15</span><span class="p">,</span> <span class="mf">1.15</span><span class="p">],</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-<span class="c1"># clip the image to a circle of radius 1 centered at (0, 0)</span>
-<span class="n">clip</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">1</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transData</span><span class="p">)</span>
-<span class="n">im</span><span class="o">.</span><span class="n">set_clip_path</span><span class="p">(</span><span class="n">clip</span><span class="p">)</span>
+<span class="c1"># Draw Earth, using the local image if it is available</span>
+<span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s2">&quot;Earth_Western_Hemisphere.jpg&quot;</span><span class="p">):</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s2">&quot;Earth_Western_Hemisphere.jpg&quot;</span><span class="p">)</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+
+    <span class="c1"># Create alpha channel so near-black pixels are transparent</span>
+    <span class="n">threshold</span> <span class="o">=</span> <span class="mi">20</span>
+    <span class="n">image_mask</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">img</span> <span class="o">&lt;</span> <span class="n">threshold</span><span class="p">,</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">rgba</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dstack</span><span class="p">((</span><span class="n">img</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">[:</span><span class="mi">2</span><span class="p">])</span> <span class="o">*</span> <span class="mi">255</span><span class="p">))</span>
+    <span class="n">rgba</span><span class="p">[</span><span class="n">image_mask</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">rgba</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
+
+    <span class="c1"># Draw and clip the image to a circle of radius 1</span>
+    <span class="n">im</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">extent</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mf">1.15</span><span class="p">,</span> <span class="mf">1.15</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.15</span><span class="p">,</span> <span class="mf">1.15</span><span class="p">],</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+    <span class="n">clip</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">1</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transData</span><span class="p">)</span>
+    <span class="n">im</span><span class="o">.</span><span class="n">set_clip_path</span><span class="p">(</span><span class="n">clip</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="c1"># Fallback if the image file is not available</span>
+    <span class="n">earth_disk</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">1</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s2">&quot;0.85&quot;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">earth_disk</span><span class="p">)</span>
 
 <span class="c1"># Cannon location</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">r0</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="n">R_E</span><span class="p">,</span> <span class="n">r0</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="n">R_E</span><span class="p">,</span> <span class="s1">&#39;ko&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Cannon&#39;</span><span class="p">)</span>
@@ -1835,7 +1871,10 @@ T^2 &amp;= \frac{4\pi^2}{GM_\oplus}r^3.
 <p class="sd-card-text">and the orbital period is</p>
 <div class="math notranslate nohighlight">
 \[ T = \frac{2\pi r}{v_{\rm orbit}}. \]</div>
-<p class="sd-card-text">The orbital radius of the ISS is <span class="math notranslate nohighlight">\(r = R_\oplus + h = 6370\ {\rm km} + 400\ {\rm km} = 6770\ {\rm km}.\)</span>  Substituting into the orbital-speed expression (with <span class="math notranslate nohighlight">\(r\)</span> in meters internally) gives</p>
+<p class="sd-card-text">The orbital radius of the ISS is</p>
+<div class="math notranslate nohighlight">
+\[ r = R_\oplus + h = 6370\ {\rm km} + 400\ {\rm km} = 6770\ {\rm km}. \]</div>
+<p class="sd-card-text">The orbital speed requires <span class="math notranslate nohighlight">\(r\)</span> in meters because <span class="math notranslate nohighlight">\(G\)</span> is written in SI units:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 v_{\rm orbit}
@@ -1843,7 +1882,7 @@ v_{\rm orbit}
 {6.77\times10^6\ {\rm m}}} \\
 &amp;= 7.67\times10^3\ {\rm m/s} = 7.67\ {\rm km/s}.
 \end{align*}\]</div>
-<p class="sd-card-text">Using this speed, the orbital period is</p>
+<p class="sd-card-text">The orbital period is easier to interpret using kilometers and kilometers per second:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 T &amp;= \frac{2\pi(6770\ {\rm km})}{7.67\ {\rm km/s}} \\
@@ -1855,7 +1894,7 @@ T &amp;= \frac{2\pi(6770\ {\rm km})}{7.67\ {\rm km/s}} \\
 <p class="sd-card-text">The orbital speed of the ISS is <span class="math notranslate nohighlight">\(7.67\ {\rm km/s}\)</span>, and its orbital period is <span class="math notranslate nohighlight">\(92.5\ {\rm min}\)</span>. These values are characteristic of low Earth orbit.</p>
 <hr class="docutils" />
 <p class="sd-card-text"><strong>The Verification</strong></p>
-<p class="sd-card-text">The verification computes the orbital radius from Earth’s radius and the ISS altitude, evaluates the orbital speed, and then determines the period using the circumference of the orbit. This confirms the analytical results.</p>
+<p class="sd-card-text">The verification computes the orbital radius from Earth’s radius and the ISS altitude, evaluates the orbital speed, and then determines the period using the circumference of the orbit. This confirms the analytical results while reporting the speed in the more useful unit of <span class="math notranslate nohighlight">\({\rm km/s}\)</span>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># Define constants</span>
@@ -1912,7 +1951,7 @@ r &amp;= 384{,}000\ {\rm km} = 3.84\times10^8\ {\rm m}, \\
 T &amp;= 27.3\ {\rm d}\left(\frac{24\ {\rm h}}{1\ {\rm d}}\right)\left(\frac{3600\ {\rm s}}{1\ {\rm h}}\right)
    = 2.36\times10^6\ {\rm s}.
 \end{align*}\]</div>
-<p class="sd-card-text">Substituting these values gives</p>
+<p class="sd-card-text">The numerical value follows from the converted values:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 M_\oplus &amp;= \frac{4\pi^2 r^3}{G T^2} \\
@@ -1925,7 +1964,7 @@ M_\oplus &amp;= \frac{4\pi^2 r^3}{G T^2} \\
 r_M &amp;= 60(6.37\times10^6\ {\rm m}) \\
     &amp;= 3.82\times10^8\ {\rm m}.
 \end{align*}\]</div>
-<p class="sd-card-text">Substituting this value into the orbital-mass relation gives</p>
+<p class="sd-card-text">The ratio-based mass follows from the orbital-mass relation:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 M_\oplus &amp;= \frac{4\pi^2 r_M^3}{G T^2} \\
@@ -2003,7 +2042,7 @@ v &amp;= \sqrt{\frac{(6.67\times10^{-11}\ {\rm N\cdot m^2/kg^2})(1.6\times10^{42
 <p class="sd-card-text">The orbital period follows from</p>
 <div class="math notranslate nohighlight">
 \[ T = \frac{2\pi r_{\rm orbit}}{v} = \frac{2\pi(r/2)}{v} = \frac{\pi r}{v}. \]</div>
-<p class="sd-card-text">Substituting the numerical values gives</p>
+<p class="sd-card-text">The numerical value follows by evaluating the expression with the given values:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 T &amp;= \frac{\pi(2.38\times10^{22}\ {\rm m})}{4.7\times10^4\ {\rm m/s}} \\
@@ -2042,7 +2081,7 @@ T &amp;= \frac{\pi(2.38\times10^{22}\ {\rm m})}{4.7\times10^4\ {\rm m/s}} \\
 </section>
 <section id="energy-in-circular-orbits">
 <h3><span class="section-number">13.4.2. </span>Energy in Circular Orbits<a class="headerlink" href="#energy-in-circular-orbits" title="Link to this heading">#</a></h3>
-<p>In <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter13/gravitation.html#energy-and-gravitationally-bound-objects">Section 13.3</a>, we argued that objects are gravitationally bound if their total energy is negative.  Let’s examine the total energy for a circular orbit instead of only a velocity directly away from the planet.  We can start by applying Newton’s 2nd law, or</p>
+<p>In <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter13/gravitation.html#energy-and-gravitationally-bound-objects">Section 13.3</a>, we argued that objects are gravitationally bound if their total energy is negative.  Let’s examine the total energy for a circular orbit instead of only a velocity directly away from the planet.  We can start by applying Newton’s second law, or</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 F_g &amp;= F_c,\\
@@ -2055,8 +2094,8 @@ F_g &amp;= F_c,\\
 K &amp;= \frac{1}{2}mv^2 = \frac{GM_\oplus m}{2r}.
 \end{align*}\]</div>
 <p>The total energy is the sum of the kinetic and potential energies, so our final result is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-cd1dc3e0-168e-4eae-91d4-332f95c2b3c8">
-<span class="eqno">(13.11)<a class="headerlink" href="#equation-cd1dc3e0-168e-4eae-91d4-332f95c2b3c8" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b57153b8-bd4f-4aee-a99a-cf2cd5ec0345">
+<span class="eqno">(13.12)<a class="headerlink" href="#equation-b57153b8-bd4f-4aee-a99a-cf2cd5ec0345" title="Permalink to this equation">#</a></span>\[\begin{align}
 E &amp;= K + U, \\
 &amp;= \frac{GM_\oplus m}{2r} - \frac{GM_\oplus m}{r} = -\frac{GM_\oplus m}{2r}.
 \end{align}\]</div>
@@ -2082,7 +2121,7 @@ E &amp;= K + U, \\
 <p class="sd-card-text">The required energy input is the change in total energy,</p>
 <div class="math notranslate nohighlight">
 \[ \Delta E = E_{\rm orbit} - E_{\rm surface} = -\frac{GM_\oplus m}{2r} + \frac{GM_\oplus m}{R_\oplus}.\]</div>
-<p class="sd-card-text">Substituting the numerical values gives</p>
+<p class="sd-card-text">The numerical value follows by evaluating the expression with the given values:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \Delta E
@@ -2096,8 +2135,8 @@ E &amp;= K + U, \\
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 K_{\rm orbit}
-&amp;= \frac{(6.67\times10^{-11})(5.96\times10^{24})(9000)}
-{2(6.77\times10^6)} \\
+&amp;= \frac{(6.67\times10^{-11}\ {\rm N\cdot m^2/kg^2})(5.96\times10^{24}\ {\rm kg})(9000\ {\rm kg})}
+{2(6.77\times10^6\ {\rm m})} \\
 &amp;= 2.65\times10^{11}\ {\rm J}.
 \end{align*}\]</div>
 <hr class="docutils" />
@@ -2144,8 +2183,8 @@ K_{\rm orbit}
 <p class="attribution">—Johannes Kepler</p>
 </div></blockquote>
 <p>Kepler published his <a class="reference external" href="https://en.wikipedia.org/wiki/Kepler%27s_laws_of_planetary_motion">3 laws of planetary motion</a> in 3 works from 1608-1621: <em>Astronomia nova</em>, <em>Harmonice Mundi</em>, and <em>Epitome Astronomiae Coperincanae</em>.</p>
-<section id="kepler-s-1st-law">
-<h3><span class="section-number">13.5.1. </span>Kepler’s 1st Law<a class="headerlink" href="#kepler-s-1st-law" title="Link to this heading">#</a></h3>
+<section id="kepler-s-first-law">
+<h3><span class="section-number">13.5.1. </span>Kepler’s First Law<a class="headerlink" href="#kepler-s-first-law" title="Link to this heading">#</a></h3>
 <p>In <em>Astronomia nova</em> (1609), Kepler articulated his first law that states that every planet moves along an <em>ellipse</em>, with the Sun located at one focus.  An ellipse is defined by mathematically, by</p>
 <div class="math notranslate nohighlight">
 \[ \frac{(x-h)^2}{a^2} + \frac{(y-k)^2}{b^2} = 1, \]</div>
@@ -2330,8 +2369,8 @@ y &amp;= k + b\sin{\theta},
 </ul>
 <p>For the Moon’s orbit around the Earth (Geo), the points are called perigee and apogee, respectively.</p>
 <p>An ellipse has a specific form that can describe more generally described as a conic section.  There are four conic sections, all given by the equation</p>
-<div class="amsmath math notranslate nohighlight" id="equation-86a6ef3a-12d0-45ba-8cd3-54817ecc1169">
-<span class="eqno">(13.12)<a class="headerlink" href="#equation-86a6ef3a-12d0-45ba-8cd3-54817ecc1169" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-84df2ad8-d28e-47a7-b7d9-d05f90af4591">
+<span class="eqno">(13.13)<a class="headerlink" href="#equation-84df2ad8-d28e-47a7-b7d9-d05f90af4591" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{\ell}{r} = 1 + e\cos{\theta},
 \end{align}\]</div>
 <p>where the <span class="math notranslate nohighlight">\(r\)</span> is the distance from the foci to the point on the ellipse, <span class="math notranslate nohighlight">\(\ell\)</span> is the <a class="reference external" href="https://en.wikipedia.org/wiki/Ellipse#semi-latus%25rectum">semi-latus rectum</a>, and <span class="math notranslate nohighlight">\(\theta\)</span> is the angle relative to the reference direction.  The constant <span class="math notranslate nohighlight">\(e\)</span> is the eccentricity, which helps us determine which of the four conic sections represents the path of a satellite.</p>
@@ -2374,7 +2413,7 @@ y &amp;= k + b\sin{\theta},
 <figure class="align-default" id="transfer-orbit">
 <img alt="transfer orbit between Earth and Mars" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/8952b3465dd4c072721fa8b2c8b1ca9bb5f36ee2" />
 <figcaption>
-<p><span class="caption-number">Fig. 13.9 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#transfer-orbit" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 13.9 </span><span class="caption-text">A Hohmann transfer uses an elliptical orbit tangent to the initial and final circular orbits. Spacecraft change speed at the endpoints to move from one orbit to the transfer ellipse and then into the destination orbit. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/13-5-keplers-laws-of-planetary-motion">Kepler’s Laws of Planetary Motion</a>.</span><a class="headerlink" href="#transfer-orbit" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>For any ellipse, the semimajor axis is defined as one-half the sum of the perihelion and aphelion distances.  In general, these perihelion <span class="math notranslate nohighlight">\(q\)</span> and aphelion <span class="math notranslate nohighlight">\(Q\)</span> are given mathematically as</p>
@@ -2413,13 +2452,13 @@ v_a = \sqrt{GM\left(\frac{2}{Q} - \frac{1}{a} \right)} = \sqrt{\frac{GM}{a}\left
 v_t &amp;= \sqrt{\frac{GM_\odot}{a_t}\left(\frac{1+e_t}{1-e_t}\right)} - \sqrt{\frac{GM_\odot}{a_{\rm E}}}.
 \end{align*} \]</div>
 </section>
-<section id="kepler-s-2nd-law">
-<h3><span class="section-number">13.5.3. </span>Kepler’s 2nd Law<a class="headerlink" href="#kepler-s-2nd-law" title="Link to this heading">#</a></h3>
+<section id="kepler-s-second-law">
+<h3><span class="section-number">13.5.3. </span>Kepler’s Second Law<a class="headerlink" href="#kepler-s-second-law" title="Link to this heading">#</a></h3>
 <p><strong>Kepler’s 2nd law</strong> state that a planet sweeps out equal areas in equal times, or the areal velocity <span class="math notranslate nohighlight">\(\left(\frac{dA}{dt}\right)\)</span> is constant.  Figure <a class="reference internal" href="#areal-velocity"><span class="std std-numref">13.10</span></a> shows the path that a planet takes to move from position <span class="math notranslate nohighlight">\(A\)</span> to <span class="math notranslate nohighlight">\(B\)</span>, sweeping out an area <span class="math notranslate nohighlight">\(A_1\)</span>.  It also shows the area <span class="math notranslate nohighlight">\(A_2\)</span> that is swept by moving from <span class="math notranslate nohighlight">\(C\)</span> to <span class="math notranslate nohighlight">\(D\)</span>, and the area <span class="math notranslate nohighlight">\(A_3\)</span> swept by moving from <span class="math notranslate nohighlight">\(E\)</span> to <span class="math notranslate nohighlight">\(F\)</span>.  These areas are the same: <span class="math notranslate nohighlight">\(A_1 = A_2 = A_3.\)</span></p>
 <figure class="align-default" id="areal-velocity">
 <img alt="diagram of areal velocity" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/20729a80e3108d8a7497a69d92cab6ec113b345f" />
 <figcaption>
-<p><span class="caption-number">Fig. 13.10 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#areal-velocity" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 13.10 </span><span class="caption-text">Kepler’s second law says that a planet sweeps out equal areas in equal times. The planet moves faster near perihelion and slower near aphelion so that the swept area rate stays constant. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/13-5-keplers-laws-of-planetary-motion">Kepler’s Laws of Planetary Motion</a>.</span><a class="headerlink" href="#areal-velocity" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>In order fo the areas to be equal, the planet must speed up as it gets closer to the Sun and slow down as it moves away.  We can show Kepler’s 2nd law as a consequence of the conservation of angular momentum, which holds for any system with only radial forces.</p>
@@ -2440,7 +2479,7 @@ v_t &amp;= \sqrt{\frac{GM_\odot}{a_t}\left(\frac{1+e_t}{1-e_t}\right)} - \sqrt{\
 <figure class="align-default" id="areal-velocity-element">
 <img alt="diagram of an areal velocity element" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/7dc88917c977db67155906b75e962961d943f167" />
 <figcaption>
-<p><span class="caption-number">Fig. 13.11 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#areal-velocity-element" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 13.11 </span><span class="caption-text">For a very small time interval, the swept area is approximately a thin triangle. This connects Kepler’s second law with angular momentum conservation. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/13-5-keplers-laws-of-planetary-motion">Kepler’s Laws of Planetary Motion</a>.</span><a class="headerlink" href="#areal-velocity-element" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Let’s break up the problem into a smaller piece, as shown in Figure <a class="reference internal" href="#areal-velocity-element"><span class="std std-numref">13.11</span></a>.  A small triangular element <span class="math notranslate nohighlight">\(\Delta A\)</span> is swept out in a time interval <span class="math notranslate nohighlight">\(\Delta t\)</span>.  The velocity is along the path and it makes an angle <span class="math notranslate nohighlight">\(\theta\)</span> with the radial direction.  The perpendicular velocity is given by <span class="math notranslate nohighlight">\(v_\perp = v\sin{\theta}\)</span>.</p>
@@ -2456,11 +2495,11 @@ v_t &amp;= \sqrt{\frac{GM_\odot}{a_t}\left(\frac{1+e_t}{1-e_t}\right)} - \sqrt{\
 \[ \text{areal velocity} = \frac{\Delta A}{\Delta t} = \frac{L}{2m}. \]</div>
 <p>Since the angular momentum is constant and the mass is constant, the areal velocity must also be a constant.  This is exactly Kepler’s 2nd law.</p>
 </section>
-<section id="kepler-s-3rd-law">
-<h3><span class="section-number">13.5.4. </span>Kepler’s 3rd Law<a class="headerlink" href="#kepler-s-3rd-law" title="Link to this heading">#</a></h3>
+<section id="kepler-s-third-law">
+<h3><span class="section-number">13.5.4. </span>Kepler’s Third Law<a class="headerlink" href="#kepler-s-third-law" title="Link to this heading">#</a></h3>
 <p><strong>Kepler’s third law</strong> states that the square of the period is proportional to the cube of the semimajor axis of the orbit (i.e., <span class="math notranslate nohighlight">\(T^2 \propto a^3\)</span>).  We already derived Newton’s version of Kepler’s 3rd law (see Section <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter13/gravitation.html#circular-orbits">13.4.1</a>).  Kepler’s 3rd law is the same equation with <span class="math notranslate nohighlight">\(r\rightarrow a\)</span>, where we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-243be455-a933-4711-87e4-b472f9c57eff">
-<span class="eqno">(13.13)<a class="headerlink" href="#equation-243be455-a933-4711-87e4-b472f9c57eff" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-41e33124-b216-41b3-9e1b-f35390c0b121">
+<span class="eqno">(13.14)<a class="headerlink" href="#equation-41e33124-b216-41b3-9e1b-f35390c0b121" title="Permalink to this equation">#</a></span>\[\begin{align}
 T^2 = \frac{4\pi^2}{GM}a^3.
 \end{align}\]</div>
 </section>
@@ -2499,7 +2538,7 @@ a &amp;= (75.3)^{2/3} \\
 <p class="sd-card-text">so the aphelion distance is</p>
 <div class="math notranslate nohighlight">
 \[ r_{\rm ap} = 2a - r_{\rm peri}. \]</div>
-<p class="sd-card-text">Substituting <span class="math notranslate nohighlight">\(a = 17.8\ {\rm AU}\)</span> and <span class="math notranslate nohighlight">\(r_{\rm peri} = 0.586\ {\rm AU}\)</span> gives</p>
+<p class="sd-card-text">The aphelion distance follows from  17.8\ {\rm AU}<span class="math notranslate nohighlight">\( and \)</span>r_{\rm peri} = 0.586\ {\rm AU}$ gives</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 r_{\rm ap} &amp;= 2(17.8) - 0.586 \\
@@ -2540,7 +2579,7 @@ r_{\rm ap} &amp;= 2(17.8) - 0.586 \\
 <figure class="align-default" id="tides-moon-snapshot">
 <img alt="snapshot of the Moon's tide on the Earth" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/42a2f5652094b85a769fe838617716f9ec7c52a1" />
 <figcaption>
-<p><span class="caption-number">Fig. 13.12 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#tides-moon-snapshot" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 13.12 </span><span class="caption-text">The Moon’s gravity produces tidal bulges because the gravitational pull differs across Earth. The ocean response depends on both the tidal force and the rotation of Earth beneath the bulges. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/13-6-tidal-forces">Tidal Forces</a>.</span><a class="headerlink" href="#tides-moon-snapshot" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Consider first, the effect of the Moon, where we are looking “down” onto Earth’s North Pole (see Figure <a class="reference internal" href="#tides-moon-snapshot"><span class="std std-numref">13.12</span></a>). One side of Earth is closer to the Moon than the other side, by a distance equal to Earth’s diameter.  Hence, the gravitational force is greater on the near side than on the far side.  As a result, there is a tidal bulge that appears on both sides of Earth.</p>
@@ -2548,7 +2587,7 @@ r_{\rm ap} &amp;= 2(17.8) - 0.586 \\
 <figure class="align-default" id="tides-earth-vectors" style="width: 500px">
 <img alt="vectors showing the tides" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/cd2c8ce27292e7410a42c6cc477569474d1c43b9" />
 <figcaption>
-<p><span class="caption-number">Fig. 13.13 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#tides-earth-vectors" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 13.13 </span><span class="caption-text">The gravitational force from the Moon is strongest on the near side of Earth and weakest on the far side. Subtracting the force at Earth’s center leaves the tidal-force pattern that stretches Earth along the Earth-Moon line. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/13-6-tidal-forces">Tidal Forces</a>.</span><a class="headerlink" href="#tides-earth-vectors" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="tip admonition">
@@ -2577,7 +2616,7 @@ r_{\rm ap} &amp;= 2(17.8) - 0.586 \\
 <figure class="align-default" id="spring-neap-tides">
 <img alt="diagram showing the spring and neap tides" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/fd703b0bfbf32176a8da9bc68b743779e02caaae" />
 <figcaption>
-<p><span class="caption-number">Fig. 13.14 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#spring-neap-tides" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 13.14 </span><span class="caption-text">Spring tides occur when the Sun, Earth, and Moon are nearly aligned, so lunar and solar tidal effects reinforce one another. Neap tides occur when the Sun and Moon are at roughly right angles, so the tidal effects partially oppose one another. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/13-6-tidal-forces">Tidal Forces</a>.</span><a class="headerlink" href="#spring-neap-tides" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Figure <a class="reference internal" href="#spring-neap-tides"><span class="std std-numref">13.14</span></a> illustrates the relative positions of the Sun and the Moon that create the largest tides called <strong>spring tides</strong> because they “spring up”.  During spring tides, there is an alignment between the Earth, Moon, and Sun so that the tidal effects add together.</p>
@@ -2585,7 +2624,7 @@ r_{\rm ap} &amp;= 2(17.8) - 0.586 \\
 <figure class="align-default" id="nasa-tides-animation">
 <img alt="diagram showing the moon phases and tides" src="https://assets.science.nasa.gov/content/dam/science/psd/earths-moon/lunar-science/lunar-and-solar-tides.gif" />
 <figcaption>
-<p><span class="caption-number">Fig. 13.15 </span><span class="caption-text">Image Credit: <a class="reference external" href="https://science.nasa.gov/moon/tides/">NASA/Vi Nguyen</a></span><a class="headerlink" href="#nasa-tides-animation" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 13.15 </span><span class="caption-text">This NASA animation connects the changing Moon phase geometry with the pattern of spring and neap tides. Watch how the alignment of the Sun, Earth, and Moon changes the combined tidal effect. Image Credit: <a class="reference external" href="https://science.nasa.gov/moon/tides/">NASA/Vi Nguyen</a>.</span><a class="headerlink" href="#nasa-tides-animation" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -2602,6 +2641,10 @@ r_{\rm ap} &amp;= 2(17.8) - 0.586 \\
   </div>
   <div class="video-caption" style="margin-top:0.5em; text-align:left; color:#666;">This video shows the tides rising an falling in teh Bay of Fundy as a time lapse.  It also shows how life in the Bay reacts to the changes in the tide.</div>
 </div></div>
+<div class="tip margin checkpoint admonition">
+<p class="admonition-title">Checkpoint</p>
+<p>If the Sun pulls much harder on Earth than the Moon does, why can the Moon still produce the larger tidal effect?</p>
+</div>
 <section id="example-problem-comparing-tidal-forces">
 <h4><span class="section-number">13.6.3.1. </span><strong>Example Problem</strong>: Comparing Tidal Forces<a class="headerlink" href="#example-problem-comparing-tidal-forces" title="Link to this heading">#</a></h4>
 <div class="exercise etamu-exercise admonition" id="Chapter13/gravitation-exercise-13">
@@ -2616,40 +2659,56 @@ r_{\rm ap} &amp;= 2(17.8) - 0.586 \\
 <summary class="sd-summary-title sd-card-header etamu-dropdown-title sd-bg-secondary sd-bg-text-secondary">
 <span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-pencil" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></span><span class="sd-summary-text">Show worked solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body etamu-dropdown-body docutils">
 <p class="sd-card-text"><strong>The Model</strong></p>
-<p class="sd-card-text">The tidal force is defined as the difference between the gravitational force on the near side and the far side of Earth. For a body of mass <span class="math notranslate nohighlight">\(M\)</span> at distance <span class="math notranslate nohighlight">\(d\)</span>, the near and far distances are <span class="math notranslate nohighlight">\(d - R_\oplus\)</span> and <span class="math notranslate nohighlight">\(d + R_\oplus\)</span>, respectively. Rather than computing these two forces separately and subtracting them, we approximate the difference using the fact that <span class="math notranslate nohighlight">\(R_\oplus \ll d\)</span>. This leads to a simplified expression showing that tidal forces scale as <span class="math notranslate nohighlight">\(M/d^3\)</span>.</p>
+<p class="sd-card-text">The tidal force is the difference between the gravitational force on the near side and the far side of Earth. For a body of mass <span class="math notranslate nohighlight">\(M\)</span> at distance <span class="math notranslate nohighlight">\(d\)</span> from Earth’s center, the near-side and far-side distances are <span class="math notranslate nohighlight">\(d - R_\oplus\)</span> and <span class="math notranslate nohighlight">\(d + R_\oplus\)</span>. The problem asks about those two forces, but the comparison between the Moon and Sun is clearer if we approximate the near-far difference using <span class="math notranslate nohighlight">\(R_\oplus \ll d\)</span>. This approximation reduces the problem to a ratio because tidal forces scale as <span class="math notranslate nohighlight">\(M/d^3\)</span>.</p>
 <hr class="docutils" />
 <p class="sd-card-text"><strong>The Math</strong></p>
-<p class="sd-card-text">The gravitational force on a mass <span class="math notranslate nohighlight">\(m\)</span> at distance <span class="math notranslate nohighlight">\(r\)</span> is <span class="math notranslate nohighlight">\(F = \frac{GMm}{r^2}.\)</span> Thus, the tidal force is the difference</p>
+<p class="sd-card-text">The gravitational force on a mass <span class="math notranslate nohighlight">\(m\)</span> at distance <span class="math notranslate nohighlight">\(r\)</span> from an external body is</p>
 <div class="math notranslate nohighlight">
-\[ F_{\rm tidal} = \frac{GMm}{(d - R_\oplus)^2} - \frac{GMm}{(d + R_\oplus)^2}.\]</div>
-<p class="sd-card-text">Because <span class="math notranslate nohighlight">\(R_\oplus \ll d\)</span>, we expand this expression to first order in <span class="math notranslate nohighlight">\(R_\oplus/d\)</span>, which gives</p>
+\[ F = \frac{GMm}{r^2}. \]</div>
+<p class="sd-card-text">The exact near-far difference for a body at distance <span class="math notranslate nohighlight">\(d\)</span> is therefore</p>
 <div class="math notranslate nohighlight">
-\[ F_{\rm tidal} \approx 2\frac{GMmR_\oplus}{d^3}. \]</div>
-<p class="sd-card-text">This shows that tidal forces scale as</p>
+\[
+F_{\rm tidal}
+= \frac{GMm}{(d - R_\oplus)^2}
+- \frac{GMm}{(d + R_\oplus)^2}.
+\]</div>
+<p class="sd-card-text">Because <span class="math notranslate nohighlight">\(R_\oplus \ll d\)</span> for both the Moon and the Sun, the first-order approximation to this difference is</p>
+<div class="math notranslate nohighlight">
+\[
+F_{\rm tidal} \approx 2\frac{GMmR_\oplus}{d^3}.
+\]</div>
+<p class="sd-card-text">This approximation still answers the original question because it represents the difference between the near-side and far-side gravitational forces. It also shows that the tidal force scales as</p>
 <div class="math notranslate nohighlight">
 \[ F_{\rm tidal} \propto \frac{M}{d^3}. \]</div>
-<p class="sd-card-text">To compare the Moon and Sun, we take the ratio</p>
+<p class="sd-card-text">The ratio of the Moon’s tidal force to the Sun’s tidal force is therefore</p>
 <div class="math notranslate nohighlight">
-\[ \frac{F_{\rm tidal,\,Moon}}{F_{\rm tidal,\,Sun}} = \left(\frac{M_{\rm Moon}}{M_\odot}\right) \left(\frac{d_{\rm ES}}{d_{\rm EM}}\right)^3.\]</div>
-<p class="sd-card-text">Using <span class="math notranslate nohighlight">\(M_{\rm Moon} = 0.0123\,M_\oplus\)</span> and <span class="math notranslate nohighlight">\(1\,M_\odot = 333{,}000\,M_\oplus\)</span>, we convert the Moon’s mass to solar masses:</p>
+\[
+\frac{F_{\rm tidal,\,Moon}}{F_{\rm tidal,\,Sun}}
+=
+\left(\frac{M_{\rm Moon}}{M_\odot}\right)
+\left(\frac{d_{\rm ES}}{d_{\rm EM}}\right)^3.
+\]</div>
+<p class="sd-card-text">The Moon’s mass is <span class="math notranslate nohighlight">\(M_{\rm Moon} = 0.0123\,M_\oplus\)</span>, and <span class="math notranslate nohighlight">\(1\,M_\odot = 333{,}000\,M_\oplus\)</span>, so the Moon’s mass in solar masses is</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 M_{\rm Moon} &amp;= 0.0123\,M_\oplus
    \left(\frac{1\,M_\odot}{333{,}000\,M_\oplus}\right) \\
 &amp;= 3.69\times10^{-8}\,M_\odot.
 \end{align*}\]</div>
-<p class="sd-card-text">Using <span class="math notranslate nohighlight">\(d_{\rm EM} = 0.00257\ {\rm AU}\)</span> and <span class="math notranslate nohighlight">\(d_{\rm ES} = 1\ {\rm AU}\)</span>, we obtain</p>
+<p class="sd-card-text">The tidal-force ratio follows from <span class="math notranslate nohighlight">\(d_{\rm EM} = 0.00257\ {\rm AU}\)</span> and <span class="math notranslate nohighlight">\(d_{\rm ES} = 1\ {\rm AU}\)</span>:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-\frac{F_{\rm tidal,\,Moon}}{F_{\rm tidal,\,Sun}} &amp;= \left(3.69\times10^{-8}\right) \left(\frac{1}{0.00257}\right)^3 \\
+\frac{F_{\rm tidal,\,Moon}}{F_{\rm tidal,\,Sun}}
+&amp;= \left(3.69\times10^{-8}\right)
+   \left(\frac{1\ {\rm AU}}{0.00257\ {\rm AU}}\right)^3 \\
 &amp;= 2.18.
 \end{align*}\]</div>
 <hr class="docutils" />
 <p class="sd-card-text"><strong>The Conclusion</strong></p>
-<p class="sd-card-text">The difference between the gravitational forces on the near and far sides of Earth due to the Moon is about <span class="math notranslate nohighlight">\(2.18\)</span> times larger than that due to the Sun. Thus, although the Sun exerts a much stronger overall gravitational force, the Moon produces the stronger tides because it is much closer to Earth.</p>
+<p class="sd-card-text">The difference between the gravitational forces on the near and far sides of Earth due to the Moon is about <span class="math notranslate nohighlight">\(2.18\)</span> times larger than the corresponding difference due to the Sun. The Sun exerts a much stronger overall gravitational force on Earth, but the Moon produces the stronger tidal effect because it is much closer and tidal effects depend on <span class="math notranslate nohighlight">\(1/d^3\)</span>.</p>
 <hr class="docutils" />
 <p class="sd-card-text"><strong>The Verification</strong></p>
-<p class="sd-card-text">The verification computes the tidal-force ratio using the proportionality <span class="math notranslate nohighlight">\(F_{\rm tidal} \propto M/d^3\)</span>. This confirms that the Moon’s tidal effect is a little more than twice that of the Sun.</p>
+<p class="sd-card-text">The verification computes the tidal-force ratio using the proportionality <span class="math notranslate nohighlight">\(F_{\rm tidal} \propto M/d^3\)</span>. This mirrors the analytical comparison and confirms that the Moon’s near-far gravitational difference is a little more than twice the Sun’s.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># Define mass ratios</span>
@@ -2661,11 +2720,12 @@ M_{\rm Moon} &amp;= 0.0123\,M_\oplus
 <span class="n">d_ES</span> <span class="o">=</span> <span class="mf">1.0</span>                 <span class="c1"># Earth-Sun distance in AU</span>
 
 <span class="c1"># Convert Moon&#39;s mass into solar masses</span>
-<span class="n">M_moon_solar</span> <span class="o">=</span> <span class="n">M_moon_E</span> <span class="o">/</span> <span class="n">M_sun_E</span>
+<span class="n">M_moon_solar</span> <span class="o">=</span> <span class="n">M_moon_E</span> <span class="o">/</span> <span class="n">M_sun_E</span>   <span class="c1"># Mass of the Moon in solar masses</span>
 
 <span class="c1"># Compute tidal-force ratio</span>
 <span class="n">tide_ratio</span> <span class="o">=</span> <span class="n">M_moon_solar</span> <span class="o">*</span> <span class="p">(</span><span class="n">d_ES</span> <span class="o">/</span> <span class="n">d_EM</span><span class="p">)</span><span class="o">**</span><span class="mi">3</span>
 
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The Moon&#39;s mass is </span><span class="si">{</span><span class="n">M_moon_solar</span><span class="si">:</span><span class="s2">.3e</span><span class="si">}</span><span class="s2"> solar masses.&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The ratio of the Moon&#39;s tidal force to the Sun&#39;s tidal force is </span><span class="si">{</span><span class="n">tide_ratio</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This shows the Moon produces about twice the tidal effect of the Sun.&quot;</span><span class="p">)</span>
 </pre></div>
@@ -2677,9 +2737,9 @@ M_{\rm Moon} &amp;= 0.0123\,M_\oplus
 </section>
 <section id="other-tides">
 <h3><span class="section-number">13.6.4. </span>Other Tides<a class="headerlink" href="#other-tides" title="Link to this heading">#</a></h3>
-<p>Tidal Forces exist between any two bodies, just like our normal notion of gravity exists between any 2 bodies with mass.  The effect stretches the bodies along the line between their centers.  Although the tidal effect on Earth’s seas is observable on a daily basis, long-term consequences are harder to see.</p>
+<p>Tidal forces exist between any two bodies, just like our normal notion of gravity exists between any two bodies with mass.  The effect stretches the bodies along the line between their centers.  Although the tidal effect on Earth’s seas is observable on a daily basis, long-term consequences are harder to see.</p>
 <p>One consequence is the dissipation of rotational energy due to the friction during the flexure of the bodies themselves.  Earth’s rotation rate is slowing down as the tidal forces transfer rotational energy into heat.  The other effect is called <em>tidal synchronization</em> (or “locking”) and is related to the dissipation and the conservation of angular momentum.</p>
-<p>Most Moons in our Solar System (including our Moon) are tidally locked.  The Moon keeps one face toward Earth, where its rotation rate has locked into the orbital rate about Earth.  The same process is happening to Earth, and eventually (ignoring the Sun’s post main-sequence evolution) it will keep one face toward the Moon.  If that happens, we would no longer see tides because the tidal bulge would remain in the same place on Earth and half the planet would never see the  Moon.  This locking takes billions of years, where our Sun will likely engulf the Earth by that time (see <a class="reference external" href="https://arxiv.org/abs/2101.12277">Baronett et al. (2022)</a>).</p>
+<p>Most moons in our Solar System (including our Moon) are tidally locked.  The Moon keeps one face toward Earth, where its rotation rate has locked into the orbital rate about Earth.  The same process is happening to Earth, and eventually (ignoring the Sun’s post main-sequence evolution) it will keep one face toward the Moon.  If that happens, we would no longer see tides because the tidal bulge would remain in the same place on Earth and half the planet would never see the  Moon.  This locking takes billions of years, where our Sun will likely engulf the Earth by that time (see <a class="reference external" href="https://arxiv.org/abs/2101.12277">Baronett et al. (2022)</a>).</p>
 <p>Another dramatic example of tidal effects is found on Jupiter’s moon Io.  In 1979, <a class="reference external" href="https://ui.adsabs.harvard.edu/abs/1979Sci...203..892P/abstract">Stan Peale</a> and his collaborators predicted that Io would likely to have a molten interior and volcanic action on its surface due to the tidal stretching caused by Jupiter.  Later in the year, the <em>Voyager</em> spacecraft sent back dramatic images of volcanic activity on Io.  It is the only other astronomical body in our Solar System where we have found tidally induced <em>hot</em> volcanism.</p>
 <p>For some stars, the effect of tidal forces can be catastrophic.  The tidal forces in very close binary systems can be strong enough to transfer matter from one star to the other.  This effect can be seen when a normal star orbits a nearby compact object (e.g., white dwarf, neutron star, or black hole).  As matter falls toward the compact object, if forms and accretion disc that becomes super-heated and radiates in the X-ray portion of the electromagnetic spectrum.</p>
 <p>The energy output of these binary systems can exceed that of an entire galaxy if carbon fusion can begin on the surface of a white dwarf resulting in te a Type Ia supernova.  Another example is a quasar (quasi-stellar radio source), which can exceed the energy output of entire galaxies due to the supermassive black hole at the center of a distant galaxy consuming a multitude of stars at once.</p>
@@ -2694,11 +2754,11 @@ M_{\rm Moon} &amp;= 0.0123\,M_\oplus
 <p>However, it has incredible consequences where space and time now depend on each other and are not absolute.  Two people moving relative to one another do not agree on the length of objects or the passage of time.  However, this is only the case when an object is approaching the speed of light.</p>
 <p>The speed limit on the Universe was also a challenge to the inherent assumption in Newton’s law of gravitation that gravity is an <strong>action-at-a-distance force</strong>.  Newton considered action at a distance to be:</p>
 <blockquote class="epigraph">
-<div><p>so great an Absurdity that I believe no Man who has in philosophical Matters a competent Faculty of thinking can every fall into it.</p>
+<div><p>… so great an absurdity that I believe no Man who has in philosophical matters a competent faculty of thinking can ever fall into it.</p>
 <p class="attribution">—Isaac Newton, Letters to Bentley, 1692-1693</p>
 </div></blockquote>
 <p>Action at a distance implies that any change in the position of one mass is <em>instantly</em> communicated to all other masses without physical contact.  This assumption does not come from any first principle.</p>
-<p>A second assumption also appears in Newton’s law of gravitation, where the gravitational mass is assumed to be <em>exactly</em> the same as the one used in Newton’s 2nd law (<span class="math notranslate nohighlight">\(\vec{F}=m\vec{a}\)</span>).  We made that assumption to solve many gravitational problems in this chapter.  There is not underlying principle (i.e., rule of the universe) that compels that this must be.  But the experimental results are consistent with this assumption.</p>
+<p>A second assumption also appears in Newton’s law of gravitation, where the gravitational mass is assumed to be <em>exactly</em> the same as the one used in Newton’s second law (<span class="math notranslate nohighlight">\(\vec{F}=m\vec{a}\)</span>).  We made that assumption to solve many gravitational problems in this chapter.  There is not underlying principle (i.e., rule of the universe) that compels that this must be.  But the experimental results are consistent with this assumption.</p>
 <p>In 1915, Einstein produces his <a class="reference external" href="https://en.wikipedia.org/wiki/General_relativity"><strong>general theory of relativity</strong></a> to address these problems of action at a distance and equivalence.  His theory expanded his notion of how a <strong>space-time</strong> geometry can explain how gravitational masses can communicate.  Each massive object distorts space-time, where this distortion causes the other masses to accelerate in reaction.</p>
 </section>
 <section id="the-principle-of-equivalence">
@@ -2752,14 +2812,14 @@ M_{\rm Moon} &amp;= 0.0123\,M_\oplus
 <p>The idea fo a massive body from which light cannot escape dates back to the late 18th century.  Independently, John Michell and Pierre-Simon Laplace used Newton’s law fo gravitation to sho that light leaving the surface of a star with enough mass could not escape.  Their work was based on the fact that the speed of light had been measured by <a class="reference external" href="https://en.wikipedia.org/wiki/Ole_R%C3%B8mer">Ole Rømer</a> in 1676.  Rømer realized that the difference in measured orbital period for Jupiter’s moon arose from the relative position of Earth and Jupiter at different times.  This meant that light didn’t travel instantaneously, where he could estimate the speed of light from the timing differences.</p>
 <p>Michell and Laplace realized that light had a finite speed, which meant that there could be a star massive enough so that the escape speed form its surface was larger than the speed of light.  Hence, light always would fall back to the star.  Oddly, observers far enough away from the very largest stars would not be able to see them, yet they could see a smaller star from the same distance.</p>
 <p>Recall in <a class="reference external" href="https://saturnaxis.github.io/IntroPhysics/Chapter13/gravitation.html#escape-velocity">Section 13.3.2.1 Escape velocity</a>, we found that the escape speed is depends on the total mass, where in many cases the mass of the escaping object is negligible.  In the case of a photon, its massless, and our approximation holds.  Substituting <span class="math notranslate nohighlight">\(c\)</span> (the speed of light) for the escape velocity, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2fe167db-9078-474c-b822-ec6a7d4d8b0d">
-<span class="eqno">(13.14)<a class="headerlink" href="#equation-2fe167db-9078-474c-b822-ec6a7d4d8b0d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-26ff9699-3eef-49a9-bb63-f6ac5d8a567e">
+<span class="eqno">(13.15)<a class="headerlink" href="#equation-26ff9699-3eef-49a9-bb63-f6ac5d8a567e" title="Permalink to this equation">#</a></span>\[\begin{align}
 v_{\rm esc} = c = \sqrt{\frac{2GM}{R}}.
 \end{align}\]</div>
 <p>We only need values for the object’s radius <span class="math notranslate nohighlight">\(R\)</span> and mass <span class="math notranslate nohighlight">\(M\)</span>, such that the escape velocity equals <span class="math notranslate nohighlight">\(c\)</span> and the light cannot escape.  Michell posited that if a star had the density of our Sun and a radius that extended just beyond Mars, then light would not be able to escape from its surface.  He also conjectured that we would still be able to detect such a star from the gravitational effect it would have on the objects around it.</p>
 <p>In Schwarzschild’s solution to the tensor equation from GR, he found a critical radius (now called the <strong>Schwarzschild radius</strong> <span class="math notranslate nohighlight">\(R_S\)</span>).  For any mass <span class="math notranslate nohighlight">\(M\)</span> with a radius less than the Schwarzschild radius, then the mass will collapse to a singularity, and anything that passes inside that radius cannot escape.  Once inside <span class="math notranslate nohighlight">\(R_S\)</span>, the arrow of time takes all things to the singularity.  The Schwarzschild radius is given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3afd70c3-11ea-4458-b2b7-11661bf22fc4">
-<span class="eqno">(13.15)<a class="headerlink" href="#equation-3afd70c3-11ea-4458-b2b7-11661bf22fc4" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-482bb47f-e843-413b-ad61-052feed31141">
+<span class="eqno">(13.16)<a class="headerlink" href="#equation-482bb47f-e843-413b-ad61-052feed31141" title="Permalink to this equation">#</a></span>\[\begin{align}
 R_S = \frac{2GM}{c^2}.
 \end{align}\]</div>
 <p>If you look at our escape velocity equation with <span class="math notranslate nohighlight">\(v_{\rm esc} = c\)</span>, you will notice that it gives precisely this result.  However this is a fortuitous accident caused by several incorrect assumptions.  The kinetic energy of light is <span class="math notranslate nohighlight">\(E_{\rm ph} = p^2c^2\)</span> because it is massless.</p>
@@ -2780,7 +2840,7 @@ R_S = \frac{2GM}{c^2}.
 <p class="sd-card-text">The Schwarzschild radius gives the radius at which a mass must be compressed for a black hole to form. It depends only on the mass of the object. After finding the Schwarzschild radii of the Sun and Earth, Earth’s required average density is found by placing its mass uniformly inside a sphere of radius equal to its Schwarzschild radius. That density is then compared with the density of an atomic nucleus.</p>
 <hr class="docutils" />
 <p class="sd-card-text"><strong>The Math</strong></p>
-<p class="sd-card-text">The Schwarzschild radius of a mass <span class="math notranslate nohighlight">\(M\)</span> is <span class="math notranslate nohighlight">\(R_S = \frac{2GM}{c^2}.\)</span>  Substituting the mass of the Sun gives</p>
+<p class="sd-card-text">The Schwarzschild radius of a mass <span class="math notranslate nohighlight">\(M\)</span> is <span class="math notranslate nohighlight">\(R_S = \frac{2GM}{c^2}.\)</span>  The Sun’s Schwarzschild radius follows from the Sun’s mass:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 R_{S,\odot} &amp;= \frac{2GM_\odot}{c^2} \\
@@ -2788,7 +2848,7 @@ R_{S,\odot} &amp;= \frac{2GM_\odot}{c^2} \\
 {\left(3.0\times10^8\ {\rm m/s}\right)^2} \\
 &amp;= 2.95\times10^3\ {\rm m}.
 \end{align*}\]</div>
-<p class="sd-card-text">Substituting the mass of Earth gives</p>
+<p class="sd-card-text">Earth’s Schwarzschild radius follows from Earth’s mass:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 R_{S,\oplus} &amp;= \frac{2GM_\oplus}{c^2} \\
@@ -2799,7 +2859,7 @@ R_{S,\oplus} &amp;= \frac{2GM_\oplus}{c^2} \\
 <p class="sd-card-text">If Earth’s mass were compressed uniformly into a sphere of radius <span class="math notranslate nohighlight">\(R_{S,\oplus}\)</span>, its average density would be</p>
 <div class="math notranslate nohighlight">
 \[ \rho = \frac{M_\oplus}{V} = \frac{M_\oplus}{\frac{4}{3}\pi R_{S,\oplus}^3}.\]</div>
-<p class="sd-card-text">Substituting the numerical values gives</p>
+<p class="sd-card-text">The numerical value follows by evaluating the expression with the given values:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \rho &amp;= \frac{5.97\times10^{24}\ {\rm kg}}
@@ -2855,7 +2915,7 @@ R_{S,\oplus} &amp;= \frac{2GM_\oplus}{c^2} \\
 <figure class="align-default" id="space-distortion-fig">
 <img alt="diagram showing the spacetime distortions of several objects" src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260209.222123/resources/9de9b2fade771f6afb05f3ece787c03ec8576ab6" />
 <figcaption>
-<p><span class="caption-number">Fig. 13.16 </span><span class="caption-text">Image Credit: Openstax.</span><a class="headerlink" href="#space-distortion-fig" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 13.16 </span><span class="caption-text">General relativity describes gravity as curvature of spacetime rather than as a traditional force. More compact objects produce stronger curvature near their surfaces, and a black hole has an event horizon from which light cannot escape. Image Credit: OpenStax: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/13-7-einsteins-theory-of-gravity">Einstein’s Theory of Gravity</a>.</span><a class="headerlink" href="#space-distortion-fig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>However, if a neutron star gains additional mass, it would eventually collapse and shrink beyond the Schwarzschild radius.  After which, the entire mass would be pulled to a singularity.  In the diagram, the space stretches to infinity, where the time is stretched to infinity as well.  AS objects fall toward the vent horizon, we see them approaching ever more slowly, but never reaching the event horizon.  As outside observers, we never see objects pass through the event horizon because time is effectively stretched to a stop.</p>
@@ -2868,15 +2928,15 @@ R_{S,\oplus} &amp;= \frac{2GM_\oplus}{c^2} \\
 <h3><span class="section-number">13.8.1. </span>Part I<a class="headerlink" href="#part-i" title="Link to this heading">#</a></h3>
 <div class="admonition-problem-1 admonition">
 <p class="admonition-title">Problem 1</p>
-<p>Evaluate the magnitude of the gravitational force between two <span class="math notranslate nohighlight">\(5\ \text{kg}\)</span> spherical steel balls separated by a center-to-center distance of <span class="math notranslate nohighlight">\(15\ \text{cm}\)</span>.</p>
+<p>Evaluate the magnitude of the gravitational force between two <span class="math notranslate nohighlight">\(5\ {\rm kg}\)</span> spherical steel balls separated by a center-to-center distance of <span class="math notranslate nohighlight">\(15\ {\rm cm}\)</span>.</p>
 </div>
 <div class="admonition-problem-2 admonition">
 <p class="admonition-title">Problem 2</p>
-<p>The mean diameter of the planet Saturn is <span class="math notranslate nohighlight">\(1.2 \times 10^{8}\ \text{m}\)</span>, and its mean mass density is <span class="math notranslate nohighlight">\(0.69\ \text{g/cm}^3\)</span>. Find the acceleration due to gravity at Saturn’s surface.</p>
+<p>The mean diameter of the planet Saturn is <span class="math notranslate nohighlight">\(1.2 \times 10^{8}\ {\rm m}\)</span>, and its mean mass density is <span class="math notranslate nohighlight">\(0.69\ {\rm g/cm^3}\)</span>. Find the acceleration due to gravity at Saturn’s surface.</p>
 </div>
 <div class="admonition-problem-3 admonition">
 <p class="admonition-title">Problem 3</p>
-<p>An average-sized asteroid located <span class="math notranslate nohighlight">\(5.0 \times 10^{7}\ \text{km}\)</span> from Earth with mass <span class="math notranslate nohighlight">\(2.0 \times 10^{13}\ \text{kg}\)</span> is detected headed directly toward Earth with speed of <span class="math notranslate nohighlight">\(2.0\ \text{km/s}\)</span>. What will its speed be just before it hits our atmosphere? (You may ignore the size of the asteroid.)</p>
+<p>An average-sized asteroid located <span class="math notranslate nohighlight">\(5.0 \times 10^{7}\ {\rm km}\)</span> from Earth with mass <span class="math notranslate nohighlight">\(2.0 \times 10^{13}\ {\rm kg}\)</span> is detected headed directly toward Earth with speed of <span class="math notranslate nohighlight">\(2.0\ {\rm km/s}\)</span>. What will its speed be just before it hits our atmosphere? (You may ignore the size of the asteroid.)</p>
 </div>
 <div class="admonition-problem-4 admonition">
 <p class="admonition-title">Problem 4</p>
@@ -2891,11 +2951,11 @@ R_{S,\oplus} &amp;= \frac{2GM_\oplus}{c^2} \\
 </div>
 <div class="admonition-problem-6 admonition">
 <p class="admonition-title">Problem 6</p>
-<p>The perihelion of Halley’s comet is <span class="math notranslate nohighlight">\(0.586\ \text{AU}\)</span> and the aphelion is <span class="math notranslate nohighlight">\(17.8\ \text{AU}\)</span>. Given that its speed at perihelion is <span class="math notranslate nohighlight">\(55\ \text{km/s}\)</span>, what is the speed at aphelion? (<span class="math notranslate nohighlight">\(1\ \text{AU} = 1.496 \times 10^{11}\ \text{m}\)</span>.)  <em>Hint: You may use either conservation of energy or angular momentum, but the latter is much easier.</em></p>
+<p>The perihelion of Halley’s comet is <span class="math notranslate nohighlight">\(0.586\ {\rm AU}\)</span> and the aphelion is <span class="math notranslate nohighlight">\(17.8\ {\rm AU}\)</span>. Given that its speed at perihelion is <span class="math notranslate nohighlight">\(55\ {\rm km/s}\)</span>, what is the speed at aphelion? (<span class="math notranslate nohighlight">\(1\ {\rm AU} = 1.496 \times 10^{11}\ {\rm m}\)</span>.)  <em>Hint: You may use either conservation of energy or angular momentum, but the latter is much easier.</em></p>
 </div>
 <div class="admonition-problem-7 admonition">
 <p class="admonition-title">Problem 7</p>
-<p>Eros has an elliptical orbit about the Sun, with a perihelion distance of <span class="math notranslate nohighlight">\(1.13\ \text{AU}\)</span> and an aphelion distance of <span class="math notranslate nohighlight">\(1.78\ \text{AU}\)</span>. What is the period of its orbit?</p>
+<p>Eros has an elliptical orbit about the Sun, with a perihelion distance of <span class="math notranslate nohighlight">\(1.13\ {\rm AU}\)</span> and an aphelion distance of <span class="math notranslate nohighlight">\(1.78\ {\rm AU}\)</span>. What is the period of its orbit?</p>
 </div>
 <div class="admonition-problem-8 admonition">
 <p class="admonition-title">Problem 8</p>
@@ -2921,14 +2981,14 @@ R_{S,\oplus} &amp;= \frac{2GM_\oplus}{c^2} \\
 <div class="admonition-problem-3 admonition">
 <p class="admonition-title">Problem 3</p>
 <p>Astrology makes much of the position of the planets at the moment of one’s birth. The only known force a planet exerts on Earth is gravitational.</p>
-<p>(a) Calculate the gravitational force exerted on a <span class="math notranslate nohighlight">\(4.20\ \text{kg}\)</span> baby by a <span class="math notranslate nohighlight">\(100\ \text{kg}\)</span> father <span class="math notranslate nohighlight">\(0.200\ \text{m}\)</span> away at birth (he is assisting, so he is close to the child).</p>
-<p>(b) Calculate the force on the baby due to Jupiter if it is at its closest distance to Earth, some <span class="math notranslate nohighlight">\(6.29 \times 10^{11}\ \text{m}\)</span> away.</p>
+<p>(a) Calculate the gravitational force exerted on a <span class="math notranslate nohighlight">\(4.20\ {\rm kg}\)</span> baby by a <span class="math notranslate nohighlight">\(100\ {\rm kg}\)</span> father <span class="math notranslate nohighlight">\(0.200\ {\rm m}\)</span> away at birth (he is assisting, so he is close to the child).</p>
+<p>(b) Calculate the force on the baby due to Jupiter if it is at its closest distance to Earth, some <span class="math notranslate nohighlight">\(6.29 \times 10^{11}\ {\rm m}\)</span> away.</p>
 <p>How does the force of Jupiter on the baby compare to the force of the father on the baby?</p>
 </div>
 <div class="admonition-problem-4 admonition">
 <p class="admonition-title">Problem 4</p>
 <p>(a) What is the acceleration due to gravity on the surface of the Moon?  (b) On the surface of Mars?</p>
-<p>The mass of Mars is <span class="math notranslate nohighlight">\(6.418 \times 10^{23}\ \text{kg}\)</span> and its radius is <span class="math notranslate nohighlight">\(3.38 \times 10^{6}\ \text{m}\)</span>.</p>
+<p>The mass of Mars is <span class="math notranslate nohighlight">\(6.418 \times 10^{23}\ {\rm kg}\)</span> and its radius is <span class="math notranslate nohighlight">\(3.38 \times 10^{6}\ {\rm m}\)</span>.</p>
 </div>
 <div class="admonition-problem-5 admonition">
 <p class="admonition-title">Problem 5</p>
@@ -2936,11 +2996,11 @@ R_{S,\oplus} &amp;= \frac{2GM_\oplus}{c^2} \\
 </div>
 <div class="admonition-problem-6 admonition">
 <p class="admonition-title">Problem 6</p>
-<p>Find the mass of Jupiter based on the fact that Io, its innermost moon, has an average orbital radius of <span class="math notranslate nohighlight">\(421{,}700\ \text{km}\)</span> and a period of <span class="math notranslate nohighlight">\(1.77\ \text{days}\)</span>.</p>
+<p>Find the mass of Jupiter based on the fact that Io, its innermost moon, has an average orbital radius of <span class="math notranslate nohighlight">\(421{,}700\ {\rm km}\)</span> and a period of <span class="math notranslate nohighlight">\(1.77\ {\rm days}\)</span>.</p>
 </div>
 <div class="admonition-problem-7 admonition">
 <p class="admonition-title">Problem 7</p>
-<p>If the Sun were to collapse into a black hole, the point of no return for an investigator would be approximately <span class="math notranslate nohighlight">\(3\ \text{km}\)</span> from the center singularity. Would the investigator be able to survive visiting even <span class="math notranslate nohighlight">\(300\ \text{km}\)</span> from the center? Answer this by finding the difference in the gravitational attraction the black hole exerts on a <span class="math notranslate nohighlight">\(1.0\ \text{kg}\)</span> mass at the head and at the feet of the investigator.</p>
+<p>If the Sun were to collapse into a black hole, the point of no return for an investigator would be approximately <span class="math notranslate nohighlight">\(3\ {\rm km}\)</span> from the center singularity. Would the investigator be able to survive visiting even <span class="math notranslate nohighlight">\(300\ {\rm km}\)</span> from the center? Answer this by finding the difference in the gravitational attraction the black hole exerts on a <span class="math notranslate nohighlight">\(1.0\ {\rm kg}\)</span> mass at the head and at the feet of the investigator.</p>
 </div>
 </section>
 </section>
@@ -3061,10 +3121,10 @@ R_{S,\oplus} &amp;= \frac{2GM_\oplus}{c^2} \\
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kepler-s-laws-of-planetary-motion">13.5. Kepler’s Laws of Planetary Motion</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kepler-s-1st-law">13.5.1. Kepler’s 1st Law</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kepler-s-first-law">13.5.1. Kepler’s First Law</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#orbital-transfers">13.5.2. Orbital Transfers</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kepler-s-2nd-law">13.5.3. Kepler’s 2nd Law</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kepler-s-3rd-law">13.5.4. Kepler’s 3rd Law</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kepler-s-second-law">13.5.3. Kepler’s Second Law</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kepler-s-third-law">13.5.4. Kepler’s Third Law</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-orbit-of-halley-s-comet">13.5.5. <strong>Example Problem</strong>: Orbit of Halley’s Comet</a></li>
 </ul>
 </li>
