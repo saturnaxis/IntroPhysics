@@ -1,0 +1,150 @@
+Newton's Third Law.
+
+Newton's Third Law of Motion.
+
+For every interaction between two objects, the forces come in pairs. If object A exerts a force on object B, then object B exerts a force on object A with equal magnitude and opposite direction.
+
+Using vector F sub AB to mean “the force on B by A ” and vector F sub BA to mean “the force on A by B,” Newton’s third law is
+
+vector F sub AB equals minus vector F sub BA.
+
+These two forces act on different objects, so they do not cancel in a free-body diagram of a single object.
+
+Newton's third law represents a certain symmetry in nature: Forces always occur in pairs, and one body cannot exert a force on another without experiencing a force itself. We sometimes refer to this law loosely as "action-reaction".
+
+Consider a swimmer pushing off the side of a pool (see the figure). She pushes against the pool wall with her feet and accelerates in the opposite direction of her push. The wall has exerted an equal and opposite force on the swimmer.
+
+You might think that two equal and opposite forces would cancel, but they do not because they act on different systems. In this case, there are two systems that we could investigate: (a) the swimmer and, part b, the wall.
+
+Part a. If we select the swimmer, then vector F _ wall on feet is an external force on this system and affects the swimmer's motion. The swimmer moves in the direction of this force. F_ feet on wall
+
+Part b. The force vector F _ feet on wall acts on the wall and thus, it does not directly affect the motion of the swimmer and does not cancel vector F _ wall on feet.
+
+The swimmer pushes in the direction opposite that in which she wishes to move. The reaction to her push is thus in the desired direction. In a free-body diagram, we never include both forces of an action-reaction pair, we only use vector F _ wall on feet, not vector F _ feet on wall.
+
+Other examples of Newton's third law are easy to find:
+
+A car accelerates forward because the ground pushes forward on the drive wheels, in reaction to the drive wheels pushing backward on the ground.
+
+Rockets move forward by expelling gas backward at high velocity. This reaction force is called thrust, which pushes a body forward in response to a backward force.
+
+Helicopters create lift by pushing air down, thereby experiencing an upward reaction force.
+
+There are two important features of Newton's third law.
+
+The forces exerted (action and reaction) are always equal in magnitude but opposite in direction.
+
+These forces are acting on different bodies or systems: A 's force acts on B and B 's force on A. They don't act on the same body and thus, they do not cancel each other.
+
+Checkpoint. Pause and check your understanding.
+
+A swimmer pushes backward on a wall.
+
+What is the Newton’s third-law partner to this force, and which object does it act on?
+
+A person who is walking or running applies Newton's third law instinctively. For example, a runner pushes backward on the ground so that it pushes him forward (see the figure).
+
+Example Problem: Forces on a Stationary Object.
+
+The Problem.
+The package in Figure is sitting on a scale. For the scale and package at rest (i.e., not accelerating), show that the scale indicates the weight of the package.
+
+The worked solution follows.
+
+The Model.
+
+The system is the package alone. The positive y direction is chosen upward, so the scale force on the package points in the positive j-hat direction and the weight points in the negative j-hat direction. The package is at rest in an inertial frame, so its acceleration is zero. Only vertical forces act on the package; the reaction forces shown in the figure act on other objects and are not included in the free-body diagram of the package.
+
+The Math.
+
+Newton's second law requires the net external force to be zero when the acceleration is zero,
+
+the sum of the external force vectors equals m vector a,
+equals the zero vector.
+
+The scale exerts an upward force vector s equals s j-hat on the package, and Earth exerts the downward weight vector w equals negative w j-hat. The force balance on the package is
+
+vector s plus vector w equals the zero vector,
+s j-hat minus w j-hat equals the zero vector,
+(s minus w) j-hat equals the zero vector.
+
+For this vector to be zero, the scalar magnitudes must be equal,
+
+s equals w.
+
+The Conclusion.
+
+The scale reading equals the package's weight when the package is at rest. More precisely, the scale measures the upward contact force it exerts on the package, and in this zero-acceleration case that contact force has the same magnitude as the gravitational force on the package.
+
+The Problem.
+A physics professor pushes a cart of demonstration equipment to a lecture hall (the figure). Her mass is 65 kilograms, the cart’s mass is 12 kilograms, and the equipment’s mass is 7 kilograms. Calculate the acceleration produced when the professor exerts a backward force of 150 newtons on the floor. All forces opposing the motion, such as friction on the cart’s wheels and air resistance, total 24.0 newtons.
+
+The worked solution follows.
+
+The Model.
+
+The system is the professor, cart, and equipment together, corresponding to System 1 in the figure. The positive x direction is chosen forward, in the direction of the motion, and the positive y direction is upward. The floor exerts a forward force on the system because the professor pushes backward on the floor. The total resistive force from wheel friction and air resistance acts backward. The vertical forces balance, and forces between the professor, cart, and equipment are internal to this chosen system.
+
+The Math.
+
+Newton's second law is applied to the external horizontal forces on System 1. The forward force from the floor has magnitude F floor, and the total resistive force has magnitude f, so
+
+sum F sub x equals m a,
+F floor minus f equals m a.
+
+The mass of the system is the sum of the professor, cart, and equipment masses,
+
+m equals 65 kilograms plus 12 kilograms plus 7 kilograms,
+equals 84 kilograms.
+
+We solve the horizontal force equation for the acceleration because the acceleration is the requested unknown quantity.
+
+a equals F floor minus f divided by m,
+equals the quantity 150 newtons minus 24.0 newtons, divided by 84 kilograms,
+equals 1.5 meters per second squared.
+
+The Conclusion.
+
+The professor, cart, and equipment accelerate forward at 1.5 meters per second squared. This acceleration is determined by the net external horizontal force on System 1, not by the internal forces between the professor and the cart.
+
+The Problem.
+Calculate the force the professor exerts on the cart in Figure, using data from the previous example if needed.
+
+The worked solution follows.
+
+The Model.
+
+The system is now the cart plus the equipment, corresponding to System 2 in the previous figure. The positive x direction is forward, in the direction of the acceleration found in the previous example, and the positive y direction is upward. The professor's push on the cart is external to this smaller system. The same total resistive force opposes the motion, and the vertical forces balance.
+
+The Math.
+
+For System 2, the horizontal external forces are the professor's forward force and the backward resistive force. Newton's second law gives
+
+sum F sub x equals m a,
+F prof minus f equals m a.
+
+We solve the horizontal force equation for the professor's force on the cart because that force is the requested unknown quantity.
+
+F prof equals m a plus f.
+
+The mass of System 2 is the cart plus the equipment,
+
+m equals 12.0 kilograms plus 7.0 kilograms,
+equals 19.0 kilograms.
+
+We now use the acceleration found in the previous example in the expression for the professor's force on System 2:
+
+F prof equals (19.0 kilograms)(1.5 meters per second squared) plus 24.0 newtons,
+equals 53 newtons.
+
+The Conclusion.
+
+The professor exerts a forward force of 53 newtons on the cart. This is smaller than the 150 newtons interaction with the floor because the floor force accelerates the professor, cart, and equipment together, while F prof only has to accelerate the cart and equipment while overcoming the resistive force on that smaller system.
+
+Check Your Understanding. Pause and check your understanding.
+
+Two blocks are at rest and in contact on a frictionless surface. The masses are m sub one equals 2 kilograms and m sub two equals 6 kilograms, and an applied force of 24 newtons pushes the blocks together.
+
+Part a. Find the acceleration of the system of blocks.
+
+Part b. Suppose that the blocks are later separated. What force would give the second block, with mass 6 kilograms, the same acceleration as the system of blocks?

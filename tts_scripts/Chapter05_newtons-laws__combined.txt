@@ -1,0 +1,1796 @@
+5.1 Forces
+
+Newton's Laws of Motion.
+
+Chapter roadmap.
+
+ 
+
+This chapter introduces Newton's laws of motion as the foundation for connecting forces to changes in motion. Forces describe interactions between objects, and Newton's laws explain how those interactions determine acceleration, equilibrium, and the motion that follows.
+
+As you read, focus on three questions:
+
+Item 1. What forces act on the object or system?
+
+Item 2. What direction does each force point?
+
+Item 3. How does the net force determine the object's acceleration?
+
+These ideas will be used to build free-body diagrams, connect forces to motion, and prepare for more realistic applications in the next chapter.
+ 
+
+Forces.
+
+The study of motion is called *kinematics*, which describes the way objects move through their velocity and acceleration. 
+
+The study of what *causes objects to move* is called **dynamics**), which describes the motion of objects and systems through forces. The foundation of dynamics are the laws of motion developed by Isaac Newton, although some of the fundamental principles were developed earlier by Galileo Galilei.
+
+The development of Newton's laws marked a transition from Renaissance thinking (i.e., reliance on ancient texts) to Scientific Revolution thinking which developed many of the fundamental pillars of the modern era. Newton's description of mechanics is now described as *classical mechanics* where it applies to most situations until the 20th century. The development of modern physics was prompted by discoveries of subatomic particles which move at speeds comparable to the speed of light. To describe the motions of these particles, we need *quantum mechanics*.
+
+Working Definition of Force.
+
+We need a "working" definition of a force to help build some intuition until we get to the more formal definition given by Newton's 2nd Law. An intuitive definition of a force is
+
+Bullet point. a push or a pull.
+
+A push or a pull has both magnitude (i.e., how hard) and a direction, so it is a vector quantity. Force can be represented by vectors or expressed as a multiple of a standard force.
+
+Our everyday experience gives a good idea of how multiple forces add. If 2 people push in different directions on a third person (see the figure), we might expect the total force to be in the direction of the resultant vector (or force). Forces, like vectors, are represented by arrows.
+
+Checkpoint.
+
+ 
+
+A book is sliding across a table and slowing down.
+
+Does the book need a force in the direction of motion to keep moving? Explain briefly.
+ 
+
+Figure referenced in the course notes.
+
+Recall the spherical cow, where the solution was for an idealized and simplified situation. Physicists use **free-body diagrams** (or FBDs) to visualize and simplify our analysis of forces. A FBD is **not** a lifelike drawing, where it is *only a sketch* to organize your thinking. 
+
+ 
+A free-body diagram is not judged for beauty, symmetry, or originality. It is judged only on whether every force acting on the object is there.
+ 
+
+The object or system is represented by 
+
+Bullet point. a single isolated point (or free body), and 
+
+Bullet point. only those forces acting on it (i.e., external forces) are shown.
+
+Drawing Free-Body Diagrams.
+
+ 
+
+A free-body diagram is a simple sketch that helps us focus on the forces acting on one object or system. Instead of drawing every detail in the scene, we isolate the object and represent each force with an arrow.
+
+When drawing a free-body diagram:
+
+Item 1. Choose the object or system you want to analyze.
+
+Item 2. Represent the object with a simple shape, such as a point or box. This should be in 1980s style graphics as a point, circle, triangle, or rectangle. Place it at the *origin* of an xy -coordinate system.
+
+Item 3. Draw each force acting on that object as an arrow.
+
+Item 4. Label each force so its physical source is clear.
+
+Item 5. Choose coordinate axes that make the problem easier to describe.
+
+Item 6. Draw a separate free-body diagram for each object in the problem. 
+
+The goal is not to make realistic art. The goal is to make the force relationships clear enough that Newton’s laws can be applied.
+ 
+
+Figure referenced in the course notes.
+
+The strategy is illustrated in Fig. with 2 examples. The video below gives a more in-depth general explanation.
+
+**Bozeman Science**.
+
+ 
+
+ 
+ 
+
+Contact and Field Forces.
+
+Let's analyze force more deeply. Suppose a physics student sits at a table (see the figure), working diligently on his homework:wink:.
+
+Figure referenced in the course notes.
+
+Bullet point. What external forces act on him? Can we determine the origin of these forces?
+
+Forces are usually grouped into 2 categories: *contact* and *field* forces.
+
+Bullet point. Contact forces are due to direct physical contact between objects. The student in Fig. experiences contact forces vector C (from the chair), vector F (from the floor), and vector T (from the table).
+
+Bullet point. Field forces act without the necessity of physical contact between objects. They depend on the presence of a "field" near the body under consideration. Earth's gravitational field causes the student to feel a gravitational force vector w, which is his weight.
+
+Checkpoint.
+
+ 
+
+Classify each force as a contact force or a field force: gravity, tension, normal force, friction.
+ 
+
+**Khan Academy**.
+
+ 
+
+ 
+ 
+
+As far as we know, there are only 4 fundamental force fields in nature. These are gravitational, electromagnetic, strong nuclear, and weak fields.
+
+Bullet point. The gravitational field is responsible for the weight of a body.
+
+Bullet point. The forces of electricity and magnetism are responsible for the attraction among atoms in bulk matter.
+
+Bullet point. The strong nuclear and weak forces are effective over a short distance, no larger than an atomic nucleus.
+
+Contact forces are fundamentally electromagnetic. Atomic charges interact electromagnetically with other atomic charges, which prevents objects from moving through one another (i.e., no clipping).
+
+Vector Notation for Force.
+
+The SI unit of force is called the **Newton** (abbreviated N ), which is the force needed to accelerate an object with a mass of 1 kg at a rate of 1 meters per second squared (i.e., 1 newtons equals 1 kg dot meters per second squared ). *Note that a small apple has a weight of about 1 newtons.*
+
+We can describe a force in the form
+
+ 
+ vector F equals a i hat + b j hat, (in 2D) 
+ vector F equals a i hat + b j hat + c k hat. (in 3D) 
+ 
+
+In the figure, let's suppose that ice skater 1 (on the left) pushes horizontally with a force of 30 newtons to the right (or vector F _1 equals 30 i hat N ). Similarly, if ice skater 2 (on the bottom) pushes with a force of 40 newtons in the positive vertical direction, we would write vector F _2 equals 40 j hat N. 
+
+The resultant force causes the third ice skater to accelerate. The **net external force** vector F _ net is found by taking the vector sum of **all external forces** acting on an object or system. We can then represent the net external force (in general) as:
+
+ 
+ vector F _ net equals sum vector F _ ext, 
+ equals vector F _1 + vector F _2 + dot s + vector F _N, 
+ equals F sub net,x i hat + F sub net,y j hat + F sub net,z k hat, 
+ equals sum sub i equals 1 to the power of N F sub ix i hat + sum sub i equals 1 to the power of N F sub iy j hat + sum sub i equals 1 to the power of N F sub iz k hat.
+ 
+
+In this example, we have vector F _ net equals vector F _1 + vector F _2 equals 30 i hat + 40 j hat N. To find the magnitude of the net (resultant) force F_ net, we sum the squares of the components and take the square root, or
+
+ F_ net equals square root of (30 newtons ) squared + (40 newtons ) squared equals 50 newtons, 
+
+where the direction is given by
+
+ theta equals tan to the power of -1 ( F sub net,y over F sub net,x ) equals tan to the power of -1 ( 40 over 30 ) equals 53 degrees 
+
+measured from the positive x -axis, as shown in the free-body diagram in Fig. b.
+
+Checkpoint.
+
+ 
+
+Two forces act on an object: vector F _1 equals 4 i hat N and vector F _2 equals -4 i hat N.
+
+What is the net force?
+ 
+
+---
+Let's suppose the ice skaters now push the third ice skater with vector F _1
+ equals 3 i hat + 8 j hat N and vector F sub 2 equals 5 i hat + 4 j hat N. 
+
+Bullet point. **What is the resultant of these two forces?**
+
+ We recognize that force is a vector, and therefore, we must add using the rules for vector addition:
+
+ 
+ vector F _ net equals sum sub i equals 1 to the power of 2 F sub ix i hat + sum sub i equals 1 to the power of 2 F sub iy j hat, 
+ equals (3 + 5) i hat + (8 + 4) j hat, 
+ equals 8 i hat + 12 j hat N.
+
+========================================================================
+
+5.2 Newton's 1st Law
+
+Newton's 1st Law.
+
+Newton's 1st law is a restatement of Galileo's principle of **inertia**, which states that an object in motion tends to slow down unless some effort is made to keep it moving. **Newton's 1st law** gives a deeper explanation of this observation.
+
+Newton's 1st Law of Motion.
+
+ 
+
+An object at rest remains at rest, and an object in motion remains in motion with constant velocity, unless acted on by a net external force.
+ 
+
+Note the expression "constant velocity", which means that the object maintains a path along a straight line (since neither the magnitude nor direction changes). Also the verb "remains" tells us that it keeps on moving (or not moving) as part of the status quo.
+
+Newton's 1st law says that there must be a cause for any change in velocity (i.e., acceleration) to occur. The cause is a net external force. An object sliding across a table or floor slows down due to the net force of friction acting on the object. **If friction disappears, will the object slow down?**
+
+Figure referenced in the course notes.
+
+Consider an air hockey table (the figure). When the air is turned off, the puck slides only a short distance before friction slows it to a stop. However, with the air turned on, it creates a *nearly* frictionless surface, and the puck glides a long distance without slowing down. If we know enough about the friction, we can accurately predict how quickly the object slows down.
+
+Checkpoint.
+
+ 
+
+Can an object be moving if the net force on it is zero? Explain using Newton’s first law.
+ 
+
+Newton's 1st law is general and can be applied to anything from an object sliding on table, a satellite in orbit, or even blood pumped from the heart. Experiments have verified that any change in velocity (speed or direction) must be caused by an external force.
+
+Aristotle had claimed that objects had a natural state and needed little "angels" to keep the objects moving. It was Galileo who questioned this idea, which led him to ask the fundamental question: "What is the cause?" Thinking in terms of *cause and effect* is fundamentally different from the typical ancient Greek approach. 
+
+Gravitation and Inertia.
+
+Regardless of the scale of an object, two properties remain valid: gravitation and inertia because they are both connected to mass.
+
+Bullet point. **Mass** is a measure of the amount of matter in something. It has volume and takes up space.
+
+Bullet point. **Gravitation** is the attraction of one mass to another. The magnitude of this attraction is your weight, and it is a force.
+
+Mass is related to **inertia**, which is the ability of an object to *resist changes in its motion*, or to resist acceleration. Newton's 1st law is often called the **law of inertia**.
+
+Inertial Reference Frames.
+
+Newton's 1st law can also be stated as *"Every body remains in its state of uniform motion in a straight line unless it is compelled to change that state by forces acting on it."* 
+
+Bullet point. To Newton, "uniform motion in a straight line" meant constant velocity, which includes the special case of zero velocity (or rest).
+
+Therefore the 1st law says that the velocity of an object remains constant if the net force on it is zero, or
+
+ vector F _ net equals sum vector F sub ext equals 0. 
+
+Newton's 1st law is also considered as a statement about reference frames. It provides a method for identifying a special type of reference frame called the **inertial reference frame**.
+
+In principle, we can make the net force on a body zero, if its velocity relative to a given reference frame is constant and then that frame is defined as inertial (recall ). An inertial reference frame is one where Newton's 1st law is valid. 
+
+Inertial Reference Frame.
+
+ 
+
+A reference frame moving at constant velocity relative to an inertial reference frame is also inertial. A reference frame accelerating relative to an inertial frame is not inertial.
+
+Bullet point. *Are inertial frames common in nature?*
+
+A reference frame at rest to the most distant (or "fixed") stars is inertial. All frames moving uniformly with respect to this fixed-star frame are also inertial. For example, a nonrotating reference frame attached to the Sun is (for all practical purposes) inertial because its velocity relative to the fixed stars does not vary by more than one part in ten to the 10.
+
+Earth accelerates relative to the fixed stars because it rotates on its axis and *revolves* around the Sun. Hence a reference frame attached to its surface is not inertial. For most problems, such a frame serves as a sufficiently accurate *approximation* to an inertial frame because the acceleration relative to the fixed stars is small ( { approximately }ten to the minus 2 meters per second squared ). Thus we consider reference frames fixed to the Earth as inertial.
+
+No particular inertial frame is more special than any other. All inertial frames are equivalent. In analyzing a problem, we choose one particular inertial frame simply based on convenience.
+ 
+
+Newton's 1st Law and Equilibrium.
+
+Newton's first law tells us about the *equilibrium* of a system (i.e., vector F _ net equals 0 ). From the figure, the forces combine to form a net external force: vector F _ net equals vector F _1 + vector F _2. To create equilibrium, we require a *balancing force* that will produce a net force of zero.
+
+Bullet point. This force must be equal in magnitude, but opposite in direction to vector F _ net (i.e., vector F _ bal equals - vector F _ net ).
+
+For the ice skaters, we found vector F _ net equals 30 i hat + 40 j hat N, where the balancing force is 
+
+ 
+ vector F _ bal equals - vector F _ net, 
+ equals -30 i hat - 40 j hat N.
+ 
+
+Newton's 1st law in vector form is given as
+
+ 
+ vec v equals constant, when vector F _ net equals vector 0 newtons.
+ 
+
+For the net force to equal zero, the velocity vector vec v of the object is a constant.
+
+Derivative of a Constant (Calculus-framing).
+
+ 
+
+From calculus, we have the constant rule which means that for any function f(x) equals c (where c is a constant), the derivative f^ prime(x) equals 0.
+
+*What does this mean for an object moving with constant velocity?* We have loosely defined a force as a push or pull (or causing an object to accelerate). Recall the definition of acceleration as
+
+ vector a equals d vector v ( t) over dt, 
+
+which means the acceleration is the slope of the velocity curve. If vec v (t) equals c, then the slope is equal to zero.
+
+If there is no acceleration, then there is no net force (assuming mass remains constant). This does not mean that no forces act on the object. It means that all external forces acting on the object balance.
+ 
+
+Checkpoint.
+
+ 
+
+A car moves in a straight line at constant speed.
+
+Is the car in equilibrium? What does that imply about sum vector F _ ext?
+ 
+
+If a car is at rest, the only forces acting on the car are: weight and the contact force pushing up on the car (see the figure). A nonzero net force is required to change the state of motion of the car. As a car moves with constant velocity, the friction force propels the car forward and opposes the drag force against it.
+
+Figure referenced in the course notes.
+
+Interactive Simulation: Forces and Motion.
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+**Example Problem**: Applying Newton's 1st Law to your car.
+
+The Problem.
+Newton's laws can be applied to all physical processes involving force and motion, including something as mundane as driving a car.
+(a) Your car is parked outside your house. Does Newton's first law apply in this situation? Why or why not?
+(b) Your car moves at constant velocity down the street. Does Newton's first law apply in this situation? Why or why not?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The car is modeled as a single object observed from the ground, which we treat as an inertial reference frame. For the parked car, the coordinate system has + j hat upward. For the moving car, + i hat points in the direction of motion and + j hat points upward. In both cases, the question is not whether forces exist, but whether the vector sum of the external forces is zero.
+
+For the parked car, the only forces that need to be considered are the downward weight and the upward contact force from the ground. For the car moving at constant velocity, the vertical forces still balance, and the horizontal driving force from the road balances the resistive forces from air drag and rolling resistance.
+
+---
+
+The Math.
+
+Newton's first law applies when the net external force on an object is zero. Under that condition, the acceleration is zero, so the object remains at rest or moves with constant velocity,
+
+ 
+ sum vector F _ ext equals vector 0 therefore vector a equals vector 0.
+ 
+
+For the parked car, the weight acts downward and the ground exerts an upward contact force. Writing these qualitatively as vector W equals -w j hat and vector N equals n j hat, the force sum is
+
+ 
+ sum vector F _ ext equals vector N + vector W, 
+ equals n j hat -w j hat, 
+ equals (n-w) j hat.
+ 
+
+Since the parked car is not accelerating, the net force is zero and n equals w. Newton's first law therefore applies.
+
+For the car moving at constant velocity, the acceleration is still zero. The vertical forces balance as before. In the horizontal direction, the forward force from the road on the tires must balance the backward resistive force. If vector F _ road equals f i hat and vector F _ res equals -f i hat, then
+
+ 
+ vector F _ road + vector F _ res equals vector 0.
+ 
+
+The total net force is zero, so Newton's first law applies in this case as well.
+
+---
+
+The Conclusion.
+
+Newton's first law applies in both situations. For the parked car, the upward contact force from the ground balances the downward weight. For the car moving at constant velocity, the vertical forces balance and the horizontal driving and resistive forces also balance. The important point is that zero net force means zero acceleration, not necessarily zero velocity.
+
+---
+
+========================================================================
+
+5.3 Newton's 2nd Law
+
+Newton's 2nd Law.
+
+Newton's 2nd law gives the cause-and-effect relationship between force and changes in motion. It is quantitative and used extensively to calculate what happens in situations involving a force.
+
+Force and Acceleration.
+
+*What do we mean by a change in motion?*
+
+A change in motion is equivalent to a change in velocity (i.e., an acceleration). Newton's 1st law says that a net external force *causes* a change in motion, and thus, we see that a *net external force causes nonzero acceleration*.
+
+Bullet point. An external force is one that is outside the system of interest. In Fig. a, the system of interest is the car plus the person within it. The two forces exerted by the students outside are external forces.
+
+Bullet point. An internal force acts between elements of the system. Thus the force the person exerts holding onto the steering wheel is an internal force. 
+
+Figure referenced in the course notes.
+
+Only external forces affect the motion of a system, according to Newton's 1st law. Therefore, we must define the boundaries of the system to separate the internal from external forces.
+
+In Fig. a, there are arrows denoting the external forces present:
+
+Bullet point. The weight vector w includes the car + person inside.
+
+Bullet point. The car is supported by the ground vector N, which will cancel the weight, since the car is not floating nor sinking.
+
+Bullet point. The friction f resists the motion and must be oriented opposite (to the left).
+
+Bullet point. The forces from each student pushing ( vector F _1 and vector F _2 ) are applied to accelerate the car to the right.
+
+All the forces add together to produce the net force vector F _ net (see Fig. b). The free-body diagram (Fig. a) shows all of the forces acting on the system, where the dot at the center represents the center-of-mass. Forces in the same direction are shown collinearly.
+
+In Fig. c, a larger net external force produces a larger acceleration ( vector a ^ prime > vector a ) when the tow truck pulls the car. The acceleration is proportional to and in the same direction as the **net external force** acting on a system. Mathematically this is written as
+
+ vector a is proportional to vector F _ net, 
+
+where the symbol is proportional to (or ` is proportional to `) means "proportional to." 
+
+Once the system of interest is chosen, identify the external force and ignore the internal ones. It is a huge simplification to disregard the numerous internal forces acting between objects within the system. This simplification helps us solve some complex problems.
+
+Recall that inertia is the "resistance to motion" and is related to an objects mass. Therefore it seems reasonable that a more massive object requires more acceleration for it to move. 
+
+In the figure, the same net external force applied to a basketball produces a much smaller acceleration when it is applied to an SUV.
+
+Figure referenced in the course notes.
+
+Therefore, we can write the proportional relationship between acceleration and mass as
+
+ a is proportional to 1 over m, 
+
+where m is the mass of the system and a is the *magnitude* of the acceleration. Combining the two proportionalities yields **Newton's 2nd law.**
+
+Checkpoint.
+
+ 
+
+The same net force is applied to two carts. Cart B has twice the mass of cart A.
+
+Which cart has the larger acceleration?
+ 
+
+Newton's 2nd Law of Motion.
+
+ 
+
+The acceleration of a system is 
+
+Bullet point. directly proportional to the external force acting on the system, 
+
+Bullet point. in the same direction as the external force acting on the system, and 
+
+Bullet point. inversely proportional to its mass.
+
+In equation form, Newton's 2nd law is
+
+ 
+ vector a equals fraction { vector F _ net } meters, 
+ vector F _ net equals sum vector F equals m vector a.
+ 
+
+Since the mass m is a scalar, we can see that it scales the vector vector a to give the net external force vector F _ net. Also we can use the properties of vectors to write the scalar equivalent as
+
+ 
+F_ net equals ma.
+ 
+ 
+
+**Example Problem**: Pushing a Lawnmower.
+
+The Problem.
+Suppose that the net external force (push minus friction) exerted on a lawn mower is 51 newtons (about 11 lb.) parallel to the ground (Figure ). The mass of the mower is 24 kg. What is its acceleration?
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The lawn mower is modeled as a particle moving on level ground. The positive x direction is chosen parallel to the ground in the direction of the stated net force, and the positive y direction is upward. The problem already gives the net horizontal force, so the individual push and friction forces do not need to be modeled separately. The vertical forces balance and do not affect the horizontal acceleration.
+
+---
+
+The Math.
+
+Newton's second law relates the net external force to the acceleration of the mower. With the net force and acceleration both along + i hat, we can write vector F _ net equals (51 newtons ) i hat and vector a equals a i hat. We substitute the force vector and acceleration vector into Newton's second law to obtain
+
+ 
+ sum vector F _ ext equals m vector a, 
+(51 newtons ) i hat equals (24 kg )(a i hat ).
+ 
+
+Because both sides point in the same direction, the scalar magnitudes satisfy
+
+ 
+51 newtons equals (24 kg )a, 
+a equals 51 newtons over 24 kg, 
+ equals 2.1 meters per second squared.
+ 
+
+---
+
+The Conclusion.
+
+The lawn mower accelerates at 2.1 meters per second squared in the direction of the net force. This result uses the net external force, not the applied push alone, because friction has already been subtracted from the push in the given force.
+
+---
+
+ **The Problem**
+(a) The car shown in Figure is moving at a constant speed. Which force is bigger, vector F sub friction or vector F sub drag? Explain.
+(b) The same car is now accelerating to the right. Which force is bigger, vector F sub friction or vector F sub drag? Explain.
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The car is modeled as a particle moving horizontally. The positive x direction is chosen to the right, in the direction of motion. The forward force vector F _ friction is the static friction force exerted by the road on the tires, while vector F _ drag represents resistive forces such as air drag and rolling resistance acting opposite the motion. Vertical forces balance and are not needed for the horizontal comparison.
+
+---
+
+The Math.
+
+**(a)** For the constant-speed case, the car moves in a straight line with zero acceleration. Newton's second law then requires the horizontal net force to be zero. Taking right as positive,
+
+ 
+ sum F sub x equals 0, 
+F_ friction -F_ drag equals 0.
+ 
+
+Thus the two forces have equal magnitudes.
+
+**(b)** For the accelerating case, the car accelerates to the right. Newton's second law requires the net horizontal force to point to the right, so
+
+ 
+ sum F sub x equals m a sub x, 
+F_ friction -F_ drag > 0.
+ 
+
+This inequality means that the forward static friction force must be larger than the backward drag force.
+
+---
+
+The Conclusion.
+
+For constant-speed motion, vector F _ friction and vector F _ drag have equal magnitudes and opposite directions. When the car accelerates to the right, the forward friction force is larger than the backward drag force. The distinction is not whether the car is moving, but whether its velocity is changing.
+
+---
+
+ **The Problem**
+Before space flights carrying astronauts, rocket sleds were used to test aircraft, missile equipment, and physiological effects on human subjects at high speeds. They consisted of a platform that was mounted on one or two rails and propelled by several rockets.
+Calculate the magnitude of force exerted by each rocket, called its thrust T, for the four-rocket propulsion system shown in Figure. The sled's initial acceleration is 49 meters per second to the power of 2, the mass of the system is 2100 kg, and the force of friction opposing the motion is 650 newtons.
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The system is the rocket sled, rockets, and rider treated as one object moving horizontally. The positive x direction is chosen in the direction of the sled's acceleration, and the positive y direction is upward. Four identical rockets exert equal thrusts in the positive x direction, while friction acts in the negative x direction. The normal force and weight balance vertically, so the acceleration is entirely horizontal.
+
+---
+
+The Math.
+
+Newton's second law is applied along the horizontal direction. The total forward thrust from the four rockets is 4T, and the friction force of magnitude f opposes the motion. The corresponding force equation is
+
+ 
+ sum F sub x equals ma, 
+4T-f equals ma.
+ 
+
+We solve the horizontal force equation for the thrust from one rocket because T is the requested unknown quantity.
+
+ 
+4T equals ma+f, 
+T equals ma+f over 4.
+ 
+
+We now substitute the sled mass, acceleration, and friction force into the expression for the thrust from one rocket:
+
+ 
+T equals (2100 kg )(49 meters per second squared )+650 newtons over 4, 
+ equals 2.6 times ten to the 4 newtons.
+ 
+
+The result is reported to two significant figures because the acceleration is given as 49 meters per second squared.
+
+---
+
+The Conclusion.
+
+Each rocket must exert a thrust of 2.6 times ten to the 4 newtons. The total thrust must both overcome friction and provide the net force needed to accelerate the massive sled. The vertical forces are not part of this calculation because they balance and produce no vertical acceleration.
+
+---
+
+ **The Problem**
+
+A 0.400 kg soccer ball is kicked across the field by a player; it undergoes acceleration given by vector a equals 3.00 i hat + 7.00 j hat meters per second to the power of 2. Find (a) the resultant force acting on the ball and (b) the magnitude and direction of the resultant force.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The soccer ball is modeled as a particle moving in the x - y plane. The positive x direction is along i hat, and the positive y direction is along j hat. The given acceleration already provides the acceleration components in this coordinate system. The net external force represents the combined effect of all interactions acting on the ball during the kick.
+
+---
+
+The Math.
+
+Newton's second law can be applied directly in vector form because the acceleration is already written in component form. Multiplying the acceleration vector by the mass gives the net force vector,
+
+ 
+ vector F _ net equals m vector a, 
+ equals (0.400 kg )(3.00 i hat +7.00 j hat ) meters per second squared, 
+ equals (1.20 i hat +2.80 j hat ) N.
+ 
+
+This is the resultant force in component form. The magnitude is found from the components,
+
+ 
+F_ net equals square root of F sub x to the power of 2+ F sub y to the power of 2, 
+ equals square root of (1.20 newtons ) squared+(2.80 newtons ) squared, 
+ equals 3.05 newtons.
+ 
+
+The direction is measured counterclockwise from the + i hat axis. Since both force components are positive, the force lies in the first quadrant,
+
+ 
+ theta equals tan to the power of -1 ( F sub y over F sub x ), 
+ equals tan to the power of -1 ( 2.80 over 1.20 ), 
+ equals 66.8 degrees.
+ 
+
+---
+
+The Conclusion.
+
+The resultant force on the soccer ball is vector F _ net equals (1.20 i hat +2.80 j hat ) N. Its magnitude is 3.05 newtons, directed 66.8 degrees counterclockwise from the + i hat axis. The force points in the same direction as the acceleration because the mass is a positive scalar.
+
+---
+
+ **The Problem**
+Find the mass of a car if a net force of -600.0 j hat N produces an acceleration of -0.2 j hat meters per second to the power of 2.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The car is modeled as a particle subject to a net external force. The positive y direction is chosen along + j hat, so both the given net force and acceleration point in the negative y direction. The force and acceleration are parallel, so a scalar component equation can represent the motion. No other forces need to be modeled separately because the net force is already given.
+
+---
+
+The Math.
+
+Newton's second law relates the net external force to the acceleration,
+
+ 
+ sum vector F _ ext equals m vector a.
+ 
+
+Mass is a scalar, so we do not divide vectors. Instead, because the force and acceleration point in the same direction, we compare their magnitudes,
+
+ 
+F_ net equals ma.
+ 
+
+We solve Newton's second law for the scalar mass because the mass is the requested unknown quantity.
+
+ 
+m equals F_ net over a, 
+ equals 600.0 newtons over 0.2 meters per second squared, 
+ equals 3 times ten to the 3 kg.
+ 
+
+The direction signs cancel because the force and acceleration are both in the - j hat direction.
+
+---
+
+The Conclusion.
+
+The mass of the car is 3 times ten to the 3 kg. The result is a scalar, so it has no direction. The negative signs in the original vectors tell us that the force and acceleration point in the same direction, not that the mass is negative.
+
+---
+
+ **The Problem**
+A particle of mass m equals 4.0 kg is acted upon by four forces of magnitudes F sub 1 equals 10.0 newtons, F sub 2 equals 40.0 newtons, F sub 3 equals 5.0 newtons, and F sub 4 equals 2.0 newtons, with the directions as shown in the free-body diagram in the figure. What is the acceleration of the particle?
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The particle is modeled as a point mass moving in the x - y plane. The positive x direction is to the right and the positive y direction is upward, matching the axes shown in the free-body diagram. Each force is treated as an external force acting on the particle. The force F sub 1 has both x and y components, while F sub 2, F sub 3, and F sub 4 act along coordinate axes.
+
+---
+
+The Math.
+
+Newton's second law is applied independently in the x and y directions,
+
+ 
+ sum F sub x equals m a sub x, 
+ sum F sub y equals m a sub y.
+ 
+
+In the x direction, F sub 1 contributes a positive component F sub 1 cos30 degrees, and F sub 3 acts in the negative x direction. The corresponding force equation is
+
+ 
+ F sub 1 cos30 degrees - F sub 3 equals m a sub x, 
+ a sub x equals F sub 1 cos30 degrees- F sub 3 over m.
+ 
+
+We now substitute the force magnitudes and mass into the expression for the horizontal acceleration:
+
+ 
+ a sub x equals (10.0 newtons ) cos30 degrees - 5.0 newtons over 4.0 kg, 
+ equals 0.92 meters per second squared.
+ 
+
+In the y direction, the vertical component of F sub 1 and the force F sub 4 act upward, while F sub 2 acts downward. The corresponding force equation is
+
+ 
+ F sub 1 sin30 degrees+ F sub 4 - F sub 2 equals m a sub y, 
+ a sub y equals F sub 1 sin30 degrees+ F sub 4 - F sub 2 over m.
+ 
+
+We now substitute the vertical force magnitudes and mass into the expression for the vertical acceleration:
+
+ 
+ a sub y equals (10.0 newtons ) sin30 degrees+2.0 newtons -40.0 newtons over 4.0 kg, 
+ equals -8.3 meters per second squared.
+ 
+
+Combining the components gives the acceleration vector,
+
+ 
+ vector a equals (0.92 i hat -8.3 j hat ) meters per second squared.
+ 
+
+---
+
+The Conclusion.
+
+The particle accelerates as vector a equals (0.92 i hat -8.3 j hat ) meters per second squared. The acceleration is mostly downward because the downward force F sub 2 is much larger than the upward forces, while the horizontal forces only partially fail to cancel.
+
+---
+
+========================================================================
+
+5.4 Mass and Weight
+
+Mass and Weight.
+
+Mass and weight are often used interchangeably in everyday conversation. In physics, however, there is an important distinction. Weight is the pull of gravitational force on an object, where it depends on the distance to the center of an object. 
+
+Checkpoint.
+
+ 
+
+A 70 kg astronaut is far from any planet or star.
+
+What is her mass? What is her weight, approximately?
+ 
+
+Unlike weight, mass does not vary with distance. The mass of an object is the same on Earth's surface, in orbit, or on the surface of the Moon.
+
+**Veritasium**.
+
+ 
+
+ 
+ 
+
+Units of Force.
+
+The scalar equation F_ net equals ma is used to define the net force in terms of mass, length, and time. The SI unit of force is the newton. Using F_ net equals ma, we can see that 
+
+ 1 newtons equals 1 kg dot meters per second squared. 
+
+You're probably more familiar with another unit of force, which is the **pound**) ( lb), where 1 lb equals 4.448 newtons. An even more historical measurement of weight is the **stone**), where 1 st equals 14 lb is approximately equal to 62.3 newtons.
+
+Use the Python code below to convert your weight into newtons or stones.
+
+See the Python snippet given in the course lecture notes.
+
+Weight and Gravitational Force.
+
+When an object is dropped on Earth, it accelerates toward Earth's center. Newton's 2nd law says that a net force on an object is responsible for its acceleration. If air resistance is negligible, the net force on a falling object is the gravitational force, which is called its **weight vector w **, or its force due to gravity acting on an object of mass m.
+
+Weight is denoted as a vector because it has a direction (*down*) and hence, weight is a downward force. The magnitude of weight is denoted by w. Using Newton's 2nd law, we can derive an equation for weight.
+
+Consider an object with mass m falling toward Earth. It experiences only the downward force of gravity, which is the weight vector w. Newton's 2nd law says that the magnitude of the net external force on an object is vector F _ net equals m vector a. We know that the acceleration due to gravity is vector g, or vector a equals vector g.
+
+Weight.
+
+ 
+
+The gravitational force on an object near Earth is called its **weight**. Weight is a vector because it has both magnitude and direction. Near Earth’s surface, the weight of an object of mass m is
+
+ 
+ vector w equals m vector g.
+ 
+
+If upward is chosen as the positive y direction, then vector g equals -g j hat and
+
+ 
+ vector w equals -mg j hat.
+ 
+
+The magnitude of the weight is w equals mg. 
+ 
+
+The weight of a 1 -kg object on Earth is 9.81 newtons:
+
+ w equals mg equals (1.0 kg )(9.81 meters per second squared ) equals 9.81 newtons. 
+
+When the net external force on an object is its weight, we say that it is in **free fall**, which means that the only force acting on the object is gravity.
+
+Acceleration due to gravity g varies slightly over Earth's surface, so the weight of an object depends on its location and is not an intrinsic property of the object. Weight varies dramatically if we leave Earth's surface, where on the Moon g is approximately equal to 1.62 meters per second squared (about 1/6 of the value on Earth's surface). A 1 -kg weight has a weight of 9.8 newtons on Earth, while it is only 1.6 newtons on the Moon.
+
+Note.
+
+Weight and mass are different physical quantities, although they are closely related. 
+
+Bullet point. Mass is an intrinsic property of an object: it is a quantity of matter. In most situations, mass does not vary; therefore its response to an applied force does not vary.
+
+Bullet point. Weight is the gravitational force acting on an object, so it does vary depending on gravity. A person at a lower elevation in New Orleans (i.e., closer to Earth's center) weighs more than someone at high elevation like on top of Mt. Everest (i.e., farther from Earth's center) even though they have the same mass.
+ 
+
+Checkpoint.
+
+ 
+
+A 1.0 kg object weighs about 9.81 newtons on Earth.
+
+Would the same object have the same mass on the Moon? Would it have the same weight?
+
+Bullet point. *Why does it feel comfortable to equate mass and weight?*
+
+On Earth, we see that weight vector w is directly proportional to mass m, since vector w equals m vector g. When two quantities are proportional, we develop **heuristics** to communicate more effectively among people with a shared sense of the heuristic. 
+
+Suppose you are asked how far is Dallas, TX from Commerce, TX. You might reply that it is about 1 -hr, depending on traffic. This makes sense because you and your interlocutor both share in the assumption that you will travel by car at about 60 mph. It is important to note that time is **not equal** to distance, where you are communicating x equals vt, where x is proportional to t because of the implicit assumption that v is a constant.
+
+The Earth rotates once every 24 -hr, which means that is about 15 degrees per hour. Astronomers developed a measure of distance on the sky called *right ascension* based on the *seemingly* constant rotation speed. As a result, it carries units in hours, minute, seconds.
+
+**Example Problem**: Lifting a Stone.
+
+The Problem.
+A farmer is lifting some moderately heavy rocks from a field to plant crops. He lifts a stone that weighs 40.0 lb (about 180 newtons ). What force does he apply if the stone accelerates upward at a rate of 1.5 meters per second to the power of 2?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The stone is modeled as a particle moving vertically. The positive y direction is chosen upward, in the direction of the stone's acceleration. The farmer exerts an upward applied force on the stone, while the stone's weight acts downward. Air resistance is neglected. The stated weight is the gravitational force on the stone, not its mass.
+
+---
+
+The Math.
+
+The stone's weight is related to its mass by w equals mg. We solve Newton's second law for the scalar mass because the mass is the requested unknown quantity.
+
+ 
+m equals w over g.
+ 
+
+We substitute the given weight and g equals 9.81 meters per second squared into the expression for the mass of the stone.
+
+ 
+m equals 180 newtons over 9.81 meters per second squared, 
+ equals 18.3 kg.
+ 
+
+Newton's second law is applied in the vertical direction. The applied force F is upward and the weight w is downward, so
+
+ 
+ sum F sub y equals m a sub y, 
+F-w equals ma.
+ 
+
+We solve the vertical force equation for the applied force because the farmer's force is the requested unknown quantity.
+
+ 
+F equals ma+w, 
+ equals (18.3 kg )(1.5 meters per second squared )+180 newtons, 
+ equals 210 newtons.
+ 
+
+---
+
+The Conclusion.
+
+The farmer applies an upward force of 210 newtons to the stone. This force is larger than the stone's weight because the stone is accelerating upward; if the applied force equaled the weight, the net force would be zero and the stone would not accelerate.
+
+---
+
+========================================================================
+
+5.5 Newton's 3rd Law
+
+Newton's 3rd Law.
+
+Newton's 3rd Law of Motion.
+
+ 
+
+For every interaction between two objects, the forces come in pairs. If object A exerts a force on object B, then object B exerts a force on object A with equal magnitude and opposite direction.
+
+Using vector F sub AB to mean “the force on B by A ” and vector F sub BA to mean “the force on A by B,” Newton’s third law is
+
+ 
+ vector F sub AB equals - vector F sub BA.
+ 
+
+These two forces act on different objects, so they do not cancel in a free-body diagram of a single object.
+ 
+
+Newton's 3rd law represents a certain *symmetry* in nature: Forces always occur in pairs, and one body cannot exert a force on another without experiencing a force itself. We sometimes refer to this law loosely as "action-reaction".
+
+Consider a swimmer pushing off the side of a pool (see the figure). She pushes against the pool wall with her feet and accelerates in the opposite direction of her push. The wall has exerted an equal and opposite force on the swimmer.
+
+Figure referenced in the course notes.
+
+You might think that two equal and opposite forces would cancel, but they do not because *they act on different systems.* In this case, there are two systems that we could investigate: (a) the swimmer and (b) the wall.
+
+Bullet point. (a) If we select the swimmer, then vector F _ wall on feet is an external force on this system and affects the swimmer's motion. The swimmer moves in the direction of this force. F_ feet on wall 
+
+Bullet point. (b) The force vector F _ feet on wall acts on the wall and thus, it does not directly affect the motion of the swimmer and does not cancel vector F _ wall on feet.
+
+The swimmer pushes in the direction opposite that in which she wishes to move. The reaction to her push is thus in the desired direction. In a free-body diagram, we never include both forces of an action-reaction pair, we only use vector F _ wall on feet, not vector F _ feet on wall.
+
+Other examples of Newton's 3rd law are easy to find:
+
+Bullet point. A car accelerates forward because the ground pushes forward on the drive wheels, in reaction to the drive wheels pushing backward on the ground.
+
+Bullet point. Rockets move forward by expelling gas backward at high velocity. This reaction force is called **thrust**, which pushes a body forward in response to a backward force.
+
+Bullet point. Helicopters create lift by pushing air down, thereby experiencing an upward reaction force.
+
+There are two important features of Newton's 3rd law.
+
+Item 1. The forces exerted (action and reaction) are always equal in magnitude but opposite in direction.
+
+Item 2. These forces are acting on different bodies or systems: A 's force acts on B and B 's force on A. They don't act on the same body and thus, they do not cancel each other.
+
+Checkpoint.
+
+ 
+
+A swimmer pushes backward on a wall.
+
+What is the Newton’s third-law partner to this force, and which object does it act on?
+ 
+
+A person who is walking or running applies Newton's 3rd law instinctively. For example, a runner pushes backward on the ground so that it pushes him forward (see the figure).
+
+Figure referenced in the course notes.
+
+**Example Problem**: Forces on a Stationary Object.
+
+The Problem.
+The package in Figure is sitting on a scale. For the scale and package at rest (i.e., not accelerating), show that the scale indicates the weight of the package.
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The system is the package alone. The positive y direction is chosen upward, so the scale force on the package points in the + j hat direction and the weight points in the - j hat direction. The package is at rest in an inertial frame, so its acceleration is zero. Only vertical forces act on the package; the reaction forces shown in the figure act on other objects and are not included in the free-body diagram of the package.
+
+---
+
+The Math.
+
+Newton's second law requires the net external force to be zero when the acceleration is zero,
+
+ 
+ sum vector F _ ext equals m vector a, 
+ equals vector 0.
+ 
+
+The scale exerts an upward force vector s equals s j hat on the package, and Earth exerts the downward weight vector w equals -w j hat. The force balance on the package is
+
+ 
+ vector s + vector w equals vector 0, 
+s j hat -w j hat equals vector 0, 
+(s-w) j hat equals vector 0.
+ 
+
+For this vector to be zero, the scalar magnitudes must be equal,
+
+ 
+s equals w.
+ 
+
+---
+
+The Conclusion.
+
+The scale reading equals the package's weight when the package is at rest. More precisely, the scale measures the upward contact force it exerts on the package, and in this zero-acceleration case that contact force has the same magnitude as the gravitational force on the package.
+
+---
+
+ **The Problem**
+A physics professor pushes a cart of demonstration equipment to a lecture hall (Figure ). Her mass is 65 kg, the cart’s mass is 12 kg, and the equipment’s mass is 7 kg. Calculate the acceleration produced when the professor exerts a backward force of 150 newtons on the floor. All forces opposing the motion, such as friction on the cart’s wheels and air resistance, total 24.0 newtons.
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The system is the professor, cart, and equipment together, corresponding to System 1 in the figure. The positive x direction is chosen forward, in the direction of the motion, and the positive y direction is upward. The floor exerts a forward force on the system because the professor pushes backward on the floor. The total resistive force from wheel friction and air resistance acts backward. The vertical forces balance, and forces between the professor, cart, and equipment are internal to this chosen system.
+
+---
+
+The Math.
+
+Newton's second law is applied to the external horizontal forces on System 1. The forward force from the floor has magnitude F_ floor, and the total resistive force has magnitude f, so
+
+ 
+ sum F sub x equals ma, 
+F_ floor -f equals ma.
+ 
+
+The mass of the system is the sum of the professor, cart, and equipment masses,
+
+ 
+m equals 65 kg +12 kg +7 kg, 
+ equals 84 kg.
+ 
+
+We solve the horizontal force equation for the acceleration because the acceleration is the requested unknown quantity.
+
+ 
+a equals F_ floor -f over m, 
+ equals 150 newtons -24.0 newtons over 84 kg, 
+ equals 1.5 meters per second squared.
+ 
+
+---
+
+The Conclusion.
+
+The professor, cart, and equipment accelerate forward at 1.5 meters per second squared. This acceleration is determined by the net external horizontal force on System 1, not by the internal forces between the professor and the cart.
+
+---
+
+ **The Problem**
+Calculate the force the professor exerts on the cart in Figure, using data from the previous example if needed.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The system is now the cart plus the equipment, corresponding to System 2 in the previous figure. The positive x direction is forward, in the direction of the acceleration found in the previous example, and the positive y direction is upward. The professor's push on the cart is external to this smaller system. The same total resistive force opposes the motion, and the vertical forces balance.
+
+---
+
+The Math.
+
+For System 2, the horizontal external forces are the professor's forward force and the backward resistive force. Newton's second law gives
+
+ 
+ sum F sub x equals ma, 
+F_ prof -f equals ma.
+ 
+
+We solve the horizontal force equation for the professor's force on the cart because that force is the requested unknown quantity.
+
+ 
+F_ prof equals ma+f.
+ 
+
+The mass of System 2 is the cart plus the equipment,
+
+ 
+m equals 12.0 kg +7.0 kg, 
+ equals 19.0 kg.
+ 
+
+We now use the acceleration found in the previous example in the expression for the professor's force on System 2:
+
+ 
+F_ prof equals (19.0 kg )(1.5 meters per second squared )+24.0 newtons, 
+ equals 53 newtons.
+ 
+
+---
+
+The Conclusion.
+
+The professor exerts a forward force of 53 newtons on the cart. This is smaller than the 150 newtons interaction with the floor because the floor force accelerates the professor, cart, and equipment together, while F_ prof only has to accelerate the cart and equipment while overcoming the resistive force on that smaller system.
+
+---
+
+ **(a)** Find the acceleration of the system of blocks. 
+
+**(b)** Suppose that the blocks are later separated. What force would give the second block, with mass 6 kg, the same acceleration as the system of blocks?
+
+========================================================================
+
+5.6 Common Forces
+
+Common Forces.
+
+Normal Force.
+
+Weight is a pervasive force that acts at all times and must be counteracted to keep an object from falling (i.e., in static equilibrium). You must support the weight of a heavy object by pushing up on it when you hold it stationary.
+
+When a bag of dog food is placed on the table (see the figure), the table sags slightly under the load. This is more noticeable on a card table, compared to a sturdy oak table. Unless an object is deformed beyond its limit, *it will exert a restoring force* like a spring. The greater the deformation, the greater the restoring force. The next external force on the load is zero, when the load is stationary on the table. 
+
+Figure referenced in the course notes.
+
+Whatever supports a load must supply an upward force *equal* to the weight of the load. If the force supporting the weight of an object is perpendicular to the surface of contact, this is defined as a **normal force** vector N. This means that the normal force experienced by an object resting on a horizontal forced can be expressed in vector form and scalar form as:
+
+ 
+ vector N equals m vector g, 
+N equals mg.
+ 
+
+Note.
+
+Do not confuse the symbol N for the normal-force magnitude with the unit newton, N. The normal force is not automatically equal to the object’s weight. It equals whatever value is required by the force balance perpendicular to the surface. For an object at rest on an incline, the normal force balances only the perpendicular component of the weight.
+ 
+
+When an object rests on an incline that makes an angle theta with the horizontal, the force of gravity acting on the object is divided into two components:
+
+Item 1. a force acting perpendicular to the plane, w sub y, and
+
+Item 2. a force acting parallel to the plane, w sub x.
+
+The normal force vector N is typically equal in magnitude and opposite in direction to w sub y, where the component parallel to the plane w sub x causes the object to accelerate down the incline (see the figure). The w sub x is the unbalanced force which allows the acceleration to occur, where w sub y is balanced by the normal force N.
+
+Figure referenced in the course notes.
+
+Angles on a Triangle.
+
+ 
+
+*How do we know that the angle theta given in Fig. is the same in both places?*
+
+Let's assume that they are different: 
+
+Bullet point. theta _1 is the angle between between vector w and vector w _y,
+
+Bullet point. theta _2 is the angle between the horizontal surface and incline plane.
+
+The angle between vector w and vector w _x is beta equals 90 degrees - theta _1 because vector w _x and vector w _y are perpendicular. The inclined surface also makes a triangle, with 3 angles that sum to 180 degrees, or
+
+ theta _2 + 90 degrees + beta equals 180 degrees. 
+
+We can solve for beta in terms of theta _2 and substitute into the equation for the equation with theta _1,
+
+ 
+ beta equals 90 degrees - theta _2, 
+90 degrees - theta _2 equals 90 degrees - theta _1, 
+ theta _2 equals theta _1.
+ 
+
+With a little geometry, we showed that theta _1 equals theta _2 equals theta.
+ 
+
+**Be careful when resolving the weight into components.** Normally when the x -component of a force vector F is resolved, we find that F sub x equals F cos{ theta }. However, in this case we are using the complementary angle beta equals 90 degrees - theta to resolve the w sub x. Using the red vectors in the figure, we have
+
+ 
+ w sub x equals w cos{ beta } equals w sin{ theta }, 
+ w sub y equals w cos{ theta }.
+ 
+
+Checkpoint.
+
+ 
+
+An object rests on an incline.
+
+Is the normal force usually equal to the object’s full weight w, or only to one component of the weight?
+ 
+
+We can sum the forces along the y -axis to write the magnitude of the normal force experienced by an object resting on an inclined plane:
+
+ 
+ sum F sub y equals N - mg cos{ theta } equals 0, 
+N equals mg cos{ theta }.
+ 
+
+Notice that the force components and normal force could be determined from a free-body diagram. 
+
+ 
+ 
+ 
+
+Free-body diagram showing vector w resolved into vector w _x and vector w _y in axes aligned with the incline.
+ 
+
+See the Python snippet given in the course lecture notes.
+
+**Example Problem**: Weight on an incline.
+
+The Problem.
+Consider the skier on the slope in Figure. Her mass including equipment is 60.0 kg.
+(a) What is her acceleration if friction is negligible? 
+(b) What is her acceleration if friction is 45.0 newtons? 
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The skier and equipment are modeled as one particle moving along a rigid incline. The x axis is chosen parallel to the slope and positive down the slope, while the y axis is chosen perpendicular to the slope and positive away from the surface. With this coordinate choice, the acceleration is along the slope and there is no acceleration perpendicular to the surface. The forces are the weight vector w, the normal force vector N, and, when present, the friction force vector f acting up the slope.
+
+---
+
+The Math.
+
+The weight is resolved into components along the incline axes. With the incline angle theta, the component parallel to the slope is w sub x equals mg sin theta, and the component perpendicular to the slope is w sub y equals mg cos theta. The perpendicular forces balance because a sub y equals 0, so N equals w sub y.
+
+**(a)** For the frictionless case, the only force parallel to the slope is w sub x. Newton's second law along the slope gives
+
+ 
+ sum F sub x equals m a sub x, 
+mg sin theta equals m a sub x.
+ 
+
+The mass cancels, leaving
+
+ 
+ a sub x equals g sin theta, 
+ equals (9.81 meters per second squared ) sin25 degrees, 
+ equals 4.1 meters per second squared.
+ 
+
+**(b)** For the case with friction, the friction force acts up the slope, opposite the motion. The net force along the slope is reduced to mg sin theta -f, so
+
+ 
+mg sin theta -f equals m a sub x, 
+ a sub x equals mg sin theta -f over m.
+ 
+
+We now substitute the skier's mass, gravitational acceleration, incline angle, and friction force into the expression for the acceleration along the slope:
+
+ 
+ a sub x equals (60.0 kg )(9.81 meters per second squared ) sin25 degrees-45.0 newtons over 60.0 kg, 
+ equals 3.4 meters per second squared.
+ 
+
+---
+
+The Conclusion.
+
+With negligible friction, the skier accelerates down the slope at 4.1 meters per second squared. When a 45.0 newtons friction force acts up the slope, the acceleration is reduced to 3.4 meters per second squared. Both accelerations are down the slope because the downslope component of weight is still larger than the opposing friction force.
+
+---
+
+ **Large Tension**
+
+If we wish to create a large tension, we need to exert a force perpendicular to a taut flexible connector (see the figure). The weight of the tightrope walker acts as a force perpendicular to the rope.
+
+Suppose that the tightrope walker is standing still, so the net force in both directions zero. We can decompose the tension into 2 components: right vector T _R and left vector T _L. 
+
+Item 1. Each section of rope is supporting the weight vector w through their y components: T sub Ly and T sub Ry. 
+
+Item 2. The x component of the weight is balanced through each section of the rope, where T sub Lx equals T sub Rx.
+
+The net force is given as
+
+ 
+F sub net,y equals T sub Ry + T sub Ly - w equals 0, 
+F sub net,x equals T sub Rx - T sub Lx equals 0,
+ 
+
+where we treat the tightrope walker as a particle at the center of the vectors, the + i hat direction goes to the right of the walker, and up is in the + j hat direction above the walker.
+
+We can examine the x -components first, where the rope bends from the horizontal by an angle theta so that
+
+ 
+T sub Rx equals T sub R cos{ theta }, 
+T sub Lx equals T sub L cos{ theta }, 
+ T sub R cos{ theta } equals T sub L cos{ theta }.
+ 
+
+Since cos{ theta } is not equal to 0, this implies T sub R equals T sub L.
+
+From the example with the hanging mass (the figure), we saw that the tension acts along the rope and is the same magnitude everywhere If we cut the rope then the same tension T acts along both strands, not the sum of the forces from both sides. As a result we can treat the left and right sides of the rope as having the same tension T, or
+
+ T sub R equals T sub L equals T. 
+
+Turning to the y -components, we have T sub Ry and T sub Ly both in the positive direction and T sub Ry equals T sub Ly equals T sin{ theta } using the same logic from the x -component analysis. Therefore, we can write the y -components as
+
+ 
+2T sin{ theta } - w equals 0, 
+2T sin{ theta } equals w, 
+T equals fraction {w}{2 sin{ theta }}.
+ 
+
+Since the weight w equals mg, we have
+
+ boxed{T equals fraction {mg}{2 sin{ theta }}.} 
+
+We can extend this expression to describe the tension T when a perpendicular force ( perpendicular force, or ` perpendicular force `) is exerted at the middle of a flexible connector:
+
+ T equals fraction { perpendicular force {2 sin{ theta }}. 
+
+In this case, T becomes large as theta goes to 0. Even the relatively small weight of any flexible connector will cause it to sag, since an infinite tension would result if it were horizontal (i.e., sin{ theta } equals 0 ).
+
+**Example Problem**: Tension in a Tightrope.
+
+The Problem.
+Calculate the tension in the wire supporting the 70.0 kg tightrope walker shown in Figure.
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The system is the tightrope walker, treated as a particle at rest. The positive x direction is horizontal to the right, and the positive y direction is upward. The wire is symmetric about the walker, so the left and right tension magnitudes are equal and are denoted by T. Each wire segment makes the same small angle above the horizontal. The walker is stationary, so the net force is zero in both coordinate directions.
+
+---
+
+The Math.
+
+The horizontal components of the two tensions cancel by symmetry. The vertical components of the two tensions support the weight of the walker. Applying Newton's second law in the vertical direction,
+
+ 
+ sum F sub y equals 0, 
+T sin theta +T sin theta -w equals 0, 
+2T sin theta equals w.
+ 
+
+The weight is w equals mg, so the tension is
+
+ 
+T equals w over 2 sin theta, 
+ equals mg over 2 sin theta.
+ 
+
+We now substitute the walker's mass, gravitational acceleration, and wire angle into the tension equation:
+
+ 
+T equals (70.0 kg )(9.81 meters per second squared ) over 2 sin5.0 degrees, 
+ equals 3.9 times ten to the 3 newtons.
+ 
+
+---
+
+The Conclusion.
+
+Each side of the wire has a tension of 3.9 times ten to the 3 newtons. This is much larger than the walker's weight because the wire is nearly horizontal, so only a small vertical component of each tension supports the walker.
+
+---
+
+========================================================================
+
+5.7 Drawing Free-body Diagrams
+
+Drawing Free-body Diagrams.
+
+The first step in describing and analyzing most phenomena in physics involves the careful drawing of a free-body diagram (FBD). FBDs have been used throughout this chapter. A FBD must only include the external forces acting on the body of interest.
+
+Once we have drawn an accurate FBD, we can apply 
+
+Bullet point. Newton's 1st law if the body is in equilibrium ( F_ net equals 0 ), or
+
+Bullet point. Newton's 2nd law if the body is accelerating ( F_ net is not equal to 0 ).
+
+Checkpoint.
+
+ 
+
+Should the net force be drawn as a separate arrow on a free-body diagram? Explain why or why not.
+ 
+
+**MIT OpenCourseWare**.
+
+ 
+
+ 
+ 
+
+Constructing Free-Body Diagrams.
+
+ 
+
+Observe the following rules when constructing a FBD:
+
+Item 1. Draw the object under consideration as a simpler shape (e.g., point, box, etc.). It does not have to be artistic. We often place the object at the origin of an xy -coordinate system.
+
+Item 2. Include all forces that act on the object, representing these forces as vectors. Do not include the net force on the object. We never include both forces of an action-reaction pair.
+
+Item 3. Convert the FBD into a more detailed diagram showing the x - and y -components of a given force. In this case place a squiggly line through the original vector to show that it is no longer in play (i.e., replaced by components).
+
+Item 4. If there are more than a single object in the problem, draw a separate FBD for each object.
+
+If there is acceleration, we do not directly include it in the FBD. However, it may help to indicate acceleration outside the FBD.
+ 
+
+**Khan Academy**.
+
+ 
+
+ 
+ 
+
+---
+Let's apply the problem-solving strategy in drawing a FBD for a sled. In Fig. a, a sled is pulled by force vector P at a 30 degrees angle.
+
+Bullet point. In part (b), we show a free-body diagram as described by steps 1 and 2.
+
+Bullet point. In part (c), we show all forces in terms of their x - and y -components, in keeping with step 3.
+
+Figure referenced in the course notes.
+
+**Example Problem**: Two Blocks on an Inclined Plane.
+
+The Problem.
+Construct the free-body diagram for object A and object B in Figure.
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+Objects A and B are treated as separate particles on an inclined plane. The x axis is chosen parallel to the incline, and the y axis is chosen perpendicular to the incline. Object A is attached to a cord and is in contact with object B. Object B is in contact with both object A and the incline. Normal forces act perpendicular to contact surfaces, friction forces act parallel to contact surfaces, and tension acts along the cord. Each free-body diagram includes only forces acting on the isolated object.
+
+---
+
+The Math.
+
+For object A, the forces acting on the isolated object are its weight vector w _A, the tension vector T from the cord, the normal force vector N sub BA exerted by B on A, and the friction force vector f sub BA exerted by B on A.
+
+For object B, the forces acting on the isolated object are its weight vector w _B, the normal force vector N _B from the incline, the friction force vector f _B from the incline, the normal force vector N sub AB exerted by A on B, and the friction force vector f sub AB exerted by A on B.
+
+The contact forces between A and B occur in third-law pairs. The corresponding force equation is
+
+ 
+ vector N sub AB equals - vector N sub BA, 
+ vector f sub AB equals - vector f sub BA.
+ 
+
+These pairs act on different objects, so they appear on different free-body diagrams.
+
+---
+
+The Conclusion.
+
+The free-body diagram for object A contains vector w _A, vector T, vector N sub BA, and vector f sub BA. The free-body diagram for object B contains vector w _B, vector N _B, vector f _B, vector N sub AB, and vector f sub AB. Drawing the objects separately is essential because action-reaction pairs do not cancel within a single object's free-body diagram.
+
+---
+
+ **The Problem**
+A force is applied to two blocks in contact, as shown in the figure. Draw the reaction forces between the two blocks.
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The blocks are treated as two separate systems on a horizontal surface. The positive x direction is chosen to the right, in the direction of the applied force on block m sub 1. At the contact surface, block m sub 1 pushes on block m sub 2 to the right, while block m sub 2 pushes on block m sub 1 to the left. The prompt asks only for the reaction forces between the blocks, so other forces are not required unless drawing complete free-body diagrams.
+
+---
+
+The Math.
+
+Newton's third law states that the interaction forces between the two blocks have equal magnitude and opposite direction. If vector A sub 12 is the force on block m sub 2 due to block m sub 1, and vector A sub 21 is the force on block m sub 1 due to block m sub 2, then
+
+ 
+ vector A sub 12 equals - vector A sub 21.
+ 
+
+Because block m sub 1 pushes block m sub 2 to the right, vector A sub 12 points in the + i hat direction. The reaction force vector A sub 21 therefore points in the - i hat direction.
+
+---
+
+The Conclusion.
+
+The reaction-force pair is vector A sub 12 on block m sub 2 to the right and vector A sub 21 on block m sub 1 to the left. These forces have equal magnitude and opposite direction, but they act on different blocks, so they do not cancel in either block's individual free-body diagram.
+
+---
+
+ **The Problem**
+A block rests on the table, as shown in the figure. A light rope is attached to it and runs over a pulley. The other end of the rope is attached to a second block. The two blocks are said to be coupled. Block m sub 2 exerts a force due to its weight, which causes the system (two blocks and a string) to accelerate.
+We assume that the string has no mass so that we do not have to consider it as a separate object. Draw a free-body diagram for each block.
+
+Figure referenced in the course notes.
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The two blocks are treated as separate systems connected by a taut, massless rope over a frictionless pulley. For block m sub 1, the positive x direction is to the right, toward the pulley, and the positive y direction is upward. For block m sub 2, the positive y direction is upward. The table is treated as frictionless, so no friction force acts on m sub 1. The rope tension has the same magnitude on both blocks.
+
+---
+
+The Math.
+
+To construct the free-body diagrams, each block is isolated and only forces acting on that block are included.
+
+For block m sub 1, the weight vector w _1 acts downward, the normal force vector N from the table acts upward, and the rope tension vector T acts horizontally to the right toward the pulley.
+
+For block m sub 2, the weight vector w _2 acts downward and the rope tension vector T acts upward. The tension has the same magnitude in both diagrams because the rope is massless and the pulley is frictionless.
+
+Apply Newton’s second law separately to each block, using +x to the right for m sub 1 and +y upward for m sub 2.
+
+For block m sub 1, we have for the horizontal motion
+
+ 
+ sum F sub x equals m sub 1 a 
+T equals m sub 1 a.
+ 
+
+For block m sub 1 in the vertical direction,
+
+ 
+ sum F sub y equals 0 (no vertical acceleration) 
+N - m sub 1 g equals 0 newtons equals m sub 1 g.
+ 
+
+For block m sub 2, we have for the vertical motion,
+
+ 
+ sum F sub y equals m sub 2 a sub y 
+T - m sub 2 g equals m sub 2 (-a) 
+ m sub 2 g - T equals m sub 2 a.
+ 
+
+Then, we can solve the two acceleration–tension equations for a in terms of T:
+
+ 
+T equals m sub 1 a 
+ m sub 2 g - T equals m sub 2 a.
+ 
+
+Then, we can solve for a and T separately in terms of the masses and g: 
+
+ 
+ m sub 2 g - m sub 1 a equals m sub 2 a 
+a equals m sub 2 g over m sub 1 + m sub 2, 
+T equals m sub 1 ( m sub 2 g over m sub 1 + m sub 2 ) 
+ equals m sub 1 meters sub 2 over m sub 1 + m sub 2 g.
+ 
+
+---
+
+The Conclusion.
+
+The free-body diagram for m sub 1 contains vector N upward, vector w _1 downward, and vector T to the right. The free-body diagram for m sub 2 contains vector T upward and vector w _2 downward. The two blocks require separate free-body diagrams because the forces acting on each block are different, even though their accelerations are linked by the rope.
+
+Because the rope is massless and taut over a frictionless pulley, the tension magnitude is the same on both blocks and the acceleration magnitudes are equal:
+
+ 
+a equals m sub 2 g over m sub 1 + m sub 2, 
+T equals m sub 1 meters sub 2 g over m sub 1 + m sub 2.
+ 
+
+**The Organic Chemistry Tutor**.
+
+ 
+
+ 
+ 
+
+---
+
+========================================================================
+
+5.8 In-class Problems
+
+In-class Problems.
+
+Part I.
+
+Problem 1.
+
+Two ropes are attached to a tree, and forces of vector F _1 equals 2.0 i hat + 4.0 j hat N and vector F _2 equals 3.0 i hat + 6.0 j hat N are applied. The forces are coplanar (in the same plane).
+
+**(a)** What is the resultant (net force) of these two force vectors?
+**(b)** Find the magnitude and direction of this net force.
+ 
+
+Problem 2.
+
+A cleaner pushes a 4.50 kg laundry cart in such a way that the net external force on it is 60.0 newtons. Calculate the magnitude of the cart’s acceleration.
+ 
+
+Problem 3.
+
+In the following figure, the horizontal surface on which this block slides is frictionless. If the two forces acting on it each have magnitude F equals 30.0 newtons and M equals 10.0 kg, what is the magnitude of the resulting acceleration of the block?
+
+Figure referenced in the course notes.
+
+ 
+
+Problem 4.
+
+Suppose the mass of a fully loaded module in which astronauts take off from the Moon is 1.00 times ten to the 4 kg. The thrust of its engines is 3.00 times ten to the 4 newtons.
+
+**(a)** Calculate the module’s magnitude of acceleration in a vertical takeoff from the Moon.
+**(b)** Could it lift off from Earth? If not, why not? If it could, calculate the magnitude of its acceleration.
+ 
+
+Part II.
+
+Problem 5.
+
+**(a)** What net external force is exerted on a 1100.0 kg artillery shell fired from a battleship if the shell is accelerated at 2.40 times ten to the 4 meters per second to the power of 2? 
+**(b)** What is the magnitude of the force exerted on the ship by the artillery shell, and why?
+
+ 
+
+Problem 6.
+
+**(a)** Calculate the tension in a vertical strand of spider web if a spider of mass 2.00 times ten to the minus 5 kg hangs motionless on it.
+
+**(b)** Calculate the tension in a horizontal strand of spider web if the same spider sits motionless in the middle of it much like the tightrope walker in Figure. The strand sags at an angle of 12 degrees below the horizontal. Compare this with the tension in the vertical strand (find their ratio).
+
+ 
+
+Problem 7.
+
+A 2.0 kg block is on a perfectly smooth ramp that makes an angle of 30 degrees with the horizontal.
+
+**(a)** What is the block’s acceleration down the ramp and the force of the ramp on the block?
+**(b)** What force applied upward along and parallel to the ramp would allow the block to move with constant velocity?
+
+ 
+
+Problem 8.
+
+The traffic light hangs from the cables as shown. Draw a free-body diagram on a coordinate plane for this situation.
+
+Figure referenced in the course notes.
+
+========================================================================
+
+5.9 Homework
+
+Homework.
+
+Conceptual Problems.
+
+Problem 1.
+
+A rock is thrown straight up. At the top of the trajectory, the velocity is momentarily zero. Does this imply that the force acting on the object is zero? Explain your answer.
+ 
+
+Problem 2.
+
+How much does a 70-kg astronaut weigh in interstellar space, far from any celestial body? What is her mass at this location?
+
+ 
+
+Quantitative Problems.
+
+Problem 3.
+
+A particle of mass 2.0 kg is acted on by a single force vector F _1 equals 18 i hat N.
+
+**(a)** What is the particle’s acceleration? 
+**(b)** If the particle starts at rest, how far does it travel in the first 5.0 s?
+ 
+
+Problem 4.
+
+A rugby player is being pushed backward by an opposing player who is exerting a force of 800.0 newtons on him. The mass of the losing player plus equipment is 90.0 kg, and he is accelerating backward at 1.20 meters per second squared.
+
+**(a)** What is the force of friction between the losing player’s feet and the grass? 
+**(b)** What force does the winning player exert on the ground to move forward if his mass plus equipment is 110.0 kg?
+
+ 
+
+Problem 5.
+
+A truck collides with a car, and during the collision, the net force on each vehicle is essentially the force exerted by the other. Suppose the mass of the car is 550 kg, the mass of the truck is 2200 kg, and the magnitude of the truck’s acceleration is 10 meters per second squared. Find the magnitude of the car’s acceleration.
+
+ 
+
+Problem 6.
+
+A bird has a mass of 26 g and perches in the middle of a stretched telephone line.
+
+**(a)** Show that the tension in the line can be calculated using the equation
+
+ T equals mg over 2 sin theta. 
+
+Determine the tension when 
+**(b)** theta equals 5 degrees and 
+**(c)** theta equals 0.5 degrees.
+
+Assume that each half of the line is straight.
+
+ 
+
+Problem 7.
+
+A ball of mass m hangs at rest, suspended by a string.
+
+**(a)** Sketch all forces acting on the ball. 
+**(b)** Draw the free-body diagram for the ball.
+
+========================================================================

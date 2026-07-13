@@ -40,7 +40,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/sphinx_iframe.css?v=96c28b52" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="https://cdn.plyr.io/3.8.4/plyr.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=80fd4ae3" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=e9fd1fb5" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -88,7 +88,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="2. Vectors" href="../Chapter02/vectors.html" />
-    <link rel="prev" title="Course FAQ" href="../Preamble/course-faq.html" />
+    <link rel="prev" title="Finding Your Path in Physics" href="../Preamble/physics-recruitment.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -213,6 +213,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../Preamble/computational-writing-primer.html">Computational and Writing Primer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Preamble/figures-primer.html">Figures Primer (Matplotlib)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Preamble/course-faq.html">Course FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Preamble/physics-recruitment.html">Finding Your Path in Physics</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Measurements, Vectors, Kinematics</span></p>
 <ul class="current nav bd-sidenav">
@@ -595,7 +596,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="units-and-measurement">
 <h1><span class="section-number">1. </span>Units and Measurement<a class="headerlink" href="#units-and-measurement" title="Link to this heading">#</a></h1>
-<p>May 29, 2026 | 6583 words | 33 min read</p>
+<p>Jul 13, 2026 | 6607 words | 33 min read</p>
 <div class="tip admonition">
 <p class="admonition-title">Chapter roadmap</p>
 <p>This chapter introduces the measurement tools used throughout physics: units, conversion factors, dimensional analysis, uncertainty, and significant figures.</p>
@@ -609,11 +610,31 @@ document.write(`
 </div>
 <section id="scope-and-scale-of-physics">
 <h2><span class="section-number">1.1. </span>Scope and Scale of Physics<a class="headerlink" href="#scope-and-scale-of-physics" title="Link to this heading">#</a></h2>
-<audio class="plyr" controls>
-  <source src="../_static/audio/Chapter01_units-and-measurement__1-1-scope-and-scale-of-physics.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-<p><em>This audio is AI-generated.</em></p>
+<div class="audio-card">
+  <div class="audio-toolbar">
+    <div class="chapter-row">
+      <span class="chapter-label">Subsection</span>
+
+      <select class="chapter-select">
+        <option value="2">Scope and scale of physics — 0:02</option>
+        <option value="6">What is physics? — 0:06</option>
+        <option value="89">The scope of physics — 1:29</option>
+        <option value="522">The scale of physics — 8:42</option>
+        <option value="901">Building models — 15:01</option>
+      </select>
+
+      <div class="chapter-buttons"> 
+        <button type="button" class="prev-chapter">← Previous</button>
+        <button type="button" class="next-chapter">Next →</button>
+      </div>
+    </div>
+  </div>
+
+  <audio class="audio-el" controls preload="metadata">
+    <source src="../_static/audio/Chapter01_units-and-measurement__1-1-scope-and-scale-of-physics.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div><p><em>This narration is AI-generated from the course text.</em></p>
 <section id="what-is-physics">
 <h3><span class="section-number">1.1.1. </span>What is physics?<a class="headerlink" href="#what-is-physics" title="Link to this heading">#</a></h3>
 <p>Physics is a method to better understand all natural phenomena.  Physicists try to understand our physical universe, starting from the very small up to (and including) the entire universe.  The same basic training can be applied in many areas of science and engineering, where there can be significant overlap across disciplines.  <strong>If something changes in time, there’s a discipline dedicated to understanding how and why it changes.</strong></p>
@@ -638,13 +659,13 @@ document.write(`
 <p>The distance across the USA is about <span class="math notranslate nohighlight">\(4500\ {\rm km}\)</span> from east to west.  This seems like a long way, but the distance from the Earth to the Sun (or <strong>astronomical unit</strong>; AU) is about <span class="math notranslate nohighlight">\(149,000,000\ {\rm km}\)</span> or <span class="math notranslate nohighlight">\({\sim}33,000\times\)</span> more distant.  Light is incredibly fast and can travel 1 AU in only <span class="math notranslate nohighlight">\(8.3\ {\rm min}\)</span>.</p>
 <p><em>How far can light travel in a year?</em></p>
 <p>Instead of thinking in kilometers, it is simpler to instead describe this distance in AU, or how many Earth-Sun distances make up this proposed distance.  We have to give this distance a name, thus we call it a <a class="reference external" href="https://en.wikipedia.org/wiki/Light-year">lightyear</a>, or the distance that light travels in a year.  Let’s start with what we know so far (i.e., light travels 1 AU in 8.3 min):</p>
-<div class="amsmath math notranslate nohighlight" id="equation-fe52f0f0-aee9-48cd-90d3-e6e5ae27ee16">
-<span class="eqno">(1.1)<a class="headerlink" href="#equation-fe52f0f0-aee9-48cd-90d3-e6e5ae27ee16" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-eb769f19-9d88-4ce2-8ffb-13e500900c7e">
+<span class="eqno">(1.1)<a class="headerlink" href="#equation-eb769f19-9d88-4ce2-8ffb-13e500900c7e" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{1\ {\rm AU}}{8.3\ {\rm min}} &amp;= 0.12\ {\rm AU/min}.
 \end{align}\]</div>
 <p>Therefore, light travels at a speed of about <span class="math notranslate nohighlight">\(0.12\ {\rm AU/min}\)</span>.  Now, we can work our way through if we can somehow translate this speed into a distance.  For this we can use some other knowledge, for example:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9f25f460-a2b2-4508-a6d7-0fa7c8008abc">
-<span class="eqno">(1.2)<a class="headerlink" href="#equation-9f25f460-a2b2-4508-a6d7-0fa7c8008abc" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-129da7d3-684b-42fa-a7d4-f84b67fbaf3d">
+<span class="eqno">(1.2)<a class="headerlink" href="#equation-129da7d3-684b-42fa-a7d4-f84b67fbaf3d" title="Permalink to this equation">#</a></span>\[\begin{align}
 1\ {\rm h} &amp;= 60\ {\rm min}, \\
 1\ {\rm day} &amp;= 24\ {\rm h}, \\
 1\ {\rm yr} &amp;= 365.25\ {\rm days}.
@@ -653,14 +674,14 @@ document.write(`
 <ul class="simple">
 <li><p>To understand the distance <span class="math notranslate nohighlight">\(d\)</span> in a lightyear, we need to convert its speed <span class="math notranslate nohighlight">\(s\)</span> using different timescales <span class="math notranslate nohighlight">\(t\)</span> that make up a year.</p></li>
 </ul>
-<div class="amsmath math notranslate nohighlight" id="equation-41d5063b-8afc-4781-81ed-6d8c066ceb20">
-<span class="eqno">(1.3)<a class="headerlink" href="#equation-41d5063b-8afc-4781-81ed-6d8c066ceb20" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-83e5281f-2b98-4358-9377-5582f77e22b6">
+<span class="eqno">(1.3)<a class="headerlink" href="#equation-83e5281f-2b98-4358-9377-5582f77e22b6" title="Permalink to this equation">#</a></span>\[\begin{align}
 s &amp;= \frac{d}{t}, \\
 d &amp;= s \times t= st
 \end{align}\]</div>
 <p>Let’s begin with some analytical calculations, which we’ll follow-up with a verification using <code class="docutils literal notranslate"><span class="pre">python</span></code>.  We just need to use our known speed of light and multiply by different time conversion factors to determine the number of <span class="math notranslate nohighlight">\(\rm AU/yr\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-775309b0-1aaa-4325-9112-77649b4f3db9">
-<span class="eqno">(1.4)<a class="headerlink" href="#equation-775309b0-1aaa-4325-9112-77649b4f3db9" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-1933a8b2-1316-4480-982a-220de335d5c3">
+<span class="eqno">(1.4)<a class="headerlink" href="#equation-1933a8b2-1316-4480-982a-220de335d5c3" title="Permalink to this equation">#</a></span>\[\begin{align}
 s &amp;= \frac{0.12\ {\rm AU}}{\rm min} \times \frac{60\ {\rm min}}{1\ {\rm h}} \times \frac{24\ {\rm h}}{1\ {\rm day}} \times \frac{365.25\ {\rm days}}{1\ {\rm yr}}, \\
 &amp;= 63{,}000\ \frac{\rm AU}{\rm yr}.
 \end{align}\]</div>
@@ -856,11 +877,30 @@ it’s wrong.</p>
 </section>
 <section id="units-and-standards">
 <h2><span class="section-number">1.2. </span>Units and Standards<a class="headerlink" href="#units-and-standards" title="Link to this heading">#</a></h2>
-<audio class="plyr" controls>
-  <source src="../_static/audio/Chapter01_units-and-measurement__1-2-units-and-standards.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-<p><em>This audio is AI-generated.</em></p>
+<div class="audio-card">
+  <div class="audio-toolbar">
+    <div class="chapter-row">
+      <span class="chapter-label">Subsection</span>
+
+      <select class="chapter-select">
+        <option value="0">Units and Standards — 0:00</option>
+        <option value="89">SI Units: Base and Derived Units — 1:29</option>
+        <option value="158">Units of Time, Length, and Mass — 2:38</option>
+        <option value="319">Metric Prefixes — 5:19</option>
+      </select>
+
+      <div class="chapter-buttons">
+        <button type="button" class="prev-chapter">← Previous</button>
+        <button type="button" class="next-chapter">Next →</button>
+      </div>
+    </div>
+  </div>
+
+  <audio class="audio-el" controls preload="metadata">
+    <source src="../_static/audio/Chapter01_units-and-measurement__1-2-units-and-standards.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div><p><em>This narration is AI-generated from the course text.</em></p>
 <p>A <strong>physical quantity</strong> is defined by specifying how it is measured or how it is calculated from other measurements. For example,</p>
 <ul class="simple">
 <li><p>distance measured using a meter stick, or time measured with a stopwatch,</p></li>
@@ -1138,11 +1178,28 @@ Mass in petagrams: 19.3 Pg
 </section>
 <section id="unit-conversion">
 <h2><span class="section-number">1.3. </span>Unit Conversion<a class="headerlink" href="#unit-conversion" title="Link to this heading">#</a></h2>
-<audio class="plyr" controls>
-  <source src="../_static/audio/Chapter01_units-and-measurement__1-3-unit-conversion.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-<p><em>This audio is AI-generated.</em></p>
+<div class="audio-card">
+  <div class="audio-toolbar">
+    <div class="chapter-row">
+      <span class="chapter-label">Subsection</span>
+
+      <select class="chapter-select">
+        <option value="0">Unit Conversion — 0:00</option>
+        <option value="182">Example Problem: Converting iron's density — 3:02</option>
+      </select>
+
+      <div class="chapter-buttons">
+        <button type="button" class="prev-chapter">← Previous</button>
+        <button type="button" class="next-chapter">Next →</button>
+      </div>
+    </div>
+  </div>
+
+  <audio class="audio-el" controls preload="metadata">
+    <source src="../_static/audio/Chapter01_units-and-measurement__1-3-unit-conversion.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div><p><em>This narration is AI-generated from the course text.</em></p>
 <p>It is often necessary to convert from one unit to another (as you’ve already seen).  If you are reading a cookbook, some quantities may be expressed in milliliters and you need to convert them to cups.</p>
 <p>Suppose we want to convert <span class="math notranslate nohighlight">\(80\ {\rm m}\)</span> to kilometers.</p>
 <ol class="arabic simple">
@@ -1295,11 +1352,28 @@ Both the numerical value and the final units are consistent with the desired SI 
 </section>
 <section id="dimensional-analysis">
 <h2><span class="section-number">1.4. </span>Dimensional Analysis<a class="headerlink" href="#dimensional-analysis" title="Link to this heading">#</a></h2>
-<audio class="plyr" controls>
-  <source src="../_static/audio/Chapter01_units-and-measurement__1-4-dimensional-analysis.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-<p><em>This audio is AI-generated.</em></p>
+<div class="audio-card">
+  <div class="audio-toolbar">
+    <div class="chapter-row">
+      <span class="chapter-label">Subsection</span>
+
+      <select class="chapter-select">
+        <option value="0">Dimensional Analysis — 0:00</option>
+        <option value="146">Example Problem Checking Formulas — 2:26</option>
+      </select>
+
+      <div class="chapter-buttons">
+        <button type="button" class="prev-chapter">← Previous</button>
+        <button type="button" class="next-chapter">Next →</button>
+      </div>
+    </div>
+  </div>
+
+  <audio class="audio-el" controls preload="metadata">
+    <source src="../_static/audio/Chapter01_units-and-measurement__1-4-dimensional-analysis.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div><p><em>This narration is AI-generated from the course text.</em></p>
 <p>The <strong>dimension</strong> of any physical quantity expresses its dependence on the base quantities as: (1) a product of symbols or (2) powers of symbols representing the base quantities. <a class="reference internal" href="#dimensions-table"><span class="std std-numref">Table 1.4</span></a> lists the base quantities and the symbols used for their dimension.</p>
 <p>Like units, dimensions obey the rules of algebra.  For example,</p>
 <ul class="simple">
@@ -1434,11 +1508,30 @@ Both the numerical value and the final units are consistent with the desired SI 
 </section>
 <section id="significant-figures">
 <h2><span class="section-number">1.5. </span>Significant Figures<a class="headerlink" href="#significant-figures" title="Link to this heading">#</a></h2>
-<audio class="plyr" controls>
-  <source src="../_static/audio/Chapter01_units-and-measurement__1-5-significant-figures.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-<p><em>This audio is AI-generated.</em></p>
+<div class="audio-card">
+  <div class="audio-toolbar">
+    <div class="chapter-row">
+      <span class="chapter-label">Subsection</span>
+
+      <select class="chapter-select">
+        <option value="0">Significant Figures — 0:00</option>
+        <option value="2">Accuracy and Precision — 0:02</option>
+        <option value="105">Uncertainty and Discrepancy — 1:45</option>
+        <option value="463">Precision of Measuring Tools — 7:43</option>
+      </select>
+
+      <div class="chapter-buttons">
+        <button type="button" class="prev-chapter">← Previous</button>
+        <button type="button" class="next-chapter">Next →</button>
+      </div>
+    </div>
+  </div>
+
+  <audio class="audio-el" controls preload="metadata">
+    <source src="../_static/audio/Chapter01_units-and-measurement__1-5-significant-figures.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div><p><em>This narration is AI-generated from the course text.</em></p>
 <section id="accuracy-and-precision">
 <h3><span class="section-number">1.5.1. </span>Accuracy and Precision<a class="headerlink" href="#accuracy-and-precision" title="Link to this heading">#</a></h3>
 <p>Science is based on measurements, which are characterized by <strong>accuracy</strong> and <strong>precision</strong>.</p>
@@ -1485,8 +1578,8 @@ Both the numerical value and the final units are consistent with the desired SI 
 <section id="percent-uncertainty">
 <h4><span class="section-number">1.5.2.1. </span>Percent uncertainty<a class="headerlink" href="#percent-uncertainty" title="Link to this heading">#</a></h4>
 <p>Another method of expressing uncertainty is calculating how much the uncertainty deviates from the average value as a percent.  Suppose a  measurement <span class="math notranslate nohighlight">\(A \pm \delta A\)</span>, the <strong>percent uncertainty</strong> is:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d1359555-dbd2-438d-9ec2-1afe6d447d33">
-<span class="eqno">(1.5)<a class="headerlink" href="#equation-d1359555-dbd2-438d-9ec2-1afe6d447d33" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d05172b4-c6cb-4791-9162-29da5427156b">
+<span class="eqno">(1.5)<a class="headerlink" href="#equation-d05172b4-c6cb-4791-9162-29da5427156b" title="Permalink to this equation">#</a></span>\[\begin{align}
 \text{Percent uncertainty} = \frac{\delta A}{A} \times 100\%.
 \end{align}\]</div>
 <div class="tip margin admonition">
@@ -1656,11 +1749,31 @@ Both the numerical value and the final units are consistent with the desired SI 
 </section>
 <section id="solving-problems-in-physics">
 <h2><span class="section-number">1.6. </span>Solving Problems in Physics<a class="headerlink" href="#solving-problems-in-physics" title="Link to this heading">#</a></h2>
-<audio class="plyr" controls>
-  <source src="../_static/audio/Chapter01_units-and-measurement__1-6-solving-problems-in-physics.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-<p><em>This audio is AI-generated.</em></p>
+<div class="audio-card">
+  <div class="audio-toolbar">
+    <div class="chapter-row">
+      <span class="chapter-label">Subsection</span>
+
+      <select class="chapter-select">
+        <option value="0">Solving Problems in Physics — 0:00</option>
+        <option value="23">The Model (Strategy) — 0:23</option>
+        <option value="67">The Math (Solution) — 1:07</option>
+        <option value="136">The Conclusion (Significance) — 2:16</option>
+        <option value="176">The Verification (Script in Python) — 2:56</option>
+      </select>
+
+      <div class="chapter-buttons">
+        <button type="button" class="prev-chapter">← Previous</button>
+        <button type="button" class="next-chapter">Next →</button>
+      </div>
+    </div>
+  </div>
+
+  <audio class="audio-el" controls preload="metadata">
+    <source src="../_static/audio/Chapter01_units-and-measurement__1-6-solving-problems-in-physics.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div><p><em>This narration is AI-generated from the course text.</em></p>
 <p>Physics problems are not solved by memorizing formulas. They are solved by building a <strong>model</strong>, applying <strong>mathematics consistently</strong>, interpreting the <strong>result</strong>, and checking the work. Throughout this book, worked examples and exercises follow a common structure to reinforce this process.</p>
 <section id="the-model-strategy">
 <h3><span class="section-number">1.6.1. </span>The Model (Strategy)<a class="headerlink" href="#the-model-strategy" title="Link to this heading">#</a></h3>
@@ -1875,12 +1988,12 @@ c. Briefly explain which unit system is more convenient for this situation and w
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../Preamble/course-faq.html"
+       href="../Preamble/physics-recruitment.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Course FAQ</p>
+        <p class="prev-next-title">Finding Your Path in Physics</p>
       </div>
     </a>
     <a class="right-next"

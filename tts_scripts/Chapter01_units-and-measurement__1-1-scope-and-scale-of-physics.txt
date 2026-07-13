@@ -1,0 +1,198 @@
+Units and Measurement.
+
+Scope and Scale of Physics.
+
+What is physics?
+
+Physics is a method to better understand all natural phenomena. Physicists try to understand our physical universe, starting from the very small up to (and including) the entire universe. The same basic training can be applied in many areas of science and engineering, where there can be significant overlap across disciplines. If something changes in time, there's a discipline dedicated to understanding how and why it changes.
+
+Physics, which derives from the Greek word for "nature," is the science concerned with describing the fundamental interactions of energy, matter, space, and time. It seeks to understand the world at its most basic level by using a small number of quantitative laws.
+
+This approach reveals deep connections between seemingly unrelated topics, such as how the law of conservation of energy applies to both a car battery and a bag of chips. By focusing on these underlying laws, the study of physics provides a framework for understanding that goes beyond memorization and helps develop strong analytical and problem-solving skills.
+
+The Scope of Physics.
+
+In the Universe.
+
+The universe contains trillions of galaxies, which are megastructures compared to our own Solar System. How can we comprehend how big they are? Or how they operate?
+
+The course webpage includes a figure here.
+
+The Whirlpool Galaxy (or M51) lies 31 million lightyears away from us. This is an astoundingly large distance. We can use this as a starting point to raise the question about how we put this into perspective.
+
+Think of the distances to various places.
+
+The distance across the USA is about 4500 km from east to west. This seems like a long way, but the distance from the Earth to the Sun (or astronomical unit; A U) is about 149,000,000 km or approximately 33,000 times more distant. Light is incredibly fast and can travel 1 A U in only 8.3 min.
+
+How far can light travel in a year?
+
+Instead of thinking in kilometers, it is simpler to instead describe this distance in A U, or how many Earth-Sun distances make up this proposed distance. We have to give this distance a name, thus we call it a lightyear, or the distance that light travels in a year. Let's start with what we know so far (i.e., light travels 1 A U in 8.3 min):
+
+One A U divided by 8.3 minutes equals 0.12 A U per minute.
+
+Therefore, light travels at a speed of about 0.12 A U per minute. Now, we can work our way through if we can somehow translate this speed into a distance. For this we can use some other knowledge, for example:
+
+One hour equals 60 minutes,
+one day equals 24 hours,
+and one year equals 365.25 days.
+
+These are the conversion factors that we need to start unpacking the speed of light and to determine how far it can travel in a year. We can use a technique called dimensional analysis to combine these factors to achieve our goal.
+
+To understand the distance d in a lightyear, we need to convert its speed s using different timescales t that make up a year.
+
+Speed equals distance divided by time,
+so distance equals speed times time.
+
+Let's begin with some analytical calculations, which we'll follow-up with a verification using Python. We just need to use our known speed of light and multiply by different time conversion factors to determine the number of A U per year, or
+
+The speed is 0.12 A U per minute times 60 minutes per hour, times 24 hours per day, times 365.25 days per year,
+which equals about 63,000 A U per year.
+
+Note.
+
+You can express math terms more easily using math mode in a Markdown (or text) cell of your Jupyter notebook. The math mode uses Lay-tek commands that are entered programmatically and rendered once you escape a cell. For example, the source text dollar sign A equals backslash pi r squared dollar sign is rendered as A equals pi r squared.
+
+You can express multi-line equations using the backslash begin brace align brace, backslash end brace align brace environment, where each line is aligned using the ampersand symbol. Open this page in Google Colab and view the source for more examples.
+
+Here's an example of the calculation using Python, where you should note the comments so that it is understandable by future-you.
+
+The Python code is available on the course webpage.
+
+We've found that the speed of light is about 63,000 A U per year. Now we can determine the distance in a lightyear, which is
+
+Distance equals speed times time,
+which equals 63,000 A U per year times one year,
+or 63,000 A U.
+
+We have arrived at our goal, which is one lightyear equals 63,000 A U.
+
+Checkpoint. Pause and check your understanding.
+
+A lightyear is a unit of distance, not time.
+
+Why does multiplying a speed by a time produce a distance?
+
+Why do we want to know this?
+
+It shows us that a lightyear is really big, or 63,000 times the distance from the Earth to the Sun. Then, it shows that the distance to M51 is even bigger, meaning that it is 31 million times farther away than something that is only 1 lightyear away.
+
+Moreover, M51 is composed of billions of stars where these stars interact in a complex way that we can actually understand (to some degree). For now, we posit that the force holding the galaxies together is the same as the one holding you onto the Earth.
+
+On the Earth.
+
+Humans have been remarkable at creating new gadgets and tools. This process is marked by our ability to identify and manipulate certain materials so that we can bend them to our own purposes. This knowledge stems from physics, where our current technological prowess has produced a way for you to acquire the sum of all knowledge and carry it with you in your pocket.
+
+A Branch Education video is linked on the course webpage.
+
+A key innovation to producing your phone is the Moss-fet transistor and forms the basis of all modern electronics. Physics also underpins complex systems like G P S and continues to drive future technologies like levitating trains and microscopic medical robots. Furthermore, physics explains the function of everyday items, such as how a microwave oven works or why a black car radiator helps remove heat.
+
+Because physics is a foundational science, its principles are essential across a wide range of professions and scientific fields.
+
+Professionals such as pilots, engineers, physical therapists, and computer programmers apply physics concepts in their daily work.
+
+Physics is also a key element in other disciplines, including chemistry, architecture, and geology.
+
+It has critical applications in biology and medicine, explaining phenomena from the properties of cells to the mechanics of the human body, and enabling crucial diagnostic tools like MRIs, radiographs, and ultrasonic imaging.
+
+The Scale of Physics.
+
+The laws of physics operate at all measurable scales of length, mass, and time. To think on such scales, scientists use the concept of "order of magnitude" because it provides an approximation for that scale that guides our thinking or intuition. The breadth of physics is not limited to the mechanics of the 19th century, but has been the fuel of progress for the last 150 years and is expected to continue yielding returns into the future with A I.
+
+The next wave of A I requires us to understand things like the laws of physics, friction, inertia, and cause and effect.
+
+--Jensen Huang, Nvidia CEO
+
+Order of magnitude.
+
+The order of magnitude describes a number to the closest power of 10. Thus, it refers directly to the scale (or size) of the value. To find the order of magnitude, we have two options:
+
+First, take the base 10 logarithm of the number, then raise the whole number part to a power of 10. For example,
+
+Log base 10 of 250 equals 2.40, which rounds to 2, so the order of magnitude is 10 squared.
+Log base 10 of 450 equals 2.65, which rounds to 3, so the order of magnitude is 10 cubed.
+Log base 10 of 12,345 equals 4.09, which rounds to 4, so the order of magnitude is 10 to the fourth.
+
+Second, write the number in scientific notation and then check to see whether the first factor is greater or less than square root of 10 is approximately equal to 3. The square root can be expressed as a fractional power so that square root of 10 equals ten to the one-half so that we are estimating the halfway point between powers. For example,
+
+250 equals 2.5 times 10 squared. Since 2.5 is less than about 3, the order of magnitude remains 10 squared.
+12,345 equals 1.2345 times 10 to the fourth. Since 1.2345 is less than about 3, the order of magnitude remains 10 to the fourth.
+
+450 equals 4.5 times 10 squared. Since 4.5 is greater than about 3, the order of magnitude increases to 10 cubed.
+
+The order of magnitude is a ballpark estimate for the scale, or size, of its value, where it rounds the numbers consistently to the nearest power of 10 on a logarithmic scale. This makes doing mental arithmetic easier when dealing with very small or large numbers.
+
+The diameter of the hydrogen atom is approximately 10 to the minus 15 meters, whereas the diameter of the Milky Way Galaxy is approximately 10 to the 21 meters. It would take 10 to the 21 divided by 10 to the minus 15, which equals 10 to the 36 hydrogen atoms to stretch across our Galaxy. It's much easier to do in your head, or on the back of an envelope, if you can ignore the first factor in the more precise number.
+
+Checkpoint. Pause and check your understanding.
+
+Which number has order of magnitude 10 cubed?
+
+250, 450, or 12,345?
+
+Known ranges of length, mass, and time.
+
+The figure on the course webpage shows a wide range of examples of known lengths, masses, and times given by their order of magnitude. Consider the following:
+
+How many protons are there in a bacterium?
+
+10 to the minus 15 kilograms divided by 10 to the minus 27 kilograms equals 10 to the 12 protons.
+
+How many floating-point operations can a supercomputer do in a day?
+
+10 to the fifth seconds divided by 10 to the minus 17 seconds equals 10 to the 22 floating-point operations.
+
+Formatting equations and units.
+
+The above calculation uses the source text dollar sign dollar sign, space, dollar sign dollar sign as a shorthand environment that centers an equation without numbering it. It requires a blank line before and after so that it renders properly.
+
+To add space between the value and unit, use backslash space.
+
+To express the unit, place it in curly braces with backslash r m space preceding the unit. For example, open curly brace backslash r m space k g close curly brace renders as kilograms. Or use the backslash text command. For example, backslash text open curly brace k g close curly brace also renders as kilograms.
+
+To express a superscript or subscript, use caret open curly brace close curly brace or underscore open curly brace close curly brace, respectively. For example, 10 caret open curly brace 12 close curly brace renders as 10 to the 12.
+
+Equations are part of sentences. Be sure to use the appropriate punctuation, either a comma or a period, to include them seamlessly.
+
+Building Models.
+
+The universe is very complicated, where it can be quite daunting to try understanding it fundamentally with every possible interaction included. As a result, we make human statements of the underlying laws or rules that all natural processes follow. Such laws are intrinsic to the universe; humans did not create them and cannot change them. We can only discover and understand them.
+
+What is a model?
+
+A model is a representation of something that is often too difficult to describe fully. It is only accurate in describing certain aspects of a physical system. Consider the following joke about spherical cows:
+
+Milk production at a dairy farm was low, so the farmer wrote to the local university, asking for help from academia. A multidisciplinary team of professors was assembled, headed by a theoretical physicist, and two weeks of intensive on-site investigation took place. The scholars then returned to the university, notebooks crammed with data, where the task of writing the report was left to the team leader. Shortly thereafter the physicist returned to the farm, saying to the farmer, "I have the solution, but it works only in the case of spherical cows in a vacuum."
+
+The inner workings of a cow or its complex shape are too difficult to describe with simple equations. So the theoretical physicist makes a simplifying assumption that a cow can be modeled as a sphere and air resistance can be neglected, that is, in a vacuum.
+
+In the beginning stages of quantum mechanics, the Bohr model of single-electron atoms provided a "good-enough" mental image to explain some of the observations that we can make, such as atomic spectra.
+
+Use this Fet simulation to explore classical, Bohr, and quantum models of the hydrogen atom. Adjust parameters and observe how predicted electron behavior differs between models.
+
+However other observations show that the model is "wrong", but is still useful for some purposes. Models are useful to help physicists analyze a scenario, perform a calculation, or investigate different situations via a computer simulation. The results of these calculations and simulations always need to be double-checked by observation and/or experimentation.
+
+Theory vs. law.
+
+The word theory can have a different meaning depending on the context, where the layman uses it interchangeably with "hypothesis". In particular, a scientific theory is not the same as a hypothesis, where it is instead:
+
+A testable explanation for patterns in nature supported by evidence and verified multiple times by independent researchers.
+
+Newton's theory of gravity does not require a model or mental image because it describes objects or events directly available to our senses. Quantum theory, on the other hand, does require a mental model or picture.
+
+A theory should describe all aspects of any system that falls within its applicable domain and any experimentally testable implication of a theory should be verified.
+
+A law uses concise language to describe a generalized pattern in nature supported by scientific experiments and repeated experiments. Often a law is expressed by a mathematical equation. Laws and theories are similar in that they both are scientific statements that result from a tested hypothesis and are supported by scientific evidence.
+
+The designation of law is usually reserved for a concise and very general statement that describes phenomena in nature (e.g., energy is conserved in any process or force is related to mass times acceleration, vector F equals m times vector a.)
+
+A theory is a less concise statement of observed behavior. For example, the theory of evolution and theory of special relativity cannot be expressed concisely enough to be considered laws.
+
+A theory explains an entire group of phenomena, whereas a law describes a single action.
+
+Less broadly applicable statements are usually called principles (e.g., Pascal's principle is applicable to only fluids), but the distinction between laws and principles often is not carefully made.
+
+If it disagrees with experiment, it's wrong. In that simple statement is the key to science. It doesn't make any difference how beautiful your guess is. It doesn't make any difference how smart you are, who made the guess, or what his name is. If it disagrees with experiment, it's wrong.
+
+--Richard Feynman, Caltech Lectures
+
+The Richard Feynman Lectures are linked on the course webpage.

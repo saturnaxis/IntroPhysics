@@ -1,0 +1,260 @@
+Common Forces.
+
+Normal Force.
+
+Weight is a pervasive force that acts at all times and must be counteracted to keep an object from falling (i.e., in static equilibrium). You must support the weight of a heavy object by pushing up on it when you hold it stationary.
+
+When a bag of dog food is placed on the table (see the figure), the table sags slightly under the load. This is more noticeable on a card table, compared to a sturdy oak table. Unless an object is deformed beyond its limit, it will exert a restoring force like a spring. The greater the deformation, the greater the restoring force. The net external force on the load is zero, when the load is stationary on the table.
+
+Whatever supports a load must supply an upward force equal to the weight of the load. If the force supporting the weight of an object is perpendicular to the surface of contact, this is defined as a normal force vector N. This means that the normal force experienced by an object resting on a horizontal surface can be expressed in vector form and scalar form as:
+
+vector N equals m vector g,
+N equals m g.
+
+Note.
+
+Do not confuse the symbol N for the normal-force magnitude with the unit newton, N. The normal force is not automatically equal to the object’s weight. It equals whatever value is required by the force balance perpendicular to the surface. For an object at rest on an incline, the normal force balances only the perpendicular component of the weight.
+
+When an object rests on an incline that makes an angle theta with the horizontal, the force of gravity acting on the object is divided into two components:
+
+a force acting perpendicular to the plane, w sub y, and
+
+a force acting parallel to the plane, w sub x.
+
+The normal force vector N is typically equal in magnitude and opposite in direction to w sub y, where the component parallel to the plane w sub x causes the object to accelerate down the incline (see the figure). The w sub x is the unbalanced force which allows the acceleration to occur, where w sub y is balanced by the normal force N.
+
+Angles on a Triangle.
+
+How do we know that the angle theta given in the figure, is the same in both places?
+
+Let's assume that they are different:
+
+theta _1 is the angle between between vector w and vector w sub y,
+
+theta _2 is the angle between the horizontal surface and incline plane.
+
+The angle between vector w and vector w sub x is beta equals 90 degrees minus theta _1 because vector w sub x and vector w sub y are perpendicular. The inclined surface also makes a triangle, with 3 angles that sum to 180 degrees, or
+
+theta _2 plus 90 degrees plus beta equals 180 degrees.
+
+We can solve for beta in terms of theta _2 and substitute into the equation for the equation with theta _1,
+
+beta equals 90 degrees minus theta _2,
+90 degrees minus theta _2 equals 90 degrees minus theta _1,
+theta _2 equals theta _1.
+
+With a little geometry, we showed that theta _1 equals theta _2 equals theta.
+
+Be careful when resolving the weight into components. Normally when the x-component of a force vector F is resolved, we find that F sub x equals F cosine theta. However, in this case we are using the complementary angle beta equals 90 degrees minus theta to resolve the w sub x. Using the red vectors in the figure, we have
+
+w sub x equals w cosine beta equals w sine theta,
+w sub y equals w cosine theta.
+
+Checkpoint. Pause and check your understanding.
+
+An object rests on an incline.
+
+Is the normal force usually equal to the object’s full weight w, or only to one component of the weight?
+
+We can sum the forces along the y-axis to write the magnitude of the normal force experienced by an object resting on an inclined plane:
+
+sum F sub y equals N minus m g cosine theta equals 0,
+N equals m g cosine theta.
+
+Notice that the force components and normal force could be determined from a free-body diagram.
+
+Free-body diagram showing vector w resolved into vector w sub x and vector w sub y in axes aligned with the incline.
+
+The Python code is available on the course webpage.
+
+Example Problem: Weight on an incline.
+
+The Problem.
+Consider the skier on the slope in the figure. Her mass including equipment is 60.0 kilograms.
+Part a. What is her acceleration if friction is negligible?
+Part b. What is her acceleration if friction is 45.0 newtons?
+
+The worked solution follows.
+
+The Model.
+
+The skier and equipment are modeled as one particle moving along a rigid incline. The x axis is chosen parallel to the slope and positive down the slope, while the y axis is chosen perpendicular to the slope and positive away from the surface. With this coordinate choice, the acceleration is along the slope and there is no acceleration perpendicular to the surface. The forces are the weight vector w, the normal force vector N, and, when present, the friction force vector f acting up the slope.
+
+The Math.
+
+The weight is resolved into components along the incline axes. With the incline angle theta, the component parallel to the slope is w sub x equals m g sine theta, and the component perpendicular to the slope is w sub y equals m g cosine theta. The perpendicular forces balance because a sub y equals 0, so N equals w sub y.
+
+Part a. For the frictionless case, the only force parallel to the slope is w sub x. Newton's second law along the slope gives
+
+sum F sub x equals m a sub x,
+m g sine theta equals m a sub x.
+
+The mass cancels, leaving
+
+a sub x equals g sine theta,
+equals (9.81 meters per second squared) sine of 25 degrees,
+equals 4.1 meters per second squared.
+
+Part b. For the case with friction, the friction force acts up the slope, opposite the motion. The net force along the slope is reduced to m g sine theta minus f, so
+
+m g sine theta minus f equals m a sub x,
+a sub x equals m g sine theta minus f divided by m.
+
+We now substitute the skier's mass, gravitational acceleration, incline angle, and friction force into the expression for the acceleration along the slope:
+
+a sub x equals the quantity 60.0 kilograms times 9.81 meters per second squared times the sine of 25 degrees, minus 45.0 newtons, divided by 60.0 kilograms,
+equals 3.4 meters per second squared.
+
+The Conclusion.
+
+With negligible friction, the skier accelerates down the slope at 4.1 meters per second squared. When a 45.0 newtons friction force acts up the slope, the acceleration is reduced to 3.4 meters per second squared. Both accelerations are down the slope because the downslope component of weight is still larger than the opposing friction force.
+
+Tension.
+
+A tension is a force along the length of a medium, such as a rope or cable. The word “tension” comes from a Latin word meaning “to stretch.” Any flexible connector, such as string, rope, wire, or cable, can exert a pull parallel to its length. Consider the phrase: “You can't push a rope.” Instead tension force pulls outward along the two ends of a rope.
+
+Consider a person holding a 5.0-kilogram mass on a rope. If the mass is stationary, then its acceleration is zero and the net force is zero. The only external forces acting on the mass are its weight w and the tension T supplied by the rope. Thus,
+
+F net equals T minus w equals zero,
+
+where the positive j-hat direction defines up. The tension equals the weight of the supported mass,
+
+T equals w equals m g,
+
+hanging at rest. For a 5.0-kilogram mass, neglecting the mass of the rope, we see that
+
+T equals m g,
+which equals 5.0 kilograms times 9.81 meters per second squared,
+which equals 49 newtons.
+
+If we cut the rope and insert a spring, the spring would extend a length corresponding to a force of 49 newtons, providing a direct observation and measure of the tension force in the rope.
+
+Checkpoint. Pause and check your understanding.
+
+If a light rope is cut and a spring scale is inserted, what force does the scale measure?
+
+Does it measure the sum of the pulls from both sides, or the tension in the rope?
+
+Large Tension.
+
+If we wish to create a large tension, we need to exert a force perpendicular to a taut flexible connector (see the figure). The weight of the tightrope walker acts as a force perpendicular to the rope.
+
+Suppose that the tightrope walker is standing still, so the net force in both directions zero. We can decompose the tension into two components: right vector T sub R and left vector T sub L.
+
+Each section of rope is supporting the weight vector w through their y components: T sub Ly and T sub Ry.
+
+The x component of the weight is balanced through each section of the rope, where T sub Lx equals T sub Rx.
+
+The net force is given as
+
+F sub net y equals T sub Ry plus T sub Ly minus w equals 0,
+F sub net x equals T sub Rx minus T sub Lx equals 0,
+
+where we treat the tightrope walker as a particle at the center of the vectors, the positive i-hat direction goes to the right of the walker, and up is in the positive j-hat direction above the walker.
+
+We can examine the x-components first, where the rope bends from the horizontal by an angle theta so that
+
+T sub Rx equals T sub R cosine theta,
+T sub Lx equals T sub L cosine theta,
+T sub R cosine theta equals T sub L cosine theta.
+
+Since cosine theta is not equal to 0, this implies T sub R equals T sub L.
+
+From the example with the hanging mass (the figure), we saw that the tension acts along the rope and is the same magnitude everywhere If we cut the rope then the same tension T acts along both strands, not the sum of the forces from both sides. As a result we can treat the left and right sides of the rope as having the same tension T, or
+
+T sub R equals T sub L equals T.
+
+Turning to the y-components, we have T sub Ry and T sub Ly both in the positive direction and T sub Ry equals T sub Ly equals T sine theta using the same logic from the x-component analysis. Therefore, we can write the y-components as
+
+2 T sine theta minus w equals zero,
+2 T sine theta equals w,
+T equals w divided by the quantity 2 sine theta.
+
+Since the weight w equals m g, we have
+
+T equals m g divided by the quantity 2 sine theta.
+
+We can extend this expression to describe the tension T when a perpendicular force, F sub perpendicular, written in Lay-tek as F underscore open brace backslash perp close brace, is exerted at the middle of a flexible connector:
+
+T equals F sub perpendicular divided by the quantity 2 sine theta.
+
+In this case, T becomes large as theta goes to 0. Even the relatively small weight of any flexible connector will cause it to sag, since an infinite tension would result if it were horizontal (i.e., sine theta equals 0 ).
+
+Example Problem: Tension in a Tightrope.
+
+The Problem.
+Calculate the tension in the wire supporting the 70.0 kilograms tightrope walker shown in the figure.
+
+The worked solution follows.
+
+The Model.
+
+The system is the tightrope walker, treated as a particle at rest. The positive x direction is horizontal to the right, and the positive y direction is upward. The wire is symmetric about the walker, so the left and right tension magnitudes are equal and are denoted by T. Each wire segment makes the same small angle above the horizontal. The walker is stationary, so the net force is zero in both coordinate directions.
+
+The Math.
+
+The horizontal components of the two tensions cancel by symmetry. The vertical components of the two tensions support the weight of the walker. Applying Newton's second law in the vertical direction,
+
+sum F sub y equals 0,
+T sine theta plus T sine theta minus w equals 0,
+2 T sine theta equals w.
+
+The weight is w equals m g, so the tension is
+
+T equals w divided by the quantity 2 sine theta,
+equals m g divided by the quantity 2 sine theta.
+
+We now substitute the walker's mass, gravitational acceleration, and wire angle into the tension equation:
+
+T equals (70.0 kilograms)(9.81 meters per second squared) divided by 2 sine of 5.0 degrees,
+equals 3.9 times ten to the third newtons.
+
+The Conclusion.
+
+Each side of the wire has a tension of 3.9 times ten to the third newtons. This is much larger than the walker's weight because the wire is nearly horizontal, so only a small vertical component of each tension supports the walker.
+
+Friction.
+
+Friction is a resistive force that opposes motion. The normal force acts in the opposite direction as the weight to keep an object at rest on a horizontal surface.
+
+Checkpoint. Pause and check your understanding.
+
+A block remains at rest on a rough incline.
+
+What force prevents the block from sliding down the incline?
+
+If the surface is tilted, the normal force balances the component of the weight perpendicular to the surface. That is, N equals w sub y.
+
+If the object does not slide downward, the friction balances the component of the weight parallel to the inclined plane. That is, f equals w sub x.
+
+Spring Force.
+
+A spring is a special medium that has the ability to restore its shape. To restore its shape, a spring exerts a restoring force that is proportional to and in the opposite direction in which it is stretched or compressed.
+
+The spring force is also known as Hooke's law, which has a mathematical form
+
+vector F equals negative k vector x,
+
+where vector x measures the position relative to the rest, or relaxed, position x naught equals zero, and the constant k measures the spring's stiffness, an intrinsic property.
+
+The line of action is parallel to the spring axis, which means we can use the scalar form:
+
+F equals negative k times the quantity x minus x naught,
+
+where x is measured along the spring axis. We can now see that the restoring force is:
+
+positive when the spring is compressed; x minus x naught is less than zero,
+
+and negative when the spring is stretched; x minus x naught is greater than zero.
+
+Interactive Simulation: Hooke's Law.
+
+The interactive is available on the course webpage. Use this Fet simulation to explore the relationships among force, spring constant, and displacement. Investigate what happens when two springs are connected in series and in parallel.
+
+Real Forces and Inertial Frames.
+
+Some forces are real, whereas others are not. Real forces have some physical origin, such as gravity, tension, or friction. Fictitious forces appear only because the observer is using an accelerating or rotating frame of reference.
+
+For example, consider a satellite moving due north above Earth's Northern Hemisphere. To an observer on Earth, the satellite appears to be pushed westward. However, there is no physical force acting on the satellite in that direction. Instead Earth is rotating eastward beneath it. The apparent westward force exists only because Earth's frame of reference is rotating.
+
+Real forces always come in action-reaction pairs. If no physical object experiences the reaction force, then the force is fictitious.

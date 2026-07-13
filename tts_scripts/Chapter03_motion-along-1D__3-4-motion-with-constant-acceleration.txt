@@ -1,0 +1,524 @@
+Motion with Constant Acceleration.
+
+Before using the constant-acceleration equations, we need to decide whether this model applies. These equations are powerful, but they only describe motion where the acceleration is constant over the interval being analyzed.
+Checkpoint. Pause and check your understanding.
+A car accelerates from rest, then later brakes to a stop.
+
+Should the entire trip be modeled with one constant acceleration, or should it be split into separate intervals?
+
+Choosing a One-Dimensional Motion Model.
+
+Use the following questions before choosing an equation.
+Is the motion along one straight axis?
+If yes, the motion can be described with one-dimensional position, velocity, and acceleration.
+Is the acceleration constant over the interval?
+If yes, the constant-acceleration equations can be used. If no, use graphs, calculus, or split the motion into intervals where the acceleration is approximately constant.
+Are the known and unknown quantities among x, x naught, v, v naught, a, and t?
+If yes, choose an equation that contains the unknown and the given quantities.
+Does the sign of the answer make physical sense?
+Check whether the object is moving in the expected direction, speeding up or slowing down appropriately, and whether any time value is physically meaningful.
+A Khan Academy video is linked on the course webpage.
+Notation.
+
+To make things simpler, we introduce some conventions in notation. One simplification is taking t naught equals 0, which is the point in time when you begin to measure. Time exists before this point, but until "you get your Delorean to 88 mph", then it doesn't make sense to include the past.
+
+The elapsed time goes from delta t equals t final - t naught to delta t equals t final. We don't need the subscript f anymore. So, the elapsed time is delta t equals t. We can drop the subscript f from the delta x and delta v as well. In our simplified notation we have
+
+delta t equals t,
+delta x equals x minus x naught,
+delta v equals v minus v naught,
+
+where the subscript o denotes an initial value and the absence of a subscript indicates the final value of the variable.
+
+For now, we will also make the assumption that the acceleration is constant. As a result, the average and instantaneous acceleration are equal, or
+
+average acceleration equals a equals constant.
+
+In many situations in this course, the acceleration is constant. When it isn't (e.g., a car accelerating to top speed, then braking to a stop), the motion will be considered in separate parts (like with the runner) and each part has its own constant acceleration.
+
+Displacement and Position from Velocity.
+
+To get our first two equations, we start with the definition of average velocity:
+
+average velocity equals delta x over delta t,
+
+and substitute the simplified notation to get
+
+average velocity equals x minus x naught over t.
+
+Solving for x gives
+
+x equals x naught plus average velocity times t,
+
+where the arithmetic average velocity is
+
+average velocity equals the quantity v naught plus v, divided by 2.
+
+This version of average velocity reflects that when acceleration is constant, then average velocity is the simple average of the initial and final velocities.
+
+Solving for Final Velocity from Acceleration and Time.
+
+We can derive another useful equation by manipulating the definition of acceleration:
+
+a equals delta v over delta t.
+
+By substituting the simplified notation for delta v and delta t, we have
+
+a equals the quantity v minus v naught, divided by t, for constant acceleration.
+
+Solving for v yields
+
+v equals v naught plus a t, for constant acceleration.
+
+The above equation gives us insight into relationships among velocity, acceleration, and time. We can see that
+Final velocity depends on both acceleration and time
+For zero acceleration, then the initial and final velocities are equal (i.e., v equals v naught)
+If a is less than zero, then v is less than v naught.
+
+These relationships fit our intuition, which can be a good sign.
+
+Example Problem: Calculating Final Velocity.
+
+The Problem.
+An airplane lands with an initial velocity of 70.0 meters per second and then accelerates opposite to the motion at 1.50 meters per second squared for 40.0 seconds. What is its final velocity?
+
+The Model.
+
+The airplane moves in one dimension with constant acceleration. We choose the initial direction of motion as positive. Since the acceleration is opposite the motion, the acceleration is negative in this coordinate system.
+
+The Math.
+
+For constant acceleration, the final velocity is related to the initial velocity, acceleration, and elapsed time by
+
+v equals v naught plus a t.
+
+The acceleration is negative because it points opposite the positive direction of motion, so the velocity-time relation gives
+
+v equals v naught plus a t,
+equals 70.0 meters per second plus the quantity negative 1.50 meters per second squared, times 40.0 seconds,
+equals 10.0 meters per second.
+
+The Conclusion.
+
+The airplane’s final velocity is 10.0 meters per second. The result is still positive, so the airplane is still moving in its original direction after 40.0 seconds, but it has slowed substantially.
+
+Solving for Final Position with Constant Acceleration.
+
+We can use the equation that defines the average velocity, which is related to time and displacement, with the arithmetic definition of average velocity. This gives us three equations:
+
+x equals x naught plus average velocity times t,
+
+average velocity equals one-half times the quantity v plus v naught,
+
+and v equals v naught plus a t,
+
+where a is a constant acceleration and we are using our simplified notation. The third equation can be substituted into the second equation to get
+
+average velocity equals one-half times the quantity 2 v naught plus a t,
+
+which equals v naught plus one-half a t.
+
+Now we substitute this expression for the average velocity into the equation for displacement, yielding
+
+x equals x naught plus average velocity times t,
+
+which equals x naught plus v naught times t plus one-half a t squared.
+
+The position equation can also be written using the final velocity instead of the initial velocity. This form is useful when v, a, and t are known, but v naught is not needed.
+
+The velocity equation can be solved for the initial velocity, which gives
+
+v equals v naught plus a t,
+
+so v naught equals v minus a t.
+
+The position equation can then be rewritten by replacing v naught with v minus a t, which gives
+
+x equals x naught plus v naught times t plus one-half a t squared,
+
+which equals x naught plus the quantity v minus a t, times t, plus one-half a t squared.
+
+Expanding and combining the acceleration terms gives the equivalent position equation
+
+x equals x naught plus v t minus a t squared plus one-half a t squared,
+
+which equals x naught plus v t minus one-half a t squared.
+
+Writing this result in displacement form gives
+
+x minus x naught equals v t minus one-half a t squared.
+
+This equation describes the same constant-acceleration motion, but it is written in terms of the final velocity v rather than the initial velocity v naught.
+
+We can see the following relationships from the above equation:
+
+Displacement depends on time squared when the acceleration is not zero.
+
+The form of the equation is a quadratic, so it should plot as a parabola.
+
+If the acceleration is zero, then it reduces to x equals x naught plus v naught times t, the equation for displacement under constant velocity v naught.
+
+Example Problem: Calculating Displacement of an Accelerating Object.
+
+The Problem.
+Dragsters can achieve an average acceleration of 26.0 meters per second squared. Suppose a dragster accelerates from rest at this rate for 5.56 seconds. How far does it travel in this time?
+
+The Model.
+
+The dragster is modeled as a particle moving in one dimension with constant acceleration. It starts from rest at the starting line, which we choose as the origin. With these choices, the displacement is determined by the acceleration and the elapsed time.
+
+The Math.
+
+For one-dimensional motion with constant acceleration, the position is given by
+
+x equals x naught plus v naught times t plus one-half a t squared.
+
+Because the dragster starts from rest at the origin, v naught equals 0 and x naught equals 0, so the position equation reduces to
+
+x equals one-half a t squared.
+
+The displacement after 5.56 seconds is found by evaluating this expression, which gives
+
+x equals one-half times 26.0 meters per second squared, times the quantity 5.56 seconds squared,
+equals 402 meters.
+
+The Conclusion.
+
+The dragster travels 402 meters while accelerating from rest for 5.56 seconds. The large displacement over a short time is physically reasonable because the acceleration is very large.
+
+Solving for Final Velocity from Distance and Acceleration.
+
+Since the acceleration a is constant, we can solve for the time t and substitute it into the equation for displacement. We have the following equations:
+
+t equals the quantity v minus v naught, divided by a,
+
+average velocity equals one-half times the quantity v plus v naught,
+
+and x equals x naught plus average velocity times t.
+
+Substituting the first and second equations into the final equation, and performing some algebra, gives
+
+x equals x naught plus one-half times the quantity v plus v naught, times the quantity v minus v naught, divided by a,
+
+which equals x naught plus one over 2 a, times the quantity v minus v naught, times the quantity v plus v naught,
+
+which equals x naught plus one over 2 a, times the quantity v squared minus v naught squared.
+
+Solving for v squared, we get
+
+v squared equals v naught squared plus 2 a times the quantity x minus x naught, for constant acceleration.
+
+Automatic resizing with backslash left and backslash right.
+
+Use these commands when the contents are tall, such as fractions, exponents, or roots.
+
+For automatically sized parentheses, place backslash left parenthesis before the expression and backslash right parenthesis after it. The source examples are:
+
+Backslash left parenthesis, backslash frac brace one brace brace two brace, a t caret two, backslash right parenthesis.
+
+Backslash left parenthesis, backslash frac brace x sub two minus x sub one brace brace t sub two minus t sub one brace, backslash right parenthesis.
+
+Backslash left parenthesis, a plus backslash frac brace b brace brace c brace, backslash right parenthesis, caret two.
+
+Lay-tek adjusts the size of the parentheses to match the height of the expression inside.
+
+Automatic resizing with backslash left bracket and backslash right bracket.
+
+Brackets behave the same way and are often clearer for long expressions. The source examples are:
+
+Backslash left bracket, backslash frac brace x sub two minus x sub one brace brace t sub two minus t sub one brace, backslash right bracket.
+
+Backslash left bracket, backslash frac brace one brace brace two brace, a t caret two, backslash right bracket, subscript t equals zero, superscript t equals t sub f.
+
+Backslash left bracket, a plus backslash left parenthesis, backslash frac brace b brace brace c brace, backslash right parenthesis, caret two, backslash right bracket.
+
+Mixing delimiter types.
+
+You can mix parentheses and brackets to improve readability. The source examples are:
+
+Backslash left bracket, backslash frac brace backslash left parenthesis x sub two minus x sub one backslash right parenthesis brace brace backslash left parenthesis t sub two minus t sub one backslash right parenthesis brace, backslash right bracket.
+
+Backslash left parenthesis, a plus backslash frac brace b brace brace c brace, backslash right parenthesis, backslash left parenthesis, a minus backslash frac brace b brace brace c brace, backslash right parenthesis.
+
+Suppressing one side.
+
+If you only want one visible delimiter, use a period after backslash left or backslash right on the hidden side. The source examples are:
+
+Backslash left period, backslash frac brace d x brace brace d t brace, backslash right vertical bar, subscript t equals 2 seconds.
+
+Backslash left bracket, backslash frac brace one brace brace two brace, a t caret two, backslash right period.
+
+Rule of thumb.
+
+Use ordinary parentheses or brackets for simple expressions.
+
+Use backslash left and backslash right whenever the expression contains fractions, roots, or stacked exponents.
+
+This keeps your math clean, readable, and professional, especially in physics derivations.
+
+Difference of Squares Identity.
+
+A very common algebra identity is
+
+(a+b)(a-b) equals a squared-b squared.
+
+You can see it by distributing (or using FOIL to save a step):
+
+(a+b)(a-b) equals a(a-b)+b(a-b),
+equals a squared-ab+ab-b squared,
+equals a squared-b squared.
+
+This is useful for quickly simplifying expressions and for factoring quadratics that look like a difference of squares.
+
+We can see the following relationships in this equation:
+Final velocity depends on the acceleration and total displacement.
+For a fixed acceleration, the stopping distance (x minus x naught) increases with the square of the velocity. It takes much farther to stop at a higher speed. This is shown by
+
+x minus x naught equals v naught squared divided by 2 a, which is proportional to v naught squared.
+
+Example Problem: Calculating Final Velocity.
+
+The Problem.
+A dragster starts from rest and accelerates at an average rate of a equals 26.0 meters per second squared. In the previous example, it traveled a displacement of delta x equals x minus x naught equals 402 meters.
+Use a kinematic equation that does not involve time to find the dragster’s final velocity.
+
+The Model.
+
+The dragster moves in one dimension with constant acceleration. It starts from rest and moves in the positive direction. Since the elapsed time is not needed, we use the time-independent relationship between speed, acceleration, and displacement.
+
+The Math.
+
+For constant acceleration, the time-independent kinematic equation is
+
+v squared equals v naught squared plus 2 a(x minus x naught).
+
+Because the dragster starts from rest, v naught equals 0, and because the displacement is delta x equals x minus x naught, the time-independent equation becomes
+
+v squared equals 2 a times delta x.
+
+The final speed is the positive square root because the dragster accelerates forward, which gives
+
+v equals the square root of 2 a times delta x,
+equals the square root of 2 times 26.0 meters per second squared, times 402 meters,
+equals 145 meters per second.
+
+The Conclusion.
+
+The dragster’s final velocity is 145 meters per second in the forward direction. The positive root is selected because the dragster starts from rest and accelerates forward.
+
+Putting Equations Together.
+
+Here is a summary of the equations that we have developed thus far under the assumption of constant acceleration:
+
+x equals x naught plus average velocity times t,
+
+v equals v naught plus a t,
+
+x equals x naught plus v naught times t plus one-half a t squared,
+
+average velocity equals the quantity v naught plus v, divided by 2,
+
+x equals x naught plus v t minus one-half a t squared,
+
+and v squared equals v naught squared plus 2 a times the quantity x minus x naught.
+
+The equation we choose depends on which quantity is missing from the problem. The full table for choosing a constant-acceleration equation by its missing variable is available on the course webpage. The table is useful only when the acceleration is constant over the interval being analyzed.
+
+Checkpoint. Pause and check your understanding.
+
+A problem gives v naught, a, and x minus x naught, and asks for v.
+
+Which constant-acceleration equation avoids using time?
+
+A good first step in any constant-acceleration problem is to list the known quantities and the requested unknown. Then choose the equation that contains those quantities while leaving out the quantity that is not part of the problem.
+
+As we have seen already, some problems have two unknowns and therefore require two equations to solve for those unknowns. We must have as many equations as there are unknowns to solve a given situation.
+
+Note.
+
+Consider how we can calculate the constant acceleration given the initial velocity v naught, final velocity v, and time interval t. We can solve for the acceleration using
+
+a equals the quantity v minus v naught, divided by t.
+
+In the case where the time interval t is very small, as t approaches zero, the constant acceleration blows up, or becomes infinite. Therefore, we must use a different method for calculating the acceleration a.
+
+Instead, we use the expression that depends on the velocities and displacement. This is given as
+
+a equals the quantity v squared minus v naught squared, divided by 2 times the quantity x minus x naught.
+
+In the limit that both the velocity difference and displacement approach zero, the expression for acceleration becomes indeterminate. Resolving this limit leads naturally to the definition of instantaneous acceleration as a derivative, a equals d v over d t. This highlights the difference between average acceleration over a finite interval and instantaneous acceleration at a single moment in time.
+
+A Note on Infinite Acceleration and What It Really Means.
+
+Time-based form.
+
+a equals the quantity v minus v naught, divided by t.
+If the delta velocity (v - v naught) is small and the time (t) is finite, the acceleration is small.
+If (v equals v naught), then (a equals 0): there is no acceleration.
+But if we try to change velocity by a finite amount in an extremely short time as t approaches zero, the acceleration becomes very large.
+
+This situation does not represent realistic motion. It corresponds to an instantaneous jump in velocity, which would require an infinite force.
+
+Displacement-based form.
+
+a equals the quantity v squared minus v naught squared, divided by 2 times the quantity x minus x naught.
+If the velocity change is small and the displacement is finite, the acceleration is small.
+If (v equals v naught), the numerator is zero and (a equals 0).
+If a finite velocity change occurs over almost no distance, the acceleration again becomes very large.
+
+This describes another unphysical situation: a sharp change in motion over essentially zero distance.
+
+How calculus resolves the issue.
+
+When both the delta velocity and the time (or displacement) become small together, these expressions take the indeterminate form (0/0). In that limit, acceleration must be defined using a derivative:
+
+a equals the limit as delta t approaches zero of delta v over delta t, which equals d v over d t.
+
+This definition ensures that acceleration remains finite for smooth, realistic motion.
+
+Key takeaway.
+Very large accelerations arise when velocity changes too abruptly.
+Real objects change velocity smoothly, not instantaneously.
+Calculus replaces finite differences with derivatives to correctly describe motion at an instant.
+
+This is why sharp corners on velocity graphs imply infinite acceleration and why real motion curves are smooth.
+
+Example Problem: Calculating Time.
+
+The Problem.
+A car merges into freeway traffic on a straight, 200-meter-long on-ramp. If its initial velocity is v naught equals 10.0 meters per second and it accelerates uniformly at a equals 2.00 meters per second squared, how long does it take the car to travel 200 meters up the ramp?
+
+The Model.
+
+The car moves in one dimension with constant acceleration along the ramp. We choose the start of the ramp as the origin and take the direction of motion as positive. The known displacement, initial velocity, and acceleration determine the travel time through the constant-acceleration position equation.
+
+The Math.
+
+For constant acceleration, the position is given by
+
+x equals x naught plus v naught times t plus one-half a t squared.
+
+With the start of the ramp as the origin, x naught equals 0 and x equals 200 meters, so the position equation gives
+
+200 meters equals 10.0 meters per second times t plus one-half times 2.00 meters per second squared, times t squared,
+0 equals t squared plus 10.0 t minus 200.
+
+Applying the quadratic formula to the equation t squared plus 10.0 t minus 200 equals 0 gives
+
+t equals negative 10.0 plus or minus the square root of 10.0 squared minus 4 times 1 times negative 200, all divided by 2 times 1,
+which equals negative 10.0 plus or minus 30.0, divided by 2.
+
+The two mathematical roots are t equals 10.0 seconds and t equals negative 20.0 seconds. The negative root corresponds to a time before the modeled motion begins, so the physical travel time is
+
+t equals 10.0 seconds.
+
+The Conclusion.
+
+The car takes 10.0 seconds to travel the 200 meters on-ramp. The negative mathematical root is rejected because it does not describe the time after the car begins the modeled motion.
+
+The Problem.
+A spaceship has left Earth’s orbit and is on its way to the Moon. It accelerates at 20.0 meters per second squared for 2 minutes and covers a distance of 1000 kilometers. What are the initial and final velocities of the spaceship?
+
+The Model.
+
+The spaceship moves in one dimension with constant acceleration. Both the initial and final velocities are unknown, so the displacement relation is used first to determine the initial velocity. The velocity-time relation is then used to determine the final velocity.
+
+The Math.
+
+For constant acceleration, the displacement is related to initial velocity, acceleration, and time by
+
+x minus x naught equals v naught times t plus one-half a t squared.
+
+It is convenient to work in kilometers for position and seconds for time. Converting the acceleration and elapsed time gives
+
+a equals 20.0 meters per second squared equals 0.0200 kilometers per second squared,
+t equals 2 minutes, which equals 120 seconds.
+
+Solving the displacement equation for the initial velocity gives
+
+v naught equals the quantity x minus x naught minus one-half a t squared, divided by t,
+equals 1000 kilometers minus one-half times 0.0200 kilometers per second squared times 120 seconds squared, all divided by 120 seconds,
+equals 7.13 kilometers per second.
+
+The final velocity is found from the velocity-time relation, which gives
+
+v equals v naught plus a t,
+equals 7.13 kilometers per second plus 0.0200 kilometers per second squared times 120 seconds,
+equals 9.53 kilometers per second.
+
+The Conclusion.
+
+The spaceship’s initial velocity is 7.13 kilometers per second, and its final velocity is 9.53 kilometers per second. The final velocity is larger because the spaceship accelerates in the direction of motion throughout the interval.
+
+Two-Body Pursuit Problems.
+
+In a two-body pursuit problem, the motions of the objects are coupled, meaning the unknown depends on the motion of both objects. To solve these problems, we write the equations of motion for each object and then solve them simultaneously to find the unknown.
+
+Checkpoint. Pause and check your understanding.
+
+In a pursuit problem, what condition tells us that the two objects meet?
+
+Should their positions, velocities, or accelerations be equal?
+
+The time and distance required for car one to catch car two depends on the initial distance car one is from car two, as well as the velocities of both cars and the acceleration of car one.
+
+The initial distance defines how far car one needs to travel to catch up.
+
+The velocities of both cars and the acceleration of car one define the relative motion of the cars. If a sub one is less than or equal to zero and v sub one is less than v sub two, car one never catches car two. If a sub one equals zero and v sub one equals v sub two, car one keeps pace with car two. If a sub one is greater than zero and v sub one is greater than v sub two, car one catches car two.
+
+The two objects meet when their positions are equal at the same time:
+
+x sub one of t equals x sub two of t.
+
+Their velocities do not need to be equal when they meet. In fact, in many pursuit problems the catching object has a different velocity at the instant it reaches the other object.
+
+For the common case where car two moves with constant velocity and car one starts behind it, car one catches car two if the position equation has a physically meaningful positive-time solution. If no positive-time solution exists, then car one does not catch car two within the modeled motion.
+
+Example Problem: Cheetah Catching a Gazelle.
+
+The Problem.
+A cheetah waits in hiding behind a bush. The cheetah spots a gazelle running past at 10 meters per second. At the instant the gazelle passes the cheetah, the cheetah accelerates from rest at 4.0 meters per second squared to catch the gazelle.
+Part a. How long does it take for the cheetah to catch the gazelle?
+Part b. What is the displacement of the gazelle and the cheetah?
+
+The Model.
+
+This is a one-dimensional pursuit problem involving two objects. We choose the point where the gazelle passes the cheetah as the origin and take the direction of motion as positive. The gazelle moves with constant velocity, while the cheetah starts from rest and accelerates uniformly. The cheetah catches the gazelle when both animals have the same position at the same time.
+
+The Math.
+
+The gazelle moves with constant velocity, so its position is
+
+x sub G equals v sub G t.
+
+The cheetah starts from rest with constant acceleration, so its position is
+
+x sub C equals one-half a sub C t squared.
+
+Part a. At the catch time, the two positions are equal, which gives
+
+x sub G equals x sub C,
+v sub G t equals one-half a sub C t squared.
+
+The nonzero catch time is found by dividing both sides by t and solving for t, which gives
+
+v sub G equals one-half a sub C t,
+t equals 2v sub G over a sub C,
+equals 2 times 10 meters per second, divided by 4.0 meters per second squared,
+equals 5.0 seconds.
+
+Part b. The catch displacement is found by evaluating the gazelle’s position at t equals 5.0 seconds, which gives
+
+x sub G equals v sub G t,
+equals 10 meters per second times 5.0 seconds,
+equals 50 meters.
+
+The cheetah’s position gives the same displacement at the catch time, which is
+
+x sub C equals one-half a sub C t squared,
+equals one-half times 4.0 meters per second squared, times the quantity 5.0 seconds squared,
+equals 50 meters.
+
+The Conclusion.
+
+The cheetah catches the gazelle after 5.0 seconds. Both animals have traveled 50 meters from the starting point when the catch occurs.

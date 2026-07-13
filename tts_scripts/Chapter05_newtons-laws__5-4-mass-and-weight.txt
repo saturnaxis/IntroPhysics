@@ -1,0 +1,114 @@
+Mass and Weight.
+
+Mass and weight are often used interchangeably in everyday conversation. In physics, however, there is an important distinction. Weight is the pull of gravitational force on an object, where it depends on the distance to the center of an object.
+
+Checkpoint. Pause and check your understanding.
+
+A 70 kilograms astronaut is far from any planet or star.
+
+What is her mass? What is her weight, approximately?
+
+Unlike weight, mass does not vary with distance. The mass of an object is the same on Earth's surface, in orbit, or on the surface of the Moon.
+
+A Veritasium video is linked on the course webpage. This video illustrates the difference between mass and weight through man-on-the-street type interviews.
+
+Units of Force.
+
+The scalar equation F net equals m a is used to define the net force in terms of mass, length, and time. The S I unit of force is the newton. Using F net equals m a, we can see that
+
+1 newton equals 1 kilogram meter per second squared.
+
+You're probably more familiar with another unit of force, which is the pound ( lb), where 1 lb equals 4.448 newtons. An even more historical measurement of weight is the stone, where 1 stone equals 14 pounds is approximately equal to 62.3 newtons.
+
+Use the Python code below to convert your weight into newtons or stones.
+
+The Python code is available on the course webpage.
+
+Weight and Gravitational Force.
+
+When an object is dropped on Earth, it accelerates toward Earth's center. Newton's second law says that a net force on an object is responsible for its acceleration. If air resistance is negligible, the net force on a falling object is the gravitational force, which is called its weight vector w, or its force due to gravity acting on an object of mass m.
+
+Weight is denoted as a vector because it has a direction (down) and hence, weight is a downward force. The magnitude of weight is denoted by w. Using Newton's second law, we can derive an equation for weight.
+
+Consider an object with mass m falling toward Earth. It experiences only the downward force of gravity, which is the weight vector w. Newton's second law says that the magnitude of the net external force on an object is vector F net equals m vector a. We know that the acceleration due to gravity is vector g, or vector a equals vector g.
+
+Weight.
+
+The gravitational force on an object near Earth is called its weight. Weight is a vector because it has both magnitude and direction. Near Earth’s surface, the weight of an object of mass m is
+
+vector w equals m vector g.
+
+If upward is chosen as the positive y direction, then vector g equals -g j-hat and
+
+vector w equals -m g j-hat.
+
+The magnitude of the weight is w equals m g.
+
+The weight of a 1-kilogram object on Earth is 9.81 newton:
+
+w equals m g equals (1.0 kilograms)(9.81 meter per second squared) equals 9.81 newton.
+
+When the net external force on an object is its weight, we say that it is in free fall, which means that the only force acting on the object is gravity.
+
+Acceleration due to gravity g varies slightly divided by Earth's surface, so the weight of an object depends on its location and is not an intrinsic property of the object. Weight varies dramatically if we leave Earth's surface, where on the Moon g is approximately equal to 1.62 meters per second squared (about 1/6 of the value on Earth's surface). A 1-kilogram weight has a weight of 9.8 newtons on Earth, while it is only 1.6 newtons on the Moon.
+
+Note.
+
+Weight and mass are different physical quantities, although they are closely related.
+
+Mass is an intrinsic property of an object: it is a quantity of matter. In most situations, mass does not vary; therefore its response to an applied force does not vary.
+
+Weight is the gravitational force acting on an object, so it does vary depending on gravity. A person at a lower elevation in New Orleans (i.e., closer to Earth's center) weighs more than someone at high elevation like on top of Mt. Everest (i.e., farther from Earth's center) even though they have the same mass.
+
+Checkpoint. Pause and check your understanding.
+
+A 1.0 kilograms object weighs about 9.81 newton on Earth.
+
+Would the same object have the same mass on the Moon? Would it have the same weight?
+
+Why does it feel comfortable to equate mass and weight?
+
+On Earth, we see that weight vector w is directly proportional to mass m, since vector w equals m vector g. When two quantities are proportional, we develop heuristics to communicate more effectively among people with a shared sense of the heuristic.
+
+Suppose you are asked how far is Dallas, TX from Commerce, TX. You might reply that it is about 1 hour, depending on traffic. This makes sense because you and your interlocutor both share in the assumption that you will travel by car at about 60 miles per hour. It is important to note that time is not equal to distance, where you are communicating x equals vt, where x is proportional to t because of the implicit assumption that v is a constant.
+
+The Earth rotates once every 24 hours, which means that is about 15 degrees per hour. Astronomers developed a measure of distance on the sky called right ascension based on the seemingly constant rotation speed. As a result, it carries units in hours, minute, seconds.
+
+Example Problem: Lifting a Stone.
+
+The Problem.
+A farmer is lifting some moderately heavy rocks from a field to plant crops. He lifts a stone that weighs 40.0 lb (about 180 newtons). What force does he apply if the stone accelerates upward at a rate of 1.5 meters per second squared?
+
+The worked solution follows.
+
+The Model.
+
+The stone is modeled as a particle moving vertically. The positive y direction is chosen upward, in the direction of the stone's acceleration. The farmer exerts an upward applied force on the stone, while the stone's weight acts downward. Air resistance is neglected. The stated weight is the gravitational force on the stone, not its mass.
+
+The Math.
+
+The stone's weight is related to its mass by w equals m g. We solve Newton's second law for the scalar mass because the mass is the requested unknown quantity.
+
+m equals w divided by g.
+
+We substitute the given weight and g equals 9.81 meter per second squared into the expression for the mass of the stone.
+
+m equals 180 newtons divided by 9.81 meter per second squared,
+equals 18.3 kilograms.
+
+Newton's second law is applied in the vertical direction. The applied force F is upward and the weight w is downward, so
+
+sum F sub y equals m a sub y,
+F minus w equals m a.
+
+We solve the vertical force equation for the applied force because the farmer's force is the requested unknown quantity.
+
+F equals m a plus w,
+equals (18.3 kilograms)(1.5 meters per second squared) plus 180 newtons,
+equals 210 newtons.
+
+The Conclusion.
+
+The farmer applies an upward force of 210 newtons to the stone. This force is larger than the stone's weight because the stone is accelerating upward; if the applied force equaled the weight, the net force would be zero and the stone would not accelerate.
+
+A CrashCourse video is linked on the course webpage. This video reviews Newton’s three laws of motion, emphasizing net force and free-body diagrams. Use it as a conceptual refresher before beginning Newton’s third law examples.

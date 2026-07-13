@@ -53,21 +53,3 @@ _This audio is AI-generated._
 </audio>
 
 _This audio is AI-generated._
-
-### 3.7 In-class Problems
-
-<audio class="plyr" controls>
-  <source src="../_static/audio/Chapter03_motion-along-1D__3-7-in-class-problems.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-
-_This audio is AI-generated._
-
-### 3.8 Homework
-
-<audio class="plyr" controls>
-  <source src="../_static/audio/Chapter03_motion-along-1D__3-8-homework.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-
-_This audio is AI-generated._

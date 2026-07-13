@@ -1,0 +1,186 @@
+Motion in Two and Three Dimensions.
+
+Displacement and Velocity Vectors.
+
+Displacement Vector.
+
+To describe motion in two and three dimensions, we must first define a coordinate system, including a convention of axes. Recall that the sign of the acceleration due to gravity was determined by the convention that we chose. We usually use the Cartesian coordinate system to locate a particle at point P(x,y,z) in three dimensions. If the particle is moving, the variables x,y,z are functions of time t.
+
+The position vector r of t locates the point P at time t from the origin, by
+
+vector r of t equals x(t) i-hat plus y(t) j-hat plus z(t) k-hat.
+
+The position vector r of t locates a particle at time t. Note that the orientation of the coordinate system follows the right-hand rule.
+Checkpoint. Pause and check your understanding.
+If vector r of t one and vector r of t two are both measured from the origin, why does delta vector r point from the first position to the second position rather than from the origin?
+
+We can now define the three-dimensional displacement vector delta vector r as the difference between the position vector r of t two at time t two and the initial position vector r of t one at time t one, or
+
+delta vector r equals vector r of t two minus vector r of t one.
+
+Three-dimensional vector addition is performed in the same way as in two dimensions, by adding the corresponding components or graphically by using the head-to-tail method.
+
+The course webpage includes Python code that demonstrates how to plot a three-dimensional vector with Matplotlib.
+An MIT OpenCourseWare video is linked on the course webpage.
+Example Problem: Polar Orbiting Satellite.
+
+The Problem.
+A satellite is in a circular polar orbit around Earth at an altitude of 400 kilometers, meaning it passes directly over the North and South Poles. What are the magnitude and direction of the displacement vector from when the satellite is directly over the North Pole to when it is at latitude negative 45 degrees?
+
+The Model.
+
+The satellite is modeled as a point moving along a circular polar orbit around Earth. The displacement is not the distance traveled along the orbit; it is the straight-line vector from the initial position to the final position. The origin is placed at the center of Earth, with positive j-hat pointing north and positive i-hat pointing toward the equator on the side of the orbit. With this coordinate choice, the satellite starts directly over the North Pole and ends at latitude negative 45 degrees.
+
+The Math.
+
+The position vectors are measured from the center of Earth, so the orbital radius is the sum of Earth's radius ( 6370 kilometers ) and the satellite altitude.
+
+r equals 6370 kilometers plus 400 kilometers equals 6770 kilometers.
+
+At the North Pole position, the satellite lies entirely along the positive y direction.
+
+vector r one equals 6770 j-hat kilometers.
+
+At latitude negative 45 degrees, the position vector is resolved into components using the latitude angle measured from the equatorial direction in the orbital plane.
+
+vector r two equals r the cosine of negative 45 degrees i-hat plus r the sine of negative 45 degrees j-hat.
+
+Substituting the orbital radius into the component form gives the final position vector.
+
+vector r two equals (4790 i-hat minus 4790 j-hat ) kilometers.
+
+The displacement vector is found by subtracting the initial position vector from the final position vector.
+
+delta vector r equals vector r two minus vector r one,
+equals (4790 i-hat minus 4790 j-hat ) kilometers minus (6770 j-hat ) kilometers,
+equals (4790 i-hat minus 1.16 times ten to the fourth j-hat ) kilometers.
+
+The magnitude of the displacement is found from the Pythagorean theorem applied to the vector components.
+
+the magnitude of delta vector r equals the square root of 4790 squared plus negative 1.16 times ten to the fourth squared, in kilometers equals 1.25 times ten to the fourth kilometers.
+
+The direction is found from the inverse tangent of the y component divided by the x component.
+
+theta equals the inverse tangent of negative 1.16 times ten to the fourth divided by 4790, which equals negative 67.5 degrees.
+
+The negative angle means the displacement points below the positive x axis, or 67.5 degrees south of east.
+
+The Conclusion.
+
+The displacement from the North Pole position to the latitude negative 45 degrees position is
+
+delta vector r equals (4790 i-hat minus 1.16 times ten to the fourth j-hat ) kilometers.
+
+Its magnitude is 1.25 times ten to the fourth kilometers, and it points 67.5 degrees south of east. This is a straight-line displacement between the two positions, not the distance traveled along the circular orbit.
+
+Velocity Vector.
+
+Previously, we defined the velocity in one dimension through the derivative of x of t. To expand this definition to two or three dimensions, we replace x of t with the position vector r of t. This gives
+
+vector v of t equals the limit, as delta t approaches zero, of the quantity vector r of t plus delta t minus vector r of t, divided by delta t. This equals d vector r over d t.
+
+The vectors r of t and r of t plus delta t represent instantaneous states of the position vector at two times. Their difference, delta vector r, connects the two positions. In the limit as delta t approaches zero, the velocity vector becomes tangent to the particle's path. The course webpage illustrates this limiting process.
+
+The velocity vector can also be written in components, where each component is a time-dependent function.
+
+Checkpoint. Pause and check your understanding.
+At one instant, does the velocity vector point toward the next position, along the path, or from the origin to the particle?
+
+The position and velocity vectors are
+
+vector r equals x of t i-hat plus y of t j-hat plus z of t k-hat,
+
+and
+
+vector v equals v sub x of t i-hat plus v sub y of t j-hat plus v sub z of t k-hat,
+
+where
+
+v sub x of t equals d x of t over d t,
+v sub y of t equals d y of t over d t,
+and v sub z of t equals d z of t over d t.
+
+The average velocity has the corresponding two- or three-dimensional form
+
+vector v average from t one to t two equals the quantity vector r of t two minus vector r of t one, divided by the quantity t two minus t one.
+
+Typesetting the Velocity Vector.
+
+To distinguish the velocity vector from its scalar components, the notebook uses the roman-font command. The literal Lay-tek source command is backslash r m. This is a typesetting convention used to make the notation clearer.
+
+Example Problem: Calculating the Velocity Vector.
+
+The Problem.
+The position function of a particle is
+vector r of t equals 2.0 t squared i-hat, plus the quantity 2.0 plus 3.0 t j-hat, plus 5.0 t k-hat, in kilometers. Part a. What is the instantaneous velocity vector and speed at t equals 2.0 seconds? Part b. What is the average velocity between t equals 1.0 seconds and t equals 3.0 seconds?
+
+The Model.
+
+The particle moves in three-dimensional Cartesian coordinates. Instantaneous velocity is found from the rate of change of the position vector, while average velocity over a finite interval is found from the displacement during that interval divided by the elapsed time. Each component can be evaluated independently and then recombined into a vector. Because the x position is quadratic in time and the y and z positions are linear in time, only the x component of velocity changes with time.
+
+The Math.
+
+The instantaneous velocity is defined as the time derivative of the position vector.
+
+vector v of t equals d vector r over d t.
+
+Differentiating the position function component by component gives the velocity function.
+
+vector v of t equals 4.0t i-hat plus 3.0 j-hat plus 5.0 k-hat kilometers per second.
+Part a. The instantaneous velocity at t equals 2.0 seconds is found by substituting that time into the velocity function.
+
+vector v at 2.0 seconds equals (8.0 i-hat plus 3.0 j-hat plus 5.0 k-hat ) kilometers per second.
+
+The speed is the magnitude of the instantaneous velocity vector.
+
+the magnitude of vector v at 2.0 seconds equals square root of (8.0) squared plus (3.0) squared plus (5.0) squared kilometers per second equals 9.9 kilometers per second.
+Part b. The average velocity over the interval from t one equals 1.0 seconds to t two equals 3.0 seconds is the displacement divided by the elapsed time.
+
+vector v average equals the quantity vector r of t two minus vector r of t one, divided by the quantity t two minus t one.
+
+The endpoint position vectors are found by substituting both times into the position function.
+
+vector r at 1.0 seconds equals (2.0 i-hat plus 5.0 j-hat plus 5.0 k-hat ) kilometers,
+vector r at 3.0 seconds equals (18.0 i-hat plus 11.0 j-hat plus 15.0 k-hat ) kilometers.
+
+The displacement is found by subtracting the first endpoint from the second endpoint.
+
+vector r at 3.0 seconds minus vector r at 1.0 seconds equals (16.0 i-hat plus 6.0 j-hat plus 10.0 k-hat ) kilometers.
+
+Dividing this displacement by the elapsed time gives the average velocity.
+
+vector v average equals (16.0 i-hat plus 6.0 j-hat plus 10.0 k-hat ) kilometers over 2.0 seconds,
+equals (8.0 i-hat plus 3.0 j-hat plus 5.0 k-hat ) kilometers per second.
+
+Symbolic Differentiation in Python.
+
+Sym-pie can differentiate symbols instead of numbers. If you write each component of vector r of t as a symbolic expression in t, then the source command diff, open parenthesis ellipsis close parenthesis, returns the derivative exactly. After that, you can substitute a specific value like t equals 2.0 using dot subs, open parenthesis t comma 2.0 close parenthesis, and convert the result to a floating-point number with the float function.
+
+This is especially useful when vector r of t is complicated and you want to avoid algebra mistakes.
+
+The Conclusion.
+
+At t equals 2.0 seconds, the instantaneous velocity is
+
+vector v at 2.0 seconds equals (8.0 i-hat plus 3.0 j-hat plus 5.0 k-hat ) kilometers per second,
+
+and the speed is 9.9 kilometers per second. The average velocity between 1.0 seconds and 3.0 seconds is also (8.0 i-hat plus 3.0 j-hat plus 5.0 k-hat ) kilometers per second. In this interval, the average velocity equals the instantaneous velocity at the midpoint because the velocity is a linear function of time.
+
+The Independence of Perpendicular Motions.
+
+When we look at the three-dimensional equations for position and velocity written in unit-vector notation, we see that the components are separate and unique functions of time that do not depend on each other.
+
+Motion along the x direction has no part of its motion along the y or z directions.
+
+Thus, the motion of an object in two or three dimensions can be divided into independent motions along the perpendicular coordinate axes.
+
+Consider a woman walking from point A to point B in a city with square blocks. The woman may walk east, then north for several blocks to arrive at point B. How far she walks east is affected only by her motion eastward. Recall the chessboard from Chapter 2.
+
+In kinematics, we can treat the horizontal and vertical components of motion separately. In many cases, motion in the horizontal direction does not affect the motion in the vertical direction, and vice versa.
+
+A stroboscopic animation on the course webpage illustrates this idea with two balls released from the same height. One ball is dropped from rest, and the other is thrown horizontally and follows a parabolic path.
+
+Checkpoint. Pause and check your understanding.
+A ball is dropped while another ball is thrown horizontally from the same height. If air resistance is neglected, which ball reaches the ground first?
+
+Careful examination of the horizontally launched ball shows that it travels the same horizontal distance between flashes. This is because only one force, gravity downward, acts on the ball after it is thrown. The horizontal velocity is therefore constant. In the real world, air resistance would affect the speed of the ball in both directions.

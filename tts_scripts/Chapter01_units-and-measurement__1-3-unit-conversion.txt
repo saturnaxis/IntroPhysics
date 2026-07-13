@@ -1,0 +1,87 @@
+Unit Conversion.
+
+It is often necessary to convert from one unit to another (as you've already seen). If you are reading a cookbook, some quantities may be expressed in milliliters and you need to convert them to cups.
+
+Suppose we want to convert 80 meters to kilometers.
+
+First, start with the input value you want to convert as a fraction (i.e., itself over one).
+
+Second, determine the conversion factor necessary. A conversion factor is a ratio that describes how much of one unit is equal to another.
+
+Third, multiply by the ratio so that unit from the input value cancels (i.e., unit/unit equals 1 ).
+
+Using these steps, we have:
+
+80 meters times one kilometer per ten to the third meters equals 0.08 kilometers.
+
+Note that the unwanted m cancels, leaving only the desired km unit.
+
+Checkpoint. Pause and check your understanding.
+
+When converting 80 meters to kilometers, why must the meter unit appear in the denominator of the conversion factor?
+
+The course webpage includes the table: Unit Conversion Workflow.
+
+Using Sigh-pie constants for Units and Conversions.
+
+The Python library Sigh-pie constants provides a standardized collection of physical constants and unit conversion factors expressed in S I units. This can be a useful tool for checking calculations and avoiding arithmetic mistakes, especially when working with very large or very small numbers.
+
+For example, the speed of light is stored internally in meters per second. The course webpage includes the Python snippets for this part of the section.
+
+The first snippet returns 299,792,458, corresponding to c equals 2.99792458 times ten to the eighth meters per second.
+
+The constants module also includes common metric prefixes and conversion factors. These values can be used to verify unit conversions performed by hand. For example, the webpage shows how to convert kilograms to grams numerically.
+
+Important guidance for this course.
+
+On exams, you will be provided with a unit lookup table, not Python code.
+
+You are still responsible for knowing how to convert units correctly and for keeping track of powers of ten.
+
+Sigh-pie constants should be used as a verification tool, not as a substitute for understanding units and dimensional analysis.
+
+A good workflow is:
+
+First, perform the unit conversion analytically.
+
+Second, use Python (and Sigh-pie constants) to confirm the numerical result.
+
+This approach reinforces both physical reasoning and computational fluency, which will be important throughout the course.
+
+Example Problem: Converting iron's density.
+
+The Problem.
+The density of iron is 7.86 grams per cubic centimeter under standard conditions. Convert this to kilograms per cubic meter.
+
+The worked solution follows.
+
+The Model.
+
+Density is a scalar quantity defined as mass per unit volume. To convert between unit systems, we multiply by conversion factors equal to one, chosen so that unwanted units cancel and desired units remain.
+
+In this problem, we must:
+
+Convert grams to kilograms, and
+
+Convert cubic centimeters to cubic meters.
+
+Because volume scales with the cube of length, the length conversion factor must be applied three times.
+
+The Math.
+
+The required conversion factors are
+
+One kilogram equals ten to the third grams, and one centimeter equals ten to the minus second meters.
+
+Starting from the given density, 7.86 grams per cubic centimeter, we apply the conversion factors:
+
+7.86 grams per cubic centimeter
+equals 7.86 grams per cubic centimeter times one kilogram per ten to the third grams, times one centimeter per ten to the minus second meters, cubed,
+equals 7.86 divided by ten to the third times ten to the minus sixth kilograms per cubic meter,
+which equals 7.86 times ten to the third kilograms per cubic meter.
+
+The Conclusion.
+
+The density of iron expressed in S I units is
+
+7.86 grams per cubic centimeter equals 7.86 times ten to the third kilograms per cubic meter.

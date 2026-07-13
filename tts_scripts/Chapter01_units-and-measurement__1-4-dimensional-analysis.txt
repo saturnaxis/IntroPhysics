@@ -1,0 +1,72 @@
+Dimensional Analysis.
+
+The dimension of any physical quantity expresses its dependence on the base quantities as: (1) a product of symbols or (2) powers of symbols representing the base quantities. The course webpage lists the base quantities and the symbols used for their dimension.
+
+Like units, dimensions obey the rules of algebra. For example,
+
+Area has dimension L squared,
+
+Volume has dimension L cubed,
+
+Speed has dimension L divided by T or L T to the minus first.
+
+The course webpage includes the table: Base Quantities and Their Dimensions.
+
+Physicists often use square brackets around the symbol for a physical quantity to represent the dimensions of that quantity. For example, if r is the radius of a cylinder and h is its height, then we write [r] equals L and [h] equals L to indicate the dimensions of the radius and height, respectively.
+
+The importance of dimension "bookkeeping" arises from that mathematical equations must be dimensionally consistent when relating physical quantities (i.e., apples-to-apples). The equation must obey these rules:
+
+Every term in an expression must have the same dimensions; "You can't add apples to oranges". The expressions on each side of an equation must have the same dimensions.
+
+The arguments of any standard mathematical function (e.g., trigonometric functions like sine or cosine), logarithms, or exponential functions must be dimensionless (i.e. all dimensions cancel). These functions require pure numbers as inputs and give pure numbers as output.
+
+If either of these rules are violated, this should be a red flag and can be used to help identify that there is a mistake in your calculation.
+
+Checkpoint. Pause and check your understanding.
+
+Can the expression v times t plus a times t represent position?
+
+Check the dimensions of each term.
+
+The course webpage includes the table: Common Dimensional-Analysis Red Flags.
+
+Example Problem Checking Formulas.
+
+The Problem.
+Suppose we need the formula for the area of a circle for some computation. Two expressions may come to mind: pi r squared and two pi r. One expression is the circumference of a circle of radius r and the other is its area. Which expression gives the area of a circle?
+
+The worked solution follows.
+
+The Model.
+
+Area is a physical quantity with dimensions of length squared. Any correct expression for the area of a circle must therefore have overall dimension L squared.
+
+We treat pi and numerical constants as dimensionless, and we treat the radius r as a quantity with dimension of length.
+
+The Math.
+
+The dimension of area is
+
+The dimension of A equals L squared.
+
+First consider the expression pi r squared. Its dimension is
+
+The dimension of pi r squared equals the dimension of pi times the dimension of r squared,
+which equals 1 times L squared,
+or L squared.
+
+Thus, pi r squared has the correct dimensions to represent an area.
+
+Now consider the expression two pi r. Its dimension is
+
+The dimension of two pi r equals the dimension of 2 times the dimension of pi times the dimension of r,
+which equals 1 times 1 times L,
+or L.
+
+This expression has the dimension of length, not area.
+
+The Conclusion.
+
+Only the expression pi r squared is dimensionally consistent with representing an area. Therefore, the area of a circle must be given by
+
+A equals pi r squared.

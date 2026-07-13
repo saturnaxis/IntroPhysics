@@ -1,0 +1,443 @@
+Algebra of Vectors.
+
+We've seen some properties of vectors from Section 2.1.5, Properties of Vectors, where there are a few other properties not yet mentioned. A vector can be
+reversed (i.e., multiplied by a scalar, -1 ),
+nullified,
+made equal.
+
+To reverse the direction of a vector, we follow the rules for scaling a vector:
+
+
+- vector A equals - A sub x i-hat - A sub y j-hat - A sub z k-hat.
+
+
+The number zero can be generalized to vector algebra through the object called the null vector, denoted by vector 0. It represents a vector that has no length or direction,
+
+ vector 0 equals 0 i-hat + 0 j-hat + 0 k-hat.
+
+If the difference of two vectors ( vector A and vector B ) is set to the null vector, we have
+
+
+ vector A - vector B equals 0 i-hat + 0 j-hat + 0 k-hat equals vector 0,
+ equals ( A sub x - B sub x ) i-hat + ( A sub y - B sub y ) j-hat + ( A sub z - B sub z ) k-hat.
+
+
+By matching components, we can see that
+
+
+ A sub x - B sub x equals 0, or A sub x equals B sub x,
+ A sub y - B sub y equals 0, or A sub y equals B sub y,
+ A sub z - B sub z equals 0, or A sub z equals B sub z.
+
+
+When vector A - vector B equals vector 0, this implies that vector A equals vector B because all their corresponding components are equal.
+
+The full table choosing a vector method is available on the course webpage.
+
+Example Problem: Military convoy direction.
+
+The Problem.
+A military convoy advances through unknown territory. In a Cartesian coordinate system, the unit vector i-hat denotes geographic east, j-hat denotes geographic north, and k-hat denotes altitude above sea level. The convoy’s velocity is given by
+ vector v equals (4.0 i-hat + 3.0 j-hat + 0.1 k-hat ) kilometers per hour.
+If the convoy were forced to retreat, in what geographic direction would it be moving? Describe both its horizontal direction and its vertical motion.
+
+
+The Model.
+
+We model the convoy’s motion using a 3-dimensional velocity vector expressed in Cartesian components. The horizontal motion occurs in the east–north plane, while the vertical motion is represented by the k-hat component.
+
+A retreat corresponds to reversing the direction of motion. Therefore, the retreat velocity vector must be antiparallel to the original velocity vector. This means the new velocity vector points in the opposite direction but retains the same relative component ratios.
+
+
+The Math.
+
+The original velocity vector is
+
+ vector v equals (4.0 i-hat + 3.0 j-hat + 0.1 k-hat ) kilometers per hour.
+
+The positive k-hat component shows that the convoy is ascending. Since 0.1 kilometers per hour equals 100 meters/h, the convoy is climbing while it moves horizontally toward the northeast.
+
+The horizontal direction of the original motion is determined from the ratio of the northward component to the eastward component.
+
+
+ theta equals tan to the power of -1 ( v sub y over v sub x )
+ equals tan to the power of -1 ( 3.0 over 4.0 )
+ is approximately equal to 37 degrees.
+
+
+The original horizontal motion is therefore 37 degrees north of east.
+
+For a retreat, the new velocity must point opposite the original velocity. A vector antiparallel to vector v can be written as
+
+ vector u equals - alpha vector v,
+
+where alpha is a positive scale factor. Choosing the same speed corresponds to alpha equals 1, so the retreat velocity is
+
+ vector u equals (-4.0 i-hat - 3.0 j-hat - 0.1 k-hat ) kilometers per hour.
+
+The negative k-hat component shows that the convoy would be descending during the retreat. The horizontal components are both negative, so the retreat direction lies southwest. The reference angle is
+
+ theta equals tan to the power of -1 ( 3.0 over 4.0 ) is approximately equal to 37 degrees.
+
+The convoy therefore retreats at an angle of 37 degrees south of west.
+
+
+The Conclusion.
+
+The convoy retreats at an angle of 37 degrees south of west while descending. The descending motion follows from the negative k-hat component of the reversed velocity vector.
+
+
+ Analytical vector addition.
+
+Resolving vectors into their scalar components allows us to use vector algebra to find sums and differences of vectors without using graphical methods; that is, analytically. For example, to find the resultant of two vectors, vector A and vector B, we simply add them relative to their components.
+
+Component Matching Rule.
+
+
+Vectors can only be added or subtracted by combining matching components.
+i-hat components combine only with i-hat
+j-hat components combine only with j-hat
+k-hat components combine only with k-hat
+
+For example,
+
+ (3 i-hat + 2 j-hat ) + (5 i-hat - j-hat ) equals 8 i-hat + j-hat,
+
+but expressions like
+
+ 3 i-hat + 2 j-hat + 5 k-hat
+
+cannot be simplified further because none of the subscripts match.
+If the subscripts do not match, the components represent different directions and cannot be combined.
+
+
+Vector addition by components is accomplished as follows:
+
+
+ vector R equals vector A + vector B,
+ equals ( A sub x + B sub x ) i-hat + ( A sub y + B sub y ) j-hat + ( A sub z + B sub z ) k-hat,
+ equals R sub x i-hat + R sub y j-hat + R sub z k-hat.
+
+
+Analytical methods can be used to find the result of many vectors by combining them by components. For example, if we sum up N vectors ( vector F _1, ldots, vector F _N ), where each vector F _n equals F sub nx i-hat + F sub ny j-hat + F sub nz k-hat, the resultant vector is
+
+
+ vector F _R equals vector F _1 + vector F _2 + ldots + vector F _N equals sum sub n equals 1 to the power of N vector F _n,
+ equals sum sub n equals 1 to the power of N ( F sub nx i-hat + F sub ny j-hat + F sub nz k-hat ) equals sum sub n equals 1 to the power of n ( F sub nx ) i-hat + sum sub n equals 1 to the power of N ( F sub ny ) j-hat + sum sub n equals 1 to the power of N ( F sub nz ) k-hat.
+
+
+The resultant vector is defined as:
+
+
+ vector F _R equals F sub Rx i-hat + F sub Ry j-hat + F sub Rz k-hat,
+
+
+where
+
+
+F sub Rx equals sum sub n equals 1 to the power of N F sub nx equals F sub 1x + F sub 2x + ldots + F sub Nx,
+F sub Ry equals sum sub n equals 1 to the power of N F sub ny equals F sub 1y + F sub 2y + ldots + F sub Ny,
+F sub Rz equals sum sub n equals 1 to the power of N F sub nz equals F sub 1z + F sub 2z + ldots + F sub Nz.
+
+
+Checkpoint. Pause and check your understanding.
+
+A vector sum contains A sub x, B sub y, and C sub x.
+
+Which terms can be combined?
+
+
+The Python code is available on the course webpage.
+
+Example Problem: Vector addition component-wise.
+
+The Problem.
+Three displacement vectors vector A, vector B, and vector C lie in the horizontal plane.
+Their magnitudes are A equals 10.0 cm, B equals 7.0 cm, and C equals 8.0 cm,
+and their direction angles (measured counterclockwise from the positive x -axis) are
+ alpha equals 35 degrees, beta equals -110 degrees, and gamma equals 30 degrees, respectively.
+Resolve each vector into its Cartesian components and determine the following:
+(a) vector R equals vector A + vector B + vector C
+(b) vector D equals vector A - vector B
+(c) vector S equals vector A - 3 vector B + vector C
+
+
+The Model.
+
+We model each displacement as a two-dimensional vector in the x - y plane. Each vector is described by a magnitude and a direction angle, so each one can be resolved into horizontal and vertical components. Vector addition and subtraction are performed by combining matching components only. Once the components of a resultant are known, the resultant can be written in unit-vector form.
+
+
+The Math.
+
+Each vector is resolved into rectangular components before the vector combinations are evaluated. For any vector V with magnitude V and direction angle theta measured from the positive x -axis, the components are
+
+
+ V sub x equals V cos theta,
+ V sub y equals V sin theta.
+
+
+Applying these component definitions to vector A gives
+
+
+ A sub x equals A cos alpha equals (10.0) cos 35 degrees equals 8.19 cm,
+ A sub y equals A sin alpha equals (10.0) sin 35 degrees equals 5.73 cm.
+
+
+Applying the same component definitions to vector B gives
+
+
+ B sub x equals B cos beta equals (7.0) cos(-110 degrees) equals -2.39 cm,
+ B sub y equals B sin beta equals (7.0) sin(-110 degrees) equals -6.58 cm.
+
+
+Applying the same component definitions to vector C gives
+
+
+ C sub x equals C cos gamma equals (8.0) cos 30 degrees equals 6.93 cm,
+ C sub y equals C sin gamma equals (8.0) sin 30 degrees equals 4.00 cm.
+
+
+(a) For the vector sum vector R equals vector A + vector B + vector C, matching components are added to form the components of the resultant vector.
+
+
+ R sub x equals A sub x + B sub x + C sub x equals 8.19 - 2.39 + 6.93 equals 12.73 cm,
+ R sub y equals A sub y + B sub y + C sub y equals 5.73 - 6.58 + 4.00 equals 3.15 cm.
+
+
+The vector sum in component form is therefore
+
+ vector R equals (12.7 i-hat + 3.1 j-hat ) cm.
+
+(b) For the vector difference vector D equals vector A - vector B, the components of vector B are subtracted from the corresponding components of vector A.
+
+
+ D sub x equals A sub x - B sub x equals 8.19 - (-2.39) equals 10.58 cm,
+ D sub y equals A sub y - B sub y equals 5.73 - (-6.58) equals 12.31 cm.
+
+
+The vector difference in component form is therefore
+
+ vector D equals (10.6 i-hat + 12.3 j-hat ) cm.
+
+(c) For the combination vector S equals vector A - 3 vector B + vector C, the components of vector B are first multiplied by 3 and then subtracted component by component.
+
+
+ S sub x equals A sub x - 3 B sub x + C sub x equals 8.19 - 3(-2.39) + 6.93 equals 22.29 cm,
+ S sub y equals A sub y - 3 B sub y + C sub y equals 5.73 - 3(-6.58) + 4.00 equals 29.47 cm.
+
+
+The vector combination in component form is therefore
+
+ vector S equals (22.3 i-hat + 29.5 j-hat ) cm.
+
+The Conclusion.
+
+The analytical component method gives
+
+ vector R equals (12.7 i-hat + 3.1 j-hat ) cm,
+
+ vector D equals (10.6 i-hat + 12.3 j-hat ) cm,
+
+and
+
+ vector S equals (22.3 i-hat + 29.5 j-hat ) cm.
+
+These results show that vector addition, subtraction, and scalar multiplication can all be handled by combining matching x - and y -components.
+
+The Problem.
+Four dogs named Astro, Balto, Clifford, and Dug play a tug-of-war game with a toy. We define east as the positive x -direction and north as the positive y -direction.
+Astro pulls with a force of magnitude A equals 160.0 newtons at an angle alpha equals 55 degrees south of east.
+Balto pulls with a force of magnitude B equals 200.0 newtons at an angle beta equals 60 degrees east of north.
+Clifford pulls with a force of magnitude C equals 140.0 newtons at an angle gamma equals 55 degrees west of north.
+Dug pulls on the toy in such a way that the toy does not move.
+What force must Dug apply (magnitude and direction) in order to keep the toy in equilibrium?
+
+The figure is shown on the course webpage.
+
+
+The Model.
+
+We model each dog’s pull on the toy as a force vector in the horizontal plane. The positive x -direction points east, and the positive y -direction points north. Each force is described by a magnitude and a direction, so each pull can be resolved into horizontal and vertical components.
+
+The toy remains at rest only if the vector sum of all forces acting on it is zero. Dug’s pull must therefore balance the combined pull of the other three dogs. This means Dug’s force must have the same magnitude as that combined force but point in the opposite direction.
+
+
+The Math.
+
+The direction descriptions are first converted into standard direction angles measured counterclockwise from the positive x -axis. Astro pulls south of east, Balto pulls east of north, and Clifford pulls west of north, so their direction angles are
+
+
+ theta _A equals -55 degrees,
+ theta _B equals 90 degrees - 60 degrees equals 30 degrees,
+ theta _C equals 90 degrees + 55 degrees equals 145 degrees.
+
+
+Each force is resolved into x - and y -components using the magnitude and direction angle of that force.
+
+
+ A sub x equals A cos theta _A equals (160.0) cos(-55 degrees) equals +91.8 newtons,
+ A sub y equals A sin theta _A equals (160.0) sin(-55 degrees) equals -131.1 newtons,
+ B sub x equals B cos theta _B equals (200.0) cos(30 degrees) equals +173.2 newtons,
+ B sub y equals B sin theta _B equals (200.0) sin(30 degrees) equals +100.0 newtons,
+ C sub x equals C cos theta _C equals (140.0) cos(145 degrees) equals -114.7 newtons,
+ C sub y equals C sin theta _C equals (140.0) sin(145 degrees) equals +80.3 newtons.
+
+
+The resultant force from Astro, Balto, and Clifford is found by adding matching components.
+
+
+ R sub x equals A sub x + B sub x + C sub x equals 91.8 + 173.2 - 114.7 equals 150.3 newtons,
+ R sub y equals A sub y + B sub y + C sub y equals -131.1 + 100.0 + 80.3 equals 49.2 newtons.
+
+
+The resultant force from the first three dogs is therefore
+
+ vector R equals (150.3 i-hat + 49.2 j-hat ) N.
+
+For the toy to remain at rest, Dug’s force must cancel the resultant force from the other three dogs. Therefore Dug’s force is the opposite of vector R.
+
+ vector D equals - vector R equals (-150.3 i-hat - 49.2 j-hat ) N.
+
+The magnitude of Dug’s force is found from the components of vector D.
+
+ D equals square root of (-150.3) squared + (-49.2) squared N equals 158.1 newtons.
+
+The reference angle for Dug’s force is found from the ratio of the magnitudes of the southward and westward components.
+
+ theta equals tan to the power of -1 ( 49.2 over 150.3 ) equals 18.1 degrees.
+
+Because both components of vector D are negative, Dug pulls in the third quadrant. His force is therefore directed 18.1 degrees south of west.
+
+
+The Conclusion.
+
+To keep the toy in equilibrium, Dug must pull with a force of magnitude D equals 158.1 newtons directed 18.1 degrees south of west. Dug’s force has the same magnitude as the resultant force from the other three dogs but points in the opposite direction, so the net force on the toy is zero.
+
+
+The Problem.
+Find the magnitude of the vector C that satisfies the vector equation
+ 2 vector A - 6 vector B + 3 vector C equals 2 j-hat,
+where the known vectors are
+ vector A equals i-hat - 2 k-hat, vector B equals - j-hat + 1 over 2 k-hat.
+
+The worked solution follows.
+
+
+The Model.
+
+We model the given expression as a three-dimensional vector equation written in the standard Cartesian basis. The unit vectors i-hat, j-hat, and k-hat represent mutually perpendicular directions.
+
+The unknown vector is determined by comparing matching components along the three coordinate axes. Once its components are identified, its magnitude is found from the three-dimensional length of the vector.
+
+
+The Math.
+
+The goal is to solve the vector equation for the unknown vector C. To isolate vector C, the known vector terms are moved to the right side and then the equation is divided by 3.
+
+
+2 vector A - 6 vector B + 3 vector C equals 2 j-hat,
+3 vector C equals 2 j-hat - 2 vector A + 6 vector B,
+ vector C equals 2 over 3 j-hat - 2 over 3 vector A + 2 vector B.
+
+
+The known vectors are then inserted into the expression for vector C so that matching unit-vector components can be combined.
+
+
+ vector C equals 2 over 3 j-hat - 2 over 3 ( i-hat - 2 k-hat ) + 2 (- j-hat + 1 over 2 k-hat )
+ equals - 2 over 3 i-hat + ( 2 over 3 - 2 ) j-hat + ( 4 over 3 + 1 ) k-hat
+ equals - 2 over 3 i-hat - 4 over 3 j-hat + 7 over 3 k-hat.
+
+
+The scalar components of vector C are therefore
+
+ C sub x equals - 2 over 3, C sub y equals - 4 over 3, C sub z equals 7 over 3.
+
+The magnitude of vector C is found by applying the three-dimensional magnitude formula to these components.
+
+
+| vector C | equals square root of C sub x to the power of 2 + C sub y to the power of 2 + C sub z to the power of 2
+ equals square root of (- 2 over 3 ) squared + (- 4 over 3 ) squared + ( 7 over 3 ) squared
+ equals square root of 23 over 3.
+
+
+The Conclusion.
+
+The vector C is
+
+ vector C equals - 2 over 3 i-hat - 4 over 3 j-hat + 7 over 3 k-hat,
+
+and its magnitude is
+
+ | vector C | equals square root of 23 over 3 is approximately equal to 2.77.
+
+This result follows from first solving for the vector components and then applying the three-dimensional magnitude formula.
+
+Frequent Mistake.
+
+
+A frequent mistake in problems like this is mixing up vector components with magnitudes.
+i-hat, j-hat, and k-hat are directional basis vectors, not numbers.
+In Python, they correspond to array positions, not separate variables.
+Writing a line like C equals the square root of C x squared plus C y squared plus C z squared before identifying the components will lead to errors.
+
+Always solve for the vector first, then compute its magnitude.
+
+
+Sometimes we need to know just the direction of a vector, such as the direction of a magnetic field at some point, or the direction of motion of an object.
+
+The unit vector gives a vector its direction and is dimensionless, which means it has no physical units. When the vector lies along one of the axes in the coordinate system, finding the direction is simple. Its direction is either parallel or antiparallel to that coordinate axis. For example, the direction of the vector d equals negative 5 i-hat meters is the unit vector d-hat equals negative i-hat.
+
+The general rule for finding the unit vector V-hat of a vector V is to divide the vector by its magnitude:
+
+V-hat equals vector V over V.
+
+The Problem.
+A military convoy moves through unknown territory with velocity
+ vector v equals (4.0 i-hat + 3.0 j-hat + 0.10 k-hat ) kilometers per hour.
+What is the unit vector that gives the direction of the convoy’s motion?
+
+The worked solution follows.
+
+
+The Model.
+
+We model the convoy’s velocity as a three-dimensional vector with east, north, and upward components. The direction of motion is represented by a unit vector parallel to the velocity vector.
+
+A unit vector describes direction only and has no physical units. To find the unit vector, the velocity vector is scaled so that its magnitude becomes one while its direction remains unchanged.
+
+
+The Math.
+
+The unit vector in the direction of motion is found by dividing the velocity vector by its magnitude.
+
+ v hat equals vector v over | vector v |.
+
+The magnitude of the velocity vector is determined from its three rectangular components.
+
+
+| vector v | equals square root of v sub x to the power of 2 + v sub y to the power of 2 + v sub z to the power of 2
+ equals square root of (4.0) squared + (3.0) squared + (0.10) squared kilometers per hour
+ equals square root of 25.01 kilometers per hour
+ is approximately equal to 5.0 kilometers per hour.
+
+
+Dividing each component of vector v by this magnitude gives the corresponding component of the unit vector.
+
+
+ v hat equals 4.0 i-hat + 3.0 j-hat + 0.10 k-hat over 5.0
+ equals 0.80 i-hat + 0.60 j-hat + 0.020 k-hat.
+
+
+The Conclusion.
+
+The unit vector describing the direction of the convoy’s motion is
+
+ v hat equals 0.80 i-hat + 0.60 j-hat + 0.020 k-hat.
+
+This vector has magnitude one and describes only the direction of the convoy’s motion, not its speed.
+
+Warning.
+
+A frequent mistake is to divide only one component of the vector by the magnitude.
+
+A unit vector must preserve the direction of the original vector, so every component must be divided by the same magnitude. Forgetting this produces a vector that no longer points in the correct direction.

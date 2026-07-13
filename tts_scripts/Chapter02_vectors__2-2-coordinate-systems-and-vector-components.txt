@@ -1,0 +1,343 @@
+Coordinate Systems and Vector Components.
+
+The graphic method of vector addition can be time-consuming, where we can instead describe a vector in terms of its components within a coordinate system. In a rectangular (Cartesian) xy -coordinate system in a plane, a point is described by a pair of coordinates (x, y) that "locate" the point. Note we used this on the chessboard using letters and numbers for each cell.
+
+Vector components.
+
+A vector A can be decomposed into its vector components, where each component is itself a vector. These vector components are constructed using the unit vectors i-hat and j-hat that mark a unit step in either the x or y -axis, respectively. Therefore, the vector A can be represented as
+
+
+ vector A equals vector A _x + vector A _y,
+ equals A sub x i-hat + A sub y j-hat,
+
+
+where the A sub x and A sub y represent the magnitude of the step along the respective Cartesian axis. Recall the chessboard where the start of the vector can be anywhere on the board. This means that the component magnitudes are measurements relative to where you start.
+
+Let's define the starting location of vector A as a point ( x sub o, y sub o ), and the vector terminates at a point (x, y). Then, we can describe the vector as
+
+
+ vector A equals vector A _x + vector A _y,
+ equals (x- x sub o ) i-hat + (y- y sub o ) j-hat.
+
+
+Checkpoint. Pause and check your understanding.
+
+A pointer moves from (6.0, 1.6) cm to (2.0, 4.5) cm.
+
+Which point should be subtracted first: final or initial?
+
+
+Note.
+
+When referring to x sub o, it is read as "x-naught". The word naught is more commonly used in British English referring to the number zero so that one can delineate between the number zero and the letter o.
+
+
+Example Problem: Mouse pointer displacement.
+
+The Problem.
+A mouse pointer on the display monitor of a computer at its initial position is at point (6.0 cm, 1.6 cm ) with respect to the lower left-side corner. If you move the pointer to an icon located at point (2.0 cm, 4.5 cm ), what is the displacement vector of the pointer?
+
+
+The Model.
+
+We model the screen as a two-dimensional Cartesian coordinate system with the origin at the lower left corner of the monitor. The positive x -direction points to the right, and the positive y -direction points upward.
+
+The displacement vector D is defined as the vector pointing from the initial position of the pointer to its final position. Its components are obtained by subtracting the initial coordinates from the final coordinates.
+
+
+The Math.
+
+Let the initial and final points point be
+
+
+( x sub i, y sub i ) equals (6.0, 1.6) cm,
+ and
+( x sub f, y sub f ) equals (2.0, 4.5) cm.
+
+
+The components of the displacement vector are
+
+
+ D sub x equals x sub f - x sub i equals 2.0 - 6.0 equals -4.0 cm,
+ D sub y equals y sub f - y sub i equals 4.5 - 1.6 equals +2.9 cm.
+
+
+Therefore, the displacement vector in unit-vector form is
+
+
+ vector D equals D sub x i-hat + D sub y j-hat,
+ equals (-4.0 i-hat + 2.9 j-hat ) cm.
+
+
+The Conclusion.
+
+The mouse pointer’s displacement vector is vector D equals (-4.0 i-hat + 2.9 j-hat ) cm. This means the pointer moves 4.0 cm to the left and 2.9 cm upward from its initial position.
+
+
+Determining vector magnitude and direction.
+
+The vector magnitude in 2D is also described as the Euclidean distance and is occasionally called the Pythagorean distance. The distance along the vector A is determined by summing the squares along the components to get A squared and taking the square root to get the magnitude A.
+
+The square root permits positive and negative results, where we take the absolute magnitude. The direction will be resolved by the direction angle theta A.
+
+The figure and trigonometry summary are shown on the course webpage.
+
+From the Euclidean distance formula, or Pythagorean theorem, we have
+
+absolute value of A equals the square root of x minus x-naught squared plus y minus y-naught squared,
+which equals the square root of A sub x squared plus A sub y squared.
+
+This equation works even when the components A sub x and A sub y are negative. The direction angle of a vector is determined using a trigonometric function. Various mnemonics are used to help remember these relations, such as SOH-CAH-TOA.
+
+Since we have the lengths of both the adjacent side, A sub x, and opposite side, A sub y, it is easiest to use the tangent function, which results in
+
+tangent theta equals A sub y over A sub x.
+
+If vector A lies in quadrants I or IV, the angle theta equals theta A, but it is measured in the counterclockwise direction in quadrant I and the clockwise direction, negative, in quadrant IV, relative to the x-axis.
+
+To find theta A in quadrants II or III, one must use the relation theta A equals 180 degrees plus theta because theta is less than zero due to A sub y over A sub x being less than zero.
+
+Checkpoint. Pause and check your understanding.
+
+A vector has components D sub x less than zero and D sub y greater than zero.
+
+Which quadrant does the vector point into?
+
+The Problem.
+You move a mouse pointer on the display monitor from its initial position at point (6.0 cm, 1.6 cm ) to an icon located at point (2.0 cm, 4.5 cm ). What are the magnitude and direction of the displacement vector of the pointer?
+
+
+The Model.
+
+We model the computer screen as a two-dimensional Cartesian coordinate system with the origin at the lower-left corner of the monitor. The positive x -direction points to the right, and the positive y -direction points upward.
+
+The displacement vector points from the pointer’s initial position to its final position. Once that displacement is expressed in rectangular components, its magnitude is found from the component lengths, and its direction is determined by the orientation of the vector in the coordinate plane.
+
+
+The Math.
+
+The displacement vector D points from the initial position to the final position. Its components are found by subtraction:
+
+ D sub x equals x sub f - x sub i, D sub y equals y sub f - y sub i.
+
+The initial and final positions of the mouse pointer are represented by the coordinate pairs
+
+
+( x sub i, y sub i ) equals (6.0, 1.6) cm,
+( x sub f, y sub f ) equals (2.0, 4.5) cm.
+
+
+The displacement components are found by subtracting the initial coordinates from the final coordinates along each axis.
+
+
+ D sub x equals x sub f - x sub i equals 2.0 - 6.0 equals -4.0 cm,
+ D sub y equals y sub f - y sub i equals 4.5 - 1.6 equals +2.9 cm.
+
+
+The magnitude of the displacement is determined from the Pythagorean relationship between the rectangular components.
+
+
+D equals square root of D sub x to the power of 2 + D sub y to the power of 2
+ equals square root of (-4.0) squared + (2.9) squared cm
+ equals 4.9 cm.
+
+
+The direction angle is first found from the ratio of the vertical component to the horizontal component.
+
+
+ tan theta equals D sub y over D sub x equals +2.9 over -4.0 equals -0.725,
+ theta equals tan to the power of -1 (-0.725) equals -35.9 degrees.
+
+
+Because D sub x is less than zero, the displacement vector lies in Quadrant II. The direction angle measured counterclockwise from the positive x -axis is therefore
+
+
+ theta _D equals theta + 180 degrees
+ equals -35.9 degrees + 180 degrees
+ equals 144.1 degrees.
+
+
+Common Mistake.
+
+
+A very common mistake when finding the direction of a displacement vector is to compute
+
+ theta equals tan to the power of -1 ( D sub y over D sub x )
+
+and stop there.
+
+This inverse tangent only returns angles between -90 degrees and +90 degrees. It does not know which quadrant the vector lies in.
+
+What can go wrong
+If D sub x < 0, the vector is in Quadrant II or III.
+If D sub y < 0, the vector is in Quadrant III or IV.
+The raw tan to the power of -1 value must often be adjusted by 180 degrees .
+
+In this problem:
+
+ D sub x equals -4.0, D sub y equals +2.9
+
+so the displacement vector lies in Quadrant II, not Quadrant IV.
+Failing to account for this would give the wrong direction angle.
+
+Best practice.
+Always check the signs of D sub x and D sub y.
+Or, when using Python, use the Num-pie arctan two function, written as n p dot arctan two of D y comma D x, which automatically returns the correct quadrant.
+
+ theta equals tan to the power of -1 ( D sub y over D sub x ) textbf{must never be used blindly.}
+
+
+The Conclusion.
+
+The displacement vector has magnitude D equals 4.9 cm and direction theta _D equals 144.1 degrees (counterclockwise from the positive x -axis). It points into Quadrant II, consistent with D sub x equals -4.0 cm and D sub y equals +2.9 cm.
+
+
+Polar Coordinates.
+
+The polar coordinate system is another way to locate points in a plane. The location of a point is defined by the radial coordinate r, which is the distance from the origin, and the angular coordinate phi, sometimes called the azimuthal coordinate, which measures the rotation angle from a chosen direction, usually the positive x-direction. The angular coordinate is often measured in radians.
+
+The unit vectors for polar coordinates are r-hat, radial, and t-hat, transverse. The r-hat direction points outward in radius relative to the center. The positive t-hat direction indicates how the angle phi changes in the counterclockwise direction.
+
+To move between polar and rectangular coordinates, we use
+
+x equals r cosine phi,
+y equals r sine phi.
+
+The polar-coordinate figure and the direction-phrase table are available on the course webpage.
+
+Checkpoint. Pause and check your understanding.
+
+A vector points 20 degrees north of west.
+
+What is its standard angle measured counterclockwise from the positive x-axis?
+
+The Problem.
+A treasure hunter finds one silver coin at a location 20.0 meters away from a dry well in the direction 20 degrees north of east and finds one gold coin at a location 10.0 meters away from the well in the direction 20 degrees north of west. What are the polar and rectangular coordinates of these findings with respect to the well?
+
+
+The Model.
+
+We model the dry well as the origin of a two-dimensional coordinate system. The positive x -axis points east, and the positive y -axis points north.
+
+Each coin’s position is naturally described using polar coordinates because the distance from the well and the direction from the well are given directly. To locate each coin on a Cartesian grid, the polar description is converted into horizontal and vertical components. Angles are measured counterclockwise from the positive x -axis.
+
+
+The Math.
+
+Each coin is naturally described in polar form because its distance from the well and its direction are given directly. To compare the locations using standard vector components, we convert these polar descriptions into rectangular coordinates using the relations
+
+
+x equals r cos theta,
+y equals r sin theta.
+
+
+All angles are measured counterclockwise from the positive x -axis.
+
+For the silver coin, the given description places it 20.0 meters from the well at an angle of 20 degrees north of east. In polar form, this corresponds to
+
+
+ r sub S equals 20.0 meters,
+ theta _S equals 20 degrees equals pi over 9.
+
+
+Substituting these values into the coordinate relations gives
+
+ x sub S equals (20.0) cos ( pi over 9 ) equals 18.9 meters,
+ y sub S equals (20.0) sin ( pi over 9 ) equals 6.8 meters.
+
+
+The gold coin is located 20 degrees north of west. Because west corresponds to 180 degrees measured from the positive x -axis, the direction angle for this coin is
+
+
+ r sub G equals 10.0 meters,
+ theta _G equals 180 degrees - 20 degrees equals 160 degrees equals 8 pi over 9.
+
+
+Using the same coordinate relations,
+
+
+ x sub G equals (10.0) cos ( 8 pi over 9 ) equals -9.4 meters,
+ y sub G equals (10.0) sin ( 8 pi over 9 ) equals 3.4 meters.
+
+
+The Conclusion.
+
+The silver coin is located at ( x sub S, y sub S ) equals (18.9 meters, 6.8 meters ), placing it east and north of the well. The gold coin is located at ( x sub G, y sub G ) equals (-9.4 meters, 3.4 meters ), which places it west and north of the well.
+
+The signs of the x -components correctly encode the physical directions: positive for eastward displacement and negative for westward displacement, while both coins have positive y -components because they lie north of the well.
+
+
+Vectors in 3D.
+
+To specify a location in space in general, we need three coordinates, x, y, and z, where two coordinates, x and y, can identify points in a plane, and the z-coordinate locates points that extend above or below the plane. The advent of an extra coordinate necessitates the inclusion of a third unit vector, k-hat.
+
+The order of the coordinates x, y, and z and the unit vectors i-hat, j-hat, and k-hat defines the standard right-handed coordinate system. In this coordinate system, up is defined using the positive z-hat direction and aligns with your right thumb. That means the positive azimuthal, or polar, angle uses the x-axis as a reference direction and rotates counterclockwise from i-hat to j-hat, which follows the curve of your fingers as you curl them.
+
+The three-dimensional coordinate and component figures are shown on the course webpage.
+
+The 3D version of vector A has three components, which can be represented by the sum of the components as
+
+vector A equals A sub x i-hat plus A sub y j-hat plus A sub z k-hat,
+which equals x minus x-naught times i-hat plus y minus y-naught times j-hat plus z minus z-naught times k-hat.
+
+The magnitude A is defined by generalizing the distance equation to
+
+A equals the square root of A sub x squared plus A sub y squared plus A sub z squared.
+
+Checkpoint. Pause and check your understanding.
+
+A drone moves east, north, and upward.
+
+Which components correspond to i-hat, j-hat, and k-hat?
+
+The Problem.
+During a takeoff of an I A I Heron drone, its position with respect to a control tower is 100 meters above the ground, 300 meters to the east, and 200 meters to the north. One minute later, its position is 250 meters above the ground, 1200 meters to the east, and 2100 meters to the north. What is the drone's displacement vector with respect to the control tower? What is the magnitude of this displacement vector?
+
+The worked solution follows.
+
+
+The Model.
+
+We model the drone’s motion using a three-dimensional Cartesian coordinate system with the control tower as the origin. The positive x -direction points east, the positive y -direction points north, and the positive z -direction points upward.
+
+The drone’s displacement vector points from its initial position to its final position. Each component of the displacement describes the change in position along one coordinate axis, and the magnitude of the displacement represents the straight-line distance between the initial and final positions.
+
+
+The Math.
+
+The drone’s displacement vector is defined as the final position vector minus the initial position vector.
+
+ vector D equals vector r _f - vector r _i.
+
+At takeoff, the drone is located at the point ( x sub i, y sub i, z sub i ) equals (300, 200, 100) m relative to the control tower. One minute later, its position is ( x sub f, y sub f, z sub f ) equals (1200, 2100, 250) m.
+
+The components of the displacement vector are obtained by subtracting the initial coordinates from the final coordinates along each axis.
+
+
+ D sub x equals x sub f - x sub i equals 1200 - 300 equals 900 meters,
+ D sub y equals y sub f - y sub i equals 2100 - 200 equals 1900 meters,
+ D sub z equals z sub f - z sub i equals 250 - 100 equals 150 meters.
+
+
+With these components identified, the displacement vector can be written in unit-vector form.
+
+
+ vector D equals D sub x i-hat + D sub y j-hat + D sub z k-hat
+ equals (900 i-hat + 1900 j-hat + 150 k-hat ) m.
+
+
+Expressing each component in kilometers gives
+
+ vector D equals (0.90 i-hat + 1.90 j-hat + 0.15 k-hat ) km.
+
+The magnitude of the displacement is determined from the three-dimensional magnitude formula.
+
+
+D equals square root of D sub x to the power of 2 + D sub y to the power of 2 + D sub z to the power of 2
+ equals square root of (0.90) squared + (1.90) squared + (0.15) squared km
+ equals 2.11 km.
+
+
+The Conclusion.
+
+The drone’s displacement vector is vector D equals (0.90 i-hat + 1.90 j-hat + 0.15 k-hat ) km, with a magnitude of 2.11 km. This result reflects a dominant horizontal displacement toward the northeast with a smaller vertical climb.

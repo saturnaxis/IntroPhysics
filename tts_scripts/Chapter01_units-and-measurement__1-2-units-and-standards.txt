@@ -1,0 +1,133 @@
+Units and Standards.
+
+A physical quantity is defined by specifying how it is measured or how it is calculated from other measurements. For example,
+
+Distance measured using a meter stick, or time measured with a stopwatch,
+
+Average speed is the total distance traveled divided by the travel time.
+
+Measurements of physical quantities are expressed in terms of standardized units. The foot was part of many local systems of units, but it was not standardized until 1959. It varied in length from city to city and even from trade to trade. Therefore, it's important to have a standardized length (e.g., meter) so that international science or manufacturing can operate smoothly.
+
+Two major units are used in the world:
+
+First, S I units (for the French Système International d’Unités) or metric system, and
+
+Second, English units (i.e., the imperial system).
+
+Systems of units are also referred to by just listing what they use for length-mass-time (e.g., foot-pound-second or meter-kilogram-second). The metric system is agreed on by scientists and mathematicians. Engineers may use S A E (Society of Automotive Engineers) units that measure tools in fractions of an inch rather than millimeters.
+
+S I Units: Base and Derived Units.
+
+The base quantities are measured using a system's base units. All other physical quantities are combinations of the base quantities, where each are known as a derived quantity with its own derived unit. The derived units can only be as accurate and precise as the base units from which they are derived.
+
+There are 7 base units that make up the international System of Quantities (I S Q). The course webpage lists the units corresponding to the I S Q base quantities.
+
+The course webpage includes the table: I S Q Base Quantities, S I Units, and Common Imperial Equivalents.
+
+Examples of derived units are expressed as:
+
+Area; square meters,
+
+Volume; cubic meters or cc equals cubic centimeters equals milliliters (in fluids)
+
+Speed; meters per second,
+
+Density; kilograms per cubic meter,
+
+Electric charge; ampere seconds,
+
+Energy; electron volts.
+
+Units of Time, Length, and Mass.
+
+The second.
+
+For many years the second was defined as 1/86,400 of a mean solar day. A new standard was introduced to define the second in terms of a nonvarying physical phenomenon because the lunar and solar tides cause the Earth's rotation to slow over time.
+
+Cesium atoms can vibrate in a steady way, allowing them to be easily observed and counted. In 1967, the second was redefined as the time required for 9,192,631,770 of these vibrations to occur. This level of precision is needed for global position satellites (G P S satellites) to give you turn-by-turn directions due to time dilation in relativity.
+
+The meter.
+
+The meter has changed its definition over time (like the second) to become more precise.
+
+The meter was first defined in 1791 as one over ten to the seventh of the distance from the equator to the North Pole.
+
+The measurement was improved in 1889 by redefining the meter as the distance between 2 engraved lines on a bar of platinum iridium (kept in Paris).
+
+In 1960, it was redefined again as 1,650,763.73 wavelengths of light emitted by krypton atoms.
+
+In 1983, the meter was given its current definition as the distance light travels (in a vacuum) in one over 299,792,458 of a second (or one over c)
+
+The kilogram.
+
+The kilogram was defined from 1795 to 2018 as the mass of a platinum-iridium cylinder kept in Paris. However, this cylinder has lost roughly 50 micrograms since it was created.
+
+In May 2019, the new definition was based on physical constants of the universe (e.g., Planck constant). The kilogram is now measured using a Kibble balance, which measures an electrical current produced that is proportional to Planck's constant. Using the exact definition of the Planck constant, this means that the exact measurement of the current can define the kilogram.
+
+A Veritasium video is linked on the course webpage.
+
+Metric Prefixes.
+
+The "beauty" of the metric system is its convenience for categorizing units by factors of 10. The course webpage lists the metric prefixes and symbols used to denote various factors of 10 in S I units. For example,
+
+A centimeter is one one-hundredth of a meter ( one centimeter equals ten to the minus second meters ),
+
+A kilometer is 1000 meters ( one kilometer equals ten to the third meters ),
+
+A nanosecond is one billionth of a second ( one nanosecond equals ten to the minus ninth seconds ).
+
+The course webpage includes the table: Metric Prefixes for Powers of Ten and Their Symbols.
+
+The only rule when using the metric prefixes is that you cannot "double them up". For example, it is improper to talk about megagigameters, although ten to the sixth times ten to the ninth equals ten to the fifteenth ( one petameter equals ten to the fifteenth meters ).
+
+Checkpoint. Pause and check your understanding.
+
+Which is the better metric-prefix form?
+
+0.0042 grams or 4.2 milligrams?
+
+Why?
+
+Example Problem: Metric Prefixes.
+
+The Problem.
+Restate the mass 1.93 times ten to the thirteenth kilograms using a metric prefix such that the resulting numerical value is bigger than one but less than 1000.
+
+The Model.
+
+We treat mass as a scalar physical quantity expressed as a numerical value multiplied by a unit. Metric prefixes encode powers of ten and may not be combined or “stacked.” Therefore, the mass must first be rewritten using explicit powers of ten before introducing a single appropriate prefix.
+
+Our goal is to select a metric prefix that produces a numerical value between 1 and 1000 while representing the same physical mass.
+
+The Math.
+
+The prefix kilo corresponds to a factor of ten to the third. Rewriting the mass in grams gives
+
+1.93 times ten to the thirteenth kilograms
+equals 1.93 times ten to the thirteenth kilograms times ten to the third grams per kilogram,
+which equals 1.93 times ten to the sixteenth grams.
+
+From the metric-prefix table, the power ten to the sixteenth lies between
+
+Peta- ( ten to the fifteenth ), and
+
+Exa- ( ten to the eighteenth ).
+
+If we factor out ten to the fifteenth, we obtain
+
+1.93 times ten to the sixteenth grams
+equals 1.93 times ten to the first petagrams,
+which equals 19.3 petagrams.
+
+Alternatively, factoring out ten to the eighteenth gives
+
+1.93 times ten to the sixteenth grams
+equals 1.93 times ten to the minus second exagrams,
+
+which produces a numerical value less than one and therefore does not satisfy the requirement of the problem.
+
+The Conclusion.
+
+The mass expressed using a single metric prefix with a numerical value between 1 and 1000 is
+
+1.93 times ten to the thirteenth kilograms equals 19.3 petagrams.

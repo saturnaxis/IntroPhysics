@@ -1,0 +1,1468 @@
+3.1 Position, Displacement, and Average Velocity
+
+Motion along 1D.
+
+Chapter roadmap.
+
+ 
+
+This chapter introduces one-dimensional kinematics. We describe motion without yet explaining what causes it, so the object is modeled as a particle moving along one straight axis.
+
+As you read, focus on three questions:
+
+Item 1. Can I define a coordinate axis and use algebraic signs to represent direction?
+
+Item 2. Can I distinguish position, displacement, velocity, and acceleration?
+
+Item 3. Can I use graphs and equations to describe how motion changes with time?
+
+These ideas provide the foundation for describing motion in two and three dimensions in the next chapter.
+ 
+
+Position, Displacement, and Average Velocity.
+
+Position.
+
+To describe the motion of an object, must first locate it using its **position** x (i.e., *where it is at any particular time.*). More precisely, we need to specify its position relative to a convenient frame of reference.
+
+A **frame of reference** is an arbitrary set of axes from which the position (and motion) of an object are described. We often describe the position of an object relative to the "stationary" Earth or objects on the Earth. For example,
+
+Bullet point. a rocket could relate its position relative to the Earth as a whole,
+
+Bullet point. a cyclist's position could relate to the nearby buildings.
+
+It is not necessary for the reference to be stationary. For example, to describe a position of a person in an airplane, we use the airplane as the reference frame even though it is moving through the air.
+
+Typically, we use the variable x when discussing 1-D motion (in general), where we might use the variable y when discussing vertical motion.
+
+Displacement.
+
+If an object moves relative to a frame of reference, then the object's position changes (i.e., displacement). The word *displacement* implies that an object has moved. Recall from Chapter 2, displacement is a vector with magnitude and direction. In 1-D, the direction is simply represented as a positive ( + ) or negative ( - ) relative to the reference. For example,
+
+Bullet point. moving 2 meters to the **right** is indicated by a displacement of +2 meters,
+
+Bullet point. moving 4 meters to the **left** is indicated by a displacement of -4 meters.
+
+**Displacement** change in x is the change in position of an object:
+
+ 
+ change in x equals x sub f - x sub o,
+ 
+
+where x sub f is the final position and x sub o is the initial position.
+
+Note.
+
+We use the uppercase Greek letter delta ( change in ) to mean "change in" a variable. Thus, change in x means *change in position*. We always solve for displacement with the difference of x sub o **from** x sub f.
+ 
+
+Checkpoint.
+
+ 
+
+A particle moves from x sub o equals -3 meters to x sub f equals +2 meters.
+
+Is the displacement positive, negative, or zero?
+ 
+
+Objects in motion can have a series of displacements, where we define **total displacement** change in x sub Tot as the *sum of the individual displacements* (recall how we summed multiple vectors to find the resultant), and express this mathematically as,
+
+ 
+ change in x sub Tot equals sum sub i equals 1 to the power of N x sub i -x sub i-1, 
+ equals sum sub i equals 1 to the power of N change in x sub i,
+ 
+
+where change in x sub i are the individual displacements. In the earlier example, we had change in x sub 1 equals 2 meters and change in x sub 2 equals -4 meters so that change in x sub Tot equals -2 meters. But we need to work out the individual x sub i. Here's what we know,
+
+ 
+ change in x sub Tot equals change in x sub 2 + change in x sub 1, 
+ equals ( x sub 2 - x sub 1 ) + ( x sub 1 - x sub o ), 
+-2 meters equals -4 meters + 2 meters.
+ 
+
+This means we have
+
+ 
+ x sub 2 - x sub 1 equals -4 meters, 
+ x sub 1 - x sub o equals 2 meters.
+ 
+
+*What is x sub o?* -- It's the initial reference or where we started before moving at all (i.e., the origin). In this case, x sub o equals 0, which means we now know 
+
+Bullet point. x sub o equals 0 
+
+Bullet point. x sub 1 - 0 equals 2 meters arrow x sub 1 equals 2 meters.
+
+Bullet point. x sub 2 - 2 meters equals -4 meters arrow x sub 2 equals -2 meters 
+
+Thus, the total displacement is given by
+
+ 
+ change in x sub 1 equals x sub 1 - x sub o equals 2-0 equals 2 meters, 
+ change in x sub 2 equals x sub 2 - x sub 1 equals -2 - 2 equals -4 meters, 
+ change in x sub Tot equals change in x sub 2 + change in x sub 1 equals -4 + 2 equals -2 meters.
+ 
+
+The total displacement is -2 meters along the x -axis, or vector D equals -2 i hat m. The above process can be represented in vectors by
+
+ 
+ vector x _1 equals change in x sub 1 i hat equals 2 i hat m, 
+ vector x _2 equals change in x sub 2 i hat equals -4 i hat m, 
+ vector D equals vector x _1 + vector x _2 equals -2 i hat m.
+ 
+
+The magnitude of the displacement is always positive, |D| equals sqrt{ vector D dot vector D }. In this case, we can find that |D| equals 2 meters.
+
+Checkpoint.
+
+ 
+
+A runner moves 4 meters east, then 4 meters west.
+
+What is the total displacement? What is the total distance traveled?
+ 
+
+The **distance traveled** d should not be confused with the magnitude of the total displacement. The distance traveled is the *total length of the path between the two positions*, where it is determined 
+
+ 
+d equals sum sub i equals 1 to the power of N square root of x sub i dot x sub i 
+ 
+
+and in this case,
+
+ 
+d equals sqrt{( vector x _1 dot vector x _1)} + sqrt{( vector x _2 dot vector x _2)}, 
+ equals square root of 2 squared + square root of (-4) squared, 
+ equals |2| + |-4|, 
+d equals 6 meters.
+ 
+
+**Khan Academy**.
+
+ 
+
+ 
+ 
+
+Average Velocity.
+
+To calculate how fast something is moving, we must introduce the time variable t. Similar to the displacement change in x, there is a time between two points, which is called the **elapsed time** change in t equals t sub f - t sub o.
+
+Checkpoint.
+
+ 
+
+Can the average velocity be zero even when the distance traveled is not zero?
+
+Explain using displacement.
+ 
+
+If x sub f and x sub o are the positions of an object at times t sub f and t sub o, respectively, then the **average velocity** bar{v} is
+
+ 
+ bar{v} equals Displacement between two points over Time interval between two points, 
+ equals change in x over change in t equals x sub f - x sub o over t sub f - t sub o.
+ 
+
+Note.
+
+The average velocity is a vector and can be negative, when x sub f < x sub o. This means that the average velocity can be in the opposite direction as the positive reference direction.
+ 
+
+**Example Problem**: Delivering Flyers.
+
+The Problem.
+Jill sets out from her home to deliver flyers for her yard sale, traveling due east along her street lined with houses. At 0.5 km and 9 min later she runs out of flyers and has to retrace her steps back to her house to get more. This takes an additional 9 min. After picking up more flyers, she sets out again on the same path, continuing where she left off, and ends up 1.0 km from her house. This third leg of her trip takes 15 min. At this point she turns back toward her house, heading west. After 1.75 km and 25 min she stops to rest.
+a. What is Jill’s total displacement to the point where she stops to rest? 
+b. What is the magnitude of the final displacement? 
+c. What is the average velocity during her entire trip? 
+d. What is the total distance traveled? 
+e. Make a graph of position versus time.
+
+---
+
+The Model.
+
+Jill’s motion is one-dimensional along an east-west street. We choose east as the positive x -direction, west as the negative x -direction, and Jill’s home as the origin. The trip is broken into straight-line segments, so the net displacement depends only on the starting and ending positions, while the total distance depends on the length of every segment traveled.
+
+---
+
+The Math.
+
+We choose Jill’s home as x sub o equals 0 and reconstruct her position at the end of each leg. After the first leg, she is at x sub 1 equals +0.5 km after 9 min. After returning home, she is at x sub 2 equals 0 after 18 min. After the third leg, she is at x sub 3 equals +1.0 km after 33 min. During the final leg, Jill travels 1.75 km west from x sub 3 equals +1.0 km, so her final position is given by
+
+ x sub 4 equals 1.0 km - 1.75 km equals -0.75 km. 
+
+The signed displacement during each segment is the change in position for that segment, which gives
+
+ 
+ change in x sub 1 equals +0.5 km, 
+ change in x sub 2 equals -0.5 km, 
+ change in x sub 3 equals +1.0 km, 
+ change in x sub 4 equals -1.75 km.
+ 
+
+**(a)** The total displacement is the change from the initial position to the final position, which is given by
+
+ change in x_ total equals x sub 4 - x sub o equals -0.75 km. 
+
+**(b)** The magnitude of the final displacement is the absolute value of the total displacement, which is
+
+ | change in x_ total | equals 0.75 km. 
+
+**(c)** The total elapsed time is the sum of the four time intervals, which gives
+
+ change in t_ total equals 9 min +9 min +15 min +25 min equals 58 min. 
+
+The average velocity over the entire trip is the total displacement divided by the total elapsed time, which gives
+
+ 
+ bar{v} equals change in x_ total over change in t_ total, 
+ equals -0.75 km over 58 min, 
+ equals -0.013 km/min.
+ 
+
+**(d)** The total distance traveled is the sum of the magnitudes of the segment displacements, which gives
+
+ 
+d_ total equals | change in x sub 1 | + | change in x sub 2 | + | change in x sub 3 | + | change in x sub 4 |, 
+ equals 0.5 km + 0.5 km + 1.0 km + 1.75 km, 
+ equals 3.75 km.
+ 
+
+**(e)** The position-time graph is made from the positions at the end of each leg, so the plotted points are (0 min,0), (9 min,0.5 km ), (18 min,0), (33 min,1.0 km ), and (58 min,-0.75 km ).
+
+---
+
+The Conclusion.
+
+Jill’s final displacement is -0.75 km, so she ends 0.75 km west of her house. Her average velocity is -0.013 km/min, where the negative sign shows that her net motion is westward. Her total distance traveled is 3.75 km, which is larger than the magnitude of her displacement because she reverses direction more than once.
+
+---
+
+========================================================================
+
+3.2 Instantaneous Velocity and Speed
+
+Instantaneous Velocity and Speed.
+
+Instantaneous Velocity.
+
+The quantity that tells us how fast an object is moving anywhere along its path is the **instantaneous velocity**, or simply *velocity*. It is the average velocity between two discrete points on the path.
+
+Suppose we know the position x of an object at any time t, then we would know the continuous function x(t). We can express the average velocity bar{v} by
+
+ bar{v} equals x( t sub 2 )-x( t sub 1 ) over t sub 2 - t sub 1 equals change in x over change in t. 
+
+To find the instantaneous velocity at any position, we let t sub 1 arrow t and t sub 2 arrow t + change in t. Then we substitute into our expression for the average velocity and define v(t) by,
+
+ 
+v(t) equals the limit of sub change in t arrow 0 x(t+ change in t) - x(t) over change in t equals dx(t) over dt.
+ 
+
+We now define the instantaneous velocity of an object is the limit of the average velocity bar{v} as the elapsed time change in t approaches zero, or the derivative of x with respect to t:
+
+ 
+v(t) equals d over dt x(t).
+ 
+
+Instantaneous velocity is a vector with dimension of L/T. Since the definition of average velocity is written in terms of the change in position change in x over a specific time interval change in t, we also refer to the velocity as the *rate of change of the position function*. 
+
+The **rate of change** is a measure of how fast a function is changing at a time t, or the slope of the line that is tangent to the curve at t. The displacement at the initial time t sub o is zero (i.e., change in x equals 0 ), therefore the velocity will also be zero and the slope will be *flat*.
+
+Checkpoint.
+
+ 
+
+On a position-versus-time graph, what does a horizontal tangent line mean about the velocity at that instant?
+ 
+
+At other times ( t sub 1, t sub 2, dots, t sub N ), the velocity is not zero (unless the position never changes) because the slope would be positive or negative. If the function x(t) had a minimum, then the slope would also be zero (i.e., v(t) equals 0 ). Thus, the zeros of the velocity function give the *minimum* and *maximum* of the position function.
+
+Figure referenced in the course notes.
+
+**Khan Academy**.
+
+ 
+
+ 
+ 
+
+**Example Problem**: Plotting velocity from position.
+
+The Problem.
+A position-versus-time graph is shown in. Using this graph, determine the corresponding velocity-versus-time graph.
+Specifically:
+* Identify the velocity during each time interval.
+* Sketch or describe the resulting velocity-time graph.
+
+Figure referenced in the course notes.
+
+---
+
+The Model.
+
+The motion is one-dimensional along a straight line. The graph is made of straight-line position segments, so the velocity is constant within each time interval. A positive slope represents motion in the positive direction, a zero slope represents zero velocity, and a negative slope represents motion in the negative direction.
+
+---
+
+The Math.
+
+**(a)** The velocity during each interval is the slope of the position-versus-time graph. During the first interval, the position changes from 0.0 meters to 0.5 meters while the time changes from 0.0 s to 0.5 s, which gives
+
+ v equals 0.5 meters - 0.0 meters over 0.5 s - 0.0 s equals 1.0 meters per second. 
+
+During the second interval, the position remains fixed at 0.5 meters while the time changes from 0.5 s to 1.0 s, which gives
+
+ v equals 0.5 meters - 0.5 meters over 1.0 s - 0.5 s equals 0.0 meters per second. 
+
+During the third interval, the position changes from 0.5 meters to 0.0 meters while the time changes from 1.0 s to 2.0 s, which gives
+
+ v equals 0.0 meters - 0.5 meters over 2.0 s - 1.0 s equals -0.5 meters per second. 
+
+**(b)** The velocity-time graph is therefore piecewise constant, with horizontal segments at +1.0 meters per second, 0.0 meters per second, and -0.5 meters per second over the three corresponding intervals.
+
+---
+
+The Conclusion.
+
+The velocity is +1.0 meters per second from 0 to 0.5 s, 0.0 meters per second from 0.5 s to 1.0 s, and -0.5 meters per second from 1.0 s to 2.0 s. The signs match the physical interpretation of the graph: the object first moves in the positive direction, then stops, and finally moves back toward the origin.
+
+---
+
+ **The Problem**
+The position of a particle moving along the x -axis is given by
+ x(t) equals (3.0 meters per second )t + (0.5 meters per second cubed )t cubed. 
+a. Using the definition of instantaneous velocity, find the instantaneous velocity at t equals 2.0 s. 
+b. Calculate the average velocity between t equals 1.0 s and t equals 3.0 s.
+
+---
+
+The Model.
+
+The particle moves along the x -axis, so its motion is one-dimensional. Instantaneous velocity describes the rate at which the position changes at a single instant, while average velocity describes the net change in position over a finite time interval. Because the position function is a polynomial in time, the instantaneous velocity can be found by differentiating the position function directly.
+
+---
+
+The Math.
+
+**(a)** The instantaneous velocity is the derivative of the position function with respect to time, which gives
+
+ 
+v(t) equals dx over dt, 
+ equals d over dt [(3.0 meters per second )t + (0.5 meters per second cubed )t cubed ], 
+ equals 3.0 meters per second + (1.5 meters per second cubed )t squared.
+ 
+
+The instantaneous velocity at t equals 2.0 s is found by evaluating this function at that time, which gives
+
+ 
+v(2.0 s ) equals 3.0 meters per second + (1.5 meters per second cubed )(2.0 s ) squared, 
+ equals 9.0 meters per second.
+ 
+
+**(b)** The average velocity between t sub 1 equals 1.0 s and t sub 2 equals 3.0 s requires the position at each endpoint, which gives
+
+ 
+x(1.0 s ) equals (3.0 meters per second )(1.0 s ) + (0.5 meters per second cubed )(1.0 s ) cubed equals 3.5 meters, 
+x(3.0 s ) equals (3.0 meters per second )(3.0 s ) + (0.5 meters per second cubed )(3.0 s ) cubed equals 22.5 meters.
+ 
+
+The average velocity is the displacement over the elapsed time, which gives
+
+ 
+ bar{v} equals x(3.0 s ) - x(1.0 s ) over 3.0 s - 1.0 s, 
+ equals 22.5 meters - 3.5 meters over 2.0 s, 
+ equals 9.5 meters per second.
+ 
+
+---
+
+The Conclusion.
+
+The instantaneous velocity at t equals 2.0 s is 9.0 meters per second, and the average velocity from 1.0 s to 3.0 s is 9.5 meters per second. These values are close but not identical because the velocity is changing over the interval.
+
+---
+
+========================================================================
+
+3.3 Average and Instantaneous Acceleration
+
+Average and Instantaneous Acceleration.
+
+Average Acceleration.
+
+The **average acceleration** bar{a} is the *rate of change* for the velocity v:
+
+ 
+ bar{a} equals change in v over change in t equals v sub f - v sub o over t sub f - t sub o,
+ 
+
+where t is time.
+
+The SI units for acceleration are meters per second squared (or meters per second per second) and abbreviated as meters per second squared. This means how much the velocity has changed every second, where the velocity can change in either *magnitude* or *direction* due to it being a vector. For example,
+a runner traveling at 10 kilometers per hour due east slows to a stop reverses direction, and continues to run 10 kilometers per hour due west.
+
+Before turning around, the runner had one average acceleration, then a different average acceleration afterwards. This is shown mathematically as,
+
+ 
+ bar{a} equals 
+ - v sub o over t sub m - t sub o equals -10 over change in t sub 1, from start to turning around at t sub m 
+ v sub f over t sub f - t sub m equals 10 over change in t sub 2, from turning around onward until t sub f.
+ 
+ 
+
+The *magnitude* of the velocity is the same in both directions, however the direction is different. Acceleration is a *vector* in the same direction as the *change in velocity* change in v. Acceleration is a change in *speed or direction*, or both.
+
+Note.
+
+Although acceleration is in the direction of the change in velocity, it is not always in the direction of motion. When an object slows down, its acceleration is opposite to the direction of its motion.
+ 
+
+The term *deceleration* can cause confusion because it is **not** a vector and it does not point to a specific direction with respect to a specific direction. 
+
+We can say the runner was decelerating before coming to a stop and accelerating afterward, but we shouldn't include the coordinate system unit vector ( i hat or - i hat ) in our analysis. Otherwise the runner always has a negative acceleration, in contrast to our intuition. Instead of using the term deceleration, we describe the motion more accurately with a positive or negative acceleration relative to the coordinate system. 
+
+If an object has a velocity in the positive direction with respect to the origin and it acquires a constant negative acceleration, the object eventually comes to rest and reverses direction (i.e., our runner in change in t sub 1 ). Eventually, the object passes through the origin going in the opposite direction (i.e., our runner in change in t sub 2 ). 
+
+Checkpoint.
+
+ 
+
+An object has v equals +8 meters per second and a equals -2 meters per second squared.
+
+Is it moving in the positive or negative direction? Is it speeding up or slowing down?
+ 
+
+The sign of acceleration tells us the direction of the change in velocity, not whether the object is speeding up or slowing down. To decide whether the speed is increasing or decreasing, we compare the signs of velocity and acceleration. If v and a have the same sign, the object speeds up. If v and a have opposite signs, the object slows down.
+
+Table. Sign reasoning for one-dimensional motion. Refer to the course notes for the full entries.
+
+Figure referenced in the course notes.
+
+**Example Problem**: Racehorse Leaves the Gate.
+
+The Problem.
+A racehorse coming out of the gate accelerates from rest to a velocity of 15.0 meters per second due west in 1.80 s. What is its average acceleration?
+
+Figure referenced in the course notes.
+
+The Model.
+
+The horse moves in one dimension along an east-west line. We choose east as the positive direction and west as the negative direction. Since the horse starts from rest and ends with a westward velocity, the change in velocity is directed west, so the average acceleration should be negative in this coordinate system.
+
+---
+
+The Math.
+
+The average acceleration is the change in velocity divided by the elapsed time, which is given by
+
+ bar{a} equals change in v over change in t equals v sub f - v sub o over change in t. 
+
+The horse starts from rest and west is the negative direction, so the initial and final velocities are v sub o equals 0 and v sub f equals -15.0 meters per second. The change in velocity is therefore
+
+ change in v equals v sub f - v sub o equals -15.0 meters per second - 0 equals -15.0 meters per second. 
+
+Dividing this change in velocity by the elapsed time gives the average acceleration as
+
+ 
+ bar{a} equals -15.0 meters per second over 1.80 s, 
+ equals -8.33 meters per second squared.
+ 
+
+---
+
+The Conclusion.
+
+The horse’s average acceleration is -8.33 meters per second squared. The negative sign means the acceleration points west, which is consistent with the horse increasing its speed westward from rest.
+
+---
+
+ **Instantaneous acceleration** a, or *acceleration at a time t *, is found using the same process discussed for instantaneous velocity. We calculate, the average acceleration between two points in time change in t and let change in t arrow 0. The result is the derivative of the velocity function v(t) and is expressed as
+
+ 
+a(t) equals the limit of sub change in t arrow 0 v(t+ change in t)-v(t) over change in t, 
+ equals d over dt v(t).
+ 
+
+We can show that the instantaneous acceleration at t sub o is the slope of the tangent line to the velocity graph at time t sub o. The average acceleration approaches the instantaneous acceleration as change in t arrow 0.
+
+Checkpoint.
+
+ 
+
+On a velocity-versus-time graph, what does a horizontal tangent line mean about the acceleration at that instant?
+ 
+
+Figure referenced in the course notes.
+
+As shown in a, the velocity has a maximum when its slope is zero, which corresponds to a zero of the acceleration function. In b, there is a minimum velocity when the acceleration is zero. The zeros of the acceleration function give either the minimum or maximum velocity.
+
+Calculus Note: Derivatives, Extrema, and Evolution.
+
+ 
+ 
+
+Finding Extrema by Setting the Derivative to Zero.
+
+One of the most powerful and general uses of calculus is identifying where a quantity reaches a **maximum or minimum**. 
+Given a function f(x), extrema occur at **critical points**, which satisfy
+
+ df over dx equals 0 
+
+(or where the derivative is undefined).
+
+This works because the derivative represents the *rate of change* of the function. At a maximum or minimum, the function momentarily stops increasing or decreasing, so its slope is zero.
+
+Examples.
+
+Bullet point. In kinematics, setting v(t) equals dx over dt equals 0 finds when an object momentarily stops or turns around.
+
+Bullet point. In optimization, setting dE over dx equals 0 finds stable equilibrium configurations.
+
+Bullet point. In thermodynamics, extrema of entropy or energy determine equilibrium states.
+
+This method applies to **any differentiable function**, not just position or velocity.
+
+---
+
+Using Derivatives to Evolve a System.
+
+Derivatives do more than identify special points. They describe how systems *change in time*. Many physical laws are written as **differential equations**, which specify how a quantity evolves:
+
+ dy over dt equals f(y,t) 
+
+Here, the derivative tells us how the system changes at each instant. Solving the differential equation allows us to predict the system’s future behavior.
+
+Examples.
+
+Bullet point. Newton’s Second Law:
+
+ m dv over dt equals F(x,v,t) 
+
+ determines how velocity evolves from forces.
+
+Bullet point. Radioactive decay:
+
+ dN over dt equals - lambda N 
+
+ describes how a quantity decreases over time.
+
+Bullet point. Population growth, electrical circuits, orbital motion, and climate models are all governed by differential equations.
+
+---
+
+Big Picture.
+
+Bullet point. **Setting derivatives equal to zero** finds *where something stops changing* (extrema, turning points, equilibrium).
+
+Bullet point. **Using derivatives in equations** tells us *how something changes* (motion, growth, decay, evolution).
+
+Together, these ideas form the mathematical backbone of physics, engineering, and applied science.
+ 
+
+**Example Problem**: Calculating Instantaneous Acceleration.
+
+The Problem.
+A particle is in one-dimensional motion and is accelerating. The functional form of its velocity is v(t) equals (20 meters per second squared )t - (5 meters per second cubed )t squared.
+a. Find the functional form of the acceleration. 
+b. Find the instantaneous velocity at t equals 1, 2, 3, and 5 s. 
+c. Find the instantaneous acceleration at t equals 1, 2, 3, and 5 s. 
+d. Interpret the results of part (c) in terms of the directions of the acceleration and velocity vectors.
+
+---
+
+The Model.
+
+The particle moves in one dimension, so the signs of velocity and acceleration represent direction. Acceleration describes the time rate of change of velocity. If velocity and acceleration have the same sign, the particle speeds up; if they have opposite signs, the particle slows down.
+
+---
+
+The Math.
+
+**(a)** The acceleration function is found by differentiating the velocity function with respect to time, which gives
+
+ 
+a(t) equals dv over dt, 
+ equals d over dt [(20 meters per second squared )t - (5 meters per second cubed )t squared ], 
+ equals 20 meters per second squared - (10 meters per second cubed )t.
+ 
+
+**(b)** The instantaneous velocity values are found by evaluating the velocity function at each requested time, which gives
+
+ 
+v(1 s ) equals (20 meters per second squared )(1 s ) - (5 meters per second cubed )(1 s ) squared equals 15 meters per second, 
+v(2 s ) equals (20 meters per second squared )(2 s ) - (5 meters per second cubed )(2 s ) squared equals 20 meters per second, 
+v(3 s ) equals (20 meters per second squared )(3 s ) - (5 meters per second cubed )(3 s ) squared equals 15 meters per second, 
+v(5 s ) equals (20 meters per second squared )(5 s ) - (5 meters per second cubed )(5 s ) squared equals -25 meters per second.
+ 
+
+**(c)** The instantaneous acceleration values are found by evaluating the acceleration function at each requested time, which gives
+
+ 
+a(1 s ) equals 20 meters per second squared - (10 meters per second cubed )(1 s ) equals 10 meters per second squared, 
+a(2 s ) equals 20 meters per second squared - (10 meters per second cubed )(2 s ) equals 0 meters per second squared, 
+a(3 s ) equals 20 meters per second squared - (10 meters per second cubed )(3 s ) equals -10 meters per second squared, 
+a(5 s ) equals 20 meters per second squared - (10 meters per second cubed )(5 s ) equals -30 meters per second squared.
+ 
+
+**(d)** At t equals 1 s, both velocity and acceleration are positive, so the particle is moving in the positive direction and speeding up. At t equals 2 s, the velocity is positive and the acceleration is zero, so the velocity is momentarily at its maximum value. At t equals 3 s, the velocity is positive but the acceleration is negative, so the particle is slowing down. At t equals 5 s, both velocity and acceleration are negative, so the particle is moving in the negative direction and speeding up.
+
+---
+
+The Conclusion.
+
+The acceleration function is a(t) equals 20 meters per second squared -(10 meters per second cubed )t. The requested velocity values are 15 meters per second, 20 meters per second, 15 meters per second, and -25 meters per second. The corresponding acceleration values are 10 meters per second squared, 0 meters per second squared, -10 meters per second squared, and -30 meters per second squared, which show when the particle speeds up, slows down, or reverses direction.
+
+---
+
+========================================================================
+
+3.4 Motion with Constant Acceleration
+
+Motion with Constant Acceleration.
+
+Before using the constant-acceleration equations, we need to decide whether this model applies. These equations are powerful, but they only describe motion where the acceleration is constant over the interval being analyzed.
+
+Checkpoint.
+
+ 
+
+A car accelerates from rest, then later brakes to a stop.
+
+Should the entire trip be modeled with one constant acceleration, or should it be split into separate intervals?
+ 
+
+Choosing a One-Dimensional Motion Model.
+
+ 
+
+Use the following questions before choosing an equation.
+
+Item 1. **Is the motion along one straight axis?** 
+ If yes, the motion can be described with one-dimensional position, velocity, and acceleration.
+
+Item 2. **Is the acceleration constant over the interval?** 
+ If yes, the constant-acceleration equations can be used. If no, use graphs, calculus, or split the motion into intervals where the acceleration is approximately constant.
+
+Item 3. **Are the known and unknown quantities among x, x sub o, v, v sub o, a, and t?** 
+ If yes, choose an equation that contains the unknown and the given quantities.
+
+Item 4. **Does the sign of the answer make physical sense?** 
+ Check whether the object is moving in the expected direction, speeding up or slowing down appropriately, and whether any time value is physically meaningful.
+ 
+
+**Khan Academy**.
+
+ 
+
+ 
+ 
+
+Notation.
+
+To make things simpler, we introduce some **conventions in notation**. One simplification is taking t sub o equals 0, which is the point in time when you begin to measure. Time exists before this point, but until "you get your Delorean to 88 mph", then it doesn't make sense to include the past.
+
+The elapsed time goes from change in t equals t sub f - t sub o to change in t equals t sub f. We don't need the subscript f anymore. So, the elapsed time is change in t equals t. We can drop the subscript f from the change in x and change in v as well. In our simplified notation we have
+
+ 
+ change in t equals t, 
+ change in x equals x- x sub o, 
+ change in v equals v- v sub o,
+ 
+
+where the subscript o denotes an initial value and the *absence of a subscript* indicates the final value of the variable.
+
+For now, we will also make the assumption that the acceleration is *constant*. As a result, the average and instantaneous acceleration are equal, or
+
+ bar{a} equals a equals constant. 
+
+In many situations in this course, the acceleration is constant. When it isn't (e.g., a car accelerating to top speed, then braking to a stop), the motion will be considered in separate parts (like with the runner) and each part has its own constant acceleration.
+
+Displacement and Position from Velocity.
+
+To get our first two equations, we start with the definition of average velocity:
+
+ bar{v} equals change in x over change in t, 
+
+and substitute the simplified notation to get
+
+ bar{v} equals x- x sub o over t. 
+
+Solving for x gives
+
+ 
+x equals x sub o + bar{v}t,
+ 
+
+where the arithmetic average velocity is
+
+ 
+ bar{v} equals v sub o + v over 2.
+ 
+
+This version of bar{v} reflects that when **acceleration is constant**, then bar{v} is the simple average of the initial and final velocities.
+
+Solving for Final Velocity from Acceleration and Time.
+
+We can derive another useful equation by manipulating the definition of acceleration:
+
+ a equals change in v over change in t. 
+
+By substituting the simplified notation for change in v and change in t, we have
+
+ 
+a equals v- v sub o over t ( constant a).
+ 
+
+Solving for v yields
+
+ 
+v equals v sub o + at ( constant a).
+ 
+
+The above equation gives us insight into relationships among velocity, acceleration, and time. We can see that
+
+Bullet point. Final velocity depends on both acceleration and time
+
+Bullet point. For zero acceleration, then the initial and final velocities are equal (i.e., v equals v sub o )
+
+Bullet point. If a<0, then v< v sub o.
+
+These relationships fit our intuition, which can be a good sign.
+
+**Example Problem**: Calculating Final Velocity.
+
+The Problem.
+An airplane lands with an initial velocity of 70.0 meters per second and then accelerates opposite to the motion at 1.50 meters per second squared for 40.0 s. What is its final velocity?
+
+Figure referenced in the course notes.
+
+---
+
+The Model.
+
+The airplane moves in one dimension with constant acceleration. We choose the initial direction of motion as positive. Since the acceleration is opposite the motion, the acceleration is negative in this coordinate system.
+
+---
+
+The Math.
+
+For constant acceleration, the final velocity is related to the initial velocity, acceleration, and elapsed time by
+
+ v equals v sub o + at. 
+
+The acceleration is negative because it points opposite the positive direction of motion, so the velocity-time relation gives
+
+ 
+v equals v sub o + at, 
+ equals 70.0 meters per second + (-1.50 meters per second squared )(40.0 s ), 
+ equals 10.0 meters per second.
+ 
+
+---
+
+The Conclusion.
+
+The airplane’s final velocity is 10.0 meters per second. The result is still positive, so the airplane is still moving in its original direction after 40.0 s, but it has slowed substantially.
+
+---
+
+ **The Problem**
+Dragsters can achieve an average acceleration of 26.0 meters per second squared. Suppose a dragster accelerates from rest at this rate for 5.56 s. How far does it travel in this time?
+
+Figure referenced in the course notes.
+
+---
+
+The Model.
+
+The dragster is modeled as a particle moving in one dimension with constant acceleration. It starts from rest at the starting line, which we choose as the origin. With these choices, the displacement is determined by the acceleration and the elapsed time.
+
+---
+
+The Math.
+
+For one-dimensional motion with constant acceleration, the position is given by
+
+ x equals x sub o + v sub o t + 1 over 2 at squared. 
+
+Because the dragster starts from rest at the origin, v sub o equals 0 and x sub o equals 0, so the position equation reduces to
+
+ x equals 1 over 2 at squared. 
+
+The displacement after 5.56 s is found by evaluating this expression, which gives
+
+ 
+x equals 1 over 2 (26.0 meters per second squared )(5.56 s ) squared, 
+ equals 402 meters.
+ 
+
+---
+
+The Conclusion.
+
+The dragster travels 402 meters while accelerating from rest for 5.56 s. The large displacement over a short time is physically reasonable because the acceleration is very large.
+
+---
+
+ **Automatic resizing with ` `**
+
+Use these when the contents are tall (fractions, exponents, roots):
+
+Bullet point. ( 1 over 2 at squared ) 
+
+Bullet point. ( x sub 2 - x sub 1 over t sub 2 - t sub 1 ) 
+
+Bullet point. (a+ b over c ) squared 
+
+LaTeX adjusts the size of the parentheses to match the height of the expression inside.
+
+Automatic resizing with ` [ ]`.
+
+Brackets behave the same way and are often clearer for long expressions:
+
+Bullet point. [ x sub 2 - x sub 1 over t sub 2 - t sub 1 ] 
+
+Bullet point. [ 1 over 2 at squared ] sub t equals 0 to the power of t equals t sub f 
+
+Bullet point. [a+ ( b over c ) squared ] 
+
+Mixing delimiter types.
+
+You can mix parentheses and brackets to improve readability:
+
+Bullet point. [ ( x sub 2 - x sub 1 ) over ( t sub 2 - t sub 1 ) ] 
+
+Bullet point. (a+ b over c ) (a- b over c ) 
+
+Suppressing one side.
+
+If you only want one visible delimiter, use a period `.` on the other side:
+
+Bullet point.. dx over dt | sub t equals 2 s 
+
+Bullet point. [ 1 over 2 at squared. 
+
+Rule of thumb.
+
+Bullet point. Use ordinary ` ` or `[ ]` for simple expressions.
+
+Bullet point. Use ` ` or ` [ ]` whenever the expression contains fractions, roots, or stacked exponents.
+
+This keeps your math clean, readable, and professional, especially in physics derivations.
+ 
+
+**Difference of Squares Identity**.
+
+ 
+
+A very common algebra identity is
+
+ (a+b)(a-b) equals a squared-b squared. 
+
+You can see it by distributing (or using FOIL to save a step):
+
+ 
+(a+b)(a-b) equals a(a-b)+b(a-b), 
+ equals a squared-ab+ab-b squared, 
+ equals a squared-b squared.
+ 
+
+This is useful for quickly simplifying expressions and for factoring quadratics that look like a difference of squares.
+ 
+
+We can see the following relationships in this equation:
+
+Bullet point. The final velocity depends on the acceleration and total displacement.
+
+Bullet point. For a fixed acceleration, the stopping distance (x- x sub o ) increases with the square of the velocity. It takes much farther to stop. This is shown by
+
+ x- x sub o equals v sub o to the power of 2 over 2a is proportional to v sub o to the power of 2. 
+
+**Example Problem**: Calculating Final Velocity.
+
+The Problem.
+A dragster starts from rest and accelerates at an average rate of a equals 26.0 meters per second squared. In the previous example, it traveled a displacement of change in x equals x- x sub o equals 402 meters.
+Use a kinematic equation that does not involve time to find the dragster’s final velocity.
+
+---
+
+The Model.
+
+The dragster moves in one dimension with constant acceleration. It starts from rest and moves in the positive direction. Since the elapsed time is not needed, we use the time-independent relationship between speed, acceleration, and displacement.
+
+---
+
+The Math.
+
+For constant acceleration, the time-independent kinematic equation is
+
+ v squared equals v sub o to the power of 2 + 2a(x- x sub o ). 
+
+Because the dragster starts from rest, v sub o equals 0, and because the displacement is change in x equals x- x sub o, the time-independent equation becomes
+
+ v squared equals 2a change in x. 
+
+The final speed is the positive square root because the dragster accelerates forward, which gives
+
+ 
+v equals square root of 2a change in x, 
+ equals square root of 2(26.0 meters per second squared )(402 meters ), 
+ equals 145 meters per second.
+ 
+
+---
+
+The Conclusion.
+
+The dragster’s final velocity is 145 meters per second in the forward direction. The positive root is selected because the dragster starts from rest and accelerates forward.
+
+---
+
+ **Time-based form**
+
+ a equals v - v sub o over t 
+
+Bullet point. If the change in velocity (v - v sub o ) is **small** and the time (t) is **finite**, the acceleration is small.
+
+Bullet point. If (v equals v sub o ), then (a equals 0): there is no acceleration.
+
+Bullet point. But if we try to change velocity by a **finite amount** in an **extremely short time** ((t arrow 0)), the acceleration becomes very large.
+
+This situation does **not** represent realistic motion. It corresponds to an instantaneous jump in velocity, which would require an infinite force.
+
+Displacement-based form.
+
+ a equals v squared - v sub o to the power of 2 over 2(x - x sub o ) 
+
+Bullet point. If the velocity change is small and the displacement is finite, the acceleration is small.
+
+Bullet point. If (v equals v sub o ), the numerator is zero and (a equals 0).
+
+Bullet point. If a finite velocity change occurs over **almost no distance**, the acceleration again becomes very large.
+
+This describes another unphysical situation: a sharp change in motion over essentially zero distance.
+
+How calculus resolves the issue.
+
+When both the change in velocity *and* the time (or displacement) become small together, these expressions take the indeterminate form (0/0). In that limit, acceleration must be defined using a derivative:
+
+ a equals the limit of sub change in t arrow 0 change in v over change in t equals dv over dt. 
+
+This definition ensures that acceleration remains **finite** for smooth, realistic motion.
+
+Key takeaway.
+
+Bullet point. Very large accelerations arise when velocity changes too abruptly.
+
+Bullet point. Real objects change velocity smoothly, not instantaneously.
+
+Bullet point. Calculus replaces finite differences with derivatives to correctly describe motion at an instant.
+
+This is why sharp corners on velocity graphs imply infinite acceleration and why real motion curves are smooth.
+ 
+
+**Example Problem:** Calculating Time.
+
+The Problem.
+A car merges into freeway traffic on a straight, 200 meters -long on-ramp. If its initial velocity is v sub o equals 10.0 meters per second and it accelerates uniformly at a equals 2.00 meters per second squared, how long does it take the car to travel 200 meters up the ramp?
+
+Figure referenced in the course notes.
+
+---
+
+The Model.
+
+The car moves in one dimension with constant acceleration along the ramp. We choose the start of the ramp as the origin and take the direction of motion as positive. The known displacement, initial velocity, and acceleration determine the travel time through the constant-acceleration position equation.
+
+---
+
+The Math.
+
+For constant acceleration, the position is given by
+
+ x equals x sub o + v sub o t + 1 over 2 at squared. 
+
+With the start of the ramp as the origin, x sub o equals 0 and x equals 200 meters, so the position equation gives
+
+ 
+200 meters equals (10.0 meters per second )t + 1 over 2 (2.00 meters per second squared )t squared, 
+0 equals t squared + 10.0t - 200.
+ 
+
+Applying the quadratic formula to the equation t squared+10.0t-200 equals 0 gives
+
+ 
+t equals -10.0 plus or minus square root of (10.0) squared - 4(1)(-200) over 2(1), 
+ equals -10.0 plus or minus 30.0 over 2.
+ 
+
+The two mathematical roots are t equals 10.0 s and t equals -20.0 s. The negative root corresponds to a time before the modeled motion begins, so the physical travel time is
+
+ t equals 10.0 s. 
+
+---
+
+The Conclusion.
+
+The car takes 10.0 s to travel the 200 meters on-ramp. The negative mathematical root is rejected because it does not describe the time after the car begins the modeled motion.
+
+---
+
+ **The Problem**
+A spaceship has left Earth’s orbit and is on its way to the Moon. It accelerates at 20.0 meters per second squared for 2 min and covers a distance of 1000 km. What are the initial and final velocities of the spaceship?
+
+---
+
+The Model.
+
+The spaceship moves in one dimension with constant acceleration. Both the initial and final velocities are unknown, so the displacement relation is used first to determine the initial velocity. The velocity-time relation is then used to determine the final velocity.
+
+---
+
+The Math.
+
+For constant acceleration, the displacement is related to initial velocity, acceleration, and time by
+
+ x- x sub o equals v sub o t + 1 over 2 at squared. 
+
+It is convenient to work in kilometers for position and seconds for time. Converting the acceleration and elapsed time gives
+
+ 
+a equals 20.0 meters per second squared equals 0.0200 kilometers per second squared, 
+t equals 2 min equals 120 s.
+ 
+
+Solving the displacement equation for the initial velocity gives
+
+ 
+ v sub o equals (x- x sub o )- 1 over 2 at squared over t, 
+ equals 1000 km - 1 over 2 (0.0200 kilometers per second squared )(120 s ) squared over 120 s, 
+ equals 7.13 kilometers per second.
+ 
+
+The final velocity is found from the velocity-time relation, which gives
+
+ 
+v equals v sub o + at, 
+ equals 7.13 kilometers per second + (0.0200 kilometers per second squared )(120 s ), 
+ equals 9.53 kilometers per second.
+ 
+
+---
+
+The Conclusion.
+
+The spaceship’s initial velocity is 7.13 kilometers per second, and its final velocity is 9.53 kilometers per second. The final velocity is larger because the spaceship accelerates in the direction of motion throughout the interval.
+
+---
+
+ **The Problem**
+A cheetah waits in hiding behind a bush. The cheetah spots a gazelle running past at 10 meters per second. At the instant the gazelle passes the cheetah, the cheetah accelerates from rest at 4.0 meters per second squared to catch the gazelle. 
+a. How long does it take for the cheetah to catch the gazelle? 
+b. What is the displacement of the gazelle and the cheetah?
+
+---
+
+The Model.
+
+This is a one-dimensional pursuit problem involving two objects. We choose the point where the gazelle passes the cheetah as the origin and take the direction of motion as positive. The gazelle moves with constant velocity, while the cheetah starts from rest and accelerates uniformly. The cheetah catches the gazelle when both animals have the same position at the same time.
+
+---
+
+The Math.
+
+The gazelle moves with constant velocity, so its position is
+
+ x_ G equals v_ G t. 
+
+The cheetah starts from rest with constant acceleration, so its position is
+
+ x_ C equals 1 over 2 a_ C t squared. 
+
+**(a)** At the catch time, the two positions are equal, which gives
+
+ 
+x_ G equals x_ C, 
+v_ G t equals 1 over 2 a_ C t squared.
+ 
+
+The nonzero catch time is found by dividing both sides by t and solving for t, which gives
+
+ 
+v_ G equals 1 over 2 a_ C t, 
+t equals 2v_ G over a_ C, 
+ equals 2(10 meters per second ) over 4.0 meters per second squared, 
+ equals 5.0 s.
+ 
+
+**(b)** The catch displacement is found by evaluating the gazelle’s position at t equals 5.0 s, which gives
+
+ 
+x_ G equals v_ G t, 
+ equals (10 meters per second )(5.0 s ), 
+ equals 50 meters.
+ 
+
+The cheetah’s position gives the same displacement at the catch time, which is
+
+ 
+x_ C equals 1 over 2 a_ C t squared, 
+ equals 1 over 2 (4.0 meters per second squared )(5.0 s ) squared, 
+ equals 50 meters.
+ 
+
+---
+
+The Conclusion.
+
+The cheetah catches the gazelle after 5.0 s. Both animals have traveled 50 meters from the starting point when the catch occurs.
+
+---
+
+========================================================================
+
+3.5 Free Fall
+
+Free Fall.
+
+Gravity.
+
+Until Galileo Galilei showed otherwise, people believed that a heavier object has a greater acceleration in a free fall. We know now that this is not the case. 
+
+Bullet point. In the absence of air resistance, heavy objects arrive at the ground at the same time as lighter objects when dropped from the *same* height.
+
+**BBC**.
+
+ 
+
+ 
+ 
+
+In the real world, air resistance can cause a lighter object to fall slower than a heavier object of the same size. A tennis ball reaches the ground after a baseball dropped at the same time, although the difference is not large. Air resistance opposes the motion of an object through the air and friction between objects also opposes motion between them.
+
+**Free fall** is when an object falls *without air resistance* or *friction*. The force of gravity causes objects to fall toward the center of the Earth, where this acceleration is also called the **acceleration due to gravity**. 
+
+Near Earth's surface (or for small changes in altitude) the acceleration due to gravity is constant, which means we can apply the kinematic equations to any falling object (where air resistance and friction are negligible), including spherical cows.
+
+Acceleration due to gravity is given its own symbol g, where it is nearly constant at any location on Earth's surface with the average value
+
+ g equals 9.81 meters per second squared ( or 32.2 ft/s squared ). 
+
+The value of g can vary from 9.78 - 9.83 meters per second squared depending on latitude, altitude, underlying geological formations, and local topography. Here we use g equals 9.81 meters per second squared unless otherwise specified.
+
+Checkpoint.
+
+ 
+
+A ball is thrown straight upward. At the highest point, its velocity is momentarily zero.
+
+What is its acceleration at that instant?
+ 
+
+The direction of acceleration due to gravity g is defined to be downward (i.e., toward Earth's center). Its direction defines what we call vertical.
+
+Note.
+
+The acceleration a in the kinematic equations has the value +g or -g depending on how we define our coordinate system. If we define the
+
+Bullet point. upward direction as positive, then a equals -g equals -9.81 meters per second squared.
+
+Bullet point. downward direction as positive, then a equals g equals 9.81 meters per second squared.
+ 
+
+One-Dimensional Motion Involving Gravity.
+
+Consider vertical (up-and-down) motion with no air resistance or friction, where these assumptions mean the velocity is also vertical. There are some statements about the initial velocity of an object as it enters or leaves free fall. The object is in free fall after it has left contact with whatever held or threw it. 
+
+Bullet point. If an object is dropped, we know the initial velocity is zero when in free fall (i.e., v sub o equals 0 ).
+
+Bullet point. If the object is thrown, it has the same speed in free fall as it did before it was released (i.e., v sub o is defined at release).
+
+When in free fall, the motion is 1D and has constant acceleration of magnitude g. When the object comes in contact with the ground (or any other object), it is no longer in free fall (i.e., a is not equal to g ). 
+
+We represent the vertical displacement with the symbol y and write the following **kinematic equations for objects in free fall**. We assume that the positive direction is upward, which gives
+
+ 
+v equals v sub o - gt, 
+y equals y sub o + v sub o t - 1 over 2 gt squared, 
+v squared equals v sub o to the power of 2 -2g(y- y sub o ).
+ 
+
+When solving free fall problems, its helpful to follow this strategy:
+
+Item 1. Decide on the sign of g (i.e., is positive upward or downward). In some problems, it may be useful to have +g indicating the positive direction is downward.
+
+Item 2. **DRAW A SKETCH** of the problem. Visualizing the problem can be a useful first step. *Don't worry about artistic quality.*
+
+Item 3. Identify the knowns and unknowns from the problem description.
+
+Item 4. Match the kinematic equations with the knowns and unknowns.
+
+**Example Problem**: Free Fall of a Ball.
+
+The Problem.
+ shows the positions of a ball, at 1 s intervals, with an initial velocity of 4.9 meters per second downward, that is thrown from the top of a 98 meters -high building. (a) How much time elapses before the ball reaches the ground? (b) What is the velocity when it arrives at the ground?
+
+Figure referenced in the course notes.
+
+---
+
+The Model.
+
+The ball moves vertically in one dimension under constant gravitational acceleration. We choose the top of the building as the origin, upward as positive, and downward as negative. With this sign convention, both the initial velocity and acceleration are negative.
+
+---
+
+The Math.
+
+**(a)** For constant acceleration, the vertical position is given by
+
+ y equals y sub o + v sub o t + 1 over 2 at squared. 
+
+The ball starts at the origin, the ground is at y equals -98 meters, the initial velocity is downward, and a equals -g with g equals 9.81 meters per second squared, so the impact condition gives
+
+ 
+-98 meters equals 0 + (-4.9 meters per second )t - 1 over 2 (9.81 meters per second squared )t squared, 
+0 equals 4.905t squared + 4.9t - 98.
+ 
+
+Solving this quadratic equation gives the mathematical roots t equals -5.0 s and t equals 4.0 s. The negative root is not physical for the motion after release, so the elapsed time is
+
+ t equals 4.0 s. 
+
+**(b)** The velocity at the ground is found from the velocity-time equation, which gives
+
+ 
+v equals v sub o + at, 
+ equals -4.9 meters per second - (9.81 meters per second squared )(4.0 s ), 
+ equals -44 meters per second.
+ 
+
+---
+
+The Conclusion.
+
+The ball reaches the ground after 4.0 s. Its velocity just before impact is -44 meters per second, meaning the ball is moving downward at 44 meters per second.
+
+---
+
+ **The Problem**
+A small rocket blasts off and travels straight upward. When at a height of 5.0 km and velocity of 200.0 meters per second, it releases its booster. (a) What is the maximum height the booster attains? What is the velocity of the booster at a height of 6.0 km? Neglect air resistance.
+
+---
+
+The Model.
+
+After release, the booster moves vertically under constant gravitational acceleration, with air resistance neglected. We choose upward as the positive direction and place the origin at the release point. The booster’s acceleration is downward, so it is negative in this coordinate system.
+
+---
+
+The Math.
+
+For constant acceleration, velocity and displacement are related by
+
+ v squared equals v sub o to the power of 2 + 2a(y- y sub o ). 
+
+Since the acceleration is gravitational and downward, a equals -g, so this relation becomes
+
+ v squared equals v sub o to the power of 2 - 2g(y- y sub o ). 
+
+**(a)** At the maximum height, the booster momentarily has zero velocity, so the velocity-displacement relation gives
+
+ 0 equals v sub o to the power of 2 - 2g(y- y sub o ). 
+
+Solving for the additional height above the release point gives
+
+ y- y sub o equals v sub o to the power of 2 over 2g. 
+
+Using g equals 9.81 meters per second squared, the additional height above the release point is
+
+ 
+y- y sub o equals (200.0 meters per second ) squared over 2(9.81 meters per second squared ), 
+ equals 2.04 times ten to the 3 meters, 
+ equals 2.0 km.
+ 
+
+The maximum height above Earth’s surface is the release height plus the additional height, which gives
+
+ y_ max equals 5.0 km + 2.0 km equals 7.0 km. 
+
+**(b)** A height of 6.0 km above Earth’s surface is 1.0 km above the release point, which is
+
+ y- y sub o equals 1.0 km equals 1.0 times ten to the 3 meters. 
+
+The speed at this height is found from the same velocity-displacement equation, which gives
+
+ 
+v squared equals (200.0 meters per second ) squared - 2(9.81 meters per second squared )(1.0 times ten to the 3 meters ), 
+ equals 2.04 times ten to the 4 square meters/s squared.
+ 
+
+Taking the square root gives two possible velocity directions at this height, so the velocity is
+
+ v equals plus or minus 140 meters per second. 
+
+---
+
+The Conclusion.
+
+The booster reaches a maximum height of 7.0 km above Earth’s surface. At a height of 6.0 km, its velocity can be +140 meters per second while moving upward or -140 meters per second while moving downward.
+
+---
+
+========================================================================
+
+3.6 Finding Velocity and Displacement from Acceleration
+
+Finding Velocity and Displacement from Acceleration.
+
+Kinematic Equations from Integral Calculus.
+
+In later chapters, we'll start with a force that depends on the acceleration a. There is some insight into why calculus is useful to determine (or remember) the kinematic equations.
+
+Let's begin with a particle with an acceleration a(t), which we can express as in differential form by
+
+ a(t) equals d over dt v(t), 
+
+in terms of the the velocity function. One way to solve a differential equation is to take the indefinite integral of both sides, where we get
+
+ integral a(t) dt + C sub 1 equals integral d over dt v(t) dt, 
+
+and C sub 1 represents a constant of integration. 
+
+Note.
+
+The integral of the derivative of a function is simply the function. For example,
+
+ integral d over dx f(x)dx equals f(x). 
+
+The integral is also called the **anti-derivative** because it is like an inverse operation of the derivative. This is similar to how square root of x squared equals x, *if we take only the positive root.*
+ 
+
+Using the antiderivative property from calculus, we have
+
+ 
+ integral a(t)dt + C sub 1 equals v(t).
+ 
+
+We can employ the same procedure to write the velocity function in terms of the position function, as
+
+ v(t) equals d over dt x(t), 
+
+and with the integral, we have
+
+ 
+ integral v(t) dt + C sub 2 equals x(t),
+ 
+
+where C sub 2 is a second constant of integration.
+
+Checkpoint.
+
+ 
+
+If acceleration is the slope of the velocity graph, what does the area under an acceleration-versus-time graph represent?
+ 
+
+Using these integrals, we can derive the kinematic equations. Since a(t) can be any function, let's assume that a(t) equals at to the power of 0 equals a equals constant. Then we can evaluate the velocity function as
+
+ 
+v(t) equals integral adt + C sub 1, 
+ equals v sub o + at.
+ 
+
+where C sub 1 equals v sub o equals v(0). Then we can substitute into the integral to get the position function, or
+
+ 
+x(t) equals integral ( v sub o + at)dt + C sub 2, 
+ equals x sub o + v sub ot + 1 over 2 at squared,
+ 
+
+where C sub 2 equals x sub o equals x(0).
+
+**Example Problem**: Motion of a Motorboat.
+
+The Problem.
+A motorboat is traveling at a constant velocity of 5.0 meters per second when it begins to accelerate opposite the direction of motion to arrive at a dock. Its acceleration is a(t) equals - 1 over 4 t meters per second cubed. (a) What is the velocity function of the motorboat? (b) At what time does the velocity reach zero? (c) What is the position function of the motorboat? (d) What is the displacement of the motorboat from the time it begins to decelerate to the time its velocity reaches zero? (e) Graph the velocity and position functions.
+
+---
+
+The Model.
+
+The motorboat moves in one dimension along the direction of its initial motion. The acceleration is time dependent and points opposite the motion, so velocity is found by integrating acceleration, and position is found by integrating velocity. We choose the initial position as the origin and measure time from the instant the deceleration begins.
+
+---
+
+The Math.
+
+**(a)** Velocity is found by integrating the acceleration function with respect to time, which gives
+
+ 
+v(t) equals integral a(t) dt, 
+ equals integral (- 1 over 4 t )dt, 
+ equals - 1 over 8 t squared + C sub 1.
+ 
+
+The integration constant is determined by the initial velocity v(0) equals 5.0 meters per second, which gives C sub 1 equals 5.0 meters per second. The velocity function is therefore
+
+ v(t) equals (5.0- 1 over 8 t squared ) meters per second. 
+
+**(b)** The stopping time occurs when the velocity reaches zero, so the velocity function gives
+
+ 0 equals 5.0 - 1 over 8 t squared. 
+
+Solving this equation for the positive time gives
+
+ 
+t squared equals 40, 
+t equals 6.3 s.
+ 
+
+**(c)** Position is found by integrating the velocity function with respect to time, which gives
+
+ 
+x(t) equals integral v(t) dt, 
+ equals integral (5.0- 1 over 8 t squared )dt, 
+ equals 5.0t - 1 over 24 t cubed + C sub 2.
+ 
+
+The initial position is chosen to be x(0) equals 0, so C sub 2 equals 0. The position function is therefore
+
+ x(t) equals (5.0t- 1 over 24 t cubed ) m. 
+
+**(d)** The displacement while the boat slows to rest is found by evaluating the position function at t equals 6.3 s, which gives
+
+ 
+x(6.3 s ) equals 5.0(6.3) - 1 over 24 (6.3) cubed, 
+ equals 21 meters.
+ 
+
+**(e)** The velocity and position graphs are generated from the functions derived above. The velocity graph decreases to zero at t equals 6.3 s, and the position graph reaches its maximum value at that same time.
+
+---
+
+The Conclusion.
+
+The motorboat’s velocity function is v(t) equals (5.0- 1 over 8 t squared ) meters per second, and its position function is x(t) equals (5.0t- 1 over 24 t cubed ) m. The velocity reaches zero at 6.3 s, after the boat has traveled 21 meters. The velocity graph crosses zero at the same time that the position graph reaches its maximum.
+
+---
+
+========================================================================
+
+3.7 Supplemental Review
+
+Supplemental Review.
+
+These videos provide a fast review of ideas used in this chapter:
+
+Bullet point. **Crash Course Physics #1: Motion in a Straight Line** — position, velocity, acceleration, and one-dimensional motion.
+
+Bullet point. **Crash Course Physics #2: Derivatives** — the calculus connection between position, velocity, and acceleration.
+
+Bullet point. **Crash Course Physics #3: Integrals** — the calculus connection between acceleration, velocity, and position.
+
+Use these videos after you have worked through the chapter. They are best for reinforcing the big picture, not for learning the problem-solving method for the first time.
+
+========================================================================

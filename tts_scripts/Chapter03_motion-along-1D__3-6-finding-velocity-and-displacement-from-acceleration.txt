@@ -1,0 +1,102 @@
+Finding Velocity and Displacement from Acceleration.
+
+Kinematic Equations from Integral Calculus.
+
+In later chapters, we'll start with a force that depends on the acceleration a. There is some insight into why calculus is useful to determine (or remember) the kinematic equations.
+
+Let's begin with a particle with an acceleration a of t, which we can express in differential form by
+
+a of t equals d v of t over d t,
+
+in terms of the velocity function. One way to solve a differential equation is to take the indefinite integral of both sides, where we get
+
+the integral of a of t with respect to t, plus C sub one, equals the integral of d v of t over d t, with respect to t,
+
+and C sub one represents a constant of integration.
+
+Note.
+
+The integral of the derivative of a function is simply the function. For example,
+
+the integral of d f of x over d x, with respect to x, equals f of x.
+
+The integral is also called the anti-derivative because it is like an inverse operation of the derivative. This is similar to how the square root of x squared equals x, if we take only the positive root.
+
+Using the antiderivative property from calculus, we have
+
+the integral of a of t with respect to t, plus C sub one, equals v of t.
+
+We can employ the same procedure to write the velocity function in terms of the position function, as
+
+v of t equals d x of t over d t,
+
+and with the integral, we have
+
+the integral of v of t with respect to t, plus C sub two, equals x of t,
+
+where C sub two is a second constant of integration.
+Checkpoint. Pause and check your understanding.
+If acceleration is the slope of the velocity graph, what does the area under an acceleration-versus-time graph represent?
+
+Using these integrals, we can derive the kinematic equations. Since a of t can be any function, let's assume that a of t equals a times t to the zeroth power, which equals the constant a. Then we can evaluate the velocity function as
+
+v of t equals the integral of a with respect to t, plus C sub one,
+which equals v naught plus a t.
+
+where C sub one equals v naught equals v of zero. Then we can substitute into the integral to get the position function, or
+
+x of t equals the integral of v naught plus a t with respect to t, plus C sub two,
+which equals x naught plus v naught t plus one-half a t squared,
+
+where C sub two equals x naught equals x of zero.
+
+Example Problem: Motion of a Motorboat.
+
+The Problem.
+A motorboat is traveling at a constant velocity of 5.0 meters per second when it begins to accelerate opposite the direction of motion to arrive at a dock. Its acceleration is a of t equals negative one-fourth t meters per second cubed. Part a. What is the velocity function of the motorboat? Part b. At what time does the velocity reach zero? Part c. What is the position function of the motorboat? Part d. What is the displacement of the motorboat from the time it begins to decelerate to the time its velocity reaches zero? Part e. Graph the velocity and position functions.
+
+The Model.
+
+The motorboat moves in one dimension along the direction of its initial motion. The acceleration is time dependent and points opposite the motion, so velocity is found by integrating acceleration, and position is found by integrating velocity. We choose the initial position as the origin and measure time from the instant the deceleration begins.
+
+The Math.
+
+Part a. Velocity is found by integrating the acceleration function with respect to time, which gives
+
+v of t equals the integral of a of t with respect to t,
+which equals the integral of negative one-fourth t with respect to t,
+and equals negative one-eighth t squared plus C sub one.
+
+The integration constant is determined by the initial velocity v of zero equals 5.0 meters per second, which gives C sub one equals 5.0 meters per second. The velocity function is therefore
+
+v of t equals 5.0 minus one-eighth t squared, in meters per second.
+
+Part b. The stopping time occurs when the velocity reaches zero, so the velocity function gives
+
+Zero equals 5.0 minus one-eighth t squared.
+
+Solving this equation for the positive time gives
+
+t squared equals 40,
+t equals 6.3 seconds.
+
+Part c. Position is found by integrating the velocity function with respect to time, which gives
+
+x of t equals the integral of v of t with respect to t,
+which equals the integral of 5.0 minus one-eighth t squared with respect to t,
+and equals 5.0 t minus one twenty-fourth t cubed plus C sub two.
+
+The initial position is chosen to be x of zero equals 0, so C sub two equals 0. The position function is therefore
+
+x of t equals 5.0 t minus one twenty-fourth t cubed, in meters.
+
+Part d. The displacement while the boat slows to rest is found by evaluating the position function at t equals 6.3 seconds, which gives
+
+x of 6.3 seconds equals 5.0 times 6.3, minus one twenty-fourth times 6.3 cubed,
+equals 21 meters.
+
+Part e. The velocity and position graphs are generated from the functions derived above. The velocity graph decreases to zero at t equals 6.3 seconds, and the position graph reaches its maximum value at that same time.
+
+The Conclusion.
+
+The motorboat’s velocity function is v of t equals 5.0 minus one-eighth t squared, in meters per second, and its position function is x of t equals 5.0 t minus one twenty-fourth t cubed, in meters. The velocity reaches zero at 6.3 seconds, after the boat has traveled 21 meters. The velocity graph crosses zero at the same time that the position graph reaches its maximum.

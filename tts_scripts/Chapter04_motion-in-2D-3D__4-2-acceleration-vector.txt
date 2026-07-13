@@ -1,0 +1,519 @@
+Acceleration Vector.
+
+Instantaneous Acceleration.
+
+The acceleration vector a of t is the instantaneous acceleration at any point in time along an object's trajectory. It can be obtained in a similar way as was the velocity vector. Taking the derivative of vector v of t with respect to time, we find
+
+vector a of t equals the limit, as delta t approaches zero, of the quantity vector v of t plus delta t minus vector v of t, divided by delta t. This equals d vector v of t over d t.
+
+In terms of components we have the following form
+
+vector a of t equals d v sub x of t over d t i-hat plus d v sub y of t over d t j-hat plus d v sub z of t over d t k-hat,
+equals the second derivative of x of t with respect to time i-hat plus the second derivative of y of t with respect to time j-hat plus the second derivative of z of t with respect to time k-hat.
+An MIT OpenCourseWare video is linked on the course webpage.
+Example Problem: Finding an Acceleration Vector.
+
+The Problem.
+A particle has a velocity of vector v of t equals 5.0t i-hat plus t squared j-hat minus 2.0t cubed k-hat kilometers per second. Part a. What is the acceleration function? Part b. What is the acceleration vector at t equals 2.0 seconds? Find its magnitude and direction.
+The worked solution follows.
+The Model.
+
+The particle's velocity is given in three-dimensional Cartesian form. Acceleration is the rate of change of velocity, so each velocity component can be differentiated independently. After the acceleration is evaluated at the specified time, its magnitude is found from the vector norm and its direction is represented by a unit vector parallel to the acceleration.
+
+The Math.
+Part a. The acceleration function is defined as the time derivative of the velocity vector.
+
+vector a of t equals d vector v over d t.
+
+Differentiating each velocity component gives the acceleration function.
+
+vector a of t equals 5.0 i-hat plus 2.0 t j-hat minus 6.0 t squared k-hat kilometers per second squared.
+Part b. The acceleration vector at t equals 2.0 seconds is found by substituting that time into the acceleration function.
+
+vector a at 2.0 seconds equals (5.0 i-hat plus 4.0 j-hat minus 24.0 k-hat ) kilometers per second squared.
+
+The magnitude of the acceleration is found from the three-dimensional vector norm.
+
+the magnitude of vector a at 2.0 seconds equals the square root of (5.0) squared plus (4.0) squared plus (negative 24.0) squared kilometers per second squared equals 24.8 kilometers per second squared.
+
+To describe the direction, the acceleration vector is divided by its magnitude to create a unit vector.
+
+a-hat equals vector a divided by the magnitude of vector a,
+equals 5.0 i-hat plus 4.0 j-hat minus 24.0 k-hat over 24.8,
+equals 0.20 i-hat plus 0.16 j-hat minus 0.97 k-hat.
+
+The Conclusion.
+
+The acceleration function is
+
+vector a of t equals 5.0 i-hat plus 2.0 t j-hat minus 6.0 t squared k-hat kilometers per second squared.
+
+At t equals 2.0 seconds, the acceleration is (5.0 i-hat plus 4.0 j-hat minus 24.0 k-hat ) kilometers per second squared. Its magnitude is 24.8 kilometers per second squared, and its direction is described by a-hat equals 0.20 i-hat plus 0.16 j-hat minus 0.97 k-hat. The large negative k-hat component shows that the acceleration is directed mostly in the negative z direction.
+
+Example Problem: Finding a Particle Acceleration.
+
+The Problem.
+A particle has a position function vector r of t equals (10t minus t squared) i-hat plus 5t j-hat plus 5t k-hat meters. Part a. What is the velocity? Part b. What is the acceleration? Part c. Describe the motion from t equals 0 seconds.
+
+The Model.
+
+The particle moves in three-dimensional Cartesian coordinates. Velocity is found from the rate of change of position, and acceleration is found from the rate of change of velocity. The y and z positions are linear in time, so the particle moves steadily in those directions. The x position is quadratic in time, so the particle can slow down, reverse its x motion, and later return to its original x coordinate.
+
+The Math.
+Part a. The velocity is found by differentiating the position vector with respect to time:
+
+vector v of t equals d vector r over d t equals (10 minus 2t) i-hat plus 5 j-hat plus 5 k-hat meters per second.
+Part b. The acceleration is found by differentiating the velocity vector with respect to time.
+
+vector a of t equals d vector v over d t equals negative 2 i-hat meters per second squared.
+Part c. To describe the motion in the x direction, we identify when the x component of velocity changes sign, v sub x of t equals 10 minus 2t. The particle stops moving in the x direction when the x component of velocity is zero:
+
+0 equals 10 minus 2t.
+
+Solving this equation for time gives the instant when the particle reaches its maximum x coordinate, t equals 5 seconds. The maximum x coordinate is found by substituting this time into the x position function,
+
+x(5) equals 10(5) minus (5) squared equals 25 meters.
+
+The particle returns to its original x coordinate when the x position is zero again,
+
+0 equals 10t-t squared equals t(10 minus t).
+
+The nonzero solution gives the return time in the x direction,
+t equals 10 seconds.
+
+The Conclusion.
+
+The velocity is vector v of t equals (10 minus 2t) i-hat plus 5 j-hat plus 5 k-hat meters per second, and the acceleration is vector a of t equals negative 2 i-hat meters per second squared. The particle initially moves in the positive x direction, slows in that direction until t equals 5 seconds, reaches a maximum x position of 25 meters, and then moves back toward smaller x values. Throughout this motion, it continues steadily in the positive y and z directions.
+
+Constant Acceleration.
+
+Constant acceleration in two or three dimensions can be treated in the same way as in the previous chapter. To develop the relevant equations, consider a particle moving in the x-y plane with constant acceleration. The acceleration vector is
+
+vector a equals a sub x i-hat plus a sub y j-hat.
+
+Each kinematic equation for one-dimensional motion now has separate component forms in the x and y directions.
+
+Checkpoint. Pause and check your understanding.
+In two-dimensional constant-acceleration motion, what quantity connects the x and y equations even though the motions are solved separately?
+
+For the x direction,
+
+x of t equals x naught plus average v sub x times t,
+v sub x of t equals v naught x plus a sub x t,
+x of t equals x naught plus v naught x times t plus one-half a sub x t squared,
+and v sub x squared of t equals v naught x squared plus two a sub x times the quantity x minus x naught.
+
+For the y direction,
+
+y of t equals y naught plus average v sub y times t,
+v sub y of t equals v naught y plus a sub y t,
+y of t equals y naught plus v naught y times t plus one-half a sub y t squared,
+and v sub y squared of t equals v naught y squared plus two a sub y times the quantity y minus y naught.
+
+Here, the subscript naught refers to the initial value at t equals zero. The position and velocity vectors in two dimensions are
+
+vector r of t equals x of t i-hat plus y of t j-hat,
+
+and
+
+vector v of t equals v sub x of t i-hat plus v sub y of t j-hat.
+
+Example Problem: A Skier.
+
+The Problem.
+The figure on the course webpage shows a skier moving with an acceleration of 2.1 meters per second squared down a slope of 15 degrees at t equals 0. With the origin of the coordinate system at the front of the lodge, her initial position and velocity are
+vector r at time zero equals (75.0 i-hat minus 50.0 j-hat ) meters
+and
+vector v at time zero equals (4.1 i-hat minus 1.1 j-hat ) meters per second.
+Part a. What are the x- and y-components of the skier’s position and velocity as functions of time? Part b. What are her position and velocity at t equals 10.0 seconds?
+The worked solution follows.
+The Model.
+
+The skier is modeled as a particle moving in two dimensions with constant acceleration. The positive x direction points horizontally to the right, and the positive y direction points upward. The skier's acceleration points down the slope, so it has a positive x component and a negative y component. Once the acceleration is resolved into components, the constant-acceleration equations can be applied independently in the horizontal and vertical directions.
+
+Common mistake.
+
+A frequent mistake is to assume the acceleration is negative simply because the skier is moving downhill. The sign of each component does not depend on whether the motion is "uphill" or "downhill," but on how the coordinate axes are defined. In this problem, the y-axis points upward, so any downward component of acceleration must be negative, regardless of the direction of motion along the slope.
+
+The Math.
+
+Resolving the acceleration into components allows the constant-acceleration equations to be applied separately in the x and y directions,
+
+a sub x equals a cosine theta,
+a sub y equals negative a sine theta.
+
+The negative sign in the y component appears because the skier accelerates downward while positive j-hat points upward, so substituting the given acceleration magnitude and slope angle gives
+
+a sub x equals (2.1 meters per second squared ) the cosine of 15 degrees equals 2.03 meters per second squared,
+a sub y equals negative (2.1 meters per second squared ) the sine of 15 degrees equals negative 0.544 meters per second squared.
+Part a. For constant acceleration, each position component is described by the corresponding one-dimensional kinematic equation,
+
+x of t equals x naught plus v x naught t plus 1 over 2 a sub x times t squared,
+y of t equals y naught plus v y naught t plus 1 over 2 a sub y times t squared.
+
+Using x naught equals 75.0 meters and v x naught equals 4.1 meters per second gives the horizontal position function
+
+x of t equals 75.0 plus (4.1)t plus 1 over 2 (2.03)t squared,
+equals 75.0 plus 4.1t plus 1.01t squared.
+
+Using y naught equals negative 50.0 meters and v y naught equals negative 1.1 meters per second gives the vertical position function
+
+y of t equals negative 50.0 minus (1.1)t plus 1 over 2 (negative 0.544)t squared,
+equals negative 50.0 minus 1.1t minus 0.272t squared.
+
+For constant acceleration, each velocity component is described by the corresponding linear velocity equation,
+
+v sub x of t equals v x naught plus a sub x times t,
+v sub y of t equals v y naught plus a sub y times t.
+
+Using the initial velocity components and acceleration components gives the velocity functions
+
+v sub x of t equals 4.1 plus 2.03t,
+v sub y of t equals negative 1.1 minus 0.544t.
+Part b. Substituting t equals 10.0 seconds into the component position functions gives the skier's position components
+
+x at 10.0 seconds equals 75.0 plus (4.1)(10.0) plus 1 over 2 (2.03)(10.0) squared equals 217 meters,
+y at 10.0 seconds equals negative 50.0 minus (1.1)(10.0) plus 1 over 2 (negative 0.544)(10.0) squared equals negative 88.2 meters.
+
+Substituting t equals 10.0 seconds into the component velocity functions gives the skier's velocity components
+
+v sub x at 10.0 seconds equals 4.1 plus (2.03)(10.0) equals 24.4 meters per second,
+v sub y at 10.0 seconds equals negative 1.1 minus (0.544)(10.0) equals negative 6.54 meters per second.
+
+Combining the evaluated components gives the position and velocity vectors at t equals 10.0 seconds,
+
+vector r at 10.0 seconds equals (217 i-hat negative 88.2 j-hat ) meters,
+vector v at 10.0 seconds equals (24.4 i-hat negative 6.54 j-hat ) meters per second.
+
+The Conclusion.
+
+The skier's component equations are
+
+x of t equals 75.0 plus 4.1t plus 1.01t squared, v sub x of t equals 4.1 plus 2.03t,
+y of t equals negative 50.0 minus 1.1t minus 0.272t squared, v sub y of t equals negative 1.1 minus 0.544t.
+
+At t equals 10.0 seconds, her position is (217 i-hat negative 88.2 j-hat ) meters and her velocity is (24.4 i-hat negative 6.54 j-hat ) meters per second. The calculation shows how the constant-acceleration equations from one-dimensional motion are applied independently to each component of a two-dimensional motion.
+
+Projectile motion describes the motion of an object that is thrown or launched into the air, subject only to acceleration due to gravity. Some examples of projectile motion include
+meteors entering Earth's atmosphere,
+fireworks,
+cannonballs and bullets,
+any ball in sports.
+
+The launched or thrown object is called a projectile and its path is called a trajectory. We consider two-dimensional projectile motion, which neglects the effects of air resistance.
+
+In projectile motion problems, the motions along perpendicular axes are independent and thus can be analyzed separately. The key to analyzing such problems is to break (or separate) the problem into two motions: (a) along the horizontal axis and (b) along the vertical axis. By convention, we call the horizontal axis the x-axis and the vertical axis the y-axis.
+
+We define a vector s to describe the total displacement, while the vectors vector x and vector y are its component vectors along the respective axes. The magnitudes of these vectors are without arrows: s, x, and y.
+
+The course webpage illustrates these vectors with a soccer player kicking a ball.
+How can we represent these vectors in unit vector notation?
+
+They can be represented by
+
+vector s equals vector x plus vector y,
+vector x equals x i-hat, which equals s cosine phi i-hat,
+vector y equals y j-hat, which equals s sine phi j-hat.
+
+To describe the projectile motion completely, we must also include velocity and acceleration. Let's assume that contact forces (e.g., air resistance and friction) are negligible. Defining the positive direction as upward, the components of acceleration are:
+
+a sub y equals negative g equals negative 9.81 meters per second squared (negative 32.2 feet per second squared ).
+
+Because gravity is vertical, a sub x equals 0 and v sub x equals v naught x. We can then write the kinematic equations for motion in a uniform gravitational field as
+
+x equals x naught plus v naught x t, y equals y naught plus v naught y t minus 1 over 2 g t squared,
+v sub x equals v naught x, v sub y equals v naught y minus g t,
+v sub y squared equals v naught y squared minus 2 g times the quantity y minus y naught.
+
+Using this set of equations, we can analyze projectile motion. When the air resistance is negligible, the maximum height of the projectile is given by
+
+v sub y squared equals v naught y squared minus 2 g times the quantity y minus y naught equals 0.
+y minus y naught equals v naught y squared divided by 2 g,
+h equals v naught y squared divided by 2 g, which also equals v naught squared times sine squared theta naught divided by 2 g,
+
+where h equals y minus y naught and v sub y equals 0. This equation defines the maximum height of a projectile above its launch position and it depends only on v naught y.
+
+Projectile Height (Calculus-framing).
+
+Here we show how to find the maximum height from one of the kinematic equations. However, you can also think of this in terms of the y position equation using calculus. In calculus, you find the first derivative and set it equal to zero, or
+
+y equals y naught plus v naught y t minus 1 over 2 g t squared,
+d y over d t equals v naught y minus g t equals 0,
+t equals v naught y over g,
+
+which gives the time it takes to reach the maximum height. Then we substitute back into the position equation (and re-arrange to solve for h equals y minus y naught ) to get
+
+y minus y naught equals v naught y times v naught y, divided by g minus g over 2, times the quantity v naught y over g, squared,
+h equals v naught y squared divided by 2 g, which also equals v naught squared times sine squared theta naught divided by 2 g.
+
+Modeling Guide: Projectile Motion.
+
+Projectile motion is modeled as two connected one-dimensional motions. The horizontal motion has constant velocity because a sub x equals 0, while the vertical motion has constant acceleration because a sub y equals negative g.
+
+The initial velocity is split into components using v sub x equals v cosine theta and v sub y equals v sine theta, where v is the launch speed and theta is measured relative to the x axis, see the figure.
+
+After the components are known, solve the horizontal and vertical motions separately. Time t is the shared quantity that connects the two directions, so it is often the bridge between the x and y equations.
+
+When the component results need to be recombined, the displacement magnitude and direction are found from the component form as
+
+s equals the square root of x squared plus y squared, phi equals the inverse tangent of y divided by x,
+
+where phi is the direction of vector s measured relative to the x axis. The speed is found from the velocity components as
+
+v equals the square root of v sub x squared plus v sub y squared.
+Checkpoint. Pause and check your understanding.
+A projectile is launched upward and to the right with no air resistance.
+What is the horizontal acceleration?
+What is the vertical acceleration?
+Which component of velocity changes during the motion?
+A Khan Academy video is linked on the course webpage.
+Example Problem: A Fireworks Projectile Explodes.
+
+The Problem.
+During a fireworks display, a shell is shot into the air with an initial speed of 70 meters per second at an angle of 75 degrees above the horizontal, as illustrated on the course webpage. The fuse is timed to ignite the shell just as it reaches its highest point above the ground. Part a. Calculate the height at which the shell explodes. Part b. How much time passes between the launch of the shell and the explosion? Part c. What is the horizontal displacement of the shell when it explodes? Part d. What is the total displacement from the point of launch to the highest point?
+The worked solution follows.
+The Model.
+
+The shell is modeled as an ideal projectile launched from the ground. Air resistance is neglected, so the horizontal velocity remains constant and the vertical acceleration is downward. The launch point is chosen as the origin, with positive i-hat horizontal and positive j-hat upward. At the highest point, the vertical velocity component is zero, which provides a condition for finding the height and time of the explosion.
+
+The Math.
+
+Resolving the initial velocity into horizontal and vertical components gives
+
+v naught x equals v naught cosine theta naught,
+v naught y equals v naught sine theta naught.
+
+Substituting the launch speed and launch angle gives the component values used throughout the projectile calculation,
+
+v naught x equals 70 meters per second times the cosine of 75 degrees equals 18.1 meters per second,
+v naught y equals 70 meters per second times the sine of 75 degrees equals 67.6 meters per second.
+Part a. At the highest point, the vertical velocity is zero, and the vertical velocity-position relation connects that condition to the height through
+
+v sub y squared equals v naught y squared minus 2 g y.
+
+Setting v sub y equals 0 and solving for the height gives the explosion height in symbolic form,
+
+0 equals v naught y squared minus 2 g y,
+2 g y equals v naught y squared,
+y equals v naught y squared divided by 2 g.
+
+Substituting the vertical launch speed and g equals 9.81 meters per second squared gives the height
+
+y equals (67.6 meters per second ) squared over 2(9.81 meters per second squared ) equals 233 meters.
+Part b. The time to reach the highest point comes from the vertical velocity equation,
+
+v sub y equals v naught y minus g t.
+
+At the highest point, the vertical velocity is zero, so solving the equation for time gives
+
+0 equals v naught y -g t,
+t equals v naught y over g.
+
+Substituting the vertical launch speed gives the elapsed time to the explosion,
+
+t equals 67.6 meters per second divided by 9.81 meters per second squared equals 6.89 seconds.
+Part c. Because the horizontal acceleration is zero, the horizontal displacement is found from constant horizontal velocity as
+
+x equals v naught x t.
+
+Using the horizontal launch speed and the time to the highest point gives the horizontal displacement,
+
+x equals (18.1 meters per second )(6.89 seconds ) equals 125 meters.
+Part d. Combining the horizontal and vertical displacements found above gives the total displacement vector from launch to the highest point,
+
+delta vector r equals (125 i-hat plus 233 j-hat ) meters.
+
+Applying the Pythagorean theorem to this displacement vector gives the displacement magnitude
+
+the magnitude of delta vector r equals square root of (125) squared plus (233) squared m equals 264 meters.
+
+Using the ratio of vertical displacement to horizontal displacement gives the direction above the horizontal
+
+theta equals the inverse tangent of 233 divided by 125 equals 62 degrees.
+
+The Conclusion.
+
+The shell explodes at a height of 233 meters after 6.89 seconds. At that instant, its horizontal displacement is 125 meters, so the total displacement from launch to the highest point is (125 i-hat plus 233 j-hat ) meters. The displacement magnitude is 264 meters at 62 degrees above the horizontal, which is steeper than the horizontal displacement because the shell is near the top of its trajectory.
+
+Example Problem: The Tennis Player.
+
+The Problem.
+A tennis player wins a match at Arthur Ashe Stadium and hits a ball into the stands at 30 meters per second and at an angle 45 degrees above the horizontal. On its way down, the ball is caught by a spectator 10 meters above the point where the ball was hit. Part a. Calculate the time it takes the tennis ball to reach the spectator. Part b. What are the magnitude and direction of the ball’s velocity at impact?
+The worked solution follows.
+The Model.
+
+The ball is modeled as an ideal projectile. Air resistance is neglected, so the horizontal velocity remains constant and the vertical acceleration is downward. The launch point is taken as the origin, with positive i-hat horizontal and positive j-hat upward. Because the spectator catches the ball above the launch point on the way down, the vertical position equation has two time solutions and the later solution is physically relevant.
+
+The Math.
+
+Separating the launch velocity into horizontal and vertical components gives
+
+v naught x equals v naught cosine theta naught,
+v naught y equals v naught sine theta naught.
+
+Substituting the launch speed and launch angle gives the initial velocity components
+
+v naught x equals 30 meters per second times the cosine of 45 degrees equals 21 meters per second,
+v naught y equals 30 meters per second times the sine of 45 degrees equals 21 meters per second.
+Part a. The catch time is found from the vertical position equation because the catch height is specified,
+
+y equals y naught plus v naught y t minus 1 over 2 g t squared.
+
+With the launch point as the origin and the catch point 10 meters above launch, the vertical equation becomes the quadratic equation
+
+10 equals (21)t minus 1 over 2 (9.81)t squared,
+0 equals 4.905t squared minus 21t plus 10.
+
+Solving this quadratic equation gives two possible times,
+
+t equals 0.54 seconds or t equals 3.8 seconds.
+
+The later time corresponds to the ball descending into the stands, so the catch time is
+
+t equals 3.8 seconds.
+Part b. Since the horizontal acceleration is zero, the horizontal velocity at impact remains equal to the initial horizontal velocity,
+
+v sub x equals 21 meters per second.
+
+The vertical velocity at impact comes from the vertical velocity equation,
+
+v sub y equals v naught y minus g t.
+
+Substituting the later catch time gives the downward vertical velocity at impact,
+
+v sub y equals 21 meters per second minus 9.81 meters per second squared times 3.8 seconds, which equals negative 16 meters per second.
+
+Taking the magnitude of the velocity vector gives the impact speed
+
+v equals the square root of v sub x squared plus v sub y squared equals square root of (21) squared plus (negative 16) squared meters per second equals 27 meters per second.
+
+Using the ratio of the vertical and horizontal velocity components gives the direction below the horizontal
+
+theta equals the inverse tangent of the magnitude of v sub y divided by v sub x which equals the inverse tangent of 16 divided by 21 equals 37 degrees.
+
+The Conclusion.
+
+The ball reaches the spectator after 3.8 seconds. At impact, its speed is 27 meters per second and its direction is 37 degrees below the horizontal. The downward direction is consistent with the problem statement that the ball is caught on its way down, and the speed is smaller than the launch speed because the ball is caught above its launch height.
+
+Time of Flight, Trajectory, and Range.
+
+Time of Flight.
+
+The duration from launch to impact is called the time of flight, T sub t-o-f. For a projectile that launches and lands at the same elevation, the vertical displacement is zero. Therefore,
+
+y minus y naught equals v naught y times t minus one-half g t squared,
+
+which equals the quantity v naught sine theta naught times t, minus one-half g t squared, and this equals zero.
+
+Factoring out t and taking the nonzero solution gives
+
+T sub t-o-f equals two v naught sine theta naught divided by g.
+
+This equation does not apply when the projectile lands at a different elevation than it was launched.
+
+Checkpoint. Pause and check your understanding.
+For a projectile that lands at the same height where it was launched, why does the time of flight depend on v naught y but not directly on v naught x?
+
+The other solution, t equals zero, corresponds to the launch time. The time of flight is directly proportional to the initial vertical velocity and inversely proportional to g. Because gravity on the Moon is approximately one-sixth of gravity on Earth, the time of flight on the Moon is approximately six times longer for the same initial vertical velocity.
+
+Trajectory.
+
+A particle's trajectory can be found by eliminating time between the horizontal and vertical position equations. Taking the launch point as the origin, the horizontal equation gives
+
+x equals v naught x times t,
+
+so
+
+t equals x divided by v naught x, which equals x divided by the quantity v naught cosine theta naught.
+
+Substituting this time into the vertical position equation gives
+
+y equals v naught y divided by v naught x, times x, minus g over two times the quantity x divided by v naught x, squared.
+
+Rearranging gives the trajectory equation
+
+y equals tangent theta naught times x, minus the quantity g divided by two times v naught cosine theta naught squared, times x squared.
+
+This is a parabola of the form y equals c plus b x plus a x squared, where c equals zero, b equals tangent theta naught, and a equals negative g divided by two times v naught cosine theta naught squared.
+
+Range.
+
+The range is the horizontal distance traveled by a projectile. For a projectile that launches and lands at the same elevation, setting y equal to zero in the trajectory equation and taking the nonzero root gives
+
+R equals two v naught squared sine theta naught cosine theta naught divided by g.
+
+Using the double-angle identity, sine of two theta naught equals two sine theta naught cosine theta naught, the range becomes
+
+R equals v naught squared times sine of two theta naught, divided by g.
+
+Checkpoint. Pause and check your understanding.
+The range formula is maximized at 45 degrees only under what assumptions about launch height, landing height, and air resistance?
+
+The range is directly proportional to the square of the initial speed, depends on the launch angle through sine of two theta naught, and is inversely proportional to the acceleration due to gravity.
+
+Projectile Range, Calculus Framing.
+
+The maximum-range result can also be connected to calculus. The derivative of the vertical position is
+
+d y over d t equals v naught y minus g t.
+
+Setting this derivative equal to zero gives the time to maximum height,
+
+t equals v naught y divided by g.
+
+Because the projectile launches and lands at the same elevation, twice this time is the time of flight. Substituting the time of flight into the horizontal position equation gives
+
+R equals two v naught x v naught y divided by g,
+
+which equals two v naught squared sine theta naught cosine theta naught divided by g,
+
+and therefore equals v naught squared times sine of two theta naught, divided by g.
+
+The course webpage includes a graph comparing sine theta with sine of two theta. It shows that the positive maximum of sine of two theta does not occur at 90 degrees.
+
+Example Problem: Comparing Golf Shots.
+
+The Problem.
+A golfer encounters two different situations on different holes. On the second hole they are 120 meters from the green and want to hit the ball 90 meters and let it run onto the green. They angle the shot low to the ground at 30 degrees to the horizontal to let the ball roll after impact. On the fourth hole they are 90 meters from the green and want to let the ball drop with a minimum amount of rolling after impact. Here, they angle the shot at 70 degrees to the horizontal to minimize rolling after impact. Both shots are hit and impacted on a level surface.
+Part a. What is the initial speed of the ball at the second hole?
+Part b. What is the initial speed of the ball at the fourth hole?
+Part c. Write the trajectory equation for both cases.
+Part d. Graph the trajectories.
+The worked solution follows.
+The Model.
+
+Each golf shot is modeled as ideal projectile motion on level ground. Air resistance is neglected, and the launch and impact heights are the same. The horizontal range can therefore be used to determine the initial speed for each launch angle. The trajectory equation is then written by eliminating time between the horizontal and vertical position equations.
+
+The Math.
+
+For projectile motion that begins and ends at the same height, the horizontal range is related to the launch speed and launch angle by
+
+R equals v naught squared times the sine of 2 theta naught, divided by g.
+
+Solving the range equation for v naught gives the launch speed needed for a specified range and angle,
+
+R times g equals v naught squared times the sine of 2 theta naught,
+R times g, divided by the sine of 2 theta naught, equals v naught squared,
+v naught equals the square root of R times g divided by the sine of 2 theta naught.
+Part a. For the second hole, substituting R equals 90 meters and theta naught equals 30 degrees gives the required launch speed
+
+v naught equals the square root of (90 meters )(9.81 meters per second squared ) divided by the sine of 60 degrees equals 32 meters per second.
+Part b. For the fourth hole, substituting R equals 90 meters and theta naught equals 70 degrees gives the required launch speed
+
+v naught equals the square root of (90 meters )(9.81 meters per second squared ) divided by the sine of 140 degrees equals 37 meters per second.
+Part c. Eliminating time between the horizontal and vertical position equations for a projectile launched from the origin gives the trajectory equation
+
+y of x equals x times the tangent of theta naught, minus g divided by 2 times the quantity v naught cosine theta naught squared, times x squared.
+
+For the 30 degrees shot, substituting the launch angle and launch speed gives the low trajectory
+
+y of x equals x times the tangent of 30 degrees, minus 9.81 divided by 2 times the quantity 32 cosine 30 degrees squared, times x squared. This is approximately 0.58 x minus 0.0064 x squared.
+
+For the 70 degrees shot, substituting the launch angle and launch speed gives the high trajectory
+
+y of x equals x times the tangent of 70 degrees, minus 9.81 divided by 2 times the quantity 37 cosine 70 degrees squared, times x squared. This is approximately 2.8 x minus 0.031 x squared.
+Part d. The two trajectories are graphed on the course webpage from x equals 0 to x equals 90 meters.
+
+The Conclusion.
+
+The second-hole shot requires an initial speed of 32 meters per second at 30 degrees, while the fourth-hole shot requires an initial speed of 37 meters per second at 70 degrees. The high-angle shot needs the larger launch speed for the same range because sine of 2 theta naught is smaller for 70 degrees than for 30 degrees. The 70 degrees trajectory is also much higher and steeper, which is why it lands with less horizontal motion available for rolling.

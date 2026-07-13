@@ -1,0 +1,351 @@
+Vectors.
+
+Scalars and Vectors.
+
+What is a scalar?.
+
+A scalar defines the amount of something in one dimension. They are accompanied by a unit which signifies the dimension in particular. We learn about dimensions as a concept of length (e.g., meters), but a dimension can be generally described as one aspect of a thing.
+
+For example, your car (see the figure on the course webpage) has multiple dimensions:
+mass --> 1500 kg
+age --> 4 yr
+gas tank --> 10 gal
+gas mileage --> 40 mpg
+
+Each of these dimensions for describing the car has a number followed by the unit, which makes up the scalar quantity.
+
+Scalar arithmetic.
+
+Scalar quantities can only be combined (or separated) when they have the same unit. For example, a 50 - min class that ends 10 min early lasts for 50 min - 10 min equals 40 min.
+
+If you were told that the class ended 600 sec early, you cannot combine (or separate) the quantities directly. Instead, you must first convert to a common unit, then you can proceed as before.
+
+
+50 min - 600 sec equals,
+50 min - [ 600 sec over 1 times 1 min over 60 sec ] equals,
+50 min - 10 min equals 40 min.
+
+
+Note.
+
+You can write in math mode using dollar-sign pairs, or using the align environment given as backslash begin brace align brace, backslash end brace align brace.
+
+The Python example is available on the course webpage.
+
+Scalars can also be multiplied and divided, where units can be combined under the appropriate operation. For example, energy is described by the amount of force applied (i.e. multiplied) over a distance, or E equals Fd.
+
+Suppose you pushed a 0.5- kg box with a force of 1 Newton horizontally across the floor for 5 meters (see the figure on the course webpage). Then, you expended 5 newtons dot m of energy. The unit is combined to form a Newton-meter, or Joule.
+
+
+If you traveled to Dallas from Commerce (approximately 60 miles away) in your car and the trip took 1 h. Then your average speed is a derived scalar quantity of 60 mi/h.
+
+Checkpoint. Pause and check your understanding.
+
+A class lasts 50 min, but ends 600 s early.
+
+Can you subtract these quantities immediately, or must you convert units first?
+
+
+What is a vector?.
+
+A vector combines scalar quantities as a new object that delineates the quantities by their dimension. A unit vector represents a single step along a dimensional axis and is signified using the hat symbol over the variable for that axis. For example, 1 unit step along the x-axis is represented by x-hat, which can be written in Markdown syntax as dollar sign backslash hat brace x brace dollar sign in a text cell in your Jupyter notebook.
+
+Consider a chessboard, where players designate letters and numbers to identify a piece at a particular location on the board. The chess pieces move as vectors to traverse the chessboard.
+
+The knight moves in an L -shaped pattern that can include moving the piece either: one space horizontally, 2 spaces vertically or 2 spaces horizontally, 1 space vertically. Both of these choices represent a vector when we consider the initial and final locations of the knight.
+
+The Python code is available on the course webpage.
+
+A vector is also described as an object that has both magnitude and direction (see the figure on the course webpage).
+
+Physical quantities specified by giving a number of units (i.e., magnitude) and a direction (i.e., angle or up/down/left/right) are called vector quantities. Examples include:
+position,
+displacement (change in position),
+velocity (change in position per time),
+acceleration (change in velocity per time),
+force,
+torque.
+
+Vectors can be combined together to make a new vector or multiplied by a scalar to create a vector of a new length. The chessboard example above showed the resultant vector is composed by the addition of two component vectors.
+
+Vectors are distinguished from scalars using an arrow over the variable. Suppose we can identify the position vector of an object because it is 2 km due east, then we can write the vector m equals 2 x-hat km, where x-hat represents the direction due east or along the positive x-axis. The x-hat is a unit vector with a length equal to 1.
+
+Note.
+
+In your Jupyter notebook Markdown text cell, vector m is represented by the Markdown source text dollar sign backslash vec brace m brace dollar sign, and x-hat is represented by the source text dollar sign backslash hat brace x brace dollar sign. Be sure to use dollar-sign pairs around your Lay-tek symbols so they render properly. The Lay-tek cheat sheet is linked on the course webpage.
+
+
+The object vector m is a vector because it has a magnitude ( 2 km ) and a direction ( x-hat ). The magnitude can be written equivalently as m equiv | vector m |
+What is the vector for an object that is 2 km due west?
+What is the vector for an object that is 2 km due north/south?
+
+Note that we have chosen the x in x-hat arbitrarily, where we could have used any other symbol. You might see that other textbooks use i-hat instead. If you dealing with a vector with an unknown magnitude in the positive x direction, then you can see where vector m equals x i-hat could be useful.
+
+The course webpage shows how to represent the vector m equals 2 x-hat using the plotting library matplotlib.
+
+You can use the Python code on the course webpage as a template to plot your vectors in this chapter. Be sure to modify the limits and labels as needed.
+
+In general, we define vector D as the displacement vector, where it measures the change in a position vector. The displacement vector can be the resultant vector of two other vectors vector A and vector B. The figure on the course webpage shows how these 2 vectors can be oriented relative to each other.
+
+Suppose that you're walking from your tent at position A and going to a pond at position B. It's easier to keep track of your displacement vector D by using subscripts denoting the intended source location and final destination (see the figure on the course webpage).
+
+Mathematically, vector D sub AB represents the displacement vector from A to B, where the opposite vector D sub BA equals - vector D sub AB because you would only need to walk in the opposite ( - ) direction. We can also say that vector D sub BA is antiparallel to vector D sub AB.
+Two vectors that have identical directions are parallel to each other.
+Two vectors that are perpendicular to each other are also said to be orthogonal vectors.
+
+Checkpoint. Pause and check your understanding.
+
+A vector has magnitude 5 and points to the left.
+
+What information is missing if you only write the number 5?
+
+
+Algebra of Vectors in 1D.
+
+The figure on the course webpage shows three scenarios for your friend who walks from the campsite to the fishing pond. He wants to walk from point A to B, or have a displacement vector D sub AB. Let's see how is vector is modified when he
+stops to rest at point C,
+realizes that he dropped his prize lure and has to go back to a point D,
+continues from point D and arrives at the fishing pond at point B.
+
+The Python script on the course webpage. represents the vector D sub AB, where I've chosen a 45 degrees angle for illustration only.
+
+Your friend rests at point C, which is 3/4 of the way to the pond. We also know that the full distance from the campsite to the pond is 6 km. What is his displacement vector D sub AC when he stops to rest?
+
+Notice that the vector in panel (a) is not along the x-axis, but in a northeasterly direction. In this question, we apply a unit vector u-hat so that we can define:
+
+
+ vector D sub AB equals 6 u-hat km.
+
+
+There could be some transformation to decompose u-hat into x i-hat + y j-hat, but we do not need to know (in this case) as long as we express all other vectors either parallel or antiparallel to u-hat.
+
+Do you think vector D sub AC is parallel or antiparallel to vector D sub AB?.
+
+Since your friend is walking in the direction u-hat, his vector at point C is parallel to the path from the campsite to the pond. Then we can scale the original vector by the fraction of the total distance traveled (i.e., 3/4 (or 0.75 ) of the way).
+
+Scaling a vector
+
+To scale a vector, you simply multiply by a scalar, let's call it alpha. If alpha is less than one, then it shrinks the vector. If alpha is equal to one, then it copies the vector exactly. If alpha is greater than one, then it enlarges the vector.
+
+In all three cases, the direction of the new vector is preserved (i.e., unchanged) relative to the old vector, although the magnitude of the new vector can be different.
+
+
+We can represent the vector D sub AC as
+
+
+ vector D sub AC equals 0.75 vector D sub AB,
+ equals 4.5 u-hat km.
+
+
+Note that we have 2 ways to represent the new vector.
+
+The magnitude of vector D sub AB is represented by | vector D sub AB | equals 6 km. We found the second form by multiplying the scalar alpha equals 0.75 by the scalar | vector D sub AB |. Therefore we know the magnitude of vector D sub AC is
+
+ | vector D sub AC | equals 4.5 km.
+
+In general,
+a scalar multiplied by a vector creates a new vector, vector B equals alpha vector A.
+a scalar multiplied by a scalar creates a new scalar, | vector B | equals alpha | vector A |.
+
+The Python script on the course webpage represents the vectors vector D sub AB and vector D sub AC, graphically.
+
+Your friend now realizes that he dropped his prize lure and has to go back to look for it and finds it at a point D that is 1.2 km from point C. We can represent his new path as a vector D sub CD.
+
+Do you think vector D sub CD is parallel or antiparallel to vector D sub AB?.
+
+Since he had to retrace his steps, the vector D sub CD will have a direction that is opposite to vector D sub AC (and vector D sub AB).
+
+We can represent the vector D sub CD as
+
+
+ vector D sub CD equals - 1.2 over 6 u-hat,
+ equals -0.2 vector D sub AB.
+
+
+The Python code is available on the course webpage.
+
+Furthermore, we can represent your friend's displacement vector relative to:
+the campsite by vector D sub AD, or
+the fishing pond vector D sub DB.
+
+Since your friend had to turn back, he wants to know which location (campsite or fishing hole) is closer. He's not much of a hiker, and just wants to go to the closer location.
+
+We can find either vector D sub AD or vector D sub DB using a combination of the vectors we already know. We can deduce vector D sub AD by the addition (or difference) of vector D sub AB with vector D sub AC and vector D sub CD. Let's start by defining:
+
+
+ vector D sub AD equals vector D sub AC + vector D sub CD.
+
+
+The vector D sub AD simply represents your friend's total path accounting for a change in direction. Through substitution, we have
+
+
+ vector D sub AD equals 0.75 vector D sub AB - 0.2 vector D sub AB,
+ equals 0.55 vector D sub AB,
+ equals 3.3 u-hat km.
+
+
+We can find vector D sub DB through another deduction by,
+
+
+ vector D sub DB equals vector D sub AB - vector D sub AD,
+ equals 0.45 vector D sub AB,
+ equals 2.7 u-hat km.
+
+
+Together, we can take the magnitude of each vector to find that
+| vector D sub AD | equals 3.3 km back to the campsite, and
+| vector D sub DB | equals 2.7 km to the pond.
+
+It looks like your friend is going fishing after all.
+
+Does this make sense?
+
+We should expect that vector D sub AD + vector D sub DB equals vector D sub AB, which we can see this in our graph.
+
+Checkpoint. Pause and check your understanding.
+
+A particle moves from x sub o equals -3 meters to x sub f equals +2 meters.
+
+Is the displacement positive, negative, or zero?
+
+Properties of vectors.
+
+The resultant vector R of two vectors vector A and vector B can be determined by the addition of the two vectors as
+
+
+ vector R equals vector A + vector B.
+
+
+When we draw the resultant vector, we place them the tail at the origin and draw to place the head at the final location (i.e., head-to-tail method). In our above example, vector D sub AD was the resultant vector of the vector D sub AC + vector D sub CD.
+
+In general, vectors have similar properties as scalars. We can:
+add any number of vectors in any order, where vector addition is commutative.
+
+ vector A + vector B equals vector B + vector A
+group the addition of vectors in any order, where vector addition is associative.
+
+ ( vector A + vector B ) + vector C equals vector A + ( vector B + vector C )
+distribute scalar(s) across vector(s), where vector multiplication is distributive.
+
+
+ ( alpha + beta ) vector A equals alpha vector A + beta vector A,
+ alpha ( vector A + vector B ) equals alpha vector A + alpha vector B.
+
+
+The vector addition video is linked on the course webpage.
+
+Example Problem: Ladybug walking on a stick.
+
+The Problem.
+A long measuring stick rests against a wall in a physics laboratory with its 200-cm end at the floor. A ladybug lands at the 100-cm mark and crawls randomly along the stick. It first walks 15 cm toward the floor, then it walks 56 cm toward the wall, then it walks 3 cm toward the floor again. Then, after a brief stop, it continues 25 cm toward the floor and then, again, it crawls 19 cm toward the wall before coming to a complete rest. Find the vector of the total displacement, and its final resting position on the stick.
+
+
+The Model.
+
+We model the ladybug’s motion as one-dimensional motion along the length of the measuring stick. The stick defines a single axis, so each part of the motion is either in the positive direction or the negative direction along that axis.
+
+We choose the direction toward the floor as positive and represent that direction with the unit vector u-hat. Motion toward the wall is therefore in the negative u-hat direction. The net displacement is found by treating each crawl segment as a signed displacement along the same line.
+
+
+The Math.
+
+The five displacement vectors are
+
+
+ vector D _1 equals (15 cm )(+ u-hat )
+ vector D _2 equals (56 cm )(- u-hat )
+ vector D _3 equals (3 cm )(+ u-hat )
+ vector D _4 equals (25 cm )(+ u-hat )
+ vector D _5 equals (19 cm )(- u-hat )
+
+
+The total displacement vector is
+
+
+ vector D
+ equals vector D _1 + vector D _2 + vector D _3 + vector D _4 + vector D _5
+ equals (15 - 56 + 3 + 25 - 19) cm u-hat
+ equals negative 32 centimeters times u-hat.
+
+
+The Conclusion.
+
+The ladybug’s total displacement vector is vector D equals -32 cm u-hat. The negative sign means the net displacement is toward the wall. Since the ladybug started at the 100 -cm mark, the final position is the 68 -cm mark on the measuring stick.
+
+
+Algebra of Vectors in 2D.
+
+Vectors can be oriented in any direction, not just parallel or antiparallel. This complicates their addition, where you cannot simply add their magnitudes to determine the resultant vector. Instead, we must use geometry to construct the resultant vector and trigonometry to find vector magnitudes and directions.
+
+For a geometric construction of the sum of two vectors in a plane, we follow the parallelogram rule. The relevant figures are shown on the course webpage.
+
+To add two vectors, vector A plus vector B, we construct a parallelogram by shifting each vector to a parallel copy so that we can trace a path from the origin to the opposite corner of the parallelogram. The subtraction of two vectors, vector A minus vector B, is performed in a similar way. However, notice a key difference: in vector addition, the second vector is translated without changing direction; in vector subtraction, the vector being subtracted is reversed first.
+
+The method of tail-to-head geometric construction can be generalized to combine multiple vectors together. Consider four vectors, vector A, vector B, vector C, and vector D, as shown on the course webpage.
+
+We can select any one of the vectors to start with because vector addition is commutative and associative, where the resultant vector R equals vector A plus vector B plus vector C plus vector D.
+
+Starting with vector D, we make a parallel translation of a second vector A to a position where its tail coincides with the head of the first vector D; a third vector C to a position where its origin coincides with the end of vector A; and a fourth vector B to a position where its origin coincides with the end of vector C.
+
+We draw the resultant vector R by connecting the tail of the first vector D to the head of the last vector B.
+
+Checkpoint. Pause and check your understanding.
+
+Two vectors are drawn tail-to-head.
+
+Where should the resultant vector start, and where should it end?
+
+The Problem.
+The three displacement vectors vector A, vector B, and vector C lie in the horizontal plane.
+Their magnitudes are A equals 10.0 cm, B equals 7.0 cm, and C equals 8.0 cm, respectively,
+and their direction angles (measured counterclockwise from the positive x -axis) are
+ alpha equals 35 degrees, beta equals -110 degrees, and gamma equals 30 degrees.
+Choose a convenient scale and use a ruler and a protractor to find the following vector sums:
+(a) vector R equals vector A + vector B
+(b) vector D equals vector A - vector B
+(c) vector S equals vector A - 3 vector B + vector C
+
+The figure is shown on the course webpage.
+
+
+The Model.
+
+We model each displacement as a two-dimensional vector in the horizontal plane. Each vector has a magnitude and a direction angle measured relative to the positive x -axis.
+
+Because this is a geometric construction, the vectors are drawn to scale and placed either tail-to-head or tail-to-tail depending on the combination being represented. Vector subtraction is modeled by reversing the direction of the vector being subtracted while keeping its magnitude unchanged. The resultant is the single vector that represents the combined effect of the vectors in the diagram.
+
+
+The Math.
+
+For a geometric construction, the magnitude and direction of each resultant are obtained by drawing the vectors to scale and then measuring the resultant vector. The direction angles are measured counterclockwise from the positive x -axis.
+
+(a) For the sum vector R equals vector A + vector B, the vectors are drawn tail-to-head so that the tail of vector B is placed at the head of vector A. The resultant vector R is drawn from the tail of vector A to the head of vector B. Measuring the scaled diagram gives
+
+ R is approximately equal to 5.8 cm, theta _R is approximately equal to 0 degrees.
+
+(b) For the difference vector D equals vector A - vector B, the subtraction is treated as addition of the opposite vector. The vector - vector B has the same magnitude as vector B but points in the opposite direction, so the construction uses
+
+ vector D equals vector A + (- vector B ).
+
+Measuring the scaled diagram gives
+
+ D is approximately equal to 16.2 cm, theta _D is approximately equal to 49.3 degrees.
+
+(c) For the linear combination vector S equals vector A - 3 vector B + vector C, the vector B is first scaled by a factor of 3 and reversed to represent -3 vector B. The vectors are then drawn tail-to-head, and vector S is drawn from the tail of the first vector to the head of the final vector. Measuring the scaled diagram gives
+
+ S is approximately equal to 36.9 cm, theta _S is approximately equal to 52.9 degrees.
+
+
+The Conclusion.
+
+The geometric construction gives the resultant values
+
+ R is approximately equal to 5.8 cm, theta _R is approximately equal to 0 degrees,
+
+ D is approximately equal to 16.2 cm, theta _D is approximately equal to 49.3 degrees,
+
+and
+
+ S is approximately equal to 36.9 cm, theta _S is approximately equal to 52.9 degrees.
+
+These results show that the same vector operations can be represented geometrically by drawing vectors to scale, but the accuracy of the result depends on the precision of the construction.

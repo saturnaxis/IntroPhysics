@@ -1,0 +1,1387 @@
+4.1 Displacement and Velocity Vectors
+
+Motion in 2D and 3D.
+
+Chapter roadmap.
+
+ 
+
+This chapter extends one-dimensional kinematics into two and three dimensions. Position, displacement, velocity, and acceleration are now treated as vectors, but the basic ideas from Chapter 3 still apply component by component.
+
+As you read, focus on three questions:
+
+Item 1. Can I break a vector motion problem into independent components?
+
+Item 2. Can I identify which quantities are shared between the component motions?
+
+Item 3. Can I recombine components to describe the full motion of an object?
+
+These ideas will be used to analyze projectile motion, circular motion, and relative motion.
+ 
+
+Displacement and Velocity Vectors.
+
+Displacement Vector.
+
+To describe motion in 2D and 3D, we must first define a coordinate system, including a convention of axes. *Recall that the sign of the acceleration due to gravity was determined by the convention that we chose.* We usually use the Cartesian coordinate system to locate a particle at point P(x,y,z) in 3 dimensions. If the particle is moving, the variables x,y,z are functions of time t.
+
+The position vector vector r (t) locates the point P at time t from the origin, by
+
+ 
+ vector r (t) equals x(t) i hat + y(t) j hat + z(t) k hat.
+ 
+
+Figure referenced in the course notes.
+
+ shows the position vector vector r (t) for a particle located at a time t. *Note that the orientation of the coordinate system follows the right-hand rule.*
+
+Checkpoint.
+
+ 
+
+If vector r ( t sub 1 ) and vector r ( t sub 2 ) are both measured from the origin, why does change in vector r point from the first position to the second position rather than from the origin?
+ 
+
+We can now define the 3D displacement vector change in vector r as the difference between the position vector vector r ( t sub 2 ) at time t sub 2 and the initial position vector vector r ( t sub 1 ) at time t sub 1, or
+
+ 
+ change in vector r equals vector r ( t sub 2 ) - vector r ( t sub 1 ).
+ 
+
+Three dimensional vector addition is performed in the same way as in 2D, by adding the corresponding components or graphically by using the head-to-tail method.
+
+Figure referenced in the course notes.
+
+See the `python` code below that demonstrates how to plot a 3D vector in `matplotlib`.
+
+See the Python snippet given in the course lecture notes.
+
+**MIT OpenCourseWare**.
+
+ 
+
+ 
+ 
+
+**Example Problem**: Polar Orbiting Satellite.
+
+The Problem.
+A satellite is in a circular polar orbit around Earth at an altitude of 400 km, meaning it passes directly over the North and South Poles. What are the magnitude and direction of the displacement vector from when the satellite is directly over the North Pole to when it is at latitude -45 degrees?
+
+---
+
+The Model.
+
+The satellite is modeled as a point moving along a circular polar orbit around Earth. The displacement is not the distance traveled along the orbit; it is the straight-line vector from the initial position to the final position. The origin is placed at the center of Earth, with + j hat pointing north and + i hat pointing toward the equator on the side of the orbit. With this coordinate choice, the satellite starts directly over the North Pole and ends at latitude -45 degrees.
+
+---
+
+The Math.
+
+The position vectors are measured from the center of Earth, so the orbital radius is the sum of Earth's radius ( 6370 km ) and the satellite altitude.
+
+ 
+r equals 6370 km + 400 km equals 6770 km.
+ 
+
+At the North Pole position, the satellite lies entirely along the positive y direction.
+
+ 
+ vector r _1 equals 6770 j hat km.
+ 
+
+At latitude -45 degrees, the position vector is resolved into components using the latitude angle measured from the equatorial direction in the orbital plane.
+
+ 
+ vector r _2 equals r cos(-45 degrees) i hat + r sin(-45 degrees) j hat.
+ 
+
+Substituting the orbital radius into the component form gives the final position vector.
+
+ 
+ vector r _2 equals (4790 i hat - 4790 j hat ) km.
+ 
+
+The displacement vector is found by subtracting the initial position vector from the final position vector.
+
+ 
+ change in vector r equals vector r _2 - vector r _1, 
+ equals (4790 i hat - 4790 j hat ) km - (6770 j hat ) km, 
+ equals (4790 i hat - 1.16 times ten to the 4 j hat ) km.
+ 
+
+The magnitude of the displacement is found from the Pythagorean theorem applied to the vector components.
+
+ 
+| change in vector r | equals square root of (4790) squared + (-1.16 times ten to the 4) squared km equals 1.25 times ten to the 4 km.
+ 
+
+The direction is found from the inverse tangent of the y component divided by the x component.
+
+ 
+ theta equals tan to the power of -1 ( fraction {-1.16 times ten to the 4{4790} ) equals -67.5 degrees.
+ 
+
+The negative angle means the displacement points below the positive x axis, or 67.5 degrees south of east.
+
+---
+
+The Conclusion.
+
+The displacement from the North Pole position to the latitude -45 degrees position is
+
+ 
+ change in vector r equals (4790 i hat - 1.16 times ten to the 4 j hat ) km.
+ 
+
+Its magnitude is 1.25 times ten to the 4 km, and it points 67.5 degrees south of east. This is a straight-line displacement between the two positions, not the distance traveled along the circular orbit.
+
+---
+
+ **The Problem**
+The position function of a particle is 
+ vector r (t) equals (2.0t squared) i hat + (2.0 + 3.0t) j hat + 5.0 k hat km. (a) What is the instantaneous velocity vector and speed at t equals 2.0 s? (b) What is the average velocity between t equals 1.0 s and t equals 3.0 s?
+
+---
+
+The Model.
+
+The particle moves in three-dimensional Cartesian coordinates. Instantaneous velocity is found from the rate of change of the position vector, while average velocity over a finite interval is found from the displacement during that interval divided by the elapsed time. Each component can be evaluated independently and then recombined into a vector. Because the x position is quadratic in time and the y and z positions are linear in time, only the x component of velocity changes with time.
+
+---
+
+The Math.
+
+The instantaneous velocity is defined as the time derivative of the position vector.
+
+ 
+ vec v (t) equals d vector r over dt.
+ 
+
+Differentiating the position function component by component gives the velocity function.
+
+ 
+ vec v (t) equals 4.0t i hat + 3.0 j hat + 5.0 k hat kilometers per second.
+ 
+
+**(a)** The instantaneous velocity at t equals 2.0 s is found by substituting that time into the velocity function.
+
+ 
+ vec v (2.0) equals (8.0 i hat + 3.0 j hat + 5.0 k hat ) kilometers per second.
+ 
+
+The speed is the magnitude of the instantaneous velocity vector.
+
+ 
+| vec v (2.0)| equals square root of (8.0) squared + (3.0) squared + (5.0) squared kilometers per second equals 9.9 kilometers per second.
+ 
+
+**(b)** The average velocity over the interval from t sub 1 equals 1.0 s to t sub 2 equals 3.0 s is the displacement divided by the elapsed time.
+
+ 
+ vec v _ avg equals vector r ( t sub 2 )- vector r ( t sub 1 ) over t sub 2 - t sub 1.
+ 
+
+The endpoint position vectors are found by substituting both times into the position function.
+
+ 
+ vector r (1.0) equals (2.0 i hat + 5.0 j hat + 5.0 k hat ) km, 
+ vector r (3.0) equals (18.0 i hat + 11.0 j hat + 15.0 k hat ) km.
+ 
+
+The displacement is found by subtracting the first endpoint from the second endpoint.
+
+ 
+ vector r (3.0)- vector r (1.0) equals (16.0 i hat + 6.0 j hat + 10.0 k hat ) km.
+ 
+
+Dividing this displacement by the elapsed time gives the average velocity.
+
+ 
+ vec v _ avg equals (16.0 i hat + 6.0 j hat + 10.0 k hat ) km over 2.0 s, 
+ equals (8.0 i hat + 3.0 j hat + 5.0 k hat ) kilometers per second.
+ 
+
+Symbolic Differentiation in Python.
+
+ 
+
+SymPy can differentiate symbols instead of numbers. If you write each component of vector r (t) as a symbolic expression in t, then `diff(...)` returns the derivative exactly. After that, you can substitute a specific value like t equals 2.0 using `.subs(t, 2.0)` and convert to a float with `float(...)`.
+
+This is especially useful when vector r (t) is complicated and you want to avoid algebra mistakes.
+ 
+
+---
+
+The Conclusion.
+
+At t equals 2.0 s, the instantaneous velocity is
+
+ 
+ vec v (2.0) equals (8.0 i hat + 3.0 j hat + 5.0 k hat ) kilometers per second,
+ 
+
+and the speed is 9.9 kilometers per second. The average velocity between 1.0 s and 3.0 s is also (8.0 i hat + 3.0 j hat + 5.0 k hat ) kilometers per second. In this interval, the average velocity equals the instantaneous velocity at the midpoint because the velocity is a linear function of time.
+
+---
+
+========================================================================
+
+4.2 Acceleration Vector
+
+Acceleration Vector.
+
+Instantaneous Acceleration.
+
+The **acceleration vector** vector a (t) is the instantaneous acceleration at any point in time along an object's trajectory. It can be obtained in a similar way as was the velocity vector. Taking the derivative of vec v (t) with respect to time, we find
+
+ 
+ vector a (t) equals the limit of sub change in t goes to 0 vec v (t+ change in t)- vec v (t) over change in t equals d vec v (t) over dt.
+ 
+
+In terms of components we have the following form
+
+ 
+ vector a (t) equals d v sub x (t) over dt i hat + d v sub y (t) over dt j hat + d v sub z (t) over dt k hat, 
+ equals d to the power of 2x (t) over dt squared i hat + d to the power of 2y (t) over dt squared j hat + d to the power of 2z (t) over dt squared k hat.
+ 
+
+**MIT OpenCourseWare**.
+
+ 
+
+ 
+ 
+
+**Example Problem**: Finding an Acceleration Vector.
+
+The Problem.
+A particle has a velocity of vec v (t) equals 5.0t i hat + t squared j hat - 2.0t cubed k hat kilometers per second. (a) What is the acceleration function? (b) What is the acceleration vector at t equals 2.0 s? Find its magnitude and direction.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The particle's velocity is given in three-dimensional Cartesian form. Acceleration is the rate of change of velocity, so each velocity component can be differentiated independently. After the acceleration is evaluated at the specified time, its magnitude is found from the vector norm and its direction is represented by a unit vector parallel to the acceleration.
+
+---
+
+The Math.
+
+**(a)** The acceleration function is defined as the time derivative of the velocity vector.
+
+ 
+ vector a (t) equals d vec v over dt.
+ 
+
+Differentiating each velocity component gives the acceleration function.
+
+ 
+ vector a (t) equals 5.0 i hat +2.0t j hat -6.0t squared k hat kilometers per second squared.
+ 
+
+**(b)** The acceleration vector at t equals 2.0 s is found by substituting that time into the acceleration function.
+
+ 
+ vector a (2.0) equals (5.0 i hat +4.0 j hat -24.0 k hat ) kilometers per second squared.
+ 
+
+The magnitude of the acceleration is found from the three-dimensional vector norm.
+
+ 
+| vector a (2.0)| equals square root of (5.0) squared+(4.0) squared+(-24.0) squared kilometers per second squared equals 24.8 kilometers per second squared.
+ 
+
+To describe the direction, the acceleration vector is divided by its magnitude to create a unit vector.
+
+ 
+ a hat equals vector a over | vector a |, 
+ equals 5.0 i hat +4.0 j hat -24.0 k hat over 24.8, 
+ equals 0.20 i hat +0.16 j hat -0.97 k hat.
+ 
+
+---
+
+The Conclusion.
+
+The acceleration function is
+
+ 
+ vector a (t) equals 5.0 i hat +2.0t j hat -6.0t squared k hat kilometers per second squared.
+ 
+
+At t equals 2.0 s, the acceleration is (5.0 i hat +4.0 j hat -24.0 k hat ) kilometers per second squared. Its magnitude is 24.8 kilometers per second squared, and its direction is described by a hat equals 0.20 i hat +0.16 j hat -0.97 k hat. The large negative k hat component shows that the acceleration is directed mostly in the negative z direction.
+
+---
+
+ **The Problem**
+A particle has a position function vector r (t) equals (10t - t squared) i hat + 5t j hat + 5t k hat m. (a) What is the velocity? (b) What is the acceleration? (c) Describe the motion from t equals 0 s.
+
+---
+
+The Model.
+
+The particle moves in three-dimensional Cartesian coordinates. Velocity is found from the rate of change of position, and acceleration is found from the rate of change of velocity. The y and z positions are linear in time, so the particle moves steadily in those directions. The x position is quadratic in time, so the particle can slow down, reverse its x motion, and later return to its original x coordinate.
+
+---
+
+The Math.
+
+**(a)** The velocity is found by differentiating the position vector with respect to time:
+
+ 
+ vec v (t) equals d vector r over dt equals (10-2t) i hat +5 j hat +5 k hat meters per second.
+ 
+
+**(b)** The acceleration is found by differentiating the velocity vector with respect to time.
+
+ 
+ vector a (t) equals d vec v over dt equals -2 i hat meters per second squared.
+ 
+
+**(c)** To describe the motion in the x direction, we identify when the x component of velocity changes sign, v sub x (t) equals 10-2t. The particle stops moving in the x direction when the x component of velocity is zero:
+
+ 
+0 equals 10 - 2t.
+ 
+
+Solving this equation for time gives the instant when the particle reaches its maximum x coordinate, t equals 5 s. The maximum x coordinate is found by substituting this time into the x position function,
+
+ 
+x(5) equals 10(5)-(5) squared equals 25 meters.
+ 
+
+The particle returns to its original x coordinate when the x position is zero again,
+
+ 
+0 equals 10t-t squared equals t(10-t).
+ 
+
+The nonzero solution gives the return time in the x direction, 
+t equals 10 s. 
+
+---
+
+The Conclusion.
+
+The velocity is vec v (t) equals (10-2t) i hat +5 j hat +5 k hat meters per second, and the acceleration is vector a (t) equals -2 i hat meters per second squared. The particle initially moves in the positive x direction, slows in that direction until t equals 5 s, reaches a maximum x position of 25 meters, and then moves back toward smaller x values. Throughout this motion, it continues steadily in the positive y and z directions.
+
+---
+
+ **The Problem**
+Figure shows a skier moving with an acceleration of 2.1 meters per second to the power of 2 down a slope of 15 degrees at t equals 0. With the origin of the coordinate system at the front of the lodge, her initial position and velocity are 
+ vector r (0) equals (75.0 i hat - 50.0 j hat ) m 
+and 
+ vec v (0) equals (4.1 i hat - 1.1 j hat ) meters per second. 
+(a) What are the x - and y -components of the skier’s position and velocity as functions of time? (b) What are her position and velocity at t equals 10.0 s?
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The skier is modeled as a particle moving in two dimensions with constant acceleration. The positive x direction points horizontally to the right, and the positive y direction points upward. The skier's acceleration points down the slope, so it has a positive x component and a negative y component. Once the acceleration is resolved into components, the constant-acceleration equations can be applied independently in the horizontal and vertical directions.
+
+Common mistake.
+
+ 
+
+A frequent mistake is to assume the acceleration is negative simply because the skier is moving downhill. The sign of each component does **not** depend on whether the motion is "uphill" or "downhill," but on how the coordinate axes are defined. In this problem, the y -axis points upward, so any downward component of acceleration must be negative, regardless of the direction of motion along the slope.
+ 
+
+---
+
+The Math.
+
+Resolving the acceleration into components allows the constant-acceleration equations to be applied separately in the x and y directions,
+
+ 
+ a sub x equals a cos theta, 
+ a sub y equals -a sin theta.
+ 
+
+The negative sign in the y component appears because the skier accelerates downward while + j hat points upward, so substituting the given acceleration magnitude and slope angle gives
+
+ 
+ a sub x equals (2.1 meters per second squared ) cos(15 degrees) equals 2.03 meters per second squared, 
+ a sub y equals -(2.1 meters per second squared ) sin(15 degrees) equals -0.544 meters per second squared.
+ 
+
+**(a)** For constant acceleration, each position component is described by the corresponding one-dimensional kinematic equation,
+
+ 
+x(t) equals x sub o +v sub xo t+ 1 over 2 a sub xt to the power of 2, 
+y(t) equals y sub o +v sub yo t+ 1 over 2 a sub yt to the power of 2.
+ 
+
+Using x sub o equals 75.0 meters and v sub xo equals 4.1 meters per second gives the horizontal position function
+
+ 
+x(t) equals 75.0 + (4.1)t + 1 over 2 (2.03)t squared, 
+ equals 75.0 + 4.1t + 1.01t squared.
+ 
+
+Using y sub o equals -50.0 meters and v sub yo equals -1.1 meters per second gives the vertical position function
+
+ 
+y(t) equals -50.0 - (1.1)t + 1 over 2 (-0.544)t squared, 
+ equals -50.0 - 1.1t - 0.272t squared.
+ 
+
+For constant acceleration, each velocity component is described by the corresponding linear velocity equation,
+
+ 
+ v sub x (t) equals v sub xo + a sub xt, 
+ v sub y (t) equals v sub yo + a sub yt.
+ 
+
+Using the initial velocity components and acceleration components gives the velocity functions
+
+ 
+ v sub x (t) equals 4.1 + 2.03t, 
+ v sub y (t) equals -1.1 - 0.544t.
+ 
+
+**(b)** Substituting t equals 10.0 s into the component position functions gives the skier's position components
+
+ 
+x(10.0) equals 75.0 + (4.1)(10.0) + 1 over 2 (2.03)(10.0) squared equals 217 meters, 
+y(10.0) equals -50.0 - (1.1)(10.0) + 1 over 2 (-0.544)(10.0) squared equals -88.2 meters.
+ 
+
+Substituting t equals 10.0 s into the component velocity functions gives the skier's velocity components
+
+ 
+ v sub x (10.0) equals 4.1 + (2.03)(10.0) equals 24.4 meters per second, 
+ v sub y (10.0) equals -1.1 - (0.544)(10.0) equals -6.54 meters per second.
+ 
+
+Combining the evaluated components gives the position and velocity vectors at t equals 10.0 s,
+
+ 
+ vector r (10.0) equals (217 i hat -88.2 j hat ) m, 
+ vec v (10.0) equals (24.4 i hat -6.54 j hat ) meters per second.
+ 
+
+---
+
+The Conclusion.
+
+The skier's component equations are
+
+ 
+x(t) equals 75.0 + 4.1t + 1.01t squared, v sub x (t) equals 4.1 + 2.03t, 
+y(t) equals -50.0 - 1.1t - 0.272t squared, v sub y (t) equals -1.1 - 0.544t.
+ 
+
+At t equals 10.0 s, her position is (217 i hat -88.2 j hat ) m and her velocity is (24.4 i hat -6.54 j hat ) meters per second. The calculation shows how the constant-acceleration equations from one-dimensional motion are applied independently to each component of a two-dimensional motion.
+
+---
+
+ **Projectile motion** describes the motion of an object that is thrown or launched into the air, *subject only to acceleration due to gravity*. Some examples of projectile motion include
+
+Bullet point. meteors entering Earth's atmosphere,
+
+Bullet point. fireworks,
+
+Bullet point. cannonballs/bullets,
+
+Bullet point. any ball in sports.
+
+The launched/thrown object is called a *projectile* and its path is called a **trajectory**. We consider 2D projectile motion, which neglects the effects of air resistance.
+
+In projectile motion problems, the *motions along perpendicular axes are independent* and thus can be analyzed separately. The key to analyzing such problems is to break (or separate) the problem into two motions: (a) along the horizontal axis and (b) along the vertical axis. By convention, we call the horizontal axis the x -axis and the vertical axis the y -axis.
+
+We define a vector vector s to describe the total displacement, while the vectors vector x and vector y are its component vectors along the respective axes. The magnitudes of these vectors are without arrows: s, x, and y.
+
+Figure referenced in the course notes.
+
+Figure illustrates these vectors with a soccer player kicking a ball.
+
+Bullet point. **How can we represent these vectors in unit vector notation?**
+
+They can be represented by
+
+ 
+ vector s equals vector x + vector y, 
+ vector x equals x i hat equals s cos{ Phi} i hat, 
+ vector y equals y i hat equals s sin{ Phi} j hat.
+ 
+
+To describe the projectile motion completely, we must also include velocity and acceleration. Let's assume that contact forces (e.g., air resistance and friction) are negligible. Defining the positive direction as upward, the components of acceleration are:
+
+ a sub y equals -g equals -9.81 meters per second squared (-32.2 ft/s squared ). 
+
+Because gravity is vertical, a sub x equals 0 and v sub x equals v sub ox. We can then write the kinematic equations for motion in a uniform gravitational field as
+
+ 
+x equals x sub o + v sub ox t, y equals y sub o + v sub oy t - 1 over 2 gt squared, 
+ v sub x equals v sub ox, v sub y equals v sub oy - gt, 
+ v sub y to the power of 2 equals v sub oy to the power of 2 - 2g(y- y sub o ).
+ 
+
+Using this set of equations, we can analyze projectile motion. When the air resistance is negligible, the maximum height of the projectile is given by
+
+ 
+ v sub y to the power of 2 equals v sub oy to the power of 2 - 2g(y- y sub o ) equals 0. 
+ y- y sub o equals v sub oy to the power of 2 over 2g, 
+ h equals v sub oy to the power of 2 over 2g equals fraction { v sub o to the power of 2 sin squared{ theta _o}}{2g},
+ 
+
+where h equals y- y sub o and v sub y equals 0. This equation defines the *maximum height of a projectile above its launch position* and it depends only on v sub oy.
+
+Projectile Height (Calculus-framing).
+
+ 
+
+Here we show how to find the maximum height from one of the kinematic equations. However, you can also think of this in terms of the y position equation using calculus. In calculus, you find the first derivative and set it equal to zero, or 
+
+ 
+y equals y sub o + v sub oy t - 1 over 2 gt squared, 
+ dy over dt equals v sub oy - gt equals 0, 
+t equals v sub oy over g,
+ 
+
+which gives the time it takes to reach the maximum height. Then we substitute back into the position equation (and re-arrange to solve for h equals y- y sub o ) to get
+
+ 
+y- y sub o equals v sub oy v sub oy over g - g over 2 ( v sub oy over g 
+ ) squared, 
+h equals v sub oy to the power of 2 over 2g equals fraction { v sub o to the power of 2 sin squared{ theta _o}}{2g}.
+ 
+ 
+
+Modeling Guide: Projectile Motion.
+
+ 
+
+Projectile motion is modeled as two connected one-dimensional motions. The horizontal motion has constant velocity because a sub x equals 0, while the vertical motion has constant acceleration because a sub y equals -g.
+
+The initial velocity is split into components using v sub x equals v cos theta and v sub y equals v sin theta, where v is the launch speed and theta is measured relative to the x axis, see the figure.
+
+After the components are known, solve the horizontal and vertical motions separately. Time t is the shared quantity that connects the two directions, so it is often the bridge between the x and y equations.
+
+When the component results need to be recombined, the displacement magnitude and direction are found from the component form as
+
+ s equals square root of x squared+y squared, Phi equals tan to the power of -1 ( y over x ), 
+
+where Phi is the direction of vector s measured relative to the x axis. The speed is found from the velocity components as
+
+ v equals square root of v sub x to the power of 2 + v sub y to the power of 2. 
+ 
+
+Checkpoint.
+
+ 
+
+A projectile is launched upward and to the right with no air resistance.
+
+Item 1. What is the horizontal acceleration?
+
+Item 2. What is the vertical acceleration?
+
+Item 3. Which component of velocity changes during the motion?
+ 
+
+Figure referenced in the course notes.
+
+**Khan Academy**.
+
+ 
+
+ 
+ 
+
+**Example Problem**: A Fireworks Projectile Explodes.
+
+The Problem.
+During a fireworks display, a shell is shot into the air with an initial speed of 70 meters per second at an angle of 75 degrees above the horizontal, as illustrated in Figure. The fuse is timed to ignite the shell just as it reaches its highest point above the ground. (a) Calculate the height at which the shell explodes. (b) How much time passes between the launch of the shell and the explosion? (c) What is the horizontal displacement of the shell when it explodes? (d) What is the total displacement from the point of launch to the highest point?
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The shell is modeled as an ideal projectile launched from the ground. Air resistance is neglected, so the horizontal velocity remains constant and the vertical acceleration is downward. The launch point is chosen as the origin, with + i hat horizontal and + j hat upward. At the highest point, the vertical velocity component is zero, which provides a condition for finding the height and time of the explosion.
+
+---
+
+The Math.
+
+Resolving the initial velocity into horizontal and vertical components gives
+
+ 
+v sub ox equals v sub o cos theta _o, 
+v sub oy equals v sub o sin theta _o.
+ 
+
+Substituting the launch speed and launch angle gives the component values used throughout the projectile calculation,
+
+ 
+v sub ox equals (70 meters per second ) cos(75 degrees) equals 18.1 meters per second, 
+v sub oy equals (70 meters per second ) sin(75 degrees) equals 67.6 meters per second.
+ 
+
+**(a)** At the highest point, the vertical velocity is zero, and the vertical velocity-position relation connects that condition to the height through
+
+ 
+ v sub y to the power of 2 equals v sub oy to the power of 2-2gy.
+ 
+
+Setting v sub y equals 0 and solving for the height gives the explosion height in symbolic form,
+
+ 
+0 equals v sub oy to the power of 2-2gy, 
+2gy equals v sub oy to the power of 2, 
+y equals v sub oy to the power of 2 over 2g.
+ 
+
+Substituting the vertical launch speed and g equals 9.81 meters per second squared gives the height
+
+ 
+y equals (67.6 meters per second ) squared over 2(9.81 meters per second squared ) equals 233 meters.
+ 
+
+**(b)** The time to reach the highest point comes from the vertical velocity equation,
+
+ 
+ v sub y equals v sub oy -gt.
+ 
+
+At the highest point, the vertical velocity is zero, so solving the equation for time gives
+
+ 
+0 equals v sub oy -gt, 
+t equals v sub oy over g.
+ 
+
+Substituting the vertical launch speed gives the elapsed time to the explosion,
+
+ 
+t equals 67.6 meters per second over 9.81 meters per second squared equals 6.89 s.
+ 
+
+**(c)** Because the horizontal acceleration is zero, the horizontal displacement is found from constant horizontal velocity as
+
+ 
+x equals v sub ox t.
+ 
+
+Using the horizontal launch speed and the time to the highest point gives the horizontal displacement,
+
+ 
+x equals (18.1 meters per second )(6.89 s ) equals 125 meters.
+ 
+
+**(d)** Combining the horizontal and vertical displacements found above gives the total displacement vector from launch to the highest point,
+
+ 
+ change in vector r equals (125 i hat +233 j hat ) m.
+ 
+
+Applying the Pythagorean theorem to this displacement vector gives the displacement magnitude
+
+ 
+| change in vector r | equals square root of (125) squared+(233) squared m equals 264 meters.
+ 
+
+Using the ratio of vertical displacement to horizontal displacement gives the direction above the horizontal
+
+ 
+ theta equals tan to the power of -1 ( 233 over 125 ) equals 62 degrees.
+ 
+
+---
+
+The Conclusion.
+
+The shell explodes at a height of 233 meters after 6.89 s. At that instant, its horizontal displacement is 125 meters, so the total displacement from launch to the highest point is (125 i hat +233 j hat ) m. The displacement magnitude is 264 meters at 62 degrees above the horizontal, which is steeper than the horizontal displacement because the shell is near the top of its trajectory.
+
+---
+
+ **The Problem**
+A tennis player wins a match at Arthur Ashe Stadium and hits a ball into the stands at 30 meters per second and at an angle 45 degrees above the horizontal. On its way down, the ball is caught by a spectator 10 meters above the point where the ball was hit. (a) Calculate the time it takes the tennis ball to reach the spectator. (b) What are the magnitude and direction of the ball’s velocity at impact?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The ball is modeled as an ideal projectile. Air resistance is neglected, so the horizontal velocity remains constant and the vertical acceleration is downward. The launch point is taken as the origin, with + i hat horizontal and + j hat upward. Because the spectator catches the ball above the launch point on the way down, the vertical position equation has two time solutions and the later solution is physically relevant.
+
+---
+
+The Math.
+
+Separating the launch velocity into horizontal and vertical components gives
+
+ 
+v sub ox equals v sub o cos theta _o, 
+v sub oy equals v sub o sin theta _o.
+ 
+
+Substituting the launch speed and launch angle gives the initial velocity components
+
+ 
+v sub ox equals (30 meters per second ) cos(45 degrees) equals 21 meters per second, 
+v sub oy equals (30 meters per second ) sin(45 degrees) equals 21 meters per second.
+ 
+
+**(a)** The catch time is found from the vertical position equation because the catch height is specified,
+
+ 
+y equals y sub o +v sub oy t- 1 over 2 gt squared.
+ 
+
+With the launch point as the origin and the catch point 10 meters above launch, the vertical equation becomes the quadratic equation
+
+ 
+10 equals (21)t- 1 over 2 (9.81)t squared, 
+0 equals 4.905t squared-21t+10.
+ 
+
+Solving this quadratic equation gives two possible times,
+
+ 
+t equals 0.54 s or t equals 3.8 s.
+ 
+
+The later time corresponds to the ball descending into the stands, so the catch time is
+
+ 
+t equals 3.8 s.
+ 
+
+**(b)** Since the horizontal acceleration is zero, the horizontal velocity at impact remains equal to the initial horizontal velocity,
+
+ 
+ v sub x equals 21 meters per second.
+ 
+
+The vertical velocity at impact comes from the vertical velocity equation,
+
+ 
+ v sub y equals v sub oy -gt.
+ 
+
+Substituting the later catch time gives the downward vertical velocity at impact,
+
+ 
+ v sub y equals 21 meters per second -(9.81 meters per second squared )(3.8 s ) equals -16 meters per second.
+ 
+
+Taking the magnitude of the velocity vector gives the impact speed
+
+ 
+v equals square root of v sub x to the power of 2+ v sub y to the power of 2 equals square root of (21) squared+(-16) squared meters per second equals 27 meters per second.
+ 
+
+Using the ratio of the vertical and horizontal velocity components gives the direction below the horizontal
+
+ 
+ theta equals tan to the power of -1 ( | v sub y | over v sub x ) equals tan to the power of -1 ( 16 over 21 ) equals 37 degrees.
+ 
+
+---
+
+The Conclusion.
+
+The ball reaches the spectator after 3.8 s. At impact, its speed is 27 meters per second and its direction is 37 degrees below the horizontal. The downward direction is consistent with the problem statement that the ball is caught on its way down, and the speed is smaller than the launch speed because the ball is caught above its launch height.
+
+---
+
+ **The Problem**
+A golfer encounters two different situations on different holes. On the second hole they are 120 meters from the green and want to hit the ball 90 meters and let it run onto the green. They angle the shot low to the ground at 30 degrees to the horizontal to let the ball roll after impact. On the fourth hole they are 90 meters from the green and want to let the ball drop with a minimum amount of rolling after impact. Here, they angle the shot at 70 degrees to the horizontal to minimize rolling after impact. Both shots are hit and impacted on a level surface.
+(a) What is the initial speed of the ball at the second hole?
+(b) What is the initial speed of the ball at the fourth hole?
+(c) Write the trajectory equation for both cases.
+(d) Graph the trajectories.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+Each golf shot is modeled as ideal projectile motion on level ground. Air resistance is neglected, and the launch and impact heights are the same. The horizontal range can therefore be used to determine the initial speed for each launch angle. The trajectory equation is then written by eliminating time between the horizontal and vertical position equations.
+
+---
+
+The Math.
+
+For projectile motion that begins and ends at the same height, the horizontal range is related to the launch speed and launch angle by
+
+ 
+R equals v sub o to the power of 2 sin(2 theta _o) over g.
+ 
+
+Solving the range equation for v sub o gives the launch speed needed for a specified range and angle,
+
+ 
+Rg equals v sub o to the power of 2 sin(2 theta _o), 
+ Rg over sin(2 theta _o) equals v sub o to the power of 2, 
+ v sub o equals square root of Rg over sin(2 theta _o).
+ 
+
+**(a)** For the second hole, substituting R equals 90 meters and theta _o equals 30 degrees gives the required launch speed
+
+ 
+ v sub o equals square root of (90 meters )(9.81 meters per second squared ) over sin(60 degrees) equals 32 meters per second.
+ 
+
+**(b)** For the fourth hole, substituting R equals 90 meters and theta _o equals 70 degrees gives the required launch speed
+
+ 
+ v sub o equals square root of (90 meters )(9.81 meters per second squared ) over sin(140 degrees) equals 37 meters per second.
+ 
+
+**(c)** Eliminating time between the horizontal and vertical position equations for a projectile launched from the origin gives the trajectory equation
+
+ 
+y(x) equals x tan theta _o- g over 2( v sub o cos theta _o) squared x squared.
+ 
+
+For the 30 degrees shot, substituting the launch angle and launch speed gives the low trajectory
+
+ 
+y(x) equals x tan(30 degrees)- 9.81 over 2[(32) cos(30 degrees)] squared x squared is approximately equal to 0.58x-0.0064x squared.
+ 
+
+For the 70 degrees shot, substituting the launch angle and launch speed gives the high trajectory
+
+ 
+y(x) equals x tan(70 degrees)- 9.81 over 2[(37) cos(70 degrees)] squared x squared is approximately equal to 2.8x-0.031x squared.
+ 
+
+**(d)** The graph is generated in the verification code by evaluating both trajectory equations from x equals 0 to x equals 90 meters.
+
+---
+
+The Conclusion.
+
+The second-hole shot requires an initial speed of 32 meters per second at 30 degrees, while the fourth-hole shot requires an initial speed of 37 meters per second at 70 degrees. The high-angle shot needs the larger launch speed for the same range because sin(2 theta _o) is smaller for 70 degrees than for 30 degrees. The 70 degrees trajectory is also much higher and steeper, which is why it lands with less horizontal motion available for rolling.
+
+---
+
+========================================================================
+
+4.3 Uniform and Nonuniform Circular Motion
+
+Uniform and Nonuniform Circular Motion.
+
+Uniform circular motion describes an object that travels in circle with a constant speed. For example, any point on a propeller spinning at a constant rate is undergoing uniform circular motion, or a point on the edge of a spinning disk. Points on these rotating objects are actually accelerating (i.e., changing direction), although the rotation rate is a constant.
+
+Centripetal Acceleration.
+
+In 1D kinematics, objects with a constant speed have zero acceleration. However, in 2D and 3D kinematics, a particle can have acceleration if it moves along a curved trajectory (e.g., a circle) with a constant speed.
+
+In this case, the velocity vector vec v is changing, or d vec v {dt} is not equal to 0. As a particle moves counterclockwise in time through an interval change in t on a circular path, 
+
+Bullet point. its position vector moves from vector r (t) to vector r (t+ change in t).
+
+Bullet point. its velocity vector has a constant magnitude v and is tangent to the path as it changes from vec v (t) to vec v (t+ change in t), only changing its direction.
+
+Since the velocity vector vec v (t) is perpendicular to the position vector vector r (t), the triangles formed by the position vectors along with its difference vector change in vector r and the velocity vector vec v along with its difference vector change in vec v are similar. Furthermore, the two triangles are isosceles. From these facts we have
+
+ 
+ change in r equals r change in theta, 
+ change in v equals v change in theta, 
+ change in v over v equals change in r over r.
+ 
+
+We can find the magnitude of the acceleration from 
+
+ 
+ change in v equals v change in r over r, 
+ the limit of sub change in t goes to 0 change in v over change in t equals v over r [ the limit of sub change in t goes to 0 change in r over change in t ], 
+ equals ( v over r ) v equals v squared over r.
+ 
+
+A particle moving in a circle at a constant speed has an acceleration with magnitude
+
+ 
+ a sub c equals v squared over r.
+ 
+
+Checkpoint.
+
+ 
+
+In uniform circular motion, the speed is constant. Why is the object still accelerating?
+ 
+
+The direction of the acceleration vector is pointed inwards, toward the center of the circle. This is a radial acceleration because its along the radial direction, and is also called the **centripetal acceleration**. 
+
+Note.
+
+The word *centripetal* comes from the Latin words *centrum* (meaning "center") and *petere* (meaning "to seek"), and thus takes the meaning "center seeking."
+ 
+
+**Khan Academy**.
+
+ 
+
+Centripetal acceleration can have a wide range of values, depending on the speed and radius of the circular path. Typical centripetal acceleration values are given in the following table.
+
+Table. Typical Centripetal Accelerations (in units of g ). Refer to the course notes for the full entries.
+
+**Example Problem**: Creating an Acceleration of 1 g.
+
+The Problem.
+A jet is flying at a speed of 134.1 meters per second along a straight line and then makes a turn along a circular path that is level with the ground. What does the radius of the circular path have to be to produce a centripetal acceleration of 1g on the pilot and jet toward the center of the circular trajectory?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The jet is modeled as moving at constant speed along a horizontal circular path. Since the speed is constant, the acceleration is centripetal and points toward the center of the circle. The required radius is found from the relationship between speed, turning radius, and centripetal acceleration.
+
+---
+
+The Math.
+
+For uniform circular motion, the centripetal acceleration depends on the square of the speed divided by the radius as
+
+ 
+ a sub c equals v squared over r.
+ 
+
+The required acceleration is one gravitational acceleration, so the centripetal acceleration condition is
+
+ 
+g equals v squared over r.
+ 
+
+Multiplying both sides by r and then dividing both sides by g gives the required radius
+
+ 
+r equals v squared over g.
+ 
+
+Substituting the jet speed and g equals 9.81 meters per second squared gives the required turn radius
+
+ 
+r equals (134.1 meters per second ) squared over 9.81 meters per second squared equals 1830 meters equals 1.83 km.
+ 
+
+---
+
+The Conclusion.
+
+To produce a centripetal acceleration of 1g at a speed of 134.1 meters per second, the jet must follow a circular path with radius 1830 meters, or 1.83 km. The large radius shows why high-speed turns require substantial horizontal space even when the acceleration is only comparable to ordinary gravity.
+
+---
+
+ **The Problem**
+A proton has speed 5.0 times ten to the 6 meters per second and is moving in a circle in the xy plane of radius r equals 0.175 meters. What is its position in the xy plane at time t equals 2.0 times ten to the minus 7 s equals 200 ns? At t equals 0, the position of the proton is 0.175 i hat m and it circles counterclockwise. Sketch the trajectory.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The proton undergoes uniform circular motion in the xy plane. Its speed and radius are constant, so its angular position increases at a constant rate. Because the proton starts on the positive x axis and moves counterclockwise, the x component is represented by a cosine function and the y component is represented by a sine function.
+
+---
+
+The Math.
+
+For uniform circular motion, the angular frequency is the speed divided by the radius,
+
+ 
+ omega equals v over r.
+ 
+
+Substituting the given speed and radius gives the angular frequency
+
+ 
+ omega equals 5.0 times ten to the 6 meters per second over 0.175 meters, 
+ equals 2.9 times ten to the 7 rad/s.
+ 
+
+For counterclockwise motion that begins at vector r (0) equals r i hat, the position vector is written using cosine and sine components as
+
+ 
+ vector r (t) equals r cos( omega t) i hat +r sin( omega t) j hat.
+ 
+
+Multiplying the angular frequency by the elapsed time gives the angular position at t equals 2.0 times ten to the minus 7 s,
+
+ 
+ omega t equals (2.9 times ten to the 7 rad/s )(2.0 times ten to the minus 7 s ), 
+ equals 5.7 rad.
+ 
+
+Substituting the angular position into the circular-motion position vector gives the proton's position
+
+ 
+ vector r equals (0.175 meters ) cos(5.7) i hat + (0.175 meters ) sin(5.7) j hat, 
+ equals (0.15 i hat -0.094 j hat ) m.
+ 
+
+---
+
+The Conclusion.
+
+After 200 ns, the proton is located at approximately (0.15 i hat -0.094 j hat ) m. The negative y component means the proton is below the x axis at that instant. This is consistent with counterclockwise circular motion that has carried the proton through slightly less than one complete revolution.
+
+---
+
+ **The Problem**
+A particle moves in a circle of radius r equals 2.0 meters. During the time interval from t equals 1.5 s to t equals 4.0 s its speed varies with time according to
+ v(t) equals c sub 1 - c sub 2 over t squared, c sub 1 equals 4.0 meters per second; c sub 2 equals 6.0 meters dot s. 
+What is the total acceleration of the particle at t equals 2.0 s?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The particle undergoes nonuniform circular motion. Its acceleration has one component directed radially inward because the direction of velocity is changing, and one component tangent to the circle because the speed is changing. These components are perpendicular, so the total acceleration magnitude is found by combining them as perpendicular vector components.
+
+---
+
+The Math.
+
+Substituting t equals 2.0 s into the given speed function gives the instantaneous speed
+
+ 
+v(2.0) equals 4.0- 6.0 over (2.0) squared equals 2.5 meters per second.
+ 
+
+The radial, or centripetal, acceleration is determined by the instantaneous speed and the radius of the circular path as
+
+ 
+ a sub c equals v squared over r.
+ 
+
+Substituting the speed and radius gives the centripetal acceleration at the specified time
+
+ 
+ a sub c equals (2.5 meters per second ) squared over 2.0 meters equals 3.1 meters per second squared.
+ 
+
+The tangential acceleration is the rate of change of the speed,
+
+ 
+ a sub T equals dv over dt.
+ 
+
+Since the speed function can be written as v(t) equals 4.0-6.0t to the power of -2, differentiating the speed gives the tangential acceleration function
+
+ 
+ a sub T equals 12.0t to the power of -3.
+ 
+
+Substituting t equals 2.0 s gives the tangential acceleration
+
+ 
+ a sub T equals 12.0 over (2.0) cubed equals 1.5 meters per second squared.
+ 
+
+Combining the perpendicular radial and tangential components gives the total acceleration magnitude
+
+ 
+| vector a | equals square root of a sub c to the power of 2+ a sub T to the power of 2, 
+ equals square root of (3.1) squared+(1.5) squared meters per second squared, 
+ equals 3.5 meters per second squared.
+ 
+
+Using the ratio of the inward component to the tangential component gives the direction measured inward from the tangent
+
+ 
+ theta equals tan to the power of -1 ( a sub c over a sub T ) equals tan to the power of -1 ( 3.1 over 1.5 ) equals 64 degrees.
+ 
+
+---
+
+The Conclusion.
+
+At t equals 2.0 s, the particle has a centripetal acceleration of 3.1 meters per second squared inward and a tangential acceleration of 1.5 meters per second squared along the direction of motion. The total acceleration has magnitude 3.5 meters per second squared and points 64 degrees inward from the tangent.
+
+---
+
+========================================================================
+
+4.4 Relative Motion in One and Two Dimensions
+
+Relative Motion in One and Two Dimensions.
+
+Reference Frames.
+
+Motion is measured relative to a reference, where this is often relative to the ground (i.e., the reference). Suppose that you're riding a train moving east and pass another train also moving east, then your velocity relative to the other train is different than your velocity relative to the ground.
+
+The **reference frame** is an explicit statement describing the reference of the relative motion in one or more dimensions. We can expand our view of moving on a train to how the Earth spins or moves around the Sun because it is moving too. When considering the Earth's motion around the Sun, then the Solar System is the reference frame.
+
+Note.
+
+The Solar System is a **proper noun** and should be capitalized. There is not more than one "Solar System", where planets orbiting other stars are called **exoplanets**. Multiple planets orbiting the same star is a multiple-planetary system (or multi).
+
+The Solar System for an astronomer or planetary scientist carries a specific meaning like how "theory" has a specific meaning in science compared to lay-usage. This usually means that a planetary system is similar in one specific way to our Solar System.
+ 
+
+Reference frames were applied more widely after Galileo developed his mechanics because he was trying to explain why the Earth could spin and go around the Sun. The methods outlined in this section are applicable following Galileo and breakdown once the object moves closer to the speed of light. The slow-moving (relative to lightspeed) regime is also called **Galilean transformations**. The fast-moving (close to lightspeed) regime is called a **Lorentz transformation** and is used when studying problems in Einstein's special theory of relativity.
+
+Relative Motion in 1D.
+
+In 1D, the velocity vectors only have two possible directions (e.g., east/west, left/right, positive/negative). Take the example of a person sitting in a train that is moving east, where east is the positive direction and Earth is the reference frame.
+
+Then, we can write down the velocity of the train with respect to the Earth as
+
+ vec v sub TE equals 10 meters per second i hat, 
+
+where the subscript TE denotes the **t**rain's velocity is measured relative to the **E**arth.
+
+A person gets up and walks toward the back of the train at 2 meters per second. Since the train is moving east, the person must be moving west towards the back of the train. We can write the velocity of the person as
+
+ vec v sub PT equals -2 meters per second i hat. 
+
+We can add these two vectors together to find the velocity of the person with respect to the Earth (i.e., PE ). This **relative velocity** is written as
+
+ 
+ vec v sub PE equals vec v sub PT + vec v _ TE.
+ 
+
+Note.
+
+The ordering of the subscripts is chosen so the intermediate frame lies in the middle of the vector addition. As a result, the final vector contains the remaining subscripts. Figure shows this coupling.
+
+Figure referenced in the course notes.
+
+ 
+
+Adding the vectors, we find
+
+ vec v sub PE equals 10 meters per second i hat - 2 meters per second i hat equals 8 meters per second i hat. 
+
+So the person is moving 8 meters per second east with respect to the Earth.
+
+(relativ e sub 2D ) equals 
+
+Relative Velocity in 2D.
+
+We can now apply these concepts to 2D considering a particle P and reference frames S and S^ prime (see the figure). The position of the origin S^ prime as measured in S is vector r sub S^ prime S, where the position P measured in S^ prime is vector r sub PS^ prime and the position of P as measured in S is vector r sub PS.
+
+ 
+ 
+ 
+ 
+
+A 2D displacement-vector diagram showing vector r sub PS, vector r sub PS', and vector r sub S'S.
+ 
+
+From Fig. we see that the relative positions and velocities are given by
+
+ 
+ vector r sub PS equals vector r sub PS^ prime + vector r sub S^ prime S, 
+ vec v sub PS equals vec v sub PS^ prime + vec v sub S^ prime S.
+ 
+
+We can extend this method of vector addition to any number of reference frames. For particle P, its velocity can be computed relative to frames A, B, and C as
+
+ 
+ vec v sub PC equals vec v sub PA + vec v _ AB + vec v sub BC.
+ 
+
+We can also see how the accelerations are related in two reference frames by differentiating to get 
+
+ 
+ vector a sub PS equals vector a sub PS^ prime + vector a sub S^ prime S.
+ 
+
+Suppose that the velocity of S^ prime relative to S is a constant, then vector a sub S^ prime S equals 0 and
+
+ 
+ vector a sub PS equals vector a sub PS^ prime,
+ 
+
+which means that the acceleration of a particle is the same as measured by two observers moving at a constant velocity relative to each other.
+
+See the Python snippet given in the course lecture notes.
+
+**Khan Academy**.
+
+ 
+
+ 
+ 
+
+**Example Problem**: Motion of a Car Relative to a Truck.
+
+The Problem.
+A truck is traveling south at a speed of 70 kilometers per hour toward an intersection. A car is traveling east toward the intersection at a speed of 80 kilometers per hour. What is the velocity of the car relative to the truck?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+Both velocities are described in the Earth frame before forming the relative velocity. The positive x direction points east, and the positive y direction points north. The car's velocity relative to the truck is found by subtracting the truck's Earth-frame velocity from the car's Earth-frame velocity.
+
+---
+
+The Math.
+
+The car travels east, so its velocity relative to Earth has only a positive x component,
+
+ 
+ vec v sub CE equals 80 i hat kilometers per hour.
+ 
+
+The truck travels south, so its velocity relative to Earth has a negative y component,
+
+ 
+ vec v sub TE equals -70 j hat kilometers per hour.
+ 
+
+The velocity of the car relative to the truck is the car's Earth-frame velocity minus the truck's Earth-frame velocity,
+
+ 
+ vec v sub CT equals vec v sub CE - vec v sub TE.
+ 
+
+Substituting the two Earth-frame velocities gives the relative velocity vector
+
+ 
+ vec v sub CT equals 80 i hat kilometers per hour -(-70 j hat kilometers per hour ), 
+ equals (80 i hat +70 j hat ) kilometers per hour.
+ 
+
+Taking the magnitude of the relative velocity vector gives the relative speed
+
+ 
+| vec v sub CT | equals square root of (80) squared+(70) squared kilometers per hour equals 110 kilometers per hour.
+ 
+
+Using the ratio of the northward component to the eastward component gives the direction measured north of east
+
+ 
+ theta equals tan to the power of -1 ( 70 over 80 ) equals 41 degrees.
+ 
+
+---
+
+The Conclusion.
+
+The car's velocity relative to the truck is (80 i hat +70 j hat ) kilometers per hour. Its speed relative to the truck is 110 kilometers per hour, directed 41 degrees north of east. From the truck's point of view, the car is moving eastward and northward because the truck's own southward motion has been subtracted away.
+
+---
+
+ **The Problem**
+A pilot must fly a plane due north to reach their destination. The plane can fly at 300 kilometers per hour in still air. A wind is blowing out of the northeast at 90 kilometers per hour. (a) In what direction must the pilot head the plane to fly due north? (b) What is the speed of the plane relative to the ground?
+
+Figure referenced in the course notes.
+
+---
+
+The Model.
+
+The plane and wind velocities are treated as horizontal vectors. Let P represent the plane, A represent the air, and G represent the ground. The pilot controls the velocity of the plane relative to the air, while the wind is the velocity of the air relative to the ground. A wind "out of the northeast" blows toward the southwest. The coordinate system uses + i hat east and + j hat north. To make the ground track due north, the east-west component of the plane's ground velocity must be zero.
+
+---
+
+The Math.
+
+The wind points 45 degrees south of west, so its velocity components are negative in both the x and y directions,
+
+ 
+ vec v sub AG equals (-90 cos45 degrees) i hat +(-90 sin45 degrees) j hat kilometers per hour.
+ 
+
+Let theta be the angle the pilot aims east of north, so the plane's air-relative velocity has an eastward component proportional to sin theta and a northward component proportional to cos theta as
+
+ 
+ vec v sub PA equals (300 sin theta ) i hat +(300 cos theta ) j hat kilometers per hour.
+ 
+
+The plane's ground velocity is the vector sum of the plane-relative-to-air velocity and the air-relative-to-ground velocity,
+
+ 
+ vec v sub PG equals vec v sub PA + vec v sub AG.
+ 
+
+**(a)** To fly due north relative to the ground, the x component of the ground velocity must be zero, which requires
+
+ 
+0 equals ( vec v sub PA )_x+( vec v sub AG )_x, 
+0 equals 300 sin theta -90 cos45 degrees.
+ 
+
+Solving the component equation for the heading angle gives the required angle east of north,
+
+ 
+300 sin theta equals 90 cos45 degrees, 
+ sin theta equals 90 cos45 degrees over 300, 
+ theta equals sin to the power of -1 ( 90 cos45 degrees over 300 ), 
+ equals 12 degrees.
+ 
+
+Therefore, the pilot must aim 12 degrees east of north.
+
+**(b)** The ground speed is the northward component of the ground velocity because the east-west component has been canceled, so
+
+ 
+| vec v sub PG | equals ( vec v sub PA )_y+( vec v sub AG )_y, 
+ equals 300 cos(12 degrees)-90 sin45 degrees, 
+ equals 230 kilometers per hour.
+ 
+
+---
+
+The Conclusion.
+
+The pilot must aim the plane 12 degrees east of north to cancel the westward component of the wind. The plane's speed relative to the ground is 230 kilometers per hour. The heading is not the same as the ground-track direction because the pilot must point partly into the wind to move due north over the ground.
+
+---
+
+========================================================================

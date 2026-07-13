@@ -1,0 +1,151 @@
+Relative Motion in One and Two Dimensions.
+
+Reference Frames.
+
+Motion is measured relative to a reference, where this is often relative to the ground (i.e., the reference). Suppose that you're riding a train moving east and pass another train also moving east, then your velocity relative to the other train is different than your velocity relative to the ground.
+
+The reference frame is an explicit statement describing the reference of the relative motion in one or more dimensions. We can expand our view of moving on a train to how the Earth spins or moves around the Sun because it is moving too. When considering the Earth's motion around the Sun, then the Solar System is the reference frame.
+
+Note.
+
+The Solar System is a proper noun and should be capitalized. There is not more than one "Solar System", where planets orbiting other stars are called exoplanets. Multiple planets orbiting the same star form a multi-planet system.
+
+The Solar System for an astronomer or planetary scientist carries a specific meaning like how "theory" has a specific meaning in science compared to lay-usage. This usually means that a planetary system is similar in one specific way to our Solar System.
+
+Reference frames were applied more widely after Galileo developed his mechanics because he was trying to explain why the Earth could spin and go around the Sun. The methods outlined in this section are applicable following Galileo and break down once the object moves closer to the speed of light. The slow-moving (relative to the speed of light) regime is also called Galilean transformations. The fast-moving (close to the speed of light) regime is called a Lorentz transformation and is used when studying problems in Einstein's special theory of relativity.
+
+Relative Motion in One Dimension.
+
+In one dimension, the velocity vectors only have two possible directions (e.g., east/west, left/right, positive/negative). Take the example of a person sitting in a train that is moving east, where east is the positive direction and Earth is the reference frame.
+
+Then, we can write down the velocity of the train with respect to the Earth as
+
+vector v sub T E equals 10 meters per second i-hat,
+
+where the subscript T E denotes that the train’s velocity is measured relative to Earth.
+
+A person gets up and walks toward the back of the train at 2 meters per second. Since the train is moving east, the person must be moving west towards the back of the train. We can write the velocity of the person as
+
+vector v sub P T equals negative 2 meters per second i-hat.
+
+We can add these two vectors together to find the velocity of the person with respect to the Earth (i.e., PE ). This relative velocity is written as
+
+vector v sub P E equals vector v sub P T plus vector v sub T E.
+
+Note.
+
+The ordering of the subscripts is chosen so the intermediate frame lies in the middle of the vector addition. As a result, the final vector contains the remaining subscripts. This ordering couples the adjacent frame labels.
+
+Adding the vectors, we find
+
+vector v sub P E equals 10 meters per second i-hat minus 2 meters per second i-hat equals 8 meters per second i-hat.
+
+So the person is moving 8 meters per second east with respect to the Earth.
+
+Relative Velocity in Two Dimensions.
+
+We can now apply these concepts in two dimensions by considering a particle P and reference frames S and S-prime. The position of the origin S-prime as measured in S is vector r sub S-prime S, where the position P measured in S-prime is vector r sub P S-prime and the position of P as measured in S is vector r sub P S.
+
+The relative-position diagram shows that the relative positions and velocities are given by
+
+vector r sub P S equals vector r sub P S-prime plus vector r sub S-prime S,
+vector v sub P S equals vector v sub P S-prime plus vector v sub S-prime S.
+
+We can extend this method of vector addition to any number of reference frames. For particle P, its velocity can be computed relative to frames A, B, and C as
+
+vector v sub P C equals vector v sub P A plus vector v sub A B plus vector v sub B C.
+
+We can also see how the accelerations are related in two reference frames by differentiating to get
+
+vector a sub P S equals vector a sub P S-prime plus vector a sub S-prime S.
+
+Suppose that the velocity of S-prime relative to S is a constant, then vector a sub S-prime S equals 0 and
+
+vector a sub P S equals vector a sub P S-prime,
+
+which means that the acceleration of a particle is the same as measured by two observers moving at a constant velocity relative to each other.
+The course webpage includes the Python demonstration and a Khan Academy video for relative velocity.
+Example Problem: Motion of a Car Relative to a Truck.
+
+The Problem.
+A truck is traveling south at a speed of 70 kilometers per hour toward an intersection. A car is traveling east toward the intersection at a speed of 80 kilometers per hour. What is the velocity of the car relative to the truck?
+The worked solution follows.
+The Model.
+
+Both velocities are described in the Earth frame before forming the relative velocity. The positive x direction points east, and the positive y direction points north. The car's velocity relative to the truck is found by subtracting the truck's Earth-frame velocity from the car's Earth-frame velocity.
+
+The Math.
+
+The car travels east, so its velocity relative to Earth has only a positive x component,
+
+vector v sub C E equals 80 i-hat kilometers per hour.
+
+The truck travels south, so its velocity relative to Earth has a negative y component,
+
+vector v sub T E equals negative 70 j-hat kilometers per hour.
+
+The velocity of the car relative to the truck is the car's Earth-frame velocity minus the truck's Earth-frame velocity,
+
+vector v sub C T equals vector v sub C E minus vector v sub T E.
+
+Substituting the two Earth-frame velocities gives the relative velocity vector
+
+vector v sub C T equals 80 i-hat kilometers per hour minus negative 70 j-hat kilometers per hour,
+equals (80 i-hat plus 70 j-hat ) kilometers per hour.
+
+Taking the magnitude of the relative velocity vector gives the relative speed
+
+the magnitude of vector v sub C T equals the square root of (80) squared plus (70) squared kilometers per hour equals 110 kilometers per hour.
+
+Using the ratio of the northward component to the eastward component gives the direction measured north of east
+
+theta equals the inverse tangent of 70 divided by 80 equals 41 degrees.
+
+The Conclusion.
+
+The car's velocity relative to the truck is (80 i-hat plus 70 j-hat ) kilometers per hour. Its speed relative to the truck is 110 kilometers per hour, directed 41 degrees north of east. From the truck's point of view, the car is moving eastward and northward because the truck's own southward motion has been subtracted away.
+
+Example Problem: Flying a Plane in a Wind.
+
+The Problem.
+A pilot must fly a plane due north to reach their destination. The plane can fly at 300 kilometers per hour in still air. A wind is blowing out of the northeast at 90 kilometers per hour. Part a. In what direction must the pilot head the plane to fly due north? Part b. What is the speed of the plane relative to the ground?
+
+The Model.
+
+The plane and wind velocities are treated as horizontal vectors. Let P represent the plane, A represent the air, and G represent the ground. The pilot controls the velocity of the plane relative to the air, while the wind is the velocity of the air relative to the ground. A wind "out of the northeast" blows toward the southwest. The coordinate system uses plus i-hat east and plus j-hat north. To make the ground track due north, the east-west component of the plane's ground velocity must be zero.
+
+The Math.
+
+The wind points 45 degrees south of west, so its velocity components are negative in both the x and y directions,
+
+vector v sub A G equals (negative 90 times the cosine of 45 degrees) i-hat plus (negative 90 times the sine of 45 degrees) j-hat kilometers per hour.
+
+Let theta be the angle the pilot aims east of north, so the plane's air-relative velocity has an eastward component proportional to sine theta and a northward component proportional to cosine theta as
+
+vector v sub P A equals 300 sine theta i-hat plus 300 cosine theta j-hat kilometers per hour.
+
+The plane's ground velocity is the vector sum of the plane-relative-to-air velocity and the air-relative-to-ground velocity,
+
+vector v sub P G equals vector v sub P A plus vector v sub A G.
+Part a. To fly due north relative to the ground, the x component of the ground velocity must be zero, which requires
+
+0 equals the x component of vector v sub P A plus the x component of vector v sub A G,
+0 equals 300 sine theta minus 90 times the cosine of 45 degrees.
+
+Solving the component equation for the heading angle gives the required angle east of north,
+
+300 sine theta equals 90 the cosine of 45 degrees,
+sine theta equals 90 times the cosine of 45 degrees, divided by 300,
+theta equals the inverse sine of 90 times the cosine of 45 degrees, divided by 300,
+equals 12 degrees.
+
+Therefore, the pilot must aim 12 degrees east of north.
+Part b. The ground speed is the northward component of the ground velocity because the east-west component has been canceled, so
+
+the magnitude of vector v sub P G equals the y component of vector v sub P A plus the y component of vector v sub A G,
+equals 300 the cosine of 12 degrees minus 90 the sine of 45 degrees,
+equals 230 kilometers per hour.
+
+The Conclusion.
+
+The pilot must aim the plane 12 degrees east of north to cancel the westward component of the wind. The plane's speed relative to the ground is 230 kilometers per hour. The heading is not the same as the ground-track direction because the pilot must point partly into the wind to move due north over the ground.

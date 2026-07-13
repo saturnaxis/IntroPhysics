@@ -1,0 +1,136 @@
+Free Fall.
+
+Gravity.
+
+Until Galileo Galilei showed otherwise, people believed that a heavier object has a greater acceleration in a free fall. We know now that this is not the case.
+In the absence of air resistance, heavy objects arrive at the ground at the same time as lighter objects when dropped from the same height.
+A B B C video is linked on the course webpage.
+In the real world, air resistance can cause a lighter object to fall slower than a heavier object of the same size. A tennis ball reaches the ground after a baseball dropped at the same time, although the difference is not large. Air resistance opposes the motion of an object through the air and friction between objects also opposes motion between them.
+
+Free fall is when an object falls without air resistance or friction. The force of gravity causes objects to fall toward the center of the Earth, where this acceleration is also called the acceleration due to gravity.
+
+Near Earth's surface (or for small changes in altitude) the acceleration due to gravity is constant, which means we can apply the kinematic equations to any falling object (where air resistance and friction are negligible), including spherical cows.
+
+Acceleration due to gravity is given its own symbol g, where it is nearly constant at any location on Earth's surface with the average value
+
+g equals 9.81 meters per second squared, or 32.2 feet per second squared.
+
+The value of g can vary from 9.78 to 9.83 meters per second squared depending on latitude, altitude, underlying geological formations, and local topography. Here we use g equals 9.81 meters per second squared unless otherwise specified.
+Checkpoint. Pause and check your understanding.
+A ball is thrown straight upward. At the highest point, its velocity is momentarily zero.
+
+What is its acceleration at that instant?
+
+The direction of acceleration due to gravity g is defined to be downward (i.e., toward Earth's center). Its direction defines what we call vertical.
+
+Note.
+
+The acceleration a in the kinematic equations has the value positive g or negative g depending on how we define our coordinate system. If we define the
+upward direction as positive, then a equals negative g, or negative 9.81 meters per second squared.
+downward direction as positive, then a equals g equals 9.81 meters per second squared.
+
+One-Dimensional Motion Involving Gravity.
+
+Consider vertical (up-and-down) motion with no air resistance or friction, where these assumptions mean the velocity is also vertical. There are some statements about the initial velocity of an object as it enters or leaves free fall. The object is in free fall after it has left contact with whatever held or threw it.
+If an object is dropped, we know the initial velocity is zero when in free fall (i.e., v naught equals 0).
+If the object is thrown, it has the same speed in free fall as it did before it was released (i.e., v naught is defined at release).
+
+When in free fall, the motion is one-dimensional and has constant acceleration of magnitude g. When the object comes in contact with the ground (or any other object), it is no longer in free fall (i.e., a is not equal to g).
+
+We represent the vertical displacement with the symbol y and write the following kinematic equations for objects in free fall. We assume that the positive direction is upward, which gives
+
+v equals v naught minus g t,
+y equals y naught plus v naught times t minus one-half g t squared,
+v squared equals v naught squared minus 2 g(y minus y naught).
+
+When solving free fall problems, it is helpful to follow this strategy:
+Decide on the sign of g (i.e., is positive upward or downward). In some problems, it may be useful to have positive g indicating the positive direction is downward.
+Draw a sketch of the problem. Visualizing the problem can be a useful first step. Don't worry about artistic quality.
+Identify the knowns and unknowns from the problem description.
+Match the kinematic equations with the knowns and unknowns.
+
+Example Problem: Free Fall of a Ball.
+
+The Problem.
+The course webpage shows the positions of a ball at 1-second intervals. The ball has an initial velocity of 4.9 meters per second downward and is thrown from the top of a 98-meter-high building. Part a. How much time elapses before the ball reaches the ground? Part b. What is the velocity when it arrives at the ground?
+
+The Model.
+
+The ball moves vertically in one dimension under constant gravitational acceleration. We choose the top of the building as the origin, upward as positive, and downward as negative. With this sign convention, both the initial velocity and acceleration are negative.
+
+The Math.
+
+Part a. For constant acceleration, the vertical position is given by
+
+y equals y naught plus v naught times t plus one-half a t squared.
+
+The ball starts at the origin, the ground is at y equals negative 98 meters, the initial velocity is downward, and a equals negative g with g equals 9.81 meters per second squared, so the impact condition gives
+
+negative 98 meters equals zero plus negative 4.9 meters per second times t, minus one-half times 9.81 meters per second squared times t squared,
+zero equals 4.905 t squared plus 4.9 t minus 98.
+
+Solving this quadratic equation gives the mathematical roots t equals negative 5.0 seconds and t equals 4.0 seconds. The negative root is not physical for the motion after release, so the elapsed time is
+
+t equals 4.0 seconds.
+
+Part b. The velocity at the ground is found from the velocity-time equation, which gives
+
+v equals v naught plus a t,
+equals negative 4.9 meters per second minus 9.81 meters per second squared times 4.0 seconds,
+equals negative 44 meters per second.
+
+The Conclusion.
+
+The ball reaches the ground after 4.0 seconds. Its velocity just before impact is negative 44 meters per second, meaning the ball is moving downward at 44 meters per second.
+
+The Problem.
+A small rocket blasts off and travels straight upward. When at a height of 5.0 kilometers and velocity of 200.0 meters per second, it releases its booster. Part a. What is the maximum height the booster attains? Part b. What is the velocity of the booster at a height of 6.0 kilometers? Neglect air resistance.
+
+The Model.
+
+After release, the booster moves vertically under constant gravitational acceleration, with air resistance neglected. We choose upward as the positive direction and place the origin at the release point. The booster’s acceleration is downward, so it is negative in this coordinate system.
+
+The Math.
+
+For constant acceleration, velocity and displacement are related by
+
+v squared equals v naught squared plus 2 a(y minus y naught).
+
+Since the acceleration is gravitational and downward, a equals negative g, so this relation becomes
+
+v squared equals v naught squared minus 2 g(y minus y naught).
+
+Part a. At the maximum height, the booster momentarily has zero velocity, so the velocity-displacement relation gives
+
+zero equals v naught squared minus 2 g(y minus y naught).
+
+Solving for the additional height above the release point gives
+
+y minus y naught equals v naught squared over 2 g.
+
+Using g equals 9.81 meters per second squared, the additional height above the release point is
+
+y minus y naught equals the quantity 200.0 meters per second, squared, divided by 2 times 9.81 meters per second squared,
+equals 2.04 times ten to the third meters,
+equals 2.0 kilometers.
+
+The maximum height above Earth’s surface is the release height plus the additional height, which gives
+
+y max equals 5.0 kilometers plus 2.0 kilometers equals 7.0 kilometers.
+
+Part b. A height of 6.0 kilometers above Earth’s surface is 1.0 kilometers above the release point, which is
+
+y minus y naught equals 1.0 kilometers equals 1.0 times ten to the third meters.
+
+The speed at this height is found from the same velocity-displacement equation, which gives
+
+v squared equals the quantity 200.0 meters per second, squared, minus 2 times 9.81 meters per second squared, times 1.0 times ten to the third meters,
+equals 2.04 times ten to the fourth square meters per second squared.
+
+Taking the square root gives two possible velocity directions at this height, so the velocity is
+
+v equals positive or negative 140 meters per second.
+
+The Conclusion.
+
+The booster reaches a maximum height of 7.0 kilometers above Earth’s surface. At a height of 6.0 kilometers, its velocity can be positive 140 meters per second while moving upward or negative 140 meters per second while moving downward.

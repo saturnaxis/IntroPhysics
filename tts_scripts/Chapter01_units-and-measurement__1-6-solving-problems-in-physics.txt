@@ -1,0 +1,68 @@
+Solving Problems in Physics.
+
+Physics problems are not solved by memorizing formulas. They are solved by building a model, applying mathematics consistently, interpreting the result, and checking the work. Throughout this book, worked examples and exercises follow a common structure to reinforce this process.
+
+The Model (Strategy).
+
+The first step in solving any physics problem is to decide how to represent the physical situation. This involves identifying the relevant physical quantities, assumptions, and relationships before writing down equations.
+
+A useful strategy is to ask:
+
+What physical quantities are involved?
+
+What is known and what is unknown?
+
+What simplifying assumptions are reasonable?
+
+What definitions, principles, or laws apply?
+
+At this stage, we are not “doing math” yet. We are building a conceptual model of the problem that can later be translated into equations.
+
+The Math (Solution).
+
+Once a model has been established, the next step is to translate it into mathematics.
+
+This typically involves:
+
+Writing equations using symbols rather than numbers,
+
+Applying definitions or relationships consistently,
+
+Performing algebraic manipulations to isolate the desired quantity,
+
+And substituting numerical values only at the final stage.
+
+As an illustrative example, suppose we wish to convert a speed of 180 kilometers per hour into S I units of meters per second.
+
+Using the conversion factors
+
+One kilometer equals ten to the third meters, and one hour equals 3600 seconds.
+
+we write
+
+v equals 180 kilometers per hour times ten to the third meters per kilometer times one hour per 3600 seconds,
+which equals 50 meters per second.
+
+Keeping units visible throughout the calculation helps prevent mistakes and makes cancellations explicit.
+
+The Conclusion (Significance).
+
+After obtaining a result, it is essential to interpret it.
+
+A good conclusion addresses questions such as:
+
+Are the final units correct?
+
+Is the numerical value physically reasonable?
+
+Does the result make sense given the original problem?
+
+In the example above, a speed of 50 meters per second corresponds to a fast-moving vehicle, which is consistent with an initial speed of 180 kilometers per hour. The units and magnitude confirm that the result is reasonable.
+
+This step is not optional.
+
+The Verification (Script in Python).
+
+In this course, Python is often used as a verification tool to confirm analytical work. Code should reflect the same logic used in the mathematics, not replace it.
+
+The Verification section on the course webpage includes the Python check for this calculation.

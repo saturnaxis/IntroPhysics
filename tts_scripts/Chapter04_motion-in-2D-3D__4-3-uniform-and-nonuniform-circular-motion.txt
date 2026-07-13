@@ -1,0 +1,198 @@
+Uniform and Nonuniform Circular Motion.
+
+Uniform circular motion describes an object that travels in a circle with a constant speed. For example, any point on a propeller spinning at a constant rate is undergoing uniform circular motion, or a point on the edge of a spinning disk. Points on these rotating objects are actually accelerating (i.e., changing direction), although the rotation rate is a constant.
+
+Centripetal Acceleration.
+
+In 1D kinematics, objects with a constant speed have zero acceleration. However, in two-dimensional and three-dimensional kinematics, a particle can have acceleration if it moves along a curved trajectory (e.g., a circle) with a constant speed.
+
+In this case, the velocity vector v is changing, or d vector v over d t is not equal to zero. As a particle moves counterclockwise in time through an interval delta t on a circular path,
+its position vector moves from vector r of t to vector r (t plus delta t).
+its velocity vector has a constant magnitude v and is tangent to the path as it changes from vector v (t) to vector v (t plus delta t), only changing its direction.
+
+Since the velocity vector v (t) is perpendicular to the position vector r of t, the triangles formed by the position vectors along with its difference vector delta vector r and the velocity vector v along with its difference vector delta vector v are similar. Furthermore, the two triangles are isosceles. From these facts we have
+
+delta r equals r delta theta,
+delta v equals v delta theta,
+delta v divided by v equals delta r divided by r.
+
+We can find the magnitude of the acceleration from
+
+delta v equals v times delta r divided by r,
+the limit, as delta t approaches zero, of delta v divided by delta t equals v over r times the limit, as delta t approaches zero, of delta r divided by delta t,
+equals v over r times v, which equals v squared divided by r.
+
+A particle moving in a circle at a constant speed has an acceleration with magnitude
+
+a sub c equals v squared divided by r.
+Checkpoint. Pause and check your understanding.
+In uniform circular motion, the speed is constant. Why is the object still accelerating?
+
+The direction of the acceleration vector is pointed inwards, toward the center of the circle. This is a radial acceleration because it is along the radial direction, and is also called the centripetal acceleration.
+
+Note.
+
+The word centripetal comes from the Latin words centrum (meaning "center") and petere (meaning "to seek"), and thus takes the meaning "center seeking."
+A Khan Academy video is linked on the course webpage.
+Centripetal acceleration can have a wide range of values, depending on the speed and radius of the circular path. Typical centripetal acceleration values are given in the following table.
+The course webpage includes a table of typical centripetal accelerations measured in units of g.
+Example Problem: Creating an Acceleration of one g.
+
+The Problem.
+A jet is flying at a speed of 134.1 meters per second along a straight line and then makes a turn along a circular path that is level with the ground. What does the radius of the circular path have to be to produce a centripetal acceleration of one g on the pilot and jet toward the center of the circular trajectory?
+The worked solution follows.
+The Model.
+
+The jet is modeled as moving at constant speed along a horizontal circular path. Since the speed is constant, the acceleration is centripetal and points toward the center of the circle. The required radius is found from the relationship between speed, turning radius, and centripetal acceleration.
+
+The Math.
+
+For uniform circular motion, the centripetal acceleration depends on the square of the speed divided by the radius as
+
+a sub c equals v squared divided by r.
+
+The required acceleration is one gravitational acceleration, so the centripetal acceleration condition is
+
+g equals v squared divided by r.
+
+Multiplying both sides by r and then dividing both sides by g gives the required radius
+
+r equals v squared divided by g.
+
+Substituting the jet speed and g equals 9.81 meters per second squared gives the required turn radius
+
+r equals the quantity 134.1 meters per second squared, divided by 9.81 meters per second squared equals 1830 meters equals 1.83 kilometers.
+
+The Conclusion.
+
+To produce a centripetal acceleration of one g at a speed of 134.1 meters per second, the jet must follow a circular path with radius 1830 meters, or 1.83 kilometers. The large radius shows why high-speed turns require substantial horizontal space even when the acceleration is only comparable to ordinary gravity.
+
+Equations of Motion for Uniform Circular Motion.
+
+A particle undergoing circular motion can be described using its position vector. As the particle moves around the circle, its position vector sweeps through an angle theta measured relative to the positive i-hat direction. The position vector can be written in components as
+
+vector r of t equals A cosine omega t i-hat plus A sine omega t j-hat,
+
+where omega is the angular frequency in radians per second.
+
+Like the change in position for one-dimensional motion, the change in angle can be represented as
+
+theta equals theta naught plus omega t.
+
+If T is the time required to complete one revolution, or the orbital period, then
+
+omega equals two pi divided by T.
+
+Velocity and acceleration are found by differentiating the position function.
+
+vector v of t equals negative A omega sine omega t i-hat plus A omega cosine omega t j-hat.
+
+vector a of t equals negative A omega squared cosine omega t i-hat minus A omega squared sine omega t j-hat.
+
+The magnitude of the velocity is A omega, and the magnitude of the acceleration is A omega squared. The acceleration can therefore be written simply as
+
+vector a equals negative omega squared times vector r.
+
+Example Problem: Circular Motion of a Proton.
+
+The Problem.
+A proton has speed 5.0 times ten to the sixth meters per second and is moving in a circle in the xy plane of radius r equals 0.175 meters. What is its position in the xy plane at time t equals 2.0 times ten to the negative seventh seconds, or 200 nanoseconds? At t equals 0, the position of the proton is 0.175 i-hat meters and it circles counterclockwise. Sketch the trajectory.
+The worked solution follows.
+The Model.
+
+The proton undergoes uniform circular motion in the xy plane. Its speed and radius are constant, so its angular position increases at a constant rate. Because the proton starts on the positive x axis and moves counterclockwise, the x component is represented by a cosine function and the y component is represented by a sine function.
+
+The Math.
+
+For uniform circular motion, the angular frequency is the speed divided by the radius,
+
+omega equals v divided by r.
+
+Substituting the given speed and radius gives the angular frequency
+
+omega equals 5.0 times ten to the sixth meters per second, divided by 0.175 meters,
+equals 2.9 times ten to the seventh radians per second.
+
+For counterclockwise motion that begins at vector r at time zero equals r i-hat, the position vector is written using cosine and sine components as
+
+vector r of t equals r cosine of omega t i-hat plus r sine of omega t j-hat.
+
+Multiplying the angular frequency by the elapsed time gives the angular position at t equals 2.0 times ten to the negative seventh seconds,
+
+omega t equals (2.9 times ten to the seventh radians per second )(2.0 times ten to the negative seventh s ),
+equals 5.7 radians.
+
+Substituting the angular position into the circular-motion position vector gives the proton's position
+
+vector r equals 0.175 meters times the cosine of 5.7 i-hat, plus 0.175 meters times the sine of 5.7 j-hat,
+equals (0.15 i-hat minus 0.094 j-hat) meters.
+
+The Conclusion.
+
+After 200 nanoseconds, the proton is located at approximately (0.15 i-hat minus 0.094 j-hat) meters. The negative y component means the proton is below the x axis at that instant. This is consistent with counterclockwise circular motion that has carried the proton through slightly less than one complete revolution.
+
+Nonuniform Circular Motion.
+
+Circular motion does not have to occur at constant speed. A particle can speed up or slow down while it moves along a circular path.
+
+When the particle's speed changes in addition to its direction, there is another acceleration component tangent to the circle. The centripetal acceleration describes the time rate of change of the direction of the velocity vector. The tangential acceleration, a sub T, describes the time rate of change of the magnitude of the velocity vector. It is given by
+
+a sub T equals d of the magnitude of vector v over d t.
+
+The tangential acceleration is tangent to the circle, while the centripetal acceleration points radially inward. These perpendicular components combine to form the total acceleration vector,
+
+vector a equals vector a sub c plus vector a sub T.
+
+Checkpoint. Pause and check your understanding.
+For nonuniform circular motion, the acceleration has two parts. Which part changes the direction of the velocity, and which part changes the speed?
+
+Example Problem: Total Acceleration during Circular Motion.
+
+The Problem.
+A particle moves in a circle of radius r equals 2.0 meters. During the time interval from t equals 1.5 seconds to t equals 4.0 seconds its speed varies with time according to
+v of t equals c sub one minus c sub two divided by t squared, c sub one equals 4.0 meters per second; c sub two equals 6.0 meter-seconds.
+What is the total acceleration of the particle at t equals 2.0 seconds?
+The worked solution follows.
+The Model.
+
+The particle undergoes nonuniform circular motion. Its acceleration has one component directed radially inward because the direction of velocity is changing, and one component tangent to the circle because the speed is changing. These components are perpendicular, so the total acceleration magnitude is found by combining them as perpendicular vector components.
+
+The Math.
+
+Substituting t equals 2.0 seconds into the given speed function gives the instantaneous speed
+
+v at 2.0 seconds equals 4.0 minus 6.0 divided by 2.0 squared equals 2.5 meters per second.
+
+The radial, or centripetal, acceleration is determined by the instantaneous speed and the radius of the circular path as
+
+a sub c equals v squared divided by r.
+
+Substituting the speed and radius gives the centripetal acceleration at the specified time
+
+a sub c equals 2.5 meters per second squared, divided by 2.0 meters equals 3.1 meters per second squared.
+
+The tangential acceleration is the rate of change of the speed,
+
+a sub T equals d v over d t.
+
+Since the speed function can be written as v of t equals 4.0 minus 6.0t to the negative second power, differentiating the speed gives the tangential acceleration function
+
+a sub T equals 12.0t to the negative third power.
+
+Substituting t equals 2.0 seconds gives the tangential acceleration
+
+a sub T equals 12.0 divided by 2.0 cubed equals 1.5 meters per second squared.
+
+Combining the perpendicular radial and tangential components gives the total acceleration magnitude
+
+the magnitude of vector a equals the square root of a sub c squared plus a sub T squared,
+equals square root of (3.1) squared plus (1.5) squared meters per second squared,
+equals 3.5 meters per second squared.
+
+Using the ratio of the inward component to the tangential component gives the direction measured inward from the tangent
+
+theta equals the inverse tangent of a sub c divided by a sub T which equals the inverse tangent of 3.1 divided by 1.5 equals 64 degrees.
+
+The Conclusion.
+
+At t equals 2.0 seconds, the particle has a centripetal acceleration of 3.1 meters per second squared inward and a tangential acceleration of 1.5 meters per second squared along the direction of motion. The total acceleration has magnitude 3.5 meters per second squared and points 64 degrees inward from the tangent.

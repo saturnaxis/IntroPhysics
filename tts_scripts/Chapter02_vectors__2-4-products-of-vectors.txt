@@ -1,0 +1,269 @@
+Products of Vectors.
+
+A vector can be multiplied by another vector, but may not be divided by another vector. There are two kinds of vector products:
+scalar multiplication (dot product), or
+vector multiplication (cross product).
+
+As the names imply, the result of the multiplication produces either a scalar or a vector.
+
+The Dot Product.
+
+The scalar product of two vectors is denoted using the dot symbol, written in Lay-tek source as backslash c d o t, instead of the normal times symbol, written in Lay-tek source as backslash times. The scalar product of vectors vector A and vector B is defined by
+
+
+ vector A dot vector B equals AB cos{ phi },
+
+
+where the angle phi represents an angle between the two vectors.
+
+Note.
+
+In Lay-tek, there are two versions of phi. The source command backslash varphi and the source command backslash phi both mean the same thing, but you need to be consistent.
+
+
+In the definition of the dot product, the direction of the angle phi does not matter due to the property of cos{ phi } equals cos{- phi } (i.e., cosine is an even function). The dot product is a negative number in Quadrant II because cosine of phi is less than zero when pi over 2 is less than phi and phi is less than pi, and cosine of phi is greater than zero when zero is less than phi and phi is less than pi over 2.
+
+When two vectors are parallel, the angle phi equals 0 and vector A dot vector B equals AB cos{0} equals AB.
+
+What happens when the vectors are antiparallel or perpendicular?.
+For antiparallel vectors, vector A dot vector B equals -AB.
+for perpendicular (or orthogonal) vectors, vector A dot vector B equals 0.
+
+The scalar product of a vector with itself is the square of its magnitude:
+
+
+ vector A to the power of 2 equiv vector A dot vector A equals AA cos{0} equals A squared.
+
+
+Checkpoint. Pause and check your understanding.
+
+The dot product of two vectors is negative.
+
+Is the angle between the vectors less than, equal to, or greater than 90 degrees?
+
+
+Rules using unit vectors.
+
+In the Cartesian coordinate system, scalar products of a unit vector with another (different) unit vector vanish because these unit vectors are orthogonal:
+
+
+ i-hat dot j-hat equals cos{ ( pi over 2 )} equals 0,
+ i-hat dot k-hat equals cos{ ( pi over 2 )} equals 0,
+ k-hat dot j-hat equals cos{ ( pi over 2 )} equals 0.
+
+
+We often take advantage of the fact that the magnitudes of all unit vectors are one:
+
+
+the magnitude of i-hat equals i-hat dot i-hat equals i squared equals 1,
+the magnitude of j-hat equals j-hat dot j-hat equals j squared equals 1,
+the magnitude of k-hat equals k-hat dot k-hat equals k squared equals 1.
+
+
+The scalar product is also interpreted as the projection of one vector onto the direction of the other vector (i.e., projection A sub || onto the direction of vector B ):
+
+
+ vector A dot vector B equals AB cos{ phi },
+ equals B(A cos{ phi }) equals BA sub ||,
+ equals A(B cos{ phi }) equals AB sub ||.
+
+
+Recall the definitions of the vector components A sub x and A sub y. We can define these quantities through the dot product with the appropriate unit vector. For example, using the vector A equals A sub x i-hat + A sub y j-hat:
+
+
+ vector A dot i-hat equals A sub x ( i-hat dot i-hat ) + A sub y ( i-hat dot j-hat ) equals A sub x cos(0) + A sub y cos( pi /2) equals A sub x,
+ vector A dot j-hat equals A sub x ( j-hat dot i-hat ) + A sub y ( j-hat dot j-hat ) equals A sub x cos( pi /2) + A sub y cos(0) equals A sub y.
+
+
+Scalar multiplication follows the previous properties of vector operation, where they are:
+commutative; vector A dot vector B equals vector B dot vector A,
+distributive; vector A dot ( vector B + vector C ) equals vector A dot vector B + vector A dot vector C.
+
+We can compute the scalar products of two vectors using the distributive property:
+
+
+ vector A dot vector B equals ( A sub x i-hat + A sub y j-hat + A sub z k-hat ) dot ( B sub x i-hat + B sub y j-hat + B sub z k-hat )
+ equals A sub x B sub x i-hat dot i-hat + A sub x B sub y i-hat dot j-hat + A sub x B sub z i-hat dot k-hat
+ + A sub y B sub x j-hat dot i-hat + A sub y B sub y j-hat dot j-hat + A sub y B sub z j-hat dot k-hat
+ + A sub z B sub x k-hat dot i-hat + A sub z B sub y k-hat dot j-hat + A sub z B sub z k-hat dot k-hat.
+
+
+Applying our rules for the dot products of unit vectors, the above expression simplifies quickly to
+
+
+ vector A dot vector B equals A sub x B sub x + A sub y B sub y + A sub z B sub z
+
+
+If we know the magnitudes ( A and B ) and the vector components of each vector, then we can solve for the angle phi between them:
+
+
+ cos{ phi } equals vector A dot vector B over AB equals A sub x B sub x + A sub y B sub y + A sub z B sub z over AB,
+ phi equals cos to the power of -1 ( A sub x B sub x + A sub y B sub y + A sub z B sub z over AB ).
+
+
+Example Problem: Angle between two forces.
+
+The Problem.
+Three dogs are pulling on a stick in different directions. The first dog pulls with force vector F _1 equals (10.0 i-hat - 20.4 j-hat + 2.0 k-hat ) N, the second dog pulls with force vector F _2 equals (-15.0 i-hat - 6.2 k-hat ) N, and the third dog pulls with force vector F _3 equals (5.0 i-hat + 12.5 j-hat ) N.
+
+What is the angle between the forces vector F _1 and vector F _2?
+
+The figure is shown on the course webpage.
+
+The worked solution follows.
+
+
+The Model.
+
+We treat each pull on the stick as a three-dimensional force vector expressed in Cartesian component form. The coordinate axes are arbitrary but fixed: the i-hat -, j-hat -, and k-hat -directions are mutually perpendicular and form a right-handed coordinate system.
+
+The angle between two vectors is determined entirely by their components and magnitudes. We therefore model the angle between vector F _1 and vector F _2 using the scalar (dot) product, which relates the cosine of the angle between two vectors to their components.
+
+
+The Math.
+
+The angle between two vectors can be found from the scalar product. For the forces vector F _1 and vector F _2, the scalar product is related to the angle phi by
+
+ vector F _1 dot vector F _2 equals F sub 1F _2 cos phi.
+
+The magnitudes of the two forces are determined from their rectangular components.
+
+
+ F sub 1 equals square root of (10.0) squared + (-20.4) squared + (2.0) squared equals 22.8 newtons,
+ F sub 2 equals square root of (-15.0) squared + (0.0) squared + (-6.2) squared equals 16.2 newtons.
+
+
+The scalar product is found by multiplying matching components and adding the products.
+
+
+ vector F _1 dot vector F _2
+ equals F sub 1x F sub 2x + F sub 1y F sub 2y + F sub 1z F sub 2z
+ equals (10.0)(-15.0) + (-20.4)(0.0) + (2.0)(-6.2)
+ equals -162.4 newtons to the power of 2.
+
+
+Solving the scalar-product relation for cos phi gives
+
+
+ cos phi equals vector F _1 dot vector F _2 over F sub 1F _2
+ equals -162.4 over (22.8)(16.2)
+ equals -0.439.
+
+
+The angle between the two forces is obtained by taking the inverse cosine.
+
+ phi equals cos to the power of -1 (-0.439) equals 116.0 degrees.
+
+
+The Conclusion.
+
+The angle between the forces vector F _1 and vector F _2 is phi equals 116.0 degrees. Because the scalar product is negative, the angle between the two forces is greater than 90 degrees , indicating that the dogs are pulling in substantially opposing directions.
+
+
+The Cross Product.
+
+The vector product yields, you guessed it, a vector. The vector product of two vectors is denoted by vector A cross vector B and is often called the cross product, due to the times operator, written in Lay-tek source as backslash times.
+
+The vector product produces a vector that is perpendicular to the plane containing both vectors. The magnitude of the vector product is defined as
+
+absolute value of vector A cross vector B equals A B sine phi,
+
+where phi represents the angle measured between the two vectors. In this case, the direction, or sign, of phi makes a difference because sine of negative phi equals negative sine phi. Sine is an odd function.
+
+In contrast to the scalar product, the vector product vanishes for pairs of vectors that are either parallel, where phi equals zero, or antiparallel, where phi equals pi, because sine of pi and sine of zero both equal zero.
+
+The vector-product and right-hand-rule figures are shown on the course webpage.
+
+The figure above shows that on the line perpendicular to the plane, there are two alternative directions. In the standard right-handed orientation, where phi is measured counterclockwise from the first vector, the resulting vector points upward. If we reverse phi, then the resulting vector points downward.
+
+This means the vector product is anticommutative because it reverses sign when the multiplication order is reversed:
+
+vector A cross vector B equals negative vector B cross vector A.
+
+The right-hand rule helps determine the direction of the vector product. Use the index finger for vector A, the middle finger for vector B, and the thumb for the vector product vector A cross vector B on the right hand.
+
+Similar to the dot product, the cross product is distributive:
+
+vector A cross open parenthesis vector B plus vector C close parenthesis equals open parenthesis vector A cross vector B close parenthesis plus open parenthesis vector A cross vector C close parenthesis.
+
+When we apply the definition of the cross product to the Cartesian unit vectors i-hat, j-hat, and k-hat, we find that i-hat cross i-hat, j-hat cross j-hat, and k-hat cross k-hat all equal zero.
+
+What makes this so?
+
+All other cross products must have a magnitude equal to unity because the unit vectors are orthogonal. For example, absolute value of i-hat cross j-hat equals i j sine of pi over 2, which equals one. The vector product must be along the z-axis, following negative k-hat or positive k-hat. Following the right-hand rule, we arrive at the relations
+
+i-hat cross j-hat equals positive k-hat,
+j-hat cross k-hat equals positive i-hat,
+and k-hat cross i-hat equals positive j-hat.
+
+The three unit vectors appear in a cyclic order to produce the next vector. The unit-vector cube figure is shown on the course webpage.
+
+We can use the distributive property and unit-vector identities for the vector product. The full component derivation is shown on the course webpage. The final component form is
+
+vector A cross vector B equals open parenthesis A sub y B sub z minus A sub z B sub y close parenthesis i-hat,
+plus open parenthesis A sub z B sub x minus A sub x B sub z close parenthesis j-hat,
+plus open parenthesis A sub x B sub y minus A sub y B sub x close parenthesis k-hat.
+
+The Problem.
+A wrench is used to loosen a rusty nut. A force of 20.0 newtons is applied to the handle at a distance of 0.25 meters from the nut (see the figure on the course webpage).
+
+(a) If the force is applied at an angle phi equals 40 degrees relative to the wrench handle, what are the magnitude and direction of the torque applied to the nut?
+
+(b) How do the magnitude and direction of the torque change if the force is instead applied at phi equals 45 degrees?
+
+(c) For what value of phi does the torque have its maximum magnitude?
+
+The figure is shown on the course webpage.
+
+
+The Model.
+
+We model the nut as a fixed pivot point and the wrench handle as a radial line extending away from that pivot. The applied force acts at a point on the wrench handle and makes an angle with the radial direction.
+
+The torque describes the turning effect of the force about the nut. Since the radial vector and the applied force lie in the plane of the wrench, the torque vector must point perpendicular to that plane. Its direction is determined by the right-hand rule, and its magnitude depends on the lever arm, the force magnitude, and the angle between them.
+
+
+The Math.
+
+The magnitude of the torque produced by a force applied at an angle phi relative to the radial direction is
+
+ tau equals RF sin phi.
+
+For this wrench, the lever arm is R equals 0.25 meters and the applied force has magnitude F equals 20.0 newtons.
+
+(a) When the force is applied at phi equals 40 degrees, the torque magnitude is determined by inserting this angle into the torque expression.
+
+ tau equals (0.25 meters )(20.0 newtons ) sin 40 degrees equals 3.21 newtons dot m.
+
+The direction is determined from the right-hand rule applied to vector R times vector F. For the orientation shown in part (a), the torque points in the positive z -direction, which is out of the page.
+
+(b) When the force is applied at phi equals 45 degrees, the same torque expression gives
+
+ tau equals (0.25 meters )(20.0 newtons ) sin 45 degrees equals 3.53 newtons dot m.
+
+For the orientation shown in part (b), the right-hand rule gives a torque in the negative z -direction, which is into the page.
+
+(c) The torque magnitude is largest when sin phi has its maximum value. Since the largest possible value of sin phi is 1, the maximum torque occurs when
+
+ phi equals 90 degrees.
+
+The largest possible torque magnitude is therefore
+
+ tau sub max equals RF equals (0.25 meters )(20.0 newtons ) equals 5.00 newtons dot m.
+
+
+The Conclusion.
+
+For phi equals 40 degrees, the torque has magnitude
+
+ tau equals 3.21 newtons dot m
+
+and points in the positive z -direction, out of the page. For phi equals 45 degrees, the torque has magnitude
+
+ tau equals 3.53 newtons dot m
+
+and points in the negative z -direction, into the page. The maximum possible torque occurs when phi equals 90 degrees, giving
+
+ tau sub max equals 5.00 newtons dot m.
+
+The torque increases as the force becomes more perpendicular to the wrench handle, and its direction is set by the right-hand rule.

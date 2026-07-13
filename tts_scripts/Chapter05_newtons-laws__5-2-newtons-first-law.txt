@@ -1,0 +1,135 @@
+Newton's First Law.
+
+Newton's first law is a restatement of Galileo's principle of inertia, which states that an object in motion tends to slow down unless some effort is made to keep it moving. Newton's first law gives a deeper explanation of this observation.
+
+Newton's First Law of Motion.
+
+An object at rest remains at rest, and an object in motion remains in motion with constant velocity, unless acted on by a net external force.
+
+Note the expression "constant velocity", which means that the object maintains a path along a straight line (since neither the magnitude nor direction changes). Also the verb "remains" tells us that it keeps on moving (or not moving) as part of the status quo.
+
+Newton's first law says that there must be a cause for any change in velocity (i.e., acceleration) to occur. The cause is a net external force. An object sliding across a table or floor slows down due to the net force of friction acting on the object. If friction disappears, will the object slow down?
+
+Consider an air hockey table (the figure). When the air is turned off, the puck slides only a short distance before friction slows it to a stop. However, with the air turned on, it creates a nearly frictionless surface, and the puck glides a long distance without slowing down. If we know enough about the friction, we can accurately predict how quickly the object slows down.
+
+Checkpoint. Pause and check your understanding.
+
+Can an object be moving if the net force on it is zero? Explain using Newton’s first law.
+
+Newton's first law is general and can be applied to anything from an object sliding on table, a satellite in orbit, or even blood pumped from the heart. Experiments have verified that any change in velocity (speed or direction) must be caused by an external force.
+
+Aristotle had claimed that objects had a natural state and needed little "angels" to keep the objects moving. It was Galileo who questioned this idea, which led him to ask the fundamental question: "What is the cause?" Thinking in terms of cause and effect is fundamentally different from the typical ancient Greek approach.
+
+Gravitation and Inertia.
+
+Regardless of the scale of an object, two properties remain valid: gravitation and inertia because they are both connected to mass.
+
+Mass is a measure of the amount of matter in something. It has volume and takes up space.
+
+Gravitation is the attraction of one mass to another. The magnitude of this attraction is your weight, and it is a force.
+
+Mass is related to inertia, which is the ability of an object to resist changes in its motion, or to resist acceleration. Newton's first law is often called the law of inertia.
+
+Inertial Reference Frames.
+
+Newton's first law can also be stated as "Every body remains in its state of uniform motion in a straight line unless it is compelled to change that state by forces acting on it."
+
+To Newton, "uniform motion in a straight line" meant constant velocity, which includes the special case of zero velocity (or rest).
+
+Therefore the first law says that the velocity of an object remains constant if the net force on it is zero, or
+
+vector F net equals the sum of the force vectors sub ext equals 0.
+
+Newton's first law is also considered as a statement about reference frames. It provides a method for identifying a special type of reference frame called the inertial reference frame.
+
+In principle, we can make the net force on a body zero, if its velocity relative to a given reference frame is constant and then that frame is defined as inertial (recall ). An inertial reference frame is one where Newton's first law is valid.
+
+Inertial Reference Frame.
+
+A reference frame moving at constant velocity relative to an inertial reference frame is also inertial. A reference frame accelerating relative to an inertial frame is not inertial.
+
+Are inertial frames common in nature?
+
+A reference frame at rest to the most distant (or "fixed") stars is inertial. All frames moving uniformly with respect to this fixed-star frame are also inertial. For example, a nonrotating reference frame attached to the Sun is (for all practical purposes) inertial because its velocity relative to the fixed stars does not vary by more than one part in ten to the tenth.
+
+Earth accelerates relative to the fixed stars because it rotates on its axis and revolves around the Sun. Hence a reference frame attached to its surface is not inertial. For most problems, such a frame serves as a sufficiently accurate approximation to an inertial frame because the acceleration relative to the fixed stars is small ( approximately ten to the negative second meters per second squared). Thus we consider reference frames fixed to the Earth as inertial.
+
+No particular inertial frame is more special than any other. All inertial frames are equivalent. In analyzing a problem, we choose one particular inertial frame simply based on convenience.
+
+Newton's First Law and Equilibrium.
+
+Newton's first law tells us about the equilibrium of a system (i.e., vector F net equals 0 ). From the figure, the forces combine to form a net external force: vector F net equals vector F sub one plus vector F sub two. To create equilibrium, we require a balancing force that will produce a net force of zero.
+
+This force must be equal in magnitude, but opposite in direction to vector F net (i.e., vector F _ bal equals minus vector F net ).
+
+For the ice skaters, we found vector F net equals 30 i-hat plus 40 j-hat newtons, where the balancing force is
+
+vector F _ bal equals minus vector F net,
+equals negative 30 i-hat minus 40 j-hat newtons.
+
+Newton's first law in vector form is given as
+
+vector v equals a constant when vector F net equals the zero vector.
+
+For the net force to equal zero, the velocity vector vector v of the object is a constant.
+
+Derivative of a Constant (Calculus-framing).
+
+From calculus, we have the constant rule which means that for any function f(x) equals c (where c is a constant), the derivative f prime(x) equals 0.
+
+What does this mean for an object moving with constant velocity? We have loosely defined a force as a push or pull (or causing an object to accelerate). Recall the definition of acceleration as
+
+vector a equals d vector v ( t) divided by dt,
+
+which means the acceleration is the slope of the velocity curve. If vector v (t) equals c, then the slope is equal to zero.
+
+If there is no acceleration, then there is no net force (assuming mass remains constant). This does not mean that no forces act on the object. It means that all external forces acting on the object balance.
+
+Checkpoint. Pause and check your understanding.
+
+A car moves in a straight line at constant speed.
+
+Is the car in equilibrium? What does that imply about the sum of the external force vectors?
+
+If a car is at rest, the only forces acting on the car are: weight and the contact force pushing up on the car (see the figure). A nonzero net force is required to change the state of motion of the car. As a car moves with constant velocity, the friction force propels the car forward and opposes the drag force against it.
+
+Interactive Simulation: Forces and Motion. The interactive is available on the course webpage. Use this Fet simulation to explore how an external force will affect the speed and direction of an object's motion. Use free-body diagrams to draw position, velocity, acceleration, and force graphs, and vice versa.
+
+Example Problem: Applying Newton's First Law to your car.
+
+The Problem.
+Newton's laws can be applied to all physical processes involving force and motion, including something as mundane as driving a car.
+Part a. Your car is parked outside your house. Does Newton's first law apply in this situation? Why or why not?
+Part b. Your car moves at constant velocity down the street. Does Newton's first law apply in this situation? Why or why not?
+
+The worked solution follows.
+
+The Model.
+
+The car is modeled as a single object observed from the ground, which we treat as an inertial reference frame. For the parked car, the coordinate system has positive j-hat upward. For the moving car, positive i-hat points in the direction of motion and positive j-hat points upward. In both cases, the question is not whether forces exist, but whether the vector sum of the external forces is zero.
+
+For the parked car, the only forces that need to be considered are the downward weight and the upward contact force from the ground. For the car moving at constant velocity, the vertical forces still balance, and the horizontal driving force from the road balances the resistive forces from air drag and rolling resistance.
+
+The Math.
+
+Newton's first law applies when the net external force on an object is zero. Under that condition, the acceleration is zero, so the object remains at rest or moves with constant velocity,
+
+the sum of the external force vectors equals the zero vector therefore vector a equals the zero vector.
+
+For the parked car, the weight acts downward and the ground exerts an upward contact force. Writing these qualitatively as vector w equals negative w j-hat and vector N equals n j-hat, the force sum is
+
+the sum of the external force vectors equals vector N plus vector w,
+equals n j-hat minus w j-hat,
+equals (n minus w) j-hat.
+
+Since the parked car is not accelerating, the net force is zero and n equals w. Newton's first law therefore applies.
+
+For the car moving at constant velocity, the acceleration is still zero. The vertical forces balance as before. In the horizontal direction, the forward force from the road on the tires must balance the backward resistive force. If vector F road equals f i-hat and vector F res equals negative f i-hat, then
+
+vector F road plus vector F res equals the zero vector.
+
+The total net force is zero, so Newton's first law applies in this case as well.
+
+The Conclusion.
+
+Newton's first law applies in both situations. For the parked car, the upward contact force from the ground balances the downward weight. For the car moving at constant velocity, the vertical forces balance and the horizontal driving and resistive forces also balance. The important point is that zero net force means zero acceleration, not necessarily zero velocity.

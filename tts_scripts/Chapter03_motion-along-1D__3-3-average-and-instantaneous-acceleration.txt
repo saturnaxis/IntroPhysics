@@ -1,0 +1,172 @@
+Average and Instantaneous Acceleration.
+
+Average Acceleration.
+
+The average acceleration is the rate of change for the velocity v:
+
+average acceleration equals delta v over delta t equals v final minus v naught, divided by t final minus t naught,
+
+where t is time.
+
+The S I units for acceleration are meters per second squared, or meters per second per second. This means how much the velocity has changed every second, where the velocity can change in either magnitude or direction due to it being a vector. For example,
+a runner traveling at 10 kilometers per hour due east slows to a stop, reverses direction, and continues to run 10 kilometers per hour due west.
+
+Before turning around, the runner had one average acceleration, then a different average acceleration afterwards. This is shown mathematically as,
+
+Before the turnaround, the average acceleration equals negative v naught divided by t sub m minus t naught, which equals negative 10 divided by delta t sub one.
+After the turnaround, the average acceleration equals v final divided by t final minus t sub m, which equals 10 divided by delta t sub two.
+
+The magnitude of the velocity is the same in both directions, however the direction is different. Acceleration is a vector in the same direction as the change in velocity, delta v. Acceleration is a change in speed or direction, or both.
+
+Note.
+
+Although acceleration is in the direction of the change in velocity, it is not always in the direction of motion. When an object slows down, its acceleration is opposite to the direction of its motion.
+
+The term deceleration can cause confusion because it is not a vector and it does not point to a specific direction with respect to a specific direction.
+
+We can say the runner was decelerating before coming to a stop and accelerating afterward, but we shouldn't include the coordinate system unit vector i-hat or negative i-hat in our analysis. Otherwise the runner always has a negative acceleration, in contrast to our intuition. Instead of using the term deceleration, we describe the motion more accurately with a positive or negative acceleration relative to the coordinate system.
+
+If an object has a velocity in the positive direction with respect to the origin and it acquires a constant negative acceleration, the object eventually comes to rest and reverses direction (i.e., our runner in delta t sub one). Eventually, the object passes through the origin going in the opposite direction (i.e., our runner in delta t sub two).
+Checkpoint. Pause and check your understanding.
+An object has v equals positive 8 meters per second and a equals negative 2 meters per second squared.
+
+Is it moving in the positive or negative direction? Is it speeding up or slowing down?
+
+The sign of acceleration tells us the direction of the delta velocity, not whether the object is speeding up or slowing down. To decide whether the speed is increasing or decreasing, we compare the signs of velocity and acceleration. If v and a have the same sign, the object speeds up. If v and a have opposite signs, the object slows down.
+
+The full sign-reasoning table is available on the course webpage.
+
+Example Problem: Racehorse Leaves the Gate.
+
+The Problem.
+A racehorse coming out of the gate accelerates from rest to a velocity of 15.0 meters per second due west in 1.80 seconds. What is its average acceleration?
+
+The Model.
+
+The horse moves in one dimension along an east-west line. We choose east as the positive direction and west as the negative direction. Since the horse starts from rest and ends with a westward velocity, the change in velocity is directed west, so the average acceleration should be negative in this coordinate system.
+
+The Math.
+
+The average acceleration is the change in velocity divided by the elapsed time, which is given by
+
+average acceleration equals delta v over delta t equals v final minus v naught, divided by delta t.
+
+The horse starts from rest and west is the negative direction, so the initial and final velocities are v naught equals 0 and v final equals negative 15.0 meters per second. The change in velocity is therefore
+
+delta v equals v final minus v naught equals negative 15.0 meters per second minus zero equals negative 15.0 meters per second.
+
+Dividing this change in velocity by the elapsed time gives the average acceleration as
+
+average acceleration equals negative 15.0 meters per second over 1.80 seconds,
+equals negative 8.33 meters per second squared.
+
+The Conclusion.
+
+The horse’s average acceleration is negative 8.33 meters per second squared. The negative sign means the acceleration points west, which is consistent with the horse increasing its speed westward from rest.
+
+Instantaneous Acceleration.
+
+Instantaneous acceleration a, or acceleration at a time t, is found using the same process discussed for instantaneous velocity. We calculate, the average acceleration between two points in time delta t and let delta t approaches zero. The result is the derivative of the velocity function v of t and is expressed as:
+
+a of t equals the limit as delta t approaches zero of v of t plus delta t, minus v of t, all divided by delta t.
+This equals d v of t over d t.
+
+We can show that the instantaneous acceleration at t naught is the slope of the tangent line to the velocity graph at time t naught. The average acceleration approaches the instantaneous acceleration as delta t approaches zero.
+Checkpoint. Pause and check your understanding.
+On a velocity-versus-time graph, what does a horizontal tangent line mean about the acceleration at that instant?
+
+In the first graph, the velocity has a maximum when its slope is zero, which corresponds to a zero of the acceleration function. In the second graph, there is a minimum velocity when the acceleration is zero. The zeros of the acceleration function give either the minimum or maximum velocity.
+
+Calculus Note: Derivatives, Extrema, and Evolution.
+
+Finding Extrema by Setting the Derivative to Zero.
+
+One of the most powerful and general uses of calculus is identifying where a quantity reaches a maximum or minimum.
+Given a function f(x), extrema occur at critical points, which satisfy
+
+d f over d x equals zero
+
+(or where the derivative is undefined).
+
+This works because the derivative represents the rate of change of the function. At a maximum or minimum, the function momentarily stops increasing or decreasing, so its slope is zero.
+
+Examples.
+In kinematics, setting v of t equals d x over d t equals 0 finds when an object momentarily stops or turns around.
+In optimization, setting d E over d x equals 0 finds stable equilibrium configurations.
+In thermodynamics, extrema of entropy or energy determine equilibrium states.
+
+This method applies to any differentiable function, not just position or velocity.
+
+Using Derivatives to Evolve a System.
+
+Derivatives do more than identify special points. They describe how systems change in time. Many physical laws are written as differential equations, which specify how a quantity evolves:
+
+d y over d t equals f(y,t)
+
+Here, the derivative tells us how the system changes at each instant. Solving the differential equation allows us to predict the system’s future behavior.
+
+Examples.
+Newton’s Second Law:
+
+m d v over d t equals F(x,v,t)
+
+determines how velocity evolves from forces.
+Radioactive decay:
+
+d N over d t equals negative lambda N
+
+describes how a quantity decreases over time.
+Population growth, electrical circuits, orbital motion, and climate models are all governed by differential equations.
+
+Big Picture.
+Setting derivatives equal to zero finds where something stops changing (extrema, turning points, equilibrium).
+Using derivatives in equations tells us how something changes (motion, growth, decay, evolution).
+
+Together, these ideas form the mathematical backbone of physics, engineering, and applied science.
+
+Example Problem: Calculating Instantaneous Acceleration.
+
+The Problem.
+A particle is in one-dimensional motion and is accelerating. The functional form of its velocity is v of t equals (20 meters per second squared)t minus 5 meters per second cubed times t squared.
+Part a. Find the functional form of the acceleration.
+Part b. Find the instantaneous velocity at t equals 1, 2, 3, and 5 seconds.
+Part c. Find the instantaneous acceleration at t equals 1, 2, 3, and 5 seconds.
+Part d. Interpret the results of part c in terms of the directions of the acceleration and velocity vectors.
+
+The Model.
+
+The particle moves in one dimension, so the signs of velocity and acceleration represent direction. Acceleration describes the time rate of change of velocity. If velocity and acceleration have the same sign, the particle speeds up; if they have opposite signs, the particle slows down.
+
+The Math.
+
+Part a. The acceleration function is found by differentiating the velocity function with respect to time, which gives
+
+a of t equals d v over d t,
+which equals the derivative with respect to time of 20 meters per second squared times t, minus 5 meters per second cubed times t squared,
+equals 20 meters per second squared minus 10 meters per second cubed times t.
+
+Part b. The instantaneous velocity values are found by evaluating the velocity function at each requested time, which gives
+
+v of 1 second equals 20 meters per second squared times 1 second, minus 5 meters per second cubed times the quantity 1 second squared, which equals 15 meters per second,
+v of 2 seconds equals 20 meters per second squared times 2 seconds, minus 5 meters per second cubed times the quantity 2 seconds squared, which equals 20 meters per second,
+v of 3 seconds equals 20 meters per second squared times 3 seconds, minus 5 meters per second cubed times the quantity 3 seconds squared, which equals 15 meters per second,
+v of 5 seconds equals 20 meters per second squared times 5 seconds, minus 5 meters per second cubed times the quantity 5 seconds squared, which equals negative 25 meters per second.
+
+Part c. The instantaneous acceleration values are found by evaluating the acceleration function at each requested time, which gives
+
+a(1 second) equals 20 meters per second squared minus 10 meters per second cubed times (1 second) equals 10 meters per second squared,
+a(2 seconds) equals 20 meters per second squared minus 10 meters per second cubed times (2 seconds) equals 0 meters per second squared,
+a(3 seconds) equals 20 meters per second squared minus 10 meters per second cubed times (3 seconds) equals negative 10 meters per second squared,
+a(5 seconds) equals 20 meters per second squared minus 10 meters per second cubed times (5 seconds) equals negative 30 meters per second squared.
+
+Part d. At t equals 1 second, both velocity and acceleration are positive, so the particle is moving in the positive direction and speeding up. At t equals 2 seconds, the velocity is positive and the acceleration is zero, so the velocity is momentarily at its maximum value. At t equals 3 seconds, the velocity is positive but the acceleration is negative, so the particle is slowing down. At t equals 5 seconds, both velocity and acceleration are negative, so the particle is moving in the negative direction and speeding up.
+
+The Conclusion.
+
+The acceleration function is a of t equals 20 meters per second squared minus 10 meters per second cubed times t. The requested velocity values are 15 meters per second, 20 meters per second, 15 meters per second, and negative 25 meters per second. The corresponding acceleration values are 10 meters per second squared, 0 meters per second squared, negative 10 meters per second squared, and negative 30 meters per second squared, which show when the particle speeds up, slows down, or reverses direction.
+
+Getting a Feel for Accelerations.
+
+You feel an acceleration when riding an elevator or stepping on the gas, or go, pedal in your car. However, the sense of scale for acceleration is provided in the table on the course webpage. Expressing acceleration in units of g helps relate these values to everyday experience and to the forces objects must withstand.
+
+The full table of typical acceleration values is available on the course webpage.

@@ -1,0 +1,139 @@
+Instantaneous Velocity and Speed.
+
+Instantaneous Velocity.
+
+The quantity that tells us how fast an object is moving anywhere along its path is the instantaneous velocity, or simply velocity. It is the average velocity between two discrete points on the path.
+
+Suppose we know the position x of an object at any time t, then we would know the continuous function x of t. We can express the average velocity by
+
+average velocity equals x of t sub two minus x of t sub one, divided by t sub two minus t sub one equals delta x over delta t.
+
+To find the instantaneous velocity at any position, we let t sub one approach t, and t sub two approach t plus delta t. Then we substitute into our expression for the average velocity and define v of t by:
+
+v of t equals the limit as delta t approaches zero of x of t plus delta t, minus x of t, all divided by delta t. This equals d x of t over d t.
+
+We now define the instantaneous velocity of an object is the limit of the average velocity as the elapsed time delta t approaches zero, or the derivative of x with respect to t:
+
+v of t equals d x of t over d t.
+
+Instantaneous velocity is a vector with dimension of length over time. Since the definition of average velocity is written in terms of the change in position delta x over a specific time interval delta t, we also refer to the velocity as the rate of change of the position function.
+
+The rate of change is a measure of how fast a function is changing at a time t, or the slope of the line that is tangent to the curve at t. The displacement at the initial time t naught is zero (i.e., delta x equals 0), therefore the velocity will also be zero and the slope will be flat.
+Checkpoint. Pause and check your understanding.
+On a position-versus-time graph, what does a horizontal tangent line mean about the velocity at that instant?
+
+At other times, t sub one, t sub two, and so on through t sub N, the velocity is not zero (unless the position never changes) because the slope would be positive or negative. If the function x of t had a minimum, then the slope would also be zero (i.e., v of t equals 0). Thus, the zeros of the velocity function give the minimum and maximum of the position function.
+A Khan Academy video is linked on the course webpage.
+Example Problem: Plotting velocity from position.
+
+The Problem.
+A position-versus-time graph is shown on the course webpage. Using this graph, determine the corresponding velocity-versus-time graph.
+Specifically:
+Identify the velocity during each time interval.
+Sketch or describe the resulting velocity-time graph.
+
+The Model.
+
+The motion is one-dimensional along a straight line. The graph is made of straight-line position segments, so the velocity is constant within each time interval. A positive slope represents motion in the positive direction, a zero slope represents zero velocity, and a negative slope represents motion in the negative direction.
+
+The Math.
+
+Part a. The velocity during each interval is the slope of the position-versus-time graph. During the first interval, the position changes from 0.0 meters to 0.5 meters while the time changes from 0.0 seconds to 0.5 seconds, which gives
+
+v equals 0.5 meters minus 0.0 meters, divided by 0.5 seconds minus 0.0 seconds equals 1.0 meters per second.
+
+During the second interval, the position remains fixed at 0.5 meters while the time changes from 0.5 seconds to 1.0 seconds, which gives
+
+v equals 0.5 meters minus 0.5 meters, divided by 1.0 seconds minus 0.5 seconds equals 0.0 meters per second.
+
+During the third interval, the position changes from 0.5 meters to 0.0 meters while the time changes from 1.0 seconds to 2.0 seconds, which gives
+
+v equals 0.0 meters minus 0.5 meters, divided by 2.0 seconds minus 1.0 seconds equals negative 0.5 meters per second.
+
+Part b. The velocity-time graph is therefore piecewise constant, with horizontal segments at positive 1.0 meters per second, 0.0 meters per second, and negative 0.5 meters per second over the three corresponding intervals.
+
+The Conclusion.
+
+The velocity is positive 1.0 meters per second from 0 to 0.5 seconds, 0.0 meters per second from 0.5 seconds to 1.0 seconds, and negative 0.5 meters per second from 1.0 seconds to 2.0 seconds. The signs match the physical interpretation of the graph: the object first moves in the positive direction, then stops, and finally moves back toward the origin.
+
+Speed.
+
+Most people use the terms speed and velocity interchangeably. In physics, they do not have the same meaning and are distinct concepts. Speed is a scalar, while velocity is a vector.
+
+We calculate the average speed by
+
+average speed equals total distance divided by elapsed time.
+
+Average speed is different than average velocity because the total distance is always a positive quantity, and hence, average speed cannot be negative. For example, if a trip starts and ends at the same location,
+
+the total displacement is zero, which implies the average velocity is zero.
+
+the total distance traveled is not zero and thus, the average speed is not zero.
+
+However, we can calculate the instantaneous speed from the magnitude of the instantaneous velocity, or
+
+instantaneous speed equals the magnitude of v of t.
+
+Checkpoint. Pause and check your understanding.
+
+A particle has velocity v equals negative 6 meters per second.
+
+What is its speed?
+
+Two particles moving in opposite directions can have the same speed, but have different velocities. The full table of typical speeds is available on the course webpage.
+
+Escape velocity is the speed at which an object must be launched so that it overcomes Earth’s gravity and is not pulled back toward Earth.
+
+Calculating Instantaneous Velocity.
+
+If the position function x of t has the form A times t to the power n, where A is a constant and n is an integer, then it can be differentiated using the power rule:
+
+the derivative with respect to t of A times t to the power n equals A times n times t to the power n minus one.
+
+Note.
+
+If there are additional terms added together, such as x of t equals A times t to the power n plus B times t to the power m, then the power rule of differentiation is distributive. It can be applied to each term, and the solution is the sum of those derivatives:
+
+the derivative with respect to t of A times t to the power n plus B times t to the power m equals A times n times t to the power n minus one, plus B times m times t to the power m minus one.
+
+If x of t equals A, then the derivative is equal to zero. The slope of a constant horizontal line is zero, like we saw at the maximum of x of t naught.
+
+Example Problem: Instantaneous Velocity versus Average Velocity.
+
+The Problem.
+The position of a particle moving along the x-axis is given by
+x of t equals 3.0 meters per second times t, plus 0.5 meters per second cubed times t cubed.
+Part a. Using the definition of instantaneous velocity, find the instantaneous velocity at t equals 2.0 seconds.
+Part b. Calculate the average velocity between t equals 1.0 seconds and t equals 3.0 seconds.
+
+The Model.
+
+The particle moves along the x-axis, so its motion is one-dimensional. Instantaneous velocity describes the rate at which the position changes at a single instant, while average velocity describes the net change in position over a finite time interval. Because the position function is a polynomial in time, the instantaneous velocity can be found by differentiating the position function directly.
+
+The Math.
+
+Part a. The instantaneous velocity is the derivative of the position function with respect to time, which gives
+
+v of t equals d x over d t,
+which equals the derivative with respect to time of 3.0 meters per second times t, plus 0.5 meters per second cubed times t cubed,
+equals 3.0 meters per second plus (1.5 meters per second cubed)t squared.
+
+The instantaneous velocity at t equals 2.0 seconds is found by evaluating this function at that time, which gives
+
+v of 2.0 seconds equals 3.0 meters per second plus 1.5 meters per second cubed, times the quantity 2.0 seconds squared,
+equals 9.0 meters per second.
+
+Part b. The average velocity between t sub one equals 1.0 seconds and t sub two equals 3.0 seconds requires the position at each endpoint, which gives
+
+x of 1.0 seconds equals 3.0 meters per second times 1.0 seconds, plus 0.5 meters per second cubed times the quantity 1.0 seconds cubed, which equals 3.5 meters,
+x of 3.0 seconds equals 3.0 meters per second times 3.0 seconds, plus 0.5 meters per second cubed times the quantity 3.0 seconds cubed, which equals 22.5 meters.
+
+The average velocity is the displacement over the elapsed time, which gives
+
+average velocity equals x of 3.0 seconds minus x of 1.0 seconds, divided by 3.0 seconds minus 1.0 seconds,
+equals 22.5 meters minus 3.5 meters, divided by 2.0 seconds,
+equals 9.5 meters per second.
+
+The Conclusion.
+
+The instantaneous velocity at t equals 2.0 seconds is 9.0 meters per second, and the average velocity from 1.0 seconds to 3.0 seconds is 9.5 meters per second. These values are close but not identical because the velocity is changing over the interval.

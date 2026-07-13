@@ -1,0 +1,319 @@
+Newton's Second Law.
+
+Newton's second law gives the cause-and-effect relationship between force and changes in motion. It is quantitative and used extensively to calculate what happens in situations involving a force.
+
+Force and Acceleration.
+
+What do we mean by a change in motion?
+
+A change in motion is equivalent to a change in velocity (i.e., an acceleration). Newton's first law says that a net external force causes a change in motion, and thus, we see that a net external force causes nonzero acceleration.
+
+An external force is one that is outside the system of interest. In the figure, part a, the system of interest is the car plus the person within it. The two forces exerted by the students outside are external forces.
+
+An internal force acts between elements of the system. Thus the force the person exerts holding onto the steering wheel is an internal force.
+
+Only external forces affect the motion of a system, according to Newton's first law. Therefore, we must define the boundaries of the system to separate the internal from external forces.
+
+In the figure, part a, there are arrows denoting the external forces present:
+
+The weight vector w includes the car plus person inside.
+
+The car is supported by the ground vector N, which will cancel the weight, since the car is not floating nor sinking.
+
+The friction f resists the motion and must be oriented opposite (to the left).
+
+The forces from each student pushing ( vector F sub one and vector F sub two ) are applied to accelerate the car to the right.
+
+All the forces add together to produce the net force vector F net (see the figure, part b). The free-body diagram (the figure, part a) shows all of the forces acting on the system, where the dot at the center represents the center-of-mass. Forces in the same direction are shown collinearly.
+
+In the figure, part c, a larger net external force produces a larger acceleration ( vector a prime is greater than vector a ) when the tow truck pulls the car. The acceleration is proportional to and in the same direction as the net external force acting on a system. Mathematically this is written as
+
+vector a is proportional to vector F net,
+
+where the proportional-to symbol, written with the Lay-tek command backslash propto, means “proportional to.”
+
+Once the system of interest is chosen, identify the external force and ignore the internal ones. It is a huge simplification to disregard the numerous internal forces acting between objects within the system. This simplification helps us solve some complex problems.
+
+Recall that inertia is the "resistance to motion" and is related to an object's mass. Therefore it seems reasonable that a more massive object requires more acceleration for it to move.
+
+In the figure, the same net external force applied to a basketball produces a much smaller acceleration when it is applied to an SUV.
+
+Therefore, we can write the proportional relationship between acceleration and mass as
+
+a is proportional to 1 divided by m,
+
+where m is the mass of the system and a is the magnitude of the acceleration. Combining the two proportionalities yields Newton's second law.
+
+Checkpoint. Pause and check your understanding.
+
+The same net force is applied to two carts. Cart B has twice the mass of cart A.
+
+Which cart has the larger acceleration?
+
+Newton's Second Law of Motion.
+
+The acceleration of a system is
+
+directly proportional to the external force acting on the system,
+
+in the same direction as the external force acting on the system, and
+
+inversely proportional to its mass.
+
+In equation form, Newton's second law is
+
+vector a equals vector F net divided by m,
+vector F net equals the sum of the force vectors equals m vector a.
+
+Since the mass m is a scalar, we can see that it scales the vector vector a to give the net external force vector F net. Also we can use the properties of vectors to write the scalar equivalent as
+
+F net equals m a.
+
+Example Problem: Pushing a Lawnmower.
+
+The Problem.
+Suppose that the net external force (push minus friction) exerted on a lawn mower is 51 newton (about 11 pounds) parallel to the ground (the figure). The mass of the mower is 24 kilograms. What is its acceleration?
+
+The worked solution follows.
+
+The Model.
+
+The lawn mower is modeled as a particle moving on level ground. The positive x direction is chosen parallel to the ground in the direction of the stated net force, and the positive y direction is upward. The problem already gives the net horizontal force, so the individual push and friction forces do not need to be modeled separately. The vertical forces balance and do not affect the horizontal acceleration.
+
+The Math.
+
+Newton's second law relates the net external force to the acceleration of the mower. With the net force and acceleration both along positive i-hat, we can write vector F net equals (51 newtons) i-hat and vector a equals a i-hat. We substitute the force vector and acceleration vector into Newton's second law to obtain
+
+the sum of the external force vectors equals m vector a,
+(51 newtons) i-hat equals (24 kilograms)(a i-hat ).
+
+Because both sides point in the same direction, the scalar magnitudes satisfy
+
+51 newton equals (24 kilograms)a,
+a equals 51 newton divided by 24 kilograms,
+equals 2.1 meter per second squared.
+
+The Conclusion.
+
+The lawn mower accelerates at 2.1 meter per second squared in the direction of the net force. This result uses the net external force, not the applied push alone, because friction has already been subtracted from the push in the given force.
+
+The Problem.
+Part a. The car shown in Figure is moving at a constant speed. Which force is bigger, vector F sub friction or vector F sub drag? Explain.
+Part b. The same car is now accelerating to the right. Which force is bigger, vector F sub friction or vector F sub drag? Explain.
+
+The worked solution follows.
+
+The Model.
+
+The car is modeled as a particle moving horizontally. The positive x direction is chosen to the right, in the direction of motion. The forward force vector F _ friction is the static friction force exerted by the road on the tires, while vector F _ drag represents resistive forces such as air drag and rolling resistance acting opposite the motion. Vertical forces balance and are not needed for the horizontal comparison.
+
+The Math.
+
+Part a. For the constant-speed case, the car moves in a straight line with zero acceleration. Newton's second law then requires the horizontal net force to be zero. Taking right as positive,
+
+sum F sub x equals 0,
+F friction minus F drag equals 0.
+
+Thus the two forces have equal magnitudes.
+
+Part b. For the accelerating case, the car accelerates to the right. Newton's second law requires the net horizontal force to point to the right, so
+
+sum F sub x equals m a sub x,
+F friction minus F drag is greater than 0.
+
+This inequality means that the forward static friction force must be larger than the backward drag force.
+
+The Conclusion.
+
+For constant-speed motion, vector F _ friction and vector F _ drag have equal magnitudes and opposite directions. When the car accelerates to the right, the forward friction force is larger than the backward drag force. The distinction is not whether the car is moving, but whether its velocity is changing.
+
+The Problem.
+Before space flights carrying astronauts, rocket sleds were used to test aircraft, missile equipment, and physiological effects on human subjects at high speeds. They consisted of a platform that was mounted on one or two rails and propelled by several rockets.
+Calculate the magnitude of force exerted by each rocket, called its thrust T, for the four-rocket propulsion system shown in the figure. The sled's initial acceleration is 49 meters per second squared, the mass of the system is 2100 kilograms, and the force of friction opposing the motion is 650 newtons.
+
+The worked solution follows.
+
+The Model.
+
+The system is the rocket sled, rockets, and rider treated as one object moving horizontally. The positive x direction is chosen in the direction of the sled's acceleration, and the positive y direction is upward. Four identical rockets exert equal thrusts in the positive x direction, while friction acts in the negative x direction. The normal force and weight balance vertically, so the acceleration is entirely horizontal.
+
+The Math.
+
+Newton's second law is applied along the horizontal direction. The total forward thrust from the four rockets is 4T, and the friction force of magnitude f opposes the motion. The corresponding force equation is
+
+sum F sub x equals m a,
+4T-f equals m a.
+
+We solve the horizontal force equation for the thrust from one rocket because T is the requested unknown quantity.
+
+4T equals m a plus f,
+T equals the quantity m a plus f, divided by 4.
+
+We now substitute the sled mass, acceleration, and friction force into the expression for the thrust from one rocket:
+
+T equals the quantity 2100 kilograms times 49 meters per second squared, plus 650 newtons, divided by 4,
+equals 2.6 times ten to the fourth newtons.
+
+The result is reported to two significant figures because the acceleration is given as 49 meters per second squared.
+
+The Conclusion.
+
+Each rocket must exert a thrust of 2.6 times ten to the fourth newtons. The total thrust must both overcome friction and provide the net force needed to accelerate the massive sled. The vertical forces are not part of this calculation because they balance and produce no vertical acceleration.
+
+Component Form of Newton's Second Law.
+
+Newton’s second law can be written in vector form as
+
+the sum of the external forces equals m times vector a.
+
+Writing this equation in component form gives
+
+the sum of F sub x equals m a sub x,
+the sum of F sub y equals m a sub y,
+and the sum of F sub z equals m a sub z.
+
+Checkpoint. Pause and check your understanding.
+
+In the equation the sum of F sub x equals m a sub x, are F sub x and a sub x vectors or scalars?
+
+Once we write Newton's second law in component form, the quantities F sub x, F sub y, F sub z, a sub x, a sub y, and a sub z are scalars, so vector notation is no longer used. Each component equation relates forces and acceleration along a single axis and can be analyzed independently.
+
+The second law is a description of how a body responds mechanically to its environment. The influence of the environment is the net force vector F net, the body's response is the acceleration vector a, and the strength of the response is inversely proportional to the mass m. The larger the mass of an object, the smaller its acceleration to a given net force.
+
+A Khan Academy video is linked on the course webpage. This video reviews how to resolve angled forces into components and apply Newton’s second law along each coordinate axis.
+
+The Problem.
+
+A 0.400-kilogram soccer ball is kicked across the field by a player; it undergoes acceleration given by vector a equals 3.00 i-hat plus 7.00 j-hat meters per second squared. Find, part a, the resultant force acting on the ball and, part b, the magnitude and direction of the resultant force.
+
+The worked solution follows.
+
+The Model.
+
+The soccer ball is modeled as a particle moving in the x-y plane. The positive x direction is along i-hat, and the positive y direction is along j-hat. The given acceleration already provides the acceleration components in this coordinate system. The net external force represents the combined effect of all interactions acting on the ball during the kick.
+
+The Math.
+
+Newton's second law can be applied directly in vector form because the acceleration is already written in component form. Multiplying the acceleration vector by the mass gives the net force vector,
+
+vector F net equals m vector a,
+equals (0.400 kilograms)(3.00 i-hat plus 7.00 j-hat ) meters per second squared,
+equals (1.20 i-hat plus 2.80 j-hat ) newtons.
+
+This is the resultant force in component form. The magnitude is found from the components,
+
+F net equals square root of F sub x squared plus F sub y squared,
+equals square root of (1.20 newtons) squared plus (2.80 newtons) squared,
+equals 3.05 newtons.
+
+The direction is measured counterclockwise from the positive i-hat axis. Since both force components are positive, the force lies in the first quadrant,
+
+theta equals inverse tangent of ( F sub y divided by F sub x ),
+equals inverse tangent of ( 2.80 divided by 1.20 ),
+equals 66.8 degrees.
+
+The Conclusion.
+
+The resultant force on the soccer ball is vector F net equals (1.20 i-hat plus 2.80 j-hat ) newtons. Its magnitude is 3.05 newtons, directed 66.8 degrees counterclockwise from the positive i-hat axis. The force points in the same direction as the acceleration because the mass is a positive scalar.
+
+The Problem.
+Find the mass of a car if a net force of negative 600.0 j-hat newtons produces an acceleration of negative 0.2 j-hat meters per second squared.
+
+The worked solution follows.
+
+The Model.
+
+The car is modeled as a particle subject to a net external force. The positive y direction is chosen along positive j-hat, so both the given net force and acceleration point in the negative y direction. The force and acceleration are parallel, so a scalar component equation can represent the motion. No other forces need to be modeled separately because the net force is already given.
+
+The Math.
+
+Newton's second law relates the net external force to the acceleration,
+
+the sum of the external force vectors equals m vector a.
+
+Mass is a scalar, so we do not divide vectors. Instead, because the force and acceleration point in the same direction, we compare their magnitudes,
+
+F net equals m a.
+
+We solve Newton's second law for the scalar mass because the mass is the requested unknown quantity.
+
+m equals F net divided by a,
+equals 600.0 newtons divided by 0.2 meters per second squared,
+equals 3 times ten to the third kilograms.
+
+The direction signs cancel because the force and acceleration are both in the negative j-hat direction.
+
+The Conclusion.
+
+The mass of the car is 3 times ten to the third kilograms. The result is a scalar, so it has no direction. The negative signs in the original vectors tell us that the force and acceleration point in the same direction, not that the mass is negative.
+
+The Problem.
+A particle of mass m equals 4.0 kilograms is acted upon by four forces of magnitudes F sub one equals 10.0 newtons, F sub two equals 40.0 newtons, F sub three equals 5.0 newtons, and F sub four equals 2.0 newtons, with the directions as shown in the free-body diagram in the figure. What is the acceleration of the particle?
+
+The worked solution follows.
+
+The Model.
+
+The particle is modeled as a point mass moving in the x-y plane. The positive x direction is to the right and the positive y direction is upward, matching the axes shown in the free-body diagram. Each force is treated as an external force acting on the particle. The force F sub one has both x and y components, while F sub two, F sub three, and F sub four act along coordinate axes.
+
+The Math.
+
+Newton's second law is applied independently in the x and y directions,
+
+sum F sub x equals m a sub x,
+sum F sub y equals m a sub y.
+
+In the x direction, F sub one contributes a positive component F sub one cosine of 30 degrees, and F sub three acts in the negative x direction. The corresponding force equation is
+
+F sub one cosine of 30 degrees minus F sub three equals m a sub x,
+a sub x equals the quantity F sub one cosine of 30 degrees minus F sub three, divided by m.
+
+We now substitute the force magnitudes and mass into the expression for the horizontal acceleration:
+
+a sub x equals the quantity 10.0 newtons times the cosine of 30 degrees, minus 5.0 newtons, divided by 4.0 kilograms,
+equals 0.92 meters per second squared.
+
+In the y direction, the vertical component of F sub one and the force F sub four act upward, while F sub two acts downward. The corresponding force equation is
+
+F sub one sine of 30 degrees plus F sub four minus F sub two equals m a sub y,
+a sub y equals the quantity F sub one sine of 30 degrees plus F sub four minus F sub two, divided by m.
+
+We now substitute the vertical force magnitudes and mass into the expression for the vertical acceleration:
+
+a sub y equals the quantity 10.0 newtons times the sine of 30 degrees, plus 2.0 newtons, minus 40.0 newtons, divided by 4.0 kilograms,
+equals negative 8.3 meters per second squared.
+
+Combining the components gives the acceleration vector,
+
+vector a equals (0.92 i-hat negative 8.3 j-hat ) meters per second squared.
+
+The Conclusion.
+
+The particle accelerates as vector a equals (0.92 i-hat negative 8.3 j-hat ) meters per second squared. The acceleration is mostly downward because the downward force F sub two is much larger than the upward forces, while the horizontal forces only partially fail to cancel.
+
+Newton's Second Law and Momentum.
+
+Newton actually stated his second law in terms of momentum.
+
+“The instantaneous rate at which a body's momentum changes is equal to the net force acting on the body.”
+
+This is written by the vector equation:
+
+vector F net equals d vector p divided by d t.
+
+Momentum was described by Newton as “quantity of motion,” or a way of combining both the velocity and mass of an object. For now, it's sufficient to define momentum vector p as the product of the mass of the object m and its velocity vector v:
+
+vector p equals m vector v.
+
+Since velocity is a vector, so is momentum. If we substitute our definition of momentum into Newton's second law, we find
+
+vector F net equals d vector p divided by d t,
+which equals d of m vector v divided by d t,
+which equals m times d vector v divided by d t,
+which equals m vector a.
+
+Thus, we see that the momentum form of Newton's second law reduces to the form given earlier.
+
+Interactive Simulation: Forces and Motion Basics.
+
+The interactive is available on the course webpage. Use this Fet simulation to explore the forces at work when pulling a cart or pushing a refrigerator, crate, or person. Put an object on a ramp and see how it affects its motion.

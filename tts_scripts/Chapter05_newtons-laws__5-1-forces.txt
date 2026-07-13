@@ -1,0 +1,132 @@
+Newton's Laws of Motion.
+
+Forces.
+
+The study of motion is called kinematics, which describes the way objects move through their velocity and acceleration.
+
+The study of what causes objects to move is called dynamics, which describes the motion of objects and systems through forces. The foundation of dynamics are the laws of motion developed by Isaac Newton, although some of the fundamental principles were developed earlier by Galileo Galilei.
+
+The development of Newton's laws marked a transition from Renaissance thinking (i.e., reliance on ancient texts) to Scientific Revolution thinking which developed many of the fundamental pillars of the modern era. Newton's description of mechanics is now described as classical mechanics where it applies to most situations until the 20th century. The development of modern physics was prompted by discoveries of subatomic particles which move at speeds comparable to the speed of light. To describe the motions of these particles, we need quantum mechanics.
+
+Working Definition of Force.
+
+We need a "working" definition of a force to help build some intuition until we get to the more formal definition given by Newton's Second Law. An intuitive definition of a force is
+
+a push or a pull.
+
+A push or a pull has both magnitude (i.e., how hard) and a direction, so it is a vector quantity. Force can be represented by vectors or expressed as a multiple of a standard force.
+
+Our everyday experience gives a good idea of how multiple forces add. If two people push in different directions on a third person (see the figure), we might expect the total force to be in the direction of the resultant vector (or force). Forces, like vectors, are represented by arrows.
+
+Checkpoint. Pause and check your understanding.
+
+A book is sliding across a table and slowing down.
+
+Does the book need a force in the direction of motion to keep moving? Explain briefly.
+
+Recall the spherical cow, where the solution was for an idealized and simplified situation. Physicists use free-body diagrams (or F B Ds) to visualize and simplify our analysis of forces. A F B D is not a lifelike drawing, where it is only a sketch to organize your thinking.
+
+A free-body diagram is not judged for beauty, symmetry, or originality. It is judged only on whether every force acting on the object is there.
+
+The object or system is represented by
+
+a single isolated point (or free body), and
+
+only those forces acting on it (i.e., external forces) are shown.
+
+Drawing Free-Body Diagrams.
+
+A free-body diagram is a simple sketch that helps us focus on the forces acting on one object or system. Instead of drawing every detail in the scene, we isolate the object and represent each force with an arrow.
+
+When drawing a free-body diagram:
+
+Choose the object or system you want to analyze.
+
+Represent the object with a simple shape, such as a point or box. This should be in 1980s style graphics as a point, circle, triangle, or rectangle. Place it at the origin of an x-y coordinate system.
+
+Draw each force acting on that object as an arrow.
+
+Label each force so its physical source is clear.
+
+Choose coordinate axes that make the problem easier to describe.
+
+Draw a separate free-body diagram for each object in the problem.
+
+The goal is not to make realistic art. The goal is to make the force relationships clear enough that Newton’s laws can be applied.
+
+The strategy is illustrated in the figure, with two examples. The accompanying video gives a more in-depth general explanation.
+
+A Bozeman Science video is linked on the course webpage. This video explains how free-body diagrams can be used to solve kinematics problems.
+
+Contact and Field Forces.
+
+Let's analyze force more deeply. Suppose a physics student sits at a table (see the figure), working diligently on his homework..
+
+What external forces act on him? Can we determine the origin of these forces?
+
+Forces are usually grouped into two categories: contact and field forces.
+
+Contact forces are due to direct physical contact between objects. The student in the figure, experiences contact forces vector C (from the chair), vector F (from the floor), and vector T (from the table).
+
+Field forces act without the necessity of physical contact between objects. They depend on the presence of a "field" near the body under consideration. Earth's gravitational field causes the student to feel a gravitational force vector w, which is his weight.
+
+Checkpoint. Pause and check your understanding.
+
+Classify each force as a contact force or a field force: gravity, tension, normal force, friction.
+
+A Khan Academy video is linked on the course webpage. This video explains how forces that act across a distance, such as gravity, can be explained using the idea of fields.
+
+As far as we know, there are only four fundamental force fields in nature. These are gravitational, electromagnetic, strong nuclear, and weak fields.
+
+The gravitational field is responsible for the weight of a body.
+
+The forces of electricity and magnetism are responsible for the attraction among atoms in bulk matter.
+
+The strong nuclear and weak forces are effective divided by a short distance, no larger than an atomic nucleus.
+
+Contact forces are fundamentally electromagnetic. Atomic charges interact electromagnetically with other atomic charges, which prevents objects from moving through one another (i.e., no clipping).
+
+Vector Notation for Force.
+
+The S I unit of force is called the Newton (abbreviated capital N), which is the force needed to accelerate an object with a mass of 1 kilogram at a rate of 1 meter per second squared (i.e., 1 newton equals 1 kilogram meter per second squared). Note that a small apple has a weight of about 1 newton.
+
+We can describe a force in the form
+
+vector F equals a i-hat plus b j-hat, in two dimensions
+vector F equals a i-hat plus b j-hat plus c k-hat. in three dimensions
+
+In the figure, let's suppose that ice skater one (on the left) pushes horizontally with a force of 30 newtons to the right (or vector F sub one equals 30 i-hat newtons). Similarly, if ice skater two (on the bottom) pushes with a force of 40 newtons in the positive y-direction, we would write vector F sub two equals 40 j-hat newtons.
+
+The resultant force causes the third ice skater to accelerate. The net external force vector F net is found by taking the vector sum of all external forces acting on an object or system. We can then represent the net external force (in general) as:
+
+vector F net equals the sum of the external force vectors,
+equals vector F sub one plus vector F sub two plus and so on plus vector F _N,
+equals F sub net x i-hat plus F sub net y j-hat plus F sub net z k-hat,
+equals the sum from i equals one to N of F sub i x i-hat plus the sum from i equals one to N of F sub i y j-hat plus the sum from i equals one to N of F sub i z k-hat.
+
+In this example, we have vector F net equals vector F sub one plus vector F sub two equals 30 i-hat plus 40 j-hat newtons. To find the magnitude of the net (resultant) force F net, we sum the squares of the components and take the square root, or
+
+F net equals square root of (30 newtons) squared plus (40 newtons) squared equals 50 newtons,
+
+where the direction is given by
+
+theta equals inverse tangent of ( F sub net y divided by F sub net x ) equals inverse tangent of ( 40 divided by 30 ) equals 53 degrees
+
+measured from the positive x-axis, as shown in the free-body diagram in the figure, part b.
+
+Checkpoint. Pause and check your understanding.
+
+Two forces act on an object: vector F sub one equals 4 i-hat newtons and vector F sub two equals negative 4 i-hat newtons.
+
+What is the net force?
+
+Let's suppose the ice skaters now push the third ice skater with vector F sub one
+equals 3 i-hat plus 8 j-hat newtons and vector F sub two equals 5 i-hat plus 4 j-hat newtons.
+
+What is the resultant of these two forces?
+
+We recognize that force is a vector, and therefore, we must add using the rules for vector addition:
+
+vector F net equals the sum from i equals one to two of F sub i x i-hat plus the sum from i equals one to two of F sub i y j-hat,
+equals (3 plus 5) i-hat plus (8 plus 4) j-hat,
+equals 8 i-hat plus 12 j-hat newtons.

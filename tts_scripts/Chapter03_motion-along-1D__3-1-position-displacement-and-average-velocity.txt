@@ -1,0 +1,159 @@
+Motion Along One Dimension.
+
+Position, Displacement, and Average Velocity.
+
+Position.
+
+To describe the motion of an object, we must first locate it using its position x, meaning where it is at any particular time. More precisely, we need to specify its position relative to a convenient frame of reference.
+
+A frame of reference is an arbitrary set of axes from which the position (and motion) of an object are described. We often describe the position of an object relative to the "stationary" Earth or objects on the Earth. For example,
+a rocket could relate its position relative to the Earth as a whole,
+a cyclist's position could relate to the nearby buildings.
+
+It is not necessary for the reference to be stationary. For example, to describe a position of a person in an airplane, we use the airplane as the reference frame even though it is moving through the air.
+
+Typically, we use the variable x when discussing one-dimensional motion (in general), where we might use the variable y when discussing vertical motion.
+
+Displacement.
+
+If an object moves relative to a frame of reference, then the object's position changes (i.e., displacement). The word displacement implies that an object has moved. Recall from Chapter 2, displacement is a vector with magnitude and direction. In one dimension, the direction is simply represented as positive or negative relative to the reference. For example,
+Moving 2 meters to the right is indicated by a displacement of positive 2 meters.
+Moving 4 meters to the left is indicated by a displacement of negative 4 meters.
+
+Displacement delta x is the change in position of an object:
+
+delta x equals x final minus x naught,
+
+where x final is the final position and x naught is the initial position.
+
+Note.
+
+We use the uppercase Greek letter delta to mean "change in" a variable. Thus, delta x means change in position. We always solve for displacement with the difference of x naught from x final.
+Checkpoint. Pause and check your understanding.
+A particle moves from x naught equals negative 3 meters to x final equals positive 2 meters.
+
+Is the displacement positive, negative, or zero?
+
+Objects in motion can have a series of displacements, where we define total displacement delta x total as the sum of the individual displacements (recall how we summed multiple vectors to find the resultant), and express this mathematically as,
+
+Delta x total equals the sum from i equals 1 to N of x sub i minus x sub i minus one,
+which equals the sum from i equals 1 to N of delta x sub i.
+
+Here, delta x sub i represents each individual displacement. In the earlier example, we had delta x sub one equals 2 meters and delta x sub two equals negative 4 meters, so that delta x total equals negative 2 meters. But we need to work out the individual x sub i. Here's what we know,
+
+delta x total equals delta x sub two plus delta x sub one,
+equals the quantity x sub two minus x sub one, plus the quantity x sub one minus x naught,
+Negative 2 meters equals negative 4 meters plus 2 meters.
+
+This means we have
+
+x sub two minus x sub one equals negative 4 meters.
+x sub one minus x naught equals 2 meters.
+
+What is x naught? It is the initial reference or where we started before moving at all (i.e., the origin). In this case, x naught equals 0, which means we now know
+x naught equals 0
+x sub one minus zero equals 2 meters, so x sub one equals 2 meters.
+x sub two minus 2 meters equals negative 4 meters, so x sub two equals negative 2 meters.
+
+Thus, the total displacement is given by
+
+Delta x sub one equals x sub one minus x naught, which equals 2 minus zero, or 2 meters.
+Delta x sub two equals x sub two minus x sub one, which equals negative 2 minus 2, or negative 4 meters.
+Delta x total equals delta x sub two plus delta x sub one, which equals negative 4 plus 2, or negative 2 meters.
+
+The total displacement is negative 2 meters along the x-axis, or vector D equals negative 2 i-hat meters. The above process can be represented in vectors by
+
+vector x sub one equals delta x sub one times i-hat equals 2 i-hat meters,
+vector x sub two equals delta x sub two times i-hat equals negative 4 i-hat meters,
+vector D equals vector x sub one plus vector x sub two equals negative 2 i-hat meters.
+
+The magnitude of the displacement is always positive, the magnitude of vector D equals the square root of vector D dot vector D. In this case, we can find that the magnitude of vector D equals 2 meters.
+Checkpoint. Pause and check your understanding.
+A runner moves 4 meters east, then 4 meters west.
+
+What is the total displacement? What is the total distance traveled?
+
+The distance traveled d should not be confused with the magnitude of the total displacement. The distance traveled is the total length of the path between the two positions, where it is determined
+
+d equals the sum from i equals 1 to N of the square root of vector x sub i dot vector x sub i
+
+and in this case,
+
+d equals the square root of vector x sub one dot vector x sub one, plus the square root of vector x sub two dot vector x sub two,
+equals the square root of 2 squared, plus the square root of negative 4 squared,
+equals the absolute value of 2, plus the absolute value of negative 4,
+d equals 6 meters.
+A Khan Academy video is linked on the course webpage.
+Average Velocity.
+
+To calculate how fast something is moving, we must introduce the time variable t. Similar to the displacement delta x, there is a time between two points, which is called the elapsed time delta t equals t final - t naught.
+Checkpoint. Pause and check your understanding.
+Can the average velocity be zero even when the distance traveled is not zero?
+
+Explain using displacement.
+
+If x final and x naught are the positions of an object at times t final and t naught, respectively, then the average velocity is
+
+Average velocity equals displacement between two points divided by the time interval between those points,
+equals delta x over delta t, which equals x final minus x naught, divided by t final minus t naught.
+
+Note.
+
+The average velocity is a vector and can be negative, when x final is less than x naught. This means that the average velocity can be in the opposite direction as the positive reference direction.
+
+Example Problem: Delivering Flyers.
+
+The Problem.
+Jill sets out from her home to deliver flyers for her yard sale, traveling due east along her street lined with houses. At 0.5 kilometers and 9 minutes later she runs out of flyers and has to retrace her steps back to her house to get more. This takes an additional 9 minutes. After picking up more flyers, she sets out again on the same path, continuing where she left off, and ends up 1.0 kilometers from her house. This third leg of her trip takes 15 minutes. At this point she turns back toward her house, heading west. After 1.75 kilometers and 25 minutes she stops to rest.
+Part a. What is Jill’s total displacement to the point where she stops to rest?
+Part b. What is the magnitude of the final displacement?
+Part c. What is the average velocity during her entire trip?
+Part d. What is the total distance traveled?
+Part e. Make a graph of position versus time.
+
+The Model.
+
+Jill’s motion is one-dimensional along an east-west street. We choose east as the positive x-direction, west as the negative x-direction, and Jill’s home as the origin. The trip is broken into straight-line segments, so the net displacement depends only on the starting and ending positions, while the total distance depends on the length of every segment traveled.
+
+The Math.
+
+We choose Jill’s home as x naught equals 0 and reconstruct her position at the end of each leg. After the first leg, she is at x sub one equals positive 0.5 kilometers after 9 minutes. After returning home, she is at x sub two equals zero after 18 minutes. After the third leg, she is at x sub three equals positive 1.0 kilometers after 33 minutes. During the final leg, Jill travels 1.75 kilometers west from x sub three equals positive 1.0 kilometers, so her final position is given by
+
+x sub four equals 1.0 kilometers minus 1.75 kilometers equals negative 0.75 kilometers.
+
+The signed displacement during each segment is the change in position for that segment, which gives
+
+delta x sub one equals positive 0.5 kilometers,
+delta x sub two equals negative 0.5 kilometers,
+delta x sub three equals positive 1.0 kilometers,
+delta x sub four equals negative 1.75 kilometers.
+
+Part a. The total displacement is the change from the initial position to the final position, which is given by
+
+delta x total equals x sub four minus x naught equals negative 0.75 kilometers.
+
+Part b. The magnitude of the final displacement is the absolute value of the total displacement, which is
+
+The magnitude of delta x total equals 0.75 kilometers.
+
+Part c. The total elapsed time is the sum of the four time intervals, which gives
+
+Delta t total equals 9 minutes plus 9 minutes plus 15 minutes plus 25 minutes, which equals 58 minutes.
+
+The average velocity over the entire trip is the total displacement divided by the total elapsed time, which gives
+
+average velocity equals delta x total over delta t total,
+equals negative 0.75 kilometers over 58 minutes,
+equals negative 0.013 kilometers per minute.
+
+Part d. The total distance traveled is the sum of the magnitudes of the segment displacements, which gives
+
+d total equals the magnitude of delta x sub one, plus the magnitude of delta x sub two, plus the magnitude of delta x sub three, plus the magnitude of delta x sub four,
+equals 0.5 kilometers plus 0.5 kilometers plus 1.0 kilometers plus 1.75 kilometers,
+equals 3.75 kilometers.
+
+Part e. The position-time graph is made from the positions at the end of each leg, so the plotted points are zero minutes and zero kilometers; 9 minutes and 0.5 kilometers; 18 minutes and zero kilometers; 33 minutes and 1.0 kilometers; and 58 minutes and negative 0.75 kilometers.
+
+The Conclusion.
+
+Jill’s final displacement is negative 0.75 kilometers, so she ends 0.75 kilometers west of her house. Her average velocity is negative 0.013 kilometers per minute, where the negative sign shows that her net motion is westward. Her total distance traveled is 3.75 kilometers, which is larger than the magnitude of her displacement because she reverses direction more than once.

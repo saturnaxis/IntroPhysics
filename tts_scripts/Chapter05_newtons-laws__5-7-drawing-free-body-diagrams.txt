@@ -1,0 +1,142 @@
+Drawing Free-body Diagrams.
+
+The first step in describing and analyzing most phenomena in physics involves the careful drawing of a free-body diagram (F B D). F B Ds have been used throughout this chapter. A F B D must only include the external forces acting on the body of interest.
+
+Once we have drawn an accurate F B D, we can apply
+
+Newton's first law if the body is in equilibrium ( F net equals 0 ), or
+
+Newton's second law if the body is accelerating ( F net is not equal to 0 ).
+
+Checkpoint. Pause and check your understanding.
+
+Should the net force be drawn as a separate arrow on a free-body diagram? Explain why or why not.
+
+An MIT OpenCourseWare video is linked on the course webpage. This worked example shows how to draw separate free-body diagrams for interacting blocks and apply Newton’s second law to each system.
+
+Constructing Free-Body Diagrams.
+
+Observe the following rules when constructing a F B D:
+
+Draw the object under consideration as a simpler shape (e.g., point, box, etc.). It does not have to be artistic. We often place the object at the origin of an x-y coordinate system.
+
+Include all forces that act on the object, representing these forces as vectors. Do not include the net force on the object. We never include both forces of an action-reaction pair.
+
+Convert the F B D into a more detailed diagram showing the x- and y-components of a given force. In this case place a squiggly line through the original vector to show that it is no longer in play (i.e., replaced by components).
+
+If there are more than a single object in the problem, draw a separate F B D for each object.
+
+If there is acceleration, we do not directly include it in the F B D. However, it may help to indicate acceleration outside the F B D.
+
+A Khan Academy video is linked on the course webpage. This video shows how to identify all forces acting on an object, represent them with a free-body diagram, and resolve angled forces into horizontal and vertical components to determine the net force and resulting motion.
+
+Let's apply the problem-solving strategy in drawing a F B D for a sled. In the figure, part a, a sled is pulled by force vector P at a 30-degree angle.
+
+In part b, we show a free-body diagram as described by steps 1 and 2.
+
+In part c, we show all forces in terms of their x- and y-components, in keeping with step 3.
+
+Example Problem: Two Blocks on an Inclined Plane.
+
+The Problem.
+Construct the free-body diagram for object A and object B in the figure.
+
+The worked solution follows.
+
+The Model.
+
+Objects A and B are treated as separate particles on an inclined plane. The x axis is chosen parallel to the incline, and the y axis is chosen perpendicular to the incline. Object A is attached to a cord and is in contact with object B. Object B is in contact with both object A and the incline. Normal forces act perpendicular to contact surfaces, friction forces act parallel to contact surfaces, and tension acts along the cord. Each free-body diagram includes only forces acting on the isolated object.
+
+The Math.
+
+For object A, the forces acting on the isolated object are its weight vector w sub A, the tension vector T from the cord, the normal force vector N sub BA exerted by B on A, and the friction force vector f sub BA exerted by B on A.
+
+For object B, the forces acting on the isolated object are its weight vector w sub B, the normal force vector N sub B from the incline, the friction force vector f sub B from the incline, the normal force vector N sub AB exerted by A on B, and the friction force vector f sub AB exerted by A on B.
+
+The contact forces between A and B occur in third-law pairs. The corresponding force equation is
+
+vector N sub AB equals minus vector N sub BA,
+vector f sub AB equals minus vector f sub BA.
+
+These pairs act on different objects, so they appear on different free-body diagrams.
+
+The Conclusion.
+
+The free-body diagram for object A contains vector w sub A, vector T, vector N sub BA, and vector f sub BA. The free-body diagram for object B contains vector w sub B, vector N sub B, vector f sub B, vector N sub AB, and vector f sub AB. Drawing the objects separately is essential because action-reaction pairs do not cancel within a single object's free-body diagram.
+
+The Problem.
+A force is applied to two blocks in contact, as shown in the figure. Draw the reaction forces between the two blocks.
+
+The worked solution follows.
+
+The Model.
+
+The blocks are treated as two separate systems on a horizontal surface. The positive x direction is chosen to the right, in the direction of the applied force on block m sub one. At the contact surface, block m sub one pushes on block m sub two to the right, while block m sub two pushes on block m sub one to the left. The prompt asks only for the reaction forces between the blocks, so other forces are not required unless drawing complete free-body diagrams.
+
+The Math.
+
+Newton's third law states that the interaction forces between the two blocks have equal magnitude and opposite direction. If vector A sub one two is the force on block m sub two due to block m sub one, and vector A sub two one is the force on block m sub one due to block m sub two, then
+
+vector A sub one two equals minus vector A sub two one.
+
+Because block m sub one pushes block m sub two to the right, vector A sub one two points in the positive i-hat direction. The reaction force vector A sub two one therefore points in the negative i-hat direction.
+
+The Conclusion.
+
+The reaction-force pair is vector A sub one two on block m sub two to the right and vector A sub two one on block m sub one to the left. These forces have equal magnitude and opposite direction, but they act on different blocks, so they do not cancel in either block's individual free-body diagram.
+
+The Problem.
+A block rests on the table, as shown in the figure. A light rope is attached to it and runs over a pulley. The other end of the rope is attached to a second block. The two blocks are said to be coupled. Block m sub two exerts a force due to its weight, which causes the system (two blocks and a string) to accelerate.
+We assume that the string has no mass so that we do not have to consider it as a separate object. Draw a free-body diagram for each block.
+
+The Model.
+
+The two blocks are treated as separate systems connected by a taut, massless rope divided by a frictionless pulley. For block m sub one, the positive x direction is to the right, toward the pulley, and the positive y direction is upward. For block m sub two, the positive y direction is upward. The table is treated as frictionless, so no friction force acts on m sub one. The rope tension has the same magnitude on both blocks.
+
+The Math.
+
+To construct the free-body diagrams, each block is isolated and only forces acting on that block are included.
+
+For block m sub one, the weight vector w sub one acts downward, the normal force vector N from the table acts upward, and the rope tension vector T acts horizontally to the right toward the pulley.
+
+For block m sub two, the weight vector w sub two acts downward and the rope tension vector T acts upward. The tension has the same magnitude in both diagrams because the rope is massless and the pulley is frictionless.
+
+Apply Newton’s second law separately to each block, using plus x to the right for m sub one and plus y upward for m sub two.
+
+For block m sub one, we have for the horizontal motion
+
+sum F sub x equals m sub one a
+T equals m sub one a.
+
+For block m sub one in the vertical direction,
+
+The sum of F sub y equals zero because there is no vertical acceleration. Therefore, N minus m sub one g equals zero, so N equals m sub one g.
+
+For block m sub two, we have for the vertical motion,
+
+sum F sub y equals m sub two a sub y
+T minus m sub two g equals negative m sub two a
+m sub two g minus T equals m sub two a.
+
+Then, we can solve the two acceleration–tension equations for a in terms of T:
+
+T equals m sub one a
+m sub two g minus T equals m sub two a.
+
+Then, we can solve for a and T separately in terms of the masses and g:
+
+m sub two g minus m sub one a equals m sub two a
+a equals m sub two g divided by m sub one plus m sub two,
+T equals m sub one ( m sub two g divided by m sub one plus m sub two )
+equals m sub one times m sub two divided by the quantity m sub one plus m sub two, times g.
+
+The Conclusion.
+
+The free-body diagram for m sub one contains vector N upward, vector w sub one downward, and vector T to the right. The free-body diagram for m sub two contains vector T upward and vector w sub two downward. The two blocks require separate free-body diagrams because the forces acting on each block are different, even though their accelerations are linked by the rope.
+
+Because the rope is massless and taut over a frictionless pulley, the tension magnitude is the same on both blocks and the acceleration magnitudes are equal:
+
+a equals m sub two g divided by m sub one plus m sub two,
+T equals m sub one times m sub two g divided by m sub one plus m sub two.
+
+An Organic Chemistry Tutor video is linked on the course webpage. This video gives another worked example of a pulley system, emphasizing separate free-body diagrams, shared tension, and the acceleration constraint.

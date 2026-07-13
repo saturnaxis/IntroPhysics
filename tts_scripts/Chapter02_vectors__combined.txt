@@ -1,0 +1,1501 @@
+2.1 Scalars and Vectors
+
+Vectors.
+
+Chapter roadmap.
+
+ 
+
+This chapter introduces vectors as quantities with both magnitude and direction. Vectors can be represented geometrically with arrows, algebraically with components, and computationally with NumPy arrays.
+
+As you read, focus on three questions:
+
+Item 1. Can I represent a vector using arrows, components, and Python arrays?
+
+Item 2. Can I move deliberately between geometric, component, and computational representations?
+
+Item 3. Can I explain the physical meaning of vector addition, subtraction, and components?
+
+These ideas provide the mathematical language needed to describe motion, forces, momentum, and rotation throughout the course.
+ 
+
+Scalars and Vectors.
+
+*What is a scalar?*.
+
+A **scalar** defines the amount of something in one dimension. They are accompanied by a unit which signifies the dimension in particular. We learn about dimensions as a concept of length (e.g., meters), but a dimension can be generally described as one aspect of a thing.
+
+Figure referenced in the course notes.
+
+For example, your car (see Figure ) has multiple dimensions:
+
+Bullet point. mass --> 1500 kg 
+
+Bullet point. age --> 4 yr 
+
+Bullet point. gas tank --> 10 gal 
+
+Bullet point. gas mileage --> 40 mpg 
+
+Each of these dimensions for describing the car has a number followed by the unit, which makes up the **scalar quantity**.
+
+Scalar arithmetic.
+
+Scalar quantities can only be combined (or separated) when the have the same unit. For example, a 50 - min class that ends 10 min early lasts for 50 min - 10 min equals 40 min.
+
+If you were told that the class ended 600 sec early, **you cannot combine (or separate) the quantities directly**. Instead, you must *first* convert to a common unit, then you can proceed as before.
+
+ 
+50 min - 600 sec equals, 
+50 min - [ 600 sec over 1 times 1 min over 60 sec ] equals, 
+50 min - 10 min equals 40 min.
+ 
+
+Note.
+
+You can write in `math mode` using ` ` or using the ` end ``
+
+See the Python snippet given in the course lecture notes.
+
+Scalars can also be multiplied and divided, where units can be combined under the appropriate operation. For example, energy is described by the amount of force applied (i.e. multiplied) over a distance, or E equals Fd. 
+
+Suppose you pushed a 0.5- kg box with a force of 1 Newton horizontally across the floor for 5 meters (see Figure ). Then, you expended 5 newtons dot m of energy. The unit is combined to form a Newton-meter, or Joule.
+
+**StickMan Physics**.
+
+ 
+
+Figure referenced in the course notes.
+
+ 
+
+If you traveled to Dallas from Commerce ( { approximately }60 mi away) in your car and the trip took 1 h. Then your average speed is a derived scalar quantity of 60 mi/h.
+
+Checkpoint.
+
+ 
+
+A class lasts 50 min, but ends 600 s early.
+
+Can you subtract these quantities immediately, or must you convert units first?
+ 
+
+*What is a vector?*.
+
+A **vector** combines scalar quantities as a new object that delineates the quantities by their dimension. A unit vector represents a single step along a dimensional axis and is signified using the `hat` (or hat{} ) symbol over the variable for that axis. For example, 1 unit step along the x-axis is represented by x hat, which can be written as ` x hat ` a the text cell in your Jupyter notebook.
+
+---
+Consider a chessboard, where players designate letters and numbers to identify a piece at a particular location on the board. The chess pieces move as vectors to traverse the chessboard. 
+
+The knight moves in an L -shaped pattern that can include moving the piece either: one space horizontally, 2 spaces vertically or 2 spaces horizontally, 1 space vertically. Both of these choices represent a vector when we consider the initial and final locations of the knight.
+
+See the Python snippet given in the course lecture notes.
+
+A vector is also described as an object that has both magnitude **and** direction (see Figure ).
+
+Figure referenced in the course notes.
+
+Physical quantities specified by giving a number of units (i.e., magnitude) and a direction (i.e., angle or up/down/left/right) are called **vector quantities**. Examples include:
+
+Bullet point. position,
+
+Bullet point. displacement (change in position),
+
+Bullet point. velocity (change in position per time),
+
+Bullet point. acceleration (change in velocity per time),
+
+Bullet point. force,
+
+Bullet point. torque.
+
+Vectors can be combined together to make a new vector or multiplied by a scalar to create a vector of a new length. The chessboard example above showed the resultant vector is composed by the addition of two component vectors.
+
+Vectors are distinguished from scalars using an arrow over the variable. Suppose we can identify the **position vector** of an object because it is 2 km due east, then we can write the vector vec meters equals 2 x hat km, where x hat represents the direction `due east` or along the positive x-axis. The x hat is a unit vector with *a length equal to 1*.
+
+Note.
+
+In your Jupiter notebook Markdown (text) cell, the vec meters is represented by ` vec meters `, and the x hat is represented by ` x hat `. Be sure to use The ` ` around your LaTeX symbols so they render properly. Click the link to see a cheat sheet for LaTeX commands.
+ 
+
+The object vec meters is a vector because it has a magnitude ( 2 km ) and a direction ( x hat ). The magnitude can be written equivalently as m equiv | vec meters | 
+
+Bullet point. **What is the vector for an object that is 2 km due west?**
+
+Bullet point. **What is the vector for an object that is 2 km due north/south?**
+
+Note that we have chosen the x in x hat arbitrarily, where we could have used any other symbol. You might see that other textbooks use i hat instead. If you dealing with a vector with an unknown magnitude in the positive x direction, then you can see where vec meters equals x i hat could be useful.
+
+See the python script below, where it shows how to represent the vector vec meters equals 2 x hat using the plotting library `matplotlib`.
+
+See the Python snippet given in the course lecture notes.
+
+You can use the python code below as a *template* to plot your vectors in this chapter. **Be sure to modify the limits/labels as needed.**
+
+ 
+import matplotlib.pyplot as plt
+
+fig equals plt.figure(figsize equals (6, 6))
+ax equals fig.ad d sub subplot (111)
+ax.grid(True,zorder equals 2)
+
+create vector using python.
+
+x0,y0,dx,dy equals 0,0,2,0
+ax.arrow(x0,y0,dx,dy,color equals 'b', ls equals '-', width equals 0.04, lengt h sub includes _head equals True, hea d sub width equals 0.15,zorder equals 4)
+ax.plot(x0,y0,'k.',ms equals 25,zorder equals 5)
+
+ax.se t sub xlim (-3, 3)
+ax.se t sub ylim (-1, 1)
+ax.se t sub ylabel (' y (km)',fontsize equals 'x-large')
+ax.se t sub xlabel (' x (km)',fontsize equals 'x-large')
+
+plt.show 
+ 
+
+In general, we define vector D as the **displacement** vector, where it measures the change in a position vector. The displacement vector can be the resultant vector of two other vectors vector A and vector B. Figure shows how these 2 vectors can be oriented relative to each other.
+
+Figure referenced in the course notes.
+
+Suppose that you're walking from your tent at position A and going to a pond at position B. It's easier to keep track of your displacement vector D by using subscripts denoting the intended source location and final destination (see Figure ).
+
+Figure referenced in the course notes.
+
+Mathematically, vector D sub AB represents the displacement vector from A to B, where the opposite vector D sub BA equals - vector D sub AB because you would only need to walk in the opposite ( - ) direction. We can also say that vector D sub BA is **antiparallel** to vector D sub AB.
+
+Bullet point. Two vectors that have *identical* directions are **parallel** to each other.
+
+Bullet point. Two vectors that are **perpendicular** to each other are also said to be *orthogonal* vectors.
+
+Checkpoint.
+
+ 
+
+A vector has magnitude 5 and points to the left.
+
+What information is missing if you only write the number 5?
+ 
+
+Algebra of Vectors in 1D.
+
+Figure referenced in the course notes.
+
+Figure shows three scenarios for your friend who walks from the campsite to the fishing pond. He wants to walk from point A to B, or have a displacement vector vector D sub AB. Let's see how is vector is modified when he
+
+Item 1. stops to rest at point C,
+
+Item 2. realizes that he dropped his prize lure and has to go back to a point D,
+
+Item 3. continues from point D and arrives at the fishing pond at point B.
+
+The python script below represents the vector vector D sub AB, where I've chosen a 45 degrees angle *for illustration only*.
+
+See the Python snippet given in the course lecture notes.
+
+Your friend rests at point C, which is 3/4 of the way to the pond. We also know that the full distance from the campsite to the pond is 6 km. **What is his displacement vector vector D sub AC when he stops to rest?**
+
+Notice that the vector in panel (a) is not along the x-axis, but in a northeasterly direction. In this question, we apply a unit vector u hat so that we can define:
+
+ 
+ vector D sub AB equals 6 u hat km.
+ 
+
+There could be some transformation to decompose u hat arrow x i hat + y j hat, but we do not need to know (in this case) as long as we express all other vectors either *parallel* or *antiparallel* to u hat.
+
+Do you think vector D sub AC is parallel or antiparallel to vector D sub AB?.
+
+Since your fiend is walking in the direction u hat, his vector at point C is parallel to the path from the campsite to the pond. Then we can *scale* the original vector by the fraction of the total distance traveled (i.e., 3/4 (or 0.75 ) of the way). 
+
+---
+*Scaling a vector*
+
+To scale a vector, you simply multiply by a scalar (i.e., a number), let's call it alpha. If alpha is:
+
+Bullet point. 1, then it enlarges the vector.
+
+In all three cases, the direction of the new vector is preserved (i.e., unchanged) relative to the old vector, although the magnitude of the new vector can be different.
+
+---
+
+We can represent the vector vector D sub AC as
+
+ 
+ vector D sub AC equals 0.75 vector D sub AB, 
+ equals 4.5 u hat km.
+ 
+
+Note that we have 2 ways to represent the new vector.
+
+The magnitude of vector D sub AB is represented by | vector D sub AB | equals 6 km. We found the second form by multiplying the scalar alpha equals 0.75 by the scalar | vector D sub AB |. Therefore we know the magnitude of vector D sub AC is
+
+ | vector D sub AC | equals 4.5 km. 
+
+In general,
+
+Bullet point. a **scalar multiplied by a vector** creates a new vector, vector B equals alpha vector A.
+
+Bullet point. a **scalar multiplied by a scalar** creates a new scalar, | vector B | equals alpha | vector A |.
+
+The python script below represents the vectors vector D sub AB and vector D sub AC, graphically.
+
+See the Python snippet given in the course lecture notes.
+
+Your friend now realizes that he dropped his prize lure and has to go back to look for it and finds it at a a point D that is 1.2 km from point C. We can represent his new path as a vector vector D sub CD.
+
+Do you think vector D sub CD is parallel or antiparallel to vector D sub AB?.
+
+Since he had to retrace his steps, the vector vector D sub CD will have a direction that is opposite to vector D sub AC (and vector D sub AB.
+
+We can represent the vector vector D sub CD as
+
+ 
+ vector D sub CD equals - 1.2 over 6 u hat,
+ equals -0.2 vector D sub AB.
+ 
+
+See the Python snippet given in the course lecture notes.
+
+Furthermore, we can represent your friends displacement vector relative to:
+
+Bullet point. the campsite by vector D sub AD, or
+
+Bullet point. the fishing pond vector D sub DB.
+
+Since your friend had to turn back, he wants to know which location (campsite or fishing hole) is closer. He's not much of a hiker, and just wants to go to the closer location.
+
+We can find either vector vector D sub AD or vector D sub DB using a combination of the vectors we already know. We can deduce vector D sub AD by the addition (or difference) of vector D sub AB with vector D sub AC and vector D sub CD. Let's start by defining:
+
+ 
+ vector D sub AD equals vector D sub AC + vector D sub CD.
+ 
+
+The vector vector D sub AD simply represents your friend's total path *accounting for a change in direction.* Through substitution, we have
+
+ 
+ vector D sub AD equals 0.75 vector D sub AB - 0.2 vector D sub AB, 
+ equals 0.55 vector D sub AB, 
+ equals 3.3 u hat km.
+ 
+
+We can find vector D sub DB through another deduction by,
+
+ 
+ vector D sub DB equals vector D sub AB - vector D sub AD, 
+ equals 0.45 vector D sub AB, 
+ equals 2.7 u hat km.
+ 
+
+Together, we can take the magnitude of each vector to find that
+
+Bullet point. | vector D sub AD | equals 3.3 km back to the campsite, and
+
+Bullet point. | vector D sub AD | equals 2.7 km to the pond.
+
+It looks like your friend is going fishing after all.
+
+Does this make sense?.
+
+We should expect that vector D sub AD + vector D sub DB equals vector D sub AB, which we can see this in our graph.
+
+Checkpoint.
+
+ 
+
+A particle moves from x sub o equals -3 meters to x sub f equals +2 meters.
+
+Is the displacement positive, negative, or zero?
+ 
+
+See the Python snippet given in the course lecture notes.
+
+*Properties of vectors*.
+
+The **resultant** vector vector R of two vectors vector A and vector B can be determined by the addition of the two vectors as
+
+ 
+ vector R equals vector A + vector B.
+ 
+
+When we draw the resultant vector, we place them the tail at the origin and draw to place the head at the final location (i.e., head-to-tail method). In our above example, vector D sub AD was the resultant vector of the vector D sub AC + vector D sub CD.
+
+In general, vectors have similar properties as scalars. We can:
+
+Bullet point. add any number of vectors in any order, where vector addition is **commutative**.
+
+ vector A + vector B equals vector B + vector A 
+
+Bullet point. group the addition of vectors in any order, where vector addition is **associative**.
+
+ ( vector A + vector B ) + vector C equals vector A + ( vector B + vector C ) 
+
+Bullet point. distribute scalar(s) across vector(s), where vector multiplication is **distributive**.
+ 
+ 
+ ( alpha + beta ) vector A equals alpha vector A + beta vector A, 
+ alpha ( vector A + vector B ) equals alpha vector A + alpha vector B.
+ 
+
+**Professor Dave Explains**.
+
+ 
+ 
+ 
+
+**Example Problem**: Ladybug walking on a stick.
+
+The Problem.
+A long measuring stick rests against a wall in a physics laboratory with its **200-cm end at the floor**. A ladybug lands at the **100-cm mark** and crawls randomly along the stick. It first walks 15 cm toward the floor, then it walks 56 cm toward the wall, then it walks 3 cm toward the floor again. Then, after a brief stop, it continues 25 cm toward the floor and then, again, it crawls 19 cm toward the wall before coming to a complete rest. Find the **vector of the total displacement**, and its **final resting position** on the stick.
+
+---
+
+The Model.
+
+We model the ladybug’s motion as one-dimensional motion along the length of the measuring stick. The stick defines a single axis, so each part of the motion is either in the positive direction or the negative direction along that axis.
+
+We choose the direction toward the floor as positive and represent that direction with the unit vector u hat. Motion toward the wall is therefore in the negative u hat direction. The net displacement is found by treating each crawl segment as a signed displacement along the same line.
+
+---
+
+The Math.
+
+The five displacement vectors are
+
+ 
+ vector D _1 equals (15 cm )(+ u hat ) 
+ vector D _2 equals (56 cm )(- u hat ) 
+ vector D _3 equals (3 cm )(+ u hat ) 
+ vector D _4 equals (25 cm )(+ u hat ) 
+ vector D _5 equals (19 cm )(- u hat )
+ 
+
+The total displacement vector is
+
+ 
+ vector D 
+ equals vector D _1 + vector D _2 + vector D _3 + vector D _4 + vector D _5 
+ equals (15 - 56 + 3 + 25 - 19) cm u hat 
+ equals boxed{-32 cm u hat }.
+ 
+
+---
+
+The Conclusion.
+
+The ladybug’s total displacement vector is vector D equals -32 cm u hat. The negative sign means the net displacement is toward the wall. Since the ladybug started at the 100 -cm mark, the final position is the 68 -cm mark on the measuring stick.
+
+---
+
+ **The Problem**
+The three displacement vectors vector A, vector B, and vector C lie in the horizontal plane. 
+Their magnitudes are A equals 10.0 cm, B equals 7.0 cm, and C equals 8.0 cm, respectively, 
+and their direction angles (measured counterclockwise from the positive x -axis) are 
+ alpha equals 35 degrees, beta equals -110 degrees, and gamma equals 30 degrees. 
+Choose a convenient scale and use a ruler and a protractor to find the following vector sums:
+(a) vector R equals vector A + vector B 
+(b) vector D equals vector A - vector B 
+(c) vector S equals vector A - 3 vector B + vector C 
+
+Figure referenced in the course notes.
+
+---
+
+The Model.
+
+We model each displacement as a two-dimensional vector in the horizontal plane. Each vector has a magnitude and a direction angle measured relative to the positive x -axis.
+
+Because this is a geometric construction, the vectors are drawn to scale and placed either tail-to-head or tail-to-tail depending on the combination being represented. Vector subtraction is modeled by reversing the direction of the vector being subtracted while keeping its magnitude unchanged. The resultant is the single vector that represents the combined effect of the vectors in the diagram.
+
+---
+
+The Math.
+
+For a geometric construction, the magnitude and direction of each resultant are obtained by drawing the vectors to scale and then measuring the resultant vector. The direction angles are measured counterclockwise from the positive x -axis.
+
+**(a)** For the sum vector R equals vector A + vector B, the vectors are drawn tail-to-head so that the tail of vector B is placed at the head of vector A. The resultant vector vector R is drawn from the tail of vector A to the head of vector B. Measuring the scaled diagram gives
+
+ R is approximately equal to 5.8 cm, theta _R is approximately equal to 0 degrees. 
+
+**(b)** For the difference vector D equals vector A - vector B, the subtraction is treated as addition of the opposite vector. The vector - vector B has the same magnitude as vector B but points in the opposite direction, so the construction uses
+
+ vector D equals vector A + (- vector B ). 
+
+Measuring the scaled diagram gives
+
+ D is approximately equal to 16.2 cm, theta _D is approximately equal to 49.3 degrees. 
+
+**(c)** For the linear combination vector S equals vector A - 3 vector B + vector C, the vector vector B is first scaled by a factor of 3 and reversed to represent -3 vector B. The vectors are then drawn tail-to-head, and vector S is drawn from the tail of the first vector to the head of the final vector. Measuring the scaled diagram gives
+
+ S is approximately equal to 36.9 cm, theta _S is approximately equal to 52.9 degrees. 
+
+---
+
+The Conclusion.
+
+The geometric construction gives the resultant values
+
+ R is approximately equal to 5.8 cm, theta _R is approximately equal to 0 degrees, 
+
+ D is approximately equal to 16.2 cm, theta _D is approximately equal to 49.3 degrees, 
+
+and
+
+ S is approximately equal to 36.9 cm, theta _S is approximately equal to 52.9 degrees. 
+
+These results show that the same vector operations can be represented geometrically by drawing vectors to scale, but the accuracy of the result depends on the precision of the construction.
+
+---
+
+========================================================================
+
+2.2 Coordinate Systems and Vector Components
+
+Coordinate Systems and Vector Components.
+
+The graphic method of vector addition can be time-consuming, where we can instead describe a vector in terms of its components within a coordinate system. In a rectangular (**Cartesian**) xy -coordinate system in a plane, a point is described by a pair of coordinates (x, y) that "locate" the point. *Note we used this on the chessboard using letters and numbers for each cell.*
+
+Vector components.
+
+A vector vector A can be decomposed into its **vector components**, where each component is itself a vector. These vector components are constructed using the **unit vectors** i hat and j hat that mark a unit step in either the x or y -axis, respectively. Therefore, the vector vector A can be represented as
+
+ 
+ vector A equals vector A _x + vector A _y, 
+ equals A sub x i hat + A sub y j hat,
+ 
+
+where the A sub x and A sub y represent the magnitude of the step along the respective Cartesian axis. Recall the chessboard where the start of the vector can be anywhere on the board. This means that the **component magnitudes** are measurements relative to where you start.
+
+Let's define the starting location of vector vector A as a point ( x sub o, y sub o ), and the vector terminates at a point (x, y). Then, we can describe the vector as
+
+ 
+ vector A equals vector A _x + vector A _y, 
+ equals (x- x sub o ) i hat + (y- y sub o ) j hat.
+ 
+
+Checkpoint.
+
+ 
+
+A pointer moves from (6.0, 1.6) cm to (2.0, 4.5) cm.
+
+Which point should be subtracted first: final or initial?
+ 
+
+Note.
+
+When referring to x sub o, it is read as "x-naught". The word naught is more commonly used in British English referring to the number zero so that one can delineate between the number zero and the letter o.
+ 
+
+**Example Problem**: Mouse pointer displacement.
+
+The Problem.
+A mouse pointer on the display monitor of a computer at its initial position is at point (6.0 cm, 1.6 cm ) with respect to the lower left-side corner. If you move the pointer to an icon located at point (2.0 cm, 4.5 cm ), what is the displacement vector of the pointer?
+
+---
+
+The Model.
+
+We model the screen as a two-dimensional Cartesian coordinate system with the origin at the lower left corner of the monitor. The positive x -direction points to the right, and the positive y -direction points upward.
+
+The displacement vector vector D is defined as the vector pointing from the **initial position** of the pointer to its **final position**. Its components are obtained by subtracting the initial coordinates from the final coordinates.
+
+---
+
+The Math.
+
+Let the initial and final points point be
+
+ 
+( x sub i, y sub i ) equals (6.0, 1.6) cm, 
+ and 
+( x sub f, y sub f ) equals (2.0, 4.5) cm.
+ 
+
+The components of the displacement vector are
+
+ 
+ D sub x equals x sub f - x sub i equals 2.0 - 6.0 equals -4.0 cm, 
+ D sub y equals y sub f - y sub i equals 4.5 - 1.6 equals +2.9 cm.
+ 
+
+Therefore, the displacement vector in unit-vector form is
+
+ 
+ vector D equals D sub x i hat + D sub y j hat, 
+ equals (-4.0 i hat + 2.9 j hat ) cm.
+ 
+
+---
+
+The Conclusion.
+
+The mouse pointer’s displacement vector is vector D equals (-4.0 i hat + 2.9 j hat ) cm. This means the pointer moves 4.0 cm to the left and 2.9 cm upward from its initial position.
+
+---
+
+ **The Problem**
+You move a mouse pointer on the display monitor from its initial position at point (6.0 cm, 1.6 cm ) to an icon located at point (2.0 cm, 4.5 cm ). What are the magnitude and direction of the displacement vector of the pointer?
+
+---
+
+The Model.
+
+The Model.
+
+We model the computer screen as a two-dimensional Cartesian coordinate system with the origin at the lower-left corner of the monitor. The positive x -direction points to the right, and the positive y -direction points upward.
+
+The displacement vector points from the pointer’s initial position to its final position. Once that displacement is expressed in rectangular components, its magnitude is found from the component lengths, and its direction is determined by the orientation of the vector in the coordinate plane.
+
+---
+
+The Math.
+
+The displacement vector vector D points from the initial position to the final position. Its components are found by subtraction:
+
+ D sub x equals x sub f - x sub i, D sub y equals y sub f - y sub i. 
+
+The initial and final positions of the mouse pointer are represented by the coordinate pairs
+
+ 
+( x sub i, y sub i ) equals (6.0, 1.6) cm, 
+( x sub f, y sub f ) equals (2.0, 4.5) cm.
+ 
+
+The displacement components are found by subtracting the initial coordinates from the final coordinates along each axis.
+
+ 
+ D sub x equals x sub f - x sub i equals 2.0 - 6.0 equals -4.0 cm, 
+ D sub y equals y sub f - y sub i equals 4.5 - 1.6 equals +2.9 cm.
+ 
+
+The magnitude of the displacement is determined from the Pythagorean relationship between the rectangular components.
+
+ 
+D equals square root of D sub x to the power of 2 + D sub y to the power of 2 
+ equals square root of (-4.0) squared + (2.9) squared cm 
+ equals 4.9 cm.
+ 
+
+The direction angle is first found from the ratio of the vertical component to the horizontal component.
+
+ 
+ tan theta equals D sub y over D sub x equals +2.9 over -4.0 equals -0.725, 
+ theta equals tan to the power of -1 (-0.725) equals -35.9 degrees.
+ 
+
+Because D sub x 0, the displacement vector lies in Quadrant II. The direction angle measured counterclockwise from the positive x -axis is therefore
+
+ 
+ theta _D equals theta + 180 degrees 
+ equals -35.9 degrees + 180 degrees 
+ equals 144.1 degrees.
+ 
+
+Common Mistake.
+
+ 
+
+A very common mistake when finding the direction of a displacement vector is to compute
+
+ theta equals tan to the power of -1 ( D sub y over D sub x ) 
+
+and **stop there**.
+
+This inverse tangent only returns angles between -90 degrees and +90 degrees. It does **not** know which quadrant the vector lies in.
+
+***What can go wrong***
+
+Bullet point. If D sub x < 0, the vector is in Quadrant II or III.
+
+Bullet point. If D sub y < 0, the vector is in Quadrant III or IV.
+
+Bullet point. The raw tan to the power of -1 value must often be **adjusted by 180 degrees **.
+
+In this problem:
+
+ D sub x equals -4.0, D sub y equals +2.9 
+
+so the displacement vector lies in **Quadrant II**, not Quadrant IV.
+Failing to account for this would give the wrong direction angle.
+
+Best practice.
+
+Bullet point. **Always check the signs of D sub x and D sub y.**
+
+Bullet point. Or, when using Python, use `np.arctan2(Dy, Dx)`, which automatically returns the correct quadrant.
+
+ theta equals tan to the power of -1 ( D sub y over D sub x ) textbf{must never be used blindly.} 
+
+ 
+
+---
+
+The Conclusion.
+
+The displacement vector has magnitude D equals 4.9 cm and direction theta _D equals 144.1 degrees (counterclockwise from the positive x -axis). It points into Quadrant II, consistent with D sub x equals -4.0 cm and D sub y equals +2.9 cm.
+
+---
+
+ **The Problem**
+A treasure hunter finds one silver coin at a location 20.0 meters away from a dry well in the direction 20 degrees north of east and finds one gold coin at a location 10.0 meters away from the well in the direction 20 degrees north of west. What are the polar and rectangular coordinates of these findings with respect to the well?
+
+---
+
+The Model.
+
+We model the dry well as the origin of a two-dimensional coordinate system. The positive x -axis points east, and the positive y -axis points north.
+
+Each coin’s position is naturally described using polar coordinates because the distance from the well and the direction from the well are given directly. To locate each coin on a Cartesian grid, the polar description is converted into horizontal and vertical components. Angles are measured counterclockwise from the positive x -axis.
+
+---
+
+The Math.
+
+Each coin is naturally described in polar form because its distance from the well and its direction are given directly. To compare the locations using standard vector components, we convert these polar descriptions into rectangular coordinates using the relations
+
+ 
+x equals r cos theta, 
+y equals r sin theta.
+ 
+
+All angles are measured counterclockwise from the positive x -axis.
+
+For the **silver coin**, the given description places it 20.0 meters from the well at an angle of 20 degrees north of east. In polar form, this corresponds to
+
+ 
+ r sub S equals 20.0 meters, 
+ theta _S equals 20 degrees equals pi over 9.
+ 
+
+Substituting these values into the coordinate relations gives
+ 
+ x sub S equals (20.0) cos ( pi over 9 ) equals 18.9 meters, 
+ y sub S equals (20.0) sin ( pi over 9 ) equals 6.8 meters.
+ 
+
+The **gold coin** is located 20 degrees north of west. Because west corresponds to 180 degrees measured from the positive x -axis, the direction angle for this coin is
+
+ 
+ r sub G equals 10.0 meters, 
+ theta _G equals 180 degrees - 20 degrees equals 160 degrees equals 8 pi over 9.
+ 
+
+Using the same coordinate relations,
+
+ 
+ x sub G equals (10.0) cos ( 8 pi over 9 ) equals -9.4 meters, 
+ y sub G equals (10.0) sin ( 8 pi over 9 ) equals 3.4 meters.
+ 
+
+---
+
+The Conclusion.
+
+The silver coin is located at ( x sub S, y sub S ) equals (18.9 meters, 6.8 meters ), placing it east and north of the well. The gold coin is located at ( x sub G, y sub G ) equals (-9.4 meters, 3.4 meters ), which places it west and north of the well.
+
+The signs of the x -components correctly encode the physical directions: positive for eastward displacement and negative for westward displacement, while both coins have positive y -components because they lie north of the well.
+
+---
+
+ **The Problem**
+During a takeoff of an IAI Heron drone, its position with respect to a control tower is 100 meters above the ground, 300 meters to the east, and 200 meters to the north. One minute later, its position is 250 meters above the ground, 1200 meters to the east, and 2100 meters to the north. What is the drone's displacement vector with respect to the control tower? What is the magnitude of this displacement vector?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+We model the drone’s motion using a three-dimensional Cartesian coordinate system with the control tower as the origin. The positive x -direction points east, the positive y -direction points north, and the positive z -direction points upward.
+
+The drone’s displacement vector points from its initial position to its final position. Each component of the displacement describes the change in position along one coordinate axis, and the magnitude of the displacement represents the straight-line distance between the initial and final positions.
+
+---
+
+The Math.
+
+The drone’s displacement vector is defined as the final position vector minus the initial position vector.
+
+ vector D equals vector r _f - vector r _i. 
+
+At takeoff, the drone is located at the point ( x sub i, y sub i, z sub i ) equals (300, 200, 100) m relative to the control tower. One minute later, its position is ( x sub f, y sub f, z sub f ) equals (1200, 2100, 250) m.
+
+The components of the displacement vector are obtained by subtracting the initial coordinates from the final coordinates along each axis.
+
+ 
+ D sub x equals x sub f - x sub i equals 1200 - 300 equals 900 meters, 
+ D sub y equals y sub f - y sub i equals 2100 - 200 equals 1900 meters, 
+ D sub z equals z sub f - z sub i equals 250 - 100 equals 150 meters.
+ 
+
+With these components identified, the displacement vector can be written in unit-vector form.
+
+ 
+ vector D equals D sub x i hat + D sub y j hat + D sub z k hat 
+ equals (900 i hat + 1900 j hat + 150 k hat ) m.
+ 
+
+Expressing each component in kilometers gives
+
+ vector D equals (0.90 i hat + 1.90 j hat + 0.15 k hat ) km. 
+
+The magnitude of the displacement is determined from the three-dimensional magnitude formula.
+
+ 
+D equals square root of D sub x to the power of 2 + D sub y to the power of 2 + D sub z to the power of 2 
+ equals square root of (0.90) squared + (1.90) squared + (0.15) squared km 
+ equals 2.11 km.
+ 
+---
+
+The Conclusion.
+
+The drone’s displacement vector is vector D equals (0.90 i hat + 1.90 j hat + 0.15 k hat ) km, with a magnitude of **2.11 km**. This result reflects a dominant horizontal displacement toward the northeast with a smaller vertical climb.
+
+---
+
+========================================================================
+
+2.3 Algebra of Vectors
+
+Algebra of Vectors.
+
+We've seen some properties of vectors from `Section 2.1.5 Properties of Vectors`, where there a few other properties not yet mentioned. A vector can be
+
+Bullet point. reversed (i.e., multiplied by a scalar, -1 ),
+
+Bullet point. nullified,
+
+Bullet point. made equal.
+
+To reverse the direction of a vector, we follow the rules for scaling a vector:
+
+ 
+- vector A equals - A sub x i hat - A sub y j hat - A sub z k hat.
+ 
+
+The number zero can be generalized to vector algebra through the object called the **null vector**, denoted by vector 0. It represents a vector that has no length or direction,
+
+ vector 0 equals 0 i hat + 0 j hat + 0 k hat. 
+
+If the difference of two vectors ( vector A and vector B ) is set to the null vector, we have
+
+ 
+ vector A - vector B equals 0 i hat + 0 j hat + 0 k hat equals vector 0, 
+ equals ( A sub x - B sub x ) i hat + ( A sub y - B sub y ) j hat + ( A sub z - B sub z ) k hat.
+ 
+
+By matching components, we can see that 
+
+ 
+ A sub x - B sub x equals 0, or A sub x equals B sub x, 
+ A sub y - B sub y equals 0, or A sub y equals B sub y, 
+ A sub z - B sub z equals 0, or A sub z equals B sub z.
+ 
+
+When vector A - vector B equals vector 0, this implies that vector A equals vector B because all their corresponding components are equal.
+
+Table. Choosing a vector method. Refer to the course notes for the full entries.
+
+**Example Problem**: Military convoy direction.
+
+The Problem.
+A military convoy advances through unknown territory. In a Cartesian coordinate system, the unit vector i hat denotes geographic east, j hat denotes geographic north, and k hat denotes altitude above sea level. The convoy’s velocity is given by
+ vector v equals (4.0 i hat + 3.0 j hat + 0.1 k hat ) kilometers per hour. 
+If the convoy were forced to retreat, in what geographic direction would it be moving? Describe both its horizontal direction and its vertical motion.
+
+---
+
+The Model.
+
+We model the convoy’s motion using a 3-dimensional velocity vector expressed in Cartesian components. The horizontal motion occurs in the east–north plane, while the vertical motion is represented by the k hat component.
+
+A retreat corresponds to reversing the direction of motion. Therefore, the retreat velocity vector must be antiparallel to the original velocity vector. This means the new velocity vector points in the opposite direction but retains the same relative component ratios.
+
+---
+
+The Math.
+
+The original velocity vector is
+
+ vector v equals (4.0 i hat + 3.0 j hat + 0.1 k hat ) kilometers per hour. 
+
+The positive k hat component shows that the convoy is ascending. Since 0.1 kilometers per hour equals 100 meters/h, the convoy is climbing while it moves horizontally toward the northeast.
+
+The horizontal direction of the original motion is determined from the ratio of the northward component to the eastward component.
+
+ 
+ theta equals tan to the power of -1 ( v sub y over v sub x ) 
+ equals tan to the power of -1 ( 3.0 over 4.0 ) 
+ is approximately equal to 37 degrees.
+ 
+
+The original horizontal motion is therefore 37 degrees north of east.
+
+For a retreat, the new velocity must point opposite the original velocity. A vector antiparallel to vector v can be written as
+
+ vector u equals - alpha vector v, 
+
+where alpha is a positive scale factor. Choosing the same speed corresponds to alpha equals 1, so the retreat velocity is
+
+ vector u equals (-4.0 i hat - 3.0 j hat - 0.1 k hat ) kilometers per hour. 
+
+The negative k hat component shows that the convoy would be descending during the retreat. The horizontal components are both negative, so the retreat direction lies southwest. The reference angle is
+
+ theta equals tan to the power of -1 ( 3.0 over 4.0 ) is approximately equal to 37 degrees. 
+
+The convoy therefore retreats at an angle of 37 degrees south of west.
+
+---
+
+The Conclusion.
+
+The convoy retreats at an angle of 37 degrees south of west while descending. The descending motion follows from the negative k hat component of the reversed velocity vector.
+
+---
+
+ **Component Matching Rule**.
+
+ 
+
+Vectors can only be added or subtracted by combining **matching components**.
+
+Bullet point. i hat components combine **only** with i hat 
+
+Bullet point. j hat components combine **only** with j hat 
+
+Bullet point. k hat components combine **only** with k hat 
+
+For example,
+
+ (3 i hat + 2 j hat ) + (5 i hat - j hat ) equals 8 i hat + j hat, 
+
+but expressions like
+
+ 3 i hat + 2 j hat + 5 k hat 
+
+**cannot be simplified further** because none of the subscripts match.
+If the subscripts do not match, the components represent **different directions** and cannot be combined.
+ 
+
+Vector addition by components is accomplished as follows:
+
+ 
+ vector R equals vector A + vector B, 
+ equals ( A sub x + B sub x ) i hat + ( A sub y + B sub y ) j hat + ( A sub z + B sub z ) k hat, 
+ equals R sub x i hat + R sub y j hat + R sub z k hat.
+ 
+
+Analytical methods can be used to find the result of many vectors by combining them by components. For example, if we sum up N vectors ( vector F _1, ldots, vector F _N ), where each vector vector F _n equals F sub nx i hat + F sub ny j hat + F sub nz k hat, the resultant vector is
+
+ 
+ vector F _R equals vector F _1 + vector F _2 + ldots + vector F _N equals sum sub n equals 1 to the power of N vector F _n, 
+ equals sum sub n equals 1 to the power of N ( F sub nx i hat + F sub ny j hat + F sub nz k hat ) equals sum sub n equals 1 to the power of n ( F sub nx ) i hat + sum sub n equals 1 to the power of N ( F sub ny ) j hat + sum sub n equals 1 to the power of N ( F sub nz ) k hat.
+ 
+
+The resultant vector is defined as:
+
+ 
+ vector F _R equals F sub Rx i hat + F sub Ry j hat + F sub Rz k hat,
+ 
+
+where
+
+ 
+F sub Rx equals sum sub n equals 1 to the power of N F sub nx equals F sub 1x + F sub 2x + ldots + F sub Nx, 
+F sub Ry equals sum sub n equals 1 to the power of N F sub ny equals F sub 1y + F sub 2y + ldots + F sub Ny, 
+F sub Rz equals sum sub n equals 1 to the power of N F sub nz equals F sub 1z + F sub 2z + ldots + F sub Nz.
+ 
+
+Checkpoint.
+
+ 
+
+A vector sum contains A sub x, B sub y, and C sub x.
+
+Which terms can be combined?
+ 
+
+See the Python snippet given in the course lecture notes.
+
+**Example Problem**: Vector addition component-wise.
+
+The Problem.
+Three displacement vectors vector A, vector B, and vector C lie in the horizontal plane.
+Their magnitudes are A equals 10.0 cm, B equals 7.0 cm, and C equals 8.0 cm,
+and their direction angles (measured counterclockwise from the positive x -axis) are
+ alpha equals 35 degrees, beta equals -110 degrees, and gamma equals 30 degrees, respectively.
+Resolve each vector into its Cartesian components and determine the following:
+(a) vector R equals vector A + vector B + vector C 
+(b) vector D equals vector A - vector B 
+(c) vector S equals vector A - 3 vector B + vector C 
+
+ 
+ 
+ 
+
+ 
+---
+
+The Model.
+
+We model each displacement as a two-dimensional vector in the x - y plane. Each vector is described by a magnitude and a direction angle, so each one can be resolved into horizontal and vertical components. Vector addition and subtraction are performed by combining matching components only. Once the components of a resultant are known, the resultant can be written in unit-vector form.
+
+---
+
+The Math.
+
+The Math.
+
+Each vector is resolved into rectangular components before the vector combinations are evaluated. For any vector vector V with magnitude V and direction angle theta measured from the positive x -axis, the components are
+
+ 
+ V sub x equals V cos theta, 
+ V sub y equals V sin theta.
+ 
+
+Applying these component definitions to vector A gives
+
+ 
+ A sub x equals A cos alpha equals (10.0) cos 35 degrees equals 8.19 cm, 
+ A sub y equals A sin alpha equals (10.0) sin 35 degrees equals 5.73 cm.
+ 
+
+Applying the same component definitions to vector B gives
+
+ 
+ B sub x equals B cos beta equals (7.0) cos(-110 degrees) equals -2.39 cm, 
+ B sub y equals B sin beta equals (7.0) sin(-110 degrees) equals -6.58 cm.
+ 
+
+Applying the same component definitions to vector C gives
+
+ 
+ C sub x equals C cos gamma equals (8.0) cos 30 degrees equals 6.93 cm, 
+ C sub y equals C sin gamma equals (8.0) sin 30 degrees equals 4.00 cm.
+ 
+
+**(a)** For the vector sum vector R equals vector A + vector B + vector C, matching components are added to form the components of the resultant vector.
+
+ 
+ R sub x equals A sub x + B sub x + C sub x equals 8.19 - 2.39 + 6.93 equals 12.73 cm, 
+ R sub y equals A sub y + B sub y + C sub y equals 5.73 - 6.58 + 4.00 equals 3.15 cm.
+ 
+
+The vector sum in component form is therefore
+
+ vector R equals (12.7 i hat + 3.1 j hat ) cm. 
+
+**(b)** For the vector difference vector D equals vector A - vector B, the components of vector B are subtracted from the corresponding components of vector A.
+
+ 
+ D sub x equals A sub x - B sub x equals 8.19 - (-2.39) equals 10.58 cm, 
+ D sub y equals A sub y - B sub y equals 5.73 - (-6.58) equals 12.31 cm.
+ 
+
+The vector difference in component form is therefore
+
+ vector D equals (10.6 i hat + 12.3 j hat ) cm. 
+
+**(c)** For the combination vector S equals vector A - 3 vector B + vector C, the components of vector B are first multiplied by 3 and then subtracted component by component.
+
+ 
+ S sub x equals A sub x - 3 B sub x + C sub x equals 8.19 - 3(-2.39) + 6.93 equals 22.29 cm, 
+ S sub y equals A sub y - 3 B sub y + C sub y equals 5.73 - 3(-6.58) + 4.00 equals 29.47 cm.
+ 
+
+The vector combination in component form is therefore
+
+ vector S equals (22.3 i hat + 29.5 j hat ) cm. 
+
+The Conclusion.
+
+The Conclusion.
+
+The analytical component method gives
+
+ vector R equals (12.7 i hat + 3.1 j hat ) cm, 
+
+ vector D equals (10.6 i hat + 12.3 j hat ) cm, 
+
+and
+
+ vector S equals (22.3 i hat + 29.5 j hat ) cm. 
+
+These results show that vector addition, subtraction, and scalar multiplication can all be handled by combining matching x - and y -components.
+
+---
+ **The Problem**
+Four dogs named Astro, Balto, Clifford, and Dug play a tug-of-war game with a toy. We define east as the positive x -direction and north as the positive y -direction.
+Astro pulls with a force of magnitude A equals 160.0 newtons at an angle alpha equals 55 degrees south of east.
+Balto pulls with a force of magnitude B equals 200.0 newtons at an angle beta equals 60 degrees east of north.
+Clifford pulls with a force of magnitude C equals 140.0 newtons at an angle gamma equals 55 degrees west of north.
+Dug pulls on the toy in such a way that the toy does not move.
+What force must Dug apply (magnitude and direction) in order to keep the toy in equilibrium?
+
+Figure referenced in the course notes.
+
+---
+
+The Model.
+
+We model each dog’s pull on the toy as a force vector in the horizontal plane. The positive x -direction points east, and the positive y -direction points north. Each force is described by a magnitude and a direction, so each pull can be resolved into horizontal and vertical components.
+
+The toy remains at rest only if the vector sum of all forces acting on it is zero. Dug’s pull must therefore balance the combined pull of the other three dogs. This means Dug’s force must have the same magnitude as that combined force but point in the opposite direction.
+
+---
+
+The Math.
+
+The direction descriptions are first converted into standard direction angles measured counterclockwise from the positive x -axis. Astro pulls south of east, Balto pulls east of north, and Clifford pulls west of north, so their direction angles are
+
+ 
+ theta _A equals -55 degrees, 
+ theta _B equals 90 degrees - 60 degrees equals 30 degrees, 
+ theta _C equals 90 degrees + 55 degrees equals 145 degrees.
+ 
+
+Each force is resolved into x - and y -components using the magnitude and direction angle of that force.
+
+ 
+ A sub x equals A cos theta _A equals (160.0) cos(-55 degrees) equals +91.8 newtons, 
+ A sub y equals A sin theta _A equals (160.0) sin(-55 degrees) equals -131.1 newtons, 
+ B sub x equals B cos theta _B equals (200.0) cos(30 degrees) equals +173.2 newtons, 
+ B sub y equals B sin theta _B equals (200.0) sin(30 degrees) equals +100.0 newtons, 
+ C sub x equals C cos theta _C equals (140.0) cos(145 degrees) equals -114.7 newtons, 
+ C sub y equals C sin theta _C equals (140.0) sin(145 degrees) equals +80.3 newtons.
+ 
+
+The resultant force from Astro, Balto, and Clifford is found by adding matching components.
+
+ 
+ R sub x equals A sub x + B sub x + C sub x equals 91.8 + 173.2 - 114.7 equals 150.3 newtons, 
+ R sub y equals A sub y + B sub y + C sub y equals -131.1 + 100.0 + 80.3 equals 49.2 newtons.
+ 
+
+The resultant force from the first three dogs is therefore
+
+ vector R equals (150.3 i hat + 49.2 j hat ) N. 
+
+For the toy to remain at rest, Dug’s force must cancel the resultant force from the other three dogs. Therefore Dug’s force is the opposite of vector R.
+
+ vector D equals - vector R equals (-150.3 i hat - 49.2 j hat ) N. 
+
+The magnitude of Dug’s force is found from the components of vector D.
+
+ D equals square root of (-150.3) squared + (-49.2) squared N equals 158.1 newtons. 
+
+The reference angle for Dug’s force is found from the ratio of the magnitudes of the southward and westward components.
+
+ theta equals tan to the power of -1 ( 49.2 over 150.3 ) equals 18.1 degrees. 
+
+Because both components of vector D are negative, Dug pulls in the third quadrant. His force is therefore directed 18.1 degrees south of west.
+
+---
+
+The Conclusion.
+
+To keep the toy in equilibrium, Dug must pull with a force of magnitude D equals 158.1 newtons directed 18.1 degrees south of west. Dug’s force has the same magnitude as the resultant force from the other three dogs but points in the opposite direction, so the net force on the toy is zero.
+
+---
+
+ **The Problem**
+Find the magnitude of the vector vector C that satisfies the vector equation
+ 2 vector A - 6 vector B + 3 vector C equals 2 j hat, 
+where the known vectors are
+ vector A equals i hat - 2 k hat, vector B equals - j hat + 1 over 2 k hat. 
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+We model the given expression as a three-dimensional vector equation written in the standard Cartesian basis. The unit vectors i hat, j hat, and k hat represent mutually perpendicular directions.
+
+The unknown vector is determined by comparing matching components along the three coordinate axes. Once its components are identified, its magnitude is found from the three-dimensional length of the vector.
+
+---
+
+The Math.
+
+The goal is to solve the vector equation for the unknown vector vector C. To isolate vector C, the known vector terms are moved to the right side and then the equation is divided by 3.
+
+ 
+2 vector A - 6 vector B + 3 vector C equals 2 j hat, 
+3 vector C equals 2 j hat - 2 vector A + 6 vector B, 
+ vector C equals 2 over 3 j hat - 2 over 3 vector A + 2 vector B.
+ 
+
+The known vectors are then inserted into the expression for vector C so that matching unit-vector components can be combined.
+
+ 
+ vector C equals 2 over 3 j hat - 2 over 3 ( i hat - 2 k hat ) + 2 (- j hat + 1 over 2 k hat ) 
+ equals - 2 over 3 i hat + ( 2 over 3 - 2 ) j hat + ( 4 over 3 + 1 ) k hat 
+ equals - 2 over 3 i hat - 4 over 3 j hat + 7 over 3 k hat.
+ 
+
+The scalar components of vector C are therefore
+
+ C sub x equals - 2 over 3, C sub y equals - 4 over 3, C sub z equals 7 over 3. 
+
+The magnitude of vector C is found by applying the three-dimensional magnitude formula to these components.
+
+ 
+| vector C | equals square root of C sub x to the power of 2 + C sub y to the power of 2 + C sub z to the power of 2 
+ equals square root of (- 2 over 3 ) squared + (- 4 over 3 ) squared + ( 7 over 3 ) squared 
+ equals square root of 23 over 3.
+ 
+
+---
+
+The Conclusion.
+
+The vector vector C is
+
+ vector C equals - 2 over 3 i hat - 4 over 3 j hat + 7 over 3 k hat, 
+
+and its magnitude is
+
+ | vector C | equals square root of 23 over 3 is approximately equal to 2.77. 
+
+This result follows from first solving for the vector components and then applying the three-dimensional magnitude formula.
+
+**Frequent Mistake**.
+
+ 
+
+A frequent mistake in problems like this is **mixing up vector components with magnitudes**.
+
+Bullet point. i hat, j hat, and k hat are **directional basis vectors**, not numbers.
+
+Bullet point. In Python, they correspond to **array positions**, not separate variables.
+
+Bullet point. Writing something like `C equals sqrt(Cx**2 + Cy**2 + Cz**2)` before identifying the components will lead to errors.
+
+Always **solve for the vector first**, then compute its magnitude.
+ 
+
+---
+
+ **The Problem**
+A military convoy moves through unknown territory with velocity
+ vector v equals (4.0 i hat + 3.0 j hat + 0.10 k hat ) kilometers per hour. 
+What is the **unit vector** that gives the direction of the convoy’s motion?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+We model the convoy’s velocity as a three-dimensional vector with east, north, and upward components. The direction of motion is represented by a unit vector parallel to the velocity vector.
+
+A unit vector describes direction only and has no physical units. To find the unit vector, the velocity vector is scaled so that its magnitude becomes one while its direction remains unchanged.
+
+---
+
+The Math.
+
+The unit vector in the direction of motion is found by dividing the velocity vector by its magnitude.
+
+ v hat equals vector v over | vector v |. 
+
+The magnitude of the velocity vector is determined from its three rectangular components.
+
+ 
+| vector v | equals square root of v sub x to the power of 2 + v sub y to the power of 2 + v sub z to the power of 2 
+ equals square root of (4.0) squared + (3.0) squared + (0.10) squared kilometers per hour 
+ equals square root of 25.01 kilometers per hour 
+ is approximately equal to 5.0 kilometers per hour.
+ 
+
+Dividing each component of vector v by this magnitude gives the corresponding component of the unit vector.
+
+ 
+ v hat equals 4.0 i hat + 3.0 j hat + 0.10 k hat over 5.0 
+ equals 0.80 i hat + 0.60 j hat + 0.020 k hat.
+ 
+
+---
+
+The Conclusion.
+
+The unit vector describing the direction of the convoy’s motion is
+
+ v hat equals 0.80 i hat + 0.60 j hat + 0.020 k hat. 
+
+This vector has magnitude one and describes only the direction of the convoy’s motion, not its speed.
+
+Warning.
+
+A frequent mistake is to divide **only one component** of the vector by the magnitude.
+
+A unit vector must preserve the *direction* of the original vector, so **every component must be divided by the same magnitude**. Forgetting this produces a vector that no longer points in the correct direction.
+ 
+
+---
+
+========================================================================
+
+2.4 Products of Vectors
+
+Products of Vectors.
+
+A vector can be multiplied by another vector, **but may not be divided by another vector**. There are two kinds of vector products:
+
+Bullet point. scalar multiplication (dot product), or
+
+Bullet point. vector multiplication (cross product).
+
+As the names imply, the result of the multiplication produces either a scalar or a vector.
+
+The Dot Product.
+
+The **scalar product** of two vectors is denoted using dot (` dot `) symbol instead of the normal times (` times `) symbol. The scalar product of vectors vector A and vector B is defined by
+
+ 
+ vector A dot vector B equals AB cos{ phi },
+ 
+
+where the angle phi represents an angle between the two vectors.
+
+Note.
+
+In LaTeX, there are two versions of `phi`, which can include phi (` phi `) or phi (` phi `). Both versions mean the same thing, but you need to be consistent. 
+ 
+
+In the definition of the dot product, the direction of the angle phi does not matter due to the property of cos{ phi } equals cos{- phi } (i.e., cosine is an even function). The dot product is a negative number in Quadrant II because cos{ phi } 0, when 0 < phi < pi /2.
+
+When two vectors are parallel, the angle phi equals 0 and vector A dot vector B equals AB cos{0} equals AB.
+
+What happens when the vectors are antiparallel or perpendicular?.
+
+Bullet point. For antiparallel vectors, vector A dot vector B equals -AB.
+
+Bullet point. for perpendicular (or orthogonal) vectors, vector A dot vector B equals 0.
+
+The scalar product of a vector with itself is the square of its magnitude:
+
+ 
+ vector A to the power of 2 equiv vector A dot vector A equals AA cos{0} equals A squared.
+ 
+
+Checkpoint.
+
+ 
+
+The dot product of two vectors is negative.
+
+Is the angle between the vectors less than, equal to, or greater than 90 degrees?
+ 
+
+Rules using unit vectors.
+
+In the Cartesian coordinate system, scalar products of a unit vector with another (different) unit vector vanish because these unit vectors are **orthogonal**:
+
+ 
+ i hat dot j hat equals cos{ ( pi over 2 )} equals 0, 
+ i hat dot k hat equals cos{ ( pi over 2 )} equals 0, 
+ k hat dot j hat equals cos{ ( pi over 2 )} equals 0.
+ 
+
+We often take advantage of the fact that the magnitudes of all unit vectors are one:
+
+ 
+| i hat | equals i hat dot hat {i} equals i squared equals 1, 
+| j hat | equals j hat dot hat {j} equals j squared equals 1, 
+| k hat | equals k hat dot hat {k} equals k squared equals 1. 
+ 
+
+The scalar product is also interpreted as the *projection* of one vector onto the *direction* of the other vector (i.e., projection A sub || onto the direction of vector B ):
+
+ 
+ vector A dot vector B equals AB cos{ phi }, 
+ equals B(A cos{ phi }) equals BA sub ||, 
+ equals A(B cos{ phi }) equals AB sub ||.
+ 
+
+Recall the definitions of the vector components A sub x and A sub y. We can define these quantities through the dot product with the appropriate unit vector. For example, using the vector vector A equals A sub x i hat + A sub y j hat:
+
+ 
+ vector A dot i hat equals A sub x ( i hat dot i hat ) + A sub y ( i hat dot j hat ) equals A sub x cos(0) + A sub y cos( pi /2) equals A sub x, 
+ vector A dot j hat equals A sub x ( j hat dot i hat ) + A sub y ( j hat dot j hat ) equals A sub x cos( pi /2) + A sub y cos(0) equals A sub y.
+ 
+
+Scalar multiplication follows the previous properties of vector operation, where they are:
+
+Bullet point. commutative; vector A dot vector B equals vector B dot vector A,
+
+Bullet point. distributive; vector A dot ( vector B + vector C ) equals vector A dot vector B + vector A dot vector C.
+
+We can compute the scalar products of two vectors using the distributive property:
+
+ 
+ vector A dot vector B equals ( A sub x i hat + A sub y j hat + A sub z k hat ) dot ( B sub x i hat + B sub y j hat + B sub z k hat ) 
+ equals A sub x B sub x i hat dot i hat + A sub x B sub y i hat dot j hat + A sub x B sub z i hat dot k hat 
+ + A sub y B sub x j hat dot i hat + A sub y B sub y j hat dot j hat + A sub y B sub z j hat dot k hat 
+ + A sub z B sub x k hat dot i hat + A sub z B sub y k hat dot j hat + A sub z B sub z k hat dot k hat.
+ 
+
+Applying our rules for the dot products of unit vectors, the above expression simplifies quickly to 
+
+ 
+ vector A dot vector B equals A sub x B sub x + A sub yB _y + A sub zB _z
+ 
+
+If we know the magnitudes ( A and B ) and the vector components of each vector, then we can solve for the angle phi between them:
+
+ 
+ cos{ phi } equals vector A dot vector B over AB equals A sub x B sub x + A sub yB _y + A sub zB _z over AB, 
+ phi equals cos to the power of -1 ( A sub x B sub x + A sub yB _y + A sub zB _z over AB ).
+ 
+
+**Example Problem**: Angle between two forces.
+
+The Problem.
+Three dogs are pulling on a stick in different directions. The first dog pulls with force vector F _1 equals (10.0 i hat - 20.4 j hat + 2.0 k hat ) N, the second dog pulls with force vector F _2 equals (-15.0 i hat - 6.2 k hat ) N, and the third dog pulls with force vector F _3 equals (5.0 i hat + 12.5 j hat ) N. 
+ 
+What is the angle between the forces vector F _1 and vector F _2?
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+We treat each pull on the stick as a three-dimensional force vector expressed in Cartesian component form. The coordinate axes are arbitrary but fixed: the i hat -, j hat -, and k hat -directions are mutually perpendicular and form a right-handed coordinate system.
+
+The angle between two vectors is determined entirely by their components and magnitudes. We therefore model the angle between vector F _1 and vector F _2 using the **scalar (dot) product**, which relates the cosine of the angle between two vectors to their components.
+
+---
+
+The Math.
+
+The angle between two vectors can be found from the scalar product. For the forces vector F _1 and vector F _2, the scalar product is related to the angle phi by
+
+ vector F _1 dot vector F _2 equals F sub 1F _2 cos phi. 
+
+The magnitudes of the two forces are determined from their rectangular components.
+
+ 
+ F sub 1 equals square root of (10.0) squared + (-20.4) squared + (2.0) squared equals 22.8 newtons, 
+ F sub 2 equals square root of (-15.0) squared + (0.0) squared + (-6.2) squared equals 16.2 newtons.
+ 
+
+The scalar product is found by multiplying matching components and adding the products.
+
+ 
+ vector F _1 dot vector F _2
+ equals F sub 1x F sub 2x + F sub 1y F sub 2y + F sub 1z F sub 2z 
+ equals (10.0)(-15.0) + (-20.4)(0.0) + (2.0)(-6.2) 
+ equals -162.4 newtons to the power of 2.
+ 
+
+Solving the scalar-product relation for cos phi gives
+
+ 
+ cos phi equals vector F _1 dot vector F _2 over F sub 1F _2 
+ equals -162.4 over (22.8)(16.2) 
+ equals -0.439.
+ 
+
+The angle between the two forces is obtained by taking the inverse cosine.
+
+ phi equals cos to the power of -1 (-0.439) equals 116.0 degrees. 
+
+---
+
+The Conclusion.
+
+The angle between the forces vector F _1 and vector F _2 is phi equals 116.0 degrees. Because the scalar product is negative, the angle between the two forces is **greater than 90 degrees **, indicating that the dogs are pulling in substantially opposing directions.
+
+---
+
+ **The Problem**
+A wrench is used to loosen a rusty nut. A force of 20.0 newtons is applied to the handle at a distance of 0.25 meters from the nut (see Figure ). 
+ 
+(a) If the force is applied at an angle phi equals 40 degrees relative to the wrench handle, what are the **magnitude and direction** of the torque applied to the nut? 
+ 
+(b) How do the magnitude and direction of the torque change if the force is instead applied at phi equals 45 degrees? 
+ 
+(c) For what value of phi does the torque have its **maximum magnitude**?
+
+Figure referenced in the course notes.
+
+---
+
+The Model.
+
+We model the nut as a fixed pivot point and the wrench handle as a radial line extending away from that pivot. The applied force acts at a point on the wrench handle and makes an angle with the radial direction.
+
+The torque describes the turning effect of the force about the nut. Since the radial vector and the applied force lie in the plane of the wrench, the torque vector must point perpendicular to that plane. Its direction is determined by the right-hand rule, and its magnitude depends on the lever arm, the force magnitude, and the angle between them.
+
+---
+
+The Math.
+
+The magnitude of the torque produced by a force applied at an angle phi relative to the radial direction is
+
+ tau equals RF sin phi. 
+
+For this wrench, the lever arm is R equals 0.25 meters and the applied force has magnitude F equals 20.0 newtons.
+
+**(a)** When the force is applied at phi equals 40 degrees, the torque magnitude is determined by inserting this angle into the torque expression.
+
+ tau equals (0.25 meters )(20.0 newtons ) sin 40 degrees equals 3.21 newtons dot m. 
+
+The direction is determined from the right-hand rule applied to vector R times vector F. For the orientation shown in part (a), the torque points in the positive z -direction, which is out of the page.
+
+**(b)** When the force is applied at phi equals 45 degrees, the same torque expression gives
+
+ tau equals (0.25 meters )(20.0 newtons ) sin 45 degrees equals 3.53 newtons dot m. 
+
+For the orientation shown in part (b), the right-hand rule gives a torque in the negative z -direction, which is into the page.
+
+**(c)** The torque magnitude is largest when sin phi has its maximum value. Since the largest possible value of sin phi is 1, the maximum torque occurs when
+
+ phi equals 90 degrees. 
+
+The largest possible torque magnitude is therefore
+
+ tau sub max equals RF equals (0.25 meters )(20.0 newtons ) equals 5.00 newtons dot m. 
+
+---
+
+The Conclusion.
+
+For phi equals 40 degrees, the torque has magnitude
+
+ tau equals 3.21 newtons dot m 
+
+and points in the positive z -direction, out of the page. For phi equals 45 degrees, the torque has magnitude
+
+ tau equals 3.53 newtons dot m 
+
+and points in the negative z -direction, into the page. The maximum possible torque occurs when phi equals 90 degrees, giving
+
+ tau sub max equals 5.00 newtons dot m. 
+
+The torque increases as the force becomes more perpendicular to the wrench handle, and its direction is set by the right-hand rule.
+
+---
+
+========================================================================

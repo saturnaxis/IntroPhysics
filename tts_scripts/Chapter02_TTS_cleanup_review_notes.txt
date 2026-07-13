@@ -1,0 +1,23 @@
+Chapter 2 TTS cleanup review notes
+
+Global cleanup performed:
+- Removed the Chapter roadmap from the beginning of Section 2.1, as requested.
+- Removed webpage-interface leakage such as figure placeholders, dropdown prompts, table/directive language, raw video embed blanks, and repeated Python-code placeholders.
+- Replaced fragile terms directly in the scripts: NumPy -> Num-pie, LaTeX -> Lay-tek, OpenStax -> Open Stax, JupyterBook -> Jupyter Book where applicable.
+- Converted checkpoint labels to: "Checkpoint. Pause and check your understanding."
+- Preserved worked-example Problem, Model, Math, and Conclusion sections while cleaning math speech and code/interface leakage.
+
+Notebook verification decisions:
+- Section 2.1: The first-pass transcript included the Chapter roadmap; it was removed. The first pass also omitted the "Algebra of Vectors in 2D" narrative before the geometric-construction worked example, so that source content was restored in cleaned narration.
+- Section 2.1: The first-pass transcript garbled the Markdown/Lay-tek note about math mode. The cleaned script reads the literal source syntax for dollar-sign math and the align environment.
+- Section 2.1: The source notebook appears to list |D_AD| twice in the campsite/pond distance bullet list. The cleaned narration uses |D_DB| for the 2.7 km distance to the pond because the preceding equation defines D_DB for that segment.
+- Section 2.2: The first-pass transcript omitted the source narrative for determining vector magnitude/direction, polar coordinates, and the 3D vector-component introduction. Those notebook-source sections were restored before their corresponding worked examples.
+- Section 2.2: The literal Python tip n p dot arctan two of D y comma D x was read as source syntax, not as rendered math.
+- Section 2.3: The first-pass transcript omitted the brief unit-vector introduction before the convoy unit-vector example. That source content was restored.
+- Section 2.3: The warning example C equals square root of C x squared plus C y squared plus C z squared was treated as literal code-like syntax, not as a physics equation to derive.
+- Section 2.4: The first-pass transcript omitted the cross-product source narrative before the wrench/torque example. That source content was restored in cleaned narration.
+- Section 2.4: The dot-product and cross-product source-syntax references for backslash c d o t, backslash times, backslash varphi, and backslash phi were cleaned as literal Lay-tek commands.
+
+Items intentionally not narrated:
+- Python plotting and verification code cells were not read line by line. The scripts refer students to the course webpage for code, except where a literal code expression is itself part of the instructional text.
+- Figure credits, raw URLs, MyST directives, audio-player HTML, in-class problems, homework, and reference appendices were not added to the narration scripts.
