@@ -1,32 +1,5 @@
 ## Listen by section
 
-### 3.1 Position, Displacement, and Average Velocity
-
-<audio class="plyr" controls>
-  <source src="../_static/audio/Chapter03_motion-along-1D__3-1-position-displacement-and-average-velocity.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-
-_This audio is AI-generated._
-
-### 3.2 Instantaneous Velocity and Speed
-
-<audio class="plyr" controls>
-  <source src="../_static/audio/Chapter03_motion-along-1D__3-2-instantaneous-velocity-and-speed.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-
-_This audio is AI-generated._
-
-### 3.3 Average and Instantaneous Acceleration
-
-<audio class="plyr" controls>
-  <source src="../_static/audio/Chapter03_motion-along-1D__3-3-average-and-instantaneous-acceleration.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-
-_This audio is AI-generated._
-
 ### 3.4 Motion with Constant Acceleration
 
 <audio class="plyr" controls>
