@@ -85,6 +85,8 @@ sphinx:
     html_css_files:
       - "https://cdn.plyr.io/3.8.4/plyr.css"
       - "custom.css"
+      - "audio-player.css"
     html_js_files:
       - "https://cdn.plyr.io/3.8.4/plyr.polyfilled.js"
       - "init-plyr.js"
+      - "audio-player.js"
