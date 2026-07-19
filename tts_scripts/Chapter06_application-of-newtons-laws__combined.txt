@@ -1,0 +1,1893 @@
+6.1 Solving Newton's Laws
+
+Application of Newton's Laws.
+
+Chapter roadmap.
+
+ 
+
+This chapter applies Newton's laws to more realistic situations involving several common forces. We will use free-body diagrams to analyze systems with friction, tension, normal forces, springs, and circular motion, while keeping the connection between force and acceleration at the center of each problem.
+
+As you read, focus on three questions:
+
+Item 1. Which forces act on the object or system?
+
+Item 2. Which direction should the coordinate axes point?
+
+Item 3. What physical condition determines the acceleration or force balance?
+
+These ideas will be used to solve problems involving connected objects, inclined planes, friction, drag, springs, and circular motion.
+ 
+
+Solving Newton's Laws.
+
+Note.
+
+This chapter combines several tools developed earlier in the course. We use vector components from Chapter 2, acceleration vectors from Chapter 4, and free-body diagrams from Chapter 5 to apply Newton's second law to real systems.
+ 
+
+Problem-Solving Strategies.
+
+Applying Newton's Laws of Motion.
+
+ 
+
+Most problems in this chapter follow the same pattern: choose a system, identify the external forces, turn those forces into components, and apply Newton's second law.
+
+Item 1. **Define the system of interest.** Decide which object or group of objects you are analyzing. Newton's second law uses only the external forces acting on that system.
+
+Item 2. **Choose useful axes.** Pick coordinate axes that make the force components as simple as possible. When motion occurs along a slope, curve, or rope, it is often useful to align one axis with the motion or acceleration.
+
+Item 3. **Draw a free-body diagram.** Draw only the external forces acting on the chosen system. Do not draw velocity, acceleration, or the net force as separate forces.
+
+Item 4. **Write Newton's second law by components.** Start from sum vector F equals m vector a, then write the component equations such as
+ 
+ sum F sub x equals m a sub x, 
+ sum F sub y equals m a sub y.
+ 
+
+Item 5. **Use constraints and known conditions.** Constant velocity means a equals 0. Static equilibrium means the net force is zero. A massless rope has the same tension throughout. A frictionless pulley changes the direction of the tension but not its magnitude.
+
+Item 6. **Solve symbolically before evaluating.** Keep the algebra general as long as possible. Substitute numerical values only after the physical relationships are clear.
+
+Item 7. **Check the result.** The answer should have the correct units, the correct direction, and a physically reasonable size.
+ 
+
+This strategy is not a recipe for memorizing equations. It is a way to translate a physical situation into Newton's second law. The hardest step is usually deciding what belongs in the free-body diagram and what does not.
+
+**Flipping Physics**.
+
+ 
+
+ 
+ 
+
+Consider the challenge of lifting a grand piano into a second-story apartment. 
+
+Which of Newton's laws are involved?.
+
+Figure referenced in the course notes.
+
+Figure shows that we can represent all forces with arrows and simplify the analysis with a more crude representation. 
+
+It is important to make a list of knowns and unknowns so that we can properly identify the system of interest. *Recall that Newton's 2nd law involves only external forces*, so we 
+
+Bullet point. first list all the forces, and
+
+Bullet point. then identify which are internal or external.
+
+The identified forces are:
+
+Bullet point. vector T: tension in the rope above the piano
+
+Bullet point. vector F sub T: force that the piano exerts on the rope, and
+
+Bullet point. vector w: weight of the piano.
+
+All other forces (e.g., nudge of a breeze) are assumed to be negligible.
+
+Newton's 3rd law can be used to identify whether forces are exerted between internal components of a system **or** between the system and an external component. 
+
+Bullet point. The vector T and vector F _T form a force-pair, where we only include the external component vector T in our FBD (see Fig. b).
+
+Bullet point. Figure c shows a FBD, where Newton's 2nd law is applied in Fig. d.
+
+Once external forces are clearly identified in FBDs, it should be straightforward to put them into Newton's 2nd law and form equations that can be solved.
+
+Bullet point. If the problem is 1D (i.e., forces are parallel), then the forces can be handled algebraically.
+
+Bullet point. If the problem is 2D, then it must be broken into components and then, solved as a pair of 1D problems.
+
+Bullet point. It is usually convenient to make one axis parallel to the direction of motion, if this is known.
+
+Checkpoint.
+
+ 
+
+Which forces act **on the chosen system**, and which forces act on something outside the system?
+ 
+
+Then you have
+
+ 
+ sum F sub x equals m a sub x, 
+ sum F sub y equals m a sub y.
+ 
+
+We must check the solution to tell whether it is reasonable. For example, it is reasonable to find that friction causes an object to slide down an incline more slowly than when no friction exits.
+
+Bullet point. In practice, intuition (i.e. knowing what is reasonable at a glance) develops through solving many problems (i.e., experience).
+
+ 
+Ut est rerum omnium magister usus. ("Experience is the teacher of all things.")
+
+-- Julius Caesar
+ 
+
+Another way to check a solution is to check the units. If we are solving for force and end up with units of only velocity, then we have made a mistake.
+
+Particle Equilibrium.
+
+A particle in equilibrium is one that obey's Newton's 1st law (i.e., the external forces are balanced). Static equilibrium involves objects at rest, and dynamic equilibrium involves objects in motion *without* acceleration.
+
+Checkpoint.
+
+ 
+
+If an object is moving at constant velocity, is it in equilibrium? What does that imply about sum vector F?
+ 
+
+Particle equilibrium is the force version of constant velocity. If the acceleration is zero, Newton's second law becomes sum vector F equals 0. This extends the equilibrium ideas from Newton's first law and the free-body-diagram workflow from Chapter 5.
+
+**Example Problem**: Different Tensions at Different Angles.
+
+The Problem.
+Consider the traffic light (mass of 15 kg ) suspended from two wires as shown in Figure. Find the tension in each wire, neglecting the masses of the wires.
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The system of interest is the traffic light. We model the traffic light as a particle in static equilibrium, so its acceleration is zero. We choose + i hat to point horizontally to the right and + j hat to point vertically upward. With this coordinate choice, the left-wire tension vector T _1 points up and to the left, the right-wire tension vector T _2 points up and to the right, and the weight vector w points downward in the - j hat direction.
+
+The left wire makes an angle of 30 degrees with the horizontal, and the right wire makes an angle of 45 degrees with the horizontal. The two wires are treated as massless and inextensible, so each wire exerts a tension force along its own direction. The only forces acting on the traffic light are the two tensions and the weight (similar to the Tension in a Tightrope). Air resistance and motion of the light are neglected.
+
+---
+
+The Math.
+
+For static equilibrium, Newton’s second law requires the net force on the traffic light to be zero. Since the traffic light has no acceleration in either direction,
+
+ 
+ sum F sub x equals m a sub x equals 0, 
+ sum F sub y equals m a sub y equals 0.
+ 
+
+The forces acting on the traffic light are the left tension vector T _1, the right tension vector T _2, and the weight vector w equals -mg j hat. Resolving the two tension forces into horizontal and vertical components gives the component equations
+
+ 
+ sum F sub x equals - T sub 1 cos 30 degrees + T sub 2 cos 45 degrees equals 0, 
+ sum F sub y equals T sub 1 sin 30 degrees + T sub 2 sin 45 degrees - mg equals 0.
+ 
+
+The horizontal equation relates the two unknown tensions. We solve this equation for T sub 2 in terms of T sub 1 so that the vertical equation will contain only one unknown tension:
+
+ 
+- T sub 1 cos 30 degrees + T sub 2 cos 45 degrees equals 0, 
+ T sub 2 cos 45 degrees equals T sub 1 cos 30 degrees, 
+ T sub 2 equals T sub 1 cos 30 degrees over cos 45 degrees.
+ 
+
+The vertical equation determines the actual size of the tensions because the vertical components must balance the weight of the traffic light. We substitute the horizontal-equilibrium relation for T sub 2 into the vertical equation and solve for T sub 1:
+
+ 
+ T sub 1 sin 30 degrees + T sub 2 sin 45 degrees - mg equals 0, 
+ T sub 1 sin 30 degrees + ( T sub 1 cos 30 degrees over cos 45 degrees ) sin 45 degrees equals mg, 
+ T sub 1 ( sin 30 degrees + cos 30 degrees over cos 45 degrees sin 45 degrees ) equals mg, 
+ T sub 1 equals mg over sin 30 degrees + cos 30 degrees over cos 45 degrees sin 45 degrees.
+ 
+
+The numerical value of T sub 1 follows from the vertical force balance, and then the horizontal force balance gives T sub 2:
+
+ 
+ T sub 1 equals (15.0 kg )(9.81 meters per second squared ) over sin 30 degrees + cos 30 degrees over cos 45 degrees sin 45 degrees 
+ equals 108 newtons, 
+ T sub 2 equals T sub 1 cos 30 degrees over cos 45 degrees 
+ equals (108 newtons ) cos 30 degrees over cos 45 degrees 
+ equals 132 newtons.
+ 
+
+---
+
+The Conclusion.
+
+The tension in the left wire is T sub 1 equals 108 newtons, and the tension in the right wire is T sub 2 equals 132 newtons. The right wire has the larger tension because its direction is closer to vertical, so it supplies more of the upward force needed to balance the traffic light’s weight. These values satisfy Newton’s second law for static equilibrium because the horizontal components cancel and the vertical components balance the weight.
+
+---
+
+ **The Problem**
+Two tugboats push on a barge at different angles as shown in Figure. The first tugboat exerts a force of 2.7 times ten to the 5 newtons in the x -direction, and the second tugboat exerts a force of 3.6 times ten to the 5 newtons in the y -direction. The mass of the barge is 5 times ten to the 6 kg and its acceleration is observed to be 7.5 times ten to the minus 2 meters per second squared in the direction shown. What is the drag force of the water on the barge resisting the motion?
+
+Note.
+
+Drag force is a frictional force exerted by fluids, such as air or water. The drag force opposes the motion of the object. Since the barge is flat bottomed, we can assume that the drag force is in the direction opposite the barge's motion.
+ 
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The system of interest is the barge. We model the barge as a rigid object translating on the horizontal surface of the water. We choose + i hat to point in the direction of the first tugboat’s force and + j hat to point in the direction of the second tugboat’s force. With this coordinate choice, the tugboat forces are vector F _1 equals F sub 1 i hat and vector F _2 equals F sub 2 j hat. The resultant tugboat force vector F _ app points in the direction of the barge’s observed acceleration. The drag force exerted by the water points opposite the barge’s motion, so it points opposite vector F _ app. The weight of the barge and the buoyant force from the water balance vertically, so they are omitted from the horizontal force model.
+
+---
+
+The Math.
+
+For horizontal motion, Newton’s second law relates the net horizontal force on the barge to the observed acceleration of the barge.
+
+The forces acting on the barge in the horizontal plane are the tugboat forces vector F _1 and vector F _2 and the drag force vector F _D. The tugboat forces combine to form the applied force vector F _ app, and the drag force acts opposite the barge’s motion. Newton’s second law for the horizontal motion is
+
+ 
+ sum vector F equals m vector a, 
+ vector F _ app + vector F _D equals m vector a.
+ 
+
+The two tugboat forces are perpendicular, so the magnitude and direction of the applied force come from the vector components of vector F _ app. Resolving the applied force into components gives
+
+ 
+ vector F _ app equals F sub 1 i hat + F sub 2 j hat, 
+F_ app equals square root of F sub 1 to the power of 2 + F sub 2 to the power of 2, 
+ theta equals tan to the power of -1 ( F sub 2 over F sub 1 ).
+ 
+
+The applied-force magnitude and direction follow from the perpendicular tugboat-force components by
+
+ 
+F_ app equals square root of (2.7 times ten to the 5 newtons ) squared + (3.6 times ten to the 5 newtons ) squared 
+ equals 4.5 times ten to the 5 newtons, 
+ theta equals tan to the power of -1 ( 3.6 times ten to the 5 over 2.7 times ten to the 5 ) 
+ equals 53 degrees.
+ 
+
+Along the direction of motion, the applied force points forward and the drag force points backward. Newton’s second law along this direction gives
+
+ 
+F_ app - F sub D equals ma.
+ 
+
+We solve this equation for the drag force magnitude, which yields
+
+ 
+ F sub D equals F_ app - ma.
+ 
+
+The drag force follows from Newton’s second law along the direction of motion as
+
+ 
+ F sub D equals 4.5 times ten to the 5 newtons - (5 times ten to the 6 kg )(7.5 times ten to the minus 2 meters per second squared ) 
+ equals 7.5 times ten to the 4 newtons.
+ 
+
+---
+
+The Conclusion.
+
+The water exerts a drag force with magnitude F sub D equals 7.5 times ten to the 4 newtons. This drag force acts opposite the barge’s motion, while the tugboat resultant points in the direction of motion. The result is consistent with Newton’s second law because the applied tugboat force is larger than the drag force, leaving a net force that accelerates the barge.
+
+---
+
+ **The Problem**
+Figure shows a 75 -kg man (weight of about 165 lb ) standing on a bathroom scale in an elevator. Calculate the scale reading: **(a)** if the elevator accelerates upward at a rate of 1.2 meters per second squared, and **(b)** if the elevator moves upward at a constant speed of 1 meters per second.
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The system of interest is the person standing on the scale. We model the person as a particle moving vertically with the elevator. We choose + j hat to point upward and - j hat to point downward. With this coordinate choice, the scale force on the person points upward, so vector F _s equals F sub s j hat, and the weight of the person points downward, so vector w equals -mg j hat. The scale reading is the magnitude of the upward contact force F sub s. Air resistance is neglected, and the motion is one-dimensional along the vertical axis.
+
+---
+
+The Math.
+
+For vertical motion, Newton’s second law relates the net vertical force on the person to the person’s vertical acceleration.
+
+The forces acting on the person are the upward scale force vector F _s and the downward weight vector w. Applying Newton’s second law in the vertical direction gives
+
+ 
+ sum F sub y equals m a sub y, 
+ F sub s - mg equals m a sub y.
+ 
+
+We solve this equation for the scale reading F sub s, which yields
+
+ 
+ F sub s equals mg + m a sub y, 
+ F sub s equals m(g+ a sub y ).
+ 
+
+This equation shows that the scale reading depends on the vertical acceleration of the person. We now reuse this same equation for both cases.
+
+**(a)** First, we evaluate the case when the elevator accelerates upward at a sub y equals 1.2 meters per second squared. Since the acceleration points in the + j hat direction, a sub y is positive:
+
+ 
+ F sub s equals m(g+ a sub y ) 
+ equals (75.0 kg ) l(9.81 meters per second squared + 1.20 meters per second squared r) 
+ equals 826 newtons.
+ 
+
+**(b)** Then, we evaluate the case when the elevator moves upward at a constant speed of 1 meters per second. Constant speed implies a sub y equals 0, so
+
+ 
+ F sub s equals m(g+ a sub y ) 
+ equals (75.0 kg )(9.81 meters per second squared + 0) 
+ equals 736 newtons.
+ 
+
+---
+
+The Conclusion.
+
+When the elevator accelerates upward at 1.2 meters per second squared, the scale reads F sub s equals 826 newtons. When the elevator moves upward at constant speed, the acceleration is zero and the scale reads F sub s equals 736 newtons. The scale reading is larger during upward acceleration because the scale must exert enough upward force to both balance the person’s weight and produce the upward acceleration.
+
+---
+
+ **The Problem**
+Figure shows a block of mass m sub 1 on a frictionless, horizontal surface. It is pulled by a light string that passes over a frictionless and massless pulley. The other end of the string is connected to a block of mass m sub 2. Find the acceleration of the blocks and the tension in the string in terms of m sub 1, m sub 2, and g.
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The system consists of two blocks connected by a light, inextensible string over a frictionless, massless pulley. Block m sub 1 moves horizontally on a frictionless table, and block m sub 2 moves vertically. The string constrains the blocks to have the same acceleration magnitude.
+
+For block m sub 1, we choose + i hat to point to the right and + j hat to point upward. With this convention, the tension vector T points in the + i hat direction, the normal force vector N points in the + j hat direction, and the weight vector w _1 points in the - j hat direction. For block m sub 2, we use + j hat upward, so the tension vector T points in the + j hat direction and the weight vector w _2 points in the - j hat direction. The hanging block accelerates downward, while the block on the table accelerates to the right.
+
+This example uses the same free-body-diagram workflow developed in Chapter 5. The important step here is to apply Newton’s second law separately to each block and then use the string constraint to relate their accelerations.
+
+---
+
+The Math.
+
+For the connected-block system, Newton’s second law must be applied separately to each block because the tension is an internal interaction between the two blocks.
+
+The forces acting on block m sub 1 are the tension, the normal force, and its weight. The vertical forces on m sub 1 balance, while the horizontal tension provides its acceleration to the right. Applying Newton’s second law to block m sub 1 gives
+
+ 
+ sum F sub 1x equals m sub 1 a, 
+T equals m sub 1 a.
+ 
+
+The forces acting on block m sub 2 are the upward tension and the downward weight. Since + j hat points upward but m sub 2 accelerates downward, its vertical acceleration is a sub 2y equals -a. Applying Newton’s second law to block m sub 2 gives
+
+ 
+ sum F sub 2y equals m sub 2 a sub 2y, 
+T - m sub 2 g equals - m sub 2 a.
+ 
+
+These two equations form the governing equations for the system:
+
+ 
+T equals m sub 1 a, 
+T - m sub 2 g equals - m sub 2 a.
+ 
+
+We solve these equations for the acceleration by substituting T equals m sub 1a into the equation for block m sub 2:
+
+ 
+ m sub 1a - m sub 2g equals - m sub 2a, 
+ m sub 1a + m sub 2a equals m sub 2g, 
+( m sub 1 + m sub 2 )a equals m sub 2g, 
+a equals m sub 2 over m sub 1 + m sub 2 g.
+ 
+
+We then use the block m sub 1 equation to solve for the tension:
+
+ 
+T equals m sub 1a, 
+T equals m sub 1 ( m sub 2 over m sub 1 + m sub 2 g ), 
+T equals m sub 1m _2 over m sub 1 + m sub 2 g.
+ 
+
+---
+
+The Conclusion.
+
+The two blocks accelerate with magnitude a equals m sub 2 over m sub 1 + m sub 2 g. Block m sub 1 accelerates to the right, and block m sub 2 accelerates downward. The tension in the string is T equals m sub 1m _2 over m sub 1 + m sub 2 g. The acceleration is less than g because the weight of the hanging block must accelerate both masses, not just m sub 2.
+
+---
+
+ **The Problem**
+A classic problem in physics, similar to the one we just solved, is the Atwood machine, which consists of a light rope running over a frictionless pulley, with two objects of different mass attached. It is particularly useful in understanding the connection between force and motion. 
+In Figure, the masses are m sub 1 equals 2 kg and m sub 2 equals 4 kg. The pulley is frictionless. **(a)** If m sub 2 is released, what will its acceleration be? **(b)** What is the tension in the string?
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+Each mass is modeled as a particle connected by a light, inextensible string over a frictionless, massless pulley. The ideal string and pulley make the tension magnitude the same on both sides of the pulley. The string constraint makes the blocks have the same acceleration magnitude.
+
+We choose + j hat to point upward for both blocks. With this convention, the tension on block m sub 1 points in the + j hat direction and the weight of block m sub 1 points in the - j hat direction. The tension on block m sub 2 also points in the + j hat direction, and the weight of block m sub 2 points in the - j hat direction. Since m sub 2 > m sub 1, block m sub 2 accelerates downward and block m sub 1 accelerates upward.
+
+This problem is closely related to the previous attached-blocks example. In both problems, Newton’s second law is applied separately to each block, and the string constraint connects their accelerations.
+
+---
+
+The Math.
+
+For the Atwood machine, Newton’s second law must be applied separately to each block because the tension is an internal interaction between the two masses.
+
+The forces acting on block m sub 1 are the upward tension and the downward weight. Since block m sub 1 accelerates upward in the + j hat direction, Newton’s second law gives
+
+ 
+ sum F sub 1y equals m sub 1 a, 
+T - m sub 1g equals m sub 1a.
+ 
+
+The forces acting on block m sub 2 are also the upward tension and the downward weight. Since block m sub 2 accelerates downward while + j hat points upward, its acceleration is -a j hat. Newton’s second law gives
+
+ 
+ sum F sub 2y equals m sub 2 (-a), 
+T - m sub 2g equals - m sub 2a.
+ 
+
+These two equations form the governing equations for the system and will be reused in both parts:
+
+ 
+T - m sub 1g equals m sub 1a, 
+T - m sub 2g equals - m sub 2a.
+ 
+
+**(a)** First, we determine the acceleration of the blocks after m sub 2 is released. We eliminate the tension by subtracting the equation for block m sub 1 from the equation for block m sub 2 and then solve for a:
+
+ 
+(T - m sub 2g ) - (T - m sub 1g ) equals - m sub 2a - m sub 1a, 
+( m sub 1 - m sub 2 )g equals -( m sub 1 + m sub 2 )a, 
+( m sub 2 - m sub 1 )g equals ( m sub 1 + m sub 2 )a, 
+a equals m sub 2 - m sub 1 over m sub 1 + m sub 2 g.
+ 
+
+The acceleration follows from the mass difference and the total mass being accelerated:
+
+ 
+a equals 4.00 kg - 2.00 kg over 4.00 kg + 2.00 kg (9.81 meters per second squared ) 
+ equals 3.27 meters per second squared.
+ 
+
+**(b)** Next, we find the tension in the string by reusing the equation for block m sub 1. We solve that equation for T and substitute the acceleration found in part **(a)**:
+
+ 
+T - m sub 1g equals m sub 1a, 
+T equals m sub 1 (g+a), 
+T equals (2.00 kg )(9.81 meters per second squared + 3.27 meters per second squared ) 
+ equals 26.2 newtons.
+ 
+
+---
+
+The Conclusion.
+
+The blocks accelerate with magnitude a equals 3.27 meters per second squared. Block m sub 2 accelerates downward, and block m sub 1 accelerates upward. The tension in the string is T equals 26.2 newtons. This result closely mirrors the attached-blocks problem: the acceleration is determined by the net unbalanced weight divided by the total mass being accelerated.
+
+---
+
+ **The Problem**
+A soccer player starts at rest and accelerates forward, reaching a velocity of 8 meters per second in 2.5 s. **(a)** What is her average acceleration? **(b)** What average force does the ground exert forward on the runner so that she achieves this acceleration? The player’s mass is 70 kg, and air resistance is negligible.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The soccer player is modeled as a particle moving horizontally in one dimension. We choose + i hat to point forward in the direction of motion. The initial velocity is zero, and the final velocity points in the + i hat direction. Air resistance is neglected, so the average horizontal force exerted by the ground is the net horizontal force on the player. Vertical forces balance and do not affect the horizontal acceleration.
+
+---
+
+The Math.
+
+For one-dimensional horizontal motion, the average acceleration is the change in velocity divided by the elapsed time.
+
+**(a)** First, we determine the player’s average acceleration. Since the player starts from rest and reaches a final velocity in the + i hat direction, the change in velocity is change in vector v equals change in v i hat with change in v equals 8 meters per second:
+
+ 
+a equals change in v over change in t 
+ equals 8.00 meters per second over 2.50 s 
+ equals 3.20 meters per second squared.
+ 
+
+**(b)** Next, we use Newton’s second law to determine the average forward force exerted by the ground. Since air resistance is negligible, the forward ground force is the net horizontal force:
+
+ 
+ sum F sub x equals m a sub x, 
+F_ net equals ma.
+ 
+
+The average forward force follows from Newton’s second law using the acceleration found in part **(a)**:
+
+ 
+F_ net equals (70.0 kg )(3.20 meters per second squared ) 
+ equals 224 newtons.
+ 
+
+---
+
+The Conclusion.
+
+The soccer player’s average acceleration is 3.20 meters per second squared in the forward direction. The average forward force exerted by the ground on the player is 224 newtons. This force is reasonable because it is a moderate horizontal force applied over a short sprinting interval.
+
+---
+
+ **The Problem**
+A 1.50 kg model helicopter has a velocity of 5.00 j hat meters per second at t equals 0. It is accelerated at a constant rate for 2.00 s, after which it has a velocity of (6.00 i hat + 12.00 j hat ) meters per second. What is the magnitude of the resultant force acting on the helicopter during this time interval?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The helicopter is modeled as a particle moving in two dimensions. We choose + i hat to point horizontally and + j hat to point vertically upward. The initial velocity points entirely in the + j hat direction, while the final velocity has both + i hat and + j hat components. The acceleration is constant over the time interval. The resultant force is the net external force responsible for this acceleration.
+
+---
+
+The Math.
+
+For constant acceleration, the acceleration vector is the change in velocity divided by the elapsed time.
+
+The initial and final velocity vectors are
+
+ 
+ vector v _i equals 5.00 j hat meters per second, 
+ vector v _f equals (6.00 i hat + 12.00 j hat ) meters per second.
+ 
+
+The change in velocity is the final velocity minus the initial velocity:
+
+ 
+ change in vector v equals vector v _f - vector v _i 
+ equals (6.00 i hat + 12.00 j hat ) meters per second - 5.00 j hat meters per second 
+ equals (6.00 i hat + 7.00 j hat ) meters per second.
+ 
+
+The acceleration follows from this change in velocity:
+
+ 
+ vector a equals change in vector v over change in t 
+ equals (6.00 i hat + 7.00 j hat ) meters per second over 2.00 s 
+ equals (3.00 i hat + 3.50 j hat ) meters per second squared.
+ 
+
+Newton’s second law gives the resultant force vector:
+
+ 
+ sum vector F equals m vector a 
+ equals (1.50 kg )(3.00 i hat + 3.50 j hat ) meters per second squared 
+ equals (4.50 i hat + 5.25 j hat ) N.
+ 
+
+The magnitude of the resultant force is found from its components:
+
+ 
+F_ net equals square root of (4.50 newtons ) squared + (5.25 newtons ) squared 
+ equals 6.91 newtons.
+ 
+
+---
+
+The Conclusion.
+
+The resultant force acting on the model helicopter has magnitude 6.91 newtons. The force points in the same direction as the acceleration vector, with positive i hat and positive j hat components.
+
+---
+
+ **The Problem**
+Figure a shows a baggage tractor pulling luggage carts from an airplane. The tractor has mass 650 kg, while cart A has mass 250 kg and cart B has mass 150 kg. The driving force acting for a brief period of time accelerates the system from rest and acts for 3 s. **(a)** If this driving force is given by vector F equals (820 t) i hat N, find the speed after 3 s. **(b)** What is the horizontal force acting on the connecting cable between the tractor and cart A at this instant?
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The tractor and carts are modeled as particles moving together in one horizontal line. We choose + i hat to point in the direction of motion. The driving force points in the + i hat direction. The cable force on the tractor points in the - i hat direction, while the cable force on cart A points in the + i hat direction. Vertical forces balance and are not needed for the horizontal motion. The driving force varies with time, so the acceleration also varies with time.
+
+---
+
+The Math.
+
+For the full tractor-cart system, the driving force is the only external horizontal force. Newton’s second law gives the acceleration of the entire system:
+
+ 
+ sum F sub x equals m_ system a sub x, 
+820t equals ( m sub T + m sub A + m sub B )a.
+ 
+
+We solve this equation for the acceleration function:
+
+ 
+a(t) equals 820 over m sub T + m sub A + m sub B t.
+ 
+
+**(a)** First, we determine the speed after 3 s. Since a equals dv/dt and the system starts from rest, the speed follows from integrating the acceleration:
+
+ 
+v equals integral _0 to the power of 3.00 820 over 650 + 250 + 150 t dt 
+ equals 820 over 1050 ( t squared over 2 ) evaluated from _0 to the power of 3.00 
+ equals 3.51 meters per second.
+ 
+
+**(b)** Next, we isolate the tractor to find the cable force. At t equals 3.00 s, the acceleration is
+
+ 
+a equals 820 over 1050 (3.00) 
+ equals 2.34 meters per second squared.
+ 
+
+For the tractor alone, the driving force points forward and the cable force points backward. Newton’s second law gives
+
+ 
+820(3.00) - T equals m sub Ta, 
+T equals 820(3.00) - (650)(2.34), 
+T equals 938 newtons.
+ 
+
+---
+
+The Conclusion.
+
+After 3 s, the tractor and carts have speed 3.51 meters per second. At that instant, the horizontal force in the cable between the tractor and cart A is 938 newtons. Treating the whole system gives the acceleration, while isolating the tractor exposes the internal cable force.
+
+---
+
+ **The Problem**
+A 10 -kg mortar shell is fired vertically upward from the ground, with an initial velocity of 50 meters per second as shown in Figure. Determine the maximum height it will travel if atmospheric resistance is measured as F sub D equals (0.01v squared) N, where v is the speed at any instant.
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The mortar shell is modeled as a particle moving vertically. We choose + j hat to point upward and - j hat to point downward. During the upward part of the motion, the velocity points in the + j hat direction, so the drag force points downward in the - j hat direction. The weight also points downward in the - j hat direction. The drag magnitude depends on the instantaneous speed according to F sub D equals kv squared, where k is the drag coefficient in this model. The shell reaches its maximum height when its upward speed becomes zero. The motion is one-dimensional, and g is treated as constant.
+
+---
+
+The Math.
+
+For the upward part of the motion, Newton’s second law relates the downward forces to the vertical acceleration of the shell.
+
+The forces acting on the shell are the weight vector w equals -mg j hat and the drag force vector F _D equals -kv squared j hat. Applying Newton’s second law in the vertical direction gives
+
+ 
+ sum F sub y equals m a sub y, 
+-mg - kv squared equals m a sub y.
+ 
+
+We solve this equation for the acceleration as a function of speed:
+
+ 
+ a sub y equals -g - k over m v squared.
+ 
+
+The acceleration depends on speed, so constant-acceleration kinematics cannot be used. To connect acceleration to position, we use the chain-rule identity
+
+ 
+ a sub y equals dv over dt 
+ equals dv over dy dy over dt 
+ equals v dv over dy.
+ 
+
+We substitute a sub y equals v dv/dy into Newton’s second-law result and separate the variables:
+
+ 
+v dv over dy equals -g - k over m v squared, 
+dy equals - v dv over g+ k over m v squared.
+ 
+
+The shell starts at y equals 0 with speed v sub 0 and reaches maximum height h when v equals 0. Integrating between these limits gives
+
+ 
+ integral _0 to the power of h dy equals - integral sub v sub 0 to the power of 0 v dv over g+ k over m v squared, 
+h equals integral _0 to the power of v sub 0 v dv over g+ k over m v squared.
+ 
+
+We evaluate the integral using the substitution u equals g+ k over m v squared, so du equals 2 k over m v dv. This substitution changes the integral into the standard logarithmic form:
+
+ 
+h equals m over 2k integral _g to the power of g+ k over m v sub 0 to the power of 2 du over u, 
+h equals m over 2k ln ( g+ k over m v sub 0 to the power of 2 over g ).
+ 
+
+Calculus Note: Why this integral becomes a logarithm.
+
+ 
+
+The integral has the form
+
+ 
+h equals integral _0 to the power of v sub 0 v dv over g+ k over m v squared.
+ 
+
+The denominator contains v squared, while the numerator contains v dv. That pattern suggests defining a new variable using the denominator:
+
+ 
+u equals g+ k over m v squared.
+ 
+
+Differentiating both sides gives
+
+ 
+du equals 2 k over m v dv.
+ 
+
+We solve this differential relation for v dv:
+
+ 
+v dv equals m over 2k du.
+ 
+
+The original integral then becomes
+
+ 
+h equals integral v dv over g+ k over m v squared 
+ equals integral m over 2k du over u 
+ equals m over 2k integral du over u.
+ 
+
+The needed antiderivative is based on the fact that the derivative of natural log of |u| is 1/u:
+
+ 
+ integral du over u equals natural log of |u| + C.
+ 
+
+For this problem, u is always positive because g+ k over m v squared>0, so the absolute value does not change the result. At the lower limit v equals 0, u equals g. At the upper limit v equals v sub 0, u equals g+ k over m v sub 0 to the power of 2. Therefore,
+
+ 
+h equals m over 2k [ ln u ]_g to the power of g+ k over m v sub 0 to the power of 2 
+ equals m over 2k ln ( g+ k over m v sub 0 to the power of 2 over g ).
+ 
+ 
+
+We now evaluate the maximum-height expression using the mass of the shell, the initial speed, and the drag coefficient from the problem:
+
+ 
+h equals 10.0 kg over 2(0.0100 newtons s squared/square meters ) 
+ ln ( 9.81 meters per second squared + 0.0100 newtons s squared/square meters over 10.0 kg (50.0 meters per second ) squared over 9.81 meters per second squared ) 
+ equals 114 meters.
+ 
+
+---
+
+The Conclusion.
+
+The mortar shell reaches a maximum height of 114 meters. This height is lower than the no-drag value because both the weight and the drag force point downward during the upward motion. The model predicts a variable acceleration because the drag force depends on speed.
+
+---
+
+========================================================================
+
+6.2 Friction
+
+Friction.
+
+Real objects interact with their surroundings, which means the environment can cause a resistance (a force of **friction**). 
+
+Bullet point. Friction opposed relative motion between systems in contact, but also allows us to move. 
+
+Bullet point. Try walking on ice. You need boots that grip (i.e., increase friction).
+
+Friction is one of the common contact forces introduced in Chapter 5. In this chapter, we use friction quantitatively by adding it to the free-body diagram and applying Newton's second law.
+
+Static and Kinetic Friction.
+
+Friction.
+
+ 
+
+Friction is a force that opposes relative motion between systems in contact.
+ 
+
+There are several forms of friction.
+
+Bullet point. Sliding friction f sub s is parallel to the contact surface between systems and is always in a direction that opposes motion (or attempted motion of the systems relative to each other).
+
+Bullet point. Kinetic friction f sub k is when two systems are in contact and moving relative to one another.
+
+For example, friction slows a hockey puck sliding on ice. 
+
+When the static friction is greater than the kinetic friction ( f sub s > f sub k ), the objects are stationary.
+
+Static and Kinetic Friction.
+
+ 
+
+If two systems are in contact and stationary relative to one another, then the friction between them is called **static friction.** If two systems are in contact and moving relative to one another, then the friction between them is called **kinetic friction.**
+ 
+
+**Flipping Physics**.
+
+ 
+
+ 
+This video reviews how friction fits into Newton’s second law. Watch for the difference between a friction model and a free-body diagram: friction is one force included in sum vector F, not a separate shortcut.
+ 
+
+Checkpoint.
+
+ 
+
+If an object does not move when pushed, does that mean friction is zero or that static friction has adjusted to match the push?
+ 
+
+Consider trying to slide a heavy crate across a concrete floor. You might push very hard and not move the crate at all. This means the static friction responds to what you do; it increases (in the opposite direction) to resist your push.
+
+Once in motion, it is easier to keep it in motion than it was to get it started, which indicates that the kinetic friction is less than the static friction. If you add mass to the crate, you need to push even harder to get it started and also to keep it moving. If you oiled the concrete you would find it easier to get the crate started and keep it going.
+
+Figure is a pictorial representation of how friction occurs at the interface between two objects. Close-up inspection of these surfaces reveals them to be rough. Thus, when you push to get an object moving, you must raise the object until it can skip along with just the tips of the surface hitting, breaking off the points or both.
+
+Figure referenced in the course notes.
+
+A considerable force can be resisted by friction with no apparent motion. The harder the surfaces are pushed together, the more force is needed to move them. Part of the friction is due to adhesive forces between surface molecules of the two objects, which explains the dependence on the surface composition. 
+
+Adhesion varies with substances in contact and is a complicated aspect of surface physics. Once an object is moving, there are fewer points of contact (i.e., fewer molecules adhering), so less force is required to keep the object moving. At small but nonzero speeds, friction is nearly independent of speed.
+
+The *magnitude* of the frictional force has two forms: static and kinetic. The models of each are empirical (experimentally determined) and they are not vector equations.
+
+Magnitude of Static and Kinetic Friction.
+
+ 
+
+The magnitude of static friction f sub s is
+
+ 
+ f sub s is less than or equal to mu _s N,
+ 
+
+where mu _s (or ` mu _s`) is the coefficient of static friction and N is the magnitude fo the normal force. Static friction is a responsive force that increases to be equal and opposite to whatever force is exerted. Once the applied force exceeds f sub s ( max ), the object moves, and
+
+ f sub s ( max ) equals mu _s N. 
+
+The magnitude of kinetic friction f sub k is given by
+
+ 
+ f sub k equals mu _k N,
+ 
+
+where mu _k (or ` mu _k`) is the coefficient of kinetic friction. Figure illustrates the transition from static friction (stationary in Fig. a) to kinetic friction (moving in Fig. b).
+ 
+
+Figure referenced in the course notes.
+
+ show the coefficients of kinetic friction are less than their static counterparts. The values of mu provide only an approximate description of the friction given.
+
+Table. Approximate Coefficients of Static and Kinetic Friction. Refer to the course notes for the full entries.
+
+In both static and kinetic frictions, the equation depends on the materials (through mu _s or mu _k ) and the normal force. The direction of friction is always
+
+Bullet point. opposite to the direction of motion,
+
+Bullet point. parallel to the surface between objects, and
+
+Bullet point. perpendicular to the normal force.
+
+For example if the crate you try to push has a mass of 100 kg, then the normal force is equal to its weight,
+
+ w equals mg equals (100 kg )(9.81 meters per second squared ) equals 981 newtons, 
+
+perpendicular to the floor. If the coefficient of static friction is 0.45, you would have to exert a force parallel to the floor that is greater than
+
+ f sub s ( max )j equals mu _s N equals (0.45)(981 newtons ) equals 440 newtons 
+
+to move the crate. Once there is motion, friction is less and the coefficient of kinetic friction might be 0.30, so that a force of only
+
+ f sub k equals mu _k N equals (0.30)(981 newtons ) equals 290 newtons 
+
+keeps it moving at a constant speed. If the floor is lubricated, both coefficients are considerably less than otherwise. The coefficient of friction is a *unitless* quantity with a magnitude between 0 and 1.0. The actual value depends on the two surfaces in contact.
+
+The equations for static and kinetic friction are empirical laws that describe the behavior of the frictional force. While these formulas are useful for practical purposes, they are not general principles (e.g., Newton's 2nd law). There are cases for which these equations are not even good approximations. For example, neither formula is accurate for lubricated surfaces or surfaces sliding at high speeds.
+
+**Example Problem**: Static and Kinetic Friction.
+
+The Problem.
+A 20 -kg crate is at rest on a floor as shown in Figure. The coefficient of static friction between the crate and floor is 0.70 and the coefficient of kinetic friction is 0.60. A horizontal force vector P is applied to the crate. Find the force of friction if **(a)** vector P equals 20 newtons i hat, **(b)** vector P equals 30 newtons i hat, **(c)** vector P equals 120 newtons i hat, and **(d)** vector P equals 180 newtons i hat.
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The crate is modeled as a particle on a horizontal floor. We choose + i hat to point to the right and + j hat upward. The applied force points in the + i hat direction, and friction points in the - i hat direction because it opposes impending or actual motion. The normal force points in the + j hat direction, and the weight points in the - j hat direction. Static friction adjusts up to its maximum value. If the applied force exceeds that maximum, the crate slides and kinetic friction acts.
+
+---
+
+The Math.
+
+The vertical forces balance because the crate has no vertical acceleration. Newton’s second law in the vertical direction gives
+
+ 
+ sum F sub y equals 0, 
+N - mg equals 0, 
+N equals mg.
+ 
+
+The maximum static friction and kinetic friction magnitudes are determined by the normal force:
+
+ 
+f sub s, max equals mu _sN, 
+ f sub k equals mu _kN.
+ 
+
+The shared normal force and friction thresholds are determined before evaluating each applied force:
+
+ 
+N equals (20.0 kg )(9.81 meters per second squared ) equals 196 newtons, 
+f sub s, max equals (0.70)(196 newtons ) equals 1.4 times ten to the 2 newtons, 
+ f sub k equals (0.60)(196 newtons ) equals 1.2 times ten to the 2 newtons.
+ 
+
+For applied forces below f sub s, max, the crate remains at rest and static friction matches the applied force. For applied forces above f sub s, max, the crate slips and the friction is kinetic.
+
+**(a)** First, we evaluate P equals 20 newtons. Since 20 newtons 1.4 times ten to the 2 newtons, the crate slips and kinetic friction acts:
+
+ 
+f equals f sub k 
+ equals 1.2 times ten to the 2 newtons.
+ 
+
+---
+
+The Conclusion.
+
+For applied forces of 20 newtons, 30 newtons, and 120 newtons, static friction keeps the crate at rest and equals the applied force in magnitude. For an applied force of 180 newtons, static friction is not large enough, so the crate slides and the friction force has kinetic magnitude 1.2 times ten to the 2 newtons. In each case, the friction force points opposite vector P.
+
+---
+
+ **The Problem**
+A skier with a mass of 62 kg is sliding down a snowy slope at a constant acceleration. Find the coefficient of kinetic friction for the skier if the friction force is known to be 45.0 newtons.
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The skier is modeled as a particle sliding down a rigid incline. We choose + i hat to point down the slope and + j hat to point perpendicular to the slope, away from the surface. The kinetic friction force points up the slope in the - i hat direction because it opposes the skier’s motion. The normal force points in the + j hat direction, and the weight points vertically downward. The skier remains in contact with the slope, so the acceleration perpendicular to the surface is zero. The figure gives the incline angle as 25 degrees.
+
+---
+
+The Math.
+
+The coefficient of kinetic friction is determined from the relationship between kinetic friction and the normal force:
+
+ 
+ f sub k equals mu _k N.
+ 
+
+The normal force comes from the force balance perpendicular to the slope. The perpendicular component of the skier’s weight points into the slope, so Newton’s second law perpendicular to the slope gives
+
+ 
+ sum F sub y equals 0, 
+N - mg cos theta equals 0, 
+N equals mg cos theta.
+ 
+
+We substitute this expression for N into the kinetic-friction equation and solve for mu _k:
+
+ 
+ f sub k equals mu _k mg cos theta, 
+ mu _k equals f sub k over mg cos theta.
+ 
+
+The coefficient of kinetic friction follows from the ratio of the measured friction force to the normal force:
+
+ 
+ mu _k equals 45.0 newtons over (62 kg )(9.81 meters per second squared ) cos 25 degrees 
+ equals 0.082.
+ 
+
+---
+
+The Conclusion.
+
+The coefficient of kinetic friction for the skier is mu _k equals 0.082. This value is reasonable for sliding on snow and is smaller than many dry-surface friction coefficients.
+
+---
+
+ **The Problem**
+The two blocks of Figure are attached to each other by a massless string that is wrapped around a frictionless pulley. When the bottom 4.0 kg block is pulled to the left by the constant force vector P, the top 2.0 kg block slides across it to the right. Find the magnitude of the force necessary to move the blocks at constant speed. Assume that the coefficient of kinetic friction between all surfaces is 0.40.
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+Each block is modeled as a particle. We choose + i hat to point to the right and + j hat upward. The top block moves to the right at constant speed, so the tension on it points in the + i hat direction and kinetic friction from the lower block points in the - i hat direction. The lower block moves to the left at constant speed, so the applied force vector P points in the - i hat direction. The tension, friction from the top block, and friction from the floor all point in the + i hat direction on the lower block. Both blocks have zero acceleration.
+
+---
+
+The Math.
+
+For the top block, constant speed requires zero net force in both directions. The normal force from the lower block balances the weight of the top block, and the tension balances kinetic friction:
+
+ 
+ sum F sub x equals 0, sum F sub y equals 0, 
+T - mu _k N sub 1 equals 0, N sub 1 - m sub 1g equals 0.
+ 
+
+We solve these equations for N sub 1 and T:
+
+ 
+ N sub 1 equals m sub 1g, 
+T equals mu _k N sub 1 equals mu _k m sub 1g.
+ 
+
+For the lower block, constant speed also requires zero net force. The floor normal force must support the lower block and the downward normal force from the upper block:
+
+ 
+ sum F sub y equals 0, 
+ N sub 2 - m sub 2g - N sub 1 equals 0, 
+ N sub 2 equals m sub 2g + N sub 1.
+ 
+
+The horizontal forces on the lower block are the applied force to the left and three forces to the right: tension, friction from the top block, and friction from the floor. Newton’s second law in the horizontal direction gives
+
+ 
+ sum F sub x equals 0, 
+T + mu _k N sub 1 + mu _k N sub 2 - P equals 0, 
+P equals T + mu _k N sub 1 + mu _k N sub 2.
+ 
+
+We substitute the expressions for T, N sub 1, and N sub 2 into this equation to determine the required applied force:
+
+ 
+P equals mu _k m sub 1g + mu _k m sub 1g + mu _k( m sub 2g + m sub 1g ) 
+ equals mu _kg(3 meters sub 1 + m sub 2 ).
+ 
+
+The required applied force follows from the horizontal force balance on the lower block:
+
+ 
+P equals (0.400)(9.81 meters per second squared ) l[3(2.00 kg ) + 4.00 kg r] 
+ equals 39.2 newtons.
+ 
+
+---
+
+The Conclusion.
+
+The applied force needed to move the blocks at constant speed is P equals 39.2 newtons. This force balances the tension and both kinetic friction forces acting to the right on the lower block, so the lower block can move left with zero acceleration.
+
+---
+
+ **The Problem**
+A 50 kg crate rests on the bed of a truck as shown in Figure. The coefficients of friction between the surfaces are mu _k equals 0.30 and mu _s equals 0.40. Find the frictional force on the crate when the truck is accelerating forward relative to the ground at **(a)** 2.0 meters per second squared and **(b)** 5.0 meters per second squared.
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The crate is modeled as a particle on the horizontal bed of the truck. We choose + i hat to point forward with the truck and + j hat upward. The weight points in the - j hat direction, and the normal force points in the + j hat direction. The friction force on the crate points forward in the + i hat direction because the truck bed tends to slide forward underneath the crate. If static friction can provide the required acceleration, the crate does not slip. If not, the crate slips backward relative to the truck, and kinetic friction acts forward on the crate.
+
+---
+
+The Math.
+
+The vertical forces balance because the crate has no vertical acceleration. Newton’s second law in the vertical direction gives
+
+ 
+ sum F sub y equals 0, 
+N - mg equals 0, 
+N equals mg.
+ 
+
+The largest possible static friction and the kinetic friction magnitude are
+
+ 
+f sub s, max equals mu _sN, 
+ f sub k equals mu _kN.
+ 
+
+The normal force sets the maximum static friction and the kinetic friction magnitude:
+
+ 
+N equals (50.0 kg )(9.81 meters per second squared ) equals 491 newtons, 
+f sub s, max equals (0.400)(491 newtons ) equals 196 newtons, 
+ f sub k equals (0.300)(491 newtons ) equals 147 newtons.
+ 
+
+**(a)** First, we evaluate the truck acceleration a equals 2.00 meters per second squared. If the crate does not slip, static friction must provide the crate’s horizontal acceleration:
+
+ 
+ f sub s equals ma 
+ equals (50.0 kg )(2.00 meters per second squared ) 
+ equals 100 newtons.
+ 
+
+Since 100 newtons 196 newtons, static friction is not sufficient and the crate slips. The frictional force on the crate is therefore kinetic:
+
+ 
+f equals f sub k 
+ equals 147 newtons.
+ 
+
+---
+
+The Conclusion.
+
+For a truck acceleration of 2.00 meters per second squared, static friction acts forward on the crate with magnitude 100 newtons and prevents slipping. For a truck acceleration of 5.00 meters per second squared, the required static friction exceeds the maximum possible value, so the crate slips and kinetic friction acts forward with magnitude 147 newtons.
+
+---
+
+ **The Problem**
+Earlier, we analyzed the situation of a downhill skier moving at constant velocity to determine the coefficient of kinetic friction. Now let’s do a similar analysis to determine acceleration. The snowboarder of Figure glides down a slope that is inclined at 13 degrees to the horizontal. The coefficient of kinetic friction between the board and the snow is mu _k equals 0.20. What is the acceleration of the snowboarder?
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The snowboarder is modeled as a particle sliding down a rigid incline. We choose + i hat to point downhill along the slope and + j hat to point perpendicular to the slope, away from the surface. The component of weight parallel to the slope points in the + i hat direction. Kinetic friction points uphill in the - i hat direction. The normal force points in the + j hat direction, and the perpendicular component of the weight points in the - j hat direction. Air resistance is neglected.
+
+---
+
+The Math.
+
+The snowboarder accelerates along the slope, while the perpendicular acceleration is zero.
+
+The forces parallel to the slope are the downhill component of weight and the uphill kinetic friction force. The forces perpendicular to the slope are the normal force and the perpendicular component of weight. Newton’s second law gives
+
+ 
+ sum F sub x equals m a sub x, 
+ sum F sub y equals 0.
+ 
+
+Resolving the forces along the chosen axes gives
+
+ 
+mg sin theta - f sub k equals m a sub x, 
+N - mg cos theta equals 0.
+ 
+
+The perpendicular equation determines the normal force, and kinetic friction depends on that normal force:
+
+ 
+N equals mg cos theta, 
+ f sub k equals mu _kN equals mu _kmg cos theta.
+ 
+
+We substitute the kinetic-friction expression into the parallel force equation and solve for the acceleration:
+
+ 
+mg sin theta - mu _kmg cos theta equals m a sub x, 
+ a sub x equals g( sin theta - mu _k cos theta ).
+ 
+
+The downhill acceleration follows from the balance between the downhill gravity component and uphill kinetic friction:
+
+ 
+ a sub x equals (9.81 meters per second squared )( sin 13 degrees - 0.20 cos 13 degrees) 
+ equals 0.29 meters per second squared.
+ 
+
+---
+
+The Conclusion.
+
+The snowboarder accelerates downhill at 0.29 meters per second squared. The acceleration is small because the downhill component of gravity is only slightly larger than the kinetic friction force opposing the motion.
+
+---
+
+========================================================================
+
+6.3 Centripetal Force
+
+Centripetal Force.
+
+Chapter 4 introduced centripetal acceleration as the inward acceleration required for circular motion. In this section, we apply Newton's second law to identify which real force, or combination of forces, provides that inward acceleration.
+
+Recall that an object undergoing circular motion must be accelerating because the direction of the object's velocity is changing. This centripetal acceleration is given by:
+
+ vector a _c equals v squared over r r hat, 
+
+where the magnitude of vec v is v (or its speed) and r is the radius of the curve. The velocity vec v is directed along a tangent line to the curve at any instant, which is represented by the unit vector theta hat and is perpendicular to the radial unit vector r hat. 
+
+Note.
+
+The velocity can be represented as vec v equals v theta hat, where v squared is determined through the dot product or 
+
+ vec v dot vec v equals v theta hat dot v theta hat equals v squared 
+
+ 
+
+If we also know the angular speed omega (measured in rad/s ), then we can write the magnitude of the centripetal acceleration a sub c in two ways:
+
+ 
+ a sub c equals v squared over r, 
+ equals r omega to the power of 2,
+ 
+
+where this also referred to as a radial acceleration.
+
+An acceleration must be produced by a force, where any force (or combination of forces) can cause a centripetal acceleration. For example,
+
+Bullet point. the rope on a tether ball,
+
+Bullet point. Earth's gravity on the Moon,
+
+Bullet point. friction between roller skates and the rink floor,
+
+Bullet point. a banked roadway's force on a car, and
+
+Bullet point. forces on the tube of a spinning centrifuge.
+
+Any net force causing uniform circular motion is called a **centripetal force**. The direction of the centripetal force is radial, meaning it is directed in the r hat that is aligned with the circle's radius. The word `centripetal` means 'center-seeking', so the direction is toward the *center of curvature*. 
+According to Newton's 2nd law, the net force is mass times acceleration or F_ net equals m a. For uniform circular motion, the acceleration is the centripetal acceleration and the magnitude of the centripetal force is 
+
+ F sub c equals m a sub c. 
+
+Because we had 2 expressions for the centripetal acceleration, we therefore have two expressions for the centripetal force:
+
+ 
+ F sub c equals mv squared over r, 
+ equals mr omega to the power of 2.
+ 
+
+Checkpoint.
+
+ 
+
+For circular motion, is the centripetal force a new kind of force or the inward net force from real interactions?
+ 
+
+**Flipping Physics**.
+
+ 
+
+ 
+This video reinforces the key idea that centripetal force is not a new force. It is the inward net force required for circular motion, supplied by real interactions such as friction, tension, gravity, or a normal force.
+ 
+
+When solving problems, you may use whichever expression is more convenient (i.e., whichever has the proper balance of knowns vs. unknowns). Moreover, you may need to rearrange the equation to fit the given problem. Suppose that you know the **mass**, **speed**, and **centripetal force** needed to keep an object fixed to the ground, then you could solve the first expression for r:
+
+ r equals mv squared over F sub c, 
+
+to determine the radius required to keep the system in balance. This implies that for a large centripetal force F sub c requires a small r for an object with a given mass and speed (see Fig. ``{figure-md} centripetal-force-fig
+ 
+
+The frictional force supplies the centripetal force and is numerically equal to it. Centripetal force is perpendicular to velocity and causes uniform circular motion. The larger the F sub c, the smaller the radius of curvature r and the sharper the curve. The second curve has the same v, but a larger F sub c produces a smaller r^ prime. Figure Credit: OpenStax: Centripetal Force
+ 
+
+**Example Problem**: Friction for Car on a Flat Curve.
+
+The Problem.
+**What Coefficient of Friction Do Cars Need on a Flat Curve?** 
+**(a)** Calculate the centripetal force exerted on a 900 kg car that negotiates a 500 meters radius curve at 25 meters per second. **(b)** Assuming an unbanked curve, find the minimum static coefficient of friction between the tires and the road, static friction being the reason that keeps the car from slipping (Figure ).
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The car is modeled as a particle moving in a horizontal circle. We choose the radial + i hat direction to point inward toward the center of the curve and + j hat upward. Static friction points inward in the + i hat direction and provides the centripetal force. The normal force points upward in the + j hat direction, and the weight points downward in the - j hat direction. The road is level, so the vertical forces balance. Air resistance and rolling resistance are neglected.
+
+---
+
+The Math.
+
+For circular motion, the car requires an inward centripetal acceleration of magnitude a sub c equals v squared/r.
+
+**(a)** First, we calculate the centripetal force required to keep the car moving around the curve:
+
+ 
+ F sub c equals m a sub c 
+ equals m v squared over r.
+ 
+
+The required centripetal force follows from F sub c equals mv squared/r:
+
+ 
+ F sub c equals (900 kg ) (25 meters per second ) squared over 500 meters 
+ equals 1100 newtons.
+ 
+
+**(b)** Next, we determine the minimum coefficient of static friction. On a level road, the vertical forces balance, so
+
+ 
+N equals mg.
+ 
+
+At the minimum coefficient, static friction is just large enough to supply the required centripetal force:
+
+ 
+ F sub c equals f sub s, max, 
+m v squared over r equals mu _sN, 
+m v squared over r equals mu _smg.
+ 
+
+We solve this equation for the minimum coefficient of static friction:
+
+ 
+ mu _s equals v squared over rg.
+ 
+
+The minimum coefficient follows from the condition that static friction must supply the centripetal force:
+
+ 
+ mu _s equals (25 meters per second ) squared over (500 meters )(9.81 meters per second squared ) 
+ equals 0.13.
+ 
+
+---
+
+The Conclusion.
+
+The centripetal force required for the car is 1100 newtons directed inward toward the center of the curve. The minimum coefficient of static friction needed on an unbanked curve is mu _s equals 0.13. The car’s mass cancels from the friction condition because both the required centripetal force and the maximum static friction scale with mass.
+
+---
+
+ **The Problem**
+Curves on some test tracks and race courses, such as Daytona International Speedway, are very steeply banked. This banking allows the curves to be taken at high speed even without tire friction. Calculate the speed at which a 100 meters radius curve banked at 31 degrees should be driven if the road is frictionless.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The car is modeled as a particle moving in uniform circular motion on a frictionless, banked road. We choose the horizontal inward direction toward the center of the curve as the radial direction and choose vertical upward as + j hat. The weight points downward, and the normal force points perpendicular to the road surface. Because the road is frictionless, the normal force is the only force with a horizontal component. That horizontal component provides the centripetal force.
+
+---
+
+The Math.
+
+For uniform circular motion, the car requires a centripetal acceleration of magnitude a sub c equals v squared/r directed horizontally toward the center of the curve.
+
+The forces acting on the car are its weight vector w downward and the normal force vector N perpendicular to the road surface. Resolving the normal force into vertical and horizontal components gives
+
+ 
+N cos theta equals mg, 
+N sin theta equals m v squared over r.
+ 
+
+We divide the horizontal equation by the vertical equation to eliminate N and m:
+
+ 
+ tan theta equals v squared over rg.
+ 
+
+We solve this expression for the speed v, which yields
+
+ 
+v equals square root of rg tan theta.
+ 
+
+The ideal speed follows from the frictionless banked-curve relation:
+
+ 
+v equals square root of (100 meters )(9.81 meters per second squared ) tan 31 degrees 
+ equals square root of (100)(9.81)(0.601) 
+ equals 24.3 meters per second.
+ 
+
+---
+
+The Conclusion.
+
+The ideal speed for the frictionless banked curve is 24.3 meters per second. At this speed, the vertical component of the normal force balances the weight, and the horizontal component of the normal force provides exactly the centripetal force.
+
+---
+
+========================================================================
+
+6.4 Drag Force and Terminal Speed
+
+Drag Force and Terminal Speed.
+
+You feel the drag force when you move your hand through water or during a strong wind (i.e., outside the car window). 
+
+Bullet point. The faster you move your hand, the harder it is to move. 
+
+Bullet point. You feel a smaller drag force when you tilt your hand so only the side goes through the air (i.e., decreased your surface area in the direction of motion). 
+
+Drag Forces.
+
+The **drag force** always opposes the motion of an object (like friction). Unlike simple friction, the drag force is proportional to *some function* of the velocity of the object in that fluid. Which function to choose is complicated and depends on several factors:
+
+Item 1. shape of the object (its aerodynamics),
+
+Item 2. size,
+
+Item 3. velocity, and
+
+Item 4. the fluid it is in.
+
+For most large objects (e.g., cyclists, cars, baseballs) not moving too slowly, the magnitude of the drag force F_ D is proportional to the *square of the speed* of the object (i.e., F_ D is proportional to v squared ). The full relationship becomes
+
+ 
+ 
+ vector F _ D equals 1 over 2 C rho Av squared hat v,
+ 
+
+where C is the **drag coefficient**, A is the cross-sectional area (i.e., side facing the fluid), and rho is the density of the fluid. *Recall that density is mass per unit volume ( rho equals m/ V ).* 
+
+Bullet point. The more generalized form is F_ D equals bv to the power of n, where the constant b equals 0.5C rho A bundles all the constants together. 
+
+Bullet point. The exponent n equals 2 comes from our assumption about moving at high speed. If the object is moving a low speed then n equals 1.
+
+Checkpoint.
+
+ 
+
+If the speed doubles in the quadratic drag model, by what factor does the drag force change?
+ 
+
+Figure referenced in the course notes.
+
+Athletes (as well as car designers) seek to reduce the drag force to lower their race times. Aerodynamic shaping of an automobile can reduce the drag force, and thus increase a car's gas mileage. The value of the drag coefficient is determined empirically either by using a wind tunnel or through a complex numerical simulation on a supercomputer.
+
+The drag coefficient can depend on velocity, but we assume that it is constant here. See the table (`Typical Values of Drag Coefficient`) below that lists some typical drag coefficients for a variety of objects, while `Drag Coefficients by Geometric Shape` provides values by the geometric shape. *The drag coefficient is a dimensionless quantity.*
+
+ 
+ 
+
+Table.:header-rows: 1. Refer to the course notes for the full entries.
+
+ 
+ 
+
+Figure referenced in the course notes.
+
+ 
+ 
+
+At highway speeds, over 50 percent of the power of the car is used to overcome air drag. For average conditions (e.g., altitude and temperature), the mos fuel-efficient cruising speed is about 45 - 50 mph (or about 70 - 80 kilometers per hour ).
+
+Substantial research is undertaken to minimize drag in racing sports as well as specific sporting instruments. For example, the dimples on golf balls are being redesigned as well as the clothes athletes wear. Most elite swimmers and cyclists shave their body hair to reduce drag and can slice milliseconds of a race time, which can be the difference between a gold or silver medal.
+
+Terminal Velocity.
+
+Consider a skydiver falling under the influence of gravity. The 2 forces acting on him are the force of gravity F sub g and the drag force F_ D (ignoring the small buoyant force caused by displacing the air). The downward force of gravity remains roughly constant (i.e., the altitude above Earth's surface is much less than Earth's radius) and does not depend on his velocity.
+
+However, the magnitude of the drag force increases with velocity squared (assuming his descent is sufficiently fast) until it equals the gravitational force, thus producing a *net force of zero* and stops accelerating. At this point the person's velocity remains constant and he has reached his **terminal velocity** v_ T.
+
+At the terminal velocity,
+
+ 
+F_ net equals F_ D - F sub g equals ma equals 0, 
+F_ D equals F sub g equals mg.
+ 
+
+Using Equation, we solve for v_ T 
+
+ 
+ 1 over 2 C rho A v_ T to the power of 2 equals mg, 
+v_ T to the power of 2 equals 2mg over rho CA, 
+v_ T equals square root of 2mg over rho CA 
+ 
+
+Checkpoint.
+
+ 
+
+At terminal velocity, are the forces gone, or are the upward and downward forces balanced?
+ 
+
+Assume the density of air is rho equals 1.21 kilograms per cubic meter, and a skydiver with a mass of 75 kg whose cross-sectional area is A equals 0.18 square meters. He has a drag coefficient C equals 0.70, which means we can calculate his terminal velocity v_ T as,
+
+ v_ T equals square root of 2 (75 kg ) (9.81 meters per second squared ) over (1.21 kilograms per cubic meter )(0.70) (0.18 square meters ) equals 98 meters per second equals 350 kilometers per hour. 
+
+This means a skydiver with a with a mass of 75 kg achieves a terminal velocity of
+
+Bullet point. 350 kilometers per hour in a headfirst position (minimizing the area and his drag),
+
+Bullet point. 200 kilometers per hour in a spread-eagle position (area has increased).
+
+Equation does not hold if the object is very small, is going very slow, or is in a denser medium than air. For these cases, we find the drag force is proportional to just the velocity (i.e., F_ D is proportional to v ), This relation is given by **Stokes' law**.
+
+**Stokes' Law**.
+
+ 
+
+For a spherical object falling in a medium, the drag force is
+
+ 
+ vector F _s equals 6 pi r eta vec vv,
+ 
+
+where r is the radius of the sphere, eta is the viscosity of the fluid, and vec v is the object's velocity.
+ 
+
+Good examples of Stokes' law are provided by microorganisms, pollen, and dust particles. Each of these objects is small, where we find that many of these objects travel unaided only at a constant (terminal) velocity.
+
+**Example Problem**: Terminal Velocity of a Skydiver.
+
+The Problem.
+Find the terminal velocity of an 85 kg skydiver falling in a spread-eagle position. Assume that in the spread-eagle position, the diver has a cross-sectional area of 0.70 square meters.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The skydiver is modeled as a particle falling vertically through air. We choose + j hat upward, so the drag force points in the + j hat direction during the downward fall and the weight points in the - j hat direction. At terminal velocity, the skydiver moves at constant speed, so the acceleration is zero. The drag force is modeled with the quadratic drag law. Air density and drag coefficient are treated as constant.
+
+---
+
+The Math.
+
+At terminal velocity, the skydiver requires zero net force because the acceleration is zero.
+
+The forces acting on the skydiver are the upward drag force and the downward weight. Newton’s second law in the vertical direction gives
+
+ 
+ sum F sub y equals 0, 
+ F sub D - mg equals 0, 
+ F sub D equals mg.
+ 
+
+The quadratic drag law gives the magnitude of the drag force:
+
+ 
+ F sub D equals 1 over 2 rho CA v sub T to the power of 2.
+ 
+
+We substitute the drag expression into the terminal-velocity force balance and solve for v sub T:
+
+ 
+ 1 over 2 rho CA v sub T to the power of 2 equals mg, 
+ v sub T to the power of 2 equals 2mg over rho CA, 
+ v sub T equals square root of 2mg over rho CA.
+ 
+
+For a spread-eagle skydiver, we use C equals 1.0 and rho equals 1.21 kilograms per cubic meter. The terminal speed follows from the drag-weight balance using C equals 1.0, rho equals 1.21 kilograms per cubic meter, and the given cross-sectional area:
+
+ 
+ v sub T equals square root of 2(85 kg )(9.81 meters per second squared ) over (1.21 kilograms per cubic meter )(1.0)(0.70 square meters ) 
+ equals 44 meters per second.
+ 
+
+---
+
+The Conclusion.
+
+The terminal velocity of the skydiver in a spread-eagle position is 44 meters per second downward. At this speed, the upward drag force balances the skydiver’s weight, so the acceleration is zero and the speed remains constant.
+
+---
+
+ **The Problem**
+A motorboat is moving across a lake at a speed v sub 0 when its motor suddenly freezes up and stops. The boat then slows down under the frictional force vector f _R equals -bv i hat. **(a)** What are the velocity and position of the boat as functions of time? **(b)** If the boat slows down from 4.0 meters per second to 1.0 meters per second in 10 s, how far does it travel before stopping?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The motorboat is modeled as a particle moving horizontally across the lake. We choose + i hat to point in the initial direction of motion. After the motor stops, the only horizontal force is the resistive force vector f _R equals -bv i hat, which points opposite the velocity. Vertical forces balance and do not affect the horizontal motion. The resistive force is proportional to speed, so the acceleration changes as the boat slows.
+
+---
+
+The Math.
+
+After the motor stops, Newton’s second law relates the resistive force to the boat’s horizontal acceleration:
+
+ 
+ sum F sub x equals m a sub x, 
+-bv equals m dv over dt.
+ 
+
+We separate variables so that velocity terms are on one side and time terms are on the other:
+
+ 
+ dv over v equals - b over m dt.
+ 
+
+**(a)** First, we determine the velocity as a function of time. The boat has speed v sub 0 at t equals 0 and speed v at time t, so integrating the separated equation gives
+
+ 
+ integral sub v sub 0 to the power of v dv' over v' equals - b over m integral _0 to the power of t dt', 
+ ln ( v over v sub 0 ) equals - b over m t.
+ 
+
+We solve this expression for v(t), which yields
+
+ 
+v(t) equals v sub 0e to the power of -bt/m.
+ 
+
+The position follows from the definition v equals dx/dt. With x equals 0 at t equals 0, the position is determined by integrating the velocity function:
+
+ 
+ dx over dt equals v sub 0e to the power of -bt/m, 
+ integral _0 to the power of x dx' equals v sub 0 integral _0 to the power of t e to the power of -bt'/m dt', 
+x(t) equals m v sub 0 over b (1-e to the power of -bt/m ).
+ 
+
+As t becomes very large, the exponential term approaches zero, so the limiting distance is
+
+ 
+x sub max equals m v sub 0 over b.
+ 
+
+**(b)** Next, we use the observed slowing of the boat to determine b/m. The velocity function gives
+
+ 
+ v over v sub 0 equals e to the power of -bt/m.
+ 
+
+The observed decrease in speed determines the ratio b/m:
+
+ 
+ 1.0 meters per second over 4.0 meters per second equals e to the power of -(b/m)(10 s ), 
+0.25 equals e to the power of -10(b/m).
+ 
+
+We take the natural logarithm and solve for b/m:
+
+ 
+ natural log of (0.25) equals -10 b over m, 
+ b over m equals natural log of (4.0) over 10 s 
+ equals 0.14 s to the power of -1.
+ 
+
+The stopping distance is the limiting distance from part **(a)**. Since x sub max equals m v sub 0 /b equals v sub 0 /(b/m),
+
+ 
+x sub max equals 4.0 meters per second over 0.14 s to the power of -1 
+ equals 29 meters.
+ 
+
+---
+
+The Conclusion.
+
+The boat’s velocity decreases exponentially according to v(t) equals v sub 0e to the power of -bt/m, and its position is x(t) equals m v sub 0 over b (1-e to the power of -bt/m ). The boat approaches a limiting distance x sub max equals m v sub 0 /b. For the given slowing data, the boat travels approximately 29 meters before effectively stopping.
+
+---
+
+========================================================================
+
+6.5 In-class Problems
+
+In-class Problems.
+
+Part I.
+
+Problem 1.
+
+Find the tension in each of the three cables supporting the traffic light if it weighs 2.00 times ten to the 2 newtons.
+
+Figure referenced in the course notes.
+
+ 
+
+Problem 2.
+
+A large rocket has a mass of 2.00 times ten to the 6 kg at takeoff, and its engines produce a thrust of 3.50 times ten to the 7 newtons. 
+
+**(a)** Find its initial acceleration if it takes off vertically. 
+**(b)** How long does it take to reach a velocity of 120 kilometers per hour straight up, assuming constant mass and thrust?
+
+ 
+
+Problem 3.
+
+An elevator filled with passengers has a mass of 1.70 times ten to the 3 kg. 
+
+**(a)** The elevator accelerates upward from rest at a rate of 1.20 meters per second squared for 1.50 s. Calculate the tension in the cable supporting the elevator. 
+
+**(b)** The elevator continues upward at constant velocity for 8.50 s. What is the tension in the cable during this time? 
+
+**(c)** The elevator accelerates opposite to the motion at a rate of 0.600 meters per second squared for 3.00 s. What is the tension in the cable during acceleration opposite to the motion? 
+
+ 
+
+Problem 4.
+
+Two blocks are connected by a massless rope as shown below. The mass of the block on the table is 4.0 kg and the hanging mass is 1.0 kg. The table and the pulley are frictionless. 
+
+**(a)** Find the acceleration of the system. 
+**(b)** Find the tension in the rope. 
+**(c)** Find the speed with which the hanging mass hits the floor if it starts from rest and is initially located 1.0 meters from the floor.
+
+Figure referenced in the course notes.
+
+ 
+
+Part II.
+
+Problem 5.
+
+A 120 kg wooden crate rests on a wood floor. The coefficient of static friction between the wood surfaces is mu _s equals 0.50.
+
+**(a)** What maximum horizontal force can you exert on the crate without causing it to move? 
+**(b)** If you continue to exert this force once the crate starts to slip, what will its acceleration be? The coefficient of kinetic friction is mu _k equals 0.300.
+ 
+
+Problem 6.
+
+Calculate the maximum acceleration of a car that is heading down a 6.00 degrees slope (measured from the horizontal) under the following road conditions. You may assume that the weight of the car is evenly distributed on all four tires and that static friction is involved; that is, the tires do not slip during the acceleration opposite the direction of motion. Ignore rolling resistance.
+
+**(a)** On dry concrete. 
+**(b)** On ice, assuming mu _s equals 0.100.
+
+ 
+
+Problem 7.
+
+What is the ideal banking angle for a gentle turn of radius 1.20 km on a highway with a speed limit of 105 kilometers per hour (about 65 mi/h ), assuming everyone travels at the speed limit?
+
+ 
+
+Problem 8.
+
+Modern roller coasters have vertical loops like the one shown. The radius of curvature is smaller at the top than on the sides so that the downward centripetal acceleration at the top is greater than the acceleration due to gravity, keeping the passengers pressed firmly into their seats. What is the speed of the roller coaster at the top of the loop if the radius of curvature there is 15 meters and the downward acceleration of the car is 1.50 g?
+
+Figure referenced in the course notes.
+
+========================================================================
+
+6.6 Homework
+
+Homework.
+
+Conceptual Problems.
+
+Problem 1.
+
+When you learn to drive, you discover that you need to let up slightly on the brake pedal as you come to a stop or the car will stop with a jerk. Explain this in terms of the relationship between static and kinetic friction.
+ 
+
+Problem 2.
+
+Define centripetal force. Can any type of force (e.g., tension, gravitational force, friction, etc.) be a centripetal force? Can any combination of forces be a centripetal force?
+ 
+
+Numerical Problems.
+
+Problem 3.
+
+A 2.5 -kg fireworks shell is fired straight up from a mortar and reaches a height of 110 meters. 
+**(a)** Neglecting air resistance (a poor assumption, but we will make it for this example), calculate the shell’s velocity when it leaves the mortar. 
+**(b)** The mortar itself is a tube 0.45 meters long. Calculate the average acceleration of the shell in the tube as it goes from zero to the velocity found in (a). 
+**(c)** What is the average force on the shell in the mortar? Express your answer in newtons and as a ratio to the weight of the shell.
+
+ 
+
+Problem 4.
+
+A team of eight dogs pulls a sled with waxed wood runners on wet snow (mush!). The dogs have average masses of 19 kg, and the loaded sled with its rider has a mass of 210 kg. 
+**(a)** Calculate the acceleration of the dogs starting from rest if each dog exerts an average force of 185 newtons backward on the snow. 
+**(b)** Calculate the force in the coupling between the dogs and the sled.
+
+ 
+
+Problem 5.
+
+**(a)** What is the radius of a bobsled turn banked at 75 degrees and taken at 30 meters per second, assuming it is ideally banked? 
+**(b)** Calculate the centripetal acceleration. 
+**(c)** Does this acceleration seem large to you?
+ 
+
+Problem 6.
+
+A 560 -g squirrel with a surface area of 930 square centimeters falls from a 5.0 meters tree to the ground. Estimate its terminal velocity. 
+(Use a drag coefficient for a skydiver falling feet first.) 
+What will be the velocity of a 56 -kg person hitting the ground, assuming no drag contribution in such a short distance?
+
+========================================================================

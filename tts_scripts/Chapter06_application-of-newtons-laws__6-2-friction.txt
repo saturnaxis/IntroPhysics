@@ -1,0 +1,374 @@
+Friction.
+
+Real objects interact with their surroundings, which means the environment can cause a resistance (a force of friction).
+
+Friction opposes relative motion between systems in contact, but also allows us to move.
+
+Try walking on ice. You need boots that grip (i.e., increase friction).
+
+Friction is one of the common contact forces introduced in Chapter 5. In this chapter, we use friction quantitatively by adding it to the free-body diagram and applying Newton's second law.
+
+Static and Kinetic Friction.
+
+Friction.
+
+Friction is a force that opposes relative motion between systems in contact.
+
+There are several forms of friction.
+
+Sliding friction f sub s is parallel to the contact surface between systems and is always in a direction that opposes motion (or attempted motion of the systems relative to each other).
+
+Kinetic friction f sub k is when two systems are in contact and moving relative to one another.
+
+For example, friction slows a hockey puck sliding on ice.
+
+When the static friction is greater than the kinetic friction ( f sub s > f sub k ), the objects are stationary.
+
+Static and Kinetic Friction.
+
+If two systems are in contact and stationary relative to one another, then the friction between them is called static friction. If two systems are in contact and moving relative to one another, then the friction between them is called kinetic friction.
+
+See the Flipping Physics video on the course webpage.
+
+This video reviews how friction fits into Newton’s second law. Watch for the difference between a friction model and a free-body diagram: friction is one force included in sum vector F, not a separate shortcut.
+
+Checkpoint. Pause and check your understanding.
+If an object does not move when pushed, does that mean friction is zero or that static friction has adjusted to match the push?
+
+Consider trying to slide a heavy crate across a concrete floor. You might push very hard and not move the crate at all. This means the static friction responds to what you do; it increases (in the opposite direction) to resist your push.
+
+Once in motion, it is easier to keep it in motion than it was to get it started, which indicates that the kinetic friction is less than the static friction. If you add mass to the crate, you need to push even harder to get it started and also to keep it moving. If you oiled the concrete you would find it easier to get the crate started and keep it going.
+
+Figure is a pictorial representation of how friction occurs at the interface between two objects. Close-up inspection of these surfaces reveals them to be rough. Thus, when you push to get an object moving, you must raise the object until it can skip along with just the tips of the surface hitting, breaking off the points or both.
+
+A considerable force can be resisted by friction with no apparent motion. The harder the surfaces are pushed together, the more force is needed to move them. Part of the friction is due to adhesive forces between surface molecules of the two objects, which explains the dependence on the surface composition.
+
+Adhesion varies with substances in contact and is a complicated aspect of surface physics. Once an object is moving, there are fewer points of contact (i.e., fewer molecules adhering), so less force is required to keep the object moving. At small but nonzero speeds, friction is nearly independent of speed.
+
+The magnitude of the frictional force has two forms: static and kinetic. The models of each are empirical (experimentally determined) and they are not vector equations.
+
+Magnitude of Static and Kinetic Friction.
+
+The magnitude of static friction f sub s is
+
+ f sub s is less than or equal to mu sub s N,
+
+where mu sub s (or mu sub s) is the coefficient of static friction and N is the magnitude of the normal force N. Static friction is a responsive force that increases to be equal and opposite to whatever force is exerted. Once the applied force exceeds f sub s maximum, the object moves, and
+
+ f sub s maximum equals mu sub s N.
+
+The magnitude of kinetic friction f sub k is given by
+
+ f sub k equals mu sub k N,
+
+where mu sub k (or mu sub k) is the coefficient of kinetic friction. Figure illustrates the transition from static friction (stationary in figure a) to kinetic friction (moving in figure b).
+
+ show the coefficients of kinetic friction are less than their static counterparts. The values of mu provide only an approximate description of the friction given.
+
+Table. Approximate Coefficients of Static and Kinetic Friction. Refer to the course notes for the full entries.
+
+In both static and kinetic frictions, the equation depends on the materials (through mu sub s or mu sub k ) and the normal force. The direction of friction is always
+
+opposite to the direction of motion,
+
+parallel to the surface between objects, and
+
+perpendicular to the normal force.
+
+For example if the crate you try to push has a mass of 100 kilograms, then the normal force is equal to its weight,
+
+ w equals mg equals (100 kilograms )(9.81 meters per second squared ) equals 981 newtons,
+
+perpendicular to the floor. If the coefficient of static friction is 0.45, you would have to exert a force parallel to the floor that is greater than
+
+ f sub s maximum equals mu sub s N equals (0.45)(981 newtons ) equals 440 newtons
+
+to move the crate. Once there is motion, friction is less and the coefficient of kinetic friction might be 0.30, so that a force of only
+
+ f sub k equals mu sub k N equals (0.30)(981 newtons ) equals 290 newtons
+
+keeps it moving at a constant speed. If the floor is lubricated, both coefficients are considerably less than otherwise. The coefficient of friction is a unitless quantity with a magnitude between 0 and 1.0. The actual value depends on the two surfaces in contact.
+
+The equations for static and kinetic friction are empirical laws that describe the behavior of the frictional force. While these formulas are useful for practical purposes, they are not general principles (e.g., Newton's 2nd law). There are cases for which these equations are not even good approximations. For example, neither formula is accurate for lubricated surfaces or surfaces sliding at high speeds.
+
+Example Problem: Static and Kinetic Friction.
+
+The Problem.
+A 20-kilogram crate is at rest on a floor as shown in Figure. The coefficient of static friction between the crate and floor is 0.70 and the coefficient of kinetic friction is 0.60. A horizontal force vector P is applied to the crate. Find the force of friction if (a) vector P equals 20 newtons i-hat, (b) vector P equals 30 newtons i-hat, (c) vector P equals 120 newtons i-hat, and (d) vector P equals 180 newtons i-hat.
+The worked solution follows.
+The Model.
+
+The crate is modeled as a particle on a horizontal floor. We choose + i-hat to point to the right and + j-hat upward. The applied force points in the + i-hat direction, and friction points in the - i-hat direction because it opposes impending or actual motion. The normal force points in the + j-hat direction, and the weight points in the - j-hat direction. Static friction adjusts up to its maximum value. If the applied force exceeds that maximum, the crate slides and kinetic friction acts.
+
+The Math.
+
+The vertical forces balance because the crate has no vertical acceleration. Newton’s second law in the vertical direction gives
+
+ sum F sub y equals 0,
+newtons - mg equals 0,
+N equals m g.
+
+The maximum static friction and kinetic friction magnitudes are determined by the normal force:
+
+f sub s maximum equals mu sub s N,
+ f sub k equals mu sub k N.
+
+The shared normal force and friction thresholds are determined before evaluating each applied force:
+
+N equals 20.0 kilograms times 9.81 meters per second squared, which equals 196 newtons,
+f sub s maximum equals (0.70)(196 newtons ) equals 1.4 times ten to the 2 newtons,
+ f sub k equals (0.60)(196 newtons ) equals 1.2 times ten to the 2 newtons.
+
+For applied forces below f sub s maximum, the crate remains at rest and static friction matches the applied force. For applied forces above f sub s maximum, the crate slips and the friction is kinetic.
+
+Part a. First, we evaluate P equals 20 newtons. Since 20 newtons is less than 1.4 times ten to the second newtons, static friction matches the applied force:
+
+f equals 20 newtons.
+
+Part b. Next, we evaluate P equals 30 newtons. Since 30 newtons is less than 1.4 times ten to the second newtons, static friction matches the applied force:
+
+f equals 30 newtons.
+
+Part c. Then, we evaluate P equals 120 newtons. Since 120 newtons is less than 1.4 times ten to the second newtons, static friction still matches the applied force:
+
+f equals 120 newtons.
+
+Part d. Finally, we evaluate P equals 180 newtons. Since 180 newtons is greater than 1.4 times ten to the second newtons, the crate slips and kinetic friction acts:
+
+f equals f sub k,
+
+which equals 1.2 times ten to the second newtons.
+
+The Conclusion.
+
+For applied forces of 20 newtons, 30 newtons, and 120 newtons, static friction keeps the crate at rest and equals the applied force in magnitude. For an applied force of 180 newtons, static friction is not large enough, so the crate slides and the friction force has kinetic magnitude 1.2 times ten to the 2 newtons. In each case, the friction force points opposite vector P.
+
+Friction and the Inclined Plane.
+
+Friction plays an obvious role when there is an object on a slope. It could be a crate pushed up a ramp or a skateboarder coasting down a mountain, but the basic physics is the same.
+
+Incline problems are easier when the axes are rotated so that one axis is parallel to the slope and the other is perpendicular to it. This uses the same component logic from Chapter 2 and extends the incline free-body-diagram work from Chapter 5.
+
+We generalize the sloping surface and call it an inclined plane. Recall the Weight on an Incline problem, where we orient our system axes so that the motion is along the x-axis only, meaning flat in the transformed coordinate system.
+
+When an object rests on a horizontal surface, the normal force supporting it is equal in magnitude to its weight. Additionally, simple friction is always proportional to the normal force. However, with the inclined plane, we must find the force acting on the object that is directed perpendicular to the surface, meaning it is a component of the weight.
+
+Consider an object that slides down an inclined plane at constant velocity, meaning the net force is zero. Such conditions can be used to measure the coefficient of kinetic friction between two objects.
+
+Recall the free-body diagram from Chapter 5, where we found that w sub x equals w sine theta and the friction opposes the motion along the x-axis. The normal force opposes the weight along the y-axis, or N equals w cosine theta.
+
+Therefore, the kinetic friction on a slope is f sub k equals mu sub k N, which equals mu sub k m g cosine theta. Writing this out in terms of forces, we have:
+
+The sum of F sub x equals f sub k minus w sub x equals zero,
+
+so f sub k equals w sub x,
+
+and mu sub k m g cosine theta equals m g sine theta.
+
+Now we can solve for mu sub k:
+
+mu sub k equals m g sine theta divided by m g cosine theta, which equals tangent theta.
+
+Checkpoint. Pause and check your understanding.
+
+On an incline, why is the normal force smaller than m g even though the object still has its full weight?
+
+A Dot Physics video is linked on the course webpage. This video shows three experiments you can do to measure the coefficient of friction. Skip to six minutes and forty-four seconds to see the experiment with an inclined plane.
+
+Example Problem: Downhill Skier.
+
+The Problem.
+A skier with a mass of 62 kilograms is sliding down a snowy slope at a constant acceleration. Find the coefficient of kinetic friction for the skier if the friction force is known to be 45.0 newtons.
+The worked solution follows.
+The Model.
+
+The skier is modeled as a particle sliding down a rigid incline. We choose + i-hat to point down the slope and + j-hat to point perpendicular to the slope, away from the surface. The kinetic friction force points up the slope in the - i-hat direction because it opposes the skier’s motion. The normal force points in the + j-hat direction, and the weight points vertically downward. The skier remains in contact with the slope, so the acceleration perpendicular to the surface is zero. The figure gives the incline angle as 25 degrees.
+
+The Math.
+
+The coefficient of kinetic friction is determined from the relationship between kinetic friction and the normal force:
+
+ f sub k equals mu sub k N.
+
+The normal force comes from the force balance perpendicular to the slope. The perpendicular component of the skier’s weight points into the slope, so Newton’s second law perpendicular to the slope gives
+
+ sum F sub y equals 0,
+newtons - mg cos theta equals 0,
+N equals m g cosine theta.
+
+We substitute this expression for N into the kinetic-friction equation and solve for mu sub k:
+
+ f sub k equals mu sub k m g cos theta,
+ mu sub k equals f sub k over mg cos theta.
+
+The coefficient of kinetic friction follows from the ratio of the measured friction force to the normal force:
+
+ mu sub k equals 45.0 newtons over (62 kilograms )(9.81 meters per second squared ) cos 25 degrees
+ equals 0.082.
+
+The Conclusion.
+
+The coefficient of kinetic friction for the skier is mu sub k equals 0.082. This value is reasonable for sliding on snow and is smaller than many dry-surface friction coefficients.
+
+Atomic-scale Explanations of Friction.
+
+The simpler aspects of friction rely on its macroscopic, or large-scale, characteristics. Researchers are finding that the atomic nature of friction also has several fundamental microscopic, or small-scale, characteristics. These characteristics hold the potential for the development of nearly frictionless environments that helps reduce mechanical wear and energy loss due to heat.
+
+So far we have noted that friction is proportional to the normal force, but not to the amount of area in contact. When two rough surfaces are in contact, the actual contact area is a tiny fraction of the total area because only high spots touch. When a greater normal force is exerted, the actual contact area increases, and we find that the friction is proportional to this area, as illustrated by the figure on the course webpage.
+
+The atomic scale seeks to explain, "why do surfaces get warmer when rubbed?"
+
+Essentially, atoms are linked with one another to form lattices. When surfaces rub, the surface atoms adhere and cause atomic lattices to vibrate, meaning they create sound waves. The sound waves diminish with distance, and their energy is converted to heat.
+
+Chemical reactions related to frictional wear can also occur between atoms and surfaces. The figure on the course webpage shows how the tip of a probe drawn across another material is deformed by atomic-scale friction. The force needed to drag the tip can be measured and is related to shear stress. The variation in shear stress is more than a factor of ten to the twelfth and difficult to predict theoretically.
+
+Checkpoint. Pause and check your understanding.
+
+Why can friction depend on the normal force even though the apparent contact area looks unchanged?
+
+An Efficient Engineer video is linked on the course webpage. This video reviews friction in mechanical systems. Use it as a way to connect the abstract ideas to physical systems and components.
+
+Example Problem: Sliding Blocks.
+
+The Problem.
+The two blocks shown in the figure on the course webpage are attached to each other by a massless string that is wrapped around a frictionless pulley. When the bottom 4.0 kilograms block is pulled to the left by the constant force vector P, the top 2.0 kilograms block slides across it to the right. Find the magnitude of the force necessary to move the blocks at constant speed. Assume that the coefficient of kinetic friction between all surfaces is 0.40.
+The worked solution follows.
+The Model.
+
+Each block is modeled as a particle. We choose + i-hat to point to the right and + j-hat upward. The top block moves to the right at constant speed, so the tension on it points in the + i-hat direction and kinetic friction from the lower block points in the - i-hat direction. The lower block moves to the left at constant speed, so the applied force vector P points in the - i-hat direction. The tension, friction from the top block, and friction from the floor all point in the + i-hat direction on the lower block. Both blocks have zero acceleration.
+
+The Math.
+
+For the top block, constant speed requires zero net force in both directions. The normal force from the lower block balances the weight of the top block, and the tension balances kinetic friction:
+
+ sum F sub x equals 0, sum F sub y equals 0,
+T - mu sub k N sub 1 equals 0, N sub one minus m sub one g equals 0.
+
+We solve these equations for N sub one and T:
+
+ N sub one equals m sub oneg,
+T equals mu sub k N sub 1 equals mu sub k m sub oneg.
+
+For the lower block, constant speed also requires zero net force. The floor normal force must support the lower block and the downward normal force from the upper block:
+
+ sum F sub y equals 0,
+ N sub two - m sub twog - N sub one equals 0,
+ N sub two equals m sub twog + N sub one.
+
+The horizontal forces on the lower block are the applied force to the left and three forces to the right: tension, friction from the top block, and friction from the floor. Newton’s second law in the horizontal direction gives
+
+ sum F sub x equals 0,
+T + mu sub k N sub 1 + mu sub k N sub 2 - P equals 0,
+P equals T + mu sub k N sub 1 + mu sub k N sub 2.
+
+We substitute the expressions for T, N sub one, and N sub two into this equation to determine the required applied force:
+
+P equals mu sub k m sub oneg + mu sub k m sub oneg + mu sub k( m sub twog + m sub oneg )
+ equals mu sub k g(3 m sub one + m sub two ).
+
+The required applied force follows from the horizontal force balance on the lower block:
+
+P equals (0.400)(9.81 meters per second squared ) times the quantity 3 times 2.00 kilograms plus 4.00 kilograms
+ equals 39.2 newtons.
+
+The Conclusion.
+
+The applied force needed to move the blocks at constant speed is P equals 39.2 newtons. This force balances the tension and both kinetic friction forces acting to the right on the lower block, so the lower block can move left with zero acceleration.
+
+Example Problem: Crate on an Accelerating Truck.
+
+The Problem.
+A 50-kilogram crate rests on the bed of a truck as shown in Figure. The coefficients of friction between the surfaces are mu sub k equals 0.30 and mu sub s equals 0.40. Find the frictional force on the crate when the truck is accelerating forward relative to the ground at (a) 2.0 meters per second squared and (b) 5.0 meters per second squared.
+The worked solution follows.
+The Model.
+
+The crate is modeled as a particle on the horizontal bed of the truck. We choose + i-hat to point forward with the truck and + j-hat upward. The weight points in the - j-hat direction, and the normal force points in the + j-hat direction. The friction force on the crate points forward in the + i-hat direction because the truck bed tends to slide forward underneath the crate. If static friction can provide the required acceleration, the crate does not slip. If not, the crate slips backward relative to the truck, and kinetic friction acts forward on the crate.
+
+The Math.
+
+The vertical forces balance because the crate has no vertical acceleration. Newton’s second law in the vertical direction gives
+
+ sum F sub y equals 0,
+newtons - mg equals 0,
+N equals m g.
+
+The largest possible static friction and the kinetic friction magnitude are
+
+f sub s maximum equals mu sub s N,
+ f sub k equals mu sub k N.
+
+The normal force sets the maximum static friction and the kinetic friction magnitude:
+
+N equals 50.0 kilograms times 9.81 meters per second squared, which equals 491 newtons,
+f sub s maximum equals (0.400)(491 newtons ) equals 196 newtons,
+ f sub k equals (0.300)(491 newtons ) equals 147 newtons.
+
+Part a. First, we evaluate the truck acceleration a equals 2.00 meters per second squared. If the crate does not slip, static friction must provide the crate's horizontal acceleration:
+
+f sub s equals m a,
+
+which equals 50.0 kilograms times 2.00 meters per second squared,
+
+and equals 100 newtons.
+
+Since 100 newtons is less than 196 newtons, static friction is sufficient and the crate does not slip.
+
+Part b. Next, we evaluate the truck acceleration a equals 5.00 meters per second squared. If the crate were to move with the truck, the required static friction would be
+
+f sub s equals m a,
+
+which equals 50.0 kilograms times 5.00 meters per second squared,
+
+and equals 250 newtons.
+
+Since 250 newtons is greater than 196 newtons, static friction is not sufficient and the crate slips. The frictional force on the crate is therefore kinetic:
+
+f equals f sub k,
+
+which equals 147 newtons.
+
+The Conclusion.
+
+For a truck acceleration of 2.00 meters per second squared, static friction acts forward on the crate with magnitude 100 newtons and prevents slipping. For a truck acceleration of 5.00 meters per second squared, the required static friction exceeds the maximum possible value, so the crate slips and kinetic friction acts forward with magnitude 147 newtons.
+
+Example Problem: Snowboarding.
+
+The Problem.
+Earlier, we analyzed the situation of a downhill skier moving at constant velocity to determine the coefficient of kinetic friction. Now let’s do a similar analysis to determine acceleration. The snowboarder of Figure glides down a slope that is inclined at 13 degrees to the horizontal. The coefficient of kinetic friction between the board and the snow is mu sub k equals 0.20. What is the acceleration of the snowboarder?
+The worked solution follows.
+The Model.
+
+The snowboarder is modeled as a particle sliding down a rigid incline. We choose + i-hat to point downhill along the slope and + j-hat to point perpendicular to the slope, away from the surface. The component of weight parallel to the slope points in the + i-hat direction. Kinetic friction points uphill in the - i-hat direction. The normal force points in the + j-hat direction, and the perpendicular component of the weight points in the - j-hat direction. Air resistance is neglected.
+
+The Math.
+
+The snowboarder accelerates along the slope, while the perpendicular acceleration is zero.
+
+The forces parallel to the slope are the downhill component of weight and the uphill kinetic friction force. The forces perpendicular to the slope are the normal force and the perpendicular component of weight. Newton’s second law gives
+
+ sum F sub x equals m a sub x,
+ sum F sub y equals 0.
+
+Resolving the forces along the chosen axes gives
+
+mg sin theta - f sub k equals m a sub x,
+newtons - mg cos theta equals 0.
+
+The perpendicular equation determines the normal force, and kinetic friction depends on that normal force:
+
+N equals m g cosine theta,
+ f sub k equals mu sub k N equals mu sub k m g cos theta.
+
+We substitute the kinetic-friction expression into the parallel force equation and solve for the acceleration:
+
+mg sin theta - mu sub k m g cos theta equals m a sub x,
+ a sub x equals g( sin theta - mu sub k cos theta ).
+
+The downhill acceleration follows from the balance between the downhill gravity component and uphill kinetic friction:
+
+ a sub x equals (9.81 meters per second squared )( sin 13 degrees - 0.20 cos 13 degrees)
+ equals 0.29 meters per second squared.
+
+The Conclusion.
+
+The snowboarder accelerates downhill at 0.29 meters per second squared. The acceleration is small because the downhill component of gravity is only slightly larger than the kinetic friction force opposing the motion.

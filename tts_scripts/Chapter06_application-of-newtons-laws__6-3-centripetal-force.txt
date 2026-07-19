@@ -1,0 +1,222 @@
+Centripetal Force.
+
+Chapter 4 introduced centripetal acceleration as the inward acceleration required for circular motion. In this section, we apply Newton's second law to identify which real force, or combination of forces, provides that inward acceleration.
+
+Recall that an object undergoing circular motion must be accelerating because the direction of the object's velocity is changing. This centripetal acceleration is given by:
+
+ vector a sub c equals v squared over r r-hat,
+
+where the magnitude of vector v is v (or its speed) and r is the radius of the curve. The velocity vector v is directed along a tangent line to the curve at any instant, which is represented by the unit vector theta-hat and is perpendicular to the radial unit vector r-hat.
+
+Note.
+
+The velocity can be represented as vector v equals v theta-hat, where v squared is determined through the dot product or
+
+ vector v dot vector v equals v theta-hat dot v theta-hat equals v squared
+
+If we also know the angular speed omega (measured in radians per second ), then we can write the magnitude of the centripetal acceleration a sub c in two ways:
+
+ a sub c equals v squared over r,
+ equals r omega to the power of 2,
+
+where this is also referred to as a radial acceleration.
+
+An acceleration must be produced by a force, where any force (or combination of forces) can cause a centripetal acceleration. For example,
+
+the rope on a tether ball,
+
+Earth's gravity on the Moon,
+
+friction between roller skates and the rink floor,
+
+a banked roadway's force on a car, and
+
+forces on the tube of a spinning centrifuge.
+
+Any net force causing uniform circular motion is called a centripetal force. The direction of the centripetal force is radial, meaning it is directed in the r-hat direction that is aligned with the circle's radius. The word centripetal means 'center-seeking', so the direction is toward the center of curvature.
+According to Newton's 2nd law, the net force is mass times acceleration or F net equals m a. For uniform circular motion, the acceleration is the centripetal acceleration and the magnitude of the centripetal force is
+
+ F sub c equals m a sub c.
+
+Because we had 2 expressions for the centripetal acceleration, we therefore have two expressions for the centripetal force:
+
+ F sub c equals mv squared over r,
+ equals mr omega to the power of 2.
+
+Checkpoint. Pause and check your understanding.
+For circular motion, is the centripetal force a new kind of force or the inward net force from real interactions?
+
+See the Flipping Physics video on the course webpage.
+
+This video reinforces the key idea that centripetal force is not a new force. It is the inward net force required for circular motion, supplied by real interactions such as friction, tension, gravity, or a normal force.
+
+When solving problems, you may use whichever expression is more convenient (i.e., whichever has the proper balance of knowns vs. unknowns). Moreover, you may need to rearrange the equation to fit the given problem. Suppose that you know the mass, speed, and centripetal force needed to keep an object fixed to the ground, then you could solve the first expression for r:
+
+ r equals mv squared over F sub c,
+
+to determine the radius required to keep the system in balance. This implies that for a large centripetal force F sub c requires a small r for an object with a given mass and speed (as shown by the figure on the course webpage.
+
+The frictional force supplies the centripetal force and is numerically equal to it. Centripetal force is perpendicular to velocity and causes uniform circular motion. The larger the F sub c, the smaller the radius of curvature r and the sharper the curve. The second curve has the same v, but a larger F sub c produces a smaller r prime. Figure Credit: OpenStax: Centripetal Force
+
+Example Problem: Friction for Car on a Flat Curve.
+
+The Problem.
+What Coefficient of Friction Do Cars Need on a Flat Curve?
+(a) Calculate the centripetal force exerted on a 900 kilograms car that negotiates a 500 meters radius curve at 25 meters per second. (b) Assuming an unbanked curve, find the minimum static coefficient of friction between the tires and the road, static friction being the reason that keeps the car from slipping (Figure ).
+The worked solution follows.
+The Model.
+
+The car is modeled as a particle moving in a horizontal circle. We choose the radial + i-hat direction to point inward toward the center of the curve and + j-hat upward. Static friction points inward in the + i-hat direction and provides the centripetal force. The normal force points upward in the + j-hat direction, and the weight points downward in the - j-hat direction. The road is level, so the vertical forces balance. Air resistance and rolling resistance are neglected.
+
+The Math.
+
+For circular motion, the car requires an inward centripetal acceleration of magnitude a sub c equals v squared/r.
+
+(a) First, we calculate the centripetal force required to keep the car moving around the curve:
+
+ F sub c equals m a sub c
+ equals m v squared over r.
+
+The required centripetal force follows from F sub c equals mv squared/r:
+
+ F sub c equals (900 kilograms ) (25 meters per second ) squared over 500 meters
+ equals 1100 newtons.
+
+(b) Next, we determine the minimum coefficient of static friction. On a level road, the vertical forces balance, so
+
+N equals m g.
+
+At the minimum coefficient, static friction is just large enough to supply the required centripetal force:
+
+ F sub c equals f sub s, max,
+m v squared over r equals mu sub s N,
+m v squared over r equals mu sub s m g.
+
+We solve this equation for the minimum coefficient of static friction:
+
+ mu sub s equals v squared over rg.
+
+The minimum coefficient follows from the condition that static friction must supply the centripetal force:
+
+ mu sub s equals (25 meters per second ) squared over (500 meters )(9.81 meters per second squared )
+ equals 0.13.
+
+The Conclusion.
+
+The centripetal force required for the car is 1100 newtons directed inward toward the center of the curve. The minimum coefficient of static friction needed on an unbanked curve is mu sub s equals 0.13. The car’s mass cancels from the friction condition because both the required centripetal force and the maximum static friction scale with mass.
+
+Banked Curves.
+
+For banked curves, the slope of the road helps you make the curve; that's why they have them in NASCAR. The greater the angle theta, relative to flat ground, the faster you can take the curve. In an ideally banked curve, the angle theta allows you to traverse the curve at a certain speed without the aid of friction between the tires and the road.
+
+For ideal banking, the net external force equals the horizontal centripetal force in the absence of friction. The components of the normal force vector in the horizontal and vertical directions must equal the centripetal force and the weight of the car, respectively.
+
+The figure on the course webpage shows a free-body diagram for a car on a frictionless banked curve. However, you should recognize that the setup is very similar to the sliding block on an inclined plane. If the angle theta is ideal for the speed and radius, then the net external force equals the necessary centripetal force.
+
+The only two external forces acting on the car are its weight vector and the normal force vector of the road. These two forces must add to give a net external force that is horizontal toward the center of curvature, to be centripetal, and has magnitude m v squared divided by r. Only the normal force has a horizontal component, so we have:
+
+F sub x equals newtons sine theta minus m v squared divided by r, which equals zero,
+
+so newtons sine theta equals m v squared divided by r.
+
+Because the car does not leave the surface of the road, meaning no flying cars yet, the net vertical force must be zero. The only vertical forces are the vertical component of the normal force and the car's weight. Thus, we have:
+
+F sub y equals newtons cosine theta minus m g, which equals zero,
+
+so newtons cosine theta equals m g.
+
+We can combine these two equations to eliminate the normal force newtons and get an expression for theta. We have:
+
+m v squared divided by r sine theta equals m g divided by cosine theta,
+
+so tangent theta equals v squared divided by r g.
+
+Taking the inverse tangent gives:
+
+theta equals inverse tangent of v squared divided by r g.
+
+Checkpoint. Pause and check your understanding.
+
+For an ideally banked frictionless curve, which component of the normal force provides the centripetal force?
+
+This expression shows that a large theta is obtained if either v is larger or r is small. Roads must be steeply banked for high speeds and sharp curves. Friction allows you to take the curve at greater or lower speed than if the curve were frictionless. Note that theta does not depend on the mass of the vehicle.
+
+Airplanes also make turns by banking, where the lift force acts at right angles to the wing. When the airplane banks, there is greater lift than required for level flight. The vertical component of the lift balances the airplane's weight, like the normal force, and the horizontal component accelerates the plane.
+
+Example Problem: Ideal Speed Banked Tight Curve.
+
+The Problem.
+Curves on some test tracks and race courses, such as Daytona International Speedway, are very steeply banked. This banking allows the curves to be taken at high speed even without tire friction. Calculate the speed at which a 100 meters radius curve banked at 31 degrees should be driven if the road is frictionless.
+The worked solution follows.
+The Model.
+
+The car is modeled as a particle moving in uniform circular motion on a frictionless, banked road. We choose the horizontal inward direction toward the center of the curve as the radial direction and choose vertical upward as + j-hat. The weight points downward, and the normal force points perpendicular to the road surface. Because the road is frictionless, the normal force is the only force with a horizontal component. That horizontal component provides the centripetal force.
+
+The Math.
+
+For uniform circular motion, the car requires a centripetal acceleration of magnitude a sub c equals v squared/r directed horizontally toward the center of the curve.
+
+The forces acting on the car are its weight vector w downward and the normal force vector newtons perpendicular to the road surface. Resolving the normal force into vertical and horizontal components gives
+
+newtons cos theta equals mg,
+newtons sin theta equals m v squared over r.
+
+We divide the horizontal equation by the vertical equation to eliminate newtons and m:
+
+ tan theta equals v squared over rg.
+
+We solve this expression for the speed v, which yields
+
+v equals square root of rg tan theta.
+
+The ideal speed follows from the frictionless banked-curve relation:
+
+v equals square root of (100 meters )(9.81 meters per second squared ) tan 31 degrees
+ equals square root of (100)(9.81)(0.601)
+ equals 24.3 meters per second.
+
+The Conclusion.
+
+The ideal speed for the frictionless banked curve is 24.3 meters per second. At this speed, the vertical component of the normal force balances the weight, and the horizontal component of the normal force provides exactly the centripetal force.
+
+Inertial Forces and Noninertial Frames: The Coriolis Force.
+
+Consider the following:
+
+taking off in a jet airplane,
+
+turning a corner in a car,
+
+riding a merry-go-round,
+
+and the circular motion of a tropical cyclone.
+
+What do they all have in common?
+
+Each exhibits fictitious, or non-inertial, forces that merely seem to arise from motion because the observer's frame of reference is accelerating or rotating.
+
+First, when taking off in a jet, it feels as if you are being pushed back into the seat as the airplane accelerates. A physicist would say that you tend to remain stationary while the seat pushes you forward.
+
+Second, when you make a tight curve in your car to the right, you feel as if you're thrown, or forced, to the left. However, you are actually going in a straight line, according to Newton's first law, but the car moves to the right.
+
+We can reconcile these points of view by examining the frames of reference. Passengers instinctively use the car as the frame of reference, whereas physicists would use the Earth instead. The Earth is nearly an inertial frame of reference, where all forces have an identifiable physical origin. Newton's laws behave just as expected.
+
+The car is a noninertial frame of reference because it is accelerated to the side, where the force to the left sensed by the passengers is an inertial force having no physical origin. It is purely due to the inertia of the passenger, meaning moving in a straight line, rather than some physical cause such as tension, friction, or gravitation.
+
+Consider a rapidly rotating merry-go-round, where you take the merry-go-round as your frame of reference because you rotate together. When rotating in that noninertial frame of reference, you feel an inertial force that tends to throw you off. This is often referred to as a centrifugal force because you're moving outward.
+
+The centrifugal force does not actually exist, where you must hang on tightly to counteract your inertia, meaning your tendency to move in a straight line. You must hang on to make yourself go in a circle because Newton's first law would have you go off in a straight line. The force you exert acts toward the center of the circle.
+
+Checkpoint. Pause and check your understanding.
+
+In the Earth frame, what real force makes the rider move in a circle? In the rotating frame, what apparent force seems to act?
+
+This inertial effect is put to good use in centrifuges. A centrifuge spins a sample very rapidly, where the inertial force throws particles outward and hastens their sedimentation. The greater the angular speed omega, the greater the centrifugal force. What really happens is the inertia of the particles carries them along a line tangent to the circle while the test tube is forced in a circular path by a centripetal force.
+
+Consider what happens if something moves in a rotating frame of reference.
+
+What if you slide a ball directly away from the center of the merry-go-round?
+
+The ball follows a straight path relative to Earth and a path curved to the right on the merry-go-round's surface. A person standing next to the merry-go-round sees the ball moving straight and the merry-go-round rotating underneath it. The apparent curve to the right is caused by an inertial force called the Coriolis force.
+
+An Atlas Pro video is linked on the course webpage. This video explains the Coriolis effect and how it impacts the movements of clouds and storms in our atmosphere.

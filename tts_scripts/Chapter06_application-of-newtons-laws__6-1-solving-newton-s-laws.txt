@@ -1,0 +1,618 @@
+Application of Newton's Laws.
+
+Solving Newton's Laws.
+
+Note.
+
+This chapter combines several tools developed earlier in the course. We use vector components from Chapter 2, acceleration vectors from Chapter 4, and free-body diagrams from Chapter 5 to apply Newton's second law to real systems.
+
+Problem-Solving Strategies.
+
+Applying Newton's Laws of Motion.
+
+Most problems in this chapter follow the same pattern: choose a system, identify the external forces, turn those forces into components, and apply Newton's second law.
+
+Define the system of interest. Decide which object or group of objects you are analyzing. Newton's second law uses only the external forces acting on that system.
+
+Choose useful axes. Pick coordinate axes that make the force components as simple as possible. When motion occurs along a slope, curve, or rope, it is often useful to align one axis with the motion or acceleration.
+
+Draw a free-body diagram. Draw only the external forces acting on the chosen system. Do not draw velocity, acceleration, or the net force as separate forces.
+
+Write Newton's second law by components. Start from sum vector F equals m vector a, then write the component equations such as
+
+ sum F sub x equals m a sub x,
+ sum F sub y equals m a sub y.
+
+Use constraints and known conditions. Constant velocity means a equals 0. Static equilibrium means the net force is zero. A massless rope has the same tension throughout. A frictionless pulley changes the direction of the tension but not its magnitude.
+
+Solve symbolically before evaluating. Keep the algebra general as long as possible. Substitute numerical values only after the physical relationships are clear.
+
+Check the result. The answer should have the correct units, the correct direction, and a physically reasonable size.
+
+This strategy is not a recipe for memorizing equations. It is a way to translate a physical situation into Newton's second law. The hardest step is usually deciding what belongs in the free-body diagram and what does not.
+
+See the Flipping Physics video on the course webpage.
+
+Consider the challenge of lifting a grand piano into a second-story apartment.
+
+Which of Newton's laws are involved?
+
+Figure shows that we can represent all forces with arrows and simplify the analysis with a more crude representation.
+
+It is important to make a list of knowns and unknowns so that we can properly identify the system of interest. Recall that Newton's 2nd law involves only external forces, so we
+
+first list all the forces, and
+
+then identify which are internal or external.
+
+The identified forces are:
+
+vector T: tension in the rope above the piano
+
+vector F sub T: force that the piano exerts on the rope, and
+
+vector w: weight of the piano.
+
+All other forces (e.g., nudge of a breeze) are assumed to be negligible.
+
+Newton's 3rd law can be used to identify whether forces are exerted between internal components of a system or between the system and an external component.
+
+The vector T and vector F sub T form a force-pair, where we only include the external component vector T in our free-body diagram (see figure b).
+
+Figure c shows a free-body diagram, where Newton's 2nd law is applied in figure d.
+
+Once external forces are clearly identified in free-body diagrams, it should be straightforward to put them into Newton's 2nd law and form equations that can be solved.
+
+If the problem is one-dimensional (i.e., forces are parallel), then the forces can be handled algebraically.
+
+If the problem is two-dimensional, then it must be broken into components and then, solved as a pair of one-dimensional problems.
+
+It is usually convenient to make one axis parallel to the direction of motion, if this is known.
+
+Checkpoint. Pause and check your understanding.
+Which forces act on the chosen system, and which forces act on something outside the system?
+
+Then you have
+
+ sum F sub x equals m a sub x,
+ sum F sub y equals m a sub y.
+
+We must check the solution to tell whether it is reasonable. For example, it is reasonable to find that friction causes an object to slide down an incline more slowly than when no friction exits.
+
+In practice, intuition (i.e. knowing what is reasonable at a glance) develops through solving many problems (i.e., experience).
+
+Ut est rerum omnium magister usus. ("Experience is the teacher of all things.")
+
+-- Julius Caesar
+
+Another way to check a solution is to check the units. If we are solving for force and end up with units of only velocity, then we have made a mistake.
+
+Particle Equilibrium.
+
+A particle in equilibrium is one that obey's Newton's 1st law (i.e., the external forces are balanced). Static equilibrium involves objects at rest, and dynamic equilibrium involves objects in motion without acceleration.
+
+Checkpoint. Pause and check your understanding.
+If an object is moving at constant velocity, is it in equilibrium? What does that imply about sum vector F?
+
+Particle equilibrium is the force version of constant velocity. If the acceleration is zero, Newton's second law becomes sum vector F equals 0. This extends the equilibrium ideas from Newton's first law and the free-body-diagram workflow from Chapter 5.
+
+Example Problem: Different Tensions at Different Angles.
+
+The Problem.
+Consider the traffic light (mass of 15 kilograms ) suspended from two wires as shown in Figure. Find the tension in each wire, neglecting the masses of the wires.
+The worked solution follows.
+The Model.
+
+The system of interest is the traffic light. We model the traffic light as a particle in static equilibrium, so its acceleration is zero. We choose + i-hat to point horizontally to the right and + j-hat to point vertically upward. With this coordinate choice, the left-wire tension vector T sub one points up and to the left, the right-wire tension vector T sub two points up and to the right, and the weight vector w points downward in the - j-hat direction.
+
+The left wire makes an angle of 30 degrees with the horizontal, and the right wire makes an angle of 45 degrees with the horizontal. The two wires are treated as massless and inextensible, so each wire exerts a tension force along its own direction. The only forces acting on the traffic light are the two tensions and the weight (similar to the Tension in a Tightrope). Air resistance and motion of the light are neglected.
+
+The Math.
+
+For static equilibrium, Newton’s second law requires the net force on the traffic light to be zero. Since the traffic light has no acceleration in either direction,
+
+ sum F sub x equals m a sub x equals 0,
+ sum F sub y equals m a sub y equals 0.
+
+The forces acting on the traffic light are the left tension vector T sub one, the right tension vector T sub two, and the weight vector w equals -mg j-hat. Resolving the two tension forces into horizontal and vertical components gives the component equations
+
+ sum F sub x equals - T sub 1 cos 30 degrees + T sub 2 cos 45 degrees equals 0,
+ sum F sub y equals T sub 1 sin 30 degrees + T sub 2 sin 45 degrees - mg equals 0.
+
+The horizontal equation relates the two unknown tensions. We solve this equation for T sub 2 in terms of T sub 1 so that the vertical equation will contain only one unknown tension:
+
+- T sub 1 cos 30 degrees + T sub 2 cos 45 degrees equals 0,
+ T sub 2 cos 45 degrees equals T sub 1 cos 30 degrees,
+ T sub 2 equals T sub 1 cos 30 degrees over cos 45 degrees.
+
+The vertical equation determines the actual size of the tensions because the vertical components must balance the weight of the traffic light. We substitute the horizontal-equilibrium relation for T sub 2 into the vertical equation and solve for T sub 1:
+
+ T sub 1 sin 30 degrees + T sub 2 sin 45 degrees - mg equals 0,
+ T sub 1 sin 30 degrees + ( T sub 1 cos 30 degrees over cos 45 degrees ) sin 45 degrees equals mg,
+ T sub 1 ( sin 30 degrees + cos 30 degrees over cos 45 degrees sin 45 degrees ) equals mg,
+ T sub 1 equals mg over sin 30 degrees + cos 30 degrees over cos 45 degrees sin 45 degrees.
+
+The numerical value of T sub 1 follows from the vertical force balance, and then the horizontal force balance gives T sub 2:
+
+ T sub 1 equals (15.0 kilograms )(9.81 meters per second squared ) over sin 30 degrees + cos 30 degrees over cos 45 degrees sin 45 degrees
+ equals 108 newtons,
+ T sub 2 equals T sub 1 cos 30 degrees over cos 45 degrees
+ equals (108 newtons ) cos 30 degrees over cos 45 degrees
+ equals 132 newtons.
+
+The Conclusion.
+
+The tension in the left wire is T sub 1 equals 108 newtons, and the tension in the right wire is T sub 2 equals 132 newtons. The right wire has the larger tension because its direction is closer to vertical, so it supplies more of the upward force needed to balance the traffic light’s weight. These values satisfy Newton’s second law for static equilibrium because the horizontal components cancel and the vertical components balance the weight.
+
+Particle Acceleration.
+
+Instead of reducing the problem to a particle in static equilibrium, where the sum of the net forces equals zero, we can also reduce complex problems into one where the net force is nonzero, or a particle with an acceleration.
+
+When the net force is not zero, the object accelerates in the direction of the net force. The vector equation, the sum of the force vectors equals mass times the acceleration vector, is solved component by component, using the same vector-component ideas introduced in Chapter 2.
+
+We'll look through four examples that illustrate different ways we can decompose the complex motion into a simpler one:
+
+Drag force on a barge,
+
+Net force in an elevator,
+
+Two attached blocks connected with a pulley,
+
+Atwood Machine: vertical blocks with a pulley.
+
+Note.
+
+It is useful to identify constraints that make a problem solvable. We saw this in the Tension in a Tightrope problem when identifying the tension.
+
+In Chapter 5, we showed that the normal force, a contact force, acts normal to the surface so that an object does not have an acceleration perpendicular to the surface, meaning it stays static. The bathroom scale is an excellent example of a normal force acting on a body.
+
+Checkpoint. Pause and check your understanding.
+
+If the acceleration is zero in one direction but nonzero in another, which component equations of Newton's second law still matter?
+
+A bathroom scale provides a measure of how much it must push upward to support the weight of an object. The net force in an elevator problem will examine whether we can predict what you would measure on a bathroom scale that is moving upward, either accelerating or moving at constant speed.
+
+Do you think the scale will measure a different weight when the elevator is moving at constant speed?
+
+What if the elevator is accelerating upward?
+
+Take a guess before looking at the example problem.
+
+Example Problem: Drag Force on a Barge.
+
+The Problem.
+Two tugboats push on a barge at different angles as shown in Figure. The first tugboat exerts a force of 2.7 times ten to the 5 newtons in the x -direction, and the second tugboat exerts a force of 3.6 times ten to the 5 newtons in the y -direction. The mass of the barge is 5 times ten to the 6 kilograms and its acceleration is observed to be 7.5 times ten to the minus 2 meters per second squared in the direction shown. What is the drag force of the water on the barge resisting the motion?
+
+Note.
+
+Drag force is a frictional force exerted by fluids, such as air or water. The drag force opposes the motion of the object. Since the barge is flat bottomed, we can assume that the drag force is in the direction opposite the barge's motion.
+The worked solution follows.
+The Model.
+
+The system of interest is the barge. We model the barge as a rigid object translating on the horizontal surface of the water. We choose + i-hat to point in the direction of the first tugboat’s force and + j-hat to point in the direction of the second tugboat’s force. With this coordinate choice, the tugboat forces are vector F sub 1 equals F sub 1 i-hat and vector F sub 2 equals F sub 2 j-hat. The resultant tugboat force vector F sub  app points in the direction of the barge’s observed acceleration. The drag force exerted by the water points opposite the barge’s motion, so it points opposite vector F sub  app. The weight of the barge and the buoyant force from the water balance vertically, so they are omitted from the horizontal force model.
+
+The Math.
+
+For horizontal motion, Newton’s second law relates the net horizontal force on the barge to the observed acceleration of the barge.
+
+The forces acting on the barge in the horizontal plane are the tugboat forces vector F sub 1 and vector F sub 2 and the drag force vector F sub D. The tugboat forces combine to form the applied force vector F sub  app, and the drag force acts opposite the barge’s motion. Newton’s second law for the horizontal motion is
+
+ sum vector F equals m vector a,
+ vector F sub  app + vector F sub D equals m vector a.
+
+The two tugboat forces are perpendicular, so the magnitude and direction of the applied force come from the vector components of vector F sub  app. Resolving the applied force into components gives
+
+ vector F sub  app equals F sub 1 i-hat + F sub 2 j-hat,
+F app equals square root of F sub 1 to the power of 2 + F sub 2 to the power of 2,
+ theta equals tan to the power of -1 ( F sub 2 over F sub 1 ).
+
+The applied-force magnitude and direction follow from the perpendicular tugboat-force components by
+
+F app equals square root of (2.7 times ten to the 5 newtons ) squared + (3.6 times ten to the 5 newtons ) squared
+ equals 4.5 times ten to the 5 newtons,
+ theta equals tan to the power of -1 ( 3.6 times ten to the 5 over 2.7 times ten to the 5 )
+ equals 53 degrees.
+
+Along the direction of motion, the applied force points forward and the drag force points backward. Newton’s second law along this direction gives
+
+F app - F sub D equals ma.
+
+We solve this equation for the drag force magnitude, which yields
+
+ F sub D equals F app - ma.
+
+The drag force follows from Newton’s second law along the direction of motion as
+
+ F sub D equals 4.5 times ten to the 5 newtons - (5 times ten to the 6 kilograms )(7.5 times ten to the minus 2 meters per second squared )
+ equals 7.5 times ten to the 4 newtons.
+
+The Conclusion.
+
+The water exerts a drag force with magnitude F sub D equals 7.5 times ten to the 4 newtons. This drag force acts opposite the barge’s motion, while the tugboat resultant points in the direction of motion. The result is consistent with Newton’s second law because the applied tugboat force is larger than the drag force, leaving a net force that accelerates the barge.
+
+Example Problem: Bathroom Scale in an Elevator.
+
+The Problem.
+The figure on the course webpage shows a 75-kilogram man (weight of about 165 lb ) standing on a bathroom scale in an elevator. Calculate the scale reading: (a) if the elevator accelerates upward at a rate of 1.2 meters per second squared, and (b) if the elevator moves upward at a constant speed of 1 meters per second.
+The worked solution follows.
+The Model.
+
+The system of interest is the person standing on the scale. We model the person as a particle moving vertically with the elevator. We choose + j-hat to point upward and - j-hat to point downward. With this coordinate choice, the scale force on the person points upward, so vector F sub s equals F sub s j-hat, and the weight of the person points downward, so vector w equals -mg j-hat. The scale reading is the magnitude of the upward contact force F sub s. Air resistance is neglected, and the motion is one-dimensional along the vertical axis.
+
+The Math.
+
+For vertical motion, Newton’s second law relates the net vertical force on the person to the person’s vertical acceleration.
+
+The forces acting on the person are the upward scale force vector F sub s and the downward weight vector w. Applying Newton’s second law in the vertical direction gives
+
+ sum F sub y equals m a sub y,
+ F sub s - mg equals m a sub y.
+
+We solve this equation for the scale reading F sub s, which yields
+
+ F sub s equals mg + m a sub y,
+ F sub s equals m(g+ a sub y ).
+
+This equation shows that the scale reading depends on the vertical acceleration of the person. We now reuse this same equation for both cases.
+
+(a) First, we evaluate the case when the elevator accelerates upward at a sub y equals 1.2 meters per second squared. Since the acceleration points in the + j-hat direction, a sub y is positive:
+
+ F sub s equals m(g+ a sub y )
+ equals 75.0 kilograms times the quantity 9.81 meters per second squared plus 1.20 meters per second squared
+ equals 826 newtons.
+
+(b) Then, we evaluate the case when the elevator moves upward at a constant speed of 1 meters per second. Constant speed implies a sub y equals 0, so
+
+ F sub s equals m(g+ a sub y )
+ equals (75.0 kilograms )(9.81 meters per second squared + 0)
+ equals 736 newtons.
+
+The Conclusion.
+
+When the elevator accelerates upward at 1.2 meters per second squared, the scale reads F sub s equals 826 newtons. When the elevator moves upward at constant speed, the acceleration is zero and the scale reads F sub s equals 736 newtons. The scale reading is larger during upward acceleration because the scale must exert enough upward force to both balance the person’s weight and produce the upward acceleration.
+
+Example Problem: Two Attached Blocks.
+
+The Problem.
+The figure on the course webpage shows a block of mass m sub one on a frictionless, horizontal surface. It is pulled by a light string that passes over a frictionless and massless pulley. The other end of the string is connected to a block of mass m sub two. Find the acceleration of the blocks and the tension in the string in terms of m sub one, m sub two, and g.
+The worked solution follows.
+The Model.
+
+The system consists of two blocks connected by a light, inextensible string over a frictionless, massless pulley. Block m sub one moves horizontally on a frictionless table, and block m sub two moves vertically. The string constrains the blocks to have the same acceleration magnitude.
+
+For block m sub one, we choose + i-hat to point to the right and + j-hat to point upward. With this convention, the tension vector T points in the + i-hat direction, the normal force vector N points in the + j-hat direction, and the weight vector w sub one points in the - j-hat direction. For block m sub two, we use + j-hat upward, so the tension vector T points in the + j-hat direction and the weight vector w sub two points in the - j-hat direction. The hanging block accelerates downward, while the block on the table accelerates to the right.
+
+This example uses the same free-body-diagram workflow developed in Chapter 5. The important step here is to apply Newton’s second law separately to each block and then use the string constraint to relate their accelerations.
+
+The Math.
+
+For the connected-block system, Newton’s second law must be applied separately to each block because the tension is an internal interaction between the two blocks.
+
+The forces acting on block m sub one are the tension, the normal force, and its weight. The vertical forces on m sub one balance, while the horizontal tension provides its acceleration to the right. Applying Newton’s second law to block m sub one gives
+
+ sum F sub 1x equals m sub one a,
+T equals m sub one a.
+
+The forces acting on block m sub two are the upward tension and the downward weight. Since + j-hat points upward but m sub two accelerates downward, its vertical acceleration is a sub 2y equals -a. Applying Newton’s second law to block m sub two gives
+
+ sum F sub 2y equals m sub two a sub 2y,
+T - m sub two g equals - m sub two a.
+
+These two equations form the governing equations for the system:
+
+T equals m sub one a,
+T - m sub two g equals - m sub two a.
+
+We solve these equations for the acceleration by substituting T equals m sub onea into the equation for block m sub two:
+
+ m sub onea - m sub twog equals - m sub twoa,
+ m sub onea + m sub twoa equals m sub twog,
+( m sub one plus m sub two )a equals m sub twog,
+a equals m sub two over m sub one plus m sub two g.
+
+We then use the block m sub one equation to solve for the tension:
+
+T equals m sub onea,
+T equals m sub one ( m sub two over m sub one plus m sub two g ),
+T equals m sub one times m sub two over m sub one plus m sub two g.
+
+The Conclusion.
+
+The two blocks accelerate with magnitude a equals m sub two over m sub one plus m sub two g. Block m sub one accelerates to the right, and block m sub two accelerates downward. The tension in the string is T equals m sub one times m sub two over m sub one plus m sub two g. The acceleration is less than g because the weight of the hanging block must accelerate both masses, not just m sub two.
+
+Example Problem: Atwood Machine.
+
+The Problem.
+A classic problem in physics, similar to the one we just solved, is the Atwood machine, which consists of a light rope running over a frictionless pulley, with two objects of different mass attached. It is particularly useful in understanding the connection between force and motion.
+In Figure, the masses are m sub one equals 2 kilograms and m sub two equals 4 kilograms. The pulley is frictionless. (a) If m sub two is released, what will its acceleration be? (b) What is the tension in the string?
+The worked solution follows.
+The Model.
+
+Each mass is modeled as a particle connected by a light, inextensible string over a frictionless, massless pulley. The ideal string and pulley make the tension magnitude the same on both sides of the pulley. The string constraint makes the blocks have the same acceleration magnitude.
+
+We choose + j-hat to point upward for both blocks. With this convention, the tension on block m sub one points in the + j-hat direction and the weight of block m sub one points in the - j-hat direction. The tension on block m sub two also points in the + j-hat direction, and the weight of block m sub two points in the - j-hat direction. Since m sub two > m sub one, block m sub two accelerates downward and block m sub one accelerates upward.
+
+This problem is closely related to the previous attached-blocks example. In both problems, Newton’s second law is applied separately to each block, and the string constraint connects their accelerations.
+
+The Math.
+
+For the Atwood machine, Newton’s second law must be applied separately to each block because the tension is an internal interaction between the two masses.
+
+The forces acting on block m sub one are the upward tension and the downward weight. Since block m sub one accelerates upward in the + j-hat direction, Newton’s second law gives
+
+ sum F sub 1y equals m sub one a,
+T - m sub oneg equals m sub onea.
+
+The forces acting on block m sub two are also the upward tension and the downward weight. Since block m sub two accelerates downward while + j-hat points upward, its acceleration is -a j-hat. Newton’s second law gives
+
+ sum F sub 2y equals m sub two (-a),
+T - m sub twog equals - m sub twoa.
+
+These two equations form the governing equations for the system and will be reused in both parts:
+
+T - m sub oneg equals m sub onea,
+T - m sub twog equals - m sub twoa.
+
+(a) First, we determine the acceleration of the blocks after m sub two is released. We eliminate the tension by subtracting the equation for block m sub one from the equation for block m sub two and then solve for a:
+
+(T - m sub twog ) - (T - m sub oneg ) equals - m sub twoa - m sub onea,
+( m sub one - m sub two )g equals -( m sub one plus m sub two )a,
+( m sub two - m sub one )g equals ( m sub one plus m sub two )a,
+a equals m sub two - m sub one over m sub one plus m sub two g.
+
+The acceleration follows from the mass difference and the total mass being accelerated:
+
+a equals 4.00 kilograms - 2.00 kilograms over 4.00 kilograms + 2.00 kilograms (9.81 meters per second squared )
+ equals 3.27 meters per second squared.
+
+(b) Next, we find the tension in the string by reusing the equation for block m sub one. We solve that equation for T and substitute the acceleration found in part (a):
+
+T - m sub oneg equals m sub onea,
+T equals m sub one (g+a),
+T equals (2.00 kilograms )(9.81 meters per second squared + 3.27 meters per second squared )
+ equals 26.2 newtons.
+
+The Conclusion.
+
+The blocks accelerate with magnitude a equals 3.27 meters per second squared. Block m sub two accelerates downward, and block m sub one accelerates upward. The tension in the string is T equals 26.2 newtons. This result closely mirrors the attached-blocks problem: the acceleration is determined by the net unbalanced weight divided by the total mass being accelerated.
+
+Newton's Laws of Motion and Kinematics.
+
+Newton's laws of motion can also be integrated with other concepts to solve problems of motion. For example, forces produce accelerations, which was the main topic when discussing kinematics.
+
+Newton's second law gives the acceleration. Once the acceleration is known, the motion is found using the kinematics tools developed earlier, including constant-acceleration motion in Chapter 3 and vector motion in Chapter 4.
+
+For problems that involve various types of forces, acceleration, velocity, or position, it helps to identify the principles involved when listing the givens and quantities to be calculated. The following examples illustrate how to apply the problem-solving strategies. These example problems are:
+
+Soccer player at top speed,
+
+Force on a model helicopter,
+
+Force on a baggage tractor,
+
+and the motion of a vertical projectile, as a bonus.
+
+Checkpoint. Pause and check your understanding.
+
+When a force determines acceleration first, which kinematics quantity should you compute next: velocity, position, or time?
+
+Recall that v equals d s over d t and a equals d v over d t. This means that we can use the calculus forms when acceleration is not constant, meaning a equals a function of s, v, and t.
+
+First, we solve for d t in each equation, then set them equal to each other:
+
+d t equals d s divided by v,
+
+d t equals d v divided by a,
+
+so a d s equals v d v.
+
+When a is a function of v, we can apply the following integrals:
+
+a of v times the integral of d s equals the integral of v d v,
+
+and the integral of d s equals the integral of v divided by a of v, with respect to v.
+
+Example Problem: Soccer Player Top Speed.
+
+The Problem.
+A soccer player starts at rest and accelerates forward, reaching a velocity of 8 meters per second in 2.5 s. (a) What is her average acceleration? (b) What average force does the ground exert forward on the runner so that she achieves this acceleration? The player’s mass is 70 kilograms, and air resistance is negligible.
+The worked solution follows.
+The Model.
+
+The soccer player is modeled as a particle moving horizontally in one dimension. We choose + i-hat to point forward in the direction of motion. The initial velocity is zero, and the final velocity points in the + i-hat direction. Air resistance is neglected, so the average horizontal force exerted by the ground is the net horizontal force on the player. Vertical forces balance and do not affect the horizontal acceleration.
+
+The Math.
+
+For one-dimensional horizontal motion, the average acceleration is the change in velocity divided by the elapsed time.
+
+(a) First, we determine the player’s average acceleration. Since the player starts from rest and reaches a final velocity in the + i-hat direction, the change in velocity is change in vector v equals change in v i-hat with change in v equals 8 meters per second:
+
+a equals change in v over change in t
+ equals 8.00 meters per second over 2.50 s
+ equals 3.20 meters per second squared.
+
+(b) Next, we use Newton’s second law to determine the average forward force exerted by the ground. Since air resistance is negligible, the forward ground force is the net horizontal force:
+
+ sum F sub x equals m a sub x,
+F net equals ma.
+
+The average forward force follows from Newton’s second law using the acceleration found in part (a):
+
+F net equals (70.0 kilograms )(3.20 meters per second squared )
+ equals 224 newtons.
+
+The Conclusion.
+
+The soccer player’s average acceleration is 3.20 meters per second squared in the forward direction. The average forward force exerted by the ground on the player is 224 newtons. This force is reasonable because it is a moderate horizontal force applied over a short sprinting interval.
+
+Example Problem: Force on a Model Helicopter.
+
+The Problem.
+A 1.50-kilogram model helicopter has a velocity of 5.00 j-hat meters per second at t equals 0. It is accelerated at a constant rate for 2.00 s, after which it has a velocity of (6.00 i-hat + 12.00 j-hat ) meters per second. What is the magnitude of the resultant force acting on the helicopter during this time interval?
+The worked solution follows.
+The Model.
+
+The helicopter is modeled as a particle moving in two dimensions. We choose + i-hat to point horizontally and + j-hat to point vertically upward. The initial velocity points entirely in the + j-hat direction, while the final velocity has both + i-hat and + j-hat components. The acceleration is constant over the time interval. The resultant force is the net external force responsible for this acceleration.
+
+The Math.
+
+For constant acceleration, the acceleration vector is the change in velocity divided by the elapsed time.
+
+The initial and final velocity vectors are
+
+ vector v sub i equals 5.00 j-hat meters per second,
+ vector v sub f equals (6.00 i-hat + 12.00 j-hat ) meters per second.
+
+The change in velocity is the final velocity minus the initial velocity:
+
+ change in vector v equals vector v sub f - vector v sub i
+ equals (6.00 i-hat + 12.00 j-hat ) meters per second - 5.00 j-hat meters per second
+ equals (6.00 i-hat + 7.00 j-hat ) meters per second.
+
+The acceleration follows from this change in velocity:
+
+ vector a equals change in vector v over change in t
+ equals (6.00 i-hat + 7.00 j-hat ) meters per second over 2.00 s
+ equals (3.00 i-hat + 3.50 j-hat ) meters per second squared.
+
+Newton’s second law gives the resultant force vector:
+
+ sum vector F equals m vector a
+ equals (1.50 kilograms )(3.00 i-hat + 3.50 j-hat ) meters per second squared
+ equals (4.50 i-hat + 5.25 j-hat ) newtons.
+
+The magnitude of the resultant force is found from its components:
+
+F net equals square root of (4.50 newtons ) squared + (5.25 newtons ) squared
+ equals 6.91 newtons.
+
+The Conclusion.
+
+The resultant force acting on the model helicopter has magnitude 6.91 newtons. The force points in the same direction as the acceleration vector, with positive i-hat and positive j-hat components.
+
+Example Problem: Baggage Tractor.
+
+The Problem.
+The figure on the course webpage shows a baggage tractor pulling luggage carts from an airplane. The tractor has mass 650 kilograms, while cart A has mass 250 kilograms and cart B has mass 150 kilograms. The driving force acting for a brief period of time accelerates the system from rest and acts for 3 s. (a) If this driving force is given by vector F equals (820 t) i-hat newtons, find the speed after 3 s. (b) What is the horizontal force acting on the connecting cable between the tractor and cart A at this instant?
+The worked solution follows.
+The Model.
+
+The tractor and carts are modeled as particles moving together in one horizontal line. We choose + i-hat to point in the direction of motion. The driving force points in the + i-hat direction. The cable force on the tractor points in the - i-hat direction, while the cable force on cart A points in the + i-hat direction. Vertical forces balance and are not needed for the horizontal motion. The driving force varies with time, so the acceleration also varies with time.
+
+The Math.
+
+For the full tractor-cart system, the driving force is the only external horizontal force. Newton’s second law gives the acceleration of the entire system:
+
+ sum F sub x equals m sub system a sub x,
+820t equals ( m sub T + m sub A + m sub B )a.
+
+We solve this equation for the acceleration function:
+
+a(t) equals 820 over m sub T + m sub A + m sub B t.
+
+(a) First, we determine the speed after 3 s. Since a equals dv/dt and the system starts from rest, the speed follows from integrating the acceleration:
+
+v equals integral from zero to 3.00 820 over 650 + 250 + 150 t dt
+ equals 820 over 1050 ( t squared over 2 ) evaluated from zero to 3.00
+ equals 3.51 meters per second.
+
+(b) Next, we isolate the tractor to find the cable force. At t equals 3.00 s, the acceleration is
+
+a equals 820 over 1050 (3.00)
+ equals 2.34 meters per second squared.
+
+For the tractor alone, the driving force points forward and the cable force points backward. Newton’s second law gives
+
+820(3.00) - T equals m sub Ta,
+T equals 820(3.00) - (650)(2.34),
+T equals 938 newtons.
+
+The Conclusion.
+
+After 3 s, the tractor and carts have speed 3.51 meters per second. At that instant, the horizontal force in the cable between the tractor and cart A is 938 newtons. Treating the whole system gives the acceleration, while isolating the tractor exposes the internal cable force.
+
+Bonus Example Problem: Projectile Motion with Quadratic Drag.
+
+The Problem.
+A 10-kilogram mortar shell is fired vertically upward from the ground, with an initial velocity of 50 meters per second as shown in Figure. Determine the maximum height it will travel if atmospheric resistance is measured as F sub D equals (0.01v squared) newtons, where v is the speed at any instant.
+The worked solution follows.
+The Model.
+
+The mortar shell is modeled as a particle moving vertically. We choose + j-hat to point upward and - j-hat to point downward. During the upward part of the motion, the velocity points in the + j-hat direction, so the drag force points downward in the - j-hat direction. The weight also points downward in the - j-hat direction. The drag magnitude depends on the instantaneous speed according to F sub D equals kv squared, where k is the drag coefficient in this model. The shell reaches its maximum height when its upward speed becomes zero. The motion is one-dimensional, and g is treated as constant.
+
+The Math.
+
+For the upward part of the motion, Newton’s second law relates the downward forces to the vertical acceleration of the shell.
+
+The forces acting on the shell are the weight vector w equals -mg j-hat and the drag force vector F sub D equals -kv squared j-hat. Applying Newton’s second law in the vertical direction gives
+
+ sum F sub y equals m a sub y,
+-mg - kv squared equals m a sub y.
+
+We solve this equation for the acceleration as a function of speed:
+
+ a sub y equals -g - k over m v squared.
+
+The acceleration depends on speed, so constant-acceleration kinematics cannot be used. To connect acceleration to position, we use the chain-rule identity
+
+ a sub y equals dv over dt
+ equals dv over dy dy over dt
+ equals v dv over dy.
+
+We substitute a sub y equals v dv/dy into Newton’s second-law result and separate the variables:
+
+v dv over dy equals -g - k over m v squared,
+dy equals - v dv over g+ k over m v squared.
+
+The shell starts at y equals 0 with speed v sub zero and reaches maximum height h when v equals 0. Integrating between these limits gives
+
+ integral from zero to h dy equals - integral from v sub zero to zero v dv over g+ k over m v squared,
+h equals integral from zero to v sub zero v dv over g+ k over m v squared.
+
+We evaluate the integral using the substitution u equals g+ k over m v squared, so du equals 2 k over m v dv. This substitution changes the integral into the standard logarithmic form:
+
+h equals m over 2k integral from g to g+ k over m v sub zero to the power of 2 du over u,
+h equals m over 2k ln ( g+ k over m v sub zero to the power of 2 over g ).
+
+Calculus Note: Why this integral becomes a logarithm.
+
+The integral has the form
+
+h equals integral from zero to v sub zero v dv over g+ k over m v squared.
+
+The denominator contains v squared, while the numerator contains v dv. That pattern suggests defining a new variable using the denominator:
+
+u equals g+ k over m v squared.
+
+Differentiating both sides gives
+
+du equals 2 k over m v dv.
+
+We solve this differential relation for v dv:
+
+v dv equals m over 2k du.
+
+The original integral then becomes
+
+h equals integral v dv over g+ k over m v squared
+ equals integral m over 2k du over u
+ equals m over 2k integral du over u.
+
+The needed antiderivative is based on the fact that the derivative of natural log of |u| is 1/u:
+
+ integral du over u equals natural log of |u| + C.
+
+For this problem, u is always positive because g+ k over m v squared>0, so the absolute value does not change the result. At the lower limit v equals 0, u equals g. At the upper limit v equals v sub zero, u equals g+ k over m v sub zero to the power of 2. Therefore,
+
+h equals m over 2k natural log of u evaluated from g to g+ k over m v sub zero to the power of 2
+ equals m over 2k ln ( g+ k over m v sub zero to the power of 2 over g ).
+
+We now evaluate the maximum-height expression using the mass of the shell, the initial speed, and the drag coefficient from the problem:
+
+h equals 10.0 kilograms over 2(0.0100 newtons s squared/square meters )
+ ln ( 9.81 meters per second squared + 0.0100 newtons s squared/square meters over 10.0 kilograms (50.0 meters per second ) squared over 9.81 meters per second squared )
+ equals 114 meters.
+
+The Conclusion.
+
+The mortar shell reaches a maximum height of 114 meters. This height is lower than the no-drag value because both the weight and the drag force point downward during the upward motion. The model predicts a variable acceleration because the drag force depends on speed.

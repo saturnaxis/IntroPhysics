@@ -1,0 +1,249 @@
+Drag Force and Terminal Speed.
+
+You feel the drag force when you move your hand through water or during a strong wind (i.e., outside the car window).
+
+The faster you move your hand, the harder it is to move.
+
+You feel a smaller drag force when you tilt your hand so only the side goes through the air (i.e., decreased your surface area in the direction of motion).
+
+Drag Forces.
+
+The drag force always opposes the motion of an object (like friction). Unlike simple friction, the drag force is proportional to some function of the velocity of the object in that fluid. Which function to choose is complicated and depends on several factors:
+
+shape of the object (its aerodynamics),
+
+size,
+
+velocity, and
+
+the fluid it is in.
+
+For most large objects (e.g., cyclists, cars, baseballs) not moving too slowly, the magnitude of the drag force F sub D is proportional to the square of the speed of the object (i.e., F sub D is proportional to v squared ). The full relationship becomes
+
+ vector F sub  D equals 1 over 2 C rho Av squared hat v,
+
+where C is the drag coefficient, A is the cross-sectional area (i.e., side facing the fluid), and rho is the density of the fluid. Recall that density is mass per unit volume ( rho equals m/ V ).
+
+The more generalized form is F sub D equals bv to the power of n, where the constant b equals 0.5C rho A bundles all the constants together.
+
+The exponent n equals 2 comes from our assumption about moving at high speed. If the object is moving a low speed then n equals 1.
+
+Checkpoint. Pause and check your understanding.
+If the speed doubles in the quadratic drag model, by what factor does the drag force change?
+
+Athletes (as well as car designers) seek to reduce the drag force to lower their race times. Aerodynamic shaping of an automobile can reduce the drag force, and thus increase a car's gas mileage. The value of the drag coefficient is determined empirically either by using a wind tunnel or through a complex numerical simulation on a supercomputer.
+
+The drag coefficient can depend on velocity, but we assume that it is constant here. See the table (Typical Values of Drag Coefficient) below that lists some typical drag coefficients for a variety of objects, while Drag Coefficients by Geometric Shape provides values by the geometric shape. The drag coefficient is a dimensionless quantity.
+The course webpage includes tables of typical drag coefficients.
+At highway speeds, over 50 percent of the power of the car is used to overcome air drag. For average conditions (e.g., altitude and temperature), the most fuel-efficient cruising speed is about 45 - 50 mph (or about 70 - 80 kilometers per hour ).
+
+Substantial research is undertaken to minimize drag in racing sports as well as specific sporting instruments. For example, the dimples on golf balls are being redesigned as well as the clothes athletes wear. Most elite swimmers and cyclists shave their body hair to reduce drag and can slice milliseconds of a race time, which can be the difference between a gold or silver medal.
+
+Terminal Velocity.
+
+Consider a skydiver falling under the influence of gravity. The 2 forces acting on him are the force of gravity F sub g and the drag force F sub D (ignoring the small buoyant force caused by displacing the air). The downward force of gravity remains roughly constant (i.e., the altitude above Earth's surface is much less than Earth's radius) and does not depend on his velocity.
+
+However, the magnitude of the drag force increases with velocity squared (assuming his descent is sufficiently fast) until it equals the gravitational force, thus producing a net force of zero and stops accelerating. At this point the person's velocity remains constant and he has reached his terminal velocity v sub T.
+
+At the terminal velocity,
+
+F net equals F sub D - F sub g equals ma equals 0,
+F sub D equals F sub g equals mg.
+
+Using Equation, we solve for v sub T
+
+ 1 over 2 C rho A v sub T to the power of 2 equals mg,
+v sub T to the power of 2 equals 2mg over rho CA,
+v sub T equals square root of 2mg over rho CA
+
+Checkpoint. Pause and check your understanding.
+At terminal velocity, are the forces gone, or are the upward and downward forces balanced?
+
+Assume the density of air is rho equals 1.21 kilograms per cubic meter, and a skydiver with a mass of 75 kilograms whose cross-sectional area is A equals 0.18 square meters. He has a drag coefficient C equals 0.70, which means we can calculate his terminal velocity v sub T as,
+
+ v sub T equals square root of 2 (75 kilograms ) (9.81 meters per second squared ) over (1.21 kilograms per cubic meter )(0.70) (0.18 square meters ) equals 98 meters per second equals 350 kilometers per hour.
+
+This means a skydiver with a mass of 75 kilograms achieves a terminal velocity of
+
+350 kilometers per hour in a headfirst position (minimizing the area and his drag),
+
+200 kilometers per hour in a spread-eagle position (area has increased).
+
+Equation does not hold if the object is very small, is going very slow, or is in a denser medium than air. For these cases, we find the drag force is proportional to just the velocity (i.e., F sub D is proportional to v ), This relation is given by Stokes' law.
+
+Stokes' Law.
+
+For a spherical object falling in a medium, the drag force is
+
+ vector F sub s equals 6 pi r eta vector vv,
+
+where r is the radius of the sphere, eta is the viscosity of the fluid, and vector v is the object's velocity.
+
+Good examples of Stokes' law are provided by microorganisms, pollen, and dust particles. Each of these objects is small, where we find that many of these objects travel unaided only at a constant (terminal) velocity.
+
+Example Problem: Terminal Velocity of a Skydiver.
+
+The Problem.
+Find the terminal velocity of an 85 kilograms skydiver falling in a spread-eagle position. Assume that in the spread-eagle position, the diver has a cross-sectional area of 0.70 square meters.
+The worked solution follows.
+The Model.
+
+The skydiver is modeled as a particle falling vertically through air. We choose + j-hat upward, so the drag force points in the + j-hat direction during the downward fall and the weight points in the - j-hat direction. At terminal velocity, the skydiver moves at constant speed, so the acceleration is zero. The drag force is modeled with the quadratic drag law. Air density and drag coefficient are treated as constant.
+
+The Math.
+
+At terminal velocity, the skydiver requires zero net force because the acceleration is zero.
+
+The forces acting on the skydiver are the upward drag force and the downward weight. Newton’s second law in the vertical direction gives
+
+ sum F sub y equals 0,
+ F sub D - mg equals 0,
+ F sub D equals mg.
+
+The quadratic drag law gives the magnitude of the drag force:
+
+ F sub D equals 1 over 2 rho CA v sub T to the power of 2.
+
+We substitute the drag expression into the terminal-velocity force balance and solve for v sub T:
+
+ 1 over 2 rho CA v sub T to the power of 2 equals mg,
+ v sub T to the power of 2 equals 2mg over rho CA,
+ v sub T equals square root of 2mg over rho CA.
+
+For a spread-eagle skydiver, we use C equals 1.0 and rho equals 1.21 kilograms per cubic meter. The terminal speed follows from the drag-weight balance using C equals 1.0, rho equals 1.21 kilograms per cubic meter, and the given cross-sectional area:
+
+ v sub T equals square root of 2(85 kilograms )(9.81 meters per second squared ) over (1.21 kilograms per cubic meter )(1.0)(0.70 square meters )
+ equals 44 meters per second.
+
+The Conclusion.
+
+The terminal velocity of the skydiver in a spread-eagle position is 44 meters per second downward. At this speed, the upward drag force balances the skydiver’s weight, so the acceleration is zero and the speed remains constant.
+
+The Calculus of Velocity-Dependent Frictional Forces.
+
+When a body slides across a surface, the frictional force is approximately constant and given by mu sub k N. The drag force through air is generally a complicated function of the body's velocity. However, for a body moving in a straight line at moderate speeds through a liquid, such as water, the frictional force can be approximated by
+
+f sub R equals negative b v,
+
+where b is a constant whose value depends on the dimensions and shape of the body and the properties of the liquid.
+
+Consider an object falling through a liquid. Newton's second law in the vertical direction gives the differential equation
+
+m g minus b v equals m d v over d t,
+
+where we have written the acceleration as d v over d t. As v increases, the frictional force increases until it matches the weight m g. At this point there is no acceleration and the velocity remains constant at the terminal velocity v sub T. Thus, we have:
+
+m g minus b v sub T equals zero,
+
+and v sub T equals m g divided by b.
+
+Checkpoint. Pause and check your understanding.
+
+As the speed approaches terminal velocity, what happens to the net force and acceleration?
+
+We can find the object's velocity by integrating the differential equation for v. First, we rearrange the equation to obtain:
+
+d v divided by the quantity g minus b over m times v, equals d t.
+
+Assuming that v equals zero at t equals zero, integration of the equation yields:
+
+the integral from zero to v of d v prime divided by g minus b over m times v prime, equals the integral from zero to t of d t prime,
+
+and negative m over b times the natural log of g minus b over m times v prime, evaluated from zero to v, equals t prime evaluated from zero to t,
+
+where v prime and t prime are dummy variables of integration. Applying the limits of integration, we find:
+
+negative m over b times the quantity natural log of g minus b over m times v, minus natural log of g, equals t.
+
+Note.
+
+We can use the properties of logarithms to simplify expressions using the following identities:
+
+Natural log of A divided by B equals natural log of A minus natural log of B.
+
+Natural log of A divided by B equals x.
+
+Then e to the x equals A divided by B.
+
+Using the properties of logarithms, we find:
+
+A divided by B equals the quantity g minus b v over m, divided by g, which equals e to the power of b t over m.
+
+Solving for v, we find:
+
+v equals m g over b times the quantity one minus e to the power of b t over m.
+
+Notice that as t approaches infinity, v approaches m g over b, which equals v sub T, the terminal velocity. The position at any time can be found by integrating the equation for v. With v equals d y over d t, we have:
+
+d y equals m g over b times the quantity one minus e to the power of b t over m, d t.
+
+Assuming that y equals zero when t equals zero:
+
+the integral from zero to y of d y prime equals m g over b times the integral from zero to t of the quantity one minus e to the power of b t prime over m, d t prime,
+
+which integrates to:
+
+y equals m over b times g t, plus the quantity m over b squared times g times the quantity e to the power of b t over m minus one.
+
+Example Problem: Resistive Force on a Motorboat.
+
+The Problem.
+A motorboat is moving across a lake at a speed v sub 0 when its motor suddenly freezes up and stops. The boat then slows down under the frictional force vector f sub R equals -bv i-hat. (a) What are the velocity and position of the boat as functions of time? (b) If the boat slows down from 4.0 meters per second to 1.0 meters per second in 10 s, how far does it travel before stopping?
+The worked solution follows.
+The Model.
+
+The motorboat is modeled as a particle moving horizontally across the lake. We choose + i-hat to point in the initial direction of motion. After the motor stops, the only horizontal force is the resistive force vector f sub R equals -bv i-hat, which points opposite the velocity. Vertical forces balance and do not affect the horizontal motion. The resistive force is proportional to speed, so the acceleration changes as the boat slows.
+
+The Math.
+
+After the motor stops, Newton’s second law relates the resistive force to the boat’s horizontal acceleration:
+
+ sum F sub x equals m a sub x,
+-bv equals m dv over dt.
+
+We separate variables so that velocity terms are on one side and time terms are on the other:
+
+ dv over v equals - b over m dt.
+
+(a) First, we determine the velocity as a function of time. The boat has speed v sub 0 at t equals 0 and speed v at time t, so integrating the separated equation gives
+
+ integral sub v sub 0 to the power of v d v prime over v' equals - b over m integral from zero to t d t prime,
+ ln ( v over v sub 0 ) equals - b over m t.
+
+We solve this expression for v(t), which yields
+
+v(t) equals v sub 0e to the power of -bt/m.
+
+The position follows from the definition v equals dx/dt. With x equals 0 at t equals 0, the position is determined by integrating the velocity function:
+
+ dx over dt equals v sub 0e to the power of -bt/m,
+ integral from zero to x d x prime equals v sub 0 integral from zero to t e to the power of -bt'/m d t prime,
+x(t) equals m v sub 0 over b (1-e to the power of -bt/m ).
+
+As t becomes very large, the exponential term approaches zero, so the limiting distance is
+
+x sub max equals m v sub 0 over b.
+
+(b) Next, we use the observed slowing of the boat to determine b/m. The velocity function gives
+
+ v over v sub 0 equals e to the power of -bt/m.
+
+The observed decrease in speed determines the ratio b/m:
+
+ 1.0 meters per second over 4.0 meters per second equals e to the power of -(b/m)(10 s ),
+0.25 equals e to the power of -10(b/m).
+
+We take the natural logarithm and solve for b/m:
+
+ natural log of (0.25) equals -10 b over m,
+ b over m equals natural log of (4.0) over 10 s
+ equals 0.14 s to the power of -1.
+
+The stopping distance is the limiting distance from part (a). Since x sub max equals m v sub 0 /b equals v sub 0 /(b/m),
+
+x sub max equals 4.0 meters per second over 0.14 s to the power of -1
+ equals 29 meters.
+
+The Conclusion.
+
+The boat’s velocity decreases exponentially according to v(t) equals v sub 0e to the power of -bt/m, and its position is x(t) equals m v sub 0 over b (1-e to the power of -bt/m ). The boat approaches a limiting distance x sub max equals m v sub 0 /b. For the given slowing data, the boat travels approximately 29 meters before effectively stopping.
