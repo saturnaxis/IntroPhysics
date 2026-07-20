@@ -1,0 +1,148 @@
+Power.
+
+Thus far, we have not included how work or energy can change over time. We express the relation between work done and the time interval in doing it by introducing the concept of **power**. Since work can vary as a function of time, we first define **average power** as the work done change in W during a time interval change in t, or
+
+ 
+P_ ave equals change in W over change in t.
+ 
+
+We define the **instantaneous power** as the work done dW over an infinitesimal time dt.
+
+Power.
+
+Power is defined as the rate of doing work, or the limit of the average power for time intervals approaching zero,
+
+ 
+P equals dW over dt.
+ 
+
+ 
+
+If the power is constant over a time interval, the average power for that interval equals the instantaneous power, and the work done by the agent supplying the power is determined as W equals P change in t. If the power during the interval varies with time, then the work is the time integral of the power,
+
+ W equals integral P dt. 
+
+The work-energy theorem relates how work can be transformed into kinetic energy. We can also define power as the rate of transfer of energy. Work and energy are measured in units of joules ( J ), so power is measured in units of joules per second ( J/s ), which has been given the SI name watts ( 1 J/s equals 1 W ). Another common unit for expressing power capability of everyday devices is horsepower: 1 hp equals 746 W.
+
+The power involved in moving a body can also be expressed in terms of the forces acting on it. If a force vector F acts on a body that is displaced by d vector r in a time dt, the power expended by the force is
+
+ 
+P equals dW over dt equals vector F dot d vector r over dt, 
+ equals vector F dot ( d vector r over dt ) equals vector F dot vec v,
+ 
+
+where vec v is the velocity of the body.
+
+Checkpoint.
+
+ 
+
+Two machines do the same amount of work, but one finishes in half the time. Which machine has the greater average power? Explain briefly.
+ 
+
+**CrashCourse**.
+
+ 
+
+ 
+Use this video as a chapter-level review of work, energy, and power. It is most useful after you have worked through the definitions and examples, because it connects the main ideas quickly rather than teaching each calculation step-by-step.
+ 
+
+**Example Problem**: Pull-Up Power.
+
+The Problem.
+An 80 kg army trainee does pull-ups on a horizontal bar. It takes the trainee 0.8 s to raise the body from a lower position to where his chin is above the bar. How much power do the trainee's muscles supply moving the body from the lower position to where his chin is above the bar? (*Hint: Make reasonable estimates for any quantities needed.*)
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The trainee is modeled as moving vertically upward at approximately constant speed, so changes in kinetic energy are neglected. The muscles primarily supply power to do work against gravity. The vertical displacement is estimated as 0.60 meters, and the effective lifted mass is estimated as 90 percent of the trainee's total mass because the arms are not lifted through the full distance.
+
+---
+
+The Math.
+
+For an object lifted vertically at approximately constant speed, the work done against gravity is determined by the effective lifted mass, gravitational acceleration, and vertical displacement.
+
+ 
+W equals m_ eff g change in y.
+ 
+
+Average power is the work done divided by the time interval.
+
+ 
+P equals W over change in t.
+ 
+
+The average muscle power follows by combining the work and power expressions and evaluating the estimated quantities.
+
+ 
+P equals (0.90)(80 kg )(9.81 meters per second squared )(0.60 meters ) over 0.8 s 
+ equals 529 W.
+ 
+
+---
+
+The Conclusion.
+
+The trainee's muscles supply an average power of about 530 W during the upward part of the pull-up. This power represents the rate at which the muscles do work against gravity to raise the body. The estimate connects the earlier idea of work against gravity to the definition of power as work per unit time.
+
+---
+
+ **The Problem**
+How much power must an automobile engine expend to move a 1200 kg car up a 15 percent grade at 90 kilometers per hour? Assume that 25 percent of this power is dissipated overcoming air resistance and friction.
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The car is modeled as a point mass moving up an incline at constant speed, so its kinetic energy does not change. The engine supplies power to work against gravity and to overcome dissipative effects from air resistance and friction. The road grade determines the incline angle through tan theta equals 0.15. Since 25 percent of the engine power is dissipated, 75 percent of the engine power is available for increasing gravitational potential energy.
+
+---
+
+The Math.
+
+At constant speed, the rate at which the engine does work against gravity equals the component of the car's weight along the incline multiplied by the speed.
+
+ 
+P_ grav equals mgv sin theta.
+ 
+
+The total engine power is related to the gravitational power by the fraction available to work against gravity.
+
+ 
+0.75P equals P_ grav.
+ 
+
+The required engine power follows by using theta equals tan to the power of -1 (0.15) and converting 90 kilometers per hour to 25 meters per second.
+
+ 
+P equals mgv sin( tan to the power of -1 0.15) over 0.75 
+ equals (1200 kg )(9.81 meters per second squared )(25 meters per second ) sin( tan to the power of -1 0.15) over 0.75 
+ equals 5.8 times ten to the 4 W.
+ 
+
+---
+
+The Conclusion.
+
+The engine must supply approximately 5.8 times ten to the 4 W of power to drive the car uphill at constant speed. This power includes the rate of doing work against gravity and the additional power dissipated by air resistance and friction. The result connects the work-against-gravity idea to power by showing that maintaining the same speed on an incline still requires continuous energy transfer.
+
+---

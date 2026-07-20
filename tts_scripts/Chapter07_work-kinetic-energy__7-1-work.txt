@@ -1,0 +1,404 @@
+Work and Kinetic Energy.
+
+Chapter roadmap.
+
+ 
+
+This chapter connects forces, displacement, and changes in motion using the ideas of work and kinetic energy. Work measures the part of a force that transfers energy along a displacement, and kinetic energy measures the energy associated with an object's speed.
+
+As you read, focus on three questions:
+
+Item 1. Which forces do work on the object?
+
+Item 2. Is the work done by each force positive, negative, or zero?
+
+Item 3. How does the net work change the object's kinetic energy?
+
+These ideas will be used to analyze motion with friction, springs, curved paths, and power.
+ 
+
+Work.
+
+In physics, **work** isn't just about what makes you tired or fatigued. It has a special definition, which is when energy is transferred to an object due to the work done on it. Work is done when a *force* acts on something that undergoes a *displacement* from one position to another.
+
+Forces can vary as a function of position, and displacements can be along various paths between two points. We define the increment of work dW done by a force vector F acting through an infinitesimal displacement d vector r as the dot product of these two vectors:
+
+ 
+dW equals vector F dot d vector r, 
+ equals | vector F ||d vector r | cos{ theta }, 
+ equals (F)( change in r) cos{ theta }.
+ 
+
+We can find the total work done by adding up the contributions for infinitesimal displacements (along a path between two positions). This uses the same dot product idea introduced in Chapter 2.
+
+Work Done by a Force.
+
+ 
+
+The work done by a force is the integral of the force with respect to the displacement along the path of the displacement:
+
+ 
+ 
+W sub AB equals integral _A to the power of B vector F dot d vector r.
+ 
+
+The path or line integral adds up contributions along a path. Often the path is parameterized by time so there are time dependent functions x(t) and y(t) that are separable. In short, we add up all the components of the force that are parallel to the direction of the path (as shown in 
+the figure)
+ 
+
+Figure referenced in the course notes.
+
+Although we expressed the dot product using the product of magnitudes and the cosine of the angle between them. If it is convenient, one could use the form of the dot product that includes the vector components.
+
+Note.
+
+Recall that the vector components of force are portions of a force along a given direction. The components can be positive, negative, or zero, depending on whether the force is directed along the path or perpendicular to it. The maximum work is done either parallel ( cos{0} equals 1 ) or antiparallel ( cos{ pi } equals -1 ), while *zero* work is done when the force is perpendicular to the displacement ( cos{ theta } equals 0 ).
+ 
+
+The units of work are force multiplied by units of length, which in the SI system is N dot m. This combination is called a **joule** and is abbreviated as J. In the English system (used in the US), the unit of work is the foot-pound ( ft dot lb ) because the unit of force is the pound ( lb ) and the displacement is the foot ( ft ).
+
+Work Done by Constant Forces and Contact Forces.
+
+The simplest work to evaluate is that done by a constant magnitude force in a non-varying (single) direction. In this case, the work is only determined by the distance traveled.
+
+Work is an integral. Consider a rectangle of height h and a length ell. If the length is divided into many ( n ) small chunks of length change in el l sub n. You can visualize that the area of the rectangle can be calculated by summing up all smaller areas, i.e., A equals su m sub n h times change in el l sub n equals h times ell. 
+
+Figure referenced in the course notes.
+
+Figure shows two people exerting a constant force. 
+
+Bullet point. In Fig. a, the man exerts a constant force vector F along the handle of a lawn mower, where the horizontal displacement is vector d. Thus, the work done on the lawn mower is W equals vector F dot vector d equals Fd cos{ theta }, where theta is the angle relative to the horizontal.
+
+Bullet point. Figs. b and c show a woman holding a briefcase. The woman must exert an upward force to balance the weight of the briefcase. In both cases the work done is zero because either in (b) displacement is zero or in (c) the force is *perpendicular* to the displacement.
+
+When you mow the grass, other forces act on the lawn mower (i.e., contact force of the ground and gravitational force). For an object moving on a surface, the displacement d vector r is *tangent* (or parallel) to the surface. The normal force vector N is perpendicular (or normal) to the surface (i.e., theta equals 90 degrees ). As a result, we have
+
+ d W sub N equals vector N dot d vector r equals N(dr) cos{90 degrees} equals 0. 
+
+The normal force never does work under these circumstances. The part of the contact force on the object that is parallel to the surface is friction vector f. For an object sliding along the surface, the kinetic friction vector f _k is opposite to d vector r so the work done by kinetic friction is *negative*. We can write this as an integral by
+
+ W_ fr equals integral _A to the power of B vector f _k dot d vector r equals - f sub k integral _A to the power of B |dr| equals - f sub k | ell sub AB |,
+ 
+
+where | ell sub AB | is the path length on the surface.
+
+Checkpoint.
+
+ 
+
+A box slides horizontally while gravity acts vertically downward. Does gravity do work on the box during the horizontal motion? Explain using the angle between force and displacement.
+ 
+
+The force of static friction does no work in the reference frame of the surface because the point of contact does not slip across the surface. 
+
+As an *external force*, static friction can do work. Static friction can perform
+
+Bullet point. positive work to prevent someone from sliding off a sled when the *sled is moving*.
+
+Bullet point. negative work (via air resistance) to balance the positive work (via road on the drive wheels) for a car *moving down a flat highway*.
+
+You need to analyze each particular case to determine the work done by the forces, whether positive, negative, or zero..
+
+The gravitational force (or weight) of the lawn mower has a constant magnitude mg and direction, vertically down. The work done by gravity on the mower is the dot product of its weight and its displacement. It is convenient to express the x -axis along the horizontal and the y -axis vertically up. Then the gravitational force is -mg j hat, so the work done by gravity W sub g over any path A to B is 
+
+ 
+W sub g,AB equals -mg j hat dot ( vector r _B - vector r _A ) equals -mg( y sub B - y sub A ).
+ 
+
+The work done on an object by gravity depends only on the object's weight ( mg ) and the difference in height h equals y sub B - y sub A the object is displaced. 
+
+Bullet point. Gravity does *negative* work that moves upward (i.e., y sub B > y sub A ), which means you must do *positive* work (against gravity) to lift an object upward. 
+
+Bullet point. Alternatively, gravity does positive work on an object that moves downward ( y sub B < y sub A ), which means that you do negative work against gravity to control the descent of the object so it doesn't drop to the ground.
+
+**Example Problem**: Work to Push a Lawn Mower.
+
+The Problem.
+How much work is done on the lawn mower by the person in Figure (a) if he exerts a constant force of 75 newtons at an angle 35 degrees below the horizontal and pushes the mower 25 meters on level ground?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The lawn mower moves on level ground, so its displacement is horizontal. The applied force has constant magnitude and direction, and the angle between the applied force and the displacement is 35 degrees. The vertical component of the applied force does not contribute to the work because the mower does not move vertically. The work is determined by the component of the applied force parallel to the displacement.
+
+---
+
+The Math.
+
+For a constant force acting over a straight displacement, the work done by the force is the dot product of the force and displacement.
+
+ 
+W equals Fd cos theta.
+ 
+
+The work done on the lawn mower follows by evaluating the dot product using the force magnitude, displacement, and angle between them.
+
+ 
+W equals (75 newtons )(25 meters ) cos(35 degrees) 
+ equals 1536 J.
+ 
+
+---
+
+The Conclusion.
+
+The work done on the lawn mower by the applied force is 1500 J. This result is positive because the applied force has a component in the same direction as the mower's displacement. The calculation uses the dot product introduced earlier, which is why only the force component parallel to the displacement transfers energy to the mower.
+
+---
+
+ **The Problem**
+You decide to move your couch to a new position on your horizontal living room floor. The normal force on the couch is 1 kN and the coefficient of friction is 0.6. (a) You first push the couch 3 meters parallel to a wall and then 1 meters perpendicular to the wall ( A to B in Figure ). How much work is done by the frictional force? (b) You don't like the new position, so you move the couch straight back to its original position ( B to A in Figure ). What was the total work done *against* friction moving the couch away from its original position and back again?
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The couch moves on a horizontal surface, so the normal force is constant. The kinetic friction force has constant magnitude and always points opposite the direction of motion. Because kinetic friction is a nonconservative force, the work done by friction depends on the total path length traveled rather than only the starting and ending positions. The work done by friction is negative, while the work done against friction is positive.
+
+---
+
+The Math.
+
+The magnitude of the kinetic friction force is determined by the coefficient of kinetic friction and the normal force.
+
+ 
+ f sub k equals mu _k N.
+ 
+
+The friction force follows from the given coefficient and normal force.
+
+ 
+ f sub k equals (0.6)(1000 newtons ) 
+ equals 600 newtons.
+ 
+
+**(a)** The path from A to B consists of two straight segments, so the distance traveled is the sum of their lengths.
+
+ 
+d sub AB equals 3 meters +1 meters 
+ equals 4 meters.
+ 
+
+The friction force points opposite the displacement along each segment, so the work done by friction is negative.
+
+ 
+W sub fr,AB equals - f sub kd sub AB 
+ equals -(600 newtons )(4 meters ) 
+ equals -2400 J.
+ 
+
+**(b)** The return path from B to A is the hypotenuse of a right triangle with legs 3 meters and 1 meters.
+
+ 
+d sub BA equals square root of (3 meters ) squared+(1 meters ) squared 
+ equals square root of 10 meters.
+ 
+
+The total distance traveled away from the original position and back again is the sum of the two-part outbound path and the direct return path.
+
+ 
+d_ total equals 3 meters +1 meters + square root of 10 meters.
+ 
+
+The work done against friction is positive because it is the energy supplied to overcome the negative work done by friction.
+
+ 
+W_ against equals f sub kd _ total 
+ equals (600 newtons )(3+1+ square root of 10 ) m 
+ equals 4300 J.
+ 
+
+---
+
+The Conclusion.
+
+The work done by friction as the couch moves from A to B is -2400 J, while the total work done against friction for the round trip is 4300 J. The negative sign in part **(a)** indicates that friction removes mechanical energy from the couch. The round-trip result illustrates that friction is nonconservative because the energy lost depends on the total path length, even though the couch returns to its starting position.
+
+---
+
+ **The Problem**
+You lift an oversized library book, weighing 20 newtons, 1 meters vertically down from a shelf, and carry it 3 meters horizontally to a table (Figure ). (a) How much work does gravity do on the book? (b) When you're finished, you move the book in a straight line back to its original place on the shelf. What was the total work done *against gravity*, moving the book away from its original position on the shelf and back again?
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The book moves under the influence of gravity, which points vertically downward with constant magnitude. We choose + j hat upward, so a downward displacement has a negative change in height. Gravity is conservative, so the work done by gravity depends only on the initial and final heights and not on the horizontal part of the path.
+
+---
+
+The Math.
+
+For vertical motion with + j hat upward, the work done by gravity is determined by the weight of the book and the change in height.
+
+ 
+ W sub g equals -w( y sub f - y sub i ).
+ 
+
+**(a)** The book moves downward by 1 meters, so the signed change in height is negative.
+
+ 
+ y sub f - y sub i equals -1 meters.
+ 
+
+The work done by gravity follows from the gravitational work expression.
+
+ 
+ W sub g equals -(20 newtons )(-1 meters ) 
+ equals 20 J.
+ 
+
+**(b)** The book begins and ends at the same height after the round trip, so the net change in height is zero.
+
+ 
+ y sub f - y sub i equals 0.
+ 
+
+Because gravity is conservative, the total work done by gravity over the closed path is zero, and the total work done against gravity is also zero.
+
+ 
+W_ against equals 0 J.
+ 
+
+---
+
+The Conclusion.
+
+The work done by gravity while the book is moved downward from the shelf to the table is 20 J, and the total work done against gravity over the complete trip away from the shelf and back is 0 J. The positive work in part **(a)** occurs because the book's displacement has a downward component in the same direction as gravity. The zero round-trip result connects back to the model assumption that gravity is conservative, so only the beginning and ending heights matter.
+
+---
+
+ **The Problem**
+An object moves along a parabolic path y equals (0.5 meters to the power of -1 )x squared from the origin A equals (0,0) to the point B equals (2 meters, 2 meters ) under the action of a force vector F equals (5 newtons/m )y i hat + (10 newtons/m )x j hat (Figure ). Calculate the work done.
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The object moves in the x - y plane along a prescribed parabolic path from A to B. The applied force varies with position and has both i hat and j hat components. The work is found from a line integral because both the force and the direction of the displacement can change along the path. The path equation allows the displacement component dy to be written in terms of dx.
+
+---
+
+The Math.
+
+For a variable force acting along a path, the infinitesimal work is the dot product between the force and infinitesimal displacement.
+
+ 
+dW equals vector F dot d vector r equals F sub x dx+ F sub y dy.
+ 
+
+The path equation relates the vertical position to the horizontal position.
+
+ 
+y equals (0.5 meters to the power of -1 )x squared.
+ 
+
+The vertical displacement follows by differentiating the path equation with respect to x.
+
+ 
+dy equals (1.0 meters to the power of -1 )x dx.
+ 
+
+The integrand follows by replacing y and dy in the dot product expression.
+
+ 
+dW equals (5 newtons/m )y dx + (10 newtons/m )x dy 
+ equals (5 newtons/m )(0.5 meters to the power of -1 )x squared dx +(10 newtons/m )x(1.0 meters to the power of -1 )x dx 
+ equals (12.5 newtons per square meter )x squared dx.
+ 
+
+The total work follows by integrating the infinitesimal work from x equals 0 to x equals 2 meters.
+
+ 
+W equals integral _0 to the power of 2 meters (12.5 newtons per square meter )x squared dx 
+ equals (12.5 newtons per square meter ) [ x cubed over 3 ]_0 to the power of 2 meters 
+ equals 33.3 J.
+ 
+
+---
+
+The Conclusion.
+
+The work done by the variable force along the parabolic path is 33 J. The result depends on the path because the force varies with position and the displacement direction changes along the curve. This example extends the constant-force dot product idea by showing how work is accumulated from many small dot products along a curved trajectory.
+
+---
+
+ **The Problem**
+A perfectly elastic spring requires 0.54 J of work to stretch 6 cm from its equilibrium position, as in Figure (b). (a) What is its spring constant k? (b) How much work is required to stretch it an additional 6 cm?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The spring obeys Hooke's law, so the force exerted by the spring is proportional to the displacement from equilibrium and points opposite that displacement. The work required to stretch the spring is the work done against the spring force. Because the spring force is conservative, the work depends only on the initial and final displacements from equilibrium. Centimeters are kept as the displacement unit because the problem is simpler when the spring constant is reported in N/cm.
+
+---
+
+The Math.
+
+The work required to stretch a spring from x sub A to x sub B is the positive work done against the spring force.
+
+ 
+W equals 1 over 2 k( x sub B to the power of 2- x sub A to the power of 2 ).
+ 
+
+**(a)** For the first stretch, the spring moves from equilibrium to x sub B equals 6 cm, so x sub A equals 0. Since 1 J equals 100 newtons cm, the given work is 0.54 J equals 54 newtons cm. The spring constant follows by solving the spring-work expression for k.
+
+ 
+k equals 2W over x sub B to the power of 2- x sub A to the power of 2 
+ equals 2(54 newtons cm ) over (6 cm ) squared-(0 cm ) squared 
+ equals 3 newtons/cm.
+ 
+
+**(b)** For the additional stretch, the spring moves from x sub A equals 6 cm to x sub B equals 12 cm. The required work follows by reusing the spring-work expression with the spring constant from part **(a)**.
+
+ 
+W equals 1 over 2 (3 newtons/cm ) [(12 cm ) squared-(6 cm ) squared ] 
+ equals 162 newtons cm 
+ equals 1.62 J.
+ 
+
+---
+
+The Conclusion.
+
+The spring constant is 3 newtons/cm, and the work required to stretch the spring an additional 6 cm is 1.6 J. The second stretch requires more work than the first equal-length stretch because the spring force grows with displacement from equilibrium. This result connects the area-under-the-curve interpretation of work to the quadratic dependence of spring work on displacement.
+
+---

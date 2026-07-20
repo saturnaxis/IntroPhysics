@@ -1,0 +1,245 @@
+Work-Energy Theorem.
+
+According to Newton's 2nd law, the net force (all forces acting on a particle) determines the rate of change in the momentum of the particle or its motion. Therefore, we should consider the work done by all the forces acting on a particle, or the **net work**, to see what effect it has on the particle's motion.
+
+Consider the net work done on a particle that moves over an infinitesimal displacement, or
+
+ dW_ net equals vector F _ net dot d vector r. 
+
+Newton's 2nd law tells us that we can transform the net force vector F _ net using the acceleration d vec v over dt, so
+
+ dW_ net equals m ( d vec v over dt ) dot d vector r. 
+
+Using the definition of velocity, d vector r equals vec v dt, we have:
+
+ 
+dW_ net equals m ( d vec v over dt ) dot vec v dt, 
+ equals m vec v dot ( d vec v over dt )dt, 
+ equals m vec v dot d vec v,
+ 
+
+where we also used the commutative property of the dot product.
+
+We can represent the dot product in terms of Cartesian coordinates and then include the result in the integral between two points A and B on the particle's trajectory. This gives us the work done on the particle as:
+
+ 
+W sub net,AB equals integral _A to the power of B m v sub x d v sub x + m v sub y d v sub y + m v sub z d v sub z, 
+ equals 1 over 2 meters ( v sub x to the power of 2 + v sub y to the power of 2 + v sub z to the power of 2 ) r evaluated from _A to the power of B, 
+ equals 1 over 2 mv squared r evaluated from _A to the power of B equals K sub B - K sub A.
+ 
+
+We used the relation for v squared equals v sub x to the power of 2 + v sub y to the power of 2 + v sub z to the power of 2 to reduce the expression and the definition of a particle's kinetic energy K. The result is called the **work-energy theorem**#Work percentE2 percent80 percent93energ y sub principle ).
+
+Work-Energy Theorem.
+
+ 
+
+The net work on a particle equals the change in the particle's kinetic energy:
+
+ 
+ 
+ 
+W_ net equals K sub f - K sub i 
+ equals 1 over 2 meters ( v sub f to the power of 2 - v sub i to the power of 2 ).
+ 
+ 
+ 
+
+According to this theorem, when an object 
+
+Bullet point. slows down ( v sub f v sub i ), its final kinetic energy is greater than the initial and the net work on it is *positive*.
+
+When calculating the net work, you must include **all** the forces acting on an object. If you leave out any forces or include extra forces not acting on the object, you will get a wrong result.
+
+The importance of the work-energy theorem is that it makes some calculations much simpler to accomplish compared to solving them with Newton's 2nd law. For example, we obtained the acceleration of a block on a frictionless incline as a equals g sin{ theta } using Newton's second law in Chapter 5 (**Example Problem**: Weight on an incline). If we also use the kinematic equation for acceleration 
+
+ v sub f to the power of 2 equals v sub i to the power of 2 +2a( s sub f - s sub i ), 
+
+then we could find that 
+
+ v sub f to the power of 2 equals v sub i to the power of 2 + 2g( s sub f - s sub i ) sin{ theta }, 
+
+where s sub f and s sub i are the initial and final positions on the incline, respectively. Once Newton's second law gives the acceleration, the same result follows from the kinematics tools in Chapter 3.
+
+We can also get this result from the work-energy theorem in Equation. Since only two forces are acting on the object (gravity and the normal force; normal force doesn't do work), the net work is just the work done by gravity. The infinitesimal work dW is the dot product of gravity ( vector F _g equals -mg j hat ) and the infinitesimal displacement ( d vector r equals dx i hat + dy j hat ). Applying the work-energy theorem, we have
+
+ 
+W_ net equals integral sub y sub i to the power of y sub f vector F _g dot d vector r equals integral sub y sub i to the power of y sub f -mg dy 
+ equals -mg integral sub y sub i to the power of y sub f dy equals -mgy r evaluated from sub y sub i to the power of y sub f 
+ equals -mg ( y sub f - y sub i ). 
+ 
+
+We have found the left-hand side of the work-energy theorem, where we now set it equal to the change in kinetic energy:
+
+ -mg ( y sub f - y sub i ) equals 1 over 2 meters ( v sub f to the power of 2 - v sub i to the power of 2 ). 
+
+In **Example Problem**: Weight on an incline the change in height ( y sub f - y sub i ) forms the short side of a right triangle with the same angle theta from the incline. The hypotenuse of the triangle is ( s sub f - s sub i ) along the incline. Therefore, we can show that the short side of the triangle is ( y sub f - y sub i ) equals -( s sub f - s sub i ) sin{ theta } using our trigonometric identity for sin{ theta }. *Note: s is defined to increase down the incline (to the left in the figure), which introduces the minus sign.* We can then obtain
+
+ 
+mg ( s sub f - s sub i ) sin{ theta } equals 1 over 2 meters ( v sub f to the power of 2 - v sub i to the power of 2 ), 
+ v sub f to the power of 2 equals v sub i to the power of 2 + 2g ( s sub f - s sub i ) sin{ theta }. checkmark
+ 
+
+*What is gained by using the work-energy theorem?*
+
+For a frictionless *plane*, not much. Newton's 2nd law is easy to solve only for this particular case, whereas the work-energy theorem gives the final speed for any shaped frictionless surface. For an arbitrary curved surface, the normal is not constant, where it may be difficult or impossible to solve analytically using Newton's 2nd law.
+
+For motion along a surface, the normal force never does any work because it's perpendicular to the displacement. A calculation using the work-energy theorem avoids this difficulty and applies to more general solutions.
+
+Checkpoint.
+
+ 
+
+A cart moves around a frictionless loop at constant speed. Is the net work necessarily zero? Explain using the change in kinetic energy.
+ 
+
+Problem Solving Strategy.
+
+Work-Energy Theorem.
+
+Item 1. Draw a free-body diagram for the object or system of interest. Include only the forces acting on that object or system.
+
+Item 2. Identify the displacement over which the work is done. For each force, decide whether it has a component parallel or antiparallel to the displacement. Forces perpendicular to the displacement do zero work.
+
+Item 3. Calculate the work done by each force, keeping the sign of each contribution. A force that helps the motion does positive work, while a force that opposes the motion does negative work.
+
+Item 4. Add the work contributions to find the net work,
+
+ 
+W_ net equals su m sub i W sub i.
+ 
+
+Item 5. Apply the work-energy theorem,
+
+ 
+W_ net equals change in K equals K sub f - K sub i.
+ 
+
+Item 6. Solve for the unknown quantity, such as speed, force, distance, or work.
+
+Item 7. Check the result using the sign of the net work.
+
+Bullet point. If the object moves at constant speed, then change in K equals 0 and the net work must be zero.
+
+Bullet point. If W_ net > 0, the object speeds up and its kinetic energy increases.
+
+Bullet point. If W_ net 
+ 
+
+Use this PhET simulation to connect work, kinetic energy, gravitational potential energy, and energy conservation. Start with the **Intro** or **Measure** screen and compare how the skater's speed changes at high and low points on the track. Then add friction or use the graphing tools to see how mechanical energy changes when nonconservative forces do work.
+ 
+
+**Example Problem**: Loop-the-Loop.
+
+The Problem.
+The frictionless track for a toy car includes a loop-the-loop of radius R. How high, measured from the bottom of the loop, must the car be placed to start from rest on the approaching section of track and go all the way around the loop?
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The car is treated as a point mass moving on a frictionless track in a vertical plane. Gravity points downward and does work, while the normal force from the track points perpendicular to the motion and does no work. The car starts from rest at height y sub 1 above the bottom of the loop and must maintain contact at the top of the loop. At the top, the required centripetal acceleration points downward toward the center of the circle.
+
+---
+
+The Math.
+
+For motion from the starting point to the top of the loop, the work-energy theorem relates the work done by gravity to the kinetic energy at the top. The top of the loop is at height y sub 2 equals 2R.
+
+ 
+-mg( y sub 2 - y sub 1 ) equals 1 over 2 meters v sub 2 to the power of 2.
+ 
+
+At the top of the loop, the forces acting on the car are gravity downward and the normal force downward toward the center of the loop. Newton's second law in the radial direction gives the centripetal-force condition.
+
+ 
+ m v sub 2 to the power of 2 over R equals N+mg.
+ 
+
+The minimum starting height occurs when the car just maintains contact with the track, so the limiting normal force is N equals 0. The required speed at the top follows from this limiting centripetal-force condition.
+
+ 
+ m v sub 2 to the power of 2 over R equals mg 
+ v sub 2 to the power of 2 equals gR.
+ 
+
+The starting height follows by substituting the minimum top speed into the work-energy equation and solving for y sub 1.
+
+ 
+-mg(2R- y sub 1 ) equals 1 over 2 mgR 
+2R- y sub 1 equals - R over 2 
+ y sub 1 equals 5R over 2.
+ 
+
+---
+
+The Conclusion.
+
+The car must start from a minimum height of y sub 1 equals 5R/2 above the bottom of the loop. This height gives the car just enough speed at the top for gravity alone to provide the required centripetal acceleration, with the normal force reduced to zero at the limiting case. The result shows how the work-energy theorem determines the speed at a critical point, while Newton's second law supplies the contact condition needed to complete the loop.
+
+---
+
+ **The Problem**
+A bullet has a mass of 40 grains (2.6 g ) and a muzzle velocity of 1100 ft/s (335 meters per second ). It can penetrate eight 1 -inch pine boards, each with thickness 0.75 inches. What is the average stopping force exerted by the wood?
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The bullet is treated as a point mass moving in a straight line through the boards. The wood exerts an average stopping force opposite the bullet's motion over the full penetration distance. Gravity and air resistance are neglected because the stopping interaction is dominated by the wood over a short distance. The bullet comes to rest, so the wood removes the bullet's initial kinetic energy.
+
+---
+
+The Math.
+
+The total stopping distance is the combined thickness of the eight boards.
+
+ 
+ change in s equals 8(0.75 in ) 
+ equals 6 in 
+ equals 0.152 meters.
+ 
+
+The stopping force points opposite the motion, so its work is negative. The work-energy theorem relates the stopping work to the loss of the bullet's initial kinetic energy.
+
+ 
+-F_ ave change in s equals - K sub i.
+ 
+
+The average stopping force follows by solving the work-energy equation for the force magnitude.
+
+ 
+F_ ave equals K sub i over change in s 
+ equals 1 over 2 mv squared over change in s.
+ 
+
+The numerical value follows by evaluating the force expression using the given mass, speed, and stopping distance.
+
+ 
+F_ ave equals 1 over 2 (2.6 times ten to the minus 3 kg )(335 meters per second ) squared over 0.152 meters 
+ equals 960 newtons.
+ 
+
+---
+
+The Conclusion.
+
+The average stopping force exerted by the wood on the bullet is 960 newtons $. This force is the constant-force equivalent that would remove the bullet's initial kinetic energy over the total penetration distance. The result connects force, distance, and kinetic energy through the work-energy theorem and shows why short stopping distances can produce large forces.
+
+---
