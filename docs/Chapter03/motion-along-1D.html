@@ -609,7 +609,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="motion-along-1d">
 <h1><span class="section-number">3. </span>Motion along 1D<a class="headerlink" href="#motion-along-1d" title="Link to this heading">#</a></h1>
-<p>Jul 19, 2026 | 9045 words | 45 min read</p>
+<p>Jul 20, 2026 | 9045 words | 60 min read</p>
 <div class="tip admonition">
 <p class="admonition-title">Chapter roadmap</p>
 <p>This chapter introduces one-dimensional kinematics. We describe motion without yet explaining what causes it, so the object is modeled as a particle moving along one straight axis.</p>
@@ -666,8 +666,8 @@ document.write(`
 <li><p>moving <span class="math notranslate nohighlight">\(4\ {\rm m}\)</span> to the <strong>left</strong> is indicated by a displacement of <span class="math notranslate nohighlight">\(-4\ {\rm m}\)</span>.</p></li>
 </ul>
 <p><strong>Displacement</strong> <span class="math notranslate nohighlight">\(\Delta x\)</span> is the change in position of an object:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6e340094-0342-45b2-a1d9-be99802e6e96">
-<span class="eqno">(3.1)<a class="headerlink" href="#equation-6e340094-0342-45b2-a1d9-be99802e6e96" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-480dbbf7-096e-456d-a6ee-eab5b91afb56">
+<span class="eqno">(3.1)<a class="headerlink" href="#equation-480dbbf7-096e-456d-a6ee-eab5b91afb56" title="Permalink to this equation">#</a></span>\[\begin{align}
 \Delta x &amp;= x_f-x_o,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(x_f\)</span> is the final position and <span class="math notranslate nohighlight">\(x_o\)</span> is the initial position.</p>
@@ -681,8 +681,8 @@ document.write(`
 <p>Is the displacement positive, negative, or zero?</p>
 </div>
 <p>Objects in motion can have a series of displacements, where we define <strong>total displacement</strong> <span class="math notranslate nohighlight">\(\Delta x_{Tot}\)</span> as the <em>sum of the individual displacements</em> (recall how we summed multiple vectors to find the resultant), and express this mathematically as,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c40c0cc8-5be8-4334-a203-51ea40219a76">
-<span class="eqno">(3.2)<a class="headerlink" href="#equation-c40c0cc8-5be8-4334-a203-51ea40219a76" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f2536bb5-daee-49a4-8517-d055bbc9d8cb">
+<span class="eqno">(3.2)<a class="headerlink" href="#equation-f2536bb5-daee-49a4-8517-d055bbc9d8cb" title="Permalink to this equation">#</a></span>\[\begin{align}
 \Delta x_{Tot} &amp;= \sum_{i=1}^{N} x_{i}-x_{i-1}, \\
 &amp;= \sum_{i=1}^N \Delta x_i,
 \end{align}\]</div>
@@ -726,8 +726,8 @@ x_1-x_o &amp;= 2\ {\rm m}.
 <p>What is the total displacement? What is the total distance traveled?</p>
 </div>
 <p>The <strong>distance traveled</strong> <span class="math notranslate nohighlight">\(d\)</span> should not be confused with the magnitude of the total displacement.  The distance traveled is the <em>total length of the path between the two positions</em>, where it is determined</p>
-<div class="amsmath math notranslate nohighlight" id="equation-60bd7c67-a4ae-4dc4-b83c-734af9f82293">
-<span class="eqno">(3.3)<a class="headerlink" href="#equation-60bd7c67-a4ae-4dc4-b83c-734af9f82293" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ad6b16e9-d482-44d4-9002-b31422316fcd">
+<span class="eqno">(3.3)<a class="headerlink" href="#equation-ad6b16e9-d482-44d4-9002-b31422316fcd" title="Permalink to this equation">#</a></span>\[\begin{align}
 d &amp;= \sum_{i=1}^N \sqrt{x_i \cdot x_i}
 \end{align}\]</div>
 <p>and in this case,</p>
@@ -914,13 +914,13 @@ The total distance traveled during the trip is 3.75 km.
 <div class="math notranslate nohighlight">
 \[ \bar{v} = \frac{x(t_2)-x(t_1)}{t_2-t_1} = \frac{\Delta x}{\Delta t}. \]</div>
 <p>To find the instantaneous velocity at any position, we let <span class="math notranslate nohighlight">\(t_1 \rightarrow t\)</span> and <span class="math notranslate nohighlight">\(t_2 \rightarrow t + \Delta t\)</span>.  Then we substitute into our expression for the average velocity and define <span class="math notranslate nohighlight">\(v(t)\)</span> by,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-8771e9e2-9f55-4c4f-84bc-aa4cdfc6778d">
-<span class="eqno">(3.4)<a class="headerlink" href="#equation-8771e9e2-9f55-4c4f-84bc-aa4cdfc6778d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-20ee42a6-4e01-425f-8dcf-c9174398bea1">
+<span class="eqno">(3.4)<a class="headerlink" href="#equation-20ee42a6-4e01-425f-8dcf-c9174398bea1" title="Permalink to this equation">#</a></span>\[\begin{align}
 v(t) &amp;= \lim_{\Delta t \rightarrow 0} \frac{x(t+\Delta t) - x(t)}{\Delta t} = \frac{dx(t)}{dt}.
 \end{align}\]</div>
 <p>We now define the instantaneous velocity of an object is the limit of the average velocity <span class="math notranslate nohighlight">\(\bar{v}\)</span> as the elapsed time <span class="math notranslate nohighlight">\(\Delta t\)</span> approaches zero, or the derivative of <span class="math notranslate nohighlight">\(x\)</span> with respect to <span class="math notranslate nohighlight">\(t\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-24b000b6-5e3d-46f9-b944-0b9aa015f3f2">
-<span class="eqno">(3.5)<a class="headerlink" href="#equation-24b000b6-5e3d-46f9-b944-0b9aa015f3f2" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-987099cc-bc2c-486a-b83b-13e9140152b3">
+<span class="eqno">(3.5)<a class="headerlink" href="#equation-987099cc-bc2c-486a-b83b-13e9140152b3" title="Permalink to this equation">#</a></span>\[\begin{align}
 v(t) = \frac{d}{dt}x(t).
 \end{align}\]</div>
 <p>Instantaneous velocity is a vector with dimension of <span class="math notranslate nohighlight">\(L/T\)</span>.  Since the definition of average velocity is written in terms of the change in position <span class="math notranslate nohighlight">\(\Delta x\)</span> over a specific time interval <span class="math notranslate nohighlight">\(\Delta t\)</span>, we also refer to the velocity as the <em>rate of change of the position function</em>.</p>
@@ -1033,8 +1033,8 @@ v(t) = \frac{d}{dt}x(t).
 <h3><span class="section-number">3.2.2. </span>Speed<a class="headerlink" href="#speed" title="Link to this heading">#</a></h3>
 <p>Most people use the terms <code class="docutils literal notranslate"><span class="pre">speed</span></code> and <code class="docutils literal notranslate"><span class="pre">velocity</span></code> interchangeably.  In physics, they do <strong>not</strong> have the same meaning and are distinct concepts.  Speed is a <em>scalar</em>, while velocity is a <em>vector</em>.</p>
 <p>We calculate the <strong>average speed</strong> <span class="math notranslate nohighlight">\(\bar{s}\)</span> by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e56f145b-2d42-4b82-a2c6-f4254094b2ff">
-<span class="eqno">(3.6)<a class="headerlink" href="#equation-e56f145b-2d42-4b82-a2c6-f4254094b2ff" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f2e90934-e6c1-484f-9ffb-9f3727b9a5d1">
+<span class="eqno">(3.6)<a class="headerlink" href="#equation-f2e90934-e6c1-484f-9ffb-9f3727b9a5d1" title="Permalink to this equation">#</a></span>\[\begin{align}
 \bar{s} = \frac{\text{Total distance}}{\text{Elapsed time}}.
 \end{align}\]</div>
 <p>Average speed is different than average velocity because the numerator <code class="docutils literal notranslate"><span class="pre">Total</span> <span class="pre">distance</span></code> is always a positive quantity, and hence, average speed cannot be negative.  For example, if a trip starts and ends at the same location,</p>
@@ -1043,8 +1043,8 @@ v(t) = \frac{d}{dt}x(t).
 <li><p>the total distance traveled is <strong>not</strong> zero and thus, the average speed is <strong>not</strong> zero.</p></li>
 </ul>
 <p>However, we can calculate the <strong>instantaneous speed</strong> from the magnitude of the instantaneous velocity, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-fc9c5afd-e99c-48bd-beae-7bc0cbd71442">
-<span class="eqno">(3.7)<a class="headerlink" href="#equation-fc9c5afd-e99c-48bd-beae-7bc0cbd71442" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-af8122b9-900d-469b-97fe-e7ce95138252">
+<span class="eqno">(3.7)<a class="headerlink" href="#equation-af8122b9-900d-469b-97fe-e7ce95138252" title="Permalink to this equation">#</a></span>\[\begin{align}
 \text{Instantaneous speed} = |v(t)|.
 \end{align}\]</div>
 <div class="tip margin admonition">
@@ -1114,8 +1114,8 @@ v(t) = \frac{d}{dt}x(t).
 <section id="calculating-instantaneous-velocity">
 <h3><span class="section-number">3.2.3. </span>Calculating Instantaneous Velocity<a class="headerlink" href="#calculating-instantaneous-velocity" title="Link to this heading">#</a></h3>
 <p>If the position function <span class="math notranslate nohighlight">\(x(t)\)</span> is has the form of <span class="math notranslate nohighlight">\(at^n\)</span>, where <span class="math notranslate nohighlight">\(A\)</span> is a constant and <span class="math notranslate nohighlight">\(n\)</span> is an integer, then it can be differentiated using the power rule by,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-26408a81-e152-4b7e-a235-63e8086f735b">
-<span class="eqno">(3.8)<a class="headerlink" href="#equation-26408a81-e152-4b7e-a235-63e8086f735b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ee78f6fd-49e8-45b9-9cb6-b1e2c82ca71f">
+<span class="eqno">(3.8)<a class="headerlink" href="#equation-ee78f6fd-49e8-45b9-9cb6-b1e2c82ca71f" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{d(At^n)}{dt} = Ant^{n-1}.
 \end{align}\]</div>
 <div class="admonition note">
@@ -1238,8 +1238,8 @@ The average velocity from t = 1.0 s to t = 3.0 s is 9.5 m/s.
 <section id="average-acceleration">
 <h3><span class="section-number">3.3.1. </span>Average Acceleration<a class="headerlink" href="#average-acceleration" title="Link to this heading">#</a></h3>
 <p>The <strong>average acceleration</strong> <span class="math notranslate nohighlight">\(\bar{a}\)</span> is the <em>rate of change</em> for the velocity <span class="math notranslate nohighlight">\(v\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c1f63485-436d-4799-9ece-436b1035fa67">
-<span class="eqno">(3.9)<a class="headerlink" href="#equation-c1f63485-436d-4799-9ece-436b1035fa67" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-cc6e1daf-1ba1-4ae6-ada9-ceeb8887eac8">
+<span class="eqno">(3.9)<a class="headerlink" href="#equation-cc6e1daf-1ba1-4ae6-ada9-ceeb8887eac8" title="Permalink to this equation">#</a></span>\[\begin{align}
 \bar{a} &amp;= \frac{\Delta v}{\Delta t} = \frac{v_f -v_o}{t_f-t_o},
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(t\)</span> is time.</p>
@@ -1379,8 +1379,8 @@ The average velocity from t = 1.0 s to t = 3.0 s is 9.5 m/s.
 <section id="instantaneous-acceleration">
 <h3><span class="section-number">3.3.2. </span>Instantaneous Acceleration<a class="headerlink" href="#instantaneous-acceleration" title="Link to this heading">#</a></h3>
 <p><strong>Instantaneous acceleration</strong> <span class="math notranslate nohighlight">\(a\)</span>, or <em>acceleration at a time <span class="math notranslate nohighlight">\(t\)</span></em>, is found using the same process discussed for instantaneous velocity.  We calculate, the average acceleration between two points in time <span class="math notranslate nohighlight">\(\Delta t\)</span> and let <span class="math notranslate nohighlight">\(\Delta t \rightarrow 0\)</span>.  The result is the derivative of the velocity function <span class="math notranslate nohighlight">\(v(t)\)</span> and is expressed as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-bdd8f920-2041-4cb1-b35a-a3e63a31edf0">
-<span class="eqno">(3.10)<a class="headerlink" href="#equation-bdd8f920-2041-4cb1-b35a-a3e63a31edf0" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-20f8843e-9354-435a-9669-d7f5b2102b6e">
+<span class="eqno">(3.10)<a class="headerlink" href="#equation-20f8843e-9354-435a-9669-d7f5b2102b6e" title="Permalink to this equation">#</a></span>\[\begin{align}
 a(t) &amp;= \lim_{\Delta t\rightarrow 0}\frac{v(t+\Delta t)-v(t)}{\Delta t}, \\
 &amp;= \frac{d}{dt} v(t).
 \end{align}\]</div>
@@ -1758,13 +1758,13 @@ Check whether the object is moving in the expected direction, speeding up or slo
 <div class="math notranslate nohighlight">
 \[\bar{v} = \frac{x-x_o}{t}. \]</div>
 <p>Solving for <span class="math notranslate nohighlight">\(x\)</span> gives</p>
-<div class="amsmath math notranslate nohighlight" id="equation-01ddd0ff-e539-4754-a19c-f947f046ea15">
-<span class="eqno">(3.11)<a class="headerlink" href="#equation-01ddd0ff-e539-4754-a19c-f947f046ea15" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a77bb9df-edff-45bb-a806-c7d1fc0cae12">
+<span class="eqno">(3.11)<a class="headerlink" href="#equation-a77bb9df-edff-45bb-a806-c7d1fc0cae12" title="Permalink to this equation">#</a></span>\[\begin{align}
 x = x_o + \bar{v}t,
 \end{align}\]</div>
 <p>where the arithmetic average velocity is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-25013eda-9110-4a07-bec1-41869c7aaec4">
-<span class="eqno">(3.12)<a class="headerlink" href="#equation-25013eda-9110-4a07-bec1-41869c7aaec4" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-8d04045c-c8c4-4b51-ad2e-fd60308d86f8">
+<span class="eqno">(3.12)<a class="headerlink" href="#equation-8d04045c-c8c4-4b51-ad2e-fd60308d86f8" title="Permalink to this equation">#</a></span>\[\begin{align}
 \bar{v} = \frac{v_o + v}{2}.
 \end{align}\]</div>
 <p>This version of <span class="math notranslate nohighlight">\(\bar{v}\)</span> reflects that when <strong>acceleration is constant</strong>, then <span class="math notranslate nohighlight">\(\bar{v}\)</span> is the simple average of the initial and final velocities.</p>
@@ -1780,8 +1780,8 @@ x = x_o + \bar{v}t,
 a &amp;= \frac{v-v_o}{t}\quad (\text{constant }a).
 \end{align*}\]</div>
 <p>Solving for <span class="math notranslate nohighlight">\(v\)</span> yields</p>
-<div class="amsmath math notranslate nohighlight" id="equation-56a6c334-f6cc-4998-b5df-b8550c35ca9a">
-<span class="eqno">(3.13)<a class="headerlink" href="#equation-56a6c334-f6cc-4998-b5df-b8550c35ca9a" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-48bfdc1e-2ce6-4b18-826e-3cd2c9688448">
+<span class="eqno">(3.13)<a class="headerlink" href="#equation-48bfdc1e-2ce6-4b18-826e-3cd2c9688448" title="Permalink to this equation">#</a></span>\[\begin{align}
 v &amp; = v_o + at \quad (\text{constant }a).
 \end{align}\]</div>
 <p>The above equation gives us insight into relationships among velocity, acceleration, and time.  We can see that</p>
@@ -1903,8 +1903,8 @@ v &amp;= v_o + at,
 \bar{v} &amp;= v_o + \frac{1}{2}at.
 \end{align*}\]</div>
 <p>Now we substitute this expression for <span class="math notranslate nohighlight">\(\bar{v}\)</span> into the equation for displacement yielding</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b7d39dd1-033d-484d-a067-e2554c3097d0">
-<span class="eqno">(3.14)<a class="headerlink" href="#equation-b7d39dd1-033d-484d-a067-e2554c3097d0" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-757a1fb8-6e83-409a-ae0b-43657bb3f7a1">
+<span class="eqno">(3.14)<a class="headerlink" href="#equation-757a1fb8-6e83-409a-ae0b-43657bb3f7a1" title="Permalink to this equation">#</a></span>\[\begin{align}
 x &amp;= x_o + \bar{v}t,\\
 &amp;= x_o + v_o t + \frac{1}{2}at^2.
 \end{align}\]</div>
@@ -2049,8 +2049,8 @@ x &amp;= x_o + \frac{1}{2}(v+v_o)\left(\frac{v-v_o}{a}\right), \\
 &amp;= x_o + \frac{1}{2a}\left(v^2 - v_o^2\right).
 \end{align*}\]</div>
 <p>Solving for <span class="math notranslate nohighlight">\(v^2\)</span>, we get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5a0b2fd2-c539-4199-b30b-385083bb1447">
-<span class="eqno">(3.15)<a class="headerlink" href="#equation-5a0b2fd2-c539-4199-b30b-385083bb1447" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a3c1c1cd-57e6-4c31-9831-b5ffe04fa393">
+<span class="eqno">(3.15)<a class="headerlink" href="#equation-a3c1c1cd-57e6-4c31-9831-b5ffe04fa393" title="Permalink to this equation">#</a></span>\[\begin{align}
 v^2 = v_o^2 + 2a(x-x_o) \quad (\text{constant } a).
 \end{align}\]</div>
 <div class="tip dropdown admonition">
@@ -2194,8 +2194,8 @@ The difference between the two final-velocity calculations is 0.000e+00 m/s.
 <section id="putting-equations-together">
 <h3><span class="section-number">3.4.6. </span>Putting Equations Together<a class="headerlink" href="#putting-equations-together" title="Link to this heading">#</a></h3>
 <p>Here’s a summary of the equations that we’ve developed thus far (under the assumption of constant <span class="math notranslate nohighlight">\(a\)</span>):</p>
-<div class="amsmath math notranslate nohighlight" id="equation-97d42c04-71b3-4362-9230-0ea2e1cb0eb3">
-<span class="eqno">(3.16)<a class="headerlink" href="#equation-97d42c04-71b3-4362-9230-0ea2e1cb0eb3" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-82169e06-e52d-4368-a94a-753f3b5ac254">
+<span class="eqno">(3.16)<a class="headerlink" href="#equation-82169e06-e52d-4368-a94a-753f3b5ac254" title="Permalink to this equation">#</a></span>\[\begin{align}
 x &amp;= x_o + \bar{v}t, \quad &amp; v &amp;= v_o + at, \\
 x &amp;= x_o + v_ot + \frac{1}{2}at^2, \quad &amp; \bar{v} &amp;= \frac{v_o + v}{2},\\
 x &amp;= x_o + vt - \frac{1}{2}at^2, \quad &amp; v^2 &amp;= v_o^2 + 2a(x-x_o).
@@ -2972,42 +2972,42 @@ input[type=range].anim-slider {
 </style>
 
 <div class="animation">
-  <img id="_anim_img275b2408e73c46a6ada2fb038dbfce7a">
+  <img id="_anim_img8ba9f53ac6264e9d88582f72c2292dd2">
   <div class="anim-controls">
-    <input id="_anim_slider275b2408e73c46a6ada2fb038dbfce7a" type="range" class="anim-slider"
+    <input id="_anim_slider8ba9f53ac6264e9d88582f72c2292dd2" type="range" class="anim-slider"
            name="points" min="0" max="1" step="1" value="0"
-           oninput="anim275b2408e73c46a6ada2fb038dbfce7a.set_frame(parseInt(this.value));">
+           oninput="anim8ba9f53ac6264e9d88582f72c2292dd2.set_frame(parseInt(this.value));">
     <div class="anim-buttons">
-      <button title="Decrease speed" aria-label="Decrease speed" onclick="anim275b2408e73c46a6ada2fb038dbfce7a.slower()">
+      <button title="Decrease speed" aria-label="Decrease speed" onclick="anim8ba9f53ac6264e9d88582f72c2292dd2.slower()">
           <i class="fa fa-minus"></i></button>
-      <button title="First frame" aria-label="First frame" onclick="anim275b2408e73c46a6ada2fb038dbfce7a.first_frame()">
+      <button title="First frame" aria-label="First frame" onclick="anim8ba9f53ac6264e9d88582f72c2292dd2.first_frame()">
         <i class="fa fa-fast-backward"></i></button>
-      <button title="Previous frame" aria-label="Previous frame" onclick="anim275b2408e73c46a6ada2fb038dbfce7a.previous_frame()">
+      <button title="Previous frame" aria-label="Previous frame" onclick="anim8ba9f53ac6264e9d88582f72c2292dd2.previous_frame()">
           <i class="fa fa-step-backward"></i></button>
-      <button title="Play backwards" aria-label="Play backwards" onclick="anim275b2408e73c46a6ada2fb038dbfce7a.reverse_animation()">
+      <button title="Play backwards" aria-label="Play backwards" onclick="anim8ba9f53ac6264e9d88582f72c2292dd2.reverse_animation()">
           <i class="fa fa-play fa-flip-horizontal"></i></button>
-      <button title="Pause" aria-label="Pause" onclick="anim275b2408e73c46a6ada2fb038dbfce7a.pause_animation()">
+      <button title="Pause" aria-label="Pause" onclick="anim8ba9f53ac6264e9d88582f72c2292dd2.pause_animation()">
           <i class="fa fa-pause"></i></button>
-      <button title="Play" aria-label="Play" onclick="anim275b2408e73c46a6ada2fb038dbfce7a.play_animation()">
+      <button title="Play" aria-label="Play" onclick="anim8ba9f53ac6264e9d88582f72c2292dd2.play_animation()">
           <i class="fa fa-play"></i></button>
-      <button title="Next frame" aria-label="Next frame" onclick="anim275b2408e73c46a6ada2fb038dbfce7a.next_frame()">
+      <button title="Next frame" aria-label="Next frame" onclick="anim8ba9f53ac6264e9d88582f72c2292dd2.next_frame()">
           <i class="fa fa-step-forward"></i></button>
-      <button title="Last frame" aria-label="Last frame" onclick="anim275b2408e73c46a6ada2fb038dbfce7a.last_frame()">
+      <button title="Last frame" aria-label="Last frame" onclick="anim8ba9f53ac6264e9d88582f72c2292dd2.last_frame()">
           <i class="fa fa-fast-forward"></i></button>
-      <button title="Increase speed" aria-label="Increase speed" onclick="anim275b2408e73c46a6ada2fb038dbfce7a.faster()">
+      <button title="Increase speed" aria-label="Increase speed" onclick="anim8ba9f53ac6264e9d88582f72c2292dd2.faster()">
           <i class="fa fa-plus"></i></button>
     </div>
-    <form title="Repetition mode" aria-label="Repetition mode" action="#n" name="_anim_loop_select275b2408e73c46a6ada2fb038dbfce7a"
+    <form title="Repetition mode" aria-label="Repetition mode" action="#n" name="_anim_loop_select8ba9f53ac6264e9d88582f72c2292dd2"
           class="anim-state">
-      <input type="radio" name="state" value="once" id="_anim_radio1_275b2408e73c46a6ada2fb038dbfce7a"
+      <input type="radio" name="state" value="once" id="_anim_radio1_8ba9f53ac6264e9d88582f72c2292dd2"
              >
-      <label for="_anim_radio1_275b2408e73c46a6ada2fb038dbfce7a">Once</label>
-      <input type="radio" name="state" value="loop" id="_anim_radio2_275b2408e73c46a6ada2fb038dbfce7a"
+      <label for="_anim_radio1_8ba9f53ac6264e9d88582f72c2292dd2">Once</label>
+      <input type="radio" name="state" value="loop" id="_anim_radio2_8ba9f53ac6264e9d88582f72c2292dd2"
              checked>
-      <label for="_anim_radio2_275b2408e73c46a6ada2fb038dbfce7a">Loop</label>
-      <input type="radio" name="state" value="reflect" id="_anim_radio3_275b2408e73c46a6ada2fb038dbfce7a"
+      <label for="_anim_radio2_8ba9f53ac6264e9d88582f72c2292dd2">Loop</label>
+      <input type="radio" name="state" value="reflect" id="_anim_radio3_8ba9f53ac6264e9d88582f72c2292dd2"
              >
-      <label for="_anim_radio3_275b2408e73c46a6ada2fb038dbfce7a">Reflect</label>
+      <label for="_anim_radio3_8ba9f53ac6264e9d88582f72c2292dd2">Reflect</label>
     </form>
   </div>
 </div>
@@ -3017,9 +3017,9 @@ input[type=range].anim-slider {
   /* Instantiate the Animation class. */
   /* The IDs given should match those used in the template above. */
   (function() {
-    var img_id = "_anim_img275b2408e73c46a6ada2fb038dbfce7a";
-    var slider_id = "_anim_slider275b2408e73c46a6ada2fb038dbfce7a";
-    var loop_select_id = "_anim_loop_select275b2408e73c46a6ada2fb038dbfce7a";
+    var img_id = "_anim_img8ba9f53ac6264e9d88582f72c2292dd2";
+    var slider_id = "_anim_slider8ba9f53ac6264e9d88582f72c2292dd2";
+    var loop_select_id = "_anim_loop_select8ba9f53ac6264e9d88582f72c2292dd2";
     var frames = new Array(502);
     
   frames[0] = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA4QAAAEECAYAAABwYfrKAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90\
@@ -77418,7 +77418,7 @@ AQAAAMBSBEIAAAAAsBSBEAAAAAAsRSAEAAAAAEv9f3Z+MZlp2+W6AAAAAElFTkSuQmCC\
     /* set a timeout to make sure all the above elements are created before
        the object is initialized. */
     setTimeout(function() {
-        anim275b2408e73c46a6ada2fb038dbfce7a = new Animation(frames, img_id, slider_id, 40.0,
+        anim8ba9f53ac6264e9d88582f72c2292dd2 = new Animation(frames, img_id, slider_id, 40.0,
                                  loop_select_id);
     }, 0);
   })()
@@ -77495,8 +77495,8 @@ AQAAAMBSBEIAAAAAsBSBEAAAAAAsRSAEAAAAAEv9f3Z+MZlp2+W6AAAAAElFTkSuQmCC\
 </ul>
 <p>When in free fall, the motion is 1D and has constant acceleration of magnitude <span class="math notranslate nohighlight">\(g\)</span>.  When the object comes in contact with the ground (or any other object), it is no longer in free fall (i.e., <span class="math notranslate nohighlight">\(a \neq g\)</span>).</p>
 <p>We represent the vertical displacement with the symbol <span class="math notranslate nohighlight">\(y\)</span> and write the following <strong>kinematic equations for objects in free fall</strong>.  We assume that the positive direction is upward, which gives</p>
-<div class="amsmath math notranslate nohighlight" id="equation-26721084-f20f-41b9-b171-11302fe68262">
-<span class="eqno">(3.17)<a class="headerlink" href="#equation-26721084-f20f-41b9-b171-11302fe68262" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-86e209af-babf-4657-ab9c-045ea3778bd8">
+<span class="eqno">(3.17)<a class="headerlink" href="#equation-86e209af-babf-4657-ab9c-045ea3778bd8" title="Permalink to this equation">#</a></span>\[\begin{align}
 v &amp;= v_o - gt, \\
 y &amp;= y_o + v_o t - \frac{1}{2}gt^2, \\
 v^2 &amp;= v_o^2 -2g(y-y_o).
@@ -77813,16 +77813,16 @@ At y = 1000 m on the way down, the time is 34.9 s and the velocity is -143 m/s.
 <p>The integral is also called the <a class="reference external" href="https://openstax.org/books/calculus-volume-1/pages/4-10-antiderivatives"><strong>anti-derivative</strong></a> because it is like an inverse operation of the derivative.  This is similar to how <span class="math notranslate nohighlight">\(\sqrt{x^2} = x\)</span>, <em>if we take only the positive root.</em></p>
 </div>
 <p>Using the antiderivative property from calculus, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3fee8e3a-1452-4485-a073-3e9d96bf0eb7">
-<span class="eqno">(3.18)<a class="headerlink" href="#equation-3fee8e3a-1452-4485-a073-3e9d96bf0eb7" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e31f7721-0311-44a4-a85b-2e96f4ae8744">
+<span class="eqno">(3.18)<a class="headerlink" href="#equation-e31f7721-0311-44a4-a85b-2e96f4ae8744" title="Permalink to this equation">#</a></span>\[\begin{align}
 \int a(t)dt + C_1 = v(t).
 \end{align}\]</div>
 <p>We can employ the same procedure to write the velocity function in terms of the position function, as</p>
 <div class="math notranslate nohighlight">
 \[ v(t) = \frac{d}{dt}x(t), \]</div>
 <p>and with the integral, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-50b02f80-56da-479c-bf93-5e79bd1a6809">
-<span class="eqno">(3.19)<a class="headerlink" href="#equation-50b02f80-56da-479c-bf93-5e79bd1a6809" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f389aa78-dcdd-4f1a-81b4-e0934192d032">
+<span class="eqno">(3.19)<a class="headerlink" href="#equation-f389aa78-dcdd-4f1a-81b4-e0934192d032" title="Permalink to this equation">#</a></span>\[\begin{align}
 \int v(t) dt + C_2 = x(t),
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(C_2\)</span> is a second constant of integration.</p>

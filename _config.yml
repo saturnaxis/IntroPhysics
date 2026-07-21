@@ -90,3 +90,4 @@ sphinx:
       - "https://cdn.plyr.io/3.8.4/plyr.polyfilled.js"
       - "init-plyr.js"
       - "audio-player.js"
+    myst_words_per_minute: 150
