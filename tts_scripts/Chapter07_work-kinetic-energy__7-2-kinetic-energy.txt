@@ -1,183 +1,121 @@
 Kinetic Energy.
 
-It's plausible to suppose that a larger velocity of a body will have a greater effect on other bodies. This does not depend on the *direction* of the velocity only its magnitude (i.e., speed). The larger effect can be translated into a larger potential to do work once the fast-moving body strikes a slower one.
+It's plausible to suppose that a larger velocity of a body will have a greater effect on other bodies. This does not depend on the direction of the velocity only its magnitude (i.e., speed). The larger effect can be translated into a larger potential to do work once the fast-moving body strikes a slower one.
 
-An example is through billiards (or pool), when the fast-moving (white) cue ball strikes the blue-colored 2 ball. The faster the cue, the more the 2 ball is displaced. The cue ball must have some "energy" that is transferred to the 2 ball. The cue must have some "energy of motion" as it is traveling across the table. During the 18th century (i.e., 1700s), the "energy of motion" was renamed to **kinetic energy**.
-
-**Physics Demos**.
-
- 
-
- 
- 
-
+An example is through billiards (or pool), when the fast-moving (white) cue ball strikes the blue-colored 2 ball. The faster the cue, the more the 2 ball is displaced. The cue ball must have some "energy" that is transferred to the 2 ball. The cue must have some "energy of motion" as it is traveling across the table. During the 18th century (i.e., 1700s), the "energy of motion" was renamed to kinetic energy.
+A Physics Demos video is linked on the course webpage.
 The kinetic energy has two definitions: (1) classical and (2) relativistic. The relativistic definition only pertains to objects moving near the speed of light, which we are not investigating here. We'll stick with the classical definition.
 
 Kinetic Energy.
 
- 
-
 The kinetic energy K of a particle is one-half the product of the particle's mass m and the square of its speed v. We extend this definition to any system of particles by adding up the kinetic energies of all the constituent particles to get
 
- 
- K sub i equals 1 over 2 meters sub iv _i squared, ( single particle i) 
-K equals sum sub i equals 1 to the power of N 1 over 2 meters sub iv _i squared. ( system of particles )
- 
+K sub i equals one-half m sub i v sub i squared, for a single particle i.
+For a system of particles, K equals the sum from i equals one to N of one-half m sub i v sub i squared.
 
-Recall from Newton's 2nd Law and Momentum, we represented Newton's 2nd law in a different form using the momentum vector p equals m vector v. We can do the same here using the magnitude p equals sqrt{ vector p dot vector p } equals mv, where the kinetic energy becomes
+Recall from Newton's 2nd Law and Momentum, we represented Newton's 2nd law in a different form using the momentum vector p equals m vector v. We can do the same here using the magnitude p equals the square root of vector p dot vector p equals mv, where the kinetic energy becomes
 
- K equals 1 over 2 meters ( p over m ) squared equals p squared over 2m, 
+K equals one-half m times the quantity p over m, squared, which equals p squared over 2 m,
 
 which is sometimes more convenient to use.
 
- 
-
-The units of kinetic energy are the mass times the speed squared, or kg dot square meters/s squared. Recalling that the units for work are N dot m equals kg dot meters per second squared dot m equals kg dot square meters/s squared, which are joules ( J ). Work and kinetic energy have the same units because they are different forms of the same (more general) physical property.
+The units of kinetic energy are mass times speed squared, or kilogram meters squared per second squared. The units of work are newton meters, which are also kilogram meters squared per second squared, or joules. Work and kinetic energy have the same units because they are different forms of the same more general physical property.
 
 Because velocity is a relative quantity, the kinetic energy must depend on your frame of reference. A frame of reference is chosen to simplify your calculations and subsequent analysis.
 
-Bullet point. One frame of reference is external to the system (i.e., where the observations are made).
+One frame of reference is external to the system (i.e., where the observations are made).
 
-Bullet point. Another frame lies attached to (or moves with) the system as an internal frame.
+Another frame lies attached to (or moves with) the system as an internal frame.
 
-Checkpoint.
-
- 
-
+Checkpoint. Pause and check your understanding.
 Two observers measure different speeds for the same object. Must they agree on the object's kinetic energy? Explain briefly.
- 
 
 The equations for relative motion provide a link to calculating the kinetic energy of an object with respect to different frames of reference. For example,
 
- K equals 1 over 2 meters( v sub A plus or minus v sub B ) squared 
+K equals one-half m times the quantity v sub A plus or minus v sub B, squared
 
 represents the kinetic energy of an object with speed v sub A that is moving relative to another object v sub B. Depending on the relative direction of motion, we can determine whether there is a + or -.
 
-**Example Problem**: Kinetic Energy of an Object.
+Example Problem: Kinetic Energy of an Object.
 
 The Problem.
-(a) What is the kinetic energy of an 80 kg athlete, running at 10 meters per second? 
- 
-(b) The Chicxulub crater in Yucatán, one of the largest existing impact craters on Earth, is thought to have been created by an asteroid traveling at 22 kilometers per second and releasing 4.2 times ten to the 23 J of kinetic energy upon impact. What was its mass? 
- 
+(a) What is the kinetic energy of an 80 kilograms athlete, running at 10 meters per second?
+
+(b) The Chicxulub crater in Yucatán, one of the largest existing impact craters on Earth, is thought to have been created by an asteroid traveling at 22 kilometers per second and releasing 4.2 times ten to the 23 joules of kinetic energy upon impact. What was its mass?
+
 (c) In nuclear reactors, thermal neutrons, traveling at about 2.2 kilometers per second, play an important role. What is the kinetic energy of such a particle?
-
-Expand the dropdown below to see the worked solution.
-
- 
- 
- 
- 
- 
-
+The worked solution follows.
 The Model.
 
 Each object is treated as a point mass moving at a nonrelativistic speed, so the classical expression for kinetic energy applies. Kinetic energy depends only on mass and speed, not on the direction of motion. Unit conversions are made only when needed so that the quantities in a calculation use compatible units.
-
----
 
 The Math.
 
 For an object of mass m moving at speed v, the classical kinetic energy is defined as
 
- 
-K equals 1 over 2 mv squared.
- 
+K equals one-half m v squared.
 
-**(a)** The athlete has mass m equals 80 kg and speed v equals 10 meters per second. The athlete's kinetic energy follows by evaluating the kinetic energy expression.
+(a) The athlete has mass m equals 80 kilograms and speed v equals 10 meters per second. The athlete's kinetic energy follows by evaluating the kinetic energy expression.
 
- 
-K equals 1 over 2 (80 kg )(10 meters per second ) squared 
- equals 4000 J.
- 
+K equals one-half times the quantity 80 kilograms )(10 meters per second ) squared
+equals 4000 joules.
 
-**(b)** The asteroid's kinetic energy and speed are given, so the kinetic energy expression is solved for mass. The speed 22 kilometers per second is 2.2 times ten to the 4 meters per second.
+(b) The asteroid's kinetic energy and speed are given, so the kinetic energy expression is solved for mass. The speed 22 kilometers per second is 2.2 times ten to the 4 meters per second.
 
- 
-m equals 2K over v squared 
- equals 2(4.2 times ten to the 23 J ) over (2.2 times ten to the 4 meters per second ) squared 
- equals 1.7 times ten to the 15 kg.
- 
+m equals 2K over v squared
+equals 2(4.2 times ten to the 23 joules ) over (2.2 times ten to the 4 meters per second ) squared
+equals 1.7 times ten to the 15 kilograms.
 
-**(c)** The thermal neutron has mass m equals 1.68 times ten to the minus 27 kg and speed v equals 2.2 kilometers per second equals 2200 meters per second. The neutron's kinetic energy follows from the same kinetic energy expression.
+(c) The thermal neutron has mass m equals 1.68 times ten to the negative 27 kilograms and speed v equals 2.2 kilometers per second equals 2200 meters per second. The neutron's kinetic energy follows from the same kinetic energy expression.
 
- 
-K equals 1 over 2 (1.68 times ten to the minus 27 kg )(2200 meters per second ) squared 
- equals 4.1 times ten to the minus 21 J.
- 
-
----
+K equals one-half times the quantity 1.68 times ten to the negative 27 kilograms )(2200 meters per second ) squared
+equals 4.1 times ten to the negative 21 joules.
 
 The Conclusion.
 
-Using the definition of kinetic energy, the athlete has 4000 J of kinetic energy, the Chicxulub impactor had a mass of approximately 1.7 times ten to the 15 kg, and the thermal neutron has 4.1 times ten to the minus 21 J of kinetic energy. These results show how the same expression applies across everyday, planetary, and subatomic scales. They also reinforce the quadratic dependence of kinetic energy on speed, which is why high-speed impacts can involve enormous energies.
+Using the definition of kinetic energy, the athlete has 4000 joules of kinetic energy, the Chicxulub impactor had a mass of approximately 1.7 times ten to the 15 kilograms, and the thermal neutron has 4.1 times ten to the negative 21 joules of kinetic energy. These results show how the same expression applies across everyday, planetary, and subatomic scales. They also reinforce the quadratic dependence of kinetic energy on speed, which is why high-speed impacts can involve enormous energies.
 
----
+Example Problem: Kinetic Energy Relative to Different Frames.
+The Problem.
+A 75 kilograms person walks down the central aisle of a subway car at a speed of 1.5 meters per second relative to the car, whereas the train is moving at 15 meters per second relative to the tracks.
 
- **The Problem**
-A 75 kg person walks down the central aisle of a subway car at a speed of 1.5 meters per second relative to the car, whereas the train is moving at 15 meters per second relative to the tracks. 
- 
-(a) What is the person's kinetic energy relative to the car? 
- 
-(b) What is the person's kinetic energy relative to the tracks? 
- 
+(a) What is the person's kinetic energy relative to the car?
+
+(b) What is the person's kinetic energy relative to the tracks?
+
 (c) What is the person's kinetic energy relative to a frame moving with the person?
-
-Expand the dropdown below to see the worked solution.
-
- 
- 
- 
- 
- 
-
+The worked solution follows.
 The Model.
 
 The person is treated as a point mass moving at nonrelativistic speeds, so the classical kinetic energy expression applies. Motion is along one horizontal line, so velocities can be added or subtracted as signed one-dimensional quantities. Each frame measures a different speed for the same person, and the kinetic energy in that frame is computed using the speed measured in that frame.
-
----
 
 The Math.
 
 For an object of mass m moving at speed v in a chosen frame, the kinetic energy in that frame is
 
- 
-K equals 1 over 2 mv squared.
- 
+K equals one-half m v squared.
 
-**(a)** Relative to the subway car, the person moves at v equals 1.5 meters per second. The kinetic energy in the car frame follows from this speed.
+(a) Relative to the subway car, the person moves at v equals 1.5 meters per second. The kinetic energy in the car frame follows from this speed.
 
- 
-K equals 1 over 2 (75 kg )(1.5 meters per second ) squared 
- equals 84.4 J.
- 
+K equals one-half times the quantity 75 kilograms )(1.5 meters per second ) squared
+equals 84.4 joules.
 
-**(b)** Relative to the tracks, the person's speed depends on whether the person walks in the same direction as the train or opposite the train. The velocities add for walking toward the front of the car and subtract for walking toward the back of the car.
+(b) Relative to the tracks, the person's speed depends on whether the person walks in the same direction as the train or opposite the train. The velocities add for walking toward the front of the car and subtract for walking toward the back of the car.
 
 For walking toward the front of the car, the kinetic energy is
 
- 
-K equals 1 over 2 (75 kg )(16.5 meters per second ) squared 
- equals 1.02 times ten to the 4 J.
- 
+K equals one-half times the quantity 75 kilograms )(16.5 meters per second ) squared
+equals 1.02 times ten to the 4 joules.
 
 For walking toward the back of the car, the kinetic energy is
 
- 
-K equals 1 over 2 (75 kg )(13.5 meters per second ) squared 
- equals 6830 J.
- 
+K equals one-half times the quantity 75 kilograms )(13.5 meters per second ) squared
+equals 6830 joules.
 
-**(c)** In a frame moving with the person, the person's speed is zero. Since kinetic energy depends on speed squared, the kinetic energy in the person's own frame is
+(c) In a frame moving with the person, the person's speed is zero. Since kinetic energy depends on speed squared, the kinetic energy in the person's own frame is
 
- 
-K equals 0 J.
- 
-
----
+K equals 0 joules.
 
 The Conclusion.
 
-The person's kinetic energy is 84.4 J relative to the subway car, 1.02 times ten to the 4 J relative to the tracks when walking toward the front of the car, 6830 J relative to the tracks when walking toward the back of the car, and 0 J in the person's own frame. These different values occur because kinetic energy depends on the speed measured in a particular frame. This reinforces the earlier point that kinetic energy is frame-dependent even though the same equation is used in each frame.
-
----
+The person's kinetic energy is 84.4 joules relative to the subway car, 1.02 times ten to the 4 joules relative to the tracks when walking toward the front of the car, 6830 joules relative to the tracks when walking toward the back of the car, and 0 joules in the person's own frame. These different values occur because kinetic energy depends on the speed measured in a particular frame. This reinforces the earlier point that kinetic energy is frame-dependent even though the same equation is used in each frame.
