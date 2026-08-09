@@ -1,0 +1,340 @@
+Center of Mass.
+
+When we describe how an object moves in a way that obeys Newton's 2nd law, we must remember that all objects are actually made of constituent particles (i.e., not a single piece). There are many different types of particles, and they are generally not distributed uniformly in the object.
+
+An extended object might change shape as it moves (e.g., a water ballon or a cat falling). This implies that the constituent particles are applying internal forces on each other, in addition to the external force that is acting on the object as a whole.
+
+The problem is to determine what part of an extended object is obeying Newton's 2nd law when an external force is applied. We also need to determine how the motion of the object as a whole is affected by both the internal and external forces.
+A Khan Academy video is linked on the course webpage.
+The center of mass is the mass-weighted average position of a system. As you watch, notice how heavier objects pull the center of mass closer to themselves. This same idea applies whether the system is two particles, the Earth–Moon system, or a complicated object made of many pieces.
+
+Internal and External Forces.
+
+Suppose we have an extended object of mass M, composed of N interacting particles. We specify their masses as m sub j, where j equals 1, and so on through N and the total mass M is given as
+
+M equals sum sub j equals 1 to the power of N m sub j.
+
+If we apply some net external force vector F sub external on the object, every particle experiences some "share" or fraction of the external force. Let:
+
+ vector f sub j superscript ext equals the fraction of the external force the j-th particle experiences.
+
+In general, the fractions are not equal and can be written as
+
+ vector f sub 1 superscript ext does not equal vector f sub 2 superscript ext does not equal and so on does not equal vector f sub N superscript ext.
+
+We also assume that each particle making up our object can interact with every other particle of the object. Since these result of the particles acting on other particles of the same object, we call them internal forces f sub j internal. Thus we can have
+
+ vector f sub j superscript int equals the net internal force that the j-th particle experiences.
+
+The net force (internal + external) on the j-th particle is the vector sum, or
+
+ vector f sub j equals vector f sub j superscript int + vector f sub j superscript ext.
+
+As a result of the fractional force, the momentum of each particle is changed:
+
+ vector f sub j equals d vector p sub j over dt,
+ vector f sub j superscript int + vector f sub j superscript ext equals d vector p sub j over dt.
+
+The net force vector F on the object is the vector sum of these forces:
+
+ vector F sub net equals sum sub j equals 1 to the power of N ( vector f sub j superscript int + vector f sub j superscript ext ),
+ equals sum sub j equals 1 to the power of N vector f sub j superscript int + sum sub j equals 1 to the power of N vector f sub j superscript ext,
+ equals sum sub j equals 1 to the power of N d vector p sub j over dt.
+
+Remember that each vector f sub j superscript int is the force on the j-th particle from the other particles in the object. By Newton's 3rd law, for every one of these forces, there must be another force with this magnitude, but in the opposite direction. These forces do not cancel. But when all the internal forces are added up, the internal forces must cancel in pairs. It follows that the sum of the internal forces must be zero:
+
+ sum sub j equals 1 to the power of N vector f sub j superscript int equals 0.
+
+For the external forces, this summation is simply the total external force that was applied to the whole object:
+
+ sum sub j equals 1 to the power of N vector f sub j superscript ext equals vector F sub external.
+
+As a result,
+
+F sub externalernal equals sum sub j equals 1 to the power of N d vector p sub j over dt.
+
+This tells us that the total change in momentum of the entire object is due only to the external forces. The internal forces do not change the momentum of the object as a whole.
+
+Force and Momentum.
+
+Our goal is to determine the equation of motion for the entire object. Let's define the the momentum for a single point particle that represents the total momentum of the system, vector p sub center of mass, at the center of mass CoM. Then we have
+
+ vector p sub center of mass is equivalent to sum sub j equals 1 to the power of N vector p sub j,
+
+and the net external force applied on the system is written as
+
+ vector F sub external equals d vector p sub center of mass over dt.
+
+The change of momentum is caused by only the net external force, so we can safely drop the ext subscript.
+
+We have found Newton's 2nd law, but for an extended object. This means we are allowed to simplify a system of approximately ten to the 23 particles (a mole in chemistry terms) down to describing the motion of a single particle at the center of mass CoM.
+
+Center of Mass: Discrete Objects.
+
+Our next task is to find where in the system to place the single particle so that it obeys Newton's 2nd law like we expect (i.e., measure). We can write the Newton's 2nd law using the single particle that contains the mass of the system (Eq. ), or
+
+ vector F equals M vector a,
+ equals d vector p sub center of mass over dt.
+
+We can decompose this description into the one with that describes the momenta of each individual particle, or
+
+ M vector a equals sum sub j equals 1 to the power of N d vector p sub j over dt equals d over dt sum sub j equals 1 to the power of N vector p sub j,
+
+which follows because the derivative of a sum is equal to the sum of the derivatives.
+
+If we know the positions of the constituent particles as vector r sub j equals ( x sub j, y sub j, z sub j ), then we can write the momentum of a single particle as
+
+ vector p sub j equals m sub j vector v sub j equals m sub j d vector r sub j over dt.
+
+Using this expression in Newton's 2nd law gives
+
+M vector a equals d over dt sum sub j equals 1 to the power of N m sub j d vector r sub j over dt,
+ equals d squared over dt squared sum sub j equals 1 to the power of N m sub j vector r sub j.
+
+We can find the acceleration of the extended object (i.e., center of mass) as
+
+ vector a equals d squared over dt squared ( 1 over M sum sub j equals 1 to the power of N m sub j vector r sub j ).
+
+Thus, the point in the object that traces out the trajectory dictated by Newton's 2nd law is inside the parentheses.
+
+Notice that the expression in parentheses can be expressed as a mass-weighted arithmetic mean of the position vectors vector r sub j or
+
+ barr equals sum sub j equals 1 to the power of N m sub j vector r sub j over M equals sum sub j equals 1 to the power of N ( m sub j over M ) vector r sub j equals sum sub j equals 1 to the power of N w sub j vector r sub j.
+
+This is actually called the center of mass of the object, where it's formally defined as
+
+ vector r sub center of mass is equivalent to 1 over M sum sub j equals 1 to the power of N m sub j vector r sub j.
+
+Note.
+
+The center of mass does not tell you where the mass is centrally located. In fact, you can have a hollow steel sphere with a vacuum inside it (i.e., no mass inside) and the center of mass still lies at the center of the sphere. The actual mass is spread uniformly across its surface. Another (more tasty) example is a doughnut.
+Checkpoint. Pause and check your understanding.
+How does the center of mass let you replace many particles with one effective point?
+
+The procedure to find the center of mass is illustrated above, where the x and y scales show how the position vectors are scaled by the mass.
+
+In general we express a position vector as vector r sub j equals x sub j i-hat + y sub j j-hat + z sub j k-hat. Then, it follows that:
+
+r sub center of mass x equals 1 over M sum sub j equals 1 to the power of N m sub j times x sub j, r sub center of mass y equals 1 over M sum sub j equals 1 to the power of N m sub j times y sub j, r sub center of mass z equals 1 over M sum sub j equals 1 to the power of N m sub j times z sub j,
+
+and thus, we can write the center of mass vector r sub center of mass and magnitude r sub center of mass as:
+
+ vector r sub center of mass equals r sub center of mass x i-hat + r sub center of mass y j-hat + r sub center of mass z k-hat,
+r sub center of mass equals square root of r sub center of mass x to the power of 2 + r sub center of mass y to the power of 2 +r sub center of mass z to the power of 2.
+
+The same procedure can be applied to the instantaneous velocity, as you might expect, where we have:
+
+ vector v sub center of mass equals d over dt ( 1 over M sum sub j equals 1 to the power of N m sub j vector r sub j ) equals 1 over M sum sub j equals 1 to the power of N m sub j vector v sub j,
+
+which has v sub x -, v sub y -, and v sub z -components.
+
+Problem-Solving Strategy.
+
+Calculating the Center-of-Mass.
+
+The center of mass is a position vector. Follow these steps to calculate it:
+
+First, Define your coordinate system.
+
+Second, Determine the location of each particle in x, y, and z coordinates relative to a reference location (usually the origin).
+
+Third, Determine the mass of each particle, and the total (summed) mass (including any mass at the origin).
+
+Fourth, Calculate the r sub center of mass x, r sub center of mass y, and r sub center of mass z coordinates.
+If required, use the Pythagorean theorem to determine its magnitude.
+
+Example Problem: Center of Mass of the Earth-Moon System.
+The Problem.
+Using data from the text appendix, determine how far the center of mass of the Earth–Moon system is from the center of Earth. Compare this distance to the radius of Earth, and comment on the result. Ignore all other objects in the solar system.
+The worked solution follows.
+The Model.
+
+We treat the Earth–Moon system as two point masses separated by the average Earth–Moon distance, and we ignore gravitational interactions with all other bodies. We define the origin of our coordinate system at the center of Earth. Let m sub E and m sub M denote the masses of Earth and Moon, and let r sub M denote the distance from Earth’s center to the Moon. Because the origin is at Earth’s center, r sub E equals 0. For two objects along a line, the center of mass coordinate is displaystyle R equals m sub E r sub E + m sub M r sub M over m sub E + m sub M.
+
+The Math.
+
+With r sub E equals 0, the center of mass location measured from Earth’s center is
+
+R equals m sub E r sub E + m sub M r sub M over m sub E + m sub M,
+ equals m sub M r sub M over m sub E + m sub M.
+
+This can be written as a linear combination of the radii r sub E and r sub M, where the “coefficients” are mass ratios:
+
+R equals ( m sub E over m sub E + m sub M ) r sub E + ( m sub M over m sub E + m sub M ) r sub M.
+
+Since r sub E equals 0, the first term drops out, but writing it this way makes the structure of the center of mass formula clear.
+
+To show that the answer can be found from ratios alone, we rewrite the remaining coefficient in terms of the single ratio m sub M over m sub E. Dividing numerator and denominator by m sub E gives
+
+ m sub M over m sub E + m sub M equals m sub M over m sub E over 1+ m sub M over m sub E.
+
+The Moon-to-Earth mass ratio is approximately m sub M over m sub E is approximately equal to 1 over 81, so
+
+ m sub M over m sub E + m sub M is approximately equal to 1 over 81 over 1+ 1 over 81,
+ equals 1 over 81 over 82 over 81,
+ equals 1 over 82.
+
+Therefore the center of mass distance from Earth’s center is approximately R is approximately equal to ( 1 over 82 ) r sub M.
+
+We now use the observed scale of the Earth–Moon separation relative to Earth’s radius. A commonly used approximate ratio is r sub M is approximately equal to 60 R sub E (is equivalent toalently R sub E over r sub M is approximately equal to 0.017 ). Using this ratio gives
+
+R is approximately equal to ( 1 over 82 )(60 R sub E ),
+ equals 0.73 R sub E.
+
+Because 0.73 R sub E < 1 R sub E, the Earth–Moon center of mass lies inside Earth.
+
+If we also compute the numerical value using appendix data ( m sub E equals 5.97 times ten to the 24 kilograms, m sub M equals 7.36 times ten to the 22 kilograms, r sub M equals 3.82 times ten to the 8 meters ), we obtain
+
+R equals 4.64 times ten to the 6 meters
+ therefore
+ R over R sub E equals 4.64 times ten to the 6 over 6.37 times ten to the 6 equals 0.73,
+
+which matches the ratio-based estimate.
+
+The Conclusion.
+
+The center of mass of the Earth–Moon system is at R equals 4.64 times ten to the 6 meters from Earth’s center, which is 0.73 R sub E. Since this is less than 1 R sub E, the Earth–Moon barycenter lies within Earth.
+
+The key idea is that this conclusion does not require knowing the absolute mass or size of Earth or Moon. It follows from two observable ratios: the mass ratio m sub M over m sub E is approximately equal to one over 81 and the distance ratio r sub M over R sub E is approximately equal to 60. The distance ratio can be determined by angular observations and parallax, and the mass ratio can be inferred from orbital motion, so the essential reasoning is accessible from observation-based astronomy.
+
+Example Problem: Center of Mass of a Salt Crystal.
+The Problem.
+A single unit cell of sodium chloride (sodium chloride) forms a cube of edge length a equals 2.36 angstroms ( 1 angstrom equals ten to the minus 10 meters ). The unit cell contains four sodium ions and four chloride ions arranged alternately. Determine the location of the center of mass of the unit cell. Specify the result by its coordinates (r sub center of mass x, r sub center of mass y, r sub center of mass z ).
+The worked solution follows.
+The Model.
+
+We impose a Cartesian coordinate system on the cube and place the origin at one corner of the unit cell (at a chloride ion). The cube has edge length a, so all ion positions are combinations of 0 and a along the x, y, and z directions.
+
+There are eight ions total. The center of mass of a system of particles is given by
+
+ vector r sub center of mass equals 1 over M sum sub j equals 1 to the power of 8 m sub j vector r sub j,
+
+where M is the total mass.
+
+Because the crystal structure is symmetric and the ions alternate uniformly throughout the cube, we expect the center of mass to lie at the geometric center of the cube. We verify this directly.
+
+The Math.
+
+The ionic masses are m sub chloride equals 35.453 u equals 5.885 times ten to the minus 26 kilograms and m sub sodium equals 22.990 u equals 3.816 times ten to the minus 26 kilograms.
+
+There are four of each, so the total mass is M equals 4m sub chloride + 4m sub sodium equals 3.880 times ten to the minus 25 kilograms.
+
+The eight ion positions are all combinations of (0,a) in x, y, and z. By symmetry, exactly half of the total mass lies on the left at x sub l equals 0 and half on the right at x sub r equals a. Therefore, the x -coordinate of the center of mass is
+
+r sub center of mass x equals M over 2 over M x sub l + M over 2 over M x sub r,
+ equals M over 2 over M times 0 + M over 2 over M times a, equals a over 2.
+
+Notice that this is the same argument we used to find the center of mass for the Earth-Moon system in the previous example. The same symmetry argument applies in the y - and z -directions, giving
+
+r sub center of mass y equals a over 2,
+r sub center of mass z equals a over 2.
+
+Using a equals 2.36 angstroms equals 2.36 times ten to the minus 10 meters gives
+
+ r sub center of mass x equals r sub center of mass y equals r sub center of mass z equals 1.18 times ten to the minus 10 meters.
+
+The Conclusion.
+
+The center of mass of the sodium chloride unit cell lies at
+
+ (r sub CM,x, r sub CM,y, r sub CM,z ) equals (1.18 times ten to the minus 10, 1.18 times ten to the minus 10, 1.18 times ten to the minus 10 ) m.
+
+Thus, the center of mass is exactly at the geometric center of the cube, even though the sodium and chloride ions have different masses. The cubic symmetry ensures equal mass distribution about the midpoint in all three directions.
+
+Center of Mass: Continuous Objects.
+
+If the object has its mass uniformly distributed in space, rather than as a collection of discrete, equal-mass particles, then m sub j approaches d m, and the summation becomes an integral:
+
+vector r sub center of mass equals one over M times the integral of vector r d m.
+
+Typically, r is a characteristic dimension of an object, such as a sphere or rod. To generate an integrand that can actually be calculated, you need to express the mass element d m as a function of the mass density of the continuous object and the dimension r.
+
+Example Problem: Center of Mass of a Uniform Thin Hoop.
+The Problem.
+Find the center of mass of a uniform thin hoop (ring) of total mass M and radius r.
+The worked solution follows.
+The Model.
+
+The hoop is uniform and thin, so we treat it as a one-dimensional object of radius r lying in the xy -plane. By symmetry, we expect the center of mass to lie at the geometric center of the circle. We parameterize the position of each mass element using the polar angle theta.
+
+The Math.
+
+We place the origin at the center of the hoop and compute the center of mass using the definition
+
+ vector r sub center of mass equals 1 over M integral vector r dm.
+
+Because the hoop is uniform, its linear mass density lambda is constant. Since the total length of the hoop is 2 pi r, we have lambda equals M over 2 pi r. A point on the hoop has position
+
+ vector r equals (r cos theta ) i-hat + (r sin theta ) j-hat.
+
+A small arc length ds corresponds to an angle d theta, so ds equals r d theta. The differential mass is therefore
+
+ dm equals lambda ds equals lambda r d theta.
+
+We use the center of mass definition and substitute the vector r for a hoop, which gives
+
+ vector r sub center of mass equals 1 over M integral sub 0 to the power of 2 pi [(r cos theta ) i-hat + (r sin theta ) j-hat ] lambda r d theta.
+
+Then, we substitute for the mass density lambda equals M over 2 pi r and simplify:
+
+ vector r sub center of mass equals 1 over M integral sub 0 to the power of 2 pi [(r cos theta ) i-hat + (r sin theta ) j-hat ] ( M over 2 pi r ) r d theta
+ equals 1 over 2 pi integral sub 0 to the power of 2 pi [(r cos theta ) i-hat + (r sin theta ) j-hat ] d theta.
+
+This expression can be broken into components as
+
+r sub center of mass x equals r over 2 pi integral sub 0 to the power of 2 pi cos theta d theta,
+r sub center of mass y equals r over 2 pi integral sub 0 to the power of 2 pi sin theta d theta.
+
+Then we have over a full revolution, the integrals of the components:
+
+ integral sub 0 to the power of 2 pi cos theta d theta equals 0,
+ integral sub 0 to the power of 2 pi sin theta d theta equals 0.
+
+Therefore, the center of mass is given by
+
+r sub center of mass x equals 0,
+r sub center of mass y equals 0.
+
+The Conclusion.
+
+The center of mass of a uniform thin hoop lies at the geometric center of the circle: vector r sub center of mass equals 0 i-hat + 0 j-hat equals vector 0.
+
+Although symmetry strongly suggested this result, the integral confirms that the horizontal and vertical mass contributions cancel exactly over a full 2 pi rotation.
+
+Center of Mass: Conservation of Momentum.
+
+Suppose you have N objects with masses m sub one, m sub two, and so on through m sub N, and initial velocities vector v sub one, vector v sub two, and so on through vector v sub N. The center of mass of the objects is
+
+vector r sub center of mass equals one over M times the sum from j equals one to N of m sub j vector r sub j,
+
+and its velocity is
+
+vector v sub center of mass equals d vector r sub center of mass divided by d t,
+which equals one over M times the sum from j equals one to N of m sub j times d vector r sub j divided by d t.
+
+Thus, the initial momentum of the center of mass is
+
+the quantity M times d vector r sub center of mass divided by d t, initially,
+equals the sum from j equals one to N of m sub j times d vector r sub j initially divided by d t.
+
+Equivalently,
+
+M vector v sub center of mass initial equals the sum from j equals one to N of m sub j vector v sub j initial.
+
+After these masses move and interact with each other, the momentum of the center of mass is
+
+M vector v sub center of mass final equals the sum from j equals one to N of m sub j vector v sub j final.
+
+But conservation of momentum tells us that
+
+M vector v sub center of mass final equals M vector v sub center of mass initial,
+
+so
+
+vector v sub center of mass final equals vector v sub center of mass initial.
+
+This implies that conservation of momentum is expressed in terms of the center of mass of the system. Since M represents the mass of the entire system of particles, it is necessarily constant. In the absence of an external force, the velocity of the center of mass never changes.
+
+Note.
+
+The individual momentum of a single particle is free to move around, accelerate in various directions, and with various magnitudes in accordance with the net internal force acting on that object at any time. Such a particle's momentum will not be constant, but the momentum of the entire extended object will be.

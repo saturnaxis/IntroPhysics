@@ -1,0 +1,145 @@
+Potential Energy Diagrams and Stability.
+
+Gravitational Potential Energy.
+
+Graphs are a good way to obtain useful information about the dynamical behavior of a system. Let's consider a one-dimensional system, whose potential energy is known, U(y) equals mgy.
+
+We can use this potential energy function for an object in free-fall near the Earth's surface, neglecting air resistance. The mechanical energy of the object is conserved (E equals K+U equals constant ). We choose y to represent the vertical height relative to the ground ( y equals 0 ). The potential energy diagram in the figure below shows how we can show that while the kinetic energy decreases, the potential energy increases.
+
+Checkpoint. Pause and check your understanding.
+
+On a potential-energy diagram, what must be true about the kinetic energy at a turning point?
+The course webpage includes the Python-generated diagram for this discussion.
+The line at energy E equals 98.1 joules represents the constant mechanical energy of the object, whereas the kinetic ( K sub A ) and potential ( U sub A ) energies are indicated at a particular height y sub A. The total energy is divided between kinetic and potential energy as the object's height changes.
+
+There is a maximum potential energy and a maximum height, which an object with the given total energy cannot exceed:
+
+K equals E-U is greater than or equal to 0,
+U is less than or equal to E.
+
+If we use gravitational potential energy reference at y equals 0 (or U(0) equals 0 ), we can rewrite the gravitational potential energy U as mgy. Solving for y gives
+
+ y is less than or equal to E over mg equals y_ max.
+
+At the maximum height, the kinetic energy (and speed) are zero. If the object were initially traveling upward, its velocity would go to zero and y_ max would be a turning point in the motion.
+
+At ground level, y sub o equals 0, the potential energy is zero and the kinetic energy is maximized:
+
+U( y sub o ) equals E-K( v sub o ) equals 0,
+E equals K( v sub o ) equals 1 over 2 meters v sub o to the power of 2,
+ v sub o equals plus or minus square root of 2E over m.
+
+The maximum speed plus or minus v sub o gives the initial velocity necessary to reach the maximum height y_ max, and - v sub o represents the final velocity after falling from y_ max.
+
+Potential Energy of a Spring.
+
+Consider a mass-spring system (the figure) on a frictionless, stationary, horizontal surface, so that gravity and the normal contact force do no work and can be ignored.
+
+This is like a one-dimensional system whose mechanical energy E is a constant and whose potential energy U(x) equals 1 over 2 kx squared with respect to zero energy at zero displacement from the spring's unstretched length x equals 0.
+
+You can deduce the physically allowable range of motion, as well as, the maximum values of distance and speed from the limits on the kinetic energy ( 0 is less than or equal to K is less than or equal to E ). We can find two turning points when K equals 0 and U equals E for the elastic spring potential energy,
+
+ x_ max equals plus or minus square root of 2E over k.
+
+The glider's motion (in Fig. a) is confined to the region between the turning points, -x_ max is less than or equal to x is less than or equal to x_ max. This is true for any (positive) value of E because the potential energy is unbounded with respect to x.
+
+For this reason, U(x) is called an infinite potential well. At the bottom of the potential well x equals 0 and U equals 0, while the kinetic energy is a maximum K equals E and v_ max equals plus or minus square root of 2E over m.
+
+From the slope of this potential energy curve (Fig. b), you can deduce information about the force on the glider and its acceleration.
+
+The slope, force, and acceleration are all zero when x equals 0, so this is an equilibrium point.
+
+The negative of the slope (on either side of the equilibrium point) gives a force pointing back to the equilibrium point (i.e., F equals plus or minus kx ), so the equilibrium is termed stable and the force is called a restoring force.
+
+If the force on either side of an equilibrium point has a direction that is the same as the direction of position change (i.e., pointing away from the equilibrium point), the equilibrium is termed unstable.
+
+A stable point occurs when U(x) has a relative minimum, while an unstable point occurs when U of x has a relative maximum. This should be intuitive because a ball rolls downhill into a valley.
+Example Problem: Quartic and Quadratic Potential Energy Diagram.
+The Problem.
+The potential energy for a particle undergoing one-dimensional motion along the x -axis is U(x) equals 2 (x to the power of 4-x squared ), where U is in joules and x is in meters. The particle is not subject to any non-conservative forces and its mechanical energy is constant at E equals -0.25 joules. (a) Is the motion of the particle confined to any regions on the x -axis, and if so, what are they? (b) Are there any equilibrium points, and if so, where are they and are they stable or unstable?
+The worked solution follows.
+The Model.
+The system consists of the particle moving along the x -axis under a conservative force derived from the given potential energy function. No non-conservative forces act, so the mechanical energy E is constant. The motion is only allowed where the kinetic energy satisfies K equals E - U(x) greater than or equal to zero, which is equivalent to U(x) less than or equal to E. Equilibrium points occur where the net force is zero, which for a one-dimensional conservative system means F sub x equals -dU/dx equals 0. Stability is determined from the shape of U(x) near the equilibrium point: a relative minimum corresponds to stable equilibrium and a relative maximum corresponds to unstable equilibrium.
+The Math.
+(a) The motion is allowed where K equals E - U(x) greater than or equal to zero, so
+
+E - U(x) greater than or equal to zero
+-0.25 - 2(x to the power of 4-x squared) greater than or equal to zero.
+
+Rearranging and completing the square in x squared gives
+
+2(x to the power of 4-x squared) le -0.25
+2 (x to the power of 4-x squared+ 1 over 4 ) le -0.25 + 2 ( 1 over 4 )
+2 (x squared- 1 over 2 ) squared le 1 over 4.
+
+Dividing by 2 and taking square roots yields the condition on x squared,
+
+ (x squared- 1 over 2 ) squared le 1 over 8
+- square root of 1 over 8 le x squared- 1 over 2 le square root of 1 over 8
+ 1 over 2 - square root of 1 over 8 le x squared le 1 over 2 + square root of 1 over 8.
+
+Therefore the motion is confined to two symmetric intervals,
+
+ x sub P le x le x sub R and - x sub R le x le - x sub P,
+
+where
+
+ x sub P equals square root of  1 over 2 - square root of 1 over 8  is approximately equal to 0.38 meters,
+ x sub R equals square root of  1 over 2 + square root of 1 over 8  is approximately equal to 0.92 meters.
+
+(b) Equilibrium points occur where F sub x equals -dU/dx equals 0, which is equivalent to dU/dx equals 0. Differentiating U(x) equals 2(x to the power of 4-x squared) gives
+
+ dU over dx equals 2(4x cubed-2x) equals 8x cubed-4x equals 4x(2x squared-1).
+
+Setting this equal to zero yields
+
+4x(2x squared-1) equals 0
+x equals 0, plus or minus 1 over square root of 2.
+
+Stability is determined from the second derivative,
+
+ d to the power of 2U over dx squared equals d over dx (8x cubed-4x) equals 24x squared-4.
+
+Evaluating at the equilibrium points gives
+
+ The second derivative at x equals zero is negative 4, which is less than zero, so x equals zero is an unstable equilibrium.
+
+At x equals plus or minus one over the square root of two, the second derivative is positive 8, which is greater than zero, so these are stable equilibria.
+The Conclusion.
+The particle’s motion is confined to two allowed regions where U(x) less than or equal to E, namely x sub P le x le x sub R and - x sub R le x le - x sub P, with x sub P is approximately equal to 0.38 meters and x sub R is approximately equal to 0.92 meters. The equilibrium points are at x equals 0 and x equals plus or minus 1/ square root of 2; the equilibrium at x equals 0 is unstable, while the equilibria at x equals plus or minus 1/ square root of 2 are stable.
+Example Problem: Sinusoidal Oscillations.
+The Problem.
+Find x(t) for a particle moving with a constant mechanical energy E>0 and a potential energy U(x) equals one-halfkx squared, when the particle starts from rest at time t equals 0.
+The worked solution follows.
+The Model.
+The particle undergoes one-dimensional motion along the x -axis under a conservative force derived from the quadratic potential energy U(x) equals one-halfkx squared. No non-conservative forces act, so the mechanical energy E equals K+U is conserved. The particle is released from rest, which means its initial kinetic energy is zero and all of the mechanical energy is initially stored as potential energy. The motion is therefore bounded between turning points where the kinetic energy vanishes and the potential energy equals the total energy.
+The Math.
+We begin from the energy-based equation of motion for one-dimensional conservative systems,
+
+t equals integral sub x sub o to the power of x fraction dx square root of  two meters [E minus U of x].
+
+Substituting U(x) equals one-halfkx squared gives
+
+t equals integral sub x sub o to the power of x dx over square root of (k/m) [(2E/k)-x squared ].
+
+Factoring out the constants allows the integral to be written as
+
+t equals square root of m over k integral sub x sub o to the power of x dx over square root of (2E/k)-x squared.
+
+Evaluating this standard integral yields
+
+t equals square root of m over k [ sin to the power of -1 ( x over square root of 2E/k )- sin to the power of -1 ( x sub o over square root of 2E/k ) ].
+
+The particle starts from rest at t equals 0, so the initial kinetic energy is zero and the initial potential energy satisfies one-halfk x sub o to the power of 2 equals E. This implies x sub o / square root of 2E/k equals plus or minus 1, and therefore sin to the power of -1 ( plus or minus 1) equals plus or minus 90 degrees. Solving the previous expression for x gives
+
+x(t) equals square root of 2E over k sin [ square root of k over m t plus or minus 90 degrees ].
+
+Using the trigonometric identity sin( theta plus or minus 90 degrees) equals plus or minus cos theta, the position can be written in the more familiar form
+
+x(t) equals plus or minus square root of 2E over k cos ( square root of k over m t ).
+The Conclusion.
+The particle executes sinusoidal motion with position
+
+ x(t) equals plus or minus square root of 2E over k cos ( square root of k over m t ),
+
+where the amplitude is square root of 2E/k and the angular frequency is square root of k/m. The motion is periodic and bounded between the turning points where the kinetic energy vanishes.

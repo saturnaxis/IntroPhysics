@@ -1,0 +1,199 @@
+Work and Power for Rotation.
+
+Work for Rotational Motion.
+
+Since we know how to calculate the kinetic energy for rotating rigid bodies, we can identify the work done on a rigid body that is rotating about a fixed axis.
+
+Figure shows a rigid body that has rotated through an angle d theta from A to B under the influence of a force vector F. The external force vector F is applied to point P, whose position is vector r relative to the point O, and the rigid body is constrained to rotate about a fixed axis. The rotational axis is fixed, so the vector r moves in a circle of radius r and the vector d vector s is perpendicular to vector r.
+
+An infinitesimal arclength d vector s sweeps out an infinitesimal angle d theta so that
+
+d vector s equals d vector theta times vector r.
+
+Using the definition of work, we have the forces acting at each vector r so that
+
+ integral sum sub j vector F _j dot d vector s _j equals integral sum vector F _j dot (d vector theta times vector r _j),
+ equals integral d vector theta dot ( vector r _j times sum vector F _j),
+
+where we used an identity from the triple product:
+
+ vector a dot ( vector b times vector c ) equals vector b dot ( vector c times vector a ).
+
+We want to get the right-side into a form so that we can substitute vector tau _j, which is why the identity is necessary here. We arrive at the expression for the rotational work done on a rigid body:
+
+W equals integral sum sub j vector tau _j dot d vector theta,
+ equals integral vector tau _ net dot d vector theta.
+
+The total work done on a rigid body is the sum of the torques integrated over the angle which the body rotates. The incremental work is
+
+dW equals ( sum sub j tau _j )d theta,
+
+where we have taken the dot product, leaving only torques along the axis of rotation.
+
+In a rigid body, all particles rotate through the same angle. Thus, the work of every external force is equal to the torque times the common incremental angle d theta.
+
+We found the kinetic energy of a rigid body rotating around a fixed axis by summing the kinetic energy of each particle. Since the work-energy theorem W sub i equals change in K sub i is valid for each particle, it is valid for the sum of the particles and the entire body.
+
+Work-Energy Theorem for Rotation.
+
+The work-energy theorem for a rigid body rotating about a fixed axis is
+
+W sub AB equals K sub B - K sub A,
+ equals 1 over 2 I sub B omega _B squared - 1 over 2 I sub A omega _A squared,
+
+and the rotational work done by a net force rotating a body from point A to point B is
+
+W sub AB equals integral sub theta _A to the power of theta _B ( sum sub j tau _j )d theta.
+Problem-Solving Strategy.
+Work-Energy Theorem for Rotational Motion.
+
+First, Identify the forces and draw a free-body diagram for each system of interest. Calculate the torque for each force.
+
+Second, Calculate the work done during the body's rotation by every torque.
+
+Third, Apply the work-energy theorem by equating the net work done on the body to the change in rotational kinetic energy.
+Checkpoint. Pause and check your understanding.
+If a constant torque acts through a larger angular displacement, what happens to the rotational work done on the object?
+Example Problem: Rotational Work and Energy.
+
+The Problem.
+A 12 newtons dot m torque is applied to a flywheel that rotates about a fixed axis and has a moment of inertia of 30 kg dot square meters. If the flywheel is initially at rest, what is its angular velocity after it has turned through eight revolutions?
+The worked solution follows.
+The Model.
+
+The flywheel rotates about a fixed axis under a constant applied torque. Because the torque is constant and the problem asks for the angular speed after a specified angular displacement, the work–energy theorem for rotational motion provides the most direct method.
+
+The rotational work done by the torque is converted into rotational kinetic energy. Since the flywheel starts from rest, the initial rotational kinetic energy is zero. The angular displacement must be expressed in radians before applying the work–energy relation.
+
+The Math.
+
+The flywheel turns through eight revolutions, so the angular displacement is
+
+ change in theta equals 8 rev ( 2 pi rad over 1 rev )
+ equals 16 pi rad.
+
+The rotational work done by a constant torque is
+
+W equals tau change in theta,
+ equals (12.0 newtons dot m )(16 pi rad )
+ equals 603 joules.
+
+The rotational work–energy theorem states that the work done on the flywheel equals the change in its rotational kinetic energy:
+
+W equals 1 over 2 I omega _f squared - 1 over 2 I omega _i squared.
+
+The flywheel is initially at rest, so omega _i equals 0. The energy equation therefore becomes
+
+W equals 1 over 2 I omega _f squared.
+
+We solve this expression for the final angular velocity, which gives
+
+ omega _f equals square root of 2W over I.
+
+The final angular velocity follows from the calculated work and the given moment of inertia:
+
+ omega _f equals square root of 2(603 joules ) over 30 kg dot square meters
+ equals 6.3 radians per second.
+
+The Conclusion.
+
+The angular velocity of the flywheel after eight revolutions is 6.3 radians per second. This result shows that the work–energy theorem provides a direct connection between the applied torque and the resulting rotational motion. Instead of solving for angular acceleration and then using rotational kinematics, the work–energy approach moves directly from torque and angular displacement to angular speed.
+Example Problem: Rotational Work: A Pulley.
+The Problem.
+A string wrapped around the pulley in Figure is pulled with a constant downward force vector F of magnitude 50 newtons. The radius R and moment of inertia I of the pulley are 0.10 meters and 2.5 times ten to the minus 3 kg dot square meters, respectively. If the string does not slip, what is the angular velocity of the pulley after 1.0 meters of string has unwound? Assume the pulley starts from rest.
+The worked solution follows.
+The Model.
+
+The pulley rotates about a fixed axis under the action of a constant force applied at its rim. Because the string does not slip, the linear distance the string moves is related directly to the angular displacement of the pulley. The applied force produces a constant torque, and the work done by that torque is converted into rotational kinetic energy.
+
+The force exerted by the axle and the weight of the pulley act through the rotation axis, so they do not produce torque about that axis. The work–energy theorem for rotational motion therefore provides the most direct way to determine the angular velocity after the string unwinds through the given distance.
+
+The Math.
+
+The torque produced by the applied force has magnitude tau equals RF. Because the string does not slip, the distance d moved by the string and the angular displacement theta of the pulley satisfy
+d equals R theta.
+
+The rotational work done by the applied torque is
+
+W equals tau theta,
+W equals (RF) ( d over R )
+ equals Fd.
+
+The work follows from the applied force and the distance the string unwinds:
+
+W equals (50 newtons )(1.0 meters )
+ equals 50 joules.
+
+The rotational work–energy theorem states that the work done on the pulley equals the change in its rotational kinetic energy:
+
+W equals 1 over 2 I omega _f squared - 1 over 2 I omega _i squared.
+
+The pulley starts from rest, so omega _i equals 0. The energy equation therefore becomes
+
+W equals 1 over 2 I omega _f squared.
+
+We solve this expression for the final angular velocity, which gives
+
+ omega _f equals square root of 2W over I.
+
+The final angular velocity follows from the calculated work and the given moment of inertia:
+
+ omega _f equals square root of 2(50 joules ) over 2.5 times ten to the minus 3 kg dot square meters
+ equals 200 radians per second.
+
+The Conclusion.
+
+The angular velocity of the pulley after 1.0 meters of string has unwound is 200 radians per second. This result shows that even a modest linear displacement of the string can produce a very large angular speed when the pulley has a small moment of inertia. The work done by the applied force is transferred efficiently into rotational kinetic energy.
+
+Power for Rotational Motion.
+
+Power for rotational motion can be derived in a similar way as linear motion when the force is constant. The linear power for a constant force is
+
+P equals force vector F dot velocity vector v.
+
+If the net torque is constant over the angular displacement, the net torque can be taken outside the rotational-work integral. Assuming that the net torque is constant, we apply the definition of instantaneous power:
+
+P equals d W over d t.
+
+For a constant net torque, the rotational work is W equals tau times the integral of d theta, which equals tau theta. The power is therefore
+
+P equals d W over d t,
+which equals d over d t of tau theta,
+which equals tau times d theta over d t,
+and therefore P equals tau omega.
+Example Problem: Torque on a Boat Propeller.
+
+The Problem
+A boat engine operating at 9.0 times ten to the 4 watts is running at 300 revolutions per minute. What is the torque on the propeller shaft?
+The worked solution follows.
+The Model.
+
+The rotating shaft delivers mechanical power to the propeller. In rotational motion, power is related to both the torque on the shaft and the angular velocity of the shaft.
+
+The engine’s rotation rate is given in revolutions per minute, so it must first be converted to angular velocity in radians per second. Once the angular velocity is known, the torque follows directly from the power relation.
+
+The Math.
+
+The rotation rate is given as 300 revolutions per minute. The angular velocity follows from converting the rotation rate to radians per second:
+
+ omega equals 300 revolutions per minute
+ ( 2 pi rad over 1 rev )
+ ( 1 min over 60 s )
+ equals 31.4 radians per second.
+
+The relationship between power, torque, and angular velocity is
+
+P equals tau omega.
+
+We solve this expression for the torque, which gives
+
+ tau equals P over omega.
+
+The torque follows from the given power and the calculated angular velocity:
+
+ tau equals 9.0 times ten to the 4 watts over 31.4 radians per second
+ equals 2900 newtons dot m.
+
+The Conclusion.
+
+The torque delivered to the propeller shaft is 2900 newtons dot m. This result shows that a large torque is required to deliver substantial power at relatively modest rotation rates. In many mechanical systems, the same power can be produced with either high torque at low angular speed or lower torque at higher angular speed.

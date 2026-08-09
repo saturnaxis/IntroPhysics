@@ -1,0 +1,25 @@
+Linear Momentum and Collisions.
+
+Linear Momentum.
+
+When using kinetic energy, we see that an object's motion can be described by combining its mass m and velocity squared v squared into a scalar. However, we can also include the direction of motion into a description that combines mass and velocity vector v as a vector.
+
+Like kinetic energy, this quantity is a way of characterizing the "quantity of motion" for an object. Momentum (from the Latin word movimentum, meaning movement) is represented by the letter p
+
+Momentum.
+
+The momentum p of an object is the product of its mass and its velocity:
+
+ vector p equals m vector v.
+
+Momentum is a vector quantity, which is a property it inherits from the velocity. The momentum is most useful when determining whether an object's motion is difficult to change or easy to change over a short time interval.
+
+Unlike kinetic energy, momentum depends equally on an object's mass and velocity. The average speed of an air molecule at room temperature is approximately 500 meters per second, with an average molecular mass of 6 times ten to the minus 25 kilograms, and thus, its momentum is given by
+
+ p sub molecule equals (6 times ten to the minus 25 kilograms ) (500 meters per second ) equals 3 times ten to the minus 22 kilogram meters per second.
+
+For comparison, a typical automobile might have a speed of only 15 meters per second, but a mass of 1400 kilograms, which gives it a momentum of
+
+ p sub car equals (1400 kilograms ) (15 meters per second ) equals 2.1 times ten to the 4 kilogram meters per second.
+
+These momenta are different by 27 orders of magnitude!

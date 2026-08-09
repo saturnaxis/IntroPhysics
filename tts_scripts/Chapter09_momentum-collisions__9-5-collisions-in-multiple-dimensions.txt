@@ -1,0 +1,158 @@
+Collisions in Multiple Dimensions.
+
+It is more common for collisions to occur in 2D, where the initial velocity vectors can be decomposed into components. Recall that momentum is related to force through the relation:
+
+ vector F equals d vector p over dt.
+
+Therefore, both the momentum and force can be written in their component forms together as
+
+ F sub x equals d p sub x over dt,
+ F sub y equals d p sub y over dt,
+ F sub z equals d p sub z over dt.
+
+Remember, these equations are Newton's 2nd law in vector and component form. Since Newton's 2nd law is true in each direction individually, it follows that conservation of momentum is true in each direction independently, via Newton's 3rd law.
+
+We can now write down the expression for conservation of momentum following the same procedure (i.e., decompose it into components):
+
+ p sub x final equals p sub 1x initial + p sub 2x initial,
+ p sub y final equals p sub 1y initial + p sub 2y initial.
+
+Below shows the procedure graphically, where the two initial momenta ( vector p sub 1 initial and vector p sub 2 initial ) come into the collision point (gray dot) at the origin and the final combined momentum vector p sub f exits after the collision.
+Checkpoint. Pause and check your understanding.
+In a two-dimensional collision, why do you need one momentum equation for each component direction?
+
+We solve each of the two component equations independently to obtain the x - and y -components for the final momentum's velocity vector. Here is an example for the x -components:
+
+ p sub x final equals p sub 1x initial + p sub 2x initial,
+m v sub x final equals m sub 1v sub 1x initial + m sub 2v sub 2x initial,
+ v sub x final equals m sub 1 over m v sub 1x initial + m sub 2 over m v sub 2x initial,
+
+where m represents the total mass of the system, m equals m sub 1 + m sub 2. Similarly, we can find the y -component of the final velocity vector as:
+
+ v sub y final equals m sub 1 over m v sub 1y initial + m sub 2 over m v sub 2y initial.
+
+We can combine the components using the Pythagorean theorem to get:
+
+ v final equals | vector v final | equals square root of ( v sub x final ) squared + ( v sub y final ) squared.
+
+What does this mean physically?
+
+This example models a perfectly inelastic collision, where the two incoming masses stick together.
+
+The component final velocities represent a linear combination of the component initial velocities.
+
+Each initial component velocity is scaled by the respective mass divided by the total mass.
+
+What happens if m sub 1 is much greater than m sub 2?
+
+Let's assume that m sub 1 equals 999 kilograms and m sub 2 equals 1 kilograms. Then, we have
+
+ v sub x final equals 999 over 999+1 v sub 1x initial + 1 over 999 + 1 v sub 2x initial, equals 0.999v sub 1x initial + 0.001v sub 2x initial,
+ v sub y final equals 999 over 999+1 v sub 1y initial + 1 over 999 + 1 v sub 2y initial, equals 0.999v sub 1y initial + 0.001v sub 2y initial.
+
+If v sub 1 initial is greater than or equal to v sub 2 initial:
+
+The m sub 1 component dominates and the final velocity is more similar to vector v sub 1 initial.
+
+If v sub 1 initial < v sub 2 initial:
+
+The m sub 2 component can still be significant and the final velocity is more similar to vector v sub 2 initial. Think of a bullet hitting an apple.
+
+Problem-Solving Strategy.
+
+Conservation of Momentum in 2D.
+
+The method for solving a 2D (or even 3D) conservation of momentum problem is generally the same as the method for solving a 1D problem, except that you have to conserve momentum in each dimension simultaneously:
+
+First, Identify a closed system.
+
+Second, Write down the equation that represents the conservation of momentum in each direction, and solve it for the desired quantity for the respective direction.
+
+Third, If you are calculating a vector quantity, use the Pythagorean theorem to calculate its magnitude.
+
+Example Problem: Traffic Collision.
+The Problem.
+A small car of mass 1200 kilograms traveling east at 60 kilometers per hour collides with a truck of mass 3000 kilograms traveling north at 40 kilometers per hour. The vehicles lock together after the collision. What is the velocity of the combined wreckage immediately after impact?
+The worked solution follows.
+The Model.
+
+We define the system to be the car + truck during the brief collision interval. The interaction time is extremely short, so we neglect external impulses such as friction with the road during that instant. Linear momentum of the two-vehicle system is therefore conserved during the collision.
+
+Because the vehicles lock together and move as a single object after impact, the collision is perfectly inelastic. Kinetic energy is not conserved, but momentum is conserved. We define the +x -direction to point east and the +y -direction to point north. The initial momenta are perpendicular, so momentum conservation must be applied separately in the x - and y -directions.
+
+The Math.
+
+Let m sub c equals 1200 kilograms and m sub T equals 3000 kilograms. We convert speeds to S I units: 60 kilometers per hour equals 16.7 meters per second and 40 kilometers per hour equals 11.1 meters per second Conservation of momentum requires vector p final equals vector p initial. The initial momentum components are p sub x initial equals m sub c v sub c and p sub y initial equals m sub T v sub T.
+
+After the collision, the combined mass ( m sub c + m sub T ) moves with velocity components v sub x final and v sub y final. Therefore,
+
+ m sub c v sub c equals ( m sub c + m sub T ) v sub x final,
+ m sub T v sub T equals ( m sub c + m sub T ) v sub y final.
+
+Solving each equation for the velocity components gives
+
+ v sub x final equals m sub c over m sub c + m sub T v sub c,
+ v sub y final equals m sub T over m sub c + m sub T v sub T.
+
+Using the given masses, we find
+
+ v sub x final equals 1200 over 4200 (16.7) equals 4.77 meters per second,
+ v sub y final equals 3000 over 4200 (11.1) equals 7.93 meters per second.
+
+The magnitude of the wreckage velocity is found from the Pythagorean theorem,
+
+ | vector v final | equals square root of (4.77) squared + (7.93) squared
+ equals 9.26 meters per second.
+
+The direction measured counterclockwise from the +x -axis is
+
+ theta equals tan to the power of -1 ( v sub y final over v sub x final ) equals tan to the power of -1 ( 7.93 over 4.77 ),
+ equals 59 degrees.
+
+The Conclusion.
+
+Immediately after the collision, the wreckage moves with speed | vector v final | equals 9.3 meters per second at an angle of 59 degrees north of east.
+
+The heavier truck contributes more to the y -component of momentum, so the combined motion is tilted strongly northward. Even though the car’s speed was larger, its smaller mass means its momentum contribution is smaller than the truck’s.
+
+Example Problem: Exploding Scuba Tank.
+The Problem.
+A common scuba tank is an aluminum cylinder that weighs 31.7 lb empty. When full of compressed air, the internal pressure is between 2500 and 3000 P S I. Suppose such a tank, which had been sitting motionless, suddenly explodes into three pieces. The first piece, weighing 10 lb, shoots off horizontally at 235 mph. The second piece ( 7 lb ) shoots off at 172 mph, also in the horizontal plane, but at a 19 degrees angle to the first piece. What is the mass and initial velocity of the third piece? Do all work, and express your final answer in S I units.
+The worked solution follows.
+The Model.
+
+The system is the scuba tank during the brief explosion. The tank is initially at rest, so the initial momentum of the system is zero. The explosion happens over a very short time, so external impulses (such as gravity) are negligible during that instant, and the tank can be treated as a closed system for momentum. The motion is confined to the horizontal plane, so we choose axes in that plane and apply conservation of momentum in components. We define the +x -direction to be the direction of piece 1’s motion, and we take piece 2 to move at an angle 19 degrees above the +x axis.
+
+The Math.
+
+Conservation of momentum for the explosion gives vector p initial equals vector p final. Because the tank starts from rest, vector p initial equals vector 0 and therefore
+
+ vector p sub 1 + vector p sub 2 + vector p sub 3 equals vector 0.
+
+The total mass of the tank is 31.7 lb, and the three fragments have weights 10 lb, 7 lb, and the remainder. Converting to S I units using 1 lb equals 0.4536 kilograms gives m sub total equals 14.4 kilograms, m sub 1 equals 4.5 kilograms, and m sub 2 equals 3.2 kilograms, so the third mass is
+
+ m sub 3 equals m sub total -( m sub 1 + m sub 2 ) equals 6.7 kilograms.
+
+The given speeds are converted using 1 mph equals 0.4470 meters per second, which gives v sub 1 equals 105 meters per second and v sub 2 equals 77 meters per second. With the +x axis along piece 1, the momenta of pieces 1 and 2 are
+
+ vector p sub 1 equals ( m sub 1 v sub 1 ) i-hat,
+ vector p sub 2 equals ( m sub 2 v sub 2 cos theta ) i-hat + ( m sub 2 v sub 2 sin theta ) j-hat,
+
+where theta equals 19 degrees. The third piece must carry the opposite momentum,
+
+ vector p sub 3 equals -( vector p sub 1+ vector p sub 2),
+
+so its components are p sub 3x equals -( m sub 1 v sub 1 + m sub 2 v sub 2 cos theta ) and p sub 3y equals -( m sub 2 v sub 2 sin theta ). Evaluating these gives
+
+p sub 3x is approximately equal to -710 kilogram meters per second,
+p sub 3y is approximately equal to -80 kilogram meters per second.
+
+The momentum magnitude is | vector p sub 3| equals square root of p sub 3x to the power of 2+p sub 3y to the power of 2 is approximately equal to 710 kilogram meters per second, so the speed of the third piece is
+
+ v sub 3 equals | vector p sub 3| over m sub 3 is approximately equal to 710 over 6.7 meters per second equals 110 meters per second.
+
+The direction of vector v sub 3 is the same as the direction of vector p sub 3. The angle below the -x axis is set by tan phi equals |p sub 3y |/|p sub 3x |, which gives phi is approximately equal to 6.4 degrees. This means the third piece travels mostly opposite piece 1, deflected slightly toward negative y.
+
+The Conclusion.
+
+The third fragment has mass m sub 3 equals 6.7 kilograms and initial speed v sub 3 equals 110 meters per second. Its velocity points approximately 6.4 degrees below the -x direction (is equivalent toalently, about 6.4 degrees south of west if +x is east).

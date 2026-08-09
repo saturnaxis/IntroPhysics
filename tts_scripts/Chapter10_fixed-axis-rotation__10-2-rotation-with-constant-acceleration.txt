@@ -1,0 +1,179 @@
+Rotation with Constant Acceleration.
+
+If the angular acceleration alpha is constant, then we can determine relationships that are similar in form to those for linear kinematics discussed in Motion in 1D and Motion in 2D and 3D.
+
+Kinematics of Rotational Motion.
+
+Using our intuition, we can see how the rotational quantities theta, omega, alpha, and t are related to one another. We can build a set of rotational kinematic equations under a constant angular acceleration.
+
+If the angular acceleration alpha is a constant, then the average angular velocity must be a linear function with respect to time. The (arithmetic) average angular angular velocity omega bar can be represented by
+
+ omega bar equals omega _0 + omega _f over 2.
+
+The time-average angular velocity is given by
+
+ omega bar equals change in theta over change in t,
+
+where we can solve for theta to get
+
+ theta _f equals theta _0 + omega bart,
+
+after having set t sub 0 equals 0. If we know the average angular velocity omega bar of the system, then we can find the angular displacement over a given time interval.
+
+To find an equation that relates omega, alpha, and t, we start with the definition of angular acceleration:
+
+ alpha equals d omega over dt.
+
+We rearrange this to get alpha dt equals d omega and then integrate both sides:
+
+ alpha integral sub t sub 0 to the power of t dt^ prime equals integral sub omega _0 to the power of omega _f d omega.
+
+In uniform rotational motion, the angular acceleration is constant and can be pulled out of the integral. If we set t sub 0 equals 0, then we have
+
+ alpha t equals omega _f - omega _0,
+
+which we can rearrange to obtain
+
+ omega _f equals omega _0 + alpha t,
+
+where omega _0 is the initial angular velocity. Notice how similar this equation appears compared to the linear kinematic equation with velocity: v sub f equals v sub 0 + at.
+
+Starting with the equation omega equals d theta over dt and rearranging to get omega dt equals d theta, we can again integrate both sides to get:
+
+ integral sub t sub 0 to the power of t sub f ( omega _0 + alpha t^ prime )dt^ prime equals integral sub theta _0 to the power of theta _f d theta,
+ omega _0 t + 1 over 2 alpha t squared equals theta _f - theta _0,
+
+where we have set t sub 0 equals 0. We can rearrange to obtain
+
+ theta _f equals theta _0 + omega _0 t + 1 over 2 alpha t squared,
+
+which is a rotational counterpart to the position function of time in linear kinematics.
+
+We can find an equation that is time-independent by using the linear equation for angular velocity to eliminate t, or
+
+t equals omega _f - omega _0 over alpha,
+ change in theta equals omega _0 ( omega _f- omega _0 over alpha ) + 1 over 2 alpha ( omega _f- omega _0 over alpha ) squared,
+ change in theta equals omega _f squared - omega _0 squared over 2 alpha.
+
+We can rearrange the result to obtain
+
+ omega _f squared equals omega _0 squared + 2 alpha ( change in theta ).
+Example Problem: Acceleration of a Fishing Reel.
+
+The Problem.
+A deep-sea fisherman hooks a big fish that swims away from the boat, pulling the fishing line from his fishing reel. The whole system is initially at rest, and the fishing line unwinds from the reel at a radius of 4.5 cm from its axis of rotation. The reel is given an angular acceleration of 110 radians per second squared for 2.0 s.
+For part a, What is the final angular velocity of the reel after 2 s?
+For part b, How many revolutions does the reel make?
+The worked solution follows.
+The Model.
+
+The reel undergoes rotational motion about a fixed axis with constant angular acceleration. Because the angular acceleration is constant, the rotational kinematic equations for constant acceleration apply.
+
+The final angular velocity can be determined from the relationship among angular velocity, angular acceleration, and time. The angular displacement can be determined from the relationship among angular displacement, angular acceleration, angular velocity, and time. Once the angular displacement is found in radians, it can be converted to revolutions.
+
+The Math.
+
+For part a, For rotational motion with constant angular acceleration, the final angular velocity is related to the initial angular velocity by
+
+ omega _f equals omega _0 + alpha t.
+
+The reel starts from rest, so the initial angular velocity is omega _0 equals 0. The numerical value follows from this equation:
+
+ omega _f equals 0 + (110 radians per second squared )(2.0 s )
+ equals 220 radians per second.
+
+For part b, For rotational motion with constant angular acceleration, the angular displacement is related to the initial angular displacement, initial angular velocity, angular acceleration, and time by
+
+ theta _f equals theta _0 + omega _0 t + 1 over 2 alpha t squared.
+
+The reel starts from rest, so omega _0 equals 0. We choose the initial angular position to be theta _0 equals 0 for convenience. The numerical value follows from this equation:
+
+ theta _f equals 0 + 0 + 1 over 2 (110 radians per second squared )(2.0 s ) squared
+ equals 220 rad.
+
+One revolution corresponds to 2 pi radians. Therefore, the number of revolutions is
+
+N equals theta _f over 2 pi.
+
+The number of revolutions follows from this angular displacement:
+
+N equals 220 rad over 2 pi
+ equals 35 rev.
+
+The Conclusion.
+
+After 2.0 s, the reel reaches a final angular velocity of 220 radians per second. Over this same time interval, the reel rotates through 35 revolutions.
+
+This result shows that a constant angular acceleration can produce both a large angular speed and a substantial angular displacement in a short time. It also reinforces that rotational kinematics follows the same mathematical structure as linear kinematics.
+Example Problem: Duration for a Reel to Stop.
+The Problem.
+Now the fisherman applies a brake to the spinning reel, achieving an angular acceleration of -300 radians per second squared. How long does it take the reel to come to a stop?
+The worked solution follows.
+The Model.
+
+The reel continues to undergo rotational motion about a fixed axis, but now the angular acceleration is negative because the brake reduces the angular speed. The stopping time can be determined using the constant-angular-acceleration kinematic relationship among angular velocity, angular acceleration, and time.
+
+Because the reel is coming to rest, the final angular velocity is zero. These ideas allow us to determine the elapsed time required for the angular velocity to decrease from its initial value to zero.
+
+The Math.
+
+For rotational motion with constant angular acceleration, the final angular velocity is related to the initial angular velocity by
+
+ omega _f equals omega _0 + alpha t.
+
+We solve this expression for the stopping time, which gives
+
+t equals omega _f- omega _0 over alpha.
+
+From the previous example, the initial angular velocity is omega _0 equals 220 radians per second. The reel comes to a stop, so the final angular velocity is omega _f equals 0. The stopping time follows from this expression:
+
+t equals 0-220 radians per second over -300 radians per second squared
+ equals 0.73 s.
+
+The Conclusion.
+
+The reel takes 0.73 s to come to a stop after the brake is applied.
+
+This result shows that a large negative angular acceleration can reduce a substantial angular speed to zero in less than a second. It also emphasizes the importance of sign conventions in rotational kinematics, since the negative acceleration indicates that the braking acts opposite the direction of motion.
+Example Problem: Angular Acceleration of a Propeller.
+The Problem.
+The angular velocity of an aircraft propeller decreases linearly from 30 radians per second to 0 radians per second over a time interval of 5 s.
+For part a, Generate a graph of the angular velocity omega as a function of time.
+For part b, Determine the angular acceleration of the propeller from the graph.
+For part c, Determine the angular displacement of the propeller during the 5 s interval.
+The worked solution follows.
+The Model.
+
+The propeller rotates about a fixed axis. The angular velocity decreases linearly with time, which implies that the angular acceleration is constant. The angular acceleration is the slope of the omega versus t graph.
+
+The angular displacement can be determined in two ways. Graphically, it corresponds to the area under the angular velocity curve. Analytically, it can be computed using the rotational kinematic equations for constant angular acceleration.
+
+The Math.
+
+For part a, The angular velocity decreases linearly from 30 radians per second at t equals 0 to 0 radians per second at t equals 5 s. The resulting graph is a straight line connecting these two points.
+
+For part b, The angular acceleration equals the slope of the omega versus t graph,
+
+ alpha equals change in omega over change in t
+ equals 0-30 radians per second over 5 s
+ equals -6 radians per second squared.
+
+For part c, The angular displacement equals the area under the angular velocity curve. Because the graph forms a right triangle, the area is
+
+ change in theta equals 1 over 2 ( base )( height )
+ equals 1 over 2 (5 s )(30 radians per second )
+ equals 75 rad.
+
+We can verify this result using the rotational kinematic equation
+
+ theta _f equals theta _0 + omega _0 t + 1 over 2 alpha t squared.
+
+Setting theta _0 equals 0 and substituting the known values gives
+
+ theta _f equals (30)(5) + 1 over 2 (-6)(5) squared
+ equals 150 - 75
+ equals 75 rad.
+
+The Conclusion.
+
+The angular acceleration of the propeller is alpha equals -6 radians per second squared. During the 5 s interval, the propeller rotates through an angular displacement of theta equals 75 rad. This result is consistent with both the graphical interpretation of the motion and the rotational kinematic equations.

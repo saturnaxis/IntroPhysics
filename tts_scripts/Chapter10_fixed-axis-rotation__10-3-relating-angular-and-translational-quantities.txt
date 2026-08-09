@@ -1,0 +1,118 @@
+Relating Angular and Translational Quantities.
+
+Angular vs. Linear Variables.
+
+If we compare the rotational definitions with those from the linear kinematic variables, we find that there is a mapping between them. Linear position, velocity, and acceleration have their rotational counterparts, which become apparent when writing them side-by-side:
+
+The linear variable of position has physical units of meters, whereas the angular position variable has dimensionless units of radians. This can be seen from the definition of theta equals s over r.
+
+The linear velocity has units of meters per second, while its counterpart (the angular velocity) has units of radians per second. In the case of circular motion, the linear tangential speed v sub t of a particle at a radius r from the axis of rotation is related by the angular velocity, or v sub t equals r omega.
+
+The centripetal acceleration vector points inward towards the axis of rotation. From the derivation for the magnitude of the centripetal acceleration, we found
+
+ a sub c equals v sub t to the power of 2 over r,
+
+where r is the radius of the circle. In uniform circular motion, when the angular velocity is constant and the angular acceleration is zero, we have a linear acceleration (i.e., the centripetal acceleration).
+
+If nonuniform circular motion is present, the rotating system has an angular acceleration, and we have both a linear centripetal acceleration and a linear tangential acceleration.
+
+Figure shows the centripetal tangential accelerations for uniform and nonuniform circular motion. The centripetal acceleration comes from changes in the direction of tangential velocity, whereas the tangential acceleration is from any change in magnitude of the tangential velocity. Recall that vectors have a magnitude and direction.
+
+The tangential vector a _t and centripetal vector a _c acceleration vectors are always perpendicular to each other. The total linear acceleration describes a point on a rotating rigid body (or a particle executing circular motion) at a radius r from a fixed axis. It can be written as the vector sum of the centripetal and tangential accelerations,
+
+ vector a equals vector a _c + vector a _t.
+
+In the case of nonuniform circular motion, the total linear acceleration vector points at an angle between the centripetal and tangential acceleration vectors (see the figure).
+
+Since vector a _c perpendicular vector a _t, the magnitude of the total linear acceleration is found through the Pythagorean theorem as
+
+ | vector a | equals square root of a sub c to the power of 2 + a sub t to the power of 2.
+
+Note.
+
+If the angular acceleration alpha is zero, the total linear acceleration is equal to the centripetal acceleration. Mathematically, this is shown by
+
+ a sub t equals r alpha,
+| vector a | equals square root of a sub c to the power of 2 + r squared alpha to the power of 2,
+
+and if alpha equals 0, then
+
+ | vector a | equals a sub c.
+
+Relationships between Rotational and Translational Motion.
+
+There are two main relationships between rotational and translational motion.
+
+First, Both types of motion have four linear kinematic equations that look similar to each other but describe two different physical situations.
+
+Second, In the special case of circular motion, there are relationships between rotational and translational motion through the constant radius r.
+
+Fet Interactive Simulation: Ladybug Revolution.
+
+Open the Ladybug Revolution simulation and switch the angle units to radians. Move the ladybug to different radii while keeping the angular velocity fixed, then compare the angular velocity, tangential velocity, and acceleration vectors. Focus on which quantities change with radius and which stay the same for a rigid rotating platform.
+Example Problem: Linear Acceleration of a Centrifuge.
+
+The Problem.
+A centrifuge has a radius of 20 cm and slows from a maximum rotation rate of ten to the 4 rpm to rest in 30 s under a constant angular acceleration. The centrifuge rotates counterclockwise. Determine the magnitude of the total acceleration of a point at the tip of the centrifuge at t equals 29 s. Determine the direction of the total acceleration vector.
+The worked solution follows.
+The Model.
+
+A point on the rim of the centrifuge undergoes circular motion about a fixed axis while the angular velocity decreases under constant angular acceleration. The linear acceleration therefore has two perpendicular components: the tangential acceleration produced by the angular acceleration and the centripetal acceleration produced by the instantaneous speed. The magnitude of the total acceleration follows from the vector sum of these two perpendicular components.
+
+The Math.
+
+The radius of the centrifuge is r equals 20 cm equals 0.20 meters. The initial angular speed is converted from revolutions per minute to radians per second:
+
+ omega _0 equals ten to the 4 revolutions per minute, times 2 pi radians per revolution, times 1 minute per 60 seconds,
+ equals 1047 radians per second.
+
+The angular acceleration follows from the change in angular velocity during the 30 s interval:
+
+ alpha equals omega _f- omega _0 over t.
+
+The centrifuge stops at the end of the interval, so omega _f equals 0:
+
+ alpha equals 0-1047 radians per second over 30 s,
+ equals -34.9 radians per second squared.
+
+The tangential acceleration is determined by a sub t equals r alpha. The magnitude of the tangential acceleration is therefore
+
+ a sub t equals (0.20)(-34.9),
+ equals -7.0 meters per second squared.
+
+The angular velocity at t equals 29 s is obtained from the constant-acceleration relation omega equals omega _0 + alpha t. The angular velocity at that instant is
+
+ omega equals 1047 + (-34.9)(29),
+ equals 34.9 radians per second.
+
+The tangential speed is calculated by v sub t equals r omega. The tangential speed at t equals 29 s is
+
+ v sub t equals (0.20)(34.9)
+ equals 6.98 meters per second.
+
+The centripetal acceleration is given by a sub c equals v sub t to the power of 2 over r and is therefore
+
+ a sub c equals (6.98) squared over 0.20,
+ equals 244 meters per second squared.
+
+The magnitude of the total acceleration is the vector sum of the perpendicular components:
+
+| vec a| equals square root of a sub c to the power of 2 + a sub t to the power of 2,
+ equals square root of (244) squared + (-7.0) squared,
+ equals 244 meters per second squared.
+
+The direction of the total acceleration relative to the centripetal direction follows from
+
+ theta equals tan to the power of -1 ( a sub t over a sub c ),
+ equals tan to the power of -1 ( -7.0 over 244 )
+ equals -1.6 degrees.
+
+The negative sign indicates that the total acceleration vector tilts slightly in the clockwise direction from the inward centripetal direction.
+
+The Conclusion.
+
+At t equals 29 s the magnitude of the total acceleration of the point at the rim of the centrifuge is
+
+| vec a| equals 244 meters per second squared.
+
+The acceleration vector points almost directly toward the center of the centrifuge but is tilted by 1.6 degrees in the clockwise direction because the centrifuge is slowing down. This result shows that the centripetal component still dominates the total acceleration even near the end of the spin-down.

@@ -1,0 +1,182 @@
+Torque.
+
+An important quantity for describing the dynamics of a rotating rigid body is torque. We have an intuition about torque, as when we use a large wrench to unscrew a bolt. Torque also appears when we press on the accelerator in a car causing the engine to spin-up the drive train faster.
+
+Defining Torque.
+
+Since we have found rotational counterparts for the kinematic equations and variables, we should expect there to be a counterpart to force. Forces change the translational motion of objects, thus the rotational counterpart must be related to changing the rotational motion of an object about an axis. We formally define this quantity as torque.
+
+Consider how we rotate a door to open it. Let's write down what we know from experience (and the implications):
+
+First, A door opens slowly if we push too close to its hinges. It is more efficient to rotate a door open if we push far from the hinges.
+
+The farther the force is applied from the axis of rotation, the greater the angular acceleration.
+
+Second, We should push perpendicular to the plane of the door. If we push parallel to the plane of the door, we are not able to rotate it.
+
+The effectiveness depends on the angle at which the force is applied.
+
+Third, The larger the force, the more effective it is in opening the door (i.e., the more rapidly it opens).
+
+The magnitude of the force must also be part of the equation.
+
+Note.
+
+For a rotation in a plane, there are two possible directions for the rotation: clockwise or counterclockwise. Following the convention that counterclockwise is positive, then clockwise rotation is negative.
+
+Figure illustrates 4 different ways that we could apply a force to a door. Note that the door will rotate relative to the pivot in a counterclockwise direction.
+
+Torque.
+
+When a force vector F is applied to a point P whose position is vector r relative to the pivot point O, the torque vector tau is given by
+
+ vector tau equals vector r times vector F.
+
+Figure illustrates how the direction of the torque can be found using the right-hand rule. This naturally comes from our definitions using the cross-product.
+
+From the definition of the cross product, the torque vector tau is perpendicular to the plane containing vector r and vector F. The torque has a magnitude
+
+ | vector tau | equals | vector r times vector F | equals rF sin theta,
+
+where theta is the angle between the vectors vector r and vector F. The SI unit for torque is newtons times meters (usually written as newton meters ), where this does not reduce to Joules as was the case for work.
+
+The quantity r_ perpendicular equals r sin theta  is the perpendicular distance from O to the line determined by the vector F and is called the lever arm.
+
+The greater the lever arm, the greater the magnitude of the torque.
+
+In terms of the lever arm, the magnitude of the torque is
+
+| vector tau | equals r_ perpendicular F.
+
+The cross product tells us the sign of the torque.
+
+In the figure, there is a positive torque because the cross product is along the z -axis.
+
+If the torque is along the negative z -axis, then the torque is negative.
+
+If we consider a disk that is free to rotate about an axis through the center (see the figure), we can see how the angle between the radius vector r and force vector F affects the magnitude of the torque.
+
+If the angle is zero, then the torque is zero.
+
+If the angle is 90 degrees, then the torque is at a maximum.
+
+Any number of torques can be calculated about a given axis, where the individual torques add to produce a net torque about the axis. When the appropriate sign is applied to the magnitudes of individual torques about a specified axis, the net torque about the axis is the sum of the individual torques, or
+
+ vector tau _ net equals sum sub j vector tau _j.
+Problem-Solving Strategy.
+Finding Net Torque.
+
+First, Choose a coordinate system with the pivot point or axis as the origin.
+
+Second, Determine the angle between the lever arm vector r and the force vector F.
+
+Third, Take the cross product of vector r and vector F to determine if the torque is positive or negative about the pivot point.
+
+Fourth, Evaluate the magnitude of the torque using r_ perpendicular F.
+
+Fifth, Assign the appropriate sign (positive or negative) to the magnitude.
+
+Sixth, Sum the torques to find the net torque.
+Checkpoint. Pause and check your understanding.
+Why does pushing on a door near the hinge produce less torque than pushing with the same force near the handle?
+Example Problem: Torque on Particles.
+
+The Problem.
+Four forces are shown in Figure at particular locations and orientations with respect to a given xy -coordinate system. Find the torque due to each force about the origin, then use your results to find the net torque about the origin.
+The worked solution follows.
+The Model.
+
+Each torque is determined from the force, its location relative to the origin, and the angle between the position vector and the force. The magnitude of each torque is found from the perpendicular lever arm or, equivalently, from the product of the force magnitude, the distance from the origin, and the sine of the angle between them.
+
+The sign of each torque is determined from the direction of vector r times vector F. A torque that points out of the page is positive, corresponding to counterclockwise rotation, and a torque that points into the page is negative, corresponding to clockwise rotation. The net torque is the algebraic sum of the individual torques.
+
+The Math.
+
+The magnitude of the torque due to a force about the origin is | vector tau | equals rF sin theta. The sign of the torque is determined from the cross product vector r times vector F.
+
+The 40 newtons force acts upward at x equals 4 meters, so the lever arm is 4 meters and the angle between vector r and vector F is 90 degrees. The torque from this force is
+
+ tau _1 equals (4 meters )(40 newtons ) sin 90 degrees
+ equals 160 newtons dot m.
+
+The cross product vector r times vector F points out of the page, so this torque is positive.
+
+The 20 newtons force at y equals -3 meters acts horizontally to the left, so the lever arm is 3 meters and the angle between vector r and vector F is 90 degrees. The torque from this force is
+
+ tau _2 equals (3 meters )(20 newtons ) sin 90 degrees
+ equals 60 newtons dot m.
+
+The cross product vector r times vector F points into the page, so this torque is negative:
+
+ tau _2 equals -60 newtons dot m.
+
+The 30 newtons force is applied at a distance 5 meters from the origin, and the angle between vector r and vector F is 53 degrees. The torque from this force is
+
+ tau _3 equals (5 meters )(30 newtons ) sin 53 degrees
+ equals 120 newtons dot m.
+
+The cross product vector r times vector F points out of the page, so this torque is positive.
+
+The 20 newtons force in the second quadrant is applied at a distance 1 meter from the origin, and the angle between vector r and vector F is 30 degrees. The torque from this force is
+
+ tau _4 equals (1 meter )(20 newtons ) sin 30 degrees
+ equals 10 newtons dot m.
+
+The cross product vector r times vector F points out of the page, so this torque is positive.
+
+The net torque is the algebraic sum of the four torques:
+
+ tau _ net equals tau _1 + tau _2 + tau _3 + tau _4
+ equals 160 newtons dot m - 60 newtons dot m + 120 newtons dot m + 10 newtons dot m
+ equals 230 newtons dot m.
+
+The Conclusion.
+
+The individual torques about the origin are +160 newtons dot m, -60 newtons dot m, +120 newtons dot m, and +10 newtons dot m. The net torque about the origin is 230 newtons dot m.
+
+This result shows that the counterclockwise torques dominate the clockwise torque, so the net tendency is counterclockwise rotation. It also illustrates that torque depends on both the force magnitude and the perpendicular distance from the axis.
+Example Problem: Torque on a Rigid Body.
+The Problem.
+Figure shows several forces acting at different locations and angles on a flywheel. We have | vector F _1| equals 20 newtons, | vector F _2| equals 30 newtons, | vector F _3| equals 30 newtons, and r equals 0.5 meters.
+Find the net torque on the flywheel about an axis through the center.
+The worked solution follows.
+The Model.
+
+Each torque is determined from the position vector from the center of the flywheel to the point of application and the corresponding force. The magnitude of each torque is found from the product of the force magnitude, the distance from the center, and the sine of the angle between the position and force vectors.
+
+The sign of each torque is determined from the direction of vector r times vector F. A torque that points out of the page is positive, corresponding to counterclockwise rotation, and a torque that points into the page is negative, corresponding to clockwise rotation. The net torque is the algebraic sum of the individual torques.
+
+The Math.
+
+The magnitude of the torque due to a force about the center is | vector tau | equals rF sin theta. The torque due to vector F _1 is determined from the angle between vector r and vector F _1. The figure shows that this angle is 150 degrees, so the torque magnitude is
+
+| vector tau _1| equals (0.5 meters )(20 newtons ) sin 150 degrees
+ equals 5.0 newtons dot m.
+
+The cross product vector r times vector F _1 points out of the page, so this torque is positive:
+
+ tau _1 equals +5.0 newtons dot m.
+
+The torque due to vector F _2 is determined from the angle between vector r and vector F _2. The figure shows that this angle is 90 degrees, so the torque magnitude is
+
+| vector tau _2| equals (0.5 meters )(30 newtons ) sin 90 degrees
+ equals 15.0 newtons dot m.
+
+The cross product vector r times vector F _2 points into the page, so this torque is negative:
+
+ tau _2 equals -15.0 newtons dot m.
+
+The force vector F _3 acts along the same line as the radius vector, so the angle between vector r and vector F _3 is 0 degrees. Therefore,
+
+ tau _3 equals (0.5 meters )(30 newtons ) sin 0 degrees
+ equals 0.
+
+The net torque is the algebraic sum of the three torques:
+
+ tau _ net equals tau _1 + tau _2 + tau _3
+ equals 5.0 newtons dot m - 15.0 newtons dot m + 0
+ equals -10 newtons dot m.
+
+The Conclusion.
+
+The net torque on the flywheel about its center is -10 newtons dot m. The negative sign shows that the net tendency is clockwise rotation. This result also illustrates that a force applied directly along the radius does not produce torque because it has no perpendicular lever arm.

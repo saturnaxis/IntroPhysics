@@ -1,0 +1,162 @@
+Rocket Propulsion.
+
+Now we deal with the case where the mass of an object is changing. As a rocket lifts off, it burns fuel gases that cause a change to its velocity (and hence its momentum). The acceleration is in the opposite direction of the velocity of the ejected fuel.
+
+Consider a fully fueled rocket ship in deep space that has a total mass m sub o (mass includes both the ship and the fuel).
+
+At some moment in time, the rocket has a velocity vector v and mass m (mass includes the ship and only the remaining fuel).
+
+The rocket accelerates by burning the fuel it carries and ejecting the burned exhaust gases.
+
+If the burn rate of the fuel and the velocity at which the exhaust is ejected is constant, what is the change of velocity of the rocket as a result of burning all of its fuel?
+An Organic Chemistry Tutor video is linked on the course webpage.
+Rockets accelerate by throwing mass backward. As you watch, focus on how the expelled fuel carries momentum in one direction while the rocket gains momentum in the opposite direction. The important point is that a rocket does not need air to push against; it accelerates by exchanging momentum with its own fuel.
+
+Physical Analysis.
+
+Here's a more detailed description in physical terms:
+
+The rocket engines are continuously ejecting gases, which have some momentum due to their mass and velocity. By conservation of momentum, the rocket's momentum changes by this same amount (with the opposite sign).
+
+The rate of change of the momentum is constant because the rocket is burning fuel at a constant rate.
+
+From vector F equals d vector p divided by d t, there is a constant force on the rocket.
+
+As time goes on, the mass of the rocket continuously decreases because of the ejecting gases. Even though the force on the rocket is constant, the resulting acceleration is not. It is continuously increasing, vector a equals vector F divided by m.
+
+the total change in the rocket's velocity will depend on the amount of fuel mass burned and that dependence is not linear.
+
+The problem has the mass and velocity of the rocket changing, along with the total mass of the ejected gases. Let's define our system to be the rocket + fuel, then this is a closed system (since there are not external forces in deep space). As a result, momentum is conserved for this system (see the figure) and we can apply the conservation of momentum to answer the question.
+
+The total instantaneous rocket mass is m (i.e., the mass of the ship + the amount of fuel at time t ). We define the rocket's instantaneous velocity as vector v equals v i-hat, where the velocity is measured relative to an inertial reference system (i.e., some star that is barely moving relative to the Galactic center). Thus the initial momentum of the system is
+
+ vector p initial equals mv i-hat.
+
+The rocket's engines are burning fuel at a constant rate and ejecting exhaust gases in the - i-hat direction. During an infinitesimal time dt, the engines eject a (positive) infinitesimal mass of gas d m sub g at velocity vector u equals -u i-hat; note that the exhaust gas velocity is measured with respect to the moving rocket. The gas speed measured relative to the star is (v-u) i-hat.
+
+As a consequence of the ejection of the fuel gas, the rocket's mass decreases by d m sub g and its velocity increases by dv i-hat. We can write the new momentum vector p final after this change as
+
+ vector p final equals vector p sub rocket + vector p sub gas,
+ equals [(m-d m sub g )(v+dv) i-hat ] + [d m sub g (v-u) i-hat ].
+
+Since all vectors are in the same direction, we drop the vector notation. Applying conservation of momentum, we have
+
+p initial equals p final,
+mv equals (m-d m sub g )(v+dv)+ d m sub g (v-u),
+mv equals mv + mdv - d m sub gv - d m sub g d v minus d m sub g v - d m sub gu,
+mdv equals d m sub gdv + d m sub gu.
+
+Now, d m sub g and dv are each very small (infinitesimal even); thus their product very, very small and we neglect this term. This is similar to adding a nanometer to a kilometer; it's still roughly a kilometer. We obtain:
+
+ mdv equals d m sub gu.
+
+Since d m sub g represents an increase in the mass of ejected gases, it must also represent a decrease in the mass of the rocket: d m sub g equals -dm. Then we have
+
+mdv equals -(dm)u,
+dv equals -u ( dm over m ).
+
+Integrating from the initial mass m sub o to the final mass m gives us
+
+ integral sub v sub i to the power of v dv equals -u integral sub m sub o to the power of m dm over m,
+v- v sub i equals u natural log of ( m sub o over m ).
+
+This result is called the rocket equation and is typically given as a difference equation
+
+ change in v equals u natural log of ( m sub o over m ).
+
+It was originally derived by the Russian rocket scientist Konstantin Tsiolkovsky in 1897. It gives us the change in velocity that the rocket obtains from burning a mass of fuel that decreases the total rocket mass from m sub o to m.
+
+Problem-Solving Strategy.
+
+Rocket Propulsion.
+
+In rocket problems, the most common questions are finding the change in v due to burning some amount of fuel for some amount of time, or to determine the acceleration a that results from burning fuel.
+
+First, To determine the change in v, use the rocket equation directly.
+
+Second, To determine the acceleration, determine the force by using the impulse-momentum theorem, where the rocket equation determines the change in velocity.
+Checkpoint. Pause and check your understanding.
+For a rocket, why can the force be constant while the acceleration changes with time?
+
+Example Problem: Thrust on a Spacecraft.
+The Problem.
+A spacecraft moves in deep space along a straight path. Its thrusters eject fuel at a constant rate of 200 kilograms per second with an exhaust speed (relative to the rocket) of 250 meters per second.
+The initial mass of the spacecraft (including fuel) is 2.0 times ten to the 4 kilograms, and the thrusters fire for 30 s.
+(a) What is the thrust on the spacecraft?
+(b) What is the spacecraft’s acceleration as a function of time while the thrusters fire?
+(c) What are the accelerations at t equals 0, 15, 30, and 35 s?
+The worked solution follows.
+The Model.
+
+We define the system as the spacecraft. The thrust arises from conservation of momentum: fuel is expelled backward, giving the spacecraft forward momentum. Because fuel is ejected at a constant rate and constant exhaust speed, the thrust force is constant. However, the spacecraft’s mass decreases with time as fuel is burned. Therefore, although the force is constant, the acceleration is not constant. We define the forward direction as positive.
+
+The Math.
+
+The thrust equals the rate at which momentum is carried away by the exhaust. Since the exhaust speed is constant,
+
+F equals v sub exhausthaust times m dot,
+ equals (250 meters per second )(200 kilograms per second ) equals 5.0 times ten to the 4 newtons.
+
+While the engines fire, the spacecraft’s mass decreases linearly:
+
+m of t equals M minus m dot times t.
+
+From Newton’s 2nd law, the acceleration is
+
+a of t equals F divided by m of t,
+which equals F divided by the quantity M minus m dot times t,
+which equals 5.0 times ten to the 4 newtons divided by the quantity 2.0 times ten to the 4 kilograms minus 200 kilograms per second times t.
+
+Now we evaluate at the time t equals 0, 15, 30, and 35 s
+
+a of zero equals 5.0 times ten to the 4 newtons divided by 2.0 times ten to the 4 kilograms, which equals 2.5 meters per second squared,
+a of 15 seconds equals 5.0 times ten to the 4 newtons divided by 1.7 times ten to the 4 kilograms, which equals 2.9 meters per second squared,
+a of 30 seconds equals 5.0 times ten to the 4 newtons divided by 1.4 times ten to the 4 kilograms, which equals 3.6 meters per second squared.
+
+After t equals 30 s, the thrusters are off and F equals 0, so
+
+a of 35 seconds equals 0.
+
+The Conclusion.
+
+The thrust on the spacecraft is F equals 5.0 times ten to the 4 newtons. While the engines fire, the acceleration is given by
+
+a of t equals 5.0 times ten to the 4 newtons divided by the quantity 2.0 times ten to the 4 kilograms minus 2.0 times ten to the 2 kilograms per second times t.
+
+The acceleration increases from 2.5 meters per second squared at launch to 3.6 meters per second squared at 30 s because the mass decreases as fuel is burned. Once the thrusters stop, the acceleration drops to zero and the spacecraft continues at constant velocity.
+
+Rocket in a Gravitational Field.
+
+Let's analyze the rocket's velocity change during the launch phase from the surface of the Earth. For simplicity, we consider cases where the acceleration due to gravity is approximately a constant g.
+
+The analysis is similar, except there is an external force vector F equals negative m g j-hat acting on our system. This force applies an impulse d vector J equals vector F d t, which equals negative m g d t j-hat, and is equal to the change of momentum. This gives us
+
+d vector J equals d vector p,
+
+negative m g d t j-hat equals vector p final minus vector p initial,
+
+which equals the quantity m minus d m sub g, times v plus d v, plus d m sub g times v minus u, minus m v, all in the j-hat direction.
+
+Therefore,
+
+negative m g d t equals m d v minus d m sub g u,
+
+where we neglect the term d m sub g d v and drop the vector notation. Replacing d m sub g with negative d m gives
+
+negative m g d t equals m d v plus d m u,
+
+and
+
+m d v equals negative d m u minus m g d t.
+
+Dividing through by m to solve for v gives us
+
+d v equals negative u times d m over m, minus g d t.
+
+Integrating, we have
+
+delta v equals u times the natural logarithm of m sub o over m, minus g delta t.
+
+Unsurprisingly, the rocket's velocity is affected by the constant acceleration of gravity.
+
+The burn time of the fuel is represented by delta t. In the absence of gravity, it makes no difference how much time it takes to burn the entire mass of fuel because delta v is independent of delta t. The negative g delta t term tells us that the longer the burn time is, the smaller the rocket's change of velocity will be. This is why, for a rocket launch, it is essential to burn the fuel as quickly as possible to get a large delta v.

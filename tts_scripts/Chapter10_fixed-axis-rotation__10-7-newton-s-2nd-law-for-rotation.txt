@@ -1,0 +1,138 @@
+Newton's 2nd Law for Rotation.
+
+Defining Newton's 2nd Law for Rotation in Vector Form.
+
+Since torque is a rotational analog to force, is there an analogous equation to Newton's 2nd law?
+
+Let's start with Newton's 2nd law for a single particle rotating around an axis in circular motion. A force vector F is applied on a point mass m that is a distance r from a pivot point (see the figure).
+
+The particle is constrained to move in a circular path with a fixed radius and the force is tangent to the path. We apply Newton's 2nd law to determine the magnitude of the acceleration (a equals F over m ) in the direction of vector F. Since the force is tangential to the path, we can use the relation for the tangential acceleration that relates to the angular acceleration ( a equals r alpha ).
+
+Substituting this expression into Newton's 2nd law, we have
+
+F equals ma,
+ equals mr alpha.
+
+We can multiply both sides by the radius r, which is motivated by the form of the torque, tau equals rF sin theta. The force is applied perpendicular to r, thus sin theta  equals 1. Now we have,
+
+rF equals mr squared alpha,
+ tau equals (mr squared) alpha,
+ equals I alpha.
+
+If we substitute the moment of inertia I equals mr squared, then we have a form that is similar to Newton's 2nd law. In this form the torque plays the role of force, the moment of inertia is like mass, and the angular acceleration is the rotational analog to the translational acceleration.
+
+Newton's 2nd Law for Rotation.
+
+If more than one torque acts on a rigid body about a fixed axis, then the sum of the torques equals the moment of inertia times the angular acceleration:
+
+ tau _ net equals sum sub j tau _j equals I alpha.
+
+The term I alpha is a scalar quantity that can be positive (counterclockwise) or negative (clockwise) depending on the sign of the net torque. This relation is Newton's 2nd law for rotation and tells us how to analyze problems for rotational dynamics.
+
+Deriving Newton's 2nd Law for Rotation in Vector Form.
+
+Newton's 2nd law tells us the relationship between the net force and how to change the translational motion of an object. We have a vector rotational equivalent of this equation. Let's start with the tangential acceleration written as a cross product,
+
+ vector a equals vector alpha times vector r.
+
+We form the cross product of this equation with vector r because we are ultimately wanting to generate a relation for vector tau equals vector r times vector F. Note that you might want to review the Vector Algebra section from Chapter 2.
+
+We begin with
+
+ vector r times vector a equals vector r times ( vector alpha times vector r ),
+ equals vector alpha ( vector r dot vector r ) - vector r ( vector r dot vector alpha ),
+ equals vector alpha ( vector r dot vector r ) equals r squared vector alpha.
+
+We used the Vector triple product to resolve the cross product of a cross product. Since vector r is perpendicular to vector alpha, this means that the dot product vector r dot vector alpha equals 0.
+
+In Newton's 2nd law, the mass m acts as a scalar on the acceleration vector a. Applying that here, we have
+
+ vector F equals sum m vector a,
+ vector tau equals sum vector r times vector F equals vector r times (m vector a ),
+ equals m vector r times vector a equals mr squared vector alpha.
+
+Since I equals mr squared, we arrive at Newton's 2nd law of rotation in vector form:
+
+ tau _ net equals sum vector tau equals I vector alpha.
+
+Note that the torque vector is in the same direction as the angular acceleration.
+
+Applying Newton's 2nd Law for Rotation.
+Problem-Solving Strategy.
+Rotational Dynamics.
+
+First, Identify that torque and mass are involved in the rotation.
+
+Second, Determine the system of interest.
+
+Third, Draw a free-body diagram for each system of interest.
+
+Fourth, Identify the pivot point(s). Choose the pivot point that simplifies your work the most.
+
+Fifth, Apply sum sub j tau _j equals I alpha to solve the problem. Carefully select the moment of inertia and consider the torque about the point of rotation.
+
+Sixth, Check the solution for physical reasonableness.
+Example Problem: Effect of Mass Distribution on a Merry-Go-Round.
+
+The Problem.
+Consider the father pushing a playground merry-go-round in Figure. He exerts a force of 250 newtons at the edge of the 50 kg merry-go-round, which has a 1.50 meters radius. Calculate the angular acceleration produced
+For part a, when no one is on the merry-go-round and
+For part b, when an 18 kg child sits 1.25 meters away from the center.
+Consider the merry-go-round itself to be a uniform disk with negligible friction.
+The worked solution follows.
+The Model.
+
+The merry-go-round rotates about a fixed central axis. The applied force is perpendicular to the radius, so it produces the maximum possible torque for the given force and radius. Because friction is negligible, the applied torque is the net torque on the system.
+
+The angular acceleration follows from Newton’s second law for rotation. The applied torque is the same in both cases, but the moment of inertia changes when the child is added. The merry-go-round is modeled as a uniform disk, and the child is modeled as a point mass located at a fixed distance from the axis.
+
+The Math.
+
+The applied force is perpendicular to the radius, so the torque magnitude is determined by the force and radius. The applied torque follows from the given radius and force:
+
+ tau equals (1.50 meters )(250 newtons )
+ equals 375 newtons dot m.
+
+For part a, The merry-go-round is modeled as a uniform disk, so its moment of inertia is
+
+I equals 1 over 2 MR squared,
+ equals 1 over 2 (50 kg )(1.50 meters ) squared
+ equals 56.25 kg dot square meters.
+
+Newton’s second law for rotation relates the net torque, moment of inertia, and angular acceleration. We solve this relationship for the angular acceleration, which gives
+
+ alpha equals tau over I.
+
+The angular acceleration follows from the applied torque and the moment of inertia:
+
+ alpha equals 375 newtons dot m over 56.25 kg dot square meters
+ equals 6.67 radians per second squared.
+
+For part b, The child is modeled as a point mass, so the child’s moment of inertia is
+
+ I sub c equals mr squared.
+
+The child’s moment of inertia follows from the child’s mass and distance from the axis:
+
+ I sub c equals (18 kg )(1.25 meters ) squared
+ equals 28.13 kg dot square meters.
+
+The total moment of inertia of the system is the sum of the merry-go-round and child contributions:
+
+I_ total equals 56.25 kg dot square meters + 28.13 kg dot square meters
+ equals 84.38 kg dot square meters.
+
+The same rotational form of Newton’s second law applies after the child is added. We solve this relationship for the angular acceleration, which gives
+
+ alpha equals tau over I_ total.
+
+The angular acceleration follows from the same applied torque and the larger moment of inertia:
+
+ alpha equals 375 newtons dot m over 84.38 kg dot square meters
+ equals 4.44 radians per second squared.
+
+The Conclusion.
+
+When the merry-go-round is empty, the angular acceleration is 6.67 radians per second squared. When the 18 kg child sits 1.25 meters from the center, the angular acceleration decreases to 4.4 radians per second squared.
+
+This result shows that increasing the mass farther from the axis increases the moment of inertia and reduces the angular acceleration produced by the same torque. The change in mass distribution matters just as much as the total mass when rotational motion is involved.

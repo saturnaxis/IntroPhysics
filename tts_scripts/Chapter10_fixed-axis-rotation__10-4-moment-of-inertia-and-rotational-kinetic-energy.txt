@@ -1,0 +1,268 @@
+Moment of Inertia and Rotational Kinetic Energy.
+
+In addition to the description of motion for a rotating rigid body with a fixed axis of rotation, we define two new quantities used in the analysis of rotating objects:
+
+First, moment of inertia,
+
+Second, rotational kinetic energy.
+
+Rotational Kinetic Energy.
+
+Any moving object has kinetic energy, which we found already for a body undergoing translational motion. How does this translate to a rigid body undergoing rotation?
+
+Recall that the tangential velocity v sub t equals r omega shows that v sub t increases with the radius. However, the angular velocity omega can remain the same for the entire rigid body.
+
+Energy in rotational motion is not a new form of energy, where it is simply an energy related to a specific type of motion. Recall that we defined many types of potential energy (e.g., gravitational or spring).
+
+The translational kinetic energy is given by K equals 1 over 2 mv squared, where it would be natural to have a rotational analog.
+
+Velocity is different for every point on a rotating body about an axis. For a single particle, this is straightforward to calculate using the relation v sub t equals r omega. Through substitution, we find
+
+ K equals 1 over 2 meters v sub t to the power of 2 equals 1 over 2 meters(r omega ) squared equals 1 over 2 (mr squared) omega to the power of 2.
+
+In the case of a rigid rotating body, we can divide up any body into a large number of smaller masses (each with a mass m sub j and distance to the axis of rotation r sub j ), where the total mass of the body is equal to the sum of the individual masses: M equals sum sub j equals m sub j.
+
+Each smaller mass has a tangential speed v sub j, then the total kinetic energy of the rigid rotating body is
+
+ K equals 1 over 2 sum sub j m sub j v sub j to the power of 2 equals 1 over 2 sum sub j m sub j ( r sub j omega _j) squared.
+
+Since omega sub j equals omega for all masses, we have
+
+K equals 1 over 2 ( sum sub j m sub jr _j squared ) omega to the power of 2.
+
+This rotational kinetic energy has units of Joules, just like its translational counterpart.
+
+Moment of Inertia.
+
+Comparing forms for the total kinetic energy, we have
+
+ K sub t equals 1 over 2 M v squared,
+ K sub r equals 1 over 2 ( sum sub j m sub jr _j squared ) omega to the power of 2.
+
+The quantity sum sub j m sub j r sub j to the power of 2 is the counterpart for mass in the equation for the rotational kinetic energy. This quantity is called the moment of inertia I (with units of kg dot square meters ):
+
+I equals sum sub j m sub j r sub j to the power of 2.
+
+The moment of inertia of a single point particle about a fixed axis is simply mr squared, where r is the distance from the particle to the axis of rotation.
+
+The moment of inertia (in general) is the quantitative measure of rotational inertia, similar to mass is the respective quantity for linear inertia.
+
+The greater the moment of inertia of a rigid body or system of particles, the greater is its resistance to change in angular velocity about a fixed axis of rotation.
+
+Rigid bodies and systems of particles with more mass concentrated a greater distance from the axis of rotation have greater moments of inertia.
+
+We can see that a hollow cylinder has more rotational inertia than a solid cylinder of the same mass when rotating about a central axis. The expression for the rotational kinetic energy can be written in terms of the physical property of the medium I, or
+
+K equals 1 over 2 I omega to the power of 2.
+
+The kinetic energy of a rotating rigid body is directly proportional to the moment of inertia and the square of the angular velocity. This is exploited in flywheel energy-storage devices, which can store large amounts of rotational kinetic energy.
+
+Figure shows the moment of inertia for common shapes or objects. The course webpage includes a useful reference list of moments of inertia for common objects.
+Checkpoint. Pause and check your understanding.
+For the same total mass, which object is harder to spin up: one with mass near the axis or one with mass far from the axis?
+Example Problem: Moment of Inertia for a System of Particles.
+
+The Problem.
+A system consists of six small washers spaced 10 cm apart on a rod of negligible mass and 0.5 meters in length. The mass of each washer is 20 g. The rod rotates about an axis located at 25 cm.
+For part a, What is the moment of inertia of the system?
+For part b, If the two washers closest to the axis are removed, what is the moment of inertia of the remaining four washers?
+For part c, If the system with six washers rotates at 5 revolutions per second, what is its rotational kinetic energy?
+The worked solution follows.
+The Model.
+
+The washers are treated as point masses attached to a rod of negligible mass, so the rod does not contribute to the moment of inertia. The moment of inertia of the system is therefore found by summing the contributions mr squared from each washer, where r is the perpendicular distance from the axis of rotation.
+
+Because all washers have the same mass, the calculation reduces to identifying the set of distances from the axis and summing the corresponding squared distances. Once the moment of inertia is known, the rotational kinetic energy follows from the relation between rotational kinetic energy, moment of inertia, and angular speed.
+
+The Math.
+
+The mass of each washer is
+
+m equals 20 g equals 0.020 kg.
+
+The six washers are located at distances 0.25 meters, 0.15 meters, and 0.05 meters from the axis on each side. Therefore, the moment of inertia of the six-washer system is
+
+I equals sum sub j m sub j r sub j to the power of 2.
+
+For part a, The moment of inertia of the full system is
+
+I equals (0.020 kg ) [2(0.25 meters ) squared + 2(0.15 meters ) squared + 2(0.05 meters ) squared ]
+ equals 3.5 times ten to the minus 3 kg dot square meters.
+
+For part b, Removing the two washers closest to the axis removes the two contributions at r equals 0.05 meters. The moment of inertia of the remaining four washers is therefore
+
+I equals (0.020 kg ) [2(0.25 meters ) squared + 2(0.15 meters ) squared ]
+ equals 3.4 times ten to the minus 3 kg dot square meters.
+
+For part c, The rotational kinetic energy is determined from
+
+K equals 1 over 2 I omega to the power of 2.
+
+The angular speed must be expressed in radians per second. The angular speed follows from converting 5 revolutions per second:
+
+ omega equals 5 revolutions per second, times 2 pi radians per revolution
+ equals 31 radians per second.
+
+The rotational kinetic energy is evaluated using the moment of inertia from part (a):
+
+K equals 1 over 2 (0.0035 kg dot square meters )(31 radians per second ) squared
+ equals 1.7 joules.
+
+The Conclusion.
+
+The moment of inertia of the six-washer system is 3.5 times ten to the minus 3 kg dot square meters, and the moment of inertia of the remaining four washers is 3.4 times ten to the minus 3 kg dot square meters. When the full six-washer system rotates at 5 revolutions per second, its rotational kinetic energy is 1.7 joules.
+
+These results show that washers near the axis contribute very little to the total moment of inertia because the factor of r squared strongly reduces their effect. As a result, removing the two washers closest to the axis changes the moment of inertia only slightly.
+
+Applying Rotational Kinetic Energy.
+
+Problem-Solving Strategy: Rotational Energy.
+
+First, determine whether an energy or work-energy method is appropriate.
+
+Second, determine the system of interest, where a sketch usually helps.
+
+Third, identify the types of work and energy involved, such as translational kinetic energy, rotational kinetic energy, and gravitational potential energy.
+
+Fourth, if mechanical energy is conserved, meaning that only conservative work is done or the system is frictionless, set K sub i plus U sub i equal to K sub f plus U sub f. Solve for any unknown quantity. If nonconservative forces are present, include them as sources of work that enter or leave the system.
+
+Fifth, eliminate terms to simplify the algebra.
+
+Sixth, evaluate the numerical solution to make sure it makes physical sense.
+Example Problem: Helicopter Energies.
+
+The Problem
+A typical small rescue helicopter has four blades. Each is 4.0 meters long and has a mass of 50 kg. The blades can be approximated as thin rods that rotate about one end of an axis perpendicular to their length. The helicopter has a total loaded mass of 1000 kg.
+For part a, Calculate the rotational kinetic energy in the blades when they rotate at 300 revolutions per minute.
+For part b, Calculate the translational kinetic energy of the helicopter when it flies at 20 meters per second, and compare it with the rotational energy in the blades.
+The worked solution follows.
+The Model.
+
+Each blade is modeled as a thin rod rotating about one end, so the moment of inertia of one blade is that of a thin rod about its end. Because there are four identical blades, the total moment of inertia is four times the moment of inertia of one blade.
+
+The rotational kinetic energy is determined from the moment of inertia and the angular speed. The translational kinetic energy is determined from the total mass and the linear speed. Comparing the two energies shows how the helicopter’s kinetic energy is distributed between the spinning blades and the motion of the helicopter as a whole.
+
+The Math.
+
+For part a, The rotational kinetic energy is determined from
+
+K_ rot equals 1 over 2 I omega to the power of 2.
+
+The angular speed must be expressed in radians per second. The angular speed follows from converting 300 revolutions per minute:
+
+ omega equals 300 revolutions per minute, times 2 pi radians per revolution, times 1 minute per 60 seconds
+ equals 31 radians per second.
+
+The moment of inertia of one blade is that of a thin rod rotated about its end:
+
+I_ blade equals 1 over 3 ML squared.
+
+The total moment of inertia of the four blades is therefore
+
+I equals 4 ( 1 over 3 ML squared )
+ equals 4 [ 1 over 3 (50 kg )(4.0 meters ) squared ]
+ equals 1.1 times ten to the 3 kg dot square meters.
+
+The rotational kinetic energy of the blades is
+
+K_ rot equals 1 over 2 (1.1 times ten to the 3 kg dot square meters )(31 radians per second ) squared
+ equals 5.3 times ten to the 5 joules.
+
+For part b, The translational kinetic energy of the helicopter is determined from
+
+K_ trans equals 1 over 2 mv squared.
+
+The translational kinetic energy follows from the loaded mass of the helicopter and its flight speed:
+
+K_ trans equals 1 over 2 (1000 kg )(20 meters per second ) squared
+ equals 2.0 times ten to the 5 joules.
+
+The comparison is made by taking the ratio of the translational kinetic energy to the rotational kinetic energy:
+
+ K_ trans over K_ rot equals 2.0 times ten to the 5 joules over 5.3 times ten to the 5 joules
+ equals 0.38.
+
+The Conclusion.
+
+The rotational kinetic energy of the four blades is 5.3 times ten to the 5 joules. The translational kinetic energy of the helicopter is 2.0 times ten to the 5 joules, so the translational energy is only 0.38 times the rotational energy of the blades.
+
+This result shows that most of the helicopter’s kinetic energy is stored in the spinning blades rather than in the forward motion of the helicopter. The large rotational energy comes from both the large moment of inertia of the blades and their substantial angular speed.
+Example Problem: Energy in a Boomerang.
+The Problem.
+A person hurls a boomerang into the air with a velocity of 30 meters per second at an angle of 40 degrees with respect to the horizontal (Figure ). It has a mass of 1.0 kg and is rotating at 10 revolutions per second. The moment of inertia of the boomerang is given as I equals one-twelfth m L squared where L equals 0.7 meters.
+For part a, What is the total energy of the boomerang when it leaves the hand?
+For part b, How high does the boomerang go from the elevation of the hand, neglecting air resistance?
+The worked solution follows.
+The Model.
+
+The boomerang has both translational and rotational kinetic energy when it leaves the hand. Its total initial mechanical energy is therefore the sum of these two kinetic energies. The moment of inertia is given, so the rotational kinetic energy can be determined directly once the angular speed is converted to radians per second.
+
+Neglecting air resistance means that the mechanical energy of the boomerang is conserved during its flight. At maximum height, the vertical component of the translational kinetic energy has been converted into gravitational potential energy, while the horizontal translational kinetic energy and the rotational kinetic energy remain unchanged. The height can therefore be determined from conservation of mechanical energy.
+
+The Math.
+
+For part a, The moment of inertia of the boomerang is given by
+
+I equals one-twelfth m L squared.
+
+The moment of inertia follows from the given mass and length:
+
+I equals 1 over 12 (1.0 kg )(0.7 meters ) squared
+ equals 0.041 kg dot square meters.
+
+The angular speed must be written in radians per second. The angular speed follows from converting 10 revolutions per second:
+
+ omega equals 10 revolutions per second, times 2 pi radians per revolution
+ equals 63 radians per second.
+
+The rotational kinetic energy is determined from
+
+K_ rot equals 1 over 2 I omega to the power of 2.
+
+The rotational kinetic energy follows from the moment of inertia and angular speed:
+
+K_ rot equals 1 over 2 (0.041 kg dot square meters )(63 radians per second ) squared
+ equals 81 joules.
+
+The translational kinetic energy is determined from
+
+K_ trans equals 1 over 2 mv squared.
+
+The translational kinetic energy follows from the mass and launch speed:
+
+K_ trans equals 1 over 2 (1.0 kg )(30 meters per second ) squared
+ equals 450 joules.
+
+The total energy when the boomerang leaves the hand is the sum of the rotational and translational kinetic energies:
+
+E_ total equals K_ rot + K_ trans
+ equals 81 joules + 450 joules
+ equals 5.3 times ten to the 2 joules.
+
+For part b, The vertical component of the launch speed is
+
+ v sub y equals v sin theta.
+
+The vertical component of the launch speed follows from the launch speed and angle:
+
+ v sub y equals (30 meters per second ) sin 40 degrees
+ equals 19 meters per second.
+
+At maximum height, the vertical translational kinetic energy has been converted into gravitational potential energy. Conservation of mechanical energy therefore gives
+
+ 1 over 2 meters v sub y to the power of 2 equals mgh.
+
+We solve this expression for the height, which gives
+
+h equals v sub y to the power of 2 over 2g.
+
+The maximum height follows from the vertical-energy expression with g equals 9.81 meter per second squared:
+
+h equals (19 meters per second ) squared over 2(9.81 meter per second squared )
+ equals 18 meters.
+
+The Conclusion.
+
+The total energy of the boomerang when it leaves the hand is 5.3 times ten to the 2 joules. The boomerang rises to a maximum height of 18 meters above the release point.
+
+This result shows that the boomerang carries substantial rotational energy, but that rotational energy does not affect the maximum height in this idealized model. The height depends only on the vertical component of the launch speed when air resistance is neglected.

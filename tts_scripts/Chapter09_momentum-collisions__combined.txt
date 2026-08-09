@@ -1,0 +1,2020 @@
+9.1 Linear Momentum
+
+Linear Momentum and Collisions.
+
+Chapter roadmap.
+
+ 
+
+This chapter develops momentum as a tool for analyzing short interactions, collisions, explosions, and systems whose mass can change. As you read, focus on three questions:
+
+Item 1. How does impulse connect force, time, and change in momentum?
+
+Item 2. When is momentum conserved for a chosen system?
+
+Item 3. How do center of mass and rocket propulsion extend the same momentum ideas to more complex systems?
+
+Keep asking what system is being analyzed and whether external impulses can be ignored.
+ 
+
+Linear Momentum.
+
+When using kinetic energy, we see that an object's motion can be described by combining its mass m and velocity squared v squared into a scalar. However, we can also include the direction of motion into a description that combines mass and velocity vec v as a vector.
+
+Like kinetic energy, this quantity is a way of characterizing the "quantity of motion" for an object. **Momentum** (from the Latin word *movimentum*, meaning movement) is represented by the letter p 
+
+Momentum.
+
+ 
+
+The momentum p of an object is the product of its mass and its velocity:
+
+ 
+ vector p equals m vec v.
+ 
+
+ 
+
+Momentum is a vector quantity, which is a property it inherits from the velocity. The momentum is most useful when determining whether an object's motion is difficult to change or easy to change over a short time interval.
+
+Unlike kinetic energy, momentum depends equally on an object's mass and velocity. The average speed of an air molecule at room temperature is { approximately }500 meters per second, with an average molecular mass of 6 times ten to the minus 25 kg, and thus, its momentum is given by
+
+ p_ molecule equals (6 times ten to the minus 25 kg ) (500 meters per second ) equals 3 times ten to the minus 22 [ kg dot meters per second ]. 
+
+For comparison, a typical automobile might have a speed of only 15 meters per second, but a mass of 1400 kg, which gives it a momentum of 
+
+ p_ car equals (1400 kg ) (15 meters per second ) equals 2.1 times ten to the 4 [ kg dot meters per second ]. 
+
+These momenta are different by 27 orders of magnitude!
+
+========================================================================
+
+9.2 Impulse and Collisions
+
+Impulse and Collisions.
+
+If an object's velocity should change (due to the application of a force), then its momentum changes as well. This indicates a connection between momentum and force.
+
+Suppose you apply a force F on a free object over a time interval change in t. 
+
+Bullet point. An increase in force will result in a proportional increase in the change of momentum. 
+
+Bullet point. A larger time spent applying a force will result in a proportional increase in the change of momentum.
+
+A change in an object's motion can be proportional to the magnitude of the force and to the time interval over which the force is applied.
+
+Mathematically, if a quantity is proportional to two quantities, then it is proportional to their product. The product of a force and a time interval is called **impulse**, which is represented by vector J and has units of N dot s.
+
+Impulse.
+
+ 
+
+Let vector F (t) be the force applied to an object over some differential time interval dt. The resulting impulse on the object is defined as
+
+ 
+d vector J equiv vector F (t)dt.
+ 
+ 
+
+The total impulse over the interval t sub f - t sub i is given by
+
+ 
+ vector J equals integral sub t sub i to the power of t sub f d vector J equals integral sub t sub i to the power of t sub f vector F dt.
+ 
+
+When a force is applied for an infinitesimal time interval dt, then it causes an infinitesimal impulse d vector J, and the total impulse is the sum over all of these infinitesimal impulses.
+
+To calculate the impulse, we need to know the force function F(t) (which we often don't). However, we can use a result from calculus called a *mean value theorem* or
+
+ f(x)_ ave equals 1 over x sub f - x sub i integral sub x sub i to the power of x sub f f(x)dx. 
+
+Applying this to the time-dependent force function, we find
+
+ 
+ vector F _ ave equals 1 over t sub f - t sub i integral sub t sub i to the power of t sub f vector F (t)dt,
+ 
+
+which we can rewrite in terms of the impulse as
+
+ 
+ vector J equals vector F _ ave change in t.
+ 
+
+Note.
+
+You can calculate the impulse on the object even if you don't know the details of the force as a function of time; you only need the average force.
+ 
+
+You usually determine the impulse (by measurement or calculation) and then calculate the average force that caused that impulse. To calculate the impulse, we can start from a version of Newton's 2nd law:
+
+ 
+ vector F (t) equals m vector a (t), 
+ vector J equals integral sub t sub i to the power of t sub f vector F dt equals m integral sub t sub i to the power of t sub f vector a dt, 
+ equals m [ vec v ( t sub f ) - vec v ( t sub i ) ].
+ 
+
+For a constant force vector F _ ave equals vector F equals m vector a, which simplifies to
+
+ 
+ vector J equals m vector a change in t equals m ( vec v _f - vec v _i ), 
+ equals m change in vec v.
+ 
+
+Checkpoint.
+
+ 
+
+If the same impulse is delivered over a longer time interval, what happens to the average force?
+ 
+
+**Khan Academy**.
+
+ 
+
+ 
+Momentum changes when an object experiences an impulse. As you watch, focus on how the same change in momentum can come from a large force over a short time or a smaller force over a longer time. This idea explains why collision time matters in crashes, sports impacts, and safety equipment.
+ 
+
+**Example Problem**: Arizona Meteor Crater.
+
+The Problem.
+Approximately 50{,}000 years ago, a large (radius of 25 meters ) iron-nickel meteorite collided with Earth at an estimated speed of 1.28 times ten to the 4 meters per second in what is now the northern Arizona desert, in the United States. The impact produced a crater that is still visible today; it is approximately 1200 meters (three-quarters of a mile) in diameter, 170 meters deep, and has a rim that rises 45 meters above the surrounding desert plain. Iron-nickel meteorites typically have a density of rho equals 7970 kilograms per cubic meter. Use impulse considerations to estimate the average force and the maximum force that the meteor applied to Earth during the impact.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The system consists of the meteor during the short collision interval with Earth. We model the meteor as a uniform-density sphere of radius R and density rho, moving vertically just before impact. We define upward as the +y direction and use j hat as the upward unit vector. Immediately before impact, the meteor’s velocity is downward, so its initial velocity has a negative y -component. During the collision interval change in t, the meteor is brought to rest by a large upward contact force exerted by Earth. The meteor’s weight acts downward, but during the extremely short impact interval the contact force is assumed to be much larger than the weight, so the momentum change is dominated by the contact interaction.
+
+Because we want to know the average force, we replace the true time-varying contact force with an effective constant force acting over the interval change in t that produces the same change in momentum. The impulse on the meteor therefore points in the direction of change in vec v, which is upward since the meteor’s downward velocity is reduced to zero. To estimate the maximum force, we must assume a time-dependence for the contact force during impact. We model the force magnitude as a rapidly decaying function of time that begins near a maximum value and decreases toward zero by the end of the collision interval. This assumed force profile is chosen so that its time-average matches the previously determined average force.
+
+By Newton’s 3rd law, the force the meteor applies to Earth is equal in magnitude and opposite in direction to the force Earth applies to the meteor. The analysis therefore depends only on the meteor’s change in momentum during the collision interval and not on the depth to which it penetrates the ground.
+
+---
+
+The Math.
+
+The impact force is related to impulse because the net impulse equals the change in momentum. The system requires a change in momentum to bring the meteor from its initial velocity to rest, given by the impulse–momentum theorem.
+
+For a short impact, the impulse on the meteor is vector J equals m change in vec v. 
+
+The meteor is moving downward initially and stops after impact. Using the +y direction as upward, we write the initial and final velocities as
+
+ 
+ vec v _i equals - v sub o j hat, 
+ vec v _f equals 0.
+ 
+
+The change in velocity is therefore upward: change in vec v equals vec v _f - vec v _i equals v sub o j hat. 
+
+The average net force during impact is the impulse divided by the impact duration, J/ change in t. For an approximately constant average force over change in t, the average force on the meteor is
+
+ vector F _ ave equals vector J over change in t equals m change in vec v over change in t. 
+
+The mass is determined from density and volume. For a spherical meteor, the mass is
+
+ m equals rho V equals rho ( 4 over 3 pi R cubed ), 
+
+which allows us to calculate the average force as
+
+ vector F _ ave equals rho ( 4 over 3 pi R cubed ) v sub o over change in t j hat. 
+
+Using the given values and the estimate change in t equals 2 s yields
+
+ 
+m equals rho ( 4 over 3 pi R cubed ), 
+ | vector F _ ave | equals m v sub o over change in t.
+ 
+
+Using Newton’s 3rd law, the meteor applies an equal-magnitude force to Earth in the opposite direction, so the average force applied *to Earth* is downward with magnitude | vector F _ ave |.
+
+To estimate the maximum force, we choose a simple rapidly-decaying force function (e.g., F is proportional to e to the power of -kt squared ) that starts near a maximum and decreases toward zero during the impact. We model the contact force on the meteor as
+
+ vector F (t) equals F sub max e to the power of -t squared/(2 tau to the power of 2 ) j hat, 0 le t le change in t. 
+
+The average force over the interval is the time-average of this function. The system requires the time-average of vector F (t) to match vector F _ ave, given by
+
+ vector F _ ave equals 1 over change in t integral _0 to the power of change in t vector F (t) dt. 
+
+Because the force always points in + j hat during impact, we equate magnitudes:
+
+ F_ ave equals F sub max over change in t integral _0 to the power of change in t e to the power of -t squared/(2 tau to the power of 2 ) dt. 
+
+We choose tau equals change in t/e to represent a force that decays substantially over the impact duration. We solve this expression for F sub max, which yields
+
+ F sub max equals F_ ave over 1 over change in t integral _0 to the power of change in t e to the power of -t squared/(2 tau to the power of 2 ) dt with tau equals change in t over e. 
+
+With change in t equals 2 s, the time-average factor evaluates to
+
+ 1 over change in t integral _0 to the power of change in t e to the power of -t squared/(2 tau to the power of 2 ) dt is approximately equal to 0.458, 
+
+which sets the timescale so that the force has decayed significantly by the end of the collision interval. The maximum force magnitude is
+
+ F sub max equals F_ ave over 0.458 equals 3.33 times ten to the 12 newtons over 0.458 equals 7.27 times ten to the 12 newtons. 
+
+---
+
+The Conclusion.
+
+Modeling the meteor as a uniform sphere of radius 25 meters and density 7970 kilograms per cubic meter gives a mass of 5.21 times ten to the 8 kg. If the meteor is brought from 1.28 times ten to the 4 meters per second to rest in change in t equals 2 s, the average impact force magnitude is 3.33 times ten to the 12 newtons. By Newton’s 3rd law, the average force the meteor applied to Earth is the same magnitude downward.
+
+Using a decaying-force model with tau equals change in t/e gives a maximum force magnitude of 7.27 times ten to the 12 newtons, so the maximum force the meteor applied to Earth is also downward with this magnitude. These values are estimates because the impact time and the detailed force–time profile are idealizations of a complex event.
+
+---
+
+ **The Problem**
+A car traveling at 27 meters per second collides with a building. The collision with the building causes the car to come to a stop in approximately 1 s. The driver, who weighs 860 newtons, is protected by a combination of a variable-tension seatbelt and an airbag. The airbag and seatbelt slow his velocity, such that he comes to a stop in approximately 2.5 s.
+**(a)** What average force does the driver experience during the collision? 
+**(b)** Without the seatbelt and airbag, his collision time (with the steering wheel) would have been approximately 0.20 s. What force would he experience in this case?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The system consists of the driver during the collision interval. We model the driver as a particle moving in one dimension along +x direction.
+
+The driver’s velocity decreases from v sub o equals 27 meters per second to zero due to a horizontal contact force from the seatbelt and airbag (or, in the unrestrained case, from the steering wheel). We assume that the dominant contribution to the driver’s horizontal momentum change comes from this contact force. The vertical forces (weight and normal force from the seat) do not significantly affect the horizontal impulse during the short collision interval.
+
+Because we want to know the average force, we treat the collision as producing an effective constant force over a time interval change in t that yields the correct impulse. The driver’s mass is not given directly, so it must be determined from the stated weight using W equals mg.
+
+---
+
+The Math.
+
+The impulse–momentum theorem relates the net impulse to the change in momentum,
+
+ vector J equals m change in vec v. 
+
+If we replace the true time-varying contact force with an average force acting over the collision time change in t, the impulse is also
+
+ vector J equals vector F _ ave change in t. 
+
+Since both expressions represent the same impulse, we equate them and solve for the average force:
+
+ vector F _ ave change in t equals m change in vec v therefore vector F _ ave equals m change in vec v over change in t. 
+
+The driver’s mass is obtained from his weight:
+
+ 
+m equals W over g equals 860 newtons over 9.81 meters per second squared 
+ equals 87.7 kg.
+ 
+
+Initially, the driver moves in the +x direction, so
+
+ 
+ vec v _i equals v sub o i hat, 
+ vec v _f equals 0.
+ 
+
+The change in velocity is therefore change in vec v equals vec v _f - vec v _i equals - v sub o i hat. The expression for the average force now gives
+
+ 
+ vector F _ ave equals m(- v sub o i hat ) over change in t, 
+ equals - ( m v sub o over change in t ) i hat.
+ 
+
+**(a)** With the seatbelt and airbag, the stopping time is change in t equals 2.5 s. We find the average force as
+
+ 
+ vector F _ ave equals - ( (87.7 kg )(27 meters per second ) over 2.5 s ) i hat 
+ equals -(948 newtons ) i hat.
+ 
+
+**(b)** Without the seatbelt and airbag, the stopping time would have been change in t equals 0.20 s. Repeating the calculation,
+
+ 
+ vector F _ ave equals - ( (87.7 kg )(27 meters per second ) over 0.20 s ) i hat 
+ equals -(1.19 times ten to the 4 newtons ) i hat.
+ 
+
+---
+
+The Conclusion.
+
+When the driver is restrained by a seatbelt and airbag, he comes to rest in 2.5 s and experiences an average force of magnitude 948 newtons opposite his direction of motion. Without these safety systems, stopping in only 0.20 s requires an average force of magnitude 1.19 times ten to the 4 newtons, also opposite the direction of motion.
+
+Although the change in momentum is the same in both cases, increasing the collision time dramatically reduces the required average force. This illustrates why safety systems are effective: they extend the stopping time and therefore reduce the force experienced by the occupant.
+
+---
+
+ **Impulse-Momentum Theorem**
+
+Item 1. Express the impulse as force times the relevant time interval.
+
+Item 2. Express the impulse as the change of momentum, usually m change in v.
+
+Item 3. Equate these and solve for the desired quantity.
+ 
+
+Checkpoint.
+
+ 
+
+When you use vector F _ ave equals change in vector p / change in t, what system is receiving the impulse?
+ 
+
+**Example Problem**: Moving the Enterprise.
+
+The Problem.
+When Captain Picard commands, “Take us out,” the starship *Enterprise* starts from rest to a final speed of v sub f equals 7.5 times ten to the 7 meters per second. Assuming this maneuver is completed in 60 s, what average force did the impulse engines apply to the ship? An estimate for the mass of the *Enterprise* is 2 times ten to the 9 kg.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The system consists of the starship during the acceleration interval. We model the motion as one-dimensional along the direction of thrust. The engines apply a force in this direction, producing a change in the ship’s velocity from rest to its final speed.
+
+Because we are asked for an *average* force over a known time interval, we treat the true thrust as an effective constant force acting over change in t equals 60 s that produces the same change in momentum. The mass of the ship is assumed constant during the maneuver.
+
+---
+
+The Math.
+
+The impulse–momentum theorem states that the net impulse on a system equals its change in momentum, vector J equals m change in vec v. If we replace the actual time-varying thrust with an average force acting over the time interval change in t, then the impulse is also
+
+ vector J equals vector F _ ave change in t. 
+
+Since both expressions represent the same impulse, we equate them:
+
+ 
+ vector F _ ave change in t equals m change in vec v, 
+ vector F _ ave equals m change in vec v over change in t.
+ 
+
+The ship starts from rest, so
+
+ 
+ vec v _i equals 0, 
+ vec v _f equals v sub f i hat.
+ 
+
+Thus the change in velocity is change in vec v equals vec v _f - vec v _i equals v sub f i hat. Using the given values,
+
+ 
+ vector F _ ave equals (2 times ten to the 9 kg )(7.5 times ten to the 7 meters per second ) over 60 s i hat 
+ equals (2.5 times ten to the 15 newtons ) i hat.
+ 
+
+---
+
+The Conclusion.
+
+To accelerate the 2 times ten to the 9 kg starship from rest to 7.5 times ten to the 7 meters per second in 60 s requires an average thrust of 2.5 times ten to the 15 newtons. This corresponds to an acceleration of a equals F over m equals 1.25 times ten to the 6 meters per second squared. 
+
+That acceleration is approximately 130{,}000 times Earth’s gravitational acceleration. An acceleration of 1.25 times ten to the 6 meters per second squared would be instantly fatal to any biological crew and would likely destroy the structural integrity of the ship itself. The only reason this scenario works in science fiction is the assumed existence of “inertial dampeners,” which would somehow cancel the internal effects of acceleration. From a classical mechanics perspective, however, the force required is unimaginably large.
+
+---
+
+ **The Problem**
+Apple released its iPhone 6 Plus in November 2014. Suppose the phone is dropped from a height of 1.5 meters and strikes the floor. Estimate the average force the floor exerts on the phone during the collision. Use a mass of 0.172 kg, assume the phone is dropped from rest, and assume that it does not bounce.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The system consists of the phone during the short collision interval with the floor. We model the motion as one-dimensional along the vertical axis, taking upward as the +y direction.
+
+The phone is dropped from rest at height h equals 1.5 meters. Just before impact, it has a downward velocity due to gravitational acceleration. During the collision, the floor exerts a large upward contact force that brings the phone to rest. We assume the phone does not bounce, so its final velocity immediately after impact is zero.
+
+Because we are asked for an average force, we replace the true time-varying contact force with an effective constant force acting over a short collision time change in t. The dominant contribution to the phone’s change in vertical momentum during the collision is due to the floor’s contact force. The collision time must be estimated.
+
+---
+
+The Math.
+
+The average force during the collision is related to impulse. The impulse–momentum theorem states that the net impulse equals the change in momentum,
+
+ vector J equals m change in vec v. 
+
+If we approximate the true force as an average force acting over a time interval change in t, then
+
+ vector J equals vector F _ ave change in t. 
+
+Equating these expressions gives
+
+ 
+ vector F _ ave change in t equals m change in vec v, 
+ vector F _ ave equals m change in vec v over change in t.
+ 
+
+To evaluate change in vec v, we must first determine the velocity just before impact. Using conservation of mechanical energy and defining the floor as zero potential energy,
+
+ 
+ 1 over 2 meters v sub 1 to the power of 2 equals m g h.
+ 
+
+Solving for the speed just before impact,
+
+ 
+ v sub 1 equals square root of 2 g h.
+ 
+
+Using g equals 9.81 meters per second squared and h equals 1.5 meters,
+
+ 
+ v sub 1 equals square root of 2(9.81 meters per second squared )(1.5 meters ) 
+ equals 5.42 meters per second.
+ 
+
+After impact the phone comes to rest, vec v _2 equals 0. The change in velocity during the collision is therefore
+
+ 
+ change in vec v equals vec v _2 - vec v _1 
+ equals 0 - (- v sub 1 j hat ) 
+ equals v sub 1 j hat.
+ 
+
+The average force on the phone is therefore vector F _ ave equals (m v sub 1 / change in t) j hat.
+
+To estimate the collision time, we approximate it as the time required for the phone to travel its own length during impact. Taking a phone length of 0.14 meters and using the impact speed,
+
+ 
+ change in t equals 0.14 meters over 5.42 meters per second 
+ equals 0.026 s.
+ 
+
+Using the numerical values,
+
+ 
+ vector F _ ave equals (0.172 kg )(5.42 meters per second ) over 0.026 s j hat 
+ equals (36 newtons ) j hat.
+ 
+
+For comparison, the phone’s weight is
+
+ 
+W equals mg 
+ equals (0.172 kg )(9.81 meters per second squared ) 
+ equals 1.69 newtons.
+ 
+
+---
+
+The Conclusion.
+
+Dropping the 0.172 kg phone from a height of 1.5 meters produces an impact speed of 5.42 meters per second. Bringing the phone to rest in approximately 0.026 s requires an average upward force of magnitude 36 newtons.
+
+Because the phone’s weight is only 1.69 newtons, the impact force is more than 20 times its weight. This large force over a very short time interval explains why fragile components can fail even from seemingly modest drop heights.
+
+---
+
+ **The Problem**
+During the 2007 French Open, Venus Williams hit the fastest recorded serve in a premier women’s match, reaching a speed of 58 meters per second (209 kilometers per hour ). What is the average force exerted on the 0.057 kg tennis ball by Venus Williams’ racquet? Assume that the ball’s speed just after impact is 58 meters per second, that the initial horizontal component of the velocity before impact is negligible, and that the ball remained in contact with the racquet for 5.0 ms.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The system consists of the tennis ball during the brief contact interval with the racquet. The interaction is modeled as 1D along the horizontal direction of the serve, because the ball’s initial horizontal velocity component is negligible and the racquet’s force acts primarily along the outgoing direction.
+
+The racquet’s force changes the ball’s horizontal momentum from approximately zero to a final speed of 58 meters per second over a short contact time of change in t equals 5.0 ms. The force during contact is not constant in time, but an average force can be defined as the constant force that would produce the same change in momentum over the same time interval. The ball also experiences its weight during contact, but that force acts vertically and is small compared with the horizontal contact force being estimated.
+
+---
+
+The Math.
+
+The average net force over a time interval is related to the change in momentum by the impulse–momentum theorem written in average-force form,
+
+ 
+ vector F _ ave equals change in vector p over change in t.
+ 
+
+The ball’s mass is constant during the collision, so the momentum change can be written in terms of the velocity change as
+
+ 
+ change in vector p equals m change in vec v equals m( vec v _f- vec v _i).
+ 
+
+Since the initial horizontal component of the velocity is negligible, the initial velocity in the serve direction is approximated as vec v _i is approximately equal to 0. The speed just after impact is 58 meters per second in the serve direction, so the final velocity can be written as vec v _f equals (58 meters per second ) i hat, which gives a velocity change of change in vec v equals (58 meters per second ) i hat.
+
+The magnitude of the momentum change is then
+
+ 
+ change in p equals m change in v 
+ equals (0.057 kg )(58 meters per second ) 
+ equals 3.3 kg meters per second.
+ 
+
+The contact time is change in t equals 5.0 ms equals 5.0 times ten to the minus 3 s. The average force magnitude follows from F_ ave equals change in p/ change in t,
+
+ 
+F_ ave equals change in p over change in t 
+ equals 3.3 kg meters per second over 5.0 times ten to the minus 3 s 
+ equals 660 newtons.
+ 
+
+---
+
+The Conclusion.
+
+The tennis ball’s horizontal momentum changes from approximately zero to m(58 meters per second ) in 5.0 ms, which requires an average force of about 660 newtons from the racquet in the direction of the serve. This force is much larger than the ball’s weight (about 0.56 newtons ), which is why gravity has a negligible effect during the brief contact time.
+
+A force of 660 newtons corresponds to the weight of a person with a mass of about 67 kg under Earth’s gravity. Venus Williams’ reported weight range of 159–165 lb corresponds to approximately 72–75 kg, which gives a weight of about 710–740 newtons. The average force on the tennis ball is therefore comparable to supporting nearly her full body weight.
+
+---
+
+========================================================================
+
+9.3 Conservation of Linear Momentum
+
+Conservation of Linear Momentum.
+
+Recall Newton's 3rd law: *When two objects of masses m sub 1 and m sub 2 interact, the force that object 2 applies to object 1 is equal in magnitude and opposite in direction.* Let
+
+Bullet point. vector F sub 12 equals the force on m sub 1 from m sub 2,
+
+Bullet point. vector F sub 21 equals the force on m sub 2 from m sub 1.
+
+Then, Newton's 3rd law says
+
+ 
+ vector F sub 12 equals - vector F sub 21, 
+ m sub 1 vector a _1 equals - m sub 2 vector a _2.
+ 
+
+Note.
+
+These two forces do not cancel because they are applied to *different* objects. vector F sub 12 causes m sub 1 to accelerate, and vector F sub 21 causes m sub 2 to accelerate.
+ 
+
+Although the magnitudes of the forces on the objects are the same, the accelerations are not because the masses (in general) are different. Therefore, the changes in velocity of each object are different:
+
+ d vec v _1 over dt is not equal to d vec v _2 over dt. 
+
+The products of the mass **and** the change in velocity are equal (in magnitude):
+
+ 
+ m sub 1 d vec v _1 over dt equals - m sub 2 d vec v _2 over dt.
+ 
+
+Let's assume that the masses of the objects do not change during the interaction. In that case, we can pull the masses inside the derivatives to get:
+
+ 
+ d over dt ( m sub 1 vec v _1 ) equals - d over dt ( m sub 2 vec v _2 ), 
+ d vector p _1 over dt equals - d vector p _2 over dt.
+ 
+
+This says that the *rate of change for the momentum is the same for both objects.* Individually, the masses and changes of velocity are both different, but the rate of change of the *product* of m and vec v are the same.
+
+This means that during the interaction, both objects have their momentum changed; but those changes are identical in magnitude but opposite in sign. For example,
+
+Bullet point. the momentum of object 1 might increase, which means that
+
+Bullet point. the momentum of object 2 decreases by exactly the same amount.
+
+If the total combined momentum of the two objects never changes, we can write
+
+ 
+ d vector p _1 over dt + d vector p _2 over dt equals 0, 
+ d over dt ( vector p _1 + vector p _2 ) equals 0,
+ 
+
+which implies that
+
+ 
+ vector p _1 + vector p _2 equals constant,
+ 
+
+using the identity that the derivative of a constant is zero.
+
+Figure referenced in the course notes.
+
+As shown in Figure, the total momentum of the system before and after the collision remains the same. Generalizing this result to N objects, we obtain
+
+ 
+ sum sub i equals 1 to the power of N vector p _i equals vector p _1 + vector p _2 + ldots + vector p _N equals constant.
+ 
+
+This is the definition of the total (or net) momentum of a system of N interacting objects, along with the statement that the total momentum of a system of objects is constant in time or conserved.
+
+Conservation Laws.
+
+ 
+If the value of a physical quantity is constant in time, we say that the quantity is conserved.
+ 
+
+Requirements for Momentum Conservation.
+
+A system must meet two requirements for it momentum to be conserved:
+
+Item 1. *The mass of the system must remain constant **during** the interaction.* 
+ As the objects interact, they may transfer mass from one to another; but any mass one object gains is balanced by the loss of that mass from another. The total mass of the system of objects remains unchanged as time passes: 
+
+ [ dm over dt ]_ system equals 0. 
+
+Item 2. *The net external force on the system must be zero.* 
+ As the objects collide, explode, or move around, they exert forces on each other. All of these forces are *internal* to the system, and thus each of these internal forces is balanced by another internal force equal in magnitude and opposite in sign.
+
+ As a result, the change in momentum caused by each internal force is cancelled by another momentum change that is equal in magnitude and opposite in direction. Therefore, internal forces cannot change the total momentum of a system because the changes sum to zero.
+
+ However if there is some external force that acts on all the objects (e.g., gravity or friction), then this force changes the momentum of the system as a whole. Thus for the momentum of the system to be conserved, we must have
+
+ vector F _ ext equals vector 0. 
+
+A system of objects that meets these 2 requirements is a **closed system** (also called an *isolated* system). 
+
+Law of Conservation of Momentum.
+
+The total momentum of a closed system is conserved:
+
+ sum sub i equals 1 to the power of N vector p _i equals constant. 
+ 
+
+Along with the conservation of energy, the **Law of Conservation of Momentum** is one of the foundations upon which all physics stands. All our experimental evidence supports this statement. *In a closed system, the total momentum never changes.*
+
+Billiard balls on a table have an external force acting on them (i.e., their weight), but the weights are balanced (or cancelled) by the normal forces so there is *no* net force.
+
+The Meaning of 'System'.
+
+A mechanical system is the collection of objects in whose motion (kinematics or dynamics) interests you. If you are analyzing the bounce of a ball on the ground, you are probably only interested in the motion of the ball, and not of the Earth; thus, the ball is your system.
+
+Consider that you are analyzing a car crash, where the two cars together compose your system (see Figure )
+
+Figure referenced in the course notes.
+
+Problem-Solving Strategy.
+
+ 
+
+Using conservation of momentum requires four basic steps: 
+
+Item 1. Identify a closed system (total mass is constant, no net external force acts on the system).
+
+Item 2. Write down an expression representing the total momentum of the system **before** the "event" (explosion or collision).
+
+Item 3. Write down an expression representing the total momentum of the system **after** the "event."
+
+Item 4. Set these two expression equal to each other, and solve for the desired quantity.
+ 
+
+Checkpoint.
+
+ 
+
+For a collision problem, what evidence tells you that external impulses can be ignored during the collision interval?
+ 
+
+**Khan Academy**.
+
+ 
+
+ 
+Momentum conservation works only after you clearly define the system. As you watch, pay attention to which objects are included in the system and which forces are internal. This is the key step that lets you compare the momentum before and after a collision.
+ 
+
+**Example Problem**: Colliding Carts.
+
+The Problem.
+Two carts in a physics lab roll on a level track with negligible friction. The carts have small magnets at their ends so that when they collide, they stick together. The first cart has a mass of 675 g and is rolling at 0.75 meters per second to the right; the second has a mass of 500 g and is rolling at 1.33 meters per second, also to the right. After the collision, what is the velocity of the two joined carts?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The system consists of both carts during the collision interval. We treat the track as level and frictionless, so there is no significant horizontal external force acting on the two-cart system. The forces the carts exert on one another during the collision are internal forces and therefore do not change the total momentum of the system.
+
+Because the carts stick together after the collision, the collision is perfectly inelastic. The total mass of the system remains constant, and both carts move together with a common final velocity after impact. We define the +x direction to be to the right, the direction of their initial motion. Under these conditions, conservation of linear momentum applies to the two-cart system in the horizontal direction.
+
+---
+
+The Math.
+
+Conservation of linear momentum states that the total momentum of a closed system remains constant. For this collision, the initial momentum equals the final momentum, vector p to the power of f equals vector p to the power of i. 
+
+Before the collision, both carts move to the right, so their initial momentum is
+
+ 
+ vector p to the power of i equals m sub 1 v sub 1 i hat + m sub 2 v sub 2 i hat.
+ 
+
+After the collision, the carts stick together and move as a single object of mass ( m sub 1 + m sub 2 ) with velocity vec v _f. The final momentum is therefore
+
+ 
+ vector p to the power of f equals ( m sub 1 + m sub 2 ) vec v _f.
+ 
+
+Equating the initial and final momenta gives
+
+ 
+( m sub 1 + m sub 2 ) vec v _f equals ( m sub 1 v sub 1 + m sub 2 v sub 2 ) i hat.
+ 
+
+Solving for the final velocity yields
+
+ 
+ vec v _f equals m sub 1 v sub 1 + m sub 2 v sub 2 over m sub 1 + m sub 2 i hat.
+ 
+
+The masses must be expressed in SI units. Converting from grams to kilograms gives
+
+ 
+ m sub 1 equals 0.675 kg, 
+ m sub 2 equals 0.500 kg.
+ 
+
+Using the numerical values in the expression for vec v _f gives
+
+ 
+ vec v _f 
+ equals (0.675 kg )(0.75 meters per second ) + (0.500 kg )(1.33 meters per second ) over 0.675 kg + 0.500 kg i hat 
+ equals (0.997 meters per second ) i hat is approximately equal to (1.0 meters per second ) i hat.
+ 
+
+---
+
+The Conclusion.
+
+After the collision, the two carts move together with a velocity of 1.0 meters per second to the right. The final speed lies between the two initial speeds, which is consistent with conservation of momentum in a perfectly inelastic collision.
+
+---
+
+ **The Problem**
+A superball of mass 0.25 kg is dropped from rest from a height of h equals 1.50 meters above the floor. It bounces with no loss of energy and returns to its initial height.
+**(a)** What is the superball’s change of momentum during its bounce on the floor? 
+**(b)** What is Earth’s change of momentum due to the ball colliding with the floor? 
+**(c)** What is Earth’s change of velocity as a result of this collision?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The system initially consists of the ball falling vertically under the influence of gravity. We define upward to be the +y direction and use j hat as the upward unit vector. The ball is released from rest and falls to the floor, where it experiences a short-duration contact force from Earth that reverses its velocity.
+
+During the impact interval, the dominant force on the ball is the normal force from the floor. The gravitational force is negligible compared with the contact force during the very short collision time. The bounce is assumed to occur with no loss of mechanical energy, meaning the ball’s speed just after the collision equals its speed just before the collision. When considering Earth’s response, we redefine the system to include both the ball and Earth. For this combined system, the interaction forces between Earth and the ball are internal, and the total momentum of the system is conserved.
+
+---
+
+The Math.
+
+We begin by determining the ball’s velocity just before it strikes the floor. The ball is dropped from rest, so its initial velocity is v sub o equals 0. Using kinematics for motion under constant acceleration, the speed just before impact satisfies
+
+ 
+ v sub 1 to the power of 2 equals v sub o to the power of 2 + 2 g h.
+ 
+
+Since v sub o equals 0, this becomes
+
+ 
+ v sub 1 equals square root of 2 g h.
+ 
+
+Using g equals 9.81 meters per second squared and h equals 1.50 meters gives
+
+ 
+ v sub 1 equals square root of 2(9.81 meters per second squared )(1.50 meters ) 
+ equals 5.42 meters per second.
+ 
+
+The velocity just before impact is downward, so vec v _1 equals -5.42 j hat meters per second. 
+
+**(a)** The momentum just before impact is therefore
+
+ 
+ vector p to the power of i _ ball equals m vec v _1 
+ equals (0.25 kg )(-5.42 j hat meters per second ) 
+ equals -1.36 j hat kg dot meters per second.
+ 
+
+Because the bounce is perfectly elastic and the ball returns to the same height, its speed immediately after the collision has the same magnitude but opposite direction. Thus,
+
+ 
+ vector p to the power of f _ ball equals +1.36 j hat kg dot meters per second.
+ 
+
+The change in the ball’s momentum during the bounce is
+
+ 
+ change in vector p _ ball 
+ equals vector p to the power of f _ ball - vector p to the power of i _ ball 
+ equals (1.36 - (-1.36)) j hat 
+ equals 2.72 j hat kg dot meters per second.
+ 
+
+**(b)** We now consider the Earth. If we treat the ball and Earth as a closed system, total momentum is conserved during the collision. Therefore, Earth’s change of momentum must be equal in magnitude and opposite in direction:
+
+ 
+ change in vector p _ Earth 
+ equals -2.72 j hat kg dot meters per second.
+ 
+
+**(c)** Finally, Earth’s change in velocity follows from the definition of momentum:
+
+ 
+ change in vec v _ Earth 
+ equals change in vector p _ Earth over M_ Earth.
+ 
+
+Using M_ Earth equals 5.97 times ten to the 24 kg gives
+
+ 
+ change in vec v _ Earth 
+ equals -2.72 j hat kg dot meters per second over 5.97 times ten to the 24 kg 
+ equals -4.55 times ten to the minus 25 j hat meters per second.
+ 
+
+---
+
+The Conclusion.
+
+During the bounce, the ball’s momentum changes by 2.72 j hat kg dot meters per second. Earth experiences an equal and opposite change in momentum of -2.72 j hat kg dot meters per second. Because Earth’s mass is enormous, its resulting change in velocity is only 4.55 times ten to the minus 25 meters per second downward, which is completely negligible on any practical scale.
+
+This example illustrates that momentum conservation depends on how the system is defined. The ball alone is not a closed system during the collision, but the ball–Earth system is.
+
+---
+
+ **The Problem**
+Two hockey pucks of identical mass are on a flat, horizontal ice rink. The red puck is motionless; the blue puck is moving at 2.5 meters per second to the left. Each puck has a mass of 15 g. After the collision, the red puck is moving at 2.5 meters per second to the left. What is the final velocity of the blue puck?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The system consists of the two pucks during the collision. The ice is horizontal and friction is negligible, so there is no net external horizontal force acting on the system. The contact forces between the pucks are internal to the system. Therefore, the total horizontal momentum of the two-puck system is conserved.
+
+The motion is 1D along the horizontal axis. We define the +x direction to point to the right. Because the pucks have identical masses and the collision occurs on a frictionless surface, any change in momentum of one puck must be balanced by an equal and opposite change in momentum of the other puck.
+
+---
+
+The Math.
+
+Conservation of linear momentum for a closed system requires that the total initial momentum equals the total final momentum,
+
+ 
+ vector p to the power of i equals vector p to the power of f.
+ 
+
+Before the collision, only the blue puck is moving. Since motion to the left is negative in our coordinate system, its initial velocity is v sub b to the power of i equals -2.5 meters per second, while the red puck has v sub r to the power of i equals 0. The total initial momentum is therefore
+
+ 
+ vector p to the power of i equals m v sub r to the power of i i hat + m v sub b to the power of i i hat 
+ equals m(0) i hat + m(-2.5 meters per second ) i hat 
+ equals -2.5m i hat.
+ 
+
+After the collision, the red puck is moving at 2.5 meters per second to the left, so v sub r to the power of f equals -2.5 meters per second. Let the blue puck’s final velocity be v sub b to the power of f. The total final momentum is
+
+ 
+ vector p to the power of f equals m v sub r to the power of f i hat + m v sub b to the power of f i hat 
+ equals m(-2.5 meters per second ) i hat + m v sub b to the power of f i hat.
+ 
+
+Setting vector p to the power of i equals vector p to the power of f gives
+
+ 
+-2.5m i hat equals m(-2.5 meters per second ) i hat + m v sub b to the power of f i hat.
+ 
+
+Dividing through by m and i hat yields
+
+ 
+-2.5 equals -2.5 + v sub b to the power of f.
+ 
+
+Solving for the blue puck’s final velocity gives
+
+ 
+v sub b to the power of f equals 0.
+ 
+
+---
+
+The Conclusion.
+
+The final velocity of the blue puck is 0 meters per second. In this head-on collision between identical masses on a frictionless surface, the moving puck transfers all of its momentum to the initially stationary puck. As a result, the blue puck comes to rest and the red puck moves away with the original speed of the blue puck. 
+
+This same momentum-exchange behavior occurs in billiards when a cue ball strikes another ball head-on. In an ideal, nearly elastic collision between equal masses, the cue ball can stop while transferring its motion to the struck ball. A skilled player can exploit this effect to control the cue ball’s motion after impact, even arranging sequences where momentum transfer is used strategically to direct another ball into a pocket while maintaining positional control for the next shot.
+
+---
+
+========================================================================
+
+9.4 Types of Collisions
+
+Types of Collisions.
+
+Although momentum is conserved in all interactions, not all interactions are the same. The possibilities include:
+
+Bullet point. A single object can **explode** into multiple objects.
+
+Bullet point. Multiple objects can **collide and bounce off** each other (i.e., an *elastic* collision) resulting in the same kinetic energy of the system before and after the collision.
+
+Bullet point. Multiple objects can **collide and merge together** (i.e., an *inelastic* collision) resulting in kinetic energy loss in the system.
+
+Explosions.
+
+The first possibility is that a single object may break apart into 2 or more pieces. An example of this is a firecracker, or a rocket rising through the air toward space. These can be difficult to analyze if the number of fragments after the collision is more than about 3 or 4. Nevertheless, the total momentum of the system before and after the explosion is identical.
+
+If the object is initially motionless, then the system has no momentum and no kinetic energy. After the explosion, the net momentum of all the pieces of the object must sum to zero (since the momentum of this closed system cannot change). However, the system will have a great deal of kinetic energy after the explosion.
+
+Thus, the momentum of the system is conserved in an explosion, but the kinetic energy is definitely not, where it increases. One object becoming many, with an increase of kinetic energy of the system is called an **explosion**.
+
+*Where does the energy come from? Does the conservation of energy still hold?* Yes; some form of potential energy is converted to kinetic energy. In the case of gunpowder burning and pushing out a bullet, chemical potential energy is converted to the kinetic energy of the bullet and the recoiling of the gun.
+
+Inelastic.
+
+The second possibility is the reverse: that 2 or more objects collide with each other and stick together forming one single composite object after the collision. The total mass of this composite object is the sum of the masse of the original objects, and the new single object moves with a velocity dictated by the conservation of momentum.
+
+Although the total momentum of the system of objects remains constant, the kinetic energy doesn't stay constant, but decreases. This type of collision is called **inelastic**.
+
+Any collision where the objects stick together will result in the maximum kinetic energy loss (i.e., K sub f will be a minimum). Such a collision is called **perfectly inelastic**.
+
+In the extreme case, multiple objects collide, stick together, and remain motionless after the collision. Since the objects are all motionless after the collision, the final kinetic energy is also zero; therefore, the loss of kinetic energy is a maximum.
+
+Elastic.
+
+If 2 or more objects approach each other, collide, and bounce off each other, moving away from each other at the same relative speed at which they approached each other. In this case, the total kinetic energy of the system is conserved and the interaction is called **elastic**.
+
+The following gives an overview of the inelastic and elastic collisions by the initial and final kinetic energy K sub f and K sub i:
+
+Bullet point. If 0 
+
+Use the Collision Lab to compare elastic and inelastic collisions in one and two dimensions. Change masses and initial velocities, then check whether momentum and kinetic energy are conserved.
+ 
+
+**Example Problem**: Formation of a Deuteron.
+
+The Problem.
+A proton of mass 1.67 times ten to the minus 27 kg collides with a neutron of essentially the same mass. After the collision, the two particles stick together to form a single particle called a deuteron. The proton initially moves at 7.0 times ten to the 6 meters per second to the right, while the neutron moves at 4.0 times ten to the 6 meters per second to the left. What is the velocity of the deuteron after the collision?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The system consists of the proton and neutron during the collision. The interaction time is extremely short, and we neglect any external forces during this interval. Therefore, the system is treated as closed and linear momentum is conserved. Because the two particles stick together and move as a single object after the collision, the collision is perfectly inelastic. Kinetic energy is not conserved, but momentum is conserved.
+
+The motion is 1D along the horizontal axis. We define the +x -direction to point to the right. The proton’s initial velocity is positive and the neutron’s initial velocity is negative. Since the proton and neutron have essentially equal masses, we treat both masses as m for algebraic clarity. The deuteron then has mass 2m.
+
+---
+
+The Math.
+
+Conservation of momentum requires that the total momentum before the collision equals the total momentum after the collision:
+
+ 
+ vector p to the power of f equals vector p to the power of i.
+ 
+
+The initial momentum of the system is the sum of the proton and neutron momenta, while the final momentum of the system is the momentum of the combined particle. Mathematically, this is given as
+
+ 
+ vector p to the power of i equals m v sub p i hat + m v sub n i hat, 
+ vector p to the power of f equals (2m) v sub d i hat.
+ 
+
+Equating the initial and final momenta gives
+
+ 
+(2m) v sub d i hat equals m v sub p i hat + m v sub n i hat.
+ 
+
+Factoring out m i hat yields
+
+ 
+2 v sub d equals v sub p + v sub n.
+ 
+
+The proton’s velocity is v sub p equals +7.0 times ten to the 6 meters per second and the neutron’s velocity is v sub n equals -4.0 times ten to the 6 meters per second. Using these values gives
+
+ 
+2 v sub d equals (7.0 times ten to the 6 - 4.0 times ten to the 6) meters per second, 
+2 v sub d equals 3.0 times ten to the 6 meters per second.
+ 
+
+Solving for the deuteron’s velocity gives
+
+ 
+ v sub d equals 1.5 times ten to the 6 meters per second, 
+ vec v _d equals (1.5 times ten to the 6 meters per second ) i hat.
+ 
+
+The result is reported with two significant figures, consistent with the given data.
+
+---
+
+The Conclusion.
+
+After the perfectly inelastic collision, the deuteron moves to the right with velocity vec v _d equals (1.5 times ten to the 6 meters per second ) i hat. 
+
+Because the proton’s initial momentum to the right was larger in magnitude than the neutron’s momentum to the left, the combined particle continues moving to the right, but at a reduced speed. The final velocity is exactly one-half of the difference in the initial speeds because the two equal masses combine into a single object of double mass.
+
+---
+
+ **The Problem**
+Two ice hockey pucks of different masses are on a frictionless, horizontal rink. The red puck has a mass of 15 g and is initially at rest. The blue puck has a mass of 12 g and moves at 2.5 meters per second to the left. The two pucks collide, and the collision is *perfectly elastic*. What are the final velocities of both pucks after the collision?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The system consists of the two pucks during the collision interval. Because the ice is frictionless and the interaction time is very short, external horizontal forces are negligible. The system is therefore closed, and linear momentum is conserved.
+
+The collision is specified to be perfectly elastic, so kinetic energy is also conserved. The motion is 1D along the horizontal axis. We define the +x direction to point to the left so that the initial velocity of the blue puck is positive.
+
+---
+
+The Math.
+
+Conservation of momentum requires
+
+ 
+p to the power of i equals p to the power of f, 
+m_ r v_ r to the power of i + m_ b v_ b to the power of i equals m_ r v_ r to the power of f + m_ b v_ b to the power of f.
+ 
+
+Conservation of kinetic energy requires
+
+ 
+K to the power of i equals K to the power of f, 
+ 1 over 2 m_ r ( v_ r to the power of i ) squared + 1 over 2 ( v_ b to the power of i ) squared 
+ equals 1 over 2 m_ r ( v_ r to the power of f ) squared + 1 over 2 m_ b ( v_ b to the power of f ) squared.
+ 
+
+Solving these two equations simultaneously for a 1D elastic collision gives the standard results
+
+ 
+v_ r to the power of f equals m_ r - m_ b over m_ r + m_ b v_ r to the power of i + 2 m_ b over m_ r + m_ b v_ b to the power of i, v_ b to the power of f equals 2 m_ r over m_ r + m_ b v_ r to the power of i + m_ b - m_ r over m_ r + m_ b v sub 2 to the power of i.
+ 
+
+These expressions show explicitly that each final velocity is a linear combination of the initial velocities, with mass ratios acting as coefficients.
+
+With v_ r to the power of i equals 0 and v_ b to the power of i equals 2.5 meters per second, the final-velocity formulas become
+
+ 
+v_ r to the power of f equals 2 m_ b over m_ r + m_ b (2.5 meters per second ), 
+v_ b to the power of f equals m_ b - m_ r over m_ r + m_ b (2.5 meters per second ).
+ 
+
+Using the numerical values for the masses (in kg ),
+
+ 
+v_ r to the power of f equals 2(0.012) over 0.015 + 0.012 (2.5) equals 2.22 meters per second, 
+v_ b to the power of f equals 0.012 - 0.015 over 0.015 + 0.012 (2.5) equals -0.28 meters per second.
+ 
+
+The red puck moves to the left at 2.2 meters per second, and the blue puck moves to the right at 0.28 meters per second (two significant figures).
+
+---
+
+The Conclusion.
+
+After the collision, the red puck moves left with velocity v_ r to the power of f equals 2.2 meters per second, while the blue puck reverses direction and moves right with velocity 
+v_ b to the power of f equals -0.28 meters per second. 
+
+The final speeds are determined by the relative masses. The impulse during the collision produces a larger velocity change in the less massive puck and a smaller velocity change in the more massive puck. In this case, because the masses are comparable, most of the incoming momentum is transferred to the red puck while the blue puck reverses direction with a smaller speed.
+
+---
+
+ **The Problem**
+A small car of mass 1200 kg collides with a motionless large truck of mass 3000 kg. The car comes to an instantaneous stop, and the truck slides straight ahead, coming to rest after sliding 10 meters. The measured coefficient of kinetic friction between the truck’s tires and the road is mu _k equals 0.62. How fast was the car moving at the moment of impact?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+We treat the collision in two stages. First, during the brief collision interval, we define the system to be the car + truck. The interaction time is extremely short, so we neglect external impulses during that instant. Linear momentum of the two-vehicle system is therefore conserved during the collision.
+
+Second, after the collision, the truck slides to rest due to kinetic friction with the road. During this sliding phase, momentum is not conserved because friction is an external force. However, the work–energy theorem applies to the truck while it slows to rest.
+
+We define the positive direction to be the forward direction of motion.
+
+---
+
+The Math.
+
+Let M sub c equals 1200 kg and M sub T equals 3000 kg. During the collision, conservation of momentum gives 
+
+ 
+ vector p to the power of i equals vector p to the power of f.
+ 
+
+Initially only the car is moving, and after the collision only the truck is moving. Therefore,
+
+ 
+ M sub c v sub c to the power of i equals M sub T v sub T to the power of f.
+ 
+
+Solving for the car’s initial speed gives
+
+ 
+ v sub c to the power of i equals M sub T over M sub c v sub T to the power of f.
+ 
+
+To find v sub T to the power of f, we analyze the truck’s slide using the work–energy theorem. The work done by friction equals the change in kinetic energy, W equals change in K. The truck comes to rest, so
+
+ 
+ change in K equals 0 - 1 over 2 M sub T ( v sub T to the power of f ) to the power of 2.
+ 
+
+The friction force has magnitude F sub k equals mu _k ( M sub T g). Because friction acts opposite the displacement, W equals - mu _k M sub T g d. Equating work and change in kinetic energy gives
+
+ 
+- mu _k M sub T g d equals - 1 over 2 M sub T ( v sub T to the power of f ) to the power of 2.
+ 
+
+The mass of the truck cancels, leaving v sub T to the power of f equals square root of 2 mu _k g d. Using g equals 9.81 meters per second squared, we can determine the velocity of the truck:
+
+ 
+ v sub T to the power of f equals square root of 2(0.62)(9.81)(10) 
+ equals 11 meters per second.
+ 
+
+Using this result in the momentum relation gives the impact velocity of the car:
+
+ 
+ v sub c to the power of i equals 3000 over 1200 (11 meters per second ) 
+ equals 28 meters per second.
+ 
+
+---
+
+The Conclusion.
+
+The car’s speed at the moment of impact was v sub c to the power of i equals 28 meters per second, (or { approximately }63 mph ). The truck’s post-collision speed depends only on mu _k, g$, and the stopping distance, not on the truck’s mass. The larger truck mass, however, directly determines the car’s required initial speed through conservation of momentum.
+
+---
+
+========================================================================
+
+9.5 Collisions in Multiple Dimensions
+
+Collisions in Multiple Dimensions.
+
+It is more common for collisions to occur in 2D, where the initial velocity vectors can be decomposed into components. Recall that momentum is relate to force through the relation:
+
+ vector F equals d vector p over dt. 
+
+Therefore, both the momentum and force can be written in their component forms together as
+
+ 
+ F sub x equals d p sub x over dt, 
+ F sub y equals d p sub y over dt, 
+ F sub z equals d p sub z over dt.
+ 
+
+Remember, these equations are Newton's 2nd law in vector and component form. Since Newton's 2nd law is true in each direction individually, it follows that conservation of momentum is true in each direction independently, via Newton's 3rd law.
+
+We can now write down the expression for conservation of momentum following the same procedure (i.e., decompose it into components):
+
+ 
+ p sub x to the power of f equals p sub 1x to the power of i + p sub 2x to the power of i, 
+ p sub y to the power of f equals p sub 1y to the power of i + p sub 2y to the power of i.
+ 
+
+Below shows the procedure graphically, where the two initial momenta ( vector p _1 to the power of i and vector p _2 to the power of i ) **come into** the collision point (gray dot) at the origin and the final combined momentum vector p _f **exits** after the collision.
+
+Checkpoint.
+
+ 
+
+In a two-dimensional collision, why do you need one momentum equation for each component direction?
+ 
+
+See the Python snippet given in the course lecture notes.
+
+We solve each of the two component equations independently to obtain the x - and y -components for the final momentum's velocity vector. Here is an example for the x -components:
+
+ 
+ p sub x to the power of f equals p sub 1x to the power of i + p sub 2x to the power of i, 
+m v sub x to the power of f equals m sub 1v sub 1x to the power of i + m sub 2v sub 2x to the power of i, 
+ v sub x to the power of f equals m sub 1 over m v sub 1x to the power of i + m sub 2 over m v sub 2x to the power of i,
+ 
+
+where m represents the total mass of the system, m equals m sub 1 + m sub 2. Similarly, we can find the y -component of the final velocity vector as:
+
+ v sub y to the power of f equals m sub 1 over m v sub 1y to the power of i + m sub 2 over m v sub 2y to the power of i. 
+
+We can combine the components using the Pythagorean theorem to get:
+
+ v to the power of f equals | vec v to the power of f | equals square root of ( v sub x to the power of f ) squared + ( v sub y to the power of f ) squared. 
+
+*What does this mean physically?*
+
+Bullet point. This example models a *perfectly inelastic* collision, where the two incoming masses stick together.
+
+Bullet point. The component final velocities represent a *linear combination* of the component initial velocities.
+
+Bullet point. Each initial component velocity is *scaled* by the respective mass divided by the total mass.
+
+*What happens if m sub 1 gg m sub 2?*
+
+Let's assume that m sub 1 equals 999 kg and m sub 2 equals 1 kg. Then, we have
+
+ 
+ v sub x to the power of f equals 999 over 999+1 v sub 1x to the power of i + 1 over 999 + 1 v sub 2x to the power of i, equals 0.999v sub 1x to the power of i + 0.001v sub 2x to the power of i, 
+ v sub y to the power of f equals 999 over 999+1 v sub 1y to the power of i + 1 over 999 + 1 v sub 2y to the power of i, equals 0.999v sub 1y to the power of i + 0.001v sub 2y to the power of i.
+ 
+
+If v sub 1 to the power of i ge v sub 2 to the power of i:
+
+Bullet point. The m sub 1 component dominates and the final velocity is more similar to vec v _1 to the power of i. 
+
+If v sub 1 to the power of i < v sub 2 to the power of i:
+
+Bullet point. The m sub 2 component can still be significant and the final velocity is more similar to vec v _2 to the power of i. *Think of a bullet hitting an apple.*
+
+Problem-Solving Strategy.
+
+Conservation of Momentum in 2D.
+
+THe method for solving a 2D (or even 3D) conservation of momentum problem is generally the same as the method for solving a 1D problem, except that you have to conserve momentum in each dimension simultaneously:
+
+Item 1. Identify a closed system. 
+
+Item 2. Write down the equation that represents the conservation of momentum in each direction, and solve it for the desired quantity for the respective direction.
+
+Item 3. If you are calculating a vector quantity, use the Pythagorean theorem to calculate its magnitude.
+ 
+
+**Example Problem**: Traffic Collision.
+
+The Problem.
+A small car of mass 1200 kg traveling east at 60 km/hr collides with a truck of mass 3000 kg traveling north at 40 km/hr. The vehicles lock together after the collision. What is the velocity of the combined wreckage immediately after impact?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+We define the system to be the car + truck during the brief collision interval. The interaction time is extremely short, so we neglect external impulses such as friction with the road during that instant. Linear momentum of the two-vehicle system is therefore conserved during the collision.
+
+Because the vehicles lock together and move as a single object after impact, the collision is *perfectly inelastic*. Kinetic energy is not conserved, but momentum is conserved. We define the +x -direction to point east and the +y -direction to point north. The initial momenta are perpendicular, so momentum conservation must be applied separately in the x - and y -directions.
+
+---
+
+The Math.
+
+Let m sub c equals 1200 kg and m sub T equals 3000 kg. We convert speeds to SI units: 60 km/hr equals 16.7 meters per second and 40 km/hr equals 11.1 meters per second Conservation of momentum requires vector p to the power of f equals vector p to the power of i. The initial momentum components are p sub x to the power of i equals m sub c v sub c and p sub y to the power of i equals m sub T v sub T.
+
+After the collision, the combined mass ( m sub c + m sub T ) moves with velocity components v sub x to the power of f and v sub y to the power of f. Therefore,
+
+ 
+ m sub c v sub c equals ( m sub c + m sub T ) v sub x to the power of f, 
+ m sub T v sub T equals ( m sub c + m sub T ) v sub y to the power of f.
+ 
+
+Solving each equation for the velocity components gives 
+
+ 
+ v sub x to the power of f equals m sub c over m sub c + m sub T v sub c, 
+ v sub y to the power of f equals m sub T over m sub c + m sub T v sub T.
+ 
+
+Using the given masses, we find
+
+ 
+ v sub x to the power of f equals 1200 over 4200 (16.7) equals 4.77 meters per second, 
+ v sub y to the power of f equals 3000 over 4200 (11.1) equals 7.93 meters per second.
+ 
+
+The magnitude of the wreckage velocity is found from the Pythagorean theorem,
+
+ 
+ | vec v to the power of f | equals square root of (4.77) squared + (7.93) squared 
+ equals 9.26 meters per second.
+ 
+
+The direction measured counterclockwise from the +x -axis is 
+
+ 
+ theta equals tan to the power of -1 ( v sub y to the power of f over v sub x to the power of f ) equals tan to the power of -1 ( 7.93 over 4.77 ), 
+ equals 59 degrees.
+ 
+
+---
+
+The Conclusion.
+
+Immediately after the collision, the wreckage moves with speed | vec v to the power of f | equals 9.3 meters per second at an angle of 59 degrees north of east.
+
+The heavier truck contributes more to the y -component of momentum, so the combined motion is tilted strongly northward. Even though the car’s speed was larger, its smaller mass means its momentum contribution is smaller than the truck’s.
+
+---
+
+ **The Problem**
+A common scuba tank is an aluminum cylinder that weighs 31.7 lb empty. When full of compressed air, the internal pressure is between 2500 and 3000 p s i. Suppose such a tank, which had been sitting motionless, suddenly explodes into three pieces. The first piece, weighing 10 lb, shoots off horizontally at 235 mph. The second piece ( 7 lb ) shoots off at 172 mph, also in the horizontal plane, but at a 19 degrees angle to the first piece. What is the mass and initial velocity of the third piece? Do all work, and express your final answer in SI units.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The system is the scuba tank during the brief explosion. The tank is initially at rest, so the initial momentum of the system is zero. The explosion happens over a very short time, so external impulses (such as gravity) are negligible during that instant, and the tank can be treated as a closed system for momentum. The motion is confined to the horizontal plane, so we choose axes in that plane and apply conservation of momentum in components. We define the +x -direction to be the direction of piece 1’s motion, and we take piece 2 to move at an angle 19 degrees above the +x axis.
+
+---
+
+The Math.
+
+Conservation of momentum for the explosion gives vector p to the power of i equals vector p to the power of f. Because the tank starts from rest, vector p to the power of i equals vector 0 and therefore
+
+ 
+ vector p _1 + vector p _2 + vector p _3 equals vector 0.
+ 
+
+The total mass of the tank is 31.7 lb, and the three fragments have weights 10 lb, 7 lb, and the remainder. Converting to SI units using 1 lb equals 0.4536 kg gives m_ tot equals 14.4 kg, m sub 1 equals 4.5 kg, and m sub 2 equals 3.2 kg, so the third mass is
+
+ 
+ m sub 3 equals m_ tot -( m sub 1 + m sub 2 ) equals 6.7 kg.
+ 
+
+The given speeds are converted using 1 mph equals 0.4470 meters per second, which gives v sub 1 equals 105 meters per second and v sub 2 equals 77 meters per second. With the +x axis along piece 1, the momenta of pieces 1 and 2 are
+
+ 
+ vector p _1 equals ( m sub 1 v sub 1 ) i hat, 
+ vector p _2 equals ( m sub 2 v sub 2 cos theta ) i hat + ( m sub 2 v sub 2 sin theta ) j hat,
+ 
+
+where theta equals 19 degrees. The third piece must carry the opposite momentum,
+
+ 
+ vector p _3 equals -( vector p _1+ vector p _2),
+ 
+
+so its components are p sub 3x equals -( m sub 1 v sub 1 + m sub 2 v sub 2 cos theta ) and p sub 3y equals -( m sub 2 v sub 2 sin theta ). Evaluating these gives
+
+ 
+p sub 3x is approximately equal to -710 kg dot meters per second, 
+p sub 3y is approximately equal to -80 kg dot meters per second.
+ 
+
+The momentum magnitude is | vector p _3| equals sqrt{p sub 3x to the power of 2+p sub 3y to the power of 2 } is approximately equal to 710 kg dot meters per second, so the speed of the third piece is
+
+ 
+ v sub 3 equals | vector p _3| over m sub 3 is approximately equal to 710 over 6.7 meters per second equals 110 meters per second.
+ 
+
+The direction of vec v _3 is the same as the direction of vector p _3. The angle below the -x axis is set by tan phi equals |p sub 3y |/|p sub 3x |, which gives phi is approximately equal to 6.4 degrees. This means the third piece travels mostly opposite piece 1, deflected slightly toward negative y.
+
+---
+
+The Conclusion.
+
+The third fragment has mass m sub 3 equals 6.7 kg and initial speed v sub 3 equals 110 meters per second. Its velocity points approximately 6.4 degrees below the -x direction (equivalently, about 6.4 degrees south of west if +x is east).
+
+---
+
+========================================================================
+
+9.6 Center of Mass
+
+Center of Mass.
+
+When we describe how an object moves in a way that obeys Newton's 2nd law, we must remember that all objects are actually made of constituent particles (i.e., not a single piece). There are many different types of particles, and they are generally not distributed uniformly in the object.
+
+An extended object might change shape as it moves (e.g., a water ballon or a cat falling). This implies that the constituent particles are applying internal forces on each other, in addition to the external force that is acting on the object as a whole.
+
+The problem is to determine what part of an extended object is obeying Newton's 2nd law when an external force is applied. We also need to determine how the motion of the object as a whole is affected by both the internal and external forces.
+
+**Khan Academy**.
+
+ 
+
+ 
+The center of mass is the mass-weighted average position of a system. As you watch, notice how heavier objects pull the center of mass closer to themselves. This same idea applies whether the system is two particles, the Earth–Moon system, or a complicated object made of many pieces.
+ 
+
+Internal and External Forces.
+
+Suppose we have an extended object of mass M, composed of N interacting particles. We specify their masses as m sub j, where j equals 1, ldots,N and the total mass M is given as
+
+ 
+ 
+M equals sum sub j equals 1 to the power of N m sub j.
+ 
+
+If we apply some net external force vector F sub ext on the object, every particle experiences some "share" or fraction of the external force. Let:
+
+ vec f _j^ ext equals the fraction of the external force the j th particle experiences. 
+
+In general, the fractions are not equal and can be written as
+
+ vec f _1^ ext is not equal to vec f _2^ ext is not equal to ldots is not equal to vec f _N^ ext. 
+
+We also assume that each particle making up our object can interact with every other particle of the object. Since these result of the particles acting on other particles of the same object, we call them **internal forces** f sub j ^ int. Thus we can have 
+
+ vec f _j^ int equals the net internal force that the j th particle experiences. 
+
+The *net force* (internal + external) on the j th particle is the vector sum, or
+
+ 
+ vec f _j equals vec f _j^ int + vec f _j^ ext.
+ 
+
+As a result of the fractional force, the momentum of each particle is changed:
+
+ 
+ vec f _j equals d vector p _j over dt, 
+ vec f _j^ int + vec f _j^ ext equals d vector p _j over dt.
+ 
+
+The net force vector F on the *object* is the vector sum of these forces:
+
+ 
+ vector F _ net equals sum sub j equals 1 to the power of N ( vec f _j^ int + vec f _j^ ext ), 
+ equals sum sub j equals 1 to the power of N vec f _j^ int + sum sub j equals 1 to the power of N vec f _j^ ext, 
+ equals sum sub j equals 1 to the power of N d vector p _j over dt.
+ 
+
+Remember that each vec f _j^ int is the force on the j th particle from the other particles in the object. By Newton's 3rd law, for every one of these forces, there must be another force with this magnitude, but in the opposite direction. These forces do not cancel. But when all the internal forces are added up, the internal forces must cancel in pairs. It follows that the sum of the internal forces must be zero:
+
+ sum sub j equals 1 to the power of N vec f _j^ int equals 0. 
+
+For the external forces, this summation is simply the total external force that was applied to the whole object:
+
+ sum sub j equals 1 to the power of N vec f _j^ ext equals vector F _ ext. 
+
+As a result,
+
+ 
+F_ ext equals sum sub j equals 1 to the power of N d vector p _j over dt.
+ 
+
+This tells us that the total change in momentum of the entire object is due only to the external forces. The internal forces do not change the momentum of the object as a whole. 
+
+Force and Momentum.
+
+Our goal is to determine the equation of motion for the entire object. Let's define the the momentum for a single point particle that represents the total momentum of the system, vector p _ CoM, at the center-of-mass CoM. Then we have
+
+ vector p _ CoM equiv sum sub j equals 1 to the power of N vector p _j, 
+
+and the net external force applied on the system is written as
+
+ 
+ vector F _ ext equals d vector p _ CoM over dt.
+ 
+
+The change of momentum is caused by only the net external force, so we can safely drop the ext subscript.
+
+We have found Newton's 2nd law, but for an extended object. This means we are allowed to simplify a system of { approximately }ten to the 23 particles (a mole in chemistry terms) down to describing the motion of a single particle at the center-of-mass CoM.
+
+Center of Mass: Discrete Objects.
+
+Our next task is to find where in the system to place the single particle so that it obeys Newton's 2nd law like we expect (i.e., measure). We can write the Newton's 2nd law using the single particle that contains the mass of the system (Eq. ), or
+
+ 
+ vector F equals M vector a, 
+ equals d vector p _ CoM over dt.
+ 
+
+We can decompose this description into the one with that describes the momenta of each individual particle, or
+
+ M vector a equals sum sub j equals 1 to the power of N d vector p _j over dt equals d over dt sum sub j equals 1 to the power of N vector p _j, 
+
+which follows because the derivative of a sum is equal to the sum of the derivatives.
+
+If we know the positions of the constituent particles as vector r _j equals ( x sub j, y sub j, z sub j ), then we can write the momentum of a single particle as
+
+ vector p _j equals m sub j vec v _j equals m sub j d vector r _j over dt. 
+
+Using this expression in Newton's 2nd law gives
+
+ 
+M vector a equals d over dt sum sub j equals 1 to the power of N m sub j d vector r _j over dt, 
+ equals d squared over dt squared sum sub j equals 1 to the power of N m sub j vector r _j.
+ 
+
+We can find the acceleration of the extended object (i.e., center-of-mass) as
+
+ 
+ vector a equals d squared over dt squared ( 1 over M sum sub j equals 1 to the power of N m sub j vector r _j ).
+ 
+
+Thus, the point in the object that traces out the trajectory dictated by Newton's 2nd law is inside the parentheses.
+
+Notice that the expression in parentheses can be expressed as a mass-weighted arithmetic mean of the position vectors vector r _j or
+
+ bar{r} equals sum sub j equals 1 to the power of N m sub j vector r _j over M equals sum sub j equals 1 to the power of N ( m sub j over M ) vector r _j equals sum sub j equals 1 to the power of N w sub j vector r _j. 
+
+This is actually called the **center-of-mass** of the object, where it's formally defined as
+
+ 
+ vector r _ CoM equiv 1 over M sum sub j equals 1 to the power of N m sub j vector r _j.
+ 
+
+Note.
+
+The center-of-mass does not tell you where the mass is centrally located. In fact, you can have a hollow steel sphere with a vacuum inside it (i.e., no mass inside) and the center-of-mass still lies at the center of the sphere. The actual mass is spread uniformly across its surface. Another (more tasty) example is a doughnut.
+ 
+
+Checkpoint.
+
+ 
+
+How does the center of mass let you replace many particles with one effective point?
+ 
+
+See the Python snippet given in the course lecture notes.
+
+The procedure to find the center-of-mass is illustrated above, where the x and y scales show how the position vectors are scaled by the mass.
+
+In general we express a position vector as vector r _j equals x sub j i hat + y sub j j hat + z sub j k hat. Then, it follows that:
+
+ 
+r_ CoM,x equals 1 over M sum sub j equals 1 to the power of N m sub jx _j, r_ CoM,y equals 1 over M sum sub j equals 1 to the power of N m sub jy _j, r_ CoM,z equals 1 over M sum sub j equals 1 to the power of N m sub jz _j,
+ 
+
+and thus, we can write the center-of-mass vector vector r _ CoM and magnitude r_ CoM as:
+
+ 
+ vector r _ CoM equals r_ CoM,x i hat + r_ CoM,y j hat + r_ CoM,z k hat, 
+r_ CoM equals square root of r_ CoM,x to the power of 2 + r_ CoM,y to the power of 2 +r_ CoM,z to the power of 2.
+ 
+
+The same procedure can be applied to the instantaneous velocity, as you might expect, where we have:
+
+ 
+ vec v _ CoM equals d over dt ( 1 over M sum sub j equals 1 to the power of N m sub j vector r _j ) equals 1 over M sum sub j equals 1 to the power of N m sub j vec v _j,
+ 
+
+which has v sub x -, v sub y -, and v sub z -components.
+
+Problem-Solving Strategy.
+
+Calculating the Center-of-Mass.
+
+The center-of-mass is a position vector. Follow these steps to calculate it:
+
+Item 1. Define your coordinate system.
+
+Item 2. Determine the location of each particle in x, y, and z coordinates relative to a reference location (usually the origin).
+
+Item 3. Determine the mass of each particle, and the total (summed) mass (including any mass at the origin).
+
+Item 4. Calculate the r_ CoM,x, r_ CoM,y, and r_ CoM,z coordinates.
+If required, use the Pythagorean theorem to determine its magnitude.
+ 
+
+**Example Problem**: Center of Mass of the Earth-Moon System.
+
+The Problem.
+Using data from the text appendix, determine how far the center of mass of the Earth–Moon system is from the center of Earth. Compare this distance to the radius of Earth, and comment on the result. Ignore all other objects in the solar system.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+We treat the Earth–Moon system as two point masses separated by the average Earth–Moon distance, and we ignore gravitational interactions with all other bodies. We define the origin of our coordinate system at the center of Earth. Let m sub E and m sub M denote the masses of Earth and Moon, and let r sub M denote the distance from Earth’s center to the Moon. Because the origin is at Earth’s center, r sub E equals 0. For two objects along a line, the center-of-mass coordinate is displaystyle R equals m sub E r sub E + m sub M r sub M over m sub E + m sub M.
+
+---
+
+The Math.
+
+With r sub E equals 0, the center-of-mass location measured from Earth’s center is
+
+ 
+R equals m sub E r sub E + m sub M r sub M over m sub E + m sub M, 
+ equals m sub M r sub M over m sub E + m sub M.
+ 
+
+This can be written as a linear combination of the radii r sub E and r sub M, where the “coefficients” are mass ratios:
+
+ 
+R equals ( m sub E over m sub E + m sub M ) r sub E + ( m sub M over m sub E + m sub M ) r sub M.
+ 
+
+Since r sub E equals 0, the first term drops out, but writing it this way makes the structure of the center-of-mass formula clear.
+
+To show that the answer can be found from *ratios* alone, we rewrite the remaining coefficient in terms of the single ratio m sub M / m sub E. Dividing numerator and denominator by m sub E gives
+
+ 
+ m sub M over m sub E + m sub M equals m sub M over m sub E over 1+ m sub M over m sub E.
+ 
+
+The Moon-to-Earth mass ratio is approximately m sub M over m sub E is approximately equal to 1 over 81, so
+
+ 
+ m sub M over m sub E + m sub M is approximately equal to 1 over 81 over 1+ 1 over 81, 
+ equals 1 over 81 over 82 over 81, 
+ equals 1 over 82.
+ 
+
+Therefore the center-of-mass distance from Earth’s center is approximately R is approximately equal to ( 1 over 82 ) r sub M. 
+
+We now use the observed scale of the Earth–Moon separation relative to Earth’s radius. A commonly used approximate ratio is r sub M is approximately equal to 60 R sub E (equivalently R sub E / r sub M is approximately equal to 0.017 ). Using this ratio gives
+
+ 
+R is approximately equal to ( 1 over 82 )(60 R sub E ), 
+ equals 0.73 R sub E.
+ 
+
+Because 0.73 R sub E < 1 R sub E, the Earth–Moon center of mass lies *inside Earth*.
+
+If we also compute the numerical value using appendix data ( m sub E equals 5.97 times ten to the 24 kg, m sub M equals 7.36 times ten to the 22 kg, r sub M equals 3.82 times ten to the 8 meters ), we obtain
+
+ 
+R equals 4.64 times ten to the 6 meters 
+ therefore 
+ R over R sub E equals 4.64 times ten to the 6 over 6.37 times ten to the 6 equals 0.73,
+ 
+
+which matches the ratio-based estimate.
+
+---
+
+The Conclusion.
+
+The center of mass of the Earth–Moon system is at R equals 4.64 times ten to the 6 meters from Earth’s center, which is 0.73 R sub E. Since this is less than 1 R sub E, the Earth–Moon barycenter lies within Earth.
+
+The key idea is that this conclusion does not require knowing the absolute mass or size of Earth or Moon. It follows from two observable ratios: the mass ratio m sub M / m sub E is approximately equal to 1/81 and the distance ratio r sub M / R sub E is approximately equal to 60. The distance ratio can be determined by angular observations and parallax, and the mass ratio can be inferred from orbital motion, so the essential reasoning is accessible from observation-based astronomy.
+
+---
+
+ **The Problem**
+A single unit cell of sodium chloride (NaCl) forms a cube of edge length a equals 2.36 mathring{A} ( 1 mathring{A} equals ten to the minus 10 meters ). The unit cell contains four sodium ions and four chloride ions arranged alternately. Determine the location of the center of mass of the unit cell. Specify the result by its coordinates (r sub CoM,x, r sub CoM,y, r sub CoM,z ).
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+We impose a Cartesian coordinate system on the cube and place the origin at one corner of the unit cell (at a chloride ion). The cube has edge length a, so all ion positions are combinations of 0 and a along the x, y, and z directions.
+
+There are eight ions total. The center of mass of a system of particles is given by 
+
+ vector r _ CoM equals 1 over M sum sub j equals 1 to the power of 8 meters sub j vector r _j, 
+
+where M is the total mass.
+
+Because the crystal structure is symmetric and the ions alternate uniformly throughout the cube, we expect the center of mass to lie at the geometric center of the cube. We verify this directly.
+
+---
+
+The Math.
+
+The ionic masses are m_ Cl equals 35.453 u equals 5.885 times ten to the minus 26 kg and m_ Na equals 22.990 u equals 3.816 times ten to the minus 26 kg. 
+
+There are four of each, so the total mass is M equals 4m_ Cl + 4m_ Na equals 3.880 times ten to the minus 25 kg. 
+
+The eight ion positions are all combinations of (0,a) in x, y, and z. By symmetry, exactly half of the total mass lies on the left at x sub l equals 0 and half on the right at x sub r equals a. Therefore, the x -coordinate of the center of mass is 
+
+ 
+r sub CoM,x equals M/2 over M x sub l + M/2 over M x sub r, 
+ equals M/2 over M dot 0 + M/2 over M dot a, equals a over 2.
+ 
+
+Notice that this is the same argument we used to find the center of mass for the Earth-Moon system in the previous example. The same symmetry argument applies in the y - and z -directions, giving 
+
+ 
+r sub CoM,y equals a over 2, 
+r sub CoM,z equals a over 2.
+ 
+
+Using a equals 2.36 mathring{A} equals 2.36 times ten to the minus 10 meters gives 
+
+ r sub CoM,x equals r sub CoM,y equals r sub CoM,z equals 1.18 times ten to the minus 10 meters. 
+
+---
+
+The Conclusion.
+
+The center of mass of the NaCl unit cell lies at 
+
+ (r sub CM,x, r sub CM,y, r sub CM,z ) equals (1.18 times ten to the minus 10, 1.18 times ten to the minus 10, 1.18 times ten to the minus 10 ) m. 
+
+Thus, the center of mass is exactly at the geometric center of the cube, even though the sodium and chloride ions have different masses. The cubic symmetry ensures equal mass distribution about the midpoint in all three directions.
+
+---
+
+ **The Problem**
+Find the center-of-mass of a uniform thin hoop (ring) of total mass M and radius r.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The hoop is uniform and thin, so we treat it as a one-dimensional object of radius r lying in the xy -plane. By symmetry, we expect the center of mass to lie at the geometric center of the circle. We parameterize the position of each mass element using the polar angle theta.
+
+---
+
+The Math.
+
+We place the origin at the center of the hoop and compute the center of mass using the definition 
+
+ vec r_ CoM equals 1 over M integral vec r dm. 
+
+Because the hoop is uniform, its linear mass density lambda is constant. Since the total length of the hoop is 2 pi r, we have lambda equals M over 2 pi r. A point on the hoop has position 
+
+ vec r equals (r cos theta ) hat i + (r sin theta ) hat j. 
+
+A small arc length ds corresponds to an angle d theta, so ds equals r d theta. The differential mass is therefore 
+
+ dm equals lambda ds equals lambda r d theta. 
+
+We use the center of mass definition and substitute the vector r for a hoop, which gives 
+
+ 
+ vec r_ CoM equals 1 over M integral _0 to the power of 2 pi [(r cos theta ) hat i + (r sin theta ) hat j ] lambda r d theta.
+ 
+
+Then, we substitute for the mass density lambda equals M over 2 pi r and simplify:
+
+ 
+ vec r_ CoM equals 1 over M integral _0 to the power of 2 pi [(r cos theta ) hat i + (r sin theta ) hat j ] ( M over 2 pi r ) r d theta 
+ equals 1 over 2 pi integral _0 to the power of 2 pi [(r cos theta ) hat i + (r sin theta ) hat j ] d theta.
+ 
+
+This expression can be broken into components as 
+
+ 
+r sub CoM,x equals r over 2 pi integral _0 to the power of 2 pi cos theta d theta, 
+r sub CoM,y equals r over 2 pi integral _0 to the power of 2 pi sin theta d theta.
+ 
+
+Then we have over a full revolution, the integrals of the components: 
+
+ 
+ integral _0 to the power of 2 pi cos theta d theta equals 0, 
+ integral _0 to the power of 2 pi sin theta d theta equals 0.
+ 
+
+Therefore, the center-of-mass is given by
+
+ 
+r sub CoM,x equals 0, 
+r sub CoM,y equals 0.
+ 
+
+---
+
+The Conclusion.
+
+The center of mass of a uniform thin hoop lies at the geometric center of the circle: vec r_ CoM equals 0 i hat + 0 j hat equals vector 0. 
+
+Although symmetry strongly suggested this result, the integral confirms that the horizontal and vertical mass contributions cancel exactly over a full 2 pi rotation.
+
+---
+
+========================================================================
+
+9.7 Rocket Propulsion
+
+Rocket Propulsion.
+
+Now we deal with the case where the *mass* of an object is *changing*. As a rocket lifts off, it burns fuel gases that cause a change to its velocity (and hence its momentum). The acceleration is in the opposite direction of the velocity of the ejected fuel. 
+
+Consider a fully fueled rocket ship in deep space that has a total mass m sub o (mass includes both the ship and the fuel). 
+
+Bullet point. At some moment in time, the rocket has a velocity vec v and mass m (mass includes the ship and only the remaining fuel).
+
+Bullet point. The rocket accelerates by burning the fuel it carries and ejecting the burned exhaust gases.
+
+*If the burn rate of the fuel and the velocity at which the exhaust is ejected is constant,* **what is the change of velocity of the rocket as a result of burning all of its fuel?**
+
+**The Organic Chemistry Tutor**.
+
+ 
+
+ 
+Rockets accelerate by throwing mass backward. As you watch, focus on how the expelled fuel carries momentum in one direction while the rocket gains momentum in the opposite direction. The important point is that a rocket does not need air to push against; it accelerates by exchanging momentum with its own fuel.
+ 
+
+Physical Analysis.
+
+Here's a more detailed description in physical terms:
+
+Bullet point. The rocket engines are continuously ejecting gases, which have some momentum due to their mass and velocity. By conservation of momentum, the rocket's momentum changes by this same amount (with the opposite sign). 
+
+Bullet point. The rate of change of the momentum is constant because the rocket is burning fuel at a constant rate.
+
+Bullet point. From vector F equals d vector p /dt, there is a constant force on the rocket.
+
+Bullet point. As time goes on, the mass of the rocket continuously decreases because of the ejecting gases. Even though the force on the rocket is constant, the resulting acceleration is not. It is continuously increasing, vector a equals vector F /m.
+
+Bullet point. the total change in the rocket's velocity will depend on the amount of fuel mass burned and that dependence is not linear.
+
+The problem has the mass and velocity of the rocket changing, along with the total mass of the ejected gases. Let's define our system to be the rocket + fuel, then this is a closed system (since there are not external forces in deep space). As a result, momentum is conserved for this system (see the figure) and we can apply the conservation of momentum to answer the question.
+
+Figure referenced in the course notes.
+
+The total instantaneous rocket mass is m (i.e., the mass of the ship + the amount of fuel at time t ). We define the rocket's instantaneous velocity as vec v equals v i hat, where the velocity is measured relative to an inertial reference system (i.e., some star that is barely moving relative to the Galactic center). Thus the initial momentum of the system is
+
+ vector p to the power of i equals mv i hat. 
+
+The rocket's engines are burning fuel at a constant rate and ejecting exhaust gases in the - i hat direction. During an infinitesimal time dt, the engines eject a (positive) infinitesimal mass of gas d m sub g at velocity vec u equals -u i hat; note that the exhaust gas velocity is measured with respect to the moving rocket. The gas speed measured relative to the star is (v-u) i hat.
+
+As a consequence of the ejection of the fuel gas, the rocket's mass decreases by d m sub g and it velocity increases by dv i hat. We can write the new momentum vector p to the power of f after this change as
+
+ 
+ vector p to the power of f equals vector p _ rocket + vector p _ gas, 
+ equals [(m-d m sub g )(v+dv) i hat ] + [d m sub g (v-u) i hat ].
+ 
+
+Since all vectors are in the same direction, we drop the vector notation. Applying conservation of momentum, we have
+
+ 
+p to the power of i equals p to the power of f, 
+mv equals (m-d m sub g )(v+dv)+ d m sub g (v-u), 
+mv equals mv + mdv - d m sub gv - d m sub gdv _ d m sub gv - d m sub gu, 
+mdv equals d m sub gdv + d m sub gu.
+ 
+
+Now, d m sub g and dv are each very small (infinitesimal even); thus their product very, very small and we neglect this term. This is similar to adding a nanometer to a kilometer; it's still roughly a kilometer. We obtain:
+
+ mdv equals d m sub gu. 
+
+Since d m sub g represents an *increase* in the mass of ejected gases, ti must also represent a *decrease* in the mass of the rocket: d m sub g equals -dm. Then we have
+
+ 
+mdv equals -(dm)u, 
+dv equals -u ( dm over m ).
+ 
+
+Integrating from the initial mass m sub o to the final mass m gives us
+
+ 
+ integral sub v sub i to the power of v dv equals -u integral sub m sub o to the power of m dm over m, 
+v- v sub i equals u natural log of ( m sub o over m ).
+ 
+
+This result is called the rocket equation and is typically given as a difference equation
+
+ 
+ change in v equals u natural log of ( m sub o over m ).
+ 
+
+It was originally derived by the Russian rocket scientist Konstantin Tsiolkovsky in 1897. It gives us the change in velocity that the rocket obtains from burning a mass of fuel that decreases the total rocket mass from m sub o to m.
+
+Problem-Solving Strategy.
+
+Rocket Propulsion.
+
+In rocket problems, the most common questions are finding the change in v due to burning some amount of fuel for some amount of time, or to determine the acceleration a that results from burning fuel.
+
+Item 1. To determine the change in v, use the rocket equation directly.
+
+Item 2. To determine the acceleration, determine the force by using the impulse-momentum theorem, where the rocket equation determines the change in velocity.
+ 
+
+Checkpoint.
+
+ 
+
+For a rocket, why can the force be constant while the acceleration changes with time?
+ 
+
+**Example Problem**: Thrust on a Spacecraft.
+
+The Problem.
+A spacecraft moves in deep space along a straight path. Its thrusters eject fuel at a constant rate of 200 kg/s with an exhaust speed (relative to the rocket) of 250 meters per second. 
+The initial mass of the spacecraft (including fuel) is 2.0 times ten to the 4 kg, and the thrusters fire for 30 s. 
+(a) What is the thrust on the spacecraft? 
+(b) What is the spacecraft’s acceleration as a function of time while the thrusters fire? 
+(c) What are the accelerations at t equals 0, 15, 30, and 35 s?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+We define the system as the spacecraft. The thrust arises from conservation of momentum: fuel is expelled backward, giving the spacecraft forward momentum. Because fuel is ejected at a constant rate and constant exhaust speed, the thrust force is constant. However, the spacecraft’s mass decreases with time as fuel is burned. Therefore, although the force is constant, the acceleration is not constant. We define the forward direction as positive.
+
+---
+
+The Math.
+
+The thrust equals the rate at which momentum is carried away by the exhaust. Since the exhaust speed is constant, 
+
+ 
+F equals v_ ex dot meters, 
+ equals (250 meters per second )(200 kg/s ) equals 5.0 times ten to the 4 newtons.
+ 
+
+While the engines fire, the spacecraft’s mass decreases linearly:
+
+ 
+m(t) equals M - dot meters t.
+ 
+
+From Newton’s 2nd law, the acceleration is
+
+ 
+a(t) equals F over m(t) equals F over M - dot meters t, equals fraction {5.0 times ten to the 4{2.0 times ten to the 4 - 200t}.
+ 
+
+Now we, evaluate at the time t equals 0, 15, 30, and 35 s 
+
+ 
+a(0) equals fraction {5.0 times ten to the 4{2.0 times ten to the 4 equals 2.5 meters per second squared, 
+a(15) equals fraction {5.0 times ten to the 4{1.7 times ten to the 4 equals 2.9 meters per second squared, 
+a(30) equals fraction {5.0 times ten to the 4{1.4 times ten to the 4 equals 3.6 meters per second squared.
+ 
+
+After t equals 30 s, the thrusters are off and F equals 0, so
+
+ 
+a(35) equals 0.
+ 
+
+---
+
+The Conclusion.
+
+The thrust on the spacecraft is F equals 5.0 times ten to the 4 newtons. While the engines fire, the acceleration is given by
+
+ 
+a(t) equals fraction {5.0 times ten to the 4{2.0 times ten to the 4 - (2.0 times ten to the 2)t}.
+ 
+
+The acceleration increases from 2.5 meters per second squared at launch to 3.6 meters per second squared at 30 s because the mass decreases as fuel is burned. Once the thrusters stop, the acceleration drops to zero and the spacecraft continues at constant velocity.
+
+---
+
+========================================================================

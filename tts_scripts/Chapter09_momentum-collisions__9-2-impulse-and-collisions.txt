@@ -1,0 +1,400 @@
+Impulse and Collisions.
+
+If an object's velocity should change (due to the application of a force), then its momentum changes as well. This indicates a connection between momentum and force.
+
+Suppose you apply a force F on a free object over a time interval change in t.
+
+An increase in force will result in a proportional increase in the change of momentum.
+
+A larger time spent applying a force will result in a proportional increase in the change of momentum.
+
+A change in an object's motion can be proportional to the magnitude of the force and to the time interval over which the force is applied.
+
+Mathematically, if a quantity is proportional to two quantities, then it is proportional to their product. The product of a force and a time interval is called impulse, which is represented by vector J and has units of newton seconds.
+
+Impulse.
+
+Let vector F (t) be the force applied to an object over some differential time interval dt. The resulting impulse on the object is defined as
+
+d vector J is defined as vector F of t times d t.
+
+The total impulse over the interval t sub f - t sub i is given by
+
+ vector J equals integral sub t sub i to the power of t sub f d vector J equals integral sub t sub i to the power of t sub f vector F dt.
+
+When a force is applied for an infinitesimal time interval dt, then it causes an infinitesimal impulse d vector J, and the total impulse is the sum over all of these infinitesimal impulses.
+
+To calculate the impulse, we need to know the force function F(t) (which we often don't). However, we can use a result from calculus called a mean value theorem or
+
+ f(x) sub average equals 1 over x sub f - x sub i integral sub x sub i to the power of x sub f f(x)dx.
+
+Applying this to the time-dependent force function, we find
+
+ vector F sub average equals 1 over t sub f - t sub i integral sub t sub i to the power of t sub f vector F (t)dt,
+
+which we can rewrite in terms of the impulse as
+
+ vector J equals vector F sub average change in t.
+
+Note.
+
+You can calculate the impulse on the object even if you don't know the details of the force as a function of time; you only need the average force.
+
+You usually determine the impulse (by measurement or calculation) and then calculate the average force that caused that impulse. To calculate the impulse, we can start from a version of Newton's 2nd law:
+
+ vector F (t) equals m vector a (t),
+ vector J equals integral sub t sub i to the power of t sub f vector F dt equals m integral sub t sub i to the power of t sub f vector a dt,
+ equals m [ vector v ( t sub f ) - vector v ( t sub i ) ].
+
+For a constant force vector F sub average equals vector F equals m vector a, which simplifies to
+
+ vector J equals m vector a change in t equals m ( vector v sub f - vector v sub i ),
+ equals m change in vector v.
+Checkpoint. Pause and check your understanding.
+If the same impulse is delivered over a longer time interval, what happens to the average force?
+A Khan Academy video is linked on the course webpage.
+Momentum changes when an object experiences an impulse. As you watch, focus on how the same change in momentum can come from a large force over a short time or a smaller force over a longer time. This idea explains why collision time matters in crashes, sports impacts, and safety equipment.
+
+Example Problem: Arizona Meteor Crater.
+The Problem.
+Approximately 50,000 years ago, a large (radius of 25 meters ) iron-nickel meteorite collided with Earth at an estimated speed of 1.28 times ten to the 4 meters per second in what is now the northern Arizona desert, in the United States. The impact produced a crater that is still visible today; it is approximately 1200 meters (three-quarters of a mile) in diameter, 170 meters deep, and has a rim that rises 45 meters above the surrounding desert plain. Iron-nickel meteorites typically have a density of rho equals 7970 kilograms per cubic meter. Use impulse considerations to estimate the average force and the maximum force that the meteor applied to Earth during the impact.
+The worked solution follows.
+The Model.
+
+The system consists of the meteor during the short collision interval with Earth. We model the meteor as a uniform-density sphere of radius R and density rho, moving vertically just before impact. We define upward as the +y direction and use j-hat as the upward unit vector. Immediately before impact, the meteor’s velocity is downward, so its initial velocity has a negative y -component. During the collision interval change in t, the meteor is brought to rest by a large upward contact force exerted by Earth. The meteor’s weight acts downward, but during the extremely short impact interval the contact force is assumed to be much larger than the weight, so the momentum change is dominated by the contact interaction.
+
+Because we want to know the average force, we replace the true time-varying contact force with an effective constant force acting over the interval change in t that produces the same change in momentum. The impulse on the meteor therefore points in the direction of change in vector v, which is upward since the meteor’s downward velocity is reduced to zero. To estimate the maximum force, we must assume a time-dependence for the contact force during impact. We model the force magnitude as a rapidly decaying function of time that begins near a maximum value and decreases toward zero by the end of the collision interval. This assumed force profile is chosen so that its time-average matches the previously determined average force.
+
+By Newton’s 3rd law, the force the meteor applies to Earth is equal in magnitude and opposite in direction to the force Earth applies to the meteor. The analysis therefore depends only on the meteor’s change in momentum during the collision interval and not on the depth to which it penetrates the ground.
+
+The Math.
+
+The impact force is related to impulse because the net impulse equals the change in momentum. The system requires a change in momentum to bring the meteor from its initial velocity to rest, given by the impulse–momentum theorem.
+
+For a short impact, the impulse on the meteor is vector J equals m change in vector v.
+
+The meteor is moving downward initially and stops after impact. Using the +y direction as upward, we write the initial and final velocities as
+
+ vector v sub i equals - v sub o j-hat,
+ vector v sub f equals 0.
+
+The change in velocity is therefore upward: change in vector v equals vector v sub f - vector v sub i equals v sub o j-hat.
+
+The average net force during impact is the impulse divided by the impact duration, vector J divided by change in t. For an approximately constant average force over change in t, the average force on the meteor is
+
+ vector F sub average equals vector J over change in t equals m change in vector v over change in t.
+
+The mass is determined from density and volume. For a spherical meteor, the mass is
+
+ m equals rho V equals rho ( 4 over 3 pi R cubed ),
+
+which allows us to calculate the average force as
+
+ vector F sub average equals rho ( 4 over 3 pi R cubed ) v sub o over change in t j-hat.
+
+Using the given values and the estimate change in t equals 2 s yields
+
+m equals rho ( 4 over 3 pi R cubed ),
+ | vector F sub average | equals m v sub o over change in t.
+
+Using Newton’s 3rd law, the meteor applies an equal-magnitude force to Earth in the opposite direction, so the average force applied to Earth is downward with magnitude | vector F sub average |.
+
+To estimate the maximum force, we choose a simple rapidly-decaying force function (e.g., F is proportional to e to the power of -kt squared ) that starts near a maximum and decreases toward zero during the impact. We model the contact force on the meteor as
+
+ vector F (t) equals F sub maximum e to the power of the quantity negative t squared divided by 2 tau squared j-hat, 0 is less than or equal to t is less than or equal to change in t.
+
+The average force over the interval is the time-average of this function. The system requires the time-average of vector F (t) to match vector F sub average, given by
+
+ vector F sub average equals 1 over change in t integral sub 0 to the power of change in t vector F (t) dt.
+
+Because the force always points in + j-hat during impact, we equate magnitudes:
+
+ F sub average equals F sub maximum over change in t integral sub 0 to the power of change in t e to the power of the quantity negative t squared divided by 2 tau squared dt.
+
+We choose tau equals change in t divided by e to represent a force that decays substantially over the impact duration. We solve this expression for F sub maximum, which yields
+
+ F sub maximum equals F sub average over 1 over change in t integral sub 0 to the power of change in t e to the power of the quantity negative t squared divided by 2 tau squared dt with tau equals change in t over e.
+
+With change in t equals 2 s, the time-average factor evaluates to
+
+ 1 over change in t integral sub 0 to the power of change in t e to the power of the quantity negative t squared divided by 2 tau squared dt is approximately equal to 0.458,
+
+which sets the timescale so that the force has decayed significantly by the end of the collision interval. The maximum force magnitude is
+
+ F sub maximum equals F sub average over 0.458 equals 3.33 times ten to the 12 newtons over 0.458 equals 7.27 times ten to the 12 newtons.
+
+The Conclusion.
+
+Modeling the meteor as a uniform sphere of radius 25 meters and density 7970 kilograms per cubic meter gives a mass of 5.21 times ten to the 8 kilograms. If the meteor is brought from 1.28 times ten to the 4 meters per second to rest in change in t equals 2 s, the average impact force magnitude is 3.33 times ten to the 12 newtons. By Newton’s 3rd law, the average force the meteor applied to Earth is the same magnitude downward.
+
+Using a decaying-force model with tau equals change in t divided by e gives a maximum force magnitude of 7.27 times ten to the 12 newtons, so the maximum force the meteor applied to Earth is also downward with this magnitude. These values are estimates because the impact time and the detailed force–time profile are idealizations of a complex event.
+
+Example Problem: Benefits of Impulse.
+The Problem.
+A car traveling at 27 meters per second collides with a building. The collision with the building causes the car to come to a stop in approximately 1 s. The driver, who weighs 860 newtons, is protected by a combination of a variable-tension seatbelt and an airbag. The airbag and seatbelt slow his velocity, such that he comes to a stop in approximately 2.5 s.
+(a) What average force does the driver experience during the collision?
+(b) Without the seatbelt and airbag, his collision time (with the steering wheel) would have been approximately 0.20 s. What force would he experience in this case?
+The worked solution follows.
+The Model.
+
+The system consists of the driver during the collision interval. We model the driver as a particle moving in one dimension along +x direction.
+
+The driver’s velocity decreases from v sub o equals 27 meters per second to zero due to a horizontal contact force from the seatbelt and airbag (or, in the unrestrained case, from the steering wheel). We assume that the dominant contribution to the driver’s horizontal momentum change comes from this contact force. The vertical forces (weight and normal force from the seat) do not significantly affect the horizontal impulse during the short collision interval.
+
+Because we want to know the average force, we treat the collision as producing an effective constant force over a time interval change in t that yields the correct impulse. The driver’s mass is not given directly, so it must be determined from the stated weight using W equals mg.
+
+The Math.
+
+The impulse–momentum theorem relates the net impulse to the change in momentum,
+
+ vector J equals m change in vector v.
+
+If we replace the true time-varying contact force with an average force acting over the collision time change in t, the impulse is also
+
+ vector J equals vector F sub average change in t.
+
+Since both expressions represent the same impulse, we equate them and solve for the average force:
+
+ vector F sub average change in t equals m change in vector v therefore vector F sub average equals m change in vector v over change in t.
+
+The driver’s mass is obtained from his weight:
+
+m equals W over g equals 860 newtons over 9.81 meters per second squared
+ equals 87.7 kilograms.
+
+Initially, the driver moves in the +x direction, so
+
+ vector v sub i equals v sub o i-hat,
+ vector v sub f equals 0.
+
+The change in velocity is therefore change in vector v equals vector v sub f - vector v sub i equals - v sub o i-hat. The expression for the average force now gives
+
+ vector F sub average equals m(- v sub o i-hat ) over change in t,
+ equals - ( m v sub o over change in t ) i-hat.
+
+(a) With the seatbelt and airbag, the stopping time is change in t equals 2.5 s. We find the average force as
+
+ vector F sub average equals - ( (87.7 kilograms )(27 meters per second ) over 2.5 s ) i-hat
+ equals -(948 newtons ) i-hat.
+
+(b) Without the seatbelt and airbag, the stopping time would have been change in t equals 0.20 s. Repeating the calculation,
+
+ vector F sub average equals - ( (87.7 kilograms )(27 meters per second ) over 0.20 s ) i-hat
+ equals -(1.19 times ten to the 4 newtons ) i-hat.
+
+The Conclusion.
+
+When the driver is restrained by a seatbelt and airbag, he comes to rest in 2.5 s and experiences an average force of magnitude 948 newtons opposite his direction of motion. Without these safety systems, stopping in only 0.20 s requires an average force of magnitude 1.19 times ten to the 4 newtons, also opposite the direction of motion.
+
+Although the change in momentum is the same in both cases, increasing the collision time dramatically reduces the required average force. This illustrates why safety systems are effective: they extend the stopping time and therefore reduce the force experienced by the occupant.
+
+Effect of Impulse.
+
+Since an impulse is a force acting for some amount of time, it causes an object's motion to change. This was written previously as
+
+vector J equals m delta vector v.
+
+Because m vector v is the momentum of a system, m delta vector v is the change of momentum delta vector p.
+
+Impulse-Momentum Theorem.
+
+An impulse applied to a system changes the system's momentum, and that change of momentum is exactly equal to the impulse that was applied:
+
+vector J equals delta vector p.
+
+There are two crucial concepts in the impulse-momentum theorem.
+
+First, impulse is a vector quantity, where the direction of the impulse causes a completely opposite change of momentum.
+
+Second, an impulse does not cause momentum. Rather, it causes a change in the momentum of an object. The change in momentum is calculated similar to displacement, with the initial momentum subtracted from the final momentum.
+
+Most impulse problems require you to calculate the applied force, or the change of velocity that occurs as a result of applying an impulse.
+
+Problem-Solving Strategy: Impulse-Momentum Theorem.
+
+First, express the impulse as force times the relevant time interval.
+
+Second, express the impulse as the change of momentum, usually m delta v.
+
+Third, equate these and solve for the desired quantity.
+Checkpoint. Pause and check your understanding.
+When you use vector F sub average equals change in vector p divided by change in t, what system is receiving the impulse?
+
+Example Problem: Moving the Enterprise.
+The Problem.
+When Captain Picard commands, “Take us out,” the starship Enterprise starts from rest to a final speed of v sub f equals 7.5 times ten to the 7 meters per second. Assuming this maneuver is completed in 60 s, what average force did the impulse engines apply to the ship? An estimate for the mass of the Enterprise is 2 times ten to the 9 kilograms.
+The worked solution follows.
+The Model.
+
+The system consists of the starship during the acceleration interval. We model the motion as one-dimensional along the direction of thrust. The engines apply a force in this direction, producing a change in the ship’s velocity from rest to its final speed.
+
+Because we are asked for an average force over a known time interval, we treat the true thrust as an effective constant force acting over change in t equals 60 s that produces the same change in momentum. The mass of the ship is assumed constant during the maneuver.
+
+The Math.
+
+The impulse–momentum theorem states that the net impulse on a system equals its change in momentum, vector J equals m change in vector v. If we replace the actual time-varying thrust with an average force acting over the time interval change in t, then the impulse is also
+
+ vector J equals vector F sub average change in t.
+
+Since both expressions represent the same impulse, we equate them:
+
+ vector F sub average change in t equals m change in vector v,
+ vector F sub average equals m change in vector v over change in t.
+
+The ship starts from rest, so
+
+ vector v sub i equals 0,
+ vector v sub f equals v sub f i-hat.
+
+Thus the change in velocity is change in vector v equals vector v sub f - vector v sub i equals v sub f i-hat. Using the given values,
+
+ vector F sub average equals (2 times ten to the 9 kilograms )(7.5 times ten to the 7 meters per second ) over 60 s i-hat
+ equals (2.5 times ten to the 15 newtons ) i-hat.
+
+The Conclusion.
+
+To accelerate the 2 times ten to the 9 kilograms starship from rest to 7.5 times ten to the 7 meters per second in 60 s requires an average thrust of 2.5 times ten to the 15 newtons. This corresponds to an acceleration of a equals F over m equals 1.25 times ten to the 6 meters per second squared.
+
+That acceleration is approximately 130,000 times Earth’s gravitational acceleration. An acceleration of 1.25 times ten to the 6 meters per second squared would be instantly fatal to any biological crew and would likely destroy the structural integrity of the ship itself. The only reason this scenario works in science fiction is the assumed existence of “inertial dampeners,” which would somehow cancel the internal effects of acceleration. From a classical mechanics perspective, however, the force required is unimaginably large.
+
+Example Problem: The iPhone Drop.
+The Problem.
+Apple released its iPhone 6 Plus in November 2014. Suppose the phone is dropped from a height of 1.5 meters and strikes the floor. Estimate the average force the floor exerts on the phone during the collision. Use a mass of 0.172 kilograms, assume the phone is dropped from rest, and assume that it does not bounce.
+The worked solution follows.
+The Model.
+
+The system consists of the phone during the short collision interval with the floor. We model the motion as one-dimensional along the vertical axis, taking upward as the +y direction.
+
+The phone is dropped from rest at height h equals 1.5 meters. Just before impact, it has a downward velocity due to gravitational acceleration. During the collision, the floor exerts a large upward contact force that brings the phone to rest. We assume the phone does not bounce, so its final velocity immediately after impact is zero.
+
+Because we are asked for an average force, we replace the true time-varying contact force with an effective constant force acting over a short collision time change in t. The dominant contribution to the phone’s change in vertical momentum during the collision is due to the floor’s contact force. The collision time must be estimated.
+
+The Math.
+
+The average force during the collision is related to impulse. The impulse–momentum theorem states that the net impulse equals the change in momentum,
+
+ vector J equals m change in vector v.
+
+If we approximate the true force as an average force acting over a time interval change in t, then
+
+ vector J equals vector F sub average change in t.
+
+Equating these expressions gives
+
+ vector F sub average change in t equals m change in vector v,
+ vector F sub average equals m change in vector v over change in t.
+
+To evaluate change in vector v, we must first determine the velocity just before impact. Using conservation of mechanical energy and defining the floor as zero potential energy,
+
+ 1 over 2 meters v sub 1 to the power of 2 equals m g h.
+
+Solving for the speed just before impact,
+
+ v sub 1 equals square root of 2 g h.
+
+Using g equals 9.81 meters per second squared and h equals 1.5 meters,
+
+ v sub 1 equals square root of 2(9.81 meters per second squared )(1.5 meters )
+ equals 5.42 meters per second.
+
+After impact the phone comes to rest, vector v sub 2 equals 0. The change in velocity during the collision is therefore
+
+ change in vector v equals vector v sub 2 - vector v sub 1
+ equals 0 - (- v sub 1 j-hat )
+ equals v sub 1 j-hat.
+
+The average force on the phone is therefore vector F sub average equals m v sub 1 divided by change in t j-hat.
+
+To estimate the collision time, we approximate it as the time required for the phone to travel its own length during impact. Taking a phone length of 0.14 meters and using the impact speed,
+
+ change in t equals 0.14 meters over 5.42 meters per second
+ equals 0.026 s.
+
+Using the numerical values,
+
+ vector F sub average equals (0.172 kilograms )(5.42 meters per second ) over 0.026 s j-hat
+ equals (36 newtons ) j-hat.
+
+For comparison, the phone’s weight is
+
+W equals mg
+ equals (0.172 kilograms )(9.81 meters per second squared )
+ equals 1.69 newtons.
+
+The Conclusion.
+
+Dropping the 0.172 kilograms phone from a height of 1.5 meters produces an impact speed of 5.42 meters per second. Bringing the phone to rest in approximately 0.026 s requires an average upward force of magnitude 36 newtons.
+
+Because the phone’s weight is only 1.69 newtons, the impact force is more than 20 times its weight. This large force over a very short time interval explains why fragile components can fail even from seemingly modest drop heights.
+
+Momentum and Force.
+
+We can rewrite the average force in terms of the momentum, or
+
+vector F sub average equals delta vector p divided by delta t.
+
+The average force applied to an object is equal to the change of the momentum that the force causes, divided by the time interval over which this change of momentum occurs.
+
+This relationship is useful in situations where the collision time delta t is small, but measurable, for example approximately 0.1 seconds or even 0.001 seconds. Car crashes, punting a football, or collisions of subatomic particles would meet this criterion.
+
+In the limit as delta t approaches d t, the force can be written as
+
+vector F equals d vector p divided by d t,
+
+where vector p represents a continuously changing momentum.
+
+This says that the rate of change of the system's momentum is exactly equal to the net applied force. This is Newton's Second Law written in terms of momentum rather than acceleration.
+
+If the mass of the system remains constant, we can show that
+
+vector F equals d of m vector v divided by d t,
+which equals m times d vector v divided by d t,
+which equals m vector a.
+
+The assumption of constant mass allowed us to pull m out of the derivative. If the mass is not constant, we cannot use this form of the second law. One advantage to expressing force in terms of changing momentum is that it allows for the mass of the system to change, as well as the velocity.
+
+Newton's Second Law of Motion in Terms of Momentum.
+
+The net external force on a system is equal to the rate of change of the momentum of that system caused by the force:
+
+vector F equals d vector p divided by d t.
+
+Example Problem: A Tennis Serve.
+The Problem.
+During the 2007 French Open, Venus Williams hit the fastest recorded serve in a premier women’s match, reaching a speed of 58 meters per second (209 kilometers per hour ). What is the average force exerted on the 0.057 kilograms tennis ball by Venus Williams’ racquet? Assume that the ball’s speed just after impact is 58 meters per second, that the initial horizontal component of the velocity before impact is negligible, and that the ball remained in contact with the racquet for 5.0 ms.
+The worked solution follows.
+The Model.
+
+The system consists of the tennis ball during the brief contact interval with the racquet. The interaction is modeled as 1D along the horizontal direction of the serve, because the ball’s initial horizontal velocity component is negligible and the racquet’s force acts primarily along the outgoing direction.
+
+The racquet’s force changes the ball’s horizontal momentum from approximately zero to a final speed of 58 meters per second over a short contact time of change in t equals 5.0 ms. The force during contact is not constant in time, but an average force can be defined as the constant force that would produce the same change in momentum over the same time interval. The ball also experiences its weight during contact, but that force acts vertically and is small compared with the horizontal contact force being estimated.
+
+The Math.
+
+The average net force over a time interval is related to the change in momentum by the impulse–momentum theorem written in average-force form,
+
+ vector F sub average equals change in vector p over change in t.
+
+The ball’s mass is constant during the collision, so the momentum change can be written in terms of the velocity change as
+
+ change in vector p equals m change in vector v equals m( vector v sub f- vector v sub i).
+
+Since the initial horizontal component of the velocity is negligible, the initial velocity in the serve direction is approximated as vector v sub i is approximately equal to 0. The speed just after impact is 58 meters per second in the serve direction, so the final velocity can be written as vector v sub f equals (58 meters per second ) i-hat, which gives a velocity change of change in vector v equals (58 meters per second ) i-hat.
+
+The magnitude of the momentum change is then
+
+ change in p equals m change in v
+ equals (0.057 kilograms )(58 meters per second )
+ equals 3.3 kilograms meters per second.
+
+The contact time is change in t equals 5.0 ms equals 5.0 times ten to the minus 3 s. The average force magnitude follows from F sub average equals change in p divided by change in t,
+
+F sub average equals change in p over change in t
+ equals 3.3 kilograms meters per second over 5.0 times ten to the minus 3 s
+ equals 660 newtons.
+
+The Conclusion.
+
+The tennis ball’s horizontal momentum changes from approximately zero to m(58 meters per second ) in 5.0 ms, which requires an average force of about 660 newtons from the racquet in the direction of the serve. This force is much larger than the ball’s weight (about 0.56 newtons ), which is why gravity has a negligible effect during the brief contact time.
+
+A force of 660 newtons corresponds to the weight of a person with a mass of about 67 kilograms under Earth’s gravity. Venus Williams’ reported weight range of 159–165 lb corresponds to approximately 72–75 kilograms, which gives a weight of about 710–740 newtons. The average force on the tennis ball is therefore comparable to supporting nearly her full body weight.

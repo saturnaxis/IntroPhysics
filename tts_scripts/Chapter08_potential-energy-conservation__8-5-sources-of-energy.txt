@@ -1,0 +1,35 @@
+Sources of Energy.
+
+Energy can take different forms and can be transferred from one form to another. Many situations are best understood (or more easily conceptualized) by considering energy. So far, no experimental results have contradicted the conservation of energy. Whenever measurements have appeared to conflict with energy conservation, new forms of energy have been discovered or recognized.
+
+What are some other forms of energy?
+
+Atoms and molecules inside all objects are in random motion. The internal kinetic energy from these motions is called thermal energy because it is related to the temperature of the object (i.e., heat energy).
+
+Electrical energy is a common form that is converted to many other forms and does work in a wide range of practical situations.
+
+Fuels (e.g., gasoline and food) have chemical energy, which is potential energy arising from their molecular bonds.
+
+Chemical energy can be converted into thermal energy by reactions like oxidation.
+
+Chemical reactions can also produce electrical energy (e.g., batteries).
+
+Electrical energy can produce thermal energy (e.g., electric heater) and light (e.g., a light bulb).
+
+Light is radiant energy, which can include radio, infrared (I R), visible, ultraviolet (U V), X rays, and gamma rays. All bodies with thermal energy can radiate energy in electromagnetic waves.
+
+Nuclear energy results from measurable amounts of mass converted into energy.
+
+The Sun transforms nuclear energy into radiant energy.
+
+Nuclear power plants use the thermal energy produced by the reactions to boil water, which is turned into electrical energy by generators.
+
+All forms of energy can be transformed into one another and can be converted into mechanical work albeit imperfectly.
+
+The transformation of energy from one form to another happens all the time. The chemical energy in food is converted into thermal energy through metabolism (or respiration), where light energy is converted into chemical energy through photosynthesis.
+
+Energy conversion occurs in a solar cell. Sunlight delivers radiant energy to the cell, which causes the electrons to do work by moving and moving electrons is electricity. This electricity can be used in electric motors or heat water.
+
+Many other sources (e.g., coal, natural gas, wood) transform their chemical energy into thermal energy which is used to transform water into steam in a boiler. Some of the energy from the steam is converted to mechanical energy when it pushes and spins a turbine, which is connected to a generator to produce electrical energy.
+
+Not all of the initial energy is converted because some energy is transferred to the environment. No such thing as a free lunch is a common phrase to summarize the first and second laws of thermodynamics.

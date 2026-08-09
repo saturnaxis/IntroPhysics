@@ -1,0 +1,15 @@
+Rotational and Translational Relationships Summarized.
+
+The rotational quantities and their linear analogs are summarized here. The corresponding kinematic relationships were developed earlier in the chapter. The principal translational and rotational dynamics relationships are as follows.
+
+For inertia, the translational quantity is mass m. The rotational quantity is the moment of inertia I, which equals the sum over j of m sub j r sub j squared.
+
+For kinetic energy, the translational relationship is K equals one-half m v squared. The rotational relationship is K equals one-half I omega squared.
+
+For Newton's second law, the translational relationship is the sum of the force vectors equals m times the acceleration vector. The rotational relationship is the sum of the torques equals I alpha.
+
+For work, the translational relationship is W equals the integral of force vector F dot d vector s. The rotational relationship is W equals the integral of the sum of the torques with respect to theta.
+
+For power with a constant force or torque, the translational relationship is P equals force vector F dot velocity vector v. The rotational relationship is P equals tau omega.
+
+An Organic Chemistry Tutor video is linked on the course webpage. As you watch, focus on how torque, rotational work, rotational kinetic energy, and power fit together. Compare each rotational equation to the linear work-energy equations you already know.

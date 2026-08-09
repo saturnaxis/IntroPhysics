@@ -1,0 +1,1105 @@
+8.1 Potential Energy of a System
+
+Potential Energy and Conservation of Energy.
+
+Chapter roadmap.
+
+ 
+
+This chapter turns work into a more flexible bookkeeping tool by introducing potential energy and then combining potential and kinetic energy into mechanical energy. The goal is to decide when energy can be transferred back and forth within a system and when energy leaves the mechanical system through non-conservative work.
+
+As you read, focus on three questions:
+
+Item 1. How does the choice of system determine which forms of potential energy belong in the problem?
+
+Item 2. How can the same physical motion be described using work, potential energy, or conservation of mechanical energy?
+
+Item 3. How do energy diagrams show allowed motion, turning points, and equilibrium?
+
+These ideas let you solve motion problems without always tracking the full path or solving for the acceleration at every instant.
+ 
+
+Potential Energy of a System.
+
+The work done on an object by gravity (near Earth's surface) is a function only of the displacement change in y (or a height h ). This property allows us to define a different kind of energy for the system, which is called **potential energy** (in contrast to the kinetic energy).
+
+Potential Energy Basics.
+
+Consider the kicking of a football (see the figure). Ignoring friction and air resistance, we begin the analysis immediately after the kick, or at the start of the projectile motion of the ball.
+
+Bullet point. As the football rises, the work done by the gravitational force on the ball is *negative*, because the ball's displacement is positive vertically and the gravitational force is negative vertically.
+
+Bullet point. The ball slows down until it reaches its highest point in the motion, thereby decreasing the ball's kinetic energy.
+
+The loss in kinetic energy translates to a gain in the gravitational potential energy of the football-Earth system.
+
+Figure referenced in the course notes.
+
+Bullet point. As the football falls toward Earth, the work done on the football is now *positive*, because the displacement and the gravitational force both point in the same direction (vertically downward).
+
+Bullet point. The ball speeds up, which indicates an increase in kinetic energy.
+
+Therefore, energy is converted from gravitational potential energy back into kinetic energy.
+
+Based on this scenario, we define the difference in potential energy from point A to B as the negative of the work done, or 
+
+ 
+ change in U sub AB equals U sub B - U sub A equals -W sub AB.
+ 
+
+We call this a **potential energy difference**, not just an absolute potential energy. Thus, we define the potential energy relative to a given position vector r and initial position vector r _o. We do this by rewriting the potential energy function as
+
+ 
+ change in U equals U ( vector r ) - U ( vector r _o ).
+ 
+
+Note.
+
+The choice of the potential energy at a starting location vector r _o is arbitrary and we choose the most convenient starting position depending on the problem. Even though we made an arbitrary choice, we must stick with it and the rest of the problem must be solved consistently with this assumption.
+
+There are some natural (i.e., well-accepted) choices. For example,
+
+Bullet point. the lowest height in a problem is usually defined as zero potential energy,
+
+Bullet point. or if an object is in space, the farthest point away from the system is defined as zero potential energy.
+
+Then the potential energy with respect to zero at vector r _o is just 
+
+ change in U equals U ( vector r ). 
+ 
+
+As long as there is no friction (or air resistance), the change in kinetic energy of the football equals the negative of the change in gravitational potential energy of the football. This can be generalized to
+
+ 
+ change in K sub AB equals - change in U sub AB.
+ 
+
+Checkpoint.
+
+ 
+
+If you change the zero reference level for gravitational potential energy, does the change in gravitational potential energy between two fixed heights change? Explain briefly.
+ 
+
+**Example Problem**: Basic Properties of Potential Energy.
+
+The Problem.
+A particle moves along the x -axis under the action of a force given by
+ F equals -a x squared, where a equals 3 newtons per square meter.
+**(a)** What is the difference in its potential energy as it moves from
+ x sub A equals 1 meters to x sub B equals 2 meters?
+**(b)** What is the particle’s potential energy at x equals 1 meters with
+respect to a given 0.5 J of potential energy at x equals 0?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The system consists of a single particle constrained to move along the x -axis. The force acting on the particle depends only on its position along
+the x -axis and points along the same axis, with the negative sign indicating that the force acts opposite the direction of increasing x. No other forces
+act on the particle. 
+
+The motion is treated as one-dimensional, with positive displacement defined in the +x direction. Because the force depends only on
+position and not on the path taken, it is conservative, and the work done by the force depends only on the initial and final positions. A potential energy
+function can therefore be defined for this system.
+
+---
+
+The Math.
+
+For a conservative force, the change in potential energy between two points is
+defined as the negative of the work done by the force.
+
+The work done by a force during an infinitesimal displacement is given by the dot product of the force and the displacement. Because both the force and the
+displacement lie along the x -axis, this dot product reduces to ordinary multiplication:
+
+ 
+dW equals vector F dot d vector r equals F dx equals -a x squared dx.
+ 
+
+**(a)** The change in potential energy between x sub A and x sub B is obtained by integrating the work expression between the initial and final positions and
+applying the definition of potential energy difference. This is done mathematically by:
+
+ 
+ change in U sub AB 
+ equals -W sub AB 
+ equals - integral sub x sub A to the power of x sub B (-a x squared) dx 
+ equals integral sub x sub A to the power of x sub B a x squared dx.
+ 
+
+Evaluating the integral gives
+
+ 
+ change in U sub AB 
+ equals. 1 over 3 a x cubed | sub x sub A to the power of x sub B,
+ 
+
+where we can substitute the given values,
+
+ 
+ change in U sub AB 
+ equals 1 over 3 (3 newtons per square meter ) [(2 meters ) cubed - (1 meters ) cubed ] 
+ equals 7 J 
+ 
+
+**(b)** The potential energy function is found by integrating the force with respect to position and introducing a constant of integration that reflects
+the chosen reference level. From the integration, we have
+
+ 
+U(x) equals 1 over 3 a x cubed + C.
+ 
+
+The value of the constant is determined using the given reference condition U(0) equals 0.5 J, which gives
+
+ 
+0.5 J equals 1 over 3 a (0) cubed + C 
+C equals 0.5 J.
+ 
+
+Substituting x equals 1 meters into the potential energy function yields
+
+ 
+U(1 meters )
+ equals 1 over 3 (3 newtons per square meter )(1 meters ) cubed + 0.5 J 
+ equals 1.5 J.
+ 
+
+---
+
+The Conclusion.
+
+The particle’s potential energy increases by 7 J as it moves from x equals 1 meters to x equals 2 meters. When the potential energy is defined
+to be 0.5 J at x equals 0, the potential energy at x equals 1 meters is 1.5 J. These results follow directly from the conservative,
+position-dependent nature of the force.
+
+---
+
+ **The Problem**
+The summit of Great Blue Hill in Milton, MA, is 147 meters above its base and has an elevation above sea level of 195 meters. A 75 kg hiker ascends from the base to the summit. What is the gravitational potential energy of the hiker–Earth system with respect to zero gravitational potential energy at base height, when the hiker is **(a)** at the base of the hill, **(b)** at the summit, and **(c)** at sea level, afterward?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The system consists of the hiker and the Earth, treated together so that gravitational potential energy is an internal energy of the system. The motion is vertical, and air resistance is neglected. The gravitational field near Earth’s surface is approximated as uniform. The vertical coordinate y is defined to be positive upward, with the base of the hill chosen as the reference height where the gravitational potential energy is zero. With this choice, the constant of integration is determined by the reference condition at the base.
+
+---
+
+The Math.
+
+Gravitational potential energy in a uniform gravitational field depends on the vertical position of the system relative to the chosen reference height and is
+given by U equals m g y + C.
+
+**(a)** At the base of the hill, the vertical coordinate is y equals 0 by definition of the reference level, so the gravitational potential energy is
+
+ 
+U sub base equals m g (0) equals 0.
+ 
+
+**(b)** At the summit, the hiker is 147 meters above the base, so y equals 147 meters. Substituting this value into the gravitational potential
+energy expression gives
+
+ 
+U sub summit 
+ equals (75 kg )(9.81 meters per second squared )(147 meters ) 
+ equals 1.08 times ten to the 5 J.
+ 
+
+**(c)** Sea level is 195 meters below the summit, which places it 48 meters below the base. With upward taken as positive, the vertical
+coordinate at sea level is therefore y equals -48 meters. Substituting this value gives
+
+ 
+U sub sea level 
+ equals (75 kg )(9.81 meters per second squared )(-48 meters ) 
+ equals -3.53 times ten to the 4 J.
+ 
+
+---
+
+The Conclusion.
+
+With gravitational potential energy defined to be zero at the base of the hill, the hiker–Earth system has zero gravitational potential energy at the
+base, 1.08 times ten to the 5 J at the summit, and -3.53 times ten to the 4 J at sea level. The negative value at sea level reflects that this position lies below the chosen reference height, not that the energy is physically problematic.
+
+---
+
+ **The Problem**
+A system contains a perfectly elastic spring, with an unstretched length of 20 cm and a spring constant of 4 newtons/cm. **(a)** How much elastic potential energy does the spring contribute when its length is 23 cm? **(b)** How much more potential energy does it contribute if its length increases to 26 cm?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The system consists of a single ideal spring that obeys Hooke’s law and stores elastic potential energy when stretched or compressed from its unstretched length. The spring is assumed to be perfectly elastic, with no energy losses, so its elastic potential energy depends only on the magnitude of the displacement from equilibrium. The displacement x is defined as the difference between the current length of the spring and its unstretched length, measured along the axis of the spring. The reference configuration for zero elastic potential energy is the unstretched length. Because the spring constant is given in N/cm, lengths and displacements are treated consistently in centimeters.
+
+---
+
+The Math.
+
+Elastic potential energy for an ideal spring is given by U equals tfrac{1}{2} k x squared, where k is the spring constant and x is the displacement from the unstretched length.
+
+**(a)** When the spring length is 23 cm, the displacement from the unstretched length is x equals 3 cm. Substituting this displacement into the elastic potential energy expression gives
+
+ 
+U
+ equals 1 over 2 k x squared 
+ equals 1 over 2 (4 newtons/cm )(3 cm ) squared 
+ equals 0.18 J.
+ 
+
+**(b)** When the spring length increases to 26 cm, the displacement is x equals 6 cm. Substituting this value gives
+
+ 
+U
+ equals 1 over 2 (4 newtons/cm )(6 cm ) squared 
+ equals 0.72 J.
+ 
+
+The additional elastic potential energy contributed relative to part (a) is therefore
+
+ 
+ change in U
+ equals 0.72 J - 0.18 J 
+ equals 0.54 J.
+ 
+
+---
+
+The Conclusion.
+
+When the spring is stretched to 23 cm, it stores 0.18 J of elastic potential energy. Increasing the length to 26 cm increases the stored energy to 0.72 J, which is an additional 0.54 J. These results follow directly from the quadratic dependence of elastic potential energy on displacement and from maintaining a consistent unit system throughout the calculation.
+
+---
+
+ **The Problem**
+A block weighing 1.2 newtons is hung from a spring with a spring constant of 6.0 newtons/m, as shown in Figure. **(a)** What is the maximum expansion of the spring, as seen at point C? **(b)** What is the total potential energy at point B, halfway between A and C? **(c)** What is the speed of the block at point B?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The system consists of the block, the spring, and the Earth, treated together so that gravitational and elastic potential energies are internal to the system. The block moves only in the vertical direction, and air resistance is neglected. The spring is assumed to be ideal and massless, obeying Hooke’s law. The vertical coordinate y is defined to be positive upward, with point A chosen as the reference position where the block is initially released from rest and the total mechanical energy of the system is zero. With this choice, gravitational and spring potential energies are measured relative to point A, and mechanical energy is conserved throughout the motion.
+
+---
+
+The Math.
+
+Mechanical energy is conserved because only conservative forces act on the system, so the sum of kinetic, gravitational potential, and elastic potential energies is constant.
+
+**(a)** At point C, the block momentarily comes to rest, so its kinetic energy is zero. Conservation of energy between point A and point C therefore requires that the loss of gravitational potential energy equals the gain in elastic potential energy. Writing this condition gives
+
+ 
+0 equals (mg) y sub C + 1 over 2 k y sub C to the power of 2.
+ 
+
+Factoring out y sub C and solving for the nonzero solution yields
+
+ 
+ y sub C equals - 2mg over k.
+ 
+
+Substituting the given values gives
+
+ 
+ y sub C equals - 2(1.2 newtons ) over 6.0 newtons/m 
+ equals -0.40 meters.
+ 
+
+**(b)** Point B is halfway between A and C, so its vertical position is y sub B equals y sub C /2 equals -mg/k. The total potential energy at point B is the sum of gravitational and elastic potential energies, which is
+
+ 
+ U sub B equals mg y sub B + 1 over 2 k y sub B to the power of 2 
+ equals mg (- mg over k ) + 1 over 2 k (- mg over k ) squared 
+ equals - (mg) squared over 2k.
+ 
+
+Substituting the numerical values gives
+
+ 
+ U sub B equals (1.2 newtons )(-0.20 meters ) + 1 over 2 (6.0 newtons/m )(0.20 meters ) squared 
+ equals -0.12 J.
+ 
+
+**(c)** The total mechanical energy of the system is zero, so the kinetic energy at point B must be equal in magnitude to the total potential energy at that point. The kinetic energy at point B is therefore K sub B equals 0.12 J. The mass of the block is found from its weight using m equals F sub w /g, which gives
+
+ 
+m equals 1.2 newtons over 9.81 meters per second squared 
+ equals 0.12 kg.
+ 
+
+Using the definition of kinetic energy, the speed of the block at point B is obtained from
+
+ 
+ K sub B equals 1 over 2 meters v squared,
+ 
+
+which yields
+
+ 
+v equals square root of 2 kelvin sub B over m 
+ equals square root of 2(0.12 J ) over 0.12 kg 
+ equals 1.4 meters per second.
+ 
+
+---
+
+The Conclusion.
+
+The maximum expansion of the spring is 0.40 meters downward from the release point. At the midpoint between the release point and the maximum extension, the total potential energy of the system is -0.12 J. At that same point, the block has a speed of 1.4 meters per second. These results follow directly from conservation of mechanical energy and from the chosen reference level for zero total energy.
+
+---
+
+========================================================================
+
+8.2 Conservative and Non-conservative Forces
+
+Conservative and Non-conservative Forces.
+
+Thus far, any transition between kinetic and potential energy did not change the total energy of the system. The transition was path independent, which means that we can start and stop at any two points in the problem. The total energy of the system ( K+U ) at these two points are equal to each other. This is a characteristic of a **conservative force** (e.g., gravitational or spring force).
+
+**Non-conservative forces** and the work that they do are path dependent. Dissipative forces (e.g., friction and air resistance) are non-conservative. These forces take energy away from the system as the system evolves over time. Push-pull forces are generally non-conservative.
+
+Bullet point. Imagine pushing a merry-go-round. The total work done depends on how many revolutions are completed and therefore, the total energy at a given location is not constant.
+
+Conservative Force.
+
+ 
+
+The work done by a conservative force is independent of the path, which means the work done by a conservative force is the same for any path connecting two points:
+
+ 
+W_{{AB, path 1 }} equals integral sub A, path 1 to the power of B vector F sub cons dot d vector r, 
+ equals integral sub A, path 2 to the power of B vector F sub cons dot d vector r. 
+ 
+
+The work done by a non-conservative force *depends* on the path taken.
+
+A force is conservative if the work it does around any closed path is zero:
+
+ 
+W_ closed path equals contour integral vector F _ cons dot d vector r equals 0.
+ 
+
+The notation of a circle in the middle of the integral sign denotes a line integral over a closed path. Any closed path is the sum of two paths: the first going from A to B, and the second going from B to A.
+ 
+
+The work done going along a path from B to A is the negative of the work done going along the same path from A to B, where A and B are any two points on the closed path:
+
+ 
+0 equals integral vector F sub cons dot d vector r equals integral sub A, path 1 to the power of B vector F sub cons dot d vector r + integral sub B, path 2 to the power of A vector F sub cons dot d vector r, 
+ equals integral sub A, path 1 to the power of B vector F sub cons dot d vector r - integral sub A, path 2 ^ B vector F sub cons dot d vector r.
+ 
+
+Since the work done is independent of path, the infinitesimal work vector F dot d vector r is an **exact differential**. There are mathematical conditions that test whether the infinitesimal work done by a force is an exact differential. In 2D, the condition for
+
+ vector F dot d vector r equals F sub x dx + F sub ydy 
+
+to be an exact differential is
+
+ 
+ d F sub x over dy equals d F sub y over dx.
+ 
+
+In Example Problem: Work Done by a Variable Force, the work done by the force depended on the path. For that force,
+
+ F sub x equals (5 newtons/m )y, and F sub y equals (10 newtons/m )x. 
+
+Therefore,
+
+ 
+ d F sub x over dy equals (5 newtons/m ), 
+ d F sub y over dx equals (10 newtons/m ), 
+ d F sub x over dy is not equal to d F sub y over dx,
+ 
+
+which indicates it is a non-conservative force. **What could change to make it a conservative force?**
+
+---
+
+Non-conservative forces do not have potential energy associated with them. There is a conservative force associated with every potential energy. Recall change in U sub AB equals -W sub AB, this involved an integral for the work. However integration is the inverse operation of differentiation, where you could equally have started with the potential energy and taken its derivative (with respect to displacement) to get the force. The infinitesimal increment of potential energy is
+
+ dU equals - vector F dot d vector l equals - F sub l dl. 
+
+We chose to represent the displacement in an arbitrary direction by d vector l, so as not to imply any particular coordinate direction. Since dU, F sub l, and dl are scalars, you can divide to get
+
+ 
+ F sub l equals - dU over dl.
+ 
+
+This equation gives the relation between force and the potential energy associated with it. For 1D motion along the x -axis, it can give the entire vector force vector F equals F sub x i hat equals - d U over dx i hat. 
+
+In 2D, we have
+
+ vector F equals F sub x i hat + F sub y j hat equals - ( partial U over partial x ) i hat - ( partial U over partial y ) j hat. 
+
+*Note the partial (or ` partial `) symbol denotes taking the derivative with respect to a particular variable.* If a function has many variables in it, the derivative is taken only of the variable the partial derivative specifies. The other variable is held constant.
+
+In 3D, we have
+ vector F equals F sub x i hat + F sub y j hat + F sub z k hat, 
+ equals - ( partial U over partial x ) i hat - ( partial U over partial y ) j hat - ( partial U over partial z ) k hat equals - nabla U.
+ 
+
+This describes the force as the negative *gradient* of the potential U. The gradient symbol nabla uses ` nabla` to represent it in LaTeX.
+
+**Khan Academy**.
+
+ 
+
+ 
+Focus on the idea that a conservative force allows energy to move between kinetic and potential forms without being dissipated, while a non-conservative force such as friction or air resistance removes mechanical energy from the system.
+ 
+
+**Example Problem**: Conservative or Not?.
+
+The Problem.
+Which of the following two-dimensional forces are conservative and which are not? Assume a and b are constants with appropriate units:
+**(a)** vector F equals axy cubed i hat + ayx cubed j hat 
+**(b)** vector F equals a ( y squared over x i hat + 2y ln ( x over b ) j hat ) 
+**(c)** vector F equals ax i hat + ay j hat over x squared + y squared 
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+Each force acts on a particle constrained to move in the two-dimensional x – y plane. The force fields are assumed to be time-independent and sufficiently smooth in the region of interest so that partial derivatives exist. A force is conservative if the work it does between two points is independent of the path taken, which in two dimensions is equivalent to requiring that the mixed partial derivatives of the force components satisfy partial F sub x / partial y equals partial F sub y / partial x throughout the region. This condition is used to classify each force.
+
+---
+
+The Math.
+
+For a two-dimensional force vector F equals F sub x (x,y) i hat + F sub y (x,y) j hat, the force is conservative if partial F sub x / partial y equals partial F sub y / partial x.
+
+**(a)** For the force vector F equals axy cubed i hat + ayx cubed j hat, the required partial derivatives are
+
+ 
+ partial F sub x over partial y equals partial over partial y (axy cubed) equals 3axy squared, 
+ partial F sub y over partial x equals partial over partial x (ayx cubed) equals 3ayx squared.
+ 
+
+Because these two expressions are not equal in general, this force is nonconservative.
+
+**(b)** For the force vector F equals a ( y squared over x i hat + 2y ln ( x over b ) j hat ), the partial derivatives are
+
+ 
+ partial F sub x over partial y equals partial over partial y (a y squared over x ) equals 2ay over x, 
+ partial F sub y over partial x equals partial over partial x (2ay ln ( x over b ) ) equals 2ay over x.
+ 
+
+Since the mixed partial derivatives are equal, this force is conservative.
+
+**(c)** For the force vector F equals ax i hat + ay j hat over x squared + y squared, the partial derivatives are
+
+ 
+ partial F sub x over partial y equals partial over partial y ( ax over x squared + y squared ) equals - 2axy over (x squared + y squared) squared, 
+ partial F sub y over partial x equals partial over partial x ( ay over x squared + y squared ) equals - 2axy over (x squared + y squared) squared.
+ 
+
+Because these derivatives are equal, this force is conservative in the region where it is defined.
+
+---
+
+The Conclusion.
+
+The force in part **(a)** is nonconservative because the mixed partial derivatives of its components are not equal. The forces in parts **(b)** and **(c)** satisfy the condition partial F sub x / partial y equals partial F sub y / partial x and are therefore conservative. This classification determines whether a potential energy function can be defined for each force.
+
+---
+
+ **The Problem**
+The potential energy for a particle undergoing one-dimensional motion along the x -axis is
+ U(x) equals 1 over 4 c x to the power of 4, 
+where c equals 8 newtons/cubic meters. Its total energy at x equals 0 is 2 J, and it is not subject to any non-conservative forces. Find **(a)** the positions where its kinetic energy is zero and **(b)** the forces at those positions.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The system consists of the particle alone moving along the x -axis under the influence of a position-dependent conservative force derived from the given potential energy function. No non-conservative forces act on the particle, so mechanical energy is conserved. The total mechanical energy of the system is constant and equal to 2 J at all positions. Points where the kinetic energy is zero correspond to turning points of the motion, where the total energy equals the potential energy. The force acting on the particle is obtained from the negative derivative of the potential energy with respect to position.
+
+---
+
+The Math.
+
+**(a)** The kinetic energy is zero when the potential energy equals the total mechanical energy. Setting U(x) equal to 2 J gives
+
+ 
+2 J equals 1 over 4 (8 newtons/cubic meters ) x to the power of 4.
+ 
+
+Solving for x yields
+
+ 
+x to the power of 4 equals 1 
+x equals plus or minus 1 meters.
+ 
+
+**(b)** The force associated with a one-dimensional potential energy function is given by the negative derivative of the potential energy with respect to position, so the force is
+
+ 
+ F sub x equals - dU over dx equals -c x cubed.
+ 
+
+Evaluating the force at the turning points gives
+
+ 
+ vector F (+1 meters ) equals -(8 newtons/cubic meters )(1 meters ) cubed i hat equals -8 newtons i hat, 
+ vector F (-1 meters ) equals -(8 newtons/cubic meters )(-1 meters ) cubed i hat equals +8 newtons i hat.
+ 
+
+---
+
+The Conclusion.
+
+The particle’s kinetic energy is zero at x equals plus or minus 1 meters. At both positions, the magnitude of the force is 8 newtons, and the force points toward the origin. This behavior is characteristic of a restoring force associated with a symmetric potential energy minimum at x equals 0.
+
+---
+
+========================================================================
+
+8.3 Conservation of Energy
+
+Conservation of Energy.
+
+The terms `conserved quantity` and `conservation law` have specific, scientific meanings in physics. In everyday usage, you could conserve water by: not using it, using less of it, or re-using it. In scientific usage, a **conserved quantity** for a system:
+
+Bullet point. stays constant,
+
+Bullet point. changes by a definite amount that is transferred to other systems, and/or
+
+Bullet point. is converted into other forms of that quantity.
+
+There are no other forms of water, where it's all H sub 2O. Nor is there any physical law of conservation that is specific to water.
+
+Systems with a Single Particle.
+
+Consider a system with a single particle, where "system" is used pretty loosely here. In **Section 8.1**, we showed that the work done on a particle can be represented as the *negative* change in the potential energy (Eqn. 8.1) or the change in kinetic energy (Eqn. 8.3). For a conservative system the sum of the changes in kinetic and potential energy were equal to zero (i.e., change in K + change in U equals 0 in Section 8.1.3.3). We expand this idea to include non-conservative forces and to define the **mechanical energy** of the particle.
+
+Conservation of Energy.
+
+ 
+
+The mechanical energy E of a particle stays constant unless external or non-conservative forces do work on it. The change in mechanical energy is equal to the work done (from A to B ) by the non-conservative forces W sub nc,AB: or
+
+ 
+W sub nc,AB equals change in (K+U) sub AB equals change in E sub AB.
+ 
+ 
+
+This expression describes the concept of **energy conservation** for a classical particle, which is a point mass, moves at nonrelativistic speed, and obey's Newton's laws of motion. We can recover the prior expression when there are no non-conservative forces or the non-conservative forces do no work. In this case we have
+
+ 
+W sub nc,AB equals change in E sub AB equals 0, 
+0 equals change in (K+U) sub AB equals ( K sub B - K sub A ) + ( U sub B - U sub A ), 
+ K sub A + U sub A equals K sub B + U sub B. checkmark
+ 
+
+Problem Solving Strategy: **Conservation of Energy**.
+
+Item 1. Identify bodies within the system.
+
+Item 2. Identify all forces acting on each body.
+
+Item 3. Determine whether there are conservative or non-conservative (e.g., friction) forces doing work. Set W sub nc,AB equals 0, if they are all conservative sources of work, otherwise W sub nc,AB equals change in E sub AB.
+
+Item 4. For every conservative force that does work, choose a reference point and determine the respective potential energy function.
+
+Item 5. If only conservative work is done, set the sum of kinetic and potential energies at point A equal to the sum of those energies at point B. 
+ 
+
+You can use conservation of energy to calculate the speed of a particle at *particular points* in its motion. More advanced treatments allow you calculate the full time dependence of a particle's motion, for a given potential energy.
+
+Consider a particle moving in 1D with a potential energy U(x) with only conservative interactions (i.e., no friction). Then we can use the total energy to describe the kinetic energy K and the speed v in a different way. Mathematically, this is given by
+
+ 
+E equals K + U(x), 
+K equals 1 over 2 mv squared equals E-U(s), 
+v equals square root of 2 over m [E-U(x) ].
+ 
+
+Recalling the definition of velocity as v equals dx/dt, we can separate the variables and integrate:
+
+ 
+ 
+dt equals dx over v, 
+t equals integral _o to the power of t dt, 
+ equals integral sub x sub o to the power of x dx over square root of 2 [E-U(x) ]/m.
+ 
+
+If you can do the final integral with respect to dx, then you can solve for x as a function of t.
+
+**Example Problem**: Simple Pendulum.
+
+The Problem.
+A particle of mass m is hung from the ceiling by a massless string of length 1.0 meters, as shown in Figure. The particle is released from rest, when the angle between the string and the downward vertical direction is 30 degrees. What is its speed when it reaches the lowest point of its arc?
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The system consists of the particle and the Earth so that gravitational potential energy is internal to the system. The string is massless and constrains the particle to move on a circular arc of radius L equals 1.0 meters. Air resistance is neglected. The string tension does no work on the particle because the tension force is always directed along the string while the displacement is tangent to the arc, so the tension is perpendicular to the instantaneous displacement. The only force that does work is gravity, which is conservative, so mechanical energy is conserved. The gravitational potential energy is defined to be zero at the lowest point of the swing. The particle is released from rest at an initial angle theta _o equals 30 degrees measured from the downward vertical, so the initial mechanical energy is purely gravitational potential energy determined by the vertical height above the lowest point.
+
+---
+
+The Math.
+
+Because only conservative work is done on the particle–Earth system, mechanical energy is conserved, so the total mechanical energy at release equals the total mechanical energy at the lowest point. The particle starts from rest, so its initial kinetic energy is zero, and at the lowest point the gravitational potential energy is defined to be zero. Conservation of energy therefore requires that the initial gravitational potential energy equals the final kinetic energy, which gives
+
+ 
+mgh equals 1 over 2 mv squared.
+ 
+
+The height h is found from the geometry of a circle of radius L. At the release angle theta _o, the vertical distance from the pivot to the particle is L cos theta _o, while at the lowest point that vertical distance is L, so the particle is higher than the lowest point by
+
+ 
+h equals L - L cos theta _o equals L(1- cos theta _o).
+ 
+
+Substituting this height into the energy equation and canceling m gives
+
+ 
+m g L(1- cos theta _o) equals 1 over 2 meters v squared, 
+v equals square root of 2gL(1- cos theta _o).
+ 
+
+Substituting g equals 9.81 meters per second squared, L equals 1.0 meters, and theta _o equals 30 degrees yields
+
+ 
+v equals square root of 2(9.81 meters per second squared )(1.0 meters )(1- cos 30 degrees) 
+ equals 1.62 meters per second.
+ 
+
+---
+
+The Conclusion.
+
+The particle’s speed at the lowest point of its arc is 1.62 meters per second. This result follows from conservation of mechanical energy, using the vertical height change implied by the pendulum geometry and defining gravitational potential energy to be zero at the lowest point.
+
+---
+
+ **The Problem**
+A helicopter is hovering at an altitude of 1 km when a panel from its underside breaks loose and plummets to the ground (Figure ). The mass of the panel is 15 kg, and it hits the ground with a speed of 45 meters per second. How much mechanical energy was dissipated by air resistance during the panel’s descent?
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The system consists of the panel and the Earth. Gravity is a conservative force, while air resistance is a non-conservative force that does negative work during the fall. The panel is released from rest at an altitude of 1 km and reaches the ground with a known speed, so the dissipated mechanical energy can be found from the change in the system’s mechanical energy. The gravitational potential energy is defined to be zero at ground level. The energy dissipated by air resistance is taken to be the magnitude of the non-conservative work, which equals the decrease in mechanical energy from the initial state to the final state.
+
+---
+
+The Math.
+
+The change in mechanical energy between the initial state i and the final state f is related to the non-conservative work by
+
+ 
+W sub nc,if equals change in (K+U) sub if equals ( K sub f + U sub f ) - ( K sub i + U sub i ).
+ 
+
+Because air resistance dissipates energy, the dissipated mechanical energy is the magnitude of this work, so change in E sub diss equals |W sub nc,if |.
+
+At release, the panel starts from rest, so K sub i equals 0. The gravitational potential energy is defined to be zero at the ground, so U sub f equals 0 and U sub i equals mgh with h equals 1000 meters. The final kinetic energy is K sub f equals tfrac{1}{2}mv squared with v equals 45 meters per second. Substituting these expressions gives
+
+ 
+W sub nc,if 
+ equals ( 1 over 2 mv squared + 0 ) - (0 + mgh ) 
+ equals 1 over 2 mv squared - mgh.
+ 
+
+Using m equals 15 kg, v equals 45 meters per second, g equals 9.81 meters per second squared, and h equals 1000 meters yields
+
+ 
+W sub nc,if 
+ equals 1 over 2 (15 kg )(45 meters per second ) squared - (15 kg )(9.81 meters per second squared )(1000 meters ) 
+ equals -1.32 times ten to the 5 J.
+ 
+
+Therefore, the mechanical energy dissipated by air resistance is
+
+ 
+ change in E sub diss 
+ equals |W sub nc,if | 
+ equals 1.32 times ten to the 5 J 
+ equals 132 kJ.
+ 
+
+---
+
+The Conclusion.
+
+Air resistance dissipated 132 kJ of mechanical energy during the panel’s fall. This equals the decrease in the system’s mechanical energy from the initial state at 1 km altitude to the final state at the ground.
+
+---
+
+ **The Problem**
+Use the potential energy U(x) equals E(x/ x sub o ), for E > 0, in Equation to find the position x of a particle as a function of time t.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The system consists of a particle undergoing one-dimensional motion along the x -axis under the influence of a conservative force derived from the given potential energy function. The potential energy varies linearly with position, so the corresponding force is constant. The particle starts from rest at position x sub o and moves under this constant force without the influence of any non-conservative forces. Mechanical energy is conserved, allowing the motion to be analyzed using the energy–time relation given in Equation.
+
+---
+
+The Math.
+
+The energy–time relation for one-dimensional motion under a conservative force can be written as
+
+ t equals integral sub x sub o to the power of x dx over square root of 2 over m [E - U(x)]. 
+
+Substituting U(x) equals E(x/ x sub o ) into this expression gives
+
+ 
+t equals integral sub x sub o to the power of x dx over square root of 2E over m (1- x over x sub o ) 
+ equals 1 over square root of 2E/(m x sub o ) integral sub x sub o to the power of x dx over square root of x sub o - x 
+ equals 1 over square root of 2E/(m x sub o ) [-2 square root of x sub o - x ] sub x sub o to the power of x 
+ equals - 2 square root of x sub o - x over square root of 2E/(m x sub o ).
+ 
+
+Solving this expression for the position as a function of time yields
+
+ 
+x(t) equals x sub o - 1 over 2 ( E over m x sub o )t squared.
+ 
+
+---
+
+The Conclusion.
+
+The particle’s position varies quadratically with time according to 
+
+ 
+x(t) equals x sub o - 1 over 2 ( E over m x sub o )t squared.
+ 
+
+This corresponds to motion starting from rest at x sub o with a constant acceleration directed toward decreasing x.
+
+---
+
+========================================================================
+
+8.4 Potential Energy Diagrams and Stability
+
+Potential Energy Diagrams and Stability.
+
+Gravitational Potential Energy.
+
+Graphs are a good way to obtain useful information about the dynamical behavior of a system. Let's consider a 1D system, whose potential energy is known, U(y) equals mgy.
+
+We can use this potential energy function for an object in free-fall near the Earth's surface, neglecting air resistance. The mechanical energy of the object is conserved (E equals K+U equals constant ). We choose y to represent the vertical height relative to the ground ( y equals 0 ). The potential energy diagram in the figure below shows how we can show that while the kinetic energy decreases, the potential energy increases.
+
+Checkpoint.
+
+ 
+
+On a potential-energy diagram, what must be true about the kinetic energy at a turning point?
+ 
+
+See the Python snippet given in the course lecture notes.
+
+The line at energy E equals 98.1 J represents the constant mechanical energy of the object, whereas the kinetic ( K sub A ) and potential ( U sub A ) energies are indicated at a particular height y sub A. The total energy is divided between kinetic and potential energy as the object's height changes. 
+
+There is a maximum potential energy and a maximum height, which an object with the given total energy cannot exceed:
+
+ 
+K equals E-U is greater than or equal to 0, 
+U is less than or equal to E.
+ 
+
+If we use gravitational potential energy reference at y equals 0 (or U(0) equals 0 ), we can rewrite the gravitational potential energy U as mgy. Solving for y gives
+
+ y is less than or equal to E over mg equals y_ max. 
+
+*At the maximum height, the kinetic energy (and speed) are zero. If the object were initially traveling upward, its velocity would go to zero and y_ max would be a turning point in the motion.*
+
+At ground level, y sub o equals 0, the potential energy is zero and the kinetic energy is maximized:
+
+ 
+U( y sub o ) equals E-K( v sub o ) equals 0, 
+E equals K( v sub o ) equals 1 over 2 meters v sub o to the power of 2, 
+ v sub o equals plus or minus square root of 2E over m.
+ 
+
+The maximum speed plus or minus v sub o gives the initial velocity necessary to reach the maximum height y_ max, and - v sub o represents the final velocity after falling from y_ max.
+
+Potential Energy of a Spring.
+
+Consider a mass-spring system (the figure) on a frictionless, stationary, horizontal surface, so that gravity and the normal contact force do no work and can be ignored.
+
+Bullet point. This is like a 1D system whose mechanical energy E is a constant and whose potential energy U(x) equals 1 over 2 kx squared with respect to zero energy at zero displacement from the spring's unstretched length x equals 0.
+
+Figure referenced in the course notes.
+
+You can deduce the physically allowable range of motion, as well as, the maximum values of distance and speed from the limits on the kinetic energy ( 0 is less than or equal to K is less than or equal to E ). We can find two **turning points** when K equals 0 and U equals E for the elastic spring potential energy,
+
+ x_ max equals plus or minus square root of 2E over k. 
+
+The glider's motion (in Fig. a) is confined to the region between the turning points, -x_ max is less than or equal to x is less than or equal to x_ max. This is true for any (positive) value of E because the potential energy is unbounded with respect to x. 
+
+For this reason, U(x) is called an infinite potential well. At the bottom of the potential well x equals 0 and U equals 0, while the kinetic energy is a maximum K equals E and v_ max equals plus or minus square root of 2E over m.
+
+From the slop of this potential energy curve (Fig. b), you can deduce information about the force on the glider and its acceleration. 
+
+Bullet point. The slope, force, and acceleration are all zero when x equals 0, so this is an **equilibrium point**. 
+
+Bullet point. The negative of the slope (on either side of the equilibrium point) gives a force pointing back to the equilibrium point (i.e., F equals plus or minus kx ), so the equilibrium is termed *stable* and the force is called a *restoring force*.
+
+If the force on either side of an equilibrium point has a direction that is the same as the direction of position change (i.e., pointing away from the equilibrium point), the equilibrium is termed *unstable*.
+
+A stable point occurs when U(x) has a relative minimum, while an unstable point occurs when U(x) ahs a relative maximum. This should be intuitive because a ball rolls downhill into a valley.
+
+**Example Problem**: Quartic and Quadratic Potential Energy Diagram.
+
+The Problem.
+The potential energy for a particle undergoing one-dimensional motion along the x -axis is U(x) equals 2 (x to the power of 4-x squared ), where U is in joules and x is in meters. The particle is not subject to any non-conservative forces and its mechanical energy is constant at E equals -0.25 J. **(a)** Is the motion of the particle confined to any regions on the x -axis, and if so, what are they? **(b)** Are there any equilibrium points, and if so, where are they and are they stable or unstable?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The system consists of the particle moving along the x -axis under a conservative force derived from the given potential energy function. No non-conservative forces act, so the mechanical energy E is constant. The motion is only allowed where the kinetic energy satisfies K equals E - U(x) ge 0, which is equivalent to U(x) le E. Equilibrium points occur where the net force is zero, which for a one-dimensional conservative system means F sub x equals -dU/dx equals 0. Stability is determined from the shape of U(x) near the equilibrium point: a relative minimum corresponds to stable equilibrium and a relative maximum corresponds to unstable equilibrium.
+
+---
+
+The Math.
+
+**(a)** The motion is allowed where K equals E - U(x) ge 0, so
+
+ 
+E - U(x) ge 0 
+-0.25 - 2(x to the power of 4-x squared) ge 0.
+ 
+
+Rearranging and completing the square in x squared gives
+
+ 
+2(x to the power of 4-x squared) le -0.25 
+2 (x to the power of 4-x squared+ 1 over 4 ) le -0.25 + 2 ( 1 over 4 ) 
+2 (x squared- 1 over 2 ) squared le 1 over 4.
+ 
+
+Dividing by 2 and taking square roots yields the condition on x squared,
+
+ 
+ (x squared- 1 over 2 ) squared le 1 over 8 
+- square root of 1 over 8 le x squared- 1 over 2 le square root of 1 over 8 
+ 1 over 2 - square root of 1 over 8 le x squared le 1 over 2 + square root of 1 over 8.
+ 
+
+Therefore the motion is confined to two symmetric intervals,
+
+ 
+ x sub P le x le x sub R and - x sub R le x le - x sub P,
+ 
+
+where
+
+ 
+ x sub P equals sqrt{ 1 over 2 - square root of 1 over 8 } is approximately equal to 0.38 meters, 
+ x sub R equals sqrt{ 1 over 2 + square root of 1 over 8 } is approximately equal to 0.92 meters.
+ 
+
+**(b)** Equilibrium points occur where F sub x equals -dU/dx equals 0, which is equivalent to dU/dx equals 0. Differentiating U(x) equals 2(x to the power of 4-x squared) gives
+
+ 
+ dU over dx equals 2(4x cubed-2x) equals 8x cubed-4x equals 4x(2x squared-1).
+ 
+
+Setting this equal to zero yields
+
+ 
+4x(2x squared-1) equals 0 
+x equals 0, plus or minus 1 over square root of 2.
+ 
+
+Stability is determined from the second derivative,
+
+ 
+ d to the power of 2U over dx squared equals d over dx (8x cubed-4x) equals 24x squared-4.
+ 
+
+Evaluating at the equilibrium points gives
+
+ 
+ d to the power of 2U over dx squared evaluated from sub x equals 0 equals -4 0 therefore stable equilibrium at x equals plus or minus 1 over square root of 2.
+ 
+
+---
+
+The Conclusion.
+
+The particle’s motion is confined to two allowed regions where U(x) le E, namely x sub P le x le x sub R and - x sub R le x le - x sub P, with x sub P is approximately equal to 0.38 meters and x sub R is approximately equal to 0.92 meters. The equilibrium points are at x equals 0 and x equals plus or minus 1/ square root of 2; the equilibrium at x equals 0 is unstable, while the equilibria at x equals plus or minus 1/ square root of 2 are stable.
+
+---
+
+ **The Problem**
+Find x(t) for a particle moving with a constant mechanical energy E>0 and a potential energy U(x) equals tfrac{1}{2}kx squared, when the particle starts from rest at time t equals 0.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The particle undergoes one-dimensional motion along the x -axis under a conservative force derived from the quadratic potential energy U(x) equals tfrac{1}{2}kx squared. No non-conservative forces act, so the mechanical energy E equals K+U is conserved. The particle is released from rest, which means its initial kinetic energy is zero and all of the mechanical energy is initially stored as potential energy. The motion is therefore bounded between turning points where the kinetic energy vanishes and the potential energy equals the total energy.
+
+---
+
+The Math.
+
+We begin from the energy-based equation of motion for one-dimensional conservative systems,
+
+ 
+t equals integral sub x sub o to the power of x fraction {dx}{ sqrt{ tfrac{2} meters [E-U(x)]}}.
+ 
+
+Substituting U(x) equals tfrac{1}{2}kx squared gives
+
+ 
+t equals integral sub x sub o to the power of x dx over square root of (k/m) [(2E/k)-x squared ].
+ 
+
+Factoring out the constants allows the integral to be written as
+
+ 
+t equals square root of m over k integral sub x sub o to the power of x dx over square root of (2E/k)-x squared.
+ 
+
+Evaluating this standard integral yields
+
+ 
+t equals square root of m over k [ sin to the power of -1 ( x over square root of 2E/k )- sin to the power of -1 ( x sub o over square root of 2E/k ) ].
+ 
+
+The particle starts from rest at t equals 0, so the initial kinetic energy is zero and the initial potential energy satisfies tfrac{1}{2}k x sub o to the power of 2 equals E. This implies x sub o / square root of 2E/k equals plus or minus 1, and therefore sin to the power of -1 ( plus or minus 1) equals plus or minus 90 degrees. Solving the previous expression for x gives
+
+ 
+x(t) equals square root of 2E over k sin [ square root of k over m t plus or minus 90 degrees ].
+ 
+
+Using the trigonometric identity sin( theta plus or minus 90 degrees) equals plus or minus cos theta, the position can be written in the more familiar form
+
+ 
+x(t) equals plus or minus square root of 2E over k cos ( square root of k over m t ).
+ 
+
+---
+
+The Conclusion.
+
+The particle executes sinusoidal motion with position
+
+ x(t) equals plus or minus square root of 2E over k cos ( square root of k over m t ), 
+
+where the amplitude is square root of 2E/k and the angular frequency is square root of k/m. The motion is periodic and bounded between the turning points where the kinetic energy vanishes.
+
+---
+
+========================================================================
+
+8.5 Sources of Energy
+
+Sources of Energy.
+
+Energy can take different forms and can be transferred from one form to another. Many situations are best understood (or more easily conceptualized) by considering energy. So far, no experimental results have contradicted the conservation of energy. Whenever measurements have appeared to conflict with energy conservation, new forms of energy have been discovered or recognized.
+
+*What are some other forms of energy?*
+
+Bullet point. *Atoms and molecules* inside all objects are in random motion. The internal kinetic energy form these motions is called **thermal energy** because it is related to the temperature of the object (i.e., *heat energy*).
+
+Bullet point. **Electrical energy** is a common form that is converted to many other forms and does work in a wide range of practical situations.
+
+Bullet point. Fuels (e.g., gasoline and food) have **chemical energy**, which is potential energy arising from their molecular bonds. 
+
+Bullet point. Chemical energy can be converted into thermal energy by reactions like oxidation. 
+
+Bullet point. Chemical reactions can also produce electrical energy (e.g., batteries).
+
+Bullet point. Electrical energy can produce thermal energy (e.g., electric heater) and light (e.g., a light bulb).
+
+Bullet point. Light is **radiant energy**, which can include radio, infrared (IR), visible, ultraviolet (UV), X-rays, and gamma rays. All bodies with thermal energy can radiate energy in electromagnetic waves.
+
+Bullet point. **Nuclear energy** results from measurable amounts of mass converted into energy. 
+
+Bullet point. The Sun transforms nuclear energy into radiant energy.
+
+Bullet point. Nuclear power plants use the thermal energy produced by the reactions to boil water, which is turned into electrical energy by generators.
+
+All forms of energy can be transformed into one another and can be converted into mechanical work albeit imperfectly.
+
+The transformation of energy from one form to another happens all the time. The chemical energy in food is converted into thermal energy through metabolism (or respiration), where light energy is converted into chemical energy through photosynthesis.
+
+Energy conversion occurs in a solar cell. Sunlight delivers radiant energy to the cell, which causes the electrons to do work by moving and moving electrons is electricity. This electricity can be used in electric motors or heat water. 
+
+Many other sources (e.g., coal, natural gas, wood) transform their chemical energy into thermal energy which is used to transform water into steam in a boiler. Some of the energy from the steam is converted to mechanical energy when it pushes and spins a turbine, which is connected to a generator to produce electrical energy.
+
+*Not all of the initial energy is converted because some energy is transferred to the environment.* **No such thing as a free lunch** is a common phrase to summarize the 1st and 2nd laws of thermodynamics.
+
+========================================================================

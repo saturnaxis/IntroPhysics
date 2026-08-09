@@ -1,0 +1,301 @@
+Calculating Moments of Inertia.
+
+There are many applications for using the pre-computed moments of inertia in the figure, but there are instances where we need to calculate the moment of inertia for a shifted axis or for a compound object.
+
+Moment of Inertia.
+
+We defined the moment of inertia I of an object as I equals sum sub j equals m sub j r sub j to the power of 2 for all the point masses that make up the object. Since r sub j measures the distance to the axis of rotation (from each mass element m sub j ), the moment of inertia for any object depends on the chosen axis.
+
+Consider 2 masses at the end of a massless (or negligibly small mass) rod and calculate the moment of inertia assuming two different rotation axes (see the figure).
+
+In this case, the summation over the masses is simple because the two masses can be approximated as point masses, and the sum has only two terms.
+
+First, The axis is in the center of the barbell, where each of the two masses m is a distance R away from the axis, which gives a moment of inertia of
+
+ I sub c equals sum sub j m sub j r sub j to the power of 2,
+ equals m sub 1 r sub 1 to the power of 2 + m sub 2r _2 squared,
+ equals mR squared + mR squared equals 2mR squared.
+
+Second, The axis is at the end of the barbell, which gives a moment of inertia of
+
+ I sub e equals sum sub j m sub j r sub j to the power of 2,
+ equals m sub 1 r sub 1 squared + m sub 2r _2 squared,
+ equals m(0) squared + m(2R) squared equals 4mR squared.
+
+From this result, we can conclude that it is twice as hard to rotate the barbell about the end than about its center.
+
+Most objects are not point-like, so we need to think about each of the terms in the equation for the moment of inertia. The equation requires us to sum over each 'piece of mass' m sub j that is a distance from the axis of rotation. Using our calculus knowledge, we break up the problem so that the piece of mass dm is infinitesimally small (see the figure).
+
+Then we can write the moment of inertia by evaluating an integral over infinitesimal masses rather than using a discrete sum over finite masses;
+
+I equals sum sub j m sub jr _j squared therefore I equals integral r squared dm.
+
+In this form, we can generalize the calculation for moment of inertia to complex shapes.
+
+A uniform thin rod with axis in the middle.
+
+Consider a uniform (in density and shape) thin rod of mass M and length L (see the figure). We want a thin rod so that we can assume the cross-sectional area (i.e., circles at the ends) of the rod is small. Then the rod can be approximated as a string of masses along a 1D straight line. The axis is perpendicular to the rod and passes through the midpoint for simplicity.
+
+We need to calculate the moment of inertia about the given axis. We orient the axes so that it aligns with the z axis and the x -axis passes through the length of the rod. Then we can integrate along the x -axis.
+
+We define dm as a small mass element as a piece of the rod. The moment of inertia integral is an integral over the mass distribution. However, we need to integrate over space, not mass. Thus, we need to find a relationship between the mass and spatial variables.
+
+We do this using the linear mass density lambda of the object, which is the mass per unit length. Since the mass density of the object is uniform, we can spread the mass over the entire length, or
+
+ lambda equals m over L, or m equals lambda L.
+
+If we take the differential of each side of this equation (i.e., breaking it into mass elements), we find
+
+ dm equals d( lambda L) equals lambda dL
+
+since lambda is a constant. We can now see that our orientation of the rod along the x -axis for convenience was a helpful choice.
+
+Note.
+
+A piece of rod dl lies completely along the x -axis and has a length dx. In this situation, dL equals dx.
+
+We can therefore write dm equals lambda dx, which we know how to integrate. Putting this all together, we have
+
+ I equals integral r squared dm equals integral x squared dm equals integral x squared lambda dx.
+
+The rod extends from x equals -L/2 to x equals L/2, since the axis lies in the middle of the rod (at x equals 0 ). Then we have
+
+I equals integral sub -L/2 to the power of L/2 x squared lambda dx equals lambda over 3 x cubed evaluated from sub -L/2 to the power of L/2,
+ equals lambda over 3 [ ( L over 2 ) cubed - (- L over 2 ) cubed ],
+ equals lambda over 3 [ 2L cubed over 2 cubed ] equals lambda over 12 L cubed.
+
+Since lambda equals M over L, we can substitute to find
+
+ I equals 1 over 12 ML squared.
+
+We can compare to Fig. and see that our result matches the case for a 'Thin rod about axis through center perpendicular to length'.
+
+A uniform thin rod with axis at the end.
+
+Consider a uniform (in density and shape) then rod of mass M and length L as before, but this time we move the axis of rotation to the end of the rod (see the figure).
+
+The only difference from before is the limits of integration, which is now from x equals 0 to x equals L. Thus, we can start from the integration step to get:
+
+I equals integral sub 0 to the power of L x squared lambda dx equals lambda over 3 x cubed evaluated from sub 0 to the power of L,
+ equals lambda over 3 [ L cubed - 0 cubed ],
+ equals lambda over 3 L cubed equals 1 over 3 ML squared.
+
+Note.
+
+The rotational inertia of the rod about its endpoint is larger than about its center by a factor of four. This is consistent with the barbell example in.
+
+The Parallel-Axis Theorem.
+
+The process between finding the moment of inertia of a rod using two different axes had mostly the same steps. This suggests that there might be a simpler method for determining the moment of inertia for a rod about any parallel axis through the center-of-mass. This is called the parallel-axis theorem.
+
+Parallel-axis Theorem.
+
+Let m be the mass of an object, while d is the distance from an axis through the object's center-of-mass to a new axis. Then we have
+
+I_ parallel equals I_ CoM + md squared,
+
+where I_ parallel is the moment of inertia for the parallel axis and I_ CoM is the moment of inertia through the center-of-mass.
+
+Let's use the case where the axis lies at the center of the rod, which is I_ CoM equals 1 over 12 ML squared. Then, we can move the axis by a distance of L over 2 so that the axis now lies at the end of the rod. As a result, we find
+
+I_ parallel equals 1 over 12 ML squared + m ( L over 2 ) squared,
+ equals [ 1 over 12 + 1 over 4 ] ML squared,
+ equals 4 over 12 ML squared equals 1 over 3 ML squared.
+
+A uniform thin disk about an axis through the center.
+
+Integrating to find the moment of inertia for a 2D object is trickier, but one shape is commonly shown as a uniform thin disk about an axis through its center (see the figure).
+
+Since the disk is thin, we can take the mass as distributed evenly across the entire xy -plane. Instead of a linear mass density, we have a relationship for the surface mass density (or mass per unit surface area). The surface mass density sigma is constant for a thin disk:
+
+ sigma equals m over A therefore sigma A equals m,
+dm equals sigma dA.
+
+We apply a simplification for the area, where it is composed of a series of thin rings. Each ring has a mass increment dm of radius r that is equidistant from the axis. The infinitesimal area of each ring is dA with a length 2 pi r time the infinitesimal width of each ring as dr.
+
+We can break the area of a circle in to smaller pieces by
+
+A equals pi r squared,
+dA equals d( pi r squared) equals pi d(r squared) equals (2 pi r) dr.
+
+The full disk area is then built by summing up all the thin rings with a radius range from r equals 0 to r equals R. This radius range becomes our limits of integration for dr. Putting this all together, we have
+
+I equals integral _0 to the power of R r squared sigma dA equals integral _0 to the power of R r squared sigma (2 pi r)dr,
+ equals 2 pi sigma integral _0 to the power of R r cubed dr equals pi sigma over 2 r to the power of 4 evaluated from _0 to the power of R,
+ equals pi over 2 sigma R to the power of 4.
+
+Then, we can substitute sigma equals m over A and for a disk, we have sigma equals m over pi R squared. Thus we obtain
+
+ I equals pi over 2 ( m over pi R squared ) R to the power of 4 equals 1 over 2 meters R squared.
+
+This result matches the standard moment of inertia for a uniform solid disk about an axis through its center.
+
+Calculating the moment of Inertia for compound objects.
+
+Consider a compound object with a disk on the end of a rod (see the figure). This object is not uniformly shaped, so the integration is not so easy.
+
+However, if we use the definition for the moment of inertia as a summation, we can reason that a compound object's moment of inertia can be determined as the sum of each part of the object:
+
+I_ tot equals sum sub j I sub j.
+
+Note.
+
+The moments of inertia must share a common axis.
+
+In the above example, this would be a rod of length rotating about its end and a thin disk of radius R rotating about an axis shifted off-center by a distance L+R, where R is the radius of the disk. The mass of the rod is m sub r, while the mass of the disk is m sub d.
+
+We already know the moment of inertia for the rod as one-third m sub r L squared, but we have to use the parallel-axis theorem to the find the moment of inertia for the disk about the given axis. The moment of inertia of the disk about its center-of-mass is 1 over 2 meters sub dR to the power of 2. Now we can apply the parallel-axis theorem to get
+
+I_ parallel equals I_ CoM + md squared,
+ equals 1 over 2 meters sub dR to the power of 2 + m sub d (L+R) squared.
+
+Adding the moment of inertia of the rod to the moment of inertia of the disk (with a shifted axis of rotation), we find the moment of inertia for the compound object is
+
+ I_ tot equals 1 over 3 meters sub rL to the power of 2 + 1 over 2 meters sub dR to the power of 2 + m sub d (L+R) squared.
+
+Note.
+
+We could expand the above result to collect terms in m sub dR to the power of 2, however the overall number of terms would be larger. There would be an additional m sub dL to the power of 2 + 2 meters sub dLR from expanding the square. Resulting in four terms, which does not really make it any simpler.
+Example Problem: Person on a Merry-Go-Round.
+
+The Problem.
+A 25 kg child stands at a distance r equals 1.0 meters from the axis of a rotating merry-go-round. The merry-go-round can be approximated as a uniform solid disk with a mass of 500 kg and a radius of 2.0 meters. Find the moment of inertia of this system.
+The worked solution follows.
+The Model.
+
+The system consists of two parts: the child and the merry-go-round. The child is modeled as a point mass located 1.0 meters from the axis, and the merry-go-round is modeled as a uniform solid disk rotating about its center.
+
+The total moment of inertia of the system is the sum of the moment of inertia of the child and the moment of inertia of the disk.
+
+The Math.
+
+The moment of inertia of the child is given by the point-mass expression I sub c equals mr squared. The child's moment of inertia follows from the point-mass expression:
+
+ I sub c equals (25 kg )(1.0 meters ) squared
+ equals 25 kg dot square meters.
+
+The moment of inertia of the merry-go-round is given by the uniform-disk expression
+
+ I sub m equals 1 over 2 MR squared.
+
+The merry-go-round's moment of inertia follows from the uniform-disk expression:
+
+ I sub m equals 1 over 2 (500 kg )(2.0 meters ) squared
+ equals 1000 kg dot square meters.
+
+The total moment of inertia of the system is the sum of these two contributions:
+
+I_ total equals I sub c + I sub m
+ equals 25 kg dot square meters + 1000 kg dot square meters
+ equals 1025 kg dot square meters is approximately equal to 1000 kg dot square meters.
+
+The Conclusion.
+
+The moment of inertia of the child–merry-go-round system is 1000 kg dot square meters.
+
+This result shows that the total moment of inertia is dominated by the merry-go-round rather than the child. The disk contributes much more because it has far more mass distributed over a larger radius.
+Example Problem: Rod and Solid Sphere.
+The Problem.
+Find the moment of inertia of the rod and solid sphere combination about the two axes as shown below. The rod has length 0.5 meters and mass 2.0 kg. The radius of the sphere is 20 cm and the sphere has mass 1.0 kg.
+For part a, Find the moment of inertia about the axis through point A at the top of the rod.
+For part b, Find the moment of inertia about the axis through point A at the junction of the rod and the sphere.
+The worked solution follows.
+The Model.
+
+The object is a compound system consisting of a slender rod and a solid sphere. The total moment of inertia about either axis is the sum of the moment of inertia of the rod and the moment of inertia of the sphere about that same axis.
+
+The rod rotates about an axis through one end, so its contribution is found using the standard result for a thin rod about one end. The sphere rotates about an axis that does not pass through its center, so its contribution is found using the parallel-axis theorem. The distance from the sphere’s center to the rotation axis depends on which of the two axes is chosen.
+
+The Math.
+
+The total moment of inertia is the sum of the rod and sphere contributions:
+
+I_ total equals I_ rod + I_ sphere.
+
+The rod rotates about an axis through one end, so its moment of inertia is
+
+I_ rod equals 1 over 3 m_ rod L squared,
+ equals 1 over 3 (2.0 kg )(0.5 meters ) squared
+ equals 0.17 kg dot square meters.
+
+The sphere is a solid sphere, so its moment of inertia about its center of mass is
+
+I_ cm equals 2 over 5 m_ sphere R squared,
+I_ cm equals 2 over 5 (1.0 kg )(0.20 meters ) squared
+ equals 0.016 kg dot square meters.
+
+For part a, The axis is at the top of the rod. The center of the sphere is therefore a distance L+R from the axis. The parallel-axis theorem gives
+
+I_ sphere equals I_ cm + m_ sphere (L+R) squared,
+ equals 0.016 kg dot square meters + (1.0 kg )(0.5 meters +0.20 meters ) squared
+ equals 0.016 kg dot square meters + 0.49 kg dot square meters
+ equals 0.51 kg dot square meters.
+
+The total moment of inertia is therefore
+
+I_ total equals 0.17 kg dot square meters + 0.51 kg dot square meters
+ equals 0.68 kg dot square meters.
+
+For part b, The axis is at the junction of the rod and the sphere. The center of the sphere is therefore a distance R from the axis. The parallel-axis theorem gives
+
+I_ sphere equals I_ cm + m_ sphere R squared,
+ equals 0.016 kg dot square meters + (1.0 kg )(0.20 meters ) squared
+ equals 0.016 kg dot square meters + 0.040 kg dot square meters
+ equals 0.056 kg dot square meters.
+
+The total moment of inertia is therefore
+
+I_ total equals 0.17 kg dot square meters + 0.056 kg dot square meters
+ equals 0.23 kg dot square meters.
+
+The Conclusion.
+
+The moment of inertia of the rod–sphere system is 0.68 kg dot square meters about the axis through the top of the rod, and it is 0.23 kg dot square meters about the axis through the junction of the rod and sphere.
+
+These results show that the moment of inertia is larger when the axis is farther from the mass of the sphere. Moving the axis closer to the center of mass of the system reduces the resistance to rotational acceleration.
+Example Problem: Angular Velocity of a Pendulum.
+The Problem.
+A pendulum in the shape of a rod (Figure ) is released from rest at an angle of 30 degrees. It has a length 30 cm and mass 300 g. What is its angular velocity at its lowest point?
+The worked solution follows.
+The Model.
+
+The pendulum is modeled as a uniform rod rotating about one end. Because it is released from rest and air resistance is neglected, the mechanical energy of the system is conserved during the motion.
+
+As the rod swings downward, the loss in gravitational potential energy of its center of mass is converted into rotational kinetic energy. The center of mass of a uniform rod is located at its midpoint, and the moment of inertia of a uniform rod about one end is used to relate the rotational kinetic energy to the angular velocity.
+
+The Math.
+
+The rod has length L equals 30 cm equals 0.30 meters. The center of mass of a uniform rod is located at a distance L/2 from the pivot. When the rod is released from an angle theta, the vertical drop of the center of mass between the release point and the lowest point is
+
+ change in h equals L over 2 (1- cos theta ).
+
+The loss in gravitational potential energy is therefore (see Exercise 8.7)
+
+ change in U equals mg L over 2 (1- cos theta ).
+
+At the lowest point, the rod has rotational kinetic energy via
+
+K equals 1 over 2 I omega to the power of 2.
+
+Conservation of mechanical energy requires that the loss in gravitational potential energy equals the gain in rotational kinetic energy, which gives
+
+mg L over 2 (1- cos theta ) equals 1 over 2 I omega to the power of 2.
+
+The moment of inertia of a uniform rod about one end is I equals one-third m L squared. The energy equation becomes the following expression after the moment of inertia is written for a rod about one end:
+
+mg L over 2 (1- cos theta ) equals 1 over 2 ( 1 over 3 m L squared ) omega to the power of 2.
+
+We must now solve for the angular velocity, which gives
+
+ omega equals square root of 3g over L (1- cos theta ).
+
+The angular velocity follows from the energy expression with g equals 9.81 meter per second squared, L equals 0.30 meters, and theta equals 30 degrees:
+
+ omega equals square root of 3(9.81 meter per second squared ) over 0.30 meters (1- cos 30 degrees)
+ equals 3.6 radians per second.
+
+The Conclusion.
+
+The angular velocity of the rod at its lowest point is 3.6 radians per second.
+
+This result shows that the angular speed depends on the geometry of the rod and the release angle, but not on the mass of the rod. In this idealized model, the mass cancels because both the gravitational potential energy and the rotational kinetic energy are proportional to the mass.

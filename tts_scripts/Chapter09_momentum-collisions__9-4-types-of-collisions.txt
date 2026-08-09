@@ -1,0 +1,204 @@
+Types of Collisions.
+
+Although momentum is conserved in all interactions, not all interactions are the same. The possibilities include:
+
+A single object can explode into multiple objects.
+
+Multiple objects can collide and bounce off each other (i.e., an elastic collision) resulting in the same kinetic energy of the system before and after the collision.
+
+Multiple objects can collide and merge together (i.e., an inelastic collision) resulting in kinetic energy loss in the system.
+
+Explosions.
+
+The first possibility is that a single object may break apart into 2 or more pieces. An example of this is a firecracker, or a rocket rising through the air toward space. These can be difficult to analyze if the number of fragments after the collision is more than about 3 or 4. Nevertheless, the total momentum of the system before and after the explosion is identical.
+
+If the object is initially motionless, then the system has no momentum and no kinetic energy. After the explosion, the net momentum of all the pieces of the object must sum to zero (since the momentum of this closed system cannot change). However, the system will have a great deal of kinetic energy after the explosion.
+
+Thus, the momentum of the system is conserved in an explosion, but the kinetic energy is definitely not, where it increases. One object becoming many, with an increase of kinetic energy of the system is called an explosion.
+
+Where does the energy come from? Does the conservation of energy still hold? Yes; some form of potential energy is converted to kinetic energy. In the case of gunpowder burning and pushing out a bullet, chemical potential energy is converted to the kinetic energy of the bullet and the recoiling of the gun.
+
+Inelastic.
+
+The second possibility is the reverse: that 2 or more objects collide with each other and stick together forming one single composite object after the collision. The total mass of this composite object is the sum of the masses of the original objects, and the new single object moves with a velocity dictated by the conservation of momentum.
+
+Although the total momentum of the system of objects remains constant, the kinetic energy doesn't stay constant, but decreases. This type of collision is called inelastic.
+
+Any collision where the objects stick together will result in the maximum kinetic energy loss (i.e., K sub f will be a minimum). Such a collision is called perfectly inelastic.
+
+In the extreme case, multiple objects collide, stick together, and remain motionless after the collision. Since the objects are all motionless after the collision, the final kinetic energy is also zero; therefore, the loss of kinetic energy is a maximum.
+
+Elastic.
+
+If 2 or more objects approach each other, collide, and bounce off each other, moving away from each other at the same relative speed at which they approached each other. In this case, the total kinetic energy of the system is conserved and the interaction is called elastic.
+
+The following gives an overview of the inelastic and elastic collisions by the initial and final kinetic energy K sub f and K sub i.
+
+If zero is less than K sub f and K sub f is less than K sub i, the collision is inelastic.
+
+If K sub f is the lowest energy, or the energy lost by both objects is the most, the collision is perfectly inelastic. In this case, the objects stick together.
+
+If K sub f equals K sub i, the collision is elastic.
+
+Problem-Solving Strategy: Collisions.
+
+A closed system always conserves momentum, where it might also conserve kinetic energy. Energy-momentum problems confined to a plane usually have two unknowns. Generally, this approach works well.
+
+First, define a closed system.
+
+Second, write down the expression for the conservation of momentum.
+
+Third, write down the expression for the conservation, or change, of kinetic energy.
+
+Fourth, you now have two equations with two unknowns, which can be solved with standard methods, such as algebra.
+
+Checkpoint. Pause and check your understanding.
+
+Which quantities are conserved in an elastic collision, and which quantity is conserved in every closed-system collision?
+
+Interactive: Fet Collision Lab.
+
+Use the Collision Lab to compare elastic and inelastic collisions in one and two dimensions. Change masses and initial velocities, then check whether momentum and kinetic energy are conserved.
+
+Example Problem: Formation of a Deuteron.
+The Problem.
+A proton of mass 1.67 times ten to the minus 27 kilograms collides with a neutron of essentially the same mass. After the collision, the two particles stick together to form a single particle called a deuteron. The proton initially moves at 7.0 times ten to the 6 meters per second to the right, while the neutron moves at 4.0 times ten to the 6 meters per second to the left. What is the velocity of the deuteron after the collision?
+The worked solution follows.
+The Model.
+
+The system consists of the proton and neutron during the collision. The interaction time is extremely short, and we neglect any external forces during this interval. Therefore, the system is treated as closed and linear momentum is conserved. Because the two particles stick together and move as a single object after the collision, the collision is perfectly inelastic. Kinetic energy is not conserved, but momentum is conserved.
+
+The motion is 1D along the horizontal axis. We define the +x -direction to point to the right. The proton’s initial velocity is positive and the neutron’s initial velocity is negative. Since the proton and neutron have essentially equal masses, we treat both masses as m for algebraic clarity. The deuteron then has mass 2m.
+
+The Math.
+
+Conservation of momentum requires that the total momentum before the collision equals the total momentum after the collision:
+
+ vector p final equals vector p initial.
+
+The initial momentum of the system is the sum of the proton and neutron momenta, while the final momentum of the system is the momentum of the combined particle. Mathematically, this is given as
+
+ vector p initial equals m v sub p i-hat + m v sub n i-hat,
+ vector p final equals (2m) v sub d i-hat.
+
+Equating the initial and final momenta gives
+
+(2m) v sub d i-hat equals m v sub p i-hat + m v sub n i-hat.
+
+Factoring out m i-hat yields
+
+2 v sub d equals v sub p + v sub n.
+
+The proton’s velocity is v sub p equals +7.0 times ten to the 6 meters per second and the neutron’s velocity is v sub n equals -4.0 times ten to the 6 meters per second. Using these values gives
+
+2 v sub d equals (7.0 times ten to the 6 - 4.0 times ten to the 6) meters per second,
+2 v sub d equals 3.0 times ten to the 6 meters per second.
+
+Solving for the deuteron’s velocity gives
+
+ v sub d equals 1.5 times ten to the 6 meters per second,
+ vector v sub d equals (1.5 times ten to the 6 meters per second ) i-hat.
+
+The result is reported with two significant figures, consistent with the given data.
+
+The Conclusion.
+
+After the perfectly inelastic collision, the deuteron moves to the right with velocity vector v sub d equals (1.5 times ten to the 6 meters per second ) i-hat.
+
+Because the proton’s initial momentum to the right was larger in magnitude than the neutron’s momentum to the left, the combined particle continues moving to the right, but at a reduced speed. The final velocity is exactly one-half of the difference in the initial speeds because the two equal masses combine into a single object of double mass.
+
+Example Problem: Ice Hockey Part II.
+The Problem.
+Two ice hockey pucks of different masses are on a frictionless, horizontal rink. The red puck has a mass of 15 g and is initially at rest. The blue puck has a mass of 12 g and moves at 2.5 meters per second to the left. The two pucks collide, and the collision is perfectly elastic. What are the final velocities of both pucks after the collision?
+The worked solution follows.
+The Model.
+
+The system consists of the two pucks during the collision interval. Because the ice is frictionless and the interaction time is very short, external horizontal forces are negligible. The system is therefore closed, and linear momentum is conserved.
+
+The collision is specified to be perfectly elastic, so kinetic energy is also conserved. The motion is 1D along the horizontal axis. We define the +x direction to point to the left so that the initial velocity of the blue puck is positive.
+
+The Math.
+
+Conservation of momentum requires
+
+p initial equals p final,
+m sub r v sub r initial + m sub b v sub b initial equals m sub r v sub r final + m sub b v sub b final.
+
+Conservation of kinetic energy requires
+
+K initial equals K final,
+ 1 over 2 m sub r times v sub r initial squared, plus 1 over 2 m sub b times v sub b initial squared
+ equals 1 over 2 m sub r times v sub r final squared, plus 1 over 2 m sub b times v sub b final squared.
+
+Solving these two equations simultaneously for a 1D elastic collision gives the standard results
+
+v sub r final equals m sub r - m sub b over m sub r + m sub b v sub r initial + 2 m sub b over m sub r + m sub b v sub b initial, v sub b final equals 2 m sub r over m sub r + m sub b v sub r initial + m sub b - m sub r over m sub r + m sub b v sub 2 initial.
+
+These expressions show explicitly that each final velocity is a linear combination of the initial velocities, with mass ratios acting as coefficients.
+
+With v sub r initial equals 0 and v sub b initial equals 2.5 meters per second, the final-velocity formulas become
+
+v sub r final equals 2 m sub b over m sub r + m sub b (2.5 meters per second ),
+v sub b final equals m sub b - m sub r over m sub r + m sub b (2.5 meters per second ).
+
+Using the numerical values for the masses (in kilograms ),
+
+v sub r final equals 2(0.012) over 0.015 + 0.012 (2.5) equals 2.22 meters per second,
+v sub b final equals 0.012 - 0.015 over 0.015 + 0.012 (2.5) equals -0.28 meters per second.
+
+The red puck moves to the left at 2.2 meters per second, and the blue puck moves to the right at 0.28 meters per second (two significant figures).
+
+The Conclusion.
+
+After the collision, the red puck moves left with velocity v sub r final equals 2.2 meters per second, while the blue puck reverses direction and moves right with velocity
+v sub b final equals -0.28 meters per second.
+
+The final speeds are determined by the relative masses. The impulse during the collision produces a larger velocity change in the less massive puck and a smaller velocity change in the more massive puck. In this case, because the masses are comparable, most of the incoming momentum is transferred to the red puck while the blue puck reverses direction with a smaller speed.
+
+Example Problem: Analyzing a Car Crash.
+The Problem.
+A small car of mass 1200 kilograms collides with a motionless large truck of mass 3000 kilograms. The car comes to an instantaneous stop, and the truck slides straight ahead, coming to rest after sliding 10 meters. The measured coefficient of kinetic friction between the truck’s tires and the road is mu sub k equals 0.62. How fast was the car moving at the moment of impact?
+The worked solution follows.
+The Model.
+
+We treat the collision in two stages. First, during the brief collision interval, we define the system to be the car + truck. The interaction time is extremely short, so we neglect external impulses during that instant. Linear momentum of the two-vehicle system is therefore conserved during the collision.
+
+Second, after the collision, the truck slides to rest due to kinetic friction with the road. During this sliding phase, momentum is not conserved because friction is an external force. However, the work–energy theorem applies to the truck while it slows to rest.
+
+We define the positive direction to be the forward direction of motion.
+
+The Math.
+
+Let M sub c equals 1200 kilograms and M sub T equals 3000 kilograms. During the collision, conservation of momentum gives
+
+ vector p initial equals vector p final.
+
+Initially only the car is moving, and after the collision only the truck is moving. Therefore,
+
+ M sub c v sub c initial equals M sub T v sub T final.
+
+Solving for the car’s initial speed gives
+
+ v sub c initial equals M sub T over M sub c v sub T final.
+
+To find v sub T final, we analyze the truck’s slide using the work–energy theorem. The work done by friction equals the change in kinetic energy, W equals change in K. The truck comes to rest, so
+
+ change in K equals 0 - 1 over 2 M sub T ( v sub T final ) to the power of 2.
+
+The friction force has magnitude F sub k equals mu sub k ( M sub T g). Because friction acts opposite the displacement, W equals - mu sub k M sub T g d. Equating work and change in kinetic energy gives
+
+- mu sub k M sub T g d equals - 1 over 2 M sub T ( v sub T final ) to the power of 2.
+
+The mass of the truck cancels, leaving v sub T final equals square root of 2 mu sub k g d. Using g equals 9.81 meters per second squared, we can determine the velocity of the truck:
+
+ v sub T final equals square root of 2(0.62)(9.81)(10)
+ equals 11 meters per second.
+
+Using this result in the momentum relation gives the impact velocity of the car:
+
+ v sub c initial equals 3000 over 1200 (11 meters per second )
+ equals 28 meters per second.
+
+The Conclusion.
+
+The car’s speed at the moment of impact was v sub c initial equals 28 meters per second, (or approximately 63 mph ). The truck’s post-collision speed depends only on mu sub k, g, and the stopping distance, not on the truck’s mass. The larger truck mass, however, directly determines the car’s required initial speed through conservation of momentum.

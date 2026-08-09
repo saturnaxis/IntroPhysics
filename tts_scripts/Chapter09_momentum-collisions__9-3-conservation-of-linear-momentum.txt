@@ -1,0 +1,269 @@
+Conservation of Linear Momentum.
+
+Recall Newton's 3rd law: When two objects of masses m sub 1 and m sub 2 interact, the force that object 2 applies to object 1 is equal in magnitude and opposite in direction. Let
+
+vector F sub 12 equals the force on m sub 1 from m sub 2,
+
+vector F sub 21 equals the force on m sub 2 from m sub 1.
+
+Then, Newton's 3rd law says
+
+ vector F sub 12 equals - vector F sub 21,
+ m sub 1 vector a sub 1 equals - m sub 2 vector a sub 2.
+
+Note.
+
+These two forces do not cancel because they are applied to different objects. vector F sub 12 causes m sub 1 to accelerate, and vector F sub 21 causes m sub 2 to accelerate.
+
+Although the magnitudes of the forces on the objects are the same, the accelerations are not because the masses (in general) are different. Therefore, the changes in velocity of each object are different:
+
+ d vector v sub 1 over dt does not equal d vector v sub 2 over dt.
+
+The products of the mass and the change in velocity are equal (in magnitude):
+
+ m sub 1 d vector v sub 1 over dt equals - m sub 2 d vector v sub 2 over dt.
+
+Let's assume that the masses of the objects do not change during the interaction. In that case, we can pull the masses inside the derivatives to get:
+
+ d over dt ( m sub 1 vector v sub 1 ) equals - d over dt ( m sub 2 vector v sub 2 ),
+ d vector p sub 1 over dt equals - d vector p sub 2 over dt.
+
+This says that the rate of change for the momentum is the same for both objects. Individually, the masses and changes of velocity are both different, but the rate of change of the product of m and vector v are the same.
+
+This means that during the interaction, both objects have their momentum changed; but those changes are identical in magnitude but opposite in sign. For example,
+
+the momentum of object 1 might increase, which means that
+
+the momentum of object 2 decreases by exactly the same amount.
+
+If the total combined momentum of the two objects never changes, we can write
+
+ d vector p sub 1 over dt + d vector p sub 2 over dt equals 0,
+ d over dt ( vector p sub 1 + vector p sub 2 ) equals 0,
+
+which implies that
+
+ vector p sub 1 + vector p sub 2 equals constant,
+
+using the identity that the derivative of a constant is zero.
+
+As shown in Figure, the total momentum of the system before and after the collision remains the same. Generalizing this result to N objects, we obtain
+
+ sum sub i equals 1 to the power of N vector p sub i equals vector p sub 1 + vector p sub 2 + and so on + vector p sub N equals constant.
+
+This is the definition of the total (or net) momentum of a system of N interacting objects, along with the statement that the total momentum of a system of objects is constant in time or conserved.
+
+Conservation Laws.
+
+If the value of a physical quantity is constant in time, we say that the quantity is conserved.
+
+Requirements for Momentum Conservation.
+
+A system must meet two requirements for it momentum to be conserved:
+
+First, The mass of the system must remain constant during the interaction.
+ As the objects interact, they may transfer mass from one to another; but any mass one object gains is balanced by the loss of that mass from another. The total mass of the system of objects remains unchanged as time passes:
+
+ [ dm over dt ] sub system equals 0.
+
+Second, The net external force on the system must be zero.
+ As the objects collide, explode, or move around, they exert forces on each other. All of these forces are internal to the system, and thus each of these internal forces is balanced by another internal force equal in magnitude and opposite in sign.
+
+ As a result, the change in momentum caused by each internal force is cancelled by another momentum change that is equal in magnitude and opposite in direction. Therefore, internal forces cannot change the total momentum of a system because the changes sum to zero.
+
+ However if there is some external force that acts on all the objects (e.g., gravity or friction), then this force changes the momentum of the system as a whole. Thus for the momentum of the system to be conserved, we must have
+
+ vector F sub external equals vector 0.
+
+A system of objects that meets these 2 requirements is a closed system (also called an isolated system).
+
+Law of Conservation of Momentum.
+
+The total momentum of a closed system is conserved:
+
+ sum sub i equals 1 to the power of N vector p sub i equals constant.
+
+Along with the conservation of energy, the Law of Conservation of Momentum is one of the foundations upon which all physics stands. All our experimental evidence supports this statement. In a closed system, the total momentum never changes.
+
+Billiard balls on a table have an external force acting on them (i.e., their weight), but the weights are balanced (or cancelled) by the normal forces so there is no net force.
+
+The Meaning of 'System'.
+
+A mechanical system is the collection of objects in whose motion (kinematics or dynamics) interests you. If you are analyzing the bounce of a ball on the ground, you are probably only interested in the motion of the ball, and not of the Earth; thus, the ball is your system.
+
+Consider that you are analyzing a car crash, where the two cars together compose your system (see Figure )
+
+Problem-Solving Strategy.
+
+Using conservation of momentum requires four basic steps:
+
+First, Identify a closed system (total mass is constant, no net external force acts on the system).
+
+Second, Write down an expression representing the total momentum of the system before the "event" (explosion or collision).
+
+Third, Write down an expression representing the total momentum of the system after the "event."
+
+Fourth, Set these two expression equal to each other, and solve for the desired quantity.
+Checkpoint. Pause and check your understanding.
+For a collision problem, what evidence tells you that external impulses can be ignored during the collision interval?
+A Khan Academy video is linked on the course webpage.
+Momentum conservation works only after you clearly define the system. As you watch, pay attention to which objects are included in the system and which forces are internal. This is the key step that lets you compare the momentum before and after a collision.
+
+Example Problem: Colliding Carts.
+The Problem.
+Two carts in a physics lab roll on a level track with negligible friction. The carts have small magnets at their ends so that when they collide, they stick together. The first cart has a mass of 675 g and is rolling at 0.75 meters per second to the right; the second has a mass of 500 g and is rolling at 1.33 meters per second, also to the right. After the collision, what is the velocity of the two joined carts?
+The worked solution follows.
+The Model.
+
+The system consists of both carts during the collision interval. We treat the track as level and frictionless, so there is no significant horizontal external force acting on the two-cart system. The forces the carts exert on one another during the collision are internal forces and therefore do not change the total momentum of the system.
+
+Because the carts stick together after the collision, the collision is perfectly inelastic. The total mass of the system remains constant, and both carts move together with a common final velocity after impact. We define the +x direction to be to the right, the direction of their initial motion. Under these conditions, conservation of linear momentum applies to the two-cart system in the horizontal direction.
+
+The Math.
+
+Conservation of linear momentum states that the total momentum of a closed system remains constant. For this collision, the initial momentum equals the final momentum, vector p final equals vector p initial.
+
+Before the collision, both carts move to the right, so their initial momentum is
+
+ vector p initial equals m sub 1 v sub 1 i-hat + m sub 2 v sub 2 i-hat.
+
+After the collision, the carts stick together and move as a single object of mass ( m sub 1 + m sub 2 ) with velocity vector v sub f. The final momentum is therefore
+
+ vector p final equals ( m sub 1 + m sub 2 ) vector v sub f.
+
+Equating the initial and final momenta gives
+
+( m sub 1 + m sub 2 ) vector v sub f equals ( m sub 1 v sub 1 + m sub 2 v sub 2 ) i-hat.
+
+Solving for the final velocity yields
+
+ vector v sub f equals m sub 1 v sub 1 + m sub 2 v sub 2 over m sub 1 + m sub 2 i-hat.
+
+The masses must be expressed in S I units. Converting from grams to kilograms gives
+
+ m sub 1 equals 0.675 kilograms,
+ m sub 2 equals 0.500 kilograms.
+
+Using the numerical values in the expression for vector v sub f gives
+
+ vector v sub f
+ equals (0.675 kilograms )(0.75 meters per second ) + (0.500 kilograms )(1.33 meters per second ) over 0.675 kilograms + 0.500 kilograms i-hat
+ equals (0.997 meters per second ) i-hat, which is approximately equal to (1.0 meters per second ) i-hat.
+
+The Conclusion.
+
+After the collision, the two carts move together with a velocity of 1.0 meters per second to the right. The final speed lies between the two initial speeds, which is consistent with conservation of momentum in a perfectly inelastic collision.
+
+Example Problem: Bouncing Superball.
+The Problem.
+A superball of mass 0.25 kilograms is dropped from rest from a height of h equals 1.50 meters above the floor. It bounces with no loss of energy and returns to its initial height.
+(a) What is the superball’s change of momentum during its bounce on the floor?
+(b) What is Earth’s change of momentum due to the ball colliding with the floor?
+(c) What is Earth’s change of velocity as a result of this collision?
+The worked solution follows.
+The Model.
+
+The system initially consists of the ball falling vertically under the influence of gravity. We define upward to be the +y direction and use j-hat as the upward unit vector. The ball is released from rest and falls to the floor, where it experiences a short-duration contact force from Earth that reverses its velocity.
+
+During the impact interval, the dominant force on the ball is the normal force from the floor. The gravitational force is negligible compared with the contact force during the very short collision time. The bounce is assumed to occur with no loss of mechanical energy, meaning the ball’s speed just after the collision equals its speed just before the collision. When considering Earth’s response, we redefine the system to include both the ball and Earth. For this combined system, the interaction forces between Earth and the ball are internal, and the total momentum of the system is conserved.
+
+The Math.
+
+We begin by determining the ball’s velocity just before it strikes the floor. The ball is dropped from rest, so its initial velocity is v sub o equals 0. Using kinematics for motion under constant acceleration, the speed just before impact satisfies
+
+ v sub 1 to the power of 2 equals v sub o to the power of 2 + 2 g h.
+
+Since v sub o equals 0, this becomes
+
+ v sub 1 equals square root of 2 g h.
+
+Using g equals 9.81 meters per second squared and h equals 1.50 meters gives
+
+ v sub 1 equals square root of 2(9.81 meters per second squared )(1.50 meters )
+ equals 5.42 meters per second.
+
+The velocity just before impact is downward, so vector v sub 1 equals -5.42 j-hat meters per second.
+
+(a) The momentum just before impact is therefore
+
+ vector p sub ball initial equals m vector v sub 1
+ equals (0.25 kilograms )(-5.42 j-hat meters per second )
+ equals -1.36 j-hat kilogram meters per second.
+
+Because the bounce is perfectly elastic and the ball returns to the same height, its speed immediately after the collision has the same magnitude but opposite direction. Thus,
+
+ vector p sub ball final equals +1.36 j-hat kilogram meters per second.
+
+The change in the ball’s momentum during the bounce is
+
+ delta vector p sub ball
+ equals vector p sub ball final - vector p sub ball initial
+ equals (1.36 - (-1.36)) j-hat
+ equals 2.72 j-hat kilogram meters per second.
+
+(b) We now consider the Earth. If we treat the ball and Earth as a closed system, total momentum is conserved during the collision. Therefore, Earth’s change of momentum must be equal in magnitude and opposite in direction:
+
+ delta vector p sub Earth
+ equals -2.72 j-hat kilogram meters per second.
+
+(c) Finally, Earth’s change in velocity follows from the definition of momentum:
+
+ delta vector v sub Earth
+ equals delta vector p sub Earth over M sub Earth.
+
+Using M sub Earth equals 5.97 times ten to the 24 kilograms gives
+
+ delta vector v sub Earth
+ equals -2.72 j-hat kilogram meters per second over 5.97 times ten to the 24 kilograms
+ equals -4.55 times ten to the minus 25 j-hat meters per second.
+
+The Conclusion.
+
+During the bounce, the ball’s momentum changes by 2.72 j-hat kilogram meters per second. Earth experiences an equal and opposite change in momentum of -2.72 j-hat kilogram meters per second. Because Earth’s mass is enormous, its resulting change in velocity is only 4.55 times ten to the minus 25 meters per second downward, which is completely negligible on any practical scale.
+
+This example illustrates that momentum conservation depends on how the system is defined. The ball alone is not a closed system during the collision, but the ball–Earth system is.
+
+Example Problem: Ice Hockey Part I.
+The Problem.
+Two hockey pucks of identical mass are on a flat, horizontal ice rink. The red puck is motionless; the blue puck is moving at 2.5 meters per second to the left. Each puck has a mass of 15 g. After the collision, the red puck is moving at 2.5 meters per second to the left. What is the final velocity of the blue puck?
+The worked solution follows.
+The Model.
+
+The system consists of the two pucks during the collision. The ice is horizontal and friction is negligible, so there is no net external horizontal force acting on the system. The contact forces between the pucks are internal to the system. Therefore, the total horizontal momentum of the two-puck system is conserved.
+
+The motion is 1D along the horizontal axis. We define the +x direction to point to the right. Because the pucks have identical masses and the collision occurs on a frictionless surface, any change in momentum of one puck must be balanced by an equal and opposite change in momentum of the other puck.
+
+The Math.
+
+Conservation of linear momentum for a closed system requires that the total initial momentum equals the total final momentum,
+
+ vector p initial equals vector p final.
+
+Before the collision, only the blue puck is moving. Since motion to the left is negative in our coordinate system, its initial velocity is v sub b initial equals -2.5 meters per second, while the red puck has v sub r initial equals 0. The total initial momentum is therefore
+
+ vector p initial equals m v sub r initial-hat + m v sub b initial-hat
+ equals m(0) i-hat + m(-2.5 meters per second ) i-hat
+ equals -2.5m i-hat.
+
+After the collision, the red puck is moving at 2.5 meters per second to the left, so v sub r final equals -2.5 meters per second. Let the blue puck’s final velocity be v sub b final. The total final momentum is
+
+ vector p final equals m v sub r final i-hat + m v sub b final i-hat
+ equals m(-2.5 meters per second ) i-hat + m v sub b final i-hat.
+
+Setting vector p initial equals vector p final gives
+
+-2.5m i-hat equals m(-2.5 meters per second ) i-hat + m v sub b final i-hat.
+
+Dividing through by m and i-hat yields
+
+-2.5 equals -2.5 + v sub b final.
+
+Solving for the blue puck’s final velocity gives
+
+v sub b final equals 0.
+
+The Conclusion.
+
+The final velocity of the blue puck is 0 meters per second. In this head-on collision between identical masses on a frictionless surface, the moving puck transfers all of its momentum to the initially stationary puck. As a result, the blue puck comes to rest and the red puck moves away with the original speed of the blue puck.
+
+This same momentum exchange behavior occurs in billiards when a cue ball strikes another ball head-on. In an ideal, nearly elastic collision between equal masses, the cue ball can stop while transferring its motion to the struck ball. A skilled player can exploit this effect to control the cue ball’s motion after impact, even arranging sequences where momentum transfer is used strategically to direct another ball into a pocket while maintaining positional control for the next shot.

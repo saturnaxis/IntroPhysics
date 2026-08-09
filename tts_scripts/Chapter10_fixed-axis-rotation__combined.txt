@@ -1,0 +1,2556 @@
+10.1 Rotational Variables
+
+Fixed-axis Rotation.
+
+Chapter roadmap.
+
+ 
+
+This chapter extends the tools you already know for motion, forces, work, and energy into fixed-axis rotation. Instead of tracking only position, velocity, acceleration, mass, force, and work, you will learn the rotational counterparts that describe spinning objects.
+
+As you read, focus on three questions:
+
+Item 1. How do angular quantities connect to the linear motion of points on a rotating object?
+
+Item 2. How does mass distribution affect the rotational inertia and kinetic energy of a system?
+
+Item 3. How do torque, rotational work, and rotational power change the motion of a rigid body?
+
+These ideas let us reuse familiar tools from kinematics, Newton's laws, and energy in situations where objects rotate instead of translate.
+ 
+
+Rotational Variables.
+
+Angular Velocity.
+
+Uniform circular motion is motion along a circle at constant speed (see Section 4.3). It is the simplest case of rotational motion and is helpful when introducing rotational variables.
+
+ 
+ 
+
+Figure referenced in the course notes.
+
+ 
+ 
+ 
+ 
+
+Animation of the same motion; the path is light gray, and the particle and trail are colored.
+ 
+ 
+ 
+
+See the Python snippet given in the course lecture notes.
+
+In Figures and, we show a particle moving in a circle. The coordinate system is fixed and serves as a frame of reference to define the particle's position. Its position vector vector r sweeps out the angle theta in a counterclockwise direction.
+
+The angular position theta describes how far the position vector has rotated in the x - y plane. As the particle moves in its circular path, it also traces an arc length s. The particle may complete more than one revolution around the circle. This means that the angle theta may be greater than 2 pi, and the arc length s can be greater than the circumference, 2 pi r. 
+
+The angle is related to the radius of the circle and the arc length by
+
+ 
+ theta equals s over r, 
+s equals r theta.
+ 
+
+The angle theta has units of radians (rad), where there are 2 pi radians in 360 degrees.
+
+Note.
+
+The radian measure is a ratio of length measurements, and therefore is a dimensionless quantity.
+ 
+
+As the particle moves along its circular path, its angular position changes and it undergoes an angular displacement over change in theta.
+
+We can assign a vector vector theta, which represents a vector `out-of-the-page` in the figure. The angular position vector vector r and the arc length vector s both lie in the plane of the page. These three vectors are related to each other by a cross-product, or
+
+ 
+ vector s equals vector theta times vector r.
+ 
+
+Figure referenced in the course notes.
+
+The magnitude of the **angular velocity** omega is the time rate of change of the angle theta as the particle moves in its circular path. The *instantaneous angular velocity* is defined using the limit definition when change in t arrow 0 in the average velocity, or
+
+ 
+ omega _ ave equals change in theta over change in t, 
+ omega equals the limit of sub change in t arrow 0 change in theta over change in t equals d theta over dt.
+ 
+
+The units of angular velocity are *radians per second* (or rad/s ), where angular velocity is also referred to as the rotation rate.
+
+Warning.
+
+Often, we are given the rotation rate in *revolutions* or *cycles* per second. To find the angular velocity, we must multiply by 2 pi (i.e., the number of radians in a revolution or cycle).
+ 
+
+Since the direction of a positive angle in a circle is counterclockwise, we take counterclockwise as positive for the angular velocity as well.
+
+The angular velocity is related to the tangential speed ( v sub t equals ds/dt ) of a particle by differentiation with respect to time. This can be shown by
+
+ 
+s equals r theta, 
+ ds over dt equals d over dt (r theta ), 
+ equals dr over dt theta + r d theta over dt.
+ 
+
+Since r represents the radius and is a constant, the factor dr over dt equals 0. By substitution of the instantaneous angular velocity omega, we arrive at
+
+ 
+ ds over dt equals r d theta over dt, 
+ v sub t equals r omega.
+ 
+
+The tangential speed v sub t increases with its distance from the axis of rotation for a constant angular velocity (see the figure). Two particles are placed at different radii on a rotating disk with a constant angular velocity omega. As the disk rotates, v sub t increases linearly with the radius from the axis of rotation.
+
+Figure referenced in the course notes.
+
+From the figure, we see that
+
+ 
+ v sub 1 equals r sub 1 omega _1, 
+ v sub 2 equals r sub 2 omega _2.
+ 
+
+But the disk has a constant angular velocity ( omega _1 equals omega _2 equals omega ). This means that we can solve for omega in both expressions and set them equal to each other:
+
+ 
+ v sub 1 over r sub 1 equals v sub 2 over r sub 2, 
+ v sub 1 equals ( r sub 1 over r sub 2 ) v sub 2, 
+ v sub 2 equals ( r sub 2 over r sub 1 ) v sub 1.
+ 
+
+Since, r sub 2 > r sub 1, we can see that v sub 2 > v sub 1.
+
+Checkpoint.
+
+ 
+
+If two points have the same angular velocity but different radii, which point has the larger tangential speed?
+ 
+
+See the Python snippet given in the course lecture notes.
+
+ 
+
+Note.
+
+The magnitude of the angular velocity is given by omega equals d theta /dt, which is a scalar. The vector vector omega has a magnitude omega and points along the axis of rotation. The direction of rotation ("-" clockwise or "+" counterclockwise) gives the directional information and can be determined via the right-hand rule.
+ 
+
+One can state a cross product relation to the vector of the tangential velocity v sub t, which is given by
+
+ 
+ vec v equals vector omega times vector r.
+ 
+
+The tangential velocity is the cross product of the angular velocity and the position vector. In Figure a, we see that the angular velocity is in the +z -direction, and the rotation in the rotation in the xy -plane is counterclockwise. In Figure b, the angular velocity is in the -z -direction, giving a clockwise rotation in the xy -plane.
+
+Figure referenced in the course notes.
+
+**Khan Academy**.
+
+ 
+
+ 
+As you watch, focus on the difference between angular displacement, angular velocity, and angular acceleration. Pay attention to how the same circular motion can be described with both linear quantities and angular quantities.
+ 
+
+**Example Problem**: Rotation of a Flywheel.
+
+The Problem.
+A flywheel rotates such that it sweeps out an angle at the rate of theta equals omega t equals (45 rad/s )t radians. The wheel rotates counterclockwise when viewed in the plane of the page.
+(a) What is the angular velocity of the flywheel? 
+(b) What direction is the angular velocity? 
+(c) How many radians does the flywheel rotate through in 30 s? 
+(d) What is the tangential speed of a point on the flywheel 10 cm from the axis of rotation?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The flywheel undergoes uniform rotational motion about a fixed axis because its angular position changes linearly with time. The angular velocity is obtained from the time rate of change of angular position, and its direction is determined using the right-hand rule.
+
+The angular displacement over a time interval is obtained from the change in angular position. The tangential speed of a point on the flywheel is related to its distance from the rotation axis and the angular velocity.
+
+---
+
+The Math.
+
+The angular velocity of a rotating object is defined as the time derivative of the angular position,
+
+ 
+ omega equals d theta over dt.
+ 
+
+**(a)** The angular position of the flywheel is given by theta (t) equals (45 rad/s )t. Taking the derivative of this expression with respect to time gives
+
+ 
+ omega equals 45 rad/s.
+ 
+
+**(b)** The direction of the angular velocity follows from the right-hand rule. Curling the fingers of the right hand in the direction of rotation, which is counterclockwise in the plane of the page, causes the thumb to point outward from the page. Therefore, the angular velocity vector points out of the page.
+
+**(c)** The angular displacement during a time interval is the change in angular position,
+
+ 
+ change in theta equals theta (t)- theta (0).
+ 
+
+The angular displacement follows from the expression for theta (t):
+
+ 
+ change in theta equals (45 rad/s )(30 s ) 
+ equals 1350 rad.
+ 
+
+**(d)** The tangential speed of a point located a distance r from the axis of rotation is
+
+ 
+ v sub t equals r omega.
+ 
+
+The point is located 10 cm from the axis of rotation, which corresponds to r equals 0.10 meters. The numerical value follows from this relationship:
+
+ 
+ v sub t equals (0.10 meters )(45 rad/s ) 
+ equals 4.5 meters per second.
+ 
+
+---
+
+The Conclusion.
+
+The flywheel rotates with a constant angular velocity of 45 rad/s, and the angular velocity vector points out of the page according to the right-hand rule. During a time interval of 30 s, the flywheel rotates through an angular displacement of 1.35 times ten to the 3 rad. A point located 10 cm from the axis of rotation moves with a tangential speed of 4.5 meters per second. This result shows that even moderate angular velocities can produce large angular displacements when the motion continues over long time intervals. 
+
+---
+
+ **Rotational Kinematics** 
+
+Item 1. Identify the unknowns, where a sketch of the situation is useful.
+
+Item 2. Identify the knowns by making a complete list inferred from the problem.
+
+Item 3. Solve the appropriate equation for the unknown. It can be useful to think in terms of the translational analog.
+
+Item 4. Substitute the known values. Be sure to use units of radians for angles.
+
+Item 5. Check your answer for reasonableness: Does it make sense?
+ 
+
+Checkpoint.
+
+ 
+
+If an object is rotating counterclockwise but slowing down, does 
+ec{lpha} point in the same direction as 
+ec{ omega } or the opposite direction?
+ 
+
+**Example Problem**: Spinning Bicycle Wheel.
+
+The Problem.
+A bicycle mechanic mounts a bicycle on the repair stand and starts the rear wheel spinning from rest to a final angular velocity of 250 rpm in 5.00 s.
+(a) Calculate the average angular acceleration in rad/s squared. 
+(b) If she now hits the brakes, causing an angular acceleration of -87.3 rad/s squared, how long does it take the wheel to stop?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The wheel undergoes rotational motion about a fixed axis. The relationship between angular velocity, angular acceleration, and time can be described using the kinematic definitions for rotational motion. Angular acceleration is defined as the rate of change of angular velocity with respect to time. When the angular acceleration is constant, the change in angular velocity over a time interval can be related directly to the angular acceleration and elapsed time.
+
+These relationships allow us to determine the angular acceleration from the change in angular velocity and the time interval, and to determine the stopping time when a known angular acceleration reduces the angular velocity to zero.
+
+---
+
+The Math.
+
+**(a)** The average angular acceleration is defined as
+
+ 
+ bar{ alpha } equals change in omega over change in t.
+ 
+
+The wheel starts from rest and reaches a final angular velocity of 250 rpm in 5.00 s. The angular velocity must first be converted to radians per second,
+
+ 
+ omega equals 250 fraction rev min dot fraction {2 pi rad } rev dot 1 min over 60 s 
+ equals 26.2 rad/s.
+ 
+
+The average angular acceleration follows from this definition:
+
+ 
+ bar{ alpha } equals 26.2 rad/s over 5.00 s 
+ equals 5.24 rad/s squared.
+ 
+
+**(b)** When the brakes are applied, the angular velocity decreases from 26.2 rad/s to zero. The stopping time can therefore be determined from the definition of angular acceleration,
+
+ 
+ alpha equals change in omega over change in t.
+ 
+
+We solve this expression for the time interval, which gives
+
+ 
+ change in t equals change in omega over alpha.
+ 
+
+The change in angular velocity is change in omega equals -26.2 rad/s and the angular acceleration is -87.3 rad/s squared. The stopping time follows from the change in angular velocity and the braking angular acceleration:
+
+ 
+ change in t equals -26.2 rad/s over -87.3 rad/s squared 
+ equals 0.300 s.
+ 
+
+---
+
+The Conclusion.
+
+The wheel experiences an average angular acceleration of 5.24 rad/s squared as it spins up from rest. When the brakes are applied, the wheel stops in 0.300 s under an angular acceleration of -87.3 rad/s squared.
+
+These results illustrate how a relatively small angular acceleration applied over several seconds can gradually increase the wheel's rotation, whereas a much larger negative acceleration can bring the wheel to rest very quickly.
+
+---
+
+ **The Problem**
+A wind turbine that is initially rotating counterclockwise on a wind farm is being shut down for maintenance. It takes 30 s for the turbine to go from its operating angular velocity to a complete stop in which the angular velocity function is omega (t) equals [(t s to the power of -1 -30) squared/100 ] rad/s, where t is the time in seconds. If the turbine is rotating counterclockwise looking into the page,
+(a) what are the directions of the angular velocity and acceleration vectors? 
+(b) What is the average angular acceleration? 
+(c) What is the instantaneous angular acceleration at t equals 0, 15, and 30 s?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The turbine undergoes rotational motion about a fixed axis. The direction of the angular velocity vector is determined from the sense of rotation by the right-hand rule. The direction of the angular acceleration vector is determined by whether the angular speed is increasing or decreasing relative to the angular velocity vector.
+
+The average angular acceleration is obtained from the change in angular velocity over a time interval. The instantaneous angular acceleration is obtained by differentiating the angular velocity function with respect to time. These rotational kinematic ideas are sufficient to determine the vector directions, the average angular acceleration, and the angular acceleration at specific times.
+
+---
+
+The Math.
+
+**(a)** The direction of the angular velocity follows from the right-hand rule. Curling the fingers of the right hand in the direction of rotation, which is counterclockwise when looking into the page, causes the thumb to point out of the page. Therefore, the angular velocity vector points out of the page.
+
+The turbine is shutting down, so its angular speed is decreasing. When the angular speed decreases, the angular acceleration vector points opposite the angular velocity vector. Therefore, the angular acceleration vector points into the page.
+
+**(b)** The average angular acceleration is defined as the change in angular velocity divided by the elapsed time,
+
+ 
+ bar{ alpha } equals change in omega over change in t.
+ 
+
+The initial angular velocity is obtained by evaluating the angular velocity function at t equals 0,
+
+ 
+ omega (0) equals [ (0-30) squared over 100 ] rad/s 
+ equals 9.0 rad/s.
+ 
+
+The turbine comes to a complete stop at t equals 30 s, so the final angular velocity is
+
+ 
+ omega (30) equals [ (30-30) squared over 100 ] rad/s 
+ equals 0 rad/s.
+ 
+
+The average angular acceleration follows from the endpoint angular velocities:
+
+ 
+ bar{ alpha } equals 0 rad/s -9.0 rad/s over 30 s -0 s 
+ equals -0.30 rad/s squared.
+ 
+
+**(c)** The instantaneous angular acceleration is defined as the time derivative of the angular velocity,
+
+ 
+ alpha equals d omega over dt.
+ 
+
+Differentiating the given angular velocity function gives
+
+ 
+ alpha (t) equals d over dt [ (t s to the power of -1 -30) squared over 100 ] rad/s 
+ equals ( t-30 over 50 ) rad/s squared.
+ 
+
+Evaluating this expression at the requested times gives
+
+ 
+ alpha (0) equals ( 0-30 over 50 ) rad/s squared equals -0.60 rad/s squared, 
+ alpha (15) equals ( 15-30 over 50 ) rad/s squared equals -0.30 rad/s squared, 
+ alpha (30) equals ( 30-30 over 50 ) rad/s squared equals 0 rad/s squared.
+ 
+
+---
+
+The Conclusion.
+
+The angular velocity vector points out of the page, while the angular acceleration vector points into the page because the turbine is slowing down. The average angular acceleration over the 30 s interval is -0.30 rad/s squared. The instantaneous angular accelerations are alpha (0) equals -0.60 rad/s squared, alpha (15) equals -0.30 rad/s squared, and alpha (30) equals 0 rad/s squared.
+
+These results show that the turbine always has a negative angular acceleration while it is shutting down, but the magnitude of that acceleration decreases with time. By the moment the turbine stops, the instantaneous angular acceleration has decreased to zero.
+
+---
+
+========================================================================
+
+10.2 Rotation with Constant Acceleration
+
+Rotation with Constant Acceleration.
+
+If the angular acceleration alpha is constant, then we can determine relationships that are similar in form to those for linear kinematics discussed in Motion in 1D and Motion in 2D and 3D.
+
+Kinematics of Rotational Motion.
+
+Using our intuition, we can see how the rotational quantities theta, omega, alpha, and t are related to one another. We can build a set of rotational kinematic equations under a constant angular acceleration. 
+
+If the angular acceleration alpha is a constant, then the average angular velocity must be a linear function with respect to time. The (arithmetic) average angular angular velocity bar{ omega } can be represented by
+
+ 
+ bar{ omega } equals omega _0 + omega _f over 2.
+ 
+
+The time-average angular velocity is given by
+
+ bar{ omega } equals change in theta over change in t, 
+
+where we can solve for theta to get
+
+ 
+ theta _f equals theta _0 + bar{ omega }t,
+ 
+
+after having set t sub 0 equals 0. If we know the average angular velocity bar{ omega } of the system, then we can find the angular displacement over a given time interval.
+
+To find an equation that relates omega, alpha, and t, we start with the definition of angular acceleration:
+
+ alpha equals d omega over dt. 
+
+We rearrange this to get alpha dt equals d omega and then integrate both sides:
+
+ alpha integral sub t sub 0 to the power of t dt^ prime equals integral sub omega _0 to the power of omega _f d omega. 
+
+In uniform rotational motion, the angular acceleration is constant and can be pulled out of the integral. If we set t sub 0 equals 0, then we have
+
+ alpha t equals omega _f - omega _0, 
+
+which we can rearrange to obtain
+
+ 
+ omega _f equals omega _0 + alpha t,
+ 
+
+where omega _0 is the initial angular velocity. Notice how similar this equation appears compared to the linear kinematic equation with velocity: v sub f equals v sub 0 + at.
+
+Starting with the equation omega equals d theta over dt and rearranging to get omega dt equals d theta, we can again integrate both sides to get:
+
+ 
+ integral sub t sub 0 to the power of t sub f ( omega _0 + alpha t^ prime )dt^ prime equals integral sub theta _0 to the power of theta _f d theta, 
+ omega _0 t + 1 over 2 alpha t squared equals theta _f - theta _0,
+ 
+
+where we have set t sub 0 equals 0. We can rearrange to obtain
+
+ 
+ theta _f equals theta _0 + omega _0 t + 1 over 2 alpha t squared,
+ 
+
+which is a rotational counterpart to the position function of time in linear kinematics.
+
+We can find an equation that is time-independent by using the linear equation for angular velocity to eliminate t, or
+
+ 
+t equals omega _f - omega _0 over alpha, 
+ change in theta equals omega _0 ( omega _f- omega _0 over alpha ) + 1 over 2 alpha ( omega _f- omega _0 over alpha ) squared, 
+ change in theta equals omega _f squared - omega _0 squared over 2 alpha.
+ 
+
+We can rearrange the result to obtain
+
+ 
+ omega _f squared equals omega _0 squared + 2 alpha ( change in theta ).
+ 
+
+Table. Rotational Kinematics (Constant Angular Acceleration). Refer to the course notes for the full entries.
+
+**Example Problem**: Acceleration of a Fishing Reel.
+
+The Problem.
+A deep-sea fisherman hooks a big fish that swims away from the boat, pulling the fishing line from his fishing reel. The whole system is initially at rest, and the fishing line unwinds from the reel at a radius of 4.5 cm from its axis of rotation. The reel is given an angular acceleration of 110 rad/s squared for 2.0 s.
+(a) What is the final angular velocity of the reel after 2 s? 
+(b) How many revolutions does the reel make?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The reel undergoes rotational motion about a fixed axis with constant angular acceleration. Because the angular acceleration is constant, the rotational kinematic equations for constant acceleration apply.
+
+The final angular velocity can be determined from the relationship among angular velocity, angular acceleration, and time. The angular displacement can be determined from the relationship among angular displacement, angular acceleration, angular velocity, and time. Once the angular displacement is found in radians, it can be converted to revolutions.
+
+---
+
+The Math.
+
+**(a)** For rotational motion with constant angular acceleration, the final angular velocity is related to the initial angular velocity by
+
+ 
+ omega _f equals omega _0 + alpha t.
+ 
+
+The reel starts from rest, so the initial angular velocity is omega _0 equals 0. The numerical value follows from this equation:
+
+ 
+ omega _f equals 0 + (110 rad/s squared )(2.0 s ) 
+ equals 220 rad/s.
+ 
+
+**(b)** For rotational motion with constant angular acceleration, the angular displacement is related to the initial angular displacement, initial angular velocity, angular acceleration, and time by
+
+ 
+ theta _f equals theta _0 + omega _0 t + 1 over 2 alpha t squared.
+ 
+
+The reel starts from rest, so omega _0 equals 0. We choose the initial angular position to be theta _0 equals 0 for convenience. The numerical value follows from this equation:
+
+ 
+ theta _f equals 0 + 0 + 1 over 2 (110 rad/s squared )(2.0 s ) squared 
+ equals 220 rad.
+ 
+
+One revolution corresponds to 2 pi radians. Therefore, the number of revolutions is
+
+ 
+N equals theta _f over 2 pi.
+ 
+
+The number of revolutions follows from this angular displacement:
+
+ 
+N equals 220 rad over 2 pi 
+ equals 35 rev.
+ 
+
+---
+
+The Conclusion.
+
+After 2.0 s, the reel reaches a final angular velocity of 220 rad/s. Over this same time interval, the reel rotates through 35 revolutions.
+
+This result shows that a constant angular acceleration can produce both a large angular speed and a substantial angular displacement in a short time. It also reinforces that rotational kinematics follows the same mathematical structure as linear kinematics.
+
+---
+
+ **The Problem**
+Now the fisherman applies a brake to the spinning reel, achieving an angular acceleration of -300 rad/s squared. How long does it take the reel to come to a stop?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The reel continues to undergo rotational motion about a fixed axis, but now the angular acceleration is negative because the brake reduces the angular speed. The stopping time can be determined using the constant-angular-acceleration kinematic relationship among angular velocity, angular acceleration, and time.
+
+Because the reel is coming to rest, the final angular velocity is zero. These ideas allow us to determine the elapsed time required for the angular velocity to decrease from its initial value to zero.
+
+---
+
+The Math.
+
+For rotational motion with constant angular acceleration, the final angular velocity is related to the initial angular velocity by
+
+ 
+ omega _f equals omega _0 + alpha t.
+ 
+
+We solve this expression for the stopping time, which gives
+
+ 
+t equals omega _f- omega _0 over alpha.
+ 
+
+From the previous example, the initial angular velocity is omega _0 equals 220 rad/s. The reel comes to a stop, so the final angular velocity is omega _f equals 0. The stopping time follows from this expression:
+
+ 
+t equals 0-220 rad/s over -300 rad/s squared 
+ equals 0.73 s.
+ 
+
+---
+
+The Conclusion.
+
+The reel takes 0.73 s to come to a stop after the brake is applied.
+
+This result shows that a large negative angular acceleration can reduce a substantial angular speed to zero in less than a second. It also emphasizes the importance of sign conventions in rotational kinematics, since the negative acceleration indicates that the braking acts opposite the direction of motion.
+
+---
+
+ **The Problem**
+The angular velocity of an aircraft propeller decreases linearly from 30 rad/s to 0 rad/s over a time interval of 5 s.
+(a) Generate a graph of the angular velocity omega as a function of time. 
+(b) Determine the angular acceleration of the propeller from the graph. 
+(c) Determine the angular displacement of the propeller during the 5 s interval.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The propeller rotates about a fixed axis. The angular velocity decreases linearly with time, which implies that the angular acceleration is constant. The angular acceleration is the slope of the omega versus t graph.
+
+The angular displacement can be determined in two ways. Graphically, it corresponds to the area under the angular velocity curve. Analytically, it can be computed using the rotational kinematic equations for constant angular acceleration.
+
+---
+
+The Math.
+
+**(a)** The angular velocity decreases linearly from 30 rad/s at t equals 0 to 0 rad/s at t equals 5 s. The resulting graph is a straight line connecting these two points.
+
+**(b)** The angular acceleration equals the slope of the omega versus t graph,
+
+ 
+ alpha equals change in omega over change in t 
+ equals 0-30 rad/s over 5 s 
+ equals -6 rad/s squared.
+ 
+
+**(c)** The angular displacement equals the **area under the angular velocity curve**. Because the graph forms a right triangle, the area is
+
+ 
+ change in theta equals 1 over 2 ( base )( height ) 
+ equals 1 over 2 (5 s )(30 rad/s ) 
+ equals 75 rad.
+ 
+
+We can verify this result using the rotational kinematic equation
+
+ 
+ theta _f equals theta _0 + omega _0 t + 1 over 2 alpha t squared.
+ 
+
+Setting theta _0 equals 0 and substituting the known values gives
+
+ 
+ theta _f equals (30)(5) + 1 over 2 (-6)(5) squared 
+ equals 150 - 75 
+ equals 75 rad.
+ 
+
+---
+
+The Conclusion.
+
+The angular acceleration of the propeller is alpha equals -6 rad/s squared. During the 5 s interval, the propeller rotates through an angular displacement of theta equals 75 rad. This result is consistent with both the graphical interpretation of the motion and the rotational kinematic equations.
+
+---
+
+========================================================================
+
+10.3 Relating Angular and Translational Quantities
+
+Relating Angular and Translational Quantities.
+
+Angular vs. Linear Variables.
+
+If we compare the rotational definitions with those from the linear kinematic variables, we find that there is a mapping between them. Linear position, velocity, and acceleration have their rotational counterparts, which become apparent when writing them side-by-side:
+
+Table. Rotational vs Linear Variables. Refer to the course notes for the full entries.
+
+The linear variable of position has physical units of meters, whereas the angular position variable has *dimensionless* units of radians. This can be seen from the definition of theta equals s over r.
+
+The linear velocity has units of meters per second, while its counterpart (the angular velocity) has units of rad/s. In the case of circular motion, the linear tangential speed v sub t of a particle at a radius r from the axis of rotation is related by the angular velocity, or v sub t equals r omega.
+
+The centripetal acceleration vector points inward towards the axis of rotation. From the derivation for the magnitude of the centripetal acceleration, we found
+
+ 
+ a sub c equals v sub t to the power of 2 over r,
+ 
+
+where r is the radius of the circle. In uniform circular motion, when the angular velocity is constant and the angular acceleration is zero, we have a linear acceleration (i.e., the centripetal acceleration).
+
+If nonuniform circular motion is present, the rotating system has an angular acceleration, and we have botha linear *centripetal* acceleration and a linear *tangential* acceleration.
+
+Figure referenced in the course notes.
+
+Figure shows the centripetal tangential accelerations for uniform and nonuniform circular motion. The centripetal acceleration comes from changes in the *direction* of tangential velocity, whereas the tangential acceleration is from any change in magnitude of the tangential velocity. *Recall that vectors have a magnitude and direction.*
+
+The tangential vector a _t and centripetal vector a _c acceleration vectors are always perpendicular to each other. The **total linear acceleration** describes a point on a rotating rigid body (or a particle executing circular motion) at a radius r from a fixed axis. It can be written as the vector sum of the centripetal and tangential accelerations,
+
+ 
+ vector a equals vector a _c + vector a _t.
+ 
+
+In the case of nonuniform circular motion, the total linear acceleration vector points at an angle between the centripetal and tangential acceleration vectors (see the figure). 
+
+Figure referenced in the course notes.
+
+Since vector a _c perpendicular vector a _t, the magnitude of the total linear acceleration is found through the Pythagorean theorem as
+
+ | vector a | equals square root of a sub c to the power of 2 + a sub t to the power of 2. 
+
+Note.
+
+If the angular acceleration alpha is zero, the total linear acceleration is equal to the centripetal acceleration. Mathematically, this is shown by
+
+ 
+ a sub t equals r alpha, 
+| vector a | equals square root of a sub c to the power of 2 + r squared alpha to the power of 2, 
+ 
+
+and if alpha equals 0, then
+
+ | vector a | equals a sub c. 
+ 
+
+Relationships between Rotational and Translational Motion.
+
+There are two main relationships between rotational and translational motion.
+
+Item 1. Both types of motion have four linear kinematic equations that look similar to each other but describe two different physical situations.
+
+Table. Rotational vs Linear Motion. Refer to the course notes for the full entries.
+
+Item 2. In the special case of circular motion, there are relationships between rotational and translational motion through the constant radius r.
+
+Table. Rotational vs Linear Quantities: Circular Motion. Refer to the course notes for the full entries.
+
+**PhET Interactive Simulations: Ladybug Revolution**.
+
+ 
+
+Open the Ladybug Revolution simulation and switch the angle units to radians. Move the ladybug to different radii while keeping the angular velocity fixed, then compare the angular velocity, tangential velocity, and acceleration vectors. Focus on which quantities change with radius and which stay the same for a rigid rotating platform.
+ 
+
+**Example Problem**: Linear Acceleration of a Centrifuge.
+
+The Problem.
+A centrifuge has a radius of 20 cm and slows from a maximum rotation rate of ten to the 4 rpm to rest in 30 s under a constant angular acceleration. The centrifuge rotates counterclockwise. Determine the magnitude of the total acceleration of a point at the tip of the centrifuge at t equals 29 s. Determine the direction of the total acceleration vector.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+A point on the rim of the centrifuge undergoes circular motion about a fixed axis while the angular velocity decreases under constant angular acceleration. The linear acceleration therefore has two perpendicular components: the tangential acceleration produced by the angular acceleration and the centripetal acceleration produced by the instantaneous speed. The magnitude of the total acceleration follows from the vector sum of these two perpendicular components.
+
+---
+
+The Math.
+
+The radius of the centrifuge is r equals 20 cm equals 0.20 meters. The initial angular speed is converted from revolutions per minute to radians per second:
+
+ 
+ omega _0 equals ten to the 4 fraction rev min ( fraction {2 pi rad } rev ) ( 1 min over 60 s ), 
+ equals 1047 rad/s.
+ 
+
+The angular acceleration follows from the change in angular velocity during the 30 s interval:
+
+ 
+ alpha equals omega _f- omega _0 over t.
+ 
+
+The centrifuge stops at the end of the interval, so omega _f equals 0:
+
+ 
+ alpha equals 0-1047 rad/s over 30 s, 
+ equals -34.9 rad/s squared.
+ 
+
+The tangential acceleration is determined by a sub t equals r alpha. The magnitude of the tangential acceleration is therefore
+
+ 
+ a sub t equals (0.20)(-34.9), 
+ equals -7.0 meters per second squared.
+ 
+
+The angular velocity at t equals 29 s is obtained from the constant-acceleration relation omega equals omega _0 + alpha t. The angular velocity at that instant is
+
+ 
+ omega equals 1047 + (-34.9)(29), 
+ equals 34.9 rad/s.
+ 
+
+The tangential speed is calculated by v sub t equals r omega. The tangential speed at t equals 29 s is
+
+ 
+ v sub t equals (0.20)(34.9) 
+ equals 6.98 meters per second.
+ 
+
+The centripetal acceleration is given by a sub c equals v sub t to the power of 2 over r and is therefore
+
+ 
+ a sub c equals (6.98) squared over 0.20, 
+ equals 244 meters per second squared.
+ 
+
+The magnitude of the total acceleration is the vector sum of the perpendicular components:
+
+ 
+| vec a| equals square root of a sub c to the power of 2 + a sub t to the power of 2, 
+ equals square root of (244) squared + (-7.0) squared, 
+ equals 244 meters per second squared.
+ 
+
+The direction of the total acceleration relative to the centripetal direction follows from
+
+ 
+ theta equals tan to the power of -1 ( a sub t over a sub c ), 
+ equals tan to the power of -1 ( -7.0 over 244 ) 
+ equals -1.6 degrees.
+ 
+
+The negative sign indicates that the total acceleration vector tilts slightly in the clockwise direction from the inward centripetal direction.
+
+---
+
+The Conclusion.
+
+At t equals 29 s the magnitude of the total acceleration of the point at the rim of the centrifuge is
+
+ 
+| vec a| equals 244 meters per second squared.
+ 
+
+The acceleration vector points almost directly toward the center of the centrifuge but is tilted by 1.6 degrees in the clockwise direction because the centrifuge is slowing down. This result shows that the centripetal component still dominates the total acceleration even near the end of the spin-down.
+
+---
+
+========================================================================
+
+10.4 Moment of Inertia and Rotational Kinetic Energy
+
+Moment of Inertia and Rotational Kinetic Energy.
+
+In addition to the description of motion for a rotating rigid body with a fixed axis of rotation, we define two new quantities used in the analysis of rotating objects:
+
+Item 1. moment of inertia,
+
+Item 2. rotational kinetic energy.
+
+Rotational Kinetic Energy.
+
+Any moving object has kinetic energy, which we found already for a body undergoing translational motion. *How does this translate to a rigid body undergoing rotation?*
+
+Recall that the tangential velocity v sub t equals r omega shows that v sub t increases with the radius. However, the angular velocity omega can remain the same for the entire rigid body. 
+
+Energy in rotational motion is not a new form of energy, where it is simply an energy related to a specific type of motion. Recall that we defined many types of potential energy (e.g., gravitational or spring). 
+
+Bullet point. The translational kinetic energy is given by K equals 1 over 2 mv squared, where it would be natural to have a rotational analog.
+
+Bullet point. Velocity is different for every point on a rotating body about an axis. For a single particle, this is straightforward to calculate using the relation v sub t equals r omega. Through substitution, we find
+
+ K equals 1 over 2 meters v sub t to the power of 2 equals 1 over 2 meters(r omega ) squared equals 1 over 2 (mr squared) omega to the power of 2. 
+
+In the case of a rigid rotating body, we can divide up any body into a large number of smaller masses (each with a mass m sub j and distance to the axis of rotation r sub j ), where the total mass of the body is equal to the sum of the individual masses: M equals displaystyle su m sub j equals m sub j.
+
+Each smaller mass has a tangential speed v sub j, then the total kinetic energy of the rigid rotating body is
+
+ K equals 1 over 2 su m sub j m sub j v sub j to the power of 2 equals 1 over 2 su m sub j m sub j ( r sub j omega _j) squared. 
+
+Since omega _j equals omega ro all masses, we have
+
+ 
+K equals 1 over 2 ( su m sub j m sub jr _j squared ) omega to the power of 2.
+ 
+
+This rotational kinetic energy has units of Joules, just like its translational counterpart.
+
+Moment of Inertia.
+
+Comparing forms for the total kinetic energy, we have
+
+ 
+ K sub t equals 1 over 2 M v squared, 
+ K sub r equals 1 over 2 ( su m sub j m sub jr _j squared ) omega to the power of 2.
+ 
+
+The quantity displaystyle su m sub j m sub j r sub j to the power of 2 is the counterpart for mass in the equation for the rotational kinetic energy. This quantity is called the **moment of inertia** I (with units of kg dot square meters ):
+
+ 
+I equals su m sub j m sub j r sub j to the power of 2.
+ 
+
+The moment of inertia of a single point particle about a fixed axis is simply mr squared, where r is the distance from the particle to the axis of rotation. 
+
+The moment of inertia (in general) is the quantitative measure of rotational inertia, similar to mass is the respective quantity for linear inertia. 
+
+Bullet point. The greater the moment of inertia of a rigid body or system of particles, the greater is its resistance to change in angular velocity about a fixed axis of rotation.
+
+Bullet point. Rigid bodies and systems of particles with more mass concentrated a greater distance from the axis of rotation have greater moments of inertia.
+
+We can see that a hollow cylinder has more rotational inertia than a solid cylinder of the same mass when rotating about a central axis. The expression for the rotational kinetic energy can be written in terms of the physical property of the medium I, or
+
+ 
+K equals 1 over 2 I omega to the power of 2.
+ 
+
+The kinetic energy of a rotating rigid body is directly proportional to the moment of inertia **and** the square of the angular velocity. This is exploited in flywheel energy-storage devices, which can store large amounts of rotational kinetic energy.
+
+Table. Rotational vs Translational Kinetic Energy and Inertia. Refer to the course notes for the full entries.
+
+Figure shows the moment of inertia for common shapes or objects. The moment of inertia I can be calculated, but this list of common objects is a useful reference.
+
+Figure referenced in the course notes.
+
+Checkpoint.
+
+ 
+
+For the same total mass, which object is harder to spin up: one with mass near the axis or one with mass far from the axis?
+ 
+
+**Example Problem**: Moment of Inertia for a System of Particles.
+
+The Problem.
+A system consists of six small washers spaced 10 cm apart on a rod of negligible mass and 0.5 meters in length. The mass of each washer is 20 g. The rod rotates about an axis located at 25 cm.
+(a) What is the moment of inertia of the system? 
+(b) If the two washers closest to the axis are removed, what is the moment of inertia of the remaining four washers? 
+(c) If the system with six washers rotates at 5 rev/s, what is its rotational kinetic energy?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The washers are treated as point masses attached to a rod of negligible mass, so the rod does not contribute to the moment of inertia. The moment of inertia of the system is therefore found by summing the contributions mr squared from each washer, where r is the perpendicular distance from the axis of rotation.
+
+Because all washers have the same mass, the calculation reduces to identifying the set of distances from the axis and summing the corresponding squared distances. Once the moment of inertia is known, the rotational kinetic energy follows from the relation between rotational kinetic energy, moment of inertia, and angular speed.
+
+---
+
+The Math.
+
+The mass of each washer is
+
+ 
+m equals 20 g equals 0.020 kg.
+ 
+
+The six washers are located at distances 0.25 meters, 0.15 meters, and 0.05 meters from the axis on each side. Therefore, the moment of inertia of the six-washer system is
+
+ 
+I equals su m sub j m sub j r sub j to the power of 2.
+ 
+
+**(a)** The moment of inertia of the full system is
+
+ 
+I equals (0.020 kg ) [2(0.25 meters ) squared + 2(0.15 meters ) squared + 2(0.05 meters ) squared ] 
+ equals 3.5 times ten to the minus 3 kg dot square meters.
+ 
+
+**(b)** Removing the two washers closest to the axis removes the two contributions at r equals 0.05 meters. The moment of inertia of the remaining four washers is therefore
+
+ 
+I equals (0.020 kg ) [2(0.25 meters ) squared + 2(0.15 meters ) squared ] 
+ equals 3.4 times ten to the minus 3 kg dot square meters.
+ 
+
+**(c)** The rotational kinetic energy is determined from
+
+ 
+K equals 1 over 2 I omega to the power of 2.
+ 
+
+The angular speed must be expressed in radians per second. The angular speed follows from converting 5 rev/s:
+
+ 
+ omega equals 5 fraction rev s ( fraction {2 pi rad } rev ) 
+ equals 31 rad/s.
+ 
+
+The rotational kinetic energy is evaluated using the moment of inertia from part (a):
+
+ 
+K equals 1 over 2 (0.0035 kg dot square meters )(31 rad/s ) squared 
+ equals 1.7 J.
+ 
+
+---
+
+The Conclusion.
+
+The moment of inertia of the six-washer system is 3.5 times ten to the minus 3 kg dot square meters, and the moment of inertia of the remaining four washers is 3.4 times ten to the minus 3 kg dot square meters. When the full six-washer system rotates at 5 rev/s, its rotational kinetic energy is 1.7 J.
+
+These results show that washers near the axis contribute very little to the total moment of inertia because the factor of r squared strongly reduces their effect. As a result, removing the two washers closest to the axis changes the moment of inertia only slightly.
+
+---
+
+ **The Problem**
+A typical small rescue helicopter has four blades. Each is 4.0 meters long and has a mass of 50 kg. The blades can be approximated as thin rods that rotate about one end of an axis perpendicular to their length. The helicopter has a total loaded mass of 1000 kg.
+(a) Calculate the rotational kinetic energy in the blades when they rotate at 300 rpm. 
+(b) Calculate the translational kinetic energy of the helicopter when it flies at 20 meters per second, and compare it with the rotational energy in the blades.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+Each blade is modeled as a thin rod rotating about one end, so the moment of inertia of one blade is that of a thin rod about its end. Because there are four identical blades, the total moment of inertia is four times the moment of inertia of one blade.
+
+The rotational kinetic energy is determined from the moment of inertia and the angular speed. The translational kinetic energy is determined from the total mass and the linear speed. Comparing the two energies shows how the helicopter’s kinetic energy is distributed between the spinning blades and the motion of the helicopter as a whole.
+
+---
+
+The Math.
+
+**(a)** The rotational kinetic energy is determined from
+
+ 
+K_ rot equals 1 over 2 I omega to the power of 2.
+ 
+
+The angular speed must be expressed in radians per second. The angular speed follows from converting 300 rpm:
+
+ 
+ omega equals 300 fraction rev min ( fraction {2 pi rad } rev ) ( 1 min over 60 s ) 
+ equals 31 rad/s.
+ 
+
+The moment of inertia of one blade is that of a thin rod rotated about its end:
+
+ 
+I_ blade equals 1 over 3 ML squared.
+ 
+
+The total moment of inertia of the four blades is therefore
+
+ 
+I equals 4 ( 1 over 3 ML squared ) 
+ equals 4 [ 1 over 3 (50 kg )(4.0 meters ) squared ] 
+ equals 1.1 times ten to the 3 kg dot square meters.
+ 
+
+The rotational kinetic energy of the blades is
+
+ 
+K_ rot equals 1 over 2 (1.1 times ten to the 3 kg dot square meters )(31 rad/s ) squared 
+ equals 5.3 times ten to the 5 J.
+ 
+
+**(b)** The translational kinetic energy of the helicopter is determined from
+
+ 
+K_ trans equals 1 over 2 mv squared.
+ 
+
+The translational kinetic energy follows from the loaded mass of the helicopter and its flight speed:
+
+ 
+K_ trans equals 1 over 2 (1000 kg )(20 meters per second ) squared 
+ equals 2.0 times ten to the 5 J.
+ 
+
+The comparison is made by taking the ratio of the translational kinetic energy to the rotational kinetic energy:
+
+ 
+ K_ trans over K_ rot equals 2.0 times ten to the 5 J over 5.3 times ten to the 5 J 
+ equals 0.38.
+ 
+
+---
+
+The Conclusion.
+
+The rotational kinetic energy of the four blades is 5.3 times ten to the 5 J. The translational kinetic energy of the helicopter is 2.0 times ten to the 5 J, so the translational energy is only 0.38 times the rotational energy of the blades.
+
+This result shows that most of the helicopter’s kinetic energy is stored in the spinning blades rather than in the forward motion of the helicopter. The large rotational energy comes from both the large moment of inertia of the blades and their substantial angular speed.
+
+---
+
+ **The Problem**
+A person hurls a boomerang into the air with a velocity of 30 meters per second at an angle of 40 degrees with respect to the horizontal (Figure ). It has a mass of 1.0 kg and is rotating at 10 rev/s. The moment of inertia of the boomerang is given as I equals 1 over 12 milliliters squared where L equals 0.7 meters.
+(a) What is the total energy of the boomerang when it leaves the hand? 
+(b) How high does the boomerang go from the elevation of the hand, neglecting air resistance?
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The boomerang has both translational and rotational kinetic energy when it leaves the hand. Its total initial mechanical energy is therefore the sum of these two kinetic energies. The moment of inertia is given, so the rotational kinetic energy can be determined directly once the angular speed is converted to radians per second.
+
+Neglecting air resistance means that the mechanical energy of the boomerang is conserved during its flight. At maximum height, the vertical component of the translational kinetic energy has been converted into gravitational potential energy, while the horizontal translational kinetic energy and the rotational kinetic energy remain unchanged. The height can therefore be determined from conservation of mechanical energy.
+
+---
+
+The Math.
+
+**(a)** The moment of inertia of the boomerang is given by
+
+ 
+I equals 1 over 12 milliliters squared.
+ 
+
+The moment of inertia follows from the given mass and length:
+
+ 
+I equals 1 over 12 (1.0 kg )(0.7 meters ) squared 
+ equals 0.041 kg dot square meters.
+ 
+
+The angular speed must be written in radians per second. The angular speed follows from converting 10 rev/s:
+
+ 
+ omega equals 10 fraction rev s ( fraction {2 pi rad } rev ) 
+ equals 63 rad/s.
+ 
+
+The rotational kinetic energy is determined from
+
+ 
+K_ rot equals 1 over 2 I omega to the power of 2.
+ 
+
+The rotational kinetic energy follows from the moment of inertia and angular speed:
+
+ 
+K_ rot equals 1 over 2 (0.041 kg dot square meters )(63 rad/s ) squared 
+ equals 81 J.
+ 
+
+The translational kinetic energy is determined from
+
+ 
+K_ trans equals 1 over 2 mv squared.
+ 
+
+The translational kinetic energy follows from the mass and launch speed:
+
+ 
+K_ trans equals 1 over 2 (1.0 kg )(30 meters per second ) squared 
+ equals 450 J.
+ 
+
+The total energy when the boomerang leaves the hand is the sum of the rotational and translational kinetic energies:
+
+ 
+E_ total equals K_ rot + K_ trans 
+ equals 81 J + 450 J 
+ equals 5.3 times ten to the 2 J.
+ 
+
+**(b)** The vertical component of the launch speed is
+
+ 
+ v sub y equals v sin theta.
+ 
+
+The vertical component of the launch speed follows from the launch speed and angle:
+
+ 
+ v sub y equals (30 meters per second ) sin 40 degrees 
+ equals 19 meters per second.
+ 
+
+At maximum height, the vertical translational kinetic energy has been converted into gravitational potential energy. Conservation of mechanical energy therefore gives
+
+ 
+ 1 over 2 meters v sub y to the power of 2 equals mgh.
+ 
+
+We solve this expression for the height, which gives
+
+ 
+h equals v sub y to the power of 2 over 2g.
+ 
+
+The maximum height follows from the vertical-energy expression with g equals 9.81 meters per second squared:
+
+ 
+h equals (19 meters per second ) squared over 2(9.81 meters per second squared ) 
+ equals 18 meters.
+ 
+
+---
+
+The Conclusion.
+
+The total energy of the boomerang when it leaves the hand is 5.3 times ten to the 2 J. The boomerang rises to a maximum height of 18 meters above the release point.
+
+This result shows that the boomerang carries substantial rotational energy, but that rotational energy does not affect the maximum height in this idealized model. The height depends only on the vertical component of the launch speed when air resistance is neglected.
+
+---
+
+========================================================================
+
+10.5 Calculating Moments of Inertia
+
+Calculating Moments of Inertia.
+
+There are many applications for using the pre-computed moments of inertia in the figure, but there are instances where we need to calculate the moment of inertia for a shifted axis or for a compound object.
+
+(mo i sub example ) equals 
+
+Moment of Inertia.
+
+We defined the moment of inertia I of an object as I equals displaystyle su m sub j equals m sub j r sub j to the power of 2 for all the point masses that make up the object. Since r sub j measures the distance to the axis of rotation (from each mass element m sub j ), the moment of inertia for any object **depends** on the chosen axis.
+
+Consider 2 masses at the end of a massless (or negligibly small mass) rod and calculate the moment of inertia assuming two different rotation axes (see the figure).
+
+Figure referenced in the course notes.
+
+In this case, the summation over the masses is simple because the two masses can be approximated as point masses, and the sum has only two terms.
+
+Item 1. The axis is in the center of the barbell, where each of the two masses m is a distance R away from the axis, which gives a moment of inertia of
+
+ 
+ I sub c equals su m sub j m sub j r sub j to the power of 2, 
+ equals m sub 1 r sub 1 to the power of 2 + m sub 2r _2 squared, 
+ equals mR squared + mR squared equals 2mR squared.
+ 
+
+Item 2. The axis is at the end of the barbell, which gives a moment of inertia of
+
+ 
+ I sub e equals su m sub j m sub j r sub j to the power of 2, 
+ equals m sub 1 meters sub 1 to the power of 2 + m sub 2r _2 squared, 
+ equals m(0) squared + m(2R) squared equals 4mR squared.
+ 
+
+*From this result, we can conclude that it is twice as hard to rotate the barbell about the end than about its center.*
+
+Most objects are not point-like, so we need to think about each of the terms in the equation for the moment of inertia. The equation requires us to sum over each 'piece of mass' m sub j that is a distance from the axis of rotation. Using our calculus knowledge, we break up the problem so that the piece of mass dm is infinitesimally small (see the figure).
+
+Figure referenced in the course notes.
+
+Then we can write the moment of inertia by evaluating an integral over infinitesimal masses rather than using a discrete sum over finite masses;
+
+ 
+I equals su m sub j m sub jr _j squared therefore I equals integral r squared dm.
+ 
+
+In this form, we can generalize the calculation for moment of inertia to complex shapes.
+
+A uniform thin rod with axis in the middle.
+
+Consider a uniform (in density and shape) thin rod of mass M and length L (see the figure). We want a thin rod so that we can assume the cross-sectional area (i.e., circles at the ends) of the rod is small. Then the rod can be approximated as a string of masses along a 1D straight line. The axis is perpendicular to the rod and passes through the midpoint for simplicity.
+
+Figure referenced in the course notes.
+
+We need to calculate the moment of inertia about the given axis. We orient the axes so that it aligns with the z axis and the x -axis passes through the length of the rod. Then we can integrate along the x -axis.
+
+We define dm as a small mass element as a piece of the rod. The moment of inertia integral is an integral over the mass distribution. However, we need to integrate over space, not mass. Thus, we need to find a relationship between the mass and spatial variables.
+
+We do this using the **linear mass density** lambda of the object, which is the mass per unit length. Since the mass density of the object is uniform, we can spread the mass over the entire length, or
+
+ lambda equals m over L, or m equals lambda L. 
+
+If we take the differential of each side of this equation (i.e., breaking it into mass elements), we find
+
+ dm equals d( lambda L) equals lambda dL 
+
+since lambda is a constant. We can now see that our orientation of the rod along the x -axis for convenience was a helpful choice.
+
+Note.
+
+A piece of rod dl lies completely along the x -axis and has a length dx. In this situation, dL equals dx.
+ 
+
+We can therefore write dm equals lambda dx, which we know how to integrate. Putting this all together, we have
+
+ I equals integral r squared dm equals integral x squared dm equals integral x squared lambda dx. 
+
+The rod extends from x equals -L/2 to x equals L/2, since the axis lies in the middle of the rod (at x equals 0 ). Then we have
+
+ 
+I equals integral sub -L/2 to the power of L/2 x squared lambda dx equals lambda over 3 x cubed evaluated from sub -L/2 to the power of L/2, 
+ equals lambda over 3 [ ( L over 2 ) cubed - (- L over 2 ) cubed ], 
+ equals lambda over 3 [ 2L cubed over 2 cubed ] equals lambda over 12 liters cubed.
+ 
+
+Since lambda equals M over L, we can substitute to find
+
+ I equals 1 over 12 ML squared. 
+
+We can compare to Fig. and see that our result matches the case for a *'Thin rod about axis through center perpendicular to length'*.
+
+A uniform thin rod with axis at the end.
+
+Consider a uniform (in density and shape) then rod of mass M and length L as before, but this time we move the axis of rotation to the end of the rod (see the figure). 
+
+Figure referenced in the course notes.
+
+The only difference from before is the limits of integration, which is now from x equals 0 to x equals L. Thus, we can start from the integration step to get:
+
+ 
+I equals integral sub 0 to the power of L x squared lambda dx equals lambda over 3 x cubed evaluated from sub 0 to the power of L, 
+ equals lambda over 3 [ L cubed - 0 cubed ], 
+ equals lambda over 3 liters cubed equals 1 over 3 ML squared.
+ 
+
+Note.
+
+The rotational inertia of the rod about its endpoint is larger than about its center by a factor of four. This is consistent with the barbell example in.
+ 
+
+The Parallel-Axis Theorem.
+
+The process between finding the moment of inertia of a rod using two different axes had mostly the same steps. This suggests that there might be a simpler method for determining the moment of inertia for a rod about *any* parallel axis through the center-of-mass. This is called the **parallel-axis theorem**.
+
+Parallel-axis Theorem.
+
+ 
+
+Let m be the mass of an object, while d is the distance from an axis through the object's center-of-mass to a new axis. Then we have
+
+ 
+I_ parallel equals I_ CoM + md squared,
+ 
+
+where I_ parallel is the moment of inertia for the parallel axis and I_ CoM is the moment of inertia through the center-of-mass.
+ 
+
+Let's use the case where the axis lies at the center of the rod, which is I_ CoM equals 1 over 12 ML squared. Then, we can move the axis by a distance of L over 2 so that the axis now lies at the end of the rod. As a result, we find
+
+ 
+I_ parallel equals 1 over 12 ML squared + m ( L over 2 ) squared, 
+ equals [ 1 over 12 + 1 over 4 ] ML squared, 
+ equals 4 over 12 ML squared equals 1 over 3 ML squared. checkmark
+ 
+
+A uniform thin disk about an axis through the center.
+
+Integrating to find the moment of inertia for a 2D object is trickier, but one shape is commonly shown as a uniform thin disk about an axis through its center (see the figure).
+
+Figure referenced in the course notes.
+
+Since the disk is thin, we can take the mass as distributed evenly across the entire xy -plane. Instead of a linear mass density, we have a relationship for the **surface mass density** (or mass per unit surface area). The surface mass density sigma is constant for a thin disk:
+
+ 
+ sigma equals m over A therefore sigma A equals m, 
+dm equals sigma dA.
+ 
+
+We apply a simplification for the area, where it is composed of a series of thin rings. Each ring has a mass increment dm of radius r that is equidistant from the axis. The infinitesimal area of each ring is dA with a length 2 pi r time the infinitesimal width of each ring as dr.
+
+We can break the area of a circle in to smaller pieces by
+
+ 
+A equals pi r squared, 
+dA equals d( pi r squared) equals pi d(r squared) equals (2 pi r) dr.
+ 
+
+The full disk area is then built by summing up all the thin rings with a radius range from r equals 0 to r equals R. This radius range becomes our limits of integration for dr. Putting this all together, we have
+
+ 
+I equals integral _0 to the power of R r squared sigma dA equals integral _0 to the power of R r squared sigma (2 pi r)dr, 
+ equals 2 pi sigma integral _0 to the power of R r cubed dr equals pi sigma over 2 r to the power of 4 evaluated from _0 to the power of R, 
+ equals pi over 2 sigma R to the power of 4.
+ 
+
+Then, we can substitute sigma equals m over A and for a disk, we have sigma equals m over pi R squared. Thus we obtain
+
+ I equals pi over 2 ( m over pi R squared ) R to the power of 4 equals 1 over 2 meters R squared. 
+
+We can compare to Fig. and see that our result matches the case for a *'Hoop about any diameter'*.
+
+Calculating the moment of Inertia for compound objects.
+
+Consider a compound object with a disk on the end of a rod (see the figure). This object is not uniformly shaped, so the integration is not so easy.
+
+Figure referenced in the course notes.
+
+However, if we use the definition for the moment of inertia as a summation, we can reason that a compound object's moment of inertia can be determined as the sum of each part of the object:
+
+ 
+I_ tot equals su m sub j I sub j.
+ 
+
+Note.
+
+The moments of inertia must share a common axis. 
+ 
+
+In the above example, this would be a rod of length rotating about its end and a thin disk of radius R rotating about an axis shifted off-center by a distance L+R, where R is the radius of the disk. The mass of the rod is m sub r, while the mass of the disk is m sub d. 
+
+We already know the moment of inertia for the rod as 1 over 2 meters sub rL to the power of 2, but we have to use the parallel-axis theorem to the find the moment of inertia for the disk about the given axis. The moment of inertia of the disk about its center-of-mass is 1 over 2 meters sub dR to the power of 2. Now we can apply the parallel-axis theorem to get
+
+ 
+I_ parallel equals I_ CoM + md squared, 
+ equals 1 over 2 meters sub dR to the power of 2 + m sub d (L+R) squared.
+ 
+
+Adding the moment of inertia of the rod to the moment of inertia of the disk (with a shifted axis of rotation), we find the moment of inertia for the compound object is
+
+ I_ tot equals 1 over 3 meters sub rL to the power of 2 + 1 over 2 meters sub dR to the power of 2 + m sub d (L+R) squared. 
+
+Note.
+
+We could expand the above result to collect terms in m sub dR to the power of 2, however the overall number of terms would be larger. There would be an additional m sub dL to the power of 2 + 2 meters sub dLR from expanding the square. Resulting in four terms, which does not really make it any simpler.
+ 
+
+**Example Problem**: Person on a Merry-Go-Round.
+
+The Problem.
+A 25 kg child stands at a distance r equals 1.0 meters from the axis of a rotating merry-go-round. The merry-go-round can be approximated as a uniform solid disk with a mass of 500 kg and a radius of 2.0 meters. Find the moment of inertia of this system.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The system consists of two parts: the child and the merry-go-round. The child is modeled as a point mass located 1.0 meters from the axis, and the merry-go-round is modeled as a uniform solid disk rotating about its center.
+
+The total moment of inertia of the system is the sum of the moment of inertia of the child and the moment of inertia of the disk.
+
+---
+
+The Math.
+
+The moment of inertia of the child is given by the point-mass expression I sub c equals mr squared. The child's moment of inertia follows from the point-mass expression:
+
+ 
+ I sub c equals (25 kg )(1.0 meters ) squared 
+ equals 25 kg dot square meters.
+ 
+
+The moment of inertia of the merry-go-round is given by the uniform-disk expression
+
+ 
+ I sub m equals 1 over 2 MR squared.
+ 
+
+The merry-go-round's moment of inertia follows from the uniform-disk expression:
+
+ 
+ I sub m equals 1 over 2 (500 kg )(2.0 meters ) squared 
+ equals 1000 kg dot square meters.
+ 
+
+The total moment of inertia of the system is the sum of these two contributions:
+
+ 
+I_ total equals I sub c + I sub m 
+ equals 25 kg dot square meters + 1000 kg dot square meters 
+ equals 1025 kg dot square meters is approximately equal to 1000 kg dot square meters.
+ 
+
+---
+
+The Conclusion.
+
+The moment of inertia of the child–merry-go-round system is 1000 kg dot square meters.
+
+This result shows that the total moment of inertia is dominated by the merry-go-round rather than the child. The disk contributes much more because it has far more mass distributed over a larger radius.
+
+---
+
+ **The Problem**
+Find the moment of inertia of the rod and solid sphere combination about the two axes as shown below. The rod has length 0.5 meters and mass 2.0 kg. The radius of the sphere is 20 cm and the sphere has mass 1.0 kg.
+(a) Find the moment of inertia about the axis through point A at the top of the rod. 
+(b) Find the moment of inertia about the axis through point A at the junction of the rod and the sphere.
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The object is a compound system consisting of a slender rod and a solid sphere. The total moment of inertia about either axis is the sum of the moment of inertia of the rod and the moment of inertia of the sphere about that same axis.
+
+The rod rotates about an axis through one end, so its contribution is found using the standard result for a thin rod about one end. The sphere rotates about an axis that does not pass through its center, so its contribution is found using the parallel-axis theorem. The distance from the sphere’s center to the rotation axis depends on which of the two axes is chosen.
+
+---
+
+The Math.
+
+The total moment of inertia is the sum of the rod and sphere contributions:
+
+ 
+I_ total equals I_ rod + I_ sphere.
+ 
+
+The rod rotates about an axis through one end, so its moment of inertia is
+
+ 
+I_ rod equals 1 over 3 m_ rod L squared, 
+ equals 1 over 3 (2.0 kg )(0.5 meters ) squared 
+ equals 0.17 kg dot square meters.
+ 
+
+The sphere is a solid sphere, so its moment of inertia about its center of mass is
+
+ 
+I_ cm equals 2 over 5 m_ sphere R squared, 
+I_ cm equals 2 over 5 (1.0 kg )(0.20 meters ) squared 
+ equals 0.016 kg dot square meters.
+ 
+
+**(a)** The axis is at the top of the rod. The center of the sphere is therefore a distance L+R from the axis. The parallel-axis theorem gives
+
+ 
+I_ sphere equals I_ cm + m_ sphere (L+R) squared, 
+ equals 0.016 kg dot square meters + (1.0 kg )(0.5 meters +0.20 meters ) squared 
+ equals 0.016 kg dot square meters + 0.49 kg dot square meters 
+ equals 0.51 kg dot square meters.
+ 
+
+The total moment of inertia is therefore
+
+ 
+I_ total equals 0.17 kg dot square meters + 0.51 kg dot square meters 
+ equals 0.68 kg dot square meters.
+ 
+
+**(b)** The axis is at the junction of the rod and the sphere. The center of the sphere is therefore a distance R from the axis. The parallel-axis theorem gives
+
+ 
+I_ sphere equals I_ cm + m_ sphere R squared, 
+ equals 0.016 kg dot square meters + (1.0 kg )(0.20 meters ) squared 
+ equals 0.016 kg dot square meters + 0.040 kg dot square meters 
+ equals 0.056 kg dot square meters.
+ 
+
+The total moment of inertia is therefore
+
+ 
+I_ total equals 0.17 kg dot square meters + 0.056 kg dot square meters 
+ equals 0.23 kg dot square meters.
+ 
+
+---
+
+The Conclusion.
+
+The moment of inertia of the rod–sphere system is 0.68 kg dot square meters about the axis through the top of the rod, and it is 0.23 kg dot square meters about the axis through the junction of the rod and sphere.
+
+These results show that the moment of inertia is larger when the axis is farther from the mass of the sphere. Moving the axis closer to the center of mass of the system reduces the resistance to rotational acceleration.
+
+---
+
+ **The Problem**
+A pendulum in the shape of a rod (Figure ) is released from rest at an angle of 30 degrees. It has a length 30 cm and mass 300 g. What is its angular velocity at its lowest point?
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The pendulum is modeled as a uniform rod rotating about one end. Because it is released from rest and air resistance is neglected, the mechanical energy of the system is conserved during the motion.
+
+As the rod swings downward, the loss in gravitational potential energy of its center of mass is converted into rotational kinetic energy. The center of mass of a uniform rod is located at its midpoint, and the moment of inertia of a uniform rod about one end is used to relate the rotational kinetic energy to the angular velocity.
+
+---
+
+The Math.
+
+The rod has length L equals 30 cm equals 0.30 meters. The center of mass of a uniform rod is located at a distance L/2 from the pivot. When the rod is released from an angle theta, the vertical drop of the center of mass between the release point and the lowest point is
+
+ 
+ change in h equals L over 2 (1- cos theta ).
+ 
+
+The loss in gravitational potential energy is therefore (see Exercise 8.7)
+
+ 
+ change in U equals mg L over 2 (1- cos theta ).
+ 
+
+At the lowest point, the rod has rotational kinetic energy via
+
+ 
+K equals 1 over 2 I omega to the power of 2.
+ 
+
+Conservation of mechanical energy requires that the loss in gravitational potential energy equals the gain in rotational kinetic energy, which gives
+
+ 
+mg L over 2 (1- cos theta ) equals 1 over 2 I omega to the power of 2.
+ 
+
+The moment of inertia of a uniform rod about one end is I equals 1 over 3 milliliters squared. The energy equation becomes the following expression after the moment of inertia is written for a rod about one end:
+
+ 
+mg L over 2 (1- cos theta ) equals 1 over 2 ( 1 over 3 milliliters squared ) omega to the power of 2.
+ 
+
+We must now solve for the angular velocity, which gives
+
+ 
+ omega equals square root of 3g over L (1- cos theta ).
+ 
+
+The angular velocity follows from the energy expression with g equals 9.81 meters per second squared, L equals 0.30 meters, and theta equals 30 degrees:
+
+ 
+ omega equals square root of 3(9.81 meters per second squared ) over 0.30 meters (1- cos 30 degrees) 
+ equals 3.6 rad/s.
+ 
+
+---
+
+The Conclusion.
+
+The angular velocity of the rod at its lowest point is 3.6 rad/s.
+
+This result shows that the angular speed depends on the geometry of the rod and the release angle, but not on the mass of the rod. In this idealized model, the mass cancels because both the gravitational potential energy and the rotational kinetic energy are proportional to the mass.
+
+---
+
+========================================================================
+
+10.6 Torque
+
+Torque.
+
+An important quantity for describing the dynamics of a rotating rigid body is *torque*. We have an intuition about torque, as when we use a large wrench to unscrew a bolt. Torque also appears when we press on the accelerator in a car causing the engine to spin-up the drive train faster.
+
+Defining Torque.
+
+Since we have found rotational counterparts for the kinematic equations and variables, we should expect there to be a counterpart to force. Forces change the translational motion of objects, thus the rotational counterpart must be related to changing the rotational motion of an object about an axis. We formally define this quantity as **torque**.
+
+Consider how we rotate a door to open it. Let's write down what we know from experience (and the implications):
+
+Item 1. A door opens slowly if we push too close to its hinges. It is more efficient to rotate a door open if we push far from the hinges.
+
+Bullet point. The farther the force is applied from the axis of rotation, the greater the *angular acceleration*.
+
+Item 2. We should push perpendicular to the plane of the door. If we push parallel to the plane of the door, we are not able to rotate it.
+
+Bullet point. The effectiveness *depends on the angle* at which the force is applied.
+
+Item 3. The larger the force, the more effective it is in opening the door (i.e., the more rapidly it opens).
+
+Bullet point. The magnitude of the force must also be part of the equation.
+
+Note.
+
+For a rotation in a plane, there are two possible directions for the rotation: clockwise or counterclockwise. Following the convention that counterclockwise is positive, then clockwise rotation is negative.
+ 
+
+Figure illustrates 4 different ways that we could apply a force to a door. Note that the door will rotate relative to the pivot in a counterclockwise direction.
+
+Figure referenced in the course notes.
+
+Torque.
+
+ 
+
+When a force vector F is applied to a point P whose position is vector r relative to the pivot point O, the torque vector tau is given by
+
+ 
+ vector tau equals vector r times vector F.
+ 
+
+ 
+
+Figure illustrates how the direction of the torque can be found using the `right-had rule`. This naturally comes from our definitions using the cross-product.
+
+Figure referenced in the course notes.
+
+From the definition of the cross product, the torque vector tau is perpendicular to the plane containing vector r and vector F. The torque has a magnitude
+
+ | vector tau | equals | vector r times vector F | equals rF sin{ theta }, 
+
+where theta is the angle between the vectors vector r and vector F. The SI unit for torque is newtons times meters (usually written as N dot m ), where this does **not** reduce to Joules as was the case for work.
+
+The quantity r_ perpendicular equals r sin{ theta } is the perpendicular distance from O to the line determined by the vector vector F and is called the **lever arm**. 
+
+Bullet point. The greater the lever arm, the greater the magnitude of the torque.
+
+In terms of the lever arm, the magnitude of the torque is
+
+ 
+| vector tau | equals r_ perpendicular F. 
+ 
+
+The cross product tells us the sign of the torque.
+
+Bullet point. In the figure, there is a positive torque because the cross product is along the z -axis.
+
+Bullet point. If the torque is along the negative z -axis, then the torque is negative.
+
+Figure referenced in the course notes.
+
+If we consider a disk that is free to rotate about an axis through the center (see the figure), we can see how the angle between the radius vector r and force vector F affects the magnitude of the torque.
+
+Bullet point. If the angle is zero, then the torque is zero.
+
+Bullet point. If the angle is 90 degrees, then the torque is at a maximum.
+
+Any number of torques can be calculated about a given axis, where the individual torques add to produce a net torque about the axis. When the appropriate sign is applied to the magnitudes of individual torques about a specified axis, the net torque about the axis is the sum of the individual torques, or
+
+ 
+ vector tau _ net equals su m sub j vector tau _j.
+ 
+
+Problem-Solving Strategy.
+
+ 
+
+Finding Net Torque.
+
+Item 1. Choose a coordinate system with the pivot point or axis as the origin.
+
+Item 2. Determine the angle between the lever arm vector r and the force vector F.
+
+Item 3. Take the cross product of vector r and vector F to determine if the torque is positive or negative about the pivot point.
+
+Item 4. Evaluate the magnitude of the torque using r_ perpendicular F.
+
+Item 5. Assign the appropriate sign (positive or negative) to the magnitude.
+
+Item 6. Sum the torques to find the net torque.
+ 
+
+Checkpoint.
+
+ 
+
+Why does pushing on a door near the hinge produce less torque than pushing with the same force near the handle?
+ 
+
+**Example Problem**: Torque on Particles.
+
+The Problem.
+Four forces are shown in Figure at particular locations and orientations with respect to a given xy -coordinate system. Find the torque due to each force about the origin, then use your results to find the net torque about the origin.
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+Each torque is determined from the force, its location relative to the origin, and the angle between the position vector and the force. The magnitude of each torque is found from the perpendicular lever arm or, equivalently, from the product of the force magnitude, the distance from the origin, and the sine of the angle between them.
+
+The sign of each torque is determined from the direction of vector r times vector F. A torque that points out of the page is positive, corresponding to counterclockwise rotation, and a torque that points into the page is negative, corresponding to clockwise rotation. The net torque is the algebraic sum of the individual torques.
+
+---
+
+The Math.
+
+The magnitude of the torque due to a force about the origin is | vector tau | equals rF sin theta. The sign of the torque is determined from the cross product vector r times vector F.
+
+The 40 newtons force acts upward at x equals 4 meters, so the lever arm is 4 meters and the angle between vector r and vector F is 90 degrees. The torque from this force is
+
+ 
+ tau _1 equals (4 meters )(40 newtons ) sin 90 degrees 
+ equals 160 newtons dot m.
+ 
+
+The cross product vector r times vector F points out of the page, so this torque is positive.
+
+The 20 newtons force at y equals -3 meters acts horizontally to the left, so the lever arm is 3 meters and the angle between vector r and vector F is 90 degrees. The torque from this force is
+
+ 
+ tau _2 equals (3 meters )(20 newtons ) sin 90 degrees 
+ equals 60 newtons dot m.
+ 
+
+The cross product vector r times vector F points into the page, so this torque is negative:
+
+ 
+ tau _2 equals -60 newtons dot m.
+ 
+
+The 30 newtons force is applied at a distance 5 meters from the origin, and the angle between vector r and vector F is 53 degrees. The torque from this force is
+
+ 
+ tau _3 equals (5 meters )(30 newtons ) sin 53 degrees 
+ equals 120 newtons dot m.
+ 
+
+The cross product vector r times vector F points out of the page, so this torque is positive.
+
+The 20 newtons force in the second quadrant is applied at a distance 1 meters from the origin, and the angle between vector r and vector F is 30 degrees. The torque from this force is
+
+ 
+ tau _4 equals (1 meters )(20 newtons ) sin 30 degrees 
+ equals 10 newtons dot m.
+ 
+
+The cross product vector r times vector F points out of the page, so this torque is positive.
+
+The net torque is the algebraic sum of the four torques:
+
+ 
+ tau _ net equals tau _1 + tau _2 + tau _3 + tau _4 
+ equals 160 newtons dot m - 60 newtons dot m + 120 newtons dot m + 10 newtons dot m 
+ equals 230 newtons dot m.
+ 
+
+---
+
+The Conclusion.
+
+The individual torques about the origin are +160 newtons dot m, -60 newtons dot m, +120 newtons dot m, and +10 newtons dot m. The net torque about the origin is 230 newtons dot m.
+
+This result shows that the counterclockwise torques dominate the clockwise torque, so the net tendency is counterclockwise rotation. It also illustrates that torque depends on both the force magnitude and the perpendicular distance from the axis.
+
+---
+
+ **The Problem**
+Figure shows several forces acting at different locations and angles on a flywheel. We have | vector F _1| equals 20 newtons, | vector F _2| equals 30 newtons, | vector F _3| equals 30 newtons, and r equals 0.5 meters.
+Find the net torque on the flywheel about an axis through the center.
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+Each torque is determined from the position vector from the center of the flywheel to the point of application and the corresponding force. The magnitude of each torque is found from the product of the force magnitude, the distance from the center, and the sine of the angle between the position and force vectors.
+
+The sign of each torque is determined from the direction of vector r times vector F. A torque that points out of the page is positive, corresponding to counterclockwise rotation, and a torque that points into the page is negative, corresponding to clockwise rotation. The net torque is the algebraic sum of the individual torques.
+
+---
+
+The Math.
+
+The magnitude of the torque due to a force about the center is | vector tau | equals rF sin theta. The torque due to vector F _1 is determined from the angle between vector r and vector F _1. The figure shows that this angle is 150 degrees, so the torque magnitude is
+
+ 
+| vector tau _1| equals (0.5 meters )(20 newtons ) sin 150 degrees 
+ equals 5.0 newtons dot m.
+ 
+
+The cross product vector r times vector F _1 points out of the page, so this torque is positive:
+
+ 
+ tau _1 equals +5.0 newtons dot m.
+ 
+
+The torque due to vector F _2 is determined from the angle between vector r and vector F _2. The figure shows that this angle is 90 degrees, so the torque magnitude is
+
+ 
+| vector tau _2| equals (0.5 meters )(30 newtons ) sin 90 degrees 
+ equals 15.0 newtons dot m.
+ 
+
+The cross product vector r times vector F _2 points into the page, so this torque is negative:
+
+ 
+ tau _2 equals -15.0 newtons dot m.
+ 
+
+The force vector F _3 acts along the same line as the radius vector, so the angle between vector r and vector F _3 is 0 degrees. Therefore,
+
+ 
+ tau _3 equals (0.5 meters )(30 newtons ) sin 0 degrees 
+ equals 0.
+ 
+
+The net torque is the algebraic sum of the three torques:
+
+ 
+ tau _ net equals tau _1 + tau _2 + tau _3 
+ equals 5.0 newtons dot m - 15.0 newtons dot m + 0 
+ equals -10 newtons dot m.
+ 
+
+---
+
+The Conclusion.
+
+The net torque on the flywheel about its center is -10 newtons dot m. The negative sign shows that the net tendency is clockwise rotation. This result also illustrates that a force applied directly along the radius does not produce torque because it has no perpendicular lever arm.
+
+---
+
+========================================================================
+
+10.7 Newton's 2nd Law for Rotation
+
+Newton's 2nd Law for Rotation.
+
+Defining Newton's 2nd Law for Rotation in Vector Form.
+
+Since torque is a rotational analog to force, *is there an analogous equation to Newton's 2nd law?*
+
+Let's start with Newton's 2nd law for a single particle rotating around an axis in circular motion. A force vector F is applied on a point mass m that is a distance r from a pivot point (see the figure).
+
+Figure referenced in the course notes.
+
+The particle is constrained to move in a circular path with a fixed radius and the force is tangent to the path. We apply Newton's 2nd law to determine the magnitude of the acceleration (a equals F over m ) in the direction of vector F. Since the force is *tangential* to the path, we can use the relation for the tangential acceleration that relates to the angular acceleration ( a equals r alpha ). 
+
+Substituting this expression into Newton's 2nd law, we have
+
+ 
+F equals ma, 
+ equals mr alpha.
+ 
+
+We can multiply both sides by the radius r, which is motivated by the form of the torque, tau equals rF sin{ theta }. The force is applied perpendicular to r, thus sin{ theta } equals 1. Now we have,
+
+ 
+rF equals mr squared alpha, 
+ tau equals (mr squared) alpha, 
+ equals I alpha.
+ 
+
+If we substitute the moment of inertia I equals mr squared, then we have a form that is similar to Newton's 2nd law. In this form the torque plays the role of force, the moment of inertia is like mass, and the angular acceleration is the rotational analog to the translational acceleration.
+
+Newton's 2nd Law for Rotation.
+
+ 
+
+If more than one torque acts on a rigid body about a fixed axis, then the sum of the torques equals the moment of inertia times the angular acceleration:
+
+ 
+ tau _ net equals su m sub j tau _j equals I alpha.
+ 
+ 
+
+The term I alpha is a scalar quantity that can be positive (counterclockwise) or negative (clockwise) depending on the sign of the net torque. This relation is **Newton's 2nd law for rotation** and tells us how to analyze problems for **rotational dynamics**.
+
+Deriving Newton's 2nd Law for Rotation in Vector Form.
+
+Newton's 2nd law tells us the relationship between the net force and how to change the translational motion of an object. We have a vector rotational equivalent of this equation. Let's start with the tangential acceleration written as a cross product,
+
+ vector a equals vector alpha times vector r. 
+
+We form the cross product of this equation with vector r because we are ultimately wanting to generate a relation for vector tau equals vector r times vector F. Note that you might want to review the Vector Algebra section from Chapter 2.
+
+We begin with
+
+ 
+ vector r times vector a equals vector r times ( vector alpha times vector r ), 
+ equals vector alpha ( vector r dot vector r ) - vector r ( vector r dot vector alpha ), 
+ equals vector alpha ( vector r dot vector r ) equals r squared vector alpha.
+ 
+
+We used the Vector triple product to resolve the cross product of a cross product. Since vector r is perpendicular to vector alpha, this means that the dot product vector r dot vector alpha equals 0.
+
+In Newton's 2nd law, the mass m acts as a scalar on the acceleration vector a. Applying that here, we have
+
+ 
+ vector F equals sum m vector a, 
+ vector tau equals sum vector r times vector F equals vector r times (m vector a ), 
+ equals m vector r times vector a equals mr squared vector alpha.
+ 
+
+Since I equals mr squared, we arrive at Newton's 2nd law of rotation in vector form:
+
+ tau _ net equals sum vector tau equals I vector alpha. 
+
+Note that the torque vector is in the same direction as the angular acceleration.
+
+Applying Newton's 2nd Law for Rotation.
+
+Problem-Solving Strategy.
+
+ 
+
+Rotational Dynamics.
+
+Item 1. Identify that torque and mass are involved in the rotation.
+
+Item 2. Determine the system of interest.
+
+Item 3. Draw a free-body diagram for each system of interest.
+
+Item 4. Identify the pivot point(s). Chose the pivot point that simplifies your work the most.
+
+Item 5. Apply displaystyle su m sub j tau _j equals I alpha to solve the problem. Carefully select the moment of inertia and consider the torque about the point of rotation.
+
+Item 6. Check the solution for physical reasonableness.
+ 
+
+**Example Problem**: Effect of Mass Distribution on a Merry-Go-Round.
+
+The Problem.
+Consider the father pushing a playground merry-go-round in Figure. He exerts a force of 250 newtons at the edge of the 50 kg merry-go-round, which has a 1.50 meters radius. Calculate the angular acceleration produced
+(a) when no one is on the merry-go-round and 
+(b) when an 18 kg child sits 1.25 meters away from the center.
+Consider the merry-go-round itself to be a uniform disk with negligible friction.
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The merry-go-round rotates about a fixed central axis. The applied force is perpendicular to the radius, so it produces the maximum possible torque for the given force and radius. Because friction is negligible, the applied torque is the net torque on the system.
+
+The angular acceleration follows from Newton’s second law for rotation. The applied torque is the same in both cases, but the moment of inertia changes when the child is added. The merry-go-round is modeled as a uniform disk, and the child is modeled as a point mass located at a fixed distance from the axis.
+
+---
+
+The Math.
+
+The applied force is perpendicular to the radius, so the torque magnitude is determined by the force and radius. The applied torque follows from the given radius and force:
+
+ 
+ tau equals (1.50 meters )(250 newtons ) 
+ equals 375 newtons dot m.
+ 
+
+**(a)** The merry-go-round is modeled as a uniform disk, so its moment of inertia is
+
+ 
+I equals 1 over 2 MR squared, 
+ equals 1 over 2 (50 kg )(1.50 meters ) squared 
+ equals 56.25 kg dot square meters.
+ 
+
+Newton’s second law for rotation relates the net torque, moment of inertia, and angular acceleration. We solve this relationship for the angular acceleration, which gives
+
+ 
+ alpha equals tau over I.
+ 
+
+The angular acceleration follows from the applied torque and the moment of inertia:
+
+ 
+ alpha equals 375 newtons dot m over 56.25 kg dot square meters 
+ equals 6.67 rad/s squared.
+ 
+
+**(b)** The child is modeled as a point mass, so the child’s moment of inertia is
+
+ 
+ I sub c equals mr squared.
+ 
+
+The child’s moment of inertia follows from the child’s mass and distance from the axis:
+
+ 
+ I sub c equals (18 kg )(1.25 meters ) squared 
+ equals 28.13 kg dot square meters.
+ 
+
+The total moment of inertia of the system is the sum of the merry-go-round and child contributions:
+
+ 
+I_ total equals 56.25 kg dot square meters + 28.13 kg dot square meters 
+ equals 84.38 kg dot square meters.
+ 
+
+The same rotational form of Newton’s second law applies after the child is added. We solve this relationship for the angular acceleration, which gives
+
+ 
+ alpha equals tau over I_ total.
+ 
+
+The angular acceleration follows from the same applied torque and the larger moment of inertia:
+
+ 
+ alpha equals 375 newtons dot m over 84.38 kg dot square meters 
+ equals 4.44 rad/s squared.
+ 
+
+---
+
+The Conclusion.
+
+When the merry-go-round is empty, the angular acceleration is 6.67 rad/s squared. When the 18 kg child sits 1.25 meters from the center, the angular acceleration decreases to 4.4 rad/s squared.
+
+This result shows that increasing the mass farther from the axis increases the moment of inertia and reduces the angular acceleration produced by the same torque. The change in mass distribution matters just as much as the total mass when rotational motion is involved.
+
+---
+
+========================================================================
+
+10.8 Work and Power for Rotation
+
+Work and Power for Rotation.
+
+Work for Rotational Motion.
+
+Since we know how to calculate the kinetic energy for rotating rigid bodies, we can identify the work done on a rigid body that is rotating about a fixed axis. 
+
+Figure referenced in the course notes.
+
+Figure shows a rigid body that has rotate through an angle d theta from A to B under the influence of a force vector F. The external force vector F is applied to point P, whose position is vector r relative to the point O, and the rigid body is constrained to rotate about a fixed axis. The rotational axis is fixed, so the vector vector r moves in a circle of radius r and the vector d vector s is perpendicular to vector r.
+
+An infinitesimal arclength d vector s sweeps out an infinitesimal angle d theta so that 
+
+ 
+d vector s equals d vector theta times vector r.
+ 
+
+Using the definition of work, we have the forces acting at each vector r so that
+
+ 
+ integral su m sub j vector F _j dot d vector s _j equals integral sum vector F _j dot (d vector theta times vector r _j), 
+ equals integral d vector theta dot ( vector r _j times sum vector F _j),
+ 
+
+where we used an identity from the triple product:
+
+ vector a dot ( vector b times vector c ) equals vector b dot ( vector c times vector a ).
+ 
+
+We want to get the right-side into a form so that we can substitute vector tau _j, which is why the identity is necessary here. We arrive at the expression for the **rotational work** done on a rigid body:
+
+ 
+W equals integral su m sub j vector tau _j dot d vector theta, 
+ equals integral vector tau _ net dot d vector theta.
+ 
+
+*The total work done on a rigid body is the sum of the torques integrated over the angle which the body rotates.* The incremental work is 
+
+ 
+dW equals ( su m sub j tau _j )d theta,
+ 
+
+where we have taken the dot product, leaving only torques along the axis of rotation.
+
+In a rigid body, all particles rotate through the same angle. Thus, the work of every external force is equal to the torque times the common incremental angle d theta.
+
+We found the kinetic energy of a rigid body rotating around a fixed axis by summing the kinetic energy of each particle. Since the work-energy theorem W sub i equals change in K sub i is valid for each particle, it is valid for the sum of the particles and the entire body.
+
+Work-Energy Theorem for Rotation.
+
+ 
+
+The work-energy theorem for a rigid body rotating about a fixed axis is
+
+ 
+W sub AB equals K sub B - K sub A, 
+ equals 1 over 2 I sub B omega _B squared - 1 over 2 I sub A omega _A squared,
+ 
+
+and the rotational work done by a net force rotating a body from point A to point B is
+
+ 
+ 
+
+W sub AB equals displaystyle integral sub theta _A to the power of theta _B ( su m sub j tau _j )d theta.
+ 
+ 
+
+Problem-Solving Strategy.
+
+ 
+
+Work-Energy Theorem for Rotational Motion.
+
+Item 1. Identify the forces and draw a free-body diagram for each system of interest. Calculate the torque for each force.
+
+Item 2. Calculate the work done during the body's rotation by every torque.
+
+Item 3. Apply the work-energy theorem by equating the net work done on the body to the change in *rotational* kinetic energy.
+ 
+
+Checkpoint.
+
+ 
+
+If a constant torque acts through a larger angular displacement, what happens to the rotational work done on the object?
+ 
+
+**Example Problem**: Rotational Work and Energy.
+
+The Problem.
+A 12 newtons dot m torque is applied to a flywheel that rotates about a fixed axis and has a moment of inertia of 30 kg dot square meters. If the flywheel is initially at rest, what is its angular velocity after it has turned through eight revolutions?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The flywheel rotates about a fixed axis under a constant applied torque. Because the torque is constant and the problem asks for the angular speed after a specified angular displacement, the work–energy theorem for rotational motion provides the most direct method.
+
+The rotational work done by the torque is converted into rotational kinetic energy. Since the flywheel starts from rest, the initial rotational kinetic energy is zero. The angular displacement must be expressed in radians before applying the work–energy relation.
+
+---
+
+The Math.
+
+The flywheel turns through eight revolutions, so the angular displacement is
+
+ 
+ change in theta equals 8 rev ( 2 pi rad over 1 rev ) 
+ equals 16 pi rad.
+ 
+
+The rotational work done by a constant torque is
+
+ 
+W equals tau change in theta, 
+ equals (12.0 newtons dot m )(16 pi rad ) 
+ equals 603 J.
+ 
+
+The rotational work–energy theorem states that the work done on the flywheel equals the change in its rotational kinetic energy:
+
+ 
+W equals 1 over 2 I omega _f squared - 1 over 2 I omega _i squared.
+ 
+
+The flywheel is initially at rest, so omega _i equals 0. The energy equation therefore becomes
+
+ 
+W equals 1 over 2 I omega _f squared.
+ 
+
+We solve this expression for the final angular velocity, which gives
+
+ 
+ omega _f equals square root of 2W over I.
+ 
+
+The final angular velocity follows from the calculated work and the given moment of inertia:
+
+ 
+ omega _f equals square root of 2(603 J ) over 30 kg dot square meters 
+ equals 6.3 rad/s.
+ 
+
+---
+
+The Conclusion.
+
+The angular velocity of the flywheel after eight revolutions is 6.3 rad/s. This result shows that the work–energy theorem provides a direct connection between the applied torque and the resulting rotational motion. Instead of solving for angular acceleration and then using rotational kinematics, the work–energy approach moves directly from torque and angular displacement to angular speed.
+
+---
+
+ **The Problem**
+A string wrapped around the pulley in Figure is pulled with a constant downward force vector F of magnitude 50 newtons. The radius R and moment of inertia I of the pulley are 0.10 meters and 2.5 times ten to the minus 3 kg dot square meters, respectively. If the string does not slip, what is the angular velocity of the pulley after 1.0 meters of string has unwound? Assume the pulley starts from rest.
+
+Figure referenced in the course notes.
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The pulley rotates about a fixed axis under the action of a constant force applied at its rim. Because the string does not slip, the linear distance the string moves is related directly to the angular displacement of the pulley. The applied force produces a constant torque, and the work done by that torque is converted into rotational kinetic energy.
+
+The force exerted by the axle and the weight of the pulley act through the rotation axis, so they do not produce torque about that axis. The work–energy theorem for rotational motion therefore provides the most direct way to determine the angular velocity after the string unwinds through the given distance.
+
+---
+
+The Math.
+
+The torque produced by the applied force has magnitude tau equals RF. Because the string does not slip, the distance d moved by the string and the angular displacement theta of the pulley satisfy 
+d equals R theta. 
+
+The rotational work done by the applied torque is
+
+ 
+W equals tau theta, 
+W equals (RF) ( d over R ) 
+ equals Fd.
+ 
+
+The work follows from the applied force and the distance the string unwinds:
+
+ 
+W equals (50 newtons )(1.0 meters ) 
+ equals 50 J.
+ 
+
+The rotational work–energy theorem states that the work done on the pulley equals the change in its rotational kinetic energy:
+
+ 
+W equals 1 over 2 I omega _f squared - 1 over 2 I omega _i squared.
+ 
+
+The pulley starts from rest, so omega _i equals 0. The energy equation therefore becomes
+
+ 
+W equals 1 over 2 I omega _f squared.
+ 
+
+We solve this expression for the final angular velocity, which gives
+
+ 
+ omega _f equals square root of 2W over I.
+ 
+
+The final angular velocity follows from the calculated work and the given moment of inertia:
+
+ 
+ omega _f equals square root of 2(50 J ) over 2.5 times ten to the minus 3 kg dot square meters 
+ equals 200 rad/s.
+ 
+
+---
+
+The Conclusion.
+
+The angular velocity of the pulley after 1.0 meters of string has unwound is 200 rad/s. This result shows that even a modest linear displacement of the string can produce a very large angular speed when the pulley has a small moment of inertia. The work done by the applied force is transferred efficiently into rotational kinetic energy.
+
+---
+
+ **The Problem**
+A boat engine operating at 9.0 times ten to the 4 W is running at 300 rev/min. What is the torque on the propeller shaft?
+
+Expand the dropdown below to see the worked solution.
+
+ 
+ 
+ 
+ 
+ 
+
+The Model.
+
+The rotating shaft delivers mechanical power to the propeller. In rotational motion, power is related to both the torque on the shaft and the angular velocity of the shaft.
+
+The engine’s rotation rate is given in revolutions per minute, so it must first be converted to angular velocity in radians per second. Once the angular velocity is known, the torque follows directly from the power relation.
+
+---
+
+The Math.
+
+The rotation rate is given as 300 rev/min. The angular velocity follows from converting the rotation rate to radians per second:
+
+ 
+ omega equals 300 rev/min 
+ ( 2 pi rad over 1 rev )
+ ( 1 min over 60 s ) 
+ equals 31.4 rad/s.
+ 
+
+The relationship between power, torque, and angular velocity is
+
+ 
+P equals tau omega.
+ 
+
+We solve this expression for the torque, which gives
+
+ 
+ tau equals P over omega.
+ 
+
+The torque follows from the given power and the calculated angular velocity:
+
+ 
+ tau equals 9.0 times ten to the 4 W over 31.4 rad/s 
+ equals 2900 newtons dot m.
+ 
+
+---
+
+The Conclusion.
+
+The torque delivered to the propeller shaft is 2900 newtons dot m. This result shows that a large torque is required to deliver substantial power at relatively modest rotation rates. In many mechanical systems, the same power can be produced with either high torque at low angular speed or lower torque at higher angular speed.
+
+---
+
+========================================================================
+
+10.9 Rotational and Translational Relationships Summarized
+
+Rotational and Translational Relationships Summarized.
+
+The rotational quantities and their linear analog are summarized in, while a summary of the relationships for the kinematic equations are given in. A summary of the relationship between the rotational and translational dynamics equations is given in.
+
+Table. Rotational vs Linear Motion: Dynamics. Refer to the course notes for the full entries.
+
+**The Organic Chemistry Tutor**.
+
+ 
+
+ 
+As you watch, focus on how torque, rotational work, rotational kinetic energy, and power fit together. Compare each rotational equation to the linear work-energy equations you already know.
+
+========================================================================
+
+10.10 In-class Problems
+
+In-class Problems.
+
+Part I.
+
+Problem 1.
+
+A particle moves 3.0 meters along a circle of radius 1.5 meters. (a) Through what angle does it rotate? (b) If the particle makes this trip in 1.0 s at a constant speed, what is its angular velocity? (c) What is its acceleration?
+
+ 
+
+Problem 2.
+
+A vertical wheel with a diameter of 50 cm starts from rest and rotates with a constant angular acceleration of 5.0 rad/s to the power of 2 around a fixed axis through its center counterclockwise. (a) Where is the point that is initially at the bottom of the wheel at t equals 10 s? (b) What is the point's linear acceleration at this instant?
+ 
+
+Problem 3.
+
+A child with mass 40 kg sits on the edge of a merry-go-round at a distance of 3.0 meters from its axis of rotation. The merry-go-round accelerates from rest up to 0.4 rev/s in 10 s. If the coefficient of static friction between the child and the surface of the merry-go-round is 0.6, does the child fall off before 5 s?
+ 
+
+Problem 4.
+
+A diver goes into a somersault during a dive by tucking her limbs. If her rotational kinetic energy is 100 J and her moment of inertia in the tuck is 9.0 kg dot square meters, what is her rotational rate during the somersault?
+ 
+
+Part II.
+
+Problem 5.
+
+Using the parallel axis theorem, what is the moment of inertia of the rod of mass m about the axis shown below?
+
+Figure referenced in the course notes.
+
+ 
+
+Problem 6.
+
+A horizontal beam of length 3 meters and mass 2.0 kg has a mass of 1.0 kg and width 0.2 meters sitting at the end of the beam (see the following figure). What is the torque of the system about the support at the wall?
+
+Figure referenced in the course notes.
+
+ 
+
+Problem 7.
+
+A constant torque is applied to a rigid body whose moment of inertia is 4.0 kg dot square meters around the axis of rotation. If the wheel starts from rest and attains an angular velocity of 20.0 rad/s in 10.0 s, what is the applied torque?
+ 
+
+Problem 8.
+
+A propeller is accelerated from rest to an angular velocity of 1000 rev/min over a period of 6.0 s by a constant torque of 2.0 times ten to the 3 newtons dot m. (a) What is the moment of inertia of the propeller? (b) What power is being provided to the propeller 3.0 s after it starts rotating?
+
+========================================================================
+
+10.11 Homework
+
+Homework.
+
+Conceptual Problems.
+
+Problem 1.
+
+What if another planet the same size as Earth were put into orbit around the Sun along with Earth? Would the moment of inertia of the system increase, decrease, or stay the same?
+ 
+
+Problem 2.
+
+Why is the moment of inertia of a hoop that has a mass M and a radius R greater than the moment of inertia of a disk that has the same mass and radius?
+ 
+
+Quantitative Problems.
+
+Problem 3.
+
+What is (a) the angular speed and (b) the linear speed of a point on Earth's surface at latitude 30 degrees N? Take the radius of Earth to be 6309 km. (c) At what latitude would your linear speed be 10 meters per second?
+ 
+
+Problem 4.
+
+During a 6.0 s time interval, a flywheel with a constant angular acceleration turns through 500 rad and reaches an angular velocity of 100 rad/s. (a) What is the angular velocity at the beginning of the 6.0 s? (b) What is the angular acceleration of the flywheel?
+ 
+
+Problem 5.
+
+A pendulum consists of a rod of mass 2 kg and length 1 meters with a solid sphere at one end with mass 0.3 kg and radius 20 cm (see Figure ). If the pendulum is released from rest at an angle of 30 degrees, what is the angular velocity at the lowest point?
+
+Figure referenced in the course notes.
+
+ 
+
+Problem 6.
+
+Calculate the torque about the z -axis that is out of the page at the origin in the Figure, given that F sub 1 equals 3 newtons, F sub 2 equals 2 newtons, F sub 3 equals 3 newtons, and F sub 4 equals 1.8 newtons.
+
+Figure referenced in the course notes.
+
+ 
+
+Problem 7.
+
+A clay cylinder of radius 20 cm on a potter’s wheel spins at a constant rate of 10 rev/s. The potter applies a force of 10 newtons to the clay with his hands where the coefficient of friction is 0.1 between his hands and the clay. What is the power that the potter has to deliver to the wheel to keep it rotating at this constant rate?
+
+========================================================================

@@ -1,0 +1,147 @@
+Conservation of Energy.
+
+The terms conserved quantity and conservation law have specific, scientific meanings in physics. In everyday usage, you could conserve water by: not using it, using less of it, or re-using it. In scientific usage, a conserved quantity for a system:
+
+stays constant,
+
+changes by a definite amount that is transferred to other systems, and/or
+
+is converted into other forms of that quantity.
+
+There are no other forms of water, where it's all H two O. Nor is there any physical law of conservation that is specific to water.
+
+Systems with a Single Particle.
+
+Consider a system with a single particle, where "system" is used pretty loosely here. In Section 8.1, we showed that the work done on a particle can be represented as the negative change in the potential energy (Eqn. 8.1) or the change in kinetic energy (Eqn. 8.3). For a conservative system the sum of the changes in kinetic and potential energy were equal to zero (i.e., change in K + change in U equals 0 in Section 8.1.3.3). We expand this idea to include non-conservative forces and to define the mechanical energy of the particle.
+
+Conservation of Energy.
+
+The mechanical energy E of a particle stays constant unless external or non-conservative forces do work on it. The change in mechanical energy is equal to the work done (from A to B ) by the non-conservative forces W sub nc,AB: or
+
+W sub nc,AB equals change in (K+U) sub AB equals change in E sub AB.
+
+This expression describes the concept of energy conservation for a classical particle, which is a point mass, moves at nonrelativistic speed, and obeys Newton's laws of motion. We can recover the prior expression when there are no non-conservative forces or the non-conservative forces do no work. In this case we have
+
+W sub nc,AB equals change in E sub AB equals 0,
+0 equals change in (K+U) sub AB equals ( K sub B - K sub A ) + ( U sub B - U sub A ),
+ K sub A + U sub A equals K sub B + U sub B. checkmark
+
+Problem Solving Strategy: Conservation of Energy.
+
+First, Identify bodies within the system.
+
+Second, Identify all forces acting on each body.
+
+Third, Determine whether there are conservative or non-conservative (e.g., friction) forces doing work. Set W sub nc,AB equals 0, if they are all conservative sources of work, otherwise W sub nc,AB equals change in E sub AB.
+
+Fourth, For every conservative force that does work, choose a reference point and determine the respective potential energy function.
+
+Fifth, If only conservative work is done, set the sum of kinetic and potential energies at point A equal to the sum of those energies at point B.
+
+You can use conservation of energy to calculate the speed of a particle at particular points in its motion. More advanced treatments allow you calculate the full time dependence of a particle's motion, for a given potential energy.
+
+Consider a particle moving in one-dimensional with a potential energy U(x) with only conservative interactions (i.e., no friction). Then we can use the total energy to describe the kinetic energy K and the speed v in a different way. Mathematically, this is given by
+
+E equals K + U(x),
+K equals 1 over 2 mv squared equals E minus U of x,
+v equals square root of 2 over m [E minus U of x ].
+
+Recalling the definition of velocity as v equals dx/dt, we can separate the variables and integrate:
+
+dt equals dx over v,
+t equals integral _o to the power of t dt,
+ equals integral sub x sub o to the power of x dx over square root of 2 [E minus U of x ]/m.
+
+If you can do the final integral with respect to dx, then you can solve for x as a function of t.
+Example Problem: Simple Pendulum.
+The Problem.
+A particle of mass m is hung from the ceiling by a massless string of length 1.0 meters, as shown in Figure. The particle is released from rest, when the angle between the string and the downward vertical direction is 30 degrees. What is its speed when it reaches the lowest point of its arc?
+The worked solution follows.
+The Model.
+The system consists of the particle and the Earth so that gravitational potential energy is internal to the system. The string is massless and constrains the particle to move on a circular arc of radius L equals 1.0 meters. Air resistance is neglected. The string tension does no work on the particle because the tension force is always directed along the string while the displacement is tangent to the arc, so the tension is perpendicular to the instantaneous displacement. The only force that does work is gravity, which is conservative, so mechanical energy is conserved. The gravitational potential energy is defined to be zero at the lowest point of the swing. The particle is released from rest at an initial angle theta _o equals 30 degrees measured from the downward vertical, so the initial mechanical energy is purely gravitational potential energy determined by the vertical height above the lowest point.
+The Math.
+Because only conservative work is done on the particle–Earth system, mechanical energy is conserved, so the total mechanical energy at release equals the total mechanical energy at the lowest point. The particle starts from rest, so its initial kinetic energy is zero, and at the lowest point the gravitational potential energy is defined to be zero. Conservation of energy therefore requires that the initial gravitational potential energy equals the final kinetic energy, which gives
+
+mgh equals 1 over 2 mv squared.
+
+The height h is found from the geometry of a circle of radius L. At the release angle theta _o, the vertical distance from the pivot to the particle is L cos theta _o, while at the lowest point that vertical distance is L, so the particle is higher than the lowest point by
+
+h equals L - L cos theta _o equals L(1- cos theta _o).
+
+Substituting this height into the energy equation and canceling m gives
+
+m g L(1- cos theta _o) equals 1 over 2 meters v squared,
+v equals square root of 2gL(1- cos theta _o).
+
+Substituting g equals 9.81 meters per second squared, L equals 1.0 meters, and theta _o equals 30 degrees yields
+
+v equals square root of 2(9.81 meters per second squared )(1.0 meters )(1- cos 30 degrees)
+ equals 1.62 meters per second.
+The Conclusion.
+The particle’s speed at the lowest point of its arc is 1.62 meters per second. This result follows from conservation of mechanical energy, using the vertical height change implied by the pendulum geometry and defining gravitational potential energy to be zero at the lowest point.
+Example Problem: Air Resistance on a Falling Object.
+The Problem.
+A helicopter is hovering at an altitude of 1 km when a panel from its underside breaks loose and plummets to the ground (Figure ). The mass of the panel is 15 kg, and it hits the ground with a speed of 45 meters per second. How much mechanical energy was dissipated by air resistance during the panel’s descent?
+The worked solution follows.
+The Model.
+The system consists of the panel and the Earth. Gravity is a conservative force, while air resistance is a non-conservative force that does negative work during the fall. The panel is released from rest at an altitude of 1 km and reaches the ground with a known speed, so the dissipated mechanical energy can be found from the change in the system’s mechanical energy. The gravitational potential energy is defined to be zero at ground level. The energy dissipated by air resistance is taken to be the magnitude of the non-conservative work, which equals the decrease in mechanical energy from the initial state to the final state.
+The Math.
+The change in mechanical energy between the initial state i and the final state f is related to the non-conservative work by
+
+W sub nc,if equals change in (K+U) sub if equals ( K sub f + U sub f ) - ( K sub i + U sub i ).
+
+Because air resistance dissipates energy, the dissipated mechanical energy is the magnitude of this work, so change in E sub diss equals |W sub nc,if |.
+
+At release, the panel starts from rest, so K sub i equals 0. The gravitational potential energy is defined to be zero at the ground, so U sub f equals 0 and U sub i equals mgh with h equals 1000 meters. The final kinetic energy is K sub f equals one-halfmv squared with v equals 45 meters per second. Substituting these expressions gives
+
+W sub nc,if
+ equals ( 1 over 2 mv squared + 0 ) - (0 + mgh )
+ equals 1 over 2 mv squared - mgh.
+
+Using m equals 15 kg, v equals 45 meters per second, g equals 9.81 meters per second squared, and h equals 1000 meters yields
+
+W sub nc,if
+ equals 1 over 2 (15 kg )(45 meters per second ) squared - (15 kg )(9.81 meters per second squared )(1000 meters )
+ equals -1.32 times ten to the 5 joules.
+
+Therefore, the mechanical energy dissipated by air resistance is
+
+ change in E sub diss
+ equals |W sub nc,if |
+ equals 1.32 times ten to the 5 joules
+ equals 132 kJ.
+The Conclusion.
+Air resistance dissipated 132 kJ of mechanical energy during the panel’s fall. This equals the decrease in the system’s mechanical energy from the initial state at 1 km altitude to the final state at the ground.
+Example Problem: Constant Acceleration.
+The Problem.
+Use the potential energy U(x) equals E(x/ x sub o ), for E > 0, in Equation to find the position x of a particle as a function of time t.
+The worked solution follows.
+The Model.
+The system consists of a particle undergoing one-dimensional motion along the x -axis under the influence of a conservative force derived from the given potential energy function. The potential energy varies linearly with position, so the corresponding force is constant. The particle starts from rest at position x sub o and moves under this constant force without the influence of any non-conservative forces. Mechanical energy is conserved, allowing the motion to be analyzed using the energy–time relation given in Equation.
+The Math.
+The energy–time relation for one-dimensional motion under a conservative force can be written as
+
+ t equals integral sub x sub o to the power of x dx over square root of 2 over m [E - U(x)].
+
+Substituting U(x) equals E(x/ x sub o ) into this expression gives
+
+t equals integral sub x sub o to the power of x dx over square root of 2E over m (1- x over x sub o )
+ equals 1 over square root of 2E/(m x sub o ) integral sub x sub o to the power of x dx over square root of x sub o - x
+ equals 1 over square root of 2E/(m x sub o ) [-2 square root of x sub o - x ] sub x sub o to the power of x
+ equals - 2 square root of x sub o - x over square root of 2E/(m x sub o ).
+
+Solving this expression for the position as a function of time yields
+
+x(t) equals x sub o - 1 over 2 ( E over m x sub o )t squared.
+The Conclusion.
+The particle’s position varies quadratically with time according to
+
+x(t) equals x sub o - 1 over 2 ( E over m x sub o )t squared.
+
+This corresponds to motion starting from rest at x sub o with a constant acceleration directed toward decreasing x.
+
+Systems with Several Particles.
+
+Systems generally consist of multiple particles. To apply conservation of energy to such a system, you just have to include the kinetic energy K sub i and potential energy U sub i of all the particles, and the work done by the non-conservative forces acting on them. In this case we have
+
+the sum of W sub non-conservative, A B equals the sum from i equals one to N of delta times the quantity K sub i plus U sub i, from A to B.

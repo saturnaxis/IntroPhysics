@@ -1,0 +1,287 @@
+Fixed-axis Rotation.
+
+Rotational Variables.
+
+Angular Velocity.
+
+Uniform circular motion is motion along a circle at constant speed (see Section 4.3). It is the simplest case of rotational motion and is helpful when introducing rotational variables.
+
+In Figures and, we show a particle moving in a circle. The coordinate system is fixed and serves as a frame of reference to define the particle's position. Its position vector r sweeps out the angle theta in a counterclockwise direction.
+
+The angular position theta describes how far the position vector has rotated in the x - y plane. As the particle moves in its circular path, it also traces an arc length s. The particle may complete more than one revolution around the circle. This means that the angle theta may be greater than 2 pi, and the arc length s can be greater than the circumference, 2 pi r.
+
+The angle is related to the radius of the circle and the arc length by
+
+ theta equals s over r,
+s equals r theta.
+
+The angle theta has units of radians (rad), where there are 2 pi radians in 360 degrees.
+
+Note.
+
+The radian measure is a ratio of length measurements, and therefore is a dimensionless quantity.
+
+As the particle moves along its circular path, its angular position changes and it undergoes an angular displacement over change in theta.
+
+We can assign a vector theta, which represents a vector out-of-the-page in the figure. The angular position vector r and the arc length vector s both lie in the plane of the page. These three vectors are related to each other by a cross-product, or
+
+ vector s equals vector theta times vector r.
+
+The magnitude of the angular velocity omega is the time rate of change of the angle theta as the particle moves in its circular path. The instantaneous angular velocity is defined using the limit definition when change in t arrow 0 in the average velocity, or
+
+ omega _ ave equals change in theta over change in t,
+ omega equals the limit of sub change in t arrow 0 change in theta over change in t equals d theta over dt.
+
+The units of angular velocity are radians per second (or radians per second ), where angular velocity is also referred to as the rotation rate.
+
+Warning.
+
+Often, we are given the rotation rate in revolutions or cycles per second. To find the angular velocity, we must multiply by 2 pi (i.e., the number of radians in a revolution or cycle).
+
+Since the direction of a positive angle in a circle is counterclockwise, we take counterclockwise as positive for the angular velocity as well.
+
+The angular velocity is related to the tangential speed ( v sub t equals ds/dt ) of a particle by differentiation with respect to time. This can be shown by
+
+s equals r theta,
+ ds over dt equals d over dt (r theta ),
+ equals dr over dt theta + r d theta over dt.
+
+Since r represents the radius and is a constant, the factor dr over dt equals 0. By substitution of the instantaneous angular velocity omega, we arrive at
+
+ ds over dt equals r d theta over dt,
+ v sub t equals r omega.
+
+The tangential speed v sub t increases with its distance from the axis of rotation for a constant angular velocity (see the figure). Two particles are placed at different radii on a rotating disk with a constant angular velocity omega. As the disk rotates, v sub t increases linearly with the radius from the axis of rotation.
+
+From the figure, we see that
+
+ v sub 1 equals r sub 1 omega _1,
+ v sub 2 equals r sub 2 omega _2.
+
+But the disk has a constant angular velocity ( omega _1 equals omega _2 equals omega ). This means that we can solve for omega in both expressions and set them equal to each other:
+
+ v sub 1 over r sub 1 equals v sub 2 over r sub 2,
+ v sub 1 equals ( r sub 1 over r sub 2 ) v sub 2,
+ v sub 2 equals ( r sub 2 over r sub 1 ) v sub 1.
+
+Since, r sub 2 > r sub 1, we can see that v sub 2 > v sub 1.
+Checkpoint. Pause and check your understanding.
+If two points have the same angular velocity but different radii, which point has the larger tangential speed?
+
+Note.
+
+The magnitude of the angular velocity is given by omega equals d theta /dt, which is a scalar. The vector omega has a magnitude omega and points along the axis of rotation. The direction of rotation ("-" clockwise or "+" counterclockwise) gives the directional information and can be determined via the right-hand rule.
+
+One can state a cross product relation to the vector of the tangential velocity v sub t, which is given by
+
+ velocity vector v equals vector omega times vector r.
+
+The tangential velocity is the cross product of the angular velocity and the position vector. In Figure a, we see that the angular velocity is in the +z -direction, and the rotation in the rotation in the xy -plane is counterclockwise. In Figure b, the angular velocity is in the -z -direction, giving a clockwise rotation in the xy -plane.
+
+A Khan Academy video is linked on the course webpage.
+
+As you watch, focus on the difference between angular displacement, angular velocity, and angular acceleration. Pay attention to how the same circular motion can be described with both linear quantities and angular quantities.
+
+Example Problem: Rotation of a Flywheel.
+
+The Problem.
+A flywheel rotates such that it sweeps out an angle at the rate of theta equals omega t equals (45 radians per second )t radians. The wheel rotates counterclockwise when viewed in the plane of the page.
+For part a, What is the angular velocity of the flywheel?
+For part b, What direction is the angular velocity?
+For part c, How many radians does the flywheel rotate through in 30 s?
+For part d, What is the tangential speed of a point on the flywheel 10 cm from the axis of rotation?
+The worked solution follows.
+The Model.
+
+The flywheel undergoes uniform rotational motion about a fixed axis because its angular position changes linearly with time. The angular velocity is obtained from the time rate of change of angular position, and its direction is determined using the right-hand rule.
+
+The angular displacement over a time interval is obtained from the change in angular position. The tangential speed of a point on the flywheel is related to its distance from the rotation axis and the angular velocity.
+
+The Math.
+
+The angular velocity of a rotating object is defined as the time derivative of the angular position,
+
+ omega equals d theta over dt.
+
+For part a, The angular position of the flywheel is given by theta (t) equals (45 radians per second )t. Taking the derivative of this expression with respect to time gives
+
+ omega equals 45 radians per second.
+
+For part b, The direction of the angular velocity follows from the right-hand rule. Curling the fingers of the right hand in the direction of rotation, which is counterclockwise in the plane of the page, causes the thumb to point outward from the page. Therefore, the angular velocity vector points out of the page.
+
+For part c, The angular displacement during a time interval is the change in angular position,
+
+ change in theta equals theta (t)- theta (0).
+
+The angular displacement follows from the expression for theta (t):
+
+ change in theta equals (45 radians per second )(30 s )
+ equals 1350 rad.
+
+For part d, The tangential speed of a point located a distance r from the axis of rotation is
+
+ v sub t equals r omega.
+
+The point is located 10 cm from the axis of rotation, which corresponds to r equals 0.10 meters. The numerical value follows from this relationship:
+
+ v sub t equals (0.10 meters )(45 radians per second )
+ equals 4.5 meters per second.
+
+The Conclusion.
+
+The flywheel rotates with a constant angular velocity of 45 radians per second, and the angular velocity vector points out of the page according to the right-hand rule. During a time interval of 30 s, the flywheel rotates through an angular displacement of 1.35 times ten to the 3 rad. A point located 10 cm from the axis of rotation moves with a tangential speed of 4.5 meters per second. This result shows that even moderate angular velocities can produce large angular displacements when the motion continues over long time intervals.
+
+Angular Acceleration.
+
+Although uniform circular motion can be used in many situations, not all motion is uniform. For example, an ice skater can increase her angular speed by pulling in her arms. As a result, we need to define an angular acceleration for describing situations where omega changes.
+
+The faster the change in omega, the greater the acceleration. We define the instantaneous angular acceleration alpha as the derivative of angular velocity with respect to time:
+
+alpha equals the limit as change in t approaches zero of change in omega over change in t,
+which equals d omega over d t,
+and equals d squared theta over d t squared.
+
+The preceding definition takes the limit of the average angular acceleration, alpha bar equals change in omega over change in t, as change in t approaches zero. The units of angular acceleration are radians per second squared.
+
+In the same way that we defined the angular velocity vector, we can define a vector associated with the angular acceleration.
+
+If d omega over d t is greater than zero, then the angular acceleration is positive and points along the positive z-axis.
+
+If d omega over d t is less than zero, then the angular acceleration is negative and points along the negative z-axis.
+
+The tangential acceleration vector can be expressed as the cross product of the angular acceleration and the position vector:
+
+vector a sub t equals vector alpha cross vector r.
+
+We can relate the tangential acceleration of a point on a rotating body to its distance from the axis of rotation in the same way that we related tangential speed to angular velocity. We begin with
+
+v sub t equals r omega.
+
+Taking the derivative with respect to time gives
+
+a sub t equals d of r omega over d t,
+which equals d r over d t times omega, plus r times d omega over d t,
+and equals r alpha.
+
+The radius r is constant, which means that d r over d t equals zero. We then use the definition alpha equals d omega over d t. Thus, the tangential acceleration a sub t is the product of the radius and the angular acceleration.
+
+Problem-Solving Strategy: Rotational Kinematics.
+
+First, Identify the unknowns, where a sketch of the situation is useful.
+
+Second, Identify the knowns by making a complete list inferred from the problem.
+
+Third, Solve the appropriate equation for the unknown. It can be useful to think in terms of the translational analog.
+
+Fourth, Substitute the known values. Be sure to use units of radians for angles.
+
+Fifth, Check your answer for reasonableness: Does it make sense?
+Checkpoint. Pause and check your understanding.
+If an object is rotating counterclockwise but slowing down, does vector alpha point in the same direction as vector omega, or in the opposite direction?
+
+Example Problem: Spinning Bicycle Wheel.
+
+The Problem.
+A bicycle mechanic mounts a bicycle on the repair stand and starts the rear wheel spinning from rest to a final angular velocity of 250 revolutions per minute in 5.00 s.
+For part a, Calculate the average angular acceleration in radians per second squared.
+For part b, If she now hits the brakes, causing an angular acceleration of -87.3 radians per second squared, how long does it take the wheel to stop?
+The worked solution follows.
+The Model.
+
+The wheel undergoes rotational motion about a fixed axis. The relationship between angular velocity, angular acceleration, and time can be described using the kinematic definitions for rotational motion. Angular acceleration is defined as the rate of change of angular velocity with respect to time. When the angular acceleration is constant, the change in angular velocity over a time interval can be related directly to the angular acceleration and elapsed time.
+
+These relationships allow us to determine the angular acceleration from the change in angular velocity and the time interval, and to determine the stopping time when a known angular acceleration reduces the angular velocity to zero.
+
+The Math.
+
+For part a, The average angular acceleration is defined as
+
+ alpha bar equals change in omega over change in t.
+
+The wheel starts from rest and reaches a final angular velocity of 250 revolutions per minute in 5.00 s. The angular velocity must first be converted to radians per second,
+
+ omega equals 250 revolutions per minute, times 2 pi radians per revolution, times 1 minute per 60 seconds
+ equals 26.2 radians per second.
+
+The average angular acceleration follows from this definition:
+
+ alpha bar equals 26.2 radians per second over 5.00 s
+ equals 5.24 radians per second squared.
+
+For part b, When the brakes are applied, the angular velocity decreases from 26.2 radians per second to zero. The stopping time can therefore be determined from the definition of angular acceleration,
+
+ alpha equals change in omega over change in t.
+
+We solve this expression for the time interval, which gives
+
+ change in t equals change in omega over alpha.
+
+The change in angular velocity is change in omega equals -26.2 radians per second and the angular acceleration is -87.3 radians per second squared. The stopping time follows from the change in angular velocity and the braking angular acceleration:
+
+ change in t equals -26.2 radians per second over -87.3 radians per second squared
+ equals 0.300 s.
+
+The Conclusion.
+
+The wheel experiences an average angular acceleration of 5.24 radians per second squared as it spins up from rest. When the brakes are applied, the wheel stops in 0.300 s under an angular acceleration of -87.3 radians per second squared.
+
+These results illustrate how a relatively small angular acceleration applied over several seconds can gradually increase the wheel's rotation, whereas a much larger negative acceleration can bring the wheel to rest very quickly.
+
+Example Problem: Wind Turbine.
+The Problem.
+A wind turbine that is initially rotating counterclockwise on a wind farm is being shut down for maintenance. It takes 30 s for the turbine to go from its operating angular velocity to a complete stop in which the angular velocity function is omega (t) equals [(t s to the power of -1 -30) squared/100 ] radians per second, where t is the time in seconds. If the turbine is rotating counterclockwise looking into the page,
+For part a, what are the directions of the angular velocity and acceleration vectors?
+For part b, What is the average angular acceleration?
+For part c, What is the instantaneous angular acceleration at t equals 0, 15, and 30 s?
+The worked solution follows.
+The Model.
+
+The turbine undergoes rotational motion about a fixed axis. The direction of the angular velocity vector is determined from the sense of rotation by the right-hand rule. The direction of the angular acceleration vector is determined by whether the angular speed is increasing or decreasing relative to the angular velocity vector.
+
+The average angular acceleration is obtained from the change in angular velocity over a time interval. The instantaneous angular acceleration is obtained by differentiating the angular velocity function with respect to time. These rotational kinematic ideas are sufficient to determine the vector directions, the average angular acceleration, and the angular acceleration at specific times.
+
+The Math.
+
+For part a, The direction of the angular velocity follows from the right-hand rule. Curling the fingers of the right hand in the direction of rotation, which is counterclockwise when looking into the page, causes the thumb to point out of the page. Therefore, the angular velocity vector points out of the page.
+
+The turbine is shutting down, so its angular speed is decreasing. When the angular speed decreases, the angular acceleration vector points opposite the angular velocity vector. Therefore, the angular acceleration vector points into the page.
+
+For part b, The average angular acceleration is defined as the change in angular velocity divided by the elapsed time,
+
+ alpha bar equals change in omega over change in t.
+
+The initial angular velocity is obtained by evaluating the angular velocity function at t equals 0,
+
+ omega (0) equals [ (0-30) squared over 100 ] radians per second
+ equals 9.0 radians per second.
+
+The turbine comes to a complete stop at t equals 30 s, so the final angular velocity is
+
+ omega (30) equals [ (30-30) squared over 100 ] radians per second
+ equals 0 radians per second.
+
+The average angular acceleration follows from the endpoint angular velocities:
+
+ alpha bar equals 0 radians per second -9.0 radians per second over 30 s -0 s
+ equals -0.30 radians per second squared.
+
+For part c, The instantaneous angular acceleration is defined as the time derivative of the angular velocity,
+
+ alpha equals d omega over dt.
+
+Differentiating the given angular velocity function gives
+
+ alpha (t) equals d over dt [ (t s to the power of -1 -30) squared over 100 ] radians per second
+ equals ( t-30 over 50 ) radians per second squared.
+
+Evaluating this expression at the requested times gives
+
+ alpha (0) equals ( 0-30 over 50 ) radians per second squared equals -0.60 radians per second squared,
+ alpha (15) equals ( 15-30 over 50 ) radians per second squared equals -0.30 radians per second squared,
+ alpha (30) equals ( 30-30 over 50 ) radians per second squared equals 0 radians per second squared.
+
+The Conclusion.
+
+The angular velocity vector points out of the page, while the angular acceleration vector points into the page because the turbine is slowing down. The average angular acceleration over the 30 s interval is -0.30 radians per second squared. The instantaneous angular accelerations are alpha (0) equals -0.60 radians per second squared, alpha (15) equals -0.30 radians per second squared, and alpha (30) equals 0 radians per second squared.
+
+These results show that the turbine always has a negative angular acceleration while it is shutting down, but the magnitude of that acceleration decreases with time. By the moment the turbine stops, the instantaneous angular acceleration has decreased to zero.

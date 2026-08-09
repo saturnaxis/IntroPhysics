@@ -1,0 +1,137 @@
+Conservative and Non-conservative Forces.
+
+Thus far, any transition between kinetic and potential energy did not change the total energy of the system. The transition was path independent, which means that we can start and stop at any two points in the problem. The total energy of the system ( K+U ) at these two points are equal to each other. This is a characteristic of a conservative force (e.g., gravitational or spring force).
+
+Non-conservative forces and the work that they do are path dependent. Dissipative forces (e.g., friction and air resistance) are non-conservative. These forces take energy away from the system as the system evolves over time. Push-pull forces are generally non-conservative.
+
+Imagine pushing a merry-go-round. The total work done depends on how many revolutions are completed and therefore, the total energy at a given location is not constant.
+
+Conservative Force.
+
+The work done by a conservative force is independent of the path, which means the work done by a conservative force is the same for any path connecting two points:
+
+W_AB, path 1  equals integral sub A, path 1 to the power of B vector F sub cons dot d vector r,
+ equals integral sub A, path 2 to the power of B vector F sub cons dot d vector r.
+
+The work done by a non-conservative force depends on the path taken.
+
+A force is conservative if the work it does around any closed path is zero:
+
+W_ closed path equals contour integral vector F _ cons dot d vector r equals 0.
+
+The notation of a circle in the middle of the integral sign denotes a line integral over a closed path. Any closed path is the sum of two paths: the first going from A to B, and the second going from B to A.
+
+The work done going along a path from B to A is the negative of the work done going along the same path from A to B, where A and B are any two points on the closed path:
+
+0 equals integral vector F sub cons dot d vector r equals integral sub A, path 1 to the power of B vector F sub cons dot d vector r + integral sub B, path 2 to the power of A vector F sub cons dot d vector r,
+ equals integral sub A, path 1 to the power of B vector F sub cons dot d vector r - integral sub A, path 2 ^ B vector F sub cons dot d vector r.
+
+Since the work done is independent of path, the infinitesimal work vector F dot d vector r is an exact differential. There are mathematical conditions that test whether the infinitesimal work done by a force is an exact differential. In two-dimensional, the condition for
+
+ vector F dot d vector r equals F sub x dx + F sub ydy
+
+to be an exact differential is
+
+ d F sub x over dy equals d F sub y over dx.
+
+In Example Problem: Work Done by a Variable Force, the work done by the force depended on the path. For that force,
+
+ F sub x equals (5 newtons/m )y, and F sub y equals (10 newtons/m )x.
+
+Therefore,
+
+ d F sub x over dy equals (5 newtons/m ),
+ d F sub y over dx equals (10 newtons/m ),
+ d F sub x over dy is not equal to d F sub y over dx,
+
+which indicates it is a non-conservative force. What could change to make it a conservative force?
+
+Non-conservative forces do not have potential energy associated with them. There is a conservative force associated with every potential energy. Recall change in U sub AB equals -W sub AB, this involved an integral for the work. However integration is the inverse operation of differentiation, where you could equally have started with the potential energy and taken its derivative (with respect to displacement) to get the force. The infinitesimal increment of potential energy is
+
+ dU equals - vector F dot d vector l equals - F sub l dl.
+
+We chose to represent the displacement in an arbitrary direction by d vector l, so as not to imply any particular coordinate direction. Since dU, F sub l, and dl are scalars, you can divide to get
+
+ F sub l equals - dU over dl.
+
+This equation gives the relation between force and the potential energy associated with it. For one-dimensional motion along the x -axis, it can give the entire vector force vector F equals F sub x i hat equals - d U over dx i hat.
+
+In two-dimensional, we have
+
+ vector F equals F sub x i hat + F sub y j hat equals - ( partial U over partial x ) i hat - ( partial U over partial y ) j hat.
+
+Note the partial, or backslash partial, symbol denotes taking the derivative with respect to a particular variable. If a function has many variables in it, the derivative is taken only of the variable the partial derivative specifies. The other variable is held constant.
+
+In three-dimensional, we have
+ vector F equals F sub x i hat + F sub y j hat + F sub z k hat,
+ equals - ( partial U over partial x ) i hat - ( partial U over partial y ) j hat - ( partial U over partial z ) k hat equals - nabla U.
+
+This describes the force as the negative gradient of the potential U. The gradient symbol nabla is written using backslash nabla in Lay-tek.
+
+Checkpoint. Pause and check your understanding.
+
+A force does different amounts of work along two different paths between the same endpoints. Can that force be described by a single potential energy function?
+A Khan Academy video is linked on the course webpage.
+Focus on the idea that a conservative force allows energy to move between kinetic and potential forms without being dissipated, while a non-conservative force such as friction or air resistance removes mechanical energy from the system.
+Example Problem: Conservative or Not?
+The Problem.
+Which of the following two-dimensional forces are conservative and which are not? Assume a and b are constants with appropriate units:
+(a) vector F equals axy cubed i hat + ayx cubed j hat
+(b) vector F equals a ( y squared over x i hat + 2y ln ( x over b ) j hat )
+(c) vector F equals the quantity a x i-hat plus a y j-hat, divided by x squared plus y squared
+The worked solution follows.
+The Model.
+Each force acts on a particle constrained to move in the two-dimensional x – y plane. The force fields are assumed to be time-independent and sufficiently smooth in the region of interest so that partial derivatives exist. A force is conservative if the work it does between two points is independent of the path taken, which in two dimensions is equivalent to requiring that the mixed partial derivatives of the force components satisfy partial F sub x over partial y equals partial F sub y over partial x throughout the region. This condition is used to classify each force.
+The Math.
+For a two-dimensional force vector F equals F sub x (x,y) i hat + F sub y (x,y) j hat, the force is conservative if partial F sub x over partial y equals partial F sub y over partial x.
+
+(a) For the force vector F equals axy cubed i hat + ayx cubed j hat, the required partial derivatives are
+
+ partial F sub x over partial y equals partial over partial y (axy cubed) equals 3axy squared,
+ partial F sub y over partial x equals partial over partial x (ayx cubed) equals 3ayx squared.
+
+Because these two expressions are not equal in general, this force is nonconservative.
+
+(b) For the force vector F equals a ( y squared over x i hat + 2y ln ( x over b ) j hat ), the partial derivatives are
+
+ partial F sub x over partial y equals partial over partial y (a y squared over x ) equals 2ay over x,
+ partial F sub y over partial x equals partial over partial x (2ay ln ( x over b ) ) equals 2ay over x.
+
+Since the mixed partial derivatives are equal, this force is conservative.
+
+(c) For the force vector F equals the quantity a x i-hat plus a y j-hat, divided by x squared plus y squared, the partial derivatives are
+
+ partial F sub x over partial y equals partial over partial y ( ax over x squared + y squared ) equals - 2axy over (x squared + y squared) squared,
+ partial F sub y over partial x equals partial over partial x ( ay over x squared + y squared ) equals - 2axy over (x squared + y squared) squared.
+
+Because these derivatives are equal, this force is conservative in the region where it is defined.
+The Conclusion.
+The force in part (a) is nonconservative because the mixed partial derivatives of its components are not equal. The forces in parts (b) and (c) satisfy the condition partial F sub x over partial y equals partial F sub y over partial x and are therefore conservative. This classification determines whether a potential energy function can be defined for each force.
+Example Problem: Force due to a Quartic Potential Energy.
+The Problem.
+The potential energy for a particle undergoing one-dimensional motion along the x -axis is
+ U(x) equals 1 over 4 c x to the power of 4,
+where c equals 8 newtons/cubic meters. Its total energy at x equals 0 is 2 joules, and it is not subject to any non-conservative forces. Find (a) the positions where its kinetic energy is zero and (b) the forces at those positions.
+The worked solution follows.
+The Model.
+The system consists of the particle alone moving along the x -axis under the influence of a position-dependent conservative force derived from the given potential energy function. No non-conservative forces act on the particle, so mechanical energy is conserved. The total mechanical energy of the system is constant and equal to 2 joules at all positions. Points where the kinetic energy is zero correspond to turning points of the motion, where the total energy equals the potential energy. The force acting on the particle is obtained from the negative derivative of the potential energy with respect to position.
+The Math.
+(a) The kinetic energy is zero when the potential energy equals the total mechanical energy. Setting U(x) equal to 2 joules gives
+
+2 joules equals 1 over 4 (8 newtons/cubic meters ) x to the power of 4.
+
+Solving for x yields
+
+x to the power of 4 equals 1
+x equals plus or minus 1 meters.
+
+(b) The force associated with a one-dimensional potential energy function is given by the negative derivative of the potential energy with respect to position, so the force is
+
+ F sub x equals - dU over dx equals -c x cubed.
+
+Evaluating the force at the turning points gives
+
+ vector F (+1 meters ) equals -(8 newtons/cubic meters )(1 meters ) cubed i hat equals -8 newtons i hat,
+ vector F (-1 meters ) equals -(8 newtons/cubic meters )(-1 meters ) cubed i hat equals +8 newtons i hat.
+The Conclusion.
+The particle’s kinetic energy is zero at x equals plus or minus 1 meters. At both positions, the magnitude of the force is 8 newtons, and the force points toward the origin. This behavior is characteristic of a restoring force associated with a symmetric potential energy minimum at x equals 0.
